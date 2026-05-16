@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 97%;
+    --foreground: 30 10% 10%;
+    --card: 30 15% 98%;
+    --card-foreground: 30 10% 10%;
+    --primary: 30 40% 50%;
+    --primary-foreground: 30 10% 97%;
+    --secondary: 30 10% 92%;
+    --secondary-foreground: 30 10% 10%;
+    --muted: 30 10% 90%;
+    --muted-foreground: 30 10% 40%;
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 30 40% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 250 15% 4%;
+    --foreground: 30 10% 95%;
+    --card: 250 10% 8%;
+    --card-foreground: 30 10% 95%;
+    --primary: 267 70% 70%;
+    --primary-foreground: 250 10% 8%;
+    --secondary: 250 10% 12%;
+    --secondary-foreground: 30 10% 95%;
+    --muted: 250 10% 15%;
+    --muted-foreground: 30 10% 60%;
+    --border: 250 10% 18%;
+    --input: 250 10% 18%;
+    --ring: 267 70% 70%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9bfb0;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #252532;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b09f87;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #1a1a25;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(139, 92, 246, 0.3);
+  color: #41372b;
+}
+
+.dark ::selection {
+  color: #f0ede8;
+}
+
+/* Hide scrollbar for filter row */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

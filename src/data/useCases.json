@@ -1,0 +1,1110 @@
+[
+  {
+    "domain": "Business Intelligence",
+    "section": "Financial Planning & Analysis",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Quick Insights from Spreadsheets",
+    "prompt": "\"I have a spreadsheet with [describe: e.g., monthly sales for 12 months].\nPlease help me:\n1. Identify the top 3 trends\n2. Create 3 simple charts for my manager\n3. Explain any unusual patterns in plain language\n4. Suggest 2 questions I should investigate further\n\nData: [paste or describe]\"",
+    "tags": [
+      "finance",
+      "excel",
+      "quick-analysis",
+      "non-technical",
+      "1-hour"
+    ],
+    "best_for": "First-time analysts, small datasets, quick summaries",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Financial Planning & Analysis",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Rolling Forecast Model",
+    "prompt": "\"I need to build a rolling forecast model for [product line/region].\n\nCurrent situation:\n- Historical data: [describe]\n- Planning horizon: [e.g., 12 months]\n- Key drivers: [seasonality, promotions, market trends]\n- Constraints: [budget, headcount, etc.]\n\nPlease help me:\n1. Design the forecast structure\n2. Suggest the best Excel/Google Sheets layout\n3. Create formulas for key calculations\n4. Identify risks and sensitivities\n5. Build a variance analysis template\n\nOutput as a step-by-step implementation guide.\"",
+    "tags": [
+      "forecasting",
+      "excel",
+      "financial-modeling",
+      "planning",
+      "half-day"
+    ],
+    "best_for": "FP&A analysts, business controllers, budget managers",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Financial Planning & Analysis",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Automated FP&A Pipeline",
+    "prompt": "\"I'm building an automated FP&A pipeline using Python. The system needs to:\n\n1. Ingest data from [ERP/source system]\n2. Clean and validate financial data\n3. Run predictive models for [forecast type]\n4. Generate automated reports (PowerPoint/Excel)\n5. Alert on anomalies\n6. Maintain audit trail\n\nCurrent tech stack: [your tools]\nData sources: [list]\nPain points: [describe manual work]\n\nPlease provide:\n- System architecture\n- Python code skeleton with error handling\n- Data validation rules\n- Testing strategy\n- Deployment approach\n- Documentation template\"",
+    "tags": [
+      "python",
+      "automation",
+      "data-pipeline",
+      "fp&a",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "Data engineers, senior analysts, technical finance leads",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Financial Planning & Analysis",
+    "skill_level": "EXPERT",
+    "skill_emoji": "\u26ab",
+    "title": "Enterprise Financial Platform",
+    "prompt": "\"Design an enterprise financial planning platform for a [industry] company with:\n\nScale:\n- [X] business units\n- [X] currencies\n- [X] users (planners, approvers, viewers)\n- [X] GB/TB of historical data\n\nRequirements:\n- Multi-scenario planning (base, upside, downside)\n- Real-time consolidation\n- Workflow approvals\n- Version control\n- Integration with [ERP/CRM/etc.]\n- GDPR/SOX compliance\n- Self-service reporting\n\nPlease provide:\n- Architecture diagram (describe)\n- Technology stack recommendation\n- Data model\n- Security framework\n- Implementation phases (12-18 months)\n- Team structure and hiring plan\n- Total cost of ownership\"",
+    "tags": [
+      "enterprise",
+      "architecture",
+      "financial-platform",
+      "strategy",
+      "multi-year",
+      "cto-level"
+    ],
+    "best_for": "CFOs, VP Finance, Enterprise Architects",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Sales & Market Analysis",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Customer Feedback Summary",
+    "prompt": "\"I need to analyze customer feedback from [surveys/reviews/calls].\n\nPlease help me:\n1. Summarize main themes in simple language\n2. Identify top 5 complaints\n3. Suggest 3 quick wins\n4. Create a simple tracking template\n\nFeedback samples: [paste 5-10 examples]\"",
+    "tags": [
+      "sales",
+      "customer-insights",
+      "feedback-analysis",
+      "quick-win",
+      "1-hour"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Sales & Market Analysis",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Competitive Analysis",
+    "prompt": "\"I need to analyze our competitive position in [market] for [product category].\n\nAvailable data:\n- Our sales data: [describe]\n- Competitor public info: [list]\n- Market reports: [if any]\n\nPlease create:\n1. SWOT analysis framework\n2. Competitive pricing comparison\n3. Market share estimation approach\n4. 3 strategic scenarios with pros/cons\n\nOutput as a structured analysis for leadership.\"",
+    "tags": [
+      "strategy",
+      "competitive-intelligence",
+      "market-analysis",
+      "presentation",
+      "half-day"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Sales & Market Analysis",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Real-Time Market Intelligence Dashboard",
+    "prompt": "\"Build a real-time market intelligence dashboard using [Python/JS/PowerBI].\n\nRequirements:\n- Track competitor pricing across [channels]\n- Monitor review sentiment on [platforms]\n- Alert on price changes (>5%)\n- Generate weekly reports\n- Integrate with [CRM/ERP]\n\nData sources: [web scraping/APIs/exports]\n\nProvide:\n- Technical architecture\n- Data pipeline code\n- Dashboard wireframes\n- Maintenance procedures\n- Cost estimates\"",
+    "tags": [
+      "dashboard",
+      "real-time",
+      "competitive-intel",
+      "python",
+      "javascript",
+      "multi-week"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Operations & Supply Chain",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Process Improvement Ideas",
+    "prompt": "\"I want to improve our [inventory/service/production] process.\n\nCurrent process: [describe briefly]\nMain problems: [list 2-3]\n\nPlease:\n1. Suggest 3 improvement ideas\n2. Create a before/after comparison\n3. Draft an email to propose this\n4. List what data to track\"",
+    "tags": [
+      "operations",
+      "process-improvement",
+      "lean",
+      "quick-win",
+      "1-hour"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Operations & Supply Chain",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Supply Chain Optimization",
+    "prompt": "\"I need to optimize [supply chain/inventory/distribution] for [region/product].\n\nCurrent state:\n- [X] SKUs\n- [X] warehouses\n- Lead times: [describe]\n- Inventory costs: [describe]\n\nConstraints:\n- Budget: [range]\n- Timeline: [deadline]\n- Service level target: [X%]\n\nPlease help me:\n1. Analyze inefficiencies\n2. Propose 3 optimization scenarios\n3. Calculate approximate ROI\n4. Create implementation roadmap\n5. Identify risks and mitigation\"",
+    "tags": [
+      "supply-chain",
+      "operations-research",
+      "roi",
+      "optimization",
+      "half-day"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Customer Service",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Response Templates",
+    "prompt": "\"I handle customer service. I often get questions about [topic].\n\nPlease help me:\n1. Draft 5 standard responses\n2. Create a troubleshooting flowchart for [issue]\n3. Suggest information to collect\n4. Write a team FAQ\"",
+    "tags": [
+      "customer-service",
+      "templates",
+      "troubleshooting",
+      "training",
+      "1-hour"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Customer Service",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "First Contact Resolution",
+    "prompt": "\"I want to improve first-contact resolution in customer support.\n\nCurrent metrics:\n- FCR rate: [X%]\n- Avg handle time: [X min]\n- CSAT: [X/10]\n\nCommon issues: [list categories]\n\nPlease help me:\n1. Design a decision tree\n2. Create response templates by type\n3. Suggest training topics\n4. Propose KPIs\n5. Build quality monitoring checklist\"",
+    "tags": [
+      "customer-service",
+      "quality",
+      "metrics",
+      "training",
+      "half-day"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Customer Service",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "AI Support Assistant",
+    "prompt": "\"Build an AI-powered customer support assistant that can:\n\n1. Classify tickets by urgency and topic\n2. Suggest solutions from knowledge base\n3. Draft personalized responses\n4. Escalate complex issues\n5. Learn from corrections\n\nIntegration:\n- Connect to [ticketing system]\n- Access [knowledge base]\n- Work in [language]\n- GDPR compliant\n\nProvide:\n- NLP pipeline architecture\n- Training data requirements\n- Model selection\n- Implementation phases\n- Success metrics\"",
+    "tags": [
+      "ai-ml",
+      "nlp",
+      "customer-service",
+      "automation",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "AI-Assisted Variance Analysis",
+    "prompt": "\"I just closed the month and need to explain budget vs. actual variances to my manager.\n\nData:\n- Budget: [amount or file]\n- Actual: [amount or file]\n- Key categories: [list]\n- Previous month: [for comparison]\n\nPlease help me:\n1. Identify the top 5 variances (positive and negative)\n2. Write 2-3 sentence explanations for each\n3. Flag which ones need action vs. which are noise\n4. Draft the email/update for my manager\n5. Suggest follow-up questions to ask the business\"",
+    "tags": [
+      "fp&a",
+      "variance-analysis",
+      "month-end",
+      "beginner",
+      "1-hour"
+    ],
+    "best_for": "First-time FP&A analysts, month-end close support",
+    "source": "Mike's F9 Finance \u2014 \"ChatGPT Just Replaced Hours of FP&A Work\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Automated Commentary Writing",
+    "prompt": "\"I need to write monthly financial commentary for [report/steerco].\n\nData available:\n- P&L summary\n- Key metrics (revenue, margin, opex)\n- Variance to budget and prior year\n- Business highlights\n\nPlease:\n1. Draft executive summary (3-4 bullets)\n2. Write narrative for each section\n3. Use professional but concise language\n4. Highlight red flags\n5. Suggest graphics/tables to include\"",
+    "tags": [
+      "fp&a",
+      "commentary",
+      "reporting",
+      "writing",
+      "1-hour"
+    ],
+    "best_for": "FP&A analysts spending hours writing commentary",
+    "source": "Mike's F9 Finance"
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "AI-Powered Forecasting Assistant",
+    "prompt": "\"I need to build/update a forecast with AI assistance.\n\nHistorical data:\n- [X] months of actuals\n- Seasonality patterns\n- Known one-off events\n\nCurrent forecast:\n- Budget: [amount]\n- Current projection: [amount]\n- Risk factors: [list]\n\nPlease help me:\n1. Analyze historical trends\n2. Identify seasonality and patterns\n3. Adjust for known events\n4. Generate 3 scenarios (base/upside/downside)\n5. Write the forecast narrative\n6. Create summary for leadership\n\nOutput in structured format with formulas if applicable.\"",
+    "tags": [
+      "fp&a",
+      "forecasting",
+      "scenario-planning",
+      "intermediate",
+      "half-day"
+    ],
+    "best_for": "Business controllers, FP&A managers doing rolling forecasts",
+    "source": "Inside FP&A \u2014 \"How AI is Changing FP&A\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Financial Modeling with AI",
+    "prompt": "\"I'm building a financial model for [purpose: M&A/new product/investment].\n\nRequirements:\n- 3-statement model (P&L, BS, CF)\n- 5-year projection\n- Sensitivity analysis\n- Key assumptions clearly documented\n\nCurrent stage: [blank template / partial model / needs review]\n\nPlease:\n1. Structure the model layout\n2. Build core formulas and drivers\n3. Create assumption tables\n4. Add sensitivity tables (\u00b110%, \u00b120%)\n5. Build summary dashboard\n6. Add error checks and validations\n7. Write documentation\n\nFormat: [Excel/Google Sheets]\n\nInclude:\n- Color coding scheme\n- Formula explanations\n- Circularity handling\n- Audit trail\"",
+    "tags": [
+      "fp&a",
+      "financial-modeling",
+      "excel",
+      "intermediate",
+      "half-day"
+    ],
+    "best_for": "FP&A managers, corporate development, investment analysts",
+    "source": "Mike's F9 Finance"
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Board Presentation Builder",
+    "prompt": "\"I need to create a board/executive presentation on [financial topic].\n\nAudience: [Board/CFO/CEO]\nTime: [X minutes]\nKey message: [one sentence]\nData available: [describe]\n\nPlease create:\n1. Story arc (beginning, middle, end)\n2. Slide-by-slide outline\n3. Key charts/visuals to include\n4. Speaker notes with timing\n5. Appendix with backup data\n6. Q&A preparation (anticipate 5 questions)\n\nMake it:\n- Executive-level (not operational)\n- Visual and scannable\n- Persuasive, not just informative\n- Action-oriented\"",
+    "tags": [
+      "fp&a",
+      "presentation",
+      "board",
+      "executive",
+      "storytelling",
+      "half-day"
+    ],
+    "best_for": "Directors and VPs presenting to C-suite",
+    "source": "Inside FP&A"
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "FP&A Process Automation",
+    "prompt": "\"I want to automate [specific FP&A process] that currently takes [X hours/week].\n\nCurrent process:\n1. [Manual step 1]\n2. [Manual step 2]\n3. [Manual step 3]\n\nInputs: [data sources]\nOutputs: [deliverables]\nFrequency: [monthly/weekly/ad-hoc]\n\nPlease design:\n1. Process map (as-is vs. to-be)\n2. Automation approach\n3. Tool selection (Excel macros/Python/Power Automate)\n4. Error handling\n5. Validation checks\n6. Documentation\n7. Change management plan\n\nFocus on:\n- Audit trail\n- Data integrity\n- Scalability\n- Maintainability\"",
+    "tags": [
+      "fp&a",
+      "automation",
+      "process-improvement",
+      "advanced",
+      "multi-week"
+    ],
+    "best_for": "Senior FP&A managers, finance transformation leads",
+    "source": "Mike's F9 Finance + Inside FP&A"
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "AI-Powered Financial Analysis Pipeline",
+    "prompt": "\"Build an AI-assisted financial analysis system for [company/department].\n\nScope:\n- Monthly variance analysis (automated commentary)\n- Rolling forecast updates\n- Scenario modeling\n- Executive summary generation\n- Ad-hoc analysis support\n\nData sources:\n- ERP: [system]\n- BI tool: [system]\n- Excel files: [describe]\n\nRequirements:\n- Automated commentary generation\n- Natural language queries (\"What drove revenue variance?\")\n- Anomaly detection\n- Trend identification\n- Predictive alerts\n\nProvide:\n- System architecture\n- Data pipeline design\n- AI model selection and training approach\n- Integration plan\n- Governance framework\n- ROI calculation\"",
+    "tags": [
+      "fp&a",
+      "ai-pipeline",
+      "automation",
+      "nlp",
+      "advanced",
+      "multi-month"
+    ],
+    "best_for": "Finance transformation teams, data-driven FP&A organizations",
+    "source": "Inside FP&A \u2014 \"How AI is Changing FP&A\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "EXPERT",
+    "skill_emoji": "\u26ab",
+    "title": "Enterprise FP&A Transformation",
+    "prompt": "\"Design an AI-enabled FP&A transformation for a [industry] company.\n\nCurrent state:\n- [X] FTEs in FP&A\n- Manual processes: [list]\n- Tools: [Excel/SAP/Oracle/etc.]\n- Cycle times: [describe]\n\nTarget state (3-5 years):\n- Automated forecasting\n- Self-service analytics\n- Real-time dashboards\n- AI-powered insights\n- Zero-based reporting\n\nPlease provide:\n1. Transformation roadmap (phases)\n2. Technology stack\n3. Organization design\n4. Skill development plan\n5. Change management approach\n6. Investment case (cost/benefit)\n7. Risk assessment\n8. Success metrics\n9. Vendor evaluation criteria\"",
+    "tags": [
+      "fp&a",
+      "transformation",
+      "strategy",
+      "enterprise",
+      "expert",
+      "multi-year"
+    ],
+    "best_for": "CFOs, VP Finance, Finance Directors leading transformation",
+    "source": "Inside FP&A"
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "AI-Powered Spreadsheet Analysis",
+    "prompt": "\"I have a spreadsheet with [describe data]. I need to analyze it using AI.\n\nPlease help me:\n1. Identify trends and patterns\n2. Highlight anomalies or outliers\n3. Create summary statistics\n4. Generate 3 key insights\n5. Suggest visualizations\n\nData context: [industry/business context]\nFormat: [Excel/Google Sheets]\n\nOutput as a structured analysis I can share.\"",
+    "tags": [
+      "excel",
+      "google-sheets",
+      "data-analysis",
+      "beginner",
+      "1-hour"
+    ],
+    "best_for": "Analysts new to AI-assisted spreadsheet work",
+    "source": "OpenAI \u2014 \"ChatGPT for Excel and Google Sheets\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Natural Language Excel Updates",
+    "prompt": "\"Update the worksheet tab called @[TAB NAME] with the latest [data type] using [data source].\n\nExample: 'Update the worksheet tab called @Balance Sheet - Q with the latest earnings print and transcript commentary using S&P Global'\n\nContext:\n- Workbook: [name]\n- Tab: [specific tab]\n- Data source: [S&P Global/Bloomberg/internal]\n- Time period: [Q1/Q2/etc.]\n\nPlease:\n1. Pull latest actuals and replace estimates\n2. Update column headers (E \u2192 A for actual)\n3. Add variance commentary\n4. Verify checks = PASS\n5. Log data sources\"",
+    "tags": [
+      "excel",
+      "financial-modeling",
+      "automation",
+      "beginner",
+      "fp&a"
+    ],
+    "best_for": "FP&A analysts doing quarterly updates",
+    "source": "OpenAI \u2014 \"ChatGPT for Excel and Google Sheets\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "AI-Assisted Financial Model Audit",
+    "prompt": "\"Audit my financial model for consistency and errors.\n\nModel details:\n- Purpose: [DCF/3-statement/budget]\n- Time horizon: [years]\n- Key assumptions: [list]\n- Check cells: [locations]\n\nPlease:\n1. Verify assumption consistency and sign\n2. Check formula links and circularities\n3. Validate check cells = 0 or PASS\n4. Identify broken links or #REF errors\n5. Flag unusual patterns (e.g., margins jumping 50%)\n6. Suggest improvements\n\nOutput: Audit report with severity ratings (Critical/Warning/Info)\"",
+    "tags": [
+      "excel",
+      "financial-modeling",
+      "audit",
+      "intermediate",
+      "fp&a",
+      "half-day"
+    ],
+    "best_for": "Senior analysts reviewing models before board submission",
+    "source": "OpenAI \u2014 \"ChatGPT for Excel and Google Sheets\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Power BI Model Optimization with AI",
+    "prompt": "\"Analyze my Power BI model and optimize it.\n\nCurrent state:\n- Tables: [X]\n- Measures: [X]\n- Size: [X MB]\n- Refresh time: [X minutes]\n\nPlease:\n1. Analyze naming conventions and suggest renames\n2. Add display folders to organize fields\n3. Hide foreign key columns (show only friendly names)\n4. Add descriptions to all measures and columns\n5. Create user hierarchies for drill-down\n6. Optimize data types for compression\n7. Generate complete documentation\n\nOutput: Step-by-step implementation guide with DAX code\"",
+    "tags": [
+      "powerbi",
+      "dax",
+      "data-modeling",
+      "intermediate",
+      "half-day"
+    ],
+    "best_for": "BI developers, data modelers",
+    "source": "Power BI Bro \u2014 \"Claude + Power BI Integration via MCP\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Create Calculation Table with Measures",
+    "prompt": "\"Create a new empty table to hold calculations, create an aggregate amount calc for every [category] value, create a net calc, and also create a comprehensive group of monthly time intelligence measures for all measures created. Remove/hide any placeholder fields in the new table.\"",
+    "tags": [
+      "powerbi",
+      "dax",
+      "measures",
+      "intermediate",
+      "quick-win"
+    ],
+    "best_for": "BI developers building semantic models",
+    "source": "Power BI Bro \u2014 \"Claude + Power BI Integration via MCP\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Cube Function Dashboard (Excel)",
+    "prompt": "\"I want to build a custom dashboard using Excel Cube functions instead of PivotTables.\n\nData model: [Power Pivot / SSAS / Power BI]\nMetrics needed: [list]\nLayout requirements: [custom spacing, narration, totals]\n\nPlease:\n1. Create CUBESET for each dimension (months, products, regions)\n2. Use CUBEMEMBER for row/column labels\n3. Use CUBEVALUE to pull calculated measures\n4. Add CUBERANKEDMEMBER for Top N rankings\n5. Apply conditional formatting with CUBEKPIMEMBER\n6. Build flexible layout (not PivotTable rigid)\n\nProvide: Complete formulas and layout guide\"",
+    "tags": [
+      "excel",
+      "cube-functions",
+      "cubedata",
+      "dashboard",
+      "intermediate",
+      "half-day"
+    ],
+    "best_for": "FP&A analysts building custom financial dashboards",
+    "source": "Finex Skills Hub \u2014 \"Master 6 Excel Cube Functions\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "AI-Powered BI Documentation Generator",
+    "prompt": "\"Generate a Markdown document (.md) that provides complete, professional documentation for the [Power BI Semantic Model / Excel Data Model], including a data dictionary.\n\nRequirements:\n- Use a simple mermaid diagram to illustrate table relationships\n- Document each measure including the DAX code and description of business logic\n- Use business-friendly names\n- Document data sources by analyzing the Power Query code\n- Include executive summary, table of contents, model diagrams\n- Add usage guidelines and reporting scenarios\n\nCurrent model: [describe or attach .pbix]\n\nOutput: Enterprise-grade documentation (~60 pages)\"",
+    "tags": [
+      "powerbi",
+      "documentation",
+      "data-dictionary",
+      "advanced",
+      "multi-day"
+    ],
+    "best_for": "BI teams, Center of Excellence leads",
+    "source": "Power BI Bro \u2014 \"Claude + Power BI Integration via MCP\""
+  },
+  {
+    "domain": "Business Intelligence",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Autonomous Workflow System",
+    "prompt": "\"I want to build [X] proactive AI workflows that run automatically.\n\nCurrent manual tasks:\n1. [Task 1 \u2014 frequency]\n2. [Task 2 \u2014 frequency]\n3. [Task 3 \u2014 frequency]\n\nRequirements:\n- Schedule-based execution (daily/weekly)\n- Email/rss/notification delivery\n- Self-directed (no manual kickoff)\n- Multi-agent coordination\n\nExample workflows to replicate:\n1. Morning briefing (industry news, competitor updates)\n2. Friday email recap (unresponded urgent emails ranked by urgency)\n3. Weekly financial summary (variance analysis auto-generated)\n4. Monday forecast update (rolling forecast refresh)\n\nProvide:\n- Architecture for 36+ workflows\n- Agent hierarchy design (master agents + sub-agents)\n- Scheduling framework\n- Integration approach (Claude Co-work / Codex / Cloud Code)\n- Monitoring and error handling\"",
+    "tags": [
+      "automation",
+      "workflows",
+      "agents",
+      "advanced",
+      "productivity",
+      "multi-week"
+    ],
+    "best_for": "AI power users, productivity hackers, executives",
+    "source": "Alli Miller (ex-Amazon AI leader) \u2014 \"Ex-Amazon AI Leader Interview\""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Task & Time Management",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Overwhelm Recovery",
+    "prompt": "\"I feel overwhelmed. I am [role] and struggle with [specific problem].\n\nPlease help me:\n1. Prioritize tasks using a simple framework\n2. Create a daily/weekly schedule template\n3. Suggest 3 focus habits\n4. Recommend tools for [Mac/Windows/Phone]\"",
+    "tags": [
+      "productivity",
+      "time-management",
+      "beginner-friendly",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Task & Time Management",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Personal Productivity System",
+    "prompt": "\"I want to build a personal productivity system.\n\nCurrent tools: [Notion/Obsidian/Todoist/etc.]\nWork style: [remote/hybrid/office]\nMain challenges: [context switching/meetings/deep work]\n\nPlease design:\n1. PARA-style organization\n2. Weekly review process\n3. Meeting notes template\n4. Project tracking dashboard\n5. Automation workflows\n\nOutput as a setup guide.\"",
+    "tags": [
+      "productivity",
+      "notion",
+      "obsidian",
+      "system-design",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Task & Time Management",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Automated Productivity System",
+    "prompt": "\"Build an automated personal productivity system that:\n\n1. Collects tasks from [email/Slack/calendar]\n2. Prioritizes with Eisenhower + AI scoring\n3. Schedules deep work blocks\n4. Tracks time automatically\n5. Generates weekly reports\n6. Integrates with [calendar/task manager]\n\nCurrent stack: [your tools]\nTechnical skills: [your level]\n\nProvide:\n- System architecture\n- Automation scripts\n- Data flow diagram\n- Customization options\"",
+    "tags": [
+      "automation",
+      "python",
+      "javascript",
+      "api-integration",
+      "multi-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Meetings & Communication",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Meeting Prep",
+    "prompt": "\"I have a meeting about [topic] with [who].\n\nPlease help me:\n1. Create an agenda\n2. Suggest 5 key questions\n3. Draft a follow-up email template\n4. Create an action items tracker\"",
+    "tags": [
+      "meetings",
+      "preparation",
+      "templates",
+      "15-minutes"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Meetings & Communication",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Meeting Effectiveness",
+    "prompt": "\"I attend [X] meetings/week and feel they're unproductive.\n\nPlease help me create:\n1. Meeting criteria checklist\n2. Agenda templates by type\n3. Note-taking framework\n4. Decision log template\n5. Follow-up automation\n\nFocus on reducing time while improving outcomes.\"",
+    "tags": [
+      "meetings",
+      "efficiency",
+      "templates",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Meetings & Communication",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Meeting Intelligence System",
+    "prompt": "\"Build a meeting intelligence system that:\n\n1. Transcribes from [Zoom/Teams/Meet]\n2. Extracts action items automatically\n3. Identifies decisions\n4. Tracks topic trends\n5. Suggests follow-up agendas\n6. Integrates with [project tool]\n\nRequirements:\n- Privacy-compliant\n- Multi-language\n- Speaker identification\n- Export formats\n\nProvide:\n- Architecture with local Whisper + LLM\n- Processing pipeline code\n- UI mockups\n- Deployment instructions\"",
+    "tags": [
+      "ai",
+      "transcription",
+      "automation",
+      "privacy",
+      "multi-week"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Learning & Development",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "30-Day Learning Plan",
+    "prompt": "\"I want to learn [skill]. I'm a beginner with [X hours]/week.\n\nPlease create:\n1. A 30-day learning plan\n2. Free/cheap resources\n3. Simple practice projects\n4. Progress tracking template\n5. Milestones to celebrate\"",
+    "tags": [
+      "learning",
+      "career-development",
+      "beginner",
+      "self-paced"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Learning & Development",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Career Development Plan",
+    "prompt": "\"I need to build expertise in [AI/data/leadership] for career progression.\n\nCurrent level: [describe]\nTarget role: [describe]\nTimeframe: [X months]\nBudget: [X hours/week, $X]\n\nPlease design:\n1. Competency map\n2. Learning path with milestones\n3. Project-based practice\n4. Accountability system\n5. Portfolio strategy\n6. Network building plan\n\nOutput as a career development plan.\"",
+    "tags": [
+      "career",
+      "upskilling",
+      "planning",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "UI/UX Design",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Page Layout Help",
+    "prompt": "\"I need to design a [dashboard/form/page] for [purpose].\n\nUsers: [who]\nKey actions: [list]\n\nPlease:\n1. Suggest a layout\n2. Recommend color scheme\n3. List essential elements\n4. Point out common mistakes\n5. Suggest tools (free/low-cost)\"",
+    "tags": [
+      "ui-design",
+      "layout",
+      "beginner",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "UI/UX Design",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Full App Design",
+    "prompt": "\"Design a [web app/dashboard/mobile app] for [use case].\n\nRequirements:\n- User types: [list]\n- Key features: [list]\n- Must integrate with: [systems]\n- Brand guidelines: [describe]\n\nPlease provide:\n1. User flow diagrams\n2. Wireframe descriptions\n3. Component specs\n4. Responsive considerations\n5. Accessibility requirements\n6. Design system recommendations\n\nOutput as structured documentation.\"",
+    "tags": [
+      "ux-design",
+      "wireframes",
+      "design-system",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "UI/UX Design",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Design System Build",
+    "prompt": "\"Build a design system and component library for [product].\n\nRequirements:\n- Figma/Sketch components\n- Design tokens (colors, typography, spacing)\n- WCAG 2.1 AA compliance\n- Dark/light mode\n- Multi-language\n- Mobile-first\n\nTechnical:\n- React/Vue/Angular components\n- Storybook documentation\n- Automated testing\n- Version control\n\nProvide:\n- Component architecture\n- Token structure\n- Code examples\n- Documentation template\n- Governance process\"",
+    "tags": [
+      "design-system",
+      "components",
+      "accessibility",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "Data Visualization",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Chart Selection Help",
+    "prompt": "\"I need to create charts for [report/presentation]. Data is about [topic].\n\nPlease help me:\n1. Choose the right chart types\n2. Describe how to make them clear\n3. Suggest color scheme\n4. List labels/annotations to add\n5. Recommend tools (Excel/Google Sheets/etc.)\"",
+    "tags": [
+      "data-viz",
+      "charts",
+      "beginner",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "Data Visualization",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Dashboard Design",
+    "prompt": "\"Design a dashboard for [department] tracking [KPIs].\n\nKPIs: [list]\nUpdate frequency: [real-time/daily/weekly]\nUsers: [roles]\nDevice: [desktop/tablet/mobile]\n\nPlease create:\n1. Dashboard layout with sections\n2. Chart type recommendations\n3. Interaction design (filters, drill-down)\n4. Alert/notification design\n5. Mobile adaptation strategy\n\nOutput as wireframe descriptions + specs.\"",
+    "tags": [
+      "dashboard",
+      "data-viz",
+      "kpi",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "Data Visualization",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Real-Time Analytics Dashboard",
+    "prompt": "\"Build a real-time analytics dashboard using [React/Vue] + [D3/Chart.js].\n\nData sources:\n- [API]\n- [Database]\n- [IoT sensors]\n\nRequirements:\n- Sub-second updates\n- Handle [X] concurrent users\n- Custom visualizations\n- Export capabilities\n- Role-based access\n\nProvide:\n- Frontend architecture\n- Data pipeline design\n- State management\n- Performance optimization\n- Testing strategy\"",
+    "tags": [
+      "dashboard",
+      "real-time",
+      "frontend",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "Content & Branding",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Social Media Post",
+    "prompt": "\"I need to create [X] social media posts about [topic].\n\nPlatform: [LinkedIn/Twitter/Instagram]\nTone: [professional/casual/funny]\nAudience: [describe]\n\nPlease:\n1. Draft [X] posts\n2. Suggest hashtags\n3. Recommend images/graphics\n4. Create a posting schedule\"",
+    "tags": [
+      "content",
+      "social-media",
+      "marketing",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "Content & Branding",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Content Strategy",
+    "prompt": "\"I need a content strategy for [company/product] targeting [audience].\n\nCurrent state:\n- Platforms: [list]\n- Posting frequency: [describe]\n- Engagement: [metrics]\n\nGoals:\n- [Brand awareness/leads/community/etc.]\n\nPlease create:\n1. Content pillars/themes\n2. Editorial calendar template\n3. Content mix (educational/promotional/engaging)\n4. Repurposing strategy\n5. Success metrics\n\nOutput as a strategy document.\"",
+    "tags": [
+      "content-strategy",
+      "marketing",
+      "editorial",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Design & Creative",
+    "section": "Content & Branding",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "AI Content Engine",
+    "prompt": "\"Build an AI-powered content generation system for [company].\n\nRequirements:\n- Generate blog posts, social posts, emails\n- Maintain brand voice consistency\n- SEO optimization\n- Multi-language support\n- A/B testing headlines\n- Content calendar automation\n\nIntegration:\n- CMS: [WordPress/Webflow/etc.]\n- Analytics: [Google Analytics/etc.]\n- Social schedulers: [Buffer/Hootsuite/etc.]\n\nProvide:\n- Content generation pipeline\n- Brand voice training approach\n- Quality control process\n- Automation workflows\n- Performance tracking\"",
+    "tags": [
+      "ai-content",
+      "marketing-automation",
+      "seo",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "Automation & Scripting",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Repetitive Task Elimination",
+    "prompt": "\"I do repetitive [data entry/reporting/formatting] using [Excel/manual work].\n\nTask: [describe step by step]\nTime: [X hours/week]\n\nPlease help me:\n1. Identify if this can be automated\n2. Suggest the easiest approach\n3. Provide step-by-step instructions\n4. Write simple formulas/scripts\n5. Teach me how to maintain it\"",
+    "tags": [
+      "automation",
+      "excel",
+      "beginner",
+      "quick-win",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "Automation & Scripting",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Python Automation",
+    "prompt": "\"I want to automate [process] using Python.\n\nCurrent process:\n1. [Step 1]\n2. [Step 2]\n3. [Step 3]\n\nInputs: [file types, locations]\nOutputs: [what you need]\nFrequency: [daily/weekly/monthly]\n\nRequirements:\n- Run on [Windows/Mac/Server]\n- Error handling\n- Notifications\n- Logging\n- Easy to modify\n\nPlease provide:\n1. Python script with comments\n2. Setup instructions\n3. Error handling\n4. Scheduling (cron/Task Scheduler)\n5. Documentation template\"",
+    "tags": [
+      "python",
+      "automation",
+      "scripting",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "Automation & Scripting",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Automation Platform",
+    "prompt": "\"Build a production-grade automation platform for [department].\n\nUse cases:\n- [List 3-5]\n\nRequirements:\n- Microservices architecture\n- Event-driven processing\n- Error handling + retry\n- Monitoring and alerting\n- Audit trail\n- Scalable to [X] jobs/day\n\nTech preferences:\n- Language: [Python/Node/Go]\n- Infrastructure: [AWS/Azure/on-prem]\n- Orchestration: [Airflow/Prefect/custom]\n\nProvide:\n- System architecture\n- Core service code\n- Database schema\n- Deployment pipeline\n- Monitoring setup\n- Disaster recovery\"",
+    "tags": [
+      "platform",
+      "microservices",
+      "devops",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "Data Engineering",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Data Cleaning",
+    "prompt": "\"I have [Excel/CSV] data that I need to clean and analyze.\n\nData description: [columns, size]\nProblems: [duplicates, missing values, format issues]\nGoal: [analysis/report]\n\nPlease:\n1. Write Python/Pandas code to clean it\n2. Show me how to explore the data\n3. Create basic visualizations\n4. Export clean data\"",
+    "tags": [
+      "data-engineering",
+      "python",
+      "pandas",
+      "beginner",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "Data Engineering",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Data Pipeline",
+    "prompt": "\"Design a data pipeline for [use case].\n\nSources:\n- [ERP/SAP/Salesforce]\n- [CRM data]\n- [External data]\n\nRequirements:\n- Daily refresh\n- Historical tracking\n- Data quality checks\n- Access for [X] users\n- Budget: [range]\n\nPlease provide:\n1. Pipeline architecture\n2. ETL/ELT approach\n3. Data model design\n4. Quality checks\n5. Documentation standards\n6. Tool recommendations\"",
+    "tags": [
+      "data-pipeline",
+      "etl",
+      "data-modeling",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "Data Engineering",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Modern Data Platform",
+    "prompt": "\"Build a modern data platform.\n\nScale:\n- [X] TB data\n- [X] sources\n- [X] users\n- [X] queries/day\n\nRequirements:\n- Real-time and batch processing\n- Data catalog\n- Lineage tracking\n- Quality monitoring\n- Cost optimization\n- GDPR compliance\n- Self-service analytics\n\nTech preferences: [open to suggestions]\n\nProvide:\n- Platform architecture\n- Component selection\n- Implementation phases\n- Team structure\n- Cost estimates\n- Migration strategy\"",
+    "tags": [
+      "data-platform",
+      "architecture",
+      "multi-week",
+      "enterprise"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "AI/ML Applications",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "AI Feasibility Check",
+    "prompt": "\"I want to use AI to help with [specific task].\n\nWhat I have:\n- [Data description]\n- [Problem description]\n- [Current process]\n\nPlease:\n1. Explain if AI is appropriate\n2. Suggest the simplest approach\n3. List what data I need\n4. Recommend tools (no-code/low-code)\n5. Estimate effort and accuracy\"",
+    "tags": [
+      "ai",
+      "feasibility",
+      "beginner",
+      "consulting",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "AI/ML Applications",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "ML Model Build",
+    "prompt": "\"Build an ML model for [demand forecasting/churn/etc.].\n\nData:\n- Historical data: [time range, granularity]\n- Features: [list]\n- Target: [what to predict]\n\nRequirements:\n- Retrain monthly\n- Explain predictions\n- Confidence intervals\n- Deploy to [environment]\n- Monitor drift\n\nPlease provide:\n1. Data preparation pipeline\n2. Model selection and training\n3. Evaluation framework\n4. Deployment approach\n5. Monitoring setup\n6. Business metrics\"",
+    "tags": [
+      "machine-learning",
+      "modeling",
+      "deployment",
+      "half-day-to-week"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Software Development",
+    "section": "AI/ML Applications",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Enterprise ML Platform",
+    "prompt": "\"Design an enterprise AI/ML platform.\n\nUse cases across departments:\n- Demand forecasting\n- Customer segmentation\n- Predictive maintenance\n- Quality control\n- Pricing optimization\n\nRequirements:\n- MLOps lifecycle\n- Feature store\n- Experiment tracking\n- Model registry\n- A/B testing\n- Monitoring\n- Governance\n- Multi-cloud\n\nProvide:\n- Platform architecture\n- Component selection\n- Implementation roadmap\n- Team and skills needed\n- Cost model\n- Success metrics\"",
+    "tags": [
+      "mlops",
+      "enterprise",
+      "platform",
+      "multi-month",
+      "production"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Market Research",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Quick Market Scan",
+    "prompt": "\"I need a quick overview of [market/industry].\n\nPlease:\n1. List top 5 players\n2. Describe market size and growth\n3. Identify key trends\n4. Note any recent news/developments\n5. Suggest 3 sources to read deeper\"",
+    "tags": [
+      "market-research",
+      "overview",
+      "quick-scan",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Market Research",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Deep Dive Report",
+    "prompt": "\"I need a comprehensive market analysis of [industry] for [purpose].\n\nFocus areas:\n- Market size and forecast\n- Competitive landscape\n- Customer segments\n- Technology trends\n- Regulatory environment\n- Entry barriers\n\nPlease create:\n1. Executive summary\n2. Market structure analysis\n3. Competitor profiles (top 5)\n4. Trend analysis\n5. Opportunity assessment\n6. Risk factors\n7. Recommendations\n\nOutput as a professional report.\"",
+    "tags": [
+      "market-research",
+      "report",
+      "strategy",
+      "half-day-to-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Competitive Intelligence",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Competitor Profile",
+    "prompt": "\"Create a detailed profile of [competitor company].\n\nInclude:\n1. Company overview (size, history, ownership)\n2. Product/service portfolio\n3. Pricing strategy\n4. Market position\n5. Strengths and weaknesses\n6. Recent strategic moves\n7. Financial health (if public)\n8. Threat level to us\n\nFormat as an intelligence brief.\"",
+    "tags": [
+      "competitive-intel",
+      "profiling",
+      "strategy",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Competitive Intelligence",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Competitive Monitoring System",
+    "prompt": "\"Build an automated competitive intelligence system that tracks:\n\n1. Competitor website changes\n2. Pricing updates\n3. New product launches\n4. Job postings (hiring signals)\n5. Patent filings\n6. Social media sentiment\n7. Review trends\n\nAlerts:\n- Daily digest for minor changes\n- Immediate alert for major changes\n\nDeliverables:\n- Weekly competitive brief\n- Monthly strategic assessment\n- Quarterly trend report\n\nProvide:\n- Data sources and APIs\n- Scraping infrastructure\n- Analysis pipeline\n- Alert system\n- Report templates\"",
+    "tags": [
+      "competitive-intel",
+      "automation",
+      "monitoring",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Documentation",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Process Documentation",
+    "prompt": "\"I need to document how to [task/process].\n\nAudience: [new hires/team/customers]\nCurrent knowledge: [tribal/exists in heads]\n\nPlease help me:\n1. Create a step-by-step guide\n2. Add screenshots/checkpoints\n3. Include troubleshooting section\n4. Make it scannable (bullet points)\n5. Suggest where to store it\"",
+    "tags": [
+      "documentation",
+      "process",
+      "knowledge-management",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Documentation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Technical Documentation",
+    "prompt": "\"I need technical documentation for [system/feature].\n\nAudience: [developers/users/administrators]\nCurrent state: [no docs/outdated/fragmented]\n\nPlease create:\n1. Overview and architecture\n2. Setup/installation guide\n3. API reference (if applicable)\n4. Usage examples\n5. Troubleshooting guide\n6. FAQ\n7. Changelog template\n\nFormat: [Markdown/Confluence/Notion]\"",
+    "tags": [
+      "technical-writing",
+      "documentation",
+      "developer-experience",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Documentation",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Documentation Platform",
+    "prompt": "\"Design a documentation strategy and platform for [company/product].\n\nCurrent state:\n- [Scattered/outdated/non-existent]\n- Tools: [if any]\n\nRequirements:\n- Version control\n- Search functionality\n- Multi-format output (web/PDF)\n- Contribution workflow\n- Review process\n- Analytics (what's read, what's not)\n- Integration with support tickets\n\nPlease provide:\n- Information architecture\n- Tool selection and setup\n- Writing standards/style guide\n- Maintenance process\n- Migration plan (if needed)\"",
+    "tags": [
+      "documentation",
+      "platform",
+      "knowledge-management",
+      "multi-week"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Presentations",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Slide Content",
+    "prompt": "\"I need to create a presentation about [topic] for [audience].\n\nDuration: [X minutes]\nKey message: [one sentence]\nData: [what you have]\n\nPlease:\n1. Create an outline (title + 3-5 sections)\n2. Write speaker notes\n3. Suggest visuals/charts\n4. Recommend slide count\n5. Provide opening and closing statements\"",
+    "tags": [
+      "presentation",
+      "slides",
+      "storytelling",
+      "1-hour"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Presentations",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Presentation Design",
+    "prompt": "\"Design a compelling presentation for [purpose].\n\nContext:\n- Audience: [describe]\n- Stake in outcome: [what they care about]\n- Time: [X minutes]\n- Format: [in-person/remote]\n\nPlease create:\n1. Narrative arc (beginning, middle, end)\n2. Slide-by-slide storyboard\n3. Data visualization recommendations\n4. Speaker notes with timing\n5. Q&A preparation (anticipate 5 questions)\n6. Handout design\n\nMake it persuasive, not just informative.\"",
+    "tags": [
+      "presentation",
+      "design",
+      "storytelling",
+      "persuasion",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Presentations",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Automated Presentation Generation",
+    "prompt": "\"Build a system that generates presentations from [data source].\n\nRequirements:\n- Pull data from [database/API/spreadsheet]\n- Auto-generate charts and visuals\n- Apply brand template\n- Create narrative from data insights\n- Export to PowerPoint/Google Slides\n- Schedule automatic updates\n\nUse cases:\n- Monthly board reports\n- Weekly sales updates\n- Quarterly business reviews\n\nProvide:\n- System architecture\n- Template design system\n- Data-to-slide mapping\n- Automation pipeline\n- Quality checks\"",
+    "tags": [
+      "presentation",
+      "automation",
+      "data-to-slides",
+      "multi-week",
+      "production"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Email & Communication",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udd34",
+    "title": "Email Templates",
+    "prompt": "\"I need email templates for [situation].\n\nPlease create:\n1. Initial outreach\n2. Follow-up after no response\n3. Meeting request\n4. Thank you after meeting\n5. Status update\n\nTone: [professional/friendly/urgent]\nKeep them short and actionable.\"",
+    "tags": [
+      "email",
+      "templates",
+      "communication",
+      "30-minutes"
+    ],
+    "best_for": "",
+    "source": ""
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Email & Communication",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Communication Strategy",
+    "prompt": "\"I need to communicate [change/decision/update] to [audience].\n\nContext:\n- What's changing: [describe]\n- Why: [reason]\n- Impact: [who's affected and how]\n- Timeline: [when]\n- Concerns: [what people will worry about]\n\nPlease help me:\n1. Craft the core message\n2. Create an FAQ (10 questions)\n3. Design a communication timeline\n4. Write for different channels (email, meeting, doc)\n5. Plan for feedback and resistance\n6. Create a feedback loop\"",
+    "tags": [
+      "communication",
+      "change-management",
+      "strategy",
+      "half-day"
+    ],
+    "best_for": "",
+    "source": ""
+  }
+]
