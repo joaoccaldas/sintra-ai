@@ -252,6 +252,127 @@ button { font-family: inherit; cursor: pointer; }
   word-break: break-word;
 }
 
+/* Rendered AI sample output — looks like a real model reply */
+.sample-output {
+  background: linear-gradient(180deg, rgba(159,140,255,0.04), rgba(159,140,255,0.01));
+  border: 1px solid var(--hairline);
+  border-left: 2px solid var(--violet);
+  border-radius: 6px;
+  padding: 22px 24px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--fg-1);
+}
+.sample-output p {
+  margin: 0 0 12px;
+}
+.sample-output p:last-child {
+  margin-bottom: 0;
+}
+.sample-output strong {
+  font-weight: 600;
+  color: var(--fg-1);
+}
+.sample-output em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--fg-1);
+}
+.sample-output h1,
+.sample-output h2,
+.sample-output h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--fg-1);
+  margin: 16px 0 8px;
+  line-height: 1.2;
+}
+.sample-output h1 { font-size: 22px; }
+.sample-output h2 { font-size: 18px; }
+.sample-output h3 { font-size: 16px; }
+.sample-output ul,
+.sample-output ol {
+  margin: 0 0 12px;
+  padding-left: 24px;
+}
+.sample-output li {
+  margin-bottom: 4px;
+  color: var(--fg-2);
+}
+.sample-output li strong {
+  color: var(--fg-1);
+}
+.sample-output code {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--cyan-ice);
+  background: rgba(143, 227, 210, 0.08);
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: 1px solid rgba(143, 227, 210, 0.15);
+}
+.sample-output pre {
+  background: var(--void);
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin: 8px 0 14px;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.sample-output pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--cyan-ice);
+  font-size: 12.5px;
+}
+.sample-output table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 14px;
+  font-size: 13px;
+}
+.sample-output th {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-3);
+  font-weight: 500;
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--hairline);
+}
+.sample-output td {
+  padding: 8px 10px;
+  color: var(--fg-2);
+  border-bottom: 1px solid rgba(42, 47, 74, 0.5);
+}
+.sample-output td:first-child {
+  color: var(--fg-1);
+}
+.sample-output blockquote {
+  border-left: 2px solid var(--violet);
+  padding: 4px 16px;
+  margin: 8px 0 14px;
+  color: var(--fg-2);
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-size: 16px;
+}
+.sample-output a {
+  color: var(--violet-bright);
+  text-decoration: underline;
+  text-decoration-color: rgba(182, 166, 255, 0.3);
+}
+.sample-output hr {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 16px 0;
+}
+
 .disc-card {
   position: relative;
   padding: 32px 28px 28px;

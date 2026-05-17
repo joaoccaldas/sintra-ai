@@ -16,6 +16,20 @@ export type Difficulty =
   | "advanced"
   | "expert";
 
+export type OutputKind =
+  | "analysis"
+  | "code"
+  | "visual"
+  | "spec"
+  | "templates"
+  | "table"
+  | "deck"
+  | "plan";
+
+export interface PromptInput {
+  label: string;
+}
+
 export interface UseCase {
   id: number;
   title: string;
@@ -25,6 +39,14 @@ export interface UseCase {
   tags: string[];
   prompt: string;
   source?: string;
+
+  // Enriched fields
+  outcome: string;
+  inputs: PromptInput[];
+  tools: string[];
+  est_time: string;
+  output_kind: OutputKind;
+  sample_output: string;
 }
 
 const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
@@ -39,12 +61,18 @@ const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
 export const USE_CASES: UseCase[] = (rawData as any[]).map((item, idx) => ({
   id: idx + 1,
   title: item.title,
-  desc: item.best_for,
+  desc: item.best_for || item.outcome || "",
   category: DOMAIN_MAP[item.domain] ?? "operations",
   difficulty: (item.skill_level as string).toLowerCase() as UseCase["difficulty"],
   tags: (item.tags as string[]).slice(0, 4),
   prompt: item.prompt,
   source: item.source,
+  outcome: item.outcome || "",
+  inputs: item.inputs || [],
+  tools: item.tools || [],
+  est_time: item.est_time || "",
+  output_kind: (item.output_kind as OutputKind) || "analysis",
+  sample_output: item.sample_output || "",
 }));
 
 export const CATEGORIES: { id: Category; label: string }[] = [
