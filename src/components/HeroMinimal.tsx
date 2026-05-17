@@ -2,8 +2,9 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import dynamic from "next/dynamic";
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const Tesseract3D = dynamic(() => import("./Tesseract3D"), { ssr: false });
 
 interface Props {
   total: number;
@@ -40,17 +41,11 @@ export default function HeroMinimal({ total }: Props) {
         style={{ scale: orbitScale, opacity: orbitOpacity }}
         className="absolute inset-0 flex items-center justify-center pointer-events-none"
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={`${BASE_PATH}/hero-orb.png`}
-          alt=""
-          className="animate-hero-float"
-          style={{
-            width: "clamp(320px, 62vw, 680px)",
-            height: "auto",
-            filter: "drop-shadow(0 0 80px rgba(94,234,212,0.28)) drop-shadow(0 0 32px rgba(159,140,255,0.22))",
-          }}
-        />
+        <div
+          style={{ width: "clamp(320px, 62vw, 620px)", height: "clamp(320px, 62vw, 620px)" }}
+        >
+          <Tesseract3D />
+        </div>
       </motion.div>
 
       {/* ── Radial vignette so text stays readable ───────────────────── */}
@@ -94,7 +89,7 @@ export default function HeroMinimal({ total }: Props) {
           custom={1} variants={line} initial="hidden" animate="show"
           className="font-serif font-light text-[clamp(44px,7.5vw,108px)] leading-[1.02] tracking-[-0.025em] text-fg-1 mb-6"
         >
-          Think with{" "}
+          libr
           <em
             className="italic"
             style={{
@@ -105,8 +100,9 @@ export default function HeroMinimal({ total }: Props) {
               filter: "drop-shadow(0 0 48px rgba(159,140,255,0.35))",
             }}
           >
-            a machine.
+            AI
           </em>
+          ry
         </motion.h1>
 
         <motion.p
