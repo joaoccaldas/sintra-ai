@@ -13,6 +13,7 @@ import { BASE_PATH } from "@/lib/data";
 const LINKS = [
   { href: "#explore",                      label: "Explore" },
   { href: `${BASE_PATH}/google-ai-tools/`, label: "Google AI Tools", external: true },
+  { href: `${BASE_PATH}/concepts/`,        label: "Concepts",         external: true },
 ];
 
 export default function Header({ total }: Props) {
