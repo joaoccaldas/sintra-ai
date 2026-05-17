@@ -47,7 +47,48 @@ export interface UseCase {
   est_time: string;
   output_kind: OutputKind;
   sample_output: string;
+  best_llm: string;
+  llm_reason: string;
 }
+
+const LLM_MAP: Record<string, Record<string, { model: string; reason: string }>> = {
+  marketing: {
+    beginner:     { model: "Claude Haiku 3.5",  reason: "Fast, fluent copy generation for everyday tasks" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "Superior tone control and long-form writing quality" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Best-in-class writing with deep contextual nuance" },
+    expert:       { model: "Claude Opus 4",     reason: "Campaign-level strategic thinking plus brilliant prose" },
+  },
+  engineering: {
+    beginner:     { model: "Claude Haiku 3.5",  reason: "Quick snippets and boilerplate at low cost" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "#1 on SWE-bench; precise multi-file reasoning" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Leads coding benchmarks for complex refactors" },
+    expert:       { model: "Claude Opus 4",     reason: "Deepest architectural reasoning for system design" },
+  },
+  operations: {
+    beginner:     { model: "GPT-4o",            reason: "Strong structured data and spreadsheet reasoning" },
+    intermediate: { model: "GPT-4o",            reason: "Excellent tabular logic and process structuring" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Long context for multi-document process analysis" },
+    expert:       { model: "Claude Opus 4",     reason: "Complex cross-functional planning and trade-offs" },
+  },
+  research: {
+    beginner:     { model: "Perplexity",        reason: "Real-time web synthesis for quick research tasks" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "200k context; excels at multi-source synthesis" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Deep literature synthesis with citation precision" },
+    expert:       { model: "Claude Opus 4",     reason: "Most rigorous reasoning for complex research" },
+  },
+  design: {
+    beginner:     { model: "GPT-4o",            reason: "Multimodal; quick visual feedback and critique" },
+    intermediate: { model: "GPT-4o",            reason: "Best visual reasoning for design review and specs" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Precise token and spec language for design systems" },
+    expert:       { model: "Claude Opus 4",     reason: "Deep brand strategy and design system architecture" },
+  },
+  leadership: {
+    beginner:     { model: "Claude 3.5 Sonnet", reason: "Clear, polished executive communication" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "Persuasive memos and nuanced stakeholder framing" },
+    advanced:     { model: "Claude Opus 4",     reason: "Nuanced judgment for organizational decisions" },
+    expert:       { model: "Claude Opus 4",     reason: "Strategic depth for C-suite communications" },
+  },
+};
 
 const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
   "Business Intelligence":   "operations",
@@ -58,22 +99,29 @@ const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
   "Communication & Writing": "marketing",
 };
 
-export const USE_CASES: UseCase[] = (rawData as any[]).map((item, idx) => ({
-  id: idx + 1,
-  title: item.title,
-  desc: item.best_for || item.outcome || "",
-  category: DOMAIN_MAP[item.domain] ?? "operations",
-  difficulty: (item.skill_level as string).toLowerCase() as UseCase["difficulty"],
-  tags: (item.tags as string[]).slice(0, 4),
-  prompt: item.prompt,
-  source: item.source,
-  outcome: item.outcome || "",
-  inputs: item.inputs || [],
-  tools: item.tools || [],
-  est_time: item.est_time || "",
-  output_kind: (item.output_kind as OutputKind) || "analysis",
-  sample_output: item.sample_output || "",
-}));
+export const USE_CASES: UseCase[] = (rawData as any[]).map((item, idx) => {
+  const cat   = DOMAIN_MAP[item.domain] ?? "operations";
+  const skill = (item.skill_level as string).toLowerCase();
+  const llmRec = LLM_MAP[cat]?.[skill] ?? { model: "Claude 3.5 Sonnet", reason: "Best overall balance of capability and speed" };
+  return {
+    id: idx + 1,
+    title: item.title,
+    desc: item.best_for || item.outcome || "",
+    category: cat,
+    difficulty: skill as UseCase["difficulty"],
+    tags: (item.tags as string[]).slice(0, 4),
+    prompt: item.prompt,
+    source: item.source,
+    outcome: item.outcome || "",
+    inputs: item.inputs || [],
+    tools: item.tools || [],
+    est_time: item.est_time || "",
+    output_kind: (item.output_kind as OutputKind) || "analysis",
+    sample_output: item.sample_output || "",
+    best_llm:   item.best_llm   ?? llmRec.model,
+    llm_reason: item.llm_reason ?? llmRec.reason,
+  };
+});
 
 export const CATEGORIES: { id: Category; label: string }[] = [
   { id: "all",         label: "All" },

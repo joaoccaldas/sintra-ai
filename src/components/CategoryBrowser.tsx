@@ -3,10 +3,13 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import dynamic from "next/dynamic";
 import { USE_CASES, UseCase, DISC_COUNTS } from "@/lib/data";
-import CategoryCarousel3D, { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
+import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
+
+const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
 
 const CARD_VARIANTS = {
   hidden: { opacity: 0, y: 20, scale: 0.96 },
@@ -37,6 +40,12 @@ export default function CategoryBrowser() {
 
   return (
     <section id="explore" className="relative bg-void overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      >
       {/* 3D Carousel */}
       <div className="relative h-[56vh] min-h-[360px] max-h-[520px] w-full">
         <CategoryCarousel3D selectedIndex={selectedIdx} onSelect={setSelectedIdx} />
@@ -103,6 +112,7 @@ export default function CategoryBrowser() {
           ))}
         </div>
       </div>
+      </motion.div>
 
       {/* Cases grid */}
       <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-12 md:py-16">

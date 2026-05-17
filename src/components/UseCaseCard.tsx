@@ -83,6 +83,12 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
 
       {/* Meta row: output kind · tools */}
       <div className="flex items-center gap-2 flex-wrap font-mono text-[10px] text-fg-3 tracking-[0.04em]">
+        {/* LLM recommendation */}
+        <span className="inline-flex items-center gap-1 font-mono text-[10px] text-fg-4 bg-violet/[0.07] border border-violet/[0.18] rounded px-1.5 py-0.5 whitespace-nowrap">
+          <span className="text-violet-bright">⬡</span>
+          {item.best_llm}
+        </span>
+        <span className="text-fg-4">·</span>
         <span className="inline-flex items-center gap-1.5 text-violet-bright">
           <OutputKindIcon kind={item.output_kind} size={13} />
           {outputKindLabel(item.output_kind)}
