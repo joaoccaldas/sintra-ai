@@ -7,6 +7,8 @@ import rawData from "@/data/useCases.json";
 
 const Tesseract3D = dynamic(() => import("@/components/Tesseract3D"), { ssr: false });
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 // ── Types ──────────────────────────────────────────────────────────────────────
 
 type Category = "all" | "marketing" | "engineering" | "operations" | "research" | "design" | "leadership";
@@ -172,7 +174,7 @@ function HeroSection({ total, onEnter }: { total: number; onEnter: () => void })
       {/* Background hero image */}
       <div aria-hidden="true" style={{
         position: "absolute", inset: 0,
-        backgroundImage: "url('/tesseract-hero.png')",
+        backgroundImage: `url('${BASE}/tesseract-hero.png')`,
         backgroundPosition: "center 35%",
         backgroundSize: "cover",
         transform: "scale(1.06)",
