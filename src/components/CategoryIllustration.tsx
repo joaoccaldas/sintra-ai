@@ -182,12 +182,14 @@ function Leadership({ color, active }: IllustrationProps) {
 }
 
 const MAP: Record<string, (p: IllustrationProps) => JSX.Element> = {
-  marketing: Marketing,
-  engineering: Engineering,
-  operations: Operations,
-  research: Research,
-  design: Design,
-  leadership: Leadership,
+  "quick-wins":    Research,     // magnifying glass = quick lookup
+  "productivity":  Operations,   // pipeline = workflow
+  "writing":       Marketing,    // megaphone = communication
+  "research":      Research,     // magnifying glass + chart
+  "data-finance":  Operations,   // process flow = financial pipeline
+  "coding":        Engineering,  // code terminal
+  "creative-ai":   Design,       // pen + bezier
+  "game-advanced": Leadership,   // network hub = complex systems
 };
 
 interface Props {

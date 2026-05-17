@@ -2,12 +2,14 @@ import rawData from "@/data/useCases.json";
 
 export type Category =
   | "all"
-  | "marketing"
-  | "engineering"
-  | "operations"
+  | "quick-wins"
+  | "productivity"
+  | "writing"
   | "research"
-  | "design"
-  | "leadership";
+  | "data-finance"
+  | "coding"
+  | "creative-ai"
+  | "game-advanced";
 
 export type Difficulty =
   | "all"
@@ -52,55 +54,70 @@ export interface UseCase {
 }
 
 const LLM_MAP: Record<string, Record<string, { model: string; reason: string }>> = {
-  marketing: {
+  "quick-wins": {
+    beginner:     { model: "Claude Haiku 3.5",  reason: "Instant responses for simple, high-frequency tasks" },
+    intermediate: { model: "Claude Haiku 3.5",  reason: "Fast and cost-effective for everyday productivity" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "More nuance for complex quick-win workflows" },
+    expert:       { model: "Claude 3.5 Sonnet", reason: "Full context handling for multi-step daily tasks" },
+  },
+  "productivity": {
+    beginner:     { model: "Claude Haiku 3.5",  reason: "Snappy responses for note-taking and scheduling" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "Balances speed with structured planning output" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Long context for complex workflow automation" },
+    expert:       { model: "Claude Opus 4",     reason: "Deep reasoning for intricate operational systems" },
+  },
+  "writing": {
     beginner:     { model: "Claude Haiku 3.5",  reason: "Fast, fluent copy generation for everyday tasks" },
     intermediate: { model: "Claude 3.5 Sonnet", reason: "Superior tone control and long-form writing quality" },
     advanced:     { model: "Claude 3.5 Sonnet", reason: "Best-in-class writing with deep contextual nuance" },
     expert:       { model: "Claude Opus 4",     reason: "Campaign-level strategic thinking plus brilliant prose" },
   },
-  engineering: {
-    beginner:     { model: "Claude Haiku 3.5",  reason: "Quick snippets and boilerplate at low cost" },
-    intermediate: { model: "Claude 3.5 Sonnet", reason: "#1 on SWE-bench; precise multi-file reasoning" },
-    advanced:     { model: "Claude 3.5 Sonnet", reason: "Leads coding benchmarks for complex refactors" },
-    expert:       { model: "Claude Opus 4",     reason: "Deepest architectural reasoning for system design" },
-  },
-  operations: {
-    beginner:     { model: "GPT-4o",            reason: "Strong structured data and spreadsheet reasoning" },
-    intermediate: { model: "GPT-4o",            reason: "Excellent tabular logic and process structuring" },
-    advanced:     { model: "Claude 3.5 Sonnet", reason: "Long context for multi-document process analysis" },
-    expert:       { model: "Claude Opus 4",     reason: "Complex cross-functional planning and trade-offs" },
-  },
-  research: {
-    beginner:     { model: "Perplexity",        reason: "Real-time web synthesis for quick research tasks" },
+  "research": {
+    beginner:     { model: "Perplexity",        reason: "Real-time web synthesis for quick research questions" },
     intermediate: { model: "Claude 3.5 Sonnet", reason: "200k context; excels at multi-source synthesis" },
     advanced:     { model: "Claude 3.5 Sonnet", reason: "Deep literature synthesis with citation precision" },
     expert:       { model: "Claude Opus 4",     reason: "Most rigorous reasoning for complex research" },
   },
-  design: {
-    beginner:     { model: "GPT-4o",            reason: "Multimodal; quick visual feedback and critique" },
-    intermediate: { model: "GPT-4o",            reason: "Best visual reasoning for design review and specs" },
-    advanced:     { model: "Claude 3.5 Sonnet", reason: "Precise token and spec language for design systems" },
-    expert:       { model: "Claude Opus 4",     reason: "Deep brand strategy and design system architecture" },
+  "data-finance": {
+    beginner:     { model: "GPT-4o",            reason: "Strong at spreadsheets and structured data reasoning" },
+    intermediate: { model: "GPT-4o",            reason: "Excellent tabular logic and financial structuring" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Long context for multi-document financial analysis" },
+    expert:       { model: "Claude Opus 4",     reason: "Complex cross-functional modeling and trade-offs" },
   },
-  leadership: {
-    beginner:     { model: "Claude 3.5 Sonnet", reason: "Clear, polished executive communication" },
-    intermediate: { model: "Claude 3.5 Sonnet", reason: "Persuasive memos and nuanced stakeholder framing" },
-    advanced:     { model: "Claude Opus 4",     reason: "Nuanced judgment for organizational decisions" },
-    expert:       { model: "Claude Opus 4",     reason: "Strategic depth for C-suite communications" },
+  "coding": {
+    beginner:     { model: "Claude Haiku 3.5",  reason: "Quick snippets and boilerplate at low latency" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "#1 on SWE-bench; precise multi-file reasoning" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Leads coding benchmarks for complex refactors" },
+    expert:       { model: "Claude Opus 4",     reason: "Deepest architectural reasoning for system design" },
+  },
+  "creative-ai": {
+    beginner:     { model: "GPT-4o",            reason: "Multimodal; understands and generates visual briefs" },
+    intermediate: { model: "GPT-4o",            reason: "Best visual reasoning for creative direction" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Detailed prompt engineering for generative models" },
+    expert:       { model: "Claude Opus 4",     reason: "Deep aesthetic reasoning and brand-level thinking" },
+  },
+  "game-advanced": {
+    beginner:     { model: "Claude 3.5 Sonnet", reason: "Clear game design explanations and basic scripts" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "Game logic, dialogue systems, and level design" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Complex game mechanics and AI agent workflows" },
+    expert:       { model: "Claude Opus 4",     reason: "Deep systems design for advanced game architecture" },
   },
 };
 
 const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
-  "Business Intelligence":   "operations",
-  "Personal Productivity":   "operations",
-  "Design & Creative":       "design",
-  "Software Development":    "engineering",
+  "Quick Wins":              "quick-wins",
+  "Personal Productivity":   "productivity",
+  "Communication & Writing": "writing",
   "Research & Analysis":     "research",
-  "Communication & Writing": "marketing",
+  "Business Intelligence":   "data-finance",
+  "Software Development":    "coding",
+  "Creative AI":             "creative-ai",
+  "Design & Creative":       "creative-ai",
+  "Game Development":        "game-advanced",
 };
 
 export const USE_CASES: UseCase[] = (rawData as any[]).map((item, idx) => {
-  const cat   = DOMAIN_MAP[item.domain] ?? "operations";
+  const cat   = DOMAIN_MAP[item.domain] ?? "productivity";
   const skill = (item.skill_level as string).toLowerCase();
   const llmRec = LLM_MAP[cat]?.[skill] ?? { model: "Claude 3.5 Sonnet", reason: "Best overall balance of capability and speed" };
   return {
@@ -124,13 +141,15 @@ export const USE_CASES: UseCase[] = (rawData as any[]).map((item, idx) => {
 });
 
 export const CATEGORIES: { id: Category; label: string }[] = [
-  { id: "all",         label: "All" },
-  { id: "marketing",   label: "Marketing" },
-  { id: "engineering", label: "Engineering" },
-  { id: "operations",  label: "Operations" },
-  { id: "research",    label: "Research" },
-  { id: "design",      label: "Design" },
-  { id: "leadership",  label: "Leadership" },
+  { id: "all",          label: "All" },
+  { id: "quick-wins",   label: "Quick Wins" },
+  { id: "productivity", label: "Productivity" },
+  { id: "writing",      label: "Writing & Copy" },
+  { id: "research",     label: "Research" },
+  { id: "data-finance", label: "Data & Finance" },
+  { id: "coding",       label: "Code & Build" },
+  { id: "creative-ai",  label: "Creative AI" },
+  { id: "game-advanced",label: "Game & Advanced" },
 ];
 
 export const DIFFICULTIES: { id: Difficulty; label: string; color: string }[] = [
@@ -149,13 +168,15 @@ export const DIFF_COLOR: Record<string, string> = {
 };
 
 export const DISCIPLINES = [
-  { id: "marketing",   label: "Marketing",   essence: "Voice, copy, outreach, growth experiments." },
-  { id: "engineering", label: "Engineering", essence: "Code review, migration, debugging at scale." },
-  { id: "operations",  label: "Operations",  essence: "Meetings, planning, finance, the unglamorous middle." },
-  { id: "research",    label: "Research",    essence: "Triangulating papers, synthesising interviews." },
-  { id: "design",      label: "Design",      essence: "Critique, tokens, empty states, audits." },
-  { id: "leadership",  label: "Leadership",  essence: "Memos, steelmans, hiring loops, updates." },
-] as const;
+  { id: "quick-wins",    label: "Quick Wins",      essence: "5-min wins anyone can use today." },
+  { id: "productivity",  label: "Productivity",     essence: "Scheduling, notes, planning, automation." },
+  { id: "writing",       label: "Writing & Copy",   essence: "Long-form, email, social, brand voice." },
+  { id: "research",      label: "Research",         essence: "Deep dives, synthesis, competitive intel." },
+  { id: "data-finance",  label: "Data & Finance",   essence: "Modeling, forecasting, dashboards, FP&A." },
+  { id: "coding",        label: "Code & Build",     essence: "Apps, APIs, scripts, architecture." },
+  { id: "creative-ai",   label: "Creative AI",      essence: "Image gen, visual direction, generative art." },
+  { id: "game-advanced", label: "Game & Advanced",  essence: "Game dev, 3D, agents, LLM pipelines." },
+];
 
 export const DISC_COUNTS: Record<string, number> = Object.fromEntries(
   DISCIPLINES.map(d => [
