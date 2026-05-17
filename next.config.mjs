@@ -7,6 +7,7 @@ const nextConfig = {
   distDir: 'dist',
   basePath,
   assetPrefix: basePath || undefined,
+  trailingSlash: true,
   images: { unoptimized: true },
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,

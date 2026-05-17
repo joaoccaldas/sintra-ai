@@ -11,10 +11,8 @@ interface Props {
 import { BASE_PATH } from "@/lib/data";
 
 const LINKS = [
-  { href: "#library",                           label: "Library" },
-  { href: "#disciplines",                       label: "Disciplines" },
-  { href: "#by-difficulty",                     label: "By difficulty" },
-  { href: `${BASE_PATH}/google-ai-tools/`,      label: "Google AI Tools", external: true },
+  { href: "#explore",                      label: "Explore" },
+  { href: `${BASE_PATH}/google-ai-tools/`, label: "Google AI Tools", external: true },
 ];
 
 export default function Header({ total }: Props) {

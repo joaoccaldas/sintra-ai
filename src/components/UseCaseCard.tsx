@@ -81,18 +81,12 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
         {item.outcome || item.desc}
       </p>
 
-      {/* Meta row: output kind · time · tools */}
+      {/* Meta row: output kind · tools */}
       <div className="flex items-center gap-2 flex-wrap font-mono text-[10px] text-fg-3 tracking-[0.04em]">
         <span className="inline-flex items-center gap-1.5 text-violet-bright">
           <OutputKindIcon kind={item.output_kind} size={13} />
           {outputKindLabel(item.output_kind)}
         </span>
-        {item.est_time && (
-          <>
-            <span className="text-fg-4">·</span>
-            <span>{item.est_time}</span>
-          </>
-        )}
         {item.tools.length > 0 && (
           <>
             <span className="text-fg-4">·</span>
