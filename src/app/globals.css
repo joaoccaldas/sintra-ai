@@ -296,3 +296,31 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--fg-3);
   transition: transform 240ms var(--ease-out), color 240ms var(--ease-out);
 }
+
+/* Line clamp utility (Tailwind v4 ships it but older configs may not) */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* prefers-reduced-motion — disable atmospheric animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Sticky filter shelf gets a subtle hairline once scrolled */
+.lib-filters-stuck {
+  background: rgba(9, 11, 20, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--hairline-soft);
+}
