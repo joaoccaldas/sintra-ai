@@ -30,10 +30,23 @@ function makeCosmicBody(
     });
 
   switch (idx) {
-    // 0 — Moon ────────────────────────────────────────────────────────────
+    // 0 — Moon (texture-mapped) ───────────────────────────────────────────
     case 0: {
-      const mat = pbr({ metalness: 0.0, roughness: 0.82, clearcoat: 0.05 });
-      body.add(new THREE.Mesh(new THREE.IcosahedronGeometry(0.66, 3), mat));
+      const loader   = new THREE.TextureLoader();
+      const basePath = "/sintra-ai";
+      const diffuse  = loader.load(`${basePath}/moon-texture.png`);
+      diffuse.colorSpace = THREE.SRGBColorSpace;
+      // Reuse the same texture as a bump map for crater depth
+      const bump    = loader.load(`${basePath}/moon-texture.png`);
+      const mat = new THREE.MeshPhysicalMaterial({
+        map:            diffuse,
+        bumpMap:        bump,
+        bumpScale:      0.06,
+        metalness:      0.0,
+        roughness:      0.92,
+        clearcoat:      0.0,
+      });
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.68, 64, 64), mat));
       return { body, mainMat: mat };
     }
 
@@ -234,12 +247,18 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
     // ── Scene & lighting ──────────────────────────────────────────────
     const scene = new THREE.Scene();
     scene.add(new THREE.HemisphereLight(0xfff8f0, 0x080d24, 0.45));
-    const keyLight = new THREE.DirectionalLight(0xffffff, 1.5);
+    // Strong key: upper-right-front — carves crater shadows on Moon
+    const keyLight = new THREE.DirectionalLight(0xffffff, 2.2);
     keyLight.position.set(7, 12, 9);
     scene.add(keyLight);
+    // Cool fill / rim from behind
     const fillLight = new THREE.DirectionalLight(0x7a88ff, 0.55);
     fillLight.position.set(-6, 3, -9);
     scene.add(fillLight);
+    // Secondary warm fill for right-side depth on textured objects
+    const warmFill = new THREE.DirectionalLight(0xffddb0, 0.35);
+    warmFill.position.set(5, -4, 6);
+    scene.add(warmFill);
 
     // ── Carousel group ────────────────────────────────────────────────
     const carousel = new THREE.Group();
