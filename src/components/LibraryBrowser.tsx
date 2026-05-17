@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Search, X, Shuffle } from "lucide-react";
 import { CATEGORIES, DIFFICULTIES, USE_CASES, UseCase, Category, Difficulty } from "@/lib/data";
 import { useUrlFilters, useKeyShortcut } from "@/lib/hooks";
@@ -12,6 +13,15 @@ interface Props {
   initialCategoryNonce: number;
 }
 
+const CARD_VARIANTS = {
+  hidden: { opacity: 0, y: 18, scale: 0.96 },
+  show:   (i: number) => ({
+    opacity: 1, y: 0, scale: 1,
+    transition: { duration: 0.32, delay: Math.min(i, 14) * 0.04, ease: [0.22, 1, 0.36, 1] as const },
+  }),
+  exit: { opacity: 0, scale: 0.94, transition: { duration: 0.16 } },
+};
+
 export default function LibraryBrowser({ initialCategory, initialCategoryNonce }: Props) {
   const [filters, setFilters] = useUrlFilters({
     category: initialCategory,
@@ -22,7 +32,6 @@ export default function LibraryBrowser({ initialCategory, initialCategoryNonce }
   const inputRef = useRef<HTMLInputElement>(null);
   const isMac = typeof navigator !== "undefined" && /Mac|iPhone|iPad|iPod/.test(navigator.platform);
 
-  // External category trigger (from Disciplines)
   useEffect(() => {
     if (initialCategory && initialCategory !== "all") {
       setFilters({ category: initialCategory });
@@ -30,7 +39,6 @@ export default function LibraryBrowser({ initialCategory, initialCategoryNonce }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialCategoryNonce]);
 
-  // ⌘K + "/" focus search
   useKeyShortcut(["k", "K"], () => inputRef.current?.focus(), { meta: true });
   useKeyShortcut(["/"], () => inputRef.current?.focus(), { preventInInput: true });
 
@@ -57,6 +65,7 @@ export default function LibraryBrowser({ initialCategory, initialCategoryNonce }
   return (
     <section id="library" className="pt-20 md:pt-24 pb-24 md:pb-32 relative">
       <div className="max-w-[1200px] mx-auto px-6 md:px-8">
+
         {/* Heading */}
         <div className="grid md:grid-cols-[1fr_auto] items-end gap-6 md:gap-8 mb-10 md:mb-12">
           <div>
@@ -165,11 +174,7 @@ export default function LibraryBrowser({ initialCategory, initialCategoryNonce }
         <div className="font-mono text-[11px] text-fg-3 tracking-[0.04em] mb-5 flex items-center gap-3">
           Showing <b className="text-fg-1 font-medium">{filtered.length}</b> use case{filtered.length !== 1 ? "s" : ""}
           {hasActiveFilters && (
-            <button
-              className="chip"
-              onClick={reset}
-              style={{ padding: "3px 10px" }}
-            >
+            <button className="chip" onClick={reset} style={{ padding: "3px 10px" }}>
               Reset
             </button>
           )}
@@ -177,20 +182,39 @@ export default function LibraryBrowser({ initialCategory, initialCategoryNonce }
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filtered.length === 0 ? (
-            <div className="col-span-full p-20 px-5 text-center border border-dashed border-hairline rounded-lg">
-              <p className="font-serif italic font-light text-2xl text-fg-2 m-0">
-                &ldquo;Nothing here yet. The shelf is being assembled.&rdquo;
-              </p>
-              <button onClick={reset} className="btn btn-ghost mt-6">
-                Reset filters
-              </button>
-            </div>
-          ) : (
-            filtered.map(item => (
-              <UseCaseCard key={item.id} item={item} onOpen={setActiveItem} />
-            ))
-          )}
+          <AnimatePresence mode="popLayout" initial={false}>
+            {filtered.length === 0 ? (
+              <motion.div
+                key="empty"
+                className="col-span-full p-20 px-5 text-center border border-dashed border-hairline rounded-lg"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25 }}
+              >
+                <p className="font-serif italic font-light text-2xl text-fg-2 m-0">
+                  &ldquo;Nothing here yet. The shelf is being assembled.&rdquo;
+                </p>
+                <button onClick={reset} className="btn btn-ghost mt-6">
+                  Reset filters
+                </button>
+              </motion.div>
+            ) : (
+              filtered.map((item, i) => (
+                <motion.div
+                  key={item.id}
+                  layout
+                  custom={i}
+                  variants={CARD_VARIANTS}
+                  initial="hidden"
+                  animate="show"
+                  exit="exit"
+                >
+                  <UseCaseCard item={item} onOpen={setActiveItem} />
+                </motion.div>
+              ))
+            )}
+          </AnimatePresence>
         </div>
       </div>
 

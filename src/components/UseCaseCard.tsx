@@ -1,7 +1,9 @@
 "use client";
 
+import { useCallback, useRef } from "react";
 import { UseCase, DIFF_COLOR } from "@/lib/data";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
+import CardVisual from "./CardVisual";
 
 interface Props {
   item: UseCase;
@@ -10,14 +12,42 @@ interface Props {
 
 export default function UseCaseCard({ item, onOpen }: Props) {
   const color = DIFF_COLOR[item.difficulty];
+  const ref = useRef<HTMLButtonElement>(null);
+
+  const onMouseMove = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
+    const el = ref.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width;
+    const y = (e.clientY - r.top) / r.height;
+    el.style.transition = "border-color 200ms, box-shadow 200ms, transform 0ms";
+    el.style.transform = `perspective(900px) rotateX(${(0.5 - y) * 7}deg) rotateY(${(x - 0.5) * 7}deg) translateZ(6px)`;
+    el.style.setProperty("--sx", `${x * 100}%`);
+    el.style.setProperty("--sy", `${y * 100}%`);
+  }, []);
+
+  const onMouseLeave = useCallback(() => {
+    const el = ref.current;
+    if (!el) return;
+    el.style.transition = "border-color 200ms, box-shadow 200ms, transform 520ms cubic-bezier(0.22,1,0.36,1)";
+    el.style.transform = "";
+  }, []);
 
   return (
     <button
+      ref={ref}
       className="card group focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-bright focus-visible:-outline-offset-[3px]"
       onClick={() => onOpen(item)}
       aria-label={`Open use case: ${item.title}`}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
     >
-      {/* Top: difficulty · category */}
+      <span className="card-shimmer" aria-hidden="true" />
+
+      {/* Output-kind abstract visual */}
+      <CardVisual kind={item.output_kind} difficulty={item.difficulty} />
+
+      {/* Difficulty · category eyebrow */}
       <span className="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-fg-3 font-medium">
         <span
           className="w-2 h-2 rounded-full shrink-0"
@@ -33,7 +63,7 @@ export default function UseCaseCard({ item, onOpen }: Props) {
         {item.title}
       </h3>
 
-      {/* Outcome — the new "what you get" sentence */}
+      {/* Outcome */}
       <p className="font-sans text-[13.5px] leading-[1.55] text-fg-2 m-0 text-left line-clamp-3">
         {item.outcome || item.desc}
       </p>
