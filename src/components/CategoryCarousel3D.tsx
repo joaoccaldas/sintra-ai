@@ -17,16 +17,21 @@ export const CAROUSEL_ITEMS = [
 
 const BASE = "/sintra-ai";
 
+// ── Texture loader — callback sets needsUpdate after image arrives ────────────
 function loadTex(path: string, srgb = true): THREE.Texture {
-  const tex = new THREE.TextureLoader().load(path);
+  const tex = new THREE.TextureLoader().load(path, (t) => { t.needsUpdate = true; });
   if (srgb) tex.colorSpace = THREE.SRGBColorSpace;
-  tex.wrapS = THREE.RepeatWrapping;
-  tex.wrapT = THREE.RepeatWrapping;
-  tex.needsUpdate = true;
+  // Leave wrapS/wrapT at default ClampToEdgeWrapping — correct for sphere UV mapping
   return tex;
 }
 
-// ── Cosmic body factory ────────────────────────────────────────────────────
+// ── Signed shortest distance in a circular index list ────────────────────────
+function getDiff(i: number, sel: number, n: number): number {
+  const d = ((i - sel) % n + n) % n;
+  return d > Math.floor(n / 2) ? d - n : d;
+}
+
+// ── Cosmic body factory ───────────────────────────────────────────────────────
 function makeCosmicBody(
   idx: number,
   color: number,
@@ -41,7 +46,7 @@ function makeCosmicBody(
     });
 
   switch (idx) {
-    // 0 — Moon (NASA texture + bump) ─────────────────────────────────────
+    // 0 — Moon (NASA texture, 128-segment sphere for full UV coverage) ─────────
     case 0: {
       const diffuse = loadTex(`${BASE}/moon-texture.png`);
       const bump    = loadTex(`${BASE}/moon-texture.png`, false);
@@ -52,26 +57,24 @@ function makeCosmicBody(
         roughness: 0.95,
         metalness: 0.0,
       });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.68, 64, 64), mat));
-      // Cast as MeshPhysicalMaterial for the animation controller (compatible interface)
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.68, 128, 64), mat));
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
-    // 1 — Ringed Planet (Saturn-like, teal) ──────────────────────────────
+    // 1 — Ringed Planet (Saturn-like, teal) ──────────────────────────────────
     case 1: {
       const mat = pbr({ metalness: 0.08, roughness: 0.42 });
       body.add(new THREE.Mesh(new THREE.SphereGeometry(0.52, 40, 40), mat));
-      const ringGeo = new THREE.RingGeometry(0.74, 1.12, 80);
-      const ringMat = new THREE.MeshBasicMaterial({
-        color, side: THREE.DoubleSide, transparent: true, opacity: 0.44,
-      });
-      const ring = new THREE.Mesh(ringGeo, ringMat);
+      const ring = new THREE.Mesh(
+        new THREE.RingGeometry(0.74, 1.12, 80),
+        new THREE.MeshBasicMaterial({ color, side: THREE.DoubleSide, transparent: true, opacity: 0.44 }),
+      );
       ring.rotation.x = Math.PI * 0.36;
       body.add(ring);
       return { body, mainMat: mat };
     }
 
-    // 2 — Star / Sun ──────────────────────────────────────────────────────
+    // 2 — Star / Sun ──────────────────────────────────────────────────────────
     case 2: {
       const mat = pbr({ metalness: 0.0, roughness: 0.2, emissive: c, emissiveIntensity: 0.32 });
       body.add(new THREE.Mesh(new THREE.SphereGeometry(0.58, 36, 36), mat));
@@ -95,7 +98,7 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 3 — Mars (NASA texture, no rings) ──────────────────────────────────
+    // 3 — Mars (NASA texture, 128-segment sphere for full UV coverage) ────────
     case 3: {
       const diffuse = loadTex(`${BASE}/mars-texture.png`);
       const bump    = loadTex(`${BASE}/mars-texture.png`, false);
@@ -106,11 +109,11 @@ function makeCosmicBody(
         roughness: 0.90,
         metalness: 0.0,
       });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.60, 64, 64), mat));
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.60, 128, 64), mat));
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
-    // 4 — Pulsar ──────────────────────────────────────────────────────────
+    // 4 — Pulsar ──────────────────────────────────────────────────────────────
     case 4: {
       const mat = pbr({ metalness: 0.88, roughness: 0.04, emissive: c, emissiveIntensity: 0.18 });
       body.add(new THREE.Mesh(new THREE.IcosahedronGeometry(0.44, 0), mat));
@@ -126,7 +129,7 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 5 — Galaxy (spiral) ─────────────────────────────────────────────────
+    // 5 — Galaxy (spiral) ─────────────────────────────────────────────────────
     case 5: {
       const mat = pbr({ metalness: 0.2, roughness: 0.5, emissive: c, emissiveIntensity: 0.22 });
       body.add(new THREE.Mesh(new THREE.SphereGeometry(0.15, 16, 16), mat));
@@ -136,7 +139,7 @@ function makeCosmicBody(
         const arm   = i % 2;
         const angle = t * Math.PI * 5 + arm * Math.PI + (Math.random() - 0.5) * 0.52;
         const r     = 0.16 + t * 0.96 + (Math.random() - 0.5) * 0.09;
-        pos.push(Math.cos(angle)*r, (Math.random()-0.5)*0.07, Math.sin(angle)*r);
+        pos.push(Math.cos(angle) * r, (Math.random() - 0.5) * 0.07, Math.sin(angle) * r);
       }
       const pGeo = new THREE.BufferGeometry();
       pGeo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
@@ -144,7 +147,7 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 6 — Supernova (spiky) ───────────────────────────────────────────────
+    // 6 — Supernova (spiky) ───────────────────────────────────────────────────
     case 6: {
       const geo  = new THREE.IcosahedronGeometry(0.52, 1);
       const attr = geo.attributes.position;
@@ -159,31 +162,20 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 7 — Quasar (NASA texture disk + dark core + relativistic jets) ────────
+    // 7 — Quasar (NASA texture disk + dark core + relativistic jets) ──────────
     case 7: {
       const tex = loadTex(`${BASE}/quasar-texture.png`);
-      // Textured accretion disk — flat circle tilted like the image
       const mat = new THREE.MeshPhysicalMaterial({
-        map: tex,
-        side: THREE.DoubleSide,
-        transparent: true,
-        opacity: 0.93,
-        roughness: 0.10,
-        metalness: 0.04,
-        emissive: c,
-        emissiveIntensity: 0.10,
+        map: tex, side: THREE.DoubleSide, transparent: true, opacity: 0.93,
+        roughness: 0.10, metalness: 0.04, emissive: c, emissiveIntensity: 0.10,
       });
       const disk = new THREE.Mesh(new THREE.CircleGeometry(0.90, 96), mat);
-      disk.rotation.x = Math.PI * 0.30; // tilt to match image perspective
+      disk.rotation.x = Math.PI * 0.30;
       body.add(disk);
-
-      // Dark singularity at center
       body.add(new THREE.Mesh(
         new THREE.SphereGeometry(0.13, 20, 20),
         new THREE.MeshBasicMaterial({ color: 0x000005 }),
       ));
-
-      // Relativistic jets (up + down from poles)
       for (const sign of [1, -1]) {
         const jet = new THREE.Mesh(
           new THREE.ConeGeometry(0.055, 0.78, 6),
@@ -196,7 +188,7 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 8 — Black Hole ──────────────────────────────────────────────────────
+    // 8 — Black Hole ──────────────────────────────────────────────────────────
     case 8: {
       body.add(new THREE.Mesh(
         new THREE.SphereGeometry(0.3, 20, 20),
@@ -231,17 +223,12 @@ interface Props {
 }
 
 export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
-  const containerRef   = useRef<HTMLDivElement>(null);
-  const selectRef      = useRef(onSelect);
-  const selectedRef    = useRef(selectedIndex);
-  const targetAngleRef = useRef(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const selectRef    = useRef(onSelect);
+  const selectedRef  = useRef(selectedIndex);
 
   useEffect(() => { selectRef.current = onSelect; }, [onSelect]);
-
-  useEffect(() => {
-    selectedRef.current    = selectedIndex;
-    targetAngleRef.current = -(2 * Math.PI * selectedIndex) / CAROUSEL_ITEMS.length;
-  }, [selectedIndex]);
+  useEffect(() => { selectedRef.current = selectedIndex; }, [selectedIndex]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -249,22 +236,23 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
 
     let w = container.clientWidth;
     let h = container.clientHeight;
-    const N      = CAROUSEL_ITEMS.length;
-    const RADIUS = 3.8; // wider ring — less crowded
+    const N       = CAROUSEL_ITEMS.length;
+    const SPACING = 2.70; // horizontal gap between item centres
 
-    // ── Renderer ──────────────────────────────────────────────────────
+    // ── Renderer ─────────────────────────────────────────────────────────
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(2, window.devicePixelRatio));
     renderer.setSize(w, h);
     renderer.setClearColor(0x000000, 0);
     container.appendChild(renderer.domElement);
 
-    // ── Camera ────────────────────────────────────────────────────────
-    const camera = new THREE.PerspectiveCamera(36, w / h, 0.1, 100);
-    camera.position.set(0, 1.6, 9.5);
+    // ── Camera — FOV 38°, z=7.5 → visible half-width ≈ 2.58 units ───────
+    // Adjacent centres at ±2.70 means ~35% of each adjacent sphere peeks in
+    const camera = new THREE.PerspectiveCamera(38, w / h, 0.1, 100);
+    camera.position.set(0, 0.8, 7.5);
     camera.lookAt(0, 0, 0);
 
-    // ── Scene & lighting ──────────────────────────────────────────────
+    // ── Scene & lighting ──────────────────────────────────────────────────
     const scene = new THREE.Scene();
     scene.add(new THREE.HemisphereLight(0xfff8f0, 0x080d24, 0.45));
     const keyLight = new THREE.DirectionalLight(0xffffff, 2.4);
@@ -277,24 +265,27 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
     warmFill.position.set(5, -4, 6);
     scene.add(warmFill);
 
-    // ── Carousel group ────────────────────────────────────────────────
-    const carousel = new THREE.Group();
-    scene.add(carousel);
-
-    // ── Build cosmic objects ──────────────────────────────────────────
+    // ── Objects — placed linearly on X axis ───────────────────────────────
     type Obj = {
-      group:        THREE.Group;
-      body:         THREE.Group;
-      hit:          THREE.Mesh;
-      pt:           THREE.PointLight;
-      mainMat:      THREE.MeshPhysicalMaterial;
-      initAngle:    number; // fixed angle in carousel local space
+      group:   THREE.Group;
+      body:    THREE.Group;
+      hit:     THREE.Mesh;
+      pt:      THREE.PointLight;
+      mainMat: THREE.MeshPhysicalMaterial;
     };
 
+    const carrier = new THREE.Group();
+    scene.add(carrier);
+
     const objects: Obj[] = CAROUSEL_ITEMS.map((item, i) => {
-      const angle = (2 * Math.PI * i) / N;
+      const diff = getDiff(i, 0, N);
       const g = new THREE.Group();
-      g.position.set(Math.sin(angle) * RADIUS, 0, Math.cos(angle) * RADIUS);
+      // Initial position based on diff from selectedIndex=0
+      g.position.set(
+        diff * SPACING,
+        diff === 0 ? 0.1 : 0,
+        diff === 0 ? 0.3 : Math.abs(diff) === 1 ? -0.3 : -20,
+      );
 
       const { body, mainMat } = makeCosmicBody(i, item.color);
       g.add(body);
@@ -308,15 +299,11 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
       const pt = new THREE.PointLight(item.color, 0, 5);
       g.add(pt);
 
-      carousel.add(g);
-      return { group: g, body, hit, pt, mainMat, initAngle: angle };
+      carrier.add(g);
+      return { group: g, body, hit, pt, mainMat };
     });
 
-    // ── Animation state ───────────────────────────────────────────────
-    let currentAngle = 0;
-    const selfAngles = new Array(N).fill(0);
-
-    // ── Hover / click raycasting ──────────────────────────────────────
+    // ── Raycasting — only test visible slots (front + adjacent) ──────────
     const raycaster = new THREE.Raycaster();
     const mouse     = new THREE.Vector2();
     let hoveredIdx  = -1;
@@ -326,7 +313,10 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
       mouse.x =  ((e.clientX - rect.left) / rect.width)  * 2 - 1;
       mouse.y = -((e.clientY - rect.top)  / rect.height) * 2 + 1;
       raycaster.setFromCamera(mouse, camera);
-      const hits = raycaster.intersectObjects(objects.map(o => o.hit));
+      const candidates = objects
+        .filter((_, idx) => Math.abs(getDiff(idx, selectedRef.current, N)) <= 1)
+        .map(o => o.hit);
+      const hits = raycaster.intersectObjects(candidates);
       return hits.length ? objects.findIndex(o => o.hit === hits[0].object) : -1;
     };
 
@@ -336,69 +326,58 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
     };
     const onClick = (e: MouseEvent) => {
       const idx = getHitIdx(e);
-      if (idx >= 0) {
-        targetAngleRef.current = -(2 * Math.PI * idx) / N;
-        selectRef.current(idx);
-      }
+      if (idx >= 0) selectRef.current(idx);
     };
 
     renderer.domElement.addEventListener("mousemove", onMouseMove);
     renderer.domElement.addEventListener("click",     onClick);
 
-    // ── Render loop ───────────────────────────────────────────────────
+    // ── Render loop ───────────────────────────────────────────────────────
     let raf = 0;
+    const selfAngles = new Array(N).fill(0);
+
     const tick = () => {
       raf = requestAnimationFrame(tick);
-
-      currentAngle += (targetAngleRef.current - currentAngle) * 0.07;
-      carousel.rotation.y = currentAngle;
-
       const sel = selectedRef.current;
 
       objects.forEach((obj, i) => {
-        const worldAngle = (2 * Math.PI * i) / N + currentAngle;
-        const norm       = ((worldAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-        const fromFront  = Math.min(norm, 2 * Math.PI - norm); // 0 = front, π = back
-        const angNorm    = fromFront / Math.PI;                 // 0..1
-        const isFront    = i === sel;
-        const isHovered  = hoveredIdx === i && !isFront;
+        const diff     = getDiff(i, sel, N);
+        const isFront  = diff === 0;
+        const isAdj    = Math.abs(diff) === 1;
+        const isHovered = hoveredIdx === i && !isFront;
 
-        // ── Push front item outward (toward camera) ──
-        const tRadius = isFront ? RADIUS + 0.9 : RADIUS;
-        const tX = Math.sin(obj.initAngle) * tRadius;
-        const tZ = Math.cos(obj.initAngle) * tRadius;
-        obj.group.position.x += (tX - obj.group.position.x) * 0.07;
-        obj.group.position.z += (tZ - obj.group.position.z) * 0.07;
+        // ── Target position ──
+        const tX = diff * SPACING;
+        const tZ = isFront ? 0.3 : isAdj ? -0.3 : -20;
+        const tY = isFront ? 0.12 : 0;
+        obj.group.position.x += (tX - obj.group.position.x) * 0.08;
+        obj.group.position.z += (tZ - obj.group.position.z) * 0.08;
+        obj.group.position.y += (tY - obj.group.position.y) * 0.08;
+
+        // ── Scale ──
+        const tScale = isFront   ? 1.40
+          : isHovered ? 0.78
+          : isAdj     ? 0.72
+          : 0.01;
+        obj.group.scale.lerp(new THREE.Vector3(tScale, tScale, tScale), 0.08);
+
+        // ── Opacity ──
+        const tOpacity = isFront ? 1.0 : isAdj ? 0.52 : 0;
+        obj.mainMat.opacity += (tOpacity - obj.mainMat.opacity) * 0.10;
+        obj.mainMat.transparent = true;
 
         // ── Self-rotation ──
-        selfAngles[i] += isFront ? 0.009 : 0.003;
+        selfAngles[i] += isFront ? 0.009 : isAdj ? 0.002 : 0;
         obj.body.rotation.y = selfAngles[i];
         if (i === 5) obj.body.rotation.y = selfAngles[i] * 0.5; // galaxy slower
         if (i === 4) obj.body.rotation.x = selfAngles[i] * 0.4; // pulsar wobble
 
-        // ── Scale: front large, sides mid, back tiny ──
-        const tScale = isFront ? 1.55
-          : isHovered ? 1.12
-          : Math.max(0.42, 1.0 - angNorm * 0.82);
-        obj.group.scale.lerp(new THREE.Vector3(tScale, tScale, tScale), 0.08);
-
-        // ── Float active item up ──
-        const tY = isFront ? 0.22 : 0;
-        obj.group.position.y += (tY - obj.group.position.y) * 0.08;
-
         // ── Emissive pulse ──
-        const tEmissive = isFront ? 0.20 : isHovered ? 0.07 : 0.01;
+        const tEmissive = isFront ? 0.20 : isAdj ? 0.04 : 0;
         obj.mainMat.emissiveIntensity += (tEmissive - obj.mainMat.emissiveIntensity) * 0.1;
 
-        // ── Opacity: front=1, sides fade, back nearly invisible ──
-        const tOpacity = isFront ? 1.0
-          : isHovered ? 0.80
-          : Math.max(0.04, 1.0 - angNorm * 1.55);
-        obj.mainMat.opacity = tOpacity;
-        obj.mainMat.transparent = true;
-
         // ── Point light ──
-        const tIntensity = isFront ? 2.6 : isHovered ? 0.8 : 0;
+        const tIntensity = isFront ? 2.6 : isAdj ? 0.5 : 0;
         obj.pt.intensity += (tIntensity - obj.pt.intensity) * 0.08;
       });
 
@@ -406,7 +385,7 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
     };
     tick();
 
-    // ── Resize ────────────────────────────────────────────────────────
+    // ── Resize ────────────────────────────────────────────────────────────
     const onResize = () => {
       if (!container) return;
       w = container.clientWidth; h = container.clientHeight;
@@ -416,7 +395,7 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
     };
     window.addEventListener("resize", onResize);
 
-    // ── Cleanup ───────────────────────────────────────────────────────
+    // ── Cleanup ───────────────────────────────────────────────────────────
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", onResize);
@@ -429,7 +408,8 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
           if ((child as THREE.Mesh).geometry) (child as THREE.Mesh).geometry.dispose();
           if ((child as THREE.Mesh).material) {
             const m = (child as THREE.Mesh).material;
-            if (Array.isArray(m)) m.forEach(x => x.dispose()); else (m as THREE.Material).dispose();
+            if (Array.isArray(m)) m.forEach(x => x.dispose());
+            else (m as THREE.Material).dispose();
           }
         });
         o.hit.geometry.dispose();

@@ -11,7 +11,8 @@
  *  6. Pick an `icon`        Single emoji that visually represents the idea
  *  7. Set `difficulty`      1 = anyone gets it · 2 = needs context · 3 = technical
  *  8. List `related`        IDs of the 2-4 most closely related concepts
- *  9. Optionally add `shortTerm` (acronym badge) and `learnMore` (URL)
+ *  9. Set `addedAt`         ISO date string "YYYY-MM-DD" — when this was added
+ * 10. Optionally add `shortTerm` (acronym badge) and `learnMore` (URL)
  *
  * ────────────────────────────────────────────────────────────────────────────
  */
@@ -77,6 +78,8 @@ export interface Concept {
   difficulty: 1 | 2 | 3;
   /** IDs of closely related concepts (2-4 recommended) */
   related: string[];
+  /** ISO date string "YYYY-MM-DD" — when this concept entry was added */
+  addedAt: string;
   /** Optional external URL for deeper reading */
   learnMore?: string;
 }
@@ -97,6 +100,7 @@ Instead of writing rules like "if price drops 10% in 5 days, sell," you feed his
 Three core flavours: **Supervised learning** (learns from labeled examples), **Unsupervised learning** (finds hidden clusters), and **Reinforcement learning** (learns via rewards and penalties). Most tools you use today — spam filters, recommendation engines, image recognition — run on supervised ML.`,
     analogy: "Like training a dog: you reward correct behaviour repeatedly until the dog generalises the rule on its own — no instruction manual required.",
     related: ["llm", "fine-tuning", "embeddings"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -113,6 +117,7 @@ Models don't see letters or words; they see token IDs. The entire prompt and res
 Token count matters for two reasons: **cost** — most APIs bill per 1,000 tokens — and **limits** — text must fit within the model's context window. Rule of thumb: ~1 token ≈ 0.75 English words. A page of prose ≈ 500 tokens.`,
     analogy: "Like a musician reading sheet music note-by-note rather than hearing the whole symphony — the model processes token-by-token, building meaning step by step.",
     related: ["context-window", "llm"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -133,6 +138,7 @@ Core techniques:
 Prompt engineering is less about magic words and more about communicating context, constraints, and expected format — the same clarity you'd use briefing a smart colleague.`,
     analogy: "The difference between asking a chef \"make me something\" vs. \"a light Mediterranean vegetarian dish for two, ready in 20 minutes.\"",
     related: ["llm", "function-calling", "agents"],
+    addedAt: "2025-05-17",
   },
 
   // ── Models & AI ──────────────────────────────────────────────────────────
@@ -151,6 +157,7 @@ At inference time you give it a prompt; it predicts the most likely continuation
 "Large" refers to parameter count. More parameters generally means broader knowledge and more nuanced understanding, at the cost of compute and latency.`,
     analogy: "An LLM is like someone who has read the entire internet and can discuss any topic fluently — but hasn't lived any of it.",
     related: ["tokens", "context-window", "prompt-engineering", "fine-tuning"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -167,6 +174,7 @@ If the window is 128,000 tokens (~96,000 words) and your conversation exceeds th
 Modern frontier models: GPT-4o supports 128K tokens, Claude 3.5 supports 200K. This is critical for analysing long documents, maintaining long conversations, or processing entire codebases.`,
     analogy: "The context window is like a whiteboard in the room. The AI can only reference what's written on it — once it fills up, you must erase something to write more.",
     related: ["tokens", "llm", "rag"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -183,6 +191,7 @@ This enables powerful operations: search by meaning (not keyword), cluster simil
 Embedding models (e.g. OpenAI \`text-embedding-ada-002\`, Cohere \`embed-v3\`) are separate from generative models — smaller, faster, and cheap to run at scale.`,
     analogy: "Like placing concepts on a map — related ideas live close together, unrelated ones are distant. Ask 'what's nearest to Paris?' and find London, Berlin, Rome.",
     related: ["rag", "machine-learning", "llm"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -200,6 +209,7 @@ Pipeline: user question → embed query → vector search over your documents �
 This solves two core LLM limitations: **knowledge cutoffs** (training data ends at a date) and **hallucination** (the model can now cite real sources). It's the backbone of most enterprise AI search and customer-support systems.`,
     analogy: "Like an open-book exam instead of a closed one — the model looks things up in your documents rather than guessing from memory.",
     related: ["embeddings", "context-window", "llm", "connectors"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -216,6 +226,7 @@ A customer-service fine-tune might train on thousands of resolved tickets. A leg
 Modern efficient techniques (LoRA, QLoRA) make fine-tuning feasible on consumer GPUs by training only a small fraction of parameters. Fine-tuning isn't always necessary — often prompt engineering or RAG is cheaper and more flexible.`,
     analogy: "The base model is a brilliant new hire who knows a lot. Fine-tuning is their first 90 days immersed in your company's jargon, processes, and way of working.",
     related: ["machine-learning", "llm", "prompt-engineering"],
+    addedAt: "2025-05-17",
   },
 
   // ── Tools & Agents ───────────────────────────────────────────────────────
@@ -233,6 +244,7 @@ A coding agent might: read the failing test → examine relevant files → write
 Key components: a capable **LLM** (the brain), **tools** (capabilities it can invoke), a **memory** mechanism (context + vector store), and an **orchestration loop** that feeds observations back as new context.`,
     analogy: "The difference between a consultant who gives a one-time answer vs. an employee who takes initiative, manages their own workflow, and reports back when done.",
     related: ["llm", "function-calling", "skills", "mcp"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -249,6 +261,7 @@ Examples: a "web research" skill grants the agent a search tool, browsing capabi
 In Claude Code, skills are invocable via \`/skill-name\` commands that run pre-defined agentic workflows. Platforms like Microsoft Copilot Studio expose them as modular add-ons you configure without writing code.`,
     analogy: "Skills are like apps on a smartphone. The phone (base model) is capable on its own, but apps extend it with purpose-built tools for specific jobs.",
     related: ["agents", "connectors", "function-calling"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -265,6 +278,7 @@ In enterprise AI platforms, connectors let the model ingest live data from Sales
 Without connectors, AI is isolated to its training data and your manual copy-paste. Connectors are closely related to MCP servers — an MCP server is one standardised implementation of a connector.`,
     analogy: "Connectors are the power outlets that let an AI's capabilities flow into the systems and apps your business already runs on.",
     related: ["mcp", "api", "agents", "rag"],
+    addedAt: "2025-05-17",
   },
 
   // ── Protocols ────────────────────────────────────────────────────────────
@@ -283,6 +297,7 @@ When you use a weather app, it calls a weather service API. When you query an AI
 For AI products, key APIs are the model inference APIs (Anthropic, OpenAI, Google) and tool APIs that agents can call — search, databases, CRMs. Every connector, skill, and MCP server ultimately communicates through APIs.`,
     analogy: "An API is a restaurant menu. You choose items (endpoints), provide your order (request), and receive your meal (response) — without entering the kitchen (source code).",
     related: ["mcp", "function-calling", "connectors"],
+    addedAt: "2025-05-17",
   },
 
   {
@@ -300,6 +315,7 @@ Before MCP, every AI integration was bespoke: custom code per tool, non-transfer
 An MCP server exposes **resources** (data the AI can read), **tools** (actions the AI can invoke), and **prompts** (templates). Think of it as USB-C for AI integrations.`,
     analogy: "Like USB-C — it lets any device plug into any charger. MCP lets any AI plug into any data source without custom adapters.",
     related: ["api", "connectors", "function-calling", "agents"],
+    addedAt: "2025-05-17",
     learnMore: "https://modelcontextprotocol.io",
   },
 
@@ -318,5 +334,6 @@ This is what makes agents possible: the model can call a search API, read result
 Most frontier models support this: Anthropic calls it "tool use," OpenAI calls it "function calling." Both expose it via API as a special message type.`,
     analogy: "Like a consultant who mid-meeting says \"hold on, let me pull the live data\" — checks real numbers, then continues the conversation with actual facts.",
     related: ["agents", "api", "mcp", "skills"],
+    addedAt: "2025-05-17",
   },
 ];

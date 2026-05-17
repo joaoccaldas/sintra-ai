@@ -61,8 +61,8 @@ function ConceptCard({
           )}
         </div>
 
-        {/* Category + difficulty */}
-        <div className="flex items-center gap-2 mb-3">
+        {/* Category + difficulty + date */}
+        <div className="flex items-center gap-2 mb-3 flex-wrap">
           <span className="font-mono text-[10px] tracking-[0.12em] uppercase" style={{ color: cat.hex }}>
             {cat.label}
           </span>
@@ -73,6 +73,13 @@ function ConceptCard({
           >
             {DIFF_LABEL[concept.difficulty]}
           </span>
+          <span className="text-fg-4">·</span>
+          <time
+            dateTime={concept.addedAt}
+            className="font-mono text-[10px] text-fg-4 tracking-[0.06em]"
+          >
+            {new Date(concept.addedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+          </time>
         </div>
 
         {/* Tagline */}
@@ -234,7 +241,7 @@ function ConceptDrawer({
               {/* ── Right column ── */}
               <div className="expanded-card__right">
                 {/* Eyebrow */}
-                <span className="flex gap-2 items-center font-mono text-[11px] tracking-[0.18em] uppercase text-fg-3 mb-3">
+                <span className="flex gap-2 items-center flex-wrap font-mono text-[11px] tracking-[0.18em] uppercase text-fg-3 mb-3">
                   <span
                     className="w-2 h-2 rounded-full shrink-0"
                     style={{
@@ -247,6 +254,10 @@ function ConceptDrawer({
                   <span style={{ color: CAT_META[concept.category].hex }}>
                     {CAT_META[concept.category].label}
                   </span>
+                  <span className="text-fg-4">·</span>
+                  <time dateTime={concept.addedAt} className="text-fg-4 normal-case tracking-normal">
+                    Added {new Date(concept.addedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+                  </time>
                 </span>
 
                 {/* Title */}
