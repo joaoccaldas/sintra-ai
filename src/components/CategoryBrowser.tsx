@@ -2,14 +2,11 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import dynamic from "next/dynamic";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { USE_CASES, UseCase, DISC_COUNTS } from "@/lib/data";
-import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
+import CategoryCarousel3D, { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
-
-const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
 
 const CARD_VARIANTS = {
   hidden: { opacity: 0, y: 20, scale: 0.96 },

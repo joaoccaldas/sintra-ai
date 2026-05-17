@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useEffect, useCallback } from "react";
-import * as THREE from "three";
+import { motion } from "framer-motion";
+import CategoryIllustration from "./CategoryIllustration";
 
 export const CAROUSEL_ITEMS = [
   { id: "marketing",   label: "Marketing",   essence: "Voice, copy, outreach, growth.", color: 0xF08CA8, hex: "#F08CA8" },
@@ -12,248 +12,113 @@ export const CAROUSEL_ITEMS = [
   { id: "leadership",  label: "Leadership",  essence: "Memos, strategy, hiring.", color: 0xE9D9B6, hex: "#E9D9B6" },
 ] as const;
 
-function makeGeo(idx: number): THREE.BufferGeometry {
-  switch (idx) {
-    case 0: return new THREE.TorusGeometry(0.55, 0.18, 14, 40);
-    case 1: return new THREE.OctahedronGeometry(0.72);
-    case 2: return new THREE.BoxGeometry(0.94, 0.94, 0.94);
-    case 3: return new THREE.IcosahedronGeometry(0.72);
-    case 4: return new THREE.TorusKnotGeometry(0.42, 0.16, 80, 10);
-    case 5: return new THREE.DodecahedronGeometry(0.68);
-    default: return new THREE.SphereGeometry(0.65, 16, 16);
-  }
-}
-
 interface Props {
   selectedIndex: number;
   onSelect: (idx: number) => void;
 }
 
+// Compute shortest-path offset in a ring of N items
+function ringOffset(i: number, selected: number, N: number): number {
+  let d = i - selected;
+  if (d > N / 2) d -= N;
+  if (d < -N / 2) d += N;
+  return d;
+}
+
 export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const selectRef = useRef(onSelect);
-  const selectedRef = useRef(selectedIndex);
+  const N = CAROUSEL_ITEMS.length;
 
-  useEffect(() => { selectRef.current = onSelect; }, [onSelect]);
-  useEffect(() => { selectedRef.current = selectedIndex; }, [selectedIndex]);
+  return (
+    <div
+      className="w-full h-full flex items-center justify-center overflow-hidden"
+      style={{ perspective: "900px" }}
+    >
+      {/* Fixed-height track so items have a stable centre */}
+      <div className="relative flex items-center justify-center w-full" style={{ height: "100%" }}>
+        {CAROUSEL_ITEMS.map((item, i) => {
+          const offset = ringOffset(i, selectedIndex, N);
+          const abs = Math.abs(offset);
+          const isActive = offset === 0;
+          const visible = abs <= 2;
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+          // Translate, rotate, scale, opacity based on offset
+          const x = offset * 185;
+          const rotateY = offset * -42;
+          const scale = isActive ? 1 : abs === 1 ? 0.72 : 0.52;
+          const opacity = isActive ? 1 : abs === 1 ? 0.62 : 0.3;
+          const zIndex = 20 - abs * 6;
 
-    let w = container.clientWidth;
-    let h = container.clientHeight;
-    const N = CAROUSEL_ITEMS.length;
-    const RADIUS = 3.2;
+          return (
+            <motion.button
+              key={item.id}
+              onClick={() => onSelect(i)}
+              aria-label={`Select ${item.label}`}
+              initial={false}
+              animate={{ x, rotateY, scale, opacity, zIndex }}
+              transition={{ type: "spring", stiffness: 300, damping: 34, opacity: { duration: 0.18 } }}
+              style={{
+                position: "absolute",
+                transformStyle: "preserve-3d",
+                transformOrigin: "center center",
+                pointerEvents: visible ? "auto" : "none",
+                cursor: isActive ? "default" : "pointer",
+              }}
+            >
+              <CarouselCard item={item} isActive={isActive} />
+            </motion.button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
-    // ── Renderer ──────────────────────────────────────────────────────────────
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(2, window.devicePixelRatio));
-    renderer.setSize(w, h);
-    renderer.setClearColor(0x000000, 0);
-    container.appendChild(renderer.domElement);
+type Item = (typeof CAROUSEL_ITEMS)[number];
 
-    // ── Camera ────────────────────────────────────────────────────────────────
-    const camera = new THREE.PerspectiveCamera(38, w / h, 0.1, 100);
-    camera.position.set(0, 1.8, 8.5);
-    camera.lookAt(0, 0, 0);
+function CarouselCard({ item, isActive }: { item: Item; isActive: boolean }) {
+  return (
+    <div
+      className="relative flex flex-col items-center select-none"
+      style={{ width: "clamp(148px, 20vw, 210px)" }}
+    >
+      {/* Glass card backing */}
+      <div
+        className="absolute inset-0 rounded-2xl transition-all duration-300"
+        style={{
+          background: `radial-gradient(ellipse 80% 70% at 50% 40%, ${item.hex}1a 0%, transparent 70%)`,
+          border: `1px solid ${item.hex}${isActive ? "40" : "1c"}`,
+          boxShadow: isActive
+            ? `0 0 48px ${item.hex}28, 0 0 16px ${item.hex}18, inset 0 1px 0 ${item.hex}22`
+            : "none",
+        }}
+      />
 
-    // ── Scene ─────────────────────────────────────────────────────────────────
-    const scene = new THREE.Scene();
-    scene.add(new THREE.AmbientLight(0xffffff, 0.12));
+      {/* Illustration */}
+      <div
+        className="relative z-10 mt-7"
+        style={{
+          filter: isActive ? `drop-shadow(0 0 18px ${item.hex}60)` : "none",
+          transition: "filter 0.3s ease",
+        }}
+      >
+        <CategoryIllustration
+          id={item.id}
+          color={item.hex}
+          size={isActive ? 92 : 68}
+          active={isActive}
+        />
+      </div>
 
-    // ── Carousel group ────────────────────────────────────────────────────────
-    const carousel = new THREE.Group();
-    scene.add(carousel);
-
-    // ── Build objects ─────────────────────────────────────────────────────────
-    type Obj = {
-      group: THREE.Group;
-      wires: THREE.LineSegments[];
-      solid: THREE.Mesh;
-      hit: THREE.Mesh;
-      pt: THREE.PointLight;
-      baseColor: number;
-    };
-
-    const objects: Obj[] = CAROUSEL_ITEMS.map((item, i) => {
-      const angle = (2 * Math.PI * i) / N;
-      const g = new THREE.Group();
-      g.position.set(Math.sin(angle) * RADIUS, 0, Math.cos(angle) * RADIUS);
-
-      // Solid core
-      const geo = makeGeo(i);
-      const solidMat = new THREE.MeshStandardMaterial({
-        color: item.color,
-        transparent: true,
-        opacity: 0.08,
-        wireframe: false,
-      });
-      const solid = new THREE.Mesh(geo, solidMat);
-      g.add(solid);
-
-      // Wireframe layers (bloom imitation)
-      const wireLayers = [
-        { scale: 1.000, opacity: 0.90, color: item.color },
-        { scale: 1.012, opacity: 0.40, color: 0xffffff },
-        { scale: 1.030, opacity: 0.15, color: item.color },
-      ];
-      const wires: THREE.LineSegments[] = wireLayers.map(l => {
-        const edges = new THREE.EdgesGeometry(geo);
-        const mat = new THREE.LineBasicMaterial({
-          color: l.color,
-          transparent: true,
-          opacity: l.opacity,
-          blending: THREE.AdditiveBlending,
-          depthWrite: false,
-        });
-        const ls = new THREE.LineSegments(edges, mat);
-        ls.scale.setScalar(l.scale);
-        g.add(ls);
-        return ls;
-      });
-
-      // Invisible hit sphere
-      const hitGeo = new THREE.SphereGeometry(1.1, 8, 8);
-      const hitMat = new THREE.MeshBasicMaterial({ visible: false });
-      const hit = new THREE.Mesh(hitGeo, hitMat);
-      g.add(hit);
-
-      // Point light per object
-      const pt = new THREE.PointLight(item.color, 0, 3.5);
-      pt.position.set(0, 0, 0);
-      g.add(pt);
-
-      carousel.add(g);
-      return { group: g, wires, solid, hit, pt, baseColor: item.color };
-    });
-
-    // Ground reflection plane
-    const groundGeo = new THREE.PlaneGeometry(20, 20);
-    const groundMat = new THREE.MeshBasicMaterial({ color: 0x090b14, transparent: true, opacity: 0 });
-    const ground = new THREE.Mesh(groundGeo, groundMat);
-    ground.rotation.x = -Math.PI / 2;
-    ground.position.y = -1.6;
-    scene.add(ground);
-
-    // ── Animation state ────────────────────────────────────────────────────────
-    let currentAngle = 0;
-    let targetAngle = 0;
-    let selfAngles = new Array(N).fill(0);
-
-    // ── Hover / click raycasting ───────────────────────────────────────────────
-    const raycaster = new THREE.Raycaster();
-    const mouse = new THREE.Vector2();
-    let hoveredIdx = -1;
-
-    const getHitIdx = (e: MouseEvent): number => {
-      const rect = renderer.domElement.getBoundingClientRect();
-      mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-      mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
-      raycaster.setFromCamera(mouse, camera);
-      const hits = raycaster.intersectObjects(objects.map(o => o.hit));
-      if (!hits.length) return -1;
-      return objects.findIndex(o => o.hit === hits[0].object);
-    };
-
-    const onMouseMove = (e: MouseEvent) => {
-      hoveredIdx = getHitIdx(e);
-      renderer.domElement.style.cursor = hoveredIdx >= 0 ? "pointer" : "default";
-    };
-    const onClick = (e: MouseEvent) => {
-      const idx = getHitIdx(e);
-      if (idx >= 0) {
-        targetAngle = -(2 * Math.PI * idx) / N;
-        selectRef.current(idx);
-      }
-    };
-
-    renderer.domElement.addEventListener("mousemove", onMouseMove);
-    renderer.domElement.addEventListener("click", onClick);
-
-    // ── Render loop ────────────────────────────────────────────────────────────
-    let raf = 0;
-    const tick = () => {
-      raf = requestAnimationFrame(tick);
-
-      // Smooth carousel rotation
-      currentAngle += (targetAngle - currentAngle) * 0.07;
-      carousel.rotation.y = currentAngle;
-
-      const sel = selectedRef.current;
-
-      objects.forEach((obj, i) => {
-        // Which index is visually in front right now?
-        const worldAngle = (2 * Math.PI * i) / N + currentAngle;
-        // Normalize to [-π, π]
-        const norm = ((worldAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-        const fromFront = Math.min(norm, 2 * Math.PI - norm);
-        const isFront = i === sel;
-        const isHovered = hoveredIdx === i && !isFront;
-
-        // Self-rotation speed
-        selfAngles[i] += isFront ? 0.007 : 0.003;
-        obj.solid.rotation.y = selfAngles[i];
-        obj.wires.forEach(w => { w.rotation.y = selfAngles[i]; });
-
-        // Scale
-        const targetScale = isFront ? 1.45 : isHovered ? 1.15 : 1.0;
-        obj.group.scale.lerp(new THREE.Vector3(targetScale, targetScale, targetScale), 0.08);
-
-        // Y position (float active item up slightly)
-        const targetY = isFront ? 0.15 : 0;
-        obj.group.position.y += (targetY - obj.group.position.y) * 0.08;
-
-        // Opacity
-        const targetOpacity = isFront ? 1.0 : isHovered ? 0.75 : Math.max(0.25, 1 - fromFront / Math.PI * 1.2);
-        (obj.wires[0].material as THREE.LineBasicMaterial).opacity = targetOpacity * 0.9;
-        (obj.solid.material as THREE.MeshStandardMaterial).opacity = targetOpacity * 0.1;
-
-        // Point light intensity
-        const targetIntensity = isFront ? 1.8 : isHovered ? 0.7 : 0;
-        obj.pt.intensity += (targetIntensity - obj.pt.intensity) * 0.08;
-      });
-
-      renderer.render(scene, camera);
-    };
-    tick();
-
-    // Update target when selectedIndex changes from outside
-    const updateTarget = () => {
-      targetAngle = -(2 * Math.PI * selectedRef.current) / N;
-    };
-
-    // ── Resize ─────────────────────────────────────────────────────────────────
-    const onResize = () => {
-      if (!container) return;
-      w = container.clientWidth;
-      h = container.clientHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-      renderer.setSize(w, h);
-    };
-    window.addEventListener("resize", onResize);
-
-    // ── Cleanup ────────────────────────────────────────────────────────────────
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("resize", onResize);
-      renderer.domElement.removeEventListener("mousemove", onMouseMove);
-      renderer.domElement.removeEventListener("click", onClick);
-      renderer.dispose();
-      if (container.contains(renderer.domElement)) container.removeChild(renderer.domElement);
-      objects.forEach(o => {
-        o.wires.forEach(w => { (w.geometry as THREE.EdgesGeometry).dispose(); });
-        (o.solid.geometry as THREE.BufferGeometry).dispose();
-        (o.hit.geometry as THREE.SphereGeometry).dispose();
-      });
-    };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // When selectedIndex changes, update the carousel rotation externally
-  useEffect(() => {
-    selectedRef.current = selectedIndex;
-  }, [selectedIndex]);
-
-  return <div ref={containerRef} className="w-full h-full" aria-hidden="true" />;
+      {/* Category name */}
+      <span
+        className="relative z-10 mt-4 mb-6 font-serif tracking-[-0.01em] transition-colors duration-200"
+        style={{
+          fontSize: isActive ? "clamp(16px,2vw,20px)" : "clamp(13px,1.6vw,16px)",
+          color: isActive ? item.hex : "rgba(244,242,234,0.5)",
+        }}
+      >
+        {item.label}
+      </span>
+    </div>
+  );
 }
