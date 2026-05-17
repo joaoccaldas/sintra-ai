@@ -50,13 +50,25 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 1 — Ringed Planet (Saturn) ──────────────────────────────────────────
+    // 1 — Ringed Planet (Mars-like) ──────────────────────────────────────
     case 1: {
-      const mat = pbr({ metalness: 0.14, roughness: 0.38 });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.52, 40, 40), mat));
-      const ringGeo = new THREE.RingGeometry(0.72, 1.1, 80);
+      const loader   = new THREE.TextureLoader();
+      const basePath = "/sintra-ai";
+      const marsDiff = loader.load(`${basePath}/mars-texture.png`);
+      marsDiff.colorSpace = THREE.SRGBColorSpace;
+      const marsBump = loader.load(`${basePath}/mars-texture.png`);
+      const mat = new THREE.MeshPhysicalMaterial({
+        map:       marsDiff,
+        bumpMap:   marsBump,
+        bumpScale: 0.04,
+        metalness: 0.0,
+        roughness: 0.88,
+        clearcoat: 0.0,
+      });
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.54, 64, 64), mat));
+      const ringGeo = new THREE.RingGeometry(0.76, 1.14, 80);
       const ringMat = new THREE.MeshBasicMaterial({
-        color, side: THREE.DoubleSide, transparent: true, opacity: 0.42,
+        color: 0xC4956A, side: THREE.DoubleSide, transparent: true, opacity: 0.45,
       });
       const ring = new THREE.Mesh(ringGeo, ringMat);
       ring.rotation.x = Math.PI * 0.36;
