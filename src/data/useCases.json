@@ -1,6 +1,6 @@
 [
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "Financial Planning & Analysis",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -33,7 +33,7 @@
     "sample_output": "**Top 3 trends**\n1. Revenue grew 14% YoY, accelerating in Q3 (+22% vs. +9% Q1)\n2. EMEA outpaced APAC for the first time in 18 months\n3. Promo months (Mar, Sep) drove 31% of annual revenue\n\n**Charts to build**\n- Line: monthly revenue vs. prior year (12 + 12 points)\n- Stacked bar: revenue by region per quarter\n- Scatter: promo spend vs. incremental revenue\n\n**Unusual pattern:** August dip of −7% breaks the seasonal pattern. Worth asking ops.\n\n**Investigate**\n- Is the August dip a stocking issue or genuine demand?\n- Does the EMEA acceleration hold without the FX tailwind?"
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "Financial Planning & Analysis",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -76,7 +76,7 @@
     "sample_output": "**Sheet structure**\n- `Drivers` — assumptions table (one column per month, FY+1 rolling)\n- `P&L` — revenue waterfall, cost of sales, opex, operating profit\n- `Variance` — actuals vs. forecast, with auto-coloured deltas\n- `Scenarios` — base / upside / downside via INDEX/CHOOSE\n\n**Key formulas**\n```\nRevenue = Units × Price × (1 + Seasonality_Idx)\nGM%     = (Revenue − COGS) / Revenue\nF'cast  = IF(MONTH(TODAY()) ≥ B$3, Actual, Driver-based)\n```\n\n**Risks & sensitivities**\n1. Price elasticity unknown — model ±5%, ±10%\n2. Promo cannibalisation — flag if uplift < 40%\n3. FX exposure on EMEA revenue — hedge above $X"
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "Financial Planning & Analysis",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -121,7 +121,7 @@
     "sample_output": "**Architecture**\n```\nERP → Ingest (Airflow) → Validate (Great Expectations)\n    → Transform (dbt) → Forecast (Prophet/SARIMA)\n    → Report (python-pptx) → Alert (Slack/Email)\n```\n\n**Code skeleton — validation step**\n```python\nfrom great_expectations.dataset import PandasDataset\n\ndef validate(df: pd.DataFrame) -> ValidationResult:\n    ds = PandasDataset(df)\n    ds.expect_column_values_to_not_be_null(\"account_id\")\n    ds.expect_column_values_to_be_between(\"amount\", -1e9, 1e9)\n    ds.expect_column_values_to_match_regex(\"period\", r\"^\\d{4}-\\d{2}$\")\n    return ds.validate()\n```\n\n**Testing:** 80%+ coverage on transforms; smoke-test full pipeline on synthetic 100-row sample daily."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "Financial Planning & Analysis",
     "skill_level": "EXPERT",
     "skill_emoji": "⚫",
@@ -158,7 +158,7 @@
     "sample_output": "**Phases**\n1. Months 0–3: Foundation — data warehouse (Snowflake), identity (Okta), governance.\n2. Months 4–9: Core planning — Anaplan/Pigment migration, workflow approvals, multi-currency.\n3. Months 10–14: Self-service — Power BI semantic layer, exec dashboards.\n4. Months 15–18: AI overlay — forecast assistance, anomaly detection.\n\n**Stack:** Snowflake · dbt · Anaplan · Power BI · Okta · GitHub Actions\n\n**Org:** 1 Director, 3 Senior FP&A, 2 Data Eng, 1 Solutions Architect, 1 PM\n\n**TCO (3-yr):** $4.8–6.2 M (60% software, 30% people, 10% integrators)"
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Research & Analysis",
     "section": "Sales & Market Analysis",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -190,7 +190,7 @@
     "sample_output": "**Themes** (n=87 verbatims)\n- Onboarding friction (34%)\n- Slow support response (22%)\n- Missing integrations (18%)\n- Pricing clarity (15%)\n- Performance lag (11%)\n\n**Top complaints**\n1. \"Couldn't find where to start\" — 28 mentions\n2. \"Waited 3+ days for a reply\" — 19 mentions\n3. \"Doesn't connect to Slack\" — 14 mentions\n\n**Quick wins**\n- Add a guided first-run checklist (kills #1)\n- Auto-acknowledge tickets within 5 min (softens #2)\n- Build the Slack integration (clears #3)"
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Research & Analysis",
     "section": "Sales & Market Analysis",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -231,7 +231,7 @@
     "sample_output": "**SWOT (you vs. top 3)**\n| | Strengths | Weaknesses |\n|---|---|---|\n| You | Product depth, NPS 62 | Slow GTM, no SMB pricing |\n| Comp A | Brand, channel | Bloated UX |\n| Comp B | Price, speed | Thin enterprise feature set |\n\n**Pricing band:** $49–$199/mo. You sit at $129 — premium-mid.\n\n**Scenarios**\n1. Hold the line, fortify enterprise — defensible, slow growth.\n2. Launch SMB tier @ $39 — opens TAM 3×, risks cannibalisation.\n3. Acquire Comp B — instant channel, $80–120M, ~6 months to close."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Research & Analysis",
     "section": "Sales & Market Analysis",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -277,7 +277,7 @@
     "sample_output": "**Pipeline**\n```\nSources (Bright Data / RSS / APIs)\n  → Queue (SQS) → Workers (Python, 5 replicas)\n  → DB (Postgres) → API (FastAPI) → UI (Next.js + Tremor)\n```\n\n**Alerts**\n- Price change ≥5% within 24h → Slack #commercial\n- New review with rating ≤2 → Slack #cx\n- Competitor pricing page hash change → Email + Slack\n\n**Cost:** ~$420/mo (scraping $180, infra $140, monitoring $100). Maintenance: 4 hrs/week."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Operations & Supply Chain",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -312,7 +312,7 @@
     "sample_output": "**Three ideas**\n1. **Batch the daily count** into one end-of-shift sweep (saves ~40 min/day).\n2. **QR-tag the top-50 SKUs** so receiving scans instead of types.\n3. **Auto-reorder** at min level via shared sheet (no more stockouts).\n\n**Before → After**\n- Manual count, 5×/day → 1 scan, end-of-shift\n- Receiving avg time: 12 min → 4 min\n- Stockouts/month: 7 → ≤1\n\n**Email draft**\n> Hi [manager], I've mapped three changes to receiving that could save ~15 hrs/week without new tooling. Quick run-through Friday at 2pm?"
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Operations & Supply Chain",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -353,8 +353,8 @@
     "sample_output": "**Inefficiencies found**\n- 38% of SKUs sit in 2+ warehouses unnecessarily (carrying cost: $1.2M/yr)\n- Lead time variance 4–18 days on a single supplier\n- Safety stock set on rule-of-thumb, not service-level math\n\n**Scenarios**\n| | Cost | Annual saving | Service level |\n|---|---|---|---|\n| Consolidate to 3 DCs | $2.1M one-time | $1.8M | 97% |\n| Add 4th regional DC | $3.4M one-time | $2.6M | 99% |\n| Optimise w/o new DCs | $200k | $0.9M | 96% |\n\n**Risk:** scenario 1 risks weather concentration on the Memphis hub."
   },
   {
-    "domain": "Business Intelligence",
-    "section": "Customer Service",
+    "domain": "Personal Productivity",
+    "section": "Customer Support",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
     "title": "Response Templates",
@@ -385,8 +385,8 @@
     "sample_output": "**Templates**\n1. **Acknowledgement** — \"Got it, [name]. Looking into it now — back to you within 2 hours.\"\n2. **Asking for more info** — \"Quick thing to unblock me: could you send [X, Y]?\"\n3. **Known issue** — \"Yep, known one — fix is going out [date]. Workaround: [...]\"\n4. **Escalation** — \"Pulling in [team]. Owner is [name]. Updates in this thread.\"\n5. **Resolution** — \"[Fix] is live. Anything else from this ticket?\"\n\n**Flowchart** (login issue): Reset password? → Y: send link / N: 2FA enrolled? → Y: code working? → escalate."
   },
   {
-    "domain": "Business Intelligence",
-    "section": "Customer Service",
+    "domain": "Personal Productivity",
+    "section": "Customer Support",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
     "title": "First Contact Resolution",
@@ -423,8 +423,8 @@
     "sample_output": "**Decision tree (login)**\n```\nIssue → Account locked?\n├─ Y → Unlock + send reset → Resolved\n└─ N → 2FA enrolled?\n    ├─ Y → Codes working? → escalate L2 if no\n    └─ N → Enrol + verify → Resolved\n```\n\n**KPIs:** FCR (target 78%), AHT (≤6 min), CSAT (≥4.4/5), repeat-contact rate (≤8%).\n\n**QA checklist (per ticket)**\n- [ ] Asked the diagnostic Q first\n- [ ] Verified identity\n- [ ] Logged root cause code\n- [ ] Sent confirmation summary"
   },
   {
-    "domain": "Business Intelligence",
-    "section": "Customer Service",
+    "domain": "Personal Productivity",
+    "section": "Customer Support",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
     "title": "AI Support Assistant",
@@ -460,7 +460,7 @@
     "sample_output": "**Architecture**\n```\nTicket → Classifier (BERT, 12 classes)\n       → KB retriever (embeddings + reranker)\n       → Drafter (LLM, brand-tuned)\n       → Human-in-loop (L1 review for low-confidence)\n       → Send / Escalate\n```\n\n**Training data:** ~5k labelled tickets minimum; 80/10/10 split; include 200 hard negatives.\n\n**Rollout:** shadow-mode (4 wk) → suggest-only (8 wk) → auto-send tier-1 (gated by confidence ≥0.92)."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -495,7 +495,7 @@
     "sample_output": "**Top 5 variances (Oct vs. budget)**\n| Account | Var | Driver |\n|---|---|---|\n| Subscription rev | +$340k | Renewal pull-forward, treat as timing |\n| Cloud infra | +$190k | Workload spike from new feature — investigate |\n| T&E | −$60k | Conf budget unspent — flag for reforecast |\n| Stock comp | +$110k | New hires — already accrued, noise |\n| Hosting | +$45k | Egress overage — review architecture |\n\n**Action vs noise:** rows 2 and 5 need follow-up; the rest are timing/accrual noise.\n\n**Manager email:** drafted, ~120 words, ready to copy."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -524,7 +524,7 @@
     "sample_output": "**Executive summary**\n- Revenue $42.1M, +6.2% YoY, in line with budget\n- GM% 68.1%, +120bps vs. prior year — pricing actions holding\n- Opex tracking $0.4M favourable; hiring lag in R&D\n- Operating income $12.6M; FX headwind of −$0.3M absorbed\n\n**Revenue narrative**\n> Subscription revenue grew 9% YoY, offsetting a 4% decline in services. New-logo ARR up 14%, but expansion softened to 11% (vs. 16% prior quarter), consistent with the broader macro slowdown observed by peers.\n\n**Red flag:** R&D under-hire risks Q1 product timeline."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -559,7 +559,7 @@
     "sample_output": "**Trend & seasonality**\n- 18-month CAGR: +12% (2.4% MoM)\n- Seasonality peak: Nov–Dec (+38% vs. trailing 3 mo)\n- Soft month: Feb (−18%)\n\n**Scenarios (FY+1)**\n| | Revenue | GM% | OI |\n|---|---|---|---|\n| Base | $186M | 67% | $42M |\n| Upside (Enterprise +20%) | $204M | 69% | $52M |\n| Downside (Churn 2pp) | $171M | 65% | $35M |\n\n**Narrative:** \"Base assumes 11% growth, in line with H2 run rate. Upside flips on enterprise pipeline conversion above 32% — feasible if security review accelerates.\"*"
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -596,7 +596,7 @@
     "sample_output": "**Tabs**\n1. `Cover` — purpose, version, owner\n2. `Drivers` — colour-coded inputs (blue)\n3. `P&L`, `BS`, `CF` — links only (black), no hardcodes\n4. `Sensitivity` — ±10/20% on revenue growth × GM\n5. `Checks` — 6 integrity rules (BS balances, CF reconciles)\n\n**Driver math (revenue)**\n```\nRev_t = Cust_t × ARPU_t\nCust_t = Cust_{t-1} × (1 − Churn_t) + NewLogo_t\n```\n\n**Checks:** all return PASS or the cell turns red. Circularity resolved with iterative calc, max 100, threshold 0.001."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -638,7 +638,7 @@
     "sample_output": "**Story arc**\n1. Where we are (one slide, one number)\n2. What changed since last board (3 deltas)\n3. What's working / what isn't\n4. The decision we're asking for\n5. What happens if you say yes\n\n**Slides** (15 min total)\n1. Title + headline number (45s)\n2. Q3 scorecard vs. plan (90s)\n3. The two wins (2 min)\n4. The two concerns (2 min)\n5. Pricing decision — recommendation (3 min)\n6. Asks + timeline (1 min)\n\n**Anticipated Q1:** \"What's the downside case?\" — answer prepped, 2 sentences + 1 backup slide."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -682,7 +682,7 @@
     "sample_output": "**As-is (12 hrs/wk)**\n1. Pull exports from SAP, Salesforce, ADP (3 hrs)\n2. Stitch in Excel (5 hrs)\n3. Manual variance commentary (3 hrs)\n4. Format deck (1 hr)\n\n**To-be (~1 hr/wk)**\n1. Python pulls from APIs nightly\n2. dbt transforms + tests\n3. LLM drafts commentary from variance table\n4. python-pptx generates deck\n\n**Tool stack:** Python · dbt · Anthropic API · python-pptx · Airflow\n\n**Change mgmt:** 4-week parallel run, weekly QA, sign-off from controller before cutover."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -720,7 +720,7 @@
     "sample_output": "**Architecture**\n```\nERP/BI → Data lake (Snowflake)\n       → Feature store (Feast)\n       → LLM layer (Claude / GPT-4) ← embeddings of GL + commentary corpus\n       → NL query interface (LangChain agent)\n       → Outputs: commentary, anomaly alerts, forecast deltas\n```\n\n**Governance:** every AI-generated number gets a citation back to the source row; commentary stored with prompt + version hash for audit.\n\n**ROI:** ~$240k/yr saved (1.5 FTE equivalent) against $80k build + $35k/yr run cost. Payback < 6 months."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Finance & FP&A",
     "section": "FP&A & Financial Analysis (AI-Powered)",
     "skill_level": "EXPERT",
     "skill_emoji": "⚫",
@@ -764,7 +764,7 @@
     "sample_output": "**Phases**\n- Yr 1 — Foundations: cloud DW, identity, governance, dashboarding standard\n- Yr 2 — Planning: replace spreadsheet plan with Anaplan/Pigment\n- Yr 3 — AI overlay: automated commentary, anomaly detection, NL queries\n\n**Org shift**\n- FP&A FTEs: 24 → 18 (reskill 6 into analytics engineers)\n- New roles: 2 ML engineers, 1 finance data steward\n\n**Investment case (3-yr)**\n- Spend: $9.6M\n- Savings: $14.2M (productivity, cycle-time reduction)\n- Net: +$4.6M, payback yr 2.5\n\n**Risks:** vendor lock-in (mitigate with semantic layer), change fatigue (sequence releases)."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -801,7 +801,7 @@
     "sample_output": "**Trends**\n- Northeast region revenue +18% YoY, leading other regions by 9pp\n- Q4 still concentrates 38% of annual sales (vs. 34% three years ago)\n\n**Anomalies**\n- Two SKUs (#A23, #A41) show unit volume +200% but revenue flat — pricing issue?\n- Negative gross margin on three loss-leaders in Mar\n\n**Summary stats:** mean order $187, median $124, p90 $412. Long tail dominated by enterprise.\n\n**Suggested visuals:** waterfall of YoY revenue by region; scatter of unit volume vs. price for the SKU set."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -843,7 +843,7 @@
     "sample_output": "**Updates to @Balance Sheet - Q3**\n- Q3 actuals replaced estimates in columns C:F (source: S&P Capital IQ, pulled 2026-05-12 09:14 UTC)\n- Headers: \"Q3 E\" → \"Q3 A\"\n- New row: variance commentary\n- All checks PASS ✓\n\n**Variance commentary inserted**\n> Cash +$28M vs. estimate, driven by working-capital improvement (DSO ↓ 4 days). Long-term debt unchanged. Goodwill recalibrated for the X acquisition.\n\n**Source log:** appended to `_meta` tab; includes URL, retrieval time, fields touched."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -883,7 +883,7 @@
     "sample_output": "**Critical (3)**\n- `WACC!C18` references a deleted range — #REF!\n- BS doesn't balance in years 4–5: $1.2M, $0.9M off\n- Tax rate hard-coded inside a formula in CF tab\n\n**Warnings (7)**\n- Revenue growth jumps 14% → 41% Y3 with no driver explanation\n- Two circularities resolved silently — flag for review\n- Three named ranges declared but unused\n\n**Info (12)** — naming, colour coding, font drift.\n\n**Recommendation:** fix criticals before sending; warnings before signing."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -919,7 +919,7 @@
     "sample_output": "**Suggested renames**\n- `fact_sale_qty_v2` → `Sales Quantity`\n- `dim_cust_full` → `Customer`\n- `_calc_yoy_pct` → `Revenue YoY %`\n\n**Display folders added**\n- `Sales\\Volume` — Units, Returns, Net Units\n- `Sales\\Value` — Revenue, GM, GM%\n- `Time Intel` — YoY, MTD, QTD measures\n\n**Optimisation**\n- 14 string cols converted to integer keys → file size 89 MB → 41 MB\n- Refresh time: 14 min → 6 min\n\n**Doc output:** 28-page Markdown + Mermaid relationship diagram."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -949,7 +949,7 @@
     "sample_output": "**New table:** `_Measures`\n\n**Per category:**\n```dax\n[Sales — Hardware] = CALCULATE([Sales Amount], 'Product'[Category] = \"Hardware\")\n[Sales — Software] = CALCULATE([Sales Amount], 'Product'[Category] = \"Software\")\n[Sales — Services] = CALCULATE([Sales Amount], 'Product'[Category] = \"Services\")\n```\n\n**Net:** `Net Sales = [Sales Amount] − [Returns Amount]`\n\n**Time intel (for each measure):** MTD, QTD, YTD, MoM, YoY, Rolling 3M, Rolling 12M.\n\nPlaceholder integer column `_placeholder` hidden from report view."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -987,7 +987,7 @@
     "sample_output": "**Cell formulas (sample)**\n```\nA4:  =CUBEMEMBER(\"Model\",\"[Date].[Calendar].[Month].&[2026-04]\")\nB4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue]\", A4, $A$1)\nC4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue YoY %]\", A4, $A$1)\nA20: =CUBERANKEDMEMBER(\"Model\",\"[Product].[Top 10]\",1)\n```\n\n**Layout:** quarter-bands in rows, scenarios in columns, two narration columns between sections — impossible to do this cleanly with a PivotTable."
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -1022,7 +1022,7 @@
     "sample_output": "**Generated Markdown (excerpt)**\n```markdown\n## Model overview\nThis semantic model serves the Commercial Reporting team and powers\n12 reports, 3 Power BI Apps, and 1 paginated weekly board pack.\n\n## Relationship diagram\n\\`\\`\\`mermaid\nflowchart LR\n  Date --> Sales\n  Customer --> Sales\n  Product --> Sales\n  Sales --> InvoiceLine\n\\`\\`\\`\n\n## Measures\n### Revenue\n**DAX**\n\\`\\`\\`dax\nRevenue = SUMX('Sales', 'Sales'[Quantity] * 'Sales'[Unit Price])\n\\`\\`\\`\n**Business logic:** sales revenue net of returns, recognised on shipment.\n```"
   },
   {
-    "domain": "Business Intelligence",
+    "domain": "Data & Analytics",
     "section": "Data Analytics & Business Intelligence (BI)",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -1334,7 +1334,7 @@
     "sample_output": "**Competency map** (target: Senior PM, 12 months)\n| Skill | Now | Target | Gap |\n|---|---|---|---|\n| Product strategy | 3/5 | 4/5 | course + 1 case study |\n| Stakeholder mgmt | 4/5 | 4/5 | maintain |\n| Analytical depth | 2/5 | 4/5 | SQL + analytics cert |\n| Influence at exec level | 2/5 | 4/5 | mentor + practice |\n\n**Quarter 1 plan:** SQL course, 2 user-research interviews/wk, weekly 1:1 with skip-level.\n\n**Portfolio:** ship 3 case studies (problem, decision, outcome) by month 9."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "UI/UX Design",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -1371,7 +1371,7 @@
     "sample_output": "**Layout (dashboard, desktop-first)**\n- Top: page title + global filter row (1 row)\n- Left rail: nav (collapsible)\n- Main: 3-col KPI strip → 2-col chart block → table → footer\n\n**Colour scheme**\n- Bg: near-black (#0E1120)\n- Surface: dark blue-grey (#161A2C)\n- Primary action: violet (#9F8CFF)\n- Positive / negative / neutral: cyan / rose / parchment\n\n**Common mistakes:** too many colours, busy charts, no whitespace, low contrast on labels.\n\n**Tools (free):** Figma, Penpot, Excalidraw."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "UI/UX Design",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -1411,7 +1411,7 @@
     "sample_output": "**Primary flow (new user)**\n1. Sign up → email verify → onboarding tour (skippable)\n2. Empty state → choose first task → wins (badge, confetti)\n3. Day-2 nudge → return + retain\n\n**Wireframes (described)**\n- Home: top hero, three-card empty-state, primary CTA\n- Detail: left meta column, main content, right rail with related items\n- Settings: 3-tab layout, sticky save bar\n\n**Responsive:** breakpoints 640 / 768 / 1024 / 1280; mobile uses bottom-nav, desktop uses side rail.\n\n**A11y:** WCAG 2.1 AA contrast, focus rings on all interactive elements, keyboard-first nav, prefers-reduced-motion respected."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "UI/UX Design",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -1443,7 +1443,7 @@
     "sample_output": "**Token tree**\n```\ncolor/\n  bg/{abyss, steel, hairline}\n  fg/{1, 2, 3, on-violet}\n  accent/{violet, cyan-ice}\n  diff/{beginner, intermediate, advanced, expert}\ntype/{display, h1, h2, body, eyebrow, mono}\nspace/{1..24}    // 4px grid\nradius/{none, sm, md, lg, pill}\nshadow/{1, 2, 3, glow, glow-strong}\nmotion/{ease-out, dur-fast, dur-base, dur-slow}\n```\n\n**Governance:** all changes via PR, two reviewers (1 design + 1 eng), Storybook snapshots + visual diff CI."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "Data Visualization",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -1476,7 +1476,7 @@
     "sample_output": "**Picks**\n- Trend over time → line (use bands for variability)\n- Composition → stacked bar (small categories) or treemap (≥8)\n- Ranking → horizontal bar, longest at top\n- Distribution → histogram or box plot\n- Correlation → scatter, with regression line if signal is strong\n\n**Clarity:** start y-axis at 0 for bar charts (not always for line); label the most important point on the line, not all of them; lose the gridlines you don't read.\n\n**Colour:** one neutral + one accent. No rainbow palettes for ordinal data."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "Data Visualization",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -1516,7 +1516,7 @@
     "sample_output": "**Sections (top → bottom)**\n1. KPI strip (4 numbers, target vs. actual)\n2. Trend grid (4 line charts, shared x-axis)\n3. Breakdown (1 large + 2 small)\n4. Anomaly table (sortable, default by severity)\n\n**Interactions**\n- Global filters: date range, region, segment\n- Click a KPI tile → drill into its detail page\n- Right-click any value → \"explain this number\" (LLM)\n\n**Mobile:** collapse to single column, hide breakdown by default behind an accordion, keep KPI strip + one trend."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "Data Visualization",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -1560,7 +1560,7 @@
     "sample_output": "**Frontend**\n- React + TanStack Query for data\n- D3 for custom charts, Tremor for stock components\n- State: Zustand for UI, React Query for server-state\n\n**Data path**\n```\nKafka → Pinot (OLAP) → REST/WS → React\n                       ↳ SSE for live KPIs\n```\n\n**Perf**\n- Virtualise tables >200 rows\n- Web workers for any chart computing >5ms\n- LRU on dimension queries (TTL 30s)\n\n**Testing:** Playwright e2e for critical flows, Storybook visual regression, k6 load test (500 RPS sustained)."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "Content & Branding",
     "skill_level": "BEGINNER",
     "skill_emoji": "🔴",
@@ -1600,7 +1600,7 @@
     "sample_output": "**LinkedIn — Post 1 (educational)**\n> Three things I've stopped doing as a [role] this year:\n> 1. Sitting in status meetings without an agenda\n> 2. Answering \"quick questions\" in DM\n> 3. Volunteering for work I don't own\n> What did you stop doing? ↓\n\n**LinkedIn — Post 2 (POV)** [...]\n\n**Hashtags:** #ProductManagement #FoundersJourney (max 3–5, never on the first line)\n\n**Schedule:** Tue 09:00 educational, Thu 12:00 POV, Sat 10:00 story. Repurpose to Twitter same day, IG carousel on weekends."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "Content & Branding",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "🟡",
@@ -1640,7 +1640,7 @@
     "sample_output": "**Pillars (3)**\n1. Craft — how we build (40%)\n2. Behind the scenes — the boring middle (35%)\n3. POV — opinionated takes that age well (25%)\n\n**Mix per week**\n- 2 LinkedIn long-form\n- 3 Twitter threads\n- 1 newsletter\n- 1 short video (TikTok / Reels)\n\n**Repurposing:** newsletter → LI thread → Twitter excerpt → reel script. One artefact, four formats.\n\n**Metrics:** save rate (not likes), newsletter conversion, comment-to-DM ratio."
   },
   {
-    "domain": "Design & Creative",
+    "domain": "Creative AI",
     "section": "Content & Branding",
     "skill_level": "ADVANCED",
     "skill_emoji": "🟢",
@@ -2430,11 +2430,23 @@
     "skill_level": "BEGINNER",
     "title": "Explain Anything in Plain English",
     "prompt": "Explain [concept or topic] to me as if I have no background in it. Use an analogy, give me the 3 key things I need to know, and tell me what I can ignore for now.",
-    "tags": ["learning", "explainer", "beginner", "quick"],
+    "tags": [
+      "learning",
+      "explainer",
+      "beginner",
+      "quick"
+    ],
     "best_for": "Anyone who wants to understand something fast",
     "outcome": "A jargon-free explanation with an analogy and the three things that actually matter.",
-    "inputs": [{"label": "concept or topic"}],
-    "tools": ["Claude", "ChatGPT"],
+    "inputs": [
+      {
+        "label": "concept or topic"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "output_kind": "analysis",
     "sample_output": "**The concept:** Kubernetes\n\n**Analogy:** Think of your apps like shipping containers. Kubernetes is the shipping port — it decides which ships (servers) carry which containers, automatically reroutes if a ship has problems, and scales up when demand surges.\n\n**3 things you need to know:**\n1. It auto-heals: if your app crashes, Kubernetes restarts it\n2. It scales: add more traffic, it adds more instances automatically\n3. It abstracts infrastructure: you describe *what* you want, not *where* it runs\n\n**You can ignore for now:** etcd, control plane internals, CNI plugins — those are ops concerns unless you're running the cluster yourself."
   },
@@ -2444,11 +2456,26 @@
     "skill_level": "BEGINNER",
     "title": "Summarise Any Document or Article",
     "prompt": "Summarise the following [document type] in 5 bullet points. Highlight the single most important takeaway, flag any risks or open questions, and note one action I could take today.\n\n[paste content]",
-    "tags": ["summary", "reading", "quick", "productivity"],
+    "tags": [
+      "summary",
+      "reading",
+      "quick",
+      "productivity"
+    ],
     "best_for": "Anyone who reads a lot and needs the key points fast",
     "outcome": "5-bullet summary with the top insight, risks flagged, and one concrete action.",
-    "inputs": [{"label": "document type"}, {"label": "paste content"}],
-    "tools": ["Claude", "ChatGPT"],
+    "inputs": [
+      {
+        "label": "document type"
+      },
+      {
+        "label": "paste content"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "output_kind": "analysis",
     "sample_output": "**Summary: Q3 Investor Update**\n\n- Revenue hit $4.2M ARR (+18% QoQ) driven by enterprise expansion, not new logos\n- Churn ticked up to 3.2% — two large accounts left citing \"missing integrations\"\n- Hiring plan is 6 engineers by year-end; currently 2 offers outstanding\n- Runway is 22 months at current burn; Series B target is Q1 next year\n- Product roadmap: API v2 is the top priority for Q4\n\n**Most important takeaway:** Growth is healthy but churn signal on integrations needs immediate product response.\n\n**Risk:** If the two outstanding offers don't close, engineering plan slips and API v2 is at risk.\n\n**Action today:** Schedule a 30-min call with the two churned accounts to validate the integration gap before roadmap is locked."
   },
@@ -2458,11 +2485,23 @@
     "skill_level": "BEGINNER",
     "title": "Rewrite This More Clearly",
     "prompt": "Rewrite the following text to be clearer and more direct. Remove jargon, shorten sentences, and keep the core meaning intact. Also give me one sentence explaining the main change you made.\n\n[paste text]",
-    "tags": ["editing", "clarity", "writing", "quick"],
+    "tags": [
+      "editing",
+      "clarity",
+      "writing",
+      "quick"
+    ],
     "best_for": "Anyone who wants to communicate more clearly",
     "outcome": "A polished, plain-English rewrite plus a one-line explanation of the key edit.",
-    "inputs": [{"label": "paste text"}],
-    "tools": ["Claude", "ChatGPT"],
+    "inputs": [
+      {
+        "label": "paste text"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "output_kind": "templates",
     "sample_output": "**Original:** \"In order to facilitate the optimisation of our cross-functional synergy initiatives, we will be leveraging a new paradigm of collaborative frameworks going forward.\"\n\n**Rewritten:** \"We're rolling out a new approach to help teams work together better.\"\n\n**Main change:** Removed every piece of corporate jargon and cut from 27 words to 11 without losing meaning."
   },
@@ -2472,11 +2511,24 @@
     "skill_level": "BEGINNER",
     "title": "Draft a Quick Reply Email",
     "prompt": "Write a brief email reply to the following message. Keep it under 80 words, be friendly but professional, answer the key question directly, and end with a clear next step.\n\n[paste the email you received]",
-    "tags": ["email", "communication", "quick", "writing"],
+    "tags": [
+      "email",
+      "communication",
+      "quick",
+      "writing"
+    ],
     "best_for": "Anyone with a full inbox who wants to reply faster",
     "outcome": "A concise, professional reply under 80 words with a clear next step.",
-    "inputs": [{"label": "paste the email you received"}],
-    "tools": ["Claude", "Gmail", "Outlook"],
+    "inputs": [
+      {
+        "label": "paste the email you received"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Gmail",
+      "Outlook"
+    ],
     "output_kind": "templates",
     "sample_output": "Hi Sarah,\n\nThanks for reaching out — yes, we can move the Thursday call to 3 PM instead of 2 PM. Works perfectly.\n\nI'll send a revised invite now. Looking forward to walking through the Q4 plan with you.\n\nBest,\nAlex"
   },
@@ -2486,11 +2538,24 @@
     "skill_level": "BEGINNER",
     "title": "Turn Meeting Notes into Action Items",
     "prompt": "I have rough notes from a meeting. Extract all action items in a clean table with: Owner, Action, Deadline (if mentioned). Then write a 2-sentence meeting summary I can paste into Slack.\n\nNotes: [paste meeting notes]",
-    "tags": ["meetings", "productivity", "notes", "quick"],
+    "tags": [
+      "meetings",
+      "productivity",
+      "notes",
+      "quick"
+    ],
     "best_for": "Anyone who takes meeting notes and needs to distribute them fast",
     "outcome": "Structured action item table + a 2-sentence Slack-ready summary.",
-    "inputs": [{"label": "paste meeting notes"}],
-    "tools": ["Claude", "Notion", "Slack"],
+    "inputs": [
+      {
+        "label": "paste meeting notes"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Notion",
+      "Slack"
+    ],
     "output_kind": "table",
     "sample_output": "**Action Items**\n\n| Owner | Action | Deadline |\n|---|---|---|\n| Priya | Send revised pricing deck to enterprise accounts | Friday EOD |\n| Marcus | Book venue for Q4 kickoff | Next Wednesday |\n| Team | Review updated OKRs before next sync | Thursday AM |\n\n**Slack summary:**\nWe aligned on Q4 priorities — pricing update and venue booking are the two blockers. Full action list in Notion."
   },
@@ -2500,11 +2565,29 @@
     "skill_level": "BEGINNER",
     "title": "Generate a Pro/Con List",
     "prompt": "I need to decide between [option A] and [option B] in the context of [your situation]. Give me a structured pro/con table for each, weight the most important factors, and give me your recommendation with a one-sentence rationale.",
-    "tags": ["decision-making", "planning", "quick", "analysis"],
+    "tags": [
+      "decision-making",
+      "planning",
+      "quick",
+      "analysis"
+    ],
     "best_for": "Anyone facing a decision who wants a structured view fast",
     "outcome": "A weighted pro/con table for both options plus a clear recommendation.",
-    "inputs": [{"label": "option A"}, {"label": "option B"}, {"label": "your situation"}],
-    "tools": ["Claude", "ChatGPT"],
+    "inputs": [
+      {
+        "label": "option A"
+      },
+      {
+        "label": "option B"
+      },
+      {
+        "label": "your situation"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "output_kind": "table",
     "sample_output": "**Option A: Hire a full-time designer**\n\n| Pro | Con |\n|---|---|\n| Deep brand consistency | 3-month ramp time |\n| Embedded in team | $90k+ cost |\n| Long-term asset | Risk if workload drops |\n\n**Option B: Use a design agency**\n\n| Pro | Con |\n|---|---|\n| Fast start (1–2 weeks) | Less brand ownership |\n| Flexible scope | Higher per-hour cost |\n| No hiring risk | Communication overhead |\n\n**Recommendation:** Start with the agency. Your product roadmap is still shifting — locking in a full-time hire before the design direction is settled is premature."
   },
@@ -2514,11 +2597,24 @@
     "skill_level": "BEGINNER",
     "title": "Create a Template from a One-Off Doc",
     "prompt": "Turn the following one-off document into a reusable template. Replace specific names, dates, and numbers with clear [PLACEHOLDER] labels. Add a short instruction comment above each placeholder explaining what to fill in.\n\n[paste document]",
-    "tags": ["templates", "documentation", "reuse", "quick"],
+    "tags": [
+      "templates",
+      "documentation",
+      "reuse",
+      "quick"
+    ],
     "best_for": "Anyone who writes the same type of document repeatedly",
     "outcome": "A clean, labelled template with placeholder instructions ready to reuse.",
-    "inputs": [{"label": "paste document"}],
-    "tools": ["Claude", "Notion", "Google Docs"],
+    "inputs": [
+      {
+        "label": "paste document"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Notion",
+      "Google Docs"
+    ],
     "output_kind": "templates",
     "sample_output": "**PROJECT KICKOFF BRIEF**\n\n<!-- Project name: e.g. \"Website Redesign Q1\" -->\n**Project:** [PROJECT NAME]\n\n<!-- One sentence describing the goal -->\n**Objective:** [PROJECT OBJECTIVE]\n\n<!-- Format: Month DD, YYYY -->\n**Launch date:** [TARGET LAUNCH DATE]\n\n<!-- List 2-4 people and their role -->\n**Team:**\n- [NAME] — [ROLE]\n- [NAME] — [ROLE]\n\n<!-- What does success look like? List 2-3 measurable outcomes -->\n**Success metrics:**\n1. [METRIC 1]\n2. [METRIC 2]"
   },
@@ -2528,11 +2624,23 @@
     "skill_level": "BEGINNER",
     "title": "Write a LinkedIn Post from a Rough Idea",
     "prompt": "Turn this rough idea into a LinkedIn post: [your rough idea or bullet points]. Make it engaging but not cringe. Open with a hook, share one insight or story, end with a question or takeaway. Keep it under 200 words.",
-    "tags": ["linkedin", "social-media", "writing", "quick"],
+    "tags": [
+      "linkedin",
+      "social-media",
+      "writing",
+      "quick"
+    ],
     "best_for": "Professionals who want to build a presence but hate writing from scratch",
     "outcome": "A 200-word LinkedIn post with a hook opening and clear takeaway.",
-    "inputs": [{"label": "your rough idea or bullet points"}],
-    "tools": ["Claude", "ChatGPT"],
+    "inputs": [
+      {
+        "label": "your rough idea or bullet points"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "output_kind": "templates",
     "sample_output": "We almost launched the wrong product.\n\nThree months ago, we were convinced users wanted a dashboard. We built mockups, wrote specs, and had the engineers ready to start.\n\nThen we did 8 customer calls.\n\nNobody cared about the dashboard. They cared about one thing: getting their data out faster. The dashboard was just how they thought they'd use it.\n\nWe killed the dashboard. Built a one-click export instead. Shipped in 2 weeks. NPS jumped 18 points.\n\nThe lesson: users describe solutions, not problems. Your job is to ask one layer deeper — *why* do you want that?\n\nWhat's the last assumption a customer call killed for you?"
   },
@@ -2542,11 +2650,24 @@
     "skill_level": "BEGINNER",
     "title": "Write Your First Image Generation Prompt",
     "prompt": "I want to create an image of [what you want to see]. Help me write a detailed Midjourney or DALL-E prompt that will produce a great result. Include: subject, style, lighting, mood, composition, and any negative prompts to avoid. Give me 3 variations at different style directions.",
-    "tags": ["image-generation", "midjourney", "dalle", "prompt-engineering"],
+    "tags": [
+      "image-generation",
+      "midjourney",
+      "dalle",
+      "prompt-engineering"
+    ],
     "best_for": "Anyone new to AI image generation",
     "outcome": "Three ready-to-use image prompts at different style directions, with negative prompts included.",
-    "inputs": [{"label": "what you want to see"}],
-    "tools": ["Midjourney", "DALL-E 3", "Stable Diffusion"],
+    "inputs": [
+      {
+        "label": "what you want to see"
+      }
+    ],
+    "tools": [
+      "Midjourney",
+      "DALL-E 3",
+      "Stable Diffusion"
+    ],
     "output_kind": "spec",
     "sample_output": "**Variation 1 — Cinematic Photo**\n`/imagine a lone lighthouse on rocky cliffs at golden hour, stormy ocean in background, dramatic god rays through clouds, shot on Hasselblad, f/2.8, cinematic color grade, 8k --ar 16:9 --v 6`\n*Negative:* cartoonish, flat, oversaturated, text\n\n**Variation 2 — Oil Painting**\n`/imagine lighthouse on sea cliffs, oil painting in the style of J.M.W. Turner, impressionistic brushwork, warm ochre and deep navy palette, museum quality, impasto texture --ar 4:3 --stylize 800`\n*Negative:* photorealistic, digital, modern\n\n**Variation 3 — Minimal Illustration**\n`/imagine minimalist vector illustration of lighthouse, flat design, 3-color palette of cream/navy/coral, geometric shapes, editorial style, negative space composition --ar 1:1 --style raw`\n*Negative:* complex, detailed, photographic"
   },
@@ -2556,11 +2677,24 @@
     "skill_level": "INTERMEDIATE",
     "title": "AI Product Photography Brief",
     "prompt": "I'm shooting [product name] using AI image generation. Create a detailed photography brief for 5 different shots: lifestyle, detail, comparison, hero, and social square. For each shot include the full AI prompt, lighting setup, background, mood, and intended platform use.",
-    "tags": ["product-photography", "e-commerce", "midjourney", "brand"],
+    "tags": [
+      "product-photography",
+      "e-commerce",
+      "midjourney",
+      "brand"
+    ],
     "best_for": "E-commerce brands, product marketers, studio directors",
     "outcome": "5-shot AI photography brief with full prompts, lighting, and platform specs for each.",
-    "inputs": [{"label": "product name"}],
-    "tools": ["Midjourney", "DALL-E 3", "Adobe Firefly"],
+    "inputs": [
+      {
+        "label": "product name"
+      }
+    ],
+    "tools": [
+      "Midjourney",
+      "DALL-E 3",
+      "Adobe Firefly"
+    ],
     "output_kind": "spec",
     "sample_output": "**Shot 1 — Hero**\nPrompt: `minimalist ceramic coffee mug, studio white background, single soft key light from upper left, long shadow, shot on Phase One, product photography, hyper-detail --ar 4:5`\nPlatform: Homepage hero, email header\n\n**Shot 2 — Lifestyle**\nPrompt: `ceramic mug on weathered oak desk, morning light through linen curtains, MacBook open, small succulent, warm lifestyle photography, film grain --ar 16:9`\nPlatform: Instagram, blog\n\n**Shot 3 — Detail**\nPrompt: `extreme close-up ceramic texture, matte glaze, micro detail, macro lens, soft bokeh background, neutral tones --ar 1:1`\nPlatform: PDPs, Amazon\n..."
   },
@@ -2570,11 +2704,29 @@
     "skill_level": "INTERMEDIATE",
     "title": "Midjourney Style Guide for a Brand",
     "prompt": "Create a Midjourney style guide for [brand name] with the following brand values: [list 3 values] and target audience: [describe audience]. Include: a core prompt suffix all images should use, 5 approved style references with example prompts, 3 things to always avoid, and a color palette description to include in prompts.",
-    "tags": ["brand", "midjourney", "style-guide", "visual-identity"],
+    "tags": [
+      "brand",
+      "midjourney",
+      "style-guide",
+      "visual-identity"
+    ],
     "best_for": "Brand designers, marketing teams, creative directors",
     "outcome": "A reusable Midjourney style guide with core suffix, 5 style references, and brand-safe guardrails.",
-    "inputs": [{"label": "brand name"}, {"label": "list 3 values"}, {"label": "describe audience"}],
-    "tools": ["Midjourney", "Notion"],
+    "inputs": [
+      {
+        "label": "brand name"
+      },
+      {
+        "label": "list 3 values"
+      },
+      {
+        "label": "describe audience"
+      }
+    ],
+    "tools": [
+      "Midjourney",
+      "Notion"
+    ],
     "output_kind": "spec",
     "sample_output": "**Brand:** Forma Studio (minimal architecture firm)\n\n**Core suffix** (append to every prompt):\n`--style raw --ar 16:9 --v 6.1 :: warm ivory and slate tones, natural light, architectural precision, editorial calm`\n\n**Approved styles:**\n1. Exterior — `concrete and glass building, golden hour, aerial perspective, Zaha Hadid influence`\n2. Interior — `open plan living space, floor-to-ceiling windows, linen furniture, minimal decor`\n...\n\n**Always avoid:** busy patterns, bright saturated colors, people in foreground, text overlays, fantasy elements\n\n**Color palette to include:** ivory (#F7F4EE), slate (#4A5568), warm sand (#C9B99A)"
   },
@@ -2584,11 +2736,29 @@
     "skill_level": "INTERMEDIATE",
     "title": "AI Video Script and Shot List",
     "prompt": "Write a 60-second video script and shot list for [video concept] targeting [target audience]. Format it as a production doc with: VO script column, visual description column, shot type, and AI video prompt for each scene (suitable for Runway, Pika, or Sora). Aim for 6-8 scenes.",
-    "tags": ["video", "runway", "sora", "scriptwriting", "production"],
+    "tags": [
+      "video",
+      "runway",
+      "sora",
+      "scriptwriting",
+      "production"
+    ],
     "best_for": "Content creators, video producers, social media managers",
     "outcome": "A 60-second production doc with VO script, shot descriptions, and AI video prompts for each scene.",
-    "inputs": [{"label": "video concept"}, {"label": "target audience"}],
-    "tools": ["Runway", "Pika", "Sora", "CapCut"],
+    "inputs": [
+      {
+        "label": "video concept"
+      },
+      {
+        "label": "target audience"
+      }
+    ],
+    "tools": [
+      "Runway",
+      "Pika",
+      "Sora",
+      "CapCut"
+    ],
     "output_kind": "deck",
     "sample_output": "**VIDEO: \"Morning Ritual\" — Cold Brew Brand | 60 sec**\n\n| Scene | VO Script | Visual | Shot | AI Prompt |\n|---|---|---|---|---|\n| 1 (0–5s) | \"Some mornings ask more of you.\" | Alarm clock 5:47am, dark room | Close-up | `alarm clock glowing in dark bedroom, cinematic, slow motion, film grain, cool tones` |\n| 2 (5–12s) | \"So we made a cold brew that answers back.\" | Hands wrapping around glass | Medium | `hands holding glass of cold brew coffee, morning light, condensation on glass, warm tones` |\n..."
   },
@@ -2598,11 +2768,24 @@
     "skill_level": "ADVANCED",
     "title": "Character Design Sheet with AI",
     "prompt": "I'm designing a character: [character description]. Create a complete AI art direction document for generating a consistent character across multiple images. Include: a canonical base prompt, 4 pose variants, 3 expression variants, lighting setup for hero vs. action shots, and a LoRA/style consistency note for Stable Diffusion.",
-    "tags": ["character-design", "stable-diffusion", "concept-art", "game-art"],
+    "tags": [
+      "character-design",
+      "stable-diffusion",
+      "concept-art",
+      "game-art"
+    ],
     "best_for": "Game designers, illustrators, concept artists, indie developers",
     "outcome": "A full character art direction sheet with canonical prompt, pose/expression variants, and SD consistency notes.",
-    "inputs": [{"label": "character description"}],
-    "tools": ["Stable Diffusion", "Midjourney", "ComfyUI"],
+    "inputs": [
+      {
+        "label": "character description"
+      }
+    ],
+    "tools": [
+      "Stable Diffusion",
+      "Midjourney",
+      "ComfyUI"
+    ],
     "output_kind": "spec",
     "sample_output": "**Character:** Lyra — young mage, silver hair, emerald eyes, worn leather coat, staff\n\n**Canonical base prompt:**\n`lyra, 20s female mage, silver hair swept back, emerald eyes glowing faintly, worn brown leather duster, wooden staff with orb, fantasy, detailed illustration, artstation quality`\n\n**Pose variants:**\n- Standing neutral: `standing pose, three-quarter view, neutral expression`\n- Casting spell: `dynamic casting pose, hands raised, magical energy swirling`\n\n**SD consistency tip:** Train a LoRA on 15-20 approved outputs. Use `lyra_v1:0.8` in prompt weight to maintain face/costume consistency across scenes."
   },
@@ -2612,11 +2795,27 @@
     "skill_level": "ADVANCED",
     "title": "Generate a Full UI Design System Prompt Library",
     "prompt": "I'm building a [product type] app with these design principles: [list 3 principles]. Create a prompt library for generating UI assets with AI image tools: icon set style prompt, illustration style prompt, hero image prompt, onboarding screen mood board prompt, and empty state illustration prompt. Each should be immediately usable in Midjourney or DALL-E.",
-    "tags": ["ui-design", "design-system", "midjourney", "product-design"],
+    "tags": [
+      "ui-design",
+      "design-system",
+      "midjourney",
+      "product-design"
+    ],
     "best_for": "Product designers, UI/UX designers, design system leads",
     "outcome": "5 reusable AI prompts covering icons, illustrations, heroes, onboarding, and empty states — all in a consistent visual language.",
-    "inputs": [{"label": "product type"}, {"label": "list 3 principles"}],
-    "tools": ["Midjourney", "DALL-E 3", "Figma"],
+    "inputs": [
+      {
+        "label": "product type"
+      },
+      {
+        "label": "list 3 principles"
+      }
+    ],
+    "tools": [
+      "Midjourney",
+      "DALL-E 3",
+      "Figma"
+    ],
     "output_kind": "spec",
     "sample_output": "**App:** Wellness tracker | Principles: calm, human, minimal\n\n**Icon set:** `line icon set, wellness and health theme, 24px grid, 1.5px stroke, rounded caps, monochrome, clean minimal style, SVG-ready, white on dark --ar 1:1`\n\n**Illustration:** `gentle pastel illustration, person meditating in nature, flat design, soft gradients, breathing space, Headspace-adjacent style, no text --ar 4:3`\n\n**Hero image:** `serene landscape at dawn, soft golden light, person on hill, minimalist, editorial photography feel, lots of sky --ar 16:9`\n\n**Empty state:** `friendly abstract shape, no data yet, pastel tones, encouraging feeling, tiny character looking up, white background --ar 3:2`"
   },
@@ -2626,11 +2825,27 @@
     "skill_level": "BEGINNER",
     "title": "AI Interior Design Concepts",
     "prompt": "I want to redesign my [room type] in the style of [design style]. Generate 3 interior design concept prompts I can use in Midjourney or DALL-E. Include furniture, lighting, palette, and the specific mood for each concept. Make each concept distinctly different.",
-    "tags": ["interior-design", "home", "midjourney", "visualization"],
+    "tags": [
+      "interior-design",
+      "home",
+      "midjourney",
+      "visualization"
+    ],
     "best_for": "Homeowners, renters, interior design enthusiasts",
     "outcome": "Three distinct interior design concept prompts ready for AI image generation.",
-    "inputs": [{"label": "room type"}, {"label": "design style"}],
-    "tools": ["Midjourney", "DALL-E 3", "Interior AI"],
+    "inputs": [
+      {
+        "label": "room type"
+      },
+      {
+        "label": "design style"
+      }
+    ],
+    "tools": [
+      "Midjourney",
+      "DALL-E 3",
+      "Interior AI"
+    ],
     "output_kind": "spec",
     "sample_output": "**Concept 1 — Warm Japandi**\n`living room interior, japandi style, warm oak furniture, cream boucle sofa, washi paper pendant light, low coffee table with single book and plant, tatami-inspired textures, golden hour light --ar 16:9`\n\n**Concept 2 — Cool Minimalist**\n`living room, brutalist minimalism, concrete floor, slate grey sectional, single arc floor lamp, large art print, negative space, cool natural light --ar 16:9`\n\n**Concept 3 — Cosy Eclectic**\n`boho living room, warm amber light, mixed textiles, vintage Persian rug, gallery wall, trailing houseplants, low warm lighting, layered --ar 16:9`"
   },
@@ -2640,11 +2855,28 @@
     "skill_level": "INTERMEDIATE",
     "title": "Design a Core Game Loop",
     "prompt": "I'm building a [game genre] game for [target platform]. Help me design the core game loop. Define: the player's primary action, the immediate feedback, the short-term goal (session), the long-term goal (progression), and the re-engagement hook. Then identify the 3 biggest risks that could make the loop feel unsatisfying.",
-    "tags": ["game-design", "game-loop", "mechanics", "prototyping"],
+    "tags": [
+      "game-design",
+      "game-loop",
+      "mechanics",
+      "prototyping"
+    ],
     "best_for": "Indie developers, game designers, students learning game design",
     "outcome": "A structured core loop design with action/feedback/goals mapped out and 3 risk areas identified.",
-    "inputs": [{"label": "game genre"}, {"label": "target platform"}],
-    "tools": ["Claude", "Notion", "Unity", "Godot"],
+    "inputs": [
+      {
+        "label": "game genre"
+      },
+      {
+        "label": "target platform"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Notion",
+      "Unity",
+      "Godot"
+    ],
     "output_kind": "spec",
     "sample_output": "**Game:** Tower Defense Roguelite (Mobile)\n\n**Core loop:**\n- **Primary action:** Place and upgrade towers using earned currency\n- **Immediate feedback:** Visual + haptic pop when a tower kills an enemy; currency counter ticks up\n- **Session goal (5–10 min):** Survive N waves and reach the boss\n- **Progression goal:** Unlock permanent upgrades, new tower types, harder maps\n- **Re-engagement hook:** Daily challenge with unique constraint; streak reward system\n\n**Top 3 risks:**\n1. **Upgrade overwhelm** — Too many options at once kills mobile pacing. Solution: gate by wave milestone.\n2. **No comeback mechanic** — If a run goes bad early, players quit. Add a 'Last Stand' emergency ability.\n3. **Progression plateau** — If permanent upgrades cap out, endgame feels flat. Plan a prestige system from day one."
   },
@@ -2654,11 +2886,35 @@
     "skill_level": "INTERMEDIATE",
     "title": "Write Branching NPC Dialogue",
     "prompt": "Write branching dialogue for an NPC named [NPC name] who is [personality description] in a [game setting]. The player needs to [player goal in this interaction]. Create 3 conversation paths: friendly approach, aggressive approach, and clever/persuasion approach. Each path should have 3 exchanges and end with a different outcome.",
-    "tags": ["narrative", "dialogue", "npc", "rpg", "game-writing"],
+    "tags": [
+      "narrative",
+      "dialogue",
+      "npc",
+      "rpg",
+      "game-writing"
+    ],
     "best_for": "Game writers, narrative designers, RPG developers",
     "outcome": "Three fully-written branching dialogue paths with distinct outcomes for different player approaches.",
-    "inputs": [{"label": "NPC name"}, {"label": "personality description"}, {"label": "game setting"}, {"label": "player goal in this interaction"}],
-    "tools": ["Claude", "Twine", "Ink", "Unity"],
+    "inputs": [
+      {
+        "label": "NPC name"
+      },
+      {
+        "label": "personality description"
+      },
+      {
+        "label": "game setting"
+      },
+      {
+        "label": "player goal in this interaction"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Twine",
+      "Ink",
+      "Unity"
+    ],
     "output_kind": "templates",
     "sample_output": "**NPC:** Maren — tired city guard, underpaid, secretly sympathetic\n\n**PATH A — Friendly**\nPlayer: \"Rough shift?\"\nMaren: \"You have no idea. Third double this week. What do you need?\"\nPlayer: \"Just trying to get into the merchants' quarter.\"\nMaren: *sighs* \"Gate closes at ninth bell. But… I didn't see you walk through just now. Move quick.\"\n*Outcome: Passage granted, +5 reputation with City Guard faction*\n\n**PATH B — Aggressive**\nPlayer: \"Get out of my way.\"\nMaren: \"Excuse me? You want to try that again?\"\n*Outcome: Hostile, -10 City Guard reputation, forced combat or retreat*\n\n**PATH C — Persuasion**\nPlayer: \"I heard the captain skims the gate fees. Must be frustrating doing the work and seeing none of it.\"\nMaren: *quietly* \"Who told you that?\" *pause* \"Fine. But you didn't hear this from me.\"\n*Outcome: Access + quest hook: Expose corrupt captain*"
   },
@@ -2668,11 +2924,30 @@
     "skill_level": "ADVANCED",
     "title": "Generate Unity C# Game Systems",
     "prompt": "I'm building a [game type] in Unity. Write a clean, commented C# script for [specific system]. The system should: [list 3 requirements]. Use Unity best practices: SerializeField for inspector exposure, coroutines where appropriate, and the observer pattern via events for decoupling. Include a brief architecture note at the top.",
-    "tags": ["unity", "csharp", "game-programming", "systems"],
+    "tags": [
+      "unity",
+      "csharp",
+      "game-programming",
+      "systems"
+    ],
     "best_for": "Unity developers, indie game programmers, CS students",
     "outcome": "A production-quality Unity C# script with architecture notes, events-based design, and full comments.",
-    "inputs": [{"label": "game type"}, {"label": "specific system"}, {"label": "list 3 requirements"}],
-    "tools": ["Unity", "Visual Studio", "Claude"],
+    "inputs": [
+      {
+        "label": "game type"
+      },
+      {
+        "label": "specific system"
+      },
+      {
+        "label": "list 3 requirements"
+      }
+    ],
+    "tools": [
+      "Unity",
+      "Visual Studio",
+      "Claude"
+    ],
     "output_kind": "code",
     "sample_output": "```csharp\n// InventorySystem.cs\n// Architecture: Uses event-driven design to decouple UI from inventory logic.\n// Subscribe to OnInventoryChanged to update any UI without direct references.\n\nusing UnityEngine;\nusing System;\nusing System.Collections.Generic;\n\npublic class InventorySystem : MonoBehaviour\n{\n    public static event Action<List<Item>> OnInventoryChanged;\n\n    [SerializeField] private int maxSlots = 20;\n    private List<Item> _items = new List<Item>();\n\n    public bool AddItem(Item item)\n    {\n        if (_items.Count >= maxSlots) return false;\n        _items.Add(item);\n        OnInventoryChanged?.Invoke(_items);\n        return true;\n    }\n\n    public void RemoveItem(Item item)\n    {\n        if (_items.Remove(item))\n            OnInventoryChanged?.Invoke(_items);\n    }\n}\n```"
   },
@@ -2682,11 +2957,30 @@
     "skill_level": "ADVANCED",
     "title": "Balance a Game Economy",
     "prompt": "I have a [game genre] with this economy: [describe currency, sources, and sinks]. Players are reporting that [specific problem: inflation / deflation / pay-to-win feeling / etc]. Diagnose the root cause, propose 3 fixes with trade-offs, and give me a spreadsheet schema I can use to model the economy before implementing changes.",
-    "tags": ["game-economy", "balancing", "monetization", "design"],
+    "tags": [
+      "game-economy",
+      "balancing",
+      "monetization",
+      "design"
+    ],
     "best_for": "Game designers, live ops teams, monetization designers",
     "outcome": "Root-cause diagnosis, 3 fixes with trade-offs, and a spreadsheet schema for economy modeling.",
-    "inputs": [{"label": "game genre"}, {"label": "describe currency, sources, and sinks"}, {"label": "specific problem: inflation / deflation / pay-to-win feeling / etc"}],
-    "tools": ["Claude", "Google Sheets", "Excel"],
+    "inputs": [
+      {
+        "label": "game genre"
+      },
+      {
+        "label": "describe currency, sources, and sinks"
+      },
+      {
+        "label": "specific problem: inflation / deflation / pay-to-win feeling / etc"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Google Sheets",
+      "Excel"
+    ],
     "output_kind": "analysis",
     "sample_output": "**Diagnosis:** Soft currency inflation\n\nYour daily quest rewards (500 coins) outpace the primary sink (upgrades average 800 coins but only needed every 3 days). Players accumulate ~1,500 coins/day with nowhere to spend them, making purchases feel meaningless.\n\n**Fix 1 — Add a time-limited sink**\nFlash merchant appears daily with exclusive cosmetics for 2,000 coins. *Trade-off:* Requires art/content overhead.\n\n**Fix 2 — Reduce quest rewards by 30%**\nSimple lever, ships fast. *Trade-off:* Risk of player backlash; needs communication.\n\n**Fix 3 — Add a prestige/conversion system**\n10,000 coins → 1 premium token. Creates an aspirational sink. *Trade-off:* Competitive pressure with IAP.\n\n**Spreadsheet schema:**\n| Day | Coins earned | Coins spent | Net | Running total | Active sinks |"
   },
@@ -2696,11 +2990,26 @@
     "skill_level": "EXPERT",
     "title": "Design an LLM-Powered NPC Brain",
     "prompt": "I want to build an NPC in [game engine] that uses an LLM for dynamic dialogue and decision-making. Design the complete architecture: context window management strategy, memory system (short + long term), personality consistency mechanism, cost-control approach, and fallback for offline/slow responses. Include a sample system prompt and the API call structure.",
-    "tags": ["llm", "ai-npc", "game-ai", "agents", "architecture"],
+    "tags": [
+      "llm",
+      "ai-npc",
+      "game-ai",
+      "agents",
+      "architecture"
+    ],
     "best_for": "Advanced game developers, AI engineers building game AI",
     "outcome": "Full LLM-NPC architecture with memory design, cost controls, system prompt, and API structure.",
-    "inputs": [{"label": "game engine"}],
-    "tools": ["Claude API", "OpenAI API", "Unity", "Unreal Engine"],
+    "inputs": [
+      {
+        "label": "game engine"
+      }
+    ],
+    "tools": [
+      "Claude API",
+      "OpenAI API",
+      "Unity",
+      "Unreal Engine"
+    ],
     "output_kind": "spec",
     "sample_output": "**Architecture: LLM NPC Brain v1**\n\n**Context window strategy:**\n- Fixed system prompt: ~800 tokens (personality, world, current state)\n- Rolling dialogue window: last 10 exchanges (~600 tokens)\n- Injected memory summary: top 3 relevant memories (~200 tokens)\n- Total budget: 1,600 tokens in, 200 tokens out\n\n**Memory system:**\n- Short-term: last 10 messages in RAM\n- Long-term: vector DB (Chroma) — embed each exchange, retrieve top-3 by cosine similarity at query time\n\n**System prompt skeleton:**\n```\nYou are Aldric, a suspicious tavern keeper in the city of Veth.\nPersonality: guarded, dry humour, loyal to paying customers.\nCurrent state: {npc_mood}, {time_of_day}, {player_reputation}\nRecent memory: {memory_summary}\nRespond in 1-2 sentences. Stay in character. Never break the fourth wall.\n```\n\n**Cost control:** Cache system prompt with Anthropic prompt caching. Use Haiku for ambient chatter, Sonnet for quest-critical dialogue."
   },
@@ -2710,11 +3019,25 @@
     "skill_level": "EXPERT",
     "title": "Procedural Level Design System",
     "prompt": "Design a procedural level generation system for a [game genre]. Define: the grammar rules (what elements can follow what), the constraint system (difficulty curve, pacing, accessibility), the seeded random approach, and the validation step that ensures every generated level is beatable. Give me pseudocode for the generator and a sample level output.",
-    "tags": ["procedural-generation", "level-design", "algorithms", "game-programming"],
+    "tags": [
+      "procedural-generation",
+      "level-design",
+      "algorithms",
+      "game-programming"
+    ],
     "best_for": "Advanced game developers, technical designers",
     "outcome": "A complete procedural level design specification with grammar rules, constraints, pseudocode, and sample output.",
-    "inputs": [{"label": "game genre"}],
-    "tools": ["Claude", "Python", "Unity", "Godot"],
+    "inputs": [
+      {
+        "label": "game genre"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Python",
+      "Unity",
+      "Godot"
+    ],
     "output_kind": "spec",
     "sample_output": "**System: Dungeon Crawler Level Generator**\n\n**Grammar rules:**\nRoom types: [ENTRANCE, COMBAT, TREASURE, PUZZLE, BOSS]\nSequence: ENTRANCE → (COMBAT|PUZZLE)+ → TREASURE? → BOSS\nConstraint: No two COMBAT rooms adjacent; TREASURE only after COMBAT\n\n**Difficulty curve:**\nEnemy HP = base × (1 + 0.15 × roomIndex)\nRoom count = 8 + floor(level/3)\n\n**Pseudocode:**\n```\nfunction generateLevel(seed, difficulty):\n  rng = SeededRandom(seed)\n  rooms = [ENTRANCE]\n  while not valid(rooms):\n    rooms = buildChain(rng, difficulty)\n  return connectRooms(rooms, rng)\n\nfunction validate(rooms):\n  return isReachable(rooms) and hasBoss(rooms) and difficultyInBounds(rooms)\n```\n\n**Sample output (seed 4821, difficulty 2):**\nENTRANCE → COMBAT(3 goblins) → PUZZLE(pressure plates) → COMBAT(5 goblins + archer) → TREASURE(rare sword) → BOSS(Lich, 240HP)"
   }

@@ -15,14 +15,15 @@ interface Props {
 }
 
 const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":    "#F4D06F",
-  "productivity":  "#8FE3D2",
-  "writing":       "#F08CA8",
-  "research":      "#B6A6FF",
-  "data-finance":  "#E8C089",
-  "coding":        "#9F8CFF",
-  "creative-ai":   "#5EEAD4",
-  "game-advanced": "#E9D9B6",
+  "quick-wins":     "#F4D06F",
+  "productivity":   "#8FE3D2",
+  "writing":        "#F08CA8",
+  "research":       "#B6A6FF",
+  "finance":        "#6EE7A0",
+  "data-analytics": "#E8C089",
+  "coding":         "#9F8CFF",
+  "creative-ai":    "#5EEAD4",
+  "game-advanced":  "#E9D9B6",
 };
 
 export default function ExpandedCard({ item, onClose }: Props) {

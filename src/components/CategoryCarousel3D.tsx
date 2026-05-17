@@ -4,14 +4,15 @@ import { useRef, useEffect } from "react";
 import * as THREE from "three";
 
 export const CAROUSEL_ITEMS = [
-  { id: "quick-wins",    label: "Quick Wins",     essence: "5-min tasks anyone can use today.",         color: 0xF4D06F, hex: "#F4D06F" },
-  { id: "productivity",  label: "Productivity",   essence: "Scheduling, notes, planning, automation.",  color: 0x8FE3D2, hex: "#8FE3D2" },
-  { id: "writing",       label: "Writing & Copy", essence: "Long-form, email, social, brand voice.",    color: 0xF08CA8, hex: "#F08CA8" },
-  { id: "research",      label: "Research",       essence: "Deep dives, synthesis, competitive intel.", color: 0xB6A6FF, hex: "#B6A6FF" },
-  { id: "data-finance",  label: "Data & Finance", essence: "Modeling, forecasting, dashboards, FP&A.", color: 0xE8C089, hex: "#E8C089" },
-  { id: "coding",        label: "Code & Build",   essence: "Apps, APIs, scripts, architecture.",        color: 0x9F8CFF, hex: "#9F8CFF" },
-  { id: "creative-ai",   label: "Creative AI",    essence: "Image gen, visual direction, generative.",  color: 0x5EEAD4, hex: "#5EEAD4" },
-  { id: "game-advanced", label: "Game & Advanced",essence: "Game dev, 3D, agents, LLM pipelines.",     color: 0xE9D9B6, hex: "#E9D9B6" },
+  { id: "quick-wins",     label: "Quick Wins",        essence: "5-min tasks anyone can use today.",              color: 0xF4D06F, hex: "#F4D06F" },
+  { id: "productivity",   label: "Productivity",      essence: "Scheduling, notes, planning, automation.",       color: 0x8FE3D2, hex: "#8FE3D2" },
+  { id: "writing",        label: "Writing & Copy",    essence: "Long-form, email, social, brand voice.",         color: 0xF08CA8, hex: "#F08CA8" },
+  { id: "research",       label: "Research",          essence: "Deep dives, synthesis, competitive intel.",      color: 0xB6A6FF, hex: "#B6A6FF" },
+  { id: "finance",        label: "Finance & FP&A",    essence: "Forecasting, modeling, variance, board decks.",  color: 0x6EE7A0, hex: "#6EE7A0" },
+  { id: "data-analytics", label: "Data & Analytics",  essence: "BI dashboards, pipelines, insight automation.",  color: 0xE8C089, hex: "#E8C089" },
+  { id: "coding",         label: "Code & Automation", essence: "Apps, APIs, scripts, architecture.",             color: 0x9F8CFF, hex: "#9F8CFF" },
+  { id: "creative-ai",    label: "Creative & Design", essence: "Image gen, UI/UX, visual direction, branding.",  color: 0x5EEAD4, hex: "#5EEAD4" },
+  { id: "game-advanced",  label: "Game & Advanced",   essence: "Game dev, 3D, agents, LLM pipelines.",          color: 0xE9D9B6, hex: "#E9D9B6" },
 ] as const;
 
 function makeGeo(idx: number): THREE.BufferGeometry {
@@ -20,10 +21,11 @@ function makeGeo(idx: number): THREE.BufferGeometry {
     case 1: return new THREE.CylinderGeometry(0.52, 0.68, 0.88, 6, 1); // Productivity — hex disc
     case 2: return new THREE.ConeGeometry(0.58, 1.25, 5, 1);           // Writing — pentagon cone
     case 3: return new THREE.SphereGeometry(0.66, 40, 40);             // Research — perfect orb
-    case 4: return new THREE.BoxGeometry(0.88, 0.88, 0.88);            // Data — solid cube
-    case 5: return new THREE.TorusKnotGeometry(0.40, 0.15, 120, 14);   // Code — flowing knot
-    case 6: return new THREE.TorusGeometry(0.55, 0.22, 16, 48);        // Creative AI — ring/portal
-    case 7: return new THREE.DodecahedronGeometry(0.68);               // Game & Advanced — 12-face gem
+    case 4: return new THREE.IcosahedronGeometry(0.68, 0);             // Finance — angular precision
+    case 5: return new THREE.BoxGeometry(0.88, 0.88, 0.88);            // Data & Analytics — solid cube
+    case 6: return new THREE.TorusKnotGeometry(0.40, 0.15, 120, 14);   // Code — flowing knot
+    case 7: return new THREE.TorusGeometry(0.55, 0.22, 16, 48);        // Creative — ring/portal
+    case 8: return new THREE.DodecahedronGeometry(0.68);               // Game & Advanced — 12-face gem
     default: return new THREE.SphereGeometry(0.65, 20, 20);
   }
 }

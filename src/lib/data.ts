@@ -6,7 +6,8 @@ export type Category =
   | "productivity"
   | "writing"
   | "research"
-  | "data-finance"
+  | "finance"
+  | "data-analytics"
   | "coding"
   | "creative-ai"
   | "game-advanced";
@@ -78,11 +79,17 @@ const LLM_MAP: Record<string, Record<string, { model: string; reason: string }>>
     advanced:     { model: "Claude 3.5 Sonnet", reason: "Deep literature synthesis with citation precision" },
     expert:       { model: "Claude Opus 4",     reason: "Most rigorous reasoning for complex research" },
   },
-  "data-finance": {
-    beginner:     { model: "GPT-4o",            reason: "Strong at spreadsheets and structured data reasoning" },
-    intermediate: { model: "GPT-4o",            reason: "Excellent tabular logic and financial structuring" },
-    advanced:     { model: "Claude 3.5 Sonnet", reason: "Long context for multi-document financial analysis" },
-    expert:       { model: "Claude Opus 4",     reason: "Complex cross-functional modeling and trade-offs" },
+  "finance": {
+    beginner:     { model: "GPT-4o",            reason: "Strong at spreadsheets and structured financial data" },
+    intermediate: { model: "GPT-4o",            reason: "Excellent tabular logic and financial model structuring" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Long context for multi-document FP&A analysis" },
+    expert:       { model: "Claude Opus 4",     reason: "Complex cross-functional modeling and strategic trade-offs" },
+  },
+  "data-analytics": {
+    beginner:     { model: "GPT-4o",            reason: "Strong data reasoning and chart interpretation" },
+    intermediate: { model: "Claude 3.5 Sonnet", reason: "Handles complex queries across large datasets" },
+    advanced:     { model: "Claude 3.5 Sonnet", reason: "Deep BI workflow design and data pipeline reasoning" },
+    expert:       { model: "Claude Opus 4",     reason: "Autonomous analytics reasoning for enterprise-scale systems" },
   },
   "coding": {
     beginner:     { model: "Claude Haiku 3.5",  reason: "Quick snippets and boilerplate at low latency" },
@@ -109,7 +116,8 @@ const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
   "Personal Productivity":   "productivity",
   "Communication & Writing": "writing",
   "Research & Analysis":     "research",
-  "Business Intelligence":   "data-finance",
+  "Finance & FP&A":          "finance",
+  "Data & Analytics":        "data-analytics",
   "Software Development":    "coding",
   "Creative AI":             "creative-ai",
   "Design & Creative":       "creative-ai",
@@ -141,15 +149,16 @@ export const USE_CASES: UseCase[] = (rawData as any[]).map((item, idx) => {
 });
 
 export const CATEGORIES: { id: Category; label: string }[] = [
-  { id: "all",          label: "All" },
-  { id: "quick-wins",   label: "Quick Wins" },
-  { id: "productivity", label: "Productivity" },
-  { id: "writing",      label: "Writing & Copy" },
-  { id: "research",     label: "Research" },
-  { id: "data-finance", label: "Data & Finance" },
-  { id: "coding",       label: "Code & Build" },
-  { id: "creative-ai",  label: "Creative AI" },
-  { id: "game-advanced",label: "Game & Advanced" },
+  { id: "all",            label: "All" },
+  { id: "quick-wins",     label: "Quick Wins" },
+  { id: "productivity",   label: "Productivity" },
+  { id: "writing",        label: "Writing & Copy" },
+  { id: "research",       label: "Research" },
+  { id: "finance",        label: "Finance & FP&A" },
+  { id: "data-analytics", label: "Data & Analytics" },
+  { id: "coding",         label: "Code & Automation" },
+  { id: "creative-ai",    label: "Creative & Design" },
+  { id: "game-advanced",  label: "Game & Advanced" },
 ];
 
 export const DIFFICULTIES: { id: Difficulty; label: string; color: string }[] = [
@@ -168,14 +177,15 @@ export const DIFF_COLOR: Record<string, string> = {
 };
 
 export const DISCIPLINES = [
-  { id: "quick-wins",    label: "Quick Wins",      essence: "5-min wins anyone can use today." },
-  { id: "productivity",  label: "Productivity",     essence: "Scheduling, notes, planning, automation." },
-  { id: "writing",       label: "Writing & Copy",   essence: "Long-form, email, social, brand voice." },
-  { id: "research",      label: "Research",         essence: "Deep dives, synthesis, competitive intel." },
-  { id: "data-finance",  label: "Data & Finance",   essence: "Modeling, forecasting, dashboards, FP&A." },
-  { id: "coding",        label: "Code & Build",     essence: "Apps, APIs, scripts, architecture." },
-  { id: "creative-ai",   label: "Creative AI",      essence: "Image gen, visual direction, generative art." },
-  { id: "game-advanced", label: "Game & Advanced",  essence: "Game dev, 3D, agents, LLM pipelines." },
+  { id: "quick-wins",     label: "Quick Wins",        essence: "5-min wins anyone can use today." },
+  { id: "productivity",   label: "Productivity",       essence: "Scheduling, notes, planning, automation." },
+  { id: "writing",        label: "Writing & Copy",     essence: "Long-form, email, social, brand voice." },
+  { id: "research",       label: "Research",           essence: "Deep dives, synthesis, competitive intel." },
+  { id: "finance",        label: "Finance & FP&A",     essence: "Forecasting, modeling, variance, board decks." },
+  { id: "data-analytics", label: "Data & Analytics",   essence: "BI dashboards, data pipelines, insight automation." },
+  { id: "coding",         label: "Code & Automation",  essence: "Apps, APIs, scripts, architecture." },
+  { id: "creative-ai",    label: "Creative & Design",  essence: "Image gen, UI/UX, visual direction, branding." },
+  { id: "game-advanced",  label: "Game & Advanced",    essence: "Game dev, 3D, agents, LLM pipelines." },
 ];
 
 export const DISC_COUNTS: Record<string, number> = Object.fromEntries(
