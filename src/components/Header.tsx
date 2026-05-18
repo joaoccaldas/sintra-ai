@@ -16,6 +16,14 @@ export default function Header({ total }: Props) {
   const [scrolled,    setScrolled]    = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const PRIMARY_LINKS = [
+    { href: "#explore",             label: t.nav_explore },
+    { href: `${BASE_PATH}/tools/`,  label: t.nav_tools,     external: true },
+    { href: `${BASE_PATH}/news/`,   label: t.nav_news,      external: true },
+    { href: `${BASE_PATH}/learn/`,  label: t.nav_learn,     external: true },
+    { href: `${BASE_PATH}/claude/`, label: t.nav_claude,    external: true },
+  ];
+
   const LINKS = [
     { href: "#explore",                      label: t.nav_explore },
     { href: `${BASE_PATH}/tools/`,           label: t.nav_tools,        external: true },
@@ -59,9 +67,9 @@ export default function Header({ total }: Props) {
             </span>
           </a>
 
-          {/* Desktop nav — only shows at lg+ to avoid overflow */}
+          {/* Desktop nav — primary links only to avoid overflow */}
           <nav className="hidden lg:flex gap-5 ml-4">
-            {LINKS.map(l => (
+            {PRIMARY_LINKS.map(l => (
               <a
                 key={l.href}
                 href={l.href}
@@ -109,7 +117,7 @@ export default function Header({ total }: Props) {
 
       {/* Mobile sheet */}
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 z-[60] bg-abyss/95 backdrop-blur-md animate-scrim-in">
+        <div className="fixed inset-0 z-[60] bg-abyss/95 backdrop-blur-md animate-scrim-in">
           <div className="flex items-center justify-between h-16 px-6">
             <a href={`${BASE_PATH}/`} onClick={() => setMobileOpen(false)} className="flex items-center gap-2.5 text-violet-bright">
               <TesseractMark size={20} />
