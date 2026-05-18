@@ -20,6 +20,7 @@ export default function Header({ total }: Props) {
     { href: "#explore",                      label: t.nav_explore },
     { href: `${BASE_PATH}/google-ai-tools/`, label: t.nav_google_tools, external: true },
     { href: `${BASE_PATH}/concepts/`,        label: t.nav_concepts,     external: true },
+    { href: `${BASE_PATH}/ai-history/`,      label: t.nav_ai_history,   external: true },
   ];
 
   useEffect(() => {

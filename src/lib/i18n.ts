@@ -4,6 +4,7 @@ export interface Translations {
   nav_explore:       string;
   nav_google_tools:  string;
   nav_concepts:      string;
+  nav_ai_history:    string;
   nav_enter_library: string;
   use_cases_count:   (n: number) => string;
 
@@ -51,6 +52,7 @@ const translations: Record<Locale, Translations> = {
     nav_explore:       "Explore",
     nav_google_tools:  "Google AI Tools",
     nav_concepts:      "Concepts",
+    nav_ai_history:    "AI History",
     nav_enter_library: "Enter library →",
     use_cases_count:   (n) => `${n} use cases`,
 
@@ -96,6 +98,7 @@ const translations: Record<Locale, Translations> = {
     nav_explore:       "Explorar",
     nav_google_tools:  "Google AI Tools",
     nav_concepts:      "Conceitos",
+    nav_ai_history:    "História da IA",
     nav_enter_library: "Entrar na biblioteca →",
     use_cases_count:   (n) => `${n} casos de uso`,
 
