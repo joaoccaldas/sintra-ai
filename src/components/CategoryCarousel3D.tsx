@@ -151,22 +151,77 @@ function makeCosmicBody(
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
-    // 5 — Galaxy (spiral) ─────────────────────────────────────────────────────
+    // 5 — Galaxy ──────────────────────────────────────────────────────────────
     case 5: {
-      const mat = pbr({ metalness: 0.2, roughness: 0.5, emissive: c, emissiveIntensity: 0.22 });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.15, 16, 16), mat));
-      const pos: number[] = [];
-      for (let i = 0; i < 520; i++) {
-        const t     = i / 520;
-        const arm   = i % 2;
-        const angle = t * Math.PI * 5 + arm * Math.PI + (Math.random() - 0.5) * 0.52;
-        const r     = 0.16 + t * 0.96 + (Math.random() - 0.5) * 0.09;
-        pos.push(Math.cos(angle) * r, (Math.random() - 0.5) * 0.07, Math.sin(angle) * r);
+      // Tilt so spiral arms face the camera (camera is shallow, ~6° above horizon)
+      const galaxy = new THREE.Group();
+      galaxy.rotation.x = 0.95; // ~54° — shows the disc clearly as it spins
+      body.add(galaxy);
+
+      // Bright galactic nucleus
+      galaxy.add(new THREE.Mesh(
+        new THREE.SphereGeometry(0.07, 12, 12),
+        new THREE.MeshBasicMaterial({ color: 0xFFF4CC }),
+      ));
+      // Soft bulge halo
+      galaxy.add(new THREE.Mesh(
+        new THREE.SphereGeometry(0.19, 12, 12),
+        new THREE.MeshBasicMaterial({ color: 0xFFCC88, transparent: true, opacity: 0.28 }),
+      ));
+
+      // Particle arrays
+      const ARM_N  = 2600;
+      const CORE_N = 450;
+      const N_TOT  = ARM_N + CORE_N;
+      const pos = new Float32Array(N_TOT * 3);
+      const col = new Float32Array(N_TOT * 3);
+
+      // Core bulge — dense cluster, warm yellow-white
+      for (let i = 0; i < CORE_N; i++) {
+        const r     = Math.pow(Math.random(), 1.8) * 0.30;
+        const theta = Math.random() * Math.PI * 2;
+        const y     = (Math.random() - 0.5) * 0.14 * (1 - r / 0.30);
+        pos[i*3]   = Math.cos(theta) * r;
+        pos[i*3+1] = y;
+        pos[i*3+2] = Math.sin(theta) * r;
+        const w    = 1 - r / 0.30;
+        col[i*3]   = 1.0;
+        col[i*3+1] = 0.90 + w * 0.10;
+        col[i*3+2] = 0.55 + w * 0.30;
       }
+
+      // Two logarithmic spiral arms
+      for (let i = 0; i < ARM_N; i++) {
+        const arm   = i % 2;                       // alternate arms
+        const t     = Math.random();               // 0=inner 1=outer
+        const base  = arm * Math.PI;               // arms offset by 180°
+        const angle = base + t * Math.PI * 3.5    // 1.75 full rotations
+                    + (Math.random() - 0.5) * (0.22 + t * 0.60); // spread widens outward
+        const r     = 0.13 + t * 0.90 + (Math.random() - 0.5) * 0.07;
+        const y     = (Math.random() - 0.5) * 0.052 * Math.exp(-t * 2.2); // thin at edges
+
+        const idx   = CORE_N + i;
+        pos[idx*3]   = Math.cos(angle) * r;
+        pos[idx*3+1] = y;
+        pos[idx*3+2] = Math.sin(angle) * r;
+
+        // Warm golden inner → cool blue-white outer (like real stellar populations)
+        const heat   = Math.exp(-t * 2.4);
+        col[idx*3]   = 0.68 + heat * 0.32;
+        col[idx*3+1] = 0.80 + heat * 0.16;
+        col[idx*3+2] = 1.0;
+      }
+
       const pGeo = new THREE.BufferGeometry();
-      pGeo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
-      body.add(new THREE.Points(pGeo, new THREE.PointsMaterial({ color, size: 0.021, transparent: true, opacity: 0.9 })));
-      return { body, mainMat: mat };
+      pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+      pGeo.setAttribute("color",    new THREE.BufferAttribute(col, 3));
+      const pMat = new THREE.PointsMaterial({
+        size: 0.015, vertexColors: true,
+        transparent: true, opacity: 0.93, sizeAttenuation: true,
+      });
+      galaxy.add(new THREE.Points(pGeo, pMat));
+
+      return { body, mainMat: pMat as unknown as THREE.MeshPhysicalMaterial };
     }
 
     // 6 — Europa ──────────────────────────────────────────────────────────────
@@ -393,8 +448,7 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
         // ── Self-rotation ──
         selfAngles[i] += isFront ? 0.009 : isAdj ? 0.002 : 0;
         obj.body.rotation.y = selfAngles[i];
-        if (i === 5) obj.body.rotation.y = selfAngles[i] * 0.5; // galaxy slower
-        if (i === 4) obj.body.rotation.x = selfAngles[i] * 0.4; // pulsar wobble
+        if (i === 5) obj.body.rotation.y = selfAngles[i] * 0.4; // galaxy slow-spin
 
         // ── Emissive pulse ──
         const tEmissive = isFront ? 0.20 : isAdj ? 0.04 : 0;
