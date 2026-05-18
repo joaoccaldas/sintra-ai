@@ -102,7 +102,9 @@ export default function Header({ total }: Props) {
             {locale === "en" ? "PT" : "EN"}
           </button>
 
-          <a href="#explore" className="btn hidden md:inline-flex shrink-0">{t.nav_enter_library}</a>
+          <div className="hidden md:flex shrink-0">
+            <a href="#explore" className="btn">{t.nav_enter_library}</a>
+          </div>
 
           {/* Hamburger — visible below lg where nav is hidden */}
           <button
