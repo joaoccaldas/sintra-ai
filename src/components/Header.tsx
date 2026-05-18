@@ -18,10 +18,13 @@ export default function Header({ total }: Props) {
 
   const LINKS = [
     { href: "#explore",                      label: t.nav_explore },
-    { href: `${BASE_PATH}/google-ai-tools/`, label: t.nav_google_tools, external: true },
+    { href: `${BASE_PATH}/tools/`,           label: t.nav_tools,        external: true },
+    { href: `${BASE_PATH}/news/`,            label: t.nav_news,         external: true },
+    { href: `${BASE_PATH}/learn/`,           label: t.nav_learn,        external: true },
     { href: `${BASE_PATH}/concepts/`,        label: t.nav_concepts,     external: true },
     { href: `${BASE_PATH}/ai-history/`,      label: t.nav_ai_history,   external: true },
     { href: `${BASE_PATH}/ai-labs/`,         label: t.nav_ai_labs,      external: true },
+    { href: `${BASE_PATH}/google-ai-tools/`, label: t.nav_google_tools, external: true },
   ];
 
   useEffect(() => {

@@ -2,6 +2,9 @@ export type Locale = "en" | "pt";
 
 export interface Translations {
   nav_explore:       string;
+  nav_tools:         string;
+  nav_news:          string;
+  nav_learn:         string;
   nav_google_tools:  string;
   nav_concepts:      string;
   nav_ai_history:    string;
@@ -51,7 +54,10 @@ export interface Translations {
 const translations: Record<Locale, Translations> = {
   en: {
     nav_explore:       "Explore",
-    nav_google_tools:  "Google AI Tools",
+    nav_tools:         "AI Tools",
+    nav_news:          "News",
+    nav_learn:         "Learn",
+    nav_google_tools:  "Google AI",
     nav_concepts:      "Concepts",
     nav_ai_history:    "AI History",
     nav_ai_labs:       "AI Labs",
@@ -98,7 +104,10 @@ const translations: Record<Locale, Translations> = {
   },
   pt: {
     nav_explore:       "Explorar",
-    nav_google_tools:  "Google AI Tools",
+    nav_tools:         "Ferramentas IA",
+    nav_news:          "Notícias",
+    nav_learn:         "Aprender",
+    nav_google_tools:  "Google AI",
     nav_concepts:      "Conceitos",
     nav_ai_history:    "História da IA",
     nav_ai_labs:       "Labs de IA",

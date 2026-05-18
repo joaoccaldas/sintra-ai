@@ -3,13 +3,21 @@ import { BASE_PATH } from "@/lib/data";
 
 const NAV_COLS = [
   {
-    head: "Library",
+    head: "Explore",
     links: [
-      ["Explore disciplines",  "#explore"],
-      ["Google AI Tools",      `${BASE_PATH}/google-ai-tools/`],
+      ["Use Cases",            "#explore"],
+      ["AI Tools Directory",   `${BASE_PATH}/tools/`],
+      ["AI News",              `${BASE_PATH}/news/`],
+      ["Learning Paths",       `${BASE_PATH}/learn/`],
+    ],
+  },
+  {
+    head: "Reference",
+    links: [
       ["AI Concepts",          `${BASE_PATH}/concepts/`],
       ["AI History",           `${BASE_PATH}/ai-history/`],
       ["AI Labs",              `${BASE_PATH}/ai-labs/`],
+      ["Google AI Tools",      `${BASE_PATH}/google-ai-tools/`],
     ],
   },
   {
@@ -24,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-violet/[0.12] pt-14 pb-8 bg-abyss">
       <div className="max-w-[1200px] mx-auto px-6 md:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-10" style={{ gridTemplateColumns: "2fr 1.5fr 1fr" }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-10" style={{ gridTemplateColumns: "2fr 1fr 1fr 1fr" }}>
           {/* Branding */}
           <div className="col-span-2 md:col-span-1 flex flex-col gap-2.5">
             <a href={`${BASE_PATH}/`} className="flex items-center gap-2.5 text-violet-bright">
