@@ -3040,5 +3040,87 @@
     ],
     "output_kind": "spec",
     "sample_output": "**System: Dungeon Crawler Level Generator**\n\n**Grammar rules:**\nRoom types: [ENTRANCE, COMBAT, TREASURE, PUZZLE, BOSS]\nSequence: ENTRANCE → (COMBAT|PUZZLE)+ → TREASURE? → BOSS\nConstraint: No two COMBAT rooms adjacent; TREASURE only after COMBAT\n\n**Difficulty curve:**\nEnemy HP = base × (1 + 0.15 × roomIndex)\nRoom count = 8 + floor(level/3)\n\n**Pseudocode:**\n```\nfunction generateLevel(seed, difficulty):\n  rng = SeededRandom(seed)\n  rooms = [ENTRANCE]\n  while not valid(rooms):\n    rooms = buildChain(rng, difficulty)\n  return connectRooms(rooms, rng)\n\nfunction validate(rooms):\n  return isReachable(rooms) and hasBoss(rooms) and difficultyInBounds(rooms)\n```\n\n**Sample output (seed 4821, difficulty 2):**\nENTRANCE → COMBAT(3 goblins) → PUZZLE(pressure plates) → COMBAT(5 goblins + archer) → TREASURE(rare sword) → BOSS(Lich, 240HP)"
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "AI & Agents",
+    "skill_level": "ADVANCED",
+    "title": "Build a Personal Finance AI Agent",
+    "prompt": "I want to build a local AI agent that connects to my bank accounts via [bank API or CSV export], stores transactions in a local SQLite database, and runs a daily summary that categorises spending, flags anomalies, and suggests actions. Design the full agent architecture: data ingestion pipeline, categorisation prompt, anomaly-detection logic, and the daily briefing prompt template. Include Python pseudocode for the main loop and the schema for the local DB.",
+    "tags": ["personal-finance", "ai-agent", "automation", "plaid", "sqlite", "budgeting"],
+    "best_for": "Developers who want AI-driven personal finance automation without relying on third-party apps",
+    "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
+    "outcome": "Full architecture for a self-hosted personal finance AI agent with ingestion pipeline, DB schema, categorisation logic, anomaly detection, and daily briefing template.",
+    "inputs": [
+      { "label": "bank API or CSV export" },
+      { "label": "spending categories" },
+      { "label": "monthly budget targets" }
+    ],
+    "tools": ["Claude API", "Plaid API", "Python", "SQLite"],
+    "est_time": "3–5 hours",
+    "output_kind": "spec",
+    "sample_output": "**Agent Architecture: Personal Finance AI**\n\n**DB Schema (SQLite):**\n```sql\nCREATE TABLE transactions (\n  id TEXT PRIMARY KEY,\n  date TEXT, amount REAL, merchant TEXT,\n  category TEXT, raw_category TEXT, flagged INTEGER DEFAULT 0\n);\nCREATE TABLE daily_summaries (date TEXT PRIMARY KEY, json TEXT);\n```\n\n**Ingestion pipeline:**\n1. Pull transactions via Plaid /transactions/sync (or parse CSV)\n2. Upsert into SQLite (dedup by transaction id)\n3. For each uncategorised row, call Claude with merchant name + amount → returns category\n\n**Categorisation prompt:**\n```\nClassify this transaction into one of: [Food, Transport, Housing, Subscriptions, Shopping, Health, Entertainment, Other].\nMerchant: {merchant}  Amount: ${amount}\nReturn only the category name.\n```\n\n**Anomaly detection logic:**\n- Flag if amount > 2× rolling 30-day average for that category\n- Flag if merchant appears for the first time and amount > $50\n\n**Daily briefing prompt:**\n```\nGiven these transactions from {date}: {json}\nAnd monthly budget targets: {targets}\nWrite a 5-bullet morning briefing covering: total spend, top category, biggest single charge, any flagged anomalies, and one actionable suggestion.\n```"
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Financial Planning & Analysis",
+    "skill_level": "ADVANCED",
+    "title": "Tax Strategy Finder (CPA-Level Automation)",
+    "prompt": "Act as a senior CPA and tax strategist. I will give you my [income sources], [filing status], [major expenses], and [investment portfolio]. Identify the top 5 tax optimisation strategies available to me, explain the mechanism of each deduction or deferral, estimate the potential savings, flag any risks or thresholds I need to stay under, and give me a prioritised action checklist for this tax year. Reference relevant IRS code sections or equivalent for [country].",
+    "tags": ["tax", "tax-strategy", "cpa", "deductions", "financial-planning", "irs"],
+    "best_for": "Self-employed professionals, investors, and business owners looking to reduce tax liability",
+    "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
+    "outcome": "Ranked list of tax strategies with mechanisms, estimated savings, risk flags, and a concrete action checklist for the current tax year.",
+    "inputs": [
+      { "label": "income sources (salary, freelance, dividends, etc.)" },
+      { "label": "filing status (single, MFJ, etc.)" },
+      { "label": "major expenses (home office, vehicle, health, education)" },
+      { "label": "investment portfolio (taxable, IRA, 401k balances)" },
+      { "label": "country" }
+    ],
+    "tools": ["Claude", "ChatGPT"],
+    "est_time": "30 minutes",
+    "output_kind": "analysis",
+    "sample_output": "**Top 5 Tax Strategies for Your Profile**\n\n**1. Max Solo 401(k) — estimated savings: $14,280**\nAs a self-employed person you can contribute up to $66,000 (2024). The employer contribution side (25% of net self-employment income) is deductible on Schedule 1. *IRC §401(a).* Action: open a Solo 401(k) by Dec 31; fund by tax deadline.\n\n**2. Home Office Deduction (Simplified Method) — ~$1,500**\n$5/sq ft × up to 300 sq ft. No depreciation recapture risk. *IRC §280A.* Action: measure dedicated workspace, document with photos.\n\n**3. SEP-IRA vs Solo 401(k) comparison**\nSEP-IRA simpler to open, but Solo 401(k) allows employee deferrals — better if income < $200k.\n\n**4. Qualified Business Income (QBI) Deduction — up to 20% of net income**\nAvailable for pass-through entities below $182,050 (single). *IRC §199A.* Risk: phase-out applies to specified service trades.\n\n**5. Tax-Loss Harvesting on taxable portfolio**\nRealise ~$8k in unrealised losses to offset gains. Beware 30-day wash-sale rule. *IRC §1091.*\n\n**Action checklist:**\n- [ ] Open Solo 401(k) before Dec 31\n- [ ] Calculate exact home office sq footage\n- [ ] Review taxable account for harvesting candidates\n- [ ] Confirm QBI eligibility with your business type"
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Personal Productivity",
+    "skill_level": "INTERMEDIATE",
+    "title": "AI Health Data Tracker & Interpreter",
+    "prompt": "I will paste the results from my recent [blood work / health metrics]. Interpret each value, flag anything outside the optimal range (not just the lab reference range), explain what each flagged value might indicate, suggest 3 lifestyle or dietary adjustments I could discuss with my doctor, and format the output as a clear summary table followed by the action points. Do not diagnose — focus on pattern recognition and evidence-based context.",
+    "tags": ["health", "blood-work", "biometrics", "wellness", "personal-data", "tracking"],
+    "best_for": "Health-conscious individuals who want to understand their lab results and prepare smarter doctor conversations",
+    "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
+    "outcome": "Clear interpretation of health metrics with optimal vs. reference range comparison, pattern flags, lifestyle suggestions, and a ready-to-use doctor conversation summary.",
+    "inputs": [
+      { "label": "blood work or health metrics (paste raw values)" },
+      { "label": "age and biological sex" },
+      { "label": "known conditions or medications (optional)" }
+    ],
+    "tools": ["Claude", "ChatGPT"],
+    "est_time": "10 minutes",
+    "output_kind": "analysis",
+    "sample_output": "**Health Metrics Summary**\n\n| Marker | Your Value | Lab Range | Optimal Range | Status |\n|---|---|---|---|---|\n| LDL Cholesterol | 142 mg/dL | <160 | <100 | ⚠️ Elevated |\n| HbA1c | 5.8% | <5.7 pre-diabetic | <5.4 | ⚠️ Borderline |\n| Vitamin D | 24 ng/mL | 20–50 | 40–60 | ⚠️ Sub-optimal |\n| Ferritin | 68 ng/mL | 12–300 | 50–150 | ✅ Good |\n| TSH | 2.1 mIU/L | 0.4–4.0 | 0.5–2.5 | ✅ Good |\n\n**Flagged patterns:**\n- LDL + borderline HbA1c together suggest early metabolic stress worth monitoring.\n- Low-normal Vitamin D may be contributing to fatigue.\n\n**Lifestyle adjustments to discuss with your doctor:**\n1. Mediterranean-style diet to address LDL and glycaemic trends simultaneously.\n2. Vitamin D3 + K2 supplementation (2,000–4,000 IU/day) — confirm dose with doctor.\n3. 150 min/week moderate cardio — independently improves all three flagged markers.\n\n*This is pattern recognition, not medical advice. Bring this table to your next appointment.*"
+  },
+  {
+    "domain": "Software Development",
+    "section": "AI & Agents",
+    "skill_level": "EXPERT",
+    "title": "Ghost Database for AI Agents",
+    "prompt": "Design a persistent memory and knowledge layer — a 'ghost database' — for a long-running AI agent system built with [framework/stack]. The system must support: short-term episodic memory (recent conversation turns), long-term semantic memory (vector search over past interactions and documents), structured fact storage (key-value entities the agent can update), and a retrieval strategy that selects the right memory type at inference time. Provide the full schema, the retrieval orchestration logic, a sample system-prompt injection template, and guidance on when to write vs. read from each store.",
+    "tags": ["ai-agent", "memory", "vector-db", "architecture", "rag", "persistent-state", "llm-ops"],
+    "best_for": "AI engineers building autonomous agents that need reliable long-term memory and context management",
+    "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
+    "outcome": "Complete ghost-database architecture spec with schemas for all three memory types, retrieval orchestration pseudocode, system-prompt injection template, and write/read decision rules.",
+    "inputs": [
+      { "label": "framework/stack (LangChain, custom Python, etc.)" },
+      { "label": "agent's primary domain or task" },
+      { "label": "expected conversation volume (light / heavy)" }
+    ],
+    "tools": ["Claude API", "OpenAI API", "Chroma", "Pinecone", "Redis", "PostgreSQL", "Python"],
+    "est_time": "2–4 hours",
+    "output_kind": "spec",
+    "sample_output": "**Ghost Database Architecture**\n\n**Memory layers:**\n\n| Layer | Store | TTL | Use case |\n|---|---|---|---|\n| Episodic (short-term) | Redis list (sliding window) | Last 20 turns | Recent dialogue context |\n| Semantic (long-term) | ChromaDB / Pinecone | Permanent | Past interactions, docs |\n| Structured facts | PostgreSQL key-value table | Permanent, mutable | User prefs, entity state |\n\n**Structured facts schema:**\n```sql\nCREATE TABLE agent_facts (\n  agent_id TEXT, key TEXT, value JSONB,\n  confidence REAL, updated_at TIMESTAMPTZ,\n  PRIMARY KEY (agent_id, key)\n);\n```\n\n**Retrieval orchestration (pseudocode):**\n```python\ndef build_context(query, agent_id):\n  episodic  = redis.lrange(f'ep:{agent_id}', 0, 19)      # always include\n  semantic  = chroma.query(query, n_results=4)             # top-4 semantic hits\n  facts     = pg.fetch('SELECT key, value FROM agent_facts WHERE agent_id=$1', agent_id)\n  return format_context(episodic, semantic, facts)\n```\n\n**System-prompt injection template:**\n```\n[MEMORY]\nRecent context: {episodic_summary}\nRelevant past knowledge: {semantic_hits}\nKnown facts about user: {facts_json}\n[/MEMORY]\n```\n\n**Write rules:**\n- After every turn → append to episodic Redis list, pop oldest if > 20\n- After task completion → embed summary → upsert to vector DB\n- When agent learns a stable fact (name, preference, goal) → upsert to PostgreSQL facts table"
   }
 ]

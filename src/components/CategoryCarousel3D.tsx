@@ -5,7 +5,7 @@ import * as THREE from "three";
 
 export const CAROUSEL_ITEMS = [
   { id: "quick-wins",     label: "Quick Wins",        cosmicName: "The Moon",       essence: "Closest. Brightest. Easiest to reach.",             color: 0xD4C9A0, hex: "#D4C9A0" },
-  { id: "productivity",   label: "Productivity",      cosmicName: "Ringed Planet",  essence: "Orbits aligned. Momentum self-sustaining.",         color: 0x8FE3D2, hex: "#8FE3D2" },
+  { id: "productivity",   label: "Productivity",      cosmicName: "Jupiter",        essence: "Orbits aligned. Momentum self-sustaining.",         color: 0x8FE3D2, hex: "#8FE3D2" },
   { id: "writing",        label: "Writing & Copy",    cosmicName: "The Star",       essence: "Every word — a photon that travels forever.",        color: 0xF4C56A, hex: "#F4C56A" },
   { id: "research",       label: "Research",          cosmicName: "Mars",           essence: "Unexplored terrain. Answers buried in red dust.",    color: 0xD4845A, hex: "#D4845A" },
   { id: "finance",        label: "Finance & FP&A",    cosmicName: "The Pulsar",     essence: "Precise rhythm. Relentless accuracy.",               color: 0x6EE7A0, hex: "#6EE7A0" },
@@ -68,17 +68,25 @@ function makeCosmicBody(
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
-    // 1 — Ringed Planet (Saturn-like, teal) ──────────────────────────────────
+    // 1 — Jupiter (NASA texture, 128-segment sphere) ─────────────────────────
     case 1: {
-      const mat = pbr({ metalness: 0.08, roughness: 0.42 });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.52, 40, 40), mat));
-      const ring = new THREE.Mesh(
-        new THREE.RingGeometry(0.74, 1.12, 80),
-        new THREE.MeshBasicMaterial({ color, side: THREE.DoubleSide, transparent: true, opacity: 0.44 }),
-      );
-      ring.rotation.x = Math.PI * 0.36;
-      body.add(ring);
-      return { body, mainMat: mat };
+      const diffuse = loadTex(`${BASE}/jupiter-texture.png`);
+      const bump    = loadTex(`${BASE}/jupiter-texture.png`, false);
+      // 52px L/R dark borders, 57px top, 12px bottom out of 1408×768
+      for (const t of [diffuse, bump]) {
+        t.wrapS = THREE.RepeatWrapping;
+        t.repeat.set(0.9261, 0.9102);
+        t.offset.set(0.0369, 0.0156);
+      }
+      const mat = new THREE.MeshStandardMaterial({
+        map:       diffuse,
+        bumpMap:   bump,
+        bumpScale: 0.030,
+        roughness: 0.75,
+        metalness: 0.0,
+      });
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
+      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
     // 2 — Star / Sun ──────────────────────────────────────────────────────────
@@ -369,8 +377,8 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
 
         // ── Scale ──
         const tScale = isFront   ? 1.40
-          : isHovered ? 0.78
-          : isAdj     ? 0.72
+          : isHovered ? 0.65
+          : isAdj     ? 0.56
           : 0.01;
         obj.group.scale.lerp(new THREE.Vector3(tScale, tScale, tScale), 0.08);
 

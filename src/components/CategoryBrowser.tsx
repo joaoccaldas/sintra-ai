@@ -8,6 +8,7 @@ import { USE_CASES, UseCase, DISC_COUNTS } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
+import { useLanguage } from "@/context/LanguageContext";
 
 const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
 
@@ -21,6 +22,7 @@ const CARD_VARIANTS = {
 };
 
 export default function CategoryBrowser() {
+  const { t } = useLanguage();
   const [selectedIdx, setSelectedIdx]   = useState(0);
   const [browsingIdx, setBrowsingIdx]   = useState<number | null>(null);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
@@ -92,7 +94,7 @@ export default function CategoryBrowser() {
               <span className="font-mono text-[11px] text-fg-4 tracking-[0.08em] mt-3 block">
                 {String(selectedIdx + 1).padStart(2, "0")} / {String(CAROUSEL_ITEMS.length).padStart(2, "0")}
                 &nbsp;·&nbsp;
-                {DISC_COUNTS[selected.id] ?? 0} use cases
+                {t.carousel_use_cases(DISC_COUNTS[selected.id] ?? 0)}
               </span>
 
               {/* Explore CTA */}
@@ -101,7 +103,7 @@ export default function CategoryBrowser() {
                 className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-current font-mono text-[11px] tracking-[0.1em] uppercase transition-all duration-200 hover:bg-white/5"
                 style={{ color: selected.hex, borderColor: `${selected.hex}60` }}
               >
-                Explore use cases →
+                {t.carousel_explore_cta}
               </button>
             </motion.div>
           </AnimatePresence>
@@ -146,7 +148,7 @@ export default function CategoryBrowser() {
                 onClick={closeBrowsing}
                 className="flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] uppercase text-fg-3 hover:text-fg-1 transition-colors"
               >
-                <ArrowLeft size={14} /> Universe
+                <ArrowLeft size={14} /> {t.carousel_back}
               </button>
 
               <div className="text-center">

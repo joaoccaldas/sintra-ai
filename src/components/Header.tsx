@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import TesseractMark from "./TesseractMark";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Props {
   total: number;
@@ -10,15 +11,16 @@ interface Props {
 
 import { BASE_PATH } from "@/lib/data";
 
-const LINKS = [
-  { href: "#explore",                      label: "Explore" },
-  { href: `${BASE_PATH}/google-ai-tools/`, label: "Google AI Tools", external: true },
-  { href: `${BASE_PATH}/concepts/`,        label: "Concepts",         external: true },
-];
-
 export default function Header({ total }: Props) {
-  const [scrolled, setScrolled] = useState(false);
+  const { t, locale, toggle } = useLanguage();
+  const [scrolled,    setScrolled]    = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const LINKS = [
+    { href: "#explore",                      label: t.nav_explore },
+    { href: `${BASE_PATH}/google-ai-tools/`, label: t.nav_google_tools, external: true },
+    { href: `${BASE_PATH}/concepts/`,        label: t.nav_concepts,     external: true },
+  ];
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 24);
@@ -70,10 +72,19 @@ export default function Header({ total }: Props) {
           <div className="flex-1" />
 
           <span className="hidden sm:inline font-mono text-[11px] text-fg-3 tracking-[0.06em] whitespace-nowrap">
-            <b className="text-fg-1 font-medium">{total}</b> use cases
+            <b className="text-fg-1 font-medium">{total}</b> {locale === "pt" ? "casos de uso" : "use cases"}
           </span>
 
-          <a href="#library" className="btn hidden sm:inline-flex">Enter library →</a>
+          {/* Language toggle */}
+          <button
+            onClick={toggle}
+            className="hidden sm:inline-flex items-center justify-center h-7 px-2.5 rounded border border-violet/[0.22] font-mono text-[10px] tracking-[0.08em] uppercase text-fg-3 hover:text-fg-1 hover:border-violet/60 transition-all duration-140"
+            aria-label={locale === "en" ? "Switch to Portuguese" : "Mudar para Inglês"}
+          >
+            {locale === "en" ? "PT" : "EN"}
+          </button>
+
+          <a href="#library" className="btn hidden sm:inline-flex">{t.nav_enter_library}</a>
 
           <button
             className="md:hidden flex items-center justify-center w-10 h-10 -mr-2 text-fg-1"
@@ -95,13 +106,22 @@ export default function Header({ total }: Props) {
                 Sintra <em className="italic text-violet-bright">Tesseract</em>
               </span>
             </a>
-            <button
-              className="flex items-center justify-center w-10 h-10 -mr-2 text-fg-1"
-              onClick={() => setMobileOpen(false)}
-              aria-label="Close menu"
-            >
-              <X size={20} />
-            </button>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => { toggle(); }}
+                className="flex items-center justify-center h-7 px-2.5 rounded border border-violet/[0.22] font-mono text-[10px] tracking-[0.08em] uppercase text-fg-3 hover:text-fg-1 transition-all"
+                aria-label={locale === "en" ? "Switch to Portuguese" : "Mudar para Inglês"}
+              >
+                {locale === "en" ? "PT" : "EN"}
+              </button>
+              <button
+                className="flex items-center justify-center w-10 h-10 -mr-2 text-fg-1"
+                onClick={() => setMobileOpen(false)}
+                aria-label="Close menu"
+              >
+                <X size={20} />
+              </button>
+            </div>
           </div>
           <nav className="flex flex-col px-6 pt-8 gap-4">
             {LINKS.map(l => (
@@ -122,10 +142,10 @@ export default function Header({ total }: Props) {
               onClick={() => setMobileOpen(false)}
               className="btn mt-6 self-start"
             >
-              Enter library →
+              {t.nav_enter_library}
             </a>
             <span className="font-mono text-[11px] text-fg-3 tracking-[0.06em] mt-6">
-              <b className="text-fg-1 font-medium">{total}</b> use cases curated
+              <b className="text-fg-1 font-medium">{total}</b> {locale === "pt" ? "casos de uso selecionados" : "use cases curated"}
             </span>
           </nav>
         </div>

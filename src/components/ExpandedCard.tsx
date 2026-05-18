@@ -8,6 +8,7 @@ import remarkGfm from "remark-gfm";
 import { UseCase, DIFF_COLOR } from "@/lib/data";
 import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Props {
   item: UseCase | null;
@@ -27,6 +28,7 @@ const CAT_ACCENT: Record<string, string> = {
 };
 
 export default function ExpandedCard({ item, onClose }: Props) {
+  const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -112,7 +114,7 @@ export default function ExpandedCard({ item, onClose }: Props) {
                 {/* What you'll need */}
                 {item.inputs.length > 0 && (
                   <div className="mb-6">
-                    <span className="eyebrow block mb-2.5">What you&rsquo;ll need</span>
+                    <span className="eyebrow block mb-2.5">{t.expanded_inputs}</span>
                     <div className="flex flex-wrap gap-2">
                       {item.inputs.map(inp => (
                         <span key={inp.label} className="font-mono text-[12px] px-2.5 py-1.5 rounded-sm bg-steel border border-hairline text-cyan-ice">
@@ -126,12 +128,12 @@ export default function ExpandedCard({ item, onClose }: Props) {
                 {/* Prompt */}
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2.5">
-                    <span className="eyebrow">The prompt</span>
+                    <span className="eyebrow">{t.expanded_prompt}</span>
                     <button
                       onClick={copy}
                       className="font-mono text-[11px] tracking-[0.06em] uppercase text-fg-3 hover:text-violet-bright inline-flex items-center gap-1.5 transition-colors"
                     >
-                      {copied ? <><Check size={11} /> Copied</> : <><Copy size={11} /> Copy</>}
+                      {copied ? <><Check size={11} /> {t.expanded_copied}</> : <><Copy size={11} /> {t.expanded_copy}</>}
                     </button>
                   </div>
                   <div className="prompt-block">{item.prompt}</div>
@@ -180,7 +182,7 @@ export default function ExpandedCard({ item, onClose }: Props) {
                 {/* Expected output */}
                 {item.sample_output && (
                   <div>
-                    <span className="eyebrow block mb-3">Expected output</span>
+                    <span className="eyebrow block mb-3">{t.expanded_sample}</span>
                     <div className="sample-output">
                       <ReactMarkdown remarkPlugins={[remarkGfm]}>
                         {item.sample_output}
@@ -210,9 +212,9 @@ export default function ExpandedCard({ item, onClose }: Props) {
             {/* Bottom action bar */}
             <div className="expanded-card__bar">
               <button className="btn" onClick={copy}>
-                {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy prompt</>}
+                {copied ? <><Check size={14} /> {t.expanded_copied}</> : <><Copy size={14} /> {t.expanded_copy}</>}
               </button>
-              <button className="btn btn-ghost" onClick={onClose}>Close</button>
+              <button className="btn btn-ghost" onClick={onClose}>{t.expanded_close}</button>
             </div>
           </motion.div>
         </>

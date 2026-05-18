@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import dynamic from "next/dynamic";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Tesseract3D = dynamic(() => import("./Tesseract3D"), { ssr: false });
 
@@ -19,6 +20,7 @@ const line = {
 };
 
 export default function HeroMinimal({ total }: Props) {
+  const { t } = useLanguage();
   const heroRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -81,7 +83,7 @@ export default function HeroMinimal({ total }: Props) {
           className="flex items-center justify-center gap-3 mb-8"
         >
           <span className="w-8 h-px bg-gradient-to-r from-transparent to-violet-bright" />
-          <span className="eyebrow violet">{total} curated use cases</span>
+          <span className="eyebrow violet">{t.hero_eyebrow(total)}</span>
           <span className="w-8 h-px bg-gradient-to-l from-transparent to-violet-bright" />
         </motion.div>
 
@@ -107,9 +109,9 @@ export default function HeroMinimal({ total }: Props) {
 
         <motion.p
           custom={2} variants={line} initial="hidden" animate="show"
-          className="font-sans text-[17px] leading-[1.65] text-fg-3 max-w-[420px] mx-auto mb-10"
+          className="font-sans text-[17px] leading-[1.65] text-fg-3 max-w-[420px] mx-auto mb-10 whitespace-pre-line"
         >
-          Pick a discipline. Explore its use cases. Copy a prompt. Ship the work.
+          {t.hero_tagline}
         </motion.p>
 
         <motion.div custom={3} variants={line} initial="hidden" animate="show">
@@ -121,7 +123,7 @@ export default function HeroMinimal({ total }: Props) {
               document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Explore disciplines →
+            {t.hero_cta}
           </a>
         </motion.div>
       </motion.div>
@@ -132,7 +134,7 @@ export default function HeroMinimal({ total }: Props) {
         aria-hidden="true"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-mono text-[9px] tracking-[0.24em] uppercase text-fg-4"
       >
-        <span>Scroll</span>
+        <span>{t.hero_scroll}</span>
         <span className="w-px h-8 bg-gradient-to-b from-violet/50 to-transparent animate-cue-pulse" />
       </motion.div>
     </section>
