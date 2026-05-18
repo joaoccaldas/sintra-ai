@@ -8,9 +8,9 @@ export const CAROUSEL_ITEMS = [
   { id: "productivity",   label: "Productivity",      cosmicName: "Jupiter",        essence: "Orbits aligned. Momentum self-sustaining.",         color: 0x8FE3D2, hex: "#8FE3D2" },
   { id: "writing",        label: "Writing & Copy",    cosmicName: "The Star",       essence: "Every word — a photon that travels forever.",        color: 0xF4C56A, hex: "#F4C56A" },
   { id: "research",       label: "Research",          cosmicName: "Mars",           essence: "Unexplored terrain. Answers buried in red dust.",    color: 0xD4845A, hex: "#D4845A" },
-  { id: "finance",        label: "Finance & FP&A",    cosmicName: "The Pulsar",     essence: "Precise rhythm. Relentless accuracy.",               color: 0x6EE7A0, hex: "#6EE7A0" },
+  { id: "finance",        label: "Finance & FP&A",    cosmicName: "Io",             essence: "The most volcanic world. Energy never sleeps.",     color: 0x6EE7A0, hex: "#6EE7A0" },
   { id: "data-analytics", label: "Data & Analytics",  cosmicName: "The Galaxy",     essence: "Billions of points. One story.",                    color: 0xE8C089, hex: "#E8C089" },
-  { id: "coding",         label: "Code & Automation", cosmicName: "The Supernova",  essence: "One burst of energy. Everything changes.",          color: 0x9F8CFF, hex: "#9F8CFF" },
+  { id: "coding",         label: "Code & Automation", cosmicName: "Europa",         essence: "Beneath the ice: an ocean of possibility.",         color: 0x9F8CFF, hex: "#9F8CFF" },
   { id: "creative-ai",    label: "Creative & Design", cosmicName: "The Quasar",     essence: "Brightest object in the observable universe.",       color: 0x5EEAD4, hex: "#5EEAD4" },
   { id: "game-advanced",  label: "Game & Advanced",   cosmicName: "Black Hole",     essence: "Where the rules of physics collapse.",              color: 0xC4A8F0, hex: "#C4A8F0" },
 ] as const;
@@ -134,20 +134,21 @@ function makeCosmicBody(
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
-    // 4 — Pulsar ──────────────────────────────────────────────────────────────
+    // 4 — Io ─────────────────────────────────────────────────────────────────
     case 4: {
-      const mat = pbr({ metalness: 0.88, roughness: 0.04, emissive: c, emissiveIntensity: 0.18 });
-      body.add(new THREE.Mesh(new THREE.IcosahedronGeometry(0.44, 0), mat));
-      for (const sign of [1, -1]) {
-        const jet = new THREE.Mesh(
-          new THREE.CylinderGeometry(0.0, 0.065, 0.82, 6),
-          new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.60 }),
-        );
-        jet.position.y = sign * 0.60;
-        if (sign < 0) jet.rotation.z = Math.PI;
-        body.add(jet);
+      const diffuse = loadTex(`${BASE}/io-texture.png`);
+      const bump    = loadTex(`${BASE}/io-texture.png`, false);
+      for (const t of [diffuse, bump]) {
+        t.wrapS = THREE.RepeatWrapping;
+        t.repeat.set(0.9492, 0.9056);
+        t.offset.set(0.0254, 0.0472);
       }
-      return { body, mainMat: mat };
+      const mat = new THREE.MeshStandardMaterial({
+        map: diffuse, bumpMap: bump, bumpScale: 0.022,
+        roughness: 0.82, metalness: 0.0,
+      });
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
+      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
     // 5 — Galaxy (spiral) ─────────────────────────────────────────────────────
@@ -168,19 +169,21 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 6 — Supernova (spiky) ───────────────────────────────────────────────────
+    // 6 — Europa ──────────────────────────────────────────────────────────────
     case 6: {
-      const geo  = new THREE.IcosahedronGeometry(0.52, 1);
-      const attr = geo.attributes.position;
-      for (let i = 0; i < attr.count; i++) {
-        const v = new THREE.Vector3(attr.getX(i), attr.getY(i), attr.getZ(i));
-        v.multiplyScalar(1 + Math.random() * 0.46);
-        attr.setXYZ(i, v.x, v.y, v.z);
+      const diffuse = loadTex(`${BASE}/europa-texture.png`);
+      const bump    = loadTex(`${BASE}/europa-texture.png`, false);
+      for (const t of [diffuse, bump]) {
+        t.wrapS = THREE.RepeatWrapping;
+        t.repeat.set(0.9602, 0.9583);
+        t.offset.set(0.0199, 0.0167);
       }
-      geo.computeVertexNormals();
-      const mat = pbr({ metalness: 0.28, roughness: 0.16, emissive: c, emissiveIntensity: 0.16 });
-      body.add(new THREE.Mesh(geo, mat));
-      return { body, mainMat: mat };
+      const mat = new THREE.MeshStandardMaterial({
+        map: diffuse, bumpMap: bump, bumpScale: 0.010,
+        roughness: 0.30, metalness: 0.05,
+      });
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
+      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
     // 7 — Quasar (NASA texture disk + dark core + relativistic jets) ──────────
