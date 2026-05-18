@@ -68,22 +68,22 @@ export default function AINewsPage() {
   const [activeProvider, setProvider] = useState<string>("all");
 
   const providers = useMemo(() => {
-    const ps = [...new Set(NEWS_ITEMS.map(n => n.provider))].sort();
+    const ps = [...new Set(NEWS_ITEMS.map((n: NewsItem) => n.provider))].sort();
     return ps;
   }, []);
 
   const filtered = useMemo(() => {
     return NEWS_ITEMS
-      .filter(n => activeSig === "all" || n.significance === activeSig)
-      .filter(n => activeTag === "all" || n.tags.includes(activeTag))
-      .filter(n => activeProvider === "all" || n.provider === activeProvider)
-      .sort((a, b) => b.dateNum - a.dateNum);
+      .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
+      .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
+      .filter((n: NewsItem) => activeProvider === "all" || n.provider === activeProvider)
+      .sort((a: NewsItem, b: NewsItem) => b.dateNum - a.dateNum);
   }, [activeSig, activeTag, activeProvider]);
 
-  // Group by year-quarter for visual breaks
+  // Group by year for visual breaks
   const grouped = useMemo(() => {
     const groups: Record<string, NewsItem[]> = {};
-    filtered.forEach(item => {
+    filtered.forEach((item: NewsItem) => {
       const year = String(item.dateNum).slice(0, 4);
       if (!groups[year]) groups[year] = [];
       groups[year].push(item);
@@ -162,7 +162,7 @@ export default function AINewsPage() {
               className="font-mono text-[11px] bg-white/[0.04] border border-hairline rounded-lg px-3 py-1.5 text-fg-2 outline-none focus:border-violet/60 transition-colors"
             >
               <option value="all">All providers</option>
-              {providers.map(p => <option key={p} value={p}>{p}</option>)}
+              {providers.map((p: string) => <option key={p} value={p}>{p}</option>)}
             </select>
 
             {filtered.length !== NEWS_ITEMS.length && (

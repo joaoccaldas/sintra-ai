@@ -419,6 +419,9 @@ export const AI_NEWS: NewsItem[] = [
 
 // ── Derived exports ────────────────────────────────────────────────────────
 
+/** Alias kept for component compatibility. */
+export const NEWS_ITEMS = AI_NEWS;
+
 export const NEWS_TAGS: string[] = Array.from(
   new Set(AI_NEWS.flatMap((item) => item.tags))
 ).sort();
