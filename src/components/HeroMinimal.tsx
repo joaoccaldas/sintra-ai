@@ -169,8 +169,8 @@ export default function HeroMinimal({ total, onSearch }: Props) {
               type="search"
               value={query}
               onChange={e => setQuery(e.target.value)}
-              placeholder={`Search ${total} prompts by task or keyword…`}
-              aria-label="Search prompts"
+              placeholder="Search prompts, tools, concepts, news…"
+              aria-label="Search all AI knowledge"
               className="w-full bg-white/[0.06] border border-hairline rounded-xl pl-10 pr-24 py-3 font-mono text-[13px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 focus:bg-white/[0.08] transition-all"
             />
             <button
