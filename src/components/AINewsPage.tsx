@@ -20,7 +20,7 @@ function NewsCard({ item }: { item: NewsItem }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-30px" }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="flex gap-5 py-7 border-b border-hairline/60 last:border-0 group"
+      className="flex gap-5 py-7 border-b border-hairline/60 last:border-0"
     >
       {/* Left: date + significance */}
       <div className="w-[96px] shrink-0 pt-0.5">
@@ -41,46 +41,31 @@ function NewsCard({ item }: { item: NewsItem }) {
           </span>
         </div>
 
-        {/* Title — links to source if available */}
-        {item.url ? (
-          <a
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-start gap-2 mb-3 group/title"
-          >
-            <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 group-hover/title:text-violet-bright transition-colors duration-200 underline decoration-fg-4/30 underline-offset-4 hover:decoration-violet/60">
-              {item.title}
-            </h3>
-            <ExternalLink
-              size={13}
-              className="shrink-0 mt-1.5 text-fg-4 group-hover/title:text-violet-bright transition-colors duration-200"
-            />
-          </a>
-        ) : (
-          <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3">
-            {item.title}
-          </h3>
-        )}
+        {/* Title */}
+        <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3">
+          {item.title}
+        </h3>
 
         {/* Summary */}
         <p className="font-sans text-[14px] leading-[1.65] text-fg-2 mb-4">{item.summary}</p>
 
-        {/* Tags + optional source link */}
-        <div className="flex flex-wrap items-center gap-1.5">
-          {item.tags.map(tag => (
-            <span key={tag} className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12]">
-              {tag}
-            </span>
-          ))}
+        {/* Footer: tags + source link */}
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap gap-1.5 flex-1">
+            {item.tags.map(tag => (
+              <span key={tag} className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12]">
+                {tag}
+              </span>
+            ))}
+          </div>
           {item.url && (
             <a
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-auto font-mono text-[10px] tracking-[0.06em] text-violet-bright/70 hover:text-violet-bright transition-colors duration-150 flex items-center gap-1 shrink-0 border border-violet/20 hover:border-violet/50 px-2 py-0.5 rounded-sm"
+              className="shrink-0 inline-flex items-center gap-1.5 font-mono text-[11px] font-medium px-3 py-1.5 rounded-md bg-violet/10 border border-violet/30 text-violet-bright hover:bg-violet/20 hover:border-violet/60 transition-all duration-150"
             >
-              Source <ExternalLink size={10} />
+              Read source <ExternalLink size={11} />
             </a>
           )}
         </div>
