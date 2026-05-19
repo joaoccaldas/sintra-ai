@@ -1,10 +1,11 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { Copy, Check } from "lucide-react";
+import { Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
 import { UseCase, DIFF_COLOR } from "@/lib/data";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import CardVisual from "./CardVisual";
+import { useSavedPrompts } from "@/context/SavedPromptsContext";
 
 const CAT_ACCENT: Record<string, string> = {
   "quick-wins":     "#F4D06F",
@@ -30,6 +31,7 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
   const catColor  = CAT_ACCENT[item.category] || "#9F8CFF";
   const ref = useRef<HTMLButtonElement>(null);
   const [copied, setCopied] = useState(false);
+  const { isSaved, toggle } = useSavedPrompts();
 
   const onMouseMove = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
     const el = ref.current;
@@ -88,15 +90,29 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
         }}
       />
 
-      {/* Quick-copy button — always visible on touch, hover-only on desktop */}
-      <button
-        onClick={quickCopy}
-        aria-label="Copy prompt"
-        style={{ position: "absolute", top: 10, right: 10, zIndex: 10 }}
-        className="opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-150 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[#0E1120]/90 border border-violet/30 font-mono text-[10px] text-fg-3 hover:text-violet-bright hover:border-violet/60 backdrop-blur-sm"
+      {/* Action buttons — always visible on touch, hover-only on desktop */}
+      <div
+        style={{ position: "absolute", top: 8, right: 8, zIndex: 10 }}
+        className="flex items-center gap-1 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-150"
       >
-        {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy</>}
-      </button>
+        <button
+          onClick={e => { e.stopPropagation(); toggle(item.id); }}
+          aria-label={isSaved(item.id) ? "Remove from saved" : "Save prompt"}
+          title={isSaved(item.id) ? "Remove from saved" : "Save"}
+          className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#0E1120]/90 border border-violet/30 text-fg-3 hover:text-violet-bright hover:border-violet/60 backdrop-blur-sm transition-colors"
+        >
+          {isSaved(item.id)
+            ? <BookmarkCheck size={10} className="text-violet-bright" />
+            : <Bookmark size={10} />}
+        </button>
+        <button
+          onClick={quickCopy}
+          aria-label="Copy prompt"
+          className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[#0E1120]/90 border border-violet/30 font-mono text-[10px] text-fg-3 hover:text-violet-bright hover:border-violet/60 backdrop-blur-sm transition-colors"
+        >
+          {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy</>}
+        </button>
+      </div>
 
       {/* Output-kind abstract visual */}
       <CardVisual kind={item.output_kind} difficulty={item.difficulty} isFeatured={isFeatured} />

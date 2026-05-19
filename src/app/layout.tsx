@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { SavedPromptsProvider } from "@/context/SavedPromptsContext";
 import { USE_CASES } from "@/lib/data";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
@@ -50,7 +51,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <SavedPromptsProvider>{children}</SavedPromptsProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -1,9 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, Search, Bookmark } from "lucide-react";
+import dynamic from "next/dynamic";
 import TesseractMark from "./TesseractMark";
 import { useLanguage } from "@/context/LanguageContext";
+import { useSavedPrompts } from "@/context/SavedPromptsContext";
+
+const CommandPalette = dynamic(() => import("./CommandPalette"), { ssr: false });
+const SavedPanel = dynamic(() => import("./SavedPanel"), { ssr: false });
 
 interface Props {
   total: number;
@@ -13,8 +18,11 @@ import { BASE_PATH } from "@/lib/data";
 
 export default function Header({ total }: Props) {
   const { t, locale, toggle } = useLanguage();
-  const [scrolled,    setScrolled]    = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const { saved } = useSavedPrompts();
+  const [scrolled,      setScrolled]      = useState(false);
+  const [mobileOpen,    setMobileOpen]    = useState(false);
+  const [paletteOpen,   setPaletteOpen]   = useState(false);
+  const [savedPanelOpen, setSavedPanelOpen] = useState(false);
 
   const PRIMARY_LINKS = [
     { href: "#explore",             label: t.nav_explore },
@@ -42,6 +50,17 @@ export default function Header({ total }: Props) {
     window.addEventListener("scroll", fn, { passive: true });
     fn();
     return () => window.removeEventListener("scroll", fn);
+  }, []);
+
+  useEffect(() => {
+    const fn = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setPaletteOpen(p => !p);
+      }
+    };
+    window.addEventListener("keydown", fn);
+    return () => window.removeEventListener("keydown", fn);
   }, []);
 
   useEffect(() => {
@@ -87,9 +106,31 @@ export default function Header({ total }: Props) {
 
           <div className="flex-1" />
 
-          <span className="hidden lg:inline font-mono text-[11px] text-fg-3 tracking-[0.06em] whitespace-nowrap">
-            <b className="text-fg-1 font-medium">{total}</b> {locale === "pt" ? "casos de uso" : "use cases"}
-          </span>
+          {/* ⌘K search trigger */}
+          <button
+            onClick={() => setPaletteOpen(true)}
+            className="hidden lg:flex items-center gap-2 h-8 px-3 rounded-lg bg-white/[0.04] border border-hairline font-mono text-[11px] text-fg-4 hover:text-fg-1 hover:border-violet/30 hover:bg-white/[0.07] transition-all"
+            aria-label="Open search (⌘K)"
+          >
+            <Search size={12} className="shrink-0" />
+            <span>Search</span>
+            <kbd className="ml-0.5 text-[9px] px-1 py-0.5 rounded bg-white/[0.05] border border-hairline leading-none">⌘K</kbd>
+          </button>
+
+          {/* Saved prompts badge */}
+          <button
+            onClick={() => setSavedPanelOpen(true)}
+            className="relative flex items-center justify-center w-8 h-8 rounded-full border border-hairline text-fg-3 hover:text-violet-bright hover:border-violet/40 transition-all"
+            aria-label={`Saved prompts${saved.size > 0 ? ` (${saved.size})` : ""}`}
+            title="Saved prompts"
+          >
+            <Bookmark size={14} />
+            {saved.size > 0 && (
+              <span className="absolute -top-1 -right-1 flex items-center justify-center w-4 h-4 rounded-full bg-violet text-white font-mono text-[9px] font-bold leading-none">
+                {saved.size > 9 ? "9+" : saved.size}
+              </span>
+            )}
+          </button>
 
           {/* Language toggle — pill */}
           <button
@@ -116,6 +157,9 @@ export default function Header({ total }: Props) {
           </button>
         </div>
       </header>
+
+      <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
+      <SavedPanel open={savedPanelOpen} onClose={() => setSavedPanelOpen(false)} />
 
       {/* Mobile sheet */}
       {mobileOpen && (
