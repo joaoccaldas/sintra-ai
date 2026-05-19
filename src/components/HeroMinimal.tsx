@@ -129,15 +129,23 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
         <motion.p
           custom={2} variants={lineVariants} initial="hidden" animate="show"
-          className="font-sans text-[17px] leading-[1.65] text-fg-3 max-w-[420px] mx-auto mb-8 whitespace-pre-line"
+          className="font-sans text-[17px] leading-[1.65] text-fg-3 max-w-[420px] mx-auto mb-5 whitespace-pre-line"
         >
           {t.hero_tagline}
         </motion.p>
 
+        {/* ── Stats ────────────────────────────────────────────────────── */}
+        <motion.p
+          custom={3} variants={lineVariants} initial="hidden" animate="show"
+          className="font-mono text-[11px] tracking-[0.14em] uppercase text-fg-4 max-w-[380px] mx-auto mb-8"
+        >
+          {total} prompts &nbsp;·&nbsp; 9 disciplines &nbsp;·&nbsp; built for practitioners
+        </motion.p>
+
         {/* ── Hero search ────────────────────────────────────────────── */}
         <motion.div
-          custom={3} variants={lineVariants} initial="hidden" animate="show"
-          className="w-full max-w-md mx-auto mb-4"
+          custom={4} variants={lineVariants} initial="hidden" animate="show"
+          className="w-full max-w-md mx-auto mb-3"
         >
           <form
             onSubmit={e => { e.preventDefault(); submit(query); }}
@@ -167,7 +175,7 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
         {/* ── Popular task chips ────────────────────────────────────── */}
         <motion.div
-          custom={4} variants={lineVariants} initial="hidden" animate="show"
+          custom={5} variants={lineVariants} initial="hidden" animate="show"
           className="flex flex-wrap justify-center gap-2 mb-8"
         >
           <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase self-center">Try:</span>
@@ -183,10 +191,11 @@ export default function HeroMinimal({ total, onSearch }: Props) {
           ))}
         </motion.div>
 
-        <motion.div custom={5} variants={lineVariants} initial="hidden" animate="show">
+        {/* ── Primary CTA ──────────────────────────────────────────────── */}
+        <motion.div custom={6} variants={lineVariants} initial="hidden" animate="show">
           <a
             href="#explore"
-            className="btn btn-ghost text-fg-4 border-white/10 hover:border-white/25"
+            className="btn"
             onClick={e => {
               e.preventDefault();
               document.getElementById("explore")?.scrollIntoView({ behavior: prefersReducedMotion ? "instant" : "smooth" } as ScrollIntoViewOptions);
@@ -199,7 +208,7 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
       {/* ── Scroll cue ───────────────────────────────────────────────── */}
       <motion.div
-        custom={6} variants={lineVariants} initial="hidden" animate="show"
+        custom={7} variants={lineVariants} initial="hidden" animate="show"
         aria-hidden="true"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-mono text-[9px] tracking-[0.24em] uppercase text-fg-4"
       >

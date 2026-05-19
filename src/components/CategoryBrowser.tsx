@@ -268,8 +268,8 @@ export default function CategoryBrowser({ heroSearch }: Props) {
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
-        {/* ── 3D Carousel — hidden on mobile, shown md+ ───────────────── */}
-        <div className="hidden md:block relative h-[56vh] min-h-[360px] max-h-[520px] w-full">
+        {/* ── 3D Carousel — full height on md+, compact on mobile ────── */}
+        <div className="relative h-[38vh] md:h-[56vh] min-h-[260px] md:min-h-[360px] max-h-[520px] w-full">
           <CategoryCarousel3D selectedIndex={selectedIdx} onSelect={handleSelect} />
 
           <button onClick={prev} className="carousel-arrow carousel-arrow--left" aria-label="Previous category">
