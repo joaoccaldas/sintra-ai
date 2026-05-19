@@ -88,12 +88,12 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
         }}
       />
 
-      {/* Quick-copy button — visible on hover */}
+      {/* Quick-copy button — always visible on touch, hover-only on desktop */}
       <button
         onClick={quickCopy}
         aria-label="Copy prompt"
         style={{ position: "absolute", top: 10, right: 10, zIndex: 10 }}
-        className="opacity-0 group-hover:opacity-100 transition-opacity duration-150 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[#0E1120]/90 border border-violet/30 font-mono text-[10px] text-fg-3 hover:text-violet-bright hover:border-violet/60 backdrop-blur-sm"
+        className="opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-150 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[#0E1120]/90 border border-violet/30 font-mono text-[10px] text-fg-3 hover:text-violet-bright hover:border-violet/60 backdrop-blur-sm"
       >
         {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy</>}
       </button>
