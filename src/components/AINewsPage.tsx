@@ -47,18 +47,18 @@ function NewsCard({ item }: { item: NewsItem }) {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group/link inline-block"
+            className="inline-flex items-start gap-2 mb-3 group/title"
           >
-            <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3 group-hover/link:text-violet-bright transition-colors duration-200 inline">
+            <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 group-hover/title:text-violet-bright transition-colors duration-200 underline decoration-fg-4/30 underline-offset-4 hover:decoration-violet/60">
               {item.title}
             </h3>
             <ExternalLink
               size={13}
-              className="inline ml-2 mb-0.5 text-fg-4 opacity-0 group-hover/link:opacity-100 transition-opacity duration-150 shrink-0"
+              className="shrink-0 mt-1.5 text-fg-4 group-hover/title:text-violet-bright transition-colors duration-200"
             />
           </a>
         ) : (
-          <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3 group-hover:text-violet-bright transition-colors duration-200">
+          <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3">
             {item.title}
           </h3>
         )}
@@ -78,7 +78,7 @@ function NewsCard({ item }: { item: NewsItem }) {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-auto font-mono text-[10px] tracking-[0.06em] text-fg-4 hover:text-violet-bright transition-colors duration-150 flex items-center gap-1 shrink-0"
+              className="ml-auto font-mono text-[10px] tracking-[0.06em] text-violet-bright/70 hover:text-violet-bright transition-colors duration-150 flex items-center gap-1 shrink-0 border border-violet/20 hover:border-violet/50 px-2 py-0.5 rounded-sm"
             >
               Source <ExternalLink size={10} />
             </a>

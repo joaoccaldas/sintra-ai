@@ -624,6 +624,35 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#0078d4",
     url: "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
   },
+
+  // ── Auto-updated 2026-05-18 (run 2) ──────────────────────────────────────
+
+  {
+    id: "caisi-frontier-labs",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "All Five Frontier AI Labs Now Under US Government Pre-Deployment Review",
+    summary:
+      "The US Department of Commerce's Center for AI Standards and Innovation finalized pre-deployment evaluation agreements with Google DeepMind, Microsoft, and xAI on May 5, 2026, joining OpenAI and Anthropic in a program that has now completed more than 40 frontier model assessments. Under the agreements, every major model from these labs must undergo government safety and security evaluation before public release. The expansion marks the clearest signal yet that pre-deployment government review is becoming a baseline expectation for frontier AI development in the United States.",
+    tags: ["Regulation", "CAISI", "Google", "Microsoft", "xAI", "Safety", "Policy"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
+  },
+  {
+    id: "claude-small-business",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "Claude for Small Business — 15 Agentic Workflows Across Core Business Tools",
+    summary:
+      "Anthropic launched Claude for Small Business on May 13, 2026, shipping 15 ready-to-run agentic workflows spanning finance, operations, sales, marketing, HR, and customer service, with native connectors for QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365, and Slack. The workflows automate recurring tasks including payroll planning, month-end close, invoice chasing, lead triage, contract review, and cash-flow monitoring. Existing Claude Team and Enterprise subscribers get access at no additional cost, with the agent reusing the user's existing permissions on each connected application.",
+    tags: ["Anthropic", "Claude", "Agents", "Small Business", "QuickBooks", "Automation"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.anthropic.com/news/claude-for-small-business",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────
