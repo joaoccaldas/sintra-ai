@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 20 May 2026 15:44:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 15:47:00 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -134,6 +134,33 @@
     <guid isPermaLink="true">https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic Launches Self-Hosted Sandboxes and Encrypted MCP Tunnels for Claude Agents]]></title>
+    <description><![CDATA[Announced at Code with Claude London (May 19–20, 2026), Anthropic released self-hosted sandboxes in public beta and MCP tunnels in research preview for Claude Managed Agents. Self-hosted sandboxes let enterprises run agent tool execution on their own infrastructure — or via Cloudflare, Daytona, Modal, or Vercel — while Anthropic retains orchestration. MCP tunnels provide end-to-end encrypted access to private MCP servers with no inbound firewall rules required, enabling agents to reach internal databases and APIs without public exposure.]]></description>
+    <link>https://claude.com/blog/claude-managed-agents-updates</link>
+    <guid isPermaLink="true">https://claude.com/blog/claude-managed-agents-updates</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Recursive Superintelligence Exits Stealth with $650M at $4.65B Valuation]]></title>
+    <description><![CDATA[UK-based startup Recursive Superintelligence exited stealth on May 13, 2026 with $650 million raised at a $4.65 billion valuation, backed by GV (Alphabet's VC arm), Greycroft, Nvidia, and AMD. Co-founded by ex-Salesforce chief scientist Richard Socher and UCL/DeepMind professor Tim Rocktäschel, the 30-person team is building AI systems that autonomously improve themselves in recursive loops — starting with AI-driven AI research. A Level 1 autonomous training system is targeted for public launch in mid-2026.]]></description>
+    <link>https://tech.eu/2026/05/13/recursive-superintelligence-emerges-from-stealth-with-650m-raise/</link>
+    <guid isPermaLink="true">https://tech.eu/2026/05/13/recursive-superintelligence-emerges-from-stealth-with-650m-raise/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Recursive Superintelligence</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU Parliament and Council Agree AI Act Omnibus Simplification]]></title>
+    <description><![CDATA[The European Parliament and Council reached a provisional agreement on May 7, 2026 on the Digital Omnibus package, delaying high-risk AI compliance deadlines — standalone systems to December 2027, product-embedded systems to August 2028 — and reducing administrative burdens for SMEs and mid-caps. New prohibitions on non-consensual intimate AI imagery and CSAM generation take effect December 2026. The deal also broadens permissions for sensitive data use in bias mitigation; formal adoption is expected before the original August 2, 2026 deadline.]]></description>
+    <link>https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/</link>
+    <guid isPermaLink="true">https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>European Union</category>
   </item>
 
   <item>
@@ -431,33 +458,6 @@
     <guid isPermaLink="true">https://www.anthropic.com/news/claude-3-family</guid>
     <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Sora — Cinematic Text-to-Video AI Announced]]></title>
-    <description><![CDATA[OpenAI unveiled Sora, a text-to-video model capable of generating up to 60-second photorealistic videos with consistent physics, camera movement, and object permanence across frames. Demo videos showing hyper-realistic cityscapes, animals in motion, and abstract scenes went viral immediately. OpenAI described Sora as 'a world simulator' and stated it was not yet available to the public, instead sharing access with red teamers and visual artists.]]></description>
-    <link>https://openai.com/index/sora/</link>
-    <guid isPermaLink="true">https://openai.com/index/sora/</guid>
-    <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini 1.5 Pro — One Million Token Context Window]]></title>
-    <description><![CDATA[Google announced Gemini 1.5 Pro featuring a one-million-token context window — enough to process approximately one hour of video, 11 hours of audio, 30,000 lines of code, or 700,000 words in a single prompt. This was a ten-fold increase over the previous largest context window among major models. Google attributed the capability to a Mixture of Experts architecture, which also made the model more computationally efficient than Gemini 1.0 Ultra.]]></description>
-    <link>https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/</link>
-    <guid isPermaLink="true">https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/</guid>
-    <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Announces Gemini 1.0 — Natively Multimodal Model Family]]></title>
-    <description><![CDATA[Google announced the Gemini 1.0 model family in three sizes — Ultra, Pro, and Nano — built to be natively multimodal from the ground up, understanding and generating across text, images, audio, and video in a single unified model. Gemini Ultra reportedly surpassed GPT-4 on 30 of 32 benchmarks evaluated, including the MMLU academic knowledge test. Gemini Nano was designed to run on-device on Pixel 8 Pro smartphones without a network connection.]]></description>
-    <link>https://blog.google/technology/ai/google-gemini-ai/</link>
-    <guid isPermaLink="true">https://blog.google/technology/ai/google-gemini-ai/</guid>
-    <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
-    <category>Google</category>
   </item>
   </channel>
 </rss>
