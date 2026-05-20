@@ -557,6 +557,19 @@ export const AI_NEWS: NewsItem[] = [
     url: "https://www.anthropic.com/glasswing",
   },
   {
+    id: "gemini-3-1-ultra",
+    date: "Apr 2026",
+    dateNum: 202604,
+    title: "Gemini 3.1 Ultra — 2M-Token Context Window, Full Native Multimodal",
+    summary:
+      "Google released Gemini 3.1 Ultra in April 2026 with the largest context window of any publicly available model at 2 million tokens — double the 1M-token limit of Gemini 3.1 Pro. The model reasons natively across text, image, audio, and video in a single pass without separate pipelines, enabling tasks like auditing a full year of all-hands recordings alongside a complete legal discovery set in one prompt. Gemini 3.1 Ultra surpassed GPT-5.5 on the MMLU-Pro and GPQA Diamond benchmarks, making it Google's most capable model available via the Vertex AI API at launch.",
+    tags: ["Google", "Gemini 3.1 Ultra", "2M Context", "Multimodal", "Benchmark", "Vertex AI"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://medium.com/@WinTK-Bangladesh/gemini-3-1-ultra-is-here-2-million-token-context-full-multimodal-zero-compromise-ca3f2a8d1254",
+  },
+  {
     id: "claude-opus-4-7",
     date: "Apr 2026",
     dateNum: 202604,
@@ -594,6 +607,20 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     // url removed — original link pointed to an unrelated article; needs manual re-verification
+  },
+
+  {
+    id: "xai-dissolved-anthropic-compute",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "xAI Dissolved — SpaceX Hands Colossus 1 Compute to Anthropic",
+    summary:
+      "Elon Musk announced on May 6, 2026 that xAI would be dissolved as an independent company and rebranded SpaceXAI, citing Anthropic's rapid growth and safety focus as factors in his change of view. Anthropic simultaneously signed a compute agreement with SpaceX giving it exclusive access to the Colossus 1 facility in Memphis — over 220,000 NVIDIA H100/H200/GB200 GPUs and 300 megawatts of capacity — driven by an 80-fold revenue surge in a single quarter that overwhelmed Anthropic's existing infrastructure. Anthropic also expressed interest in extending the partnership to gigawatt-scale orbital compute with SpaceX.",
+    tags: ["Anthropic", "xAI", "SpaceX", "Compute", "Colossus", "Elon Musk", "Infrastructure"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://x.ai/news/anthropic-compute-partnership",
   },
 
   // ── Auto-updated 2026-05-18 ────────────────────────────────────────────
@@ -665,6 +692,20 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://www.digit.in/features/general/google-io-2026-gemini-35-to-ai-smart-glasses-everything-that-was-announced.html",
+  },
+
+  {
+    id: "google-search-ai-mode-overhaul",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "Google Search's Biggest Redesign in 25 Years — AI Agents and Generative UI",
+    summary:
+      "Google unveiled a complete AI overhaul of Search at Google I/O on May 19, 2026, described as the biggest change to the search box in over 25 years. The new intelligent search box accepts text, images, files, videos, and Chrome tabs as inputs; agentic 'information agents' launching in summer 2026 will monitor the web continuously and alert users to changes. Generative UI, powered by Gemini 3.5 Flash, allows Search to dynamically produce custom interfaces, simulations, graphs, and mini-apps in response to queries. AI Mode already surpassed one billion monthly users with query volumes more than doubling every quarter since launch.",
+    tags: ["Google", "Search", "AI Mode", "Agents", "Generative UI", "Google I/O", "Gemini"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://blog.google/products-and-platforms/products/search/search-io-2026/",
   },
 
   // ── Auto-updated 2026-05-20 ────────────────────────────────────────────
