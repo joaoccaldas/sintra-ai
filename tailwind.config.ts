@@ -101,7 +101,7 @@ const config: Config = {
         "scrim-in": "scrim-in 240ms cubic-bezier(0.22, 1, 0.36, 1) forwards",
         "fade-up": "fade-up 480ms cubic-bezier(0.22, 1, 0.36, 1) forwards",
         "hero-float": "hero-float 7s ease-in-out infinite",
-        "ticker": "ticker 32s linear infinite",
+        "ticker": "ticker 44s linear infinite",
       },
     },
   },
