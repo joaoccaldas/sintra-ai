@@ -6,13 +6,13 @@ import * as THREE from "three";
 export const CAROUSEL_ITEMS = [
   { id: "quick-wins",     label: "Quick Wins",        cosmicName: "The Moon",       essence: "Closest. Brightest. Easiest to reach.",             color: 0xD4C9A0, hex: "#D4C9A0" },
   { id: "productivity",   label: "Productivity",      cosmicName: "Jupiter",        essence: "Orbits aligned. Momentum self-sustaining.",         color: 0x8FE3D2, hex: "#8FE3D2" },
-  { id: "writing",        label: "Writing & Copy",    cosmicName: "The Star",       essence: "Every word — a photon that travels forever.",        color: 0xF4C56A, hex: "#F4C56A" },
+  { id: "writing",        label: "Writing & Copy",    cosmicName: "Venus",          essence: "Every word — a photon that travels forever.",        color: 0xF4C56A, hex: "#F4C56A" },
   { id: "research",       label: "Research",          cosmicName: "Mars",           essence: "Unexplored terrain. Answers buried in red dust.",    color: 0xD4845A, hex: "#D4845A" },
   { id: "finance",        label: "Finance & FP&A",    cosmicName: "Io",             essence: "The most volcanic world. Energy never sleeps.",     color: 0x6EE7A0, hex: "#6EE7A0" },
-  { id: "data-analytics", label: "Data & Analytics",  cosmicName: "The Galaxy",     essence: "Billions of points. One story.",                    color: 0xE8C089, hex: "#E8C089" },
+  { id: "data-analytics", label: "Data & Analytics",  cosmicName: "Neptune",        essence: "Billions of points. One story.",                    color: 0xE8C089, hex: "#E8C089" },
   { id: "coding",         label: "Code & Automation", cosmicName: "Europa",         essence: "Beneath the ice: an ocean of possibility.",         color: 0x9F8CFF, hex: "#9F8CFF" },
   { id: "creative-ai",    label: "Creative & Design", cosmicName: "The Quasar",     essence: "Brightest object in the observable universe.",       color: 0x5EEAD4, hex: "#5EEAD4" },
-  { id: "game-advanced",  label: "Game & Advanced",   cosmicName: "Black Hole",     essence: "Where the rules of physics collapse.",              color: 0xC4A8F0, hex: "#C4A8F0" },
+  { id: "game-advanced",  label: "Game & Advanced",   cosmicName: "Rigel",          essence: "Where the rules of physics collapse.",              color: 0xC4A8F0, hex: "#C4A8F0" },
 ] as const;
 
 const BASE = "/sintra-ai";
@@ -89,28 +89,19 @@ function makeCosmicBody(
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
-    // 2 — Star / Sun ──────────────────────────────────────────────────────────
+    // 2 — Venus (NASA volcanic surface texture) ───────────────────────────────
     case 2: {
-      const mat = pbr({ metalness: 0.0, roughness: 0.2, emissive: c, emissiveIntensity: 0.32 });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.58, 36, 36), mat));
-      for (let i = 0; i < 14; i++) {
-        const phi   = Math.acos(1 - 2 * (i / 14));
-        const theta = i * 2.399;
-        const h     = 0.22 + Math.random() * 0.14;
-        const cone  = new THREE.Mesh(
-          new THREE.ConeGeometry(0.035, h, 4),
-          new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.52 }),
-        );
-        const dir = new THREE.Vector3(
-          Math.sin(phi) * Math.cos(theta),
-          Math.cos(phi),
-          Math.sin(phi) * Math.sin(theta),
-        );
-        cone.position.copy(dir.clone().multiplyScalar(0.68));
-        cone.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
-        body.add(cone);
-      }
-      return { body, mainMat: mat };
+      const diffuse = loadTex(`${BASE}/venus-texture.png`);
+      const bump    = loadTex(`${BASE}/venus-texture.png`, false);
+      const mat = new THREE.MeshStandardMaterial({
+        map:       diffuse,
+        bumpMap:   bump,
+        bumpScale: 0.035,
+        roughness: 0.88,
+        metalness: 0.0,
+      });
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
+      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
     // 3 — Mars (NASA texture, 128-segment sphere) ────────────────────────────
@@ -151,77 +142,19 @@ function makeCosmicBody(
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
-    // 5 — Galaxy ──────────────────────────────────────────────────────────────
+    // 5 — Neptune (NASA texture, deep-blue ice giant) ─────────────────────────
     case 5: {
-      // Tilt so spiral arms face the camera (camera is shallow, ~6° above horizon)
-      const galaxy = new THREE.Group();
-      galaxy.rotation.x = 0.95; // ~54° — shows the disc clearly as it spins
-      body.add(galaxy);
-
-      // Bright galactic nucleus
-      galaxy.add(new THREE.Mesh(
-        new THREE.SphereGeometry(0.07, 12, 12),
-        new THREE.MeshBasicMaterial({ color: 0xFFF4CC }),
-      ));
-      // Soft bulge halo
-      galaxy.add(new THREE.Mesh(
-        new THREE.SphereGeometry(0.19, 12, 12),
-        new THREE.MeshBasicMaterial({ color: 0xFFCC88, transparent: true, opacity: 0.28 }),
-      ));
-
-      // Particle arrays
-      const ARM_N  = 2600;
-      const CORE_N = 450;
-      const N_TOT  = ARM_N + CORE_N;
-      const pos = new Float32Array(N_TOT * 3);
-      const col = new Float32Array(N_TOT * 3);
-
-      // Core bulge — dense cluster, warm yellow-white
-      for (let i = 0; i < CORE_N; i++) {
-        const r     = Math.pow(Math.random(), 1.8) * 0.30;
-        const theta = Math.random() * Math.PI * 2;
-        const y     = (Math.random() - 0.5) * 0.14 * (1 - r / 0.30);
-        pos[i*3]   = Math.cos(theta) * r;
-        pos[i*3+1] = y;
-        pos[i*3+2] = Math.sin(theta) * r;
-        const w    = 1 - r / 0.30;
-        col[i*3]   = 1.0;
-        col[i*3+1] = 0.90 + w * 0.10;
-        col[i*3+2] = 0.55 + w * 0.30;
-      }
-
-      // Two logarithmic spiral arms
-      for (let i = 0; i < ARM_N; i++) {
-        const arm   = i % 2;                       // alternate arms
-        const t     = Math.random();               // 0=inner 1=outer
-        const base  = arm * Math.PI;               // arms offset by 180°
-        const angle = base + t * Math.PI * 3.5    // 1.75 full rotations
-                    + (Math.random() - 0.5) * (0.22 + t * 0.60); // spread widens outward
-        const r     = 0.13 + t * 0.90 + (Math.random() - 0.5) * 0.07;
-        const y     = (Math.random() - 0.5) * 0.052 * Math.exp(-t * 2.2); // thin at edges
-
-        const idx   = CORE_N + i;
-        pos[idx*3]   = Math.cos(angle) * r;
-        pos[idx*3+1] = y;
-        pos[idx*3+2] = Math.sin(angle) * r;
-
-        // Warm golden inner → cool blue-white outer (like real stellar populations)
-        const heat   = Math.exp(-t * 2.4);
-        col[idx*3]   = 0.68 + heat * 0.32;
-        col[idx*3+1] = 0.80 + heat * 0.16;
-        col[idx*3+2] = 1.0;
-      }
-
-      const pGeo = new THREE.BufferGeometry();
-      pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-      pGeo.setAttribute("color",    new THREE.BufferAttribute(col, 3));
-      const pMat = new THREE.PointsMaterial({
-        size: 0.015, vertexColors: true,
-        transparent: true, opacity: 0.93, sizeAttenuation: true,
+      const diffuse = loadTex(`${BASE}/neptune-texture.png`);
+      const bump    = loadTex(`${BASE}/neptune-texture.png`, false);
+      const mat = new THREE.MeshStandardMaterial({
+        map:       diffuse,
+        bumpMap:   bump,
+        bumpScale: 0.018,
+        roughness: 0.72,
+        metalness: 0.0,
       });
-      galaxy.add(new THREE.Points(pGeo, pMat));
-
-      return { body, mainMat: pMat as unknown as THREE.MeshPhysicalMaterial };
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
+      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
     // 6 — Europa ──────────────────────────────────────────────────────────────
@@ -267,25 +200,22 @@ function makeCosmicBody(
       return { body, mainMat: mat };
     }
 
-    // 8 — Black Hole ──────────────────────────────────────────────────────────
+    // 8 — Rigel (blue supergiant star surface texture) ────────────────────────
     case 8: {
-      body.add(new THREE.Mesh(
-        new THREE.SphereGeometry(0.3, 20, 20),
-        new THREE.MeshBasicMaterial({ color: 0x010108 }),
-      ));
-      let mainMat = new THREE.MeshPhysicalMaterial();
-      for (let r = 0; r < 3; r++) {
-        const rMat = new THREE.MeshPhysicalMaterial({
-          color, metalness: 0.6, roughness: 0.06, clearcoat: 1.0,
-          transparent: true, opacity: 0.88 - r * 0.24,
-          emissive: c, emissiveIntensity: 0.28 - r * 0.06,
-        });
-        if (r === 0) mainMat = rMat;
-        const ring = new THREE.Mesh(new THREE.TorusGeometry(0.46 + r * 0.2, 0.054 - r * 0.01, 8, 80), rMat);
-        ring.rotation.x = Math.PI / 2 + (r - 1) * 0.11;
-        body.add(ring);
-      }
-      return { body, mainMat };
+      const diffuse = loadTex(`${BASE}/rigel-texture.png`);
+      const bump    = loadTex(`${BASE}/rigel-texture.png`, false);
+      const mat = new THREE.MeshStandardMaterial({
+        map:            diffuse,
+        bumpMap:        bump,
+        bumpScale:      0.025,
+        roughness:      0.30,
+        metalness:      0.0,
+        emissive:       new THREE.Color(0x1a2fff),
+        emissiveMap:    diffuse,
+        emissiveIntensity: 0.18,
+      });
+      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
+      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
     }
 
     default: {
