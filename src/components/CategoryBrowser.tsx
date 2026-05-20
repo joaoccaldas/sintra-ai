@@ -53,7 +53,7 @@ function SearchResultRow({ item, onOpen }: { item: UseCase; onOpen: (item: UseCa
         <h3 className="font-serif text-[17px] leading-[1.18] text-fg-1 mb-1.5 group-hover:text-violet-bright transition-colors">
           {item.title}
         </h3>
-        <p className="font-sans text-[12.5px] text-fg-3 leading-[1.5] line-clamp-2">
+        <p className="font-sans text-[13px] text-fg-3 leading-[1.5] line-clamp-2">
           {item.outcome || item.desc}
         </p>
       </div>
@@ -204,17 +204,19 @@ export default function CategoryBrowser({ heroSearch }: Props) {
 
         {/* Popular task chips */}
         {!globalSearch && (
-          <div className="flex flex-wrap gap-2 mt-3">
-            <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase self-center mr-1">Try:</span>
-            {POPULAR_TASKS.map(task => (
-              <button
-                key={task}
-                onClick={() => setGlobalSearch(task)}
-                className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-white/[0.1] text-fg-3 hover:text-fg-1 hover:border-violet/40 hover:bg-violet/[0.07] transition-all capitalize"
-              >
-                {task}
-              </button>
-            ))}
+          <div className="mt-3">
+            <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase block mb-2">Try:</span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+              {POPULAR_TASKS.map(task => (
+                <button
+                  key={task}
+                  onClick={() => setGlobalSearch(task)}
+                  className="font-mono text-[10px] px-2.5 py-1.5 rounded-full border border-white/[0.1] text-fg-3 hover:text-fg-1 hover:border-violet/40 hover:bg-violet/[0.07] transition-all capitalize text-center"
+                >
+                  {task}
+                </button>
+              ))}
+            </div>
           </div>
         )}
 
@@ -319,25 +321,8 @@ export default function CategoryBrowser({ heroSearch }: Props) {
             </motion.div>
           </AnimatePresence>
 
-          {/* Dot navigator */}
-          <div className="flex justify-center gap-2 mt-6">
-            {CAROUSEL_ITEMS.map((item, i) => (
-              <button
-                key={item.id}
-                onClick={() => setSelectedIdx(i)}
-                className="w-2 h-2 rounded-full transition-all duration-200"
-                style={{
-                  background: i === selectedIdx ? item.hex : "rgba(255,255,255,0.15)",
-                  transform:  i === selectedIdx ? "scale(1.4)" : "scale(1)",
-                  boxShadow:  i === selectedIdx ? `0 0 8px ${item.hex}` : "none",
-                }}
-                aria-label={item.label}
-              />
-            ))}
-          </div>
-
-          {/* Category chip rail — quick-select fallback */}
-          <div className="mt-6 px-4 pb-1">
+          {/* Category chip rail */}
+          <div className="mt-6 px-6 pb-1">
             <div className="grid grid-cols-3 gap-2 md:flex md:flex-wrap md:justify-center md:gap-2">
               {CAROUSEL_ITEMS.map((item, i) => (
                 <button

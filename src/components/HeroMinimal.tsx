@@ -14,11 +14,6 @@ interface Props {
   onSearch: (query: string) => void;
 }
 
-const HERO_TASKS = [
-  "variance analysis", "meeting notes", "Python script",
-  "executive summary", "forecast model", "cold email",
-];
-
 const line = {
   hidden: { opacity: 0, y: 22 },
   show: (i: number) => ({
@@ -144,17 +139,9 @@ export default function HeroMinimal({ total, onSearch }: Props) {
           {t.hero_tagline}
         </motion.p>
 
-        {/* ── Stats ────────────────────────────────────────────────────── */}
-        <motion.p
-          custom={3} variants={lineVariants} initial="hidden" animate="show"
-          className="font-mono text-[11px] tracking-[0.14em] uppercase text-fg-4 max-w-[380px] mx-auto mb-8"
-        >
-          {total} prompts &nbsp;·&nbsp; finance · data · code · writing &nbsp;·&nbsp; copy-ready
-        </motion.p>
-
         {/* ── Hero search ────────────────────────────────────────────── */}
         <motion.div
-          custom={4} variants={lineVariants} initial="hidden" animate="show"
+          custom={3} variants={lineVariants} initial="hidden" animate="show"
           className="w-full max-w-md mx-auto mb-3"
         >
           <form
@@ -183,26 +170,8 @@ export default function HeroMinimal({ total, onSearch }: Props) {
           </form>
         </motion.div>
 
-        {/* ── Popular task chips ────────────────────────────────────── */}
-        <motion.div
-          custom={5} variants={lineVariants} initial="hidden" animate="show"
-          className="flex flex-wrap justify-center gap-2 mb-8"
-        >
-          <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase self-center">Try:</span>
-          {HERO_TASKS.map(task => (
-            <button
-              key={task}
-              type="button"
-              onClick={() => { setQuery(task); submit(task); }}
-              className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-white/[0.1] text-fg-3 hover:text-fg-1 hover:border-violet/40 hover:bg-violet/[0.07] transition-all capitalize"
-            >
-              {task}
-            </button>
-          ))}
-        </motion.div>
-
         {/* ── Primary CTA ──────────────────────────────────────────────── */}
-        <motion.div custom={6} variants={lineVariants} initial="hidden" animate="show">
+        <motion.div custom={4} variants={lineVariants} initial="hidden" animate="show">
           <a
             href="#explore"
             className="btn"
@@ -218,7 +187,7 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
       {/* ── Scroll cue ───────────────────────────────────────────────── */}
       <motion.div
-        custom={7} variants={lineVariants} initial="hidden" animate="show"
+        custom={5} variants={lineVariants} initial="hidden" animate="show"
         aria-hidden="true"
         className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-mono text-[9px] tracking-[0.24em] uppercase text-fg-4"
       >
