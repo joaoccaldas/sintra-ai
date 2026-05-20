@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion
 import { Search } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useLanguage } from "@/context/LanguageContext";
+import NewsTicker from "@/components/NewsTicker";
 
 const Tesseract3D = dynamic(() => import("./Tesseract3D"), { ssr: false });
 
@@ -219,11 +220,16 @@ export default function HeroMinimal({ total, onSearch }: Props) {
       <motion.div
         custom={7} variants={lineVariants} initial="hidden" animate="show"
         aria-hidden="true"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-mono text-[9px] tracking-[0.24em] uppercase text-fg-4"
+        className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-mono text-[9px] tracking-[0.24em] uppercase text-fg-4"
       >
         <span>{t.hero_scroll}</span>
         <span className="w-px h-8 bg-gradient-to-b from-violet/50 to-transparent animate-cue-pulse" />
       </motion.div>
+
+      {/* ── News ticker ──────────────────────────────────────────────── */}
+      <div className="absolute bottom-0 left-0 right-0 z-20">
+        <NewsTicker />
+      </div>
     </section>
   );
 }

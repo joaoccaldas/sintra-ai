@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import HeroMinimal from "@/components/HeroMinimal";
-import NewsTicker from "@/components/NewsTicker";
 import CategoryBrowser from "@/components/CategoryBrowser";
 import UniversalSearch from "@/components/UniversalSearch";
 import Footer from "@/components/Footer";
@@ -31,7 +30,6 @@ export default function Home() {
         <Header total={USE_CASES.length} />
         <main>
           <HeroMinimal total={USE_CASES.length} onSearch={handleHeroSearch} />
-          <NewsTicker />
           {heroSearch.query && (
             <UniversalSearch query={heroSearch.query} onClose={clearSearch} />
           )}
