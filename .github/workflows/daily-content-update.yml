@@ -1,9 +1,14 @@
-name: Daily Content Update
+name: Daily News Update
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # 8:00 AM UTC every day
-  workflow_dispatch:        # manual trigger from GitHub UI
+    - cron: '0 8 * * *'    # 08:00 UTC every day
+  workflow_dispatch:         # manual trigger from GitHub UI
+    inputs:
+      ref:
+        description: 'Branch to run on (default: main)'
+        required: false
+        default: 'main'
 
 permissions:
   contents: write
@@ -13,13 +18,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source branch
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          ref: ${{ github.event.inputs.ref || github.ref_name || 'main' }}
+          ref: ${{ github.event.inputs.ref || 'main' }}
+          fetch-depth: 0
 
-      - name: Setup Node.js 20
+      - name: Setup Node 20
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -28,27 +34,29 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch and append new AI news
+      - name: Fetch new AI news (Claude + web search)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/update-news.mjs
 
-      - name: Check for data changes
+      - name: Check for changes
         id: diff
         run: |
-          git diff --quiet src/lib/newsData.ts && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
+          git diff --quiet src/lib/newsData.ts \
+            && echo "changed=false" >> "$GITHUB_OUTPUT" \
+            || echo "changed=true"  >> "$GITHUB_OUTPUT"
 
-      - name: Commit updated news data
+      - name: Build (validate TypeScript + generate RSS)
+        run: npm run build
+
+      - name: Commit news data
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config user.name "github-actions[bot]"
-          git add src/lib/newsData.ts
+          git config user.name  "github-actions[bot]"
+          git add src/lib/newsData.ts public/feed.xml
           git commit -m "chore: daily news update $(date -u +%Y-%m-%d)"
           git push
-
-      - name: Build static site
-        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -58,4 +66,4 @@ jobs:
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: '41898282+github-actions[bot]@users.noreply.github.com'
-          commit_message: 'deploy: ${{ github.run_number }} $(date -u +%Y-%m-%d)'
+          commit_message: 'deploy: auto news update ${{ github.run_number }}'
