@@ -24,26 +24,198 @@ const MODEL_TYPE_COLOR: Record<string, string> = {
   reasoning: "#B6A6FF",
 };
 
+// ─── Frontier model matrix data ───────────────────────────────────────────────
+interface MatrixModel {
+  name: string;
+  provider: string;
+  providerColor: string;
+  providerEmoji: string;
+  context: string;
+  inputPrice: string;
+  outputPrice: string;
+  speed: "fast" | "medium" | "slow";
+  bestFor: string;
+  freeAccess?: boolean;
+  preview?: boolean;
+  openWeight?: boolean;
+}
+
+const FRONTIER_MODELS: MatrixModel[] = [
+  {
+    name: "GPT-5.5 Pro",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    providerEmoji: "🤖",
+    context: "1M tokens",
+    inputPrice: "$30/M",
+    outputPrice: "$180/M",
+    speed: "slow",
+    bestFor: "Highest-stakes reasoning & research",
+  },
+  {
+    name: "Claude Opus 4.7",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    providerEmoji: "🔬",
+    context: "200K tokens",
+    inputPrice: "$5/M",
+    outputPrice: "$25/M",
+    speed: "slow",
+    bestFor: "Long-horizon agentic tasks & code",
+  },
+  {
+    name: "Gemini 3.1 Pro",
+    provider: "Google",
+    providerColor: "#4285f4",
+    providerEmoji: "🧠",
+    context: "1M tokens",
+    inputPrice: "—",
+    outputPrice: "—",
+    speed: "medium",
+    bestFor: "Science, math & benchmark tasks",
+  },
+  {
+    name: "GPT-5.5",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    providerEmoji: "🤖",
+    context: "1M tokens",
+    inputPrice: "$5/M",
+    outputPrice: "$30/M",
+    speed: "medium",
+    bestFor: "Agentic workflows & long-context",
+  },
+  {
+    name: "Claude Sonnet 4.6",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    providerEmoji: "🔬",
+    context: "200K tokens",
+    inputPrice: "$3/M",
+    outputPrice: "$15/M",
+    speed: "medium",
+    bestFor: "Balanced intelligence & throughput",
+  },
+  {
+    name: "Gemini 3.5 Flash",
+    provider: "Google",
+    providerColor: "#4285f4",
+    providerEmoji: "🧠",
+    context: "1M tokens",
+    inputPrice: "$1.50/M",
+    outputPrice: "$9/M",
+    speed: "fast",
+    bestFor: "Coding, agents & low-latency at scale",
+    freeAccess: true,
+  },
+  {
+    name: "Mistral Medium 3.5",
+    provider: "Mistral AI",
+    providerColor: "#ff7000",
+    providerEmoji: "💨",
+    context: "256K tokens",
+    inputPrice: "$1.50/M",
+    outputPrice: "$7.50/M",
+    speed: "medium",
+    bestFor: "Open-weight coding & agentic work",
+    openWeight: true,
+  },
+  {
+    name: "GPT-5.5 Instant",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    providerEmoji: "🤖",
+    context: "1M tokens",
+    inputPrice: "Free",
+    outputPrice: "Free",
+    speed: "fast",
+    bestFor: "Default ChatGPT — everyday tasks",
+    freeAccess: true,
+  },
+  {
+    name: "Llama 4 Scout",
+    provider: "Meta AI",
+    providerColor: "#0866ff",
+    providerEmoji: "🦙",
+    context: "10M tokens",
+    inputPrice: "Free",
+    outputPrice: "Free",
+    speed: "fast",
+    bestFor: "Longest context, self-hosted deployments",
+    openWeight: true,
+  },
+  {
+    name: "Grok 3",
+    provider: "xAI",
+    providerColor: "#000000",
+    providerEmoji: "⚡",
+    context: "131K tokens",
+    inputPrice: "$5/M",
+    outputPrice: "$15/M",
+    speed: "medium",
+    bestFor: "Real-time X/Twitter data & social intel",
+  },
+  {
+    name: "Claude Haiku 4.5",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    providerEmoji: "🔬",
+    context: "200K tokens",
+    inputPrice: "$0.80/M",
+    outputPrice: "$4/M",
+    speed: "fast",
+    bestFor: "High-volume latency-sensitive tasks",
+  },
+  {
+    name: "o4-mini",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    providerEmoji: "🤖",
+    context: "200K tokens",
+    inputPrice: "$0.55/M",
+    outputPrice: "$2.20/M",
+    speed: "medium",
+    bestFor: "Cost-efficient STEM reasoning",
+  },
+];
+
+const SPEED_COLOR: Record<string, string> = {
+  fast:   "#4ade80",
+  medium: "#facc15",
+  slow:   "#c084fc",
+};
+
 // ─── Model pricing row ───────────────────────────────────────────────────────
 function ModelRow({ model, color }: { model: LabModel; color: string }) {
   return (
-    <div className="flex items-start gap-3 py-3 border-b border-hairline last:border-0">
+    <div className={`flex items-start gap-3 py-3 border-b border-hairline last:border-0 ${model.status === "legacy" ? "opacity-60" : ""}`}>
       <div className="flex flex-col gap-1 flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="font-serif text-[14px] text-fg-1">{model.name}</span>
+          <span className={`font-serif text-[14px] ${model.status === "legacy" ? "text-fg-3 line-through decoration-fg-4" : "text-fg-1"}`}>{model.name}</span>
           <span className="font-mono text-[9px] px-1.5 py-0.5 rounded-sm border uppercase tracking-[0.10em]"
             style={{ color: MODEL_TYPE_COLOR[model.type], borderColor: MODEL_TYPE_COLOR[model.type] + "44", background: MODEL_TYPE_COLOR[model.type] + "12" }}>
             {model.type}
           </span>
-          {model.speed && (
+          {model.speed && model.status !== "legacy" && (
             <span className="font-mono text-[9px] text-fg-4">{SPEED_LABEL[model.speed]}</span>
           )}
           {model.freeAccess && (
             <span className="font-mono text-[9px] px-1.5 py-0.5 rounded-sm border border-green-500/40 text-green-400 bg-green-500/10 uppercase tracking-[0.10em]">Free / OSS</span>
           )}
+          {model.status === "legacy" && (
+            <span className="font-mono text-[9px] px-1.5 py-0.5 rounded-sm border border-amber-500/40 text-amber-400 bg-amber-500/10 uppercase tracking-[0.10em]">Legacy</span>
+          )}
+          {model.status === "preview" && (
+            <span className="font-mono text-[9px] px-1.5 py-0.5 rounded-sm border border-blue-400/40 text-blue-300 bg-blue-500/10 uppercase tracking-[0.10em]">Preview</span>
+          )}
         </div>
         {model.contextWindow && (
           <span className="font-mono text-[10px] text-fg-4">{model.contextWindow} context</span>
+        )}
+        {model.releaseDate && (
+          <span className="font-mono text-[9px] text-fg-4">
+            Released {model.releaseDate}{model.discontinuedDate ? ` · Retired ${model.discontinuedDate}` : ""}
+          </span>
         )}
         {model.highlight && (
           <span className="font-sans text-[12px] text-fg-3 leading-[1.4]">{model.highlight}</span>
@@ -61,6 +233,114 @@ function ModelRow({ model, color }: { model: LabModel; color: string }) {
           <span className="font-mono text-[11px] text-green-400">Free</span>
         ) : null}
       </div>
+    </div>
+  );
+}
+
+// ─── Model matrix ─────────────────────────────────────────────────────────────
+function ModelMatrix() {
+  const [sortBy, setSortBy] = useState<"speed" | "price" | "context">("speed");
+
+  const sorted = [...FRONTIER_MODELS].sort((a, b) => {
+    if (sortBy === "price") {
+      const pa = parseFloat(a.inputPrice.replace(/[^0-9.]/g, "") || "999999");
+      const pb = parseFloat(b.inputPrice.replace(/[^0-9.]/g, "") || "999999");
+      return pa - pb;
+    }
+    if (sortBy === "context") {
+      const ctxVal = (s: string) => {
+        const m = s.match(/([\d.]+)(M|K)/i);
+        if (!m) return 0;
+        return parseFloat(m[1]) * (m[2].toUpperCase() === "M" ? 1000 : 1);
+      };
+      return ctxVal(b.context) - ctxVal(a.context);
+    }
+    // speed: fast → medium → slow
+    const order = { fast: 0, medium: 1, slow: 2 };
+    return order[a.speed] - order[b.speed];
+  });
+
+  return (
+    <div>
+      {/* Sort controls */}
+      <div className="flex items-center gap-2 mb-4">
+        <span className="font-mono text-[10px] text-fg-4 tracking-[0.12em] uppercase mr-1">Sort by</span>
+        {(["speed", "price", "context"] as const).map(key => (
+          <button key={key} onClick={() => setSortBy(key)}
+            className="font-mono text-[10px] tracking-[0.08em] px-3 py-1.5 rounded-full border transition-all duration-150"
+            style={{
+              background:  sortBy === key ? "#9F8CFF22" : "transparent",
+              borderColor: sortBy === key ? "#9F8CFF88" : "#ffffff18",
+              color:       sortBy === key ? "#B6A6FF"   : "#6b6a8a",
+            }}>
+            {key === "speed" ? "Speed" : key === "price" ? "Cheapest first" : "Largest context"}
+          </button>
+        ))}
+      </div>
+
+      {/* Matrix table */}
+      <div className="overflow-x-auto rounded-xl border border-violet/[0.12]">
+        <table className="w-full min-w-[720px] text-left border-collapse">
+          <thead>
+            <tr className="border-b border-violet/[0.12] bg-violet/[0.04]">
+              <th className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 px-4 py-3 font-normal">Model</th>
+              <th className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 px-4 py-3 font-normal">Provider</th>
+              <th className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 px-4 py-3 font-normal">Context</th>
+              <th className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 px-4 py-3 font-normal">Input / M</th>
+              <th className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 px-4 py-3 font-normal">Output / M</th>
+              <th className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 px-4 py-3 font-normal">Speed</th>
+              <th className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 px-4 py-3 font-normal hidden lg:table-cell">Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map(m => (
+              <tr key={m.name}
+                className="border-b border-violet/[0.05] hover:bg-white/[0.02] transition-colors"
+                style={{ borderLeft: `2px solid ${m.providerColor}44` }}>
+                <td className="px-4 py-3">
+                  <div className="flex flex-col gap-0.5">
+                    <span className="font-serif text-[13px] text-fg-1 leading-none">{m.name}</span>
+                    <div className="flex items-center gap-1.5 mt-0.5">
+                      {m.freeAccess && !m.openWeight && (
+                        <span className="font-mono text-[8px] px-1.5 py-0.5 rounded-sm border border-green-500/40 text-green-400 bg-green-500/10 uppercase tracking-[0.08em]">Free</span>
+                      )}
+                      {m.openWeight && (
+                        <span className="font-mono text-[8px] px-1.5 py-0.5 rounded-sm border border-sky-400/40 text-sky-300 bg-sky-500/10 uppercase tracking-[0.08em]">Open</span>
+                      )}
+                      {m.preview && (
+                        <span className="font-mono text-[8px] px-1.5 py-0.5 rounded-sm border border-blue-400/40 text-blue-300 bg-blue-500/10 uppercase tracking-[0.08em]">Preview</span>
+                      )}
+                    </div>
+                  </div>
+                </td>
+                <td className="px-4 py-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-base leading-none">{m.providerEmoji}</span>
+                    <span className="font-sans text-[12px]" style={{ color: m.providerColor }}>{m.provider}</span>
+                  </div>
+                </td>
+                <td className="px-4 py-3 font-mono text-[11px] text-fg-2">{m.context}</td>
+                <td className="px-4 py-3">
+                  <span className="font-mono text-[12px] font-medium" style={{ color: m.providerColor }}>
+                    {m.inputPrice}
+                  </span>
+                </td>
+                <td className="px-4 py-3 font-mono text-[11px] text-fg-3">{m.outputPrice}</td>
+                <td className="px-4 py-3">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full shrink-0" style={{ background: SPEED_COLOR[m.speed] }} />
+                    <span className="font-mono text-[10px] text-fg-3 capitalize">{m.speed}</span>
+                  </div>
+                </td>
+                <td className="px-4 py-3 hidden lg:table-cell">
+                  <span className="font-sans text-[12px] text-fg-3 leading-[1.4]">{m.bestFor}</span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="font-mono text-[9px] text-fg-4 mt-2">Prices as of May 2026 · API pricing per 1M tokens · Free = free tier or open-weight</p>
     </div>
   );
 }
@@ -323,7 +603,7 @@ function CompareTable({ labs }: { labs: AILab[] }) {
 export default function AILabsPage() {
   const [activeType, setActiveType]   = useState<string>("all");
   const [activeLab,  setActiveLab]    = useState<AILab | null>(null);
-  const [viewMode,   setViewMode]     = useState<"gallery" | "compare">("gallery");
+  const [viewMode,   setViewMode]     = useState<"gallery" | "compare" | "models">("gallery");
 
   const filtered = activeType === "all"
     ? AI_LABS
@@ -335,7 +615,7 @@ export default function AILabsPage() {
       {/* Hero */}
       <div className="max-w-5xl mx-auto px-4 pt-28 pb-12">
         <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-fg-3 mb-3">
-          {AI_LABS.length} labs · Updated 2025
+          {AI_LABS.length} labs · Updated May 2026
         </p>
         <h1 className="font-serif text-[clamp(36px,6vw,72px)] font-normal tracking-[-0.02em] text-fg-1 leading-[1.04] mb-4">
           Major <em className="italic text-violet-bright">AI Labs</em>
@@ -348,7 +628,7 @@ export default function AILabsPage() {
       {/* Filter tabs + view toggle */}
       <div className="sticky top-16 z-40 bg-void/90 backdrop-blur-md border-b border-violet/[0.08]">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-2 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: "none" }}>
-          {LAB_TYPES.map(t => (
+          {viewMode !== "models" && LAB_TYPES.map(t => (
             <button
               key={t.id}
               onClick={() => setActiveType(t.id)}
@@ -362,28 +642,24 @@ export default function AILabsPage() {
               {t.label}
             </button>
           ))}
+          {viewMode === "models" && (
+            <span className="font-mono text-[11px] text-fg-4 tracking-[0.12em] uppercase">
+              {FRONTIER_MODELS.length} frontier models · May 2026
+            </span>
+          )}
 
           <div className="ml-auto flex-shrink-0 flex items-center gap-1 bg-void border border-violet/[0.12] rounded-full p-0.5">
-            <button
-              onClick={() => setViewMode("gallery")}
-              className="font-mono text-[10px] tracking-[0.08em] px-3 py-1 rounded-full transition-all duration-150"
-              style={{
-                background: viewMode === "gallery" ? "#9F8CFF22" : "transparent",
-                color:      viewMode === "gallery" ? "#B6A6FF" : "#6b6a8a",
-              }}
-            >
-              Gallery
-            </button>
-            <button
-              onClick={() => setViewMode("compare")}
-              className="font-mono text-[10px] tracking-[0.08em] px-3 py-1 rounded-full transition-all duration-150"
-              style={{
-                background: viewMode === "compare" ? "#9F8CFF22" : "transparent",
-                color:      viewMode === "compare" ? "#B6A6FF" : "#6b6a8a",
-              }}
-            >
-              Compare
-            </button>
+            {(["gallery", "compare", "models"] as const).map(mode => (
+              <button key={mode}
+                onClick={() => setViewMode(mode)}
+                className="font-mono text-[10px] tracking-[0.08em] px-3 py-1 rounded-full transition-all duration-150"
+                style={{
+                  background: viewMode === mode ? "#9F8CFF22" : "transparent",
+                  color:      viewMode === mode ? "#B6A6FF" : "#6b6a8a",
+                }}>
+                {mode === "gallery" ? "Gallery" : mode === "compare" ? "Compare" : "Models"}
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -404,7 +680,7 @@ export default function AILabsPage() {
                 <LabCard key={lab.id} lab={lab} onClick={() => setActiveLab(lab)} />
               ))}
             </motion.div>
-          ) : (
+          ) : viewMode === "compare" ? (
             <motion.div
               key={`compare-${activeType}`}
               initial={{ opacity: 0, y: 12 }}
@@ -414,10 +690,26 @@ export default function AILabsPage() {
             >
               <CompareTable labs={filtered} />
             </motion.div>
+          ) : (
+            <motion.div
+              key="models"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22 }}
+            >
+              <div className="mb-5">
+                <h2 className="font-serif text-[22px] font-normal text-fg-1 mb-1">Frontier Model Matrix</h2>
+                <p className="font-sans text-[13px] text-fg-3 leading-[1.5]">
+                  Side-by-side comparison of the most capable models available today — sorted by speed, price, or context window.
+                </p>
+              </div>
+              <ModelMatrix />
+            </motion.div>
           )}
         </AnimatePresence>
 
-        {filtered.length === 0 && (
+        {viewMode !== "models" && filtered.length === 0 && (
           <p className="font-mono text-[13px] text-fg-4 text-center py-16">No labs in this category yet.</p>
         )}
       </div>

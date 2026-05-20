@@ -666,6 +666,61 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#4285f4",
     url: "https://www.digit.in/features/general/google-io-2026-gemini-35-to-ai-smart-glasses-everything-that-was-announced.html",
   },
+
+  // ── Auto-updated 2026-05-20 ────────────────────────────────────────────
+
+  {
+    id: "gemini-spark-agent-io2026",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "Gemini Spark — Google's 24/7 AI Agent Launches at Google I/O 2026",
+    summary:
+      "Google announced Gemini Spark at Google I/O on May 19, 2026 — a cloud-based AI agent that runs continuously in the background, reasoning across connected apps and taking actions on behalf of users. Spark integrates with Gmail, Docs, Uber, OpenTable, Lyft, Zillow, and dozens of third-party services, enabling autonomous multi-step workflows such as booking restaurants, tracking packages, and organizing calendar events. Beta access is included with the new Google AI Ultra subscription at $100 per month, rolling out first to trusted testers.",
+    tags: ["Google", "Gemini Spark", "Google I/O", "Agents", "Automation", "AI Ultra"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+  },
+  {
+    id: "gemini-omni-io2026",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "Gemini Omni — Google's Unified Video-Image Generation Model Unveiled",
+    summary:
+      "Google DeepMind CEO Demis Hassabis unveiled Gemini Omni at Google I/O 2026, a multimodal model that unifies text, image, and video generation in a single set of weights — the first top-tier AI system to do so. Omni supports conversational video editing via voice commands, allowing users to transform uploaded footage by adjusting characters, backgrounds, and framing in real time. The initial release, Gemini Omni Flash, is grounded in real-world knowledge via Google Search and is planned for launch in summer 2026.",
+    tags: ["Google", "Gemini Omni", "Google I/O", "Video Generation", "Multimodal", "DeepMind"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://www.businesstoday.in/technology/artificial-intelligence/story/google-io-2026-google-unveils-gemini-omni-ai-video-editing-model-532350-2026-05-19",
+  },
+  {
+    id: "google-samsung-xr-glasses",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "Google and Samsung Unveil Gemini-Powered Android XR Smart Glasses",
+    summary:
+      "Google and Samsung revealed the first Android XR smart glasses at Google I/O 2026, with eyewear frames designed by Gentle Monster and Warby Parker for fall 2026 availability. The two-tier lineup includes audio-only glasses with cameras and microphones for all-day wear, and an optional in-lens display variant for private contextual information. Powered by Gemini, the glasses support live translation, navigation, calls, messaging, and real-time visual assistance, activated by voice or a tap on the frame.",
+    tags: ["Google", "Samsung", "Android XR", "Smart Glasses", "Wearables", "Gemini", "Google I/O"],
+    significance: "notable",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://www.techradar.com/news/live/google-io-2026-live",
+  },
+  {
+    id: "anthropic-dreaming-agents",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "Anthropic Dreaming — Claude Agents Now Self-Improve Between Sessions",
+    summary:
+      "Anthropic launched Dreaming on May 6, 2026, a scheduled maintenance layer that reviews an agent's past sessions, extracts patterns across them, and curates memory stores so agents improve over time without modifying model weights. Supported on Claude Opus 4.7 and Sonnet 4.6, Dreaming feeds up to 100 past sessions into a single 'dream' and surfaces recurring mistakes, convergent workflows, and team-wide preferences. Early adopter Harvey (legal AI) reported a 6× increase in task completion rates after implementing the feature; access is currently gated behind a request form.",
+    tags: ["Anthropic", "Claude", "Dreaming", "Agents", "Memory", "Self-Improvement"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────

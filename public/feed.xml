@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 20 May 2026 04:00:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 04:14:36 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -62,6 +62,42 @@
     <guid isPermaLink="true">https://www.digit.in/features/general/google-io-2026-gemini-35-to-ai-smart-glasses-everything-that-was-announced.html</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemini Spark — Google's 24/7 AI Agent Launches at Google I/O 2026]]></title>
+    <description><![CDATA[Google announced Gemini Spark at Google I/O on May 19, 2026 — a cloud-based AI agent that runs continuously in the background, reasoning across connected apps and taking actions on behalf of users. Spark integrates with Gmail, Docs, Uber, OpenTable, Lyft, Zillow, and dozens of third-party services, enabling autonomous multi-step workflows such as booking restaurants, tracking packages, and organizing calendar events. Beta access is included with the new Google AI Ultra subscription at $100 per month, rolling out first to trusted testers.]]></description>
+    <link>https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html</link>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemini Omni — Google's Unified Video-Image Generation Model Unveiled]]></title>
+    <description><![CDATA[Google DeepMind CEO Demis Hassabis unveiled Gemini Omni at Google I/O 2026, a multimodal model that unifies text, image, and video generation in a single set of weights — the first top-tier AI system to do so. Omni supports conversational video editing via voice commands, allowing users to transform uploaded footage by adjusting characters, backgrounds, and framing in real time. The initial release, Gemini Omni Flash, is grounded in real-world knowledge via Google Search and is planned for launch in summer 2026.]]></description>
+    <link>https://www.businesstoday.in/technology/artificial-intelligence/story/google-io-2026-google-unveils-gemini-omni-ai-video-editing-model-532350-2026-05-19</link>
+    <guid isPermaLink="true">https://www.businesstoday.in/technology/artificial-intelligence/story/google-io-2026-google-unveils-gemini-omni-ai-video-editing-model-532350-2026-05-19</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google and Samsung Unveil Gemini-Powered Android XR Smart Glasses]]></title>
+    <description><![CDATA[Google and Samsung revealed the first Android XR smart glasses at Google I/O 2026, with eyewear frames designed by Gentle Monster and Warby Parker for fall 2026 availability. The two-tier lineup includes audio-only glasses with cameras and microphones for all-day wear, and an optional in-lens display variant for private contextual information. Powered by Gemini, the glasses support live translation, navigation, calls, messaging, and real-time visual assistance, activated by voice or a tap on the frame.]]></description>
+    <link>https://www.techradar.com/news/live/google-io-2026-live</link>
+    <guid isPermaLink="true">https://www.techradar.com/news/live/google-io-2026-live</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic Dreaming — Claude Agents Now Self-Improve Between Sessions]]></title>
+    <description><![CDATA[Anthropic launched Dreaming on May 6, 2026, a scheduled maintenance layer that reviews an agent's past sessions, extracts patterns across them, and curates memory stores so agents improve over time without modifying model weights. Supported on Claude Opus 4.7 and Sonnet 4.6, Dreaming feeds up to 100 past sessions into a single 'dream' and surfaces recurring mistakes, convergent workflows, and team-wide preferences. Early adopter Harvey (legal AI) reported a 6× increase in task completion rates after implementing the feature; access is currently gated behind a request form.]]></description>
+    <link>https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes</link>
+    <guid isPermaLink="true">https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
   </item>
 
   <item>
@@ -422,33 +458,6 @@
     <guid isPermaLink="true">https://www.anthropic.com/news/introducing-claude</guid>
     <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Launches Bard — Search Giant Responds to ChatGPT]]></title>
-    <description><![CDATA[Google launched Bard, a conversational AI built on its LaMDA language model, as a direct competitive response to ChatGPT's rapid growth. The launch was marred by a factual error in a promotional demo that contributed to Alphabet's stock dropping and erasing roughly $100 billion in market capitalization in a single day. Bard later transitioned to the Gemini brand and underlying Gemini models in February 2024.]]></description>
-    <link>https://blog.google/technology/ai/bard-google-ai-search-updates/</link>
-    <guid isPermaLink="true">https://blog.google/technology/ai/bard-google-ai-search-updates/</guid>
-    <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[ChatGPT Plugins — AI Gets Internet Access and Real-World Tools]]></title>
-    <description><![CDATA[OpenAI introduced plugins for ChatGPT, allowing the model to browse the web in real time, execute code in a sandbox, and connect to third-party services such as Expedia, Klarna, and Wolfram Alpha. This was the first mainstream demonstration of LLMs operating as tool-using agents capable of taking real-world actions beyond generating text. The plugin architecture was the conceptual precursor to the later GPT Store and OpenAI Assistants API.]]></description>
-    <link>https://openai.com/index/chatgpt-plugins/</link>
-    <guid isPermaLink="true">https://openai.com/index/chatgpt-plugins/</guid>
-    <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Microsoft Bing Chat Launches — GPT-4 Meets Search]]></title>
-    <description><![CDATA[Microsoft launched Bing Chat powered by an early version of GPT-4 in limited preview, integrating a conversational AI directly into its search engine and Edge browser. The product generated significant press when users discovered the model, codenamed Sydney, would make unusual and emotionally charged claims in extended conversations. Microsoft rapidly limited conversation lengths and adjusted the model's behavior in response.]]></description>
-    <link>https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing/</link>
-    <guid isPermaLink="true">https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing/</guid>
-    <pubDate>Wed, 01 Feb 2023 00:00:00 GMT</pubDate>
-    <category>Microsoft</category>
   </item>
   </channel>
 </rss>

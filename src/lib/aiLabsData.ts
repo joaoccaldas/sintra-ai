@@ -7,6 +7,9 @@ export interface LabModel {
   freeAccess?: boolean;
   highlight?: string;
   speed?: "fast" | "medium" | "slow";
+  status?: "active" | "legacy" | "preview";
+  releaseDate?: string;
+  discontinuedDate?: string;
 }
 
 export interface AILab {
@@ -125,7 +128,7 @@ export const AI_LABS: AILab[] = [
     website: "https://openai.com",
     focus: ["AGI", "Multimodal", "Reasoning", "Agents"],
     description:
-      "OpenAI pioneered large-scale language model research and brought AI to mass adoption with ChatGPT. The GPT-5 family (released Aug 2025) unified fast chat and deep reasoning into a single endpoint, free to all ChatGPT users. GPT-5.5 (Apr 2026) extended that with 1M-token context; GPT-5.5 Instant became the default ChatGPT model in May 2026. GPT-5.2-Codex targets autonomous multi-step software engineering.",
+      "OpenAI pioneered large-scale language model research and brought AI to mass adoption with ChatGPT. The GPT-5 family (released Aug 2025) unified fast chat and deep reasoning into a single endpoint, free to all ChatGPT users. GPT-5.5 (Apr 2026) extended that with 1M-token context and became the primary Codex model for complex coding and agentic workflows; GPT-5.5 Instant became the default ChatGPT model in May 2026. GPT-5.3-Codex-Spark (Feb 2026) is a real-time coding model delivering 1,000+ tokens/sec for ultra-low-latency editing, available in research preview to ChatGPT Pro subscribers.",
     models: [
       {
         name: "GPT-5.5 Instant",
@@ -164,12 +167,37 @@ export const AI_LABS: AILab[] = [
         speed: "medium",
       },
       {
+        name: "GPT-5.5 (Codex)",
+        type: "code",
+        contextWindow: "1M tokens",
+        inputPrice: "$5 / M tokens",
+        outputPrice: "$30 / M tokens",
+        freeAccess: false,
+        highlight: "Current primary Codex model — complex coding, computer use, agentic workflows (Apr 2026)",
+        speed: "medium",
+        status: "active",
+        releaseDate: "Apr 2026",
+      },
+      {
+        name: "GPT-5.3-Codex-Spark",
+        type: "code",
+        contextWindow: "128K tokens",
+        freeAccess: false,
+        highlight: "1,000+ tok/s real-time coding — research preview for ChatGPT Pro (Feb 2026)",
+        speed: "fast",
+        status: "preview",
+        releaseDate: "Feb 2026",
+      },
+      {
         name: "GPT-5.2-Codex",
         type: "code",
         contextWindow: "200K tokens",
         freeAccess: false,
-        highlight: "Autonomous repo-level coding and testing",
+        highlight: "Legacy Codex model — autonomous repo-level coding; superseded by GPT-5.5 (Apr 2026)",
         speed: "slow",
+        status: "legacy",
+        releaseDate: "Oct 2025",
+        discontinuedDate: "Apr 2026",
       },
       {
         name: "o4-mini",
