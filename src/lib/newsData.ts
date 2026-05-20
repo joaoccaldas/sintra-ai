@@ -859,6 +859,48 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#d97706",
     url: "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes",
   },
+  {
+    id: "anthropic-managed-agents-sandboxes-mcp-tunnels",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 19,
+    title: "Anthropic Launches Self-Hosted Sandboxes and Encrypted MCP Tunnels for Claude Agents",
+    summary:
+      "Announced at Code with Claude London (May 19–20, 2026), Anthropic released self-hosted sandboxes in public beta and MCP tunnels in research preview for Claude Managed Agents. Self-hosted sandboxes let enterprises run agent tool execution on their own infrastructure — or via Cloudflare, Daytona, Modal, or Vercel — while Anthropic retains orchestration. MCP tunnels provide end-to-end encrypted access to private MCP servers with no inbound firewall rules required, enabling agents to reach internal databases and APIs without public exposure.",
+    tags: ["Anthropic", "Claude", "Managed Agents", "MCP", "Agent Infrastructure", "Security"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://claude.com/blog/claude-managed-agents-updates",
+  },
+  {
+    id: "recursive-superintelligence-650m-launch",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 13,
+    title: "Recursive Superintelligence Exits Stealth with $650M at $4.65B Valuation",
+    summary:
+      "UK-based startup Recursive Superintelligence exited stealth on May 13, 2026 with $650 million raised at a $4.65 billion valuation, backed by GV (Alphabet's VC arm), Greycroft, Nvidia, and AMD. Co-founded by ex-Salesforce chief scientist Richard Socher and UCL/DeepMind professor Tim Rocktäschel, the 30-person team is building AI systems that autonomously improve themselves in recursive loops — starting with AI-driven AI research. A Level 1 autonomous training system is targeted for public launch in mid-2026.",
+    tags: ["Recursive Superintelligence", "Funding", "Self-Improving AI", "Stealth Launch", "UK AI"],
+    significance: "major",
+    provider: "Recursive Superintelligence",
+    providerColor: "#6d28d9",
+    url: "https://tech.eu/2026/05/13/recursive-superintelligence-emerges-from-stealth-with-650m-raise/",
+  },
+  {
+    id: "eu-ai-act-omnibus-simplification-may-2026",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 7,
+    title: "EU Parliament and Council Agree AI Act Omnibus Simplification",
+    summary:
+      "The European Parliament and Council reached a provisional agreement on May 7, 2026 on the Digital Omnibus package, delaying high-risk AI compliance deadlines — standalone systems to December 2027, product-embedded systems to August 2028 — and reducing administrative burdens for SMEs and mid-caps. New prohibitions on non-consensual intimate AI imagery and CSAM generation take effect December 2026. The deal also broadens permissions for sensitive data use in bias mitigation; formal adoption is expected before the original August 2, 2026 deadline.",
+    tags: ["EU", "Regulation", "AI Act", "Policy", "Compliance", "Digital Omnibus"],
+    significance: "major",
+    provider: "European Union",
+    providerColor: "#003399",
+    url: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────
