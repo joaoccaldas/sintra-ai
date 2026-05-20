@@ -545,6 +545,20 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#4285f4",
   },
   {
+    id: "openai-122b-funding",
+    date: "Mar 2026",
+    dateNum: 202603,
+    dateDay: 31,
+    title: "OpenAI Closes $122B Round at $852B Valuation — Largest Private Raise Ever",
+    summary:
+      "OpenAI closed a $122 billion funding round on March 31, 2026 at an $852 billion post-money valuation — the largest private capital raise in history. Amazon committed $50 billion, SoftBank and Nvidia each contributed $30 billion, with Andreessen Horowitz and D.E. Shaw also participating. The round included $3 billion from individual investors via bank channels, and is expected to fund global AI infrastructure buildout and an anticipated IPO.",
+    tags: ["OpenAI", "Funding", "Valuation", "SoftBank", "Amazon", "IPO"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://openai.com/index/accelerating-the-next-phase-ai/",
+  },
+  {
     id: "claude-mythos-glasswing",
     date: "Apr 2026",
     dateNum: 202604,
@@ -656,6 +670,20 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#0078d4",
     url: "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
   },
+  {
+    id: "pentagon-ai-classified-deals",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 1,
+    title: "Pentagon Clears 8 AI Companies for Classified Military Networks",
+    summary:
+      "The US Department of Defense announced agreements with eight companies — OpenAI, Google, Microsoft, Nvidia, Amazon, SpaceX, Oracle, and Reflection — to deploy AI on its Impact Level 6 and Level 7 classified networks on May 1, 2026. The deals target warfighter decision-making and data synthesis, with all companies pledging not to use the technology for autonomous weapons or mass surveillance. Anthropic was excluded after the Trump administration objected to the company's insistence on safety guardrails governing AI use in warfare.",
+    tags: ["OpenAI", "Google", "Microsoft", "Pentagon", "Defense", "Policy", "Regulation"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/",
+  },
 
   // ── Auto-updated 2026-05-18 (run 2) ──────────────────────────────────────
 
@@ -686,6 +714,20 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-for-small-business",
+  },
+  {
+    id: "anthropic-gates-foundation",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 14,
+    title: "Anthropic and Gates Foundation Launch $200M Global Health and Education AI Initiative",
+    summary:
+      "Anthropic and the Bill & Melinda Gates Foundation announced a $200 million, four-year partnership on May 14, 2026 to deploy Claude in global health, education, and agriculture programs serving low- and middle-income countries. The deal includes grant funding, Claude usage credits, and technical support, targeting disease response acceleration, evidence-based K-12 tutoring, and smallholder farming assistance in sub-Saharan Africa and India. The partnership is four times the size of OpenAI's $50 million Gates deal announced in January 2026.",
+    tags: ["Anthropic", "Claude", "Gates Foundation", "Global Health", "Education", "Partnership"],
+    significance: "notable",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.anthropic.com/news/gates-foundation-partnership",
   },
   {
     id: "gemini-3-5-flash-io2026",
@@ -774,6 +816,20 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+  },
+  {
+    id: "cohere-aleph-alpha-merger",
+    date: "Apr 2026",
+    dateNum: 202604,
+    dateDay: 24,
+    title: "Cohere Merges With Aleph Alpha — $20B Transatlantic AI Company Formed",
+    summary:
+      "Canadian AI firm Cohere and Germany's Aleph Alpha announced a merger on April 24, 2026, forming a transatlantic enterprise AI company valued at roughly $20 billion. The deal, anchored by a €500 million commitment from Schwarz Group (Lidl and Kaufland's parent), received backing from both the Canadian and German governments. Cohere CEO Aidan Gomez will lead the combined company, which will operate under the Cohere name and compete directly with US frontier labs for European and sovereign AI contracts.",
+    tags: ["Cohere", "Aleph Alpha", "Merger", "Europe", "Enterprise AI", "Sovereign AI"],
+    significance: "notable",
+    provider: "Cohere",
+    providerColor: "#39c5cf",
+    url: "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
   },
   {
     id: "deepseek-v4",
