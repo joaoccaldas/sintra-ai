@@ -14,93 +14,112 @@ const DATA_FILE = join(__dirname, "../src/lib/newsData.ts");
 
 const client = new Anthropic();
 
-// Date window: search last 9 days to handle weekends/gaps
-const today = new Date();
-const since = new Date(today.getTime() - 9 * 24 * 60 * 60 * 1000);
-const todayStr = today.toISOString().slice(0, 10);
-const sinceStr = since.toISOString().slice(0, 10);
-
-// Read existing file and extract all IDs to avoid duplicates
+// Compute search window: start from latest item date in DB or 14 days ago, whichever is more recent
 const source = readFileSync(DATA_FILE, "utf8");
-const existingIds = new Set(
-  [...source.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1])
-);
+const existingIds = new Set([...source.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]));
+const existingTitles = [...source.matchAll(/title:\s*"([^"]+)"/g)].map((m) => m[1]).slice(-20);
+const dateNums = [...source.matchAll(/dateNum:\s*(\d+)/g)].map((m) => parseInt(m[1]));
+const latestDateNum = Math.max(...dateNums);
+const latestYear = Math.floor(latestDateNum / 100);
+const latestMonth = (latestDateNum % 100) - 1; // 0-indexed for Date
+
+const today = new Date();
+const todayStr = today.toISOString().slice(0, 10);
+// Search from the 1st of the latest month already in DB (so we catch any remaining items that month)
+const dbFrom = new Date(Date.UTC(latestYear, latestMonth, 1));
+const windowFrom = new Date(today.getTime() - 14 * 24 * 60 * 60 * 1000); // 14-day fallback
+const sinceDate = dbFrom > windowFrom ? windowFrom : dbFrom;
+const sinceStr = sinceDate.toISOString().slice(0, 10);
 
 const SYSTEM = `You maintain an AI news database for a developer-focused site called Sintra Tesseract.
 Your job is to find real, factual, verifiable AI news events and output them as structured JSON.
 Only include genuinely significant events: major model releases, landmark benchmarks, key product launches, or important industry events.
-Accuracy is critical — never fabricate. If a detail is uncertain, omit it rather than guess.
-Output ONLY a JSON array. No markdown fences, no explanation, no preamble.`;
+Accuracy is critical — never fabricate URLs or statistics. If a detail is uncertain, omit it rather than guess.
+Output ONLY a valid JSON array. No markdown fences, no explanation, no preamble.`;
 
-const USER = `Search the web for significant AI news events from ${sinceStr} to ${todayStr}.
+const USER = `Search the web for significant AI news events published between ${sinceStr} and ${todayStr}.
 
 Focus on:
 - New model releases or major updates (GPT, Claude, Gemini, LLaMA, Mistral, DeepSeek, Grok, etc.)
-- Record-breaking benchmark results
-- Major product launches (agents, tools, APIs)
-- Key industry events (acquisitions, funding, partnerships, policy)
+- Record-breaking benchmark scores (SWE-bench, GPQA, ARC-AGI, MMLU, AIME, etc.)
+- Major product launches (agents, APIs, tools, platforms)
+- Key industry events (acquisitions, funding rounds, regulation, partnerships)
 
-Companies to cover: OpenAI, Anthropic, Google/DeepMind, Meta, Microsoft, Apple, Mistral AI, DeepSeek, xAI, Nvidia, and others.
+Companies to cover: OpenAI, Anthropic, Google/DeepMind, Meta, Microsoft, Apple, Mistral AI, DeepSeek, xAI, Nvidia, Cohere, and others.
 
-IDs already in the database (skip any event with these IDs):
-${[...existingIds].slice(-30).join(", ")}
+IDs already in the database — DO NOT return items matching these IDs:
+${[...existingIds].slice(-40).join(", ")}
 
-For each significant event, return a JSON object with these exact fields:
+Recent titles already covered — avoid returning items about the same events:
+${existingTitles.map(t => `"${t}"`).join("\n")}
+
+For each NEW significant event found, return a JSON object with these exact fields:
 {
   "id": "kebab-case-unique-id",
   "date": "Mon YYYY",
   "dateNum": YYYYMM,
-  "title": "Concise factual title — 10 words max",
-  "summary": "2–3 sentences. Factual. Include specific numbers and benchmarks where available. No marketing language.",
+  "dateDay": DD,
+  "title": "Concise factual title — max 12 words",
+  "summary": "2-3 sentences. Factual. Include specific numbers and benchmark scores where available. No marketing language.",
   "tags": ["Company", "ModelName", "Feature", "Category"],
-  "significance": "landmark OR major OR notable",
+  "significance": "landmark or major or notable",
   "provider": "Company Name",
   "providerColor": "#hexcolor",
-  "url": "https://... (official announcement URL, or most authoritative source)"
+  "url": "https://official-announcement-url"
 }
 
 Provider hex colors:
-OpenAI=#10a37f, Anthropic=#d97706, Google=#4285f4, Meta=#0866ff,
-Microsoft=#0078d4, Apple=#555555, Mistral AI=#ff7000, DeepSeek=#1a73e8, xAI=#000000, Nvidia=#76b900
+OpenAI=#10a37f · Anthropic=#d97706 · Google=#4285f4 · Meta=#0866ff
+Microsoft=#0078d4 · Apple=#555555 · Mistral AI=#ff7000 · DeepSeek=#1a73e8
+xAI=#000000 · Nvidia=#76b900
 
 Significance guide:
-- landmark: changes the trajectory of the field (rare, ~2-3 per year)
-- major: significant release or event most practitioners should know
+- landmark: changes the trajectory of the field (max 2-3 per year — be very selective)
+- major: significant release or event most AI practitioners should know
 - notable: worth tracking but not world-changing
 
-For the url field, prefer official blog posts or press releases (e.g. openai.com/index/..., anthropic.com/news/..., blog.google/...). Only include a url if you found the actual page; omit the field entirely if unsure.
+IMPORTANT for the url field:
+- Use the ACTUAL official announcement URL you found via web search
+- Prefer: openai.com/index/..., anthropic.com/news/..., blog.google/..., ai.meta.com/blog/...
+- Only include url if you actually found and verified the page exists
+- Omit the url field entirely if you cannot confirm the exact URL
 
-Return ONLY a valid JSON array. Example:
-[
-  { "id": "example-event", "date": "May 2026", "dateNum": 202605, "title": "...", "summary": "...", "tags": ["..."], "significance": "major", "provider": "OpenAI", "providerColor": "#10a37f", "url": "https://openai.com/index/..." }
-]
+Return ONLY a valid JSON array (no markdown, no extra text). If nothing new was found, return [].`;
 
-If no significant events were found in the date range, return an empty array: []`;
+function escapeStr(s) {
+  return String(s)
+    .replace(/\\/g, "\\\\")
+    .replace(/"/g, '\\"')
+    .replace(/\n/g, " ")
+    .replace(/\r/g, "");
+}
 
 function itemToTs(item) {
-  const tags = item.tags.map((t) => `"${t}"`).join(", ");
+  const tags = item.tags.map((t) => `"${escapeStr(t)}"`).join(", ");
+  const dayLine = item.dateDay ? `\n    dateDay: ${item.dateDay},` : "";
+  const urlLine = item.url ? `\n    url: "${escapeStr(item.url)}",` : "";
   return `  {
-    id: "${item.id}",
-    date: "${item.date}",
-    dateNum: ${item.dateNum},
-    title: "${item.title.replace(/"/g, '\\"')}",
+    id: "${escapeStr(item.id)}",
+    date: "${escapeStr(item.date)}",
+    dateNum: ${item.dateNum},${dayLine}
+    title: "${escapeStr(item.title)}",
     summary:
-      "${item.summary.replace(/"/g, '\\"')}",
+      "${escapeStr(item.summary)}",
     tags: [${tags}],
     significance: "${item.significance}",
-    provider: "${item.provider}",
-    providerColor: "${item.providerColor}",${item.url ? `\n    url: "${item.url}",` : ""}
+    provider: "${escapeStr(item.provider)}",
+    providerColor: "${escapeStr(item.providerColor)}",${urlLine}
   },`;
 }
 
 async function main() {
-  console.log(`Searching for AI news from ${sinceStr} to ${todayStr}...`);
+  console.log(`Searching for AI news from ${sinceStr} to ${todayStr} (latest DB dateNum: ${latestDateNum})...`);
 
   let response;
   try {
     response = await client.messages.create({
-      model: "claude-haiku-4-5-20251001",
-      max_tokens: 4096,
+      model: "claude-sonnet-4-6",
+      max_tokens: 8192,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       system: SYSTEM,
       messages: [{ role: "user", content: USER }],
@@ -110,73 +129,91 @@ async function main() {
     process.exit(1);
   }
 
-  // Collect text blocks from the response
+  // Collect all text blocks (web search results are tool_use/tool_result blocks; final answer is text)
   const text = response.content
     .filter((b) => b.type === "text")
     .map((b) => b.text)
     .join("");
 
   if (!text.trim()) {
-    console.log("No text output from model.");
-    return;
+    console.log("No text output from model — stop_reason:", response.stop_reason);
+    process.exit(0);
   }
 
-  // Parse JSON — strip any accidental markdown fences
-  const cleaned = text.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+  // Strip accidental markdown fences, then parse JSON
+  const cleaned = text.replace(/```json\s*/g, "").replace(/```\s*/g, "").trim();
   let items;
   try {
     items = JSON.parse(cleaned);
   } catch {
-    // Try to extract JSON array from mixed text
     const match = cleaned.match(/\[[\s\S]*\]/);
     if (!match) {
-      console.log("Could not parse JSON from response.");
-      console.log("Raw output:", text.slice(0, 500));
-      return;
+      console.error("Could not parse JSON from model output:");
+      console.error(text.slice(0, 800));
+      process.exit(1);
     }
-    items = JSON.parse(match[0]);
+    try {
+      items = JSON.parse(match[0]);
+    } catch (e2) {
+      console.error("JSON parse error:", e2.message);
+      console.error(match[0].slice(0, 400));
+      process.exit(1);
+    }
   }
 
   if (!Array.isArray(items) || items.length === 0) {
-    console.log("No new items returned.");
-    return;
+    console.log("No new items returned by model.");
+    process.exit(0);
   }
 
-  const VALID_SIGNIFICANCE = new Set(["landmark", "major", "notable"]);
+  console.log(`Model returned ${items.length} candidate item(s). Validating...`);
 
-  // Filter out duplicates and validate required fields
+  const VALID_SIG = new Set(["landmark", "major", "notable"]);
+
   const newItems = items.filter((item) => {
-    if (!item.id || typeof item.id !== "string") { console.warn("Skipping: missing id"); return false; }
-    if (!item.title || typeof item.title !== "string") { console.warn(`Skipping ${item.id}: missing title`); return false; }
-    if (!item.date || typeof item.date !== "string") { console.warn(`Skipping ${item.id}: missing date`); return false; }
-    if (!item.summary || typeof item.summary !== "string") { console.warn(`Skipping ${item.id}: missing summary`); return false; }
-    if (!item.provider || typeof item.provider !== "string") { console.warn(`Skipping ${item.id}: missing provider`); return false; }
-    if (!VALID_SIGNIFICANCE.has(item.significance)) { console.warn(`Skipping ${item.id}: invalid significance "${item.significance}"`); return false; }
-    if (typeof item.dateNum !== "number" || !/^\d{6}$/.test(String(item.dateNum))) { console.warn(`Skipping ${item.id}: invalid dateNum`); return false; }
-    if (item.url && (typeof item.url !== "string" || !item.url.startsWith("https://"))) {
-      console.warn(`Stripping invalid URL for ${item.id}: "${item.url}"`);
-      delete item.url;
-    }
-    if (existingIds.has(item.id)) {
-      console.log(`Skipping duplicate: ${item.id}`);
+    if (!item.id || typeof item.id !== "string") {
+      console.warn("  SKIP: missing id →", JSON.stringify(item).slice(0, 80));
       return false;
     }
+    if (existingIds.has(item.id)) {
+      console.log(`  SKIP duplicate id: ${item.id}`);
+      return false;
+    }
+    if (!item.title) { console.warn(`  SKIP ${item.id}: missing title`); return false; }
+    if (!item.date)  { console.warn(`  SKIP ${item.id}: missing date`);  return false; }
+    if (!item.summary) { console.warn(`  SKIP ${item.id}: missing summary`); return false; }
+    if (!item.provider) { console.warn(`  SKIP ${item.id}: missing provider`); return false; }
+    if (!VALID_SIG.has(item.significance)) {
+      console.warn(`  SKIP ${item.id}: invalid significance "${item.significance}"`);
+      return false;
+    }
+    if (typeof item.dateNum !== "number" || !/^\d{6}$/.test(String(item.dateNum))) {
+      console.warn(`  SKIP ${item.id}: invalid dateNum ${item.dateNum}`);
+      return false;
+    }
+    if (item.url && (typeof item.url !== "string" || !item.url.startsWith("https://"))) {
+      console.warn(`  WARN ${item.id}: stripping invalid url "${item.url}"`);
+      delete item.url;
+    }
+    if (item.dateDay !== undefined && (typeof item.dateDay !== "number" || item.dateDay < 1 || item.dateDay > 31)) {
+      console.warn(`  WARN ${item.id}: stripping invalid dateDay ${item.dateDay}`);
+      delete item.dateDay;
+    }
+    console.log(`  OK  ${item.id} (${item.significance})`);
     return true;
   });
 
   if (newItems.length === 0) {
-    console.log("All returned items already exist in the database.");
-    return;
+    console.log("All returned items are duplicates or invalid — nothing to write.");
+    process.exit(0);
   }
 
-  // Build TypeScript entries
   const tsEntries = newItems.map(itemToTs).join("\n");
   const dateComment = `\n  // ── Auto-updated ${todayStr} ────────────────────────────────────────────\n\n`;
 
-  // Insert before the closing ]; of the AI_NEWS array
   const insertPoint = source.lastIndexOf("];");
   if (insertPoint === -1) {
-    console.error("Could not find closing ]; in newsData.ts");
+    console.error("FATAL: could not find closing ]; in newsData.ts");
     process.exit(1);
   }
 
@@ -188,7 +225,8 @@ async function main() {
     source.slice(insertPoint);
 
   writeFileSync(DATA_FILE, updated, "utf8");
-  console.log(`✓ Added ${newItems.length} new item(s): ${newItems.map((i) => i.id).join(", ")}`);
+  console.log(`\n✓ Wrote ${newItems.length} new item(s) to newsData.ts:`);
+  newItems.forEach((i) => console.log(`  • ${i.id}`));
 }
 
 main().catch((err) => {
