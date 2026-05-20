@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 20 May 2026 07:02:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 08:14:06 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -47,6 +47,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Pentagon Clears 8 AI Companies for Classified Military Networks]]></title>
+    <description><![CDATA[The US Department of Defense announced agreements with eight companies — OpenAI, Google, Microsoft, Nvidia, Amazon, SpaceX, Oracle, and Reflection — to deploy AI on its Impact Level 6 and Level 7 classified networks on May 1, 2026. The deals target warfighter decision-making and data synthesis, with all companies pledging not to use the technology for autonomous weapons or mass surveillance. Anthropic was excluded after the Trump administration objected to the company's insistence on safety guardrails governing AI use in warfare.]]></description>
+    <link>https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/</link>
+    <guid isPermaLink="true">https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[All Five Frontier AI Labs Now Under US Government Pre-Deployment Review]]></title>
     <description><![CDATA[The US Department of Commerce's Center for AI Standards and Innovation finalized pre-deployment evaluation agreements with Google DeepMind, Microsoft, and xAI on May 5, 2026, joining OpenAI and Anthropic in a program that has now completed more than 40 frontier model assessments. Under the agreements, every major model from these labs must undergo government safety and security evaluation before public release. The expansion marks the clearest signal yet that pre-deployment government review is becoming a baseline expectation for frontier AI development in the United States.]]></description>
     <link>https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html</link>
@@ -60,6 +69,15 @@
     <description><![CDATA[Anthropic launched Claude for Small Business on May 13, 2026, shipping 15 ready-to-run agentic workflows spanning finance, operations, sales, marketing, HR, and customer service, with native connectors for QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365, and Slack. The workflows automate recurring tasks including payroll planning, month-end close, invoice chasing, lead triage, contract review, and cash-flow monitoring. Existing Claude Team and Enterprise subscribers get access at no additional cost, with the agent reusing the user's existing permissions on each connected application.]]></description>
     <link>https://www.anthropic.com/news/claude-for-small-business</link>
     <guid isPermaLink="true">https://www.anthropic.com/news/claude-for-small-business</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic and Gates Foundation Launch $200M Global Health and Education AI Initiative]]></title>
+    <description><![CDATA[Anthropic and the Bill & Melinda Gates Foundation announced a $200 million, four-year partnership on May 14, 2026 to deploy Claude in global health, education, and agriculture programs serving low- and middle-income countries. The deal includes grant funding, Claude usage credits, and technical support, targeting disease response acceleration, evidence-based K-12 tutoring, and smallholder farming assistance in sub-Saharan Africa and India. The partnership is four times the size of OpenAI's $50 million Gates deal announced in January 2026.]]></description>
+    <link>https://www.anthropic.com/news/gates-foundation-partnership</link>
+    <guid isPermaLink="true">https://www.anthropic.com/news/gates-foundation-partnership</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
   </item>
@@ -164,12 +182,30 @@
   </item>
 
   <item>
+    <title><![CDATA[Cohere Merges With Aleph Alpha — $20B Transatlantic AI Company Formed]]></title>
+    <description><![CDATA[Canadian AI firm Cohere and Germany's Aleph Alpha announced a merger on April 24, 2026, forming a transatlantic enterprise AI company valued at roughly $20 billion. The deal, anchored by a €500 million commitment from Schwarz Group (Lidl and Kaufland's parent), received backing from both the Canadian and German governments. Cohere CEO Aidan Gomez will lead the combined company, which will operate under the Cohere name and compete directly with US frontier labs for European and sovereign AI contracts.]]></description>
+    <link>https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/</guid>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+    <category>Cohere</category>
+  </item>
+
+  <item>
     <title><![CDATA[DeepSeek V4 — 1.6T-Parameter MoE, 80.6% SWE-bench Verified]]></title>
     <description><![CDATA[DeepSeek released V4-Pro and V4-Flash on April 24, 2026 under MIT license. V4-Pro packs 1.6T total parameters with 49B active via mixture-of-experts, a 1M-token context window, and scored 80.6% on SWE-bench Verified — matching frontier closed-source models. Weights are on Hugging Face; V4-Flash (284B total, 13B active) targets cost-efficient inference.]]></description>
     <link>https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro</link>
     <guid isPermaLink="true">https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro</guid>
     <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
     <category>DeepSeek</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Closes $122B Round at $852B Valuation — Largest Private Raise Ever]]></title>
+    <description><![CDATA[OpenAI closed a $122 billion funding round on March 31, 2026 at an $852 billion post-money valuation — the largest private capital raise in history. Amazon committed $50 billion, SoftBank and Nvidia each contributed $30 billion, with Andreessen Horowitz and D.E. Shaw also participating. The round included $3 billion from individual investors via bank channels, and is expected to fund global AI infrastructure buildout and an anticipated IPO.]]></description>
+    <link>https://openai.com/index/accelerating-the-next-phase-ai/</link>
+    <guid isPermaLink="true">https://openai.com/index/accelerating-the-next-phase-ai/</guid>
+    <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -422,42 +458,6 @@
     <guid isPermaLink="true">https://blog.google/technology/ai/google-gemini-ai/</guid>
     <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
     <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI DevDay — Custom GPTs, GPT Store, and GPT-4 Turbo]]></title>
-    <description><![CDATA[At its first developer conference, OpenAI announced custom GPTs — user-configurable AI assistants with custom instructions, knowledge files, and tool access — along with a GPT Store for sharing and discovering them. OpenAI also unveiled GPT-4 Turbo with a 128,000-token context window and significantly lower API pricing compared to the original GPT-4. The Assistants API with code execution and file retrieval was launched simultaneously.]]></description>
-    <link>https://openai.com/index/introducing-gpts/</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-gpts/</guid>
-    <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Board Fires and Reinstates Sam Altman in Five Days]]></title>
-    <description><![CDATA[OpenAI's board abruptly terminated CEO Sam Altman on November 17, citing a loss of confidence in his candor with the board. The decision triggered a company-wide revolt: nearly all 770 OpenAI employees signed a letter threatening to resign unless Altman was reinstated. Altman returned as CEO five days later with a substantially restructured board, and the episode prompted ongoing discussion about AI governance and the tension between OpenAI's nonprofit mission and its commercial scale.]]></description>
-    <link>https://openai.com/index/openai-response/</link>
-    <guid isPermaLink="true">https://openai.com/index/openai-response/</guid>
-    <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Mistral 7B — Efficient European Open-Weight Model]]></title>
-    <description><![CDATA[French startup Mistral AI released Mistral 7B, a 7-billion-parameter model released with no license restrictions that outperformed LLaMA 2 13B across most benchmarks, demonstrating that efficient architecture choices could substantially narrow the gap with larger models. The model was distributed as a torrent and via direct download with no access controls. Mistral's team, drawn largely from DeepMind and Meta, subsequently raised $415 million at a roughly $2 billion valuation.]]></description>
-    <link>https://mistral.ai/news/announcing-mistral-7b</link>
-    <guid isPermaLink="true">https://mistral.ai/news/announcing-mistral-7b</guid>
-    <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
-    <category>Mistral AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GPT-4V Broadly Released — Vision and Voice Come to ChatGPT]]></title>
-    <description><![CDATA[OpenAI broadly released GPT-4 with vision capabilities to ChatGPT Plus subscribers, enabling the model to analyze images, charts, photographs, and document scans and reason about their contents. Simultaneously, OpenAI launched voice mode featuring five distinct synthesized voices with natural conversational latency. These expansions marked the shift from text-only AI assistants toward genuinely multimodal consumer interfaces.]]></description>
-    <link>https://openai.com/index/gpt-4v-system-card/</link>
-    <guid isPermaLink="true">https://openai.com/index/gpt-4v-system-card/</guid>
-    <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
   </channel>
 </rss>
