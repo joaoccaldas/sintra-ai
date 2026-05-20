@@ -593,7 +593,7 @@ export const AI_NEWS: NewsItem[] = [
     significance: "notable",
     provider: "Anthropic",
     providerColor: "#d97706",
-    url: "https://fortune.com/2026/05/13/behold-the-googlebook/",
+    // url removed — original link pointed to an unrelated article; needs manual re-verification
   },
 
   // ── Auto-updated 2026-05-18 ────────────────────────────────────────────
