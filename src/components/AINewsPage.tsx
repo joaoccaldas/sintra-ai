@@ -89,7 +89,10 @@ export default function AINewsPage() {
       .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
       .filter((n: NewsItem) => activeProvider === "all" || n.provider === activeProvider)
-      .sort((a: NewsItem, b: NewsItem) => b.dateNum - a.dateNum);
+      .sort((a: NewsItem, b: NewsItem) => {
+        if (b.dateNum !== a.dateNum) return b.dateNum - a.dateNum;
+        return (b.dateDay ?? 1) - (a.dateDay ?? 1);
+      });
   }, [activeSig, activeTag, activeProvider]);
 
   // Group by year for visual breaks

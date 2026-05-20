@@ -2,6 +2,7 @@ export interface NewsItem {
   id: string;
   date: string;          // "Jan 2024", "May 2024", etc.
   dateNum: number;       // YYYYMM for sorting, e.g. 202401
+  dateDay?: number;      // day of month (1-31) for intra-month ordering
   title: string;
   summary: string;       // 2-3 sentences, factual
   tags: string[];        // ["OpenAI", "GPT", "multimodal"] etc.
@@ -599,6 +600,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "anthropic-30b-revenue",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 8,
     title: "Anthropic Hits $30B Revenue Run-Rate — $950B Valuation Talks",
     summary:
       "Anthropic's annualized revenue surpassed $30 billion in May 2026 — more than triple its $9 billion run-rate at end of 2025 — driven by explosive enterprise adoption of Claude Opus 4.7 and Claude Code. The company entered talks to raise $30–50 billion at a valuation approaching $950 billion, which would make it one of the most valuable private companies in history. Anthropic simultaneously expanded its compute partnership with Google and Broadcom to support the infrastructure demands of serving its rapidly growing customer base.",
@@ -613,6 +615,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "xai-dissolved-anthropic-compute",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 6,
     title: "xAI Dissolved — SpaceX Hands Colossus 1 Compute to Anthropic",
     summary:
       "Elon Musk announced on May 6, 2026 that xAI would be dissolved as an independent company and rebranded SpaceXAI, citing Anthropic's rapid growth and safety focus as factors in his change of view. Anthropic simultaneously signed a compute agreement with SpaceX giving it exclusive access to the Colossus 1 facility in Memphis — over 220,000 NVIDIA H100/H200/GB200 GPUs and 300 megawatts of capacity — driven by an 80-fold revenue surge in a single quarter that overwhelmed Anthropic's existing infrastructure. Anthropic also expressed interest in extending the partnership to gigawatt-scale orbital compute with SpaceX.",
@@ -629,6 +632,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "mistral-medium-3-5",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 1,
     title: "Mistral Medium 3.5 — 128B Open-Weight Model With 77.6% SWE-bench",
     summary:
       "Mistral AI released Medium 3.5, a 128-billion-parameter dense model with a 256,000-token context window, scoring 77.6% on SWE-bench Verified and unifying instruction-following, reasoning, coding, and vision in a single set of weights. The model was released with open weights under a modified MIT license and priced at $1.50/$7.50 per million input/output tokens via API. Mistral simultaneously launched Work Mode in Le Chat — an agentic interface powered by Medium 3.5 that executes multi-step workflows across connected tools in parallel.",
@@ -642,6 +646,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "microsoft-agent-365-ga",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 1,
     title: "Microsoft Agent 365 Generally Available — Enterprise AI Agent Governance",
     summary:
       "Microsoft made Agent 365 generally available on May 1, 2026, introducing enterprise-grade visibility, governance, and security controls for AI agent fleets at $15 per user per month. The platform extends Microsoft Entra network controls to Copilot Studio agents and locally-running agents, enabling IT teams to identify unsanctioned AI usage, restrict connections to approved destinations, and block prompt-injection attacks. Agent 365 is bundled into the new Microsoft 365 E7 tier alongside Copilot and the full Microsoft 365 E5 suite.",
@@ -658,6 +663,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "caisi-frontier-labs",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 5,
     title: "All Five Frontier AI Labs Now Under US Government Pre-Deployment Review",
     summary:
       "The US Department of Commerce's Center for AI Standards and Innovation finalized pre-deployment evaluation agreements with Google DeepMind, Microsoft, and xAI on May 5, 2026, joining OpenAI and Anthropic in a program that has now completed more than 40 frontier model assessments. Under the agreements, every major model from these labs must undergo government safety and security evaluation before public release. The expansion marks the clearest signal yet that pre-deployment government review is becoming a baseline expectation for frontier AI development in the United States.",
@@ -671,6 +677,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "claude-small-business",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 13,
     title: "Claude for Small Business — 15 Agentic Workflows Across Core Business Tools",
     summary:
       "Anthropic launched Claude for Small Business on May 13, 2026, shipping 15 ready-to-run agentic workflows spanning finance, operations, sales, marketing, HR, and customer service, with native connectors for QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365, and Slack. The workflows automate recurring tasks including payroll planning, month-end close, invoice chasing, lead triage, contract review, and cash-flow monitoring. Existing Claude Team and Enterprise subscribers get access at no additional cost, with the agent reusing the user's existing permissions on each connected application.",
@@ -684,6 +691,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "gemini-3-5-flash-io2026",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 19,
     title: "Gemini 3.5 Flash — Google I/O 2026 Flagship Beats 3.1 Pro on Coding and Agents",
     summary:
       "Google launched Gemini 3.5 Flash at Google I/O on May 19, 2026 as the first model in the Gemini 3.5 family, immediately becoming the default model in the Gemini app and AI Mode in Google Search. The model outperforms Gemini 3.1 Pro on coding and agentic benchmarks — Terminal-Bench 2.1 at 76.2%, MCP Atlas at 83.6%, CharXiv Reasoning at 84.2% — while running 4× faster in output tokens per second. API pricing is $1.50 per million input tokens and $9.00 per million output tokens, approximately 40% cheaper than Gemini 3.1 Pro. Gemini 3.5 Pro was previewed as coming in June 2026.",
@@ -698,6 +706,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "google-search-ai-mode-overhaul",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 19,
     title: "Google Search's Biggest Redesign in 25 Years — AI Agents and Generative UI",
     summary:
       "Google unveiled a complete AI overhaul of Search at Google I/O on May 19, 2026, described as the biggest change to the search box in over 25 years. The new intelligent search box accepts text, images, files, videos, and Chrome tabs as inputs; agentic 'information agents' launching in summer 2026 will monitor the web continuously and alert users to changes. Generative UI, powered by Gemini 3.5 Flash, allows Search to dynamically produce custom interfaces, simulations, graphs, and mini-apps in response to queries. AI Mode already surpassed one billion monthly users with query volumes more than doubling every quarter since launch.",
@@ -714,6 +723,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "gemini-spark-agent-io2026",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 19,
     title: "Gemini Spark — Google's 24/7 AI Agent Launches at Google I/O 2026",
     summary:
       "Google announced Gemini Spark at Google I/O on May 19, 2026 — a cloud-based AI agent that runs continuously in the background, reasoning across connected apps and taking actions on behalf of users. Spark integrates with Gmail, Docs, Uber, OpenTable, Lyft, Zillow, and dozens of third-party services, enabling autonomous multi-step workflows such as booking restaurants, tracking packages, and organizing calendar events. Beta access is included with the new Google AI Ultra subscription at $100 per month, rolling out first to trusted testers.",
@@ -727,6 +737,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "gemini-omni-io2026",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 19,
     title: "Gemini Omni — Google's Unified Video-Image Generation Model Unveiled",
     summary:
       "Google DeepMind CEO Demis Hassabis unveiled Gemini Omni at Google I/O 2026, a multimodal model that unifies text, image, and video generation in a single set of weights — the first top-tier AI system to do so. Omni supports conversational video editing via voice commands, allowing users to transform uploaded footage by adjusting characters, backgrounds, and framing in real time. The initial release, Gemini Omni Flash, is grounded in real-world knowledge via Google Search and is planned for launch in summer 2026.",
@@ -740,6 +751,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "google-samsung-xr-glasses",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 19,
     title: "Google and Samsung Unveil Gemini-Powered Android XR Smart Glasses",
     summary:
       "Google and Samsung revealed the first Android XR smart glasses at Google I/O 2026, with eyewear frames designed by Gentle Monster and Warby Parker for fall 2026 availability. The two-tier lineup includes audio-only glasses with cameras and microphones for all-day wear, and an optional in-lens display variant for private contextual information. Powered by Gemini, the glasses support live translation, navigation, calls, messaging, and real-time visual assistance, activated by voice or a tap on the frame.",
@@ -753,6 +765,7 @@ export const AI_NEWS: NewsItem[] = [
     id: "anthropic-dreaming-agents",
     date: "May 2026",
     dateNum: 202605,
+    dateDay: 6,
     title: "Anthropic Dreaming — Claude Agents Now Self-Improve Between Sessions",
     summary:
       "Anthropic launched Dreaming on May 6, 2026, a scheduled maintenance layer that reviews an agent's past sessions, extracts patterns across them, and curates memory stores so agents improve over time without modifying model weights. Supported on Claude Opus 4.7 and Sonnet 4.6, Dreaming feeds up to 100 past sessions into a single 'dream' and surfaces recurring mistakes, convergent workflows, and team-wide preferences. Early adopter Harvey (legal AI) reported a 6× increase in task completion rates after implementing the feature; access is currently gated behind a request form.",
