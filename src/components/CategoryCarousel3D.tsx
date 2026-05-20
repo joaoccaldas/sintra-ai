@@ -204,6 +204,16 @@ function makeCosmicBody(
     case 8: {
       const diffuse = loadTex(`${BASE}/rigel-texture.png`);
       const bump    = loadTex(`${BASE}/rigel-texture.png`, false);
+      // The source image is an oval star disk on a black background — the
+      // black corners map to the sphere's poles and leave them dark.
+      // Crop to the central 75% in both axes so the poles land within the
+      // lit star-surface oval instead of the black border region.
+      for (const t of [diffuse, bump]) {
+        t.wrapS = THREE.RepeatWrapping;
+        t.wrapT = THREE.RepeatWrapping;
+        t.repeat.set(0.75, 0.75);
+        t.offset.set(0.125, 0.125);
+      }
       const mat = new THREE.MeshStandardMaterial({
         map:            diffuse,
         bumpMap:        bump,
@@ -211,8 +221,7 @@ function makeCosmicBody(
         roughness:      0.30,
         metalness:      0.0,
         emissive:       new THREE.Color(0x1a2fff),
-        emissiveMap:    diffuse,
-        emissiveIntensity: 0.18,
+        emissiveIntensity: 0.22,
       });
       body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
       return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
