@@ -24,7 +24,9 @@ function NewsCard({ item }: { item: NewsItem }) {
     >
       {/* Left: date + significance */}
       <div className="w-[96px] shrink-0 pt-0.5">
-        <p className="font-mono text-[11px] text-fg-4 mb-2">{item.date}</p>
+        <p className="font-mono text-[11px] text-fg-4 mb-2">
+          {item.dateDay ? `${item.dateDay} ${item.date}` : item.date}
+        </p>
         <span className="inline-flex font-mono text-[9px] tracking-[0.10em] uppercase px-2 py-0.5 rounded-full border"
           style={{ background: sig.bg, borderColor: sig.border, color: sig.text }}>
           {sig.label}
