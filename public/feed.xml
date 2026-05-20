@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 20 May 2026 03:56:33 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 04:00:38 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -53,6 +53,15 @@
     <guid isPermaLink="true">https://www.anthropic.com/news/claude-for-small-business</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemini 3.5 Flash — Google I/O 2026 Flagship Beats 3.1 Pro on Coding and Agents]]></title>
+    <description><![CDATA[Google launched Gemini 3.5 Flash at Google I/O on May 19, 2026 as the first model in the Gemini 3.5 family, immediately becoming the default model in the Gemini app and AI Mode in Google Search. The model outperforms Gemini 3.1 Pro on coding and agentic benchmarks — Terminal-Bench 2.1 at 76.2%, MCP Atlas at 83.6%, CharXiv Reasoning at 84.2% — while running 4× faster in output tokens per second. API pricing is $1.50 per million input tokens and $9.00 per million output tokens, approximately 40% cheaper than Gemini 3.1 Pro. Gemini 3.5 Pro was previewed as coming in June 2026.]]></description>
+    <link>https://www.digit.in/features/general/google-io-2026-gemini-35-to-ai-smart-glasses-everything-that-was-announced.html</link>
+    <guid isPermaLink="true">https://www.digit.in/features/general/google-io-2026-gemini-35-to-ai-smart-glasses-everything-that-was-announced.html</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
   </item>
 
   <item>

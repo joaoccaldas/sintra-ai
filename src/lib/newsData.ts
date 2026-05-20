@@ -653,6 +653,19 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-for-small-business",
   },
+  {
+    id: "gemini-3-5-flash-io2026",
+    date: "May 2026",
+    dateNum: 202605,
+    title: "Gemini 3.5 Flash — Google I/O 2026 Flagship Beats 3.1 Pro on Coding and Agents",
+    summary:
+      "Google launched Gemini 3.5 Flash at Google I/O on May 19, 2026 as the first model in the Gemini 3.5 family, immediately becoming the default model in the Gemini app and AI Mode in Google Search. The model outperforms Gemini 3.1 Pro on coding and agentic benchmarks — Terminal-Bench 2.1 at 76.2%, MCP Atlas at 83.6%, CharXiv Reasoning at 84.2% — while running 4× faster in output tokens per second. API pricing is $1.50 per million input tokens and $9.00 per million output tokens, approximately 40% cheaper than Gemini 3.1 Pro. Gemini 3.5 Pro was previewed as coming in June 2026.",
+    tags: ["Google", "Gemini 3.5", "Google I/O", "Coding", "Agents", "Benchmark"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://www.digit.in/features/general/google-io-2026-gemini-35-to-ai-smart-glasses-everything-that-was-announced.html",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────
