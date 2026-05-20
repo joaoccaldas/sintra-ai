@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 20 May 2026 04:36:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 04:49:43 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -15,6 +15,15 @@
     <description><![CDATA[Anthropic's annualized revenue surpassed $30 billion in May 2026 — more than triple its $9 billion run-rate at end of 2025 — driven by explosive enterprise adoption of Claude Opus 4.7 and Claude Code. The company entered talks to raise $30–50 billion at a valuation approaching $950 billion, which would make it one of the most valuable private companies in history. Anthropic simultaneously expanded its compute partnership with Google and Broadcom to support the infrastructure demands of serving its rapidly growing customer base.]]></description>
     <link>https://joaoccaldas.github.io/sintra-ai/news/</link>
     <guid isPermaLink="false">https://joaoccaldas.github.io/sintra-ai/news/#anthropic-30b-revenue</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[xAI Dissolved — SpaceX Hands Colossus 1 Compute to Anthropic]]></title>
+    <description><![CDATA[Elon Musk announced on May 6, 2026 that xAI would be dissolved as an independent company and rebranded SpaceXAI, citing Anthropic's rapid growth and safety focus as factors in his change of view. Anthropic simultaneously signed a compute agreement with SpaceX giving it exclusive access to the Colossus 1 facility in Memphis — over 220,000 NVIDIA H100/H200/GB200 GPUs and 300 megawatts of capacity — driven by an 80-fold revenue surge in a single quarter that overwhelmed Anthropic's existing infrastructure. Anthropic also expressed interest in extending the partnership to gigawatt-scale orbital compute with SpaceX.]]></description>
+    <link>https://x.ai/news/anthropic-compute-partnership</link>
+    <guid isPermaLink="true">https://x.ai/news/anthropic-compute-partnership</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
   </item>
@@ -65,6 +74,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Google Search's Biggest Redesign in 25 Years — AI Agents and Generative UI]]></title>
+    <description><![CDATA[Google unveiled a complete AI overhaul of Search at Google I/O on May 19, 2026, described as the biggest change to the search box in over 25 years. The new intelligent search box accepts text, images, files, videos, and Chrome tabs as inputs; agentic 'information agents' launching in summer 2026 will monitor the web continuously and alert users to changes. Generative UI, powered by Gemini 3.5 Flash, allows Search to dynamically produce custom interfaces, simulations, graphs, and mini-apps in response to queries. AI Mode already surpassed one billion monthly users with query volumes more than doubling every quarter since launch.]]></description>
+    <link>https://blog.google/products-and-platforms/products/search/search-io-2026/</link>
+    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/search/search-io-2026/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
     <title><![CDATA[Gemini Spark — Google's 24/7 AI Agent Launches at Google I/O 2026]]></title>
     <description><![CDATA[Google announced Gemini Spark at Google I/O on May 19, 2026 — a cloud-based AI agent that runs continuously in the background, reasoning across connected apps and taking actions on behalf of users. Spark integrates with Gmail, Docs, Uber, OpenTable, Lyft, Zillow, and dozens of third-party services, enabling autonomous multi-step workflows such as booking restaurants, tracking packages, and organizing calendar events. Beta access is included with the new Google AI Ultra subscription at $100 per month, rolling out first to trusted testers.]]></description>
     <link>https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html</link>
@@ -107,6 +125,15 @@
     <guid isPermaLink="true">https://www.anthropic.com/glasswing</guid>
     <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemini 3.1 Ultra — 2M-Token Context Window, Full Native Multimodal]]></title>
+    <description><![CDATA[Google released Gemini 3.1 Ultra in April 2026 with the largest context window of any publicly available model at 2 million tokens — double the 1M-token limit of Gemini 3.1 Pro. The model reasons natively across text, image, audio, and video in a single pass without separate pipelines, enabling tasks like auditing a full year of all-hands recordings alongside a complete legal discovery set in one prompt. Gemini 3.1 Ultra surpassed GPT-5.5 on the MMLU-Pro and GPQA Diamond benchmarks, making it Google's most capable model available via the Vertex AI API at launch.]]></description>
+    <link>https://medium.com/@WinTK-Bangladesh/gemini-3-1-ultra-is-here-2-million-token-context-full-multimodal-zero-compromise-ca3f2a8d1254</link>
+    <guid isPermaLink="true">https://medium.com/@WinTK-Bangladesh/gemini-3-1-ultra-is-here-2-million-token-context-full-multimodal-zero-compromise-ca3f2a8d1254</guid>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
   </item>
 
   <item>
@@ -431,33 +458,6 @@
     <guid isPermaLink="true">https://ai.meta.com/blog/llama-2/</guid>
     <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
     <category>Meta</category>
-  </item>
-
-  <item>
-    <title><![CDATA[LLaMA-1 Leaks Online — Open-Weight Era Begins]]></title>
-    <description><![CDATA[Meta's LLaMA-1 models (7B–65B parameters), initially shared only with select researchers, leaked publicly within days and triggered an immediate wave of community fine-tuning that produced models like Alpaca and Vicuna within weeks. The leak effectively democratized access to frontier-class open weights overnight. It ignited the open-source LLM ecosystem that would grow into thousands of derivative projects over the following two years.]]></description>
-    <link>https://ai.meta.com/blog/large-language-model-llama-meta-ai/</link>
-    <guid isPermaLink="true">https://ai.meta.com/blog/large-language-model-llama-meta-ai/</guid>
-    <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
-    <category>Meta</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GPT-4 Released — Professional-Grade Multimodal AI]]></title>
-    <description><![CDATA[OpenAI released GPT-4, the first frontier large language model capable of processing both text and images as inputs. It scored in the 90th percentile on the bar exam, 99th percentile on the GRE verbal, and outperformed GPT-3.5 substantially across professional and academic benchmarks. Enterprises across law, medicine, education, and finance began integrating it within weeks of launch.]]></description>
-    <link>https://openai.com/index/gpt-4/</link>
-    <guid isPermaLink="true">https://openai.com/index/gpt-4/</guid>
-    <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Launches Claude — Constitutional AI in Production]]></title>
-    <description><![CDATA[Anthropic released Claude, its first publicly available model, trained using Constitutional AI — a technique where a set of written principles guides model behavior rather than relying purely on human feedback labels. Claude was noted for a longer context window than GPT-3.5 and a cautious, thoughtful conversational style. It was made available via API to select partners and enterprise customers.]]></description>
-    <link>https://www.anthropic.com/news/introducing-claude</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/introducing-claude</guid>
-    <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
   </item>
   </channel>
 </rss>
