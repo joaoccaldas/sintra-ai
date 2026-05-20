@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 20 May 2026 05:03:59 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 07:02:15 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -152,6 +152,24 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/</guid>
     <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemma 4 — Google's Most Capable Open-Source Model Family]]></title>
+    <description><![CDATA[Google released Gemma 4 on April 2, 2026 under Apache 2.0, in four sizes (2B to 31B parameters) with 256K context windows, native vision and audio processing, and support for 140+ languages. The 31B dense flagship targets advanced reasoning, multi-step planning, agentic workflows, and offline code generation — available on Hugging Face, Kaggle, and Google AI Studio.]]></description>
+    <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/</link>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/</guid>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[DeepSeek V4 — 1.6T-Parameter MoE, 80.6% SWE-bench Verified]]></title>
+    <description><![CDATA[DeepSeek released V4-Pro and V4-Flash on April 24, 2026 under MIT license. V4-Pro packs 1.6T total parameters with 49B active via mixture-of-experts, a 1M-token context window, and scored 80.6% on SWE-bench Verified — matching frontier closed-source models. Weights are on Hugging Face; V4-Flash (284B total, 13B active) targets cost-efficient inference.]]></description>
+    <link>https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro</link>
+    <guid isPermaLink="true">https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro</guid>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+    <category>DeepSeek</category>
   </item>
 
   <item>
@@ -440,24 +458,6 @@
     <guid isPermaLink="true">https://openai.com/index/gpt-4v-system-card/</guid>
     <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Claude 2 — 100K Token Context Window and Claude.ai Launch]]></title>
-    <description><![CDATA[Anthropic released Claude 2, featuring a 100,000-token context window — roughly 75,000 words, or an entire novel — which far exceeded any competing model at the time. The model showed meaningful improvements over Claude 1 in coding, mathematics, and instruction following. Claude 2 was made available to the public via Claude.ai, moving Anthropic into the consumer market for the first time.]]></description>
-    <link>https://www.anthropic.com/news/claude-2</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/claude-2</guid>
-    <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[LLaMA 2 Released — Meta Opens Frontier AI for Commercial Use]]></title>
-    <description><![CDATA[Meta formally released LLaMA 2 in 7B, 13B, and 70B parameter sizes under a permissive license allowing free commercial use, in partnership with Microsoft. The 70B model was competitive with GPT-3.5 on many standard benchmarks. This release established LLaMA as the de facto foundation for the open-source AI ecosystem, with thousands of derivative fine-tunes, tools, and applications building on it within months.]]></description>
-    <link>https://ai.meta.com/blog/llama-2/</link>
-    <guid isPermaLink="true">https://ai.meta.com/blog/llama-2/</guid>
-    <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
-    <category>Meta</category>
   </item>
   </channel>
 </rss>
