@@ -337,13 +337,13 @@ export default function CategoryBrowser({ heroSearch }: Props) {
           </div>
 
           {/* Category chip rail — quick-select fallback */}
-          <div className="mt-6 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
-            <div className="flex gap-2 justify-center flex-wrap px-4 pb-1">
+          <div className="mt-6 px-4 pb-1">
+            <div className="grid grid-cols-3 gap-2 md:flex md:flex-wrap md:justify-center md:gap-2">
               {CAROUSEL_ITEMS.map((item, i) => (
                 <button
                   key={item.id}
                   onClick={() => { setSelectedIdx(i); setBrowsingIdx(i); }}
-                  className="font-mono text-[10px] tracking-[0.07em] uppercase px-3 py-1.5 rounded-full border transition-all duration-150 whitespace-nowrap"
+                  className="font-mono text-[10px] tracking-[0.07em] uppercase px-3 py-2 rounded-full border transition-all duration-150 whitespace-nowrap text-center"
                   style={{
                     background:  i === selectedIdx ? `${item.hex}20` : "transparent",
                     borderColor: i === selectedIdx ? `${item.hex}70` : "#ffffff15",
