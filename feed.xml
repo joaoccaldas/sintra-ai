@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 21 May 2026 05:04:33 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 05:13:20 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -188,6 +188,42 @@
     <guid isPermaLink="true">https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Launches Self-Serve ChatGPT Ads Manager — No Minimum Spend]]></title>
+    <description><![CDATA[OpenAI opened ChatGPT Ads Manager to U.S. businesses on May 5, 2026, eliminating the previous $50,000 minimum spend requirement and introducing cost-per-click bidding with real-time campaign management. The platform targets $2.5 billion in ad revenue for 2026 and $100 billion by 2030; ad agency partners include Dentsu, Omnicom, Publicis, and WPP, with ad-tech integrations through Adobe, Criteo, Kargo, and StackAdapt. OpenAI confirmed no user conversations or personal data are shared with advertisers.]]></description>
+    <link>https://openai.com/index/new-ways-to-buy-chatgpt-ads/</link>
+    <guid isPermaLink="true">https://openai.com/index/new-ways-to-buy-chatgpt-ads/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Claude for Microsoft 365 Reaches GA — Excel, Word, PowerPoint, and Outlook Beta]]></title>
+    <description><![CDATA[Anthropic moved Claude add-ins for Excel, Word, and PowerPoint to general availability on May 7, 2026 across all paid Claude plans on Mac and Windows, and simultaneously launched Claude for Outlook in public beta. The standout feature is cross-app context: a single conversation thread persists across all four Microsoft 365 applications, so Claude remembers the financial model discussed in Excel when the user opens the related PowerPoint deck. The integration reaches more than 400 million Microsoft 365 commercial users and is deployable via Microsoft Admin Center.]]></description>
+    <link>https://claude.com/claude-for-microsoft-365</link>
+    <guid isPermaLink="true">https://claude.com/claude-for-microsoft-365</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Amazon Alexa+ Generates On-Demand AI Podcasts from Any Topic]]></title>
+    <description><![CDATA[Amazon launched Alexa Podcasts on May 18, 2026, letting Alexa+ subscribers request a podcast on any subject and receive a fully structured audio episode narrated by two AI co-hosts. The feature taps licensing agreements with over 200 news organisations — including AP, Reuters, the Washington Post, Forbes, and Condé Nast — plus 200+ local U.S. newspapers. Alexa+ is included with Amazon Prime at no extra cost; non-Prime users pay $19.99/month.]]></description>
+    <link>https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Amazon</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google Cuts AI Ultra to $100/Month as Gemini Hits 900 Million Monthly Users]]></title>
+    <description><![CDATA[At Google I/O 2026, Google slashed the price of its Google AI Ultra subscription from $250 to $100 per month, bundling 5× higher Gemini app usage limits, 20 TB of cloud storage, and YouTube Premium, with beta access to Gemini Spark rolling out the following week for U.S. subscribers. The Gemini app has crossed 900 million monthly active users — up from 400 million a year earlier — doubling in a year. DeepMind CEO Demis Hassabis stated at the keynote that Artificial General Intelligence is 'just a few years away.']]></description>
+    <link>https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm</link>
+    <guid isPermaLink="true">https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
   </item>
 
   <item>
@@ -422,42 +458,6 @@
     <guid isPermaLink="true">https://www.anthropic.com/news/computer-use</guid>
     <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nobel Prize in Chemistry Awarded for AlphaFold]]></title>
-    <description><![CDATA[The Nobel Committee awarded the 2024 Nobel Prize in Chemistry to Demis Hassabis and John Jumper of Google DeepMind for AlphaFold, and to David Baker of the University of Washington for computational protein design. AlphaFold had predicted the three-dimensional structures of over 200 million proteins spanning virtually every known organism, solving a 50-year grand challenge in structural biology. The Nobel Committee also awarded the 2024 Physics Nobel to Geoffrey Hinton and John Hopfield for foundational work on neural networks — two Nobel Prizes for AI research in a single year.]]></description>
-    <link>https://www.nobelprize.org/prizes/chemistry/2024/press-release/</link>
-    <guid isPermaLink="true">https://www.nobelprize.org/prizes/chemistry/2024/press-release/</guid>
-    <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
-    <category>DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI o1 — Reasoning Models That Think Before Answering]]></title>
-    <description><![CDATA[OpenAI released o1, a reasoning model that spends additional compute on internal chain-of-thought 'thinking' steps before producing its final answer, trading latency for accuracy on complex tasks. o1 scored 83% on International Olympiad in Informatics competition problems and performed at PhD level on the GPQA science benchmark covering biology, chemistry, and physics. It introduced inference-time compute scaling as a distinct axis from model size for improving AI capability.]]></description>
-    <link>https://openai.com/index/introducing-openai-o1-preview/</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-openai-o1-preview/</guid>
-    <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Claude 3.5 Sonnet — New State of the Art at Mid-Tier Cost]]></title>
-    <description><![CDATA[Anthropic released Claude 3.5 Sonnet, which outperformed Claude 3 Opus across most benchmarks while running at Sonnet-tier speed and pricing — a significant efficiency gain. It achieved 49% on the SWE-bench Verified coding evaluation, surpassing all other models at the time. Anthropic simultaneously introduced Artifacts, an interactive canvas panel within Claude.ai for viewing, editing, and running generated code and documents in real time.]]></description>
-    <link>https://www.anthropic.com/news/claude-3-5-sonnet</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/claude-3-5-sonnet</guid>
-    <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple Intelligence — On-Device AI for iPhone, iPad, and Mac]]></title>
-    <description><![CDATA[Apple announced Apple Intelligence at WWDC 2024, a suite of AI features built into iOS 18, iPadOS 18, and macOS Sequoia. Capabilities included AI writing tools, an image generation system called Image Playground, an enhanced context-aware Siri, and a Private Cloud Compute architecture designed to process sensitive requests on Apple silicon servers without logging user data. Apple also announced an opt-in ChatGPT integration for queries Siri cannot answer locally.]]></description>
-    <link>https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/</link>
-    <guid isPermaLink="true">https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/</guid>
-    <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
-    <category>Apple</category>
   </item>
   </channel>
 </rss>
