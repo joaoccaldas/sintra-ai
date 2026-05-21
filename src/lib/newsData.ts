@@ -999,6 +999,48 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#4285f4",
     url: "https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm",
   },
+  {
+    id: "apple-ios27-third-party-ai-models",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 5,
+    title: "Apple iOS 27 to Let Users Choose Between Claude, Gemini, and ChatGPT for Siri",
+    summary:
+      "Bloomberg reported on May 5, 2026 that Apple is preparing iOS 27 to support third-party AI models — including Google Gemini and Anthropic Claude — as alternatives to OpenAI across Siri, Writing Tools, and Image Playground. Apple is already in closed-door testing with Google and Anthropic and internally refers to the feature as 'Extensions', configurable from the Settings app. The shift is expected to be previewed at WWDC 2026 and ship with iOS 27 in fall 2026, opening Apple Intelligence to the full competitive frontier.",
+    tags: ["Apple", "iOS 27", "Apple Intelligence", "Siri", "Anthropic", "Google", "OpenAI"],
+    significance: "major",
+    provider: "Apple",
+    providerColor: "#555555",
+    url: "https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/",
+  },
+  {
+    id: "openai-chatgpt-personal-finance",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 15,
+    title: "OpenAI Launches ChatGPT Personal Finance — Connect Bank Accounts via Plaid",
+    summary:
+      "OpenAI launched personal finance tools in ChatGPT on May 15, 2026 for Pro subscribers in the U.S., letting users connect accounts from 12,000+ financial institutions — including Chase, Fidelity, Schwab, Robinhood, and American Express — via Plaid. Once linked, ChatGPT surfaces a dashboard of portfolio performance, spending patterns, subscriptions, and upcoming payments, and can answer open-ended financial planning questions. Account numbers cannot be seen and no account changes can be made; OpenAI plans to expand to Plus users after refining the feature.",
+    tags: ["OpenAI", "ChatGPT", "Personal Finance", "Plaid", "Banking", "FinTech"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+  },
+  {
+    id: "openai-google-synthid-c2pa-provenance",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 20,
+    title: "OpenAI and Google Partner on SynthID Watermarks and C2PA to Verify AI-Generated Images",
+    summary:
+      "OpenAI joined the C2PA Steering Committee on May 20, 2026 and partnered with Google DeepMind to embed SynthID invisible watermarks into all images generated through ChatGPT, Codex, and the OpenAI API. SynthID watermarks survive transformations like screenshots and format changes that strip standard metadata. OpenAI also launched a public verification tool at openai.com/verify where anyone can upload an image to check whether it originated from ChatGPT or the OpenAI API, with plans for cross-platform verification in coming months.",
+    tags: ["OpenAI", "Google", "SynthID", "C2PA", "AI Safety", "Content Provenance", "Watermarking"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://openai.com/index/advancing-content-provenance/",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────

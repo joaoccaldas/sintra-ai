@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 21 May 2026 05:13:20 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 05:33:27 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -227,6 +227,33 @@
   </item>
 
   <item>
+    <title><![CDATA[Apple iOS 27 to Let Users Choose Between Claude, Gemini, and ChatGPT for Siri]]></title>
+    <description><![CDATA[Bloomberg reported on May 5, 2026 that Apple is preparing iOS 27 to support third-party AI models — including Google Gemini and Anthropic Claude — as alternatives to OpenAI across Siri, Writing Tools, and Image Playground. Apple is already in closed-door testing with Google and Anthropic and internally refers to the feature as 'Extensions', configurable from the Settings app. The shift is expected to be previewed at WWDC 2026 and ship with iOS 27 in fall 2026, opening Apple Intelligence to the full competitive frontier.]]></description>
+    <link>https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Apple</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Launches ChatGPT Personal Finance — Connect Bank Accounts via Plaid]]></title>
+    <description><![CDATA[OpenAI launched personal finance tools in ChatGPT on May 15, 2026 for Pro subscribers in the U.S., letting users connect accounts from 12,000+ financial institutions — including Chase, Fidelity, Schwab, Robinhood, and American Express — via Plaid. Once linked, ChatGPT surfaces a dashboard of portfolio performance, spending patterns, subscriptions, and upcoming payments, and can answer open-ended financial planning questions. Account numbers cannot be seen and no account changes can be made; OpenAI plans to expand to Plus users after refining the feature.]]></description>
+    <link>https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI and Google Partner on SynthID Watermarks and C2PA to Verify AI-Generated Images]]></title>
+    <description><![CDATA[OpenAI joined the C2PA Steering Committee on May 20, 2026 and partnered with Google DeepMind to embed SynthID invisible watermarks into all images generated through ChatGPT, Codex, and the OpenAI API. SynthID watermarks survive transformations like screenshots and format changes that strip standard metadata. OpenAI also launched a public verification tool at openai.com/verify where anyone can upload an image to check whether it originated from ChatGPT or the OpenAI API, with plans for cross-platform verification in coming months.]]></description>
+    <link>https://openai.com/index/advancing-content-provenance/</link>
+    <guid isPermaLink="true">https://openai.com/index/advancing-content-provenance/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[Claude Mythos and Project Glasswing — AI Discovers Thousands of Zero-Days]]></title>
     <description><![CDATA[Anthropic announced Claude Mythos Preview, a frontier model sitting a full capability tier above Opus 4.7 and not available to the public, alongside Project Glasswing — an initiative to use Mythos to secure critical software infrastructure. Using Mythos, Anthropic autonomously identified thousands of zero-day vulnerabilities across every major operating system and web browser, including a 17-year-old remote code execution vulnerability in FreeBSD that allows complete server takeover. Launch partners include AWS, Apple, Cisco, CrowdStrike, Google, JPMorganChase, Microsoft, and NVIDIA, with $100 million in model credits committed.]]></description>
     <link>https://www.anthropic.com/glasswing</link>
@@ -431,33 +458,6 @@
     <guid isPermaLink="true">https://openai.com/index/introducing-operator/</guid>
     <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini 2.0 Flash — Google Launches Agentic Model Generation]]></title>
-    <description><![CDATA[Google released Gemini 2.0 Flash as the first model in its Gemini 2.0 family, designed for agentic use cases with native multimodal inputs, real-time audio output, and native image generation capability. The model featured improved tool use and was optimized for high-frequency tasks requiring low latency at minimal cost. Google framed the Gemini 2.0 generation as the beginning of what it called the 'agentic era' of AI development.]]></description>
-    <link>https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/</link>
-    <guid isPermaLink="true">https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/</guid>
-    <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Sora Publicly Released — Text-to-Video Available to Subscribers]]></title>
-    <description><![CDATA[OpenAI made Sora available to ChatGPT Plus and Pro subscribers after approximately ten months of preview access limited to selected creators and red teamers. The public version generated videos up to 20 seconds in length at 1080p resolution, with a watermarking system to identify AI-generated content. The release was part of OpenAI's '12 Days of OpenAI' announcement series in December 2024.]]></description>
-    <link>https://openai.com/index/sora-is-here/</link>
-    <guid isPermaLink="true">https://openai.com/index/sora-is-here/</guid>
-    <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Computer Use — Claude Controls Desktops Autonomously]]></title>
-    <description><![CDATA[Anthropic released a Computer Use capability for Claude 3.5 Sonnet in public beta, enabling the model to view screenshots and operate computers by moving a cursor, clicking interface elements, and typing text — without requiring custom API integrations for each application. This represented a significant step toward general-purpose computer agents that could automate any software task a human can perform on a screen. Anthropic flagged the capability as experimental and susceptible to prompt injection.]]></description>
-    <link>https://www.anthropic.com/news/computer-use</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/computer-use</guid>
-    <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
   </item>
   </channel>
 </rss>
