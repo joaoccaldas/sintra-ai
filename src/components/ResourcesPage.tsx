@@ -2,9 +2,62 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ExternalLink, Search } from "lucide-react";
+import { ArrowLeft, ExternalLink, Search, Play } from "lucide-react";
 import { RESOURCES, RESOURCE_CATEGORIES, type ResourceLink, type ResourceCategory } from "@/lib/resourcesData";
+import { YOUTUBE_VIDEOS, type YouTubeVideo } from "@/lib/videoData";
 import { BASE_PATH } from "@/lib/data";
+
+function VideoCard({ video }: { video: YouTubeVideo }) {
+  return (
+    <a
+      href={video.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex flex-col rounded-xl overflow-hidden border border-white/[0.08] hover:border-violet/30 transition-all duration-200 hover:scale-[1.015] bg-[#0d0a1c]"
+    >
+      {/* Thumbnail */}
+      <div className="relative overflow-hidden" style={{ aspectRatio: "16/9" }}>
+        <img
+          src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`}
+          alt={video.title}
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+            <Play size={18} className="text-white ml-0.5" fill="white" />
+          </div>
+        </div>
+        {video.duration && (
+          <span className="absolute bottom-2 right-2 font-mono text-[10px] bg-black/70 text-white px-1.5 py-0.5 rounded">
+            {video.duration}
+          </span>
+        )}
+      </div>
+
+      {/* Meta */}
+      <div className="flex flex-col gap-2 p-3.5 flex-1">
+        <div>
+          <h3 className="font-serif text-[14px] text-fg-1 leading-[1.3] group-hover:text-white transition-colors line-clamp-2">
+            {video.title}
+          </h3>
+          <p className="font-mono text-[10px] text-violet-bright/70 mt-1">{video.channel}</p>
+        </div>
+        <p className="font-sans text-[12px] text-fg-3 leading-[1.5] line-clamp-3 flex-1">
+          {video.summary}
+        </p>
+        <div className="flex items-center gap-1.5 flex-wrap pt-2 border-t border-hairline/40">
+          {video.tags.slice(0, 3).map(tag => (
+            <span key={tag} className="font-mono text-[9px] px-1.5 py-0.5 rounded-sm bg-violet/[0.06] text-fg-4 border border-violet/[0.10]">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </a>
+  );
+}
 
 function ResourceCard({ res }: { res: ResourceLink }) {
   const cat = RESOURCE_CATEGORIES.find(c => c.id === res.category)!;
@@ -126,6 +179,27 @@ export default function ResourcesPage() {
             <span>{RESOURCES.filter(r => r.free).length} free</span>
           </div>
         </motion.header>
+
+        {/* YouTube Videos section */}
+        <section className="pt-14 pb-10 border-b border-violet/[0.08]">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="font-mono text-[10px] tracking-[0.18em] uppercase text-red-400">▶ YouTube</span>
+            <div className="flex-1 h-px bg-red-400/20" />
+            <span className="font-mono text-[10px] text-fg-4">{YOUTUBE_VIDEOS.length} videos</span>
+          </div>
+          <h2 className="font-serif font-light text-[clamp(22px,3vw,32px)] text-fg-1 mb-2">
+            Video <em className="italic" style={{
+              backgroundImage: "linear-gradient(160deg, #F4F2EA 0%, #9F8CFF 100%)",
+              WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent",
+            }}>Learning</em>
+          </h2>
+          <p className="font-sans text-[14px] text-fg-3 mb-8 max-w-xl">
+            Curated AI education videos — from foundational neural network theory to hands-on LLM coding tutorials.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {YOUTUBE_VIDEOS.map(v => <VideoCard key={v.id} video={v} />)}
+          </div>
+        </section>
 
         {/* Filters bar */}
         <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] py-3 -mx-6 md:-mx-8 px-6 md:px-8">
