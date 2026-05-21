@@ -901,6 +901,48 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#003399",
     url: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
   },
+  {
+    id: "musk-openai-lawsuit-verdict",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 18,
+    title: "Jury Dismisses All of Musk's Claims Against OpenAI in Under Two Hours",
+    summary:
+      "A California jury deliberated less than two hours on May 18, 2026 before rejecting all claims in Elon Musk's lawsuit against OpenAI, Sam Altman, and Greg Brockman. The jury found Musk was aware of OpenAI's shift to a for-profit structure as early as 2021, barring his claims under the statute of limitations. Musk had sought up to $134 billion in damages and Altman's removal; he vowed to appeal, calling the verdict a 'technicality.'",
+    tags: ["OpenAI", "Elon Musk", "Legal", "xAI", "Sam Altman"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed",
+  },
+  {
+    id: "cursor-composer-25",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 18,
+    title: "Cursor Releases Composer 2.5 — Opus 4.7-Level Coding at a Fraction of the Price",
+    summary:
+      "Cursor launched Composer 2.5 on May 18, 2026, achieving 79.8% on SWE-Bench Multilingual and Terminal-Bench scores matching Claude Opus 4.7, while pricing stays at $0.50/$2.50 per million input/output tokens — a fraction of frontier model costs. The model was trained on 25× more synthetic tasks with tougher reinforcement-learning environments, enabling longer multi-file editing sessions and more reliable terminal operations. Cursor's valuation stands at $29 billion following its most recent funding round.",
+    tags: ["Cursor", "Coding", "SWE-Bench", "IDE", "Developer Tools"],
+    significance: "notable",
+    provider: "Cursor",
+    providerColor: "#8b5cf6",
+    url: "https://winbuzzer.com/2026/05/18/cursor-releases-composer-25-saying-its-better-at-s-xcxwbn/",
+  },
+  {
+    id: "pope-leo-magnifica-humanitas-encyclical",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 18,
+    title: "Pope Leo XIV Announces 'Magnifica Humanitas' — First Papal Encyclical on AI, Co-Presented with Anthropic Co-Founder",
+    summary:
+      "The Vatican announced on May 18, 2026 that Pope Leo XIV will publish 'Magnifica Humanitas,' the first papal encyclical on artificial intelligence, on May 25 — signed May 15, exactly 135 years after Leo XIII's Rerum Novarum addressed the Industrial Revolution. The document will be co-presented at the Vatican's Synod Hall alongside Christopher Olah, co-founder of Anthropic, alongside cardinals and theologians. The encyclical addresses preserving human dignity in the age of AI and was developed as AI companies, including Anthropic, have resisted pressure to remove safety guardrails for autonomous weapons.",
+    tags: ["Anthropic", "AI Ethics", "Vatican", "Policy", "Christopher Olah", "Religion"],
+    significance: "notable",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────

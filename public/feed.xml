@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 20 May 2026 17:05:49 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 05:04:33 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -161,6 +161,33 @@
     <guid isPermaLink="true">https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>European Union</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Jury Dismisses All of Musk's Claims Against OpenAI in Under Two Hours]]></title>
+    <description><![CDATA[A California jury deliberated less than two hours on May 18, 2026 before rejecting all claims in Elon Musk's lawsuit against OpenAI, Sam Altman, and Greg Brockman. The jury found Musk was aware of OpenAI's shift to a for-profit structure as early as 2021, barring his claims under the statute of limitations. Musk had sought up to $134 billion in damages and Altman's removal; he vowed to appeal, calling the verdict a 'technicality.']]></description>
+    <link>https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed</link>
+    <guid isPermaLink="true">https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Cursor Releases Composer 2.5 — Opus 4.7-Level Coding at a Fraction of the Price]]></title>
+    <description><![CDATA[Cursor launched Composer 2.5 on May 18, 2026, achieving 79.8% on SWE-Bench Multilingual and Terminal-Bench scores matching Claude Opus 4.7, while pricing stays at $0.50/$2.50 per million input/output tokens — a fraction of frontier model costs. The model was trained on 25× more synthetic tasks with tougher reinforcement-learning environments, enabling longer multi-file editing sessions and more reliable terminal operations. Cursor's valuation stands at $29 billion following its most recent funding round.]]></description>
+    <link>https://winbuzzer.com/2026/05/18/cursor-releases-composer-25-saying-its-better-at-s-xcxwbn/</link>
+    <guid isPermaLink="true">https://winbuzzer.com/2026/05/18/cursor-releases-composer-25-saying-its-better-at-s-xcxwbn/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Cursor</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Pope Leo XIV Announces 'Magnifica Humanitas' — First Papal Encyclical on AI, Co-Presented with Anthropic Co-Founder]]></title>
+    <description><![CDATA[The Vatican announced on May 18, 2026 that Pope Leo XIV will publish 'Magnifica Humanitas,' the first papal encyclical on artificial intelligence, on May 25 — signed May 15, exactly 135 years after Leo XIII's Rerum Novarum addressed the Industrial Revolution. The document will be co-presented at the Vatican's Synod Hall alongside Christopher Olah, co-founder of Anthropic, alongside cardinals and theologians. The encyclical addresses preserving human dignity in the age of AI and was developed as AI companies, including Anthropic, have resisted pressure to remove safety guardrails for autonomous weapons.]]></description>
+    <link>https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html</link>
+    <guid isPermaLink="true">https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
   </item>
 
   <item>
@@ -431,33 +458,6 @@
     <guid isPermaLink="true">https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/</guid>
     <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
     <category>Apple</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GPT-4o — Omni Model With Real-Time Audio and Vision]]></title>
-    <description><![CDATA[OpenAI launched GPT-4o ('omni'), a unified model that natively processes text, audio, and images in a single neural network rather than through a pipeline of separate specialist models. GPT-4o could respond to audio in as little as 232 milliseconds — matching human conversational latency — and detect emotional tone in speech. The model was made available to all free ChatGPT users, removing the paid-only barrier for GPT-4-class capabilities for the first time.]]></description>
-    <link>https://openai.com/index/hello-gpt-4o/</link>
-    <guid isPermaLink="true">https://openai.com/index/hello-gpt-4o/</guid>
-    <pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[LLaMA 3 — Meta Distributes AI to Billions via Social Platforms]]></title>
-    <description><![CDATA[Meta released LLaMA 3 in 8B and 70B parameter sizes, with the 70B model matching or exceeding GPT-3.5 Turbo on most benchmarks while remaining fully open for download. Simultaneously, Meta launched Meta AI, a consumer assistant powered by LLaMA 3, integrated natively into WhatsApp, Instagram, Messenger, and Facebook search — making a frontier-class model available to billions of users without requiring any separate sign-up.]]></description>
-    <link>https://ai.meta.com/blog/meta-llama-3/</link>
-    <guid isPermaLink="true">https://ai.meta.com/blog/meta-llama-3/</guid>
-    <pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate>
-    <category>Meta</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Claude 3 Family — Haiku, Sonnet, and Opus Set New Benchmarks]]></title>
-    <description><![CDATA[Anthropic launched the Claude 3 model family in three tiers — Haiku, Sonnet, and Opus — covering fast and cheap to most capable. Claude 3 Opus surpassed GPT-4 on most major benchmarks at launch, including MMLU, HumanEval coding, and GPQA graduate-level science, marking the first time a non-OpenAI model led broad academic evaluations across the board. All three Claude 3 models featured a 200,000-token context window as standard.]]></description>
-    <link>https://www.anthropic.com/news/claude-3-family</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/claude-3-family</guid>
-    <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
   </item>
   </channel>
 </rss>
