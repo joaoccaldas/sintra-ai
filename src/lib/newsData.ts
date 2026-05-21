@@ -943,6 +943,62 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#d97706",
     url: "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
   },
+  {
+    id: "openai-chatgpt-ads-manager",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 5,
+    title: "OpenAI Launches Self-Serve ChatGPT Ads Manager — No Minimum Spend",
+    summary:
+      "OpenAI opened ChatGPT Ads Manager to U.S. businesses on May 5, 2026, eliminating the previous $50,000 minimum spend requirement and introducing cost-per-click bidding with real-time campaign management. The platform targets $2.5 billion in ad revenue for 2026 and $100 billion by 2030; ad agency partners include Dentsu, Omnicom, Publicis, and WPP, with ad-tech integrations through Adobe, Criteo, Kargo, and StackAdapt. OpenAI confirmed no user conversations or personal data are shared with advertisers.",
+    tags: ["OpenAI", "ChatGPT", "Advertising", "Monetization", "Business"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://openai.com/index/new-ways-to-buy-chatgpt-ads/",
+  },
+  {
+    id: "claude-microsoft-365-ga",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 7,
+    title: "Claude for Microsoft 365 Reaches GA — Excel, Word, PowerPoint, and Outlook Beta",
+    summary:
+      "Anthropic moved Claude add-ins for Excel, Word, and PowerPoint to general availability on May 7, 2026 across all paid Claude plans on Mac and Windows, and simultaneously launched Claude for Outlook in public beta. The standout feature is cross-app context: a single conversation thread persists across all four Microsoft 365 applications, so Claude remembers the financial model discussed in Excel when the user opens the related PowerPoint deck. The integration reaches more than 400 million Microsoft 365 commercial users and is deployable via Microsoft Admin Center.",
+    tags: ["Anthropic", "Claude", "Microsoft 365", "Excel", "Outlook", "Enterprise"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://claude.com/claude-for-microsoft-365",
+  },
+  {
+    id: "amazon-alexa-plus-podcasts",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 18,
+    title: "Amazon Alexa+ Generates On-Demand AI Podcasts from Any Topic",
+    summary:
+      "Amazon launched Alexa Podcasts on May 18, 2026, letting Alexa+ subscribers request a podcast on any subject and receive a fully structured audio episode narrated by two AI co-hosts. The feature taps licensing agreements with over 200 news organisations — including AP, Reuters, the Washington Post, Forbes, and Condé Nast — plus 200+ local U.S. newspapers. Alexa+ is included with Amazon Prime at no extra cost; non-Prime users pay $19.99/month.",
+    tags: ["Amazon", "Alexa", "Podcasts", "AI Audio", "Content Generation"],
+    significance: "notable",
+    provider: "Amazon",
+    providerColor: "#FF9900",
+    url: "https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/",
+  },
+  {
+    id: "google-ai-ultra-100-900m-users",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 19,
+    title: "Google Cuts AI Ultra to $100/Month as Gemini Hits 900 Million Monthly Users",
+    summary:
+      "At Google I/O 2026, Google slashed the price of its Google AI Ultra subscription from $250 to $100 per month, bundling 5× higher Gemini app usage limits, 20 TB of cloud storage, and YouTube Premium, with beta access to Gemini Spark rolling out the following week for U.S. subscribers. The Gemini app has crossed 900 million monthly active users — up from 400 million a year earlier — doubling in a year. DeepMind CEO Demis Hassabis stated at the keynote that Artificial General Intelligence is 'just a few years away.'",
+    tags: ["Google", "Gemini", "Google I/O", "Pricing", "AGI", "DeepMind"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────
