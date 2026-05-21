@@ -1041,6 +1041,34 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#10a37f",
     url: "https://openai.com/index/advancing-content-provenance/",
   },
+  {
+    id: "google-antigravity-2-developer-keynote",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 20,
+    title: "Google Antigravity 2.0 — Standalone Agent Orchestration Platform with CLI, SDK, and Managed Agents",
+    summary:
+      "At Google I/O 2026's developer keynote on May 20, Google detailed Antigravity 2.0 as a full standalone desktop application for orchestrating multiple AI agents in parallel — replacing the Gemini CLI. The platform ships with the Antigravity CLI, Antigravity SDK, managed agent execution via the Gemini API, and enterprise support through the Gemini Enterprise Agent Platform. In a live demo, Antigravity and Gemini 3.5 Flash together built a functioning operating system from scratch in 12 hours; Antigravity is also the engine behind Gemini Spark running 24/7 background agents.",
+    tags: ["Google", "Antigravity", "Agents", "Developer Tools", "Gemini", "Google I/O"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+  },
+  {
+    id: "google-webmcp-browser-ai-agents",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 20,
+    title: "Google Proposes WebMCP — Open Standard for Browser-Based AI Agents in Chrome 149",
+    summary:
+      "Google announced WebMCP at I/O 2026's developer keynote on May 20, a proposed open web standard co-developed with Microsoft and incubated at W3C that lets websites expose structured JavaScript functions and HTML forms directly to browser AI agents — replacing fragile HTML scraping. An origin trial launches in Chrome 149 with early support from Booking.com, Expedia, Instacart, Shopify, and Redfin. Where current agents guess at button locations by parsing HTML, WebMCP agents call machine-readable actions precisely, significantly increasing reliability and speed of browser automation.",
+    tags: ["Google", "WebMCP", "Browser Agents", "Web Standards", "Chrome", "W3C", "Microsoft"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://developer.chrome.com/blog/chrome-at-io26",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────

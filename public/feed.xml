@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 21 May 2026 05:33:27 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 05:52:28 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -254,6 +254,24 @@
   </item>
 
   <item>
+    <title><![CDATA[Google Antigravity 2.0 — Standalone Agent Orchestration Platform with CLI, SDK, and Managed Agents]]></title>
+    <description><![CDATA[At Google I/O 2026's developer keynote on May 20, Google detailed Antigravity 2.0 as a full standalone desktop application for orchestrating multiple AI agents in parallel — replacing the Gemini CLI. The platform ships with the Antigravity CLI, Antigravity SDK, managed agent execution via the Gemini API, and enterprise support through the Gemini Enterprise Agent Platform. In a live demo, Antigravity and Gemini 3.5 Flash together built a functioning operating system from scratch in 12 hours; Antigravity is also the engine behind Gemini Spark running 24/7 background agents.]]></description>
+    <link>https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/</link>
+    <guid isPermaLink="true">https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google Proposes WebMCP — Open Standard for Browser-Based AI Agents in Chrome 149]]></title>
+    <description><![CDATA[Google announced WebMCP at I/O 2026's developer keynote on May 20, a proposed open web standard co-developed with Microsoft and incubated at W3C that lets websites expose structured JavaScript functions and HTML forms directly to browser AI agents — replacing fragile HTML scraping. An origin trial launches in Chrome 149 with early support from Booking.com, Expedia, Instacart, Shopify, and Redfin. Where current agents guess at button locations by parsing HTML, WebMCP agents call machine-readable actions precisely, significantly increasing reliability and speed of browser automation.]]></description>
+    <link>https://developer.chrome.com/blog/chrome-at-io26</link>
+    <guid isPermaLink="true">https://developer.chrome.com/blog/chrome-at-io26</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
     <title><![CDATA[Claude Mythos and Project Glasswing — AI Discovers Thousands of Zero-Days]]></title>
     <description><![CDATA[Anthropic announced Claude Mythos Preview, a frontier model sitting a full capability tier above Opus 4.7 and not available to the public, alongside Project Glasswing — an initiative to use Mythos to secure critical software infrastructure. Using Mythos, Anthropic autonomously identified thousands of zero-day vulnerabilities across every major operating system and web browser, including a 17-year-old remote code execution vulnerability in FreeBSD that allows complete server takeover. Launch partners include AWS, Apple, Cisco, CrowdStrike, Google, JPMorganChase, Microsoft, and NVIDIA, with $100 million in model credits committed.]]></description>
     <link>https://www.anthropic.com/glasswing</link>
@@ -440,24 +458,6 @@
     <guid isPermaLink="true">https://www.anthropic.com/news/claude-3-7-sonnet</guid>
     <pubDate>Sat, 01 Feb 2025 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[DeepSeek R1 — Efficient Reasoning Model Shocks the Industry]]></title>
-    <description><![CDATA[DeepSeek released R1, a reasoning model built in China that matched OpenAI o1's performance on major benchmarks while being trained at a fraction of the cost and under US semiconductor export restrictions using older NVIDIA hardware. The model was released fully open-source under an MIT license. NVIDIA lost approximately $600 billion in market capitalization in a single trading day as investors questioned whether the most expensive AI infrastructure was necessary to achieve frontier performance.]]></description>
-    <link>https://github.com/deepseek-ai/DeepSeek-R1</link>
-    <guid isPermaLink="true">https://github.com/deepseek-ai/DeepSeek-R1</guid>
-    <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-    <category>DeepSeek</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Operator — AI Agent That Browses and Acts on the Web]]></title>
-    <description><![CDATA[OpenAI launched Operator, a standalone AI agent capable of navigating websites, filling in forms, completing checkouts, and booking reservations autonomously using a standard web browser. It used a Computer-Using Agent model trained specifically on graphical user interface interaction rather than relying on structured APIs. Operator launched for ChatGPT Pro subscribers in the United States, representing OpenAI's first dedicated agentic product separate from ChatGPT.]]></description>
-    <link>https://openai.com/index/introducing-operator/</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-operator/</guid>
-    <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
   </channel>
 </rss>
