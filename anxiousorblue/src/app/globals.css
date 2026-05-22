@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-slate-800 bg-cream-light antialiased;
+  }
+
+  h1, h2 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-teal {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-teal text-white text-sm font-medium tracking-wide rounded transition-all duration-200 hover:bg-teal-dark hover:shadow-md;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-white/60 text-white text-sm font-medium tracking-wide rounded transition-all duration-200 hover:bg-white hover:text-navy;
+  }
+
+  .btn-outline-teal {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-teal text-teal text-sm font-medium tracking-wide rounded transition-all duration-200 hover:bg-teal hover:text-white;
+  }
+
+  .section-heading {
+    @apply font-serif text-3xl md:text-4xl font-medium text-navy leading-tight;
+  }
+
+  .page-hero {
+    @apply pt-32 pb-20 bg-gradient-to-br from-navy to-navy-mid text-white;
+  }
+
+  .container {
+    @apply max-w-6xl mx-auto px-6;
+  }
+}
