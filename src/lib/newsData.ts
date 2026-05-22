@@ -803,6 +803,53 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#d97706",
     url: "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes",
   },
+
+  // ── Auto-updated 2026-05-22 ────────────────────────────────────────────
+
+  {
+    id: "white-house-ai-eo-postponed",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 21,
+    title: "White House AI Executive Order Postponed — Pre-Release Sharing Framework Stalled",
+    summary:
+      "The White House postponed its AI executive order on May 21, 2026, which would have required frontier AI companies to share models with the US government up to 90 days before public release under a voluntary framework. The delay reflects ongoing negotiations between the administration and major AI labs over scope, enforcement, and whether sharing requirements would disadvantage US developers relative to Chinese competitors. No revised timeline was announced.",
+    tags: ["Policy", "White House", "Regulation", "Frontier AI", "US Government"],
+    significance: "notable",
+    provider: "Microsoft",
+    providerColor: "#0078d4",
+    url: "https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026",
+  },
+
+  {
+    id: "openai-ipo-sec-filing",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 22,
+    title: "OpenAI Files Confidential IPO Prospectus — $1 Trillion Valuation Target",
+    summary:
+      "OpenAI confidentially filed its IPO prospectus with the SEC on May 22, 2026, targeting a September 2026 listing at a valuation between $852 billion and $1 trillion. The filing aligns with a broader wave of major AI and tech IPOs: SpaceX filed its public S-1 on May 20 for a June Nasdaq listing, and Anthropic is targeting an October public offering, concentrating three of the most anticipated technology listings in history within a six-month window. OpenAI's annualized revenue is estimated at over $20 billion at time of filing.",
+    tags: ["OpenAI", "IPO", "Valuation", "Finance", "SEC"],
+    significance: "landmark",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026",
+  },
+
+  {
+    id: "spacex-ipo-anthropic-gpu-deal",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 22,
+    title: "SpaceX S-1 Reveals Anthropic Paying $1.25B/Month for GPU Compute Through 2029",
+    summary:
+      "SpaceX's public IPO prospectus filed May 20, 2026 disclosed that Anthropic is paying SpaceX $1.25 billion per month for GPU compute access through May 2029 — a $45 billion total commitment and one of the largest single compute contracts ever disclosed publicly. The deal, routed through SpaceXAI (formerly xAI) and the Colossus 1 facility in Memphis, reflects the scale of infrastructure investment required to sustain Anthropic's frontier model training and inference. The disclosure landed on the same day OpenAI filed its own IPO paperwork, putting both companies' financial scale under simultaneous public scrutiny.",
+    tags: ["Anthropic", "SpaceX", "Compute", "Infrastructure", "IPO", "GPU"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────
