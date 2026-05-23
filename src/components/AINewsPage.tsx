@@ -109,7 +109,7 @@ export default function AINewsPage() {
         if (b.dateNum !== a.dateNum) return b.dateNum - a.dateNum;
         return (b.dateDay ?? 1) - (a.dateDay ?? 1);
       });
-  }, [activeSig, activeTag, activeProvider]);
+  }, [activeSig, activeTag, activeProvider, brazilOnly, search]);
 
   // Group by year for visual breaks
   const grouped = useMemo(() => {
