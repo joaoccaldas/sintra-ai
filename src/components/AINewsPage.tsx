@@ -35,12 +35,15 @@ function NewsCard({ item }: { item: NewsItem }) {
 
       {/* Right: content */}
       <div className="flex-1 min-w-0">
-        {/* Provider tag */}
+        {/* Provider tag + country flag */}
         <div className="flex items-center gap-2 mb-2">
           <span className="w-2 h-2 rounded-full shrink-0" style={{ background: item.providerColor }} />
           <span className="font-mono text-[10px] tracking-[0.12em] uppercase" style={{ color: item.providerColor }}>
             {item.provider}
           </span>
+          {item.country === "BR" && (
+            <span title="Brazil" className="text-[13px] leading-none" aria-label="Brazil">🇧🇷</span>
+          )}
         </div>
 
         {/* Title */}
@@ -80,6 +83,7 @@ export default function AINewsPage() {
   const [activeSig, setActiveSig]     = useState<string>("all");
   const [activeTag, setActiveTag]     = useState<string>("all");
   const [activeProvider, setProvider] = useState<string>("all");
+  const [brazilOnly, setBrazilOnly]   = useState(false);
   const [search, setSearch]           = useState("");
 
   const providers = useMemo(() => {
@@ -89,10 +93,11 @@ export default function AINewsPage() {
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
-    return NEWS_ITEMS
+    return [...NEWS_ITEMS]
       .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
       .filter((n: NewsItem) => activeProvider === "all" || n.provider === activeProvider)
+      .filter((n: NewsItem) => !brazilOnly || n.country === "BR")
       .filter((n: NewsItem) => {
         if (!q) return true;
         return n.title.toLowerCase().includes(q) ||
@@ -207,7 +212,21 @@ export default function AINewsPage() {
               {providers.map((p: string) => <option key={p} value={p}>{p}</option>)}
             </select>
 
-            {(search || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all") && (
+            {/* Brazil filter */}
+            <button
+              onClick={() => setBrazilOnly(v => !v)}
+              title={brazilOnly ? "Show all countries" : "Show Brazil news only"}
+              className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
+              style={{
+                background:  brazilOnly ? "#009c3b22" : "transparent",
+                borderColor: brazilOnly ? "#009c3b88" : "#ffffff18",
+                color:       brazilOnly ? "#4ade80"   : "#6b6a8a",
+              }}
+            >
+              🇧🇷 Brazil
+            </button>
+
+            {(search || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly) && (
               <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} events</span>
             )}
           </div>

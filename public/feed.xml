@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 23 May 2026 17:15:25 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 17:41:55 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -371,6 +371,42 @@
   </item>
 
   <item>
+    <title><![CDATA[Anthropic and OpenAI Establish São Paulo Offices — Brazil Becomes Latin America's AI Hub]]></title>
+    <description><![CDATA[Anthropic confirmed plans to open a São Paulo office in 2026, disclosing that Brazil is already Claude's third-largest market globally, behind only the United States and India. The company is actively hiring a commercial team focused exclusively on enterprise clients — a deliberate positioning that mirrors OpenAI's parallel São Paulo expansion, which inaugurated its first Latin American physical office in mid-2025. The dual arrival means both AI giants now fall under Brazilian consumer-protection jurisdiction: PROCON authorities can issue fines, send notifications, and investigate anticompetitive practices directly, marking a regulatory shift for AI services in the country.]]></description>
+    <link>https://tecnoblog.net/noticias/depois-da-openai-agora-a-anthropic-planeja-abrir-escritorio-no-brasil/</link>
+    <guid isPermaLink="true">https://tecnoblog.net/noticias/depois-da-openai-agora-a-anthropic-planeja-abrir-escritorio-no-brasil/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Launches First National Brazil Campaign — ChatGPT Targets 2026 World Cup and Libertadores]]></title>
+    <description><![CDATA[OpenAI launched its first large-scale integrated media campaign in Brazil on May 18, 2026, anchored entirely around football and the 2026 FIFA World Cup. The campaign runs across TV (including a Globo World Cup sponsorship), streaming, out-of-home, digital, and content creators, with activations in nine cities from São Paulo and Rio de Janeiro to Salvador, Fortaleza, and Porto Alegre. Produced locally, the campaign showcases ChatGPT's image and voice generation features to Brazil's 50 million monthly ChatGPT users — who collectively send over 140 million messages per day, making Brazil one of ChatGPT's top three markets worldwide.]]></description>
+    <link>https://propmark.com.br/chatgpt-protagoniza-primeira-campanha-nacional-da-openai-no-brasil/</link>
+    <guid isPermaLink="true">https://propmark.com.br/chatgpt-protagoniza-primeira-campanha-nacional-da-openai-no-brasil/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Brazil's Chamber of Deputies Schedules AI Legal Framework Vote for May 27]]></title>
+    <description><![CDATA[Brazil's Chamber of Deputies announced a plenary vote on Bill 2338/2023 — the Marco Legal da Inteligência Artificial — for May 27, 2026, after the bill cleared the Senate in December 2024. Rapporteur Deputy Aguinaldo Ribeiro presented the final committee report, which adopts a risk-tiered framework modelled on the EU AI Act: high-risk systems used in healthcare, education, credit scoring, and public services face strict transparency and accountability obligations, while lower-risk applications are lightly regulated. Two unresolved points remain: copyright protections for content used in AI training, and the criteria for classifying biometric surveillance systems as high-risk.]]></description>
+    <link>https://www.alobrasilia.com.br/2026/05/camara-agenda-votacao-do-marco-legal-da.html</link>
+    <guid isPermaLink="true">https://www.alobrasilia.com.br/2026/05/camara-agenda-votacao-do-marco-legal-da.html</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Brazilian Government</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Brazilian Companies Scale AI for Measurable Returns — Market Spend to Exceed $2.4 Billion]]></title>
+    <description><![CDATA[An IDC study released on May 20, 2026 found that Brazil's corporate AI spending is forecast to exceed US$2.4 billion in 2026, a 30% increase year-on-year, as enterprises move beyond pilots into production deployments with trackable ROI. An accompanying IBM survey found 78% of Brazilian companies plan to increase AI investment before year-end, with agentic AI — systems that execute multi-step tasks autonomously — identified as the leading deployment priority. Brazilian AI startups also attracted record funding: Enter (legal AI) raised US$35 million at a US$350 million valuation co-led by Founders Fund and Sequoia, while healthcare AI firm Arvo closed a US$20 million Series A.]]></description>
+    <link>https://www.businesswire.com/news/home/20260520045459/en/Brazilian-Firms-Scale-AI-for-Quantifiable-Returns</link>
+    <guid isPermaLink="true">https://www.businesswire.com/news/home/20260520045459/en/Brazilian-Firms-Scale-AI-for-Quantifiable-Returns</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>IDC Brazil</category>
+  </item>
+
+  <item>
     <title><![CDATA[Chinese AI Models Now Account for 60% of All Requests on OpenRouter]]></title>
     <description><![CDATA[OpenRouter, the multi-model API aggregator tracking millions of daily LLM calls, reported that Chinese-origin models now handle 60% of total request volume on its platform — up from near-zero two years earlier. The milestone, reported on May 22, is driven by DeepSeek, Qwen, and related open-weight models offering frontier-level performance at a fraction of Western API pricing. The shift reflects a broader trend: cost-sensitive developers and startups are increasingly routing production workloads to Chinese models, intensifying the pressure on OpenAI and Anthropic to defend their pricing.]]></description>
     <link>https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026</link>
@@ -422,42 +458,6 @@
     <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/</guid>
     <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
     <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Cohere Merges With Aleph Alpha — $20B Transatlantic AI Company Formed]]></title>
-    <description><![CDATA[Canadian AI firm Cohere and Germany's Aleph Alpha announced a merger on April 24, 2026, forming a transatlantic enterprise AI company valued at roughly $20 billion. The deal, anchored by a €500 million commitment from Schwarz Group (Lidl and Kaufland's parent), received backing from both the Canadian and German governments. Cohere CEO Aidan Gomez will lead the combined company, which will operate under the Cohere name and compete directly with US frontier labs for European and sovereign AI contracts.]]></description>
-    <link>https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
-    <category>Cohere</category>
-  </item>
-
-  <item>
-    <title><![CDATA[DeepSeek V4 — 1.6T-Parameter MoE, 80.6% SWE-bench Verified]]></title>
-    <description><![CDATA[DeepSeek released V4-Pro and V4-Flash on April 24, 2026 under MIT license. V4-Pro packs 1.6T total parameters with 49B active via mixture-of-experts, a 1M-token context window, and scored 80.6% on SWE-bench Verified — matching frontier closed-source models. Weights are on Hugging Face; V4-Flash (284B total, 13B active) targets cost-efficient inference.]]></description>
-    <link>https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro</link>
-    <guid isPermaLink="true">https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
-    <category>DeepSeek</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Secures 3.5 Gigawatts of TPU Capacity in Expanded Google and Broadcom Deal]]></title>
-    <description><![CDATA[Anthropic signed an expanded compute agreement with Google Cloud and Broadcom securing 3.5 gigawatts of TPU-based capacity beginning in 2027, with Google committing a further 5 gigawatts over five years. The deal was struck as Anthropic's revenue crossed $10 billion annualised and existing infrastructure became the primary constraint on growth. It gives Anthropic one of the largest dedicated AI compute arrangements of any company and underpins the $30 billion run-rate disclosed in May 2026.]]></description>
-    <link>https://www.anthropic.com/news/google-broadcom-partnership-compute</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/google-broadcom-partnership-compute</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Closes $122B Round at $852B Valuation — Largest Private Raise Ever]]></title>
-    <description><![CDATA[OpenAI closed a $122 billion funding round on March 31, 2026 at an $852 billion post-money valuation — the largest private capital raise in history. Amazon committed $50 billion, SoftBank and Nvidia each contributed $30 billion, with Andreessen Horowitz and D.E. Shaw also participating. The round included $3 billion from individual investors via bank channels, and is expected to fund global AI infrastructure buildout and an anticipated IPO.]]></description>
-    <link>https://openai.com/index/accelerating-the-next-phase-ai/</link>
-    <guid isPermaLink="true">https://openai.com/index/accelerating-the-next-phase-ai/</guid>
-    <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
   </channel>
 </rss>

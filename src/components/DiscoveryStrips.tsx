@@ -80,6 +80,7 @@ export default function DiscoveryStrips() {
                     {item.significance}
                   </span>
                   <h3 className="font-serif text-[15px] leading-[1.25] text-fg-1 group-hover:text-white transition-colors line-clamp-2">
+                    {item.country === "BR" && <span title="Brazil" className="mr-1.5 text-[11px]">🇧🇷</span>}
                     {item.title}
                   </h3>
                 </div>

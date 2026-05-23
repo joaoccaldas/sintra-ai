@@ -10,6 +10,7 @@ export interface NewsItem {
   provider: string;      // company name
   providerColor: string; // hex color
   url?: string;          // link to original announcement
+  country?: string;      // ISO-3166-1 alpha-2, e.g. "BR" for Brazil-specific news
 }
 
 export const AI_NEWS: NewsItem[] = [
@@ -1241,6 +1242,69 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/anthropic-kpmg",
+  },
+
+  // ── Brazil — 16–23 May 2026 ──────────────────────────────────────────────
+
+  {
+    id: "brazil-anthropic-openai-sp-offices",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 15,
+    title: "Anthropic and OpenAI Establish São Paulo Offices — Brazil Becomes Latin America's AI Hub",
+    summary:
+      "Anthropic confirmed plans to open a São Paulo office in 2026, disclosing that Brazil is already Claude's third-largest market globally, behind only the United States and India. The company is actively hiring a commercial team focused exclusively on enterprise clients — a deliberate positioning that mirrors OpenAI's parallel São Paulo expansion, which inaugurated its first Latin American physical office in mid-2025. The dual arrival means both AI giants now fall under Brazilian consumer-protection jurisdiction: PROCON authorities can issue fines, send notifications, and investigate anticompetitive practices directly, marking a regulatory shift for AI services in the country.",
+    tags: ["Anthropic", "OpenAI", "Brazil", "São Paulo", "Latin America", "Regulation"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://tecnoblog.net/noticias/depois-da-openai-agora-a-anthropic-planeja-abrir-escritorio-no-brasil/",
+    country: "BR",
+  },
+  {
+    id: "brazil-openai-football-campaign",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 18,
+    title: "OpenAI Launches First National Brazil Campaign — ChatGPT Targets 2026 World Cup and Libertadores",
+    summary:
+      "OpenAI launched its first large-scale integrated media campaign in Brazil on May 18, 2026, anchored entirely around football and the 2026 FIFA World Cup. The campaign runs across TV (including a Globo World Cup sponsorship), streaming, out-of-home, digital, and content creators, with activations in nine cities from São Paulo and Rio de Janeiro to Salvador, Fortaleza, and Porto Alegre. Produced locally, the campaign showcases ChatGPT's image and voice generation features to Brazil's 50 million monthly ChatGPT users — who collectively send over 140 million messages per day, making Brazil one of ChatGPT's top three markets worldwide.",
+    tags: ["OpenAI", "ChatGPT", "Brazil", "World Cup", "Marketing", "Consumer AI"],
+    significance: "notable",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://propmark.com.br/chatgpt-protagoniza-primeira-campanha-nacional-da-openai-no-brasil/",
+    country: "BR",
+  },
+  {
+    id: "brazil-marco-legal-ia-vote-may27",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 19,
+    title: "Brazil's Chamber of Deputies Schedules AI Legal Framework Vote for May 27",
+    summary:
+      "Brazil's Chamber of Deputies announced a plenary vote on Bill 2338/2023 — the Marco Legal da Inteligência Artificial — for May 27, 2026, after the bill cleared the Senate in December 2024. Rapporteur Deputy Aguinaldo Ribeiro presented the final committee report, which adopts a risk-tiered framework modelled on the EU AI Act: high-risk systems used in healthcare, education, credit scoring, and public services face strict transparency and accountability obligations, while lower-risk applications are lightly regulated. Two unresolved points remain: copyright protections for content used in AI training, and the criteria for classifying biometric surveillance systems as high-risk.",
+    tags: ["Brazil", "AI Regulation", "Marco Legal", "Policy", "PL 2338", "Congress"],
+    significance: "major",
+    provider: "Brazilian Government",
+    providerColor: "#009c3b",
+    url: "https://www.alobrasilia.com.br/2026/05/camara-agenda-votacao-do-marco-legal-da.html",
+    country: "BR",
+  },
+  {
+    id: "brazil-ai-spending-24bn-ibm",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 20,
+    title: "Brazilian Companies Scale AI for Measurable Returns — Market Spend to Exceed $2.4 Billion",
+    summary:
+      "An IDC study released on May 20, 2026 found that Brazil's corporate AI spending is forecast to exceed US$2.4 billion in 2026, a 30% increase year-on-year, as enterprises move beyond pilots into production deployments with trackable ROI. An accompanying IBM survey found 78% of Brazilian companies plan to increase AI investment before year-end, with agentic AI — systems that execute multi-step tasks autonomously — identified as the leading deployment priority. Brazilian AI startups also attracted record funding: Enter (legal AI) raised US$35 million at a US$350 million valuation co-led by Founders Fund and Sequoia, while healthcare AI firm Arvo closed a US$20 million Series A.",
+    tags: ["Brazil", "AI Investment", "Enterprise AI", "Startups", "IDC", "Market"],
+    significance: "notable",
+    provider: "IDC Brazil",
+    providerColor: "#0f4c81",
+    url: "https://www.businesswire.com/news/home/20260520045459/en/Brazilian-Firms-Scale-AI-for-Quantifiable-Returns",
+    country: "BR",
   },
 
   {
