@@ -319,8 +319,8 @@ export default function CategoryBrowser({ heroSearch }: Props) {
           </AnimatePresence>
 
           {/* Category chip rail */}
-          <div className="mt-6 px-6 pb-1">
-            <div className="grid grid-cols-3 gap-2 md:flex md:flex-wrap md:justify-center md:gap-2">
+          <div className="mt-6 pb-1">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:flex md:flex-wrap md:justify-center md:gap-2">
               {CAROUSEL_ITEMS.map((item, i) => (
                 <button
                   key={item.id}
