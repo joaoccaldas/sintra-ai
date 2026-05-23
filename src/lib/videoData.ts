@@ -72,6 +72,18 @@ export const YOUTUBE_VIDEOS: YouTubeVideo[] = [
     year: 2024,
   },
   {
+    id: "how-to-powerbi-ai-charts",
+    videoId: "mBdStGiyT9c",
+    title: "AI Can Now Build ANY Power BI Chart You Want",
+    channel: "How to Power BI",
+    summary:
+      "Step-by-step walkthrough of using AI and Microsoft Copilot to generate any chart type in Power BI from a plain-English prompt — no manual drag-and-drop needed. Covers natural language chart generation, auto-written DAX measures, and how to prepare your data model so Copilot gives accurate results every time.",
+    url: "https://www.youtube.com/watch?v=mBdStGiyT9c",
+    tags: ["Power BI", "Copilot", "DAX", "AI Charts", "Practical"],
+    duration: "~20 min",
+    year: 2026,
+  },
+  {
     id: "karpathy-backprop-nn-zero-hero",
     videoId: "VMj-3S1tku0",
     title: "The spelled-out intro to neural networks and backpropagation",

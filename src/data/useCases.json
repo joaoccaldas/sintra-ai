@@ -3047,16 +3047,34 @@
     "skill_level": "ADVANCED",
     "title": "Build a Personal Finance AI Agent",
     "prompt": "I want to build a local AI agent that connects to my bank accounts via [bank API or CSV export], stores transactions in a local SQLite database, and runs a daily summary that categorises spending, flags anomalies, and suggests actions. Design the full agent architecture: data ingestion pipeline, categorisation prompt, anomaly-detection logic, and the daily briefing prompt template. Include Python pseudocode for the main loop and the schema for the local DB.",
-    "tags": ["personal-finance", "ai-agent", "automation", "plaid", "sqlite", "budgeting"],
+    "tags": [
+      "personal-finance",
+      "ai-agent",
+      "automation",
+      "plaid",
+      "sqlite",
+      "budgeting"
+    ],
     "best_for": "Developers who want AI-driven personal finance automation without relying on third-party apps",
     "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
     "outcome": "Full architecture for a self-hosted personal finance AI agent with ingestion pipeline, DB schema, categorisation logic, anomaly detection, and daily briefing template.",
     "inputs": [
-      { "label": "bank API or CSV export" },
-      { "label": "spending categories" },
-      { "label": "monthly budget targets" }
+      {
+        "label": "bank API or CSV export"
+      },
+      {
+        "label": "spending categories"
+      },
+      {
+        "label": "monthly budget targets"
+      }
     ],
-    "tools": ["Claude API", "Plaid API", "Python", "SQLite"],
+    "tools": [
+      "Claude API",
+      "Plaid API",
+      "Python",
+      "SQLite"
+    ],
     "est_time": "3–5 hours",
     "output_kind": "spec",
     "sample_output": "**Agent Architecture: Personal Finance AI**\n\n**DB Schema (SQLite):**\n```sql\nCREATE TABLE transactions (\n  id TEXT PRIMARY KEY,\n  date TEXT, amount REAL, merchant TEXT,\n  category TEXT, raw_category TEXT, flagged INTEGER DEFAULT 0\n);\nCREATE TABLE daily_summaries (date TEXT PRIMARY KEY, json TEXT);\n```\n\n**Ingestion pipeline:**\n1. Pull transactions via Plaid /transactions/sync (or parse CSV)\n2. Upsert into SQLite (dedup by transaction id)\n3. For each uncategorised row, call Claude with merchant name + amount → returns category\n\n**Categorisation prompt:**\n```\nClassify this transaction into one of: [Food, Transport, Housing, Subscriptions, Shopping, Health, Entertainment, Other].\nMerchant: {merchant}  Amount: ${amount}\nReturn only the category name.\n```\n\n**Anomaly detection logic:**\n- Flag if amount > 2× rolling 30-day average for that category\n- Flag if merchant appears for the first time and amount > $50\n\n**Daily briefing prompt:**\n```\nGiven these transactions from {date}: {json}\nAnd monthly budget targets: {targets}\nWrite a 5-bullet morning briefing covering: total spend, top category, biggest single charge, any flagged anomalies, and one actionable suggestion.\n```"
@@ -3067,18 +3085,38 @@
     "skill_level": "ADVANCED",
     "title": "Tax Strategy Finder (CPA-Level Automation)",
     "prompt": "Act as a senior CPA and tax strategist. I will give you my [income sources], [filing status], [major expenses], and [investment portfolio]. Identify the top 5 tax optimisation strategies available to me, explain the mechanism of each deduction or deferral, estimate the potential savings, flag any risks or thresholds I need to stay under, and give me a prioritised action checklist for this tax year. Reference relevant IRS code sections or equivalent for [country].",
-    "tags": ["tax", "tax-strategy", "cpa", "deductions", "financial-planning", "irs"],
+    "tags": [
+      "tax",
+      "tax-strategy",
+      "cpa",
+      "deductions",
+      "financial-planning",
+      "irs"
+    ],
     "best_for": "Self-employed professionals, investors, and business owners looking to reduce tax liability",
     "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
     "outcome": "Ranked list of tax strategies with mechanisms, estimated savings, risk flags, and a concrete action checklist for the current tax year.",
     "inputs": [
-      { "label": "income sources (salary, freelance, dividends, etc.)" },
-      { "label": "filing status (single, MFJ, etc.)" },
-      { "label": "major expenses (home office, vehicle, health, education)" },
-      { "label": "investment portfolio (taxable, IRA, 401k balances)" },
-      { "label": "country" }
+      {
+        "label": "income sources (salary, freelance, dividends, etc.)"
+      },
+      {
+        "label": "filing status (single, MFJ, etc.)"
+      },
+      {
+        "label": "major expenses (home office, vehicle, health, education)"
+      },
+      {
+        "label": "investment portfolio (taxable, IRA, 401k balances)"
+      },
+      {
+        "label": "country"
+      }
     ],
-    "tools": ["Claude", "ChatGPT"],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "est_time": "30 minutes",
     "output_kind": "analysis",
     "sample_output": "**Top 5 Tax Strategies for Your Profile**\n\n**1. Max Solo 401(k) — estimated savings: $14,280**\nAs a self-employed person you can contribute up to $66,000 (2024). The employer contribution side (25% of net self-employment income) is deductible on Schedule 1. *IRC §401(a).* Action: open a Solo 401(k) by Dec 31; fund by tax deadline.\n\n**2. Home Office Deduction (Simplified Method) — ~$1,500**\n$5/sq ft × up to 300 sq ft. No depreciation recapture risk. *IRC §280A.* Action: measure dedicated workspace, document with photos.\n\n**3. SEP-IRA vs Solo 401(k) comparison**\nSEP-IRA simpler to open, but Solo 401(k) allows employee deferrals — better if income < $200k.\n\n**4. Qualified Business Income (QBI) Deduction — up to 20% of net income**\nAvailable for pass-through entities below $182,050 (single). *IRC §199A.* Risk: phase-out applies to specified service trades.\n\n**5. Tax-Loss Harvesting on taxable portfolio**\nRealise ~$8k in unrealised losses to offset gains. Beware 30-day wash-sale rule. *IRC §1091.*\n\n**Action checklist:**\n- [ ] Open Solo 401(k) before Dec 31\n- [ ] Calculate exact home office sq footage\n- [ ] Review taxable account for harvesting candidates\n- [ ] Confirm QBI eligibility with your business type"
@@ -3089,16 +3127,32 @@
     "skill_level": "INTERMEDIATE",
     "title": "AI Health Data Tracker & Interpreter",
     "prompt": "I will paste the results from my recent [blood work / health metrics]. Interpret each value, flag anything outside the optimal range (not just the lab reference range), explain what each flagged value might indicate, suggest 3 lifestyle or dietary adjustments I could discuss with my doctor, and format the output as a clear summary table followed by the action points. Do not diagnose — focus on pattern recognition and evidence-based context.",
-    "tags": ["health", "blood-work", "biometrics", "wellness", "personal-data", "tracking"],
+    "tags": [
+      "health",
+      "blood-work",
+      "biometrics",
+      "wellness",
+      "personal-data",
+      "tracking"
+    ],
     "best_for": "Health-conscious individuals who want to understand their lab results and prepare smarter doctor conversations",
     "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
     "outcome": "Clear interpretation of health metrics with optimal vs. reference range comparison, pattern flags, lifestyle suggestions, and a ready-to-use doctor conversation summary.",
     "inputs": [
-      { "label": "blood work or health metrics (paste raw values)" },
-      { "label": "age and biological sex" },
-      { "label": "known conditions or medications (optional)" }
+      {
+        "label": "blood work or health metrics (paste raw values)"
+      },
+      {
+        "label": "age and biological sex"
+      },
+      {
+        "label": "known conditions or medications (optional)"
+      }
     ],
-    "tools": ["Claude", "ChatGPT"],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "est_time": "10 minutes",
     "output_kind": "analysis",
     "sample_output": "**Health Metrics Summary**\n\n| Marker | Your Value | Lab Range | Optimal Range | Status |\n|---|---|---|---|---|\n| LDL Cholesterol | 142 mg/dL | <160 | <100 | ⚠️ Elevated |\n| HbA1c | 5.8% | <5.7 pre-diabetic | <5.4 | ⚠️ Borderline |\n| Vitamin D | 24 ng/mL | 20–50 | 40–60 | ⚠️ Sub-optimal |\n| Ferritin | 68 ng/mL | 12–300 | 50–150 | ✅ Good |\n| TSH | 2.1 mIU/L | 0.4–4.0 | 0.5–2.5 | ✅ Good |\n\n**Flagged patterns:**\n- LDL + borderline HbA1c together suggest early metabolic stress worth monitoring.\n- Low-normal Vitamin D may be contributing to fatigue.\n\n**Lifestyle adjustments to discuss with your doctor:**\n1. Mediterranean-style diet to address LDL and glycaemic trends simultaneously.\n2. Vitamin D3 + K2 supplementation (2,000–4,000 IU/day) — confirm dose with doctor.\n3. 150 min/week moderate cardio — independently improves all three flagged markers.\n\n*This is pattern recognition, not medical advice. Bring this table to your next appointment.*"
@@ -3109,18 +3163,301 @@
     "skill_level": "EXPERT",
     "title": "Ghost Database for AI Agents",
     "prompt": "Design a persistent memory and knowledge layer — a 'ghost database' — for a long-running AI agent system built with [framework/stack]. The system must support: short-term episodic memory (recent conversation turns), long-term semantic memory (vector search over past interactions and documents), structured fact storage (key-value entities the agent can update), and a retrieval strategy that selects the right memory type at inference time. Provide the full schema, the retrieval orchestration logic, a sample system-prompt injection template, and guidance on when to write vs. read from each store.",
-    "tags": ["ai-agent", "memory", "vector-db", "architecture", "rag", "persistent-state", "llm-ops"],
+    "tags": [
+      "ai-agent",
+      "memory",
+      "vector-db",
+      "architecture",
+      "rag",
+      "persistent-state",
+      "llm-ops"
+    ],
     "best_for": "AI engineers building autonomous agents that need reliable long-term memory and context management",
     "source": "Wes Roth — \"AI just BROKE the ENTIRE INDUSTRY...\"",
     "outcome": "Complete ghost-database architecture spec with schemas for all three memory types, retrieval orchestration pseudocode, system-prompt injection template, and write/read decision rules.",
     "inputs": [
-      { "label": "framework/stack (LangChain, custom Python, etc.)" },
-      { "label": "agent's primary domain or task" },
-      { "label": "expected conversation volume (light / heavy)" }
+      {
+        "label": "framework/stack (LangChain, custom Python, etc.)"
+      },
+      {
+        "label": "agent's primary domain or task"
+      },
+      {
+        "label": "expected conversation volume (light / heavy)"
+      }
     ],
-    "tools": ["Claude API", "OpenAI API", "Chroma", "Pinecone", "Redis", "PostgreSQL", "Python"],
+    "tools": [
+      "Claude API",
+      "OpenAI API",
+      "Chroma",
+      "Pinecone",
+      "Redis",
+      "PostgreSQL",
+      "Python"
+    ],
     "est_time": "2–4 hours",
     "output_kind": "spec",
     "sample_output": "**Ghost Database Architecture**\n\n**Memory layers:**\n\n| Layer | Store | TTL | Use case |\n|---|---|---|---|\n| Episodic (short-term) | Redis list (sliding window) | Last 20 turns | Recent dialogue context |\n| Semantic (long-term) | ChromaDB / Pinecone | Permanent | Past interactions, docs |\n| Structured facts | PostgreSQL key-value table | Permanent, mutable | User prefs, entity state |\n\n**Structured facts schema:**\n```sql\nCREATE TABLE agent_facts (\n  agent_id TEXT, key TEXT, value JSONB,\n  confidence REAL, updated_at TIMESTAMPTZ,\n  PRIMARY KEY (agent_id, key)\n);\n```\n\n**Retrieval orchestration (pseudocode):**\n```python\ndef build_context(query, agent_id):\n  episodic  = redis.lrange(f'ep:{agent_id}', 0, 19)      # always include\n  semantic  = chroma.query(query, n_results=4)             # top-4 semantic hits\n  facts     = pg.fetch('SELECT key, value FROM agent_facts WHERE agent_id=$1', agent_id)\n  return format_context(episodic, semantic, facts)\n```\n\n**System-prompt injection template:**\n```\n[MEMORY]\nRecent context: {episodic_summary}\nRelevant past knowledge: {semantic_hits}\nKnown facts about user: {facts_json}\n[/MEMORY]\n```\n\n**Write rules:**\n- After every turn → append to episodic Redis list, pop oldest if > 20\n- After task completion → embed summary → upsert to vector DB\n- When agent learns a stable fact (name, preference, goal) → upsert to PostgreSQL facts table"
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🔴",
+    "title": "Build Any Power BI Chart with a Natural Language Prompt",
+    "prompt": "\"I want to create a [chart type, e.g. waterfall / line / scatter / donut] in Power BI.\n\nMy data includes:\n- Fact table: [table name + relevant columns]\n- Date table: [table name]\n- Key metric: [e.g. Revenue, Units Sold, Gross Margin]\n- Breakdown dimension: [e.g. Region, Product, Month]\n\nI want to show: [describe the story, e.g. 'how revenue has changed vs. prior year by month']\n\nPlease give me:\n1. The exact prompt to paste into Power BI Copilot to build this chart\n2. Which visual type to select and why\n3. Any simple DAX measure I need beforehand\n4. Two formatting tips to make it presentation-ready\"",
+    "tags": [
+      "power-bi",
+      "copilot",
+      "ai-charts",
+      "natural-language",
+      "beginner"
+    ],
+    "best_for": "Power BI users who want to skip manual chart setup and use Copilot to generate visuals instantly",
+    "source": "How to Power BI — \"AI Can Now Build ANY Power BI Chart You Want\" (2026)",
+    "outcome": "A ready-to-paste Copilot prompt, the correct visual type with justification, a starter DAX measure, and two formatting tips.",
+    "inputs": [
+      {
+        "label": "chart type, e.g. waterfall / line / scatter / donut"
+      },
+      {
+        "label": "fact table name and relevant columns"
+      },
+      {
+        "label": "date table name"
+      },
+      {
+        "label": "key metric, e.g. Revenue, Units Sold"
+      },
+      {
+        "label": "breakdown dimension, e.g. Region, Product, Month"
+      },
+      {
+        "label": "describe the story you want to show"
+      }
+    ],
+    "tools": [
+      "Power BI Copilot",
+      "Power BI Desktop"
+    ],
+    "est_time": "15 min",
+    "output_kind": "visual",
+    "sample_output": "**Copilot prompt to paste:**\n\"Create a waterfall chart showing monthly Revenue variance versus prior year. Use the [Sales] table with [Revenue] and [Date].[Month]. Highlight positive months in teal and negative months in red.\"\n\n**Visual type:** Waterfall — best for showing how each month's delta builds up to the total annual variance.\n\n**DAX measure to create first:**\n```dax\nRevenue vs PY =\n[Total Revenue]\n  - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n```\n\n**Formatting tips:**\n- Enable data labels to show the exact delta on each bar\n- Pin the Y-axis to zero so gains and losses are visually comparable"
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Auto-Generate DAX Measures from Plain English",
+    "prompt": "\"I need a DAX measure for Power BI. Here is what I want it to calculate in plain English:\n\n[Describe the calculation, e.g. 'Year-to-date revenue compared to the same period last year, expressed as a % change']\n\nData model context:\n- Fact table: [name + key columns]\n- Date table: [name + date column, is it marked as a date table? yes/no]\n- Related dimensions: [e.g. Customer, Product, Region tables]\n- Existing base measures I can reference: [list, e.g. [Total Revenue], [Units Sold]]\n\nPlease:\n1. Write the DAX measure using VAR/RETURN style\n2. Explain each function in one plain-English sentence\n3. Flag any edge cases (blanks, missing periods, filter context issues)\n4. Provide a simplified version for a less experienced colleague\"",
+    "tags": [
+      "dax",
+      "power-bi",
+      "measures",
+      "ai-assisted",
+      "data-modelling"
+    ],
+    "best_for": "Power BI developers who want faster measure writing or need to explain DAX to business stakeholders",
+    "source": "How to Power BI — \"AI Can Now Build ANY Power BI Chart You Want\" (2026)",
+    "outcome": "A production-ready DAX measure in VAR/RETURN style, plain-English explanations of every function, edge-case warnings, and a simplified version.",
+    "inputs": [
+      {
+        "label": "describe the calculation in plain English"
+      },
+      {
+        "label": "fact table name and key columns"
+      },
+      {
+        "label": "date table name and whether it is marked as a date table"
+      },
+      {
+        "label": "related dimension tables"
+      },
+      {
+        "label": "existing base measures to reference"
+      }
+    ],
+    "tools": [
+      "Claude Sonnet",
+      "Power BI Desktop",
+      "Power BI Copilot"
+    ],
+    "est_time": "20 min",
+    "output_kind": "code",
+    "sample_output": "**Production measure:**\n```dax\nRevenue YoY % =\nVAR _Curr = [Total Revenue]\nVAR _Prev = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\nRETURN\n    DIVIDE(_Curr - _Prev, _Prev, BLANK())\n```\n\n**Function explanations:**\n- `CALCULATE` — re-evaluates a measure under a modified filter context\n- `SAMEPERIODLASTYEAR` — shifts the date filter back exactly 12 months\n- `DIVIDE` — safe division that returns BLANK() instead of an error when the denominator is zero\n\n**Edge cases:**\n- Returns BLANK() for periods with no prior-year data — visuals handle this cleanly\n- Requires a marked date table; if not marked, replace with `DATEADD('Date'[Date], -1, YEAR)`\n- Slicer selections (e.g. Region) are automatically respected via filter context\n\n**Simplified version:**\n```dax\nRevenue YoY % Simple =\nDIVIDE(\n    [Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),\n    CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n)\n```"
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Design a Full Power BI Report Page with AI",
+    "prompt": "\"I need to design a Power BI report page for [audience, e.g. Sales Director / CFO / Operations team].\n\nCore business question this page must answer:\n[e.g. 'Are we on track to hit our Q3 revenue target, and which regions are behind?']\n\nAvailable tables: [list: e.g. Sales, Date, Customer, Product, Region, Targets]\nKey KPIs to show (3–5): [list with desired format, e.g. 'Revenue — currency, 0 decimals']\nDesired interactions: [e.g. slicer by Region, drill-through to product detail]\n\nPlease produce:\n1. A page layout blueprint (label each panel: visual type, size, position)\n2. The DAX for each KPI card\n3. The Copilot prompt to auto-generate this page in Power BI Service\n4. One design tip for this specific audience\"",
+    "tags": [
+      "power-bi",
+      "report-design",
+      "copilot",
+      "kpi",
+      "dashboard",
+      "layout"
+    ],
+    "best_for": "BI analysts who need to build executive-facing dashboards quickly with a structured, AI-assisted design process",
+    "source": "How to Power BI — \"AI Can Now Build ANY Power BI Chart You Want\" (2026)",
+    "outcome": "A labelled page layout blueprint, DAX for every KPI card, a ready-to-use Copilot prompt, and one tailored design tip.",
+    "inputs": [
+      {
+        "label": "audience, e.g. Sales Director / CFO / Operations team"
+      },
+      {
+        "label": "core business question the page must answer"
+      },
+      {
+        "label": "list available tables"
+      },
+      {
+        "label": "3–5 KPIs with desired format"
+      },
+      {
+        "label": "desired interactions/slicers"
+      }
+    ],
+    "tools": [
+      "Claude Sonnet",
+      "Power BI Copilot",
+      "Power BI Desktop"
+    ],
+    "est_time": "45 min",
+    "output_kind": "visual",
+    "sample_output": "**Page layout blueprint:**\n```\n┌──────────────────────────────────────────────────┐\n│ KPI Row: [Revenue] [vs Target %] [YoY %] [Open Pipeline] │\n├──────────────────────────────────────────────────┤\n│ Main (60% width): Line — Monthly Revenue vs Target by Region │\n│ Right (40% width): Bar — Top 10 Accounts by Revenue  │\n├──────────────────────────────────────────────────┤\n│ Bottom: Matrix — Region × Product (heat map colour scale)  │\n└──────────────────────────────────────────────────┘\nSlicer: Region (top-right, horizontal pill style)\n```\n\n**DAX — Revenue vs Target %:**\n```dax\nRevenue vs Target % =\nVAR _A = [Total Revenue]\nVAR _T = SUM('Targets'[Revenue Target])\nRETURN DIVIDE(_A - _T, _T)\n```\n\n**Copilot prompt:**\n\"Create a sales performance page with a KPI row (Total Revenue, Revenue vs Target %, YoY Growth, Open Pipeline), a line chart of Monthly Revenue vs Target by Region, a Top 10 Accounts bar chart, and a Region × Product matrix. Add a Region slicer.\"\n\n**Design tip for Sales Director:** Lead with the traffic-light KPI row — executives scan top-left first. Use conditional formatting (red/green) on the matrix so underperforming cells are instantly visible without reading numbers."
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🟢",
+    "title": "Prepare Your Power BI Semantic Model for AI & Copilot",
+    "prompt": "\"I want to optimise my Power BI semantic model so that Copilot and AI Q&A give accurate, reliable answers.\n\nModel overview:\n- Key tables: [list]\n- Most important measures: [list 5–10 with a brief description of each]\n- Main relationships: [describe, e.g. Sales[CustomerID] → Customer[ID], many-to-one]\n- Primary audience: [e.g. Finance team, regional sales managers]\n- Fiscal calendar: [standard Jan–Dec / custom — specify start month]\n\nPlease produce:\n1. Field-level descriptions for the 8 most Copilot-critical columns (plain English, ≤ 2 sentences each)\n2. The full AI Instructions text for the 'Prepare data for AI' panel in Power BI Service\n3. A synonym list for the top 5 measures (natural-language aliases your audience would use)\n4. A gap analysis: list the 5 most likely natural-language questions your audience will ask, and flag which ones your current model cannot answer and why\"",
+    "tags": [
+      "power-bi",
+      "semantic-model",
+      "copilot",
+      "ai-prep",
+      "data-modelling",
+      "field-descriptions"
+    ],
+    "best_for": "BI developers and data engineers who want Copilot to work reliably instead of returning vague or wrong answers",
+    "source": "How to Power BI — \"AI Can Now Build ANY Power BI Chart You Want\" (2026)",
+    "outcome": "Eight field descriptions, complete AI Instructions text, synonym list, and a gap analysis flagging which natural-language questions your model can and cannot yet answer.",
+    "inputs": [
+      {
+        "label": "list key tables"
+      },
+      {
+        "label": "list 5–10 important measures with brief descriptions"
+      },
+      {
+        "label": "describe main relationships"
+      },
+      {
+        "label": "primary audience"
+      },
+      {
+        "label": "fiscal calendar — standard or custom start month"
+      }
+    ],
+    "tools": [
+      "Claude Sonnet",
+      "Power BI Desktop",
+      "Power BI Service"
+    ],
+    "est_time": "1.5 hours",
+    "output_kind": "spec",
+    "sample_output": "**Field descriptions (sample):**\n- `Net Revenue`: Total sales after discounts and returns, in USD. Excludes intercompany and contra-revenue items.\n- `Gross Margin %`: Gross profit divided by Net Revenue. Use this — not Revenue — to compare profitability across segments.\n- `Close Date`: Date a deal was marked Won in Salesforce. Use for period reporting; distinct from Invoice Date.\n- `ARR`: Annual Recurring Revenue. Annualised value of active subscriptions; excludes one-time fees.\n\n**AI Instructions text:**\n> \"This model covers B2B Sales performance for the Americas region. 'Revenue' always means Net Revenue after returns. For 'targets', use the [Quota] table, not [Forecast]. Our fiscal year starts February 1 — when asked about 'this year' or 'YTD', use fiscal year. Default to current fiscal period unless the user specifies otherwise. 'Churn' refers to the [Churned ARR] measure.\"\n\n**Synonyms:**\n- Net Revenue → Sales, Bookings, Income, Top Line\n- Gross Margin % → Margin, Profitability, GM%\n- Churned ARR → Churn, Lost Revenue, Cancellations\n\n**Gap analysis:**\n- ✅ 'What is our revenue this quarter?' — answerable\n- ✅ 'Which region is furthest behind target?' — answerable\n- ❌ 'Why did churn spike in March?' — needs a narrative/commentary measure; model has no causal layer\n- ❌ 'What will Q4 look like?' — no forecast table connected; add [Forecast] table\n- ⚠️ 'Show me deals at risk' — partial: pipeline data exists but no risk-score measure"
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Analytics & Business Intelligence (BI)",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🔴",
+    "title": "Ask Your Power BI Dashboard Questions in Plain English",
+    "prompt": "\"I have a Power BI dashboard and I want to use Copilot's Q&A feature to explore data with natural language instead of building visuals manually.\n\nMy dashboard covers: [topic, e.g. sales performance / HR headcount / inventory levels]\nKey measures available: [list 3–5, e.g. Revenue, Headcount, Stock Levels]\nI typically need to answer these business questions: [list 3–5 real questions your team asks]\n\nFor each of my questions, write:\n1. The exact natural-language query to type into Power BI Copilot / Q&A\n2. What type of visual it will likely return\n3. A follow-up question to drill deeper\n4. One tip to refine the answer if the first result is off\"",
+    "tags": [
+      "power-bi",
+      "q-and-a",
+      "natural-language",
+      "copilot",
+      "self-service-bi",
+      "beginner"
+    ],
+    "best_for": "Business users who want to explore Power BI data without asking the BI team to build new reports",
+    "source": "How to Power BI — \"AI Can Now Build ANY Power BI Chart You Want\" (2026)",
+    "outcome": "An exact natural-language query for each of your business questions, the expected visual type, a drill-down follow-up, and a refinement tip per question.",
+    "inputs": [
+      {
+        "label": "dashboard topic, e.g. sales performance / inventory levels"
+      },
+      {
+        "label": "list 3–5 available key measures"
+      },
+      {
+        "label": "list 3–5 real business questions your team asks regularly"
+      }
+    ],
+    "tools": [
+      "Power BI Copilot",
+      "Power BI Q&A visual"
+    ],
+    "est_time": "20 min",
+    "output_kind": "analysis",
+    "sample_output": "**Q1: 'Are we hitting our sales target?'**\n- Query to type: *\"Show revenue vs target by region this quarter as a bar chart\"*\n- Expected visual: Clustered bar — Actual vs Target side by side per region\n- Follow-up: *\"Which sales rep in the bottom region has the largest gap?\"*\n- Refinement tip: If Copilot uses the wrong date range, add *\"for Q3 FY2026\"* explicitly\n\n**Q2: 'Which product is selling the most?'**\n- Query to type: *\"Top 10 products by units sold this year\"*\n- Expected visual: Ranked bar chart, descending\n- Follow-up: *\"Show the same top 10 by revenue margin instead of units\"*\n- Refinement tip: Say *\"by product name not SKU\"* if it returns codes instead of readable names\n\n**Q3: 'How is this month trending vs last month?'**\n- Query to type: *\"Daily revenue this month vs last month as a line chart\"*\n- Expected visual: Dual-line chart with month comparison\n- Follow-up: *\"Highlight the days where this month fell below last month\"*\n- Refinement tip: If it shows weekly not daily, add *\"daily granularity\"* to your prompt"
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "FP&A & Financial Analysis (AI-Powered)",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "AI-Built FP&A Dashboard in Power BI — Step by Step",
+    "prompt": "\"I want to build a Finance / FP&A dashboard in Power BI using AI to accelerate every step.\n\nDashboard purpose: [e.g. Monthly P&L review / Budget vs Actual / Cash flow monitoring]\nAudience: [e.g. CFO + Finance team]\nData sources: [e.g. ERP export in Excel, General Ledger CSV, Headcount table]\nKey financial metrics to show: [list 5–8, e.g. Revenue, COGS, Gross Margin, OPEX, EBITDA, Headcount]\nFiscal year: [Jan–Dec / Feb–Jan / other]\n\nFor each stage of the build, give me:\n1. DATA PREP — the AI prompt to clean and structure the source data in Power Query\n2. MODELLING — the DAX measures to create (with code)\n3. VISUAL DESIGN — the Copilot prompt to build each chart/KPI\n4. COMMENTARY — the AI prompt to auto-write the CFO narrative for this month\n5. SHARING — how to set up row-level security so each region only sees their own data\"",
+    "tags": [
+      "power-bi",
+      "fpa",
+      "finance",
+      "dashboard",
+      "dax",
+      "copilot",
+      "cfo",
+      "p-and-l"
+    ],
+    "best_for": "FP&A analysts building their first Power BI finance dashboard or replacing a static Excel/PowerPoint pack",
+    "source": "How to Power BI — \"AI Can Now Build ANY Power BI Chart You Want\" (2026)",
+    "outcome": "End-to-end build guide: Power Query AI prompts, DAX for all financial measures, Copilot design prompts per visual, a CFO commentary template, and row-level security setup instructions.",
+    "inputs": [
+      {
+        "label": "dashboard purpose, e.g. Monthly P&L / Budget vs Actual"
+      },
+      {
+        "label": "audience, e.g. CFO + Finance team"
+      },
+      {
+        "label": "data sources, e.g. ERP export, GL CSV"
+      },
+      {
+        "label": "list 5–8 key financial metrics"
+      },
+      {
+        "label": "fiscal year start month"
+      }
+    ],
+    "tools": [
+      "Power BI Desktop",
+      "Power BI Copilot",
+      "Claude Sonnet",
+      "Power Query",
+      "Excel"
+    ],
+    "est_time": "3–4 hours",
+    "output_kind": "visual",
+    "sample_output": "**1. DATA PREP — Power Query AI prompt:**\n\"Clean this General Ledger export: remove blank rows, split the Account Code column into Department and Account Number, standardise all date formats to YYYY-MM-DD, and flag any negative Revenue lines as 'Adjustment' in a new Type column.\"\n\n**2. KEY DAX MEASURES:**\n```dax\nGross Margin % =\nDIVIDE([Gross Profit], [Total Revenue], BLANK())\n\nBudget Variance % =\nDIVIDE([Total Revenue] - SUM('Budget'[Revenue]), SUM('Budget'[Revenue]))\n\nEBITDA =\n[Gross Profit] - [Total OPEX] + [D&A]\n```\n\n**3. COPILOT VISUAL PROMPT:**\n\"Build a P&L summary page with: a KPI row (Revenue, Gross Margin %, EBITDA, Headcount), a waterfall chart showing Revenue → Gross Profit → EBITDA bridge, and a small multiples line chart of Revenue by Department vs prior year. Add a Month slicer.\"\n\n**4. CFO COMMENTARY PROMPT:**\n\"Write a 3-paragraph CFO commentary for [Month] [Year]. Revenue was [X] vs budget [Y] ([Z]%). Gross margin was [A]% vs [B]% prior year. OPEX was [C] vs budget [D]. Tone: direct, no jargon, flag two risks and one positive. Format: bullet summary + 2-sentence paragraph per metric.\"\n\n**5. ROW-LEVEL SECURITY:**\nIn Power BI Desktop → Modelling → Manage Roles → create role 'Region Manager' with filter: `[Region] = USERPRINCIPALNAME()`. Publish and assign users in Power BI Service → Dataset → Security."
   }
 ]
