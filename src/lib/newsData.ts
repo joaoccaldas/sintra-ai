@@ -1198,6 +1198,51 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#10a37f",
     url: "https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026",
   },
+  // ── 23 May 2026 update ────────────────────────────────────────────────────
+
+  {
+    id: "anthropic-google-broadcom-compute",
+    date: "Apr 2026",
+    dateNum: 202604,
+    dateDay: 7,
+    title: "Anthropic Secures 3.5 Gigawatts of TPU Capacity in Expanded Google and Broadcom Deal",
+    summary:
+      "Anthropic signed an expanded compute agreement with Google Cloud and Broadcom securing 3.5 gigawatts of TPU-based capacity beginning in 2027, with Google committing a further 5 gigawatts over five years. The deal was struck as Anthropic's revenue crossed $10 billion annualised and existing infrastructure became the primary constraint on growth. It gives Anthropic one of the largest dedicated AI compute arrangements of any company and underpins the $30 billion run-rate disclosed in May 2026.",
+    tags: ["Anthropic", "Google Cloud", "Broadcom", "TPU", "Compute", "Infrastructure"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+  },
+  {
+    id: "openai-daybreak-cybersecurity",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 11,
+    title: "OpenAI Launches Daybreak — GPT-5.5 Cybersecurity Platform to Rival Anthropic Glasswing",
+    summary:
+      "OpenAI launched Daybreak on May 11, a platform that uses GPT-5.5 and Codex Security to automatically build threat models, detect and test vulnerabilities in isolated sandboxes, and propose patches inside existing development pipelines. Three model tiers ship: standard GPT-5.5, a Trusted Access variant for verified defensive work, and GPT-5.5-Cyber for red-teaming and penetration testing. Launch partners include Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto Networks, and Zscaler — a direct competitive response to Anthropic's Project Glasswing from April 2026.",
+    tags: ["OpenAI", "Daybreak", "Cybersecurity", "GPT-5.5", "Vulnerability Detection", "Codex"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://openai.com/daybreak/",
+  },
+  {
+    id: "anthropic-kpmg-digital-gateway",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 20,
+    title: "KPMG and Anthropic Form First Big Four AI Alliance — 276,000 Employees on Claude",
+    summary:
+      "KPMG and Anthropic announced a global strategic alliance on May 20, 2026, embedding Claude directly into KPMG's Digital Gateway client delivery platform — making KPMG the first Big Four firm to deploy a frontier AI model at the core of its business operations. All 276,000 KPMG employees gain access through the platform, with initial workflows targeting tax, legal, and private equity client engagements. The deal signals a broader shift of professional services firms to Claude as their primary AI, following KPMG's evaluation of competing models from OpenAI and Google.",
+    tags: ["Anthropic", "KPMG", "Enterprise AI", "Big Four", "Professional Services", "Alliance"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.anthropic.com/news/anthropic-kpmg",
+  },
+
   {
     id: "chinese-models-openrouter-60pct",
     date: "May 2026",
