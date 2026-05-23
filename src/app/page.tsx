@@ -7,6 +7,7 @@ import CategoryBrowser from "@/components/CategoryBrowser";
 import UniversalSearch from "@/components/UniversalSearch";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import DiscoveryStrips from "@/components/DiscoveryStrips";
 import { USE_CASES } from "@/lib/data";
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
             <UniversalSearch query={heroSearch.query} onClose={clearSearch} />
           )}
           <CategoryBrowser heroSearch={heroSearch} />
+          <DiscoveryStrips />
         </main>
         <Footer />
         <BackToTop />

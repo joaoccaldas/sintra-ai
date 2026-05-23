@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
 import { NEWS_ITEMS, NEWS_TAGS, type NewsItem } from "@/lib/newsData";
 import { BASE_PATH } from "@/lib/data";
 
@@ -80,6 +80,7 @@ export default function AINewsPage() {
   const [activeSig, setActiveSig]     = useState<string>("all");
   const [activeTag, setActiveTag]     = useState<string>("all");
   const [activeProvider, setProvider] = useState<string>("all");
+  const [search, setSearch]           = useState("");
 
   const providers = useMemo(() => {
     const ps = [...new Set(NEWS_ITEMS.map((n: NewsItem) => n.provider))].sort();
@@ -87,10 +88,18 @@ export default function AINewsPage() {
   }, []);
 
   const filtered = useMemo(() => {
+    const q = search.toLowerCase().trim();
     return NEWS_ITEMS
       .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
       .filter((n: NewsItem) => activeProvider === "all" || n.provider === activeProvider)
+      .filter((n: NewsItem) => {
+        if (!q) return true;
+        return n.title.toLowerCase().includes(q) ||
+          n.summary.toLowerCase().includes(q) ||
+          n.tags.some((t: string) => t.toLowerCase().includes(q)) ||
+          n.provider.toLowerCase().includes(q);
+      })
       .sort((a: NewsItem, b: NewsItem) => {
         if (b.dateNum !== a.dateNum) return b.dateNum - a.dateNum;
         return (b.dateDay ?? 1) - (a.dateDay ?? 1);
@@ -156,6 +165,22 @@ export default function AINewsPage() {
 
         {/* Filters */}
         <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] py-3 -mx-6 md:-mx-8 px-6 md:px-8">
+          {/* Search row */}
+          <div className="relative mb-2.5">
+            <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
+            <input
+              type="search"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              placeholder="Search events, models, companies…"
+              className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-1.5 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
+            />
+            {search && (
+              <button onClick={() => setSearch("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors" aria-label="Clear search">
+                <X size={12} />
+              </button>
+            )}
+          </div>
           <div className="flex items-center gap-3 flex-wrap">
             {/* Significance */}
             <div className="flex gap-1.5">
@@ -182,7 +207,7 @@ export default function AINewsPage() {
               {providers.map((p: string) => <option key={p} value={p}>{p}</option>)}
             </select>
 
-            {filtered.length !== NEWS_ITEMS.length && (
+            {(search || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all") && (
               <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} events</span>
             )}
           </div>

@@ -2,13 +2,14 @@
 
 import { useState, useMemo, useCallback, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { ChevronLeft, ChevronRight, X, ArrowLeft, Search, Copy, Check } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, ArrowLeft, Search, Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
 import dynamic from "next/dynamic";
 import { USE_CASES, UseCase, DISC_COUNTS, DIFF_COLOR, matchesUseCase } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
 import { useLanguage } from "@/context/LanguageContext";
+import { useSavedPrompts } from "@/context/SavedPromptsContext";
 
 const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
 
@@ -32,7 +33,12 @@ const CAT_ACCENT: Record<string, string> = {
   "game-advanced":  "#E9D9B6",
 };
 
-function SearchResultRow({ item, onOpen }: { item: UseCase; onOpen: (item: UseCase) => void }) {
+function SearchResultRow({ item, onOpen, isSaved, onToggleSave }: {
+  item: UseCase;
+  onOpen: (item: UseCase) => void;
+  isSaved: boolean;
+  onToggleSave: (id: number) => void;
+}) {
   const [copied, setCopied] = useState(false);
   const catColor = CAT_ACCENT[item.category] || "#9F8CFF";
   const quickCopy = (e: React.MouseEvent) => {
@@ -64,12 +70,21 @@ function SearchResultRow({ item, onOpen }: { item: UseCase; onOpen: (item: UseCa
         >
           {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy prompt</>}
         </button>
-        <button
-          onClick={() => onOpen(item)}
-          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-white/[0.08] font-mono text-[10px] text-fg-4 hover:text-fg-2 hover:border-white/20 transition-all whitespace-nowrap"
-        >
-          Full details
-        </button>
+        <div className="flex gap-1.5">
+          <button
+            onClick={e => { e.stopPropagation(); onToggleSave(item.id); }}
+            aria-label={isSaved ? "Remove from saved" : "Save prompt"}
+            className="inline-flex items-center justify-center w-7 h-7 rounded-lg border border-white/[0.08] text-fg-4 hover:text-violet-bright hover:border-violet/40 transition-all"
+          >
+            {isSaved ? <BookmarkCheck size={11} className="text-violet-bright" /> : <Bookmark size={11} />}
+          </button>
+          <button
+            onClick={() => onOpen(item)}
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-white/[0.08] font-mono text-[10px] text-fg-4 hover:text-fg-2 hover:border-white/20 transition-all whitespace-nowrap"
+          >
+            Details
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -81,6 +96,7 @@ interface Props {
 
 export default function CategoryBrowser({ heroSearch }: Props) {
   const { t } = useLanguage();
+  const { isSaved, toggle: toggleSaved } = useSavedPrompts();
   const prefersReducedMotion = useReducedMotion();
   const [selectedIdx, setSelectedIdx]   = useState(0);
   const [browsingIdx, setBrowsingIdx]   = useState<number | null>(null);
@@ -161,14 +177,11 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   const prev = () => setSelectedIdx(i => (i - 1 + CAROUSEL_ITEMS.length) % CAROUSEL_ITEMS.length);
   const next = () => setSelectedIdx(i => (i + 1) % CAROUSEL_ITEMS.length);
 
-  // Clicking the 3D shape selects it; clicking again (already selected) opens the panel
+  // Single click selects AND opens the browse panel immediately (consistent with chip rail)
   const handleSelect = useCallback((idx: number) => {
-    if (idx === selectedIdx) {
-      setBrowsingIdx(idx);
-    } else {
-      setSelectedIdx(idx);
-    }
-  }, [selectedIdx]);
+    setSelectedIdx(idx);
+    setBrowsingIdx(idx);
+  }, []);
 
   const closeBrowsing = () => setBrowsingIdx(null);
 
@@ -179,33 +192,11 @@ export default function CategoryBrowser({ heroSearch }: Props) {
 
   return (
     <section id="explore" className="relative bg-void overflow-hidden">
-      {/* ── Global search ────────────────────────────────────────────── */}
+      {/* ── Quick-access task chips (replaces duplicate search bar) ──── */}
       <div className="relative z-20 max-w-2xl mx-auto px-6 pt-10 pb-0">
-        <div className="relative">
-          <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
-          <input
-            type="search"
-            value={globalSearch}
-            onChange={e => setGlobalSearch(e.target.value)}
-            placeholder={`Search ${USE_CASES.length} use cases by task, tool, or keyword…`}
-            aria-label="Search all use cases"
-            className="w-full bg-white/[0.04] border border-hairline rounded-xl pl-9 pr-9 py-3 font-mono text-[13px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
-          />
-          {globalSearch && (
-            <button
-              onClick={() => setGlobalSearch("")}
-              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors"
-              aria-label="Clear search"
-            >
-              <X size={13} />
-            </button>
-          )}
-        </div>
-
-        {/* Popular task chips */}
         {!globalSearch && (
-          <div className="mt-3">
-            <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase block mb-2">Try:</span>
+          <div>
+            <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase block mb-2">Quick explore:</span>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
               {POPULAR_TASKS.map(task => (
                 <button
@@ -221,10 +212,14 @@ export default function CategoryBrowser({ heroSearch }: Props) {
         )}
 
         {globalSearch && (
-          <p className="font-mono text-[11px] text-fg-4 mt-2 ml-0.5">
-            {globalResults.length} result{globalResults.length !== 1 ? "s" : ""}
-            {globalResults.length > 0 && <span> — click Copy prompt to use immediately</span>}
-          </p>
+          <div className="flex items-center gap-3 mt-2 ml-0.5">
+            <p className="font-mono text-[11px] text-fg-4">
+              {globalResults.length} result{globalResults.length !== 1 ? "s" : ""} for &ldquo;{globalSearch}&rdquo;
+            </p>
+            <button onClick={() => setGlobalSearch("")} className="font-mono text-[11px] text-violet-bright hover:underline flex items-center gap-1">
+              <X size={10} /> Clear
+            </button>
+          </div>
         )}
       </div>
 
@@ -255,6 +250,8 @@ export default function CategoryBrowser({ heroSearch }: Props) {
                   <SearchResultRow
                     key={item.id}
                     item={item}
+                    isSaved={isSaved(item.id)}
+                    onToggleSave={toggleSaved}
                     onOpen={item => { setExpanded(item); setExpandedItems(globalResults); }}
                   />
                 ))}

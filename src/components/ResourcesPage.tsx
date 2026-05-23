@@ -100,12 +100,29 @@ function ResourceCard({ res }: { res: ResourceLink }) {
   );
 }
 
+const VIDEOS_TAB = "videos" as const;
+
 export default function ResourcesPage() {
-  const [activeCategory, setActiveCategory] = useState<ResourceCategory | "all">("all");
+  const [activeCategory, setActiveCategory] = useState<ResourceCategory | "all" | "videos">("all");
   const [search, setSearch] = useState("");
   const [freeOnly, setFreeOnly] = useState(false);
 
+  const isVideosTab = activeCategory === VIDEOS_TAB;
+
+  const filteredVideos = useMemo(() => {
+    if (!isVideosTab) return [];
+    const q = search.toLowerCase().trim();
+    if (!q) return YOUTUBE_VIDEOS;
+    return YOUTUBE_VIDEOS.filter(v =>
+      v.title.toLowerCase().includes(q) ||
+      v.summary.toLowerCase().includes(q) ||
+      v.channel.toLowerCase().includes(q) ||
+      v.tags.some(t => t.toLowerCase().includes(q))
+    );
+  }, [isVideosTab, search]);
+
   const filtered = useMemo(() => {
+    if (isVideosTab) return [];
     return RESOURCES.filter(r => {
       if (activeCategory !== "all" && r.category !== activeCategory) return false;
       if (freeOnly && !r.free) return false;
@@ -118,7 +135,7 @@ export default function ResourcesPage() {
       }
       return true;
     });
-  }, [activeCategory, search, freeOnly]);
+  }, [activeCategory, search, freeOnly, isVideosTab]);
 
   // Group filtered results by category when showing all
   const grouped = useMemo(() => {
@@ -174,65 +191,47 @@ export default function ResourcesPage() {
               {RESOURCES.length} resources curated
             </span>
             <span className="text-fg-4">·</span>
-            <span>{RESOURCE_CATEGORIES.length} categories</span>
+            <span>{RESOURCE_CATEGORIES.length + 1} categories</span>
             <span className="text-fg-4">·</span>
-            <span>{RESOURCES.filter(r => r.free).length} free</span>
+            <span>{YOUTUBE_VIDEOS.length} videos</span>
           </div>
         </motion.header>
 
-        {/* YouTube Videos section */}
-        <section className="pt-14 pb-10 border-b border-violet/[0.08]">
-          <div className="flex items-center gap-3 mb-8">
-            <span className="font-mono text-[10px] tracking-[0.18em] uppercase text-red-400">▶ YouTube</span>
-            <div className="flex-1 h-px bg-red-400/20" />
-            <span className="font-mono text-[10px] text-fg-4">{YOUTUBE_VIDEOS.length} videos</span>
-          </div>
-          <h2 className="font-serif font-light text-[clamp(22px,3vw,32px)] text-fg-1 mb-2">
-            Video <em className="italic" style={{
-              backgroundImage: "linear-gradient(160deg, #F4F2EA 0%, #9F8CFF 100%)",
-              WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent",
-            }}>Learning</em>
-          </h2>
-          <p className="font-sans text-[14px] text-fg-3 mb-8 max-w-xl">
-            Curated AI education videos — from foundational neural network theory to hands-on LLM coding tutorials.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {YOUTUBE_VIDEOS.map(v => <VideoCard key={v.id} video={v} />)}
-          </div>
-        </section>
-
-        {/* Filters bar */}
-        <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] py-3 -mx-6 md:-mx-8 px-6 md:px-8">
-          <div className="flex items-center gap-3 flex-wrap">
+        {/* Sticky filter + tab bar */}
+        <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] -mx-6 md:-mx-8 px-6 md:px-8">
+          {/* Search row */}
+          <div className="flex items-center gap-3 flex-wrap pt-3 pb-2">
             <div className="relative flex-1 min-w-[160px] max-w-xs">
               <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
               <input
                 type="search"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                placeholder="Search resources…"
+                placeholder={isVideosTab ? "Search videos…" : "Search resources…"}
                 className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-3 py-1.5 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
               />
             </div>
-            <button
-              onClick={() => setFreeOnly(f => !f)}
-              className="font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
-              style={{
-                background:  freeOnly ? "#10b98122" : "transparent",
-                borderColor: freeOnly ? "#10b98188" : "#ffffff18",
-                color:       freeOnly ? "#10b981" : "#6b6a8a",
-              }}
-            >
-              Free only
-            </button>
+            {!isVideosTab && (
+              <button
+                onClick={() => setFreeOnly(f => !f)}
+                className="font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
+                style={{
+                  background:  freeOnly ? "#10b98122" : "transparent",
+                  borderColor: freeOnly ? "#10b98188" : "#ffffff18",
+                  color:       freeOnly ? "#10b981" : "#6b6a8a",
+                }}
+              >
+                Free only
+              </button>
+            )}
             {(search || freeOnly || activeCategory !== "all") && (
-              <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} results</span>
+              <span className="font-mono text-[11px] text-fg-4 ml-auto">
+                {isVideosTab ? filteredVideos.length : filtered.length} results
+              </span>
             )}
           </div>
-        </div>
-
-        {/* Category tabs */}
-        <div className="flex gap-2 overflow-x-auto scrollbar-none py-6 border-b border-violet/[0.06]" style={{ scrollbarWidth: "none" }}>
+          {/* Category tabs */}
+          <div className="flex gap-2 overflow-x-auto scrollbar-none pb-3" style={{ scrollbarWidth: "none" }}>
           <button
             onClick={() => setActiveCategory("all")}
             className="flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full border transition-all font-mono text-[11px] tracking-[0.04em]"
@@ -243,6 +242,18 @@ export default function ResourcesPage() {
             }}
           >
             🌐 All
+          </button>
+          {/* Videos tab */}
+          <button
+            onClick={() => { setActiveCategory(VIDEOS_TAB); setFreeOnly(false); }}
+            className="flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full border transition-all font-mono text-[11px] tracking-[0.04em]"
+            style={{
+              background:  activeCategory === VIDEOS_TAB ? "#ef444422" : "transparent",
+              borderColor: activeCategory === VIDEOS_TAB ? "#ef444488" : "#ffffff12",
+              color:       activeCategory === VIDEOS_TAB ? "#f87171" : "#6b6a8a",
+            }}
+          >
+            ▶ Videos
           </button>
           {RESOURCE_CATEGORIES.map(cat => (
             <button
@@ -259,6 +270,7 @@ export default function ResourcesPage() {
               {cat.icon} {cat.label}
             </button>
           ))}
+          </div>
         </div>
 
         {/* Content */}
@@ -271,7 +283,18 @@ export default function ResourcesPage() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              {filtered.length === 0 ? (
+              {isVideosTab ? (
+                filteredVideos.length === 0 ? (
+                  <div className="text-center py-24">
+                    <p className="font-serif text-[22px] text-fg-3 mb-3">No videos match</p>
+                    <button onClick={() => setSearch("")} className="font-mono text-[12px] text-violet-bright hover:underline">Clear search</button>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {filteredVideos.map(v => <VideoCard key={v.id} video={v} />)}
+                  </div>
+                )
+              ) : filtered.length === 0 ? (
                 <div className="text-center py-24">
                   <p className="font-serif text-[22px] text-fg-3 mb-3">Nothing found</p>
                   <button onClick={() => { setSearch(""); setActiveCategory("all"); setFreeOnly(false); }}
