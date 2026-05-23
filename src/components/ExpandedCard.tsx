@@ -16,6 +16,15 @@ interface Props {
   items?: UseCase[];
 }
 
+const EC_MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function ecFormatDate(iso: string): string {
+  const [y, m] = iso.split("-").map(Number);
+  return `${EC_MONTHS[m - 1]} ${y}`;
+}
+function ecIsNew(iso: string): boolean {
+  return Date.now() - new Date(iso).getTime() < 45 * 24 * 60 * 60 * 1000;
+}
+
 const CAT_ACCENT: Record<string, string> = {
   "quick-wins":     "#F4D06F",
   "productivity":   "#8FE3D2",
@@ -200,6 +209,13 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                   {shown.difficulty}
                   <span className="text-fg-4">·</span>
                   <span style={{ color: CAT_ACCENT[shown.category] || "#9F8CFF" }}>{shown.category}</span>
+                  <span className="text-fg-4">·</span>
+                  <span className="text-fg-4 normal-case tracking-normal">{ecFormatDate(shown.dateAdded)}</span>
+                  {ecIsNew(shown.dateAdded) && (
+                    <span className="px-1.5 py-0.5 rounded-sm bg-violet/20 border border-violet/40 text-violet-bright text-[9px] tracking-[0.12em] uppercase font-mono normal-case">
+                      New
+                    </span>
+                  )}
                   {items && shownIdx >= 0 && (
                     <span className="ml-auto font-mono text-[10px] text-fg-4">
                       {shownIdx + 1} / {items.length}

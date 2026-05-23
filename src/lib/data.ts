@@ -42,6 +42,7 @@ export interface UseCase {
   tags: string[];
   prompt: string;
   source?: string;
+  dateAdded: string; // ISO "YYYY-MM-DD"
 
   // Enriched fields
   outcome: string;
@@ -125,29 +126,32 @@ const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
   "Game Development":        "game-advanced",
 };
 
-export const USE_CASES: UseCase[] = (rawData as any[]).map((item, idx) => {
-  const cat   = DOMAIN_MAP[item.domain] ?? "productivity";
-  const skill = (item.skill_level as string).toLowerCase();
-  const llmRec = LLM_MAP[cat]?.[skill] ?? { model: "Claude Sonnet 4.5", reason: "Best overall balance of capability and speed" };
-  return {
-    id: idx + 1,
-    title: item.title,
-    desc: item.best_for || item.outcome || "",
-    category: cat,
-    difficulty: skill as UseCase["difficulty"],
-    tags: (item.tags as string[]).slice(0, 4),
-    prompt: item.prompt,
-    source: item.source,
-    outcome: item.outcome || "",
-    inputs: item.inputs || [],
-    tools: item.tools || [],
-    est_time: item.est_time || "",
-    output_kind: (item.output_kind as OutputKind) || "analysis",
-    sample_output: item.sample_output || "",
-    best_llm:   item.best_llm   ?? llmRec.model,
-    llm_reason: item.llm_reason ?? llmRec.reason,
-  };
-});
+export const USE_CASES: UseCase[] = (rawData as any[])
+  .map((item, idx) => {
+    const cat   = DOMAIN_MAP[item.domain] ?? "productivity";
+    const skill = (item.skill_level as string).toLowerCase();
+    const llmRec = LLM_MAP[cat]?.[skill] ?? { model: "Claude Sonnet 4.5", reason: "Best overall balance of capability and speed" };
+    return {
+      id: idx + 1,
+      title: item.title,
+      desc: item.best_for || item.outcome || "",
+      category: cat,
+      difficulty: skill as UseCase["difficulty"],
+      tags: (item.tags as string[]).slice(0, 4),
+      prompt: item.prompt,
+      source: item.source,
+      dateAdded: item.dateAdded ?? "2025-01-01",
+      outcome: item.outcome || "",
+      inputs: item.inputs || [],
+      tools: item.tools || [],
+      est_time: item.est_time || "",
+      output_kind: (item.output_kind as OutputKind) || "analysis",
+      sample_output: item.sample_output || "",
+      best_llm:   item.best_llm   ?? llmRec.model,
+      llm_reason: item.llm_reason ?? llmRec.reason,
+    };
+  })
+  .sort((a, b) => b.dateAdded.localeCompare(a.dateAdded));
 
 export const CATEGORIES: { id: Category; label: string }[] = [
   { id: "all",            label: "All" },

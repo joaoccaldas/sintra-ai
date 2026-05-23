@@ -7,6 +7,19 @@ import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import CardVisual from "./CardVisual";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function formatDate(iso: string): string {
+  const [y, m] = iso.split("-").map(Number);
+  return `${MONTHS[m - 1]} ${y}`;
+}
+
+function isNew(iso: string): boolean {
+  const added = new Date(iso).getTime();
+  const now   = Date.now();
+  return now - added < 45 * 24 * 60 * 60 * 1000; // 45 days
+}
+
 const CAT_ACCENT: Record<string, string> = {
   "quick-wins":     "#F4D06F",
   "productivity":   "#8FE3D2",
@@ -117,8 +130,8 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
       {/* Output-kind abstract visual */}
       <CardVisual kind={item.output_kind} difficulty={item.difficulty} isFeatured={isFeatured} />
 
-      {/* Difficulty · category eyebrow */}
-      <span className="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-fg-3 font-medium">
+      {/* Difficulty · category · date eyebrow */}
+      <span className="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-fg-3 font-medium flex-wrap">
         <span
           className="w-2 h-2 rounded-full shrink-0"
           style={{ background: diffColor, boxShadow: `0 0 8px ${diffColor}` }}
@@ -126,6 +139,13 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
         {item.difficulty}
         <span className="text-fg-4">·</span>
         <span style={{ color: catColor, opacity: 0.85 }}>{item.category}</span>
+        <span className="text-fg-4">·</span>
+        <span className="text-fg-4 normal-case tracking-normal">{formatDate(item.dateAdded)}</span>
+        {isNew(item.dateAdded) && (
+          <span className="px-1.5 py-0.5 rounded-sm bg-violet/20 border border-violet/40 text-violet-bright text-[9px] tracking-[0.12em] uppercase font-mono normal-case">
+            New
+          </span>
+        )}
       </span>
 
       {/* Title */}

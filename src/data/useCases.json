@@ -30,7 +30,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "visual",
-    "sample_output": "**Top 3 trends**\n1. Revenue grew 14% YoY, accelerating in Q3 (+22% vs. +9% Q1)\n2. EMEA outpaced APAC for the first time in 18 months\n3. Promo months (Mar, Sep) drove 31% of annual revenue\n\n**Charts to build**\n- Line: monthly revenue vs. prior year (12 + 12 points)\n- Stacked bar: revenue by region per quarter\n- Scatter: promo spend vs. incremental revenue\n\n**Unusual pattern:** August dip of −7% breaks the seasonal pattern. Worth asking ops.\n\n**Investigate**\n- Is the August dip a stocking issue or genuine demand?\n- Does the EMEA acceleration hold without the FX tailwind?"
+    "sample_output": "**Top 3 trends**\n1. Revenue grew 14% YoY, accelerating in Q3 (+22% vs. +9% Q1)\n2. EMEA outpaced APAC for the first time in 18 months\n3. Promo months (Mar, Sep) drove 31% of annual revenue\n\n**Charts to build**\n- Line: monthly revenue vs. prior year (12 + 12 points)\n- Stacked bar: revenue by region per quarter\n- Scatter: promo spend vs. incremental revenue\n\n**Unusual pattern:** August dip of −7% breaks the seasonal pattern. Worth asking ops.\n\n**Investigate**\n- Is the August dip a stocking issue or genuine demand?\n- Does the EMEA acceleration hold without the FX tailwind?",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -73,7 +74,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "templates",
-    "sample_output": "**Sheet structure**\n- `Drivers` — assumptions table (one column per month, FY+1 rolling)\n- `P&L` — revenue waterfall, cost of sales, opex, operating profit\n- `Variance` — actuals vs. forecast, with auto-coloured deltas\n- `Scenarios` — base / upside / downside via INDEX/CHOOSE\n\n**Key formulas**\n```\nRevenue = Units × Price × (1 + Seasonality_Idx)\nGM%     = (Revenue − COGS) / Revenue\nF'cast  = IF(MONTH(TODAY()) ≥ B$3, Actual, Driver-based)\n```\n\n**Risks & sensitivities**\n1. Price elasticity unknown — model ±5%, ±10%\n2. Promo cannibalisation — flag if uplift < 40%\n3. FX exposure on EMEA revenue — hedge above $X"
+    "sample_output": "**Sheet structure**\n- `Drivers` — assumptions table (one column per month, FY+1 rolling)\n- `P&L` — revenue waterfall, cost of sales, opex, operating profit\n- `Variance` — actuals vs. forecast, with auto-coloured deltas\n- `Scenarios` — base / upside / downside via INDEX/CHOOSE\n\n**Key formulas**\n```\nRevenue = Units × Price × (1 + Seasonality_Idx)\nGM%     = (Revenue − COGS) / Revenue\nF'cast  = IF(MONTH(TODAY()) ≥ B$3, Actual, Driver-based)\n```\n\n**Risks & sensitivities**\n1. Price elasticity unknown — model ±5%, ±10%\n2. Promo cannibalisation — flag if uplift < 40%\n3. FX exposure on EMEA revenue — hedge above $X",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -118,7 +120,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "code",
-    "sample_output": "**Architecture**\n```\nERP → Ingest (Airflow) → Validate (Great Expectations)\n    → Transform (dbt) → Forecast (Prophet/SARIMA)\n    → Report (python-pptx) → Alert (Slack/Email)\n```\n\n**Code skeleton — validation step**\n```python\nfrom great_expectations.dataset import PandasDataset\n\ndef validate(df: pd.DataFrame) -> ValidationResult:\n    ds = PandasDataset(df)\n    ds.expect_column_values_to_not_be_null(\"account_id\")\n    ds.expect_column_values_to_be_between(\"amount\", -1e9, 1e9)\n    ds.expect_column_values_to_match_regex(\"period\", r\"^\\d{4}-\\d{2}$\")\n    return ds.validate()\n```\n\n**Testing:** 80%+ coverage on transforms; smoke-test full pipeline on synthetic 100-row sample daily."
+    "sample_output": "**Architecture**\n```\nERP → Ingest (Airflow) → Validate (Great Expectations)\n    → Transform (dbt) → Forecast (Prophet/SARIMA)\n    → Report (python-pptx) → Alert (Slack/Email)\n```\n\n**Code skeleton — validation step**\n```python\nfrom great_expectations.dataset import PandasDataset\n\ndef validate(df: pd.DataFrame) -> ValidationResult:\n    ds = PandasDataset(df)\n    ds.expect_column_values_to_not_be_null(\"account_id\")\n    ds.expect_column_values_to_be_between(\"amount\", -1e9, 1e9)\n    ds.expect_column_values_to_match_regex(\"period\", r\"^\\d{4}-\\d{2}$\")\n    return ds.validate()\n```\n\n**Testing:** 80%+ coverage on transforms; smoke-test full pipeline on synthetic 100-row sample daily.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -155,7 +158,8 @@
     ],
     "est_time": "Multi-year",
     "output_kind": "visual",
-    "sample_output": "**Phases**\n1. Months 0–3: Foundation — data warehouse (Snowflake), identity (Okta), governance.\n2. Months 4–9: Core planning — Anaplan/Pigment migration, workflow approvals, multi-currency.\n3. Months 10–14: Self-service — Power BI semantic layer, exec dashboards.\n4. Months 15–18: AI overlay — forecast assistance, anomaly detection.\n\n**Stack:** Snowflake · dbt · Anaplan · Power BI · Okta · GitHub Actions\n\n**Org:** 1 Director, 3 Senior FP&A, 2 Data Eng, 1 Solutions Architect, 1 PM\n\n**TCO (3-yr):** $4.8–6.2 M (60% software, 30% people, 10% integrators)"
+    "sample_output": "**Phases**\n1. Months 0–3: Foundation — data warehouse (Snowflake), identity (Okta), governance.\n2. Months 4–9: Core planning — Anaplan/Pigment migration, workflow approvals, multi-currency.\n3. Months 10–14: Self-service — Power BI semantic layer, exec dashboards.\n4. Months 15–18: AI overlay — forecast assistance, anomaly detection.\n\n**Stack:** Snowflake · dbt · Anaplan · Power BI · Okta · GitHub Actions\n\n**Org:** 1 Director, 3 Senior FP&A, 2 Data Eng, 1 Solutions Architect, 1 PM\n\n**TCO (3-yr):** $4.8–6.2 M (60% software, 30% people, 10% integrators)",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Research & Analysis",
@@ -187,7 +191,8 @@
     ],
     "est_time": "30 min",
     "output_kind": "templates",
-    "sample_output": "**Themes** (n=87 verbatims)\n- Onboarding friction (34%)\n- Slow support response (22%)\n- Missing integrations (18%)\n- Pricing clarity (15%)\n- Performance lag (11%)\n\n**Top complaints**\n1. \"Couldn't find where to start\" — 28 mentions\n2. \"Waited 3+ days for a reply\" — 19 mentions\n3. \"Doesn't connect to Slack\" — 14 mentions\n\n**Quick wins**\n- Add a guided first-run checklist (kills #1)\n- Auto-acknowledge tickets within 5 min (softens #2)\n- Build the Slack integration (clears #3)"
+    "sample_output": "**Themes** (n=87 verbatims)\n- Onboarding friction (34%)\n- Slow support response (22%)\n- Missing integrations (18%)\n- Pricing clarity (15%)\n- Performance lag (11%)\n\n**Top complaints**\n1. \"Couldn't find where to start\" — 28 mentions\n2. \"Waited 3+ days for a reply\" — 19 mentions\n3. \"Doesn't connect to Slack\" — 14 mentions\n\n**Quick wins**\n- Add a guided first-run checklist (kills #1)\n- Auto-acknowledge tickets within 5 min (softens #2)\n- Build the Slack integration (clears #3)",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Research & Analysis",
@@ -228,7 +233,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "analysis",
-    "sample_output": "**SWOT (you vs. top 3)**\n| | Strengths | Weaknesses |\n|---|---|---|\n| You | Product depth, NPS 62 | Slow GTM, no SMB pricing |\n| Comp A | Brand, channel | Bloated UX |\n| Comp B | Price, speed | Thin enterprise feature set |\n\n**Pricing band:** $49–$199/mo. You sit at $129 — premium-mid.\n\n**Scenarios**\n1. Hold the line, fortify enterprise — defensible, slow growth.\n2. Launch SMB tier @ $39 — opens TAM 3×, risks cannibalisation.\n3. Acquire Comp B — instant channel, $80–120M, ~6 months to close."
+    "sample_output": "**SWOT (you vs. top 3)**\n| | Strengths | Weaknesses |\n|---|---|---|\n| You | Product depth, NPS 62 | Slow GTM, no SMB pricing |\n| Comp A | Brand, channel | Bloated UX |\n| Comp B | Price, speed | Thin enterprise feature set |\n\n**Pricing band:** $49–$199/mo. You sit at $129 — premium-mid.\n\n**Scenarios**\n1. Hold the line, fortify enterprise — defensible, slow growth.\n2. Launch SMB tier @ $39 — opens TAM 3×, risks cannibalisation.\n3. Acquire Comp B — instant channel, $80–120M, ~6 months to close.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Research & Analysis",
@@ -274,7 +280,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "visual",
-    "sample_output": "**Pipeline**\n```\nSources (Bright Data / RSS / APIs)\n  → Queue (SQS) → Workers (Python, 5 replicas)\n  → DB (Postgres) → API (FastAPI) → UI (Next.js + Tremor)\n```\n\n**Alerts**\n- Price change ≥5% within 24h → Slack #commercial\n- New review with rating ≤2 → Slack #cx\n- Competitor pricing page hash change → Email + Slack\n\n**Cost:** ~$420/mo (scraping $180, infra $140, monitoring $100). Maintenance: 4 hrs/week."
+    "sample_output": "**Pipeline**\n```\nSources (Bright Data / RSS / APIs)\n  → Queue (SQS) → Workers (Python, 5 replicas)\n  → DB (Postgres) → API (FastAPI) → UI (Next.js + Tremor)\n```\n\n**Alerts**\n- Price change ≥5% within 24h → Slack #commercial\n- New review with rating ≤2 → Slack #cx\n- Competitor pricing page hash change → Email + Slack\n\n**Cost:** ~$420/mo (scraping $180, infra $140, monitoring $100). Maintenance: 4 hrs/week.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -309,7 +316,8 @@
     ],
     "est_time": "30 min",
     "output_kind": "templates",
-    "sample_output": "**Three ideas**\n1. **Batch the daily count** into one end-of-shift sweep (saves ~40 min/day).\n2. **QR-tag the top-50 SKUs** so receiving scans instead of types.\n3. **Auto-reorder** at min level via shared sheet (no more stockouts).\n\n**Before → After**\n- Manual count, 5×/day → 1 scan, end-of-shift\n- Receiving avg time: 12 min → 4 min\n- Stockouts/month: 7 → ≤1\n\n**Email draft**\n> Hi [manager], I've mapped three changes to receiving that could save ~15 hrs/week without new tooling. Quick run-through Friday at 2pm?"
+    "sample_output": "**Three ideas**\n1. **Batch the daily count** into one end-of-shift sweep (saves ~40 min/day).\n2. **QR-tag the top-50 SKUs** so receiving scans instead of types.\n3. **Auto-reorder** at min level via shared sheet (no more stockouts).\n\n**Before → After**\n- Manual count, 5×/day → 1 scan, end-of-shift\n- Receiving avg time: 12 min → 4 min\n- Stockouts/month: 7 → ≤1\n\n**Email draft**\n> Hi [manager], I've mapped three changes to receiving that could save ~15 hrs/week without new tooling. Quick run-through Friday at 2pm?",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -350,7 +358,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "plan",
-    "sample_output": "**Inefficiencies found**\n- 38% of SKUs sit in 2+ warehouses unnecessarily (carrying cost: $1.2M/yr)\n- Lead time variance 4–18 days on a single supplier\n- Safety stock set on rule-of-thumb, not service-level math\n\n**Scenarios**\n| | Cost | Annual saving | Service level |\n|---|---|---|---|\n| Consolidate to 3 DCs | $2.1M one-time | $1.8M | 97% |\n| Add 4th regional DC | $3.4M one-time | $2.6M | 99% |\n| Optimise w/o new DCs | $200k | $0.9M | 96% |\n\n**Risk:** scenario 1 risks weather concentration on the Memphis hub."
+    "sample_output": "**Inefficiencies found**\n- 38% of SKUs sit in 2+ warehouses unnecessarily (carrying cost: $1.2M/yr)\n- Lead time variance 4–18 days on a single supplier\n- Safety stock set on rule-of-thumb, not service-level math\n\n**Scenarios**\n| | Cost | Annual saving | Service level |\n|---|---|---|---|\n| Consolidate to 3 DCs | $2.1M one-time | $1.8M | 97% |\n| Add 4th regional DC | $3.4M one-time | $2.6M | 99% |\n| Optimise w/o new DCs | $200k | $0.9M | 96% |\n\n**Risk:** scenario 1 risks weather concentration on the Memphis hub.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -382,7 +391,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "visual",
-    "sample_output": "**Templates**\n1. **Acknowledgement** — \"Got it, [name]. Looking into it now — back to you within 2 hours.\"\n2. **Asking for more info** — \"Quick thing to unblock me: could you send [X, Y]?\"\n3. **Known issue** — \"Yep, known one — fix is going out [date]. Workaround: [...]\"\n4. **Escalation** — \"Pulling in [team]. Owner is [name]. Updates in this thread.\"\n5. **Resolution** — \"[Fix] is live. Anything else from this ticket?\"\n\n**Flowchart** (login issue): Reset password? → Y: send link / N: 2FA enrolled? → Y: code working? → escalate."
+    "sample_output": "**Templates**\n1. **Acknowledgement** — \"Got it, [name]. Looking into it now — back to you within 2 hours.\"\n2. **Asking for more info** — \"Quick thing to unblock me: could you send [X, Y]?\"\n3. **Known issue** — \"Yep, known one — fix is going out [date]. Workaround: [...]\"\n4. **Escalation** — \"Pulling in [team]. Owner is [name]. Updates in this thread.\"\n5. **Resolution** — \"[Fix] is live. Anything else from this ticket?\"\n\n**Flowchart** (login issue): Reset password? → Y: send link / N: 2FA enrolled? → Y: code working? → escalate.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -420,7 +430,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "templates",
-    "sample_output": "**Decision tree (login)**\n```\nIssue → Account locked?\n├─ Y → Unlock + send reset → Resolved\n└─ N → 2FA enrolled?\n    ├─ Y → Codes working? → escalate L2 if no\n    └─ N → Enrol + verify → Resolved\n```\n\n**KPIs:** FCR (target 78%), AHT (≤6 min), CSAT (≥4.4/5), repeat-contact rate (≤8%).\n\n**QA checklist (per ticket)**\n- [ ] Asked the diagnostic Q first\n- [ ] Verified identity\n- [ ] Logged root cause code\n- [ ] Sent confirmation summary"
+    "sample_output": "**Decision tree (login)**\n```\nIssue → Account locked?\n├─ Y → Unlock + send reset → Resolved\n└─ N → 2FA enrolled?\n    ├─ Y → Codes working? → escalate L2 if no\n    └─ N → Enrol + verify → Resolved\n```\n\n**KPIs:** FCR (target 78%), AHT (≤6 min), CSAT (≥4.4/5), repeat-contact rate (≤8%).\n\n**QA checklist (per ticket)**\n- [ ] Asked the diagnostic Q first\n- [ ] Verified identity\n- [ ] Logged root cause code\n- [ ] Sent confirmation summary",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -457,7 +468,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "spec",
-    "sample_output": "**Architecture**\n```\nTicket → Classifier (BERT, 12 classes)\n       → KB retriever (embeddings + reranker)\n       → Drafter (LLM, brand-tuned)\n       → Human-in-loop (L1 review for low-confidence)\n       → Send / Escalate\n```\n\n**Training data:** ~5k labelled tickets minimum; 80/10/10 split; include 200 hard negatives.\n\n**Rollout:** shadow-mode (4 wk) → suggest-only (8 wk) → auto-send tier-1 (gated by confidence ≥0.92)."
+    "sample_output": "**Architecture**\n```\nTicket → Classifier (BERT, 12 classes)\n       → KB retriever (embeddings + reranker)\n       → Drafter (LLM, brand-tuned)\n       → Human-in-loop (L1 review for low-confidence)\n       → Send / Escalate\n```\n\n**Training data:** ~5k labelled tickets minimum; 80/10/10 split; include 200 hard negatives.\n\n**Rollout:** shadow-mode (4 wk) → suggest-only (8 wk) → auto-send tier-1 (gated by confidence ≥0.92).",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -492,7 +504,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "templates",
-    "sample_output": "**Top 5 variances (Oct vs. budget)**\n| Account | Var | Driver |\n|---|---|---|\n| Subscription rev | +$340k | Renewal pull-forward, treat as timing |\n| Cloud infra | +$190k | Workload spike from new feature — investigate |\n| T&E | −$60k | Conf budget unspent — flag for reforecast |\n| Stock comp | +$110k | New hires — already accrued, noise |\n| Hosting | +$45k | Egress overage — review architecture |\n\n**Action vs noise:** rows 2 and 5 need follow-up; the rest are timing/accrual noise.\n\n**Manager email:** drafted, ~120 words, ready to copy."
+    "sample_output": "**Top 5 variances (Oct vs. budget)**\n| Account | Var | Driver |\n|---|---|---|\n| Subscription rev | +$340k | Renewal pull-forward, treat as timing |\n| Cloud infra | +$190k | Workload spike from new feature — investigate |\n| T&E | −$60k | Conf budget unspent — flag for reforecast |\n| Stock comp | +$110k | New hires — already accrued, noise |\n| Hosting | +$45k | Egress overage — review architecture |\n\n**Action vs noise:** rows 2 and 5 need follow-up; the rest are timing/accrual noise.\n\n**Manager email:** drafted, ~120 words, ready to copy.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -521,7 +534,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "table",
-    "sample_output": "**Executive summary**\n- Revenue $42.1M, +6.2% YoY, in line with budget\n- GM% 68.1%, +120bps vs. prior year — pricing actions holding\n- Opex tracking $0.4M favourable; hiring lag in R&D\n- Operating income $12.6M; FX headwind of −$0.3M absorbed\n\n**Revenue narrative**\n> Subscription revenue grew 9% YoY, offsetting a 4% decline in services. New-logo ARR up 14%, but expansion softened to 11% (vs. 16% prior quarter), consistent with the broader macro slowdown observed by peers.\n\n**Red flag:** R&D under-hire risks Q1 product timeline."
+    "sample_output": "**Executive summary**\n- Revenue $42.1M, +6.2% YoY, in line with budget\n- GM% 68.1%, +120bps vs. prior year — pricing actions holding\n- Opex tracking $0.4M favourable; hiring lag in R&D\n- Operating income $12.6M; FX headwind of −$0.3M absorbed\n\n**Revenue narrative**\n> Subscription revenue grew 9% YoY, offsetting a 4% decline in services. New-logo ARR up 14%, but expansion softened to 11% (vs. 16% prior quarter), consistent with the broader macro slowdown observed by peers.\n\n**Red flag:** R&D under-hire risks Q1 product timeline.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -556,7 +570,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "analysis",
-    "sample_output": "**Trend & seasonality**\n- 18-month CAGR: +12% (2.4% MoM)\n- Seasonality peak: Nov–Dec (+38% vs. trailing 3 mo)\n- Soft month: Feb (−18%)\n\n**Scenarios (FY+1)**\n| | Revenue | GM% | OI |\n|---|---|---|---|\n| Base | $186M | 67% | $42M |\n| Upside (Enterprise +20%) | $204M | 69% | $52M |\n| Downside (Churn 2pp) | $171M | 65% | $35M |\n\n**Narrative:** \"Base assumes 11% growth, in line with H2 run rate. Upside flips on enterprise pipeline conversion above 32% — feasible if security review accelerates.\"*"
+    "sample_output": "**Trend & seasonality**\n- 18-month CAGR: +12% (2.4% MoM)\n- Seasonality peak: Nov–Dec (+38% vs. trailing 3 mo)\n- Soft month: Feb (−18%)\n\n**Scenarios (FY+1)**\n| | Revenue | GM% | OI |\n|---|---|---|---|\n| Base | $186M | 67% | $42M |\n| Upside (Enterprise +20%) | $204M | 69% | $52M |\n| Downside (Churn 2pp) | $171M | 65% | $35M |\n\n**Narrative:** \"Base assumes 11% growth, in line with H2 run rate. Upside flips on enterprise pipeline conversion above 32% — feasible if security review accelerates.\"*",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -593,7 +608,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "visual",
-    "sample_output": "**Tabs**\n1. `Cover` — purpose, version, owner\n2. `Drivers` — colour-coded inputs (blue)\n3. `P&L`, `BS`, `CF` — links only (black), no hardcodes\n4. `Sensitivity` — ±10/20% on revenue growth × GM\n5. `Checks` — 6 integrity rules (BS balances, CF reconciles)\n\n**Driver math (revenue)**\n```\nRev_t = Cust_t × ARPU_t\nCust_t = Cust_{t-1} × (1 − Churn_t) + NewLogo_t\n```\n\n**Checks:** all return PASS or the cell turns red. Circularity resolved with iterative calc, max 100, threshold 0.001."
+    "sample_output": "**Tabs**\n1. `Cover` — purpose, version, owner\n2. `Drivers` — colour-coded inputs (blue)\n3. `P&L`, `BS`, `CF` — links only (black), no hardcodes\n4. `Sensitivity` — ±10/20% on revenue growth × GM\n5. `Checks` — 6 integrity rules (BS balances, CF reconciles)\n\n**Driver math (revenue)**\n```\nRev_t = Cust_t × ARPU_t\nCust_t = Cust_{t-1} × (1 − Churn_t) + NewLogo_t\n```\n\n**Checks:** all return PASS or the cell turns red. Circularity resolved with iterative calc, max 100, threshold 0.001.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -635,7 +651,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "visual",
-    "sample_output": "**Story arc**\n1. Where we are (one slide, one number)\n2. What changed since last board (3 deltas)\n3. What's working / what isn't\n4. The decision we're asking for\n5. What happens if you say yes\n\n**Slides** (15 min total)\n1. Title + headline number (45s)\n2. Q3 scorecard vs. plan (90s)\n3. The two wins (2 min)\n4. The two concerns (2 min)\n5. Pricing decision — recommendation (3 min)\n6. Asks + timeline (1 min)\n\n**Anticipated Q1:** \"What's the downside case?\" — answer prepped, 2 sentences + 1 backup slide."
+    "sample_output": "**Story arc**\n1. Where we are (one slide, one number)\n2. What changed since last board (3 deltas)\n3. What's working / what isn't\n4. The decision we're asking for\n5. What happens if you say yes\n\n**Slides** (15 min total)\n1. Title + headline number (45s)\n2. Q3 scorecard vs. plan (90s)\n3. The two wins (2 min)\n4. The two concerns (2 min)\n5. Pricing decision — recommendation (3 min)\n6. Asks + timeline (1 min)\n\n**Anticipated Q1:** \"What's the downside case?\" — answer prepped, 2 sentences + 1 backup slide.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -679,7 +696,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "plan",
-    "sample_output": "**As-is (12 hrs/wk)**\n1. Pull exports from SAP, Salesforce, ADP (3 hrs)\n2. Stitch in Excel (5 hrs)\n3. Manual variance commentary (3 hrs)\n4. Format deck (1 hr)\n\n**To-be (~1 hr/wk)**\n1. Python pulls from APIs nightly\n2. dbt transforms + tests\n3. LLM drafts commentary from variance table\n4. python-pptx generates deck\n\n**Tool stack:** Python · dbt · Anthropic API · python-pptx · Airflow\n\n**Change mgmt:** 4-week parallel run, weekly QA, sign-off from controller before cutover."
+    "sample_output": "**As-is (12 hrs/wk)**\n1. Pull exports from SAP, Salesforce, ADP (3 hrs)\n2. Stitch in Excel (5 hrs)\n3. Manual variance commentary (3 hrs)\n4. Format deck (1 hr)\n\n**To-be (~1 hr/wk)**\n1. Python pulls from APIs nightly\n2. dbt transforms + tests\n3. LLM drafts commentary from variance table\n4. python-pptx generates deck\n\n**Tool stack:** Python · dbt · Anthropic API · python-pptx · Airflow\n\n**Change mgmt:** 4-week parallel run, weekly QA, sign-off from controller before cutover.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -717,7 +735,8 @@
     ],
     "est_time": "Multi-month",
     "output_kind": "spec",
-    "sample_output": "**Architecture**\n```\nERP/BI → Data lake (Snowflake)\n       → Feature store (Feast)\n       → LLM layer (Claude / GPT-4) ← embeddings of GL + commentary corpus\n       → NL query interface (LangChain agent)\n       → Outputs: commentary, anomaly alerts, forecast deltas\n```\n\n**Governance:** every AI-generated number gets a citation back to the source row; commentary stored with prompt + version hash for audit.\n\n**ROI:** ~$240k/yr saved (1.5 FTE equivalent) against $80k build + $35k/yr run cost. Payback < 6 months."
+    "sample_output": "**Architecture**\n```\nERP/BI → Data lake (Snowflake)\n       → Feature store (Feast)\n       → LLM layer (Claude / GPT-4) ← embeddings of GL + commentary corpus\n       → NL query interface (LangChain agent)\n       → Outputs: commentary, anomaly alerts, forecast deltas\n```\n\n**Governance:** every AI-generated number gets a citation back to the source row; commentary stored with prompt + version hash for audit.\n\n**ROI:** ~$240k/yr saved (1.5 FTE equivalent) against $80k build + $35k/yr run cost. Payback < 6 months.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -761,7 +780,8 @@
     ],
     "est_time": "Multi-year",
     "output_kind": "visual",
-    "sample_output": "**Phases**\n- Yr 1 — Foundations: cloud DW, identity, governance, dashboarding standard\n- Yr 2 — Planning: replace spreadsheet plan with Anaplan/Pigment\n- Yr 3 — AI overlay: automated commentary, anomaly detection, NL queries\n\n**Org shift**\n- FP&A FTEs: 24 → 18 (reskill 6 into analytics engineers)\n- New roles: 2 ML engineers, 1 finance data steward\n\n**Investment case (3-yr)**\n- Spend: $9.6M\n- Savings: $14.2M (productivity, cycle-time reduction)\n- Net: +$4.6M, payback yr 2.5\n\n**Risks:** vendor lock-in (mitigate with semantic layer), change fatigue (sequence releases)."
+    "sample_output": "**Phases**\n- Yr 1 — Foundations: cloud DW, identity, governance, dashboarding standard\n- Yr 2 — Planning: replace spreadsheet plan with Anaplan/Pigment\n- Yr 3 — AI overlay: automated commentary, anomaly detection, NL queries\n\n**Org shift**\n- FP&A FTEs: 24 → 18 (reskill 6 into analytics engineers)\n- New roles: 2 ML engineers, 1 finance data steward\n\n**Investment case (3-yr)**\n- Spend: $9.6M\n- Savings: $14.2M (productivity, cycle-time reduction)\n- Net: +$4.6M, payback yr 2.5\n\n**Risks:** vendor lock-in (mitigate with semantic layer), change fatigue (sequence releases).",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -798,7 +818,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "visual",
-    "sample_output": "**Trends**\n- Northeast region revenue +18% YoY, leading other regions by 9pp\n- Q4 still concentrates 38% of annual sales (vs. 34% three years ago)\n\n**Anomalies**\n- Two SKUs (#A23, #A41) show unit volume +200% but revenue flat — pricing issue?\n- Negative gross margin on three loss-leaders in Mar\n\n**Summary stats:** mean order $187, median $124, p90 $412. Long tail dominated by enterprise.\n\n**Suggested visuals:** waterfall of YoY revenue by region; scatter of unit volume vs. price for the SKU set."
+    "sample_output": "**Trends**\n- Northeast region revenue +18% YoY, leading other regions by 9pp\n- Q4 still concentrates 38% of annual sales (vs. 34% three years ago)\n\n**Anomalies**\n- Two SKUs (#A23, #A41) show unit volume +200% but revenue flat — pricing issue?\n- Negative gross margin on three loss-leaders in Mar\n\n**Summary stats:** mean order $187, median $124, p90 $412. Long tail dominated by enterprise.\n\n**Suggested visuals:** waterfall of YoY revenue by region; scatter of unit volume vs. price for the SKU set.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -840,7 +861,8 @@
     ],
     "est_time": "5–10 min",
     "output_kind": "code",
-    "sample_output": "**Updates to @Balance Sheet - Q3**\n- Q3 actuals replaced estimates in columns C:F (source: S&P Capital IQ, pulled 2026-05-12 09:14 UTC)\n- Headers: \"Q3 E\" → \"Q3 A\"\n- New row: variance commentary\n- All checks PASS ✓\n\n**Variance commentary inserted**\n> Cash +$28M vs. estimate, driven by working-capital improvement (DSO ↓ 4 days). Long-term debt unchanged. Goodwill recalibrated for the X acquisition.\n\n**Source log:** appended to `_meta` tab; includes URL, retrieval time, fields touched."
+    "sample_output": "**Updates to @Balance Sheet - Q3**\n- Q3 actuals replaced estimates in columns C:F (source: S&P Capital IQ, pulled 2026-05-12 09:14 UTC)\n- Headers: \"Q3 E\" → \"Q3 A\"\n- New row: variance commentary\n- All checks PASS ✓\n\n**Variance commentary inserted**\n> Cash +$28M vs. estimate, driven by working-capital improvement (DSO ↓ 4 days). Long-term debt unchanged. Goodwill recalibrated for the X acquisition.\n\n**Source log:** appended to `_meta` tab; includes URL, retrieval time, fields touched.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -880,7 +902,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "table",
-    "sample_output": "**Critical (3)**\n- `WACC!C18` references a deleted range — #REF!\n- BS doesn't balance in years 4–5: $1.2M, $0.9M off\n- Tax rate hard-coded inside a formula in CF tab\n\n**Warnings (7)**\n- Revenue growth jumps 14% → 41% Y3 with no driver explanation\n- Two circularities resolved silently — flag for review\n- Three named ranges declared but unused\n\n**Info (12)** — naming, colour coding, font drift.\n\n**Recommendation:** fix criticals before sending; warnings before signing."
+    "sample_output": "**Critical (3)**\n- `WACC!C18` references a deleted range — #REF!\n- BS doesn't balance in years 4–5: $1.2M, $0.9M off\n- Tax rate hard-coded inside a formula in CF tab\n\n**Warnings (7)**\n- Revenue growth jumps 14% → 41% Y3 with no driver explanation\n- Two circularities resolved silently — flag for review\n- Three named ranges declared but unused\n\n**Info (12)** — naming, colour coding, font drift.\n\n**Recommendation:** fix criticals before sending; warnings before signing.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -916,7 +939,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "code",
-    "sample_output": "**Suggested renames**\n- `fact_sale_qty_v2` → `Sales Quantity`\n- `dim_cust_full` → `Customer`\n- `_calc_yoy_pct` → `Revenue YoY %`\n\n**Display folders added**\n- `Sales\\Volume` — Units, Returns, Net Units\n- `Sales\\Value` — Revenue, GM, GM%\n- `Time Intel` — YoY, MTD, QTD measures\n\n**Optimisation**\n- 14 string cols converted to integer keys → file size 89 MB → 41 MB\n- Refresh time: 14 min → 6 min\n\n**Doc output:** 28-page Markdown + Mermaid relationship diagram."
+    "sample_output": "**Suggested renames**\n- `fact_sale_qty_v2` → `Sales Quantity`\n- `dim_cust_full` → `Customer`\n- `_calc_yoy_pct` → `Revenue YoY %`\n\n**Display folders added**\n- `Sales\\Volume` — Units, Returns, Net Units\n- `Sales\\Value` — Revenue, GM, GM%\n- `Time Intel` — YoY, MTD, QTD measures\n\n**Optimisation**\n- 14 string cols converted to integer keys → file size 89 MB → 41 MB\n- Refresh time: 14 min → 6 min\n\n**Doc output:** 28-page Markdown + Mermaid relationship diagram.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -946,7 +970,8 @@
     ],
     "est_time": "30 min",
     "output_kind": "table",
-    "sample_output": "**New table:** `_Measures`\n\n**Per category:**\n```dax\n[Sales — Hardware] = CALCULATE([Sales Amount], 'Product'[Category] = \"Hardware\")\n[Sales — Software] = CALCULATE([Sales Amount], 'Product'[Category] = \"Software\")\n[Sales — Services] = CALCULATE([Sales Amount], 'Product'[Category] = \"Services\")\n```\n\n**Net:** `Net Sales = [Sales Amount] − [Returns Amount]`\n\n**Time intel (for each measure):** MTD, QTD, YTD, MoM, YoY, Rolling 3M, Rolling 12M.\n\nPlaceholder integer column `_placeholder` hidden from report view."
+    "sample_output": "**New table:** `_Measures`\n\n**Per category:**\n```dax\n[Sales — Hardware] = CALCULATE([Sales Amount], 'Product'[Category] = \"Hardware\")\n[Sales — Software] = CALCULATE([Sales Amount], 'Product'[Category] = \"Software\")\n[Sales — Services] = CALCULATE([Sales Amount], 'Product'[Category] = \"Services\")\n```\n\n**Net:** `Net Sales = [Sales Amount] − [Returns Amount]`\n\n**Time intel (for each measure):** MTD, QTD, YTD, MoM, YoY, Rolling 3M, Rolling 12M.\n\nPlaceholder integer column `_placeholder` hidden from report view.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -984,7 +1009,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "code",
-    "sample_output": "**Cell formulas (sample)**\n```\nA4:  =CUBEMEMBER(\"Model\",\"[Date].[Calendar].[Month].&[2026-04]\")\nB4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue]\", A4, $A$1)\nC4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue YoY %]\", A4, $A$1)\nA20: =CUBERANKEDMEMBER(\"Model\",\"[Product].[Top 10]\",1)\n```\n\n**Layout:** quarter-bands in rows, scenarios in columns, two narration columns between sections — impossible to do this cleanly with a PivotTable."
+    "sample_output": "**Cell formulas (sample)**\n```\nA4:  =CUBEMEMBER(\"Model\",\"[Date].[Calendar].[Month].&[2026-04]\")\nB4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue]\", A4, $A$1)\nC4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue YoY %]\", A4, $A$1)\nA20: =CUBERANKEDMEMBER(\"Model\",\"[Product].[Top 10]\",1)\n```\n\n**Layout:** quarter-bands in rows, scenarios in columns, two narration columns between sections — impossible to do this cleanly with a PivotTable.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -1019,7 +1045,8 @@
     ],
     "est_time": "2–4 days",
     "output_kind": "code",
-    "sample_output": "**Generated Markdown (excerpt)**\n```markdown\n## Model overview\nThis semantic model serves the Commercial Reporting team and powers\n12 reports, 3 Power BI Apps, and 1 paginated weekly board pack.\n\n## Relationship diagram\n\\`\\`\\`mermaid\nflowchart LR\n  Date --> Sales\n  Customer --> Sales\n  Product --> Sales\n  Sales --> InvoiceLine\n\\`\\`\\`\n\n## Measures\n### Revenue\n**DAX**\n\\`\\`\\`dax\nRevenue = SUMX('Sales', 'Sales'[Quantity] * 'Sales'[Unit Price])\n\\`\\`\\`\n**Business logic:** sales revenue net of returns, recognised on shipment.\n```"
+    "sample_output": "**Generated Markdown (excerpt)**\n```markdown\n## Model overview\nThis semantic model serves the Commercial Reporting team and powers\n12 reports, 3 Power BI Apps, and 1 paginated weekly board pack.\n\n## Relationship diagram\n\\`\\`\\`mermaid\nflowchart LR\n  Date --> Sales\n  Customer --> Sales\n  Product --> Sales\n  Sales --> InvoiceLine\n\\`\\`\\`\n\n## Measures\n### Revenue\n**DAX**\n\\`\\`\\`dax\nRevenue = SUMX('Sales', 'Sales'[Quantity] * 'Sales'[Unit Price])\n\\`\\`\\`\n**Business logic:** sales revenue net of returns, recognised on shipment.\n```",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -1059,7 +1086,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "spec",
-    "sample_output": "**Hierarchy**\n```\nMaster agent (daily 06:00 UTC)\n├─ Morning briefing sub-agent → industry news + competitor moves\n├─ Calendar sub-agent → today's meetings + prep\n└─ Unblocked-tasks sub-agent → cross-checks email + Slack\n\nFriday 16:00 UTC\n└─ Email recap sub-agent → urgent unresponded, ranked\n```\n\n**Stack:** Claude Code + cron + S3 (state) + Slack/email (delivery).\n\n**Monitoring:** every run writes structured log; dashboard alerts on >2 consecutive failures or runtime drift >2σ."
+    "sample_output": "**Hierarchy**\n```\nMaster agent (daily 06:00 UTC)\n├─ Morning briefing sub-agent → industry news + competitor moves\n├─ Calendar sub-agent → today's meetings + prep\n└─ Unblocked-tasks sub-agent → cross-checks email + Slack\n\nFriday 16:00 UTC\n└─ Email recap sub-agent → urgent unresponded, ranked\n```\n\n**Stack:** Claude Code + cron + S3 (state) + Slack/email (delivery).\n\n**Monitoring:** every run writes structured log; dashboard alerts on >2 consecutive failures or runtime drift >2σ.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1093,7 +1121,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "templates",
-    "sample_output": "**Prioritisation (Eisenhower + energy)**\n1. Urgent + important + high-energy first hour\n2. Important not urgent → schedule into deep-work blocks\n3. Urgent not important → batch into a 30-min slot\n4. Neither → delete, don't defer\n\n**Daily template**\n- 09:00–10:30 — Deep work block 1 (Slack off, phone away)\n- 10:30–11:00 — Email / Slack triage\n- 11:00–12:30 — Deep work block 2\n- Afternoon: meetings + lighter work\n\n**Habits:** (1) inbox-zero by 17:00, (2) one weekly review, (3) 50-min focus, 10-min reset.\n\n**Mac tools:** Things 3, Cron, Raycast."
+    "sample_output": "**Prioritisation (Eisenhower + energy)**\n1. Urgent + important + high-energy first hour\n2. Important not urgent → schedule into deep-work blocks\n3. Urgent not important → batch into a 30-min slot\n4. Neither → delete, don't defer\n\n**Daily template**\n- 09:00–10:30 — Deep work block 1 (Slack off, phone away)\n- 10:30–11:00 — Email / Slack triage\n- 11:00–12:30 — Deep work block 2\n- Afternoon: meetings + lighter work\n\n**Habits:** (1) inbox-zero by 17:00, (2) one weekly review, (3) 50-min focus, 10-min reset.\n\n**Mac tools:** Things 3, Cron, Raycast.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1130,7 +1159,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "visual",
-    "sample_output": "**PARA**\n- `01-Projects` — active, with a deadline (≤6)\n- `02-Areas` — ongoing responsibilities (Health, Finance, Team)\n- `03-Resources` — references you'll consult\n- `04-Archive` — done or paused\n\n**Weekly review (Fri 16:00, 45 min)**\n1. Clear inbox, calendar, and capture tray\n2. Move stale projects to Archive\n3. Pick three priorities for next week\n4. Two-line journal entry\n\n**Automation:** Calendar → Notion meeting note auto-created with attendees + agenda block."
+    "sample_output": "**PARA**\n- `01-Projects` — active, with a deadline (≤6)\n- `02-Areas` — ongoing responsibilities (Health, Finance, Team)\n- `03-Resources` — references you'll consult\n- `04-Archive` — done or paused\n\n**Weekly review (Fri 16:00, 45 min)**\n1. Clear inbox, calendar, and capture tray\n2. Move stale projects to Archive\n3. Pick three priorities for next week\n4. Two-line journal entry\n\n**Automation:** Calendar → Notion meeting note auto-created with attendees + agenda block.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1171,7 +1201,8 @@
     ],
     "est_time": "2–4 days",
     "output_kind": "code",
-    "sample_output": "**Data flow**\n```\nEmail/Slack/Calendar → Webhooks → AI scorer (priority 1–5)\n   → Todoist (auto-tagged)\n   → Calendar (deep-work blocks auto-inserted Mon–Fri 09–11)\n   → Time tracker (auto-start on focus)\n   → Weekly report (Notion page, Sunday 18:00)\n```\n\n**Scoring prompt (excerpt)**\n> Score 1–5 on urgency, importance, and energy-fit. Output JSON: {score, reason, suggested_block}.\n\n**Tech:** Python + n8n + Anthropic API + Todoist + Google Calendar."
+    "sample_output": "**Data flow**\n```\nEmail/Slack/Calendar → Webhooks → AI scorer (priority 1–5)\n   → Todoist (auto-tagged)\n   → Calendar (deep-work blocks auto-inserted Mon–Fri 09–11)\n   → Time tracker (auto-start on focus)\n   → Weekly report (Notion page, Sunday 18:00)\n```\n\n**Scoring prompt (excerpt)**\n> Score 1–5 on urgency, importance, and energy-fit. Output JSON: {score, reason, suggested_block}.\n\n**Tech:** Python + n8n + Anthropic API + Todoist + Google Calendar.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1202,7 +1233,8 @@
     ],
     "est_time": "15 min",
     "output_kind": "templates",
-    "sample_output": "**Agenda (30 min)**\n1. Context recap (3 min)\n2. Decisions needed (10 min) — list 2 here\n3. Open risks (8 min)\n4. Next steps + owners (5 min)\n5. Parking lot (4 min)\n\n**Questions to ask**\n1. What's the success criterion for this in 30 days?\n2. What's the blocker we're not naming?\n3. Who's the single accountable owner?\n4. What signal will tell us to course-correct?\n5. What's the one thing we're optimising for?\n\n**Follow-up template:** Decisions / Owners / Risks / Next sync — one line each."
+    "sample_output": "**Agenda (30 min)**\n1. Context recap (3 min)\n2. Decisions needed (10 min) — list 2 here\n3. Open risks (8 min)\n4. Next steps + owners (5 min)\n5. Parking lot (4 min)\n\n**Questions to ask**\n1. What's the success criterion for this in 30 days?\n2. What's the blocker we're not naming?\n3. Who's the single accountable owner?\n4. What signal will tell us to course-correct?\n5. What's the one thing we're optimising for?\n\n**Follow-up template:** Decisions / Owners / Risks / Next sync — one line each.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1230,7 +1262,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "templates",
-    "sample_output": "**Quality checklist (run before sending the invite)**\n- [ ] Is there a single decision or output? If not, don't schedule.\n- [ ] Is the right person in the room? Limit to ≤6.\n- [ ] Pre-read attached and read by attendees?\n\n**Agenda types**\n- Decision (30 min) — context, options, decide, owner\n- Working session (60 min) — goal, work, check-out\n- Status (15 min) — async-first; meet only if blocked\n\n**Decision log columns:** Date · Decision · Owner · Rationale · Reversal cost."
+    "sample_output": "**Quality checklist (run before sending the invite)**\n- [ ] Is there a single decision or output? If not, don't schedule.\n- [ ] Is the right person in the room? Limit to ≤6.\n- [ ] Pre-read attached and read by attendees?\n\n**Agenda types**\n- Decision (30 min) — context, options, decide, owner\n- Working session (60 min) — goal, work, check-out\n- Status (15 min) — async-first; meet only if blocked\n\n**Decision log columns:** Date · Decision · Owner · Rationale · Reversal cost.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1263,7 +1296,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "spec",
-    "sample_output": "**Pipeline**\n```\nZoom recording → Local Whisper (large-v3) → Diarised transcript\n   → LLM extractor → JSON {decisions, actions, owners, due}\n   → Topic tracker (vector DB) → Trend dashboard\n   → Project tool sync (Linear / Jira)\n```\n\n**Sample extraction**\n```json\n{\n  \"actions\": [\n    {\"text\": \"Send pricing memo to Alex\", \"owner\": \"Sam\", \"due\": \"2026-05-22\"},\n    {\"text\": \"Spike on auth migration\", \"owner\": \"Priya\", \"due\": \"2026-05-29\"}\n  ],\n  \"decisions\": [\"Ship dark mode behind a flag in 1.4.0\"]\n}\n```"
+    "sample_output": "**Pipeline**\n```\nZoom recording → Local Whisper (large-v3) → Diarised transcript\n   → LLM extractor → JSON {decisions, actions, owners, due}\n   → Topic tracker (vector DB) → Trend dashboard\n   → Project tool sync (Linear / Jira)\n```\n\n**Sample extraction**\n```json\n{\n  \"actions\": [\n    {\"text\": \"Send pricing memo to Alex\", \"owner\": \"Sam\", \"due\": \"2026-05-22\"},\n    {\"text\": \"Spike on auth migration\", \"owner\": \"Priya\", \"due\": \"2026-05-29\"}\n  ],\n  \"decisions\": [\"Ship dark mode behind a flag in 1.4.0\"]\n}\n```",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1294,7 +1328,8 @@
     ],
     "est_time": "Self-paced",
     "output_kind": "templates",
-    "sample_output": "**Week 1 — Foundations**\n- 4 × 1-hr lessons (e.g., Andrew Ng intro)\n- Read 3 short essays, write reactions\n- Mini project: rebuild a basic example end-to-end\n\n**Week 2 — Apply**\n- Pick a small dataset / problem from your own work\n- Ship a v0 by Friday\n\n**Week 3 — Stretch**\n- Find a community (Discord/forum) and post one question\n- Read 1 deeper paper or book chapter\n\n**Week 4 — Consolidate**\n- Write a 600-word \"what I learned\" note\n- Share it; ask for one critique\n\n**Milestones:** day 7 (first ship), day 14 (community), day 30 (public artefact)."
+    "sample_output": "**Week 1 — Foundations**\n- 4 × 1-hr lessons (e.g., Andrew Ng intro)\n- Read 3 short essays, write reactions\n- Mini project: rebuild a basic example end-to-end\n\n**Week 2 — Apply**\n- Pick a small dataset / problem from your own work\n- Ship a v0 by Friday\n\n**Week 3 — Stretch**\n- Find a community (Discord/forum) and post one question\n- Read 1 deeper paper or book chapter\n\n**Week 4 — Consolidate**\n- Write a 600-word \"what I learned\" note\n- Share it; ask for one critique\n\n**Milestones:** day 7 (first ship), day 14 (community), day 30 (public artefact).",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Personal Productivity",
@@ -1331,7 +1366,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "spec",
-    "sample_output": "**Competency map** (target: Senior PM, 12 months)\n| Skill | Now | Target | Gap |\n|---|---|---|---|\n| Product strategy | 3/5 | 4/5 | course + 1 case study |\n| Stakeholder mgmt | 4/5 | 4/5 | maintain |\n| Analytical depth | 2/5 | 4/5 | SQL + analytics cert |\n| Influence at exec level | 2/5 | 4/5 | mentor + practice |\n\n**Quarter 1 plan:** SQL course, 2 user-research interviews/wk, weekly 1:1 with skip-level.\n\n**Portfolio:** ship 3 case studies (problem, decision, outcome) by month 9."
+    "sample_output": "**Competency map** (target: Senior PM, 12 months)\n| Skill | Now | Target | Gap |\n|---|---|---|---|\n| Product strategy | 3/5 | 4/5 | course + 1 case study |\n| Stakeholder mgmt | 4/5 | 4/5 | maintain |\n| Analytical depth | 2/5 | 4/5 | SQL + analytics cert |\n| Influence at exec level | 2/5 | 4/5 | mentor + practice |\n\n**Quarter 1 plan:** SQL course, 2 user-research interviews/wk, weekly 1:1 with skip-level.\n\n**Portfolio:** ship 3 case studies (problem, decision, outcome) by month 9.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1368,7 +1404,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "visual",
-    "sample_output": "**Layout (dashboard, desktop-first)**\n- Top: page title + global filter row (1 row)\n- Left rail: nav (collapsible)\n- Main: 3-col KPI strip → 2-col chart block → table → footer\n\n**Colour scheme**\n- Bg: near-black (#0E1120)\n- Surface: dark blue-grey (#161A2C)\n- Primary action: violet (#9F8CFF)\n- Positive / negative / neutral: cyan / rose / parchment\n\n**Common mistakes:** too many colours, busy charts, no whitespace, low contrast on labels.\n\n**Tools (free):** Figma, Penpot, Excalidraw."
+    "sample_output": "**Layout (dashboard, desktop-first)**\n- Top: page title + global filter row (1 row)\n- Left rail: nav (collapsible)\n- Main: 3-col KPI strip → 2-col chart block → table → footer\n\n**Colour scheme**\n- Bg: near-black (#0E1120)\n- Surface: dark blue-grey (#161A2C)\n- Primary action: violet (#9F8CFF)\n- Positive / negative / neutral: cyan / rose / parchment\n\n**Common mistakes:** too many colours, busy charts, no whitespace, low contrast on labels.\n\n**Tools (free):** Figma, Penpot, Excalidraw.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1408,7 +1445,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "code",
-    "sample_output": "**Primary flow (new user)**\n1. Sign up → email verify → onboarding tour (skippable)\n2. Empty state → choose first task → wins (badge, confetti)\n3. Day-2 nudge → return + retain\n\n**Wireframes (described)**\n- Home: top hero, three-card empty-state, primary CTA\n- Detail: left meta column, main content, right rail with related items\n- Settings: 3-tab layout, sticky save bar\n\n**Responsive:** breakpoints 640 / 768 / 1024 / 1280; mobile uses bottom-nav, desktop uses side rail.\n\n**A11y:** WCAG 2.1 AA contrast, focus rings on all interactive elements, keyboard-first nav, prefers-reduced-motion respected."
+    "sample_output": "**Primary flow (new user)**\n1. Sign up → email verify → onboarding tour (skippable)\n2. Empty state → choose first task → wins (badge, confetti)\n3. Day-2 nudge → return + retain\n\n**Wireframes (described)**\n- Home: top hero, three-card empty-state, primary CTA\n- Detail: left meta column, main content, right rail with related items\n- Settings: 3-tab layout, sticky save bar\n\n**Responsive:** breakpoints 640 / 768 / 1024 / 1280; mobile uses bottom-nav, desktop uses side rail.\n\n**A11y:** WCAG 2.1 AA contrast, focus rings on all interactive elements, keyboard-first nav, prefers-reduced-motion respected.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1440,7 +1478,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "spec",
-    "sample_output": "**Token tree**\n```\ncolor/\n  bg/{abyss, steel, hairline}\n  fg/{1, 2, 3, on-violet}\n  accent/{violet, cyan-ice}\n  diff/{beginner, intermediate, advanced, expert}\ntype/{display, h1, h2, body, eyebrow, mono}\nspace/{1..24}    // 4px grid\nradius/{none, sm, md, lg, pill}\nshadow/{1, 2, 3, glow, glow-strong}\nmotion/{ease-out, dur-fast, dur-base, dur-slow}\n```\n\n**Governance:** all changes via PR, two reviewers (1 design + 1 eng), Storybook snapshots + visual diff CI."
+    "sample_output": "**Token tree**\n```\ncolor/\n  bg/{abyss, steel, hairline}\n  fg/{1, 2, 3, on-violet}\n  accent/{violet, cyan-ice}\n  diff/{beginner, intermediate, advanced, expert}\ntype/{display, h1, h2, body, eyebrow, mono}\nspace/{1..24}    // 4px grid\nradius/{none, sm, md, lg, pill}\nshadow/{1, 2, 3, glow, glow-strong}\nmotion/{ease-out, dur-fast, dur-base, dur-slow}\n```\n\n**Governance:** all changes via PR, two reviewers (1 design + 1 eng), Storybook snapshots + visual diff CI.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1473,7 +1512,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "visual",
-    "sample_output": "**Picks**\n- Trend over time → line (use bands for variability)\n- Composition → stacked bar (small categories) or treemap (≥8)\n- Ranking → horizontal bar, longest at top\n- Distribution → histogram or box plot\n- Correlation → scatter, with regression line if signal is strong\n\n**Clarity:** start y-axis at 0 for bar charts (not always for line); label the most important point on the line, not all of them; lose the gridlines you don't read.\n\n**Colour:** one neutral + one accent. No rainbow palettes for ordinal data."
+    "sample_output": "**Picks**\n- Trend over time → line (use bands for variability)\n- Composition → stacked bar (small categories) or treemap (≥8)\n- Ranking → horizontal bar, longest at top\n- Distribution → histogram or box plot\n- Correlation → scatter, with regression line if signal is strong\n\n**Clarity:** start y-axis at 0 for bar charts (not always for line); label the most important point on the line, not all of them; lose the gridlines you don't read.\n\n**Colour:** one neutral + one accent. No rainbow palettes for ordinal data.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1513,7 +1553,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "code",
-    "sample_output": "**Sections (top → bottom)**\n1. KPI strip (4 numbers, target vs. actual)\n2. Trend grid (4 line charts, shared x-axis)\n3. Breakdown (1 large + 2 small)\n4. Anomaly table (sortable, default by severity)\n\n**Interactions**\n- Global filters: date range, region, segment\n- Click a KPI tile → drill into its detail page\n- Right-click any value → \"explain this number\" (LLM)\n\n**Mobile:** collapse to single column, hide breakdown by default behind an accordion, keep KPI strip + one trend."
+    "sample_output": "**Sections (top → bottom)**\n1. KPI strip (4 numbers, target vs. actual)\n2. Trend grid (4 line charts, shared x-axis)\n3. Breakdown (1 large + 2 small)\n4. Anomaly table (sortable, default by severity)\n\n**Interactions**\n- Global filters: date range, region, segment\n- Click a KPI tile → drill into its detail page\n- Right-click any value → \"explain this number\" (LLM)\n\n**Mobile:** collapse to single column, hide breakdown by default behind an accordion, keep KPI strip + one trend.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1557,7 +1598,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "visual",
-    "sample_output": "**Frontend**\n- React + TanStack Query for data\n- D3 for custom charts, Tremor for stock components\n- State: Zustand for UI, React Query for server-state\n\n**Data path**\n```\nKafka → Pinot (OLAP) → REST/WS → React\n                       ↳ SSE for live KPIs\n```\n\n**Perf**\n- Virtualise tables >200 rows\n- Web workers for any chart computing >5ms\n- LRU on dimension queries (TTL 30s)\n\n**Testing:** Playwright e2e for critical flows, Storybook visual regression, k6 load test (500 RPS sustained)."
+    "sample_output": "**Frontend**\n- React + TanStack Query for data\n- D3 for custom charts, Tremor for stock components\n- State: Zustand for UI, React Query for server-state\n\n**Data path**\n```\nKafka → Pinot (OLAP) → REST/WS → React\n                       ↳ SSE for live KPIs\n```\n\n**Perf**\n- Virtualise tables >200 rows\n- Web workers for any chart computing >5ms\n- LRU on dimension queries (TTL 30s)\n\n**Testing:** Playwright e2e for critical flows, Storybook visual regression, k6 load test (500 RPS sustained).",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1597,7 +1639,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "spec",
-    "sample_output": "**LinkedIn — Post 1 (educational)**\n> Three things I've stopped doing as a [role] this year:\n> 1. Sitting in status meetings without an agenda\n> 2. Answering \"quick questions\" in DM\n> 3. Volunteering for work I don't own\n> What did you stop doing? ↓\n\n**LinkedIn — Post 2 (POV)** [...]\n\n**Hashtags:** #ProductManagement #FoundersJourney (max 3–5, never on the first line)\n\n**Schedule:** Tue 09:00 educational, Thu 12:00 POV, Sat 10:00 story. Repurpose to Twitter same day, IG carousel on weekends."
+    "sample_output": "**LinkedIn — Post 1 (educational)**\n> Three things I've stopped doing as a [role] this year:\n> 1. Sitting in status meetings without an agenda\n> 2. Answering \"quick questions\" in DM\n> 3. Volunteering for work I don't own\n> What did you stop doing? ↓\n\n**LinkedIn — Post 2 (POV)** [...]\n\n**Hashtags:** #ProductManagement #FoundersJourney (max 3–5, never on the first line)\n\n**Schedule:** Tue 09:00 educational, Thu 12:00 POV, Sat 10:00 story. Repurpose to Twitter same day, IG carousel on weekends.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1637,7 +1680,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "spec",
-    "sample_output": "**Pillars (3)**\n1. Craft — how we build (40%)\n2. Behind the scenes — the boring middle (35%)\n3. POV — opinionated takes that age well (25%)\n\n**Mix per week**\n- 2 LinkedIn long-form\n- 3 Twitter threads\n- 1 newsletter\n- 1 short video (TikTok / Reels)\n\n**Repurposing:** newsletter → LI thread → Twitter excerpt → reel script. One artefact, four formats.\n\n**Metrics:** save rate (not likes), newsletter conversion, comment-to-DM ratio."
+    "sample_output": "**Pillars (3)**\n1. Craft — how we build (40%)\n2. Behind the scenes — the boring middle (35%)\n3. POV — opinionated takes that age well (25%)\n\n**Mix per week**\n- 2 LinkedIn long-form\n- 3 Twitter threads\n- 1 newsletter\n- 1 short video (TikTok / Reels)\n\n**Repurposing:** newsletter → LI thread → Twitter excerpt → reel script. One artefact, four formats.\n\n**Metrics:** save rate (not likes), newsletter conversion, comment-to-DM ratio.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -1676,7 +1720,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "spec",
-    "sample_output": "**Pipeline**\n```\nTopic queue → Outline LLM → Section drafts (parallel)\n   → Brand-voice critic (LLM with rubric)\n   → SEO optimiser (keyword density, headings)\n   → Human review (5-min sanity check)\n   → CMS publish → Schedule social\n```\n\n**Voice tuning:** 30 best-of corpus samples in an Anthropic file; system prompt anchors tone, banned words, sentence rhythm.\n\n**A/B headlines:** generate 5 variants per post; rotate top-2 in social; declare winner after 72 hrs.\n\n**Tracking:** scroll depth, time-on-page, conversion to newsletter, share rate."
+    "sample_output": "**Pipeline**\n```\nTopic queue → Outline LLM → Section drafts (parallel)\n   → Brand-voice critic (LLM with rubric)\n   → SEO optimiser (keyword density, headings)\n   → Human review (5-min sanity check)\n   → CMS publish → Schedule social\n```\n\n**Voice tuning:** 30 best-of corpus samples in an Anthropic file; system prompt anchors tone, banned words, sentence rhythm.\n\n**A/B headlines:** generate 5 variants per post; rotate top-2 in social; declare winner after 72 hrs.\n\n**Tracking:** scroll depth, time-on-page, conversion to newsletter, share rate.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1715,7 +1760,8 @@
     ],
     "est_time": "30 min",
     "output_kind": "code",
-    "sample_output": "**Verdict:** automatable in under 30 minutes.\n\n**Simplest path:** Excel formulas + Power Query — no macros, no Python.\n\n**Steps**\n1. Save your source files in one folder, e.g. `~/Reports`.\n2. Open Excel → Data → Get Data → From Folder → point to that folder.\n3. Power Query stitches them. Click \"Combine & Transform\".\n4. Sheet auto-refreshes when files are added.\n\n**Formula to replace your VLOOKUP chain:**\n```\n=XLOOKUP(A2, LookupTable[Key], LookupTable[Value], \"—\", 0)\n```\n\n**Maintenance:** check column names monthly; if a source file renames a column, Power Query will flag it."
+    "sample_output": "**Verdict:** automatable in under 30 minutes.\n\n**Simplest path:** Excel formulas + Power Query — no macros, no Python.\n\n**Steps**\n1. Save your source files in one folder, e.g. `~/Reports`.\n2. Open Excel → Data → Get Data → From Folder → point to that folder.\n3. Power Query stitches them. Click \"Combine & Transform\".\n4. Sheet auto-refreshes when files are added.\n\n**Formula to replace your VLOOKUP chain:**\n```\n=XLOOKUP(A2, LookupTable[Key], LookupTable[Value], \"—\", 0)\n```\n\n**Maintenance:** check column names monthly; if a source file renames a column, Power Query will flag it.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1756,7 +1802,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "code",
-    "sample_output": "**Script skeleton**\n```python\nimport logging, schedule, time\nfrom pathlib import Path\n\nlog = logging.getLogger(\"autoreport\")\n\ndef run() -> None:\n    try:\n        df = ingest(Path(\"~/inputs\").expanduser())\n        cleaned = clean(df)\n        save(cleaned, Path(\"~/out\") / \"report.xlsx\")\n        notify(\"OK\")\n    except Exception:\n        log.exception(\"run failed\")\n        notify(\"FAIL\")\n\nschedule.every().day.at(\"06:00\").do(run)\nwhile True: schedule.run_pending(); time.sleep(60)\n```\n\n**Setup:** `pipx install pdm`; `pdm add pandas openpyxl schedule`; cron entry on Mac/Linux or Task Scheduler on Windows."
+    "sample_output": "**Script skeleton**\n```python\nimport logging, schedule, time\nfrom pathlib import Path\n\nlog = logging.getLogger(\"autoreport\")\n\ndef run() -> None:\n    try:\n        df = ingest(Path(\"~/inputs\").expanduser())\n        cleaned = clean(df)\n        save(cleaned, Path(\"~/out\") / \"report.xlsx\")\n        notify(\"OK\")\n    except Exception:\n        log.exception(\"run failed\")\n        notify(\"FAIL\")\n\nschedule.every().day.at(\"06:00\").do(run)\nwhile True: schedule.run_pending(); time.sleep(60)\n```\n\n**Setup:** `pipx install pdm`; `pdm add pandas openpyxl schedule`; cron entry on Mac/Linux or Task Scheduler on Windows.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1800,7 +1847,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "spec",
-    "sample_output": "**Architecture**\n```\nEvent bus (NATS) ↔ Orchestrator (Prefect)\n                   ↔ Workers (FastAPI, autoscaled)\n                   ↔ Postgres (state) · S3 (artefacts) · Redis (cache)\n                   ↔ Observability (OTel → Grafana)\n```\n\n**Job table**\n```sql\ncreate table jobs (\n  id uuid primary key,\n  kind text not null,\n  payload jsonb,\n  status text check (status in ('queued','running','done','failed')),\n  attempts int default 0,\n  created_at timestamptz default now()\n);\n```\n\n**DR:** RPO 15 min (WAL streaming), RTO 30 min (warm standby), monthly restore drills."
+    "sample_output": "**Architecture**\n```\nEvent bus (NATS) ↔ Orchestrator (Prefect)\n                   ↔ Workers (FastAPI, autoscaled)\n                   ↔ Postgres (state) · S3 (artefacts) · Redis (cache)\n                   ↔ Observability (OTel → Grafana)\n```\n\n**Job table**\n```sql\ncreate table jobs (\n  id uuid primary key,\n  kind text not null,\n  payload jsonb,\n  status text check (status in ('queued','running','done','failed')),\n  attempts int default 0,\n  created_at timestamptz default now()\n);\n```\n\n**DR:** RPO 15 min (WAL streaming), RTO 30 min (warm standby), monthly restore drills.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1840,7 +1888,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "code",
-    "sample_output": "**Clean**\n```python\nimport pandas as pd\ndf = pd.read_csv(\"raw.csv\")\n\ndf = (\n    df.drop_duplicates()\n      .assign(date=lambda d: pd.to_datetime(d[\"date\"], errors=\"coerce\"))\n      .dropna(subset=[\"date\", \"amount\"])\n      .query(\"amount.abs() < 1e7\")  # outliers\n)\n\ndf[\"amount\"] = df[\"amount\"].astype(float).round(2)\ndf.to_csv(\"clean.csv\", index=False)\n```\n\n**Explore**\n```python\ndf.describe(); df.isna().sum(); df.groupby(\"region\")[\"amount\"].sum().plot.bar()\n```"
+    "sample_output": "**Clean**\n```python\nimport pandas as pd\ndf = pd.read_csv(\"raw.csv\")\n\ndf = (\n    df.drop_duplicates()\n      .assign(date=lambda d: pd.to_datetime(d[\"date\"], errors=\"coerce\"))\n      .dropna(subset=[\"date\", \"amount\"])\n      .query(\"amount.abs() < 1e7\")  # outliers\n)\n\ndf[\"amount\"] = df[\"amount\"].astype(float).round(2)\ndf.to_csv(\"clean.csv\", index=False)\n```\n\n**Explore**\n```python\ndf.describe(); df.isna().sum(); df.groupby(\"region\")[\"amount\"].sum().plot.bar()\n```",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1880,7 +1929,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "spec",
-    "sample_output": "**Architecture (ELT)**\n```\nSources (SAP, Salesforce, files)\n  → Fivetran / Airbyte (ingest)\n  → Snowflake raw schema\n  → dbt models (staging → marts)\n  → Great Expectations (tests)\n  → BI (Power BI / Looker)\n```\n\n**Marts**\n- `mart_finance.fct_invoice` — grain = invoice line\n- `mart_finance.dim_customer` — SCD type 2\n\n**Quality (per run)**\n- Row count vs. prior run (alert if >5% drift)\n- Null %, distinct count\n- Joinable to dim tables = 100%"
+    "sample_output": "**Architecture (ELT)**\n```\nSources (SAP, Salesforce, files)\n  → Fivetran / Airbyte (ingest)\n  → Snowflake raw schema\n  → dbt models (staging → marts)\n  → Great Expectations (tests)\n  → BI (Power BI / Looker)\n```\n\n**Marts**\n- `mart_finance.fct_invoice` — grain = invoice line\n- `mart_finance.dim_customer` — SCD type 2\n\n**Quality (per run)**\n- Row count vs. prior run (alert if >5% drift)\n- Null %, distinct count\n- Joinable to dim tables = 100%",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1912,7 +1962,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "visual",
-    "sample_output": "**Architecture**\n```\nIngest: Fivetran + Kafka\nStore: Snowflake (warehouse) + Iceberg (lake)\nTransform: dbt\nCatalog: DataHub\nQuality: Great Expectations\nReverse-ETL: Hightouch\nBI: Looker (semantic) + Power BI (long tail)\n```\n\n**Team (yr 1):** 1 lead, 2 analytics engineers, 1 data eng, 1 platform eng, 0.5 PM.\n\n**Cost (annual run-rate):** $480k software, $1.1M people = $1.6M.\n\n**Migration:** strangler-fig; new pipelines on platform from day 1, legacy decommission over 18 mo."
+    "sample_output": "**Architecture**\n```\nIngest: Fivetran + Kafka\nStore: Snowflake (warehouse) + Iceberg (lake)\nTransform: dbt\nCatalog: DataHub\nQuality: Great Expectations\nReverse-ETL: Hightouch\nBI: Looker (semantic) + Power BI (long tail)\n```\n\n**Team (yr 1):** 1 lead, 2 analytics engineers, 1 data eng, 1 platform eng, 0.5 PM.\n\n**Cost (annual run-rate):** $480k software, $1.1M people = $1.6M.\n\n**Migration:** strangler-fig; new pipelines on platform from day 1, legacy decommission over 18 mo.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1950,7 +2001,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "code",
-    "sample_output": "**Fit check:** YES — but use rules + LLM, not ML from scratch. Your data shape (text + categories) is ideal for LLM classification with few-shot examples.\n\n**Simplest path**\n1. 20–50 hand-labelled examples\n2. Prompt with examples + output schema\n3. Run in batch (Make.com / Zapier scheduled)\n\n**Effort:** ~2 hours setup, ~$5–20/month in LLM cost.\n\n**Expected accuracy:** 88–94% on the obvious cases; design a fallback for the 6–12% it gets wrong."
+    "sample_output": "**Fit check:** YES — but use rules + LLM, not ML from scratch. Your data shape (text + categories) is ideal for LLM classification with few-shot examples.\n\n**Simplest path**\n1. 20–50 hand-labelled examples\n2. Prompt with examples + output schema\n3. Run in batch (Make.com / Zapier scheduled)\n\n**Effort:** ~2 hours setup, ~$5–20/month in LLM cost.\n\n**Expected accuracy:** 88–94% on the obvious cases; design a fallback for the 6–12% it gets wrong.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -1990,7 +2042,8 @@
     ],
     "est_time": "Half day – 1 week",
     "output_kind": "spec",
-    "sample_output": "**Pipeline**\n```\nRaw → feature store (Feast)\n   → training (XGBoost + LightGBM ensemble)\n   → eval (MAPE, prediction interval coverage)\n   → registry (MLflow)\n   → serving (FastAPI / Triton)\n   → monitoring (Evidently)\n```\n\n**Eval (forecasting)**\n- MAPE: target ≤8% at SKU-week grain\n- 80% prediction interval coverage ≥75%\n- Bias drift week-over-week ≤2pp\n\n**Business metrics:** stockout rate (↓ target 35%), overstock cost (↓ target $1.2M/yr)."
+    "sample_output": "**Pipeline**\n```\nRaw → feature store (Feast)\n   → training (XGBoost + LightGBM ensemble)\n   → eval (MAPE, prediction interval coverage)\n   → registry (MLflow)\n   → serving (FastAPI / Triton)\n   → monitoring (Evidently)\n```\n\n**Eval (forecasting)**\n- MAPE: target ≤8% at SKU-week grain\n- 80% prediction interval coverage ≥75%\n- Bias drift week-over-week ≤2pp\n\n**Business metrics:** stockout rate (↓ target 35%), overstock cost (↓ target $1.2M/yr).",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -2016,7 +2069,8 @@
     ],
     "est_time": "Multi-month",
     "output_kind": "spec",
-    "sample_output": "**Stack**\n- Feature store: Feast\n- Experiment tracking: Weights & Biases\n- Registry + serving: MLflow + KServe\n- Orchestration: Argo Workflows\n- Monitoring: Evidently + Prometheus + Grafana\n- Governance: model card per release, signed by data steward\n\n**Rollout (12 mo)**\n- Q1: foundation (registry, serving, baseline monitoring)\n- Q2: first two production models (forecasting, churn)\n- Q3: feature store, A/B framework\n- Q4: governance, audit, multi-cloud failover\n\n**TCO yr 1:** $1.8–2.4M."
+    "sample_output": "**Stack**\n- Feature store: Feast\n- Experiment tracking: Weights & Biases\n- Registry + serving: MLflow + KServe\n- Orchestration: Argo Workflows\n- Monitoring: Evidently + Prometheus + Grafana\n- Governance: model card per release, signed by data steward\n\n**Rollout (12 mo)**\n- Q1: foundation (registry, serving, baseline monitoring)\n- Q2: first two production models (forecasting, churn)\n- Q3: feature store, A/B framework\n- Q4: governance, audit, multi-cloud failover\n\n**TCO yr 1:** $1.8–2.4M.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Research & Analysis",
@@ -2044,7 +2098,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "analysis",
-    "sample_output": "**Top players** (mention only — sample shape, not real data)\n1. Player A — incumbent, ~38% share, slow product velocity\n2. Player B — pricing leader, growing in SMB\n3. Player C — design-led challenger, last raised $80M\n4. Player D — open-source play, strong dev community\n5. Player E — vertical specialist (healthcare)\n\n**Market:** ~$8.4B, CAGR 14%, fragmenting toward verticals.\n\n**Trends:** consolidation in core, vertical land-grabs, AI-overlay pricing power.\n\n**Read deeper:** [Gartner MQ] · [a16z thesis] · [recent Stratechery piece]."
+    "sample_output": "**Top players** (mention only — sample shape, not real data)\n1. Player A — incumbent, ~38% share, slow product velocity\n2. Player B — pricing leader, growing in SMB\n3. Player C — design-led challenger, last raised $80M\n4. Player D — open-source play, strong dev community\n5. Player E — vertical specialist (healthcare)\n\n**Market:** ~$8.4B, CAGR 14%, fragmenting toward verticals.\n\n**Trends:** consolidation in core, vertical land-grabs, AI-overlay pricing power.\n\n**Read deeper:** [Gartner MQ] · [a16z thesis] · [recent Stratechery piece].",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Research & Analysis",
@@ -2075,7 +2130,8 @@
     ],
     "est_time": "Half day – 1 day",
     "output_kind": "analysis",
-    "sample_output": "**Executive summary**\n- Market: $12.4B, growing 11% CAGR\n- Top-3 control 54%; long tail of 200+ players\n- The decisive shift is from horizontal SaaS to vertical AI; budget will follow the workflow, not the tool\n\n**Competitor profiles** (sample of one)\n> **Player A** — Founded 2014, ~$320M ARR. Strengths: brand + channel. Weaknesses: legacy data model, slow on AI. Strategic moves: hired ex-Snowflake CRO, opened London office. Threat to us: medium — they're 18 months behind on AI but have the customer base.\n\n**Recommendation:** focus enterprise GTM on three verticals where AI maturity differential is widest."
+    "sample_output": "**Executive summary**\n- Market: $12.4B, growing 11% CAGR\n- Top-3 control 54%; long tail of 200+ players\n- The decisive shift is from horizontal SaaS to vertical AI; budget will follow the workflow, not the tool\n\n**Competitor profiles** (sample of one)\n> **Player A** — Founded 2014, ~$320M ARR. Strengths: brand + channel. Weaknesses: legacy data model, slow on AI. Strategic moves: hired ex-Snowflake CRO, opened London office. Threat to us: medium — they're 18 months behind on AI but have the customer base.\n\n**Recommendation:** focus enterprise GTM on three verticals where AI maturity differential is widest.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Research & Analysis",
@@ -2103,7 +2159,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "plan",
-    "sample_output": "**Overview** — Founded 2017. ~620 FTEs. PE-backed (Series D, last priced 2024). HQ Austin, eng team in Krakow.\n\n**Portfolio:** one flagship product, three adjacent SKUs (analytics, audit, compliance).\n\n**Pricing:** $99 / $249 / Enterprise (call). 14-day trial, no card.\n\n**Strengths:** integrations breadth, partner channel.\n**Weaknesses:** product velocity (~6 releases/yr), thin data-science chops.\n\n**Recent moves:** acquired a 12-person ML team (Q2), launched a free tier (Q3).\n\n**Threat level:** HIGH on SMB segment, LOW on enterprise."
+    "sample_output": "**Overview** — Founded 2017. ~620 FTEs. PE-backed (Series D, last priced 2024). HQ Austin, eng team in Krakow.\n\n**Portfolio:** one flagship product, three adjacent SKUs (analytics, audit, compliance).\n\n**Pricing:** $99 / $249 / Enterprise (call). 14-day trial, no card.\n\n**Strengths:** integrations breadth, partner channel.\n**Weaknesses:** product velocity (~6 releases/yr), thin data-science chops.\n\n**Recent moves:** acquired a 12-person ML team (Q2), launched a free tier (Q3).\n\n**Threat level:** HIGH on SMB segment, LOW on enterprise.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Research & Analysis",
@@ -2129,7 +2186,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "spec",
-    "sample_output": "**Sources**\n- Website diff: weekly snapshot, HTML diff with semantic noise filter\n- Pricing pages: daily check (specific selectors)\n- Job boards: Greenhouse/Lever scrape + keyword classifier\n- Patents: USPTO RSS by competitor name\n- Reviews: G2 / Capterra weekly pull\n\n**Pipeline**\n```\nSource → Raw store (S3) → Classifier (LLM)\n   → Significance scorer → Slack / Email\n```\n\n**Alerts:** major change = pricing ±5%, exec hire, M&A rumour, raise announcement.\n\n**Weekly brief:** auto-generated Notion page Fri 09:00."
+    "sample_output": "**Sources**\n- Website diff: weekly snapshot, HTML diff with semantic noise filter\n- Pricing pages: daily check (specific selectors)\n- Job boards: Greenhouse/Lever scrape + keyword classifier\n- Patents: USPTO RSS by competitor name\n- Reviews: G2 / Capterra weekly pull\n\n**Pipeline**\n```\nSource → Raw store (S3) → Classifier (LLM)\n   → Significance scorer → Slack / Email\n```\n\n**Alerts:** major change = pricing ±5%, exec hire, M&A rumour, raise announcement.\n\n**Weekly brief:** auto-generated Notion page Fri 09:00.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2163,7 +2221,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "analysis",
-    "sample_output": "**Doc structure**\n1. Who this is for (1 line)\n2. Prerequisites (3–5 bullets)\n3. Steps (numbered, screenshot every 3rd)\n4. Verification checklist\n5. Troubleshooting (top 5 issues)\n6. Glossary\n7. Last updated + owner\n\n**Tone:** imperative, second person — \"Open the file\" not \"The user opens the file\".\n\n**Where to store:** if it's product → docs site (Mintlify); if it's internal → Notion (one page per process, linked from a process index)."
+    "sample_output": "**Doc structure**\n1. Who this is for (1 line)\n2. Prerequisites (3–5 bullets)\n3. Steps (numbered, screenshot every 3rd)\n4. Verification checklist\n5. Troubleshooting (top 5 issues)\n6. Glossary\n7. Last updated + owner\n\n**Tone:** imperative, second person — \"Open the file\" not \"The user opens the file\".\n\n**Where to store:** if it's product → docs site (Mintlify); if it's internal → Notion (one page per process, linked from a process index).",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2201,7 +2260,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "spec",
-    "sample_output": "**Skeleton**\n```\ndocs/\n  README.md          # overview + diagram\n  install.md         # platforms, prerequisites\n  api/\n    endpoints.md     # generated from OpenAPI\n    auth.md\n  examples/\n    quickstart.md\n    advanced.md\n  troubleshooting.md\n  faq.md\n  changelog.md\n```\n\n**API reference (sample entry)**\n```\n### POST /v1/jobs\nCreate a new job. Idempotent on `Idempotency-Key` header.\n\n**Body:** { kind: string, payload: object }\n**Returns:** 201 + { id, status_url }\n**Errors:** 400 (invalid kind), 409 (duplicate key)\n```"
+    "sample_output": "**Skeleton**\n```\ndocs/\n  README.md          # overview + diagram\n  install.md         # platforms, prerequisites\n  api/\n    endpoints.md     # generated from OpenAPI\n    auth.md\n  examples/\n    quickstart.md\n    advanced.md\n  troubleshooting.md\n  faq.md\n  changelog.md\n```\n\n**API reference (sample entry)**\n```\n### POST /v1/jobs\nCreate a new job. Idempotent on `Idempotency-Key` header.\n\n**Body:** { kind: string, payload: object }\n**Returns:** 201 + { id, status_url }\n**Errors:** 400 (invalid kind), 409 (duplicate key)\n```",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2236,7 +2296,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "code",
-    "sample_output": "**IA (3 trees)**\n1. Get started (onboarding) — < 5 min reads\n2. How-to (task-oriented) — recipe format\n3. Reference (deep) — searchable, structured\n\n**Stack:** Mintlify / Docusaurus → GitHub → Vercel · Algolia search · Plausible analytics.\n\n**Standards**\n- Active voice, second person\n- Sentence case headings\n- Every page: who-it's-for + outcome at top\n- Code blocks always copy-pasteable, no shell prompts\n\n**Maintenance:** quarterly stale-page sweep; PR template enforces the standard."
+    "sample_output": "**IA (3 trees)**\n1. Get started (onboarding) — < 5 min reads\n2. How-to (task-oriented) — recipe format\n3. Reference (deep) — searchable, structured\n\n**Stack:** Mintlify / Docusaurus → GitHub → Vercel · Algolia search · Plausible analytics.\n\n**Standards**\n- Active voice, second person\n- Sentence case headings\n- Every page: who-it's-for + outcome at top\n- Code blocks always copy-pasteable, no shell prompts\n\n**Maintenance:** quarterly stale-page sweep; PR template enforces the standard.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2276,7 +2337,8 @@
     ],
     "est_time": "1 hour",
     "output_kind": "visual",
-    "sample_output": "**Outline (15 min)**\n- Title — \"Why we should bet on X\"\n- Section 1 — The shift (3 slides, 4 min)\n- Section 2 — Our position (2 slides, 3 min)\n- Section 3 — The wedge (3 slides, 5 min)\n- Section 4 — Ask (1 slide, 2 min)\n- Q&A (1 min)\n\n**Open:** \"I'm asking for one decision today, and I'll get to it in 12 minutes.\"\n\n**Close:** \"If we approve this, here's what we're doing next week. If we don't, here's what we'll regret.\"\n\n**Recommended:** 10 slides. Less is more."
+    "sample_output": "**Outline (15 min)**\n- Title — \"Why we should bet on X\"\n- Section 1 — The shift (3 slides, 4 min)\n- Section 2 — Our position (2 slides, 3 min)\n- Section 3 — The wedge (3 slides, 5 min)\n- Section 4 — Ask (1 slide, 2 min)\n- Q&A (1 min)\n\n**Open:** \"I'm asking for one decision today, and I'll get to it in 12 minutes.\"\n\n**Close:** \"If we approve this, here's what we're doing next week. If we don't, here's what we'll regret.\"\n\n**Recommended:** 10 slides. Less is more.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2317,7 +2379,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "visual",
-    "sample_output": "**Arc**\n1. Setup — the world they know\n2. Disruption — what's changed\n3. Resolution — what we do about it\n4. Ask — the decision\n\n**Speaker notes (slide 4)**\n> \"Three numbers tell this story. The first is [X] — that's our baseline. The second is [Y] — that's the new reality. The third is [Z] — that's the gap we have to close.\"\n\n**Anticipated Q1:** \"Why now, not next year?\" — A: 2-sentence answer + back-up slide ready.\n\n**Handout:** 2-pager, exec summary front, FAQ back."
+    "sample_output": "**Arc**\n1. Setup — the world they know\n2. Disruption — what's changed\n3. Resolution — what we do about it\n4. Ask — the decision\n\n**Speaker notes (slide 4)**\n> \"Three numbers tell this story. The first is [X] — that's our baseline. The second is [Y] — that's the new reality. The third is [Z] — that's the gap we have to close.\"\n\n**Anticipated Q1:** \"Why now, not next year?\" — A: 2-sentence answer + back-up slide ready.\n\n**Handout:** 2-pager, exec summary front, FAQ back.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2351,7 +2414,8 @@
     ],
     "est_time": "Multi-week",
     "output_kind": "visual",
-    "sample_output": "**Pipeline**\n```\nSources → SQL → DataFrame\n   → Template engine (python-pptx + branded slide masters)\n   → Narrative generator (LLM with structured prompt per slide)\n   → QA pass (LLM critic + rule-based checks)\n   → S3 + Slack delivery\n```\n\n**Slide mapping**\n| Slide | Data query | Layout |\n|---|---|---|\n| 1 — Headline | revenue_summary.sql | KPI tile |\n| 2 — Trend | revenue_monthly.sql | line chart |\n| 3 — Variance | budget_var.sql | table + comment |\n\n**QA:** every number must trace to a query hash; LLM critic checks for tone + cross-slide consistency."
+    "sample_output": "**Pipeline**\n```\nSources → SQL → DataFrame\n   → Template engine (python-pptx + branded slide masters)\n   → Narrative generator (LLM with structured prompt per slide)\n   → QA pass (LLM critic + rule-based checks)\n   → S3 + Slack delivery\n```\n\n**Slide mapping**\n| Slide | Data query | Layout |\n|---|---|---|\n| 1 — Headline | revenue_summary.sql | KPI tile |\n| 2 — Trend | revenue_monthly.sql | line chart |\n| 3 — Variance | budget_var.sql | table + comment |\n\n**QA:** every number must trace to a query hash; LLM critic checks for tone + cross-slide consistency.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2382,7 +2446,8 @@
     ],
     "est_time": "30 min",
     "output_kind": "templates",
-    "sample_output": "**Initial outreach**\n> Subject: [their company] × [your company] — quick idea\n> Hi [name], saw [specific signal]. We help [people like them] do [specific outcome]. Worth a 15-min chat next week?\n\n**Follow-up (after no reply)**\n> Subject: bumping this up\n> Hi [name], jumping back here. If now's a bad week, just let me know and I'll try again in [month].\n\n**Meeting request**\n> Subject: 20 min, [topic]?\n> Goal: decide [X]. Tue 10am, Thu 2pm — what works?\n\n**Thank-you**\n> Thanks for the time. Three things I owe you: [...]. Talk [date].\n\n**Status update**\n> [Project] · [colour] · [1-line headline]. Wins: [...]. Risks: [...]. Asks: [...]."
+    "sample_output": "**Initial outreach**\n> Subject: [their company] × [your company] — quick idea\n> Hi [name], saw [specific signal]. We help [people like them] do [specific outcome]. Worth a 15-min chat next week?\n\n**Follow-up (after no reply)**\n> Subject: bumping this up\n> Hi [name], jumping back here. If now's a bad week, just let me know and I'll try again in [month].\n\n**Meeting request**\n> Subject: 20 min, [topic]?\n> Goal: decide [X]. Tue 10am, Thu 2pm — what works?\n\n**Thank-you**\n> Thanks for the time. Three things I owe you: [...]. Talk [date].\n\n**Status update**\n> [Project] · [colour] · [1-line headline]. Wins: [...]. Risks: [...]. Asks: [...].",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Communication & Writing",
@@ -2422,7 +2487,8 @@
     ],
     "est_time": "Half day",
     "output_kind": "templates",
-    "sample_output": "**Core message** (1 sentence)\n> \"We're moving [process] to [new tool] over the next 8 weeks so [outcome] — and we're keeping [thing they care about] exactly as it is.\"\n\n**FAQ (sample 3 of 10)**\n- Q: Why now? A: [specific reason + signal]\n- Q: What changes for me? A: [day-1 impact, week-1 impact]\n- Q: What if I disagree? A: [exact path + when]\n\n**Timeline**\n- Week 0: leader pre-brief\n- Week 1: all-hands announcement + FAQ doc\n- Week 2: 1:1s for top concerns\n- Week 4: midpoint pulse survey\n- Week 8: retro\n\n**Feedback loop:** anonymous form + biweekly office hours; ship one visible change in response."
+    "sample_output": "**Core message** (1 sentence)\n> \"We're moving [process] to [new tool] over the next 8 weeks so [outcome] — and we're keeping [thing they care about] exactly as it is.\"\n\n**FAQ (sample 3 of 10)**\n- Q: Why now? A: [specific reason + signal]\n- Q: What changes for me? A: [day-1 impact, week-1 impact]\n- Q: What if I disagree? A: [exact path + when]\n\n**Timeline**\n- Week 0: leader pre-brief\n- Week 1: all-hands announcement + FAQ doc\n- Week 2: 1:1s for top concerns\n- Week 4: midpoint pulse survey\n- Week 8: retro\n\n**Feedback loop:** anonymous form + biweekly office hours; ship one visible change in response.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2448,7 +2514,8 @@
       "ChatGPT"
     ],
     "output_kind": "analysis",
-    "sample_output": "**The concept:** Kubernetes\n\n**Analogy:** Think of your apps like shipping containers. Kubernetes is the shipping port — it decides which ships (servers) carry which containers, automatically reroutes if a ship has problems, and scales up when demand surges.\n\n**3 things you need to know:**\n1. It auto-heals: if your app crashes, Kubernetes restarts it\n2. It scales: add more traffic, it adds more instances automatically\n3. It abstracts infrastructure: you describe *what* you want, not *where* it runs\n\n**You can ignore for now:** etcd, control plane internals, CNI plugins — those are ops concerns unless you're running the cluster yourself."
+    "sample_output": "**The concept:** Kubernetes\n\n**Analogy:** Think of your apps like shipping containers. Kubernetes is the shipping port — it decides which ships (servers) carry which containers, automatically reroutes if a ship has problems, and scales up when demand surges.\n\n**3 things you need to know:**\n1. It auto-heals: if your app crashes, Kubernetes restarts it\n2. It scales: add more traffic, it adds more instances automatically\n3. It abstracts infrastructure: you describe *what* you want, not *where* it runs\n\n**You can ignore for now:** etcd, control plane internals, CNI plugins — those are ops concerns unless you're running the cluster yourself.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2477,7 +2544,8 @@
       "ChatGPT"
     ],
     "output_kind": "analysis",
-    "sample_output": "**Summary: Q3 Investor Update**\n\n- Revenue hit $4.2M ARR (+18% QoQ) driven by enterprise expansion, not new logos\n- Churn ticked up to 3.2% — two large accounts left citing \"missing integrations\"\n- Hiring plan is 6 engineers by year-end; currently 2 offers outstanding\n- Runway is 22 months at current burn; Series B target is Q1 next year\n- Product roadmap: API v2 is the top priority for Q4\n\n**Most important takeaway:** Growth is healthy but churn signal on integrations needs immediate product response.\n\n**Risk:** If the two outstanding offers don't close, engineering plan slips and API v2 is at risk.\n\n**Action today:** Schedule a 30-min call with the two churned accounts to validate the integration gap before roadmap is locked."
+    "sample_output": "**Summary: Q3 Investor Update**\n\n- Revenue hit $4.2M ARR (+18% QoQ) driven by enterprise expansion, not new logos\n- Churn ticked up to 3.2% — two large accounts left citing \"missing integrations\"\n- Hiring plan is 6 engineers by year-end; currently 2 offers outstanding\n- Runway is 22 months at current burn; Series B target is Q1 next year\n- Product roadmap: API v2 is the top priority for Q4\n\n**Most important takeaway:** Growth is healthy but churn signal on integrations needs immediate product response.\n\n**Risk:** If the two outstanding offers don't close, engineering plan slips and API v2 is at risk.\n\n**Action today:** Schedule a 30-min call with the two churned accounts to validate the integration gap before roadmap is locked.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2503,7 +2571,8 @@
       "ChatGPT"
     ],
     "output_kind": "templates",
-    "sample_output": "**Original:** \"In order to facilitate the optimisation of our cross-functional synergy initiatives, we will be leveraging a new paradigm of collaborative frameworks going forward.\"\n\n**Rewritten:** \"We're rolling out a new approach to help teams work together better.\"\n\n**Main change:** Removed every piece of corporate jargon and cut from 27 words to 11 without losing meaning."
+    "sample_output": "**Original:** \"In order to facilitate the optimisation of our cross-functional synergy initiatives, we will be leveraging a new paradigm of collaborative frameworks going forward.\"\n\n**Rewritten:** \"We're rolling out a new approach to help teams work together better.\"\n\n**Main change:** Removed every piece of corporate jargon and cut from 27 words to 11 without losing meaning.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2530,7 +2599,8 @@
       "Outlook"
     ],
     "output_kind": "templates",
-    "sample_output": "Hi Sarah,\n\nThanks for reaching out — yes, we can move the Thursday call to 3 PM instead of 2 PM. Works perfectly.\n\nI'll send a revised invite now. Looking forward to walking through the Q4 plan with you.\n\nBest,\nAlex"
+    "sample_output": "Hi Sarah,\n\nThanks for reaching out — yes, we can move the Thursday call to 3 PM instead of 2 PM. Works perfectly.\n\nI'll send a revised invite now. Looking forward to walking through the Q4 plan with you.\n\nBest,\nAlex",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2557,7 +2627,8 @@
       "Slack"
     ],
     "output_kind": "table",
-    "sample_output": "**Action Items**\n\n| Owner | Action | Deadline |\n|---|---|---|\n| Priya | Send revised pricing deck to enterprise accounts | Friday EOD |\n| Marcus | Book venue for Q4 kickoff | Next Wednesday |\n| Team | Review updated OKRs before next sync | Thursday AM |\n\n**Slack summary:**\nWe aligned on Q4 priorities — pricing update and venue booking are the two blockers. Full action list in Notion."
+    "sample_output": "**Action Items**\n\n| Owner | Action | Deadline |\n|---|---|---|\n| Priya | Send revised pricing deck to enterprise accounts | Friday EOD |\n| Marcus | Book venue for Q4 kickoff | Next Wednesday |\n| Team | Review updated OKRs before next sync | Thursday AM |\n\n**Slack summary:**\nWe aligned on Q4 priorities — pricing update and venue booking are the two blockers. Full action list in Notion.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2589,7 +2660,8 @@
       "ChatGPT"
     ],
     "output_kind": "table",
-    "sample_output": "**Option A: Hire a full-time designer**\n\n| Pro | Con |\n|---|---|\n| Deep brand consistency | 3-month ramp time |\n| Embedded in team | $90k+ cost |\n| Long-term asset | Risk if workload drops |\n\n**Option B: Use a design agency**\n\n| Pro | Con |\n|---|---|\n| Fast start (1–2 weeks) | Less brand ownership |\n| Flexible scope | Higher per-hour cost |\n| No hiring risk | Communication overhead |\n\n**Recommendation:** Start with the agency. Your product roadmap is still shifting — locking in a full-time hire before the design direction is settled is premature."
+    "sample_output": "**Option A: Hire a full-time designer**\n\n| Pro | Con |\n|---|---|\n| Deep brand consistency | 3-month ramp time |\n| Embedded in team | $90k+ cost |\n| Long-term asset | Risk if workload drops |\n\n**Option B: Use a design agency**\n\n| Pro | Con |\n|---|---|\n| Fast start (1–2 weeks) | Less brand ownership |\n| Flexible scope | Higher per-hour cost |\n| No hiring risk | Communication overhead |\n\n**Recommendation:** Start with the agency. Your product roadmap is still shifting — locking in a full-time hire before the design direction is settled is premature.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2616,7 +2688,8 @@
       "Google Docs"
     ],
     "output_kind": "templates",
-    "sample_output": "**PROJECT KICKOFF BRIEF**\n\n<!-- Project name: e.g. \"Website Redesign Q1\" -->\n**Project:** [PROJECT NAME]\n\n<!-- One sentence describing the goal -->\n**Objective:** [PROJECT OBJECTIVE]\n\n<!-- Format: Month DD, YYYY -->\n**Launch date:** [TARGET LAUNCH DATE]\n\n<!-- List 2-4 people and their role -->\n**Team:**\n- [NAME] — [ROLE]\n- [NAME] — [ROLE]\n\n<!-- What does success look like? List 2-3 measurable outcomes -->\n**Success metrics:**\n1. [METRIC 1]\n2. [METRIC 2]"
+    "sample_output": "**PROJECT KICKOFF BRIEF**\n\n<!-- Project name: e.g. \"Website Redesign Q1\" -->\n**Project:** [PROJECT NAME]\n\n<!-- One sentence describing the goal -->\n**Objective:** [PROJECT OBJECTIVE]\n\n<!-- Format: Month DD, YYYY -->\n**Launch date:** [TARGET LAUNCH DATE]\n\n<!-- List 2-4 people and their role -->\n**Team:**\n- [NAME] — [ROLE]\n- [NAME] — [ROLE]\n\n<!-- What does success look like? List 2-3 measurable outcomes -->\n**Success metrics:**\n1. [METRIC 1]\n2. [METRIC 2]",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -2642,7 +2715,8 @@
       "ChatGPT"
     ],
     "output_kind": "templates",
-    "sample_output": "We almost launched the wrong product.\n\nThree months ago, we were convinced users wanted a dashboard. We built mockups, wrote specs, and had the engineers ready to start.\n\nThen we did 8 customer calls.\n\nNobody cared about the dashboard. They cared about one thing: getting their data out faster. The dashboard was just how they thought they'd use it.\n\nWe killed the dashboard. Built a one-click export instead. Shipped in 2 weeks. NPS jumped 18 points.\n\nThe lesson: users describe solutions, not problems. Your job is to ask one layer deeper — *why* do you want that?\n\nWhat's the last assumption a customer call killed for you?"
+    "sample_output": "We almost launched the wrong product.\n\nThree months ago, we were convinced users wanted a dashboard. We built mockups, wrote specs, and had the engineers ready to start.\n\nThen we did 8 customer calls.\n\nNobody cared about the dashboard. They cared about one thing: getting their data out faster. The dashboard was just how they thought they'd use it.\n\nWe killed the dashboard. Built a one-click export instead. Shipped in 2 weeks. NPS jumped 18 points.\n\nThe lesson: users describe solutions, not problems. Your job is to ask one layer deeper — *why* do you want that?\n\nWhat's the last assumption a customer call killed for you?",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -2669,7 +2743,8 @@
       "Stable Diffusion"
     ],
     "output_kind": "spec",
-    "sample_output": "**Variation 1 — Cinematic Photo**\n`/imagine a lone lighthouse on rocky cliffs at golden hour, stormy ocean in background, dramatic god rays through clouds, shot on Hasselblad, f/2.8, cinematic color grade, 8k --ar 16:9 --v 6`\n*Negative:* cartoonish, flat, oversaturated, text\n\n**Variation 2 — Oil Painting**\n`/imagine lighthouse on sea cliffs, oil painting in the style of J.M.W. Turner, impressionistic brushwork, warm ochre and deep navy palette, museum quality, impasto texture --ar 4:3 --stylize 800`\n*Negative:* photorealistic, digital, modern\n\n**Variation 3 — Minimal Illustration**\n`/imagine minimalist vector illustration of lighthouse, flat design, 3-color palette of cream/navy/coral, geometric shapes, editorial style, negative space composition --ar 1:1 --style raw`\n*Negative:* complex, detailed, photographic"
+    "sample_output": "**Variation 1 — Cinematic Photo**\n`/imagine a lone lighthouse on rocky cliffs at golden hour, stormy ocean in background, dramatic god rays through clouds, shot on Hasselblad, f/2.8, cinematic color grade, 8k --ar 16:9 --v 6`\n*Negative:* cartoonish, flat, oversaturated, text\n\n**Variation 2 — Oil Painting**\n`/imagine lighthouse on sea cliffs, oil painting in the style of J.M.W. Turner, impressionistic brushwork, warm ochre and deep navy palette, museum quality, impasto texture --ar 4:3 --stylize 800`\n*Negative:* photorealistic, digital, modern\n\n**Variation 3 — Minimal Illustration**\n`/imagine minimalist vector illustration of lighthouse, flat design, 3-color palette of cream/navy/coral, geometric shapes, editorial style, negative space composition --ar 1:1 --style raw`\n*Negative:* complex, detailed, photographic",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -2696,7 +2771,8 @@
       "Adobe Firefly"
     ],
     "output_kind": "spec",
-    "sample_output": "**Shot 1 — Hero**\nPrompt: `minimalist ceramic coffee mug, studio white background, single soft key light from upper left, long shadow, shot on Phase One, product photography, hyper-detail --ar 4:5`\nPlatform: Homepage hero, email header\n\n**Shot 2 — Lifestyle**\nPrompt: `ceramic mug on weathered oak desk, morning light through linen curtains, MacBook open, small succulent, warm lifestyle photography, film grain --ar 16:9`\nPlatform: Instagram, blog\n\n**Shot 3 — Detail**\nPrompt: `extreme close-up ceramic texture, matte glaze, micro detail, macro lens, soft bokeh background, neutral tones --ar 1:1`\nPlatform: PDPs, Amazon\n..."
+    "sample_output": "**Shot 1 — Hero**\nPrompt: `minimalist ceramic coffee mug, studio white background, single soft key light from upper left, long shadow, shot on Phase One, product photography, hyper-detail --ar 4:5`\nPlatform: Homepage hero, email header\n\n**Shot 2 — Lifestyle**\nPrompt: `ceramic mug on weathered oak desk, morning light through linen curtains, MacBook open, small succulent, warm lifestyle photography, film grain --ar 16:9`\nPlatform: Instagram, blog\n\n**Shot 3 — Detail**\nPrompt: `extreme close-up ceramic texture, matte glaze, micro detail, macro lens, soft bokeh background, neutral tones --ar 1:1`\nPlatform: PDPs, Amazon\n...",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -2728,7 +2804,8 @@
       "Notion"
     ],
     "output_kind": "spec",
-    "sample_output": "**Brand:** Forma Studio (minimal architecture firm)\n\n**Core suffix** (append to every prompt):\n`--style raw --ar 16:9 --v 6.1 :: warm ivory and slate tones, natural light, architectural precision, editorial calm`\n\n**Approved styles:**\n1. Exterior — `concrete and glass building, golden hour, aerial perspective, Zaha Hadid influence`\n2. Interior — `open plan living space, floor-to-ceiling windows, linen furniture, minimal decor`\n...\n\n**Always avoid:** busy patterns, bright saturated colors, people in foreground, text overlays, fantasy elements\n\n**Color palette to include:** ivory (#F7F4EE), slate (#4A5568), warm sand (#C9B99A)"
+    "sample_output": "**Brand:** Forma Studio (minimal architecture firm)\n\n**Core suffix** (append to every prompt):\n`--style raw --ar 16:9 --v 6.1 :: warm ivory and slate tones, natural light, architectural precision, editorial calm`\n\n**Approved styles:**\n1. Exterior — `concrete and glass building, golden hour, aerial perspective, Zaha Hadid influence`\n2. Interior — `open plan living space, floor-to-ceiling windows, linen furniture, minimal decor`\n...\n\n**Always avoid:** busy patterns, bright saturated colors, people in foreground, text overlays, fantasy elements\n\n**Color palette to include:** ivory (#F7F4EE), slate (#4A5568), warm sand (#C9B99A)",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -2760,7 +2837,8 @@
       "CapCut"
     ],
     "output_kind": "deck",
-    "sample_output": "**VIDEO: \"Morning Ritual\" — Cold Brew Brand | 60 sec**\n\n| Scene | VO Script | Visual | Shot | AI Prompt |\n|---|---|---|---|---|\n| 1 (0–5s) | \"Some mornings ask more of you.\" | Alarm clock 5:47am, dark room | Close-up | `alarm clock glowing in dark bedroom, cinematic, slow motion, film grain, cool tones` |\n| 2 (5–12s) | \"So we made a cold brew that answers back.\" | Hands wrapping around glass | Medium | `hands holding glass of cold brew coffee, morning light, condensation on glass, warm tones` |\n..."
+    "sample_output": "**VIDEO: \"Morning Ritual\" — Cold Brew Brand | 60 sec**\n\n| Scene | VO Script | Visual | Shot | AI Prompt |\n|---|---|---|---|---|\n| 1 (0–5s) | \"Some mornings ask more of you.\" | Alarm clock 5:47am, dark room | Close-up | `alarm clock glowing in dark bedroom, cinematic, slow motion, film grain, cool tones` |\n| 2 (5–12s) | \"So we made a cold brew that answers back.\" | Hands wrapping around glass | Medium | `hands holding glass of cold brew coffee, morning light, condensation on glass, warm tones` |\n...",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -2787,7 +2865,8 @@
       "ComfyUI"
     ],
     "output_kind": "spec",
-    "sample_output": "**Character:** Lyra — young mage, silver hair, emerald eyes, worn leather coat, staff\n\n**Canonical base prompt:**\n`lyra, 20s female mage, silver hair swept back, emerald eyes glowing faintly, worn brown leather duster, wooden staff with orb, fantasy, detailed illustration, artstation quality`\n\n**Pose variants:**\n- Standing neutral: `standing pose, three-quarter view, neutral expression`\n- Casting spell: `dynamic casting pose, hands raised, magical energy swirling`\n\n**SD consistency tip:** Train a LoRA on 15-20 approved outputs. Use `lyra_v1:0.8` in prompt weight to maintain face/costume consistency across scenes."
+    "sample_output": "**Character:** Lyra — young mage, silver hair, emerald eyes, worn leather coat, staff\n\n**Canonical base prompt:**\n`lyra, 20s female mage, silver hair swept back, emerald eyes glowing faintly, worn brown leather duster, wooden staff with orb, fantasy, detailed illustration, artstation quality`\n\n**Pose variants:**\n- Standing neutral: `standing pose, three-quarter view, neutral expression`\n- Casting spell: `dynamic casting pose, hands raised, magical energy swirling`\n\n**SD consistency tip:** Train a LoRA on 15-20 approved outputs. Use `lyra_v1:0.8` in prompt weight to maintain face/costume consistency across scenes.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -2817,7 +2896,8 @@
       "Figma"
     ],
     "output_kind": "spec",
-    "sample_output": "**App:** Wellness tracker | Principles: calm, human, minimal\n\n**Icon set:** `line icon set, wellness and health theme, 24px grid, 1.5px stroke, rounded caps, monochrome, clean minimal style, SVG-ready, white on dark --ar 1:1`\n\n**Illustration:** `gentle pastel illustration, person meditating in nature, flat design, soft gradients, breathing space, Headspace-adjacent style, no text --ar 4:3`\n\n**Hero image:** `serene landscape at dawn, soft golden light, person on hill, minimalist, editorial photography feel, lots of sky --ar 16:9`\n\n**Empty state:** `friendly abstract shape, no data yet, pastel tones, encouraging feeling, tiny character looking up, white background --ar 3:2`"
+    "sample_output": "**App:** Wellness tracker | Principles: calm, human, minimal\n\n**Icon set:** `line icon set, wellness and health theme, 24px grid, 1.5px stroke, rounded caps, monochrome, clean minimal style, SVG-ready, white on dark --ar 1:1`\n\n**Illustration:** `gentle pastel illustration, person meditating in nature, flat design, soft gradients, breathing space, Headspace-adjacent style, no text --ar 4:3`\n\n**Hero image:** `serene landscape at dawn, soft golden light, person on hill, minimalist, editorial photography feel, lots of sky --ar 16:9`\n\n**Empty state:** `friendly abstract shape, no data yet, pastel tones, encouraging feeling, tiny character looking up, white background --ar 3:2`",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Creative AI",
@@ -2847,7 +2927,8 @@
       "Interior AI"
     ],
     "output_kind": "spec",
-    "sample_output": "**Concept 1 — Warm Japandi**\n`living room interior, japandi style, warm oak furniture, cream boucle sofa, washi paper pendant light, low coffee table with single book and plant, tatami-inspired textures, golden hour light --ar 16:9`\n\n**Concept 2 — Cool Minimalist**\n`living room, brutalist minimalism, concrete floor, slate grey sectional, single arc floor lamp, large art print, negative space, cool natural light --ar 16:9`\n\n**Concept 3 — Cosy Eclectic**\n`boho living room, warm amber light, mixed textiles, vintage Persian rug, gallery wall, trailing houseplants, low warm lighting, layered --ar 16:9`"
+    "sample_output": "**Concept 1 — Warm Japandi**\n`living room interior, japandi style, warm oak furniture, cream boucle sofa, washi paper pendant light, low coffee table with single book and plant, tatami-inspired textures, golden hour light --ar 16:9`\n\n**Concept 2 — Cool Minimalist**\n`living room, brutalist minimalism, concrete floor, slate grey sectional, single arc floor lamp, large art print, negative space, cool natural light --ar 16:9`\n\n**Concept 3 — Cosy Eclectic**\n`boho living room, warm amber light, mixed textiles, vintage Persian rug, gallery wall, trailing houseplants, low warm lighting, layered --ar 16:9`",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Game Development",
@@ -2878,7 +2959,8 @@
       "Godot"
     ],
     "output_kind": "spec",
-    "sample_output": "**Game:** Tower Defense Roguelite (Mobile)\n\n**Core loop:**\n- **Primary action:** Place and upgrade towers using earned currency\n- **Immediate feedback:** Visual + haptic pop when a tower kills an enemy; currency counter ticks up\n- **Session goal (5–10 min):** Survive N waves and reach the boss\n- **Progression goal:** Unlock permanent upgrades, new tower types, harder maps\n- **Re-engagement hook:** Daily challenge with unique constraint; streak reward system\n\n**Top 3 risks:**\n1. **Upgrade overwhelm** — Too many options at once kills mobile pacing. Solution: gate by wave milestone.\n2. **No comeback mechanic** — If a run goes bad early, players quit. Add a 'Last Stand' emergency ability.\n3. **Progression plateau** — If permanent upgrades cap out, endgame feels flat. Plan a prestige system from day one."
+    "sample_output": "**Game:** Tower Defense Roguelite (Mobile)\n\n**Core loop:**\n- **Primary action:** Place and upgrade towers using earned currency\n- **Immediate feedback:** Visual + haptic pop when a tower kills an enemy; currency counter ticks up\n- **Session goal (5–10 min):** Survive N waves and reach the boss\n- **Progression goal:** Unlock permanent upgrades, new tower types, harder maps\n- **Re-engagement hook:** Daily challenge with unique constraint; streak reward system\n\n**Top 3 risks:**\n1. **Upgrade overwhelm** — Too many options at once kills mobile pacing. Solution: gate by wave milestone.\n2. **No comeback mechanic** — If a run goes bad early, players quit. Add a 'Last Stand' emergency ability.\n3. **Progression plateau** — If permanent upgrades cap out, endgame feels flat. Plan a prestige system from day one.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Game Development",
@@ -2916,7 +2998,8 @@
       "Unity"
     ],
     "output_kind": "templates",
-    "sample_output": "**NPC:** Maren — tired city guard, underpaid, secretly sympathetic\n\n**PATH A — Friendly**\nPlayer: \"Rough shift?\"\nMaren: \"You have no idea. Third double this week. What do you need?\"\nPlayer: \"Just trying to get into the merchants' quarter.\"\nMaren: *sighs* \"Gate closes at ninth bell. But… I didn't see you walk through just now. Move quick.\"\n*Outcome: Passage granted, +5 reputation with City Guard faction*\n\n**PATH B — Aggressive**\nPlayer: \"Get out of my way.\"\nMaren: \"Excuse me? You want to try that again?\"\n*Outcome: Hostile, -10 City Guard reputation, forced combat or retreat*\n\n**PATH C — Persuasion**\nPlayer: \"I heard the captain skims the gate fees. Must be frustrating doing the work and seeing none of it.\"\nMaren: *quietly* \"Who told you that?\" *pause* \"Fine. But you didn't hear this from me.\"\n*Outcome: Access + quest hook: Expose corrupt captain*"
+    "sample_output": "**NPC:** Maren — tired city guard, underpaid, secretly sympathetic\n\n**PATH A — Friendly**\nPlayer: \"Rough shift?\"\nMaren: \"You have no idea. Third double this week. What do you need?\"\nPlayer: \"Just trying to get into the merchants' quarter.\"\nMaren: *sighs* \"Gate closes at ninth bell. But… I didn't see you walk through just now. Move quick.\"\n*Outcome: Passage granted, +5 reputation with City Guard faction*\n\n**PATH B — Aggressive**\nPlayer: \"Get out of my way.\"\nMaren: \"Excuse me? You want to try that again?\"\n*Outcome: Hostile, -10 City Guard reputation, forced combat or retreat*\n\n**PATH C — Persuasion**\nPlayer: \"I heard the captain skims the gate fees. Must be frustrating doing the work and seeing none of it.\"\nMaren: *quietly* \"Who told you that?\" *pause* \"Fine. But you didn't hear this from me.\"\n*Outcome: Access + quest hook: Expose corrupt captain*",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Game Development",
@@ -2949,7 +3032,8 @@
       "Claude"
     ],
     "output_kind": "code",
-    "sample_output": "```csharp\n// InventorySystem.cs\n// Architecture: Uses event-driven design to decouple UI from inventory logic.\n// Subscribe to OnInventoryChanged to update any UI without direct references.\n\nusing UnityEngine;\nusing System;\nusing System.Collections.Generic;\n\npublic class InventorySystem : MonoBehaviour\n{\n    public static event Action<List<Item>> OnInventoryChanged;\n\n    [SerializeField] private int maxSlots = 20;\n    private List<Item> _items = new List<Item>();\n\n    public bool AddItem(Item item)\n    {\n        if (_items.Count >= maxSlots) return false;\n        _items.Add(item);\n        OnInventoryChanged?.Invoke(_items);\n        return true;\n    }\n\n    public void RemoveItem(Item item)\n    {\n        if (_items.Remove(item))\n            OnInventoryChanged?.Invoke(_items);\n    }\n}\n```"
+    "sample_output": "```csharp\n// InventorySystem.cs\n// Architecture: Uses event-driven design to decouple UI from inventory logic.\n// Subscribe to OnInventoryChanged to update any UI without direct references.\n\nusing UnityEngine;\nusing System;\nusing System.Collections.Generic;\n\npublic class InventorySystem : MonoBehaviour\n{\n    public static event Action<List<Item>> OnInventoryChanged;\n\n    [SerializeField] private int maxSlots = 20;\n    private List<Item> _items = new List<Item>();\n\n    public bool AddItem(Item item)\n    {\n        if (_items.Count >= maxSlots) return false;\n        _items.Add(item);\n        OnInventoryChanged?.Invoke(_items);\n        return true;\n    }\n\n    public void RemoveItem(Item item)\n    {\n        if (_items.Remove(item))\n            OnInventoryChanged?.Invoke(_items);\n    }\n}\n```",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Game Development",
@@ -2982,7 +3066,8 @@
       "Excel"
     ],
     "output_kind": "analysis",
-    "sample_output": "**Diagnosis:** Soft currency inflation\n\nYour daily quest rewards (500 coins) outpace the primary sink (upgrades average 800 coins but only needed every 3 days). Players accumulate ~1,500 coins/day with nowhere to spend them, making purchases feel meaningless.\n\n**Fix 1 — Add a time-limited sink**\nFlash merchant appears daily with exclusive cosmetics for 2,000 coins. *Trade-off:* Requires art/content overhead.\n\n**Fix 2 — Reduce quest rewards by 30%**\nSimple lever, ships fast. *Trade-off:* Risk of player backlash; needs communication.\n\n**Fix 3 — Add a prestige/conversion system**\n10,000 coins → 1 premium token. Creates an aspirational sink. *Trade-off:* Competitive pressure with IAP.\n\n**Spreadsheet schema:**\n| Day | Coins earned | Coins spent | Net | Running total | Active sinks |"
+    "sample_output": "**Diagnosis:** Soft currency inflation\n\nYour daily quest rewards (500 coins) outpace the primary sink (upgrades average 800 coins but only needed every 3 days). Players accumulate ~1,500 coins/day with nowhere to spend them, making purchases feel meaningless.\n\n**Fix 1 — Add a time-limited sink**\nFlash merchant appears daily with exclusive cosmetics for 2,000 coins. *Trade-off:* Requires art/content overhead.\n\n**Fix 2 — Reduce quest rewards by 30%**\nSimple lever, ships fast. *Trade-off:* Risk of player backlash; needs communication.\n\n**Fix 3 — Add a prestige/conversion system**\n10,000 coins → 1 premium token. Creates an aspirational sink. *Trade-off:* Competitive pressure with IAP.\n\n**Spreadsheet schema:**\n| Day | Coins earned | Coins spent | Net | Running total | Active sinks |",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Game Development",
@@ -3011,7 +3096,8 @@
       "Unreal Engine"
     ],
     "output_kind": "spec",
-    "sample_output": "**Architecture: LLM NPC Brain v1**\n\n**Context window strategy:**\n- Fixed system prompt: ~800 tokens (personality, world, current state)\n- Rolling dialogue window: last 10 exchanges (~600 tokens)\n- Injected memory summary: top 3 relevant memories (~200 tokens)\n- Total budget: 1,600 tokens in, 200 tokens out\n\n**Memory system:**\n- Short-term: last 10 messages in RAM\n- Long-term: vector DB (Chroma) — embed each exchange, retrieve top-3 by cosine similarity at query time\n\n**System prompt skeleton:**\n```\nYou are Aldric, a suspicious tavern keeper in the city of Veth.\nPersonality: guarded, dry humour, loyal to paying customers.\nCurrent state: {npc_mood}, {time_of_day}, {player_reputation}\nRecent memory: {memory_summary}\nRespond in 1-2 sentences. Stay in character. Never break the fourth wall.\n```\n\n**Cost control:** Cache system prompt with Anthropic prompt caching. Use Haiku for ambient chatter, Sonnet for quest-critical dialogue."
+    "sample_output": "**Architecture: LLM NPC Brain v1**\n\n**Context window strategy:**\n- Fixed system prompt: ~800 tokens (personality, world, current state)\n- Rolling dialogue window: last 10 exchanges (~600 tokens)\n- Injected memory summary: top 3 relevant memories (~200 tokens)\n- Total budget: 1,600 tokens in, 200 tokens out\n\n**Memory system:**\n- Short-term: last 10 messages in RAM\n- Long-term: vector DB (Chroma) — embed each exchange, retrieve top-3 by cosine similarity at query time\n\n**System prompt skeleton:**\n```\nYou are Aldric, a suspicious tavern keeper in the city of Veth.\nPersonality: guarded, dry humour, loyal to paying customers.\nCurrent state: {npc_mood}, {time_of_day}, {player_reputation}\nRecent memory: {memory_summary}\nRespond in 1-2 sentences. Stay in character. Never break the fourth wall.\n```\n\n**Cost control:** Cache system prompt with Anthropic prompt caching. Use Haiku for ambient chatter, Sonnet for quest-critical dialogue.",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Game Development",
@@ -3039,7 +3125,8 @@
       "Godot"
     ],
     "output_kind": "spec",
-    "sample_output": "**System: Dungeon Crawler Level Generator**\n\n**Grammar rules:**\nRoom types: [ENTRANCE, COMBAT, TREASURE, PUZZLE, BOSS]\nSequence: ENTRANCE → (COMBAT|PUZZLE)+ → TREASURE? → BOSS\nConstraint: No two COMBAT rooms adjacent; TREASURE only after COMBAT\n\n**Difficulty curve:**\nEnemy HP = base × (1 + 0.15 × roomIndex)\nRoom count = 8 + floor(level/3)\n\n**Pseudocode:**\n```\nfunction generateLevel(seed, difficulty):\n  rng = SeededRandom(seed)\n  rooms = [ENTRANCE]\n  while not valid(rooms):\n    rooms = buildChain(rng, difficulty)\n  return connectRooms(rooms, rng)\n\nfunction validate(rooms):\n  return isReachable(rooms) and hasBoss(rooms) and difficultyInBounds(rooms)\n```\n\n**Sample output (seed 4821, difficulty 2):**\nENTRANCE → COMBAT(3 goblins) → PUZZLE(pressure plates) → COMBAT(5 goblins + archer) → TREASURE(rare sword) → BOSS(Lich, 240HP)"
+    "sample_output": "**System: Dungeon Crawler Level Generator**\n\n**Grammar rules:**\nRoom types: [ENTRANCE, COMBAT, TREASURE, PUZZLE, BOSS]\nSequence: ENTRANCE → (COMBAT|PUZZLE)+ → TREASURE? → BOSS\nConstraint: No two COMBAT rooms adjacent; TREASURE only after COMBAT\n\n**Difficulty curve:**\nEnemy HP = base × (1 + 0.15 × roomIndex)\nRoom count = 8 + floor(level/3)\n\n**Pseudocode:**\n```\nfunction generateLevel(seed, difficulty):\n  rng = SeededRandom(seed)\n  rooms = [ENTRANCE]\n  while not valid(rooms):\n    rooms = buildChain(rng, difficulty)\n  return connectRooms(rooms, rng)\n\nfunction validate(rooms):\n  return isReachable(rooms) and hasBoss(rooms) and difficultyInBounds(rooms)\n```\n\n**Sample output (seed 4821, difficulty 2):**\nENTRANCE → COMBAT(3 goblins) → PUZZLE(pressure plates) → COMBAT(5 goblins + archer) → TREASURE(rare sword) → BOSS(Lich, 240HP)",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -3077,7 +3164,8 @@
     ],
     "est_time": "3–5 hours",
     "output_kind": "spec",
-    "sample_output": "**Agent Architecture: Personal Finance AI**\n\n**DB Schema (SQLite):**\n```sql\nCREATE TABLE transactions (\n  id TEXT PRIMARY KEY,\n  date TEXT, amount REAL, merchant TEXT,\n  category TEXT, raw_category TEXT, flagged INTEGER DEFAULT 0\n);\nCREATE TABLE daily_summaries (date TEXT PRIMARY KEY, json TEXT);\n```\n\n**Ingestion pipeline:**\n1. Pull transactions via Plaid /transactions/sync (or parse CSV)\n2. Upsert into SQLite (dedup by transaction id)\n3. For each uncategorised row, call Claude with merchant name + amount → returns category\n\n**Categorisation prompt:**\n```\nClassify this transaction into one of: [Food, Transport, Housing, Subscriptions, Shopping, Health, Entertainment, Other].\nMerchant: {merchant}  Amount: ${amount}\nReturn only the category name.\n```\n\n**Anomaly detection logic:**\n- Flag if amount > 2× rolling 30-day average for that category\n- Flag if merchant appears for the first time and amount > $50\n\n**Daily briefing prompt:**\n```\nGiven these transactions from {date}: {json}\nAnd monthly budget targets: {targets}\nWrite a 5-bullet morning briefing covering: total spend, top category, biggest single charge, any flagged anomalies, and one actionable suggestion.\n```"
+    "sample_output": "**Agent Architecture: Personal Finance AI**\n\n**DB Schema (SQLite):**\n```sql\nCREATE TABLE transactions (\n  id TEXT PRIMARY KEY,\n  date TEXT, amount REAL, merchant TEXT,\n  category TEXT, raw_category TEXT, flagged INTEGER DEFAULT 0\n);\nCREATE TABLE daily_summaries (date TEXT PRIMARY KEY, json TEXT);\n```\n\n**Ingestion pipeline:**\n1. Pull transactions via Plaid /transactions/sync (or parse CSV)\n2. Upsert into SQLite (dedup by transaction id)\n3. For each uncategorised row, call Claude with merchant name + amount → returns category\n\n**Categorisation prompt:**\n```\nClassify this transaction into one of: [Food, Transport, Housing, Subscriptions, Shopping, Health, Entertainment, Other].\nMerchant: {merchant}  Amount: ${amount}\nReturn only the category name.\n```\n\n**Anomaly detection logic:**\n- Flag if amount > 2× rolling 30-day average for that category\n- Flag if merchant appears for the first time and amount > $50\n\n**Daily briefing prompt:**\n```\nGiven these transactions from {date}: {json}\nAnd monthly budget targets: {targets}\nWrite a 5-bullet morning briefing covering: total spend, top category, biggest single charge, any flagged anomalies, and one actionable suggestion.\n```",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Finance & FP&A",
@@ -3119,7 +3207,8 @@
     ],
     "est_time": "30 minutes",
     "output_kind": "analysis",
-    "sample_output": "**Top 5 Tax Strategies for Your Profile**\n\n**1. Max Solo 401(k) — estimated savings: $14,280**\nAs a self-employed person you can contribute up to $66,000 (2024). The employer contribution side (25% of net self-employment income) is deductible on Schedule 1. *IRC §401(a).* Action: open a Solo 401(k) by Dec 31; fund by tax deadline.\n\n**2. Home Office Deduction (Simplified Method) — ~$1,500**\n$5/sq ft × up to 300 sq ft. No depreciation recapture risk. *IRC §280A.* Action: measure dedicated workspace, document with photos.\n\n**3. SEP-IRA vs Solo 401(k) comparison**\nSEP-IRA simpler to open, but Solo 401(k) allows employee deferrals — better if income < $200k.\n\n**4. Qualified Business Income (QBI) Deduction — up to 20% of net income**\nAvailable for pass-through entities below $182,050 (single). *IRC §199A.* Risk: phase-out applies to specified service trades.\n\n**5. Tax-Loss Harvesting on taxable portfolio**\nRealise ~$8k in unrealised losses to offset gains. Beware 30-day wash-sale rule. *IRC §1091.*\n\n**Action checklist:**\n- [ ] Open Solo 401(k) before Dec 31\n- [ ] Calculate exact home office sq footage\n- [ ] Review taxable account for harvesting candidates\n- [ ] Confirm QBI eligibility with your business type"
+    "sample_output": "**Top 5 Tax Strategies for Your Profile**\n\n**1. Max Solo 401(k) — estimated savings: $14,280**\nAs a self-employed person you can contribute up to $66,000 (2024). The employer contribution side (25% of net self-employment income) is deductible on Schedule 1. *IRC §401(a).* Action: open a Solo 401(k) by Dec 31; fund by tax deadline.\n\n**2. Home Office Deduction (Simplified Method) — ~$1,500**\n$5/sq ft × up to 300 sq ft. No depreciation recapture risk. *IRC §280A.* Action: measure dedicated workspace, document with photos.\n\n**3. SEP-IRA vs Solo 401(k) comparison**\nSEP-IRA simpler to open, but Solo 401(k) allows employee deferrals — better if income < $200k.\n\n**4. Qualified Business Income (QBI) Deduction — up to 20% of net income**\nAvailable for pass-through entities below $182,050 (single). *IRC §199A.* Risk: phase-out applies to specified service trades.\n\n**5. Tax-Loss Harvesting on taxable portfolio**\nRealise ~$8k in unrealised losses to offset gains. Beware 30-day wash-sale rule. *IRC §1091.*\n\n**Action checklist:**\n- [ ] Open Solo 401(k) before Dec 31\n- [ ] Calculate exact home office sq footage\n- [ ] Review taxable account for harvesting candidates\n- [ ] Confirm QBI eligibility with your business type",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Quick Wins",
@@ -3155,7 +3244,8 @@
     ],
     "est_time": "10 minutes",
     "output_kind": "analysis",
-    "sample_output": "**Health Metrics Summary**\n\n| Marker | Your Value | Lab Range | Optimal Range | Status |\n|---|---|---|---|---|\n| LDL Cholesterol | 142 mg/dL | <160 | <100 | ⚠️ Elevated |\n| HbA1c | 5.8% | <5.7 pre-diabetic | <5.4 | ⚠️ Borderline |\n| Vitamin D | 24 ng/mL | 20–50 | 40–60 | ⚠️ Sub-optimal |\n| Ferritin | 68 ng/mL | 12–300 | 50–150 | ✅ Good |\n| TSH | 2.1 mIU/L | 0.4–4.0 | 0.5–2.5 | ✅ Good |\n\n**Flagged patterns:**\n- LDL + borderline HbA1c together suggest early metabolic stress worth monitoring.\n- Low-normal Vitamin D may be contributing to fatigue.\n\n**Lifestyle adjustments to discuss with your doctor:**\n1. Mediterranean-style diet to address LDL and glycaemic trends simultaneously.\n2. Vitamin D3 + K2 supplementation (2,000–4,000 IU/day) — confirm dose with doctor.\n3. 150 min/week moderate cardio — independently improves all three flagged markers.\n\n*This is pattern recognition, not medical advice. Bring this table to your next appointment.*"
+    "sample_output": "**Health Metrics Summary**\n\n| Marker | Your Value | Lab Range | Optimal Range | Status |\n|---|---|---|---|---|\n| LDL Cholesterol | 142 mg/dL | <160 | <100 | ⚠️ Elevated |\n| HbA1c | 5.8% | <5.7 pre-diabetic | <5.4 | ⚠️ Borderline |\n| Vitamin D | 24 ng/mL | 20–50 | 40–60 | ⚠️ Sub-optimal |\n| Ferritin | 68 ng/mL | 12–300 | 50–150 | ✅ Good |\n| TSH | 2.1 mIU/L | 0.4–4.0 | 0.5–2.5 | ✅ Good |\n\n**Flagged patterns:**\n- LDL + borderline HbA1c together suggest early metabolic stress worth monitoring.\n- Low-normal Vitamin D may be contributing to fatigue.\n\n**Lifestyle adjustments to discuss with your doctor:**\n1. Mediterranean-style diet to address LDL and glycaemic trends simultaneously.\n2. Vitamin D3 + K2 supplementation (2,000–4,000 IU/day) — confirm dose with doctor.\n3. 150 min/week moderate cardio — independently improves all three flagged markers.\n\n*This is pattern recognition, not medical advice. Bring this table to your next appointment.*",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Software Development",
@@ -3197,7 +3287,8 @@
     ],
     "est_time": "2–4 hours",
     "output_kind": "spec",
-    "sample_output": "**Ghost Database Architecture**\n\n**Memory layers:**\n\n| Layer | Store | TTL | Use case |\n|---|---|---|---|\n| Episodic (short-term) | Redis list (sliding window) | Last 20 turns | Recent dialogue context |\n| Semantic (long-term) | ChromaDB / Pinecone | Permanent | Past interactions, docs |\n| Structured facts | PostgreSQL key-value table | Permanent, mutable | User prefs, entity state |\n\n**Structured facts schema:**\n```sql\nCREATE TABLE agent_facts (\n  agent_id TEXT, key TEXT, value JSONB,\n  confidence REAL, updated_at TIMESTAMPTZ,\n  PRIMARY KEY (agent_id, key)\n);\n```\n\n**Retrieval orchestration (pseudocode):**\n```python\ndef build_context(query, agent_id):\n  episodic  = redis.lrange(f'ep:{agent_id}', 0, 19)      # always include\n  semantic  = chroma.query(query, n_results=4)             # top-4 semantic hits\n  facts     = pg.fetch('SELECT key, value FROM agent_facts WHERE agent_id=$1', agent_id)\n  return format_context(episodic, semantic, facts)\n```\n\n**System-prompt injection template:**\n```\n[MEMORY]\nRecent context: {episodic_summary}\nRelevant past knowledge: {semantic_hits}\nKnown facts about user: {facts_json}\n[/MEMORY]\n```\n\n**Write rules:**\n- After every turn → append to episodic Redis list, pop oldest if > 20\n- After task completion → embed summary → upsert to vector DB\n- When agent learns a stable fact (name, preference, goal) → upsert to PostgreSQL facts table"
+    "sample_output": "**Ghost Database Architecture**\n\n**Memory layers:**\n\n| Layer | Store | TTL | Use case |\n|---|---|---|---|\n| Episodic (short-term) | Redis list (sliding window) | Last 20 turns | Recent dialogue context |\n| Semantic (long-term) | ChromaDB / Pinecone | Permanent | Past interactions, docs |\n| Structured facts | PostgreSQL key-value table | Permanent, mutable | User prefs, entity state |\n\n**Structured facts schema:**\n```sql\nCREATE TABLE agent_facts (\n  agent_id TEXT, key TEXT, value JSONB,\n  confidence REAL, updated_at TIMESTAMPTZ,\n  PRIMARY KEY (agent_id, key)\n);\n```\n\n**Retrieval orchestration (pseudocode):**\n```python\ndef build_context(query, agent_id):\n  episodic  = redis.lrange(f'ep:{agent_id}', 0, 19)      # always include\n  semantic  = chroma.query(query, n_results=4)             # top-4 semantic hits\n  facts     = pg.fetch('SELECT key, value FROM agent_facts WHERE agent_id=$1', agent_id)\n  return format_context(episodic, semantic, facts)\n```\n\n**System-prompt injection template:**\n```\n[MEMORY]\nRecent context: {episodic_summary}\nRelevant past knowledge: {semantic_hits}\nKnown facts about user: {facts_json}\n[/MEMORY]\n```\n\n**Write rules:**\n- After every turn → append to episodic Redis list, pop oldest if > 20\n- After task completion → embed summary → upsert to vector DB\n- When agent learns a stable fact (name, preference, goal) → upsert to PostgreSQL facts table",
+    "dateAdded": "2025-01-01"
   },
   {
     "domain": "Data & Analytics",
@@ -3242,7 +3333,8 @@
     ],
     "est_time": "15 min",
     "output_kind": "visual",
-    "sample_output": "**Copilot prompt to paste:**\n\"Create a waterfall chart showing monthly Revenue variance versus prior year. Use the [Sales] table with [Revenue] and [Date].[Month]. Highlight positive months in teal and negative months in red.\"\n\n**Visual type:** Waterfall — best for showing how each month's delta builds up to the total annual variance.\n\n**DAX measure to create first:**\n```dax\nRevenue vs PY =\n[Total Revenue]\n  - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n```\n\n**Formatting tips:**\n- Enable data labels to show the exact delta on each bar\n- Pin the Y-axis to zero so gains and losses are visually comparable"
+    "sample_output": "**Copilot prompt to paste:**\n\"Create a waterfall chart showing monthly Revenue variance versus prior year. Use the [Sales] table with [Revenue] and [Date].[Month]. Highlight positive months in teal and negative months in red.\"\n\n**Visual type:** Waterfall — best for showing how each month's delta builds up to the total annual variance.\n\n**DAX measure to create first:**\n```dax\nRevenue vs PY =\n[Total Revenue]\n  - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n```\n\n**Formatting tips:**\n- Enable data labels to show the exact delta on each bar\n- Pin the Y-axis to zero so gains and losses are visually comparable",
+    "dateAdded": "2026-05-23"
   },
   {
     "domain": "Data & Analytics",
@@ -3285,7 +3377,8 @@
     ],
     "est_time": "20 min",
     "output_kind": "code",
-    "sample_output": "**Production measure:**\n```dax\nRevenue YoY % =\nVAR _Curr = [Total Revenue]\nVAR _Prev = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\nRETURN\n    DIVIDE(_Curr - _Prev, _Prev, BLANK())\n```\n\n**Function explanations:**\n- `CALCULATE` — re-evaluates a measure under a modified filter context\n- `SAMEPERIODLASTYEAR` — shifts the date filter back exactly 12 months\n- `DIVIDE` — safe division that returns BLANK() instead of an error when the denominator is zero\n\n**Edge cases:**\n- Returns BLANK() for periods with no prior-year data — visuals handle this cleanly\n- Requires a marked date table; if not marked, replace with `DATEADD('Date'[Date], -1, YEAR)`\n- Slicer selections (e.g. Region) are automatically respected via filter context\n\n**Simplified version:**\n```dax\nRevenue YoY % Simple =\nDIVIDE(\n    [Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),\n    CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n)\n```"
+    "sample_output": "**Production measure:**\n```dax\nRevenue YoY % =\nVAR _Curr = [Total Revenue]\nVAR _Prev = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\nRETURN\n    DIVIDE(_Curr - _Prev, _Prev, BLANK())\n```\n\n**Function explanations:**\n- `CALCULATE` — re-evaluates a measure under a modified filter context\n- `SAMEPERIODLASTYEAR` — shifts the date filter back exactly 12 months\n- `DIVIDE` — safe division that returns BLANK() instead of an error when the denominator is zero\n\n**Edge cases:**\n- Returns BLANK() for periods with no prior-year data — visuals handle this cleanly\n- Requires a marked date table; if not marked, replace with `DATEADD('Date'[Date], -1, YEAR)`\n- Slicer selections (e.g. Region) are automatically respected via filter context\n\n**Simplified version:**\n```dax\nRevenue YoY % Simple =\nDIVIDE(\n    [Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),\n    CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n)\n```",
+    "dateAdded": "2026-05-23"
   },
   {
     "domain": "Data & Analytics",
@@ -3329,7 +3422,8 @@
     ],
     "est_time": "45 min",
     "output_kind": "visual",
-    "sample_output": "**Page layout blueprint:**\n```\n┌──────────────────────────────────────────────────┐\n│ KPI Row: [Revenue] [vs Target %] [YoY %] [Open Pipeline] │\n├──────────────────────────────────────────────────┤\n│ Main (60% width): Line — Monthly Revenue vs Target by Region │\n│ Right (40% width): Bar — Top 10 Accounts by Revenue  │\n├──────────────────────────────────────────────────┤\n│ Bottom: Matrix — Region × Product (heat map colour scale)  │\n└──────────────────────────────────────────────────┘\nSlicer: Region (top-right, horizontal pill style)\n```\n\n**DAX — Revenue vs Target %:**\n```dax\nRevenue vs Target % =\nVAR _A = [Total Revenue]\nVAR _T = SUM('Targets'[Revenue Target])\nRETURN DIVIDE(_A - _T, _T)\n```\n\n**Copilot prompt:**\n\"Create a sales performance page with a KPI row (Total Revenue, Revenue vs Target %, YoY Growth, Open Pipeline), a line chart of Monthly Revenue vs Target by Region, a Top 10 Accounts bar chart, and a Region × Product matrix. Add a Region slicer.\"\n\n**Design tip for Sales Director:** Lead with the traffic-light KPI row — executives scan top-left first. Use conditional formatting (red/green) on the matrix so underperforming cells are instantly visible without reading numbers."
+    "sample_output": "**Page layout blueprint:**\n```\n┌──────────────────────────────────────────────────┐\n│ KPI Row: [Revenue] [vs Target %] [YoY %] [Open Pipeline] │\n├──────────────────────────────────────────────────┤\n│ Main (60% width): Line — Monthly Revenue vs Target by Region │\n│ Right (40% width): Bar — Top 10 Accounts by Revenue  │\n├──────────────────────────────────────────────────┤\n│ Bottom: Matrix — Region × Product (heat map colour scale)  │\n└──────────────────────────────────────────────────┘\nSlicer: Region (top-right, horizontal pill style)\n```\n\n**DAX — Revenue vs Target %:**\n```dax\nRevenue vs Target % =\nVAR _A = [Total Revenue]\nVAR _T = SUM('Targets'[Revenue Target])\nRETURN DIVIDE(_A - _T, _T)\n```\n\n**Copilot prompt:**\n\"Create a sales performance page with a KPI row (Total Revenue, Revenue vs Target %, YoY Growth, Open Pipeline), a line chart of Monthly Revenue vs Target by Region, a Top 10 Accounts bar chart, and a Region × Product matrix. Add a Region slicer.\"\n\n**Design tip for Sales Director:** Lead with the traffic-light KPI row — executives scan top-left first. Use conditional formatting (red/green) on the matrix so underperforming cells are instantly visible without reading numbers.",
+    "dateAdded": "2026-05-23"
   },
   {
     "domain": "Data & Analytics",
@@ -3373,7 +3467,8 @@
     ],
     "est_time": "1.5 hours",
     "output_kind": "spec",
-    "sample_output": "**Field descriptions (sample):**\n- `Net Revenue`: Total sales after discounts and returns, in USD. Excludes intercompany and contra-revenue items.\n- `Gross Margin %`: Gross profit divided by Net Revenue. Use this — not Revenue — to compare profitability across segments.\n- `Close Date`: Date a deal was marked Won in Salesforce. Use for period reporting; distinct from Invoice Date.\n- `ARR`: Annual Recurring Revenue. Annualised value of active subscriptions; excludes one-time fees.\n\n**AI Instructions text:**\n> \"This model covers B2B Sales performance for the Americas region. 'Revenue' always means Net Revenue after returns. For 'targets', use the [Quota] table, not [Forecast]. Our fiscal year starts February 1 — when asked about 'this year' or 'YTD', use fiscal year. Default to current fiscal period unless the user specifies otherwise. 'Churn' refers to the [Churned ARR] measure.\"\n\n**Synonyms:**\n- Net Revenue → Sales, Bookings, Income, Top Line\n- Gross Margin % → Margin, Profitability, GM%\n- Churned ARR → Churn, Lost Revenue, Cancellations\n\n**Gap analysis:**\n- ✅ 'What is our revenue this quarter?' — answerable\n- ✅ 'Which region is furthest behind target?' — answerable\n- ❌ 'Why did churn spike in March?' — needs a narrative/commentary measure; model has no causal layer\n- ❌ 'What will Q4 look like?' — no forecast table connected; add [Forecast] table\n- ⚠️ 'Show me deals at risk' — partial: pipeline data exists but no risk-score measure"
+    "sample_output": "**Field descriptions (sample):**\n- `Net Revenue`: Total sales after discounts and returns, in USD. Excludes intercompany and contra-revenue items.\n- `Gross Margin %`: Gross profit divided by Net Revenue. Use this — not Revenue — to compare profitability across segments.\n- `Close Date`: Date a deal was marked Won in Salesforce. Use for period reporting; distinct from Invoice Date.\n- `ARR`: Annual Recurring Revenue. Annualised value of active subscriptions; excludes one-time fees.\n\n**AI Instructions text:**\n> \"This model covers B2B Sales performance for the Americas region. 'Revenue' always means Net Revenue after returns. For 'targets', use the [Quota] table, not [Forecast]. Our fiscal year starts February 1 — when asked about 'this year' or 'YTD', use fiscal year. Default to current fiscal period unless the user specifies otherwise. 'Churn' refers to the [Churned ARR] measure.\"\n\n**Synonyms:**\n- Net Revenue → Sales, Bookings, Income, Top Line\n- Gross Margin % → Margin, Profitability, GM%\n- Churned ARR → Churn, Lost Revenue, Cancellations\n\n**Gap analysis:**\n- ✅ 'What is our revenue this quarter?' — answerable\n- ✅ 'Which region is furthest behind target?' — answerable\n- ❌ 'Why did churn spike in March?' — needs a narrative/commentary measure; model has no causal layer\n- ❌ 'What will Q4 look like?' — no forecast table connected; add [Forecast] table\n- ⚠️ 'Show me deals at risk' — partial: pipeline data exists but no risk-score measure",
+    "dateAdded": "2026-05-23"
   },
   {
     "domain": "Data & Analytics",
@@ -3410,7 +3505,8 @@
     ],
     "est_time": "20 min",
     "output_kind": "analysis",
-    "sample_output": "**Q1: 'Are we hitting our sales target?'**\n- Query to type: *\"Show revenue vs target by region this quarter as a bar chart\"*\n- Expected visual: Clustered bar — Actual vs Target side by side per region\n- Follow-up: *\"Which sales rep in the bottom region has the largest gap?\"*\n- Refinement tip: If Copilot uses the wrong date range, add *\"for Q3 FY2026\"* explicitly\n\n**Q2: 'Which product is selling the most?'**\n- Query to type: *\"Top 10 products by units sold this year\"*\n- Expected visual: Ranked bar chart, descending\n- Follow-up: *\"Show the same top 10 by revenue margin instead of units\"*\n- Refinement tip: Say *\"by product name not SKU\"* if it returns codes instead of readable names\n\n**Q3: 'How is this month trending vs last month?'**\n- Query to type: *\"Daily revenue this month vs last month as a line chart\"*\n- Expected visual: Dual-line chart with month comparison\n- Follow-up: *\"Highlight the days where this month fell below last month\"*\n- Refinement tip: If it shows weekly not daily, add *\"daily granularity\"* to your prompt"
+    "sample_output": "**Q1: 'Are we hitting our sales target?'**\n- Query to type: *\"Show revenue vs target by region this quarter as a bar chart\"*\n- Expected visual: Clustered bar — Actual vs Target side by side per region\n- Follow-up: *\"Which sales rep in the bottom region has the largest gap?\"*\n- Refinement tip: If Copilot uses the wrong date range, add *\"for Q3 FY2026\"* explicitly\n\n**Q2: 'Which product is selling the most?'**\n- Query to type: *\"Top 10 products by units sold this year\"*\n- Expected visual: Ranked bar chart, descending\n- Follow-up: *\"Show the same top 10 by revenue margin instead of units\"*\n- Refinement tip: Say *\"by product name not SKU\"* if it returns codes instead of readable names\n\n**Q3: 'How is this month trending vs last month?'**\n- Query to type: *\"Daily revenue this month vs last month as a line chart\"*\n- Expected visual: Dual-line chart with month comparison\n- Follow-up: *\"Highlight the days where this month fell below last month\"*\n- Refinement tip: If it shows weekly not daily, add *\"daily granularity\"* to your prompt",
+    "dateAdded": "2026-05-23"
   },
   {
     "domain": "Finance & FP&A",
@@ -3458,6 +3554,7 @@
     ],
     "est_time": "3–4 hours",
     "output_kind": "visual",
-    "sample_output": "**1. DATA PREP — Power Query AI prompt:**\n\"Clean this General Ledger export: remove blank rows, split the Account Code column into Department and Account Number, standardise all date formats to YYYY-MM-DD, and flag any negative Revenue lines as 'Adjustment' in a new Type column.\"\n\n**2. KEY DAX MEASURES:**\n```dax\nGross Margin % =\nDIVIDE([Gross Profit], [Total Revenue], BLANK())\n\nBudget Variance % =\nDIVIDE([Total Revenue] - SUM('Budget'[Revenue]), SUM('Budget'[Revenue]))\n\nEBITDA =\n[Gross Profit] - [Total OPEX] + [D&A]\n```\n\n**3. COPILOT VISUAL PROMPT:**\n\"Build a P&L summary page with: a KPI row (Revenue, Gross Margin %, EBITDA, Headcount), a waterfall chart showing Revenue → Gross Profit → EBITDA bridge, and a small multiples line chart of Revenue by Department vs prior year. Add a Month slicer.\"\n\n**4. CFO COMMENTARY PROMPT:**\n\"Write a 3-paragraph CFO commentary for [Month] [Year]. Revenue was [X] vs budget [Y] ([Z]%). Gross margin was [A]% vs [B]% prior year. OPEX was [C] vs budget [D]. Tone: direct, no jargon, flag two risks and one positive. Format: bullet summary + 2-sentence paragraph per metric.\"\n\n**5. ROW-LEVEL SECURITY:**\nIn Power BI Desktop → Modelling → Manage Roles → create role 'Region Manager' with filter: `[Region] = USERPRINCIPALNAME()`. Publish and assign users in Power BI Service → Dataset → Security."
+    "sample_output": "**1. DATA PREP — Power Query AI prompt:**\n\"Clean this General Ledger export: remove blank rows, split the Account Code column into Department and Account Number, standardise all date formats to YYYY-MM-DD, and flag any negative Revenue lines as 'Adjustment' in a new Type column.\"\n\n**2. KEY DAX MEASURES:**\n```dax\nGross Margin % =\nDIVIDE([Gross Profit], [Total Revenue], BLANK())\n\nBudget Variance % =\nDIVIDE([Total Revenue] - SUM('Budget'[Revenue]), SUM('Budget'[Revenue]))\n\nEBITDA =\n[Gross Profit] - [Total OPEX] + [D&A]\n```\n\n**3. COPILOT VISUAL PROMPT:**\n\"Build a P&L summary page with: a KPI row (Revenue, Gross Margin %, EBITDA, Headcount), a waterfall chart showing Revenue → Gross Profit → EBITDA bridge, and a small multiples line chart of Revenue by Department vs prior year. Add a Month slicer.\"\n\n**4. CFO COMMENTARY PROMPT:**\n\"Write a 3-paragraph CFO commentary for [Month] [Year]. Revenue was [X] vs budget [Y] ([Z]%). Gross margin was [A]% vs [B]% prior year. OPEX was [C] vs budget [D]. Tone: direct, no jargon, flag two risks and one positive. Format: bullet summary + 2-sentence paragraph per metric.\"\n\n**5. ROW-LEVEL SECURITY:**\nIn Power BI Desktop → Modelling → Manage Roles → create role 'Region Manager' with filter: `[Region] = USERPRINCIPALNAME()`. Publish and assign users in Power BI Service → Dataset → Security.",
+    "dateAdded": "2026-05-23"
   }
 ]
