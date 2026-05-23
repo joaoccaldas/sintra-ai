@@ -96,7 +96,7 @@ export const AI_TOOLS: AITool[] = [
     name: "ChatGPT",
     tagline: "OpenAI's AI assistant used by over 200 million people worldwide",
     description:
-      "ChatGPT is the world's most widely used AI assistant, powered by OpenAI's GPT-4.1 and o-series reasoning models (o3, o4-mini). It supports text, image, voice, and file inputs, and offers custom GPTs, a code interpreter, web browsing, and image generation — all in one interface.",
+      "ChatGPT is the world's most widely used AI assistant, powered by GPT-5.5 Instant (default as of May 2026) with GPT-5.5 and GPT-5.5 Thinking available on paid plans. It supports text, image, voice, and file inputs, and offers custom GPTs, a code interpreter, web browsing, and image generation — all in one interface.",
     category: "chat",
     pricing: "freemium",
     priceNote: "Free tier · $20/mo Plus · $25/mo Team",
@@ -109,9 +109,9 @@ export const AI_TOOLS: AITool[] = [
   {
     id: "gemini",
     name: "Gemini",
-    tagline: "Google's AI assistant with real-time Search and 1M-token context",
+    tagline: "Google's AI assistant with real-time Search and up to 2M-token context",
     description:
-      "Gemini is Google's consumer AI assistant powered by the Gemini 2.5 model family. It integrates tightly with Google Workspace (Docs, Sheets, Gmail), supports file and image inputs, and can ground answers in live Google Search results. Gemini Advanced unlocks Gemini 2.5 Pro with a 1M-token context window.",
+      "Gemini is Google's consumer AI assistant powered by the Gemini 3.x model family. It integrates tightly with Google Workspace (Docs, Sheets, Gmail), supports file and image inputs, and can ground answers in live Google Search results. Gemini Advanced unlocks Gemini 3.1 Pro with a 2M-token context window — the largest of any frontier model.",
     category: "chat",
     pricing: "freemium",
     priceNote: "Free tier · $19.99/mo Advanced (Google One AI Premium)",
@@ -124,9 +124,9 @@ export const AI_TOOLS: AITool[] = [
   {
     id: "copilot",
     name: "Microsoft Copilot",
-    tagline: "Microsoft's AI assistant built on GPT-4.1 with live Bing Search",
+    tagline: "Microsoft's AI assistant built on GPT-5.5 with live Bing Search",
     description:
-      "Microsoft Copilot is powered by OpenAI's GPT-4.1 models and Bing's real-time web index, delivering up-to-date answers with citations. It's integrated across Windows 11, Edge, Microsoft 365, and Teams, making it the default AI layer across Microsoft's product ecosystem for hundreds of millions of users.",
+      "Microsoft Copilot is powered by OpenAI's GPT-5.5 models and Bing's real-time web index, delivering up-to-date answers with citations. It's integrated across Windows 11, Edge, Microsoft 365, and Teams, making it the default AI layer across Microsoft's product ecosystem for hundreds of millions of users.",
     category: "chat",
     pricing: "freemium",
     priceNote: "Free · $30/mo Copilot for Microsoft 365",
@@ -141,7 +141,7 @@ export const AI_TOOLS: AITool[] = [
     name: "Grok",
     tagline: "xAI's assistant with real-time X/Twitter data and Aurora image generation",
     description:
-      "Grok is xAI's AI assistant built into the X platform (formerly Twitter), with unique real-time access to the X data firehose. Grok 3 features strong reasoning and image understanding, while the standalone app offers image generation via the Aurora model. Grok tends to have fewer content restrictions than other major assistants.",
+      "Grok is xAI's AI assistant built into the X platform (formerly Twitter), with unique real-time access to the X data firehose. Grok 4.1 is available to all users; Grok 4.3 Beta (Apr 2026) adds multimodal video understanding and enhanced reasoning. The standalone Grok app offers image generation via Aurora. Grok tends to have fewer content restrictions than other major assistants.",
     category: "chat",
     pricing: "freemium",
     priceNote: "Free on X (limited) · $8/mo X Premium for full Grok access",
@@ -308,7 +308,7 @@ export const AI_TOOLS: AITool[] = [
     name: "GitHub Copilot",
     tagline: "AI coding assistant integrated across GitHub and major IDEs",
     description:
-      "GitHub Copilot is the most widely deployed AI coding assistant, integrated into VS Code, Visual Studio, JetBrains IDEs, and GitHub's web editor. It provides inline completions, a chat sidebar, pull request summaries, and Copilot Workspace for autonomous multi-step coding tasks. Backed by OpenAI GPT-4.1 and Claude models.",
+      "GitHub Copilot is the most widely deployed AI coding assistant, integrated into VS Code, Visual Studio, JetBrains IDEs, and GitHub's web editor. It provides inline completions, a chat sidebar, pull request summaries, and Copilot Workspace for autonomous multi-step coding tasks. Backed by OpenAI GPT-5.5 and Claude Sonnet 4.6.",
     category: "code",
     pricing: "freemium",
     priceNote: "Free for verified students/OSS maintainers · $10/mo Individual · $19/mo Business",
@@ -687,7 +687,7 @@ export const AI_TOOLS: AITool[] = [
     name: "Perplexity AI",
     tagline: "AI answer engine that searches the web and cites every source",
     description:
-      "Perplexity is an AI-powered answer engine that searches the web in real time and synthesizes answers with inline citations. Unlike traditional search engines, it provides direct answers rather than a list of links. Perplexity Pro adds frontier models (GPT-4.1, Claude Sonnet 4.6, Gemini 2.5) and Deep Research mode for comprehensive long-form reports.",
+      "Perplexity is an AI-powered answer engine that searches the web in real time and synthesizes answers with inline citations. Unlike traditional search engines, it provides direct answers rather than a list of links. Perplexity Pro adds frontier models (GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro) and Deep Research mode for comprehensive long-form reports.",
     category: "research",
     pricing: "freemium",
     priceNote: "Free · $20/mo Pro",

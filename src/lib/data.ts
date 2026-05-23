@@ -82,13 +82,13 @@ const LLM_MAP: Record<string, Record<string, { model: string; reason: string }>>
     expert:       { model: "Claude Opus 4.7",   reason: "Most rigorous reasoning for complex research" },
   },
   "finance": {
-    beginner:     { model: "GPT-4.1",           reason: "Strong at spreadsheets and structured financial data" },
-    intermediate: { model: "GPT-4.1",           reason: "Excellent tabular logic and financial model structuring" },
+    beginner:     { model: "GPT-5.5 Instant",           reason: "Strong at spreadsheets and structured financial data" },
+    intermediate: { model: "GPT-5.5 Instant",           reason: "Excellent tabular logic and financial model structuring" },
     advanced:     { model: "Claude Sonnet 4.6", reason: "Long context for multi-document FP&A analysis" },
     expert:       { model: "Claude Opus 4.7",   reason: "Complex cross-functional modeling and strategic trade-offs" },
   },
   "data-analytics": {
-    beginner:     { model: "GPT-4.1",           reason: "Strong data reasoning and chart interpretation" },
+    beginner:     { model: "GPT-5.5 Instant",           reason: "Strong data reasoning and chart interpretation" },
     intermediate: { model: "Claude Sonnet 4.6", reason: "Handles complex queries across large datasets" },
     advanced:     { model: "Claude Sonnet 4.6", reason: "Deep BI workflow design and data pipeline reasoning" },
     expert:       { model: "Claude Opus 4.7",   reason: "Autonomous analytics reasoning for enterprise-scale systems" },
@@ -100,8 +100,8 @@ const LLM_MAP: Record<string, Record<string, { model: string; reason: string }>>
     expert:       { model: "Claude Opus 4.7",   reason: "Deepest architectural reasoning for system design" },
   },
   "creative-ai": {
-    beginner:     { model: "GPT-4.1",           reason: "Multimodal; understands and generates visual briefs" },
-    intermediate: { model: "GPT-4.1",           reason: "Best visual reasoning for creative direction" },
+    beginner:     { model: "GPT-5.5 Instant",           reason: "Multimodal; understands and generates visual briefs" },
+    intermediate: { model: "GPT-5.5 Instant",           reason: "Best visual reasoning for creative direction" },
     advanced:     { model: "Claude Sonnet 4.6", reason: "Detailed prompt engineering for generative models" },
     expert:       { model: "Claude Opus 4.7",   reason: "Deep aesthetic reasoning and brand-level thinking" },
   },

@@ -171,7 +171,7 @@ At inference time you give it a prompt; it predicts the most likely continuation
 
 If the window is 128,000 tokens (~96,000 words) and your conversation exceeds that, earlier messages are dropped. The model has no memory of them.
 
-Modern frontier models: GPT-4.1 supports 128K tokens, Claude 4 series supports 200K, and Gemini 2.5 Pro supports up to 1M. This is critical for analysing long documents, maintaining long conversations, or processing entire codebases.`,
+Modern frontier models: GPT-5.5 supports 1M tokens, Claude Opus 4.7 and Sonnet 4.6 also support 1M, and Gemini 3.1 Pro extends to 2M — the largest of any frontier model as of mid-2026. This is critical for analysing long documents, maintaining long conversations, or processing entire codebases.`,
     analogy: "The context window is like a whiteboard in the room. The AI can only reference what's written on it — once it fills up, you must erase something to write more.",
     related: ["tokens", "llm", "rag"],
     addedAt: "2025-05-17",
@@ -347,14 +347,14 @@ Most frontier models support this: Anthropic calls it "tool use," OpenAI calls i
     difficulty: 2,
     body: `**Open source LLMs** are models whose weights are publicly released — you download them, run them on your own hardware or a cloud VM, and pay no API fees. Quality has converged rapidly with closed models.
 
-**Best models by use case (2025–2026):**
-- **General chat & reasoning**: Llama 4 Maverick (Meta), Qwen3-72B (Alibaba)
-- **Coding**: DeepSeek-Coder-V3, Qwen3-Coder
-- **Long context**: Llama 3.1 405B (128K), Qwen2.5-72B (128K)
-- **Compact / edge**: Llama 4 Scout (17B active params), Phi-4-mini (Microsoft), Gemma 3 4B (Google)
-- **Multilingual**: Qwen3-7B (29 languages), Mistral Small 3.1
+**Best models by use case (mid-2026):**
+- **General chat & reasoning**: Llama 4 Maverick (Meta, MoE, 1M ctx), Qwen3-235B (Alibaba)
+- **Coding & agentic**: DeepSeek V4 (1.6T params, rivals GPT-5.5), Devstral Small 24B (Mistral), Qwen3-Coder
+- **Compact / edge**: Llama 4 Scout (17B active, 10M ctx), Gemma 4 E4B (Google, runs on phones), Mistral Small 4
+- **Long context**: Llama 4 Scout (10M tokens), Mistral Medium 3.5 (256K, open-weight)
+- **Multilingual**: Qwen3-7B (29 languages), Gemma 4 (140+ languages)
 
-Run them via **Ollama**, **LM Studio**, or cloud APIs such as Together AI, Groq, or Fireworks AI. Apache-2.0 licensed models allow commercial use.`,
+Run via **Ollama**, **LM Studio**, or cloud APIs (Together AI, Groq, Fireworks AI). Apache-2.0 models allow commercial use without restriction.`,
     analogy: "Like open-source software (Linux, Firefox): the community can inspect, improve, and redistribute the model — no vendor lock-in, no usage caps.",
     related: ["llm", "fine-tuning", "running-local-models"],
     addedAt: "2026-05-23",
@@ -368,21 +368,21 @@ Run them via **Ollama**, **LM Studio**, or cloud APIs such as Together AI, Groq,
     tagline:    "How to run AI on your own machine — private, free, and offline.",
     icon:       "💻",
     difficulty: 2,
-    body: `Running a model locally means the inference happens entirely on your hardware — no data leaves your machine, no API costs, no rate limits.
+    body: `Running a model locally means inference happens entirely on your hardware — no data leaves your machine, no API costs, no rate limits.
 
-**Tools:**
-- **Ollama** — one-command install; run any open model via CLI or REST API
-- **LM Studio** — GUI desktop app; browse, download, and chat with models
-- **Jan.ai** — privacy-first local chat with an OpenAI-compatible API server
+**Tools (2026):**
+- **Ollama** — one-command install; OpenAI-compatible REST API, supports Llama 4, Gemma 4, Mistral Small 4
+- **LM Studio** — GUI desktop app; browse HuggingFace, download, chat, and serve models
+- **Jan.ai** — privacy-first local chat with built-in OpenAI-compatible server
 
-**Hardware requirements (with Q4 quantisation):**
-| Model size | RAM / VRAM needed | Good for |
+**Hardware requirements (Q4 quantisation):**
+| Model size | RAM / VRAM | Example models |
 |---|---|---|
-| 3–7B | 8 GB RAM or 4 GB VRAM | Most consumer laptops |
-| 13B | 16 GB RAM or 8 GB VRAM | Mid-range desktop / Mac M1 |
-| 70B | 64 GB RAM or 40 GB VRAM | Workstation / A100 class |
+| 3–7B | 6–8 GB | Gemma 4 E4B, Mistral Small 4, Llama 4 Scout |
+| 13–27B | 12–16 GB | Devstral Small 24B, Gemma 4 26B A4B |
+| 70B+ | 40–80 GB VRAM | Llama 4 Maverick, Mistral Large 3 |
 
-**Apple Silicon** (M1–M4) is ideal: unified memory means a 16 GB MacBook Air runs Llama 4 Scout or Mistral Small comfortably at 30+ tokens/s.`,
+**Apple Silicon** (M1–M4) excels: unified memory means a 16 GB MacBook Air runs Llama 4 Scout or Mistral Small 4 at 40+ tokens/s with full privacy. Gemma 4 E4B targets phones (Pixel, Snapdragon) at near-zero latency.`,
     analogy: "Like running your own web server instead of using a cloud host — more control and privacy, but you manage the hardware.",
     related: ["open-source-llms", "fine-tuning", "llm"],
     addedAt: "2026-05-23",
