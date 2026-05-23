@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 import { useLanguage } from "@/context/LanguageContext";
 import NewsTicker from "@/components/NewsTicker";
 
-const Tesseract3D = dynamic(() => import("./Tesseract3D"), { ssr: false });
+const ParticleVortex = dynamic(() => import("./ParticleVortex"), { ssr: false });
 
 interface Props {
   total: number;
@@ -36,8 +36,7 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
   const textOpacity  = useTransform(scrollYProgress, [0, 0.55], [1, 0]);
   const textY        = useTransform(scrollYProgress, [0, 0.55], [0, -56]);
-  const orbitScale   = useTransform(scrollYProgress, [0, 0.45], [1, 1.18]);
-  const orbitOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0]);
+  const orbitOpacity = useTransform(scrollYProgress, [0, 0.50], [1, 0]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -64,15 +63,13 @@ export default function HeroMinimal({ total, onSearch }: Props) {
       ref={heroRef}
       className="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-void"
     >
-      {/* ── Tesseract hero orb ───────────────────────────────────────── */}
+      {/* ── Particle vortex hero background ──────────────────────────── */}
       <motion.div
         aria-hidden="true"
-        style={prefersReducedMotion ? {} : { scale: orbitScale, opacity: orbitOpacity }}
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        style={prefersReducedMotion ? {} : { opacity: orbitOpacity }}
+        className="absolute inset-0 pointer-events-none"
       >
-        <div style={{ width: "clamp(320px, 62vw, 620px)", height: "clamp(320px, 62vw, 620px)" }}>
-          <Tesseract3D />
-        </div>
+        <ParticleVortex />
       </motion.div>
 
       {/* ── Radial vignette ──────────────────────────────────────────── */}
