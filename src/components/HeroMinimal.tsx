@@ -61,7 +61,7 @@ export default function HeroMinimal({ total, onSearch }: Props) {
   return (
     <section
       ref={heroRef}
-      className="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-void"
+      className="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-black"
     >
       {/* ── Particle vortex hero background ──────────────────────────── */}
       <motion.div
@@ -72,26 +72,23 @@ export default function HeroMinimal({ total, onSearch }: Props) {
         <ParticleVortex />
       </motion.div>
 
-      {/* ── Radial vignette ──────────────────────────────────────────── */}
+      {/* ── Radial vignette — edges dark, galaxy centre exposed ─────── */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 68% 68% at 50% 50%, transparent 28%, rgba(5,6,15,0.88) 76%, rgba(5,6,15,1) 100%)",
+            "radial-gradient(ellipse 80% 80% at 50% 50%, transparent 38%, rgba(0,0,0,0.62) 72%, rgba(0,0,0,0.96) 100%)",
         }}
       />
 
-      {/* ── Grid overlay ─────────────────────────────────────────────── */}
+      {/* ── Subtle centre text-readability scrim ─────────────────────── */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 opacity-[0.14] pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(159,140,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(159,140,255,0.06) 1px, transparent 1px)",
-          backgroundSize: "88px 88px",
-          maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%)",
-          WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%)",
+          background:
+            "radial-gradient(ellipse 44% 36% at 50% 50%, rgba(0,0,0,0.38) 0%, transparent 100%)",
         }}
       />
 
