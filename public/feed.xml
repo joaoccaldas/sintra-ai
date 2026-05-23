@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 23 May 2026 14:34:13 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 15:54:37 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -353,6 +353,24 @@
   </item>
 
   <item>
+    <title><![CDATA[OpenAI Launches Daybreak — GPT-5.5 Cybersecurity Platform to Rival Anthropic Glasswing]]></title>
+    <description><![CDATA[OpenAI launched Daybreak on May 11, a platform that uses GPT-5.5 and Codex Security to automatically build threat models, detect and test vulnerabilities in isolated sandboxes, and propose patches inside existing development pipelines. Three model tiers ship: standard GPT-5.5, a Trusted Access variant for verified defensive work, and GPT-5.5-Cyber for red-teaming and penetration testing. Launch partners include Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto Networks, and Zscaler — a direct competitive response to Anthropic's Project Glasswing from April 2026.]]></description>
+    <link>https://openai.com/daybreak/</link>
+    <guid isPermaLink="true">https://openai.com/daybreak/</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[KPMG and Anthropic Form First Big Four AI Alliance — 276,000 Employees on Claude]]></title>
+    <description><![CDATA[KPMG and Anthropic announced a global strategic alliance on May 20, 2026, embedding Claude directly into KPMG's Digital Gateway client delivery platform — making KPMG the first Big Four firm to deploy a frontier AI model at the core of its business operations. All 276,000 KPMG employees gain access through the platform, with initial workflows targeting tax, legal, and private equity client engagements. The deal signals a broader shift of professional services firms to Claude as their primary AI, following KPMG's evaluation of competing models from OpenAI and Google.]]></description>
+    <link>https://www.anthropic.com/news/anthropic-kpmg</link>
+    <guid isPermaLink="true">https://www.anthropic.com/news/anthropic-kpmg</guid>
+    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
     <title><![CDATA[Chinese AI Models Now Account for 60% of All Requests on OpenRouter]]></title>
     <description><![CDATA[OpenRouter, the multi-model API aggregator tracking millions of daily LLM calls, reported that Chinese-origin models now handle 60% of total request volume on its platform — up from near-zero two years earlier. The milestone, reported on May 22, is driven by DeepSeek, Qwen, and related open-weight models offering frontier-level performance at a fraction of Western API pricing. The shift reflects a broader trend: cost-sensitive developers and startups are increasingly routing production workloads to Chinese models, intensifying the pressure on OpenAI and Anthropic to defend their pricing.]]></description>
     <link>https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026</link>
@@ -425,39 +443,21 @@
   </item>
 
   <item>
+    <title><![CDATA[Anthropic Secures 3.5 Gigawatts of TPU Capacity in Expanded Google and Broadcom Deal]]></title>
+    <description><![CDATA[Anthropic signed an expanded compute agreement with Google Cloud and Broadcom securing 3.5 gigawatts of TPU-based capacity beginning in 2027, with Google committing a further 5 gigawatts over five years. The deal was struck as Anthropic's revenue crossed $10 billion annualised and existing infrastructure became the primary constraint on growth. It gives Anthropic one of the largest dedicated AI compute arrangements of any company and underpins the $30 billion run-rate disclosed in May 2026.]]></description>
+    <link>https://www.anthropic.com/news/google-broadcom-partnership-compute</link>
+    <guid isPermaLink="true">https://www.anthropic.com/news/google-broadcom-partnership-compute</guid>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
     <title><![CDATA[OpenAI Closes $122B Round at $852B Valuation — Largest Private Raise Ever]]></title>
     <description><![CDATA[OpenAI closed a $122 billion funding round on March 31, 2026 at an $852 billion post-money valuation — the largest private capital raise in history. Amazon committed $50 billion, SoftBank and Nvidia each contributed $30 billion, with Andreessen Horowitz and D.E. Shaw also participating. The round included $3 billion from individual investors via bank channels, and is expected to fund global AI infrastructure buildout and an anticipated IPO.]]></description>
     <link>https://openai.com/index/accelerating-the-next-phase-ai/</link>
     <guid isPermaLink="true">https://openai.com/index/accelerating-the-next-phase-ai/</guid>
     <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini 3.1 Pro — Leads Every Published Reasoning Benchmark]]></title>
-    <description><![CDATA[Google released Gemini 3.1 Pro in February 2026, immediately reaching the top of all major published benchmarks including GPQA Diamond at 94.3% and ARC-AGI-2 at 77.1%. The model matched GPT-5.5's 1-million-token context window while offering more competitive API pricing, making it the preferred choice for cost-sensitive high-throughput workloads. Gemini 3.1 Flash-Lite launched simultaneously as Google's most cost-efficient model for latency-critical production deployments.]]></description>
-    <link>https://joaoccaldas.github.io/sintra-ai/news/</link>
-    <guid isPermaLink="false">https://joaoccaldas.github.io/sintra-ai/news/#gemini-3-1-pro</guid>
-    <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI GPT-5.2-Codex — Agentic Coding Specialist Counters Gemini 3]]></title>
-    <description><![CDATA[OpenAI released GPT-5.2-Codex in December 2025 as a specialist coding model optimized for multi-step agentic software engineering tasks, directly responding to Gemini 3 Pro's strong coding performance. The model was positioned for autonomous repository-level coding, integration testing, and codebase exploration rather than single-file tasks. GPT-5.2-Codex debuted on the OpenAI Codex platform and via the Assistants API, targeting professional engineering teams running long-horizon automated workflows.]]></description>
-    <link>https://openai.com/index/introducing-gpt-5-2-codex/</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-gpt-5-2-codex/</guid>
-    <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta Acquires Manus AI for $2B+ — General-Purpose Agent Platform]]></title>
-    <description><![CDATA[Meta acquired Manus, a Singapore-based AI startup, for over $2 billion — the largest acquisition of an AI agent company to date. Manus had built a general-purpose AI agent capable of performing complex multi-step real-world tasks across web browsing, file management, coding, and data analysis without domain-specific customization. The acquisition positioned Meta to compete directly with OpenAI Operator and Anthropic Computer Use in the emerging market for autonomous agent products.]]></description>
-    <link>https://joaoccaldas.github.io/sintra-ai/news/</link>
-    <guid isPermaLink="false">https://joaoccaldas.github.io/sintra-ai/news/#meta-manus</guid>
-    <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
-    <category>Meta</category>
   </item>
   </channel>
 </rss>
