@@ -11,6 +11,8 @@ export interface NewsItem {
   providerColor: string; // hex color
   url?: string;          // link to original announcement
   country?: string;      // ISO-3166-1 alpha-2, e.g. "BR" for Brazil-specific news
+  why_it_matters?: string; // 1-sentence practitioner-level implication
+  what_to_try?: string;    // 1 concrete action the reader can take today
 }
 
 export const AI_NEWS: NewsItem[] = [
@@ -1128,6 +1130,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html",
+    why_it_matters: "Frontier AI has crossed into profitability — which signals the era of pure R&D investment is ending and commercial incentives will increasingly drive model roadmaps and pricing.",
+    what_to_try: "Audit which Anthropic API tier you're using today and model whether migrating to Haiku 4.5 for high-volume requests would cut costs while Opus 4.7 handles the complex ones.",
   },
   {
     id: "trump-white-house-ai-eo-postponed",
@@ -1290,6 +1294,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#009c3b",
     url: "https://www.alobrasilia.com.br/2026/05/camara-agenda-votacao-do-marco-legal-da.html",
     country: "BR",
+    why_it_matters: "Brazil's AI law will directly affect companies deploying AI in credit, healthcare, and public services in the world's 6th-largest economy — legal compliance requirements are imminent.",
+    what_to_try: "Map which of your AI products touch high-risk categories defined in PL 2338 (credit scoring, hiring, healthcare, public services) and draft a transparency disclosure aligned with the bill's reporting obligations.",
   },
   {
     id: "brazil-ai-spending-24bn-ibm",
@@ -1337,6 +1343,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google DeepMind",
     providerColor: "#4285f4",
     url: "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-pro",
+    why_it_matters: "A 2M-token context eliminates chunking strategies for most enterprise document workloads — entire codebases, legal libraries, or research corpuses can now be reasoned over in a single pass.",
+    what_to_try: "Load a 500-page technical specification or codebase into Gemini AI Studio and ask cross-document questions that would have required RAG — compare accuracy to your current retrieval pipeline.",
   },
   {
     id: "mistral-small-4-unified-moe",
@@ -1351,6 +1359,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Mistral AI",
     providerColor: "#ff7000",
     url: "https://simonwillison.net/2026/Mar/16/mistral-small-4/",
+    why_it_matters: "At $0.15/M tokens with vision, reasoning, and coding in one model, Mistral Small 4 is the strongest cost-performance option for self-hosted or privacy-constrained enterprise deployments.",
+    what_to_try: "Pull Mistral Small 4 from Hugging Face and run it locally — benchmark it on your most common production task to see if it replaces a costlier hosted model.",
   },
   {
     id: "claude-opus-4-7-launch",
@@ -1365,6 +1375,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-opus-4-7",
+    why_it_matters: "Opus 4.7 raises the bar for autonomous software agents — teams running Claude-powered coding pipelines can now delegate multi-day engineering tasks with significantly fewer human checkpoints.",
+    what_to_try: "Open a Claude.ai Projects session and ask Opus 4.7 to autonomously spec, scaffold, and implement a small feature end-to-end, then review the diff rather than the process.",
   },
   {
     id: "grok-4-3-beta-xai",
@@ -1393,6 +1405,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Moonshot AI",
     providerColor: "#6B5CFF",
     url: "https://mlq.ai/news/moonshot-ai-releases-kimi-k26-open-source-coding-model-with-autonomous-multi-day-task-execution/",
+    why_it_matters: "An open-weight model topping SWE-Bench Pro means autonomous coding pipelines can now run on infrastructure you own — no vendor lock-in for multi-day engineering agent tasks.",
+    what_to_try: "Download Kimi K2.6 from Hugging Face and run it against a non-trivial GitHub issue from one of your repos using its Agent Swarm feature; compare the PR it generates to your team's output.",
   },
   {
     id: "gpt-5-5-api-codex-launch",
@@ -1407,6 +1421,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-gpt-5-5/",
+    why_it_matters: "1M-token context + computer use in a single API call reshapes what's possible for autonomous agents — previously multi-step workflows requiring orchestration can now run in one context.",
+    what_to_try: "Try GPT-5.5 via the OpenAI Playground on a complex document analysis task (load a full annual report PDF) and compare output quality against your current model workflow.",
   },
   {
     id: "gpt-5-5-instant-chatgpt-default",
@@ -1421,6 +1437,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+    why_it_matters: "Free users now have access to a frontier-class model — the capability gap between paying and non-paying users has narrowed to reasoning depth rather than base intelligence.",
+    what_to_try: "If you have prompts benchmarked on GPT-4o, re-run them with GPT-5.5 Instant (free) and measure quality improvement — good baseline for deciding whether a paid upgrade is worth it.",
   },
   {
     id: "google-gemini-xprize-2m-hackathon-io2026",
@@ -1463,6 +1481,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Apple",
     providerColor: "#555555",
     url: "https://tech.yahoo.com/ai/apple-intelligence/articles/wwdc-2026-preview-ios-27-043000444.html",
+    why_it_matters: "Siri reaching ChatGPT-level reasoning on 2B+ Apple devices would be the largest single-step increase in AI daily-active-users in history — changing consumer behavior faster than any app rollout.",
+    what_to_try: "Watch the WWDC 2026 keynote on June 8 and note which Siri Campos features are developer APIs — Apple's ShortcutsKit and SiriKit intents will likely need updates to surface in the new interface.",
   },
 
   // ── Brazil — additional May 2026 ─────────────────────────────────────────
@@ -1600,6 +1620,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://www.youtube.com/watch?v=2n41YjR5QfU",
+    why_it_matters: "The DORA data shows AI widens the gap between high and low performers — teams that fix their processes first get compounding returns; teams that automate bad processes get faster chaos.",
+    what_to_try: "Run your team's last 3 sprints through the DORA four key metrics (deployment frequency, lead time, MTTR, change failure rate) — then ask which of Bender's five second-order effects you can already see.",
   },
   {
     id: "brazil-eleicoes-2026-primeiro-teste-real-ia",
@@ -1615,6 +1637,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#2563eb",
     url: "https://www.techpolicy.press/brazils-2026-elections-are-its-first-real-stress-test-for-ai-regulation/",
     country: "BR",
+    why_it_matters: "The TSE framework will either prove that democracies can enforce AI content rules at scale — or produce a documented failure mode that shapes how every other country writes election AI law.",
+    what_to_try: "Read the TSE's 14 AI resolutions (available at tse.jus.br) and identify which three compliance obligations would most affect a political ad campaign using AI-generated imagery or voice.",
   },
 ];
 

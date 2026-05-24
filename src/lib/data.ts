@@ -62,6 +62,11 @@ export interface UseCase {
   sample_output: string;
   best_llm: string;
   llm_reason: string;
+
+  // Trust & context fields
+  confidence?: "high" | "medium" | "low";
+  region?: "global" | "brazil" | "latam" | "us" | "eu";
+  last_verified?: string; // ISO "YYYY-MM-DD"
 }
 
 // Verified 2026-05 — model quality shifts quarterly; treat recommendations as starting points
@@ -159,6 +164,9 @@ export const USE_CASES: UseCase[] = (rawData as any[])
       sample_output: item.sample_output || "",
       best_llm:   item.best_llm   ?? llmRec.model,
       llm_reason: item.llm_reason ?? llmRec.reason,
+      confidence:    item.confidence,
+      region:        item.region,
+      last_verified: item.last_verified,
     };
   })
   .sort((a, b) => b.dateAdded.localeCompare(a.dateAdded));

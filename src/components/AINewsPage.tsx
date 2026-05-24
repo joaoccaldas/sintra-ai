@@ -54,6 +54,24 @@ function NewsCard({ item }: { item: NewsItem }) {
         {/* Summary */}
         <p className="font-sans text-[14px] leading-[1.65] text-fg-2 mb-4">{item.summary}</p>
 
+        {/* Why it matters + What to try */}
+        {(item.why_it_matters || item.what_to_try) && (
+          <div className="flex flex-col gap-2 mb-4 rounded-lg border border-violet/[0.14] bg-violet/[0.04] px-4 py-3">
+            {item.why_it_matters && (
+              <p className="font-sans text-[13px] leading-[1.55] text-fg-2">
+                <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-violet-bright mr-2">Why it matters</span>
+                {item.why_it_matters}
+              </p>
+            )}
+            {item.what_to_try && (
+              <p className="font-sans text-[13px] leading-[1.55] text-fg-2">
+                <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-cyan-ice mr-2">Try it</span>
+                {item.what_to_try}
+              </p>
+            )}
+          </div>
+        )}
+
         {/* Footer: tags + source link */}
         <div className="flex flex-wrap items-center gap-2">
           <div className="flex flex-wrap gap-1.5 flex-1">

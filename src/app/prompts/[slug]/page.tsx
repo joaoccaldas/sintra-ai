@@ -133,6 +133,31 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
             </p>
           )}
 
+          {/* Trust badges */}
+          {(item.confidence || (item.region && item.region !== "global") || item.last_verified) && (
+            <div className="flex flex-wrap gap-2 mb-8">
+              {item.confidence && (
+                <span className={`font-mono text-[10px] px-2.5 py-1 rounded-full border tracking-[0.08em] uppercase ${
+                  item.confidence === "high" ? "border-emerald-500/40 text-emerald-400 bg-emerald-500/10" :
+                  item.confidence === "medium" ? "border-amber-500/40 text-amber-400 bg-amber-500/10" :
+                  "border-red-500/40 text-red-400 bg-red-500/10"
+                }`}>
+                  {item.confidence === "high" ? "✓" : item.confidence === "medium" ? "~" : "?"} {item.confidence} confidence
+                </span>
+              )}
+              {item.region && item.region !== "global" && (
+                <span className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-blue-500/40 text-blue-300 bg-blue-500/10 tracking-[0.08em] uppercase">
+                  {item.region === "brazil" ? "🇧🇷" : item.region === "latam" ? "🌎" : item.region === "us" ? "🇺🇸" : "🇪🇺"} {item.region}
+                </span>
+              )}
+              {item.last_verified && (
+                <span className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-white/[0.12] text-fg-4 bg-white/[0.04] tracking-[0.06em]">
+                  verified {item.last_verified}
+                </span>
+              )}
+            </div>
+          )}
+
           {/* LLM recommendation */}
           <div className="flex items-start gap-3 rounded-xl px-4 py-3 mb-8 border border-violet/20 bg-violet/[0.06]">
             <span className="font-mono text-[18px] text-violet-bright leading-none mt-0.5">⬡</span>

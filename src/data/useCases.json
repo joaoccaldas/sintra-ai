@@ -3566,17 +3566,34 @@
     "best_for": "Finance leaders and FP&A managers evaluating AI adoption readiness",
     "outcome": "A structured readiness report identifying which processes will amplify good outcomes vs. which will amplify existing problems — with a prioritised action list before rolling out AI tools.",
     "inputs": [
-      {"label": "your team size and structure (e.g., 5-person FP&A team, 3 senior analysts)"},
-      {"label": "list your top 5 FP&A processes (e.g., monthly close, budget review, variance analysis)"},
-      {"label": "your current data infrastructure (e.g., SAP, Excel, Power BI)"},
-      {"label": "your biggest current pain points (e.g., manual consolidation, late data from regions)"}
+      {
+        "label": "your team size and structure (e.g., 5-person FP&A team, 3 senior analysts)"
+      },
+      {
+        "label": "list your top 5 FP&A processes (e.g., monthly close, budget review, variance analysis)"
+      },
+      {
+        "label": "your current data infrastructure (e.g., SAP, Excel, Power BI)"
+      },
+      {
+        "label": "your biggest current pain points (e.g., manual consolidation, late data from regions)"
+      }
     ],
-    "tools": ["Claude", "ChatGPT"],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "est_time": "45 minutes",
     "output_kind": "analysis",
     "prompt": "You are an AI adoption strategist applying the 'AI as Amplifier' framework to FP&A.\n\nContext: AI doesn't create good processes — it amplifies existing ones. Teams with solid fundamentals get dramatically more productive. Teams with weak processes generate confusion faster.\n\nMy team: [your team size and structure]\n\nOur top 5 FP&A processes:\n[list your top 5 FP&A processes]\n\nData infrastructure:\n[your current data infrastructure]\n\nBiggest pain points:\n[your biggest current pain points]\n\nFor each of our 5 processes, evaluate:\n1. AMPLIFY WELL ✅ or AMPLIFY PROBLEMS ⚠️ — and why\n2. What specifically breaks at 10× AI-generated output volume?\n3. What must be fixed BEFORE deploying AI here?\n\nThen give me:\n- A prioritised sequence for AI adoption (where to start, where to wait)\n- 3 governance checkpoints needed before scaling\n- A one-sentence 'AI readiness verdict' per process",
     "sample_output": "**AI Amplifier Readiness Assessment**\n\n| Process | Verdict | 10× Risk | Fix Before AI |\n|---|---|---|---|\n| Monthly close | ✅ Amplifies well | Reconciliation queue depth | Document the 3-step close checklist |\n| Budget review | ⚠️ Amplifies problems | 10× more versions, no single owner | Establish one source of truth in SAP |\n| Variance analysis | ✅ Amplifies well | Narrative quality depends on context | Create standard commentary template |\n| Board deck | ⚠️ Amplifies problems | Inconsistent metrics across slides | Lock 12 KPI definitions first |\n| Forecast accuracy | ✅ Amplifies well | Model proliferation risk | Version-control models now |\n\n**Prioritised adoption sequence:**\n1. Start: Variance analysis (solid foundation, high volume, clear templates)\n2. Next: Monthly close (after checklist is documented)\n3. Wait: Budget review (fix data governance first — AI creates 10× more confusion otherwise)\n\n**3 governance checkpoints:**\n- [ ] All KPIs have locked, approved definitions\n- [ ] Every AI output has a named human reviewer\n- [ ] Version control on models before any agentic workflows\n\n**Verdict:** Variance and forecast processes are AI-ready today. Budget and board deck need 6 weeks of governance work first.",
-    "tags": ["ai-strategy", "fpna", "readiness", "governance", "amplifier"],
+    "tags": [
+      "ai-strategy",
+      "fpna",
+      "readiness",
+      "governance",
+      "amplifier"
+    ],
     "dateAdded": "2026-05-24",
     "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'"
   },
@@ -3589,18 +3606,477 @@
     "best_for": "Technical leads, product managers, and strategists planning AI automation rollouts",
     "outcome": "A structured analysis of what will break at scale when a proposed AI automation goes live — covering review bottlenecks, testing load, version control, API surface, cost curves, and intellectual control.",
     "inputs": [
-      {"label": "describe the AI automation you're planning (e.g., AI writes first-draft code, AI generates monthly reports)"},
-      {"label": "expected volume increase (e.g., from 10 reports/month to 100)"},
-      {"label": "your current review and QA process"},
-      {"label": "your team size and who currently reviews output"}
+      {
+        "label": "describe the AI automation you're planning (e.g., AI writes first-draft code, AI generates monthly reports)"
+      },
+      {
+        "label": "expected volume increase (e.g., from 10 reports/month to 100)"
+      },
+      {
+        "label": "your current review and QA process"
+      },
+      {
+        "label": "your team size and who currently reviews output"
+      }
     ],
-    "tools": ["Claude", "ChatGPT"],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
     "est_time": "1 hour",
     "output_kind": "analysis",
     "prompt": "You are a systems-thinking consultant applying the 'Second-Order Effects' framework from Adam Bender's Google I/O 2026 talk on Software Ecology.\n\nThe automation I'm considering:\n[describe the AI automation you're planning]\n\nExpected volume change: [expected volume increase]\n\nCurrent review process: [your current review and QA process]\n\nTeam: [your team size and who currently reviews output]\n\nAnalyse the following second-order effects at 10× and 100× volume:\n\n1. **Review bottleneck** — Can humans still meaningfully review this volume? At what point does review become a rubber stamp?\n2. **QA scaling** — How does testing/validation scale — linearly or quadratically?\n3. **Cost / Jevons Paradox** — At cheaper unit costs, what new uses proliferate? What does the actual cost curve look like?\n4. **API surface** — What internal systems will AI agents now access that weren't designed for agent use?\n5. **Agentic conflicts** — Where could two AI agents produce conflicting outputs or edit wars?\n6. **Intellectual control** — At what volume do humans lose the ability to reason about what the system is doing?\n\nFor each: describe the failure mode, estimate the volume at which it triggers, and give one concrete mitigation.",
     "sample_output": "**Second-Order Effects Analysis: AI-Generated Monthly Reports**\n\n**1. Review bottleneck**\nAt 10× volume (100 reports/month), 1 senior analyst is at capacity. At 100×, sign-off becomes a rubber stamp — unread.\n→ Mitigation: Triage by materiality; auto-approve reports below a $50K variance threshold.\n\n**2. QA scaling**\nTests grow quadratically — 10× more reports × 10× more edge cases = 100× test cases needed.\n→ Mitigation: Parameterised test suites against a golden dataset; not manual review.\n\n**3. Jevons Paradox**\nAt $0.001/report (vs. $50 analyst-hour), departments request 20× more ad-hoc analyses. Monthly AI cost: $500 → $10,000.\n→ Mitigation: Per-department budget caps, not per-request.\n\n**4. API surface**\nAgents discover the ERP read endpoint and query production data for draft reports at 3am without audit trail.\n→ Mitigation: Read-only agent service accounts with rate limiting and full audit logging.\n\n**5. Agentic conflicts**\nFX-adjusted and non-adjusted versions of the same report generated simultaneously; executive receives both, neither labelled canonical.\n→ Mitigation: Single-output rule per report type; version locking before distribution.\n\n**6. Intellectual control**\nAt 500 auto-generated reports/month, no human has read them all. Systematic prompt bias goes undetected for quarters.\n→ Mitigation: Monthly red-team sample — 5 random reports read in full by a senior analyst.",
-    "tags": ["ai-strategy", "second-order", "systems-thinking", "governance", "scale"],
+    "tags": [
+      "ai-strategy",
+      "second-order",
+      "systems-thinking",
+      "governance",
+      "scale"
+    ],
     "dateAdded": "2026-05-24",
     "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'"
+  },
+  {
+    "title": "Calculadora de Pix para Pequenos Negócios",
+    "domain": "Finance & FP&A",
+    "section": "Gestão Financeira",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "best_for": "Empreendedores e donos de pequenos negócios no Brasil que usam Pix como meio de pagamento",
+    "outcome": "Um resumo claro dos fluxos de Pix do negócio, identificando os horários de pico, limites relevantes e recomendações para otimizar o caixa.",
+    "inputs": [
+      {
+        "label": "volume médio de transações Pix por dia"
+      },
+      {
+        "label": "ticket médio por transação"
+      },
+      {
+        "label": "seus horários de pico de vendas"
+      },
+      {
+        "label": "tipo de negócio (MEI, ME, EPP ou empresa de médio porte)"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "10 min",
+    "output_kind": "analysis",
+    "prompt": "Você é um consultor financeiro especializado em pequenos negócios brasileiros.\n\nMeu negócio:\n- Tipo: [tipo de negócio]\n- Volume médio de Pix: [volume médio de transações Pix por dia] transações/dia\n- Ticket médio: R$ [ticket médio por transação]\n- Horários de pico: [seus horários de pico de vendas]\n\nCom base nessas informações, elabore:\n1. **Projeção mensal de recebimentos via Pix** (dias úteis vs. fins de semana)\n2. **Limites relevantes do Banco Central** para o meu perfil (Pix noturno, limites por chave, etc.)\n3. **Riscos de caixa** — quando posso ter apertos de liquidez?\n4. **3 recomendações práticas** para otimizar o fluxo de Pix e reduzir inadimplência\n5. **Checklist de boas práticas de segurança Pix** para o meu tipo de negócio\n\nResponda em português do Brasil, com linguagem acessível.",
+    "sample_output": "**Análise de Fluxo Pix — Restaurante MEI**\n\n**Projeção mensal:**\n- Dias úteis (22 dias × 45 transações × R$35): R$ 34.650\n- Fins de semana (8 dias × 80 transações × R$45): R$ 28.800\n- **Total estimado: R$ 63.450/mês**\n\n**Limites relevantes (Banco Central 2026):**\n- Pix noturno (20h–6h): R$ 1.000 por transação para pessoa física; empresas MEI podem solicitar aumento\n- Limite diário padrão: definido pelo banco — revise no aplicativo\n\n**Riscos de caixa:**\n- Semanas com feriados emendados reduzem volume ~30%\n- Chargeback via Pix (MED) pode bloquear saldo em D+1\n\n**Recomendações:**\n1. Habilite chave Pix CNPJ separada da chave pessoal para controle fiscal\n2. Configure alerta de recebimento no app e registre no DRE semanal\n3. Mantenha reserva de 2 semanas de custo fixo para períodos de baixo movimento\n\n**Segurança:**\n- [ ] Nunca compartilhe QR Code estático em redes sociais\n- [ ] Use QR Code dinâmico para valores acima de R$ 200\n- [ ] Ative autenticação de dois fatores no banco",
+    "tags": [
+      "pix",
+      "brasil",
+      "finanças",
+      "mei",
+      "caixa"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "Banco Central do Brasil — regulamentação Pix 2026"
+  },
+  {
+    "title": "Guia de Abertura de MEI com IA",
+    "domain": "Finance & FP&A",
+    "section": "Gestão Financeira",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "best_for": "Autônomos e profissionais liberais no Brasil que querem formalizar o negócio como MEI",
+    "outcome": "Um guia passo a passo personalizado para abrir o MEI, com enquadramento de CNAE, obrigações mensais e dicas de gestão financeira.",
+    "inputs": [
+      {
+        "label": "sua atividade profissional principal (ex: fotógrafo, designer, eletricista)"
+      },
+      {
+        "label": "faturamento mensal estimado"
+      },
+      {
+        "label": "você já tem outros vínculos empregatícios? (sim/não)"
+      },
+      {
+        "label": "estado (UF) onde você vai atuar"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "plan",
+    "prompt": "Você é um contador especializado em MEI (Microempreendedor Individual) no Brasil.\n\nMinha situação:\n- Atividade: [sua atividade profissional principal]\n- Faturamento estimado: R$ [faturamento mensal estimado]/mês\n- Vínculo empregatício: [você já tem outros vínculos empregatícios]\n- Estado: [estado (UF) onde você vai atuar]\n\nElabore um guia completo com:\n1. **Verificação de elegibilidade** — posso ser MEI? (limites de faturamento, restrições de sócio)\n2. **CNAE mais adequado** para minha atividade\n3. **Passo a passo para abertura no Portal do Empreendedor** (gov.br)\n4. **Obrigações mensais** — DAS, DASN, DEFIS\n5. **Tributação** — quanto pago de imposto por faixa de faturamento\n6. **3 erros comuns** de MEI que geram problemas com a Receita Federal\n7. **Ferramentas gratuitas** recomendadas para gestão financeira do MEI\n\nResponda em português, com linguagem simples e prática.",
+    "sample_output": "**Guia MEI — Designer Gráfico Freelancer, SP**\n\n**Elegibilidade:**\n✅ Pode ser MEI — atividade permitida, faturamento dentro do limite de R$ 81.000/ano (R$ 6.750/mês)\n⚠️ Se tiver sócio em outra empresa, verifique restrição de participação societária\n\n**CNAE recomendado:** 7410-2/02 — Design de interiores / 7410-2/03 — Design gráfico e de produto\n\n**Passo a passo (Portal do Empreendedor):**\n1. Acesse gov.br/mei com CPF e senha\n2. Clique em 'Formalize-se' → preencha dados pessoais\n3. Escolha o CNAE → confirme endereço comercial\n4. Receba CNPJ em menos de 5 minutos\n\n**Obrigações mensais:**\n- DAS: R$ 75,90/mês (INSS + ISS, valor 2026)\n- DASN: declaração anual (prazo: 31 de maio)\n\n**3 erros comuns:**\n1. Não emitir nota fiscal — obrigatória para pessoas jurídicas\n2. Ultrapassar o limite anual sem trocar para ME\n3. Esquecer de atualizar dados no CCMEI após mudança de endereço",
+    "tags": [
+      "mei",
+      "brasil",
+      "empreendedorismo",
+      "cnpj",
+      "tributação"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "Portal do Empreendedor — governo.br 2026"
+  },
+  {
+    "title": "Otimizador de Declaração do Imposto de Renda (IRPF)",
+    "domain": "Finance & FP&A",
+    "section": "Planejamento Fiscal",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "best_for": "Contribuintes brasileiros que precisam decidir entre declaração simplificada e completa e maximizar deduções legais",
+    "outcome": "Uma análise comparativa entre declaração simplificada e completa, com lista personalizada de deduções e alertas de malha fina.",
+    "inputs": [
+      {
+        "label": "renda tributável anual (salário + pró-labore + aluguéis, etc.)"
+      },
+      {
+        "label": "despesas médicas totais pagas no ano (com recibos)"
+      },
+      {
+        "label": "filhos ou dependentes (idades e relação)"
+      },
+      {
+        "label": "contribuições à previdência privada (PGBL/VGBL) e oficial (INSS)"
+      },
+      {
+        "label": "despesas com educação (escola, faculdade, cursos)"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "analysis",
+    "prompt": "Você é um contador especializado em IRPF (Imposto de Renda Pessoa Física) no Brasil, atualizado com as regras vigentes em 2025/2026.\n\nMinha situação fiscal:\n- Renda tributável anual: R$ [renda tributável anual]\n- Despesas médicas: R$ [despesas médicas totais pagas no ano]\n- Dependentes: [filhos ou dependentes]\n- Previdência privada (PGBL): R$ [contribuições à previdência privada]\n- INSS recolhido: R$ [incluído nas contribuições]\n- Despesas com educação: R$ [despesas com educação]\n\nRealice uma análise completa:\n1. **Comparativo simplificado × completo** — qual resulta em menor imposto?\n2. **Lista de deduções legais** que se aplicam ao meu perfil\n3. **Limites de dedução** vigentes (médico, educação, PGBL)\n4. **Alertas de malha fina** — o que pode chamar atenção da Receita?\n5. **Documentos que devo guardar** por 5 anos\n6. **Prazo e multa** por atraso na entrega\n\nResponda em português, com cálculos exemplificativos e linguagem acessível.",
+    "sample_output": "**Análise IRPF 2025 — Analista de TI, solteiro, SP**\n\n**Comparativo:**\n| Modalidade | Base de cálculo | Imposto estimado |\n|---|---|---|\n| Simplificada (20% desc.) | R$ 72.000 | R$ 8.400 |\n| Completa (deduções reais) | R$ 58.200 | R$ 6.100 |\n→ **Recomendação: Declaração completa — economia de ~R$ 2.300**\n\n**Deduções aplicáveis:**\n- Dependentes: R$ 2.275,08/filho (2 filhos = R$ 4.550)\n- Despesas médicas: R$ 12.000 (dedução integral)\n- Educação: R$ 3.561,50 (limite 2025)\n- PGBL: R$ 4.800 (até 12% da renda tributável)\n\n**Alertas de malha fina:**\n⚠️ Despesas médicas sem CPF do prestador — cruzamento automático\n⚠️ Rendimentos de aluguel não declarados por inquilino\n\n**Documentos por 5 anos:**\n- Recibos médicos com CPF/CNPJ\n- Comprovantes de escola/faculdade\n- Informes de rendimento do empregador",
+    "tags": [
+      "irpf",
+      "imposto de renda",
+      "brasil",
+      "finanças",
+      "deduções"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "Receita Federal do Brasil — tabela IRPF 2025"
+  },
+  {
+    "title": "Análise Fundamentalista de Ações na B3",
+    "domain": "Finance & FP&A",
+    "section": "Investimentos",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "best_for": "Investidores pessoas físicas no Brasil que querem analisar ações da B3 com base em fundamentos antes de investir",
+    "outcome": "Uma análise fundamentalista completa de uma ação, com avaliação de indicadores financeiros, riscos setoriais e comparação com pares.",
+    "inputs": [
+      {
+        "label": "ticker da ação (ex: PETR4, ITUB4, VALE3)"
+      },
+      {
+        "label": "setor de atuação da empresa"
+      },
+      {
+        "label": "seu horizonte de investimento (curto prazo <1 ano, médio 1-5 anos, longo >5 anos)"
+      },
+      {
+        "label": "indicadores disponíveis: P/L, P/VP, ROE, dívida líquida/EBITDA (se souber)"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "25 min",
+    "output_kind": "analysis",
+    "prompt": "Você é um analista de investimentos especializado em Bolsa de Valores brasileira (B3), com amplo conhecimento em análise fundamentalista.\n\nAção analisada:\n- Ticker: [ticker da ação]\n- Setor: [setor de atuação da empresa]\n- Horizonte: [seu horizonte de investimento]\n- Indicadores conhecidos: [indicadores disponíveis]\n\nElabore uma análise fundamentalista estruturada:\n1. **Perfil do negócio** — modelo de negócios, posicionamento competitivo, moat\n2. **Análise dos indicadores** — interprete cada indicador fornecido e compare com a média do setor\n3. **Principais riscos** — setoriais, macroeconômicos, regulatórios e específicos da empresa\n4. **Catalisadores** — o que pode valorizar a ação no horizonte definido?\n5. **Pontos de atenção** — red flags nos fundamentos\n6. **Score fundamentalista simplificado** (1-10) com justificativa\n7. **Próximas datas relevantes** — ex.: divulgação de resultados, pagamento de dividendos\n\n⚠️ Lembre-se: isso é uma análise educacional — não é recomendação de investimento. Sempre consulte um assessor certificado.\n\nResponda em português.",
+    "sample_output": "**Análise Fundamentalista — ITUB4 (Itaú Unibanco)**\n\n**Perfil:** Maior banco privado da América Latina por ativos, com forte presença no varejo e no corporate. Moat sólido: base de clientes de 60M+, custos de mudança elevados e escala regulatória.\n\n**Indicadores:**\n| Indicador | ITUB4 | Média setor |\n|---|---|---|\n| P/L | 8,2× | 9,1× | Levemente descontado |\n| P/VP | 1,8× | 2,0× | Em linha |\n| ROE | 21% | 18% | Acima da média |\n| Div. Líq./EBITDA | — | — | N/A para bancos |\n\n**Riscos:**\n- Aumento da inadimplência em ciclos de juros altos\n- Regulação do Banco Central sobre margens\n- Fintechs (Nubank) pressionando margens no varejo jovem\n\n**Catalisadores:**\n- Ciclo de queda de juros melhora carteira de crédito\n- Expansão em seguros e wealth management\n\n**Score: 7,5/10** — fundamentos sólidos, valuation justo para longo prazo\n\n⚠️ *Análise educacional — não é recomendação de investimento*",
+    "tags": [
+      "b3",
+      "ações",
+      "brasil",
+      "investimentos",
+      "fundamentalista"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "medium",
+    "last_verified": "2026-05-24",
+    "source": "CVM — Comissão de Valores Mobiliários"
+  },
+  {
+    "title": "Templates de Mensagens para WhatsApp Business",
+    "domain": "Communication & Writing",
+    "section": "Marketing Digital",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "best_for": "Empreendedores e equipes de vendas no Brasil que usam WhatsApp Business para atendimento e vendas",
+    "outcome": "Um conjunto de templates de mensagens para WhatsApp Business cobrindo boas-vindas, follow-up, confirmação de pedido, cobrança e recuperação de carrinho abandonado.",
+    "inputs": [
+      {
+        "label": "tipo de negócio (ex: loja de roupas, clínica, restaurante, serviço de TI)"
+      },
+      {
+        "label": "tom da marca (formal, descontraído, técnico)"
+      },
+      {
+        "label": "produto ou serviço principal"
+      },
+      {
+        "label": "nome da empresa e nome do atendente ou bot"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "10 min",
+    "output_kind": "templates",
+    "prompt": "Você é um especialista em marketing digital e vendas pelo WhatsApp Business no mercado brasileiro.\n\nMeu negócio:\n- Tipo: [tipo de negócio]\n- Tom: [tom da marca]\n- Produto/serviço: [produto ou serviço principal]\n- Empresa: [nome da empresa] | Atendente/Bot: [nome do atendente ou bot]\n\nCrie 8 templates de mensagens prontos para uso no WhatsApp Business, cobrindo:\n1. **Boas-vindas** — primeiro contato do cliente\n2. **Resposta fora do horário** — mensagem automática\n3. **Confirmação de pedido/agendamento**\n4. **Follow-up pós-compra** — satisfação do cliente\n5. **Lembrete de pagamento** (cobrança amigável)\n6. **Recuperação de carrinho abandonado**\n7. **Promoção relâmpago** (urgência sem spam)\n8. **Pesquisa de satisfação NPS** simples\n\nRegras:\n- Cada template deve ter ≤ 160 caracteres para mensagens de texto simples\n- Use emojis com moderação, respeitando o tom da marca\n- Inclua variáveis entre {{chaves}} onde personalizável\n- Adicione uma versão curta e uma versão completa para os templates mais importantes\n\nResponda em português do Brasil.",
+    "sample_output": "**Templates WhatsApp Business — Clínica de Estética Bella Vista**\n\n**1. Boas-vindas:**\nOlá, {{nome}}! 😊 Seja bem-vindo(a) à Bella Vista. Sou a Mari, sua consultora. Como posso ajudar você hoje?\n\n**2. Fora do horário:**\nOi! Recebemos sua mensagem. Nossa equipe atende de seg. a sáb., 9h–19h. Retornaremos em breve! 🌸\n\n**3. Confirmação de agendamento:**\n✅ Agendamento confirmado!\n📅 {{data}} às {{horário}}\n💆 Serviço: {{procedimento}}\n📍 Rua das Flores, 123 — Pinheiros\nAté lá! 😍\n\n**4. Follow-up pós-atendimento:**\nOlá, {{nome}}! Como foi seu procedimento de {{serviço}} conosco? Seu feedback é muito importante! ⭐⭐⭐⭐⭐\n\n**5. Cobrança amigável:**\nOi {{nome}}, tudo bem? 🙏 Passando para lembrar do pagamento referente a {{serviço}} no valor de R$ {{valor}}. Qualquer dúvida, estou aqui!",
+    "tags": [
+      "whatsapp",
+      "brasil",
+      "marketing",
+      "vendas",
+      "atendimento"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "Meta Business — WhatsApp Business API 2026"
+  },
+  {
+    "title": "Checklist de Conformidade LGPD para Pequenas Empresas",
+    "domain": "Research & Analysis",
+    "section": "Conformidade Legal",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "best_for": "Gestores e empreendedores de PMEs brasileiras que precisam adequar seus negócios à Lei Geral de Proteção de Dados (LGPD)",
+    "outcome": "Um diagnóstico de conformidade LGPD personalizado com checklist priorizado, políticas-chave e próximos passos para PMEs.",
+    "inputs": [
+      {
+        "label": "porte da empresa (MEI, ME, EPP ou média empresa)"
+      },
+      {
+        "label": "tipos de dados pessoais coletados (ex: nome, CPF, email, dados de saúde, dados financeiros)"
+      },
+      {
+        "label": "como você coleta esses dados (formulário online, WhatsApp, sistema de CRM, papel)"
+      },
+      {
+        "label": "você já tem Política de Privacidade publicada? (sim/não)"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "analysis",
+    "prompt": "Você é um especialista jurídico em LGPD (Lei Geral de Proteção de Dados — Lei 13.709/2018) no Brasil, com foco em adequação para pequenas e médias empresas.\n\nPerfil da empresa:\n- Porte: [porte da empresa]\n- Dados coletados: [tipos de dados pessoais coletados]\n- Meios de coleta: [como você coleta esses dados]\n- Política de Privacidade: [você já tem Política de Privacidade publicada]\n\nElabore um diagnóstico LGPD completo:\n1. **Análise de risco** — quais dados coletados são sensíveis e exigem cuidados extras?\n2. **Bases legais** — qual fundamento jurídico justifica cada tipo de tratamento?\n3. **Checklist de conformidade** (priorizado: crítico → importante → recomendável)\n4. **Documentos obrigatórios** que precisam ser criados ou atualizados\n5. **Direitos dos titulares** — como responder a solicitações de acesso, exclusão e portabilidade\n6. **Multas e riscos** — o que a ANPD pode aplicar para o meu porte\n7. **Plano de ação em 90 dias** com tarefas sequenciais\n\nResponda em português, com linguagem clara e sem jargão jurídico desnecessário.",
+    "sample_output": "**Diagnóstico LGPD — Clínica Médica ME, São Paulo**\n\n**⚠️ Dados sensíveis detectados:** Dados de saúde (categoria especial) exigem consentimento específico e medidas de segurança reforçadas.\n\n**Bases legais aplicáveis:**\n- Prestação do serviço médico: Execução de contrato\n- Dados de saúde: Proteção da saúde (Art. 11, II, f)\n- Marketing por WhatsApp: Consentimento (requer opt-in explícito)\n\n**Checklist Crítico (faça agora):**\n- [ ] Publicar Política de Privacidade no site com link visível\n- [ ] Nomear DPO (Encarregado) — pode ser o próprio sócio em PMEs\n- [ ] Mapear todos os dados coletados e onde são armazenados\n- [ ] Criar formulário de consentimento para coleta de dados de saúde\n\n**Plano 90 dias:**\nSemanas 1-2: Mapeamento de dados\nSemanas 3-4: Política de Privacidade + consentimento\nMês 2: Treinamento da equipe\nMês 3: Auditoria e ajustes\n\n**Multas ANPD:** Até 2% do faturamento, limitado a R$ 50M por infração",
+    "tags": [
+      "lgpd",
+      "brasil",
+      "privacidade",
+      "conformidade",
+      "pme"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "ANPD — Autoridade Nacional de Proteção de Dados 2026"
+  },
+  {
+    "title": "Gerador de Nota Fiscal de Serviço (NFS-e)",
+    "domain": "Finance & FP&A",
+    "section": "Gestão Fiscal",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "best_for": "Prestadores de serviços e MEIs brasileiros que precisam emitir NFS-e corretamente",
+    "outcome": "Um guia completo para emissão de NFS-e com os dados corretos, alíquotas de ISS por município e orientações para evitar erros comuns.",
+    "inputs": [
+      {
+        "label": "cidade/município onde você presta o serviço"
+      },
+      {
+        "label": "descrição do serviço prestado"
+      },
+      {
+        "label": "valor total do serviço (R$)"
+      },
+      {
+        "label": "CNPJ ou CPF do tomador (cliente)"
+      },
+      {
+        "label": "você é MEI, ME ou empresa de outro porte?"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "10 min",
+    "output_kind": "templates",
+    "prompt": "Você é um contador especializado em tributação de serviços no Brasil.\n\nInformações da nota:\n- Município: [cidade/município onde você presta o serviço]\n- Serviço: [descrição do serviço prestado]\n- Valor: R$ [valor total do serviço]\n- Tomador: [CNPJ ou CPF do tomador]\n- Porte do prestador: [você é MEI, ME ou empresa de outro porte]\n\nForneça:\n1. **Código de serviço LC 116** mais adequado para minha atividade\n2. **Alíquota de ISS** vigente no município informado\n3. **Campos obrigatórios da NFS-e** com valores corretos preenchidos\n4. **Retenção na fonte** — o tomador deve reter ISS? (regra: tomador PJ em municípios com essa obrigação)\n5. **Erros comuns** que geram rejeição automática no portal municipal\n6. **Link para o portal NFS-e** do município informado (se disponível no PNDF — Padrão Nacional)\n7. **Prazo para emissão** após a prestação do serviço\n\nResponda em português do Brasil.",
+    "sample_output": "**Guia NFS-e — Designer Gráfico MEI, São Paulo**\n\n**Código LC 116:** 17.06 — Propaganda e publicidade\n\n**ISS em São Paulo (2026):** 2% sobre o valor do serviço\nValor do ISS nesta nota: R$ 100 × 2% = R$ 2,00\n\n**Campos obrigatórios:**\n- Discriminação do serviço: 'Criação de identidade visual para marca XYZ, conforme briefing acordado'\n- Código do serviço: 17.06\n- Alíquota: 2%\n- Valor líquido: R$ 5.000\n\n**Retenção:** MEI não tem ISS retido — o imposto está incluído no DAS fixo mensal.\n\n**Erros comuns:**\n- Descrição genérica ('serviços prestados') → use descrição técnica\n- CNPJ do tomador com dígito errado → sistema rejeita automaticamente\n\n**Portal NFS-e SP:** nfse.prefeitura.sp.gov.br\n**Prazo de emissão:** No ato da prestação ou até o último dia útil do mês",
+    "tags": [
+      "nfe",
+      "nota fiscal",
+      "brasil",
+      "iss",
+      "mei"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "Prefeituras brasileiras — Padrão Nacional NFS-e 2026"
+  },
+  {
+    "title": "Consultor de Direitos Trabalhistas CLT",
+    "domain": "Research & Analysis",
+    "section": "Direito do Trabalho",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "best_for": "Trabalhadores brasileiros regidos pela CLT que têm dúvidas sobre seus direitos em situações específicas",
+    "outcome": "Uma análise clara dos direitos e obrigações trabalhistas em situações concretas, com referências à CLT e orientações sobre o que fazer.",
+    "inputs": [
+      {
+        "label": "descreva sua situação trabalhista (ex: demissão sem justa causa, horas extras não pagas, assédio, férias negadas)"
+      },
+      {
+        "label": "tipo de contrato (CLT, terceirizado, PJ com vínculo, aprendiz)"
+      },
+      {
+        "label": "tempo de empresa"
+      },
+      {
+        "label": "estado (UF) — para normas coletivas estaduais"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "analysis",
+    "prompt": "Você é um advogado trabalhista especializado na CLT (Consolidação das Leis do Trabalho) e na Reforma Trabalhista de 2017, com conhecimento das decisões recentes do TST (Tribunal Superior do Trabalho).\n\nMinha situação:\n- Situação: [descreva sua situação trabalhista]\n- Contrato: [tipo de contrato]\n- Tempo de empresa: [tempo de empresa]\n- Estado: [estado (UF)]\n\nAnalise meu caso e forneça:\n1. **Seus direitos** — o que a lei garante nessa situação?\n2. **Artigos da CLT** aplicáveis (cite os artigos relevantes)\n3. **O que o empregador pode e não pode fazer** legalmente\n4. **Prazos** — há prescrição ou decadência?\n5. **Passos práticos** — o que você deve fazer agora (registrar, notificar, buscar o sindicato)\n6. **Quando acionar a Justiça do Trabalho** — avalie a viabilidade de ação\n7. **Documentos que você deve guardar** como prova\n\n⚠️ Este é um guia educacional — não substitui consulta com advogado. Para seu caso específico, consulte um profissional habilitado.\n\nResponda em português do Brasil.",
+    "sample_output": "**Análise CLT — Demissão sem justa causa após 3 anos, SP**\n\n**Seus direitos:**\n- Aviso prévio: 33 dias (30 dias + 3 dias por ano trabalhado)\n- FGTS: saldo + multa de 40%\n- Seguro-desemprego: 3 a 5 parcelas conforme histórico\n- Férias proporcionais + 1/3 constitucional\n- 13º salário proporcional\n\n**Artigos aplicáveis:** CLT Art. 477, 487, 496; FGTS Lei 8.036/90, Art. 18\n\n**O empregador não pode:**\n- Descontar o aviso prévio se ele for dispensado pelo empregador\n- Reter a CTPS por mais de 48h\n- Condicionar pagamento de verbas à assinatura de qualquer documento\n\n**Prazo:** 2 anos para reclamar após demissão (prescrição trabalhista)\n\n**Passos imediatos:**\n1. Exija homologação na DRT ou pelo sindicato\n2. Guarde contracheques, cartão de ponto e e-mails\n3. Confira os valores na calculadora da Receita Federal",
+    "tags": [
+      "clt",
+      "brasil",
+      "direitos trabalhistas",
+      "demissão",
+      "emprego"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "CLT — Consolidação das Leis do Trabalho, TST 2026"
+  },
+  {
+    "title": "Fluxo de Caixa para PME Brasileira",
+    "domain": "Finance & FP&A",
+    "section": "Gestão Financeira",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "best_for": "Donos e gestores financeiros de pequenas e médias empresas brasileiras que precisam estruturar ou melhorar o fluxo de caixa",
+    "outcome": "Um modelo de fluxo de caixa estruturado para 90 dias, com identificação de ciclo financeiro, sazonalidades e recomendações para melhorar a liquidez.",
+    "inputs": [
+      {
+        "label": "faturamento médio mensal (R$)"
+      },
+      {
+        "label": "principais despesas fixas mensais (aluguel, folha, tributos)"
+      },
+      {
+        "label": "prazo médio de recebimento dos clientes (dias)"
+      },
+      {
+        "label": "prazo médio de pagamento aos fornecedores (dias)"
+      },
+      {
+        "label": "setor de atuação e sazonalidade (ex: pico no Natal, queda em janeiro)"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "30 min",
+    "output_kind": "table",
+    "prompt": "Você é um consultor financeiro especializado em gestão de caixa para PMEs no Brasil, com expertise em capital de giro e ciclo financeiro.\n\nDados da empresa:\n- Faturamento médio: R$ [faturamento médio mensal]/mês\n- Despesas fixas: [principais despesas fixas mensais]\n- Prazo de recebimento: [prazo médio de recebimento dos clientes] dias\n- Prazo de pagamento: [prazo médio de pagamento aos fornecedores] dias\n- Setor/sazonalidade: [setor de atuação e sazonalidade]\n\nElabore uma análise completa de fluxo de caixa:\n1. **Ciclo financeiro** — calcule o ciclo de caixa (prazo médio de recebimento − prazo médio de pagamento)\n2. **Necessidade de Capital de Giro (NCG)** — quanto dinheiro fica 'preso' no ciclo?\n3. **Projeção de fluxo 90 dias** — tabela mensal com entradas, saídas e saldo projetado\n4. **Pontos críticos** — meses de maior pressão sobre o caixa\n5. **5 ações práticas** para melhorar o ciclo financeiro\n6. **Indicadores de alerta** — quando o caixa está em risco?\n7. **Reserva de emergência recomendada** para o meu porte\n\nResponda em português, com tabela de fluxo e linguagem acessível.",
+    "sample_output": "**Análise de Fluxo de Caixa — Distribuidora de Alimentos, RS**\n\n**Ciclo financeiro:** 45 dias recebimento − 30 dias pagamento = **+15 dias** (capital de giro necessário)\n\n**Necessidade de Capital de Giro:**\nR$ 80.000/mês ÷ 30 × 15 = **R$ 40.000 travados no ciclo**\n\n**Projeção 90 dias:**\n| Mês | Entradas | Saídas | Saldo |\n|---|---|---|---|\n| Jul | R$ 78.000 | R$ 72.000 | R$ 6.000 |\n| Ago | R$ 82.000 | R$ 74.000 | R$ 8.000 |\n| Set | R$ 95.000 | R$ 78.000 | R$ 17.000 |\n\n**5 ações práticas:**\n1. Negociar desconto para pagamento antecipado (2% para clientes que pagam em 15 dias)\n2. Solicitar prazo de 45 dias com fornecedores estratégicos\n3. Oferecer parcelamento via cartão para reduzir inadimplência\n4. Usar antecipação de recebíveis em meses de pico de despesas\n5. Criar conta separada para reserva operacional\n\n**Reserva recomendada:** 3 meses de despesas fixas = R$ 90.000",
+    "tags": [
+      "fluxo de caixa",
+      "pme",
+      "brasil",
+      "capital de giro",
+      "finanças"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "SEBRAE Brasil — Guia de Gestão Financeira para PMEs"
+  },
+  {
+    "title": "Pitch Deck para Investidores Brasileiros",
+    "domain": "Finance & FP&A",
+    "section": "Captação de Recursos",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "best_for": "Fundadores de startups brasileiras que buscam captação de capital semente ou Série A com investidores locais como Redpoint, Valor Capital, Monashees ou angels da ABVCAP",
+    "outcome": "Um roteiro completo de pitch deck em 12 slides adaptado ao mercado brasileiro, com narrativa, métricas-chave e respostas às perguntas mais frequentes de investidores de VC brasileiro.",
+    "inputs": [
+      {
+        "label": "nome e descrição em uma frase da sua startup"
+      },
+      {
+        "label": "problema que você resolve e tamanho do mercado endereçável no Brasil (TAM/SAM/SOM)"
+      },
+      {
+        "label": "métricas atuais (MRR, crescimento MoM, churn, CAC, LTV)"
+      },
+      {
+        "label": "quanto você está captando e para quê (runway desejado)"
+      },
+      {
+        "label": "diferencial competitivo — por que você ganha no Brasil?"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "2 horas",
+    "output_kind": "deck",
+    "prompt": "Você é um advisor especializado em captação de venture capital no ecossistema de startups brasileiro, com experiência em deals com Redpoint eventures, Valor Capital, Monashees, Kaszek e angels da ABVCAP.\n\nMinha startup:\n- Nome e missão: [nome e descrição em uma frase da sua startup]\n- Problema e mercado: [problema que você resolve e tamanho do mercado endereçável no Brasil]\n- Métricas: [métricas atuais]\n- Captação: [quanto você está captando e para quê]\n- Diferencial: [diferencial competitivo]\n\nCrie um roteiro completo para pitch deck de 12 slides, com:\n\n1. **Slide 1 — Abertura:** título, tagline de uma linha, logo\n2. **Slide 2 — Problema:** quantifique a dor, mostre a ineficiência atual no contexto brasileiro\n3. **Slide 3 — Solução:** proposta de valor clara, demo ou print do produto\n4. **Slide 4 — Mercado (TAM/SAM/SOM):** metodologia bottom-up para o Brasil\n5. **Slide 5 — Produto:** funcionalidades, diferencial de UX, roadmap de 12 meses\n6. **Slide 6 — Tração:** métricas de crescimento, logo de clientes, NPS\n7. **Slide 7 — Modelo de negócios:** receita, unit economics, payback\n8. **Slide 8 — Competição:** mapa competitivo honesto, por que você ganha\n9. **Slide 9 — Go-to-market:** canais de aquisição, CAC por canal, parceiros estratégicos\n10. **Slide 10 — Time:** fundadores, advisors, gaps a preencher com o capital\n11. **Slide 11 — Financeiro:** projeção 3 anos, premissas, milestones do fundraise\n12. **Slide 12 — The Ask:** valor, uso dos recursos, valuation range, próximos passos\n\nPara cada slide: conteúdo sugerido + as 2 perguntas que investidores brasileiros SEMPRE fazem.\n\nResponda em português.",
+    "sample_output": "**Pitch Deck — FinTech de Crédito para PMEs**\n\n**Slide 1 — Abertura:**\n'Liberacred: crédito justo para os 17 milhões de MEIs e PMEs invisíveis para os grandes bancos'\n\n**Slide 2 — Problema:**\n- 65% dos MEIs recusados por bancos tradicionais\n- Taxa média de crédito PME: 4,2% ao mês (vs. 0,8% para grandes empresas)\n- 40% do PIB gerado por PMEs — mas <15% do crédito bancário vai para elas\n→ Perguntas dos VCs: 'Qual o LTV do cliente que você atinge?' / 'Como você mede o tamanho real do problema vs. os dados do BCB?'\n\n**Slide 7 — Unit Economics:**\n- CAC: R$ 180 (performance digital)\n- LTV médio: R$ 2.400 (18 meses × ticket médio)\n- LTV/CAC: 13×\n- Payback: 4,2 meses\n→ Perguntas: 'Como evolui o CAC com escala?' / 'Qual o churn por safra de crédito?'\n\n**Perguntas extras que investidores brasileiros fazem:**\n- 'Qual o risco regulatório com o Banco Central?'\n- 'Por que você não vai ser esmagado pela conta PJ do Nubank?'\n- 'Como você consegue funding para os empréstimos além do equity?'",
+    "tags": [
+      "startup",
+      "brasil",
+      "pitch",
+      "venture capital",
+      "captação"
+    ],
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "source": "ABVCAP — Associação Brasileira de Private Equity e Venture Capital 2026"
   }
 ]

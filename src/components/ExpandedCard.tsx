@@ -229,6 +229,31 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                   </p>
                 )}
 
+                {/* Trust badges */}
+                {(shown.confidence || shown.region || shown.last_verified) && (
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {shown.confidence && (
+                      <span className={`font-mono text-[10px] px-2.5 py-1 rounded-full border tracking-[0.08em] uppercase ${
+                        shown.confidence === "high" ? "border-emerald-500/40 text-emerald-400 bg-emerald-500/10" :
+                        shown.confidence === "medium" ? "border-amber-500/40 text-amber-400 bg-amber-500/10" :
+                        "border-red-500/40 text-red-400 bg-red-500/10"
+                      }`}>
+                        {shown.confidence === "high" ? "✓" : shown.confidence === "medium" ? "~" : "?"} {shown.confidence} confidence
+                      </span>
+                    )}
+                    {shown.region && shown.region !== "global" && (
+                      <span className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-blue-500/40 text-blue-300 bg-blue-500/10 tracking-[0.08em] uppercase">
+                        {shown.region === "brazil" ? "🇧🇷" : shown.region === "latam" ? "🌎" : shown.region === "us" ? "🇺🇸" : "🇪🇺"} {shown.region}
+                      </span>
+                    )}
+                    {shown.last_verified && (
+                      <span className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-white/[0.12] text-fg-4 bg-white/[0.04] tracking-[0.06em]">
+                        verified {shown.last_verified}
+                      </span>
+                    )}
+                  </div>
+                )}
+
                 {/* LLM recommendation */}
                 <div className="flex items-start gap-3 rounded-lg px-4 py-3 mb-6 border border-violet/20 bg-violet/[0.06]">
                   <span className="font-mono text-[18px] text-violet-bright leading-none mt-0.5">⬡</span>
