@@ -42,6 +42,7 @@ const UseCaseSchema = z.object({
   confidence:     z.enum(["high", "medium", "low"]).optional(),
   region:         z.enum(["global", "brazil", "latam", "us", "eu"]).optional(),
   last_verified:  z.string().optional(),
+  related_tools:  z.array(z.string()).optional(),
 });
 
 const raw = JSON.parse(readFileSync(DATA_FILE, "utf8"));

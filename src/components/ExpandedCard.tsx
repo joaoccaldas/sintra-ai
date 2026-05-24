@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Copy, Check, X, ChevronLeft, ChevronRight, ExternalLink, Share2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { UseCase, DIFF_COLOR, CAT_ACCENT } from "@/lib/data";
+import Link from "next/link";
+import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH } from "@/lib/data";
 import { formatDate, isNew } from "@/lib/dateUtils";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import CardVisual from "./CardVisual";
@@ -150,11 +151,28 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
 
                 {/* Tool chips */}
                 {shown.tools.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5 mb-6">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
                     {shown.tools.map(tool => (
                       <span key={tool} className="font-mono text-[10px] px-2 py-1 rounded-sm bg-violet/[0.08] text-fg-2 border border-violet/20">
                         {tool}
                       </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Related tools — linked */}
+                {shown.related_tools && shown.related_tools.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-2 mb-6">
+                    <span className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">Try with:</span>
+                    {shown.related_tools.map(toolId => (
+                      <Link
+                        key={toolId}
+                        href={`${BASE_PATH}/tools/${toolId}/`}
+                        onClick={e => e.stopPropagation()}
+                        className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-violet/30 text-violet-bright bg-violet/[0.06] hover:bg-violet/[0.12] transition-colors capitalize"
+                      >
+                        {toolId.replace(/-/g, " ")}
+                      </Link>
                     ))}
                   </div>
                 )}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH, USE_CASES } from "@/lib/data";
 import { AI_TOOLS, TOOL_CATEGORIES } from "@/lib/toolsData";
 import ToolPageClient from "./ToolPageClient";
 
@@ -48,6 +48,11 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
 
   // Related tools: same category, up to 3
   const related = AI_TOOLS.filter(t => t.category === tool.category && t.id !== tool.id).slice(0, 3);
+
+  // Related prompts: use cases that list this tool in related_tools, up to 4
+  const relatedPrompts = USE_CASES
+    .filter(u => u.related_tools?.includes(tool.id))
+    .slice(0, 4);
 
   // JSON-LD SoftwareApplication
   const jsonLd = {
@@ -165,6 +170,28 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
 
           {/* CTA */}
           <ToolPageClient tool={tool} />
+
+          {/* Related prompts */}
+          {relatedPrompts.length > 0 && (
+            <div className="border-t border-hairline pt-10 mb-10">
+              <h2 className="eyebrow block mb-5">Prompts that work great with {tool.name}</h2>
+              <div className="flex flex-col gap-3">
+                {relatedPrompts.map(p => (
+                  <Link
+                    key={p.id}
+                    href={`${BASE_PATH}/prompts/${p.slug}/`}
+                    className="flex items-start gap-3 p-4 rounded-xl border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-white/[0.04] transition-all group"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <p className="font-serif text-[15px] text-fg-1 group-hover:text-violet-bright transition-colors">{p.title}</p>
+                      <p className="font-sans text-[12px] text-fg-3 mt-0.5 line-clamp-1">{p.outcome || p.desc}</p>
+                    </div>
+                    <span className="font-mono text-[10px] text-fg-4 capitalize shrink-0 pt-1">{p.difficulty}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Related tools */}
           {related.length > 0 && (

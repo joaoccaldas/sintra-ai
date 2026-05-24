@@ -207,6 +207,24 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
             </div>
           )}
 
+          {/* Related tools */}
+          {item.related_tools && item.related_tools.length > 0 && (
+            <div className="mb-10">
+              <h2 className="eyebrow block mb-3">Try with these tools</h2>
+              <div className="flex flex-wrap gap-2">
+                {item.related_tools.map(toolId => (
+                  <Link
+                    key={toolId}
+                    href={`${BASE_PATH}/tools/${toolId}/`}
+                    className="inline-flex items-center gap-1.5 font-mono text-[11px] px-3 py-1.5 rounded-full border border-violet/30 text-violet-bright bg-violet/[0.06] hover:bg-violet/[0.14] transition-colors capitalize"
+                  >
+                    {toolId.replace(/-/g, " ")}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Tags */}
           {item.tags.length > 0 && (
             <div className="flex flex-wrap gap-1.5 mb-10">

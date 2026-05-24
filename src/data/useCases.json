@@ -31,7 +31,12 @@
     "est_time": "1 hour",
     "output_kind": "visual",
     "sample_output": "**Top 3 trends**\n1. Revenue grew 14% YoY, accelerating in Q3 (+22% vs. +9% Q1)\n2. EMEA outpaced APAC for the first time in 18 months\n3. Promo months (Mar, Sep) drove 31% of annual revenue\n\n**Charts to build**\n- Line: monthly revenue vs. prior year (12 + 12 points)\n- Stacked bar: revenue by region per quarter\n- Scatter: promo spend vs. incremental revenue\n\n**Unusual pattern:** August dip of −7% breaks the seasonal pattern. Worth asking ops.\n\n**Investigate**\n- Is the August dip a stocking issue or genuine demand?\n- Does the EMEA acceleration hold without the FX tailwind?",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -75,7 +80,12 @@
     "est_time": "Half day",
     "output_kind": "templates",
     "sample_output": "**Sheet structure**\n- `Drivers` — assumptions table (one column per month, FY+1 rolling)\n- `P&L` — revenue waterfall, cost of sales, opex, operating profit\n- `Variance` — actuals vs. forecast, with auto-coloured deltas\n- `Scenarios` — base / upside / downside via INDEX/CHOOSE\n\n**Key formulas**\n```\nRevenue = Units × Price × (1 + Seasonality_Idx)\nGM%     = (Revenue − COGS) / Revenue\nF'cast  = IF(MONTH(TODAY()) ≥ B$3, Actual, Driver-based)\n```\n\n**Risks & sensitivities**\n1. Price elasticity unknown — model ±5%, ±10%\n2. Promo cannibalisation — flag if uplift < 40%\n3. FX exposure on EMEA revenue — hedge above $X",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -121,7 +131,12 @@
     "est_time": "Multi-week",
     "output_kind": "code",
     "sample_output": "**Architecture**\n```\nERP → Ingest (Airflow) → Validate (Great Expectations)\n    → Transform (dbt) → Forecast (Prophet/SARIMA)\n    → Report (python-pptx) → Alert (Slack/Email)\n```\n\n**Code skeleton — validation step**\n```python\nfrom great_expectations.dataset import PandasDataset\n\ndef validate(df: pd.DataFrame) -> ValidationResult:\n    ds = PandasDataset(df)\n    ds.expect_column_values_to_not_be_null(\"account_id\")\n    ds.expect_column_values_to_be_between(\"amount\", -1e9, 1e9)\n    ds.expect_column_values_to_match_regex(\"period\", r\"^\\d{4}-\\d{2}$\")\n    return ds.validate()\n```\n\n**Testing:** 80%+ coverage on transforms; smoke-test full pipeline on synthetic 100-row sample daily.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -159,7 +174,12 @@
     "est_time": "Multi-year",
     "output_kind": "visual",
     "sample_output": "**Phases**\n1. Months 0–3: Foundation — data warehouse (Snowflake), identity (Okta), governance.\n2. Months 4–9: Core planning — Anaplan/Pigment migration, workflow approvals, multi-currency.\n3. Months 10–14: Self-service — Power BI semantic layer, exec dashboards.\n4. Months 15–18: AI overlay — forecast assistance, anomaly detection.\n\n**Stack:** Snowflake · dbt · Anaplan · Power BI · Okta · GitHub Actions\n\n**Org:** 1 Director, 3 Senior FP&A, 2 Data Eng, 1 Solutions Architect, 1 PM\n\n**TCO (3-yr):** $4.8–6.2 M (60% software, 30% people, 10% integrators)",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Research & Analysis",
@@ -192,7 +212,12 @@
     "est_time": "30 min",
     "output_kind": "templates",
     "sample_output": "**Themes** (n=87 verbatims)\n- Onboarding friction (34%)\n- Slow support response (22%)\n- Missing integrations (18%)\n- Pricing clarity (15%)\n- Performance lag (11%)\n\n**Top complaints**\n1. \"Couldn't find where to start\" — 28 mentions\n2. \"Waited 3+ days for a reply\" — 19 mentions\n3. \"Doesn't connect to Slack\" — 14 mentions\n\n**Quick wins**\n- Add a guided first-run checklist (kills #1)\n- Auto-acknowledge tickets within 5 min (softens #2)\n- Build the Slack integration (clears #3)",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "domain": "Research & Analysis",
@@ -234,7 +259,12 @@
     "est_time": "Half day",
     "output_kind": "analysis",
     "sample_output": "**SWOT (you vs. top 3)**\n| | Strengths | Weaknesses |\n|---|---|---|\n| You | Product depth, NPS 62 | Slow GTM, no SMB pricing |\n| Comp A | Brand, channel | Bloated UX |\n| Comp B | Price, speed | Thin enterprise feature set |\n\n**Pricing band:** $49–$199/mo. You sit at $129 — premium-mid.\n\n**Scenarios**\n1. Hold the line, fortify enterprise — defensible, slow growth.\n2. Launch SMB tier @ $39 — opens TAM 3×, risks cannibalisation.\n3. Acquire Comp B — instant channel, $80–120M, ~6 months to close.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "domain": "Research & Analysis",
@@ -281,7 +311,12 @@
     "est_time": "Multi-week",
     "output_kind": "visual",
     "sample_output": "**Pipeline**\n```\nSources (Bright Data / RSS / APIs)\n  → Queue (SQS) → Workers (Python, 5 replicas)\n  → DB (Postgres) → API (FastAPI) → UI (Next.js + Tremor)\n```\n\n**Alerts**\n- Price change ≥5% within 24h → Slack #commercial\n- New review with rating ≤2 → Slack #cx\n- Competitor pricing page hash change → Email + Slack\n\n**Cost:** ~$420/mo (scraping $180, infra $140, monitoring $100). Maintenance: 4 hrs/week.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -317,7 +352,12 @@
     "est_time": "30 min",
     "output_kind": "templates",
     "sample_output": "**Three ideas**\n1. **Batch the daily count** into one end-of-shift sweep (saves ~40 min/day).\n2. **QR-tag the top-50 SKUs** so receiving scans instead of types.\n3. **Auto-reorder** at min level via shared sheet (no more stockouts).\n\n**Before → After**\n- Manual count, 5×/day → 1 scan, end-of-shift\n- Receiving avg time: 12 min → 4 min\n- Stockouts/month: 7 → ≤1\n\n**Email draft**\n> Hi [manager], I've mapped three changes to receiving that could save ~15 hrs/week without new tooling. Quick run-through Friday at 2pm?",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -359,7 +399,12 @@
     "est_time": "Half day",
     "output_kind": "plan",
     "sample_output": "**Inefficiencies found**\n- 38% of SKUs sit in 2+ warehouses unnecessarily (carrying cost: $1.2M/yr)\n- Lead time variance 4–18 days on a single supplier\n- Safety stock set on rule-of-thumb, not service-level math\n\n**Scenarios**\n| | Cost | Annual saving | Service level |\n|---|---|---|---|\n| Consolidate to 3 DCs | $2.1M one-time | $1.8M | 97% |\n| Add 4th regional DC | $3.4M one-time | $2.6M | 99% |\n| Optimise w/o new DCs | $200k | $0.9M | 96% |\n\n**Risk:** scenario 1 risks weather concentration on the Memphis hub.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -392,7 +437,12 @@
     "est_time": "1 hour",
     "output_kind": "visual",
     "sample_output": "**Templates**\n1. **Acknowledgement** — \"Got it, [name]. Looking into it now — back to you within 2 hours.\"\n2. **Asking for more info** — \"Quick thing to unblock me: could you send [X, Y]?\"\n3. **Known issue** — \"Yep, known one — fix is going out [date]. Workaround: [...]\"\n4. **Escalation** — \"Pulling in [team]. Owner is [name]. Updates in this thread.\"\n5. **Resolution** — \"[Fix] is live. Anything else from this ticket?\"\n\n**Flowchart** (login issue): Reset password? → Y: send link / N: 2FA enrolled? → Y: code working? → escalate.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -431,7 +481,12 @@
     "est_time": "Half day",
     "output_kind": "templates",
     "sample_output": "**Decision tree (login)**\n```\nIssue → Account locked?\n├─ Y → Unlock + send reset → Resolved\n└─ N → 2FA enrolled?\n    ├─ Y → Codes working? → escalate L2 if no\n    └─ N → Enrol + verify → Resolved\n```\n\n**KPIs:** FCR (target 78%), AHT (≤6 min), CSAT (≥4.4/5), repeat-contact rate (≤8%).\n\n**QA checklist (per ticket)**\n- [ ] Asked the diagnostic Q first\n- [ ] Verified identity\n- [ ] Logged root cause code\n- [ ] Sent confirmation summary",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -469,7 +524,12 @@
     "est_time": "Multi-week",
     "output_kind": "spec",
     "sample_output": "**Architecture**\n```\nTicket → Classifier (BERT, 12 classes)\n       → KB retriever (embeddings + reranker)\n       → Drafter (LLM, brand-tuned)\n       → Human-in-loop (L1 review for low-confidence)\n       → Send / Escalate\n```\n\n**Training data:** ~5k labelled tickets minimum; 80/10/10 split; include 200 hard negatives.\n\n**Rollout:** shadow-mode (4 wk) → suggest-only (8 wk) → auto-send tier-1 (gated by confidence ≥0.92).",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -505,7 +565,12 @@
     "est_time": "1 hour",
     "output_kind": "templates",
     "sample_output": "**Top 5 variances (Oct vs. budget)**\n| Account | Var | Driver |\n|---|---|---|\n| Subscription rev | +$340k | Renewal pull-forward, treat as timing |\n| Cloud infra | +$190k | Workload spike from new feature — investigate |\n| T&E | −$60k | Conf budget unspent — flag for reforecast |\n| Stock comp | +$110k | New hires — already accrued, noise |\n| Hosting | +$45k | Egress overage — review architecture |\n\n**Action vs noise:** rows 2 and 5 need follow-up; the rest are timing/accrual noise.\n\n**Manager email:** drafted, ~120 words, ready to copy.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -535,7 +600,12 @@
     "est_time": "1 hour",
     "output_kind": "table",
     "sample_output": "**Executive summary**\n- Revenue $42.1M, +6.2% YoY, in line with budget\n- GM% 68.1%, +120bps vs. prior year — pricing actions holding\n- Opex tracking $0.4M favourable; hiring lag in R&D\n- Operating income $12.6M; FX headwind of −$0.3M absorbed\n\n**Revenue narrative**\n> Subscription revenue grew 9% YoY, offsetting a 4% decline in services. New-logo ARR up 14%, but expansion softened to 11% (vs. 16% prior quarter), consistent with the broader macro slowdown observed by peers.\n\n**Red flag:** R&D under-hire risks Q1 product timeline.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -571,7 +641,12 @@
     "est_time": "Half day",
     "output_kind": "analysis",
     "sample_output": "**Trend & seasonality**\n- 18-month CAGR: +12% (2.4% MoM)\n- Seasonality peak: Nov–Dec (+38% vs. trailing 3 mo)\n- Soft month: Feb (−18%)\n\n**Scenarios (FY+1)**\n| | Revenue | GM% | OI |\n|---|---|---|---|\n| Base | $186M | 67% | $42M |\n| Upside (Enterprise +20%) | $204M | 69% | $52M |\n| Downside (Churn 2pp) | $171M | 65% | $35M |\n\n**Narrative:** \"Base assumes 11% growth, in line with H2 run rate. Upside flips on enterprise pipeline conversion above 32% — feasible if security review accelerates.\"*",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -609,7 +684,12 @@
     "est_time": "Half day",
     "output_kind": "visual",
     "sample_output": "**Tabs**\n1. `Cover` — purpose, version, owner\n2. `Drivers` — colour-coded inputs (blue)\n3. `P&L`, `BS`, `CF` — links only (black), no hardcodes\n4. `Sensitivity` — ±10/20% on revenue growth × GM\n5. `Checks` — 6 integrity rules (BS balances, CF reconciles)\n\n**Driver math (revenue)**\n```\nRev_t = Cust_t × ARPU_t\nCust_t = Cust_{t-1} × (1 − Churn_t) + NewLogo_t\n```\n\n**Checks:** all return PASS or the cell turns red. Circularity resolved with iterative calc, max 100, threshold 0.001.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -652,7 +732,12 @@
     "est_time": "Half day",
     "output_kind": "visual",
     "sample_output": "**Story arc**\n1. Where we are (one slide, one number)\n2. What changed since last board (3 deltas)\n3. What's working / what isn't\n4. The decision we're asking for\n5. What happens if you say yes\n\n**Slides** (15 min total)\n1. Title + headline number (45s)\n2. Q3 scorecard vs. plan (90s)\n3. The two wins (2 min)\n4. The two concerns (2 min)\n5. Pricing decision — recommendation (3 min)\n6. Asks + timeline (1 min)\n\n**Anticipated Q1:** \"What's the downside case?\" — answer prepped, 2 sentences + 1 backup slide.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -697,7 +782,12 @@
     "est_time": "Multi-week",
     "output_kind": "plan",
     "sample_output": "**As-is (12 hrs/wk)**\n1. Pull exports from SAP, Salesforce, ADP (3 hrs)\n2. Stitch in Excel (5 hrs)\n3. Manual variance commentary (3 hrs)\n4. Format deck (1 hr)\n\n**To-be (~1 hr/wk)**\n1. Python pulls from APIs nightly\n2. dbt transforms + tests\n3. LLM drafts commentary from variance table\n4. python-pptx generates deck\n\n**Tool stack:** Python · dbt · Anthropic API · python-pptx · Airflow\n\n**Change mgmt:** 4-week parallel run, weekly QA, sign-off from controller before cutover.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -736,7 +826,12 @@
     "est_time": "Multi-month",
     "output_kind": "spec",
     "sample_output": "**Architecture**\n```\nERP/BI → Data lake (Snowflake)\n       → Feature store (Feast)\n       → LLM layer (Claude / GPT-4) ← embeddings of GL + commentary corpus\n       → NL query interface (LangChain agent)\n       → Outputs: commentary, anomaly alerts, forecast deltas\n```\n\n**Governance:** every AI-generated number gets a citation back to the source row; commentary stored with prompt + version hash for audit.\n\n**ROI:** ~$240k/yr saved (1.5 FTE equivalent) against $80k build + $35k/yr run cost. Payback < 6 months.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -781,7 +876,12 @@
     "est_time": "Multi-year",
     "output_kind": "visual",
     "sample_output": "**Phases**\n- Yr 1 — Foundations: cloud DW, identity, governance, dashboarding standard\n- Yr 2 — Planning: replace spreadsheet plan with Anaplan/Pigment\n- Yr 3 — AI overlay: automated commentary, anomaly detection, NL queries\n\n**Org shift**\n- FP&A FTEs: 24 → 18 (reskill 6 into analytics engineers)\n- New roles: 2 ML engineers, 1 finance data steward\n\n**Investment case (3-yr)**\n- Spend: $9.6M\n- Savings: $14.2M (productivity, cycle-time reduction)\n- Net: +$4.6M, payback yr 2.5\n\n**Risks:** vendor lock-in (mitigate with semantic layer), change fatigue (sequence releases).",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -819,7 +919,12 @@
     "est_time": "1 hour",
     "output_kind": "visual",
     "sample_output": "**Trends**\n- Northeast region revenue +18% YoY, leading other regions by 9pp\n- Q4 still concentrates 38% of annual sales (vs. 34% three years ago)\n\n**Anomalies**\n- Two SKUs (#A23, #A41) show unit volume +200% but revenue flat — pricing issue?\n- Negative gross margin on three loss-leaders in Mar\n\n**Summary stats:** mean order $187, median $124, p90 $412. Long tail dominated by enterprise.\n\n**Suggested visuals:** waterfall of YoY revenue by region; scatter of unit volume vs. price for the SKU set.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -862,7 +967,12 @@
     "est_time": "5–10 min",
     "output_kind": "code",
     "sample_output": "**Updates to @Balance Sheet - Q3**\n- Q3 actuals replaced estimates in columns C:F (source: S&P Capital IQ, pulled 2026-05-12 09:14 UTC)\n- Headers: \"Q3 E\" → \"Q3 A\"\n- New row: variance commentary\n- All checks PASS ✓\n\n**Variance commentary inserted**\n> Cash +$28M vs. estimate, driven by working-capital improvement (DSO ↓ 4 days). Long-term debt unchanged. Goodwill recalibrated for the X acquisition.\n\n**Source log:** appended to `_meta` tab; includes URL, retrieval time, fields touched.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -903,7 +1013,12 @@
     "est_time": "Half day",
     "output_kind": "table",
     "sample_output": "**Critical (3)**\n- `WACC!C18` references a deleted range — #REF!\n- BS doesn't balance in years 4–5: $1.2M, $0.9M off\n- Tax rate hard-coded inside a formula in CF tab\n\n**Warnings (7)**\n- Revenue growth jumps 14% → 41% Y3 with no driver explanation\n- Two circularities resolved silently — flag for review\n- Three named ranges declared but unused\n\n**Info (12)** — naming, colour coding, font drift.\n\n**Recommendation:** fix criticals before sending; warnings before signing.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -940,7 +1055,12 @@
     "est_time": "Half day",
     "output_kind": "code",
     "sample_output": "**Suggested renames**\n- `fact_sale_qty_v2` → `Sales Quantity`\n- `dim_cust_full` → `Customer`\n- `_calc_yoy_pct` → `Revenue YoY %`\n\n**Display folders added**\n- `Sales\\Volume` — Units, Returns, Net Units\n- `Sales\\Value` — Revenue, GM, GM%\n- `Time Intel` — YoY, MTD, QTD measures\n\n**Optimisation**\n- 14 string cols converted to integer keys → file size 89 MB → 41 MB\n- Refresh time: 14 min → 6 min\n\n**Doc output:** 28-page Markdown + Mermaid relationship diagram.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -971,7 +1091,12 @@
     "est_time": "30 min",
     "output_kind": "table",
     "sample_output": "**New table:** `_Measures`\n\n**Per category:**\n```dax\n[Sales — Hardware] = CALCULATE([Sales Amount], 'Product'[Category] = \"Hardware\")\n[Sales — Software] = CALCULATE([Sales Amount], 'Product'[Category] = \"Software\")\n[Sales — Services] = CALCULATE([Sales Amount], 'Product'[Category] = \"Services\")\n```\n\n**Net:** `Net Sales = [Sales Amount] − [Returns Amount]`\n\n**Time intel (for each measure):** MTD, QTD, YTD, MoM, YoY, Rolling 3M, Rolling 12M.\n\nPlaceholder integer column `_placeholder` hidden from report view.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -1010,7 +1135,12 @@
     "est_time": "Half day",
     "output_kind": "code",
     "sample_output": "**Cell formulas (sample)**\n```\nA4:  =CUBEMEMBER(\"Model\",\"[Date].[Calendar].[Month].&[2026-04]\")\nB4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue]\", A4, $A$1)\nC4:  =CUBEVALUE(\"Model\",\"[Measures].[Revenue YoY %]\", A4, $A$1)\nA20: =CUBERANKEDMEMBER(\"Model\",\"[Product].[Top 10]\",1)\n```\n\n**Layout:** quarter-bands in rows, scenarios in columns, two narration columns between sections — impossible to do this cleanly with a PivotTable.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -1046,7 +1176,12 @@
     "est_time": "2–4 days",
     "output_kind": "code",
     "sample_output": "**Generated Markdown (excerpt)**\n```markdown\n## Model overview\nThis semantic model serves the Commercial Reporting team and powers\n12 reports, 3 Power BI Apps, and 1 paginated weekly board pack.\n\n## Relationship diagram\n\\`\\`\\`mermaid\nflowchart LR\n  Date --> Sales\n  Customer --> Sales\n  Product --> Sales\n  Sales --> InvoiceLine\n\\`\\`\\`\n\n## Measures\n### Revenue\n**DAX**\n\\`\\`\\`dax\nRevenue = SUMX('Sales', 'Sales'[Quantity] * 'Sales'[Unit Price])\n\\`\\`\\`\n**Business logic:** sales revenue net of returns, recognised on shipment.\n```",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -1087,7 +1222,12 @@
     "est_time": "Multi-week",
     "output_kind": "spec",
     "sample_output": "**Hierarchy**\n```\nMaster agent (daily 06:00 UTC)\n├─ Morning briefing sub-agent → industry news + competitor moves\n├─ Calendar sub-agent → today's meetings + prep\n└─ Unblocked-tasks sub-agent → cross-checks email + Slack\n\nFriday 16:00 UTC\n└─ Email recap sub-agent → urgent unresponded, ranked\n```\n\n**Stack:** Claude Code + cron + S3 (state) + Slack/email (delivery).\n\n**Monitoring:** every run writes structured log; dashboard alerts on >2 consecutive failures or runtime drift >2σ.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1122,7 +1262,12 @@
     "est_time": "1 hour",
     "output_kind": "templates",
     "sample_output": "**Prioritisation (Eisenhower + energy)**\n1. Urgent + important + high-energy first hour\n2. Important not urgent → schedule into deep-work blocks\n3. Urgent not important → batch into a 30-min slot\n4. Neither → delete, don't defer\n\n**Daily template**\n- 09:00–10:30 — Deep work block 1 (Slack off, phone away)\n- 10:30–11:00 — Email / Slack triage\n- 11:00–12:30 — Deep work block 2\n- Afternoon: meetings + lighter work\n\n**Habits:** (1) inbox-zero by 17:00, (2) one weekly review, (3) 50-min focus, 10-min reset.\n\n**Mac tools:** Things 3, Cron, Raycast.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1160,7 +1305,12 @@
     "est_time": "Half day",
     "output_kind": "visual",
     "sample_output": "**PARA**\n- `01-Projects` — active, with a deadline (≤6)\n- `02-Areas` — ongoing responsibilities (Health, Finance, Team)\n- `03-Resources` — references you'll consult\n- `04-Archive` — done or paused\n\n**Weekly review (Fri 16:00, 45 min)**\n1. Clear inbox, calendar, and capture tray\n2. Move stale projects to Archive\n3. Pick three priorities for next week\n4. Two-line journal entry\n\n**Automation:** Calendar → Notion meeting note auto-created with attendees + agenda block.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1202,7 +1352,12 @@
     "est_time": "2–4 days",
     "output_kind": "code",
     "sample_output": "**Data flow**\n```\nEmail/Slack/Calendar → Webhooks → AI scorer (priority 1–5)\n   → Todoist (auto-tagged)\n   → Calendar (deep-work blocks auto-inserted Mon–Fri 09–11)\n   → Time tracker (auto-start on focus)\n   → Weekly report (Notion page, Sunday 18:00)\n```\n\n**Scoring prompt (excerpt)**\n> Score 1–5 on urgency, importance, and energy-fit. Output JSON: {score, reason, suggested_block}.\n\n**Tech:** Python + n8n + Anthropic API + Todoist + Google Calendar.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1234,7 +1389,12 @@
     "est_time": "15 min",
     "output_kind": "templates",
     "sample_output": "**Agenda (30 min)**\n1. Context recap (3 min)\n2. Decisions needed (10 min) — list 2 here\n3. Open risks (8 min)\n4. Next steps + owners (5 min)\n5. Parking lot (4 min)\n\n**Questions to ask**\n1. What's the success criterion for this in 30 days?\n2. What's the blocker we're not naming?\n3. Who's the single accountable owner?\n4. What signal will tell us to course-correct?\n5. What's the one thing we're optimising for?\n\n**Follow-up template:** Decisions / Owners / Risks / Next sync — one line each.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1263,7 +1423,12 @@
     "est_time": "Half day",
     "output_kind": "templates",
     "sample_output": "**Quality checklist (run before sending the invite)**\n- [ ] Is there a single decision or output? If not, don't schedule.\n- [ ] Is the right person in the room? Limit to ≤6.\n- [ ] Pre-read attached and read by attendees?\n\n**Agenda types**\n- Decision (30 min) — context, options, decide, owner\n- Working session (60 min) — goal, work, check-out\n- Status (15 min) — async-first; meet only if blocked\n\n**Decision log columns:** Date · Decision · Owner · Rationale · Reversal cost.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1297,7 +1462,12 @@
     "est_time": "Multi-week",
     "output_kind": "spec",
     "sample_output": "**Pipeline**\n```\nZoom recording → Local Whisper (large-v3) → Diarised transcript\n   → LLM extractor → JSON {decisions, actions, owners, due}\n   → Topic tracker (vector DB) → Trend dashboard\n   → Project tool sync (Linear / Jira)\n```\n\n**Sample extraction**\n```json\n{\n  \"actions\": [\n    {\"text\": \"Send pricing memo to Alex\", \"owner\": \"Sam\", \"due\": \"2026-05-22\"},\n    {\"text\": \"Spike on auth migration\", \"owner\": \"Priya\", \"due\": \"2026-05-29\"}\n  ],\n  \"decisions\": [\"Ship dark mode behind a flag in 1.4.0\"]\n}\n```",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1329,7 +1499,12 @@
     "est_time": "Self-paced",
     "output_kind": "templates",
     "sample_output": "**Week 1 — Foundations**\n- 4 × 1-hr lessons (e.g., Andrew Ng intro)\n- Read 3 short essays, write reactions\n- Mini project: rebuild a basic example end-to-end\n\n**Week 2 — Apply**\n- Pick a small dataset / problem from your own work\n- Ship a v0 by Friday\n\n**Week 3 — Stretch**\n- Find a community (Discord/forum) and post one question\n- Read 1 deeper paper or book chapter\n\n**Week 4 — Consolidate**\n- Write a 600-word \"what I learned\" note\n- Share it; ask for one critique\n\n**Milestones:** day 7 (first ship), day 14 (community), day 30 (public artefact).",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Personal Productivity",
@@ -1367,7 +1542,12 @@
     "est_time": "Half day",
     "output_kind": "spec",
     "sample_output": "**Competency map** (target: Senior PM, 12 months)\n| Skill | Now | Target | Gap |\n|---|---|---|---|\n| Product strategy | 3/5 | 4/5 | course + 1 case study |\n| Stakeholder mgmt | 4/5 | 4/5 | maintain |\n| Analytical depth | 2/5 | 4/5 | SQL + analytics cert |\n| Influence at exec level | 2/5 | 4/5 | mentor + practice |\n\n**Quarter 1 plan:** SQL course, 2 user-research interviews/wk, weekly 1:1 with skip-level.\n\n**Portfolio:** ship 3 case studies (problem, decision, outcome) by month 9.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1405,7 +1585,12 @@
     "est_time": "1 hour",
     "output_kind": "visual",
     "sample_output": "**Layout (dashboard, desktop-first)**\n- Top: page title + global filter row (1 row)\n- Left rail: nav (collapsible)\n- Main: 3-col KPI strip → 2-col chart block → table → footer\n\n**Colour scheme**\n- Bg: near-black (#0E1120)\n- Surface: dark blue-grey (#161A2C)\n- Primary action: violet (#9F8CFF)\n- Positive / negative / neutral: cyan / rose / parchment\n\n**Common mistakes:** too many colours, busy charts, no whitespace, low contrast on labels.\n\n**Tools (free):** Figma, Penpot, Excalidraw.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1446,7 +1631,12 @@
     "est_time": "Half day",
     "output_kind": "code",
     "sample_output": "**Primary flow (new user)**\n1. Sign up → email verify → onboarding tour (skippable)\n2. Empty state → choose first task → wins (badge, confetti)\n3. Day-2 nudge → return + retain\n\n**Wireframes (described)**\n- Home: top hero, three-card empty-state, primary CTA\n- Detail: left meta column, main content, right rail with related items\n- Settings: 3-tab layout, sticky save bar\n\n**Responsive:** breakpoints 640 / 768 / 1024 / 1280; mobile uses bottom-nav, desktop uses side rail.\n\n**A11y:** WCAG 2.1 AA contrast, focus rings on all interactive elements, keyboard-first nav, prefers-reduced-motion respected.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1479,7 +1669,12 @@
     "est_time": "Multi-week",
     "output_kind": "spec",
     "sample_output": "**Token tree**\n```\ncolor/\n  bg/{abyss, steel, hairline}\n  fg/{1, 2, 3, on-violet}\n  accent/{violet, cyan-ice}\n  diff/{beginner, intermediate, advanced, expert}\ntype/{display, h1, h2, body, eyebrow, mono}\nspace/{1..24}    // 4px grid\nradius/{none, sm, md, lg, pill}\nshadow/{1, 2, 3, glow, glow-strong}\nmotion/{ease-out, dur-fast, dur-base, dur-slow}\n```\n\n**Governance:** all changes via PR, two reviewers (1 design + 1 eng), Storybook snapshots + visual diff CI.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1513,7 +1708,12 @@
     "est_time": "1 hour",
     "output_kind": "visual",
     "sample_output": "**Picks**\n- Trend over time → line (use bands for variability)\n- Composition → stacked bar (small categories) or treemap (≥8)\n- Ranking → horizontal bar, longest at top\n- Distribution → histogram or box plot\n- Correlation → scatter, with regression line if signal is strong\n\n**Clarity:** start y-axis at 0 for bar charts (not always for line); label the most important point on the line, not all of them; lose the gridlines you don't read.\n\n**Colour:** one neutral + one accent. No rainbow palettes for ordinal data.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1554,7 +1754,12 @@
     "est_time": "Half day",
     "output_kind": "code",
     "sample_output": "**Sections (top → bottom)**\n1. KPI strip (4 numbers, target vs. actual)\n2. Trend grid (4 line charts, shared x-axis)\n3. Breakdown (1 large + 2 small)\n4. Anomaly table (sortable, default by severity)\n\n**Interactions**\n- Global filters: date range, region, segment\n- Click a KPI tile → drill into its detail page\n- Right-click any value → \"explain this number\" (LLM)\n\n**Mobile:** collapse to single column, hide breakdown by default behind an accordion, keep KPI strip + one trend.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1599,7 +1804,12 @@
     "est_time": "Multi-week",
     "output_kind": "visual",
     "sample_output": "**Frontend**\n- React + TanStack Query for data\n- D3 for custom charts, Tremor for stock components\n- State: Zustand for UI, React Query for server-state\n\n**Data path**\n```\nKafka → Pinot (OLAP) → REST/WS → React\n                       ↳ SSE for live KPIs\n```\n\n**Perf**\n- Virtualise tables >200 rows\n- Web workers for any chart computing >5ms\n- LRU on dimension queries (TTL 30s)\n\n**Testing:** Playwright e2e for critical flows, Storybook visual regression, k6 load test (500 RPS sustained).",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1640,7 +1850,12 @@
     "est_time": "1 hour",
     "output_kind": "spec",
     "sample_output": "**LinkedIn — Post 1 (educational)**\n> Three things I've stopped doing as a [role] this year:\n> 1. Sitting in status meetings without an agenda\n> 2. Answering \"quick questions\" in DM\n> 3. Volunteering for work I don't own\n> What did you stop doing? ↓\n\n**LinkedIn — Post 2 (POV)** [...]\n\n**Hashtags:** #ProductManagement #FoundersJourney (max 3–5, never on the first line)\n\n**Schedule:** Tue 09:00 educational, Thu 12:00 POV, Sat 10:00 story. Repurpose to Twitter same day, IG carousel on weekends.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1681,7 +1896,12 @@
     "est_time": "Half day",
     "output_kind": "spec",
     "sample_output": "**Pillars (3)**\n1. Craft — how we build (40%)\n2. Behind the scenes — the boring middle (35%)\n3. POV — opinionated takes that age well (25%)\n\n**Mix per week**\n- 2 LinkedIn long-form\n- 3 Twitter threads\n- 1 newsletter\n- 1 short video (TikTok / Reels)\n\n**Repurposing:** newsletter → LI thread → Twitter excerpt → reel script. One artefact, four formats.\n\n**Metrics:** save rate (not likes), newsletter conversion, comment-to-DM ratio.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -1721,7 +1941,12 @@
     "est_time": "Multi-week",
     "output_kind": "spec",
     "sample_output": "**Pipeline**\n```\nTopic queue → Outline LLM → Section drafts (parallel)\n   → Brand-voice critic (LLM with rubric)\n   → SEO optimiser (keyword density, headings)\n   → Human review (5-min sanity check)\n   → CMS publish → Schedule social\n```\n\n**Voice tuning:** 30 best-of corpus samples in an Anthropic file; system prompt anchors tone, banned words, sentence rhythm.\n\n**A/B headlines:** generate 5 variants per post; rotate top-2 in social; declare winner after 72 hrs.\n\n**Tracking:** scroll depth, time-on-page, conversion to newsletter, share rate.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Software Development",
@@ -1761,7 +1986,12 @@
     "est_time": "30 min",
     "output_kind": "code",
     "sample_output": "**Verdict:** automatable in under 30 minutes.\n\n**Simplest path:** Excel formulas + Power Query — no macros, no Python.\n\n**Steps**\n1. Save your source files in one folder, e.g. `~/Reports`.\n2. Open Excel → Data → Get Data → From Folder → point to that folder.\n3. Power Query stitches them. Click \"Combine & Transform\".\n4. Sheet auto-refreshes when files are added.\n\n**Formula to replace your VLOOKUP chain:**\n```\n=XLOOKUP(A2, LookupTable[Key], LookupTable[Value], \"—\", 0)\n```\n\n**Maintenance:** check column names monthly; if a source file renames a column, Power Query will flag it.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -1803,7 +2033,12 @@
     "est_time": "Half day",
     "output_kind": "code",
     "sample_output": "**Script skeleton**\n```python\nimport logging, schedule, time\nfrom pathlib import Path\n\nlog = logging.getLogger(\"autoreport\")\n\ndef run() -> None:\n    try:\n        df = ingest(Path(\"~/inputs\").expanduser())\n        cleaned = clean(df)\n        save(cleaned, Path(\"~/out\") / \"report.xlsx\")\n        notify(\"OK\")\n    except Exception:\n        log.exception(\"run failed\")\n        notify(\"FAIL\")\n\nschedule.every().day.at(\"06:00\").do(run)\nwhile True: schedule.run_pending(); time.sleep(60)\n```\n\n**Setup:** `pipx install pdm`; `pdm add pandas openpyxl schedule`; cron entry on Mac/Linux or Task Scheduler on Windows.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -1848,7 +2083,12 @@
     "est_time": "Multi-week",
     "output_kind": "spec",
     "sample_output": "**Architecture**\n```\nEvent bus (NATS) ↔ Orchestrator (Prefect)\n                   ↔ Workers (FastAPI, autoscaled)\n                   ↔ Postgres (state) · S3 (artefacts) · Redis (cache)\n                   ↔ Observability (OTel → Grafana)\n```\n\n**Job table**\n```sql\ncreate table jobs (\n  id uuid primary key,\n  kind text not null,\n  payload jsonb,\n  status text check (status in ('queued','running','done','failed')),\n  attempts int default 0,\n  created_at timestamptz default now()\n);\n```\n\n**DR:** RPO 15 min (WAL streaming), RTO 30 min (warm standby), monthly restore drills.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -1889,7 +2129,12 @@
     "est_time": "1 hour",
     "output_kind": "code",
     "sample_output": "**Clean**\n```python\nimport pandas as pd\ndf = pd.read_csv(\"raw.csv\")\n\ndf = (\n    df.drop_duplicates()\n      .assign(date=lambda d: pd.to_datetime(d[\"date\"], errors=\"coerce\"))\n      .dropna(subset=[\"date\", \"amount\"])\n      .query(\"amount.abs() < 1e7\")  # outliers\n)\n\ndf[\"amount\"] = df[\"amount\"].astype(float).round(2)\ndf.to_csv(\"clean.csv\", index=False)\n```\n\n**Explore**\n```python\ndf.describe(); df.isna().sum(); df.groupby(\"region\")[\"amount\"].sum().plot.bar()\n```",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -1930,7 +2175,12 @@
     "est_time": "Half day",
     "output_kind": "spec",
     "sample_output": "**Architecture (ELT)**\n```\nSources (SAP, Salesforce, files)\n  → Fivetran / Airbyte (ingest)\n  → Snowflake raw schema\n  → dbt models (staging → marts)\n  → Great Expectations (tests)\n  → BI (Power BI / Looker)\n```\n\n**Marts**\n- `mart_finance.fct_invoice` — grain = invoice line\n- `mart_finance.dim_customer` — SCD type 2\n\n**Quality (per run)**\n- Row count vs. prior run (alert if >5% drift)\n- Null %, distinct count\n- Joinable to dim tables = 100%",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -1963,7 +2213,12 @@
     "est_time": "Multi-week",
     "output_kind": "visual",
     "sample_output": "**Architecture**\n```\nIngest: Fivetran + Kafka\nStore: Snowflake (warehouse) + Iceberg (lake)\nTransform: dbt\nCatalog: DataHub\nQuality: Great Expectations\nReverse-ETL: Hightouch\nBI: Looker (semantic) + Power BI (long tail)\n```\n\n**Team (yr 1):** 1 lead, 2 analytics engineers, 1 data eng, 1 platform eng, 0.5 PM.\n\n**Cost (annual run-rate):** $480k software, $1.1M people = $1.6M.\n\n**Migration:** strangler-fig; new pipelines on platform from day 1, legacy decommission over 18 mo.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -2002,7 +2257,12 @@
     "est_time": "1 hour",
     "output_kind": "code",
     "sample_output": "**Fit check:** YES — but use rules + LLM, not ML from scratch. Your data shape (text + categories) is ideal for LLM classification with few-shot examples.\n\n**Simplest path**\n1. 20–50 hand-labelled examples\n2. Prompt with examples + output schema\n3. Run in batch (Make.com / Zapier scheduled)\n\n**Effort:** ~2 hours setup, ~$5–20/month in LLM cost.\n\n**Expected accuracy:** 88–94% on the obvious cases; design a fallback for the 6–12% it gets wrong.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -2043,7 +2303,12 @@
     "est_time": "Half day – 1 week",
     "output_kind": "spec",
     "sample_output": "**Pipeline**\n```\nRaw → feature store (Feast)\n   → training (XGBoost + LightGBM ensemble)\n   → eval (MAPE, prediction interval coverage)\n   → registry (MLflow)\n   → serving (FastAPI / Triton)\n   → monitoring (Evidently)\n```\n\n**Eval (forecasting)**\n- MAPE: target ≤8% at SKU-week grain\n- 80% prediction interval coverage ≥75%\n- Bias drift week-over-week ≤2pp\n\n**Business metrics:** stockout rate (↓ target 35%), overstock cost (↓ target $1.2M/yr).",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Software Development",
@@ -2070,7 +2335,12 @@
     "est_time": "Multi-month",
     "output_kind": "spec",
     "sample_output": "**Stack**\n- Feature store: Feast\n- Experiment tracking: Weights & Biases\n- Registry + serving: MLflow + KServe\n- Orchestration: Argo Workflows\n- Monitoring: Evidently + Prometheus + Grafana\n- Governance: model card per release, signed by data steward\n\n**Rollout (12 mo)**\n- Q1: foundation (registry, serving, baseline monitoring)\n- Q2: first two production models (forecasting, churn)\n- Q3: feature store, A/B framework\n- Q4: governance, audit, multi-cloud failover\n\n**TCO yr 1:** $1.8–2.4M.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Research & Analysis",
@@ -2099,7 +2369,12 @@
     "est_time": "1 hour",
     "output_kind": "analysis",
     "sample_output": "**Top players** (mention only — sample shape, not real data)\n1. Player A — incumbent, ~38% share, slow product velocity\n2. Player B — pricing leader, growing in SMB\n3. Player C — design-led challenger, last raised $80M\n4. Player D — open-source play, strong dev community\n5. Player E — vertical specialist (healthcare)\n\n**Market:** ~$8.4B, CAGR 14%, fragmenting toward verticals.\n\n**Trends:** consolidation in core, vertical land-grabs, AI-overlay pricing power.\n\n**Read deeper:** [Gartner MQ] · [a16z thesis] · [recent Stratechery piece].",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "domain": "Research & Analysis",
@@ -2131,7 +2406,12 @@
     "est_time": "Half day – 1 day",
     "output_kind": "analysis",
     "sample_output": "**Executive summary**\n- Market: $12.4B, growing 11% CAGR\n- Top-3 control 54%; long tail of 200+ players\n- The decisive shift is from horizontal SaaS to vertical AI; budget will follow the workflow, not the tool\n\n**Competitor profiles** (sample of one)\n> **Player A** — Founded 2014, ~$320M ARR. Strengths: brand + channel. Weaknesses: legacy data model, slow on AI. Strategic moves: hired ex-Snowflake CRO, opened London office. Threat to us: medium — they're 18 months behind on AI but have the customer base.\n\n**Recommendation:** focus enterprise GTM on three verticals where AI maturity differential is widest.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "domain": "Research & Analysis",
@@ -2160,7 +2440,12 @@
     "est_time": "Half day",
     "output_kind": "plan",
     "sample_output": "**Overview** — Founded 2017. ~620 FTEs. PE-backed (Series D, last priced 2024). HQ Austin, eng team in Krakow.\n\n**Portfolio:** one flagship product, three adjacent SKUs (analytics, audit, compliance).\n\n**Pricing:** $99 / $249 / Enterprise (call). 14-day trial, no card.\n\n**Strengths:** integrations breadth, partner channel.\n**Weaknesses:** product velocity (~6 releases/yr), thin data-science chops.\n\n**Recent moves:** acquired a 12-person ML team (Q2), launched a free tier (Q3).\n\n**Threat level:** HIGH on SMB segment, LOW on enterprise.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "domain": "Research & Analysis",
@@ -2187,7 +2472,12 @@
     "est_time": "Multi-week",
     "output_kind": "spec",
     "sample_output": "**Sources**\n- Website diff: weekly snapshot, HTML diff with semantic noise filter\n- Pricing pages: daily check (specific selectors)\n- Job boards: Greenhouse/Lever scrape + keyword classifier\n- Patents: USPTO RSS by competitor name\n- Reviews: G2 / Capterra weekly pull\n\n**Pipeline**\n```\nSource → Raw store (S3) → Classifier (LLM)\n   → Significance scorer → Slack / Email\n```\n\n**Alerts:** major change = pricing ±5%, exec hire, M&A rumour, raise announcement.\n\n**Weekly brief:** auto-generated Notion page Fri 09:00.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2222,7 +2512,12 @@
     "est_time": "1 hour",
     "output_kind": "analysis",
     "sample_output": "**Doc structure**\n1. Who this is for (1 line)\n2. Prerequisites (3–5 bullets)\n3. Steps (numbered, screenshot every 3rd)\n4. Verification checklist\n5. Troubleshooting (top 5 issues)\n6. Glossary\n7. Last updated + owner\n\n**Tone:** imperative, second person — \"Open the file\" not \"The user opens the file\".\n\n**Where to store:** if it's product → docs site (Mintlify); if it's internal → Notion (one page per process, linked from a process index).",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2261,7 +2556,12 @@
     "est_time": "Half day",
     "output_kind": "spec",
     "sample_output": "**Skeleton**\n```\ndocs/\n  README.md          # overview + diagram\n  install.md         # platforms, prerequisites\n  api/\n    endpoints.md     # generated from OpenAPI\n    auth.md\n  examples/\n    quickstart.md\n    advanced.md\n  troubleshooting.md\n  faq.md\n  changelog.md\n```\n\n**API reference (sample entry)**\n```\n### POST /v1/jobs\nCreate a new job. Idempotent on `Idempotency-Key` header.\n\n**Body:** { kind: string, payload: object }\n**Returns:** 201 + { id, status_url }\n**Errors:** 400 (invalid kind), 409 (duplicate key)\n```",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2297,7 +2597,12 @@
     "est_time": "Multi-week",
     "output_kind": "code",
     "sample_output": "**IA (3 trees)**\n1. Get started (onboarding) — < 5 min reads\n2. How-to (task-oriented) — recipe format\n3. Reference (deep) — searchable, structured\n\n**Stack:** Mintlify / Docusaurus → GitHub → Vercel · Algolia search · Plausible analytics.\n\n**Standards**\n- Active voice, second person\n- Sentence case headings\n- Every page: who-it's-for + outcome at top\n- Code blocks always copy-pasteable, no shell prompts\n\n**Maintenance:** quarterly stale-page sweep; PR template enforces the standard.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2338,7 +2643,12 @@
     "est_time": "1 hour",
     "output_kind": "visual",
     "sample_output": "**Outline (15 min)**\n- Title — \"Why we should bet on X\"\n- Section 1 — The shift (3 slides, 4 min)\n- Section 2 — Our position (2 slides, 3 min)\n- Section 3 — The wedge (3 slides, 5 min)\n- Section 4 — Ask (1 slide, 2 min)\n- Q&A (1 min)\n\n**Open:** \"I'm asking for one decision today, and I'll get to it in 12 minutes.\"\n\n**Close:** \"If we approve this, here's what we're doing next week. If we don't, here's what we'll regret.\"\n\n**Recommended:** 10 slides. Less is more.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2380,7 +2690,12 @@
     "est_time": "Half day",
     "output_kind": "visual",
     "sample_output": "**Arc**\n1. Setup — the world they know\n2. Disruption — what's changed\n3. Resolution — what we do about it\n4. Ask — the decision\n\n**Speaker notes (slide 4)**\n> \"Three numbers tell this story. The first is [X] — that's our baseline. The second is [Y] — that's the new reality. The third is [Z] — that's the gap we have to close.\"\n\n**Anticipated Q1:** \"Why now, not next year?\" — A: 2-sentence answer + back-up slide ready.\n\n**Handout:** 2-pager, exec summary front, FAQ back.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2415,7 +2730,12 @@
     "est_time": "Multi-week",
     "output_kind": "visual",
     "sample_output": "**Pipeline**\n```\nSources → SQL → DataFrame\n   → Template engine (python-pptx + branded slide masters)\n   → Narrative generator (LLM with structured prompt per slide)\n   → QA pass (LLM critic + rule-based checks)\n   → S3 + Slack delivery\n```\n\n**Slide mapping**\n| Slide | Data query | Layout |\n|---|---|---|\n| 1 — Headline | revenue_summary.sql | KPI tile |\n| 2 — Trend | revenue_monthly.sql | line chart |\n| 3 — Variance | budget_var.sql | table + comment |\n\n**QA:** every number must trace to a query hash; LLM critic checks for tone + cross-slide consistency.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2447,7 +2767,12 @@
     "est_time": "30 min",
     "output_kind": "templates",
     "sample_output": "**Initial outreach**\n> Subject: [their company] × [your company] — quick idea\n> Hi [name], saw [specific signal]. We help [people like them] do [specific outcome]. Worth a 15-min chat next week?\n\n**Follow-up (after no reply)**\n> Subject: bumping this up\n> Hi [name], jumping back here. If now's a bad week, just let me know and I'll try again in [month].\n\n**Meeting request**\n> Subject: 20 min, [topic]?\n> Goal: decide [X]. Tue 10am, Thu 2pm — what works?\n\n**Thank-you**\n> Thanks for the time. Three things I owe you: [...]. Talk [date].\n\n**Status update**\n> [Project] · [colour] · [1-line headline]. Wins: [...]. Risks: [...]. Asks: [...].",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Communication & Writing",
@@ -2488,7 +2813,12 @@
     "est_time": "Half day",
     "output_kind": "templates",
     "sample_output": "**Core message** (1 sentence)\n> \"We're moving [process] to [new tool] over the next 8 weeks so [outcome] — and we're keeping [thing they care about] exactly as it is.\"\n\n**FAQ (sample 3 of 10)**\n- Q: Why now? A: [specific reason + signal]\n- Q: What changes for me? A: [day-1 impact, week-1 impact]\n- Q: What if I disagree? A: [exact path + when]\n\n**Timeline**\n- Week 0: leader pre-brief\n- Week 1: all-hands announcement + FAQ doc\n- Week 2: 1:1s for top concerns\n- Week 4: midpoint pulse survey\n- Week 8: retro\n\n**Feedback loop:** anonymous form + biweekly office hours; ship one visible change in response.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2515,7 +2845,11 @@
     ],
     "output_kind": "analysis",
     "sample_output": "**The concept:** Kubernetes\n\n**Analogy:** Think of your apps like shipping containers. Kubernetes is the shipping port — it decides which ships (servers) carry which containers, automatically reroutes if a ship has problems, and scales up when demand surges.\n\n**3 things you need to know:**\n1. It auto-heals: if your app crashes, Kubernetes restarts it\n2. It scales: add more traffic, it adds more instances automatically\n3. It abstracts infrastructure: you describe *what* you want, not *where* it runs\n\n**You can ignore for now:** etcd, control plane internals, CNI plugins — those are ops concerns unless you're running the cluster yourself.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2545,7 +2879,11 @@
     ],
     "output_kind": "analysis",
     "sample_output": "**Summary: Q3 Investor Update**\n\n- Revenue hit $4.2M ARR (+18% QoQ) driven by enterprise expansion, not new logos\n- Churn ticked up to 3.2% — two large accounts left citing \"missing integrations\"\n- Hiring plan is 6 engineers by year-end; currently 2 offers outstanding\n- Runway is 22 months at current burn; Series B target is Q1 next year\n- Product roadmap: API v2 is the top priority for Q4\n\n**Most important takeaway:** Growth is healthy but churn signal on integrations needs immediate product response.\n\n**Risk:** If the two outstanding offers don't close, engineering plan slips and API v2 is at risk.\n\n**Action today:** Schedule a 30-min call with the two churned accounts to validate the integration gap before roadmap is locked.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2572,7 +2910,11 @@
     ],
     "output_kind": "templates",
     "sample_output": "**Original:** \"In order to facilitate the optimisation of our cross-functional synergy initiatives, we will be leveraging a new paradigm of collaborative frameworks going forward.\"\n\n**Rewritten:** \"We're rolling out a new approach to help teams work together better.\"\n\n**Main change:** Removed every piece of corporate jargon and cut from 27 words to 11 without losing meaning.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2600,7 +2942,11 @@
     ],
     "output_kind": "templates",
     "sample_output": "Hi Sarah,\n\nThanks for reaching out — yes, we can move the Thursday call to 3 PM instead of 2 PM. Works perfectly.\n\nI'll send a revised invite now. Looking forward to walking through the Q4 plan with you.\n\nBest,\nAlex",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2628,7 +2974,11 @@
     ],
     "output_kind": "table",
     "sample_output": "**Action Items**\n\n| Owner | Action | Deadline |\n|---|---|---|\n| Priya | Send revised pricing deck to enterprise accounts | Friday EOD |\n| Marcus | Book venue for Q4 kickoff | Next Wednesday |\n| Team | Review updated OKRs before next sync | Thursday AM |\n\n**Slack summary:**\nWe aligned on Q4 priorities — pricing update and venue booking are the two blockers. Full action list in Notion.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2661,7 +3011,11 @@
     ],
     "output_kind": "table",
     "sample_output": "**Option A: Hire a full-time designer**\n\n| Pro | Con |\n|---|---|\n| Deep brand consistency | 3-month ramp time |\n| Embedded in team | $90k+ cost |\n| Long-term asset | Risk if workload drops |\n\n**Option B: Use a design agency**\n\n| Pro | Con |\n|---|---|\n| Fast start (1–2 weeks) | Less brand ownership |\n| Flexible scope | Higher per-hour cost |\n| No hiring risk | Communication overhead |\n\n**Recommendation:** Start with the agency. Your product roadmap is still shifting — locking in a full-time hire before the design direction is settled is premature.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2689,7 +3043,11 @@
     ],
     "output_kind": "templates",
     "sample_output": "**PROJECT KICKOFF BRIEF**\n\n<!-- Project name: e.g. \"Website Redesign Q1\" -->\n**Project:** [PROJECT NAME]\n\n<!-- One sentence describing the goal -->\n**Objective:** [PROJECT OBJECTIVE]\n\n<!-- Format: Month DD, YYYY -->\n**Launch date:** [TARGET LAUNCH DATE]\n\n<!-- List 2-4 people and their role -->\n**Team:**\n- [NAME] — [ROLE]\n- [NAME] — [ROLE]\n\n<!-- What does success look like? List 2-3 measurable outcomes -->\n**Success metrics:**\n1. [METRIC 1]\n2. [METRIC 2]",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -2716,7 +3074,11 @@
     ],
     "output_kind": "templates",
     "sample_output": "We almost launched the wrong product.\n\nThree months ago, we were convinced users wanted a dashboard. We built mockups, wrote specs, and had the engineers ready to start.\n\nThen we did 8 customer calls.\n\nNobody cared about the dashboard. They cared about one thing: getting their data out faster. The dashboard was just how they thought they'd use it.\n\nWe killed the dashboard. Built a one-click export instead. Shipped in 2 weeks. NPS jumped 18 points.\n\nThe lesson: users describe solutions, not problems. Your job is to ask one layer deeper — *why* do you want that?\n\nWhat's the last assumption a customer call killed for you?",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -2744,7 +3106,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**Variation 1 — Cinematic Photo**\n`/imagine a lone lighthouse on rocky cliffs at golden hour, stormy ocean in background, dramatic god rays through clouds, shot on Hasselblad, f/2.8, cinematic color grade, 8k --ar 16:9 --v 6`\n*Negative:* cartoonish, flat, oversaturated, text\n\n**Variation 2 — Oil Painting**\n`/imagine lighthouse on sea cliffs, oil painting in the style of J.M.W. Turner, impressionistic brushwork, warm ochre and deep navy palette, museum quality, impasto texture --ar 4:3 --stylize 800`\n*Negative:* photorealistic, digital, modern\n\n**Variation 3 — Minimal Illustration**\n`/imagine minimalist vector illustration of lighthouse, flat design, 3-color palette of cream/navy/coral, geometric shapes, editorial style, negative space composition --ar 1:1 --style raw`\n*Negative:* complex, detailed, photographic",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -2772,7 +3139,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**Shot 1 — Hero**\nPrompt: `minimalist ceramic coffee mug, studio white background, single soft key light from upper left, long shadow, shot on Phase One, product photography, hyper-detail --ar 4:5`\nPlatform: Homepage hero, email header\n\n**Shot 2 — Lifestyle**\nPrompt: `ceramic mug on weathered oak desk, morning light through linen curtains, MacBook open, small succulent, warm lifestyle photography, film grain --ar 16:9`\nPlatform: Instagram, blog\n\n**Shot 3 — Detail**\nPrompt: `extreme close-up ceramic texture, matte glaze, micro detail, macro lens, soft bokeh background, neutral tones --ar 1:1`\nPlatform: PDPs, Amazon\n...",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -2805,7 +3177,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**Brand:** Forma Studio (minimal architecture firm)\n\n**Core suffix** (append to every prompt):\n`--style raw --ar 16:9 --v 6.1 :: warm ivory and slate tones, natural light, architectural precision, editorial calm`\n\n**Approved styles:**\n1. Exterior — `concrete and glass building, golden hour, aerial perspective, Zaha Hadid influence`\n2. Interior — `open plan living space, floor-to-ceiling windows, linen furniture, minimal decor`\n...\n\n**Always avoid:** busy patterns, bright saturated colors, people in foreground, text overlays, fantasy elements\n\n**Color palette to include:** ivory (#F7F4EE), slate (#4A5568), warm sand (#C9B99A)",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -2838,7 +3215,12 @@
     ],
     "output_kind": "deck",
     "sample_output": "**VIDEO: \"Morning Ritual\" — Cold Brew Brand | 60 sec**\n\n| Scene | VO Script | Visual | Shot | AI Prompt |\n|---|---|---|---|---|\n| 1 (0–5s) | \"Some mornings ask more of you.\" | Alarm clock 5:47am, dark room | Close-up | `alarm clock glowing in dark bedroom, cinematic, slow motion, film grain, cool tones` |\n| 2 (5–12s) | \"So we made a cold brew that answers back.\" | Hands wrapping around glass | Medium | `hands holding glass of cold brew coffee, morning light, condensation on glass, warm tones` |\n...",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -2866,7 +3248,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**Character:** Lyra — young mage, silver hair, emerald eyes, worn leather coat, staff\n\n**Canonical base prompt:**\n`lyra, 20s female mage, silver hair swept back, emerald eyes glowing faintly, worn brown leather duster, wooden staff with orb, fantasy, detailed illustration, artstation quality`\n\n**Pose variants:**\n- Standing neutral: `standing pose, three-quarter view, neutral expression`\n- Casting spell: `dynamic casting pose, hands raised, magical energy swirling`\n\n**SD consistency tip:** Train a LoRA on 15-20 approved outputs. Use `lyra_v1:0.8` in prompt weight to maintain face/costume consistency across scenes.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -2897,7 +3284,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**App:** Wellness tracker | Principles: calm, human, minimal\n\n**Icon set:** `line icon set, wellness and health theme, 24px grid, 1.5px stroke, rounded caps, monochrome, clean minimal style, SVG-ready, white on dark --ar 1:1`\n\n**Illustration:** `gentle pastel illustration, person meditating in nature, flat design, soft gradients, breathing space, Headspace-adjacent style, no text --ar 4:3`\n\n**Hero image:** `serene landscape at dawn, soft golden light, person on hill, minimalist, editorial photography feel, lots of sky --ar 16:9`\n\n**Empty state:** `friendly abstract shape, no data yet, pastel tones, encouraging feeling, tiny character looking up, white background --ar 3:2`",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Creative AI",
@@ -2928,7 +3320,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**Concept 1 — Warm Japandi**\n`living room interior, japandi style, warm oak furniture, cream boucle sofa, washi paper pendant light, low coffee table with single book and plant, tatami-inspired textures, golden hour light --ar 16:9`\n\n**Concept 2 — Cool Minimalist**\n`living room, brutalist minimalism, concrete floor, slate grey sectional, single arc floor lamp, large art print, negative space, cool natural light --ar 16:9`\n\n**Concept 3 — Cosy Eclectic**\n`boho living room, warm amber light, mixed textiles, vintage Persian rug, gallery wall, trailing houseplants, low warm lighting, layered --ar 16:9`",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "midjourney",
+      "dall-e-3",
+      "runway"
+    ]
   },
   {
     "domain": "Game Development",
@@ -2960,7 +3357,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**Game:** Tower Defense Roguelite (Mobile)\n\n**Core loop:**\n- **Primary action:** Place and upgrade towers using earned currency\n- **Immediate feedback:** Visual + haptic pop when a tower kills an enemy; currency counter ticks up\n- **Session goal (5–10 min):** Survive N waves and reach the boss\n- **Progression goal:** Unlock permanent upgrades, new tower types, harder maps\n- **Re-engagement hook:** Daily challenge with unique constraint; streak reward system\n\n**Top 3 risks:**\n1. **Upgrade overwhelm** — Too many options at once kills mobile pacing. Solution: gate by wave milestone.\n2. **No comeback mechanic** — If a run goes bad early, players quit. Add a 'Last Stand' emergency ability.\n3. **Progression plateau** — If permanent upgrades cap out, endgame feels flat. Plan a prestige system from day one.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "cursor"
+    ]
   },
   {
     "domain": "Game Development",
@@ -2999,7 +3401,12 @@
     ],
     "output_kind": "templates",
     "sample_output": "**NPC:** Maren — tired city guard, underpaid, secretly sympathetic\n\n**PATH A — Friendly**\nPlayer: \"Rough shift?\"\nMaren: \"You have no idea. Third double this week. What do you need?\"\nPlayer: \"Just trying to get into the merchants' quarter.\"\nMaren: *sighs* \"Gate closes at ninth bell. But… I didn't see you walk through just now. Move quick.\"\n*Outcome: Passage granted, +5 reputation with City Guard faction*\n\n**PATH B — Aggressive**\nPlayer: \"Get out of my way.\"\nMaren: \"Excuse me? You want to try that again?\"\n*Outcome: Hostile, -10 City Guard reputation, forced combat or retreat*\n\n**PATH C — Persuasion**\nPlayer: \"I heard the captain skims the gate fees. Must be frustrating doing the work and seeing none of it.\"\nMaren: *quietly* \"Who told you that?\" *pause* \"Fine. But you didn't hear this from me.\"\n*Outcome: Access + quest hook: Expose corrupt captain*",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "cursor"
+    ]
   },
   {
     "domain": "Game Development",
@@ -3033,7 +3440,12 @@
     ],
     "output_kind": "code",
     "sample_output": "```csharp\n// InventorySystem.cs\n// Architecture: Uses event-driven design to decouple UI from inventory logic.\n// Subscribe to OnInventoryChanged to update any UI without direct references.\n\nusing UnityEngine;\nusing System;\nusing System.Collections.Generic;\n\npublic class InventorySystem : MonoBehaviour\n{\n    public static event Action<List<Item>> OnInventoryChanged;\n\n    [SerializeField] private int maxSlots = 20;\n    private List<Item> _items = new List<Item>();\n\n    public bool AddItem(Item item)\n    {\n        if (_items.Count >= maxSlots) return false;\n        _items.Add(item);\n        OnInventoryChanged?.Invoke(_items);\n        return true;\n    }\n\n    public void RemoveItem(Item item)\n    {\n        if (_items.Remove(item))\n            OnInventoryChanged?.Invoke(_items);\n    }\n}\n```",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "cursor"
+    ]
   },
   {
     "domain": "Game Development",
@@ -3067,7 +3479,12 @@
     ],
     "output_kind": "analysis",
     "sample_output": "**Diagnosis:** Soft currency inflation\n\nYour daily quest rewards (500 coins) outpace the primary sink (upgrades average 800 coins but only needed every 3 days). Players accumulate ~1,500 coins/day with nowhere to spend them, making purchases feel meaningless.\n\n**Fix 1 — Add a time-limited sink**\nFlash merchant appears daily with exclusive cosmetics for 2,000 coins. *Trade-off:* Requires art/content overhead.\n\n**Fix 2 — Reduce quest rewards by 30%**\nSimple lever, ships fast. *Trade-off:* Risk of player backlash; needs communication.\n\n**Fix 3 — Add a prestige/conversion system**\n10,000 coins → 1 premium token. Creates an aspirational sink. *Trade-off:* Competitive pressure with IAP.\n\n**Spreadsheet schema:**\n| Day | Coins earned | Coins spent | Net | Running total | Active sinks |",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "cursor"
+    ]
   },
   {
     "domain": "Game Development",
@@ -3097,7 +3514,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**Architecture: LLM NPC Brain v1**\n\n**Context window strategy:**\n- Fixed system prompt: ~800 tokens (personality, world, current state)\n- Rolling dialogue window: last 10 exchanges (~600 tokens)\n- Injected memory summary: top 3 relevant memories (~200 tokens)\n- Total budget: 1,600 tokens in, 200 tokens out\n\n**Memory system:**\n- Short-term: last 10 messages in RAM\n- Long-term: vector DB (Chroma) — embed each exchange, retrieve top-3 by cosine similarity at query time\n\n**System prompt skeleton:**\n```\nYou are Aldric, a suspicious tavern keeper in the city of Veth.\nPersonality: guarded, dry humour, loyal to paying customers.\nCurrent state: {npc_mood}, {time_of_day}, {player_reputation}\nRecent memory: {memory_summary}\nRespond in 1-2 sentences. Stay in character. Never break the fourth wall.\n```\n\n**Cost control:** Cache system prompt with Anthropic prompt caching. Use Haiku for ambient chatter, Sonnet for quest-critical dialogue.",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "cursor"
+    ]
   },
   {
     "domain": "Game Development",
@@ -3126,7 +3548,12 @@
     ],
     "output_kind": "spec",
     "sample_output": "**System: Dungeon Crawler Level Generator**\n\n**Grammar rules:**\nRoom types: [ENTRANCE, COMBAT, TREASURE, PUZZLE, BOSS]\nSequence: ENTRANCE → (COMBAT|PUZZLE)+ → TREASURE? → BOSS\nConstraint: No two COMBAT rooms adjacent; TREASURE only after COMBAT\n\n**Difficulty curve:**\nEnemy HP = base × (1 + 0.15 × roomIndex)\nRoom count = 8 + floor(level/3)\n\n**Pseudocode:**\n```\nfunction generateLevel(seed, difficulty):\n  rng = SeededRandom(seed)\n  rooms = [ENTRANCE]\n  while not valid(rooms):\n    rooms = buildChain(rng, difficulty)\n  return connectRooms(rooms, rng)\n\nfunction validate(rooms):\n  return isReachable(rooms) and hasBoss(rooms) and difficultyInBounds(rooms)\n```\n\n**Sample output (seed 4821, difficulty 2):**\nENTRANCE → COMBAT(3 goblins) → PUZZLE(pressure plates) → COMBAT(5 goblins + archer) → TREASURE(rare sword) → BOSS(Lich, 240HP)",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "cursor"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -3165,7 +3592,12 @@
     "est_time": "3–5 hours",
     "output_kind": "spec",
     "sample_output": "**Agent Architecture: Personal Finance AI**\n\n**DB Schema (SQLite):**\n```sql\nCREATE TABLE transactions (\n  id TEXT PRIMARY KEY,\n  date TEXT, amount REAL, merchant TEXT,\n  category TEXT, raw_category TEXT, flagged INTEGER DEFAULT 0\n);\nCREATE TABLE daily_summaries (date TEXT PRIMARY KEY, json TEXT);\n```\n\n**Ingestion pipeline:**\n1. Pull transactions via Plaid /transactions/sync (or parse CSV)\n2. Upsert into SQLite (dedup by transaction id)\n3. For each uncategorised row, call Claude with merchant name + amount → returns category\n\n**Categorisation prompt:**\n```\nClassify this transaction into one of: [Food, Transport, Housing, Subscriptions, Shopping, Health, Entertainment, Other].\nMerchant: {merchant}  Amount: ${amount}\nReturn only the category name.\n```\n\n**Anomaly detection logic:**\n- Flag if amount > 2× rolling 30-day average for that category\n- Flag if merchant appears for the first time and amount > $50\n\n**Daily briefing prompt:**\n```\nGiven these transactions from {date}: {json}\nAnd monthly budget targets: {targets}\nWrite a 5-bullet morning briefing covering: total spend, top category, biggest single charge, any flagged anomalies, and one actionable suggestion.\n```",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -3208,7 +3640,12 @@
     "est_time": "30 minutes",
     "output_kind": "analysis",
     "sample_output": "**Top 5 Tax Strategies for Your Profile**\n\n**1. Max Solo 401(k) — estimated savings: $14,280**\nAs a self-employed person you can contribute up to $66,000 (2024). The employer contribution side (25% of net self-employment income) is deductible on Schedule 1. *IRC §401(a).* Action: open a Solo 401(k) by Dec 31; fund by tax deadline.\n\n**2. Home Office Deduction (Simplified Method) — ~$1,500**\n$5/sq ft × up to 300 sq ft. No depreciation recapture risk. *IRC §280A.* Action: measure dedicated workspace, document with photos.\n\n**3. SEP-IRA vs Solo 401(k) comparison**\nSEP-IRA simpler to open, but Solo 401(k) allows employee deferrals — better if income < $200k.\n\n**4. Qualified Business Income (QBI) Deduction — up to 20% of net income**\nAvailable for pass-through entities below $182,050 (single). *IRC §199A.* Risk: phase-out applies to specified service trades.\n\n**5. Tax-Loss Harvesting on taxable portfolio**\nRealise ~$8k in unrealised losses to offset gains. Beware 30-day wash-sale rule. *IRC §1091.*\n\n**Action checklist:**\n- [ ] Open Solo 401(k) before Dec 31\n- [ ] Calculate exact home office sq footage\n- [ ] Review taxable account for harvesting candidates\n- [ ] Confirm QBI eligibility with your business type",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "domain": "Quick Wins",
@@ -3245,7 +3682,11 @@
     "est_time": "10 minutes",
     "output_kind": "analysis",
     "sample_output": "**Health Metrics Summary**\n\n| Marker | Your Value | Lab Range | Optimal Range | Status |\n|---|---|---|---|---|\n| LDL Cholesterol | 142 mg/dL | <160 | <100 | ⚠️ Elevated |\n| HbA1c | 5.8% | <5.7 pre-diabetic | <5.4 | ⚠️ Borderline |\n| Vitamin D | 24 ng/mL | 20–50 | 40–60 | ⚠️ Sub-optimal |\n| Ferritin | 68 ng/mL | 12–300 | 50–150 | ✅ Good |\n| TSH | 2.1 mIU/L | 0.4–4.0 | 0.5–2.5 | ✅ Good |\n\n**Flagged patterns:**\n- LDL + borderline HbA1c together suggest early metabolic stress worth monitoring.\n- Low-normal Vitamin D may be contributing to fatigue.\n\n**Lifestyle adjustments to discuss with your doctor:**\n1. Mediterranean-style diet to address LDL and glycaemic trends simultaneously.\n2. Vitamin D3 + K2 supplementation (2,000–4,000 IU/day) — confirm dose with doctor.\n3. 150 min/week moderate cardio — independently improves all three flagged markers.\n\n*This is pattern recognition, not medical advice. Bring this table to your next appointment.*",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   },
   {
     "domain": "Software Development",
@@ -3288,7 +3729,12 @@
     "est_time": "2–4 hours",
     "output_kind": "spec",
     "sample_output": "**Ghost Database Architecture**\n\n**Memory layers:**\n\n| Layer | Store | TTL | Use case |\n|---|---|---|---|\n| Episodic (short-term) | Redis list (sliding window) | Last 20 turns | Recent dialogue context |\n| Semantic (long-term) | ChromaDB / Pinecone | Permanent | Past interactions, docs |\n| Structured facts | PostgreSQL key-value table | Permanent, mutable | User prefs, entity state |\n\n**Structured facts schema:**\n```sql\nCREATE TABLE agent_facts (\n  agent_id TEXT, key TEXT, value JSONB,\n  confidence REAL, updated_at TIMESTAMPTZ,\n  PRIMARY KEY (agent_id, key)\n);\n```\n\n**Retrieval orchestration (pseudocode):**\n```python\ndef build_context(query, agent_id):\n  episodic  = redis.lrange(f'ep:{agent_id}', 0, 19)      # always include\n  semantic  = chroma.query(query, n_results=4)             # top-4 semantic hits\n  facts     = pg.fetch('SELECT key, value FROM agent_facts WHERE agent_id=$1', agent_id)\n  return format_context(episodic, semantic, facts)\n```\n\n**System-prompt injection template:**\n```\n[MEMORY]\nRecent context: {episodic_summary}\nRelevant past knowledge: {semantic_hits}\nKnown facts about user: {facts_json}\n[/MEMORY]\n```\n\n**Write rules:**\n- After every turn → append to episodic Redis list, pop oldest if > 20\n- After task completion → embed summary → upsert to vector DB\n- When agent learns a stable fact (name, preference, goal) → upsert to PostgreSQL facts table",
-    "dateAdded": "2025-01-01"
+    "dateAdded": "2025-01-01",
+    "related_tools": [
+      "cursor",
+      "github-copilot",
+      "claude-code"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -3334,7 +3780,12 @@
     "est_time": "15 min",
     "output_kind": "visual",
     "sample_output": "**Copilot prompt to paste:**\n\"Create a waterfall chart showing monthly Revenue variance versus prior year. Use the [Sales] table with [Revenue] and [Date].[Month]. Highlight positive months in teal and negative months in red.\"\n\n**Visual type:** Waterfall — best for showing how each month's delta builds up to the total annual variance.\n\n**DAX measure to create first:**\n```dax\nRevenue vs PY =\n[Total Revenue]\n  - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n```\n\n**Formatting tips:**\n- Enable data labels to show the exact delta on each bar\n- Pin the Y-axis to zero so gains and losses are visually comparable",
-    "dateAdded": "2026-05-23"
+    "dateAdded": "2026-05-23",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -3378,7 +3829,12 @@
     "est_time": "20 min",
     "output_kind": "code",
     "sample_output": "**Production measure:**\n```dax\nRevenue YoY % =\nVAR _Curr = [Total Revenue]\nVAR _Prev = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\nRETURN\n    DIVIDE(_Curr - _Prev, _Prev, BLANK())\n```\n\n**Function explanations:**\n- `CALCULATE` — re-evaluates a measure under a modified filter context\n- `SAMEPERIODLASTYEAR` — shifts the date filter back exactly 12 months\n- `DIVIDE` — safe division that returns BLANK() instead of an error when the denominator is zero\n\n**Edge cases:**\n- Returns BLANK() for periods with no prior-year data — visuals handle this cleanly\n- Requires a marked date table; if not marked, replace with `DATEADD('Date'[Date], -1, YEAR)`\n- Slicer selections (e.g. Region) are automatically respected via filter context\n\n**Simplified version:**\n```dax\nRevenue YoY % Simple =\nDIVIDE(\n    [Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),\n    CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))\n)\n```",
-    "dateAdded": "2026-05-23"
+    "dateAdded": "2026-05-23",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -3423,7 +3879,12 @@
     "est_time": "45 min",
     "output_kind": "visual",
     "sample_output": "**Page layout blueprint:**\n```\n┌──────────────────────────────────────────────────┐\n│ KPI Row: [Revenue] [vs Target %] [YoY %] [Open Pipeline] │\n├──────────────────────────────────────────────────┤\n│ Main (60% width): Line — Monthly Revenue vs Target by Region │\n│ Right (40% width): Bar — Top 10 Accounts by Revenue  │\n├──────────────────────────────────────────────────┤\n│ Bottom: Matrix — Region × Product (heat map colour scale)  │\n└──────────────────────────────────────────────────┘\nSlicer: Region (top-right, horizontal pill style)\n```\n\n**DAX — Revenue vs Target %:**\n```dax\nRevenue vs Target % =\nVAR _A = [Total Revenue]\nVAR _T = SUM('Targets'[Revenue Target])\nRETURN DIVIDE(_A - _T, _T)\n```\n\n**Copilot prompt:**\n\"Create a sales performance page with a KPI row (Total Revenue, Revenue vs Target %, YoY Growth, Open Pipeline), a line chart of Monthly Revenue vs Target by Region, a Top 10 Accounts bar chart, and a Region × Product matrix. Add a Region slicer.\"\n\n**Design tip for Sales Director:** Lead with the traffic-light KPI row — executives scan top-left first. Use conditional formatting (red/green) on the matrix so underperforming cells are instantly visible without reading numbers.",
-    "dateAdded": "2026-05-23"
+    "dateAdded": "2026-05-23",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -3468,7 +3929,12 @@
     "est_time": "1.5 hours",
     "output_kind": "spec",
     "sample_output": "**Field descriptions (sample):**\n- `Net Revenue`: Total sales after discounts and returns, in USD. Excludes intercompany and contra-revenue items.\n- `Gross Margin %`: Gross profit divided by Net Revenue. Use this — not Revenue — to compare profitability across segments.\n- `Close Date`: Date a deal was marked Won in Salesforce. Use for period reporting; distinct from Invoice Date.\n- `ARR`: Annual Recurring Revenue. Annualised value of active subscriptions; excludes one-time fees.\n\n**AI Instructions text:**\n> \"This model covers B2B Sales performance for the Americas region. 'Revenue' always means Net Revenue after returns. For 'targets', use the [Quota] table, not [Forecast]. Our fiscal year starts February 1 — when asked about 'this year' or 'YTD', use fiscal year. Default to current fiscal period unless the user specifies otherwise. 'Churn' refers to the [Churned ARR] measure.\"\n\n**Synonyms:**\n- Net Revenue → Sales, Bookings, Income, Top Line\n- Gross Margin % → Margin, Profitability, GM%\n- Churned ARR → Churn, Lost Revenue, Cancellations\n\n**Gap analysis:**\n- ✅ 'What is our revenue this quarter?' — answerable\n- ✅ 'Which region is furthest behind target?' — answerable\n- ❌ 'Why did churn spike in March?' — needs a narrative/commentary measure; model has no causal layer\n- ❌ 'What will Q4 look like?' — no forecast table connected; add [Forecast] table\n- ⚠️ 'Show me deals at risk' — partial: pipeline data exists but no risk-score measure",
-    "dateAdded": "2026-05-23"
+    "dateAdded": "2026-05-23",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Data & Analytics",
@@ -3506,7 +3972,12 @@
     "est_time": "20 min",
     "output_kind": "analysis",
     "sample_output": "**Q1: 'Are we hitting our sales target?'**\n- Query to type: *\"Show revenue vs target by region this quarter as a bar chart\"*\n- Expected visual: Clustered bar — Actual vs Target side by side per region\n- Follow-up: *\"Which sales rep in the bottom region has the largest gap?\"*\n- Refinement tip: If Copilot uses the wrong date range, add *\"for Q3 FY2026\"* explicitly\n\n**Q2: 'Which product is selling the most?'**\n- Query to type: *\"Top 10 products by units sold this year\"*\n- Expected visual: Ranked bar chart, descending\n- Follow-up: *\"Show the same top 10 by revenue margin instead of units\"*\n- Refinement tip: Say *\"by product name not SKU\"* if it returns codes instead of readable names\n\n**Q3: 'How is this month trending vs last month?'**\n- Query to type: *\"Daily revenue this month vs last month as a line chart\"*\n- Expected visual: Dual-line chart with month comparison\n- Follow-up: *\"Highlight the days where this month fell below last month\"*\n- Refinement tip: If it shows weekly not daily, add *\"daily granularity\"* to your prompt",
-    "dateAdded": "2026-05-23"
+    "dateAdded": "2026-05-23",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notebooklm"
+    ]
   },
   {
     "domain": "Finance & FP&A",
@@ -3555,7 +4026,12 @@
     "est_time": "3–4 hours",
     "output_kind": "visual",
     "sample_output": "**1. DATA PREP — Power Query AI prompt:**\n\"Clean this General Ledger export: remove blank rows, split the Account Code column into Department and Account Number, standardise all date formats to YYYY-MM-DD, and flag any negative Revenue lines as 'Adjustment' in a new Type column.\"\n\n**2. KEY DAX MEASURES:**\n```dax\nGross Margin % =\nDIVIDE([Gross Profit], [Total Revenue], BLANK())\n\nBudget Variance % =\nDIVIDE([Total Revenue] - SUM('Budget'[Revenue]), SUM('Budget'[Revenue]))\n\nEBITDA =\n[Gross Profit] - [Total OPEX] + [D&A]\n```\n\n**3. COPILOT VISUAL PROMPT:**\n\"Build a P&L summary page with: a KPI row (Revenue, Gross Margin %, EBITDA, Headcount), a waterfall chart showing Revenue → Gross Profit → EBITDA bridge, and a small multiples line chart of Revenue by Department vs prior year. Add a Month slicer.\"\n\n**4. CFO COMMENTARY PROMPT:**\n\"Write a 3-paragraph CFO commentary for [Month] [Year]. Revenue was [X] vs budget [Y] ([Z]%). Gross margin was [A]% vs [B]% prior year. OPEX was [C] vs budget [D]. Tone: direct, no jargon, flag two risks and one positive. Format: bullet summary + 2-sentence paragraph per metric.\"\n\n**5. ROW-LEVEL SECURITY:**\nIn Power BI Desktop → Modelling → Manage Roles → create role 'Region Manager' with filter: `[Region] = USERPRINCIPALNAME()`. Publish and assign users in Power BI Service → Dataset → Security.",
-    "dateAdded": "2026-05-23"
+    "dateAdded": "2026-05-23",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "AI Amplifier Readiness Assessment",
@@ -3595,7 +4071,12 @@
       "amplifier"
     ],
     "dateAdded": "2026-05-24",
-    "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'"
+    "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "Second-Order Effects Analysis for AI Automation",
@@ -3635,7 +4116,12 @@
       "scale"
     ],
     "dateAdded": "2026-05-24",
-    "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'"
+    "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "title": "Calculadora de Pix para Pequenos Negócios",
@@ -3678,7 +4164,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "Banco Central do Brasil — regulamentação Pix 2026"
+    "source": "Banco Central do Brasil — regulamentação Pix 2026",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "Guia de Abertura de MEI com IA",
@@ -3721,7 +4212,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "Portal do Empreendedor — governo.br 2026"
+    "source": "Portal do Empreendedor — governo.br 2026",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "Otimizador de Declaração do Imposto de Renda (IRPF)",
@@ -3767,7 +4263,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "Receita Federal do Brasil — tabela IRPF 2025"
+    "source": "Receita Federal do Brasil — tabela IRPF 2025",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "Análise Fundamentalista de Ações na B3",
@@ -3810,7 +4311,12 @@
     "region": "brazil",
     "confidence": "medium",
     "last_verified": "2026-05-24",
-    "source": "CVM — Comissão de Valores Mobiliários"
+    "source": "CVM — Comissão de Valores Mobiliários",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "Templates de Mensagens para WhatsApp Business",
@@ -3853,7 +4359,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "Meta Business — WhatsApp Business API 2026"
+    "source": "Meta Business — WhatsApp Business API 2026",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
   },
   {
     "title": "Checklist de Conformidade LGPD para Pequenas Empresas",
@@ -3896,7 +4407,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "ANPD — Autoridade Nacional de Proteção de Dados 2026"
+    "source": "ANPD — Autoridade Nacional de Proteção de Dados 2026",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "title": "Gerador de Nota Fiscal de Serviço (NFS-e)",
@@ -3942,7 +4458,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "Prefeituras brasileiras — Padrão Nacional NFS-e 2026"
+    "source": "Prefeituras brasileiras — Padrão Nacional NFS-e 2026",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "Consultor de Direitos Trabalhistas CLT",
@@ -3985,7 +4506,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "CLT — Consolidação das Leis do Trabalho, TST 2026"
+    "source": "CLT — Consolidação das Leis do Trabalho, TST 2026",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "elicit"
+    ]
   },
   {
     "title": "Fluxo de Caixa para PME Brasileira",
@@ -4031,7 +4557,12 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "SEBRAE Brasil — Guia de Gestão Financeira para PMEs"
+    "source": "SEBRAE Brasil — Guia de Gestão Financeira para PMEs",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
   },
   {
     "title": "Pitch Deck para Investidores Brasileiros",
@@ -4077,6 +4608,1704 @@
     "region": "brazil",
     "confidence": "high",
     "last_verified": "2026-05-24",
-    "source": "ABVCAP — Associação Brasileira de Private Equity e Venture Capital 2026"
+    "source": "ABVCAP — Associação Brasileira de Private Equity e Venture Capital 2026",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Meeting Notes to Action Items",
+    "prompt": "Convert these meeting notes into a clean action item list.\n\nMeeting notes:\n[paste your meeting notes]\n\nOutput:\n- Bullet list of action items\n- Owner for each item (if mentioned)\n- Due date (if mentioned)\n- Any open questions that need follow-up",
+    "tags": [
+      "meetings",
+      "productivity",
+      "action-items",
+      "quick"
+    ],
+    "best_for": "Anyone who attends meetings and needs to extract next steps fast",
+    "outcome": "A clean, scannable action item list extracted from raw meeting notes in under a minute.",
+    "inputs": [
+      {
+        "label": "paste your meeting notes"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "2 min",
+    "output_kind": "plan",
+    "sample_output": "**Action Items — Product Sync May 24**\n\n- [ ] **Ana** — Share updated roadmap deck by Friday\n- [ ] **Carlos** — Fix login bug before Thursday release\n- [ ] **Team** — Review Q3 OKRs before next Monday's all-hands\n- [ ] **Marketing** — Draft launch copy for Feature X by EOW\n\n**Open questions:**\n- Who owns the dashboard redesign?\n- What's the budget approval timeline for the new tool?",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai",
+      "otter-ai"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Rewrite This Email to Sound More Professional",
+    "prompt": "Rewrite this email to sound more professional and clear, without losing the original meaning. Keep it concise.\n\nOriginal email:\n[paste your email draft]\n\nTone: [formal / friendly-professional / direct]\nContext: [who you're writing to — e.g., a client, your manager, a new contact]",
+    "tags": [
+      "email",
+      "writing",
+      "professional",
+      "communication"
+    ],
+    "best_for": "Anyone who wants their emails to make a better first impression",
+    "outcome": "A polished, professional version of your email that's cleaner and more effective.",
+    "inputs": [
+      {
+        "label": "paste your email draft"
+      },
+      {
+        "label": "formal / friendly-professional / direct"
+      },
+      {
+        "label": "who you're writing to"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "3 min",
+    "output_kind": "templates",
+    "sample_output": "**Original:** hey mark just wanted to check in on the proposal thing, can you send it over when you get a chance? thanks\n\n**Rewritten (friendly-professional):**\n\nHi Mark,\n\nI wanted to follow up on the proposal — could you send it over when you have a moment? Happy to discuss any questions.\n\nThanks,\n[Your name]",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "grammarly"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Write a Compelling Blog Introduction",
+    "prompt": "Write 3 alternative introductions (first paragraph only) for a blog post.\n\nTopic: [your blog post topic]\nTarget audience: [who will read this]\nMain argument or takeaway: [what the post is about]\n\nMake each intro use a different hook style:\n1. Bold contrarian statement\n2. Specific surprising statistic or fact\n3. Short story or concrete scenario",
+    "tags": [
+      "blog",
+      "writing",
+      "intro",
+      "content"
+    ],
+    "best_for": "Content creators and marketers who want a strong opening",
+    "outcome": "Three ready-to-use blog introductions, each using a different hook approach.",
+    "inputs": [
+      {
+        "label": "your blog post topic"
+      },
+      {
+        "label": "who will read this"
+      },
+      {
+        "label": "what the post is about"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "templates",
+    "sample_output": "**Topic:** Why most team OKRs fail\n\n**1. Contrarian:**\nOKRs don't fail because teams set bad goals. They fail because the entire ritual is designed to look productive rather than be productive.\n\n**2. Statistic:**\nOnly 16% of knowledge workers say their OKRs helped them prioritize their daily work, according to a 2025 Lattice survey. The other 84% are writing them for their managers.\n\n**3. Story:**\nLast quarter, Sofia's team hit every single OKR. They also shipped nothing their customers cared about. Here's what that taught them about goal-setting.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "One-Line TLDR for Any Article",
+    "prompt": "Read this text and give me:\n1. A one-sentence TLDR (under 20 words)\n2. Three key points in bullet form\n3. One question this article leaves unanswered\n\nText:\n[paste the article or text]",
+    "tags": [
+      "reading",
+      "summary",
+      "research",
+      "quick"
+    ],
+    "best_for": "Anyone who needs to triage long content fast",
+    "outcome": "A one-line TLDR, three key bullets, and one unanswered question — in under 30 seconds.",
+    "inputs": [
+      {
+        "label": "paste the article or text"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "1 min",
+    "output_kind": "analysis",
+    "sample_output": "**TLDR:** Google's 2026 earnings beat expectations as Gemini API revenue grew 3× year-on-year.\n\n**Key points:**\n- Gemini API now generates $4.2B annualised revenue, up from $1.4B in 2025\n- Cloud division operating margin expanded to 32%, up 5pp\n- Search ad revenue declined 3% as AI overviews reduce click-through rates\n\n**Open question:** How much of the Gemini API growth is internal (Google products) vs. external developer usage?",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Prioritize Your Task List by Impact and Effort",
+    "prompt": "Help me prioritize this task list using the impact/effort 2×2 matrix.\n\nMy tasks:\n[paste your task list]\n\nFor each task, rate:\n- Impact (1-3): how much does it move the needle?\n- Effort (1-3): how much time/energy does it require?\n\nThen sort them into four quadrants:\n- Quick wins (high impact, low effort) — DO FIRST\n- Strategic (high impact, high effort) — SCHEDULE\n- Fill-ins (low impact, low effort) — DO WHEN FREE\n- Drop (low impact, high effort) — CONSIDER SKIPPING",
+    "tags": [
+      "productivity",
+      "prioritization",
+      "tasks",
+      "quick"
+    ],
+    "best_for": "Anyone feeling overwhelmed by a long to-do list",
+    "outcome": "Your task list organized into four clear quadrants with a recommended do-first order.",
+    "inputs": [
+      {
+        "label": "paste your task list"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "3 min",
+    "output_kind": "table",
+    "sample_output": "**Task Prioritization — Impact/Effort Matrix**\n\n| Quadrant | Tasks |\n|---|---|\n| ⚡ Quick Wins | Reply to the Acme contract email, update README, cancel unused subscription |\n| 📅 Strategic | Rebuild onboarding flow, write Q3 strategy doc |\n| 💤 Fill-ins | Organize Notion archive, clean up Slack channels |\n| ✂️ Drop | Rewrite legacy Python script nobody uses |\n\n**Do first today:** Reply to Acme contract email (15 min, high stakes, low effort)",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Turn Any Feedback into a Constructive Response",
+    "prompt": "Help me reframe this feedback I received so I can respond to it professionally and constructively.\n\nFeedback I received:\n[paste the feedback]\n\nContext: [who gave it and in what setting — e.g., performance review, Slack message, client email]\n\nGive me:\n1. What the person likely intended to communicate\n2. The valid point inside the feedback (even if it felt harsh)\n3. A draft response that acknowledges it without being defensive",
+    "tags": [
+      "feedback",
+      "communication",
+      "professional",
+      "mindset"
+    ],
+    "best_for": "Anyone who wants to respond to difficult feedback without getting defensive",
+    "outcome": "A clear interpretation of the feedback and a professional, non-defensive draft response.",
+    "inputs": [
+      {
+        "label": "paste the feedback"
+      },
+      {
+        "label": "who gave it and in what setting"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "templates",
+    "sample_output": "**Feedback received:** 'Your presentation was a bit all over the place. It was hard to follow your argument.'\n\n**What they likely meant:** The structure wasn't clear enough for the audience to track the logic from slide to slide.\n\n**The valid point:** The narrative thread was probably missing — each slide made sense individually but the through-line was unclear.\n\n**Draft response:**\nThanks for the honest feedback — I appreciate it. I think you're right that the structure could have been clearer. I'll work on building a stronger narrative thread next time, probably by leading with the conclusion and working backwards. Happy to talk through what would have helped.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Write a Resume Bullet That Shows Impact",
+    "prompt": "Rewrite this resume bullet point to show measurable impact using the format: [Action verb] + [what you did] + [result / number].\n\nOriginal bullet:\n[paste your current resume bullet]\n\nContext: [what the role was and what team/company you were at]\n\nIf I don't have exact numbers, suggest 2-3 ways I could estimate or describe impact without fabricating data.",
+    "tags": [
+      "resume",
+      "career",
+      "impact",
+      "writing"
+    ],
+    "best_for": "Job seekers who want resume bullets that get past ATS and impress hiring managers",
+    "outcome": "A polished, impact-first resume bullet with a result, plus tips if you lack exact metrics.",
+    "inputs": [
+      {
+        "label": "paste your current resume bullet"
+      },
+      {
+        "label": "what the role was and what team/company"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "3 min",
+    "output_kind": "templates",
+    "sample_output": "**Original:** Worked on improving the customer onboarding process\n\n**Rewritten options:**\n\n1. Redesigned customer onboarding flow, reducing time-to-first-value from 14 days to 4 days and increasing 30-day activation by 22%\n2. Led cross-functional onboarding project that cut support tickets in first 30 days by approximately 35% (based on pre/post comparison)\n3. Rebuilt onboarding documentation and in-app guidance for 2,000+ new customers per month\n\n**If you lack metrics:**\n- Ask your manager or check your team's dashboards\n- Use relative language: 'reduced by ~X%' or 'eliminated'\n- Describe scale: 'serving 10,000 users' or 'across 5 product lines'",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Generate Team Icebreaker Questions",
+    "prompt": "Generate 10 icebreaker questions for a [type of meeting: e.g., remote team kickoff / workshop / onboarding session].\n\nTeam type: [e.g., engineering team, client workshop, mixed seniority]\nTone: [light/fun / professional / thought-provoking]\nTime available for icebreaker: [e.g., 5 minutes / 10 minutes]\n\nMix of:\n- Quick-answer questions (can be answered in 5 seconds)\n- Light professional questions (work-related but not boring)\n- One deeper question (optional, for longer sessions)",
+    "tags": [
+      "team",
+      "icebreaker",
+      "meetings",
+      "remote"
+    ],
+    "best_for": "Managers and facilitators running team meetings, workshops, or onboardings",
+    "outcome": "10 ready-to-use icebreaker questions tailored to your team type and tone.",
+    "inputs": [
+      {
+        "label": "type of meeting"
+      },
+      {
+        "label": "team type"
+      },
+      {
+        "label": "light/fun / professional / thought-provoking"
+      },
+      {
+        "label": "time available"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "2 min",
+    "output_kind": "templates",
+    "sample_output": "**Icebreakers — Engineering Team Kickoff (10 min, thought-provoking)**\n\nQuick (5-second answers):\n1. Coffee or tea?\n2. Dark mode or light mode?\n3. What tab do you always have open?\n\nProfessional:\n4. What's one tool or practice you discovered this year that actually stuck?\n5. What's one thing you're hoping to learn in this project?\n6. What's something you're still bad at that you want to improve?\n\nDeeper:\n7. What's one assumption about software development you used to believe that you've changed your mind on?",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Explain a Technical Error Message in Plain English",
+    "prompt": "Explain this error message in plain English and tell me how to fix it.\n\nError:\n[paste the full error message or stack trace]\n\nContext:\n- Language/framework: [e.g., Python, React, SQL, Docker]\n- What I was trying to do: [describe what you were doing when it happened]\n\nGive me:\n1. What the error means in simple terms\n2. The most likely cause in my specific context\n3. The fastest fix to try first\n4. One thing to check if the fast fix doesn't work",
+    "tags": [
+      "debugging",
+      "error",
+      "developer",
+      "quick"
+    ],
+    "best_for": "Developers and non-developers who need to understand and fix error messages fast",
+    "outcome": "A plain-English explanation of your error plus a step-by-step fix to try immediately.",
+    "inputs": [
+      {
+        "label": "paste the full error message or stack trace"
+      },
+      {
+        "label": "language/framework"
+      },
+      {
+        "label": "what you were trying to do"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT",
+      "cursor",
+      "github-copilot"
+    ],
+    "est_time": "3 min",
+    "output_kind": "analysis",
+    "sample_output": "**Error:** `TypeError: Cannot read properties of undefined (reading 'map')` (React, line 47)\n\n**What it means:** You're calling `.map()` on a variable that is `undefined` — JavaScript can't loop over something that doesn't exist yet.\n\n**Most likely cause:** Your data is fetched asynchronously and `items` is `undefined` on the first render before the API call returns.\n\n**Fastest fix:**\n```jsx\nconst items = data?.items ?? []; // default to empty array\n```\nOr add a loading check:\n```jsx\nif (!items) return <Spinner />;\n```\n\n**If that doesn't fix it:** `console.log(data)` right before line 47 — you'll see exactly what shape it has.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "cursor"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Simplify a Legal or Technical Clause",
+    "prompt": "Simplify this legal or technical clause into plain language that a non-expert can understand.\n\nClause:\n[paste the clause or paragraph]\n\nTell me:\n1. What it means in 1-2 plain sentences\n2. What I am agreeing to or what it requires of me\n3. Any potential risk or catch I should be aware of\n\nDo not give me legal advice — just help me understand the language.",
+    "tags": [
+      "legal",
+      "contracts",
+      "plain-language",
+      "quick"
+    ],
+    "best_for": "Anyone who needs to understand a contract, terms of service, or policy clause",
+    "outcome": "A plain-English breakdown of the clause: what it means, what it requires, and any gotchas.",
+    "inputs": [
+      {
+        "label": "paste the clause or paragraph"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "2 min",
+    "output_kind": "analysis",
+    "sample_output": "**Clause:** 'The licensor reserves the right to modify, suspend, or terminate the service, or any portion thereof, at any time without notice, and shall not be liable for any resulting loss or damage.'\n\n**What it means:** The company can change, pause, or shut down the service whenever they want, and they don't have to tell you first.\n\n**What it requires of you:** Nothing — this is one-sided. It only restricts what you can claim against them.\n\n**Potential catch:** If you're relying on this service for your business, you have no contractual protection if they disappear or change the product significantly. Check if there's an SLA or enterprise agreement available that provides uptime guarantees.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Write 5 Subject Line Variants for an Email Campaign",
+    "prompt": "Write 5 subject line variants for this email campaign. Each should use a different copywriting approach.\n\nEmail topic: [describe what the email is about]\nAudience: [who you're sending to]\nGoal: [what you want them to do — open? click? reply?]\n\nApproaches to use:\n1. Curiosity gap\n2. Benefit-first (what's in it for them)\n3. Urgency or scarcity\n4. Personal / conversational\n5. Question",
+    "tags": [
+      "email",
+      "marketing",
+      "subject-line",
+      "copywriting"
+    ],
+    "best_for": "Email marketers and founders who want to A/B test subject lines",
+    "outcome": "5 ready-to-test subject lines using 5 different proven copywriting techniques.",
+    "inputs": [
+      {
+        "label": "what the email is about"
+      },
+      {
+        "label": "who you're sending to"
+      },
+      {
+        "label": "what you want them to do"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "templates",
+    "sample_output": "**Email:** Product update email — new AI feature for enterprise customers\n\n1. **Curiosity gap:** The one Claude integration most enterprise teams haven't tried yet\n2. **Benefit-first:** Cut your report review time by 60% — here's the feature that does it\n3. **Urgency:** Early access closes Friday — your team's spot is reserved\n4. **Conversational:** Quick question about your Q3 reporting workflow\n5. **Question:** What if your team spent 3 hours less on reports every week?",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper",
+      "copy-ai"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Write a Cover Letter Opening Paragraph",
+    "prompt": "Write 3 opening paragraph options for a cover letter.\n\nRole I'm applying to: [job title and company]\nMy background in one sentence: [your relevant background]\nWhy I want this specific role: [your genuine reason]\n\nMake each opening use a different angle:\n1. Lead with a specific result or achievement\n2. Lead with a connection to the company's mission or product\n3. Lead with a bold claim about what you'd bring to the role\n\nKeep each paragraph to 3-4 sentences.",
+    "tags": [
+      "career",
+      "cover-letter",
+      "job-search",
+      "writing"
+    ],
+    "best_for": "Job seekers who want a strong cover letter opening that gets them to the next round",
+    "outcome": "Three differentiated cover letter openings, each with a distinct strategy.",
+    "inputs": [
+      {
+        "label": "job title and company"
+      },
+      {
+        "label": "your relevant background"
+      },
+      {
+        "label": "your genuine reason for wanting this role"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "templates",
+    "sample_output": "**Role:** Senior Product Manager at Linear\n\n**Option 1 (Achievement):** At my last company, I took a product from 3,000 to 50,000 monthly active users in 18 months by narrowing the value proposition and cutting three features. I want to bring that same bias for focus to Linear's developer tooling roadmap.\n\n**Option 2 (Mission):** Linear's bet that software teams deserve tools as fast as their thinking is one I've believed in since I watched engineers close Linear tabs to open Jira. The speed-first philosophy is something I want to contribute to, not just use.\n\n**Option 3 (Bold claim):** I'm the kind of PM who has an opinion about your changelog page, your pricing page, and why your 'New Issue' keyboard shortcut isn't as fast as it could be. I'd like to bring that level of product obsession to your team.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Create a Negotiation Script for a Salary Conversation",
+    "prompt": "Help me write a negotiation script for a salary conversation.\n\nSituation: [e.g., new job offer, annual review, counter-offer]\nCurrent offer / current salary: [amount or 'undisclosed']\nMy target: [what you're aiming for]\nMy strongest argument: [why you deserve the increase — skills, market rate, results]\n\nGive me:\n1. An opening line to anchor the conversation\n2. How to respond if they say 'this is the best we can do'\n3. How to respond if they ask 'what are you currently making?'\n4. A closing line if I want to accept or ask for time to consider",
+    "tags": [
+      "salary",
+      "negotiation",
+      "career",
+      "scripts"
+    ],
+    "best_for": "Anyone preparing for a salary negotiation who wants words, not just tips",
+    "outcome": "A ready-to-use negotiation script with lines for the most common pushbacks.",
+    "inputs": [
+      {
+        "label": "situation (new offer / review / counter-offer)"
+      },
+      {
+        "label": "current offer or salary"
+      },
+      {
+        "label": "your target number"
+      },
+      {
+        "label": "your strongest argument"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "templates",
+    "sample_output": "**Situation:** New job offer — $110K offered, targeting $125K\n\n**Opening anchor:**\n'I'm really excited about this role and I'd love to make it work. Based on my research on market rates for this role in this city and my seven years of experience in this domain, I was expecting a number closer to $125,000. Is there flexibility to get there?'\n\n**If they say 'best we can do':**\n'I appreciate the transparency. Are there other levers we could explore — additional equity, a signing bonus, or an earlier review cycle — that might bridge the gap?'\n\n**If they ask current salary:**\n'I'd prefer to focus on what the role requires and what I'd bring to it — I'm targeting $125K based on market data and the scope of this position.'\n\n**Closing (if accepting):**\n'I appreciate you working through this with me. I'm happy to accept at $125K and I'm looking forward to contributing from day one.'",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Instant Habit Tracker Design",
+    "prompt": "Help me design a simple habit tracking system I can start today.\n\nHabits I want to track: [list 3-5 habits]\nMy schedule: [morning person or evening? how many minutes can I commit to tracking?]\nPreferred format: [paper notebook / spreadsheet / phone app / Notion]\n\nGive me:\n1. A minimal daily check-in format (should take under 2 minutes)\n2. A weekly review question I can ask myself on Sundays\n3. The single most common reason people quit habit trackers — and how to avoid it\n4. A 30-day milestone I should aim for before changing anything",
+    "tags": [
+      "habits",
+      "productivity",
+      "health",
+      "self-improvement"
+    ],
+    "best_for": "Anyone who wants to start tracking habits without over-engineering it",
+    "outcome": "A minimal, sustainable habit tracking system you can start using today.",
+    "inputs": [
+      {
+        "label": "list 3-5 habits"
+      },
+      {
+        "label": "your schedule"
+      },
+      {
+        "label": "preferred format"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "plan",
+    "sample_output": "**Habits:** Exercise 20 min, read 10 pages, no phone after 9pm\n\n**Daily check-in (Notion, 90 seconds):**\n```\nDate: __\nExercise:  ☐ Done  ☐ Skip — reason: __\nReading:   ☐ Done  ☐ Skip — reason: __\nNo phone:  ☐ Done  ☐ Partial  ☐ Failed\nOne word for today: __\n```\n\n**Weekly review question (Sunday):** 'Which habit had the most skips this week, and was it a circumstance or a decision?'\n\n**Why people quit:** They track too many things. Start with your 3, add nothing for 30 days.\n\n**30-day milestone:** Aim for 20/30 days completed on each habit (67%) — not perfection. At day 30, ask: which habit costs the most friction to start? That's the one to improve.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Everyday AI",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Turn a Wall of Text into a Skimmable Summary",
+    "prompt": "Reformat this wall of text into a skimmable, scannable document.\n\nOriginal text:\n[paste your text]\n\nApply these formatting rules:\n- Add a bolded headline every 3-4 sentences\n- Break long sentences into shorter ones (under 20 words when possible)\n- Convert any lists hidden in the prose into actual bullet points\n- Add a one-line TL;DR at the top\n- Preserve all the original information — just restructure it",
+    "tags": [
+      "writing",
+      "formatting",
+      "readability",
+      "documents"
+    ],
+    "best_for": "Anyone who needs to make a dense document easier to read",
+    "outcome": "Your original text reformatted with headlines, bullets, and a TL;DR for fast scanning.",
+    "inputs": [
+      {
+        "label": "paste your text"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "2 min",
+    "output_kind": "analysis",
+    "sample_output": "**TL;DR:** The new expense policy requires digital receipts and manager approval for all purchases over $50, effective June 1.\n\n**What's changing**\nStarting June 1, all expense claims must include a digital receipt. Paper receipts will no longer be accepted in the reimbursement portal.\n\n**Approval requirements**\n- Under $50: self-approve in Expensify\n- $50–$500: manager approval required\n- Over $500: finance + VP sign-off\n\n**How to submit**\n- Upload receipts within 7 days of the expense\n- Use the Expensify mobile app for same-day capture\n- Tag each expense with your cost centre code",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Brand Strategy",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Brand Voice and Tone Guide",
+    "prompt": "Create a brand voice and tone guide for my company.\n\nCompany: [company name and what it does]\nTarget audience: [who your customers are]\nBrand personality in 3 words: [e.g., bold, human, precise]\nCompetitors to sound different from: [name 1-2 competitors]\n\nInclude:\n1. Voice pillars (3-4 core characteristics with a definition of each)\n2. Tone spectrum — how voice shifts across contexts (e.g., social post vs. error message vs. sales email)\n3. Do/don't word list (10 words we use, 10 we avoid)\n4. 3 before/after examples rewriting generic copy in our voice\n5. One-paragraph 'voice test' to check any new content",
+    "tags": [
+      "brand",
+      "voice",
+      "copywriting",
+      "marketing"
+    ],
+    "best_for": "Founders, marketers, and content leads building a consistent brand identity",
+    "outcome": "A practical brand voice guide your whole team can use to write consistently.",
+    "inputs": [
+      {
+        "label": "company name and what it does"
+      },
+      {
+        "label": "who your customers are"
+      },
+      {
+        "label": "brand personality in 3 words"
+      },
+      {
+        "label": "1-2 competitors to differentiate from"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "45 min",
+    "output_kind": "spec",
+    "sample_output": "**Brand Voice Guide — Volta (B2B SaaS for energy teams)**\n\n**Voice Pillars:**\n1. **Precise** — We say exactly what we mean. No vague claims, no jargon for its own sake.\n2. **Grounded** — We speak like a smart colleague, not a pitch deck. Real examples over abstractions.\n3. **Understated confident** — We don't sell hard. We show, let the numbers speak, and trust our audience to get it.\n\n**Tone Spectrum:**\n- Product UI: Direct, minimal (verb + object — 'Add meter', not 'Start adding your meter now')\n- Blog: Conversational with data — short paragraphs, specific numbers\n- Error messages: Honest + helpful ('Your file format isn't supported. Try CSV or XLSX.')\n\n**Do say:** specific, measurable, because, exactly, trade-off\n**Don't say:** revolutionary, seamless, world-class, leverage, synergize",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Sales & Outreach",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Cold Email Sequence (3-Touch)",
+    "prompt": "Write a 3-email cold outreach sequence to [target persona] for [your product or service].\n\nProduct/service: [what you sell]\nTarget: [job title and company type]\nKey pain point: [main problem you solve]\nProof point: [one specific result or case study]\n\nEmail 1 (Day 1): Problem-focused, short, single CTA\nEmail 2 (Day 4): Social proof or case study angle, 25% shorter than email 1\nEmail 3 (Day 9): Break-up email — give them an out, make it easy to say yes or no\n\nEach email: max 100 words, no feature lists, one CTA only.",
+    "tags": [
+      "cold-email",
+      "sales",
+      "outreach",
+      "copywriting"
+    ],
+    "best_for": "Sales reps and founders doing outbound prospecting",
+    "outcome": "A 3-touch cold email sequence that feels human, avoids spam triggers, and gets replies.",
+    "inputs": [
+      {
+        "label": "what you sell"
+      },
+      {
+        "label": "target job title and company type"
+      },
+      {
+        "label": "main pain point you solve"
+      },
+      {
+        "label": "one specific result or case study"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "templates",
+    "sample_output": "**Sequence: AI analytics platform → Head of Data at mid-market SaaS**\n\n**Email 1 (Day 1) — Subject: Your dashboards vs. your decisions**\nHi [Name], most BI dashboards tell you what happened. They rarely tell you what to do next.\nWe help data teams at SaaS companies surface actionable signals — not just charts.\nWorth 20 minutes to show you how [similar company] cut their reporting cycle by 40%?\n[Calendly link]\n\n**Email 2 (Day 4) — Subject: How [Company X] reduced firefighting by half**\n[Name], quick follow-up. [Company X]'s data team was spending 60% of their time on ad hoc requests.\nAfter six weeks with us, that dropped to 30%.\nSame team, same tools — just smarter prioritization. Happy to show you the setup.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "copy-ai"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "PR & Communications",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Product Launch Announcement",
+    "prompt": "Write a product launch announcement for [channel: press release / email to users / social post thread].\n\nProduct/feature: [what you're launching]\nLaunch date: [date or 'today']\nTop 3 benefits for users: [not features — what users can do now that they couldn't before]\nProof or credibility: [beta user results, awards, partnerships]\nCTA: [what you want them to do: try, sign up, read more]\n\nFormat: [choose channel from above]\nTone: [excited-but-grounded / formal / conversational]",
+    "tags": [
+      "launch",
+      "PR",
+      "announcement",
+      "marketing"
+    ],
+    "best_for": "Product teams and marketers announcing new features or products",
+    "outcome": "A launch announcement in your chosen format that leads with benefits, not features.",
+    "inputs": [
+      {
+        "label": "product/feature being launched"
+      },
+      {
+        "label": "launch date"
+      },
+      {
+        "label": "top 3 user benefits"
+      },
+      {
+        "label": "proof or credibility"
+      },
+      {
+        "label": "CTA and channel"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "templates",
+    "sample_output": "**Email to users — AI scheduling assistant launch**\n\nSubject: You asked for fewer calendar conflicts. Here's your answer.\n\nStarting today, your calendar syncs automatically.\n\nEvery time you mark a meeting as 'important', your assistant learns your patterns and protects the time around it — so deep work blocks stop getting eaten by ad hoc requests.\n\nIn beta, 1,200 users recovered an average of 6 hours per week.\n\n**What's new:**\n✓ Smart buffer time — 15-minute recovery blocks auto-added after back-to-backs\n✓ Focus mode detection — your status updates automatically\n✓ Calendar health score — see your week before it happens\n\n[Turn it on in Settings → Calendar Sync]",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "jasper"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Thought Leadership",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "LinkedIn Thought Leadership Post",
+    "prompt": "Write a high-performing LinkedIn thought leadership post.\n\nMy perspective or argument: [the contrarian or insightful take you want to share]\nMy relevant experience: [what gives you credibility to say this]\nAudience: [who follows you — industry, seniority]\nOptional: a recent event or data point that makes this timely\n\nFormat rules:\n- First line must stand alone as a hook (no preamble)\n- Short paragraphs (1-3 lines)\n- No bullet points until the last third if at all\n- End with a question that invites comments\n- 200-300 words",
+    "tags": [
+      "linkedin",
+      "thought-leadership",
+      "content",
+      "personal-brand"
+    ],
+    "best_for": "Founders, executives, and practitioners building a professional personal brand",
+    "outcome": "A 200-300 word LinkedIn post with a scroll-stopping hook and a comment-driving close.",
+    "inputs": [
+      {
+        "label": "your perspective or argument"
+      },
+      {
+        "label": "your relevant experience"
+      },
+      {
+        "label": "target audience"
+      },
+      {
+        "label": "optional timely event or data point"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "templates",
+    "sample_output": "Most AI product launches are just feature dumps with a press release.\n\nI've reviewed 40+ AI product launches in the past year as part of a VC due diligence process. The ones that converted were almost never the most technically impressive.\n\nThey had three things in common:\n\nThey led with a before/after story — not a capability list. They named a specific pain and then showed evidence it was gone.\n\nThey had a number that was easy to remember. Not '47.3% improvement'. Just 'half the time.'\n\nThey made the first action stupidly easy. Not 'sign up', not 'book a demo'. 'Paste your first document.'\n\nThe launches that flopped had one thing in common: they explained what the product does. The successful ones explained what your life is like after you use it.\n\nWhat's the most effective AI product announcement you've seen recently — and why did it work?",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Technical Writing",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Rewrite Technical Documentation for Non-Technical Readers",
+    "prompt": "Rewrite this technical documentation so a non-technical business stakeholder can understand it.\n\nOriginal documentation:\n[paste the technical documentation]\n\nAudience: [e.g., finance director, marketing manager, C-suite executive]\nTheir main concern: [what they care about — cost? risk? timeline? business impact?]\n\nRules:\n- No acronyms without explanation\n- Replace every technical term with an analogy or plain description\n- Lead with business impact, not technical details\n- Keep the same structure but simplify the language\n- Add a 'What this means for you' section at the end",
+    "tags": [
+      "documentation",
+      "technical-writing",
+      "communication",
+      "stakeholders"
+    ],
+    "best_for": "Engineers and product managers who need to communicate technical concepts to business stakeholders",
+    "outcome": "A business-readable version of your technical docs with a 'what this means for you' summary.",
+    "inputs": [
+      {
+        "label": "paste the technical documentation"
+      },
+      {
+        "label": "audience"
+      },
+      {
+        "label": "their main concern"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "spec",
+    "sample_output": "**Original:** 'The system uses a horizontally scalable microservices architecture with Redis caching and a PostgreSQL read replica for query optimization, achieving p99 latency of <200ms.'\n\n**Rewritten for CFO:**\nThe platform is built to handle 10× more users without any additional investment in infrastructure. Think of it like a restaurant that can seat 10 people or 100 — same kitchen, same quality, just more tables.\n\nWhen the system gets busy, it serves information from a fast local copy instead of doing all the work from scratch — the same way a barista keeps common orders ready at the counter.\n\nNinety-nine percent of requests complete in under 200 milliseconds (less than the blink of an eye).\n\n**What this means for you:** No performance-related surprises as we scale to new markets, and no need for a platform infrastructure upgrade in the next 18 months.",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Content Strategy",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Podcast Episode Outline and Show Notes",
+    "prompt": "Create a podcast episode outline and show notes for an interview episode.\n\nGuest: [guest name and 1-sentence bio]\nTopic/angle: [what the episode is about]\nKey question you want answered: [the one insight listeners should leave with]\nAudience: [who listens to your podcast]\nEpisode length: [e.g., 30 min / 60 min / 90 min]\n\nDeliver:\n1. Episode title (3 options)\n2. 5-minute structured outline with timing\n3. 8-10 interview questions in order (mix of warm-up, substance, and provocation)\n4. Show notes template (150 words, written for SEO and listener skimming)\n5. 3 social media pull-quotes to tease the episode",
+    "tags": [
+      "podcast",
+      "content",
+      "interview",
+      "production"
+    ],
+    "best_for": "Podcast hosts and content producers preparing interview episodes",
+    "outcome": "A complete episode package: title options, outline, questions, show notes, and social teasers.",
+    "inputs": [
+      {
+        "label": "guest name and bio"
+      },
+      {
+        "label": "episode topic/angle"
+      },
+      {
+        "label": "key insight you want"
+      },
+      {
+        "label": "your audience"
+      },
+      {
+        "label": "episode length"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "30 min",
+    "output_kind": "plan",
+    "sample_output": "**Guest:** Lena Richter, ex-Google PM, founder of Compass AI\n**Topic:** Why most AI product teams are measuring the wrong things\n\n**Title options:**\n1. 'The Metric That's Killing Your AI Product'\n2. 'What Google Taught Me About Measuring AI'\n3. 'Stop Tracking Accuracy — With Lena Richter'\n\n**Outline (60 min):**\n0:00 — Intro + guest background (5 min)\n5:00 — The problem: how AI teams track success today (10 min)\n15:00 — The Compass framework: what to measure instead (15 min)\n30:00 — Real examples: what improved when teams changed metrics (10 min)\n40:00 — Audience pushback + Lena's responses (10 min)\n50:00 — One thing listeners can do this week (5 min)\n55:00 — Closing + where to find Lena (5 min)",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "otter-ai"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "PR & Communications",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Press Release That Gets Picked Up",
+    "prompt": "Write a press release for [announcement].\n\nAnnouncement: [what you're announcing]\nCompany: [company name, one-line description]\nDate: [release date]\nQuote from spokesperson: [give me a real quote or I'll draft one for you]\nRelevant context or data: [any numbers, partnerships, or market context that makes it newsworthy]\nTarget journalists/outlets: [tech press? business press? vertical media?]\n\nFormat: AP style, inverted pyramid, under 500 words.\nInclude: dateline, headline, subheadline, boilerplate, contact info placeholder.",
+    "tags": [
+      "press-release",
+      "PR",
+      "media",
+      "communications"
+    ],
+    "best_for": "PR professionals, founders, and comms teams pitching media",
+    "outcome": "A publication-ready press release in AP style with all standard elements.",
+    "inputs": [
+      {
+        "label": "announcement"
+      },
+      {
+        "label": "company name and description"
+      },
+      {
+        "label": "release date"
+      },
+      {
+        "label": "spokesperson quote or ask to draft"
+      },
+      {
+        "label": "data or market context"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "templates",
+    "sample_output": "FOR IMMEDIATE RELEASE\n\n**Volta Energy Raises $40M Series B to Scale AI-Powered Grid Management Across Latin America**\n\n*Funding will accelerate deployment in Brazil and Colombia as demand for smart grid infrastructure surges*\n\nSÃO PAULO, May 24, 2026 — Volta Energy, the AI platform helping utilities reduce grid losses by up to 35%, today announced a $40 million Series B led by Redpoint eventures, with participation from IFC and Valor Capital Group.\n\nThe funding arrives as Brazil's National Electric Energy Agency (ANEEL) mandates smart metering for all utilities serving over 100,000 customers by 2028.\n\n'Every percentage point of grid loss recovered goes directly back to lower consumer bills,' said Maria Souza, Volta's CEO. 'This funding lets us scale what we've proven in São Paulo across the entire country.'\n\n###\n\n**About Volta Energy:** [Company boilerplate]\n**Media Contact:** [Name, email, phone]",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Customer Success",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Customer Case Study from Raw Interview Notes",
+    "prompt": "Turn these customer interview notes into a polished case study.\n\nCustomer: [company name, industry, size]\nChallenge (before): [what problem they had]\nSolution: [what they used / did]\nResults: [specific metrics and outcomes]\nQuote from customer: [direct quote or paraphrase]\n\nFormat:\n- Headline: result-first (e.g., 'How [Company] Cut X by Y%')\n- 3 sections: Challenge / Solution / Results\n- Pull quote in the middle\n- 300-400 words\n- Sidebar: 3 key metrics in bold\n\nTone: credible and specific — no marketing hyperbole.",
+    "tags": [
+      "case-study",
+      "customer-success",
+      "marketing",
+      "proof"
+    ],
+    "best_for": "Marketing and customer success teams turning wins into sales collateral",
+    "outcome": "A polished, credible case study with a results-first headline and a sidebar of key metrics.",
+    "inputs": [
+      {
+        "label": "customer name, industry, size"
+      },
+      {
+        "label": "their challenge before"
+      },
+      {
+        "label": "solution used"
+      },
+      {
+        "label": "specific results and metrics"
+      },
+      {
+        "label": "customer quote"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "30 min",
+    "output_kind": "spec",
+    "sample_output": "**How Meridian Health Reduced Patient No-Shows by 43%**\n\n**The Challenge**\nMeridian Health's network of 12 clinics was losing $2.1 million annually to appointment no-shows. Their reminder system — a single SMS sent 24 hours before — wasn't working for patients with complex schedules or language barriers.\n\n**The Solution**\nMeridian deployed an AI reminder system that sent personalized multi-channel reminders in the patient's preferred language, timed based on historical show-up patterns per patient segment.\n\n**The Results**\nWithin 90 days, no-show rates dropped from 22% to 12.5% — a 43% reduction. Recovered appointment slots generated $890,000 in incremental revenue in the first quarter alone. Staff hours spent on manual reminder calls dropped by 70%.\n\n'We tried everything — calls, SMS, even postcards,' said Operations Director Priya Nair. 'The difference was personalization at scale. Patients actually showed up because the reminder felt like it was meant for them.'\n\n| Metric | Result |\n|---|---|\n| No-show reduction | 43% |\n| Incremental Q1 revenue | $890K |\n| Staff time saved | 70% |",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Sales",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Sales Deck Narrative Script",
+    "prompt": "Write the spoken narrative script for a sales presentation.\n\nProduct/service: [what you sell]\nDeal context: [who you're presenting to — company, role, known pain points]\nDeck structure: [list your slide titles or sections]\nKey objection to pre-empt: [the objection you always hear]\nDesired outcome: [what you want them to do after the meeting]\n\nFor each slide, write:\n- What to say (2-4 sentences)\n- What NOT to read from the slide\n- One question to check understanding or create engagement\n\nTotal talking time: [e.g., 20 minutes]",
+    "tags": [
+      "sales",
+      "presentation",
+      "deck",
+      "storytelling"
+    ],
+    "best_for": "Account executives and founders delivering high-stakes sales presentations",
+    "outcome": "A speaker-ready script for each slide with talk tracks, engagement questions, and objection pre-emption.",
+    "inputs": [
+      {
+        "label": "product/service"
+      },
+      {
+        "label": "who you're presenting to"
+      },
+      {
+        "label": "list your slide titles"
+      },
+      {
+        "label": "key objection to pre-empt"
+      },
+      {
+        "label": "total talking time"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT",
+      "gamma"
+    ],
+    "est_time": "1 hour",
+    "output_kind": "deck",
+    "sample_output": "**Slide 3: The Problem**\n\n**Say:** 'Your team is making pricing decisions every day. Some of those decisions recover margin. A lot of them leave money on the table — and you probably don't know which ones. That's not a people problem. It's a visibility problem.'\n\n**Don't read:** The bullet points on screen — let them read those while you talk.\n\n**Engagement question:** 'Before I go on — how does your team currently know when a discount was worth giving?'\n\n---\n**Slide 5: Objection Pre-emption**\n\n**Say:** 'I know what you're thinking — we already have Salesforce data for this. Here's the difference: Salesforce tells you what happened. We tell you what the discount did to LTV 6 months later, and whether giving it was worth it. That's a different question.'",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "gamma"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Crisis Communications",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Apology Email That Rebuilds Trust",
+    "prompt": "Write a genuine apology email that rebuilds trust after a service failure or mistake.\n\nWhat happened: [describe the issue or failure]\nWho was affected: [customers, employees, partners?]\nRoot cause (if known): [what actually caused it]\nWhat you've fixed or are fixing: [concrete actions taken]\nWhat you're offering as remedy: [credit, refund, extra support, etc.]\n\nRules:\n- No passive voice ('mistakes were made' → 'we made a mistake')\n- No 'we apologize for any inconvenience' (cliché)\n- Acknowledge the impact, not just the event\n- Be specific about what changed\n- Short sentences. No PR spin.",
+    "tags": [
+      "crisis",
+      "email",
+      "trust",
+      "customer-service"
+    ],
+    "best_for": "Customer-facing teams, CEOs, and product managers handling service failures",
+    "outcome": "A sincere, specific apology email that takes accountability and offers a concrete remedy.",
+    "inputs": [
+      {
+        "label": "what happened"
+      },
+      {
+        "label": "who was affected"
+      },
+      {
+        "label": "root cause if known"
+      },
+      {
+        "label": "what you've fixed"
+      },
+      {
+        "label": "what you're offering"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "templates",
+    "sample_output": "**Subject: We let you down last Tuesday — here's what happened and what we changed**\n\nOn May 20th, our platform was down for 4 hours and 17 minutes. During that window, you couldn't access your data or run reports.\n\nThat's unacceptable. We know some of you had client meetings. Some of you had board reports due.\n\n**What caused it:** A database migration we ran at 2am UTC hit an edge case we hadn't tested. Our rollback took longer than it should have because our runbook for this scenario was out of date.\n\n**What we've fixed:**\n- Updated rollback runbook and tested it twice\n- Added monitoring for the edge case that triggered the failure\n- Moving all infrastructure changes to a 72-hour review window\n\n**What we're giving you:** 15 days of credit added to your account automatically.\n\nIf you were directly affected and want to talk through what happened, reply and I'll call you.\n\n— [Name], CEO",
+    "dateAdded": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Saúde",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Guia para Conseguir Consulta pelo SUS",
+    "prompt": "Você é um assistente especializado no Sistema Único de Saúde (SUS) brasileiro.\n\nMinha situação:\n- Estado/município: [seu estado e cidade]\n- Especialidade que preciso: [ex: cardiologista, ortopedista, psiquiatra]\n- Urgência: [urgente / pode aguardar / rotina]\n- Tenho UBS de referência? [sim/não]\n\nMe ajude com:\n1. **Passo a passo** para agendar pelo SUS no meu município\n2. **Documentos necessários** para levar na UBS\n3. **Direito à prioridade** — tenho algum? (idoso, gestante, criança, deficiência)\n4. **Tempo médio de espera** para essa especialidade no SUS\n5. **O que fazer se a espera for muito longa** — alternativas gratuitas ou de baixo custo\n6. **Consultas online gratuitas** disponíveis pelo SUS em 2026\n\nResponda em português do Brasil, linguagem simples.",
+    "tags": [
+      "sus",
+      "saúde",
+      "brasil",
+      "consulta"
+    ],
+    "best_for": "Cidadãos brasileiros que precisam acessar serviços de saúde pelo SUS",
+    "outcome": "Um guia passo a passo para conseguir consulta médica pelo SUS, com documentação, direitos e alternativas.",
+    "inputs": [
+      {
+        "label": "seu estado e cidade"
+      },
+      {
+        "label": "especialidade médica que precisa"
+      },
+      {
+        "label": "urgente / pode aguardar / rotina"
+      },
+      {
+        "label": "tem UBS de referência? sim/não"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "plan",
+    "sample_output": "**Guia SUS — Cardiologista, São Paulo, rotina**\n\n**Passo a passo:**\n1. Vá à sua UBS de referência com RG, CPF e Cartão SUS\n2. Solicite encaminhamento ao cardiologista\n3. O médico da UBS emite guia de referência\n4. Regulação CROSS agenda a consulta no especialista\n5. Você recebe SMS/WhatsApp com data e local\n\n**Documentos:**\n- RG ou CNH\n- CPF\n- Cartão Nacional de Saúde (ou solicite na UBS)\n- Comprovante de residência (últimos 3 meses)\n\n**Direitos à prioridade:**\n- Idosos +60 anos: atendimento preferencial\n- Gestantes: fila prioritária para pré-natal\n- Pessoas com deficiência: prioritário em todas as filas\n\n**Tempo médio SP:** 45–90 dias para cardiologia\n\n**Alternativas gratuitas:** Faculdades de medicina (USP, UNIFESP) atendem gratuitamente e têm filas menores",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Saúde",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Como Contestar Negativa do Plano de Saúde",
+    "prompt": "Você é um especialista em direito do consumidor e regulação de planos de saúde no Brasil (ANS).\n\nMinha situação:\n- Procedimento/tratamento negado: [descreva o que foi negado]\n- Meu plano: [operadora e tipo do plano — individual, coletivo empresarial, etc.]\n- Motivo alegado pelo plano: [o que disseram na negativa]\n- Médico solicitou? [sim/não — e qual especialidade]\n\nMe ajude com:\n1. **Fundamento legal** — a negativa é legal? (ROL ANS 2026, RN 465/2021)\n2. **Protocolo de recurso interno** ao plano — prazo e como fazer\n3. **Reclamação na ANS** — passo a passo pelo app/site disque.ans.gov.br\n4. **Ação no Procon ou Juizado Especial** — quando e como escalar\n5. **Modelo de carta de contestação** para enviar ao plano\n\nResponda em português.",
+    "tags": [
+      "plano de saúde",
+      "ans",
+      "brasil",
+      "direitos"
+    ],
+    "best_for": "Beneficiários de plano de saúde que tiveram procedimento negado",
+    "outcome": "Um guia completo para contestar negativa de plano de saúde, com fundamentos legais, recurso e modelo de carta.",
+    "inputs": [
+      {
+        "label": "procedimento ou tratamento negado"
+      },
+      {
+        "label": "operadora e tipo do plano"
+      },
+      {
+        "label": "motivo alegado pelo plano na negativa"
+      },
+      {
+        "label": "médico solicitou? sim/não"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "templates",
+    "sample_output": "**Análise: Negativa de Ressonância Magnética de Joelho**\n\n**Fundamento legal:**\nRessonância magnética consta no ROL ANS 2026 como procedimento coberto. Negativa sem justificativa clínica válida viola a RN 465/2021, Art. 4º.\n\n**Passo 1 — Recurso interno (prazo: imediato):**\nSolicite revisão por médico diferente do plano. Envie laudos médicos, relatório do especialista e exames anteriores. O plano tem 24h para procedimentos urgentes e 10 dias úteis para eletivos.\n\n**Passo 2 — ANS (se negado pelo plano):**\n1. Acesse www.ans.gov.br ou app ANS\n2. Abra NIP (Notificação de Intermediação Preliminar)\n3. O plano tem 5 dias úteis para responder\n\n**Modelo de carta:**\n'Pela presente, contesto a negativa referente ao procedimento [RM de joelho], solicitado pelo Dr. [nome], CRM [número], em [data]. Tal procedimento consta no ROL de Procedimentos da ANS (Resolução Normativa 465/2021), sendo obrigatória a cobertura pelo plano de saúde...'",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Saúde",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Verificador de Interações Medicamentosas",
+    "prompt": "Você é um assistente de saúde que ajuda a verificar possíveis interações medicamentosas. AVISO IMPORTANTE: esta é uma ferramenta educacional — sempre consulte seu médico ou farmacêutico antes de alterar qualquer medicação.\n\nMeus medicamentos atuais:\n[liste todos os medicamentos que você toma, com doses se souber]\n\nCondições de saúde relevantes: [ex: hipertensão, diabetes, tireoide]\nIdade: [sua idade]\n\nMe diga:\n1. **Interações significativas** entre esses medicamentos (se houver)\n2. **O que monitorar** — sintomas que podem indicar interação\n3. **Horários de tomada** — há medicamentos que não devem ser tomados juntos?\n4. **Alimentos ou suplementos** que podem interagir\n5. **Perguntas para fazer ao meu médico** na próxima consulta\n\n⚠️ Lembre sempre: apenas um profissional de saúde pode recomendar ou alterar medicações.",
+    "tags": [
+      "medicamentos",
+      "saúde",
+      "interações",
+      "brasil"
+    ],
+    "best_for": "Pacientes que tomam múltiplos medicamentos e querem se preparar para conversa com médico",
+    "outcome": "Um relatório educacional de possíveis interações medicamentosas e perguntas para levar ao médico.",
+    "inputs": [
+      {
+        "label": "liste todos os medicamentos que você toma"
+      },
+      {
+        "label": "condições de saúde relevantes"
+      },
+      {
+        "label": "sua idade"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "10 min",
+    "output_kind": "analysis",
+    "sample_output": "**⚠️ Aviso: análise educacional — consulte sempre seu médico**\n\n**Medicamentos analisados:** Losartana 50mg, Metformina 850mg, Atorvastatina 20mg, AAS 100mg\n\n**Interações a conhecer:**\n- AAS + Losartana: o ácido acetilsalicílico em doses altas pode reduzir levemente o efeito anti-hipertensivo. Em 100mg (baixa dose), o risco é mínimo.\n- Atorvastatina: evitar suco de toranja (grapefruit) — pode aumentar a concentração do medicamento no sangue.\n\n**Horários recomendados:**\n- Losartana: de manhã\n- Metformina: com as refeições para reduzir desconforto gástrico\n- Atorvastatina: à noite (fígado sintetiza colesterol preferencialmente à noite)\n- AAS: com café da manhã\n\n**Perguntas para o médico:**\n1. 'Preciso monitorar algum exame específico por causa dessa combinação?'\n2. 'Posso tomar anti-inflamatórios como ibuprofeno com esses medicamentos?'",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "medium",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Saúde",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Plano de Manejo de Doença Crônica",
+    "prompt": "Você é um assistente de saúde especializado em manejo de condições crônicas. Esta ferramenta é educacional e não substitui orientação médica.\n\nMinha condição: [ex: diabetes tipo 2, hipertensão, hipotireoidismo]\nDiagnóstico há quanto tempo: [tempo]\nMedicações atuais: [liste ou coloque 'não sei']\nMinha maior dificuldade: [ex: lembrar de tomar remédio, controlar alimentação, manter rotina]\n\nCrie um plano de manejo semanal que inclua:\n1. **Rotina de monitoramento** — o que medir, quando e com que frequência\n2. **Alertas** — quando ligar para o médico ou ir à UPA\n3. **Aplicativos gratuitos** recomendados para monitoramento em 2026\n4. **Dicas de alimentação** adaptadas para o Brasil (alimentos acessíveis, preço acessível)\n5. **Checklist para consulta médica** — o que levar e perguntar\n\nResponda em português, com linguagem simples e prática.",
+    "tags": [
+      "doença crônica",
+      "saúde",
+      "brasil",
+      "monitoramento"
+    ],
+    "best_for": "Brasileiros que convivem com doenças crônicas e querem melhorar o autocuidado",
+    "outcome": "Um plano semanal de manejo com rotina, alertas, apps gratuitos e checklist para consulta médica.",
+    "inputs": [
+      {
+        "label": "sua condição crônica"
+      },
+      {
+        "label": "há quanto tempo tem o diagnóstico"
+      },
+      {
+        "label": "medicações atuais ou 'não sei'"
+      },
+      {
+        "label": "sua maior dificuldade no manejo"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "plan",
+    "sample_output": "**Plano de Manejo — Diabetes Tipo 2**\n\n**Monitoramento diário:**\n- Glicemia de jejum: em casa, todo dia antes do café\n- Anotar no caderno ou app: valor, horário e o que comeu na noite anterior\n- Pressão arterial: 3× por semana (manhã, em repouso)\n\n**Alertas — vá ao médico ou UPA imediatamente se:**\n- Glicemia > 300 mg/dL com sintomas (visão turva, muita sede, confusão)\n- Ferida no pé que não cicatriza em 3 dias\n- Tontura ou sudorese intensa sem motivo\n\n**Apps gratuitos (2026):**\n- MySugr (diabetes)\n- Minha Pressão (hipertensão)\n- Lembrar Remédio (alarmes)\n\n**Alimentação acessível:**\n- Feijão + arroz integral: carboidrato de baixo índice glicêmico\n- Ovo: proteína barata para saciar e estabilizar glicemia\n- Folhas verdes: espinafre, couve, acelga — fibra que desacelera absorção",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "medium",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Saúde",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Perguntas para Fazer na Emergência",
+    "prompt": "Você é um assistente de orientação em saúde. Esta ferramenta é educacional.\n\nSintomas atuais: [descreva os sintomas da pessoa]\nIdade da pessoa: [idade]\nCondições pré-existentes: [ex: hipertensa, diabética, ou 'nenhuma conhecida']\nLocalização: [cidade — para saber se UPA ou Pronto-Socorro é melhor]\n\nMe ajude com:\n1. **Nível de urgência** — UPA / Pronto-Socorro / SAMU 192 / aguardar UBS?\n2. **O que descrever ao médico** — lista de perguntas e informações a levar\n3. **O que NÃO fazer** antes de ir à emergência\n4. **Documentos para levar** (SUS ou convênio)\n5. **Sinais de piora** que exigem chamar SAMU imediatamente\n\n⚠️ Em caso de dúvida sobre urgência, ligue 192 (SAMU) antes de ir.",
+    "tags": [
+      "emergência",
+      "saúde",
+      "sus",
+      "brasil"
+    ],
+    "best_for": "Familiares e cuidadores que precisam decidir rapidamente o nível de cuidado médico",
+    "outcome": "Orientação de triagem de urgência com o que fazer, o que levar e quando chamar o SAMU.",
+    "inputs": [
+      {
+        "label": "descreva os sintomas"
+      },
+      {
+        "label": "idade da pessoa"
+      },
+      {
+        "label": "condições pré-existentes"
+      },
+      {
+        "label": "cidade"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "3 min",
+    "output_kind": "analysis",
+    "sample_output": "**⚠️ Em emergência real, ligue 192 (SAMU) antes de consultar qualquer app**\n\n**Sintomas:** Dor no peito + falta de ar, 58 anos, hipertensa\n\n**Nível de urgência: ALTO — vá ao Pronto-Socorro agora**\nNão espere UBS. Dor no peito em hipertensa pode ser infarto ou embolia.\n\n**O que falar ao médico:**\n- 'Dor iniciou há X minutos/horas'\n- 'Intensidade de 1-10: [número]'\n- 'Irradia para braço, mandíbula ou costas?'\n- 'Última medicação tomada: [nome e horário]'\n\n**Não faça:**\n- Não tome AAS por conta própria sem orientação\n- Não dirija sozinha — peça carona ou chame SAMU\n\n**Documentos:**\n- Cartão SUS ou carteirinha do plano\n- Lista de medicamentos ou caixinha dos remédios\n\n**Chame SAMU se:** perda de consciência, confusão, lábios roxos, dor 8+/10",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "medium",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Educação",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Plano de Estudos para o ENEM",
+    "prompt": "Você é um professor especializado em preparação para o ENEM.\n\nMinha situação:\n- Data da prova: [mês e ano]\n- Horas disponíveis por semana: [número]\n- Matérias mais fracas: [liste as que você tem mais dificuldade]\n- Matérias mais fortes: [liste as que vai melhor]\n- Meta de nota: [sua meta no ENEM]\n- Estudo sozinho ou cursinho? [sozinho/cursinho/combinado]\n\nCrie:\n1. **Cronograma semanal** de estudos (distribuição por matéria)\n2. **Prioridades** — quais temas têm mais peso no ENEM?\n3. **Recursos gratuitos recomendados** (YouTube, Descomplica, Khan Academy, etc.)\n4. **Estratégia para a redação** — como melhorar 50 pontos em 3 meses\n5. **Simulados** — quando e como usar para medir progresso\n6. **Rotina de revisão** espaçada para memorização eficiente\n\nResponda em português, prático e motivador.",
+    "tags": [
+      "enem",
+      "educação",
+      "brasil",
+      "estudos"
+    ],
+    "best_for": "Estudantes brasileiros se preparando para o ENEM",
+    "outcome": "Um cronograma de estudos personalizado para o ENEM com prioridades, recursos gratuitos e estratégia de redação.",
+    "inputs": [
+      {
+        "label": "data da prova (mês e ano)"
+      },
+      {
+        "label": "horas disponíveis por semana"
+      },
+      {
+        "label": "matérias mais fracas"
+      },
+      {
+        "label": "matérias mais fortes"
+      },
+      {
+        "label": "meta de nota"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "plan",
+    "sample_output": "**Plano ENEM — 4 meses, 15h/semana, meta 750**\n\n**Cronograma semanal:**\n- 2ª/4ª: Matemática (3h) — álgebra e geometria são 40% das questões\n- 3ª/5ª: Ciências Humanas (3h) — maior peso em questões interdisciplinares\n- 6ª: Redação (1h30) — um texto completo por semana\n- Sábado: Simulado + revisão de erros (4h)\n- Domingo: Ciências da Natureza (3h)\n\n**Prioridades por área:**\n- Mat: funções, geometria, probabilidade (40% das questões)\n- CH: Brasil República, geopolítica contemporânea\n- CN: ecologia, genética, tabela periódica\n\n**Recursos gratuitos:**\n- Redação: Redação Online (corrige com IA)\n- Matemática: Ferretto Matemática (YouTube)\n- Geral: Estratégia ENEM (gratuito online)\n\n**Meta mensal:** Gabaritar 1 simulado do INEP por mês",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Communication & Writing",
+    "section": "Educação",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Estrutura de Redação para Vestibular",
+    "prompt": "Você é um professor de redação especializado em vestibulares brasileiros (ENEM, FUVEST, UNICAMP, VUNESP).\n\nTema da redação: [tema que você precisa escrever]\nBanca: [ENEM / FUVEST / UNICAMP / outra]\nTempo disponível: [minutos]\nNível atual: [iniciante / já escrevo mas não sei estruturar / quero tirar acima de 800]\n\nMe ajude com:\n1. **Análise do tema** — o que a banca quer? qual é a polêmica?\n2. **Tese** — 2 opções de tese para este tema\n3. **Estrutura parágrafo a parágrafo** (para 30 linhas)\n4. **Repertório sociocultural** — 3 argumentos ou dados para usar\n5. **Proposta de intervenção** (para ENEM) — completa com 5 elementos\n6. **Conectivos e operadores argumentativos** que elevam a nota\n\nResponda em português.",
+    "tags": [
+      "redação",
+      "vestibular",
+      "enem",
+      "escrita"
+    ],
+    "best_for": "Vestibulandos que precisam estruturar redações para vestibulares",
+    "outcome": "Uma estrutura completa de redação com tese, argumentos, repertório e proposta de intervenção para a banca escolhida.",
+    "inputs": [
+      {
+        "label": "tema da redação"
+      },
+      {
+        "label": "banca (ENEM / FUVEST / outra)"
+      },
+      {
+        "label": "minutos disponíveis"
+      },
+      {
+        "label": "seu nível atual"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "spec",
+    "sample_output": "**Tema: Desafios para a saúde mental na era digital — ENEM**\n\n**Análise:** A banca quer reflexão crítica sobre o impacto das redes sociais e conectividade permanente na saúde mental, com proposta que envolva Estado, família e escola.\n\n**Tese 1:** A exposição excessiva às redes sociais agrava a ansiedade e o isolamento, exigindo políticas de educação digital e acolhimento nas escolas.\n\n**Estrutura:**\n- Parágrafo 1 (intro): contextualização + tese\n- Parágrafo 2: argumento 1 + evidência\n- Parágrafo 3: argumento 2 + contraexemplo refutado\n- Parágrafo 4: proposta de intervenção\n\n**Proposta ENEM (5 elementos):**\nO Ministério da Educação (agente) deve implementar disciplinas de saúde digital (ação) nas escolas públicas (meio), promovendo autocuidado e uso consciente das redes (finalidade), sob pena de suspensão de repasses ao MEC (efeito).",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Educação",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Roteiro de TCC — Do Zero à Estrutura",
+    "prompt": "Você é um orientador acadêmico especializado em TCCs (Trabalho de Conclusão de Curso) para graduação e pós-graduação no Brasil.\n\nMeu TCC:\n- Área/curso: [ex: Administração, Direito, Enfermagem]\n- Tema geral: [sobre o que quer escrever]\n- Nível: [graduação / pós-graduação / MBA]\n- Prazo de entrega: [data ou 'não definido']\n- Maior dificuldade: [ex: problema de pesquisa, metodologia, revisão bibliográfica]\n\nMe ajude a construir:\n1. **Problema de pesquisa** — 3 versões de pergunta problema para o meu tema\n2. **Objetivo geral e 3 objetivos específicos**\n3. **Justificativa** — por que este tema é relevante?\n4. **Metodologia adequada** — qualitativa/quantitativa/mista? Por quê?\n5. **Estrutura de capítulos** completa com sugestão de páginas por seção\n6. **Cronograma de execução** de 4 meses\n7. **Bases de dados gratuitas** para revisão bibliográfica (SciELO, CAPES, Google Scholar)\n\nResponda em português.",
+    "tags": [
+      "tcc",
+      "acadêmico",
+      "brasil",
+      "pesquisa"
+    ],
+    "best_for": "Estudantes de graduação e pós-graduação construindo o TCC",
+    "outcome": "Uma estrutura completa de TCC com problema de pesquisa, objetivos, metodologia, cronograma e fontes.",
+    "inputs": [
+      {
+        "label": "área e curso"
+      },
+      {
+        "label": "tema geral do TCC"
+      },
+      {
+        "label": "nível (graduação/pós)"
+      },
+      {
+        "label": "prazo de entrega"
+      },
+      {
+        "label": "maior dificuldade atual"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT",
+      "perplexity"
+    ],
+    "est_time": "30 min",
+    "output_kind": "spec",
+    "sample_output": "**TCC — Administração, Gestão de Pessoas, Graduação**\n\n**Problema de pesquisa (opção 1):**\n'De que modo a implementação do trabalho remoto impacta o engajamento e a produtividade de colaboradores em empresas de médio porte do setor de serviços no Brasil?'\n\n**Objetivo geral:** Analisar o impacto do teletrabalho no engajamento de colaboradores em empresas de serviços de médio porte no Brasil pós-pandemia.\n\n**Objetivos específicos:**\n1. Mapear os modelos de trabalho remoto adotados pelas empresas estudadas\n2. Identificar fatores que influenciam o engajamento no trabalho remoto\n3. Propor diretrizes para gestores de RH otimizarem políticas de teletrabalho\n\n**Metodologia:** Mista — survey quantitativo (escala Likert) + entrevistas semiestruturadas qualitativas\n\n**Cronograma (4 meses):**\n- Mês 1: Revisão bibliográfica\n- Mês 2: Coleta de dados\n- Mês 3: Análise e escrita dos capítulos\n- Mês 4: Revisão, formatação ABNT e entrega",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Educação",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Explicar Tema de Escola para Pais Ajudarem os Filhos",
+    "prompt": "Você é um professor que explica temas escolares de forma simples para que pais possam ajudar os filhos nos estudos.\n\nTema da escola: [ex: frações, sistema solar, Revolução Industrial, fotossíntese]\nAno/série do filho: [ex: 5º ano do fundamental, 1º ano do médio]\nFilho tem dificuldade em: [o que especificamente não está entendendo]\n\nMe explique:\n1. **O conceito em linguagem simples** (como se eu tivesse 10 anos)\n2. **Uma analogia do dia a dia** para explicar ao meu filho\n3. **Um exercício ou atividade prática** que posso fazer com ele em casa\n4. **Os erros mais comuns** que crianças cometem neste tema\n5. **Como saber se meu filho entendeu** — pergunta de teste simples\n\nResponda em português, prático e sem jargão pedagógico.",
+    "tags": [
+      "educação",
+      "pais",
+      "escola",
+      "brasil"
+    ],
+    "best_for": "Pais brasileiros que querem ajudar os filhos nos estudos em casa",
+    "outcome": "Uma explicação simples do tema escolar com analogia, atividade prática e forma de testar o aprendizado.",
+    "inputs": [
+      {
+        "label": "tema da escola"
+      },
+      {
+        "label": "ano/série do filho"
+      },
+      {
+        "label": "o que o filho não está entendendo"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "5 min",
+    "output_kind": "plan",
+    "sample_output": "**Tema: Frações — 5º ano**\n\n**Explicação simples:**\nFração é uma parte de algo inteiro. O número de baixo (denominador) diz em quantas partes você cortou. O número de cima (numerador) diz quantas partes você pegou.\n\n**Analogia — pizza:**\n'Imagine uma pizza cortada em 8 pedaços. Se você comer 3 pedaços, comeu 3/8 da pizza. O 8 embaixo = quantos pedaços no total. O 3 em cima = quantos você comeu.'\n\n**Atividade prática:**\nPegue uma barra de chocolate e corte em 6 partes iguais. Pergunte: 'Se você comer 2 partes, que fração da barra você comeu?' (resposta: 2/6 ou 1/3)\n\n**Erros comuns:**\n- Somar numerador e denominador juntos (2/3 + 1/3 = 3/6 — errado!)\n- Esquecer de simplificar (2/6 = 1/3)\n\n**Teste:** Peça: 'Me mostra 3/4 de um copo de água.'",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Educação",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Comparador de Cursinhos e Universidades",
+    "prompt": "Você é um conselheiro de educação especializado no sistema universitário brasileiro.\n\nMeu objetivo: [ex: medicina na USP, engenharia na UNICAMP, direito na FGV]\nCidade onde posso estudar: [sua cidade ou se pode se mudar]\nOrçamento mensal para educação: [valor ou 'sem renda — preciso de bolsa']\nAno que pretendo entrar: [ano]\n\nMe ajude a comparar e decidir:\n1. **Opções de universidade** — pública vs. privada para o meu curso\n2. **Notas de corte** no SISU e ENEM para minha meta (últimos 2 anos)\n3. **Cursinhos recomendados** para minha cidade e orçamento\n4. **ProUni e FIES** — me explique as regras e se me enquadro\n5. **Cronograma de inscrições** — ENEM, SISU, vestibulares das federais em 2026/2027\n6. **Custo real de estudar** em cada opção (mensalidade + moradia + material)\n\nResponda em português.",
+    "tags": [
+      "vestibular",
+      "universidade",
+      "brasil",
+      "educação"
+    ],
+    "best_for": "Vestibulandos e pais decidindo entre universidades e cursinhos",
+    "outcome": "Uma comparação estruturada entre opções de universidade com notas de corte, financiamento e cronograma.",
+    "inputs": [
+      {
+        "label": "curso e universidade alvo"
+      },
+      {
+        "label": "cidade onde pode estudar"
+      },
+      {
+        "label": "orçamento mensal ou 'preciso de bolsa'"
+      },
+      {
+        "label": "ano que pretende entrar"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT",
+      "perplexity"
+    ],
+    "est_time": "20 min",
+    "output_kind": "analysis",
+    "sample_output": "**Objetivo: Medicina — São Paulo, 2027**\n\n**Opções públicas:**\n- USP: nota de corte SISU ~800/1000 | gratuita | ~220 vagas\n- UNIFESP: nota ~780 | gratuita | ~100 vagas\n- FMUSP (concurso próprio): vestibular separado do ENEM\n\n**Privadas com ProUni:**\n- Einstein (FMABC): R$8.000–12.000/mês | ProUni bolsa parcial (renda até 3SM)\n- Anhembi Morumbi: R$6.500/mês | FIES disponível\n\n**ProUni — você se enquadra?**\nRenda bruta familiar ≤ 1,5 salário mínimo per capita → bolsa integral\nRenda ≤ 3 SM per capita → bolsa parcial 50%\n\n**Cronograma 2026/2027:**\n- Ago 2026: Inscrição ENEM\n- Nov 2026: Provas ENEM\n- Jan 2027: SISU + ProUni\n- Jan-Mar 2027: Vestibulares das federais\n\n**Cursinhos SP (orçamento médio):**\n- Poliedro, Objetivo, Anglo (R$1.200-2.500/mês)\n- Gratuitos: cursinho pré-vestibular comunitário da USP (seleção por renda)",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "medium",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Direito",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Revisão de Contrato de Aluguel",
+    "prompt": "Você é um especialista em direito imobiliário e Lei do Inquilinato (Lei 8.245/91) no Brasil.\n\nMinha situação:\n- Tipo de contrato: [residencial / comercial]\n- Prazo do contrato: [meses]\n- Valor do aluguel e índice de reajuste: [ex: R$2.000, reajuste IGPM]\n- Garantia pedida: [caução / fiador / seguro-fiança / título de capitalização]\n- Cláusulas que me preocupam: [descreva ou cole as cláusulas]\n\nAnalise:\n1. **Cláusulas abusivas** — o que vai contra a Lei do Inquilinato?\n2. **Reajuste** — IGPM, IPCA ou INPC? qual é mais favorável ao inquilino?\n3. **Caução** — quanto posso ser cobrado no máximo?\n4. **Saída antes do prazo** — quais são as penalidades legais?\n5. **Quem paga o quê** — IPTU, condomínio, reformas: o que a lei determina?\n6. **3 pontos para negociar antes de assinar**\n\n⚠️ Análise educacional — consulte um advogado para o seu caso específico.\n\nResponda em português.",
+    "tags": [
+      "aluguel",
+      "brasil",
+      "contratos",
+      "imóveis"
+    ],
+    "best_for": "Inquilinos e locatários brasileiros que querem entender o contrato antes de assinar",
+    "outcome": "Uma análise das cláusulas do contrato de aluguel com identificação de pontos abusivos e sugestões de negociação.",
+    "inputs": [
+      {
+        "label": "tipo de contrato (residencial/comercial)"
+      },
+      {
+        "label": "prazo e valores"
+      },
+      {
+        "label": "garantia pedida"
+      },
+      {
+        "label": "cláusulas que preocupam"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "analysis",
+    "sample_output": "**Análise — Contrato Residencial, 30 meses, São Paulo**\n\n**Cláusulas potencialmente abusivas:**\n- Proibição de animais domésticos: só é válida se houver justificativa; decisões recentes do STJ protegem o direito à posse de animais\n- Multa por rescisão de 3 aluguéis após 12 meses: abusiva — a lei limita à proporcionalidade do prazo cumprido\n\n**Sobre o reajuste:**\n- IGPM em 2024 chegou a 7,6%, IPCA foi 4,9%\n- Tente negociar IPCA — mais previsível e favorável ao inquilino\n- Contrato deve especificar claramente o índice\n\n**Caução máximo:** 3 aluguéis (Lei 8.245/91, Art. 38) — se pedirem mais, é ilegal\n\n**3 pontos para negociar:**\n1. Índice de reajuste: IGPM → IPCA\n2. Prazo de carência para reforma antes da mudança\n3. Quem paga IPTU proporcional se sair antes do fim do ano",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Direito",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Guia de Divórcio Amigável no Brasil",
+    "prompt": "Você é um consultor jurídico especializado em direito de família no Brasil (Código Civil, Lei do Divórcio, Provimento CNJ 83/2019).\n\nMinha situação:\n- Casados há: [tempo de casamento]\n- Regime de bens: [comunhão parcial / separação total / comunhão universal]\n- Filhos menores: [sim/não — se sim, quantos e idades]\n- Bens principais: [imóvel, carro, investimentos, dívidas]\n- Ambos concordam com o divórcio? [sim/não]\n\nElabore um guia com:\n1. **Divórcio extrajudicial ou judicial** — qual é o meu caso?\n2. **Documentos necessários** completa lista\n3. **Divisão de bens** — como funciona no meu regime?\n4. **Guarda e alimentos** — o que a lei determina se há filhos\n5. **Passo a passo no Cartório** — se for extrajudicial\n6. **Custo médio** — cartório, advogado, imposto\n7. **Prazo estimado** de início ao fim\n\n⚠️ Consulte sempre um advogado de família — este guia é educacional.\n\nResponda em português.",
+    "tags": [
+      "divórcio",
+      "família",
+      "brasil",
+      "direito"
+    ],
+    "best_for": "Casais brasileiros buscando orientação inicial sobre divórcio consensual",
+    "outcome": "Um guia educacional completo do processo de divórcio amigável no Brasil com documentos, custos e prazos.",
+    "inputs": [
+      {
+        "label": "tempo de casamento"
+      },
+      {
+        "label": "regime de bens"
+      },
+      {
+        "label": "filhos menores? quantos?"
+      },
+      {
+        "label": "bens principais"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "15 min",
+    "output_kind": "plan",
+    "sample_output": "**Divórcio Amigável — Comunhão Parcial, sem filhos menores**\n\n**Via extrajudicial (cartório) — seu caso se enquadra:**\nSem filhos menores + ambos de acordo = pode fazer em cartório sem precisar de juiz.\n\n**Documentos:**\n- RG e CPF de ambos\n- Certidão de casamento original\n- Escritura ou matrícula dos bens a partilhar\n- Comprovante de residência de cada um\n- Certidão de nascimento dos filhos (se houver filhos maiores que precisam ser mencionados)\n\n**Divisão de bens (Comunhão Parcial):**\n- Divide-se o que foi adquirido DURANTE o casamento\n- O que cada um tinha antes fica com quem já era dono\n- Dívidas contraídas juntos também são divididas\n\n**Custo médio SP 2026:**\n- Cartório: R$1.200–2.500 (tabela TCESP)\n- Advogado (obrigatório mesmo no extrajudicial): R$1.500–4.000\n\n**Prazo:** 15–45 dias (extrajudicial)",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Direito",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Reclamação no Procon — Passo a Passo",
+    "prompt": "Você é um especialista em direito do consumidor no Brasil (CDC — Lei 8.078/90).\n\nMeu problema:\n- Empresa: [nome da empresa]\n- O que aconteceu: [descreva o problema]\n- Tentei resolver diretamente com a empresa? [sim/não — se sim, quando e o que responderam]\n- Valor envolvido: [R$ valor ou 'não é financeiro']\n- Estado: [seu estado]\n\nMe ajude com:\n1. **Seus direitos no CDC** que se aplicam ao meu caso\n2. **Prazo para reclamar** — quando prescreve?\n3. **Passo a passo Procon online** (consumidor.gov.br)\n4. **Prazo de resposta da empresa** após reclamação\n5. **Se Procon não resolver** — ANATEL, ANAC, ANEEL, Juizado Especial?\n6. **Modelo de texto** para a reclamação (objetivo, sem emoção, com fatos e datas)\n\nResponda em português.",
+    "tags": [
+      "procon",
+      "consumidor",
+      "brasil",
+      "direitos"
+    ],
+    "best_for": "Consumidores brasileiros que tiveram seus direitos desrespeitados e querem saber como agir",
+    "outcome": "Um guia completo para registrar reclamação no Procon com modelo de texto, prazos e escalada se necessário.",
+    "inputs": [
+      {
+        "label": "nome da empresa"
+      },
+      {
+        "label": "descrição do problema"
+      },
+      {
+        "label": "já tentou resolver com a empresa? quando?"
+      },
+      {
+        "label": "valor envolvido"
+      },
+      {
+        "label": "seu estado"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "10 min",
+    "output_kind": "templates",
+    "sample_output": "**Análise — Cobrança indevida em fatura de celular, São Paulo**\n\n**Seus direitos (CDC):**\n- Art. 42: cobranças indevidas devem ser devolvidas em dobro\n- Art. 6º: direito à informação clara e correção imediata de erros\n\n**Prazo para reclamar:** 5 anos a partir da cobrança (Art. 27 CDC)\n\n**Passo a passo consumidor.gov.br:**\n1. Acesse consumidor.gov.br\n2. Busque a empresa pelo CNPJ ou nome\n3. Descreva o problema em até 2.000 caracteres\n4. Anexe prints, nota fiscal ou boleto\n5. A empresa tem 10 dias úteis para responder\n\n**Modelo de reclamação:**\n'Em [data], recebi cobrança de R$[valor] referente a [serviço] que não contratei / já cancelei em [data]. Entrei em contato pelo telefone [número] em [data] e recebi protocolo [número]. Até a presente data, não houve solução. Solicito devolução em dobro conforme Art. 42 do CDC.'\n\n**Escalar para:** ANATEL se for operadora de telefonia (anatel.gov.br)",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Quick Wins",
+    "section": "Direito",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Modelo de Procuração Simples",
+    "prompt": "Você é um advogado que explica documentos legais em linguagem simples para cidadãos brasileiros.\n\nO que preciso autorizar: [o que a pessoa com a procuração vai poder fazer]\nQuem vai receber a procuração (outorgado): [nome completo, CPF e endereço]\nQuem está dando (outorgante): [seu nome completo, CPF e endereço]\nPrazo de validade: [data de vencimento ou 'sem prazo definido']\nPrecisa de reconhecimento de firma? [sim/não/não sei]\n\nMe forneça:\n1. **Modelo de procuração** completo preenchido com meus dados\n2. **Como reconhecer firma** — precisa ou não para este caso?\n3. **Onde registrar** se necessário\n4. **Cuidados** — o que não devo esquecer de incluir para ser válida\n5. **Como revogar** se precisar cancelar depois\n\n⚠️ Para procurações que envolvem imóveis, herança ou negócios de grande valor, consulte um advogado.\n\nResponda em português.",
+    "tags": [
+      "procuração",
+      "documentos",
+      "brasil",
+      "legal"
+    ],
+    "best_for": "Cidadãos brasileiros que precisam delegar poderes a outra pessoa para atos específicos",
+    "outcome": "Um modelo de procuração preenchido com seus dados, instruções de reconhecimento de firma e como revogar.",
+    "inputs": [
+      {
+        "label": "o que a procuração autoriza fazer"
+      },
+      {
+        "label": "dados do outorgado (nome, CPF)"
+      },
+      {
+        "label": "seus dados (outorgante: nome, CPF)"
+      },
+      {
+        "label": "prazo de validade"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "10 min",
+    "output_kind": "templates",
+    "sample_output": "**PROCURAÇÃO PARTICULAR**\n\nPelo presente instrumento particular de procuração,\n\nEu, **[SEU NOME COMPLETO]**, brasileiro(a), [estado civil], [profissão], portador(a) do RG nº [número], inscrito(a) no CPF sob o nº [CPF], residente e domiciliado(a) na [endereço completo], nomeio e constituo como meu(minha) bastante procurador(a),\n\n**[NOME DO OUTORGADO]**, brasileiro(a), portador(a) do CPF nº [CPF], residente em [endereço],\n\na quem confiro poderes para: **[descreva exatamente o que a pessoa pode fazer]**.\n\nA presente procuração terá validade até [data] / por prazo indeterminado.\n\n[Cidade], [data].\n\n____________________________\n[SEU NOME] — Outorgante\n\n**Reconhecimento de firma:**\nPara bancos, cartórios e DETRAN: sim, necessário. Para uso pessoal simples: geralmente não. Custo: ~R$15-30 em cartório.\n\n**Para revogar:** Basta escrever um 'instrumento de revogação' e notificar o outorgado.",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Research & Analysis",
+    "section": "Direito",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Guia do Juizado Especial Cível (Pequenas Causas)",
+    "prompt": "Você é um especialista em acesso à justiça no Brasil, com foco nos Juizados Especiais Cíveis (Lei 9.099/95).\n\nMeu caso:\n- Problema: [descreva o conflito]\n- Valor envolvido: [R$ valor]\n- Réu (quem você vai acionar): [empresa / pessoa física / condomínio]\n- Já tentou resolver sem processo? [sim/não]\n- Estado: [seu estado]\n\nMe ajude com:\n1. **Meu caso cabe no Juizado Especial?** (limite de 40 salários mínimos, 2026 = até R$56.000)\n2. **Preciso de advogado?** (causas até 20 SM não precisam)\n3. **Como dar entrada** — presencialmente ou online (e-JEC)\n4. **O que levar** na audiência de conciliação\n5. **Prazo para sentença** — quanto tempo demora?\n6. **Como elaborar a petição inicial** de forma simples\n\nResponda em português.",
+    "tags": [
+      "juizado especial",
+      "brasil",
+      "justiça",
+      "direitos"
+    ],
+    "best_for": "Cidadãos brasileiros que querem processar por conta própria em causas de pequeno valor",
+    "outcome": "Um guia prático para entrar com ação no Juizado Especial sem advogado, com modelo de petição e lista de documentos.",
+    "inputs": [
+      {
+        "label": "descrição do conflito"
+      },
+      {
+        "label": "valor envolvido"
+      },
+      {
+        "label": "quem vai ser acionado"
+      },
+      {
+        "label": "já tentou resolver sem processo?"
+      },
+      {
+        "label": "seu estado"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "20 min",
+    "output_kind": "plan",
+    "sample_output": "**Análise — Cobrança indevida de seguro em financiamento, R$1.800**\n\n**Seu caso cabe?** Sim — R$1.800 está muito abaixo do limite de R$56.000 (40 SM em 2026)\n\n**Precisa de advogado?** Não — abaixo de R$14.000 (20 SM) você pode se representar\n\n**Como dar entrada:**\n1. Acesse o portal do TJSP (ou do seu estado)\n2. Busque 'e-JEC' ou 'Peticionamento Eletrônico'\n3. Preencha formulário: seu nome, CPF, o que aconteceu, o que você quer\n4. Anexe documentos: contrato, extratos, print de e-mails, protocolo de reclamações\n\n**Modelo de petição simples:**\n'O requerente [nome], CPF [número], vem propor ação de repetição de indébito em dobro contra [banco], CNPJ [número], pelos seguintes fatos: Em [data], foram cobrados R$1.800 referentes a seguro não contratado (cláusula abusiva — Art. 42 CDC). O requerente solicita devolução em dobro = R$3.600 + danos morais no valor de R$2.000.'\n\n**Prazo médio:** 3-6 meses até sentença (varia por estado)",
+    "dateAdded": "2026-05-24",
+    "region": "brazil",
+    "confidence": "high",
+    "last_verified": "2026-05-24",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   }
 ]

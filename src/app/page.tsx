@@ -10,6 +10,8 @@ import BackToTop from "@/components/BackToTop";
 import DiscoveryStrips from "@/components/DiscoveryStrips";
 import LatestUseCases from "@/components/LatestUseCases";
 import FeaturedCollections from "@/components/FeaturedCollections";
+import PersonaEntry from "@/components/PersonaEntry";
+import NewThisWeek from "@/components/NewThisWeek";
 import { USE_CASES } from "@/lib/data";
 
 export default function Home() {
@@ -36,7 +38,11 @@ export default function Home() {
           {heroSearch.query && (
             <UniversalSearch query={heroSearch.query} onClose={clearSearch} />
           )}
-          <CategoryBrowser heroSearch={heroSearch} />
+          <div id="prompts-section">
+            <NewThisWeek />
+            <PersonaEntry />
+            <CategoryBrowser heroSearch={heroSearch} />
+          </div>
           <FeaturedCollections />
           <DiscoveryStrips />
           <LatestUseCases />

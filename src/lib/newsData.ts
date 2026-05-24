@@ -30,6 +30,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Microsoft",
     providerColor: "#0078d4",
     url: "https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing/",
+    why_it_matters: "This demonstrated that integrating LLMs into search required careful behavioral controls, pushing every search provider to rethink grounding and safety guardrails.",
+    what_to_try: "In retrospect, the pattern to notice is that conversational search with memory and long context requires explicit session length and topic-scoping constraints.",
   },
   {
     id: "llama-1-leak",
@@ -43,6 +45,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Meta",
     providerColor: "#0866ff",
     url: "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+    why_it_matters: "The leak proved that open weights would spawn a fast-moving derivative ecosystem, forcing closed-model providers to compete on more than raw capability.",
+    what_to_try: "In retrospect, the pattern to notice is that the Alpaca and Vicuna fine-tunes showed instruction-tuning a base model could be done cheaply on consumer hardware.",
   },
   {
     id: "gpt-4-launch",
@@ -56,6 +60,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/gpt-4/",
+    why_it_matters: "GPT-4 established that LLMs could reliably pass professional licensing exams, which meant regulated industries could no longer defer AI adoption as a fringe concern.",
+    what_to_try: "In retrospect, the pattern to notice is that GPT-4's system-prompt fidelity made prompt engineering a viable alternative to custom fine-tuning for most enterprise use cases.",
   },
   {
     id: "claude-1",
@@ -69,6 +75,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/introducing-claude",
+    why_it_matters: "Constitutional AI introduced a way to specify model behavior with written principles, giving developers a more interpretable alignment lever than pure RLHF reward models.",
+    what_to_try: "In retrospect, the pattern to notice is that explicit written principles in system prompts — not just fine-tuning — remain effective for shaping Claude's output style and refusal behavior.",
   },
   {
     id: "google-bard-launch",
@@ -82,6 +90,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/technology/ai/bard-google-ai-search-updates/",
+    why_it_matters: "The costly demo error showed that factual accuracy in LLM demos directly affects market capitalization, making grounding and hallucination mitigation a board-level concern.",
+    what_to_try: "In retrospect, the pattern to notice is that grounding every AI-generated claim against a retrieval source before presenting it to users prevents the class of errors that Bard's launch made public.",
   },
   {
     id: "gpt-4-plugins",
@@ -95,6 +105,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/chatgpt-plugins/",
+    why_it_matters: "Plugins demonstrated that LLMs calling external tools could handle multi-step tasks, shifting developer focus from prompt engineering alone to agent orchestration patterns.",
+    what_to_try: "In retrospect, the pattern to notice is that the tool-calling design — model decides when to call, receives structured output, then reasons further — became the template for today's function-calling APIs.",
   },
   {
     id: "claude-2",
@@ -108,6 +120,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-2",
+    why_it_matters: "A 100K-token context window made entire codebases and legal documents processable in a single pass, removing the chunking-and-retrieval workaround for many document-heavy workflows.",
+    what_to_try: "In retrospect, the pattern to notice is that long-context models still perform better when the most relevant content is near the start or end of the prompt rather than buried in the middle.",
   },
   {
     id: "llama-2-release",
@@ -121,6 +135,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Meta",
     providerColor: "#0866ff",
     url: "https://ai.meta.com/blog/llama-2/",
+    why_it_matters: "A permissive commercial license for a frontier-class open model meant teams could fine-tune and self-host without legal exposure, unlocking on-premise deployment at scale.",
+    what_to_try: "In retrospect, the pattern to notice is that LLaMA 2 70B fine-tuned on domain data consistently outperformed the base model on narrow tasks, validating domain-specific SFT as a practical strategy.",
   },
   {
     id: "mistral-7b",
@@ -147,6 +163,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/gpt-4v-system-card/",
+    why_it_matters: "Combining vision with language in a single production API made document OCR, UI screenshot analysis, and chart interpretation available to any team without a dedicated vision pipeline.",
+    what_to_try: "In retrospect, the pattern to notice is that GPT-4V's chart-reading accuracy was highest when images were paired with structured prompts asking for specific data points rather than open-ended descriptions.",
   },
   {
     id: "openai-custom-gpts",
@@ -160,6 +178,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-gpts/",
+    why_it_matters: "Custom GPTs and the Assistants API gave developers a no-code path to productize AI workflows with file retrieval and code execution, dramatically lowering deployment friction.",
+    what_to_try: "In retrospect, the pattern to notice is that GPT-4 Turbo's 128K context at lower cost made retrieval-augmented generation optional for many use cases where context could fit the full document.",
   },
   {
     id: "sam-altman-fired",
@@ -186,6 +206,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/technology/ai/google-gemini-ai/",
+    why_it_matters: "Natively multimodal architecture — rather than bolted-on vision — proved that training modalities jointly from the start produced stronger cross-modal reasoning than adapter-based approaches.",
+    what_to_try: "In retrospect, the pattern to notice is that Gemini Nano's on-device capability established that sub-2B models fine-tuned for a narrow task can match larger cloud models on that task.",
   },
 
   // ── 2024 ─────────────────────────────────────────────────────────────────
@@ -202,6 +224,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/sora/",
+    why_it_matters: "Sora's long-form temporal consistency set a quality bar that makes AI video a realistic production tool for storyboarding, ad creative, and rapid prototyping.",
+    what_to_try: "In retrospect, the pattern to notice is that specifying camera motion, lighting direction, and scene transitions in text prompts produces far more controlled video outputs than describing objects alone.",
   },
   {
     id: "gemini-1-5",
@@ -215,6 +239,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+    why_it_matters: "A one-million-token context window moved the cost-benefit calculation for RAG: teams can now evaluate whether full-context inference is cheaper than maintaining a vector index.",
+    what_to_try: "Test whether passing your full codebase or document corpus in-context with Gemini 1.5 Pro gives better answers than your current chunked RAG pipeline before optimizing the retrieval layer.",
   },
   {
     id: "claude-3-family",
@@ -228,6 +254,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-3-family",
+    why_it_matters: "Offering three tiers at different speed-cost-quality tradeoffs let teams match model tier to task criticality, reducing inference costs by routing lightweight tasks to Haiku.",
+    what_to_try: "Route classification, summarization, and extraction tasks to Claude Haiku and reserve Opus-class models for reasoning-heavy steps to cut API costs by 5–10x on high-volume workloads.",
   },
   {
     id: "llama-3-release",
@@ -241,6 +269,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Meta",
     providerColor: "#0866ff",
     url: "https://ai.meta.com/blog/meta-llama-3/",
+    why_it_matters: "Distributing frontier-quality weights through Meta's social platforms meant billions of users could interact with capable open models, accelerating consumer-facing AI adoption globally.",
+    what_to_try: "In retrospect, the pattern to notice is that LLaMA 3 70B Instruct became the default open-weight baseline for evaluating whether a proprietary API's premium was justified on a given task.",
   },
   {
     id: "gpt-4o",
@@ -254,6 +284,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/hello-gpt-4o/",
+    why_it_matters: "Native real-time audio-visual processing in a single model made low-latency voice assistants buildable without cobbling together separate STT, LLM, and TTS services.",
+    what_to_try: "Build a prototype voice assistant using the GPT-4o Realtime API to measure end-to-end latency against your current STT+LLM+TTS stack before committing to either architecture.",
   },
   {
     id: "claude-3-5-sonnet",
@@ -267,6 +299,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-3-5-sonnet",
+    why_it_matters: "Reaching Opus-level quality at Sonnet pricing meant the quality-vs-cost tradeoff shifted: most production workloads no longer needed to compromise on capability.",
+    what_to_try: "Re-benchmark your current model choice against Claude 3.5 Sonnet on your actual production prompts — many teams that stayed on GPT-4 found 3.5 Sonnet faster and cheaper for the same quality.",
   },
   {
     id: "apple-intelligence",
@@ -280,6 +314,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Apple",
     providerColor: "#555555",
     url: "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+    why_it_matters: "On-device AI inference on consumer hardware established a privacy-preserving deployment pattern that reduces the compliance surface for sensitive personal data processing.",
+    what_to_try: "In retrospect, the pattern to notice is that Apple's Private Cloud Compute model — where prompts that exceed on-device capability are routed to server-side inference with no logging — became a reference architecture for privacy-first AI.",
   },
   {
     id: "openai-o1",
@@ -293,6 +329,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-openai-o1-preview/",
+    why_it_matters: "Chain-of-thought reasoning at inference time — rather than only at training time — made o1-class models substantially better at multi-step math, code, and logic without retraining.",
+    what_to_try: "Compare o1 and GPT-4o on your hardest 50 production prompts: reasoning models often outperform on complex tasks but cost 5–20x more, so the routing decision matters.",
   },
   {
     id: "anthropic-computer-use",
@@ -306,6 +344,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/computer-use",
+    why_it_matters: "Screen-level computer control means AI agents can automate any GUI-based workflow without API access, unlocking automation for legacy enterprise software.",
+    what_to_try: "Use Anthropic's computer use API to automate a repetitive GUI task in your stack — start with a well-defined, low-stakes workflow like form filling or data export to evaluate reliability.",
   },
   {
     id: "alphafold-nobel",
@@ -319,6 +359,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "DeepMind",
     providerColor: "#4285f4",
     url: "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+    why_it_matters: "A Nobel Prize for an AI system validated that deep learning can produce fundamental scientific discoveries, not just engineering improvements, legitimizing AI-first research pipelines.",
+    what_to_try: "In retrospect, the pattern to notice is that AlphaFold's open-release strategy — publishing weights and structure predictions for 200M+ proteins — set the norm for scientific AI releasing pre-computed results alongside the model.",
   },
   {
     id: "gemini-2-flash",
@@ -332,6 +374,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/",
+    why_it_matters: "Gemini 2.0 Flash introduced a model class optimized for agentic loops — fast, cheap, tool-using — making multi-step agents economically viable at production scale.",
+    what_to_try: "Replace GPT-4o mini with Gemini 2.0 Flash in your agent loop and benchmark task completion rate and cost: Flash's native tool calling often reduces loop iterations.",
   },
   {
     id: "sora-public-release",
@@ -345,6 +389,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/sora-is-here/",
+    why_it_matters: "Making text-to-video available to paying subscribers created a direct competitive substitute for stock footage and early-stage video production in marketing workflows.",
+    what_to_try: "Test Sora for generating rough-cut storyboards or B-roll alternatives before committing stock footage budget — evaluate consistency across a 5-shot sequence before production use.",
   },
 
   // ── 2025 ─────────────────────────────────────────────────────────────────
@@ -361,6 +407,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "DeepSeek",
     providerColor: "#1a73e8",
     url: "https://github.com/deepseek-ai/DeepSeek-R1",
+    why_it_matters: "DeepSeek R1 proved that efficient training recipes can produce o1-class reasoning at a fraction of the compute cost, breaking the assumption that frontier reasoning requires massive GPU budgets.",
+    what_to_try: "Run DeepSeek R1 locally via Ollama on your hardware today and compare its math and code reasoning against GPT-4o on your benchmark set to validate the quality claim for yourself.",
   },
   {
     id: "openai-operator",
@@ -374,6 +422,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-operator/",
+    why_it_matters: "An AI agent that authenticates, navigates, and acts on live websites removes the API-dependency constraint that previously limited automation to services with developer APIs.",
+    what_to_try: "Test OpenAI Operator on a repetitive web task your team does manually — booking, form submission, or data extraction — and measure reliability across 10 attempts before deciding on production use.",
   },
   {
     id: "claude-3-7-sonnet",
@@ -387,6 +437,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-3-7-sonnet",
+    why_it_matters: "Extended thinking with a configurable reasoning budget lets developers trade latency for accuracy on complex tasks without switching to a different model family.",
+    what_to_try: "Enable extended thinking on Claude 3.7 Sonnet for your hardest reasoning prompts using the `thinking` parameter and compare accuracy vs. cost against standard mode on 20 representative examples.",
   },
   {
     id: "gemini-2-5-pro",
@@ -400,6 +452,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+    why_it_matters: "Topping coding leaderboards with a thinking model signals that structured reasoning is now the default expectation for developer-facing AI tools, not a premium add-on.",
+    what_to_try: "Submit your most complex code generation or refactoring task to Gemini 2.5 Pro and measure whether its thinking trace helps you catch edge cases your current model misses.",
   },
   {
     id: "gpt-4o-image-gen",
@@ -413,6 +467,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-4o-image-generation/",
+    why_it_matters: "Native image generation inside a conversational model removes the round-trip to a separate image API, making iterative visual design workflows significantly faster to build.",
+    what_to_try: "Use GPT-4o's image generation to iterate on a UI mockup or marketing asset in a single conversation thread and measure the revision cycle time versus your current tool.",
   },
   {
     id: "openai-o3",
@@ -426,6 +482,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-o3-and-o4-mini/",
+    why_it_matters: "Integrating tool use directly into the reasoning loop — rather than separating thinking and acting — means agents can gather evidence mid-reasoning rather than only before or after.",
+    what_to_try: "Test o3 on a task requiring web search mid-reasoning, like competitive research or fact-checking a technical claim, and compare its answer quality to a RAG pipeline on the same query.",
   },
   {
     id: "llama-4-release",
@@ -439,6 +497,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Meta",
     providerColor: "#0866ff",
     url: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+    why_it_matters: "Mixture-of-experts architecture at the open-weight frontier means teams can run near-frontier reasoning at a fraction of the active-parameter cost on their own infrastructure.",
+    what_to_try: "Deploy LLaMA 4 Scout on your own GPU cluster via vLLM and measure inference throughput and cost per token against your current proprietary API for high-volume tasks.",
   },
   {
     id: "claude-4-sonnet-opus",
@@ -452,6 +512,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-4",
+    why_it_matters: "Claude Sonnet 4 and Opus 4 set a new bar for agentic task completion, meaning teams building multi-step automation should re-evaluate their model choice for reliability on long-horizon tasks.",
+    what_to_try: "Run your existing Claude 3.7 agent benchmarks against Claude Sonnet 4 today — measure task completion rate and error recovery on the same 20 representative workflows.",
   },
 
   // ── 2025 (continued) ─────────────────────────────────────────────────────
@@ -467,6 +529,8 @@ export const AI_NEWS: NewsItem[] = [
     significance: "major",
     provider: "Meta",
     providerColor: "#0866ff",
+    why_it_matters: "Meta's 49% stake in Scale AI signals that proprietary data labeling infrastructure is now a strategic asset, not a commodity service, which affects how AI teams budget for evaluation and fine-tuning data.",
+    what_to_try: "Audit your team's reliance on Scale AI or similar data labeling vendors and assess whether your fine-tuning data pipeline has a single point of failure in a platform that may prioritize one customer.",
   },
   {
     id: "gpt-5-launch",
@@ -480,6 +544,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-gpt-5/",
+    why_it_matters: "Unifying reasoning and generation into a single freely available model removes the model-selection complexity that previously required developers to route tasks across multiple OpenAI endpoints.",
+    what_to_try: "Test GPT-5 on your current production prompts across all task types and measure whether a single model can replace your existing model routing logic without quality regression.",
   },
   {
     id: "gemini-3-pro",
@@ -493,6 +559,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://workspaceupdates.googleblog.com/2025/11/introducing-gemini-3-pro-for-gemini-app.html",
+    why_it_matters: "A frontier multimodal model from Google with deep integration into Workspace tools means enterprise teams can deploy capable AI within existing compliance boundaries without new vendor contracts.",
+    what_to_try: "Try Gemini 3 Pro in Google AI Studio on your most complex document analysis task and measure answer quality against your current model before deciding whether to migrate Workspace-adjacent workflows.",
   },
   {
     id: "claude-opus-4-5",
@@ -506,6 +574,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-opus-4-5",
+    why_it_matters: "Passing 80% on SWE-bench means Claude Opus 4.5 can resolve a meaningful fraction of real GitHub issues autonomously, making AI-assisted code review and bug triage economically viable.",
+    what_to_try: "Feed 10 open bugs from your backlog to Claude Opus 4.5 via the API with full repo context and measure how many it resolves correctly before a human review step.",
   },
   {
     id: "gpt-5-2-codex",
@@ -519,6 +589,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/introducing-gpt-5-2-codex/",
+    why_it_matters: "A model specialized for agentic coding tasks — with its own CLI and persistent workspace — means software teams can delegate longer-horizon coding tasks without constant human checkpoints.",
+    what_to_try: "Test GPT-5.2-Codex on a multi-file refactoring task in your codebase and measure whether it completes the task without human intervention compared to your current AI coding workflow.",
   },
   {
     id: "meta-manus",
@@ -531,6 +603,8 @@ export const AI_NEWS: NewsItem[] = [
     significance: "major",
     provider: "Meta",
     providerColor: "#0866ff",
+    why_it_matters: "Meta acquiring a general-purpose agent platform signals that agent capabilities will be embedded into consumer social products at scale, expanding the addressable market for agent-built workflows.",
+    what_to_try: "Review whether your current agent architecture would remain competitive if Meta ships Manus-based agents to WhatsApp and Messenger — identify which workflows would be commoditized first.",
   },
 
   // ── 2026 ─────────────────────────────────────────────────────────────────
@@ -546,6 +620,8 @@ export const AI_NEWS: NewsItem[] = [
     significance: "major",
     provider: "Google",
     providerColor: "#4285f4",
+    why_it_matters: "Leading every published reasoning benchmark means Gemini 3.1 Pro sets the current quality ceiling for coding, math, and logic tasks, making it the default evaluation baseline for new model releases.",
+    what_to_try: "Run Gemini 3.1 Pro on your internal evaluation suite today and record the scores as a baseline to objectively compare any model you evaluate going forward.",
   },
   {
     id: "openai-122b-funding",
@@ -560,6 +636,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/accelerating-the-next-phase-ai/",
+    why_it_matters: "A $122B raise at an $852B valuation concentrates capital and talent in a handful of labs, which means the competitive gap between well-funded frontier labs and everyone else will likely widen.",
+    what_to_try: "Reassess your vendor concentration risk: if you depend on OpenAI APIs for critical workflows, ensure you have a tested fallback to at least one alternative model provider.",
   },
   {
     id: "claude-mythos-glasswing",
@@ -573,6 +651,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/glasswing",
+    why_it_matters: "AI discovering thousands of zero-days autonomously means offensive security tooling is now AI-native, and defensive security teams need AI-assisted patching workflows to match the new threat tempo.",
+    what_to_try: "Run Anthropic's Glasswing-derived static analysis on a representative slice of your production codebase to identify vulnerability classes you may have missed with traditional scanners.",
   },
   {
     id: "gemini-3-1-ultra",
@@ -586,6 +666,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://medium.com/@WinTK-Bangladesh/gemini-3-1-ultra-is-here-2-million-token-context-full-multimodal-zero-compromise-ca3f2a8d1254",
+    why_it_matters: "A 2M-token context window with full native multimodality enables processing entire video files, large codebases, and multi-document sets in a single inference call.",
+    what_to_try: "Pass a full codebase or lengthy legal document set to Gemini 3.1 Ultra's 2M context and compare answer quality to your current chunked retrieval approach on 5 representative queries.",
   },
   {
     id: "claude-opus-4-7",
@@ -599,6 +681,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-opus-4-7",
+    why_it_matters: "Enhanced vision and coding in Anthropic's 2026 flagship means complex screen-understanding and long-horizon coding tasks can now be delegated to a single model without specialized pipelines.",
+    what_to_try: "Test Claude Opus 4.7 on a task combining visual reasoning and code generation — such as converting a UI screenshot into a working component — and measure round-trip quality.",
   },
   {
     id: "gpt-5-5",
@@ -612,6 +696,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+    why_it_matters: "A 1M-context model with native agentic workflows as the default OpenAI endpoint removes the need to explicitly orchestrate context management in most production agent architectures.",
+    what_to_try: "Upgrade your existing OpenAI-based agent to GPT-5.5 and test whether native workflow support reduces the orchestration code you maintain for context passing and tool chaining.",
   },
   {
     id: "anthropic-30b-revenue",
@@ -641,6 +727,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://x.ai/news/anthropic-compute-partnership",
+    why_it_matters: "Anthropic gaining access to Colossus 1 compute capacity significantly expands its training infrastructure, which will accelerate the release cadence of new Claude models.",
+    what_to_try: "Reassess your 12-month model roadmap assumptions: Anthropic's expanded compute likely means major Claude releases will arrive faster than your current planning horizon assumes.",
   },
 
   // ── Auto-updated 2026-05-18 ────────────────────────────────────────────
@@ -658,6 +746,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Mistral AI",
     providerColor: "#ff7000",
     url: "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+    why_it_matters: "A 128B open-weight model with 77.6% SWE-bench means teams can now self-host near-frontier coding capability without per-token API costs or vendor lock-in.",
+    what_to_try: "Deploy Mistral Medium 3.5 on your own GPU cluster via vLLM and benchmark coding task accuracy and inference cost against your current proprietary API to calculate the breakeven point.",
   },
   {
     id: "microsoft-agent-365-ga",
@@ -672,6 +762,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Microsoft",
     providerColor: "#0078d4",
     url: "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+    why_it_matters: "Enterprise-grade agent governance built into Microsoft 365 means IT and compliance teams have a supported path to audit, control, and roll back AI agent actions inside existing workplace tools.",
+    what_to_try: "Enable Microsoft Agent 365 for a single team, configure audit logging, and run a 30-day pilot to measure the compliance coverage against your internal AI governance requirements.",
   },
   {
     id: "pentagon-ai-classified-deals",
@@ -686,6 +778,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/",
+    why_it_matters: "Clearance for classified network deployment sets a formal vetting bar that AI vendors now need to meet for government contracts, creating a new compliance tier above standard FedRAMP.",
+    what_to_try: "If your team serves government clients, review whether any of the eight cleared vendors align with your stack and assess whether their cleared APIs meet your customers' data handling requirements.",
   },
 
   // ── Auto-updated 2026-05-18 (run 2) ──────────────────────────────────────
@@ -703,6 +797,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html",
+    why_it_matters: "Mandatory pre-deployment government review for all frontier labs introduces a potential regulatory delay to model releases, which affects how teams plan product timelines around new model availability.",
+    what_to_try: "Build buffer into your product roadmap for model-dependent features: assume 4–8 weeks of potential pre-deployment review delay when planning launches tied to a new frontier model release.",
   },
   {
     id: "claude-small-business",
@@ -717,6 +813,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/claude-for-small-business",
+    why_it_matters: "Pre-built agentic workflows for core business tools lower the implementation barrier for SMBs, expanding the customer base for teams building on Claude's API as more non-technical users adopt AI agents.",
+    what_to_try: "Try Claude for Small Business's pre-built CRM and invoicing workflows in a trial environment and measure time-to-automation against building the same workflow manually via the API.",
   },
   {
     id: "anthropic-gates-foundation",
@@ -745,6 +843,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://www.digit.in/features/general/google-io-2026-gemini-35-to-ai-smart-glasses-everything-that-was-announced.html",
+    why_it_matters: "A Flash-tier model that beats 3.1 Pro on coding and agents means the latency-cost tradeoff has shifted again: high-quality agentic tasks no longer require the most expensive model.",
+    what_to_try: "Swap Gemini 3.1 Pro for Gemini 3.5 Flash in your agent loop today and benchmark task completion rate and cost per run — expect meaningful savings with minimal quality loss on coding tasks.",
   },
 
   {
@@ -760,6 +860,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+    why_it_matters: "Search shifting to generative AI answers with agent actions means organic traffic patterns are changing fundamentally, requiring teams to rethink SEO and content discoverability strategies.",
+    what_to_try: "Audit your top 10 highest-traffic pages and test whether their content surfaces accurately in Google's AI mode answers — identify gaps where structured data or direct source citation could improve visibility.",
   },
 
   // ── Auto-updated 2026-05-20 ────────────────────────────────────────────
@@ -777,6 +879,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+    why_it_matters: "A 24/7 persistent agent from Google embedded in its ecosystem means users will increasingly delegate multi-day tasks to always-on agents, raising the bar for responsiveness in competing agent products.",
+    what_to_try: "Test Gemini Spark on a multi-day, multi-step task — such as monitoring a topic and drafting a weekly summary — to evaluate reliability and context persistence before relying on it for business workflows.",
   },
   {
     id: "gemini-omni-io2026",
@@ -791,6 +895,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://www.businesstoday.in/technology/artificial-intelligence/story/google-io-2026-google-unveils-gemini-omni-ai-video-editing-model-532350-2026-05-19",
+    why_it_matters: "A unified model that generates across video, image, audio, and text removes the need to chain separate generative models for multimedia content pipelines.",
+    what_to_try: "Use Gemini Omni to generate a complete multimedia asset — image, narration, and short video clip — in a single prompt and measure production time versus your current multi-tool workflow.",
   },
   {
     id: "google-samsung-xr-glasses",
@@ -819,6 +925,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+    why_it_matters: "Google's most capable open-source model family gives teams a Google-backed baseline for on-premise deployment that benefits from the same architectural improvements as Gemini 3.",
+    what_to_try: "Fine-tune Gemma 4 on your domain data using Google's official KerasNLP recipe and compare task-specific accuracy against the base model to quantify the SFT uplift for your use case.",
   },
   {
     id: "cohere-aleph-alpha-merger",
@@ -847,6 +955,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "DeepSeek",
     providerColor: "#1a73e8",
     url: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+    why_it_matters: "An 80.6% SWE-bench score from an open-weight MoE model means teams can self-host near-frontier coding capability, removing API dependency for the most sensitive codebases.",
+    what_to_try: "Deploy DeepSeek V4 on your own infrastructure via SGLang and run your internal coding benchmark to decide whether self-hosting beats the cost-per-token of proprietary APIs at your volume.",
   },
   {
     id: "anthropic-dreaming-agents",
@@ -861,6 +971,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes",
+    why_it_matters: "Agents that self-improve between sessions by reflecting on past task outcomes can compound capability over time without manual prompt engineering, changing how teams design long-running AI workflows.",
+    what_to_try: "Enable the Dreaming feature on a Claude agent handling a recurring task and review its self-generated improvement notes after 10 sessions to assess whether its performance measurably improves.",
   },
   {
     id: "anthropic-managed-agents-sandboxes-mcp-tunnels",
@@ -875,6 +987,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://claude.com/blog/claude-managed-agents-updates",
+    why_it_matters: "Self-hosted sandboxes with encrypted MCP tunnels mean enterprises can run Claude agents against internal systems without routing sensitive data through Anthropic's cloud.",
+    what_to_try: "Stand up Anthropic's self-hosted sandbox on your internal infrastructure and connect it to one internal tool via an MCP tunnel to test data-residency compliance before broader rollout.",
   },
   {
     id: "recursive-superintelligence-650m-launch",
@@ -889,6 +1003,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Recursive Superintelligence",
     providerColor: "#6d28d9",
     url: "https://tech.eu/2026/05/13/recursive-superintelligence-emerges-from-stealth-with-650m-raise/",
+    why_it_matters: "A $4.65B valuation at launch signals that investors expect recursive self-improvement to be a commercially viable product feature within the current funding horizon.",
+    what_to_try: "Review Recursive Superintelligence's published technical benchmarks against your current model stack to determine whether their self-improvement claims hold on tasks relevant to your use case.",
   },
   {
     id: "eu-ai-act-omnibus-simplification-may-2026",
@@ -903,6 +1019,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "European Union",
     providerColor: "#003399",
     url: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+    why_it_matters: "Simplified EU AI Act obligations reduce compliance overhead for startups and SMEs deploying limited-risk AI systems in Europe, lowering the regulatory barrier to launch.",
+    what_to_try: "Re-assess your EU AI Act compliance roadmap against the final Omnibus text to identify obligations that were removed or deferred — you may be able to reduce legal review scope.",
   },
   {
     id: "musk-openai-lawsuit-verdict",
@@ -917,6 +1035,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed",
+    why_it_matters: "A complete dismissal removes a significant legal overhang on OpenAI's corporate restructuring, clearing a path for its planned IPO and for-profit conversion.",
+    what_to_try: "If your business depends on OpenAI APIs, review the implications of their for-profit conversion on pricing and API terms — monitor the updated service agreement expected post-IPO.",
   },
   {
     id: "cursor-composer-25",
@@ -959,6 +1079,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/new-ways-to-buy-chatgpt-ads/",
+    why_it_matters: "A self-serve ad platform inside ChatGPT creates a new performance marketing channel where AI-assisted ad creation and placement happen in a single tool.",
+    what_to_try: "Create a small test campaign on ChatGPT Ads Manager with a $100 budget, measure click-through and conversion rates, and compare cost-per-acquisition to your existing channels.",
   },
   {
     id: "claude-microsoft-365-ga",
@@ -973,6 +1095,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://claude.com/claude-for-microsoft-365",
+    why_it_matters: "Claude's GA status inside Microsoft 365 means enterprises can now deploy Anthropic's model within their existing Microsoft compliance and data governance boundaries.",
+    what_to_try: "Enable Claude for Microsoft 365 in your tenant for a pilot team and compare document summarization and email drafting quality to Copilot on the same tasks before broadening rollout.",
   },
   {
     id: "amazon-alexa-plus-podcasts",
@@ -1001,6 +1125,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm",
+    why_it_matters: "Cutting AI Ultra to $100/month while at 900 million monthly users signals that Google is prioritizing subscriber volume over per-seat margin, increasing competitive pricing pressure across all AI subscription tiers.",
+    what_to_try: "Evaluate Google AI Ultra at $100/month against your current AI subscription stack — if you use Gemini 3.1 Ultra plus other Google tools, this tier may consolidate costs.",
   },
   {
     id: "apple-ios27-third-party-ai-models",
@@ -1015,6 +1141,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Apple",
     providerColor: "#555555",
     url: "https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/",
+    why_it_matters: "Allowing users to select their AI model for Siri means distribution is no longer controlled by a single provider on Apple's platform, opening a new user acquisition channel for Claude, Gemini, and ChatGPT.",
+    what_to_try: "If you build iOS apps that integrate with Siri or on-device AI, test your integration against the iOS 27 beta's third-party model selection API to ensure compatibility before general availability.",
   },
   {
     id: "openai-chatgpt-personal-finance",
@@ -1029,6 +1157,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+    why_it_matters: "Direct bank account connectivity via Plaid turns ChatGPT into a personal financial advisor with live data, raising the bar for fintech apps that currently lack conversational AI interfaces.",
+    what_to_try: "If you build fintech products, test ChatGPT Personal Finance with a sandbox Plaid connection to understand which financial queries users are most likely to delegate to a conversational interface.",
   },
   {
     id: "openai-google-synthid-c2pa-provenance",
@@ -1043,6 +1173,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/index/advancing-content-provenance/",
+    why_it_matters: "Industry-wide adoption of SynthID watermarks and C2PA metadata creates a verifiable provenance standard that developers can rely on for detecting AI-generated content in moderation pipelines.",
+    what_to_try: "Integrate C2PA provenance checking into your content moderation pipeline using an open-source library like c2pa-node to start flagging AI-generated uploads before the standard becomes mandatory.",
   },
   {
     id: "google-antigravity-2-developer-keynote",
@@ -1057,6 +1189,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+    why_it_matters: "A standalone agent orchestration platform with CLI, SDK, and managed agents means Google now offers an end-to-end alternative to building your own orchestration layer from scratch.",
+    what_to_try: "Build a small multi-step agent using the Antigravity 2.0 SDK today and compare the developer experience and observability to your current LangChain or CrewAI setup.",
   },
   {
     id: "google-webmcp-browser-ai-agents",
@@ -1071,6 +1205,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://developer.chrome.com/blog/chrome-at-io26",
+    why_it_matters: "A browser-native MCP standard would let AI agents interact with any webpage through a standardized interface, eliminating custom scraping and DOM manipulation code from agent implementations.",
+    what_to_try: "Review the WebMCP proposal at the Chrome Developers blog and test the experimental API in Chrome 149 Canary on your web app to identify what agent interactions it would natively support.",
   },
 
   // ── 21–22 May 2026 ─────────────────────────────────────────────────────────
@@ -1088,6 +1224,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+    why_it_matters: "One of the field's most influential researchers joining Anthropic's pre-training team signals a likely step-change in Anthropic's next model generation capabilities and training efficiency.",
+    what_to_try: "Follow Karpathy's public posts and Anthropic's research blog for any pre-training insights published in the coming months — his past work on tokenization and data quality often previews practical improvements.",
   },
   {
     id: "gemini-omni-flash-launch",
@@ -1102,6 +1240,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Google",
     providerColor: "#4285f4",
     url: "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+    why_it_matters: "Any-to-any generation in a single model endpoint simplifies multimedia application architecture by removing the need to chain separate image, audio, and video generation APIs.",
+    what_to_try: "Test Gemini Omni Flash on a cross-modal task — such as generating an image and then a short audio description of it — in a single API call to validate the quality before redesigning your media pipeline.",
   },
   {
     id: "nvidia-q1-fy2027-earnings-beat",
@@ -1116,6 +1256,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Nvidia",
     providerColor: "#76b900",
     url: "https://gulfnews.com/technology/nvidia-q1-2026-revenue-soars-85-on-surging-ai-chip-demand-beats-wall-street-expectations-1.500547972",
+    why_it_matters: "Nvidia's sustained 85% YoY revenue growth confirms that AI infrastructure spend is still accelerating, meaning GPU availability and pricing will remain a primary constraint for teams scaling training and inference.",
+    what_to_try: "Review your GPU reservation strategy: with Q2 guidance at $91B, Nvidia's allocation queues will stay long — evaluate cloud spot instances versus reserved capacity to lock in compute for H2 2026.",
   },
   {
     id: "anthropic-q2-first-profit-109b",
@@ -1146,6 +1288,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "White House",
     providerColor: "#555555",
     url: "https://www.washingtonpost.com/technology/2026/05/21/white-house-tore-down-ai-rules-now-its-building-new-defenses/",
+    why_it_matters: "A last-minute postponement signals ongoing policy uncertainty around AI governance, which creates planning risk for teams that were adjusting compliance programs to an expected executive order.",
+    what_to_try: "Do not hardcode compliance changes to a postponed EO — maintain a modular policy framework that can absorb regulatory changes without requiring a full compliance review from scratch.",
   },
   {
     id: "openai-codex-appshots-goal-mode-ga",
@@ -1218,6 +1362,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+    why_it_matters: "Locking in 3.5 gigawatts of TPU capacity gives Anthropic a training and inference foundation that reduces its dependence on third-party GPU clouds for the next generation of Claude models.",
+    what_to_try: "If you run large-scale Anthropic API workloads, monitor Claude API pricing and throughput commitments over the next two quarters — expanded compute capacity typically translates to better SLAs and lower costs.",
   },
   {
     id: "openai-daybreak-cybersecurity",
@@ -1232,6 +1378,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "OpenAI",
     providerColor: "#10a37f",
     url: "https://openai.com/daybreak/",
+    why_it_matters: "A GPT-5.5-powered cybersecurity platform from OpenAI means AI-native threat detection and response tooling now comes from the same vendor as your AI application stack, simplifying vendor management.",
+    what_to_try: "Request early access to OpenAI Daybreak and run it against your vulnerability backlog to compare detection coverage against your current SAST and DAST tools before making a budget decision.",
   },
   {
     id: "anthropic-kpmg-digital-gateway",
@@ -1246,6 +1394,8 @@ export const AI_NEWS: NewsItem[] = [
     provider: "Anthropic",
     providerColor: "#d97706",
     url: "https://www.anthropic.com/news/anthropic-kpmg",
+    why_it_matters: "A Big Four firm standardizing 276,000 employees on Claude validates enterprise-scale Claude deployment, establishing reference architecture and compliance patterns other large organizations can follow.",
+    what_to_try: "Review KPMG's published Claude deployment case study for enterprise integration patterns — their document review and audit automation workflows are directly replicable for any large professional services operation.",
   },
 
   // ── Brazil — 16–23 May 2026 ──────────────────────────────────────────────
@@ -1264,6 +1414,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#d97706",
     url: "https://tecnoblog.net/noticias/depois-da-openai-agora-a-anthropic-planeja-abrir-escritorio-no-brasil/",
     country: "BR",
+    why_it_matters: "Frontier AI labs establishing local offices in Brazil signals that Latin America is now a tier-one market, meaning local compliance requirements, data residency, and pricing will improve for the region.",
+    what_to_try: "If you operate in Brazil, re-evaluate data residency compliance: local office presence from Anthropic and OpenAI means negotiated enterprise agreements with Brazilian data handling terms are now possible.",
   },
   {
     id: "brazil-openai-football-campaign",
@@ -1501,6 +1653,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#009c3b",
     url: "https://healthai.agency/brazil-breaks-new-ground-as-the-first-south-american-member-of-the-healthai-grn/",
     country: "BR",
+    why_it_matters: "Brazil joining the HealthAI Global Regulatory Network creates a path for medical AI products to obtain regulatory recognition across member countries, reducing the cost of multi-market health AI deployment.",
+    what_to_try: "If you build health AI products targeting Brazil, review the HealthAI GRN framework now — aligning your compliance documentation with the network's shared standards may accelerate regulatory approval.",
   },
   {
     id: "brazil-pbia-r23bi-5000-gpus-plan",
@@ -1516,6 +1670,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#009c3b",
     url: "https://investmentpolicy.unctad.org/investment-policy-monitor/measures/4930/launches-the-brazilian-artificial-intelligence-plan-2024-2028",
     country: "BR",
+    why_it_matters: "Brazil's R$23B national AI plan with state-owned GPU infrastructure creates a government-backed compute market that will shape cloud pricing and AI procurement rules in the region.",
+    what_to_try: "Monitor Brazil's PBIA tender process for early access to subsidized GPU capacity — teams with Brazilian operations may qualify for preferential compute rates under the national infrastructure program.",
   },
   {
     id: "brazil-sus-smart-hospitals-ia-r1-7bi",
@@ -1531,6 +1687,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#009c3b",
     url: "https://en.clickpetroleoegas.com.br/sus-tera-rede-nacional-de-hospitais-e-servicos-inteligentes-com-ia-5g-cirurgias-roboticas-e-investimento-de-r-17-bilhao-a-partir-de-2026-diz-ministerio-da-saude-mhbb01/",
     country: "BR",
+    why_it_matters: "A R$1.7B public health AI investment creates a large procurement market for clinical NLP, medical imaging, and patient data tools compliant with Brazil's LGPD framework.",
+    what_to_try: "If you build health AI products, review the SUS Smart Hospitals RFP criteria when published — the contract requirements will define the compliance and integration standards for Brazilian public health AI for years.",
   },
   {
     id: "brazil-tse-deepfakes-ban-resolucoes-ia",
@@ -1546,6 +1704,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#009c3b",
     url: "https://www.riotimesonline.com/brazil-election-ai-rules-tse-deepfake-2026/",
     country: "BR",
+    why_it_matters: "Brazil's election deepfake ban with 14 binding resolutions establishes one of the most detailed AI-in-elections regulatory frameworks globally, which other jurisdictions are likely to reference.",
+    what_to_try: "Audit your AI-generated content policies against Brazil's TSE resolutions — if you operate any political advertising or media platform, ensure your content provenance and disclosure controls meet the new requirements.",
   },
   {
     id: "brazil-digital-tech-show-sp-2026",
@@ -1591,6 +1751,8 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#005b99",
     url: "https://agenciabrasil.ebc.com.br/economia/noticia/2026-05/regulacao-para-ia-sera-flexivel-e-tera-niveis-de-risco-diz-durigan",
     country: "BR",
+    why_it_matters: "A risk-tiered AI regulation framework from Brazil's Finance Ministry signals that Brazil will adopt a proportionate approach similar to the EU AI Act rather than blanket prohibitions.",
+    what_to_try: "Map your AI products to the proposed Brazilian risk tiers now — identifying your tier early allows you to shape compliance requirements before the framework is finalized.",
   },
   {
     id: "brazil-plataformas-tse-desafio-tecnico",

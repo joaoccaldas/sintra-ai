@@ -67,6 +67,9 @@ export interface UseCase {
   confidence?: "high" | "medium" | "low";
   region?: "global" | "brazil" | "latam" | "us" | "eu";
   last_verified?: string; // ISO "YYYY-MM-DD"
+
+  // Cross-linking
+  related_tools?: string[]; // tool IDs from toolsData.ts
 }
 
 // Verified 2026-05 — model quality shifts quarterly; treat recommendations as starting points
@@ -167,6 +170,7 @@ export const USE_CASES: UseCase[] = (rawData as any[])
       confidence:    item.confidence,
       region:        item.region,
       last_verified: item.last_verified,
+      related_tools: item.related_tools || [],
     };
   })
   .sort((a, b) => b.dateAdded.localeCompare(a.dateAdded));

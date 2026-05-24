@@ -177,6 +177,21 @@ export default function CategoryBrowser({ heroSearch }: Props) {
     });
   }, [cases, panelSearch, panelDiff]);
 
+  // Persona selector routing
+  useEffect(() => {
+    const fn = (e: Event) => {
+      const persona = (e as CustomEvent).detail;
+      const idx = CAROUSEL_ITEMS.findIndex(c => c.id === persona.category);
+      if (idx >= 0) {
+        setSelectedIdx(idx);
+        setBrowsingIdx(idx);
+        if (persona.region) setPanelSearch(persona.region === "brazil" ? "brasil" : persona.region);
+      }
+    };
+    window.addEventListener("sintra:persona", fn);
+    return () => window.removeEventListener("sintra:persona", fn);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Reset filters and pagination when panel opens or filters change
   useEffect(() => {
     if (browsingIdx !== null) {
