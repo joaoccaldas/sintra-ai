@@ -2,7 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import { Copy, Check, Bookmark, BookmarkCheck, ExternalLink } from "lucide-react";
-import { UseCase, DIFF_COLOR, CAT_ACCENT } from "@/lib/data";
+import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH } from "@/lib/data";
 import { formatDate, isNew } from "@/lib/dateUtils";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
@@ -19,11 +19,11 @@ interface Props {
 export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = false }: Props) {
   const diffColor = DIFF_COLOR[item.difficulty];
   const catColor  = CAT_ACCENT[item.category] || "#9F8CFF";
-  const ref = useRef<HTMLButtonElement>(null);
+  const ref = useRef<HTMLAnchorElement>(null);
   const [copied, setCopied] = useState(false);
   const { isSaved, toggle } = useSavedPrompts();
 
-  const onMouseMove = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
+  const onMouseMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     const el = ref.current;
     if (!el) return;
     const r = el.getBoundingClientRect();
@@ -35,7 +35,7 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
     el.style.setProperty("--sy", `${y * 100}%`);
   }, []);
 
-  const onMouseLeave = useCallback(() => {
+  const onMouseLeave = useCallback((_e?: React.MouseEvent<HTMLAnchorElement>) => {
     const el = ref.current;
     if (!el) return;
     el.style.transition = "border-color 200ms, box-shadow 200ms, transform 520ms cubic-bezier(0.22,1,0.36,1)";
@@ -50,10 +50,11 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
   };
 
   return (
-    <button
+    <a
       ref={ref}
+      href={`${BASE_PATH}/prompts/${item.slug}/`}
+      onClick={e => { e.preventDefault(); onOpen(item); }}
       className={`card group focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-bright focus-visible:-outline-offset-[3px]${isFeatured ? " card--featured" : ""}`}
-      onClick={() => onOpen(item)}
       aria-label={`Open use case: ${item.title}`}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
@@ -184,6 +185,6 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
           )
         ))}
       </div>
-    </button>
+    </a>
   );
 }

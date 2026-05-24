@@ -1,5 +1,13 @@
 import rawData from "@/data/useCases.json";
 
+export function slugify(s: string): string {
+  return s
+    .toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export type Category =
   | "all"
   | "quick-wins"
@@ -35,6 +43,7 @@ export interface PromptInput {
 
 export interface UseCase {
   id: number;
+  slug: string;
   title: string;
   desc: string;
   category: Exclude<Category, "all">;
@@ -133,6 +142,7 @@ export const USE_CASES: UseCase[] = (rawData as any[])
     const llmRec = LLM_MAP[cat]?.[skill] ?? { model: "Claude Sonnet 4.5", reason: "Best overall balance of capability and speed" };
     return {
       id: idx + 1,
+      slug: slugify(item.title),
       title: item.title,
       desc: item.best_for || item.outcome || "",
       category: cat,
