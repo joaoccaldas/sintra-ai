@@ -1588,6 +1588,20 @@ export const AI_NEWS: NewsItem[] = [
     country: "BR",
   },
   {
+    id: "google-io-2026-software-ecology-bender",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 20,
+    title: "Google I/O 2026: 'AI Is an Amplifier, Not a Direction' — Bender's Software Ecology Warning",
+    summary:
+      "Google Engineering Director Adam Bender introduced the 'Software Ecology' framework at Google I/O 2026, drawing on DORA research to argue AI is directionally neutral: it accelerates elite teams further and amplifies weak processes into faster chaos. Bender identified five second-order effects practitioners are ignoring: quadratic test growth, VCS performance limits, internal APIs becoming de-facto agent endpoints, agentic edit wars, and the Jevons Paradox (cheaper tokens → more usage, not less). His core question: 'Can humans still reason about the system in front of them?' — a capability he argues teams have been losing for 15 years.",
+    tags: ["Google I/O", "Software Engineering", "AI Adoption", "DORA", "Agentic AI", "Systems Thinking"],
+    significance: "major",
+    provider: "Google",
+    providerColor: "#4285f4",
+    url: "https://www.youtube.com/watch?v=2n41YjR5QfU",
+  },
+  {
     id: "brazil-eleicoes-2026-primeiro-teste-real-ia",
     date: "May 2026",
     dateNum: 202605,

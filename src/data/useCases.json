@@ -3556,5 +3556,51 @@
     "output_kind": "visual",
     "sample_output": "**1. DATA PREP — Power Query AI prompt:**\n\"Clean this General Ledger export: remove blank rows, split the Account Code column into Department and Account Number, standardise all date formats to YYYY-MM-DD, and flag any negative Revenue lines as 'Adjustment' in a new Type column.\"\n\n**2. KEY DAX MEASURES:**\n```dax\nGross Margin % =\nDIVIDE([Gross Profit], [Total Revenue], BLANK())\n\nBudget Variance % =\nDIVIDE([Total Revenue] - SUM('Budget'[Revenue]), SUM('Budget'[Revenue]))\n\nEBITDA =\n[Gross Profit] - [Total OPEX] + [D&A]\n```\n\n**3. COPILOT VISUAL PROMPT:**\n\"Build a P&L summary page with: a KPI row (Revenue, Gross Margin %, EBITDA, Headcount), a waterfall chart showing Revenue → Gross Profit → EBITDA bridge, and a small multiples line chart of Revenue by Department vs prior year. Add a Month slicer.\"\n\n**4. CFO COMMENTARY PROMPT:**\n\"Write a 3-paragraph CFO commentary for [Month] [Year]. Revenue was [X] vs budget [Y] ([Z]%). Gross margin was [A]% vs [B]% prior year. OPEX was [C] vs budget [D]. Tone: direct, no jargon, flag two risks and one positive. Format: bullet summary + 2-sentence paragraph per metric.\"\n\n**5. ROW-LEVEL SECURITY:**\nIn Power BI Desktop → Modelling → Manage Roles → create role 'Region Manager' with filter: `[Region] = USERPRINCIPALNAME()`. Publish and assign users in Power BI Service → Dataset → Security.",
     "dateAdded": "2026-05-23"
+  },
+  {
+    "title": "AI Amplifier Readiness Assessment",
+    "domain": "Finance & FP&A",
+    "section": "Financial Planning & Analysis",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "best_for": "Finance leaders and FP&A managers evaluating AI adoption readiness",
+    "outcome": "A structured readiness report identifying which processes will amplify good outcomes vs. which will amplify existing problems — with a prioritised action list before rolling out AI tools.",
+    "inputs": [
+      {"label": "your team size and structure (e.g., 5-person FP&A team, 3 senior analysts)"},
+      {"label": "list your top 5 FP&A processes (e.g., monthly close, budget review, variance analysis)"},
+      {"label": "your current data infrastructure (e.g., SAP, Excel, Power BI)"},
+      {"label": "your biggest current pain points (e.g., manual consolidation, late data from regions)"}
+    ],
+    "tools": ["Claude", "ChatGPT"],
+    "est_time": "45 minutes",
+    "output_kind": "analysis",
+    "prompt": "You are an AI adoption strategist applying the 'AI as Amplifier' framework to FP&A.\n\nContext: AI doesn't create good processes — it amplifies existing ones. Teams with solid fundamentals get dramatically more productive. Teams with weak processes generate confusion faster.\n\nMy team: [your team size and structure]\n\nOur top 5 FP&A processes:\n[list your top 5 FP&A processes]\n\nData infrastructure:\n[your current data infrastructure]\n\nBiggest pain points:\n[your biggest current pain points]\n\nFor each of our 5 processes, evaluate:\n1. AMPLIFY WELL ✅ or AMPLIFY PROBLEMS ⚠️ — and why\n2. What specifically breaks at 10× AI-generated output volume?\n3. What must be fixed BEFORE deploying AI here?\n\nThen give me:\n- A prioritised sequence for AI adoption (where to start, where to wait)\n- 3 governance checkpoints needed before scaling\n- A one-sentence 'AI readiness verdict' per process",
+    "sample_output": "**AI Amplifier Readiness Assessment**\n\n| Process | Verdict | 10× Risk | Fix Before AI |\n|---|---|---|---|\n| Monthly close | ✅ Amplifies well | Reconciliation queue depth | Document the 3-step close checklist |\n| Budget review | ⚠️ Amplifies problems | 10× more versions, no single owner | Establish one source of truth in SAP |\n| Variance analysis | ✅ Amplifies well | Narrative quality depends on context | Create standard commentary template |\n| Board deck | ⚠️ Amplifies problems | Inconsistent metrics across slides | Lock 12 KPI definitions first |\n| Forecast accuracy | ✅ Amplifies well | Model proliferation risk | Version-control models now |\n\n**Prioritised adoption sequence:**\n1. Start: Variance analysis (solid foundation, high volume, clear templates)\n2. Next: Monthly close (after checklist is documented)\n3. Wait: Budget review (fix data governance first — AI creates 10× more confusion otherwise)\n\n**3 governance checkpoints:**\n- [ ] All KPIs have locked, approved definitions\n- [ ] Every AI output has a named human reviewer\n- [ ] Version control on models before any agentic workflows\n\n**Verdict:** Variance and forecast processes are AI-ready today. Budget and board deck need 6 weeks of governance work first.",
+    "tags": ["ai-strategy", "fpna", "readiness", "governance", "amplifier"],
+    "dateAdded": "2026-05-24",
+    "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'"
+  },
+  {
+    "title": "Second-Order Effects Analysis for AI Automation",
+    "domain": "Research & Analysis",
+    "section": "Strategic Analysis",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "best_for": "Technical leads, product managers, and strategists planning AI automation rollouts",
+    "outcome": "A structured analysis of what will break at scale when a proposed AI automation goes live — covering review bottlenecks, testing load, version control, API surface, cost curves, and intellectual control.",
+    "inputs": [
+      {"label": "describe the AI automation you're planning (e.g., AI writes first-draft code, AI generates monthly reports)"},
+      {"label": "expected volume increase (e.g., from 10 reports/month to 100)"},
+      {"label": "your current review and QA process"},
+      {"label": "your team size and who currently reviews output"}
+    ],
+    "tools": ["Claude", "ChatGPT"],
+    "est_time": "1 hour",
+    "output_kind": "analysis",
+    "prompt": "You are a systems-thinking consultant applying the 'Second-Order Effects' framework from Adam Bender's Google I/O 2026 talk on Software Ecology.\n\nThe automation I'm considering:\n[describe the AI automation you're planning]\n\nExpected volume change: [expected volume increase]\n\nCurrent review process: [your current review and QA process]\n\nTeam: [your team size and who currently reviews output]\n\nAnalyse the following second-order effects at 10× and 100× volume:\n\n1. **Review bottleneck** — Can humans still meaningfully review this volume? At what point does review become a rubber stamp?\n2. **QA scaling** — How does testing/validation scale — linearly or quadratically?\n3. **Cost / Jevons Paradox** — At cheaper unit costs, what new uses proliferate? What does the actual cost curve look like?\n4. **API surface** — What internal systems will AI agents now access that weren't designed for agent use?\n5. **Agentic conflicts** — Where could two AI agents produce conflicting outputs or edit wars?\n6. **Intellectual control** — At what volume do humans lose the ability to reason about what the system is doing?\n\nFor each: describe the failure mode, estimate the volume at which it triggers, and give one concrete mitigation.",
+    "sample_output": "**Second-Order Effects Analysis: AI-Generated Monthly Reports**\n\n**1. Review bottleneck**\nAt 10× volume (100 reports/month), 1 senior analyst is at capacity. At 100×, sign-off becomes a rubber stamp — unread.\n→ Mitigation: Triage by materiality; auto-approve reports below a $50K variance threshold.\n\n**2. QA scaling**\nTests grow quadratically — 10× more reports × 10× more edge cases = 100× test cases needed.\n→ Mitigation: Parameterised test suites against a golden dataset; not manual review.\n\n**3. Jevons Paradox**\nAt $0.001/report (vs. $50 analyst-hour), departments request 20× more ad-hoc analyses. Monthly AI cost: $500 → $10,000.\n→ Mitigation: Per-department budget caps, not per-request.\n\n**4. API surface**\nAgents discover the ERP read endpoint and query production data for draft reports at 3am without audit trail.\n→ Mitigation: Read-only agent service accounts with rate limiting and full audit logging.\n\n**5. Agentic conflicts**\nFX-adjusted and non-adjusted versions of the same report generated simultaneously; executive receives both, neither labelled canonical.\n→ Mitigation: Single-output rule per report type; version locking before distribution.\n\n**6. Intellectual control**\nAt 500 auto-generated reports/month, no human has read them all. Systematic prompt bias goes undetected for quarters.\n→ Mitigation: Monthly red-team sample — 5 random reports read in full by a senior analyst.",
+    "tags": ["ai-strategy", "second-order", "systems-thinking", "governance", "scale"],
+    "dateAdded": "2026-05-24",
+    "source": "Adam Bender, Google I/O 2026 — 'Software Engineering at the Tipping Point'"
   }
 ]

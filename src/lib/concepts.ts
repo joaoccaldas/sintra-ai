@@ -388,4 +388,75 @@ Run via **Ollama**, **LM Studio**, or cloud APIs (Together AI, Groq, Fireworks A
     addedAt: "2026-05-23",
     learnMore: "https://ollama.com",
   },
+
+  // ── Google I/O 2026 — Software Ecology frameworks ───────────────────────
+  {
+    id:         "jevons-paradox",
+    term:       "Jevons Paradox",
+    category:   "fundamentals",
+    tagline:    "Making AI cheaper creates more usage, not less.",
+    icon:       "⚡",
+    difficulty: 2,
+    body: `**Jevons Paradox** (1865) states that when the cost of a resource falls, total consumption rises — often dramatically — as new use cases become economically viable.
+
+In AI this plays out constantly: as token prices drop, organisations don't use the same amount of AI more cheaply; they find entirely new applications that were previously unaffordable. Claude Haiku 4.5 at $0.80/M tokens unlocks checks that teams would never have commissioned at $15/M.
+
+Two practical implications:
+- **Cost governance** — cheaper models don't reduce your AI bill; they expand the scope of what gets automated
+- **Second-order volume** — 10× velocity doesn't produce 10× productivity; it produces 10× output that must be reviewed, tested, and maintained by the same team
+
+Surfaced in Google's DORA research and Adam Bender's Google I/O 2026 talk on Software Ecology.`,
+    analogy: "When motorways improved, people didn't drive the same route faster — they drove 5× more miles. Fuel efficiency made us drive more, not less.",
+    related: ["tokens", "agents", "ai-as-amplifier"],
+    addedAt: "2026-05-24",
+    learnMore: "https://en.wikipedia.org/wiki/Jevons_paradox",
+  },
+
+  {
+    id:         "ai-as-amplifier",
+    term:       "AI as Amplifier",
+    shortTerm:  "Amplifier",
+    category:   "fundamentals",
+    tagline:    "AI multiplies what you already are — good or chaotic.",
+    icon:       "📣",
+    difficulty: 1,
+    body: `The **AI as Amplifier** principle — surfaced in Google's DORA research and framed by Adam Bender at Google I/O 2026 — states that AI is directionally neutral: it accelerates and scales *existing* processes, culture, and quality.
+
+Teams with clear processes, well-tested outputs, and solid data governance get dramatically more productive. Teams without those foundations generate confusion, technical debt, and low-quality output faster.
+
+This makes AI adoption a **diagnostic before it's a deployment**. Ask: *"If we 10× our output tomorrow, would we amplify good work — or amplify problems?"*
+
+Applied to FP&A: solid data models and review processes → AI amplifies accurate analysis. Fragmented spreadsheets and ad-hoc workflows → AI generates 10× more fragmented spreadsheets.
+
+The DORA State of DevOps report found the same pattern in software: elite performers improved further with AI; low performers saw marginal gains or regression.`,
+    analogy: "A loudspeaker amplifies whatever you put in. A great singer sounds better; a bad signal becomes louder noise. The speaker has no opinion on which.",
+    related: ["software-ecology", "jevons-paradox", "agents"],
+    addedAt: "2026-05-24",
+    learnMore: "https://dora.dev/research/",
+  },
+
+  {
+    id:         "software-ecology",
+    term:       "Software Ecology",
+    category:   "fundamentals",
+    tagline:    "The holistic study of social and technical systems that produce software.",
+    icon:       "🌿",
+    difficulty: 2,
+    body: `**Software Ecology** (Adam Bender, Google I/O 2026) is the study of *socio-technical ecosystems* — the humans, tools, processes, incentives, and cultural norms that together determine what gets built and how.
+
+The framework asks two questions of any team or process:
+- **WHY?** — Why do we test this way? Why this language, this review process, this deploy cadence?
+- **WHAT IF?** — What if AI wrote all the code? What if we removed this review layer entirely?
+
+It explains why identical AI tools produce wildly different results across teams: the tools are the same; the ecology differs. At 10× AI velocity, five **second-order effects** dominate before benefits:
+1. More code → more **liability**, not just more productivity
+2. 10× code → potentially 100–1000× test cases (quadratic growth)
+3. Code review becomes a **bottleneck** — tech leads can't review for 10 AI developers
+4. Internal APIs become **de-facto public** — agents find and call them without negotiation
+5. **Agentic edit wars** — one agent changes, another reverts; you pay tokens for both`,
+    analogy: "A forest ecologist doesn't study trees in isolation — she studies soil chemistry, species interactions, water cycles. Software ecology says code needs more than smart developers: it needs the right culture, process clarity, and incentive alignment.",
+    related: ["ai-as-amplifier", "jevons-paradox", "agents"],
+    addedAt: "2026-05-24",
+    learnMore: "https://www.youtube.com/watch?v=2n41YjR5QfU",
+  },
 ];
