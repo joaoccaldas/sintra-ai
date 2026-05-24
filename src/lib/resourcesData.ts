@@ -91,6 +91,16 @@ export const RESOURCES: ResourceLink[] = [
     highlight: "Single OpenAI-compatible endpoint for Claude, GPT, Gemini, Llama, and more",
   },
   {
+    id: "qwen-api",
+    name: "Qwen API (DashScope)",
+    tagline: "Alibaba's Qwen 3.7 Max, Qwen 3 32B, and open models via API",
+    url: "https://www.alibabacloud.com/en/solutions/generative-ai/qwen",
+    category: "apis",
+    tags: ["Qwen", "Alibaba", "agentic", "API"],
+    free: false,
+    highlight: "Access Qwen 3.7 Max ($2.50/M input) and open Qwen 3 models — also available via OpenRouter at qwen/qwen3.7-max",
+  },
+  {
     id: "together-ai",
     name: "Together AI",
     tagline: "Open-source model inference and fine-tuning",
@@ -181,6 +191,16 @@ export const RESOURCES: ResourceLink[] = [
     tags: ["Python", "structured", "validation"],
     free: true,
     highlight: "Forces LLM responses into validated Pydantic models with automatic retry on failure",
+  },
+  {
+    id: "lerobot",
+    name: "LeRobot",
+    tagline: "Open-source robot learning library by Hugging Face",
+    url: "https://github.com/huggingface/lerobot",
+    category: "frameworks",
+    tags: ["robotics", "imitation learning", "sim-to-real", "Python"],
+    free: true,
+    highlight: "End-to-end robot learning: data collection, training, and deployment for SO-ARM100, OpenArm, and LeRobot Humanoid platforms (Apache 2.0)",
   },
 
   // ── Agents & Orchestration ────────────────────────────────────────────────
@@ -299,6 +319,16 @@ export const RESOURCES: ResourceLink[] = [
 
   // ── MCP & Integrations ────────────────────────────────────────────────────
   {
+    id: "powerbi-mcp",
+    name: "Power BI MCP Server",
+    tagline: "AI directly reads your semantic model and writes DAX measures",
+    url: "https://github.com/search?q=PowerBI+Modeling+MCP",
+    category: "mcp",
+    tags: ["Power BI", "DAX", "FP&A", "local", "enterprise"],
+    free: true,
+    highlight: "Connects Claude or Copilot to your .pbix file — AI reads tables/relationships and writes DAX directly. Privacy note: table names, column names, and query results flow to the LLM; use Enterprise plans or local models for sensitive data.",
+  },
+  {
     id: "mcp",
     name: "Model Context Protocol",
     tagline: "Open standard for AI-to-tool connections",
@@ -379,6 +409,16 @@ export const RESOURCES: ResourceLink[] = [
     tags: ["observability", "cost", "logging"],
     free: true,
     highlight: "One-line integration to log requests, track costs, and monitor latency across LLM providers",
+  },
+  {
+    id: "1b-ai",
+    name: "1B.AI",
+    tagline: "Telemetry audit: see exactly what your AI tool sends to the LLM",
+    url: "https://1b.ai",
+    category: "evals",
+    tags: ["privacy", "telemetry", "MCP", "audit", "security"],
+    free: true,
+    highlight: "Traces MCP tool calls in real time — shows which table names, column names, and query results leave your machine when using Power BI MCP, Cursor, or other AI dev tools",
   },
 
   // ── Communities ───────────────────────────────────────────────────────────

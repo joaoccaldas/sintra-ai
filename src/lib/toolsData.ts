@@ -908,4 +908,149 @@ export const AI_TOOLS: AITool[] = [
     status: "available",
     highlight: "AI auto-organizes your notes and surfaces the right information at the right time.",
   },
+
+  // ─── CHAT (May 2026) ─────────────────────────────────────────────────────
+  {
+    id: "qwen-37-max",
+    name: "Qwen 3.7 Max",
+    tagline: "Alibaba's flagship agentic model — 1M context, 35-hour autonomous tasks",
+    description:
+      "Qwen 3.7 Max is Alibaba's most capable model as of May 2026, built for long-horizon agentic execution — autonomously running for up to 35 hours across thousands of tool calls and code iterations without human intervention. With a 1M-token context window and 65,536 max output tokens, it ranks #1 on BenchLM's leaderboard (score 92, ahead of DeepSeek V4 Pro at 88). Available via API on Alibaba Cloud, OpenRouter, and Together AI; open weights expected around June 2026.\n\n**Step-by-step (API):** 1) Sign up at chat.qwen.ai for free preview. 2) For API, access via OpenRouter (`qwen/qwen3.7-max`) or Alibaba Cloud DashScope. 3) Use `enable_thinking: true` for full reasoning mode or `false` for fast responses. 4) Best for: autonomous coding agents, long research pipelines, multi-step business workflow automation.",
+    category: "chat",
+    pricing: "paid",
+    priceNote: "API: $2.50/M input · $7.50/M output · Free preview at chat.qwen.ai",
+    url: "https://qwen.ai",
+    provider: "Alibaba (Qwen Team)",
+    tags: ["agentic", "1M context", "reasoning", "long-horizon", "API"],
+    status: "available",
+    highlight: "Autonomously executes complex tasks for up to 35 hours with 1,000+ tool calls.",
+  },
+
+  // ─── IMAGE (May 2026) ────────────────────────────────────────────────────
+  {
+    id: "l2p",
+    name: "L2P",
+    tagline: "Tencent's pixel-space image generator — no VAE artifacts, native 1K quality",
+    description:
+      "L2P (Latent-to-Pixel) from Tencent YouTu Research bypasses the VAE compression bottleneck of standard diffusion models, generating images directly in pixel space. By freezing a 6B-parameter latent diffusion backbone and training only shallow adapter layers, it transfers all learned priors into native 1024×1024 pixel generation with no latent-space color shift or blur. Weights on HuggingFace; ComfyUI nodes available for drop-in use.\n\n**Step-by-step:** 1) `git clone https://github.com/TencentYoutuResearch/T2I-L2P`. 2) Download weights: `huggingface.co/zhen-nan/L2P`. 3) `pip install -r requirements.txt`. 4) Run the inference script with a text prompt and target resolution. 5) Alternatively, install the ComfyUI nodes (rebels-l2p or gjnave/ggf-ltp-zimage). **VRAM:** 8 GB (512px) · 24 GB recommended for native 1K.",
+    category: "image",
+    pricing: "free",
+    priceNote: "Free (open-source, self-hosted) · ~20 GB model on disk",
+    url: "https://github.com/TencentYoutuResearch/T2I-L2P",
+    provider: "Tencent YouTu Research",
+    tags: ["pixel space", "open-source", "VAE-free", "high quality", "ComfyUI"],
+    status: "available",
+    highlight: "Pixel-space generation eliminates the VAE color-shift and blurriness of latent models.",
+  },
+  {
+    id: "lito",
+    name: "LiTo",
+    tagline: "Apple's single-photo → 3D model with view-dependent lighting and reflections",
+    description:
+      "LiTo (Surface Light Field Tokenization) is an Apple ML Research model (ICLR 2026) that reconstructs a complete 3D object with view-dependent appearance — specular reflections, Fresnel effects — from a single RGB photo. It encodes the surface light field into compact latent vectors capturing both geometry and lighting. Unlike static 3D reconstructions, the output renders correctly as the viewer moves around the object.\n\n**Step-by-step:** 1) `git clone https://github.com/apple/ml-lito`. 2) Download `lito_new.ckpt` checkpoint from repo releases. 3) `pip install -r requirements.txt`. 4) Run the inference script with a single input image. 5) Export the 3D representation for use in game engines, AR apps, or VFX pipelines. Demos at apple.github.io/ml-lito.",
+    category: "image",
+    pricing: "free",
+    priceNote: "Free (code + checkpoint on GitHub, Apple ML Research license)",
+    url: "https://github.com/apple/ml-lito",
+    provider: "Apple",
+    tags: ["3D reconstruction", "single image", "lighting", "reflections", "ICLR 2026"],
+    status: "available",
+    highlight: "Extracts a view-dependent 3D model with correct reflections and lighting from one photo.",
+  },
+  {
+    id: "panoworld",
+    name: "PanoWorld",
+    tagline: "Floor plan → navigable whole-house 3D tour with style switching",
+    description:
+      "PanoWorld (arXiv, May 2026) generates consistent, navigable multi-room 3D virtual tours from a 2D floor plan. It uses autoregressive panoramic generation with a 3D Gaussian Splatting spatial memory that prevents cross-room visual bleed, and supports text-conditioned style switching (e.g., modern → rustic). Output matches discrete-node VR tour formats used by real estate platforms.\n\n**Status:** Research paper only — no public code or weights released yet. Best for tracking: real estate virtual tours, game level generation, interior design previsualization. Paper: arxiv.org/abs/2605.17916.",
+    category: "image",
+    pricing: "free",
+    priceNote: "Research preview — no weights released yet",
+    url: "https://arxiv.org/abs/2605.17916",
+    provider: "Research (arXiv 2026)",
+    tags: ["3D generation", "floor plan", "virtual tour", "real estate", "3DGS"],
+    status: "beta",
+    highlight: "Converts a floor plan into a navigable multi-room 3D tour with switchable design styles.",
+  },
+
+  // ─── VIDEO (May 2026) ────────────────────────────────────────────────────
+  {
+    id: "marlin-2b",
+    name: "Marlin-2B",
+    tagline: "2B video model — dense captions and plain-English timestamp search",
+    description:
+      "Marlin-2B is a 2-billion-parameter video VLM fine-tuned on Qwen3.5-2B, purpose-built for two tasks developers actually need: dense captioning (what happened + when, structured with second-precise timestamps) and natural-language temporal grounding (query with plain English, get exact start/end timestamps back). At ~4–5 GB, it fits a 6 GB consumer GPU, beats Qwen2.5-VL-7B by +6.4 mIoU on TimeLens-Bench, and matches Gemini-2.0-Flash on temporal grounding.\n\n**Step-by-step:** 1) `pip install transformers`. 2) `from transformers import AutoModelForCausalLM, AutoProcessor`. 3) Load: `AutoModelForCausalLM.from_pretrained('NemoStation/Marlin-2B', trust_remote_code=True)`. 4) Call `.caption(video_path)` for dense timestamps or `.find(video_path, 'your query')` for NL search. **Best for:** video indexing, security/event detection, meeting search, sports highlights.",
+    category: "video",
+    pricing: "free",
+    priceNote: "Free (open-source on Hugging Face) · ~4–5 GB VRAM",
+    url: "https://huggingface.co/NemoStation/Marlin-2B",
+    provider: "NemoStation",
+    tags: ["video analysis", "timestamps", "temporal grounding", "open-source", "2B params"],
+    status: "available",
+    highlight: "Query any video in plain English and get back precise start/end timestamps.",
+  },
+
+  // ─── AUDIO (May 2026) ────────────────────────────────────────────────────
+  {
+    id: "mega-asr",
+    name: "Mega-ASR",
+    tagline: "Foundation ASR built for real-world audio where Whisper breaks down",
+    description:
+      "Mega-ASR is an open-source speech recognition model purpose-built for real-world audio — noise, far-field speech, echo, reverberation, recording artifacts, electronic distortion, and transmission dropout — covering 54 compound acoustic scenarios in a single model. Built on a Whisper backbone with LoRA routing, it achieves up to 30% WER reduction over SOTA in challenging conditions. Released May 19, 2026 with Apache 2.0 weights on Hugging Face.\n\n**Step-by-step:** 1) `git clone https://github.com/xzf-thu/Mega-ASR`. 2) `pip install -r requirements.txt`. 3) Download weights from HuggingFace (linked in repo). 4) Run the provided inference script with your audio file. 5) Alternatively, install via Pinokio for a one-click desktop app. **Best for:** call-center audio, field recordings, podcasts with bad mics, surveillance, any pipeline where Whisper degrades.",
+    category: "audio",
+    pricing: "free",
+    priceNote: "Free (Apache 2.0, self-hosted) · Under 5 GB on consumer GPU",
+    url: "https://github.com/xzf-thu/Mega-ASR",
+    provider: "Tsinghua University (xzf-thu)",
+    tags: ["transcription", "noisy audio", "open-source", "Whisper", "real-world"],
+    status: "available",
+    highlight: "Up to 30% WER reduction vs Whisper on noisy, echoing, or far-field recordings.",
+  },
+  {
+    id: "stable-audio-3",
+    name: "Stable Audio 3",
+    tagline: "Stability AI's open-weight music generator — full tracks up to 6 minutes",
+    description:
+      "Stable Audio 3.0 (May 20, 2026) is a family of four text-to-audio diffusion models trained entirely on licensed data. The Medium model generates music compositions up to 6 minutes 20 seconds from a text prompt. Three models (Small SFX, Small, Medium) are open-weight on Hugging Face; the Large model is API-only for music platforms.\n\n**Step-by-step:** 1) `pip install diffusers transformers torch`. 2) Load: `stabilityai/stable-audio-3-medium` from HuggingFace (or `-optimized` for lower VRAM). 3) Pass text prompt + desired duration. 4) Output: stereo WAV file. **Model sizes:** Small SFX (~2 GB, SFX only) · Small (~3 GB, ~90s) · Medium (~6.5 GB, 6:20 min) · Large (API only). **Best for:** background music for video, game audio, podcast intros, rapid music prototyping.",
+    category: "audio",
+    pricing: "freemium",
+    priceNote: "Small/Medium open-weight (free) · Large via Stability AI API",
+    url: "https://stability.ai/stable-audio",
+    provider: "Stability AI",
+    tags: ["music generation", "sound effects", "open-source", "6 minutes", "licensed training"],
+    status: "available",
+    highlight: "Three open-weight models generate tracks up to 6:20 min — all trained on licensed data.",
+  },
+
+  // ─── CODE / ROBOTICS (May 2026) ──────────────────────────────────────────
+  {
+    id: "lerobot-humanoid",
+    name: "LeRobot Humanoid",
+    tagline: "Hugging Face's open-source 3D-printed bipedal robot for AI learning research",
+    description:
+      "LeRobot Humanoid (May 21, 2026) is a fully open-source bipedal humanoid robot platform buildable for ~$2,500 from 3D-printed parts and off-the-shelf electronics. It ships as a complete stack: assembly docs, runtime control code, system identification scripts, and MuJoCo/Isaac simulation environments — enabling the full research loop of print → simulate → collect data → train → deploy. Part of the Apache 2.0 LeRobot ecosystem alongside SO-ARM100 arms and OpenArm.\n\n**Step-by-step:** 1) `git clone https://github.com/huggingface/lerobot`. 2) Follow assembly guide at huggingface.co/blog/lerobot-humanoid. 3) 3D-print all parts from the STL files in the repo. 4) Source electronics per the BOM (motors, controllers, IMU). 5) Flash runtime and run system identification. 6) Train policies in MuJoCo sim before real-world deployment. **Best for:** robotics research, sim-to-real policy transfer, academic labs, maker community.",
+    category: "code",
+    pricing: "free",
+    priceNote: "Free (Apache 2.0 software) · ~$2,500 in hardware components",
+    url: "https://github.com/huggingface/lerobot",
+    provider: "Hugging Face",
+    tags: ["robotics", "open-source", "3D printed", "sim-to-real", "imitation learning"],
+    status: "available",
+    highlight: "Build a real bipedal humanoid robot for $2,500 with a full open-source AI training stack.",
+  },
+  {
+    id: "unitree-g1",
+    name: "Unitree G1",
+    tagline: "Commercial humanoid robot with open-source AI voice command control",
+    description:
+      "The Unitree G1 is a commercial bipedal humanoid robot with a full developer SDK and 23 degrees of freedom (43 in the EDU model). In March 2026, Unitree open-sourced UnifoLM-VLA-0, a Vision-Language-Action model enabling real-time natural-language voice control — no pre-programming required, the robot acts on spoken commands. The G1 integrates a 4-array microphone, binocular depth cameras, and 3D LiDAR.\n\n**Step-by-step (voice control):** 1) Own a Unitree G1 ($16K base). 2) Install UnifoLM-VLA-0 from GitHub/HuggingFace (open-sourced March 2026). 3) Connect via Unitree Python SDK (support.unitree.com). 4) Speak natural-language commands — the VLA model processes audio + visual input and generates motor actions in real time. **Best for:** embodied AI research, warehouse automation, human-robot interaction, VLA model research.",
+    category: "code",
+    pricing: "paid",
+    priceNote: "$16,000 hardware · Open-source VLA model (UnifoLM-VLA-0 free)",
+    url: "https://www.unitree.com/g1/",
+    provider: "Unitree Robotics",
+    tags: ["robotics", "humanoid", "voice control", "VLA", "embodied AI"],
+    status: "available",
+    highlight: "Open-source VLA model converts spoken commands into real-time robot motor actions.",
+  },
 ];
