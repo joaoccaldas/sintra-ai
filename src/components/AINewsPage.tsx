@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
 import { NEWS_ITEMS, NEWS_TAGS, type NewsItem } from "@/lib/newsData";
@@ -80,11 +80,37 @@ function NewsCard({ item }: { item: NewsItem }) {
 }
 
 export default function AINewsPage() {
-  const [activeSig, setActiveSig]     = useState<string>("all");
-  const [activeTag, setActiveTag]     = useState<string>("all");
-  const [activeProvider, setProvider] = useState<string>("all");
-  const [brazilOnly, setBrazilOnly]   = useState(false);
-  const [search, setSearch]           = useState("");
+  const [activeSig, setActiveSig] = useState<string>(() => {
+    if (typeof window === "undefined") return "all";
+    return new URLSearchParams(window.location.search).get("sig") || "all";
+  });
+  const [activeTag, setActiveTag] = useState<string>(() => {
+    if (typeof window === "undefined") return "all";
+    return new URLSearchParams(window.location.search).get("tag") || "all";
+  });
+  const [activeProvider, setProvider] = useState<string>(() => {
+    if (typeof window === "undefined") return "all";
+    return new URLSearchParams(window.location.search).get("provider") || "all";
+  });
+  const [brazilOnly, setBrazilOnly] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return new URLSearchParams(window.location.search).get("brazil") === "1";
+  });
+  const [search, setSearch] = useState(() => {
+    if (typeof window === "undefined") return "";
+    return new URLSearchParams(window.location.search).get("q") || "";
+  });
+
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (activeSig      !== "all") params.set("sig",      activeSig);
+    if (activeTag      !== "all") params.set("tag",      activeTag);
+    if (activeProvider !== "all") params.set("provider", activeProvider);
+    if (brazilOnly)               params.set("brazil",   "1");
+    if (search)                   params.set("q",        search);
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [activeSig, activeTag, activeProvider, brazilOnly, search]);
 
   const providers = useMemo(() => {
     const ps = [...new Set(NEWS_ITEMS.map((n: NewsItem) => n.provider))].sort();

@@ -4,7 +4,7 @@ import { useState, useMemo, useCallback, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X, ArrowLeft, Search, Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
 import dynamic from "next/dynamic";
-import { USE_CASES, UseCase, DISC_COUNTS, DIFF_COLOR, matchesUseCase } from "@/lib/data";
+import { USE_CASES, UseCase, DISC_COUNTS, DIFF_COLOR, CAT_ACCENT, matchesUseCase } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
@@ -21,17 +21,7 @@ const POPULAR_TASKS = [
   "forecast model", "cold email",
 ];
 
-const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":     "#F4D06F",
-  "productivity":   "#8FE3D2",
-  "writing":        "#F08CA8",
-  "research":       "#B6A6FF",
-  "finance":        "#6EE7A0",
-  "data-analytics": "#E8C089",
-  "coding":         "#9F8CFF",
-  "creative-ai":    "#5EEAD4",
-  "game-advanced":  "#E9D9B6",
-};
+const PAGE_SIZE = 24;
 
 function SearchResultRow({ item, onOpen, isSaved, onToggleSave }: {
   item: UseCase;
@@ -112,6 +102,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   // Panel search/filter state
   const [panelSearch, setPanelSearch]   = useState("");
   const [panelDiff, setPanelDiff]       = useState<string>("all");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const CARD_VARIANTS = useMemo(() => ({
     hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 24, scale: prefersReducedMotion ? 1 : 0.97 },
@@ -130,6 +121,19 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   // ── URL hash deep-linking ────────────────────────────────────────────────────
   useEffect(() => {
     const hash = window.location.hash.slice(1);
+    // Use case permalink: #uc-{id}
+    if (hash.startsWith("uc-")) {
+      const ucId = parseInt(hash.slice(3), 10);
+      const uc = USE_CASES.find(u => u.id === ucId);
+      if (uc) {
+        const catIdx = CAROUSEL_ITEMS.findIndex(c => c.id === uc.category);
+        if (catIdx >= 0) { setSelectedIdx(catIdx); setBrowsingIdx(catIdx); }
+        setExpanded(uc);
+        setExpandedItems(USE_CASES.filter(u => u.category === uc.category));
+      }
+      return;
+    }
+    // Category panel deep-link: #writing, #coding, etc.
     const idx = CAROUSEL_ITEMS.findIndex(c => c.id === hash);
     if (idx >= 0) {
       setSelectedIdx(idx);
@@ -143,6 +147,13 @@ export default function CategoryBrowser({ heroSearch }: Props) {
     }
     // Don't reset to #explore on close — let the section anchor remain
   }, [browsingIdx]);
+
+  // Sync use case permalink in URL
+  useEffect(() => {
+    if (expanded) {
+      window.history.replaceState(null, "", `#uc-${expanded.id}`);
+    }
+  }, [expanded]);
 
   // ── Global search results — uses shared matchesUseCase helper ───────────────
   const globalResults = useMemo(() => {
@@ -166,13 +177,16 @@ export default function CategoryBrowser({ heroSearch }: Props) {
     });
   }, [cases, panelSearch, panelDiff]);
 
-  // Reset filters when panel opens
+  // Reset filters and pagination when panel opens or filters change
   useEffect(() => {
     if (browsingIdx !== null) {
       setPanelSearch("");
       setPanelDiff("all");
+      setVisibleCount(PAGE_SIZE);
     }
   }, [browsingIdx]);
+
+  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [panelSearch, panelDiff]);
 
   const prev = () => setSelectedIdx(i => (i - 1 + CAROUSEL_ITEMS.length) % CAROUSEL_ITEMS.length);
   const next = () => setSelectedIdx(i => (i + 1) % CAROUSEL_ITEMS.length);
@@ -432,32 +446,44 @@ export default function CategoryBrowser({ heroSearch }: Props) {
                   </button>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                  <AnimatePresence mode="popLayout" initial={false}>
-                    {filteredCases.map((item, i) => {
-                      const featured = i === 0 && filteredCases.length >= 4;
-                      return (
-                        <motion.div
-                          key={item.id}
-                          layout
-                          custom={i}
-                          variants={CARD_VARIANTS}
-                          initial="hidden"
-                          animate="show"
-                          exit="exit"
-                          className={featured ? "sm:col-span-2 lg:col-span-2" : ""}
-                        >
-                          <UseCaseCard
-                            item={item}
-                            onOpen={handleOpenExpanded}
-                            onTagFilter={tag => { closeBrowsing(); setGlobalSearch(tag); }}
-                            isFeatured={featured}
-                          />
-                        </motion.div>
-                      );
-                    })}
-                  </AnimatePresence>
-                </div>
+                <>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <AnimatePresence mode="popLayout" initial={false}>
+                      {filteredCases.slice(0, visibleCount).map((item, i) => {
+                        const featured = i === 0 && filteredCases.length >= 4;
+                        return (
+                          <motion.div
+                            key={item.id}
+                            layout
+                            custom={i}
+                            variants={CARD_VARIANTS}
+                            initial="hidden"
+                            animate="show"
+                            exit="exit"
+                            className={featured ? "sm:col-span-2 lg:col-span-2" : ""}
+                          >
+                            <UseCaseCard
+                              item={item}
+                              onOpen={handleOpenExpanded}
+                              onTagFilter={tag => { closeBrowsing(); setGlobalSearch(tag); }}
+                              isFeatured={featured}
+                            />
+                          </motion.div>
+                        );
+                      })}
+                    </AnimatePresence>
+                  </div>
+                  {visibleCount < filteredCases.length && (
+                    <div className="flex flex-col items-center gap-2 mt-10">
+                      <button
+                        onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
+                        className="font-mono text-[11px] tracking-[0.1em] uppercase px-6 py-2.5 rounded-full border border-violet/40 text-violet-bright hover:bg-violet/10 hover:border-violet/70 transition-all"
+                      >
+                        Load more ({filteredCases.length - visibleCount} remaining)
+                      </button>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </motion.div>

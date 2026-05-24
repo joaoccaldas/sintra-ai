@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import DiscoveryStrips from "@/components/DiscoveryStrips";
 import LatestUseCases from "@/components/LatestUseCases";
+import FeaturedCollections from "@/components/FeaturedCollections";
 import { USE_CASES } from "@/lib/data";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
             <UniversalSearch query={heroSearch.query} onClose={clearSearch} />
           )}
           <CategoryBrowser heroSearch={heroSearch} />
+          <FeaturedCollections />
           <DiscoveryStrips />
           <LatestUseCases />
         </main>

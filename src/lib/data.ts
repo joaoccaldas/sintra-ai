@@ -181,6 +181,19 @@ export const DIFF_COLOR: Record<string, string> = {
   expert: "#9F8CFF",
 };
 
+/** Single source of truth for category accent colours — used by cards, modals, and the library browser. */
+export const CAT_ACCENT: Record<string, string> = {
+  "quick-wins":     "#F4D06F",
+  "productivity":   "#8FE3D2",
+  "writing":        "#F08CA8",
+  "research":       "#B6A6FF",
+  "finance":        "#6EE7A0",
+  "data-analytics": "#E8C089",
+  "coding":         "#9F8CFF",
+  "creative-ai":    "#5EEAD4",
+  "game-advanced":  "#E9D9B6",
+};
+
 export const DISCIPLINES = [
   { id: "quick-wins",     label: "Quick Wins",        essence: "5-min wins anyone can use today." },
   { id: "productivity",   label: "Productivity",       essence: "Scheduling, notes, planning, automation." },

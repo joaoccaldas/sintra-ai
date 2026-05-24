@@ -1,36 +1,13 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
-import { UseCase, DIFF_COLOR } from "@/lib/data";
+import { Copy, Check, Bookmark, BookmarkCheck, ExternalLink } from "lucide-react";
+import { UseCase, DIFF_COLOR, CAT_ACCENT } from "@/lib/data";
+import { formatDate, isNew } from "@/lib/dateUtils";
+import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import CardVisual from "./CardVisual";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
-
-const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-
-function formatDate(iso: string): string {
-  const [y, m] = iso.split("-").map(Number);
-  return `${MONTHS[m - 1]} ${y}`;
-}
-
-function isNew(iso: string): boolean {
-  const added = new Date(iso).getTime();
-  const now   = Date.now();
-  return now - added < 45 * 24 * 60 * 60 * 1000; // 45 days
-}
-
-const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":     "#F4D06F",
-  "productivity":   "#8FE3D2",
-  "writing":        "#F08CA8",
-  "research":       "#B6A6FF",
-  "finance":        "#6EE7A0",
-  "data-analytics": "#E8C089",
-  "coding":         "#9F8CFF",
-  "creative-ai":    "#5EEAD4",
-  "game-advanced":  "#E9D9B6",
-};
 
 interface Props {
   item: UseCase;
@@ -125,6 +102,16 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
         >
           {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy</>}
         </button>
+        <a
+          href={getLaunchUrl(item.best_llm, item.prompt)}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={e => e.stopPropagation()}
+          aria-label={`Open prompt in ${getLaunchLabel(item.best_llm)}`}
+          className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[#0E1120]/90 border border-violet/30 font-mono text-[10px] text-fg-3 hover:text-violet-bright hover:border-violet/60 backdrop-blur-sm transition-colors"
+        >
+          <ExternalLink size={10} /> {getLaunchLabel(item.best_llm)}
+        </a>
       </div>
 
       {/* Output-kind abstract visual */}

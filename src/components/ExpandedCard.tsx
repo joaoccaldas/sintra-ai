@@ -2,10 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Copy, Check, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Copy, Check, X, ChevronLeft, ChevronRight, ExternalLink, Share2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { UseCase, DIFF_COLOR } from "@/lib/data";
+import { UseCase, DIFF_COLOR, CAT_ACCENT } from "@/lib/data";
+import { formatDate, isNew } from "@/lib/dateUtils";
+import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import { useLanguage } from "@/context/LanguageContext";
@@ -16,38 +18,18 @@ interface Props {
   items?: UseCase[];
 }
 
-const EC_MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-function ecFormatDate(iso: string): string {
-  const [y, m] = iso.split("-").map(Number);
-  return `${EC_MONTHS[m - 1]} ${y}`;
-}
-function ecIsNew(iso: string): boolean {
-  return Date.now() - new Date(iso).getTime() < 45 * 24 * 60 * 60 * 1000;
-}
-
-const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":     "#F4D06F",
-  "productivity":   "#8FE3D2",
-  "writing":        "#F08CA8",
-  "research":       "#B6A6FF",
-  "finance":        "#6EE7A0",
-  "data-analytics": "#E8C089",
-  "coding":         "#9F8CFF",
-  "creative-ai":    "#5EEAD4",
-  "game-advanced":  "#E9D9B6",
-};
-
 const FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
 export default function ExpandedCard({ item, onClose, items }: Props) {
   const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
+  const [shared, setShared] = useState(false);
   const [currentItem, setCurrentItem] = useState<UseCase | null>(item);
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<Element | null>(null);
 
   // Sync internal item when parent opens a different card
-  useEffect(() => { setCurrentItem(item); setCopied(false); }, [item]);
+  useEffect(() => { setCurrentItem(item); setCopied(false); setShared(false); }, [item]);
 
   const shown = currentItem;
   const shownIdx = items && shown ? items.findIndex(u => u.id === shown.id) : -1;
@@ -106,6 +88,14 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
     navigator.clipboard?.writeText(shown.prompt);
     setCopied(true);
     setTimeout(() => setCopied(false), 1600);
+  };
+
+  const share = () => {
+    if (!shown) return;
+    const url = `${window.location.origin}${window.location.pathname}#uc-${shown.id}`;
+    navigator.clipboard?.writeText(url);
+    setShared(true);
+    setTimeout(() => setShared(false), 1600);
   };
 
   return (
@@ -210,8 +200,8 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                   <span className="text-fg-4">·</span>
                   <span style={{ color: CAT_ACCENT[shown.category] || "#9F8CFF" }}>{shown.category}</span>
                   <span className="text-fg-4">·</span>
-                  <span className="text-fg-4 normal-case tracking-normal">{ecFormatDate(shown.dateAdded)}</span>
-                  {ecIsNew(shown.dateAdded) && (
+                  <span className="text-fg-4 normal-case tracking-normal">{formatDate(shown.dateAdded)}</span>
+                  {isNew(shown.dateAdded) && (
                     <span className="px-1.5 py-0.5 rounded-sm bg-violet/20 border border-violet/40 text-violet-bright text-[9px] tracking-[0.12em] uppercase font-mono normal-case">
                       New
                     </span>
@@ -302,8 +292,19 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                   </button>
                 </div>
               )}
-              <button className="btn" onClick={copy}>
+              <a
+                href={getLaunchUrl(shown.best_llm, shown.prompt)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+              >
+                <ExternalLink size={14} /> Open in {getLaunchLabel(shown.best_llm)}
+              </a>
+              <button className="btn btn-ghost" onClick={copy}>
                 {copied ? <><Check size={14} /> {t.expanded_copied}</> : <><Copy size={14} /> {t.expanded_copy}</>}
+              </button>
+              <button className="btn btn-ghost" onClick={share} title="Copy link to this prompt">
+                {shared ? <><Check size={14} /> Link copied!</> : <><Share2 size={14} /> Share</>}
               </button>
               <button className="btn btn-ghost" onClick={onClose}>{t.expanded_close}</button>
             </div>

@@ -1,3 +1,4 @@
+import Fuse from "fuse.js";
 import { USE_CASES, BASE_PATH } from "./data";
 import { AI_TOOLS } from "./toolsData";
 import { AI_NEWS } from "./newsData";
@@ -105,16 +106,27 @@ export const SEARCH_INDEX: SearchDocument[] = [
   })),
 ];
 
+const fuse = new Fuse(SEARCH_INDEX, {
+  keys: [
+    { name: "title",   weight: 3 },
+    { name: "tags",    weight: 2 },
+    { name: "summary", weight: 1.5 },
+    { name: "body",    weight: 0.8 },
+  ],
+  threshold: 0.35,
+  includeScore: true,
+  minMatchCharLength: 2,
+  ignoreLocation: true,
+});
+
 export function searchAll(query: string): { kind: EntityKind; docs: SearchDocument[] }[] {
-  const q = query.trim().toLowerCase();
+  const q = query.trim();
   if (!q) return [];
 
-  const matched = SEARCH_INDEX.filter(doc =>
-    doc.body.toLowerCase().includes(q) || doc.title.toLowerCase().includes(q)
-  );
+  const results = fuse.search(q).map(r => r.item);
 
   const grouped: Partial<Record<EntityKind, SearchDocument[]>> = {};
-  for (const doc of matched) {
+  for (const doc of results) {
     if (!grouped[doc.kind]) grouped[doc.kind] = [];
     grouped[doc.kind]!.push(doc);
   }

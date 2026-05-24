@@ -43,6 +43,13 @@ export const metadata: Metadata = {
     description: `${USE_CASES.length} copy-ready AI prompts for finance, analytics & knowledge work.`,
     images: [`${SITE_URL}/tesseract-hero.webp`],
   },
+  alternates: {
+    types: {
+      "application/rss+xml": [
+        { url: `${SITE_URL}/feed.xml`, title: "Sintra Tesseract — AI News Feed" },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({
