@@ -69,7 +69,7 @@ export default function PersonaEntry() {
     if (persona.region) params.set("region", persona.region);
     if (persona.difficulty) params.set("diff", persona.difficulty);
 
-    const section = document.getElementById("prompts-section");
+    const section = document.getElementById("explore");
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }

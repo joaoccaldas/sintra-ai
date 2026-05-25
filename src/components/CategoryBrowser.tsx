@@ -184,7 +184,6 @@ export default function CategoryBrowser({ heroSearch }: Props) {
       const idx = CAROUSEL_ITEMS.findIndex(c => c.id === persona.category);
       if (idx >= 0) {
         setSelectedIdx(idx);
-        setBrowsingIdx(idx);
         if (persona.region) setPanelSearch(persona.region === "brazil" ? "brasil" : persona.region);
       }
     };
