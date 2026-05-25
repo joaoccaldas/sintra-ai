@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 24 May 2026 10:50:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 05:44:07 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -452,12 +452,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Digital Tech Show 2026 in São Paulo Highlights Surge in Brazilian AI Adoption]]></title>
-    <description><![CDATA[The Digital Tech Show 2026 ran May 5–6 at the Centro de Convenções Frei Caneca in São Paulo, gathering Brazilian and international executives across AI, RPA, BPM, and cloud sectors. Concurrent AWS data showed 9 million Brazilian companies — roughly 40% of all businesses — now use AI systematically, a 29% increase year-on-year, with agentic AI and domain-specific language models identified as the fastest-growing deployment categories. Panels addressed the regulatory landscape ahead of the Marco Legal da Inteligência Artificial vote and the widening talent gap facing Brazilian companies scaling AI.]]></description>
-    <link>https://iimainfo.com.br/digital-tech-show/</link>
-    <guid isPermaLink="true">https://iimainfo.com.br/digital-tech-show/</guid>
+    <title><![CDATA[xAI Releases grok-voice-think-fast-1.0 — First Reasoning Voice Agent API]]></title>
+    <description><![CDATA[xAI released grok-voice-think-fast-1.0, the first voice agent API model capable of reasoning while speaking, topping the τ-voice benchmark at 67.3% — ahead of Gemini Realtime and GPT Realtime. The model supports 25+ languages with low latency and accurate tool use at $0.05 per minute, targeting enterprise customer support and sales workflows. The release also added voice cloning from short audio clips to xAI's Text-to-Speech and Voice Agent APIs, manageable via the xAI console.]]></description>
+    <link>https://x.ai/news/grok-voice-think-fast-1</link>
+    <guid isPermaLink="true">https://x.ai/news/grok-voice-think-fast-1</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>IDC Brazil</category>
+    <category>xAI</category>
   </item>
   </channel>
 </rss>
