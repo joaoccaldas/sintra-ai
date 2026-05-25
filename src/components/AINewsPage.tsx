@@ -44,6 +44,9 @@ function NewsCard({ item }: { item: NewsItem }) {
           {item.country === "BR" && (
             <span title="Brazil" className="text-[13px] leading-none" aria-label="Brazil">🇧🇷</span>
           )}
+          {item.country === "SE" && (
+            <span title="Sweden" className="text-[13px] leading-none" aria-label="Sweden">🇸🇪</span>
+          )}
         </div>
 
         {/* Title */}
@@ -114,6 +117,10 @@ export default function AINewsPage() {
     if (typeof window === "undefined") return false;
     return new URLSearchParams(window.location.search).get("brazil") === "1";
   });
+  const [swedenOnly, setSwedenOnly] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return new URLSearchParams(window.location.search).get("sweden") === "1";
+  });
   const [search, setSearch] = useState(() => {
     if (typeof window === "undefined") return "";
     return new URLSearchParams(window.location.search).get("q") || "";
@@ -125,10 +132,11 @@ export default function AINewsPage() {
     if (activeTag      !== "all") params.set("tag",      activeTag);
     if (activeProvider !== "all") params.set("provider", activeProvider);
     if (brazilOnly)               params.set("brazil",   "1");
+    if (swedenOnly)               params.set("sweden",   "1");
     if (search)                   params.set("q",        search);
     const qs = params.toString();
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [activeSig, activeTag, activeProvider, brazilOnly, search]);
+  }, [activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
   const providers = useMemo(() => {
     const ps = [...new Set(NEWS_ITEMS.map((n: NewsItem) => n.provider))].sort();
@@ -142,6 +150,7 @@ export default function AINewsPage() {
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
       .filter((n: NewsItem) => activeProvider === "all" || n.provider === activeProvider)
       .filter((n: NewsItem) => !brazilOnly || n.country === "BR")
+      .filter((n: NewsItem) => !swedenOnly || n.country === "SE")
       .filter((n: NewsItem) => {
         if (!q) return true;
         return n.title.toLowerCase().includes(q) ||
@@ -153,7 +162,7 @@ export default function AINewsPage() {
         if (b.dateNum !== a.dateNum) return b.dateNum - a.dateNum;
         return (b.dateDay ?? 1) - (a.dateDay ?? 1);
       });
-  }, [activeSig, activeTag, activeProvider, brazilOnly, search]);
+  }, [activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
   // Group by year for visual breaks
   const grouped = useMemo(() => {
@@ -258,7 +267,7 @@ export default function AINewsPage() {
 
             {/* Brazil filter */}
             <button
-              onClick={() => setBrazilOnly(v => !v)}
+              onClick={() => { setBrazilOnly(v => !v); setSwedenOnly(false); }}
               title={brazilOnly ? "Show all countries" : "Show Brazil news only"}
               className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
               style={{
@@ -270,7 +279,21 @@ export default function AINewsPage() {
               🇧🇷 Brazil
             </button>
 
-            {(search || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly) && (
+            {/* Sweden filter */}
+            <button
+              onClick={() => { setSwedenOnly(v => !v); setBrazilOnly(false); }}
+              title={swedenOnly ? "Show all countries" : "Show Sweden news only"}
+              className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
+              style={{
+                background:  swedenOnly ? "#006AA722" : "transparent",
+                borderColor: swedenOnly ? "#006AA788" : "#ffffff18",
+                color:       swedenOnly ? "#60a5fa"   : "#6b6a8a",
+              }}
+            >
+              🇸🇪 Sweden
+            </button>
+
+            {(search || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly || swedenOnly) && (
               <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} events</span>
             )}
           </div>
