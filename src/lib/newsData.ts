@@ -1637,6 +1637,73 @@ export const AI_NEWS: NewsItem[] = [
     what_to_try: "Watch the WWDC 2026 keynote on June 8 and note which Siri Campos features are developer APIs — Apple's ShortcutsKit and SiriKit intents will likely need updates to surface in the new interface.",
   },
 
+  // ── 23–25 May 2026 ───────────────────────────────────────────────────────
+
+  {
+    id: "xai-grok-voice-think-fast-api",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 1,
+    title: "xAI Releases grok-voice-think-fast-1.0 — First Reasoning Voice Agent API",
+    summary:
+      "xAI released grok-voice-think-fast-1.0, the first voice agent API model capable of reasoning while speaking, topping the τ-voice benchmark at 67.3% — ahead of Gemini Realtime and GPT Realtime. The model supports 25+ languages with low latency and accurate tool use at $0.05 per minute, targeting enterprise customer support and sales workflows. The release also added voice cloning from short audio clips to xAI's Text-to-Speech and Voice Agent APIs, manageable via the xAI console.",
+    tags: ["xAI", "Grok", "Voice AI", "API", "Reasoning", "Benchmark"],
+    significance: "major",
+    provider: "xAI",
+    providerColor: "#000000",
+    url: "https://x.ai/news/grok-voice-think-fast-1",
+    why_it_matters: "Reasoning-while-speaking capability changes the economics of voice agents for complex domains — previously these required a separate text reasoning pipeline, adding latency and cost.",
+    what_to_try: "Test grok-voice-think-fast-1.0 against your current voice agent stack using the τ-voice benchmark tasks, comparing latency and accuracy on your top 5 support scenarios at the $0.05/min rate.",
+  },
+  {
+    id: "anthropic-30b-funding-round-close",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 23,
+    title: "Anthropic Closes $30B+ Round at $900B+ Valuation — Surpasses OpenAI as Most Valuable Private Company",
+    summary:
+      "Bloomberg reported on May 22–23 that Anthropic is finalizing a funding round exceeding $30 billion at a pre-money valuation above $900 billion, surpassing OpenAI ($852 billion) to become the most valuable private company in the world. Sequoia, Dragoneer, Altimeter, and Greenoaks are co-leading at approximately $2 billion each, with Founders Fund and General Catalyst also participating. Anthropic reported Q2 2026 revenue of $10.9 billion — more than double Q1 — and projected annualized revenue to exceed $50 billion by end of June 2026.",
+    tags: ["Anthropic", "Funding", "Valuation", "Claude", "Revenue"],
+    significance: "landmark",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week",
+    why_it_matters: "A $900B+ valuation with $50B projected ARR positions Anthropic as the dominant revenue-generating AI company — establishing Claude as the enterprise AI default ahead of a planned IPO.",
+    what_to_try: "Compare current Claude API pricing against the Q3 2026 sheet when it releases — growing revenue at this scale without price increases would confirm that volume, not pricing, is driving the run-rate.",
+  },
+  {
+    id: "apple-genai-subdomain-registered-wwdc",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 23,
+    title: "Apple Registers genai.apple.com Ahead of WWDC 2026 — Generative AI Platform Signals",
+    summary:
+      "Apple quietly registered the subdomain genai.apple.com on May 23, 2026, three weeks before WWDC 2026 (June 8–12). The domain currently leads nowhere but analysts connect it to the expected Siri 'Campos' redesign in iOS 27 and Apple's finalized deal with Google to embed Gemini-based models into Apple Intelligence. The registration signals Apple may rebrand generative AI features under a distinct platform umbrella separate from the existing Apple Intelligence marketing.",
+    tags: ["Apple", "WWDC 2026", "Apple Intelligence", "Siri", "iOS 27", "Gemini"],
+    significance: "notable",
+    provider: "Apple",
+    providerColor: "#555555",
+    url: "https://9to5mac.com/2026/05/23/apple-new-gen-ai-subdomain-ahead-of-wwdc/",
+    why_it_matters: "A separate genai subdomain suggests Apple is treating generative AI as a standalone product platform — typically a precursor to a dedicated developer API surface and App Store integration hooks.",
+    what_to_try: "Watch the WWDC 2026 keynote on June 8 for genai.apple.com going live — early apps on a new Apple platform historically receive outsized App Store visibility during the first 90 days.",
+  },
+  {
+    id: "tanstack-cve-2026-45321-supply-chain",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 23,
+    title: "TanStack Supply-Chain Attack (CVE-2026-45321, CVSS 9.6) Hits OpenAI, Mistral, EU Commission",
+    summary:
+      "Security researchers disclosed that the TeamPCP threat group exploited CVE-2026-45321 (CVSS 9.6) to embed malicious code in the TanStack router ecosystem — a widely used JavaScript routing library. Confirmed victims include OpenAI, Mistral AI, the European Commission, and recruiting platform Mercor, highlighting growing supply-chain vulnerabilities in AI company frontend infrastructure. The incident triggered emergency patching across the JavaScript ecosystem and renewed industry-wide discussion about dependency chain security.",
+    tags: ["Security", "Supply Chain", "OpenAI", "Mistral", "CVE", "JavaScript"],
+    significance: "major",
+    provider: "Security Research",
+    providerColor: "#dc2626",
+    url: "https://www.buildfastwithai.com/blogs/ai-news-today-may-23-2026",
+    why_it_matters: "AI companies running modern JavaScript frontends share dependencies with thousands of other organizations — a single popular library compromise can simultaneously hit the most security-conscious companies in the industry.",
+    what_to_try: "Run `npm audit` on any project using TanStack Router, verify your lock file for affected version ranges, and enable automated CVE alerting via Dependabot or Socket.dev if you haven't already.",
+  },
+
   // ── Brazil — additional May 2026 ─────────────────────────────────────────
 
   {
@@ -1801,6 +1868,77 @@ export const AI_NEWS: NewsItem[] = [
     country: "BR",
     why_it_matters: "The TSE framework will either prove that democracies can enforce AI content rules at scale — or produce a documented failure mode that shapes how every other country writes election AI law.",
     what_to_try: "Read the TSE's 14 AI resolutions (available at tse.jus.br) and identify which three compliance obligations would most affect a political ad campaign using AI-generated imagery or voice.",
+  },
+
+  // ── Brazil — 23–25 May 2026 ───────────────────────────────────────────────
+
+  {
+    id: "brazil-enter-unicorn-1-2bi-serie-b",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 7,
+    title: "Enter Torna-se Primeiro Unicórnio de IA do Brasil — Avaliado em US$ 1,2 Bilhão",
+    summary:
+      "A startup jurídica brasileira Enter atingiu avaliação de US$ 1,2 bilhão após captar R$ 500 milhões em rodada Série B liderada pelo Founders Fund, com participação de Sequoia Capital e Ribbit Capital — tornando-se o primeiro unicórnio de IA do Brasil e da América Latina. Fundada em setembro de 2023, a empresa automatiza contencioso empresarial com IA, processa mais de 300 mil casos por ano e registrou ARR de R$ 50 milhões em 2025 com crescimento de 13x no ano. A rodada representa o maior investimento em legaltech na história da América Latina.",
+    tags: ["Brazil", "Legaltech", "Unicórnio", "Funding", "Startup", "IA Jurídica"],
+    significance: "landmark",
+    provider: "Enter",
+    providerColor: "#1a6b3c",
+    url: "https://exame.com/inteligencia-artificial/enter-vira-primeira-unicornio-brasileiro-de-ia-com-captacao-de-r-500-milhoes/",
+    country: "BR",
+    why_it_matters: "O primeiro unicórnio de IA criado no Brasil em menos de 3 anos demonstra que o mercado jurídico brasileiro — com 1,3 milhão de advogados e 120 milhões de processos ativos — oferece escala suficiente para valuation bilionário sem expansão internacional.",
+    what_to_try: "Mapeie o contencioso repetitivo da sua empresa ou escritório e calcule o volume de peças jurídicas similares — é o perfil que plataformas como a Enter automatizam com maior ROI comprovado.",
+  },
+  {
+    id: "brazil-chatgpt-ads-pilot-may2026",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 7,
+    title: "OpenAI Ativa Piloto de Anúncios no ChatGPT no Brasil — Um dos Primeiros Mercados Fora dos EUA",
+    summary:
+      "A OpenAI ativou em 7 de maio o piloto de anúncios no ChatGPT no Brasil, tornando o país um dos cinco primeiros fora dos EUA a receber a funcionalidade, junto com Reino Unido, México, Japão e Coreia do Sul. Os anúncios aparecem apenas ao final das respostas para usuários adultos dos planos Free e Go, com separação visual clara e ativação somente quando o sistema identifica relevância contextual. Planos pagos (Plus, Pro, Business, Enterprise, Education) permanecem sem publicidade.",
+    tags: ["Brazil", "OpenAI", "ChatGPT", "Advertising", "Monetization"],
+    significance: "major",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://www.conversion.com.br/blog/chatgpt-ads-brasil/",
+    country: "BR",
+    why_it_matters: "O Brasil como mercado prioritário de anúncios confirma que os 50 milhões de usuários brasileiros do ChatGPT — que enviam 140 milhões de mensagens por dia — já justificam investimento publicitário direto, criando nova categoria de AI advertising na América Latina.",
+    what_to_try: "Crie uma campanha-teste no ChatGPT Ads Manager com orçamento mínimo, segmente por contexto de uso e compare o custo por clique com Meta Ads e Google Ads para o mesmo público antes de escalar.",
+  },
+  {
+    id: "brazil-bndes-eletronet-r50m-data-centers",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 19,
+    title: "BNDES Aprova R$ 50 Milhões para Eletronet Triplicar Data Centers e Expandir Fibra para 26 Mil km",
+    summary:
+      "O BNDES aprovou financiamento de R$ 50 milhões com recursos do Funttel para a Eletronet (grupo Axia Energia) expandir sua malha de fibra óptica de 18 mil para 26 mil quilômetros e ampliar sua rede de edge data centers de 85 para 255 unidades até o fim de 2026. Os estados do Acre, Rondônia, Pará, Mato Grosso e Espírito Santo são os principais beneficiados, levando infraestrutura de computação a regiões que dependem de conectividade satelital. O governo destacou a iniciativa como estratégica para suportar IA, nuvem e serviços digitais em regiões remotas.",
+    tags: ["Brazil", "BNDES", "Infraestrutura", "Data Centers", "Fibra Óptica", "PBIA"],
+    significance: "major",
+    provider: "BNDES",
+    providerColor: "#00703c",
+    url: "https://www.gov.br/mcom/pt-br/noticias/2026/maio/investimento-de-r-50-milhoes-vai-ampliar-conectividade-e-infraestrutura-de-data-centers-em-regioes-afastadas-do-brasil-1",
+    country: "BR",
+    why_it_matters: "Triplicar a capacidade de edge data centers expande o alcance geográfico da inferência de IA em tempo real para a Amazônia e Centro-Oeste, viabilizando aplicações de saúde e educação que exigem baixa latência em áreas remotas.",
+    what_to_try: "Verifique se sua região está na área de expansão da Eletronet — empresas com operações no Norte e Centro-Oeste terão acesso a edge computing pela primeira vez em 2026, com potencial redução de latência de centenas de milissegundos.",
+  },
+  {
+    id: "brazil-politiza-ai-campanha-eleitoral-2026",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 15,
+    title: "Politiza AI Lança Plataforma de IA para Campanhas Eleitorais 2026 — Produção Cai de 36h para 3h",
+    summary:
+      "A startup brasileira Politiza AI lançou em maio de 2026 uma plataforma integrada que combina planejamento estratégico, monitoramento de concorrentes, gestão de equipes de campo e produção de conteúdo com IA para campanhas eleitorais. A ferramenta reduz o tempo de produção de material de campanha de 1,5 dia para menos de 3 horas e já foi adotada por dezenas de equipes desde o início oficial das campanhas. Todo o conteúdo gerado respeita as restrições do TSE sobre deepfakes e exibe os alertas obrigatórios de IA.",
+    tags: ["Brazil", "Eleições 2026", "Startup", "Campanha Eleitoral", "IA Política", "TSE"],
+    significance: "notable",
+    provider: "Politiza AI",
+    providerColor: "#7c3aed",
+    url: "https://mtagora.com.br/noticia/180172/startup-brasileira-lanca-ia-para-campanhas-eleitorais/",
+    country: "BR",
+    why_it_matters: "A automação de produção de conteúdo eleitoral com IA altera a vantagem competitiva: partidos com menor orçamento podem produzir volume e qualidade antes exclusivos de grandes campanhas, nivelando o campo em distritos menores.",
+    what_to_try: "Teste a plataforma Politiza AI com um candidato de campanha municipal — compare o custo por peça produzida com sua operação atual antes das eleições de outubro de 2026.",
   },
 ];
 
