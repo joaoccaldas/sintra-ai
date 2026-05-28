@@ -12,6 +12,7 @@ import LatestUseCases from "@/components/LatestUseCases";
 import FeaturedCollections from "@/components/FeaturedCollections";
 import PersonaEntry from "@/components/PersonaEntry";
 import NewThisWeek from "@/components/NewThisWeek";
+import DisruptiveSignals from "@/components/DisruptiveSignals";
 import { USE_CASES } from "@/lib/data";
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
           )}
           <div id="prompts-section">
             <NewThisWeek />
+            <DisruptiveSignals />
             <PersonaEntry />
             <CategoryBrowser heroSearch={heroSearch} />
           </div>

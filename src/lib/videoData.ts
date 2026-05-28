@@ -95,4 +95,16 @@ export const YOUTUBE_VIDEOS: YouTubeVideo[] = [
     duration: "2h 25min",
     year: 2022,
   },
+  {
+    id: "google-io-2026-keynote",
+    videoId: "CdJjph8-2Oc",
+    title: "Google I/O 2026 Keynote",
+    channel: "Google",
+    summary:
+      "The full Google I/O 2026 keynote — Sundar Pichai and Demis Hassabis unveil Gemini 3.5 Flash, Gemini Omni (native video world model), Antigravity 2.0 agent platform, Gemini Spark (24/7 personal agent), AI Mode hitting 1 billion users, and Android XR audio glasses. The most product-dense I/O in Google's history.",
+    url: "https://www.youtube.com/watch?v=CdJjph8-2Oc",
+    tags: ["Google I/O", "Gemini", "AI Agents", "2026", "Keynote"],
+    duration: "~2h",
+    year: 2026,
+  },
 ];
