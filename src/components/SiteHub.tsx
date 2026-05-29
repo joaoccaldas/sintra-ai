@@ -75,6 +75,15 @@ const ITEMS = [
     anchor: `${BASE_PATH}/resources/`,
     internal: false,
   },
+  {
+    id: "topics",
+    label: "Topics",
+    tagline: "Cross-silo views by theme — agents, coding, safety…",
+    color: "#FDA4AF",
+    symbol: "◈",
+    anchor: `${BASE_PATH}/topics/`,
+    internal: false,
+  },
 ] as const;
 
 function getCount(id: string, counts: Record<string, number>) {
@@ -90,6 +99,7 @@ export default function SiteHub() {
     learn:    LEARNING_PATHS.length,
     history:  MILESTONES.length,
     resources: RESOURCES.length,
+    topics:   17,
   }), []);
 
   return (
@@ -101,7 +111,7 @@ export default function SiteHub() {
       </div>
 
       {/* Hub grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-8 gap-3">
         {ITEMS.map((item, i) => {
           const count = getCount(item.id, counts);
           return (

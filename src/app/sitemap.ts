@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { USE_CASES } from "@/lib/data";
 import { AI_TOOLS } from "@/lib/toolsData";
+import { TOPIC_HUBS } from "@/lib/topicsData";
 
 export const dynamic = "force-static";
 
@@ -34,5 +35,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...topLevel, ...promptPages, ...toolPages];
+  const topicPages: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/topics/`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.8 },
+    ...TOPIC_HUBS.map(t => ({
+      url: `${SITE_URL}/topics/${t.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
+    })),
+  ];
+
+  return [...topLevel, ...topicPages, ...promptPages, ...toolPages];
 }

@@ -20,6 +20,7 @@ const NAV_GROUPS = [
     label: "Discover",
     items: [
       { href: `${BASE_PATH}/news/`,       label: "AI News",        desc: "Curated AI timeline" },
+      { href: `${BASE_PATH}/topics/`,     label: "Topic Hubs",     desc: "Cross-silo views by theme" },
       { href: `${BASE_PATH}/ai-history/`, label: "AI History",     desc: "70 years of milestones" },
       { href: `${BASE_PATH}/ai-labs/`,    label: "AI Labs",        desc: "Lab profiles & model matrix" },
     ],
@@ -44,7 +45,7 @@ const NAV_GROUPS = [
 
 // Map path segment → active group label
 const PATH_TO_GROUP: Record<string, string> = {
-  news: "Discover", "ai-history": "Discover", "ai-labs": "Discover",
+  news: "Discover", topics: "Discover", "ai-history": "Discover", "ai-labs": "Discover",
   learn: "Learn", resources: "Learn", concepts: "Learn",
   tools: "Reference", claude: "Reference", "google-ai-tools": "Reference",
 };
