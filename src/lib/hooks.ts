@@ -160,13 +160,17 @@ export interface RecentItem {
   category: string;
 }
 
+let _recentCache: RecentItem[] = [];
+let _recentRaw = "";
+
 function readRecent(): RecentItem[] {
   if (typeof window === "undefined") return [];
-  try {
-    return JSON.parse(localStorage.getItem(RECENT_KEY) || "[]");
-  } catch {
-    return [];
+  const raw = localStorage.getItem(RECENT_KEY) || "[]";
+  if (raw !== _recentRaw) {
+    try { _recentCache = JSON.parse(raw); } catch { _recentCache = []; }
+    _recentRaw = raw;
   }
+  return _recentCache;
 }
 
 const subscribers = new Set<() => void>();
