@@ -279,6 +279,18 @@ button { font-family: inherit; cursor: pointer; }
   background: rgba(159,140,255,0.10);
   border-color: rgba(159,140,255,0.35);
 }
+.tag-btn:focus-visible {
+  outline: 2px solid var(--violet-bright);
+  outline-offset: 2px;
+}
+a.tag:focus-visible {
+  outline: 2px solid var(--violet-bright);
+  outline-offset: 2px;
+}
+.card:focus-visible {
+  outline: 2px solid var(--violet-bright);
+  outline-offset: -3px;
+}
 
 .modal-overlay {
   position: fixed;

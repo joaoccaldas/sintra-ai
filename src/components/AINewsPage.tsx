@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
 import { NEWS_ITEMS, NEWS_TAGS, type NewsItem } from "@/lib/newsData";
 import { BASE_PATH } from "@/lib/data";
+import { tagToTopicSlug } from "@/lib/topicsData";
 
 const SIG_STYLE = {
   landmark: { label: "Landmark",  bg: "#9F8CFF22", border: "#9F8CFF66", text: "#B6A6FF" },
@@ -12,7 +13,7 @@ const SIG_STYLE = {
   notable:  { label: "Notable",   bg: "#ffffff0a", border: "#ffffff22", text: "#8b8aad"  },
 };
 
-function NewsCard({ item }: { item: NewsItem }) {
+function NewsCard({ item, onTagFilter }: { item: NewsItem; onTagFilter: (tag: string) => void }) {
   const sig = SIG_STYLE[item.significance];
   return (
     <motion.article
@@ -78,11 +79,26 @@ function NewsCard({ item }: { item: NewsItem }) {
         {/* Footer: tags + source link */}
         <div className="flex flex-wrap items-center gap-2">
           <div className="flex flex-wrap gap-1.5 flex-1">
-            {item.tags.map(tag => (
-              <span key={tag} className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12]">
-                {tag}
-              </span>
-            ))}
+            {item.tags.map(tag => {
+              const topicSlug = tagToTopicSlug(tag);
+              return topicSlug ? (
+                <a
+                  key={tag}
+                  href={`${BASE_PATH}/topics/${topicSlug}/`}
+                  className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12] hover:text-violet-bright hover:border-violet/40 transition-colors"
+                >
+                  {tag}
+                </a>
+              ) : (
+                <button
+                  key={tag}
+                  onClick={() => onTagFilter(tag)}
+                  className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12] hover:text-fg-1 hover:border-white/25 transition-colors"
+                >
+                  {tag}
+                </button>
+              );
+            })}
           </div>
           {item.url && (
             <a
@@ -313,7 +329,7 @@ export default function AINewsPage() {
                   <div className="flex-1 h-px bg-violet/[0.12]" />
                   <span className="font-mono text-[11px] text-fg-4">{items.length} events</span>
                 </div>
-                {items.map(item => <NewsCard key={item.id} item={item} />)}
+                {items.map(item => <NewsCard key={item.id} item={item} onTagFilter={tag => setActiveTag(tag)} />)}
               </div>
             ))
           )}

@@ -168,3 +168,10 @@ export function getTopicContent(topic: TopicDef) {
   );
   return { prompts, news, tools, concepts };
 }
+
+export function tagToTopicSlug(tag: string): string | null {
+  const lower = tag.toLowerCase();
+  return TOPIC_HUBS.find(t =>
+    t.matchTags.some(m => lower === m || lower.includes(m) || m.includes(lower))
+  )?.slug ?? null;
+}

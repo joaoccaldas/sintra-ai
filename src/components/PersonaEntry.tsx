@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BASE_PATH } from "@/lib/data";
+
+const PERSONA_KEY = "sintra_persona_v1";
 
 interface Persona {
   id: string;
@@ -62,8 +64,19 @@ const PERSONAS: Persona[] = [
 export default function PersonaEntry() {
   const [active, setActive] = useState<string | null>(null);
 
+  useEffect(() => {
+    const saved = localStorage.getItem(PERSONA_KEY);
+    if (!saved) return;
+    const persona = PERSONAS.find(p => p.id === saved);
+    if (persona) {
+      setActive(persona.id);
+      window.dispatchEvent(new CustomEvent("sintra:persona", { detail: persona }));
+    }
+  }, []);
+
   const handleSelect = (persona: Persona) => {
     setActive(persona.id);
+    localStorage.setItem(PERSONA_KEY, persona.id);
     const params = new URLSearchParams();
     params.set("cat", persona.category);
     if (persona.region) params.set("region", persona.region);
@@ -90,7 +103,7 @@ export default function PersonaEntry() {
             onClick={() => handleSelect(p)}
             title={p.desc}
             className={[
-              "flex flex-col items-center gap-1.5 p-3 rounded-xl border transition-all text-center",
+              "flex flex-col items-center gap-1.5 p-3 rounded-xl border transition-all text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-bright focus-visible:outline-offset-2",
               active === p.id
                 ? "border-violet/60 bg-violet/[0.12] text-fg-1"
                 : "border-white/[0.07] bg-white/[0.02] text-fg-3 hover:border-violet/30 hover:bg-white/[0.04] hover:text-fg-1",

@@ -9,6 +9,7 @@ import Link from "next/link";
 import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH, USE_CASES } from "@/lib/data";
 import { formatDate, isNew } from "@/lib/dateUtils";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
+import { tagToTopicSlug } from "@/lib/topicsData";
 import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import { useLanguage } from "@/context/LanguageContext";
@@ -335,7 +336,20 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                 {/* Tags */}
                 {shown.tags.length > 0 && (
                   <div className="mt-6 pt-5 border-t border-hairline flex flex-wrap gap-1.5">
-                    {shown.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
+                    {shown.tags.map(tag => {
+                      const slug = tagToTopicSlug(tag);
+                      return slug ? (
+                        <a
+                          key={tag}
+                          href={`${BASE_PATH}/topics/${slug}/`}
+                          className="tag hover:text-violet-bright hover:border-violet/50 transition-colors"
+                        >
+                          {tag}
+                        </a>
+                      ) : (
+                        <span key={tag} className="tag">{tag}</span>
+                      );
+                    })}
                   </div>
                 )}
 
