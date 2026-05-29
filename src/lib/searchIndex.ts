@@ -6,6 +6,7 @@ import { LEARNING_PATHS } from "./learningPathsData";
 import { CONCEPTS } from "./concepts";
 import { AI_LABS } from "./aiLabsData";
 import { RESOURCES } from "./resourcesData";
+import { TOPIC_HUBS } from "./topicsData";
 
 export type EntityKind =
   | "use_case"
@@ -14,7 +15,8 @@ export type EntityKind =
   | "lab"
   | "news"
   | "path"
-  | "resource";
+  | "resource"
+  | "topic";
 
 export interface SearchDocument {
   id: string;
@@ -35,9 +37,10 @@ export const KIND_META: Record<EntityKind, { label: string; pluralLabel: string;
   news:     { label: "News",          pluralLabel: "News",           color: "#6EE7A0" },
   path:     { label: "Learning Path", pluralLabel: "Learning Paths", color: "#E8C089" },
   resource: { label: "Resource",      pluralLabel: "Resources",      color: "#B6A6FF" },
+  topic:    { label: "Topic Hub",     pluralLabel: "Topic Hubs",     color: "#FDA4AF" },
 };
 
-const KIND_ORDER: EntityKind[] = ["use_case", "tool", "concept", "news", "lab", "path", "resource"];
+const KIND_ORDER: EntityKind[] = ["use_case", "tool", "concept", "news", "lab", "path", "resource", "topic"];
 
 export const SEARCH_INDEX: SearchDocument[] = [
   ...USE_CASES.map(u => ({
@@ -103,6 +106,15 @@ export const SEARCH_INDEX: SearchDocument[] = [
     tags: r.tags,
     href: `${BASE_PATH}/resources/`,
     body: [r.name, r.tagline, r.category, r.highlight ?? "", ...r.tags].join(" "),
+  })),
+  ...TOPIC_HUBS.map(t => ({
+    id: `topic-${t.slug}`,
+    kind: "topic" as EntityKind,
+    title: t.label,
+    summary: t.description,
+    tags: t.matchTags,
+    href: `${BASE_PATH}/topics/${t.slug}/`,
+    body: [t.label, t.description, ...t.matchTags].join(" "),
   })),
 ];
 

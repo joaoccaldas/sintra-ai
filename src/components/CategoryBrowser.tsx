@@ -8,8 +8,10 @@ import { USE_CASES, UseCase, DISC_COUNTS, DIFF_COLOR, CAT_ACCENT, matchesUseCase
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
+import RecentlyViewed from "./RecentlyViewed";
 import { useLanguage } from "@/context/LanguageContext";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
+import { trackRecentlyViewed } from "@/lib/hooks";
 
 const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
 
@@ -143,6 +145,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
         if (catIdx >= 0) { setSelectedIdx(catIdx); setBrowsingIdx(catIdx); }
         setExpanded(uc);
         setExpandedItems(USE_CASES.filter(u => u.category === uc.category));
+        trackRecentlyViewed({ id: uc.id, slug: uc.slug, title: uc.title, category: uc.category });
       }
       return;
     }
@@ -229,10 +232,12 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   const handleOpenExpanded = useCallback((item: UseCase) => {
     setExpanded(item);
     setExpandedItems(filteredCases);
+    trackRecentlyViewed({ id: item.id, slug: item.slug, title: item.title, category: item.category });
   }, [filteredCases]);
 
   return (
     <section id="explore" className="relative bg-void overflow-hidden">
+      <RecentlyViewed onOpen={item => { setExpanded(item); setExpandedItems(USE_CASES.filter(u => u.category === item.category)); }} allItems={USE_CASES} />
       {/* ── Quick-access task chips (replaces duplicate search bar) ──── */}
       <div className="relative z-20 max-w-2xl mx-auto px-6 pt-10 pb-0">
         {!globalSearch && (
