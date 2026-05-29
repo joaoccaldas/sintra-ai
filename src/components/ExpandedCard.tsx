@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Copy, Check, X, ChevronLeft, ChevronRight, ExternalLink, Share2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
-import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH } from "@/lib/data";
+import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH, USE_CASES } from "@/lib/data";
 import { formatDate, isNew } from "@/lib/dateUtils";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import CardVisual from "./CardVisual";
@@ -20,6 +20,44 @@ interface Props {
 }
 
 const FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+function RelatedRail({ shown, onOpen }: { shown: UseCase; onOpen: (u: UseCase) => void }) {
+  const related = useMemo(() => {
+    const shownTags = new Set(shown.tags);
+    return USE_CASES
+      .filter(u => u.id !== shown.id && u.tags.some(t => shownTags.has(t)))
+      .sort((a, b) => {
+        const sa = a.tags.filter(t => shownTags.has(t)).length;
+        const sb = b.tags.filter(t => shownTags.has(t)).length;
+        return sb - sa;
+      })
+      .slice(0, 4);
+  }, [shown]);
+
+  if (related.length === 0) return null;
+
+  return (
+    <div className="mt-6 pt-5 border-t border-hairline">
+      <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 block mb-3">Related prompts</span>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        {related.map(u => (
+          <button
+            key={u.id}
+            onClick={() => onOpen(u)}
+            className="group flex flex-col gap-1 p-3 rounded-xl border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-violet/[0.04] text-left transition-all"
+          >
+            <span className="font-mono text-[9px] tracking-[0.1em] uppercase" style={{ color: CAT_ACCENT[u.category] || "#9F8CFF" }}>
+              {u.category}
+            </span>
+            <span className="font-serif text-[13px] text-fg-2 group-hover:text-fg-1 leading-tight line-clamp-2 transition-colors">
+              {u.title}
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function ExpandedCard({ item, onClose, items }: Props) {
   const { t } = useLanguage();
@@ -300,6 +338,9 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                     {shown.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
                   </div>
                 )}
+
+                {/* Related prompts */}
+                <RelatedRail shown={shown} onOpen={u => { setCopied(false); setCurrentItem(u); }} />
               </div>
 
               {/* Close */}

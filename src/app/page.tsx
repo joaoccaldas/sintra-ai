@@ -10,6 +10,7 @@ import BackToTop from "@/components/BackToTop";
 import FeaturedCollections from "@/components/FeaturedCollections";
 import PersonaEntry from "@/components/PersonaEntry";
 import ThePulse from "@/components/ThePulse";
+import SiteHub from "@/components/SiteHub";
 import { USE_CASES } from "@/lib/data";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
           {heroSearch.query && (
             <UniversalSearch query={heroSearch.query} onClose={clearSearch} />
           )}
+          <SiteHub />
           <ThePulse />
           <div id="prompts-section">
             <PersonaEntry />
