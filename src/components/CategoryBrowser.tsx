@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useSyncExternalStore } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X, ArrowLeft, Search, Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
 import dynamic from "next/dynamic";
@@ -12,6 +12,18 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 
 const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
+
+function useIsMobile() {
+  return useSyncExternalStore(
+    cb => {
+      const mq = window.matchMedia("(max-width: 767px)");
+      mq.addEventListener("change", cb);
+      return () => mq.removeEventListener("change", cb);
+    },
+    () => window.matchMedia("(max-width: 767px)").matches,
+    () => false,
+  );
+}
 
 const DIFFS = ["all", "beginner", "intermediate", "advanced", "expert"] as const;
 
@@ -88,6 +100,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   const { t } = useLanguage();
   const { isSaved, toggle: toggleSaved } = useSavedPrompts();
   const prefersReducedMotion = useReducedMotion();
+  const isMobile = useIsMobile();
   const [selectedIdx, setSelectedIdx]   = useState(0);
   const [browsingIdx, setBrowsingIdx]   = useState<number | null>(null);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
@@ -295,17 +308,41 @@ export default function CategoryBrowser({ heroSearch }: Props) {
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
-        {/* ── 3D Carousel — full height on md+, compact on mobile ────── */}
-        <div className="relative h-[38vh] md:h-[56vh] min-h-[260px] md:min-h-[360px] max-h-[520px] w-full">
-          <CategoryCarousel3D selectedIndex={selectedIdx} onSelect={handleSelect} />
+        {/* ── 3D Carousel on desktop; 2D grid on mobile ────────────── */}
+        {isMobile ? (
+          <div className="px-6 pt-8 pb-2">
+            <div className="grid grid-cols-3 gap-2">
+              {CAROUSEL_ITEMS.map((item, i) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleSelect(i)}
+                  className="flex flex-col items-center gap-1.5 p-3 rounded-xl border transition-all"
+                  style={{
+                    background:  i === selectedIdx ? `${item.hex}18` : "rgba(255,255,255,0.02)",
+                    borderColor: i === selectedIdx ? `${item.hex}60` : "rgba(255,255,255,0.08)",
+                  }}
+                >
+                  <span className="w-3 h-3 rounded-full shrink-0" style={{ background: item.hex, opacity: i === selectedIdx ? 1 : 0.45 }} />
+                  <span className="font-mono text-[9px] tracking-[0.06em] uppercase text-center leading-tight"
+                    style={{ color: i === selectedIdx ? item.hex : "#6b6a8a" }}>
+                    {item.label}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="relative h-[56vh] min-h-[360px] max-h-[520px] w-full">
+            <CategoryCarousel3D selectedIndex={selectedIdx} onSelect={handleSelect} />
 
-          <button onClick={prev} className="carousel-arrow carousel-arrow--left" aria-label="Previous category">
-            <ChevronLeft size={22} />
-          </button>
-          <button onClick={next} className="carousel-arrow carousel-arrow--right" aria-label="Next category">
-            <ChevronRight size={22} />
-          </button>
-        </div>
+            <button onClick={prev} className="carousel-arrow carousel-arrow--left" aria-label="Previous category">
+              <ChevronLeft size={22} />
+            </button>
+            <button onClick={next} className="carousel-arrow carousel-arrow--right" aria-label="Next category">
+              <ChevronRight size={22} />
+            </button>
+          </div>
+        )}
 
         {/* ── Active category label ────────────────────────────────────── */}
         <div className="relative z-10 text-center py-8 md:py-10 px-6">

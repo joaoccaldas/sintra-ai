@@ -14,6 +14,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  manifest: "/sintra-ai/manifest.json",
   title: "Sintra Tesseract — AI Use Case Library",
   description: `${USE_CASES.length} copy-ready AI prompts for finance, data analytics, writing, and software teams. Find the right prompt, copy it, ship the work.`,
   keywords: [
@@ -57,6 +58,15 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Plausible — privacy-first, cookieless analytics */}
+        <script
+          defer
+          data-domain="joaoccaldas.github.io"
+          src="https://plausible.io/js/script.js"
+        />
+        <link rel="apple-touch-icon" href="/sintra-ai/tesseract-mark.svg" />
+      </head>
       <body className="antialiased">
         <LanguageProvider>
           <SavedPromptsProvider>{children}</SavedPromptsProvider>

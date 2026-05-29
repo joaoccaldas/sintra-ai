@@ -7,12 +7,9 @@ import CategoryBrowser from "@/components/CategoryBrowser";
 import UniversalSearch from "@/components/UniversalSearch";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
-import DiscoveryStrips from "@/components/DiscoveryStrips";
-import LatestUseCases from "@/components/LatestUseCases";
 import FeaturedCollections from "@/components/FeaturedCollections";
 import PersonaEntry from "@/components/PersonaEntry";
-import NewThisWeek from "@/components/NewThisWeek";
-import DisruptiveSignals from "@/components/DisruptiveSignals";
+import ThePulse from "@/components/ThePulse";
 import { USE_CASES } from "@/lib/data";
 
 export default function Home() {
@@ -39,15 +36,12 @@ export default function Home() {
           {heroSearch.query && (
             <UniversalSearch query={heroSearch.query} onClose={clearSearch} />
           )}
+          <ThePulse />
           <div id="prompts-section">
-            <NewThisWeek />
-            <DisruptiveSignals />
             <PersonaEntry />
             <CategoryBrowser heroSearch={heroSearch} />
           </div>
           <FeaturedCollections />
-          <DiscoveryStrips />
-          <LatestUseCases />
         </main>
         <Footer />
         <BackToTop />
