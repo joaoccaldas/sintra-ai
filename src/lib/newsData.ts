@@ -3461,6 +3461,93 @@ export const AI_NEWS: NewsItem[] = [
     url: "https://docmanagement.com.br/05/25/2026/marco-da-ia-pode-travar-startups-e-afastar-investimentos-no-brasil-alerta-especialista/",
     country: "BR",
   },
+
+  // ── Additional May 2026 items ────────────────────────────────────────────────
+  {
+    id: "anthropic-pwc-30k-professionals-alliance",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 14,
+    title: "Anthropic and PwC Expand Alliance to Certify 30,000 Professionals on Claude",
+    summary:
+      "Anthropic and PwC expanded their strategic alliance on May 14, deploying Claude Code and Cowork across PwC's global workforce with a joint Center of Excellence. A programme to certify 30,000 PwC professionals on Claude launched alongside it. Client deployments include compressing insurance underwriting cycles from 10 weeks to 10 days. PwC is also launching a new AI-Native Finance Business Group powered by the full Anthropic product suite.",
+    tags: ["Anthropic", "Claude", "Enterprise", "PwC", "Professional Services"],
+    significance: "notable",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.anthropic.com/news/pwc-expanded-partnership",
+  },
+  {
+    id: "microsoft-copilot-studio-computer-using-agents-ga",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 26,
+    title: "Microsoft Copilot Studio: Computer-Using Agents Now Generally Available",
+    summary:
+      "Microsoft's May 2026 Copilot Studio update made computer-using agents generally available in all commercial regions, enabling agents to interact with desktop and web applications exactly as a human would — clicking, typing, and navigating. The update also introduced redesigned Workflows, Work IQ extensibility, and real-time voice. Agent 365, a dedicated IT console for deploying and governing AI agents, reached general availability at $15/user/month.",
+    tags: ["Microsoft", "Copilot", "Agents", "Enterprise", "Computer Use"],
+    significance: "major",
+    provider: "Microsoft",
+    providerColor: "#0078d4",
+    url: "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+  },
+  {
+    id: "openai-frontier-governance-framework-may2026",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 28,
+    title: "OpenAI Publishes Frontier Governance Framework Aligned with EU AI Act",
+    summary:
+      "OpenAI released its Frontier Governance Framework on May 28, aligning safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice for General Purpose AI. The document covers risk assessment across cyber offense, CBRN threats, harmful manipulation, and loss-of-control risks, and supersedes the earlier Preparedness Framework. It includes protocols for model reporting, security incident response, and external expert oversight.",
+    tags: ["OpenAI", "Safety", "Policy", "Governance", "EU AI Act"],
+    significance: "notable",
+    provider: "OpenAI",
+    providerColor: "#10a37f",
+    url: "https://openai.com/index/openai-frontier-governance-framework/",
+  },
+  {
+    id: "cursor-in-talks-50b-valuation-2b-raise",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 10,
+    title: "Cursor in Talks to Raise $2B at $50B Valuation After Hitting $2B ARR",
+    summary:
+      "AI coding tool Cursor (Anysphere) entered talks to raise $2 billion at a $50 billion valuation co-led by Andreessen Horowitz, Nvidia, and Thrive Capital — up from its $29 billion valuation following Composer 2.5's launch. The company reached $2 billion ARR from zero in three years, the fastest B2B ARR ramp in software history. Cursor serves over 1 million paying customers and approximately 50,000 enterprise teams.",
+    tags: ["Cursor", "Coding AI", "Funding", "Developer Tools", "Valuation"],
+    significance: "major",
+    provider: "Cursor",
+    providerColor: "#555555",
+    url: "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
+  },
+  {
+    id: "nvidia-vera-rubin-production-shipments",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 15,
+    title: "Nvidia Vera Rubin AI Platform Enters Production — Deployed by AWS, Google, Azure, Oracle",
+    summary:
+      "Nvidia confirmed the Vera Rubin platform entered full production in May 2026 and will be deployed by AWS, Google Cloud, Microsoft Azure, and Oracle Cloud in H2 2026. The platform combines the Rubin GPU, Vera CPU, NVLink 6 Switch, and ConnectX-9 SuperNIC, delivering up to 10× reduction in inference token cost and requiring 4× fewer GPUs to train MoE models versus Blackwell. Partner shipments began in May 2026 with hyperscaler deployments targeting Q3.",
+    tags: ["Nvidia", "Vera Rubin", "GPU", "AI Infrastructure", "Data Center"],
+    significance: "major",
+    provider: "Nvidia",
+    providerColor: "#76b900",
+    url: "https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform",
+  },
+  {
+    id: "brazil-nubank-r45b-ai-investment-2026",
+    date: "May 2026",
+    dateNum: 202605,
+    dateDay: 14,
+    title: "Nubank Commits R$45 Billion to AI and Product Expansion in Brazil",
+    summary:
+      "Nubank disclosed plans to invest R$45 billion (~US$8.2 billion) in Brazil in 2026, anchored by AI platform development. Its proprietary NuFormer foundation models are already in production for credit card and lending decisioning in Brazil and Mexico. Nubank surpassed 115 million customers in Q1 2026, posting 49% year-over-year net revenue growth — the fastest pace in nearly four years.",
+    tags: ["Brazil", "Nubank", "Fintech", "AI Investment", "NuFormer"],
+    significance: "major",
+    provider: "Nubank",
+    providerColor: "#820ad1",
+    url: "https://pulse2.com/nubank-r45-billion-investment-plan-in-brazil-targets-ai-product-expansion-and-financial-inclusion-growth/",
+    country: "BR",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────
