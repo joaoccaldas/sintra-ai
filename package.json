@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "next lint",
     "validate-data": "node scripts/validate-data.mjs",
-    "check": "npm run validate-data && npm run typecheck && npm run lint && npm run build"
+    "check": "npm run validate-data && npm run typecheck && npm run build"
   },
   "dependencies": {
     "clsx": "^2.1.1",

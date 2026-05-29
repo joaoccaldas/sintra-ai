@@ -1,10 +1,27 @@
-# sintra-ai
+# Sintra Tesseract
 
-A curated AI knowledge library — prompts, tools, news, and learning paths — deployed as a static site on GitHub Pages.
+A one-stop AI knowledge base — prompts, news, tools, concepts, learning paths, and history — deployed as a static site on GitHub Pages.
 
 **Live site:** https://joaoccaldas.github.io/sintra-ai/
 
-> **For AI coding assistants:** This README is your primary reference. Follow it exactly. Every section includes actionable commands and explicit rules. `CLAUDE.md` contains additional AI-specific context for news updates and content management.
+> **For AI coding assistants:** This README is your primary reference. Every section has actionable commands and explicit rules. `CLAUDE.md` has the news-update procedure and AI-assistant-specific context.
+
+---
+
+## What's in the site
+
+| Section | URL | Content |
+|---------|-----|---------|
+| Prompt library | `/` → `#explore` | 149 copy-ready AI templates across 9 categories |
+| AI News | `/news/` | 220+ curated news items with significance tiers |
+| Tools directory | `/tools/` | 55 AI tools with pricing and detail pages |
+| Concepts | `/concepts/` | 30+ core AI concepts in plain English |
+| Learning paths | `/learn/` | 4 structured paths from beginner to advanced |
+| Resources | `/resources/` | 43 developer resources — APIs, frameworks, videos |
+| AI History | `/ai-history/` | Interactive timeline of 70+ milestones since 1950 |
+| AI Labs | `/ai-labs/` | Lab profiles and model comparison matrix |
+| Claude guide | `/claude/` | Anthropic models, products, capabilities |
+| Google AI guide | `/google-ai-tools/` | Google I/O 2026 tools step-by-step |
 
 ---
 
@@ -15,9 +32,12 @@ A curated AI knowledge library — prompts, tools, news, and learning paths — 
 | Framework | Next.js 15 (App Router) |
 | Styling | Tailwind CSS + custom CSS variables |
 | Animation | Framer Motion |
+| 3D graphics | Three.js (`CategoryCarousel3D`, `AIHistoryTimeline`) |
 | Language | TypeScript (strict) |
+| Search | Fuse.js — unified index across all 7 content types |
 | Output | **Static export** — no server, no API routes |
 | Hosting | GitHub Pages (`gh-pages` branch) |
+| Analytics | Plausible (cookieless, GDPR-friendly) |
 | Base path | `/sintra-ai` in production, `` (empty) in dev |
 
 ---
@@ -31,7 +51,7 @@ npm install
 npm run dev        # http://localhost:3000
 ```
 
-In dev mode the site runs at `localhost:3000` without the `/sintra-ai` base path — internal links resolve correctly without any configuration change.
+In dev mode the site runs at `localhost:3000` without the `/sintra-ai` base path — internal links resolve correctly without configuration changes.
 
 ---
 
@@ -40,270 +60,255 @@ In dev mode the site runs at `localhost:3000` without the `/sintra-ai` base path
 ```
 sintra-ai/
 ├── src/
-│   ├── app/                  # Next.js pages — one folder = one URL route
-│   │   ├── page.tsx          # Home (/)
-│   │   ├── news/page.tsx     # /news
-│   │   ├── tools/page.tsx    # /tools
-│   │   ├── learn/page.tsx    # /learn
-│   │   └── prompts/[slug]/   # Individual prompt pages
-│   ├── components/           # All React components
-│   ├── context/              # React context (LanguageContext)
-│   └── lib/                  # All content data — edit here to update content
-│       ├── newsData.ts           ← AI news timeline (add news here)
-│       ├── toolsData.ts          ← AI tools directory (~55 tools)
-│       ├── data.ts               ← Use-case categories, filters, LLM map
-│       ├── learningPathsData.ts  ← 4 learning paths
-│       ├── resourcesData.ts      ← ~43 developer resources
-│       ├── claudeData.ts         ← Claude models / Anthropic products
-│       └── i18n.ts               ← UI strings (EN/PT-BR)
+│   ├── app/                        # Next.js pages — one folder = one URL route
+│   │   ├── page.tsx                # Home (/) — "use client"
+│   │   ├── layout.tsx              # Root layout + global metadata + PWA manifest
+│   │   ├── globals.css             # Global styles and Tailwind base
+│   │   ├── sitemap.ts              # Auto-generated sitemap.xml
+│   │   ├── robots.ts               # robots.txt
+│   │   ├── news/page.tsx
+│   │   ├── tools/page.tsx + [slug]/page.tsx
+│   │   ├── prompts/[slug]/page.tsx # Individual prompt pages (SSG)
+│   │   ├── learn/page.tsx
+│   │   ├── resources/page.tsx
+│   │   ├── ai-labs/page.tsx
+│   │   ├── claude/page.tsx
+│   │   ├── concepts/
+│   │   │   ├── page.tsx            # Server component — exports SEO metadata
+│   │   │   └── ConceptsClient.tsx  # "use client" — actual UI
+│   │   ├── ai-history/
+│   │   │   ├── page.tsx            # Server component — exports SEO metadata
+│   │   │   └── AIHistoryClient.tsx # "use client" — actual UI
+│   │   └── google-ai-tools/
+│   │       ├── page.tsx            # Server component — exports SEO metadata
+│   │       └── GoogleAiToolsClient.tsx
+│   │
+│   ├── components/                 # All React components (39 total)
+│   │   ├── Header.tsx              # Top nav with 3 dropdown groups + ⌘K
+│   │   ├── HeroMinimal.tsx         # Full-screen hero with particle vortex + search
+│   │   ├── SiteHub.tsx             # 7 destination cards with live counts
+│   │   ├── ThePulse.tsx            # Tabs: AI Signals / New Prompts / Learn
+│   │   ├── PersonaEntry.tsx        # Role-based routing into prompt library
+│   │   ├── CategoryBrowser.tsx     # Main prompt browser (3D carousel + panels)
+│   │   ├── CategoryCarousel3D.tsx  # Three.js 3D category carousel (desktop only)
+│   │   ├── FeaturedCollections.tsx # Curated prompt collections
+│   │   ├── ExpandedCard.tsx        # Prompt detail panel + related prompts rail
+│   │   ├── UseCaseCard.tsx         # Prompt card component
+│   │   ├── CommandPalette.tsx      # ⌘K unified search (all 7 content types)
+│   │   ├── UniversalSearch.tsx     # Inline search results on landing page
+│   │   ├── AINewsPage.tsx          # /news page
+│   │   ├── AIHistoryTimeline.tsx   # Three.js interactive history timeline
+│   │   ├── NewsTicker.tsx          # Scrolling ticker in hero bottom bar
+│   │   └── ...                     # See src/components/ for full list
+│   │
+│   ├── context/
+│   │   ├── LanguageContext.tsx     # EN / PT-BR toggle
+│   │   └── SavedPromptsContext.tsx # Saved prompts (localStorage)
+│   │
+│   └── lib/                        # All content data — edit here to update content
+│       ├── data.ts                 # USE_CASES, BASE_PATH, CAT_ACCENT, DIFF_COLOR
+│       ├── newsData.ts             # AI_NEWS — 220+ items (primary daily-update target)
+│       ├── toolsData.ts            # AI_TOOLS — 55 tools
+│       ├── concepts.ts             # CONCEPTS — 30+ AI concepts
+│       ├── learningPathsData.ts    # LEARNING_PATHS — 4 paths
+│       ├── resourcesData.ts        # RESOURCES — 43 developer resources
+│       ├── claudeData.ts           # Claude models and Anthropic products
+│       ├── timelineData.ts         # MILESTONES — AI history events
+│       ├── videoData.ts            # AI_VIDEOS — curated YouTube content
+│       ├── collections.ts          # COLLECTIONS — curated prompt kits
+│       ├── aiLabsData.ts           # AI_LABS — lab profiles
+│       ├── searchIndex.ts          # Fuse.js unified search index (7 types)
+│       ├── i18n.ts                 # UI strings in EN and PT-BR
+│       ├── dateUtils.ts            # relativeDate, formatDate, isNew
+│       ├── launchInAI.ts           # "Open in Claude/ChatGPT/Gemini" URL builder
+│       └── hooks.ts                # Shared React hooks
+│
 ├── src/data/
-│   └── useCases.json         ← All prompt use cases (149 items)
+│   └── useCases.json               # 149 prompt use cases (validate before committing)
+│
 ├── public/
-│   └── feed.xml              ← Auto-generated RSS (do not edit manually)
+│   ├── feed.xml                    # RSS feed — auto-generated, do not edit manually
+│   ├── manifest.json               # PWA manifest for installability
+│   ├── tesseract-hero.webp         # OG image (1200×630)
+│   ├── tesseract-mark.svg          # Logo / apple-touch-icon
+│   └── io-texture.png              # Texture used by CategoryCarousel3D
+│
 ├── scripts/
-│   ├── generate-rss.ts       ← Runs automatically before every build (prebuild hook)
-│   └── validate-data.mjs     ← Validates useCases.json schema
-├── dist/                     ← ⚠️ BUILD OUTPUT — never commit, never push to main
-├── CLAUDE.md                 ← AI assistant: news update procedure + data file map
-├── USE_CASE_SCHEMA.md        ← Schema reference for adding prompt use cases
-└── next.config.mjs           ← Static export config (output: 'export', distDir: 'dist')
+│   ├── generate-rss.ts             # Prebuild hook → writes public/feed.xml
+│   ├── validate-data.mjs           # Schema-checks useCases.json
+│   ├── update-news.mjs             # AI-assisted news update helper
+│   └── enrich.py                   # Data enrichment utility
+│
+├── dist/                           # ⚠️ BUILD OUTPUT — never commit, never push
+├── CLAUDE.md                       # AI assistant: news procedure + content guidelines
+└── USE_CASE_SCHEMA.md              # Schema reference for prompt use cases
 ```
 
 ---
 
 ## Available scripts
 
-| Command | What it does | When to use |
-|---------|-------------|-------------|
-| `npm run dev` | Start dev server with hot reload | Local development only |
-| `npm run build` | Full production build → `dist/` | Before deploying or to verify changes |
-| `npm run typecheck` | TypeScript check, no output | Catch type errors quickly |
-| `npm run validate-data` | Validate `useCases.json` schema | After editing use cases |
-| `npm run lint` | ESLint | Before committing code changes |
-| `npm run check` | validate-data + typecheck + lint + build | **Run before every push** |
+| Command | What it does |
+|---------|-------------|
+| `npm run dev` | Dev server with hot reload at `localhost:3000` |
+| `npm run build` | Production build → `dist/` (also regenerates `feed.xml`) |
+| `npm run typecheck` | TypeScript check without emitting files |
+| `npm run validate-data` | Schema-check `useCases.json` |
+| `npm run check` | **validate-data + typecheck + build** — run before every push |
 
-### The safe push checklist
 ```bash
-npm run check     # must pass with zero errors
-git add <files>   # stage specific files — never `git add -A` blindly
+# Pre-push checklist
+npm run check          # must pass — zero errors
+git add <specific files>
 git commit -m "..."
 git push
 ```
 
 ---
 
-## ⚠️ Rules — must follow exactly
-
-These are non-negotiable. Breaking them causes silent production failures that are hard to debug.
+## Non-negotiable rules
 
 ### Rule 1 — Never commit `dist/`
-`dist/` is build output deployed separately to `gh-pages`. It is in `.gitignore`. Never override this, never `git add dist/`.
+`dist/` is build output. It is in `.gitignore`. Never override this.
 
-### Rule 2 — Always rebuild before deploying
-`npm run dev` and `npm run build` **both write to `dist/`**. Running `npm run dev` corrupts the production static export (different build IDs, missing chunk files). If you ran `npm run dev` for any reason, run `npm run build` again before deploying.
+### Rule 2 — Build order matters
+Running `npm run dev` then deploying corrupts production. Always run `npm run build` before deploying.
 
-**Correct order:**
 ```
-edit code → npm run check → npm run build → deploy
-```
-**Wrong order (corrupts dist/):**
-```
-edit code → npm run dev → deploy   ← NEVER DO THIS
+✅  edit → npm run check → npm run build → deploy
+❌  edit → npm run dev → deploy  ← corrupts dist/
 ```
 
-### Rule 3 — Static export constraints
-`output: 'export'` in `next.config.mjs` means:
-- No `getServerSideProps`, no `getServerProps`, no API routes (`/api/*`)
-- No `fetch()` at render time — all data must be imported statically at build time
-- No middleware, no edge functions
+### Rule 3 — Static export only
+No `getServerSideProps`, no `/api/*` routes, no `fetch()` at render time. All data must be TypeScript imports compiled at build time.
 
 ### Rule 4 — Tailwind classes must be literal strings
 No dynamic construction: ~~`` `text-${color}-500` ``~~  
-Write the full class: `text-red-500`, `text-blue-500`, etc.  
-Tailwind purges unused classes at build time by scanning source text — dynamic strings are invisible and produce missing styles in production.
+Write the full class: `"text-red-500"`, `"text-blue-500"`. Tailwind scans source text — dynamic strings produce missing styles in production.
 
 ### Rule 5 — Never combine `.btn` with `hidden`
-The `.btn` CSS class has higher specificity than Tailwind's `hidden`. The element will remain visible. Use conditional rendering (`{show && <Button />}`) instead.
+`.btn` has higher CSS specificity than Tailwind's `hidden`. Use conditional rendering: `{show && <Button />}`.
 
-### Rule 6 — All internal links must use `BASE_PATH`
+### Rule 6 — Always use `BASE_PATH` for internal links
 ```ts
 import { BASE_PATH } from "@/lib/data";
-// then: href={`${BASE_PATH}/news`}
+href={`${BASE_PATH}/news/`}   // ✅
+href="/sintra-ai/news/"       // ❌ breaks in dev
 ```
-`BASE_PATH = "/sintra-ai"` in production, `""` in dev. Hardcoding `/sintra-ai/` breaks local development.
 
-### Rule 7 — Stage specific files, not everything
+### Rule 7 — "use client" pages need a server wrapper for SEO metadata
+Next.js prohibits `export const metadata` in client components. Pattern:
+```
+src/app/your-page/
+  page.tsx              ← server component — exports metadata, renders <YourPageClient />
+  YourPageClient.tsx    ← "use client" — all interactive UI here
+```
+See `concepts/`, `ai-history/`, `google-ai-tools/` as working examples.
+
+### Rule 8 — Stage specific files only
 ```bash
-git add src/lib/newsData.ts public/feed.xml   # ✅ specific
-git add -A                                     # ⚠️ risky — check what this includes
+git add src/lib/newsData.ts public/feed.xml   # ✅
+git add -A                                     # ⚠️ verify carefully first
 ```
 
 ---
 
-## Content layer — how to update each section
+## Content updates
 
-No code changes are needed to add content. All content lives in data files under `src/lib/` and `src/data/`.
+All content lives in data files. No code changes needed to add items.
 
-| Section | File to edit | Rebuild needed |
-|---------|-------------|----------------|
-| Prompt library | `src/data/useCases.json` | Yes |
-| News timeline | `src/lib/newsData.ts` | Yes |
-| Tools directory | `src/lib/toolsData.ts` | Yes |
-| Learning paths | `src/lib/learningPathsData.ts` | Yes |
-| Developer resources | `src/lib/resourcesData.ts` | Yes |
-| Claude products | `src/lib/claudeData.ts` | Yes |
-| UI text (EN/PT-BR) | `src/lib/i18n.ts` | Yes |
+### Adding a news item
 
-### Adding a prompt use case
-
-1. Open `src/data/useCases.json`
-2. Add a new object following the schema in `USE_CASE_SCHEMA.md`
-3. Verify: `npm run validate-data`
-4. Build: `npm run build`
-5. Commit: `git add src/data/useCases.json public/feed.xml && git commit -m "feat: add use case — [title]"`
-
-Key schema fields (full spec in `USE_CASE_SCHEMA.md`):
-```json
-{
-  "domain": "Communication & Writing",
-  "skill_level": "INTERMEDIATE",
-  "title": "Action-oriented title",
-  "prompt": "Full prompt with [placeholder] for user values",
-  "tags": ["lowercase", "kebab-case"],
-  "outcome": "One sentence describing what the user gets.",
-  "inputs": [{ "label": "placeholder" }],
-  "tools": ["Notion", "Gmail"],
-  "output_kind": "templates",
-  "sample_output": "Realistic markdown example of the AI response"
-}
-```
-
-Valid `domain` values: `"Quick Wins"` · `"Personal Productivity"` · `"Communication & Writing"` · `"Research & Analysis"` · `"Finance & FP&A"` · `"Data & Analytics"` · `"Software Development"` · `"Creative AI"` · `"Game Development"`
-
-### Adding news items
-
-1. Open `src/lib/newsData.ts`
-2. Append before the closing `];` of `AI_NEWS`:
+Append to `AI_NEWS` in `src/lib/newsData.ts` before the closing `];`:
 
 ```ts
 {
-  id: "unique-kebab-case-id",       // must be globally unique in the array
-  date: "May 2026",                 // "Mon YYYY" format
+  id: "unique-kebab-case-id",       // globally unique across all items
+  date: "May 2026",                 // "Mon YYYY"
   dateNum: 202605,                  // YYYYMM — primary sort key
   dateDay: 25,                      // optional: day for intra-month ordering
   title: "Concise factual title",
-  summary:
-    "2–3 sentences. Factual. Specific numbers. No hype. In English.",
+  summary: "2–3 sentences. Factual. Specific numbers/benchmarks. No hype.",
   tags: ["Company", "Feature", "Topic"],
   significance: "landmark" | "major" | "notable",
   provider: "Company Name",
   providerColor: "#hexcolor",
   url: "https://direct-link-to-source",
   country: "BR",                    // optional: "BR" or "SE" for regional items
-  why_it_matters: "One practitioner-level sentence.",   // optional
-  what_to_try: "One concrete action the reader can take today.",  // optional
+  why_it_matters: "...",            // optional
+  what_to_try: "...",               // optional
 },
 ```
 
-Significance guide:
-- `landmark` — changes the trajectory of the field (maximum 3 per year)
-- `major` — significant, every AI practitioner should know
-- `notable` — worth tracking but not world-changing
+Significance: `landmark` (≤3/year, changes the field) · `major` (practitioners must know) · `notable` (worth tracking)
 
-Common provider colours: OpenAI `#10a37f` · Anthropic `#d97706` · Google `#4285f4` · Meta `#0866ff` · Microsoft `#0078d4` · Apple `#555555` · Mistral `#ff7000` · DeepSeek `#1a73e8` · xAI `#000000` · Nvidia `#76b900`
+Provider colours: OpenAI `#10a37f` · Anthropic `#d97706` · Google `#4285f4` · Meta `#0866ff` · Microsoft `#0078d4` · Mistral `#ff7000` · DeepSeek `#1a73e8` · xAI `#000000` · Nvidia `#76b900`
 
-3. Build: `npm run build` (also regenerates `public/feed.xml`)
-4. Commit: `git add src/lib/newsData.ts public/feed.xml && git commit -m "chore: news update $(date -u +%Y-%m-%d)"`
+```bash
+npm run build
+git add src/lib/newsData.ts public/feed.xml
+git commit -m "chore: news update $(date -u +%Y-%m-%d)"
+```
+
+### Adding a prompt use case
+
+See `USE_CASE_SCHEMA.md` for the full field spec.
+
+```bash
+# 1. Edit src/data/useCases.json
+npm run validate-data   # must pass
+npm run build
+git add src/data/useCases.json public/feed.xml
+git commit -m "feat: add use case — [title]"
+```
 
 ---
 
 ## Deployment
 
-The site deploys to the `gh-pages` branch using git plumbing — no npm package required. This approach puts `dist/` contents at the **root** of the git tree, which is what GitHub Pages requires to serve files at `/sintra-ai/`.
+The site deploys to `gh-pages` using git plumbing — `dist/` contents are committed as the root of the git tree, which is what GitHub Pages requires.
 
-### Full deploy sequence
 ```bash
-# Step 1: build
+# 1. Build
 npm run build
 
-# Step 2: deploy (run as one block)
-git fetch origin gh-pages
-TMPDIR=$(mktemp -d)
-export GIT_INDEX_FILE="$TMPDIR/index"
-git --work-tree=dist add -f -A
-TREE=$(git write-tree)
-unset GIT_INDEX_FILE
-PARENT=$(git rev-parse origin/gh-pages)
+# 2. Deploy (run as one block)
+TREE=$(git --work-tree=dist add -f -A && git --work-tree=dist write-tree)
+PARENT=$(git rev-parse refs/remotes/origin/gh-pages)
 COMMIT=$(echo "deploy: $(date -u +%Y-%m-%d)" | git commit-tree $TREE -p $PARENT)
 git push origin $COMMIT:refs/heads/gh-pages
-rm -rf $TMPDIR
-echo "Deployed: $COMMIT"
+git reset HEAD    # unstage dist files from working index
 ```
 
-GitHub Pages propagates in 1–3 minutes after the push.
-
-### Why `git --work-tree=dist add -f -A` and not `git add dist/`?
-- `git add dist/` stages files under a `dist/` subdirectory in the tree → GitHub Pages serves a 404 because `index.html` is at `dist/index.html` instead of `index.html`
-- `git --work-tree=dist add -f -A` stages files with `dist/` as the root → `index.html` is at the root → Pages serves correctly
+Pages propagates in 1–3 minutes. `git reset HEAD` cleans up the index so `git status` stays clean.
 
 ---
 
-## Branch workflow
+## Component architecture
 
+### Landing page render order
 ```
-main                      ← stable, always deployable
-└── feature/your-task     ← branch from main, PR back to main
-```
-
-```bash
-git checkout main
-git pull origin main
-git checkout -b feature/your-task
-# ... make changes ...
-npm run check                        # must pass
-git push -u origin feature/your-task
-# open PR on GitHub → review → merge to main → deploy
-```
-
-**Never push directly to `main`** — always via a PR so changes can be reviewed before going live.
-
----
-
-## Common task recipes
-
-### Add news + deploy
-```bash
-# 1. Edit src/lib/newsData.ts (add items before ];)
-npm run build
-git add src/lib/newsData.ts public/feed.xml
-git commit -m "chore: news update $(date -u +%Y-%m-%d)"
-git push
-# then run the deploy block above
+Header
+HeroMinimal          ← particle vortex, search bar, news ticker at bottom
+  └─ UniversalSearch ← inline results for hero search (Fuse.js, 7 types)
+SiteHub              ← 7 destination cards with live data counts
+ThePulse             ← tabs: AI Signals (news) / New Prompts / Learn
+PersonaEntry         ← role picker routing to relevant category
+CategoryBrowser      ← main prompt library
+  ├─ desktop: CategoryCarousel3D   ← Three.js 3D selector
+  ├─ mobile:  2D category grid     ← via useIsMobile() hook
+  └─ ExpandedCard                  ← detail panel + RelatedRail (tag-matched prompts)
+FeaturedCollections  ← curated prompt kits
+Footer
 ```
 
-### Add use cases + deploy
-```bash
-# 1. Edit src/data/useCases.json
-npm run validate-data   # schema check
-npm run build
-git add src/data/useCases.json public/feed.xml
-git commit -m "feat: add N use cases — [category]"
-git push
-# then run the deploy block above
-```
+### Unified search
+`src/lib/searchIndex.ts` exports a single Fuse.js index over 7 types. Both `CommandPalette` (⌘K) and `UniversalSearch` call `searchAll(query)` from it.
 
-### Fix a component + deploy
-```bash
-# 1. Edit src/components/SomeComponent.tsx
-npm run dev             # preview locally at localhost:3000
-# verify the fix in browser
-npm run check           # typecheck + lint + build — MUST pass
-# note: check already runs build, so dist/ is now correct
-git add src/components/SomeComponent.tsx
-git commit -m "fix: [description]"
-git push
-# then run the deploy block above
-```
+### Navigation groups (Header.tsx)
+- **Discover** → AI News · AI History · AI Labs
+- **Learn** → Learning Paths · Resources · Concepts
+- **Reference** → AI Tools · Claude · Google AI
 
 ---
 
@@ -311,31 +316,33 @@ git push
 
 | Symptom | Cause | Fix |
 |---------|-------|-----|
-| GitHub Pages shows 404 | Files deployed under `dist/` subdirectory | Use `git --work-tree=dist add -f -A`, not `git add dist/` |
-| Deployed site has wrong/missing styles | `dist/` was generated by `npm run dev` | Run `npm run build`, redeploy |
-| Component styles missing in production | Dynamic Tailwind class construction | Replace with full literal class strings |
-| TypeScript build error after data edit | Schema mismatch | Run `npm run typecheck` to locate the issue |
-| `npm run validate-data` fails | Missing required field or wrong type in `useCases.json` | Check `USE_CASE_SCHEMA.md` for the field spec |
-| News item not showing in filtered view | Duplicate `id` in `newsData.ts` | Every `id` must be unique across all items |
-| Internal link broken in production but fine locally | Missing `BASE_PATH` prefix | Use `${BASE_PATH}/path` from `@/lib/data` |
-| Merge conflict on `dist/` | Someone committed `dist/` to source branch | Remove `dist/` from the commit, ensure `.gitignore` is respected |
+| GitHub Pages 404 | Files at `dist/index.html` not root | Use `git --work-tree=dist add -f -A` |
+| Wrong styles in production | `dist/` built with `npm run dev` | Re-run `npm run build`, redeploy |
+| Missing Tailwind classes | Dynamic class construction | Use full literal class strings |
+| TypeScript error after data edit | Schema mismatch | `npm run typecheck` to find it |
+| `validate-data` fails | Bad field in `useCases.json` | Check `USE_CASE_SCHEMA.md` |
+| News item not appearing | Duplicate `id` | Every `id` must be globally unique |
+| Internal link 404 in production | Hardcoded path without `BASE_PATH` | `${BASE_PATH}/path/` from `@/lib/data` |
+| Page missing OG/Twitter metadata | `"use client"` page.tsx | Add server wrapper + `*Client.tsx` split |
+| `git status` dirty after deploy | Deploy script left dist staged | Run `git reset HEAD` |
 
 ---
 
-## Key files quick reference
+## Quick reference
 
-| Task | File(s) |
-|------|---------|
+| Task | File |
+|------|------|
 | Add news | `src/lib/newsData.ts` + `public/feed.xml` (auto) |
 | Add use case | `src/data/useCases.json` |
 | Add tool | `src/lib/toolsData.ts` |
-| Change homepage hero text | `src/lib/i18n.ts` + `src/components/HeroMinimal.tsx` |
+| Add AI concept | `src/lib/concepts.ts` |
+| Add history milestone | `src/lib/timelineData.ts` |
+| Change hero text | `src/lib/i18n.ts` + `src/components/HeroMinimal.tsx` |
+| Change nav links | `src/components/Header.tsx` → `NAV_GROUPS` |
+| Change landing hub cards | `src/components/SiteHub.tsx` |
+| Change "The Pulse" tabs | `src/components/ThePulse.tsx` |
 | Change category colours | `src/lib/data.ts` → `CAT_ACCENT` |
-| Change difficulty colours | `src/lib/data.ts` → `DIFF_COLOR` |
-| Add a new page | `src/app/your-route/page.tsx` |
-| Change navigation links | `src/components/Header.tsx` |
-| Change footer | `src/components/Footer.tsx` |
-| Change news page filters | `src/components/AINewsPage.tsx` |
-| Modify prompt card layout | `src/components/UseCaseCard.tsx` |
-| Modify prompt detail modal | `src/components/ExpandedCard.tsx` |
+| Change prompt card layout | `src/components/UseCaseCard.tsx` |
+| Change prompt detail panel | `src/components/ExpandedCard.tsx` |
+| Add a page with SEO | `src/app/route/page.tsx` (server) + `*Client.tsx` |
 | Base path constant | `src/lib/data.ts` → `BASE_PATH` |
