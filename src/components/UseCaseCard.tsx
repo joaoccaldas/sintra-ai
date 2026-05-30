@@ -134,6 +134,11 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
             New
           </span>
         )}
+        {item.confidence === "high" && (
+          <span className="px-1.5 py-0.5 rounded-sm bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-[9px] tracking-[0.12em] uppercase font-mono normal-case">
+            ✓ Verified
+          </span>
+        )}
       </span>
 
       {/* Title */}

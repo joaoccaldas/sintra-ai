@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { ExternalLink, ChevronUp, ChevronDown, Info } from "lucide-react";
 import { BASE_PATH } from "@/lib/data";
+import ModelWizard from "@/components/ModelWizard";
 import {
   AI_MODELS, MODEL_PROVIDERS, TIER_META, SPEED_META,
   type ModelEntry, type ModelTier,
@@ -108,6 +109,8 @@ export default function ModelsClient() {
           Pricing and benchmarks are approximate and change frequently. Always verify at provider docs before production use. Last verified May 2026.
         </p>
       </div>
+
+      <ModelWizard />
 
       {/* Filters */}
       <div className="flex flex-wrap gap-3 mb-6 items-center">
