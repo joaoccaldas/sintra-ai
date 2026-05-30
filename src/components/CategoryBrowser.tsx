@@ -1,551 +1,230 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect, useSyncExternalStore } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { ChevronLeft, ChevronRight, X, ArrowLeft, Search, Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
-import dynamic from "next/dynamic";
-import { USE_CASES, UseCase, DISC_COUNTS, DIFF_COLOR, CAT_ACCENT, matchesUseCase } from "@/lib/data";
+import { Search, X } from "lucide-react";
+import { USE_CASES, UseCase, DISC_COUNTS, matchesUseCase } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
-import RecentlyViewed from "./RecentlyViewed";
-import { useLanguage } from "@/context/LanguageContext";
-import { useSavedPrompts } from "@/context/SavedPromptsContext";
 import { trackRecentlyViewed } from "@/lib/hooks";
 
-const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
-
-function useIsMobile() {
-  return useSyncExternalStore(
-    cb => {
-      const mq = window.matchMedia("(max-width: 767px)");
-      mq.addEventListener("change", cb);
-      return () => mq.removeEventListener("change", cb);
-    },
-    () => window.matchMedia("(max-width: 767px)").matches,
-    () => false,
-  );
-}
-
 const DIFFS = ["all", "beginner", "intermediate", "advanced", "expert"] as const;
-
-const POPULAR_TASKS = [
-  "variance analysis", "meeting notes", "Python script",
-  "executive summary", "data visualization", "competitor research",
-  "forecast model", "cold email",
-];
-
-const PAGE_SIZE = 24;
-
-function SearchResultRow({ item, onOpen, isSaved, onToggleSave }: {
-  item: UseCase;
-  onOpen: (item: UseCase) => void;
-  isSaved: boolean;
-  onToggleSave: (id: number) => void;
-}) {
-  const [copied, setCopied] = useState(false);
-  const catColor = CAT_ACCENT[item.category] || "#9F8CFF";
-  const quickCopy = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    navigator.clipboard?.writeText(item.prompt);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1600);
-  };
-  return (
-    <div className="flex gap-4 py-4 px-4 rounded-xl border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-white/[0.04] transition-all group">
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 mb-1.5">
-          <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: catColor }} />
-          <span className="font-mono text-[9px] tracking-[0.14em] uppercase" style={{ color: catColor }}>{item.category}</span>
-          <span className="text-white/20">·</span>
-          <span className="font-mono text-[9px] text-fg-4 capitalize">{item.difficulty}</span>
-        </div>
-        <h3 className="font-serif text-[17px] leading-[1.18] text-fg-1 mb-1.5 group-hover:text-violet-bright transition-colors">
-          {item.title}
-        </h3>
-        <p className="font-sans text-[13px] text-fg-3 leading-[1.5] line-clamp-2">
-          {item.outcome || item.desc}
-        </p>
-      </div>
-      <div className="flex flex-col gap-2 shrink-0 pt-0.5 items-end">
-        <button
-          onClick={quickCopy}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-violet/10 border border-violet/30 font-mono text-[10px] text-violet-bright hover:bg-violet/20 hover:border-violet/60 transition-all whitespace-nowrap"
-        >
-          {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy prompt</>}
-        </button>
-        <div className="flex gap-1.5">
-          <button
-            onClick={e => { e.stopPropagation(); onToggleSave(item.id); }}
-            aria-label={isSaved ? "Remove from saved" : "Save prompt"}
-            className="inline-flex items-center justify-center w-7 h-7 rounded-lg border border-white/[0.08] text-fg-4 hover:text-violet-bright hover:border-violet/40 transition-all"
-          >
-            {isSaved ? <BookmarkCheck size={11} className="text-violet-bright" /> : <Bookmark size={11} />}
-          </button>
-          <button
-            onClick={() => onOpen(item)}
-            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-white/[0.08] font-mono text-[10px] text-fg-4 hover:text-fg-2 hover:border-white/20 transition-all whitespace-nowrap"
-          >
-            Details
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
+const PAGE_SIZE = 12;
 
 interface Props {
   heroSearch?: { query: string; version: number };
 }
 
 export default function CategoryBrowser({ heroSearch }: Props) {
-  const { t } = useLanguage();
-  const { isSaved, toggle: toggleSaved } = useSavedPrompts();
   const prefersReducedMotion = useReducedMotion();
-  const isMobile = useIsMobile();
-  const [selectedIdx, setSelectedIdx]   = useState(0);
-  const [browsingIdx, setBrowsingIdx]   = useState<number | null>(null);
+
+  const [selectedCat, setSelectedCat] = useState<string>(CAROUSEL_ITEMS[0].id);
+  const [search, setSearch]           = useState("");
+  const [diff, setDiff]               = useState<typeof DIFFS[number]>("all");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
   const [expandedItems, setExpandedItems] = useState<UseCase[]>([]);
 
-  // Global search — seeded by hero search prop
-  const [globalSearch, setGlobalSearch] = useState("");
+  // Seed from hero search
   useEffect(() => {
-    if (heroSearch?.query) setGlobalSearch(heroSearch.query);
+    if (heroSearch?.query) setSearch(heroSearch.query);
   }, [heroSearch?.version]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Panel search/filter state
-  const [panelSearch, setPanelSearch]   = useState("");
-  const [panelDiff, setPanelDiff]       = useState<string>("all");
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-
-  const CARD_VARIANTS = useMemo(() => ({
-    hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 24, scale: prefersReducedMotion ? 1 : 0.97 },
-    show: (i: number) => ({
-      opacity: 1, y: 0, scale: 1,
-      transition: prefersReducedMotion
-        ? { duration: 0.1 }
-        : { duration: 0.35, delay: Math.min(i, 12) * 0.045, ease: [0.22, 1, 0.36, 1] as const },
-    }),
-    exit: { opacity: 0, scale: prefersReducedMotion ? 1 : 0.95, transition: { duration: prefersReducedMotion ? 0.1 : 0.15 } },
-  }), [prefersReducedMotion]);
-
-  const selected  = CAROUSEL_ITEMS[selectedIdx];
-  const browsing  = browsingIdx !== null ? CAROUSEL_ITEMS[browsingIdx] : null;
-
-  // ── URL hash deep-linking ────────────────────────────────────────────────────
+  // URL hash deep-linking
   useEffect(() => {
     const hash = window.location.hash.slice(1);
-    // Use case permalink: #uc-{id}
     if (hash.startsWith("uc-")) {
       const ucId = parseInt(hash.slice(3), 10);
       const uc = USE_CASES.find(u => u.id === ucId);
       if (uc) {
-        const catIdx = CAROUSEL_ITEMS.findIndex(c => c.id === uc.category);
-        if (catIdx >= 0) { setSelectedIdx(catIdx); setBrowsingIdx(catIdx); }
+        setSelectedCat(uc.category);
         setExpanded(uc);
         setExpandedItems(USE_CASES.filter(u => u.category === uc.category));
         trackRecentlyViewed({ id: uc.id, slug: uc.slug, title: uc.title, category: uc.category });
       }
       return;
     }
-    // Category panel deep-link: #writing, #coding, etc.
-    const idx = CAROUSEL_ITEMS.findIndex(c => c.id === hash);
-    if (idx >= 0) {
-      setSelectedIdx(idx);
-      setBrowsingIdx(idx);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (browsingIdx !== null) {
-      window.history.replaceState(null, "", `#${CAROUSEL_ITEMS[browsingIdx].id}`);
-    }
-    // Don't reset to #explore on close — let the section anchor remain
-  }, [browsingIdx]);
-
-  // Sync use case permalink in URL
-  useEffect(() => {
-    if (expanded) {
-      window.history.replaceState(null, "", `#uc-${expanded.id}`);
-    }
-  }, [expanded]);
-
-  // ── Global search results — uses shared matchesUseCase helper ───────────────
-  const globalResults = useMemo(() => {
-    if (!globalSearch.trim()) return [];
-    return USE_CASES.filter(c => matchesUseCase(c, globalSearch));
-  }, [globalSearch]);
-
-  // ── Cases for current browsing category ─────────────────────────────────────
-  const cases = useMemo(
-    () => browsing ? USE_CASES.filter(u => u.category === browsing.id) : [],
-    [browsing]
-  );
-
-  // Filtered cases (search + difficulty)
-  // Panel search uses the same matchesUseCase helper as global search
-  const filteredCases = useMemo(() => {
-    return cases.filter(c => {
-      if (panelDiff !== "all" && c.difficulty !== panelDiff) return false;
-      if (panelSearch && !matchesUseCase(c, panelSearch)) return false;
-      return true;
-    });
-  }, [cases, panelSearch, panelDiff]);
-
-  // Persona selector routing
-  useEffect(() => {
-    const fn = (e: Event) => {
-      const persona = (e as CustomEvent).detail;
-      const idx = CAROUSEL_ITEMS.findIndex(c => c.id === persona.category);
-      if (idx >= 0) {
-        setSelectedIdx(idx);
-        if (persona.region) setPanelSearch(persona.region === "brazil" ? "brasil" : persona.region);
-      }
-    };
-    window.addEventListener("sintra:persona", fn);
-    return () => window.removeEventListener("sintra:persona", fn);
+    const match = CAROUSEL_ITEMS.findIndex(c => c.id === hash);
+    if (match >= 0) setSelectedCat(CAROUSEL_ITEMS[match].id);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Reset filters and pagination when panel opens or filters change
+  // Update URL when category changes (only when not searching)
   useEffect(() => {
-    if (browsingIdx !== null) {
-      setPanelSearch("");
-      setPanelDiff("all");
-      setVisibleCount(PAGE_SIZE);
+    if (!search.trim()) {
+      window.history.replaceState(null, "", `#${selectedCat}`);
     }
-  }, [browsingIdx]);
+  }, [selectedCat]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [panelSearch, panelDiff]);
+  // Reset pagination on filter change
+  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [selectedCat, search, diff]);
 
-  const prev = () => setSelectedIdx(i => (i - 1 + CAROUSEL_ITEMS.length) % CAROUSEL_ITEMS.length);
-  const next = () => setSelectedIdx(i => (i + 1) % CAROUSEL_ITEMS.length);
+  const isSearching = search.trim().length > 0;
 
-  // Single click selects AND opens the browse panel immediately (consistent with chip rail)
-  const handleSelect = useCallback((idx: number) => {
-    setSelectedIdx(idx);
-    setBrowsingIdx(idx);
-  }, []);
+  const filtered = useMemo(() => {
+    const base = isSearching
+      ? USE_CASES.filter(u => matchesUseCase(u, search))
+      : USE_CASES.filter(u => u.category === selectedCat);
+    return diff === "all" ? base : base.filter(u => u.difficulty === diff);
+  }, [selectedCat, search, diff, isSearching]);
 
-  const closeBrowsing = () => setBrowsingIdx(null);
+  const visible = filtered.slice(0, visibleCount);
+  const hasMore = visibleCount < filtered.length;
 
-  const handleOpenExpanded = useCallback((item: UseCase) => {
+  const openCard = useCallback((item: UseCase) => {
+    const ctx = isSearching ? filtered : USE_CASES.filter(u => u.category === item.category);
     setExpanded(item);
-    setExpandedItems(filteredCases);
+    setExpandedItems(ctx);
     trackRecentlyViewed({ id: item.id, slug: item.slug, title: item.title, category: item.category });
-  }, [filteredCases]);
+    window.history.replaceState(null, "", `#uc-${item.id}`);
+  }, [filtered, isSearching]);
+
+  const clearFilters = useCallback(() => { setSearch(""); setDiff("all"); }, []);
 
   return (
-    <section id="explore" className="relative bg-void overflow-hidden">
-      <RecentlyViewed onOpen={item => { setExpanded(item); setExpandedItems(USE_CASES.filter(u => u.category === item.category)); }} allItems={USE_CASES} />
-      {/* ── Quick-access task chips (replaces duplicate search bar) ──── */}
-      <div className="relative z-20 max-w-2xl mx-auto px-6 pt-10 pb-0">
-        {!globalSearch && (
-          <div>
-            <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase block mb-2">Quick explore:</span>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
-              {POPULAR_TASKS.map(task => (
-                <button
-                  key={task}
-                  onClick={() => setGlobalSearch(task)}
-                  className="font-mono text-[10px] px-2.5 py-1.5 rounded-full border border-white/[0.1] text-fg-3 hover:text-fg-1 hover:border-violet/40 hover:bg-violet/[0.07] transition-all capitalize text-center"
-                >
-                  {task}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+    <section className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-4">
 
-        {globalSearch && (
-          <div className="flex items-center gap-3 mt-2 ml-0.5">
-            <p className="font-mono text-[11px] text-fg-4">
-              {globalResults.length} result{globalResults.length !== 1 ? "s" : ""} for &ldquo;{globalSearch}&rdquo;
-            </p>
-            <button onClick={() => setGlobalSearch("")} className="font-mono text-[11px] text-violet-bright hover:underline flex items-center gap-1">
-              <X size={10} /> Clear
-            </button>
-          </div>
-        )}
+      {/* ── Section header ─────────────────────────────────────────── */}
+      <div className="flex items-center gap-3 mb-8">
+        <span className="w-9 h-px bg-gradient-to-r from-transparent to-violet-bright" />
+        <span className="eyebrow violet">Prompt Library</span>
+        <span className="flex-1 h-px bg-hairline" />
+        <span className="font-mono text-[10px] text-fg-4">{USE_CASES.length} prompts</span>
       </div>
 
-      {/* ── Global search results (compact copy-first rows) ──────────── */}
-      <AnimatePresence>
-        {globalSearch.trim() && (
-          <motion.div
-            key="global-results"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 8 }}
-            transition={{ duration: prefersReducedMotion ? 0.1 : 0.22 }}
-            className="relative z-10 max-w-2xl mx-auto px-6 pb-16 mt-4"
-          >
-            {globalResults.length === 0 ? (
-              <div className="text-center py-16">
-                <p className="font-mono text-[13px] text-fg-4">No use cases match &ldquo;{globalSearch}&rdquo;.</p>
-                <button
-                  onClick={() => setGlobalSearch("")}
-                  className="mt-3 font-mono text-[11px] text-violet-bright hover:underline"
-                >
-                  Clear search
-                </button>
-              </div>
-            ) : (
-              <div className="flex flex-col gap-2">
-                {globalResults.map(item => (
-                  <SearchResultRow
-                    key={item.id}
-                    item={item}
-                    isSaved={isSaved(item.id)}
-                    onToggleSave={toggleSaved}
-                    onOpen={item => { setExpanded(item); setExpandedItems(globalResults); }}
-                  />
-                ))}
-              </div>
-            )}
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* ── Category tab rail ──────────────────────────────────────── */}
+      <div className="overflow-x-auto scrollbar-none -mx-6 px-6 md:mx-0 md:px-0 mb-5">
+        <div className="flex gap-1.5 min-w-max">
+          {CAROUSEL_ITEMS.map(cat => {
+            const active = cat.id === selectedCat && !isSearching;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => { setSelectedCat(cat.id); setSearch(""); }}
+                className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] uppercase px-3.5 py-2 rounded-full border transition-all duration-150 whitespace-nowrap"
+                style={{
+                  background:  active ? "rgba(159,140,255,0.14)" : "transparent",
+                  borderColor: active ? "rgba(159,140,255,0.55)" : "rgba(255,255,255,0.10)",
+                  color:       active ? "#B6A6FF" : "#6b6a8a",
+                }}
+                aria-current={active ? "true" : undefined}
+              >
+                {cat.label}
+                <span className="opacity-50 text-[9px]">{DISC_COUNTS[cat.id] ?? 0}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
 
-      <motion.div
-        initial={prefersReducedMotion ? {} : { opacity: 0, y: 40 }}
-        whileInView={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      >
-        {/* ── 3D Carousel on desktop; 2D grid on mobile ────────────── */}
-        {isMobile ? (
-          <div className="px-6 pt-8 pb-2">
-            <div className="grid grid-cols-3 gap-2">
-              {CAROUSEL_ITEMS.map((item, i) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleSelect(i)}
-                  className="flex flex-col items-center gap-1.5 p-3 rounded-xl border transition-all"
-                  style={{
-                    background:  i === selectedIdx ? "rgba(159,140,255,0.12)" : "rgba(255,255,255,0.02)",
-                    borderColor: i === selectedIdx ? "rgba(159,140,255,0.50)" : "rgba(255,255,255,0.08)",
-                  }}
-                >
-                  <span className="w-3 h-3 rounded-full shrink-0" style={{ background: i === selectedIdx ? "#9F8CFF" : "#4a4860", opacity: 1 }} />
-                  <span className="font-mono text-[9px] tracking-[0.06em] uppercase text-center leading-tight"
-                    style={{ color: i === selectedIdx ? "#B6A6FF" : "#6b6a8a" }}>
-                    {item.label}
-                  </span>
-                </button>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="relative h-[56vh] min-h-[360px] max-h-[520px] w-full">
-            <CategoryCarousel3D selectedIndex={selectedIdx} onSelect={handleSelect} />
-
-            <button onClick={prev} className="carousel-arrow carousel-arrow--left" aria-label="Previous category">
-              <ChevronLeft size={22} />
+      {/* ── Search + difficulty filters ───────────────────────────── */}
+      <div className="flex items-center gap-2 flex-wrap mb-6">
+        <div className="relative flex-1 min-w-[200px] max-w-sm">
+          <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
+          <input
+            type="search"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder={`Search all ${USE_CASES.length} prompts…`}
+            className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
+          />
+          {search && (
+            <button
+              onClick={() => setSearch("")}
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors"
+            >
+              <X size={12} />
             </button>
-            <button onClick={next} className="carousel-arrow carousel-arrow--right" aria-label="Next category">
-              <ChevronRight size={22} />
-            </button>
-          </div>
-        )}
+          )}
+        </div>
 
-        {/* ── Active category label ────────────────────────────────────── */}
-        <div className="relative z-10 text-center py-8 md:py-10 px-6">
+        <div className="flex gap-1.5 flex-wrap">
+          {DIFFS.map(d => (
+            <button
+              key={d}
+              onClick={() => setDiff(d)}
+              className="font-mono text-[10px] tracking-[0.05em] px-3 py-2 rounded-full border transition-all duration-150 capitalize whitespace-nowrap"
+              style={{
+                background:  diff === d ? "rgba(159,140,255,0.12)" : "transparent",
+                borderColor: diff === d ? "rgba(159,140,255,0.50)" : "rgba(255,255,255,0.10)",
+                color:       diff === d ? "#B6A6FF" : "#6b6a8a",
+              }}
+            >
+              {d === "all" ? "All levels" : d}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Result count / clear ──────────────────────────────────── */}
+      {(isSearching || diff !== "all") && (
+        <div className="flex items-center gap-3 mb-4">
+          <span className="font-mono text-[11px] text-fg-4">
+            {filtered.length} result{filtered.length !== 1 ? "s" : ""}
+            {isSearching && <span className="text-fg-3"> for &ldquo;{search}&rdquo;</span>}
+          </span>
+          <button onClick={clearFilters} className="font-mono text-[11px] text-violet-bright hover:underline">
+            Clear
+          </button>
+        </div>
+      )}
+
+      {/* ── Cards ─────────────────────────────────────────────────── */}
+      {filtered.length === 0 ? (
+        <div className="text-center py-24">
+          <p className="font-mono text-[13px] text-fg-4">No prompts match your filters.</p>
+          <button onClick={clearFilters} className="mt-3 font-mono text-[11px] text-violet-bright hover:underline">
+            Clear filters
+          </button>
+        </div>
+      ) : (
+        <>
           <AnimatePresence mode="wait">
             <motion.div
-              key={selected.id}
-              initial={prefersReducedMotion ? {} : { opacity: 0, y: 10 }}
-              animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
-              exit={prefersReducedMotion ? {} : { opacity: 0, y: -10 }}
-              transition={{ duration: 0.3 }}
+              key={`${selectedCat}-${search}-${diff}`}
+              initial={prefersReducedMotion ? {} : { opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.15 }}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
             >
-              <p className="eyebrow violet mb-3">
-                {selected.cosmicName.toUpperCase()}
-              </p>
-              <h2
-                className="font-serif font-light text-[clamp(32px,4.5vw,64px)] leading-[1.03] tracking-[-0.02em] text-fg-1"
-                style={{ textShadow: "0 0 60px rgba(159,140,255,0.20)" }}
-              >
-                {selected.label}
-              </h2>
-              <p className="font-sans text-[15px] text-fg-3 mt-2 max-w-sm mx-auto leading-[1.5]">
-                {selected.essence}
-              </p>
-              <span className="font-mono text-[11px] text-fg-4 tracking-[0.08em] mt-3 block">
-                {String(selectedIdx + 1).padStart(2, "0")} / {String(CAROUSEL_ITEMS.length).padStart(2, "0")}
-                &nbsp;·&nbsp;
-                {t.carousel_use_cases(DISC_COUNTS[selected.id] ?? 0)}
-              </span>
-
-              {/* Explore CTA */}
-              <button
-                onClick={() => setBrowsingIdx(selectedIdx)}
-                className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border font-mono text-[11px] tracking-[0.1em] uppercase transition-all duration-200 text-violet-bright border-violet/40 hover:bg-violet/10"
-              >
-                {t.carousel_explore_cta}
-              </button>
+              {visible.map((item, i) => (
+                <motion.div
+                  key={item.id}
+                  initial={prefersReducedMotion ? {} : { opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: Math.min(i, 8) * 0.04, ease: [0.22, 1, 0.36, 1] as const }}
+                >
+                  <UseCaseCard item={item} onOpen={openCard} />
+                </motion.div>
+              ))}
             </motion.div>
           </AnimatePresence>
 
-          {/* Category chip rail */}
-          <div className="mt-6 pb-1">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:flex md:flex-wrap md:justify-center md:gap-2">
-              {CAROUSEL_ITEMS.map((item, i) => (
-                <button
-                  key={item.id}
-                  onClick={() => { setSelectedIdx(i); setBrowsingIdx(i); }}
-                  className="font-mono text-[10px] tracking-[0.07em] uppercase px-3 py-2 rounded-full border transition-all duration-150 whitespace-nowrap text-center"
-                  style={{
-                    background:  i === selectedIdx ? "rgba(159,140,255,0.14)" : "transparent",
-                    borderColor: i === selectedIdx ? "rgba(159,140,255,0.55)" : "#ffffff15",
-                    color:       i === selectedIdx ? "#B6A6FF" : "#6b6a8a",
-                  }}
-                  aria-current={i === selectedIdx ? "true" : undefined}
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </motion.div>
-
-      {/* ── Domain panel (full-screen overlay) ───────────────────────── */}
-      <AnimatePresence>
-        {browsing && (
-          <motion.div
-            key="domain-panel"
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: "100%" }}
-            animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
-            exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: "100%" }}
-            transition={{ duration: prefersReducedMotion ? 0.15 : 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-[60] bg-void overflow-y-auto"
-            style={{ paddingTop: "env(safe-area-inset-top)" }}
-          >
-            {/* Panel header */}
-            <div
-              className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b border-hairline bg-void/95 backdrop-blur-md"
-              style={{ boxShadow: "0 1px 0 rgba(159,140,255,0.12)" }}
-            >
+          {hasMore && (
+            <div className="flex flex-col items-center gap-1 mt-10">
               <button
-                onClick={closeBrowsing}
-                className="flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] uppercase text-fg-3 hover:text-fg-1 transition-colors"
+                onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
+                className="font-mono text-[11px] tracking-[0.08em] uppercase px-6 py-3 rounded-full border border-white/[0.10] text-fg-3 hover:border-violet/40 hover:text-violet-bright transition-all"
               >
-                <ArrowLeft size={14} /> {t.carousel_back}
+                Show {Math.min(PAGE_SIZE, filtered.length - visibleCount)} more
               </button>
-
-              <div className="text-center">
-                <p className="eyebrow violet">
-                  {browsing.cosmicName}
-                </p>
-                <p className="font-sans text-[13px] font-medium text-fg-1">{browsing.label}</p>
-              </div>
-
-              <button
-                onClick={closeBrowsing}
-                className="w-8 h-8 flex items-center justify-center rounded-full text-fg-3 hover:text-fg-1 hover:bg-white/8 transition-all"
-                aria-label="Close"
-              >
-                <X size={16} />
-              </button>
+              <span className="font-mono text-[10px] text-fg-4">
+                {visibleCount} of {filtered.length}
+              </span>
             </div>
+          )}
+        </>
+      )}
 
-            {/* Accent line */}
-            <div className="h-px w-full" style={{ background: "linear-gradient(90deg, transparent, rgba(159,140,255,0.40), transparent)" }} />
-
-            {/* Search + difficulty filter bar */}
-            <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-4 flex items-center gap-3 flex-wrap border-b border-hairline/50">
-              <div className="relative flex-1 min-w-[180px] max-w-xs">
-                <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
-                <input
-                  type="search"
-                  value={panelSearch}
-                  onChange={e => setPanelSearch(e.target.value)}
-                  placeholder="Search use cases…"
-                  className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-3 py-1.5 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
-                />
-              </div>
-              <div className="flex gap-1.5 flex-wrap">
-                {DIFFS.map(d => (
-                  <button
-                    key={d}
-                    onClick={() => setPanelDiff(d)}
-                    className="font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all duration-150 capitalize"
-                    style={{
-                      background:  panelDiff === d ? (d === "all" ? "#9F8CFF22" : (DIFF_COLOR as Record<string, string>)[d] + "22") : "transparent",
-                      borderColor: panelDiff === d ? (d === "all" ? "#9F8CFF88" : (DIFF_COLOR as Record<string, string>)[d] + "88") : "#ffffff18",
-                      color:       panelDiff === d ? (d === "all" ? "#B6A6FF"   : (DIFF_COLOR as Record<string, string>)[d]) : "#6b6a8a",
-                    }}
-                  >
-                    {d === "all" ? "All levels" : d}
-                  </button>
-                ))}
-              </div>
-              {(panelSearch || panelDiff !== "all") && (
-                <span className="font-mono text-[11px] text-fg-4 ml-auto">
-                  {filteredCases.length} result{filteredCases.length !== 1 ? "s" : ""}
-                </span>
-              )}
-            </div>
-
-            {/* Cards grid */}
-            <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-10 md:py-14">
-              {filteredCases.length === 0 ? (
-                <div className="text-center py-20">
-                  <p className="font-mono text-[13px] text-fg-4">No use cases match your filter.</p>
-                  <button
-                    onClick={() => { setPanelSearch(""); setPanelDiff("all"); }}
-                    className="mt-4 font-mono text-[11px] text-violet-bright hover:underline"
-                  >
-                    Clear filters
-                  </button>
-                </div>
-              ) : (
-                <>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                    <AnimatePresence mode="popLayout" initial={false}>
-                      {filteredCases.slice(0, visibleCount).map((item, i) => {
-                        const featured = i === 0 && filteredCases.length >= 4;
-                        return (
-                          <motion.div
-                            key={item.id}
-                            layout
-                            custom={i}
-                            variants={CARD_VARIANTS}
-                            initial="hidden"
-                            animate="show"
-                            exit="exit"
-                            className={featured ? "sm:col-span-2 lg:col-span-2" : ""}
-                          >
-                            <UseCaseCard
-                              item={item}
-                              onOpen={handleOpenExpanded}
-                              onTagFilter={tag => { closeBrowsing(); setGlobalSearch(tag); }}
-                              isFeatured={featured}
-                            />
-                          </motion.div>
-                        );
-                      })}
-                    </AnimatePresence>
-                  </div>
-                  {visibleCount < filteredCases.length && (
-                    <div className="flex flex-col items-center gap-2 mt-10">
-                      <button
-                        onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
-                        className="font-mono text-[11px] tracking-[0.1em] uppercase px-6 py-2.5 rounded-full border border-violet/40 text-violet-bright hover:bg-violet/10 hover:border-violet/70 transition-all"
-                      >
-                        Load more ({filteredCases.length - visibleCount} remaining)
-                      </button>
-                    </div>
-                  )}
-                </>
-              )}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <ExpandedCard item={expanded} onClose={() => setExpanded(null)} items={expandedItems} />
+      <ExpandedCard
+        item={expanded}
+        onClose={() => {
+          setExpanded(null);
+          window.history.replaceState(null, "", `#${selectedCat}`);
+        }}
+        items={expandedItems}
+      />
     </section>
   );
 }

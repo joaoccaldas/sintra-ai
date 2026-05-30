@@ -459,4 +459,266 @@ It explains why identical AI tools produce wildly different results across teams
     addedAt: "2026-05-24",
     learnMore: "https://www.youtube.com/watch?v=2n41YjR5QfU",
   },
+
+  {
+    id:         "temperature",
+    term:       "Temperature",
+    shortTerm:  "temp",
+    category:   "models",
+    tagline:    "The dial that controls how random or predictable an AI's output is.",
+    icon:       "🌡️",
+    difficulty: 1,
+    body: `**Temperature** is a number — typically between 0 and 2 — that controls how much randomness the model introduces when choosing its next word.
+
+At **temperature 0**, the model always picks the single highest-probability next token. Output is deterministic and focused — ideal for factual Q&A, code generation, and structured data extraction where you want the same answer every time.
+
+At **higher temperatures** (0.7–1.0), the model samples from a wider distribution of likely tokens. Output becomes more varied, creative, and sometimes surprising — better for brainstorming, storytelling, and open-ended generation.
+
+Above **temperature 1.5**, outputs often become incoherent. Most production uses stay between 0 and 1.
+
+Related parameters: **top-p** (nucleus sampling) and **top-k** control similar tradeoffs. Many APIs expose all three; temperature is the most intuitive to adjust first.
+
+**Rule of thumb:** Start at 0 for precise tasks, 0.7 for creative ones.`,
+    analogy: "Imagine a typewriter where 'temperature 0' locks every key to the most-used letter at that point. At higher temperature, adjacent keys become reachable. At temperature 2, you're flailing across the keyboard.",
+    related: ["llm", "tokens", "prompt-engineering"],
+    addedAt: "2026-05-30",
+  },
+
+  {
+    id:         "hallucination",
+    term:       "Hallucination",
+    category:   "fundamentals",
+    tagline:    "When an AI generates confident-sounding facts that are simply wrong.",
+    icon:       "👁️",
+    difficulty: 1,
+    body: `**Hallucination** is when a language model produces output that is fluent and confident but factually incorrect, fabricated, or unsupported by its training data or context.
+
+LLMs generate text by predicting the most plausible next token — they have no internal fact-checker. The model doesn't "know" it's wrong; it's completing a pattern. This produces plausible-sounding citations, statistics, names, and dates that don't exist.
+
+**Common forms:**
+- **Factual errors** — wrong dates, misattributed quotes, invented statistics
+- **Source fabrication** — citing papers, URLs, or people that don't exist
+- **Confident gaps** — answering questions outside its training with false certainty
+- **Intrinsic contradictions** — saying opposite things in the same response
+
+**Mitigation strategies:**
+- Ground the model with retrieval (RAG) — give it real documents to cite
+- Ask it to say "I don't know" when uncertain (works better than it sounds)
+- Lower temperature for factual tasks
+- Request sources and verify them independently
+- Use models with web search or citations for current events`,
+    analogy: "A very confident student who studied hard but misremembers details during the exam — not lying, just pattern-matching to what 'sounds right' based on everything they've read.",
+    related: ["llm", "rag", "prompt-engineering"],
+    addedAt: "2026-05-30",
+  },
+
+  {
+    id:         "system-prompt",
+    term:       "System Prompt",
+    category:   "fundamentals",
+    tagline:    "The hidden instruction that shapes how an AI behaves before you say anything.",
+    icon:       "📋",
+    difficulty: 1,
+    body: `A **system prompt** is a set of instructions given to a model *before* the user conversation begins. It defines the model's persona, constraints, tone, output format, and scope of knowledge.
+
+In the API, it appears as a message with role \`"system"\` (OpenAI) or the \`system\` parameter (Claude). In consumer products like Claude.ai or ChatGPT, it's invisible — already set by the product team.
+
+**What system prompts do:**
+- Set persona: *"You are a concise technical assistant"*
+- Define constraints: *"Only answer questions about cooking. Decline everything else."*
+- Specify format: *"Always respond in JSON with fields: summary, steps, caveats"*
+- Inject context: *"The user's account tier is Pro. Today's date is…"*
+
+**Why it matters for practitioners:**
+When building AI features, the system prompt is your primary control surface. A well-crafted system prompt reduces the need for per-request instructions, improves consistency, and can dramatically change output quality without changing the model.
+
+System prompts are **not foolproof** — users can sometimes override them through prompt injection or jailbreaking techniques.`,
+    analogy: "A job briefing before a contractor walks on site. The contractor (the model) hasn't met the client yet, but already knows: here's the project scope, here's how to communicate, here's what's off-limits.",
+    related: ["prompt-engineering", "llm", "function-calling"],
+    addedAt: "2026-05-30",
+  },
+
+  {
+    id:         "chain-of-thought",
+    term:       "Chain of Thought",
+    shortTerm:  "CoT",
+    category:   "fundamentals",
+    tagline:    "Prompting a model to reason step-by-step before giving its final answer.",
+    icon:       "🔗",
+    difficulty: 2,
+    body: `**Chain of Thought (CoT)** prompting instructs a model to break its reasoning into explicit steps before producing a final answer. This dramatically improves accuracy on multi-step tasks like math, logic puzzles, and complex planning.
+
+**How it works:** Simply adding "Let's think step by step" or "Explain your reasoning before answering" to a prompt causes most modern LLMs to generate intermediate reasoning steps. These steps then inform the final answer, reducing errors that arise from trying to jump directly to a conclusion.
+
+**Variants:**
+- **Zero-shot CoT** — just append "Think step by step" to any prompt
+- **Few-shot CoT** — provide worked examples showing the reasoning process
+- **Self-consistency** — sample multiple CoT chains, take the majority answer
+- **Tree of Thought** — explore multiple reasoning branches simultaneously
+- **Extended thinking** — Claude and some models support a dedicated reasoning phase
+
+**When to use it:**
+Anytime the task requires more than one logical step — arithmetic, multi-condition decisions, code planning, scientific reasoning. For simple factual recall, CoT adds tokens without benefit.
+
+**The tradeoff:** More tokens = more cost and latency, but much higher accuracy on hard problems.`,
+    analogy: "Showing your work in a math exam. The process of writing each step forces you to catch errors you'd miss when calculating in your head.",
+    related: ["prompt-engineering", "llm", "temperature"],
+    addedAt: "2026-05-30",
+    learnMore: "https://arxiv.org/abs/2201.11903",
+  },
+
+  {
+    id:         "multimodal",
+    term:       "Multimodal AI",
+    category:   "models",
+    tagline:    "AI that understands and generates more than one type of media — text, images, audio, or video.",
+    icon:       "🎨",
+    difficulty: 1,
+    body: `**Multimodal AI** refers to models that process or generate multiple types of data (modalities) — most commonly text + images, but increasingly audio, video, documents, and code.
+
+**Input modalities (what the model can receive):**
+- **Vision** — understand photos, screenshots, diagrams, charts (GPT-4o, Claude 3.5+, Gemini)
+- **Audio** — transcribe and understand speech (Whisper, Gemini Live)
+- **Video** — analyze video frames and sequences (Gemini 1.5+)
+- **Documents** — PDFs, spreadsheets, slides with formatting intact
+
+**Output modalities (what the model can generate):**
+- **Text** — all frontier models
+- **Images** — DALL·E, Imagen, Stable Diffusion, Midjourney
+- **Audio/Speech** — ElevenLabs, Gemini Live, GPT-4o voice
+- **Code** — all frontier models, often better than pure-text outputs
+
+**Practical implications:**
+You can now paste a screenshot of an error and ask for a fix, share a chart and ask for insights, or describe an image with a voice note. Products like Claude's Projects and ChatGPT can maintain mixed-media context across a conversation.
+
+The **frontier** in mid-2026: natively multimodal models that take any combination of inputs in a single prompt, with no intermediate conversion step.`,
+    analogy: "The difference between a specialist who only reads reports versus a generalist who can read, listen, watch, and sketch — and respond in whichever format you need.",
+    related: ["llm", "function-calling", "agents"],
+    addedAt: "2026-05-30",
+  },
+
+  {
+    id:         "vector-database",
+    term:       "Vector Database",
+    category:   "tools",
+    tagline:    "A database that stores meaning, not just text — finding similar content by concept rather than keyword.",
+    icon:       "🗄️",
+    difficulty: 2,
+    body: `A **vector database** stores data as high-dimensional numerical vectors (embeddings) and enables fast similarity search — finding items that are *semantically* similar even if they share no keywords.
+
+**How it works:**
+1. Pass text (or images, audio) through an **embedding model** — it outputs a list of ~1,500 numbers representing meaning
+2. Store those numbers in the vector DB alongside the original content
+3. At query time, embed the user's question, then find stored vectors with the smallest geometric distance
+
+The result: search that understands *meaning*, not just string matching. "How do I cancel my subscription?" will surface relevant results even if no document uses the word "cancel."
+
+**Popular vector databases:**
+- **Pinecone** — managed, production-grade
+- **Weaviate** — open-source, hybrid search
+- **Qdrant** — open-source, fast, Rust-based
+- **pgvector** — PostgreSQL extension (add vectors to your existing DB)
+- **Chroma** — lightweight, great for prototyping
+
+**Primary use case:** The retrieval layer in **RAG** (Retrieval-Augmented Generation) pipelines. The vector DB finds relevant document chunks; the LLM reads those chunks and generates an answer.`,
+    analogy: "A librarian who organizes books not by title or author, but by what they're *about* — so asking for 'something like Sapiens but more technical' returns the right shelf.",
+    related: ["embeddings", "rag", "api"],
+    addedAt: "2026-05-30",
+  },
+
+  {
+    id:         "inference",
+    term:       "Inference",
+    category:   "models",
+    tagline:    "The moment a trained model actually runs and generates output.",
+    icon:       "⚡",
+    difficulty: 2,
+    body: `**Inference** is the process of running a trained model to produce output from new input. It's distinct from **training**, which is the expensive, one-time process of teaching the model.
+
+When you send a message to Claude or GPT, you're triggering inference. The model processes your tokens through its billions of parameters and generates a response, one token at a time.
+
+**Key inference concepts:**
+
+**Latency** — time to first token (TTFT). Users notice anything over ~500ms.
+
+**Throughput** — tokens per second. GPT-4o runs at ~100 tok/s; older models at 20–40 tok/s. Matters for streaming long responses.
+
+**Batch inference** — processing many requests at once, more efficient, used for non-real-time jobs (the Claude Batch API cuts costs by ~50%).
+
+**On-device inference** — running small models locally (Phi-3 Mini, Llama 3.2 1B) — no API call, private, lower latency, limited capability.
+
+**Inference cost** — billed per input + output token. Frontier models cost $3–$75 per million tokens; efficient models cost $0.10–$0.40.
+
+**Hardware:** GPUs (NVIDIA H100/H200, AMD MI300X) dominate inference workloads. Google uses custom TPUs. Apple Silicon enables on-device inference via the Neural Engine.`,
+    analogy: "Training is writing a textbook over years. Inference is a student using that textbook to answer a question in seconds.",
+    related: ["llm", "tokens", "fine-tuning"],
+    addedAt: "2026-05-30",
+  },
+
+  {
+    id:         "benchmark",
+    term:       "AI Benchmark",
+    category:   "models",
+    tagline:    "Standardised tests that measure what a model can actually do.",
+    icon:       "📊",
+    difficulty: 2,
+    body: `An **AI benchmark** is a standardised evaluation — a fixed test set with known correct answers — that allows objective comparison between models.
+
+**Key benchmarks in 2026:**
+
+| Benchmark | What it measures |
+|-----------|-----------------|
+| **MMLU** | Broad knowledge across 57 subjects — medicine, law, maths, history |
+| **GPQA** | Graduate-level science questions only PhD experts can reliably answer |
+| **SWE-bench** | Real GitHub issues — can the model write code that fixes the bug? |
+| **AIME** | American Invitational Math Exam — hard competition maths |
+| **HumanEval** | Code generation correctness across standard programming tasks |
+| **HELM** | Holistic multi-task evaluation across safety + capability dimensions |
+| **ARC-AGI** | Abstract visual reasoning tasks humans find easy, models find hard |
+
+**Caveats:**
+- **Contamination** — if benchmark questions appeared in training data, scores are inflated
+- **Saturation** — top models now score 85–90% on MMLU; it no longer differentiates them
+- **Task gap** — scoring 90% on a benchmark ≠ 90% reliability on your specific use case
+- **Benchmark gaming** — labs optimise for popular benchmarks; this doesn't always generalise
+
+**Rule of thumb:** Treat benchmarks as a rough filter. Then build your own eval on tasks that mirror production.`,
+    analogy: "A university entrance exam: useful for ranking applicants, but a 99th-percentile scorer might still be terrible at the specific job you're hiring for.",
+    related: ["llm", "fine-tuning", "inference"],
+    addedAt: "2026-05-30",
+  },
+
+  {
+    id:         "ai-safety",
+    term:       "AI Safety",
+    category:   "fundamentals",
+    tagline:    "The field working to ensure AI systems do what humans actually want — now and as they become more capable.",
+    icon:       "🛡️",
+    difficulty: 2,
+    body: `**AI Safety** is a research and engineering field focused on ensuring that AI systems are reliably beneficial — that they behave as intended, avoid harmful outputs, and remain aligned with human values as they become more capable.
+
+**Near-term safety (today's concern):**
+- **Jailbreaking** — bypassing safety guidelines through clever prompting
+- **Prompt injection** — malicious instructions hidden in user content that redirect an agent
+- **Bias and fairness** — models encoding historical prejudices from training data
+- **Misuse** — generating disinformation, malware, or harmful content at scale
+
+**Long-term alignment (future concern):**
+- **Specification gaming** — model achieves the stated goal but not the intended one
+- **Reward hacking** — optimizing proxy metrics while missing the real objective
+- **Scalable oversight** — how do you evaluate outputs of a model smarter than you?
+- **Deceptive alignment** — a model that behaves well during training but not deployment
+
+**Key approaches:**
+- **RLHF** (Reinforcement Learning from Human Feedback) — train on human preference data
+- **Constitutional AI** (Anthropic) — self-critique against a written set of principles
+- **Interpretability** — understanding what's happening inside the model's weights
+- **Red-teaming** — adversarial testing to find failure modes before deployment
+
+**Leading labs:** Anthropic, DeepMind's safety team, OpenAI's safety team, ARC (Alignment Research Center), MIRI.`,
+    analogy: "Seat belts and crash-test dummies: not because every driver is reckless, but because the consequences of failure at scale are severe enough to justify the engineering investment before the problem occurs.",
+    related: ["prompt-engineering", "agents", "llm"],
+    addedAt: "2026-05-30",
+    learnMore: "https://www.anthropic.com/safety",
+  },
 ];
