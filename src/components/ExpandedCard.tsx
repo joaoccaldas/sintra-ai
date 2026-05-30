@@ -206,7 +206,7 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                     {shown.related_tools.map(toolId => (
                       <Link
                         key={toolId}
-                        href={`${BASE_PATH}/tools/${toolId}/`}
+                        href={`/tools/${toolId}/`}
                         onClick={e => e.stopPropagation()}
                         className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-violet/30 text-violet-bright bg-violet/[0.06] hover:bg-violet/[0.12] transition-colors capitalize"
                       >

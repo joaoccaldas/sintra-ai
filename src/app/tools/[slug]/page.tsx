@@ -95,7 +95,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
           {/* Back nav */}
           <div className="flex items-center gap-4 mb-10">
             <Link
-              href={`${BASE_PATH}/tools/`}
+              href="/tools/"
               className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] uppercase text-fg-3 hover:text-violet-bright transition-colors group"
             >
               <ArrowLeft size={13} className="group-hover:-translate-x-0.5 transition-transform" />
@@ -179,7 +179,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                 {relatedPrompts.map(p => (
                   <Link
                     key={p.id}
-                    href={`${BASE_PATH}/prompts/${p.slug}/`}
+                    href={`/prompts/${p.slug}/`}
                     className="flex items-start gap-3 p-4 rounded-xl border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-white/[0.04] transition-all group"
                   >
                     <div className="flex-1 min-w-0">
@@ -201,7 +201,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                 {related.map(r => (
                   <Link
                     key={r.id}
-                    href={`${BASE_PATH}/tools/${r.id}/`}
+                    href={`/tools/${r.id}/`}
                     className="flex items-start gap-3 p-4 rounded-xl border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-white/[0.04] transition-all group"
                   >
                     <div className="flex-1 min-w-0">

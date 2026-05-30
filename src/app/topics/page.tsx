@@ -28,7 +28,7 @@ export default function TopicsIndexPage() {
       <main className="pt-16 min-h-screen bg-void">
         <div className="max-w-4xl mx-auto px-4 py-12">
           <nav className="text-xs text-fg-4 mb-6 flex items-center gap-1.5">
-            <Link href={`${BASE_PATH}/`} className="hover:text-fg-2 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-fg-2 transition-colors">Home</Link>
             <span>/</span>
             <span className="text-fg-2">Topics</span>
           </nav>
@@ -42,7 +42,7 @@ export default function TopicsIndexPage() {
             {topics.map(t => (
               <Link
                 key={t.slug}
-                href={`${BASE_PATH}/topics/${t.slug}/`}
+                href={`/topics/${t.slug}/`}
                 className="group p-5 rounded-2xl bg-steel/30 border border-white/5 hover:border-white/15 hover:bg-steel/50 transition-all"
               >
                 <div className="flex items-center gap-2 mb-2">

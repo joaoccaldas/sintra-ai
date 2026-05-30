@@ -92,7 +92,7 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
           {/* Back nav */}
           <div className="flex items-center gap-4 mb-10">
             <Link
-              href={`${BASE_PATH}/`}
+              href="/"
               className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] uppercase text-fg-3 hover:text-violet-bright transition-colors group"
             >
               <ArrowLeft size={13} className="group-hover:-translate-x-0.5 transition-transform" />
@@ -215,7 +215,7 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
                 {item.related_tools.map(toolId => (
                   <Link
                     key={toolId}
-                    href={`${BASE_PATH}/tools/${toolId}/`}
+                    href={`/tools/${toolId}/`}
                     className="inline-flex items-center gap-1.5 font-mono text-[11px] px-3 py-1.5 rounded-full border border-violet/30 text-violet-bright bg-violet/[0.06] hover:bg-violet/[0.14] transition-colors capitalize"
                   >
                     {toolId.replace(/-/g, " ")}
@@ -242,7 +242,7 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
                 {related.map(r => (
                   <Link
                     key={r.id}
-                    href={`${BASE_PATH}/prompts/${r.slug}/`}
+                    href={`/prompts/${r.slug}/`}
                     className="flex items-start gap-3 p-4 rounded-xl border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-white/[0.04] transition-all group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full mt-2 shrink-0" style={{ background: catColor }} />

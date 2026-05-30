@@ -142,7 +142,7 @@ export default function TopicHubClient({
     <div className="max-w-5xl mx-auto px-4 py-10">
       {/* Breadcrumb */}
       <nav className="text-xs text-fg-4 mb-6 flex items-center gap-1.5">
-        <Link href={`${BASE_PATH}/`} className="hover:text-fg-2 transition-colors">Home</Link>
+        <Link href="/" className="hover:text-fg-2 transition-colors">Home</Link>
         <span>/</span>
         <span className="text-fg-2">Topics</span>
         <span>/</span>
@@ -191,7 +191,7 @@ export default function TopicHubClient({
                 <span style={{ color: topic.color }}>✦</span> Prompts
               </h2>
               <Link
-                href={`${BASE_PATH}/#prompts-section`}
+                href="/#prompts-section"
                 className="text-xs text-fg-3 hover:text-fg-1 transition-colors"
               >
                 View all library →
@@ -221,7 +221,7 @@ export default function TopicHubClient({
                 <span style={{ color: topic.color }}>◈</span> News
               </h2>
               <Link
-                href={`${BASE_PATH}/news/`}
+                href="/news/"
                 className="text-xs text-fg-3 hover:text-fg-1 transition-colors"
               >
                 Full timeline →
@@ -252,7 +252,7 @@ export default function TopicHubClient({
                   <span style={{ color: topic.color }}>⬡</span> Tools
                 </h2>
                 <Link
-                  href={`${BASE_PATH}/tools/`}
+                  href="/tools/"
                   className="text-xs text-fg-3 hover:text-fg-1 transition-colors"
                 >
                   All tools →
@@ -273,7 +273,7 @@ export default function TopicHubClient({
                   <span style={{ color: topic.color }}>△</span> Concepts
                 </h2>
                 <Link
-                  href={`${BASE_PATH}/concepts/`}
+                  href="/concepts/"
                   className="text-xs text-fg-3 hover:text-fg-1 transition-colors"
                 >
                   All concepts →
@@ -295,7 +295,7 @@ export default function TopicHubClient({
             {TOPIC_HUBS.filter(t => t.slug !== topic.slug).map(t => (
               <Link
                 key={t.slug}
-                href={`${BASE_PATH}/topics/${t.slug}/`}
+                href={`/topics/${t.slug}/`}
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-steel/40 border border-white/5 hover:border-white/15 text-sm text-fg-2 hover:text-fg-1 transition-all"
               >
                 <span style={{ color: t.color }}>{t.icon}</span>
