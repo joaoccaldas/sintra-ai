@@ -7,6 +7,7 @@ import { CONCEPTS } from "./concepts";
 import { AI_LABS } from "./aiLabsData";
 import { RESOURCES } from "./resourcesData";
 import { TOPIC_HUBS } from "./topicsData";
+import { AI_MODELS } from "./modelsData";
 
 export type EntityKind =
   | "use_case"
@@ -16,7 +17,8 @@ export type EntityKind =
   | "news"
   | "path"
   | "resource"
-  | "topic";
+  | "topic"
+  | "model";
 
 export interface SearchDocument {
   id: string;
@@ -38,9 +40,10 @@ export const KIND_META: Record<EntityKind, { label: string; pluralLabel: string;
   path:     { label: "Learning Path", pluralLabel: "Learning Paths", color: "#E8C089" },
   resource: { label: "Resource",      pluralLabel: "Resources",      color: "#B6A6FF" },
   topic:    { label: "Topic Hub",     pluralLabel: "Topic Hubs",     color: "#FDA4AF" },
+  model:    { label: "AI Model",      pluralLabel: "AI Models",      color: "#E879F9" },
 };
 
-const KIND_ORDER: EntityKind[] = ["use_case", "tool", "concept", "news", "lab", "path", "resource", "topic"];
+const KIND_ORDER: EntityKind[] = ["use_case", "model", "tool", "concept", "news", "lab", "path", "resource", "topic"];
 
 export const SEARCH_INDEX: SearchDocument[] = [
   ...USE_CASES.map(u => ({
@@ -106,6 +109,15 @@ export const SEARCH_INDEX: SearchDocument[] = [
     tags: r.tags,
     href: `${BASE_PATH}/resources/`,
     body: [r.name, r.tagline, r.category, r.highlight ?? "", ...r.tags].join(" "),
+  })),
+  ...AI_MODELS.map(m => ({
+    id: `model-${m.id}`,
+    kind: "model" as EntityKind,
+    title: m.name,
+    summary: m.highlight,
+    tags: [m.provider, m.tier, ...m.bestFor.slice(0, 3)],
+    href: `${BASE_PATH}/models/`,
+    body: [m.name, m.provider, m.highlight, m.tier, ...m.bestFor, m.apiId ?? ""].join(" "),
   })),
   ...TOPIC_HUBS.map(t => ({
     id: `topic-${t.slug}`,
