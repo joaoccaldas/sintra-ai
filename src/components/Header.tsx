@@ -36,7 +36,7 @@ const NAV_GROUPS = [
   {
     label: "Reference",
     items: [
-      { href: `${BASE_PATH}/tools/`,           label: "AI Tools",  desc: "55 tools directory" },
+      { href: `${BASE_PATH}/tools/`,           label: "AI Tools",  desc: "73 tools directory" },
       { href: `${BASE_PATH}/models/`,          label: "Models",    desc: "Pricing, benchmarks & capabilities" },
       { href: `${BASE_PATH}/claude/`,          label: "Claude",    desc: "Models, products & capabilities" },
       { href: `${BASE_PATH}/google-ai-tools/`, label: "Google AI", desc: "Google's AI product suite" },
