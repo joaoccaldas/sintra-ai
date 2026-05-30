@@ -10,6 +10,8 @@ import { CONCEPTS } from "@/lib/concepts";
 import { LEARNING_PATHS } from "@/lib/learningPathsData";
 import { RESOURCES } from "@/lib/resourcesData";
 import { MILESTONES } from "@/lib/timelineData";
+import { TOPIC_HUBS } from "@/lib/topicsData";
+import { AI_MODELS } from "@/lib/modelsData";
 
 const ITEMS = [
   {
@@ -108,8 +110,8 @@ export default function SiteHub() {
     learn:    LEARNING_PATHS.length,
     history:  MILESTONES.length,
     resources: RESOURCES.length,
-    topics:   17,
-    models:   17,
+    topics:   TOPIC_HUBS.length,
+    models:   AI_MODELS.length,
   }), []);
 
   return (
