@@ -7,20 +7,8 @@ import CategoryBrowser from "@/components/CategoryBrowser";
 import UniversalSearch from "@/components/UniversalSearch";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
-import FeaturedCollections from "@/components/FeaturedCollections";
-import PersonaEntry from "@/components/PersonaEntry";
 import ThePulse from "@/components/ThePulse";
-import SiteHub from "@/components/SiteHub";
 import { USE_CASES } from "@/lib/data";
-
-function SectionDivider({ label }: { label: string }) {
-  return (
-    <div className="flex items-center gap-3 max-w-[1100px] mx-auto px-6 md:px-8 py-2">
-      <span className="font-mono text-[9px] tracking-[0.22em] uppercase text-fg-4 shrink-0">{label}</span>
-      <span className="flex-1 h-px bg-hairline" />
-    </div>
-  );
-}
 
 export default function Home() {
   const [heroSearch, setHeroSearch] = useState({ query: "", version: 0 });
@@ -46,16 +34,10 @@ export default function Home() {
           {heroSearch.query && (
             <UniversalSearch query={heroSearch.query} onClose={clearSearch} />
           )}
-          <SiteHub />
-          <SectionDivider label="What's happening" />
           <ThePulse />
-          <SectionDivider label="Prompt library" />
-          <div id="prompts-section">
-            <PersonaEntry />
+          <div id="explore">
             <CategoryBrowser heroSearch={heroSearch} />
           </div>
-          <SectionDivider label="Collections" />
-          <FeaturedCollections />
         </main>
         <Footer />
         <BackToTop />

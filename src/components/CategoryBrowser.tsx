@@ -323,13 +323,13 @@ export default function CategoryBrowser({ heroSearch }: Props) {
                   onClick={() => handleSelect(i)}
                   className="flex flex-col items-center gap-1.5 p-3 rounded-xl border transition-all"
                   style={{
-                    background:  i === selectedIdx ? `${item.hex}18` : "rgba(255,255,255,0.02)",
-                    borderColor: i === selectedIdx ? `${item.hex}60` : "rgba(255,255,255,0.08)",
+                    background:  i === selectedIdx ? "rgba(159,140,255,0.12)" : "rgba(255,255,255,0.02)",
+                    borderColor: i === selectedIdx ? "rgba(159,140,255,0.50)" : "rgba(255,255,255,0.08)",
                   }}
                 >
-                  <span className="w-3 h-3 rounded-full shrink-0" style={{ background: item.hex, opacity: i === selectedIdx ? 1 : 0.45 }} />
+                  <span className="w-3 h-3 rounded-full shrink-0" style={{ background: i === selectedIdx ? "#9F8CFF" : "#4a4860", opacity: 1 }} />
                   <span className="font-mono text-[9px] tracking-[0.06em] uppercase text-center leading-tight"
-                    style={{ color: i === selectedIdx ? item.hex : "#6b6a8a" }}>
+                    style={{ color: i === selectedIdx ? "#B6A6FF" : "#6b6a8a" }}>
                     {item.label}
                   </span>
                 </button>
@@ -359,12 +359,12 @@ export default function CategoryBrowser({ heroSearch }: Props) {
               exit={prefersReducedMotion ? {} : { opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <p className="eyebrow mb-3" style={{ color: selected.hex }}>
+              <p className="eyebrow violet mb-3">
                 {selected.cosmicName.toUpperCase()}
               </p>
               <h2
                 className="font-serif font-light text-[clamp(32px,4.5vw,64px)] leading-[1.03] tracking-[-0.02em] text-fg-1"
-                style={{ textShadow: `0 0 60px ${selected.hex}30` }}
+                style={{ textShadow: "0 0 60px rgba(159,140,255,0.20)" }}
               >
                 {selected.label}
               </h2>
@@ -380,8 +380,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
               {/* Explore CTA */}
               <button
                 onClick={() => setBrowsingIdx(selectedIdx)}
-                className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-current font-mono text-[11px] tracking-[0.1em] uppercase transition-all duration-200 hover:bg-white/5"
-                style={{ color: selected.hex, borderColor: `${selected.hex}60` }}
+                className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border font-mono text-[11px] tracking-[0.1em] uppercase transition-all duration-200 text-violet-bright border-violet/40 hover:bg-violet/10"
               >
                 {t.carousel_explore_cta}
               </button>
@@ -397,9 +396,9 @@ export default function CategoryBrowser({ heroSearch }: Props) {
                   onClick={() => { setSelectedIdx(i); setBrowsingIdx(i); }}
                   className="font-mono text-[10px] tracking-[0.07em] uppercase px-3 py-2 rounded-full border transition-all duration-150 whitespace-nowrap text-center"
                   style={{
-                    background:  i === selectedIdx ? `${item.hex}20` : "transparent",
-                    borderColor: i === selectedIdx ? `${item.hex}70` : "#ffffff15",
-                    color:       i === selectedIdx ? item.hex : "#6b6a8a",
+                    background:  i === selectedIdx ? "rgba(159,140,255,0.14)" : "transparent",
+                    borderColor: i === selectedIdx ? "rgba(159,140,255,0.55)" : "#ffffff15",
+                    color:       i === selectedIdx ? "#B6A6FF" : "#6b6a8a",
                   }}
                   aria-current={i === selectedIdx ? "true" : undefined}
                 >
@@ -426,7 +425,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
             {/* Panel header */}
             <div
               className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b border-hairline bg-void/95 backdrop-blur-md"
-              style={{ boxShadow: `0 1px 0 ${browsing.hex}18` }}
+              style={{ boxShadow: "0 1px 0 rgba(159,140,255,0.12)" }}
             >
               <button
                 onClick={closeBrowsing}
@@ -436,7 +435,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
               </button>
 
               <div className="text-center">
-                <p className="font-mono text-[10px] tracking-[0.12em] uppercase" style={{ color: browsing.hex }}>
+                <p className="eyebrow violet">
                   {browsing.cosmicName}
                 </p>
                 <p className="font-sans text-[13px] font-medium text-fg-1">{browsing.label}</p>
@@ -452,7 +451,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
             </div>
 
             {/* Accent line */}
-            <div className="h-px w-full" style={{ background: `linear-gradient(90deg, transparent, ${browsing.hex}60, transparent)` }} />
+            <div className="h-px w-full" style={{ background: "linear-gradient(90deg, transparent, rgba(159,140,255,0.40), transparent)" }} />
 
             {/* Search + difficulty filter bar */}
             <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-4 flex items-center gap-3 flex-wrap border-b border-hairline/50">

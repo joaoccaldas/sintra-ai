@@ -9,6 +9,7 @@ const NAV_COLS = [
     head: "Discover",
     links: [
       ["Use Cases",            "#explore"],
+      ["Collections",          `${BASE_PATH}/collections/`],
       ["AI Tools Directory",   `${BASE_PATH}/tools/`],
       ["AI News",              `${BASE_PATH}/news/`],
       ["Learning Paths",       `${BASE_PATH}/learn/`],

@@ -205,15 +205,15 @@ export const DIFF_COLOR: Record<string, string> = {
 
 /** Single source of truth for category accent colours — used by cards, modals, and the library browser. */
 export const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":     "#F4D06F",
-  "productivity":   "#8FE3D2",
-  "writing":        "#F08CA8",
-  "research":       "#B6A6FF",
-  "finance":        "#6EE7A0",
-  "data-analytics": "#E8C089",
+  "quick-wins":     "#9F8CFF",
+  "productivity":   "#9F8CFF",
+  "writing":        "#9F8CFF",
+  "research":       "#9F8CFF",
+  "finance":        "#9F8CFF",
+  "data-analytics": "#9F8CFF",
   "coding":         "#9F8CFF",
-  "creative-ai":    "#5EEAD4",
-  "game-advanced":  "#E9D9B6",
+  "creative-ai":    "#9F8CFF",
+  "game-advanced":  "#9F8CFF",
 };
 
 export const DISCIPLINES = [
