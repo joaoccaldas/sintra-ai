@@ -183,10 +183,12 @@ export function trackRecentlyViewed(item: RecentItem) {
   notifyRecent();
 }
 
+const EMPTY_RECENT: RecentItem[] = [];
+
 export function useRecentlyViewed(): RecentItem[] {
   return useSyncExternalStore(
     cb => { subscribers.add(cb); return () => subscribers.delete(cb); },
     readRecent,
-    () => [],
+    () => EMPTY_RECENT,
   );
 }

@@ -109,7 +109,7 @@ export default function SiteHub() {
     history:  MILESTONES.length,
     resources: RESOURCES.length,
     topics:   17,
-    models:   16,
+    models:   17,
   }), []);
 
   return (

@@ -19,7 +19,7 @@ export const TOPIC_HUBS: TopicDef[] = [
     icon: "◈",
     color: "#9F8CFF",
     description: "Autonomous AI systems that plan, use tools, and act across multi-step workflows.",
-    matchTags: ["agents", "agentic", "agentic ai", "multi-agent", "automation", "computer use"],
+    matchTags: ["agents", "agentic", "agentic ai", "multi-agent", "computer use", "autonomous"],
   },
   {
     slug: "coding",
