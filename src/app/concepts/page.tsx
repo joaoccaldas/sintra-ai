@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Core AI Concepts Explained",
     description:
-      "Plain-English explanations of transformers, RAG, agents, MCP, and 30+ other AI concepts — filterable by difficulty.",
+      "Plain-English explanations of transformers, RAG, agents, MCP, and 20 other AI concepts — filterable by difficulty.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Core AI Concepts Explained",
-    description: "Plain-English explanations of 30+ AI concepts, filterable by difficulty.",
+    description: "Plain-English explanations of 20 AI concepts, filterable by difficulty.",
   },
 };
 
