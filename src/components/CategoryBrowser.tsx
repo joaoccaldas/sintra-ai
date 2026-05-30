@@ -9,7 +9,6 @@ import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
 import { trackRecentlyViewed } from "@/lib/hooks";
 
-const DIFFS = ["all", "beginner", "intermediate", "advanced", "expert"] as const;
 const PAGE_SIZE = 12;
 
 interface Props {
@@ -21,7 +20,6 @@ export default function CategoryBrowser({ heroSearch }: Props) {
 
   const [selectedCat, setSelectedCat] = useState<string>(CAROUSEL_ITEMS[0].id);
   const [search, setSearch]           = useState("");
-  const [diff, setDiff]               = useState<typeof DIFFS[number]>("all");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
   const [expandedItems, setExpandedItems] = useState<UseCase[]>([]);
@@ -57,16 +55,14 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   }, [selectedCat]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Reset pagination on filter change
-  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [selectedCat, search, diff]);
+  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [selectedCat, search]);
 
   const isSearching = search.trim().length > 0;
 
   const filtered = useMemo(() => {
-    const base = isSearching
-      ? USE_CASES.filter(u => matchesUseCase(u, search))
-      : USE_CASES.filter(u => u.category === selectedCat);
-    return diff === "all" ? base : base.filter(u => u.difficulty === diff);
-  }, [selectedCat, search, diff, isSearching]);
+    if (isSearching) return USE_CASES.filter(u => matchesUseCase(u, search));
+    return USE_CASES.filter(u => u.category === selectedCat);
+  }, [selectedCat, search, isSearching]);
 
   const visible = filtered.slice(0, visibleCount);
   const hasMore = visibleCount < filtered.length;
@@ -79,18 +75,10 @@ export default function CategoryBrowser({ heroSearch }: Props) {
     window.history.replaceState(null, "", `#uc-${item.id}`);
   }, [filtered, isSearching]);
 
-  const clearFilters = useCallback(() => { setSearch(""); setDiff("all"); }, []);
+  const clearFilters = useCallback(() => { setSearch(""); }, []);
 
   return (
-    <section className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-4">
-
-      {/* ── Section header ─────────────────────────────────────────── */}
-      <div className="flex items-center gap-3 mb-8">
-        <span className="w-9 h-px bg-gradient-to-r from-transparent to-violet-bright" />
-        <span className="eyebrow violet">Prompt Library</span>
-        <span className="flex-1 h-px bg-hairline" />
-        <span className="font-mono text-[10px] text-fg-4">{USE_CASES.length} prompts</span>
-      </div>
+    <section className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
 
       {/* ── Category tab rail ──────────────────────────────────────── */}
       <div className="overflow-x-auto scrollbar-none -mx-6 px-6 md:mx-0 md:px-0 mb-5">
@@ -117,56 +105,32 @@ export default function CategoryBrowser({ heroSearch }: Props) {
         </div>
       </div>
 
-      {/* ── Search + difficulty filters ───────────────────────────── */}
-      <div className="flex items-center gap-2 flex-wrap mb-6">
-        <div className="relative flex-1 min-w-[200px] max-w-sm">
-          <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
-          <input
-            type="search"
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            placeholder={`Search all ${USE_CASES.length} prompts…`}
-            className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
-          />
-          {search && (
-            <button
-              onClick={() => setSearch("")}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors"
-            >
-              <X size={12} />
-            </button>
-          )}
-        </div>
-
-        <div className="flex gap-1.5 flex-wrap">
-          {DIFFS.map(d => (
-            <button
-              key={d}
-              onClick={() => setDiff(d)}
-              className="font-mono text-[10px] tracking-[0.05em] px-3 py-2 rounded-full border transition-all duration-150 capitalize whitespace-nowrap"
-              style={{
-                background:  diff === d ? "rgba(159,140,255,0.12)" : "transparent",
-                borderColor: diff === d ? "rgba(159,140,255,0.50)" : "rgba(255,255,255,0.10)",
-                color:       diff === d ? "#B6A6FF" : "#6b6a8a",
-              }}
-            >
-              {d === "all" ? "All levels" : d}
-            </button>
-          ))}
-        </div>
+      {/* ── Search ───────────────────────────────────────────────── */}
+      <div className="relative mb-5 max-w-sm">
+        <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
+        <input
+          type="search"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder={`Search ${USE_CASES.length} prompts…`}
+          className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
+        />
+        {search && (
+          <button
+            onClick={clearFilters}
+            className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors"
+          >
+            <X size={12} />
+          </button>
+        )}
       </div>
 
-      {/* ── Result count / clear ──────────────────────────────────── */}
-      {(isSearching || diff !== "all") && (
-        <div className="flex items-center gap-3 mb-4">
-          <span className="font-mono text-[11px] text-fg-4">
-            {filtered.length} result{filtered.length !== 1 ? "s" : ""}
-            {isSearching && <span className="text-fg-3"> for &ldquo;{search}&rdquo;</span>}
-          </span>
-          <button onClick={clearFilters} className="font-mono text-[11px] text-violet-bright hover:underline">
-            Clear
-          </button>
-        </div>
+      {/* ── Result count ─────────────────────────────────────────── */}
+      {isSearching && (
+        <p className="font-mono text-[11px] text-fg-4 mb-4">
+          {filtered.length} result{filtered.length !== 1 ? "s" : ""}
+          <span className="text-fg-3"> for &ldquo;{search}&rdquo;</span>
+        </p>
       )}
 
       {/* ── Cards ─────────────────────────────────────────────────── */}
@@ -181,7 +145,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
         <>
           <AnimatePresence mode="wait">
             <motion.div
-              key={`${selectedCat}-${search}-${diff}`}
+              key={`${selectedCat}-${search}`}
               initial={prefersReducedMotion ? {} : { opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
