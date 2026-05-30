@@ -108,7 +108,7 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
         <motion.h1
           custom={1} variants={lineVariants} initial="hidden" animate="show"
-          className="font-serif font-light text-[clamp(44px,7.5vw,108px)] leading-[1.02] tracking-[-0.025em] text-fg-1 mb-4"
+          className="font-serif font-light text-[clamp(44px,7.5vw,108px)] leading-[1.02] tracking-[-0.025em] text-fg-1 mb-2"
         >
           libr
           <em
@@ -125,6 +125,13 @@ export default function HeroMinimal({ total, onSearch }: Props) {
           </em>
           ry
         </motion.h1>
+
+        <motion.p
+          custom={1.5} variants={lineVariants} initial="hidden" animate="show"
+          className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-4 whitespace-nowrap"
+        >
+          Prompts · Tools · News · Models
+        </motion.p>
 
         <motion.p
           custom={2} variants={lineVariants} initial="hidden" animate="show"

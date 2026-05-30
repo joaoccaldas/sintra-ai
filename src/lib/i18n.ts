@@ -68,9 +68,9 @@ const translations: Record<Locale, Translations> = {
     nav_enter_library: "Enter library →",
     use_cases_count:   (n) => `${n} use cases`,
 
-    hero_eyebrow:    (n) => `${n} curated use cases`,
-    hero_tagline:    "Pick a discipline. Explore its use cases.\nCopy a prompt. Ship the work.",
-    hero_cta:        "Explore disciplines →",
+    hero_eyebrow:    (n) => `${n} ready-to-use AI prompts`,
+    hero_tagline:    "Pick a discipline. Copy a prompt.\nCustomize and ship the work.",
+    hero_cta:        "Browse the library →",
     hero_scroll:     "Scroll",
 
     carousel_back:        "Universe",
@@ -120,9 +120,9 @@ const translations: Record<Locale, Translations> = {
     nav_enter_library: "Entrar na biblioteca →",
     use_cases_count:   (n) => `${n} casos de uso`,
 
-    hero_eyebrow:    (n) => `${n} casos de uso selecionados`,
-    hero_tagline:    "Escolha uma disciplina. Explore os casos de uso.\nCopie um prompt. Entregue o trabalho.",
-    hero_cta:        "Explorar disciplinas →",
+    hero_eyebrow:    (n) => `${n} prompts de IA prontos para uso`,
+    hero_tagline:    "Escolha uma disciplina. Copie um prompt.\nPersonalize e entregue o trabalho.",
+    hero_cta:        "Ver a biblioteca →",
     hero_scroll:     "Rolar",
 
     carousel_back:        "Universo",

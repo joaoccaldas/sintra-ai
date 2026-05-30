@@ -36,7 +36,7 @@ const NAV_GROUPS = [
   {
     label: "Reference",
     items: [
-      { href: `${BASE_PATH}/tools/`,           label: "AI Tools",  desc: "73 tools directory" },
+      { href: `${BASE_PATH}/tools/`,           label: "AI Tools",  desc: "Curated tools directory" },
       { href: `${BASE_PATH}/models/`,          label: "Models",    desc: "Pricing, benchmarks & capabilities" },
       { href: `${BASE_PATH}/claude/`,          label: "Claude",    desc: "Models, products & capabilities" },
       { href: `${BASE_PATH}/google-ai-tools/`, label: "Google AI", desc: "Google's AI product suite" },
@@ -165,13 +165,13 @@ export default function Header({ total }: Props) {
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-5 ml-4">
             <a
-              href="#explore"
+              href={`${BASE_PATH}/#explore`}
               className={[
                 "font-sans text-[13px] transition-colors duration-140 whitespace-nowrap",
                 !activeGroup ? "text-fg-1" : "text-fg-3 hover:text-fg-1",
               ].join(" ")}
             >
-              {t.nav_explore}
+              Library
             </a>
             {NAV_GROUPS.map(group => (
               <NavDropdown
@@ -216,11 +216,11 @@ export default function Header({ total }: Props) {
           {/* Language toggle */}
           <button
             onClick={toggle}
-            className="inline-flex items-center gap-1.5 h-8 px-3 rounded-full bg-violet/[0.12] border border-violet/30 font-mono text-[11px] tracking-[0.06em] font-medium text-fg-1 hover:bg-violet/25 hover:border-violet/60 transition-all duration-150 shrink-0"
+            className="hidden lg:inline-flex items-center gap-1 h-8 px-2.5 rounded-lg font-mono text-[11px] tracking-[0.06em] text-fg-4 hover:text-fg-1 hover:bg-white/[0.06] transition-all duration-150 shrink-0"
             aria-label={locale === "en" ? "Switch to Portuguese" : "Mudar para Inglês"}
             title={locale === "en" ? "Switch to Portuguese (PT-BR)" : "Switch to English (EN)"}
           >
-            <Globe size={13} className="text-violet-bright shrink-0" />
+            <Globe size={12} className="shrink-0" />
             {locale === "en" ? "PT" : "EN"}
           </button>
 

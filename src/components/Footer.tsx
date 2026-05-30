@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import TesseractMark from "./TesseractMark";
 import { BASE_PATH } from "@/lib/data";
 
@@ -30,10 +33,53 @@ const NAV_COLS = [
   },
 ];
 
+function NewsletterCapture() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "done">("idle");
+
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.trim()) return;
+    window.location.href = `mailto:joaoccaldas@gmail.com?subject=Subscribe%20me&body=Please%20add%20${encodeURIComponent(email.trim())}%20to%20the%20Sintra%20newsletter.`;
+    setStatus("done");
+  };
+
+  return (
+    <div className="border-b border-violet/[0.12] py-10 mb-10">
+      <div className="max-w-md">
+        <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-violet-bright mb-2">Stay current</p>
+        <h3 className="font-serif font-light text-[22px] text-fg-1 mb-1">New prompts &amp; AI news, weekly</h3>
+        <p className="font-sans text-[13px] text-fg-3 mb-4">No noise. Curated highlights from the library dropped to your inbox.</p>
+        {status === "done" ? (
+          <p className="font-mono text-[13px] text-emerald-400">✓ Opening your mail app — send to subscribe.</p>
+        ) : (
+          <form onSubmit={submit} className="flex gap-2 max-w-sm">
+            <input
+              type="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              placeholder="your@email.com"
+              required
+              className="flex-1 bg-white/[0.05] border border-hairline rounded-lg px-3 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 focus:bg-white/[0.07] transition-all"
+            />
+            <button
+              type="submit"
+              className="px-4 py-2 rounded-lg bg-violet/20 border border-violet/40 font-mono text-[11px] text-violet-bright hover:bg-violet/30 hover:border-violet/70 transition-all whitespace-nowrap"
+            >
+              Subscribe
+            </button>
+          </form>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="border-t border-violet/[0.12] pt-14 pb-8 bg-abyss">
       <div className="max-w-[1200px] mx-auto px-6 md:px-8">
+        <NewsletterCapture />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-10" style={{ gridTemplateColumns: "2fr 1fr 1fr 1fr" }}>
           {/* Branding */}
           <div className="col-span-2 md:col-span-1 flex flex-col gap-2.5">
