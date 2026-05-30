@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useSyncExternalStore } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Clock, ExternalLink } from "lucide-react";
 import Link from "next/link";
@@ -11,6 +11,7 @@ import { LEARNING_PATHS } from "@/lib/learningPathsData";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
 import type { UseCase } from "@/lib/data";
+import { getCopyCounts } from "@/lib/copyCountStore";
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -184,11 +185,51 @@ function LearnPanel() {
   );
 }
 
+function PopularPanel({ onOpen }: { onOpen: (u: UseCase) => void }) {
+  const counts = useSyncExternalStore(
+    () => () => {},
+    () => getCopyCounts(),
+    () => ({} as Record<string, number>),
+  );
+
+  const popular = useMemo(() => {
+    const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 9);
+    if (entries.length === 0) return [];
+    const ids = new Set(entries.map(([id]) => id));
+    return USE_CASES.filter(u => ids.has(String(u.id))).sort(
+      (a, b) => (counts[String(b.id)] ?? 0) - (counts[String(a.id)] ?? 0),
+    );
+  }, [counts]);
+
+  if (popular.length === 0) {
+    return (
+      <div className="py-12 text-center">
+        <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-fg-4">No copies yet</p>
+        <p className="font-sans text-[13px] text-fg-4 mt-1.5">Prompts you copy will appear here.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {popular.map(item => (
+        <div key={item.id} className="relative">
+          <UseCaseCard item={item} onOpen={onOpen} />
+          <span className="absolute top-2 right-2 font-mono text-[9px] text-fg-4 bg-black/40 backdrop-blur-sm px-1.5 py-0.5 rounded-full border border-hairline pointer-events-none">
+            ×{counts[String(item.id)]}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ── Tabs ───────────────────────────────────────────────────────────────────
 
 const TABS = [
   { id: "signals",  label: "AI Signals",   dot: "#d97706" },
   { id: "new",      label: "New Prompts",  dot: "#9F8CFF" },
+  { id: "popular",  label: "Popular",      dot: "#ef4444" },
   { id: "learn",    label: "Learn",        dot: "#10b981" },
 ] as const;
 
@@ -203,11 +244,13 @@ export default function ThePulse() {
   const viewAllHref =
     tab === "signals" ? `${SITE}/news/` :
     tab === "new"     ? "#explore" :
+    tab === "popular" ? "#explore" :
     `${SITE}/learn/`;
 
   const viewAllLabel =
     tab === "signals" ? "All news →" :
     tab === "new"     ? "Browse all →" :
+    tab === "popular" ? "Browse all →" :
     "All paths →";
 
   return (
@@ -224,7 +267,7 @@ export default function ThePulse() {
             <span className="font-mono text-[10px] tracking-[0.16em] uppercase text-fg-4">The Pulse</span>
           </div>
           <span className="flex-1 h-px bg-hairline" />
-          {tab === "new" ? (
+          {tab === "new" || tab === "popular" ? (
             <button
               onClick={() => document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" })}
               className="font-mono text-[10px] tracking-[0.06em] text-fg-4 hover:text-violet-bright transition-colors"
@@ -274,6 +317,7 @@ export default function ThePulse() {
           >
             {tab === "signals" && <SignalsPanel />}
             {tab === "new"     && <NewPromptsPanel onOpen={setExpanded} />}
+            {tab === "popular" && <PopularPanel onOpen={setExpanded} />}
             {tab === "learn"   && <LearnPanel />}
           </motion.div>
         </AnimatePresence>

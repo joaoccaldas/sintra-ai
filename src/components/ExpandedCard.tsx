@@ -13,6 +13,7 @@ import { tagToTopicSlug } from "@/lib/topicsData";
 import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import { useLanguage } from "@/context/LanguageContext";
+import { recordCopy } from "@/lib/copyCountStore";
 
 interface Props {
   item: UseCase | null;
@@ -126,6 +127,7 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
   const copy = () => {
     if (!shown) return;
     navigator.clipboard?.writeText(shown.prompt);
+    recordCopy(shown.id);
     setCopied(true);
     setTimeout(() => setCopied(false), 1600);
   };

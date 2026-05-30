@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Copy, Check, Share2, ExternalLink } from "lucide-react";
 import { UseCase } from "@/lib/data";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
+import { recordCopy } from "@/lib/copyCountStore";
 
 interface Props {
   item: UseCase;
@@ -16,12 +17,25 @@ export default function PromptPageClient({ item, catColor }: Props) {
 
   const copy = () => {
     navigator.clipboard?.writeText(item.prompt);
+    recordCopy(item.id);
     setCopied(true);
     setTimeout(() => setCopied(false), 1600);
   };
 
-  const share = () => {
-    navigator.clipboard?.writeText(window.location.href);
+  const share = async () => {
+    const url = window.location.href;
+    const text = `"${item.title}" — AI prompt`;
+    if (typeof navigator.share === "function") {
+      try {
+        await navigator.share({ title: item.title, text, url });
+        return;
+      } catch {
+        // user cancelled or API unavailable — fall through
+      }
+    }
+    // Fallback: open Twitter intent
+    const twitterUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(twitterUrl, "_blank", "noopener,noreferrer,width=550,height=420");
     setShared(true);
     setTimeout(() => setShared(false), 1600);
   };
