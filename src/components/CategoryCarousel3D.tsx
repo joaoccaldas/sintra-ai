@@ -4,294 +4,248 @@ import { useRef, useEffect } from "react";
 import * as THREE from "three";
 
 export const CAROUSEL_ITEMS = [
-  { id: "quick-wins",     label: "Quick Wins",        cosmicName: "The Moon",       essence: "Closest. Brightest. Easiest to reach.",             color: 0xD4C9A0, hex: "#D4C9A0" },
-  { id: "productivity",   label: "Productivity",      cosmicName: "Jupiter",        essence: "Orbits aligned. Momentum self-sustaining.",         color: 0x8FE3D2, hex: "#8FE3D2" },
-  { id: "writing",        label: "Writing & Copy",    cosmicName: "The Star",       essence: "Every word — a photon that travels forever.",        color: 0xF4C56A, hex: "#F4C56A" },
-  { id: "research",       label: "Research",          cosmicName: "Mars",           essence: "Unexplored terrain. Answers buried in red dust.",    color: 0xD4845A, hex: "#D4845A" },
-  { id: "finance",        label: "Finance & FP&A",    cosmicName: "Io",             essence: "The most volcanic world. Energy never sleeps.",     color: 0x6EE7A0, hex: "#6EE7A0" },
-  { id: "data-analytics", label: "Data & Analytics",  cosmicName: "The Galaxy",     essence: "Billions of points. One story.",                    color: 0xE8C089, hex: "#E8C089" },
-  { id: "coding",         label: "Code & Automation", cosmicName: "Europa",         essence: "Beneath the ice: an ocean of possibility.",         color: 0x9F8CFF, hex: "#9F8CFF" },
-  { id: "creative-ai",    label: "Creative & Design", cosmicName: "The Quasar",     essence: "Brightest object in the observable universe.",       color: 0x5EEAD4, hex: "#5EEAD4" },
-  { id: "game-advanced",  label: "Game & Advanced",   cosmicName: "Black Hole",     essence: "Where the rules of physics collapse.",              color: 0xC4A8F0, hex: "#C4A8F0" },
+  { id: "quick-wins",     label: "Quick Wins",        cosmicName: "The Star",     essence: "One win a day builds unstoppable momentum.",    color: 0xD4C9A0, hex: "#D4C9A0" },
+  { id: "productivity",   label: "Productivity",      cosmicName: "The Knot",     essence: "Systems in flow. Work that compounds itself.",  color: 0x8FE3D2, hex: "#8FE3D2" },
+  { id: "writing",        label: "Writing & Copy",    cosmicName: "The Helix",    essence: "Every word a thread. Every thread a story.",    color: 0xF4C56A, hex: "#F4C56A" },
+  { id: "research",       label: "Research",          cosmicName: "The Crystal",  essence: "Eight faces. One truth. Refracted clearly.",    color: 0xD4845A, hex: "#D4845A" },
+  { id: "finance",        label: "Finance & FP&A",    cosmicName: "The Chart",    essence: "Numbers that reveal what comes next.",          color: 0x6EE7A0, hex: "#6EE7A0" },
+  { id: "data-analytics", label: "Data & Analytics",  cosmicName: "The Network",  essence: "Every point connected. Every signal found.",    color: 0xE8C089, hex: "#E8C089" },
+  { id: "coding",         label: "Code & Automation", cosmicName: "The Rings",    essence: "Loops within loops. Machines that never stop.", color: 0x9F8CFF, hex: "#9F8CFF" },
+  { id: "creative-ai",    label: "Creative & Design", cosmicName: "The Gem",      essence: "A different face from every angle.",            color: 0x5EEAD4, hex: "#5EEAD4" },
+  { id: "game-advanced",  label: "Game & Advanced",   cosmicName: "The Oracle",   essence: "Twenty sides. Infinite possibilities.",         color: 0xC4A8F0, hex: "#C4A8F0" },
 ] as const;
 
-const BASE = "/sintra-ai";
-
-// ── Texture loader — callback sets needsUpdate after image arrives ────────────
-function loadTex(path: string, srgb = true): THREE.Texture {
-  const tex = new THREE.TextureLoader().load(path, (t) => { t.needsUpdate = true; });
-  if (srgb) tex.colorSpace = THREE.SRGBColorSpace;
-  // Leave wrapS/wrapT at default ClampToEdgeWrapping — correct for sphere UV mapping
-  return tex;
-}
-
-// ── Signed shortest distance in a circular index list ────────────────────────
+// ── Signed shortest arc in circular index list ────────────────────────────
 function getDiff(i: number, sel: number, n: number): number {
   const d = ((i - sel) % n + n) % n;
   return d > Math.floor(n / 2) ? d - n : d;
 }
 
-// ── Cosmic body factory ───────────────────────────────────────────────────────
-function makeCosmicBody(
-  idx: number,
-  color: number,
-): { body: THREE.Group; mainMat: THREE.MeshPhysicalMaterial } {
-  const body = new THREE.Group();
-  const c    = new THREE.Color(color);
+// ── Parametric helix curve used for Writing & Copy ────────────────────────
+class HelixCurve extends THREE.Curve<THREE.Vector3> {
+  private offset: number;
+  constructor(offset = 0) { super(); this.offset = offset; }
+  getPoint(t: number): THREE.Vector3 {
+    const a = t * Math.PI * 6 + this.offset;
+    return new THREE.Vector3(0.26 * Math.cos(a), (t - 0.5) * 1.1, 0.26 * Math.sin(a));
+  }
+}
 
-  const pbr = (o: Partial<THREE.MeshPhysicalMaterialParameters> = {}) =>
-    new THREE.MeshPhysicalMaterial({
-      color, clearcoat: 0.9, clearcoatRoughness: 0.08,
-      reflectivity: 0.8, ...o,
-    });
+// ── Extra material entry: tracks its "full-brightness" base opacity ────────
+type ExtraMat = { mat: THREE.Material; base: number };
+type ShapeResult = {
+  body:      THREE.Group;
+  mainMat:   THREE.MeshPhysicalMaterial;
+  extraMats: ExtraMat[];
+};
+
+// ── Domain shape factory — one distinct 3-D geometry per subject area ──────
+function makeShape(idx: number, color: number): ShapeResult {
+  const body      = new THREE.Group();
+  const c         = new THREE.Color(color);
+  const extraMats: ExtraMat[] = [];
+
+  // Helper: MeshPhysicalMaterial with sane defaults
+  const phys = (o: Partial<THREE.MeshPhysicalMaterialParameters> = {}): THREE.MeshPhysicalMaterial =>
+    new THREE.MeshPhysicalMaterial({ color, emissive: c, emissiveIntensity: 0, ...o });
+
+  // Helper: glowing edge lines on any geometry
+  const addEdges = (geo: THREE.BufferGeometry, lineColor: number, base: number) => {
+    const mat = new THREE.LineBasicMaterial({ color: lineColor, transparent: true, opacity: base });
+    extraMats.push({ mat, base });
+    body.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo), mat));
+  };
 
   switch (idx) {
-    // 0 — Moon (NASA texture, 128-segment sphere) ────────────────────────────
+
+    // ── 0 · Quick Wins ────────────────────────────────────────────────────
+    // Polished gold icosahedron — 20 triangular faces read as a trophy/star.
+    // Flat shading makes each facet catch light individually.
     case 0: {
-      const diffuse = loadTex(`${BASE}/moon-texture.png`);
-      const bump    = loadTex(`${BASE}/moon-texture.png`, false);
-      // Both textures share 52px dark borders L/R and 57/56px T/B out of 1408×768.
-      // Crop them precisely so every pixel on the sphere shows actual surface data.
-      for (const t of [diffuse, bump]) {
-        t.wrapS = THREE.RepeatWrapping; // seamless horizontal wrap at seam
-        t.repeat.set(0.9261, 0.8529);
-        t.offset.set(0.0369, 0.0729);
-      }
-      const mat = new THREE.MeshStandardMaterial({
-        map:       diffuse,
-        bumpMap:   bump,
-        bumpScale: 0.055,
-        roughness: 0.95,
-        metalness: 0.0,
+      const geo = new THREE.IcosahedronGeometry(0.65, 0);
+      const mat = phys({
+        metalness: 0.96, roughness: 0.06,
+        clearcoat: 1.0,  clearcoatRoughness: 0.04,
+        flatShading: true,
       });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.68, 128, 64), mat));
-      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
+      body.add(new THREE.Mesh(geo, mat));
+      addEdges(geo, 0xfffbe0, 0.55);
+      return { body, mainMat: mat, extraMats };
     }
 
-    // 1 — Jupiter (NASA texture, 128-segment sphere) ─────────────────────────
+    // ── 1 · Productivity ──────────────────────────────────────────────────
+    // Teal trefoil torus knot — a continuous, self-intersecting loop that
+    // never stops. Perfect metaphor for compounding systems.
     case 1: {
-      const diffuse = loadTex(`${BASE}/jupiter-texture.png`);
-      const bump    = loadTex(`${BASE}/jupiter-texture.png`, false);
-      // 52px L/R dark borders, 57px top, 12px bottom out of 1408×768
-      for (const t of [diffuse, bump]) {
-        t.wrapS = THREE.RepeatWrapping;
-        t.repeat.set(0.9261, 0.9102);
-        t.offset.set(0.0369, 0.0156);
-      }
-      const mat = new THREE.MeshStandardMaterial({
-        map:       diffuse,
-        bumpMap:   bump,
-        bumpScale: 0.030,
-        roughness: 0.75,
-        metalness: 0.0,
+      const geo = new THREE.TorusKnotGeometry(0.44, 0.135, 220, 20, 2, 3);
+      const mat = phys({
+        metalness: 0.88, roughness: 0.09,
+        clearcoat: 1.0,  clearcoatRoughness: 0.05,
       });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
-      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
+      body.add(new THREE.Mesh(geo, mat));
+      return { body, mainMat: mat, extraMats };
     }
 
-    // 2 — Star / Sun ──────────────────────────────────────────────────────────
+    // ── 2 · Writing & Copy ────────────────────────────────────────────────
+    // Double helix — two intertwined amber tubes, like the double strand of
+    // language: form and meaning spiralling together.
     case 2: {
-      const mat = pbr({ metalness: 0.0, roughness: 0.2, emissive: c, emissiveIntensity: 0.32 });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.58, 36, 36), mat));
-      for (let i = 0; i < 14; i++) {
-        const phi   = Math.acos(1 - 2 * (i / 14));
-        const theta = i * 2.399;
-        const h     = 0.22 + Math.random() * 0.14;
-        const cone  = new THREE.Mesh(
-          new THREE.ConeGeometry(0.035, h, 4),
-          new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.52 }),
-        );
-        const dir = new THREE.Vector3(
-          Math.sin(phi) * Math.cos(theta),
-          Math.cos(phi),
-          Math.sin(phi) * Math.sin(theta),
-        );
-        cone.position.copy(dir.clone().multiplyScalar(0.68));
-        cone.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
-        body.add(cone);
-      }
-      return { body, mainMat: mat };
+      const matA = phys({
+        metalness: 0.28, roughness: 0.20,
+        clearcoat: 0.85, clearcoatRoughness: 0.08,
+      });
+      body.add(new THREE.Mesh(
+        new THREE.TubeGeometry(new HelixCurve(0),        300, 0.065, 12, false), matA,
+      ));
+      const matB = new THREE.MeshPhysicalMaterial({
+        color: new THREE.Color(0xffe898), emissive: new THREE.Color(0xffe898), emissiveIntensity: 0,
+        metalness: 0.22, roughness: 0.26, clearcoat: 0.80, clearcoatRoughness: 0.10,
+        transparent: true, opacity: 1,
+      });
+      extraMats.push({ mat: matB, base: 1.0 });
+      body.add(new THREE.Mesh(
+        new THREE.TubeGeometry(new HelixCurve(Math.PI), 300, 0.040, 12, false), matB,
+      ));
+      return { body, mainMat: matA, extraMats };
     }
 
-    // 3 — Mars (NASA texture, 128-segment sphere) ────────────────────────────
+    // ── 3 · Research ──────────────────────────────────────────────────────
+    // Glass octahedron — physically-based transmission creates real refraction.
+    // Eight clean faces = precision; transparency = the desire to see through.
     case 3: {
-      const diffuse = loadTex(`${BASE}/mars-texture.png`);
-      const bump    = loadTex(`${BASE}/mars-texture.png`, false);
-      // Same 52px L/R + 57/56px T/B dark borders as moon — apply identical crop.
-      for (const t of [diffuse, bump]) {
-        t.wrapS = THREE.RepeatWrapping;
-        t.repeat.set(0.9261, 0.8529);
-        t.offset.set(0.0369, 0.0729);
-      }
-      const mat = new THREE.MeshStandardMaterial({
-        map:       diffuse,
-        bumpMap:   bump,
-        bumpScale: 0.045,
-        roughness: 0.90,
-        metalness: 0.0,
+      const geo = new THREE.OctahedronGeometry(0.68, 0);
+      const mat = phys({
+        metalness:           0.0,
+        roughness:           0.02,
+        transmission:        0.82,
+        thickness:           1.8,
+        ior:                 1.65,
+        clearcoat:           1.0,
+        clearcoatRoughness:  0.02,
+        flatShading:         true,
       });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.60, 128, 64), mat));
-      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
+      body.add(new THREE.Mesh(geo, mat));
+      addEdges(geo, 0xffd8b0, 0.78);
+      return { body, mainMat: mat, extraMats };
     }
 
-    // 4 — Io ─────────────────────────────────────────────────────────────────
+    // ── 4 · Finance & FP&A ────────────────────────────────────────────────
+    // Rising bar chart cylinders — the most literal possible symbol: the chart
+    // bars from a financial dashboard, rendered in 3D metallic green.
     case 4: {
-      const diffuse = loadTex(`${BASE}/io-texture.png`);
-      const bump    = loadTex(`${BASE}/io-texture.png`, false);
-      for (const t of [diffuse, bump]) {
-        t.wrapS = THREE.RepeatWrapping;
-        t.repeat.set(0.9492, 0.9056);
-        t.offset.set(0.0254, 0.0472);
-      }
-      const mat = new THREE.MeshStandardMaterial({
-        map: diffuse, bumpMap: bump, bumpScale: 0.022,
-        roughness: 0.82, metalness: 0.0,
+      const mat = phys({
+        metalness: 0.84, roughness: 0.11,
+        clearcoat: 0.90, clearcoatRoughness: 0.08,
       });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
-      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
+      const bars = [
+        { h: 0.55, x: -0.38 },
+        { h: 0.90, x: -0.125 },
+        { h: 1.15, x:  0.125 },
+        { h: 0.70, x:  0.38  },
+      ];
+      bars.forEach(({ h, x }) => {
+        const m = new THREE.Mesh(new THREE.CylinderGeometry(0.095, 0.095, h, 32), mat);
+        m.position.set(x, -0.38 + h / 2, 0);
+        body.add(m);
+      });
+      const baseMat = new THREE.MeshPhysicalMaterial({
+        color: 0x0c2e1c, metalness: 0.55, roughness: 0.45,
+        transparent: true, opacity: 1,
+      });
+      extraMats.push({ mat: baseMat, base: 1.0 });
+      const base = new THREE.Mesh(new THREE.BoxGeometry(1.05, 0.042, 0.28), baseMat);
+      base.position.y = -0.40;
+      body.add(base);
+      return { body, mainMat: mat, extraMats };
     }
 
-    // 5 — Galaxy ──────────────────────────────────────────────────────────────
+    // ── 5 · Data & Analytics ─────────────────────────────────────────────
+    // Icosphere node network — the subdivided sphere's edges form a graph of
+    // connections; glowing vertex spheres are the data points.
     case 5: {
-      // Tilt so spiral arms face the camera (camera is shallow, ~6° above horizon)
-      const galaxy = new THREE.Group();
-      galaxy.rotation.x = 0.95; // ~54° — shows the disc clearly as it spins
-      body.add(galaxy);
+      const geo = new THREE.IcosahedronGeometry(0.58, 1); // 80 faces
+      const mat = phys({ metalness: 0.14, roughness: 0.50 });
+      body.add(new THREE.Mesh(geo, mat));
+      addEdges(geo, color, 0.50);
 
-      // Bright galactic nucleus
-      galaxy.add(new THREE.Mesh(
-        new THREE.SphereGeometry(0.07, 12, 12),
-        new THREE.MeshBasicMaterial({ color: 0xFFF4CC }),
-      ));
-      // Soft bulge halo
-      galaxy.add(new THREE.Mesh(
-        new THREE.SphereGeometry(0.19, 12, 12),
-        new THREE.MeshBasicMaterial({ color: 0xFFCC88, transparent: true, opacity: 0.28 }),
-      ));
-
-      // Particle arrays
-      const ARM_N  = 2600;
-      const CORE_N = 450;
-      const N_TOT  = ARM_N + CORE_N;
-      const pos = new Float32Array(N_TOT * 3);
-      const col = new Float32Array(N_TOT * 3);
-
-      // Core bulge — dense cluster, warm yellow-white
-      for (let i = 0; i < CORE_N; i++) {
-        const r     = Math.pow(Math.random(), 1.8) * 0.30;
-        const theta = Math.random() * Math.PI * 2;
-        const y     = (Math.random() - 0.5) * 0.14 * (1 - r / 0.30);
-        pos[i*3]   = Math.cos(theta) * r;
-        pos[i*3+1] = y;
-        pos[i*3+2] = Math.sin(theta) * r;
-        const w    = 1 - r / 0.30;
-        col[i*3]   = 1.0;
-        col[i*3+1] = 0.90 + w * 0.10;
-        col[i*3+2] = 0.55 + w * 0.30;
+      // Glowing vertex nodes
+      const dotGeo = new THREE.SphereGeometry(0.028, 6, 6);
+      const dotMat = new THREE.MeshBasicMaterial({ color: 0xffe0a0, transparent: true, opacity: 1.0 });
+      extraMats.push({ mat: dotMat, base: 1.0 });
+      const pos  = geo.attributes.position as THREE.BufferAttribute;
+      const seen = new Set<string>();
+      for (let vi = 0; vi < pos.count; vi++) {
+        const key = `${pos.getX(vi).toFixed(3)},${pos.getY(vi).toFixed(3)},${pos.getZ(vi).toFixed(3)}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        const dot = new THREE.Mesh(dotGeo, dotMat);
+        dot.position.fromBufferAttribute(pos, vi);
+        body.add(dot);
       }
-
-      // Two logarithmic spiral arms
-      for (let i = 0; i < ARM_N; i++) {
-        const arm   = i % 2;                       // alternate arms
-        const t     = Math.random();               // 0=inner 1=outer
-        const base  = arm * Math.PI;               // arms offset by 180°
-        const angle = base + t * Math.PI * 3.5    // 1.75 full rotations
-                    + (Math.random() - 0.5) * (0.22 + t * 0.60); // spread widens outward
-        const r     = 0.13 + t * 0.90 + (Math.random() - 0.5) * 0.07;
-        const y     = (Math.random() - 0.5) * 0.052 * Math.exp(-t * 2.2); // thin at edges
-
-        const idx   = CORE_N + i;
-        pos[idx*3]   = Math.cos(angle) * r;
-        pos[idx*3+1] = y;
-        pos[idx*3+2] = Math.sin(angle) * r;
-
-        // Warm golden inner → cool blue-white outer (like real stellar populations)
-        const heat   = Math.exp(-t * 2.4);
-        col[idx*3]   = 0.68 + heat * 0.32;
-        col[idx*3+1] = 0.80 + heat * 0.16;
-        col[idx*3+2] = 1.0;
-      }
-
-      const pGeo = new THREE.BufferGeometry();
-      pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-      pGeo.setAttribute("color",    new THREE.BufferAttribute(col, 3));
-      const pMat = new THREE.PointsMaterial({
-        size: 0.015, vertexColors: true,
-        transparent: true, opacity: 0.93, sizeAttenuation: true,
-      });
-      galaxy.add(new THREE.Points(pGeo, pMat));
-
-      return { body, mainMat: pMat as unknown as THREE.MeshPhysicalMaterial };
+      return { body, mainMat: mat, extraMats };
     }
 
-    // 6 — Europa ──────────────────────────────────────────────────────────────
+    // ── 6 · Code & Automation ────────────────────────────────────────────
+    // Three orthogonal interlocking rings — like mechanical gears or the
+    // three-axis gyroscope. Automated, precise, always in motion.
     case 6: {
-      const diffuse = loadTex(`${BASE}/europa-texture.png`);
-      const bump    = loadTex(`${BASE}/europa-texture.png`, false);
-      for (const t of [diffuse, bump]) {
-        t.wrapS = THREE.RepeatWrapping;
-        t.repeat.set(0.9602, 0.9583);
-        t.offset.set(0.0199, 0.0167);
-      }
-      const mat = new THREE.MeshStandardMaterial({
-        map: diffuse, bumpMap: bump, bumpScale: 0.010,
-        roughness: 0.30, metalness: 0.05,
+      const mat = phys({
+        metalness: 0.92, roughness: 0.06,
+        clearcoat: 1.0,  clearcoatRoughness: 0.03,
       });
-      body.add(new THREE.Mesh(new THREE.SphereGeometry(0.62, 128, 64), mat));
-      return { body, mainMat: mat as unknown as THREE.MeshPhysicalMaterial };
+      const rGeo = new THREE.TorusGeometry(0.42, 0.095, 32, 80);
+      // Ring 1 — XY plane (upright)
+      body.add(new THREE.Mesh(rGeo, mat));
+      // Ring 2 — YZ plane (side-on)
+      const r2 = new THREE.Mesh(rGeo, mat);
+      r2.rotation.y = Math.PI / 2;
+      body.add(r2);
+      // Ring 3 — XZ plane (flat)
+      const r3 = new THREE.Mesh(rGeo, mat);
+      r3.rotation.x = Math.PI / 2;
+      body.add(r3);
+      return { body, mainMat: mat, extraMats };
     }
 
-    // 7 — Quasar (NASA texture disk + dark core + relativistic jets) ──────────
+    // ── 7 · Creative & Design ────────────────────────────────────────────
+    // Iridescent dodecahedron gem — 12 pentagonal faces, glass transmission,
+    // and full iridescence create a shifting soap-bubble / opal effect that
+    // looks different from every angle. Genuinely creative geometry.
     case 7: {
-      const tex = loadTex(`${BASE}/quasar-texture.png`);
-      const mat = new THREE.MeshPhysicalMaterial({
-        map: tex, side: THREE.DoubleSide, transparent: true, opacity: 0.93,
-        roughness: 0.10, metalness: 0.04, emissive: c, emissiveIntensity: 0.10,
+      const geo = new THREE.DodecahedronGeometry(0.62, 0);
+      const mat = phys({
+        metalness: 0.04, roughness: 0.02,
+        transmission: 0.65, thickness: 1.3, ior: 1.52,
+        clearcoat: 1.0,  clearcoatRoughness: 0.02,
+        flatShading: true,
       });
-      const disk = new THREE.Mesh(new THREE.CircleGeometry(0.90, 96), mat);
-      disk.rotation.x = Math.PI * 0.30;
-      body.add(disk);
-      body.add(new THREE.Mesh(
-        new THREE.SphereGeometry(0.13, 20, 20),
-        new THREE.MeshBasicMaterial({ color: 0x000005 }),
-      ));
-      for (const sign of [1, -1]) {
-        const jet = new THREE.Mesh(
-          new THREE.ConeGeometry(0.055, 0.78, 6),
-          new THREE.MeshBasicMaterial({ color: 0xaaddff, transparent: true, opacity: 0.50 }),
-        );
-        jet.position.y = sign * 0.54;
-        if (sign < 0) jet.rotation.z = Math.PI;
-        body.add(jet);
-      }
-      return { body, mainMat: mat };
+      // Iridescence via property assignment (TS-safe for Three.js ≥ r139)
+      (mat as any).iridescence    = 1.0;
+      (mat as any).iridescenceIOR = 1.38;
+      body.add(new THREE.Mesh(geo, mat));
+      addEdges(geo, 0xb0fff8, 0.42);
+      return { body, mainMat: mat, extraMats };
     }
 
-    // 8 — Black Hole ──────────────────────────────────────────────────────────
+    // ── 8 · Game & Advanced ───────────────────────────────────────────────
+    // D20 icosahedron — literally a twenty-sided die. Flat-shaded faces,
+    // bright violet edge glow, and a heavy emissive pulse make it feel alive.
     case 8: {
-      body.add(new THREE.Mesh(
-        new THREE.SphereGeometry(0.3, 20, 20),
-        new THREE.MeshBasicMaterial({ color: 0x010108 }),
-      ));
-      let mainMat = new THREE.MeshPhysicalMaterial();
-      for (let r = 0; r < 3; r++) {
-        const rMat = new THREE.MeshPhysicalMaterial({
-          color, metalness: 0.6, roughness: 0.06, clearcoat: 1.0,
-          transparent: true, opacity: 0.88 - r * 0.24,
-          emissive: c, emissiveIntensity: 0.28 - r * 0.06,
-        });
-        if (r === 0) mainMat = rMat;
-        const ring = new THREE.Mesh(new THREE.TorusGeometry(0.46 + r * 0.2, 0.054 - r * 0.01, 8, 80), rMat);
-        ring.rotation.x = Math.PI / 2 + (r - 1) * 0.11;
-        body.add(ring);
-      }
-      return { body, mainMat };
+      const geo = new THREE.IcosahedronGeometry(0.66, 0);
+      const mat = phys({
+        metalness: 0.72, roughness: 0.15,
+        clearcoat: 0.80, clearcoatRoughness: 0.10,
+        flatShading: true,
+      });
+      body.add(new THREE.Mesh(geo, mat));
+      addEdges(geo, 0xe8d0ff, 0.85);
+      return { body, mainMat: mat, extraMats };
     }
 
     default: {
-      const mat = pbr({});
+      const mat = phys({ metalness: 0.5, roughness: 0.3 });
       body.add(new THREE.Mesh(new THREE.SphereGeometry(0.65, 20, 20), mat));
-      return { body, mainMat: mat };
+      return { body, mainMat: mat, extraMats };
     }
   }
 }
@@ -314,45 +268,60 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
     if (!container) return;
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
     let w = container.clientWidth;
     let h = container.clientHeight;
     const N       = CAROUSEL_ITEMS.length;
-    const SPACING = 2.70; // horizontal gap between item centres
+    const SPACING = 2.70;
 
     // ── Renderer ─────────────────────────────────────────────────────────
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(2, window.devicePixelRatio));
     renderer.setSize(w, h);
     renderer.setClearColor(0x000000, 0);
+    renderer.toneMapping        = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.15;
+    renderer.outputColorSpace   = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
 
-    // ── Camera — FOV 38°, z=7.5 → visible half-width ≈ 2.58 units ───────
-    // Adjacent centres at ±2.70 means ~35% of each adjacent sphere peeks in
+    // ── Camera ───────────────────────────────────────────────────────────
     const camera = new THREE.PerspectiveCamera(38, w / h, 0.1, 100);
     camera.position.set(0, 0.8, 7.5);
     camera.lookAt(0, 0, 0);
 
-    // ── Scene & lighting ──────────────────────────────────────────────────
+    // ── Three-point + rim lighting ────────────────────────────────────────
     const scene = new THREE.Scene();
-    scene.add(new THREE.HemisphereLight(0xfff8f0, 0x080d24, 0.45));
-    const keyLight = new THREE.DirectionalLight(0xffffff, 2.4);
-    keyLight.position.set(7, 12, 9);
-    scene.add(keyLight);
-    const fillLight = new THREE.DirectionalLight(0x7a88ff, 0.55);
-    fillLight.position.set(-6, 3, -9);
-    scene.add(fillLight);
-    const warmFill = new THREE.DirectionalLight(0xffddb0, 0.30);
-    warmFill.position.set(5, -4, 6);
-    scene.add(warmFill);
 
-    // ── Objects — placed linearly on X axis ───────────────────────────────
+    // Sky/ground hemisphere — warm above, deep cool below
+    scene.add(new THREE.HemisphereLight(0xfff4e0, 0x080c20, 0.55));
+
+    // Key — main warm light from upper-right front
+    const key = new THREE.DirectionalLight(0xfff9f0, 3.0);
+    key.position.set(6, 10, 8);
+    scene.add(key);
+
+    // Fill — cool blue, left side, softens shadows
+    const fill = new THREE.DirectionalLight(0x8099ff, 0.72);
+    fill.position.set(-7, 2, -5);
+    scene.add(fill);
+
+    // Rim — pure white from behind-below, creates silhouette separation
+    const rim = new THREE.DirectionalLight(0xffffff, 0.55);
+    rim.position.set(-1, -5, -10);
+    scene.add(rim);
+
+    // Warm bounce — subtle orange from below, simulates floor bounce
+    const bounce = new THREE.DirectionalLight(0xffcc88, 0.25);
+    bounce.position.set(3, -7, 5);
+    scene.add(bounce);
+
+    // ── Scene objects ────────────────────────────────────────────────────
     type Obj = {
-      group:   THREE.Group;
-      body:    THREE.Group;
-      hit:     THREE.Mesh;
-      pt:      THREE.PointLight;
-      mainMat: THREE.MeshPhysicalMaterial;
+      group:     THREE.Group;
+      body:      THREE.Group;
+      hit:       THREE.Mesh;
+      pt:        THREE.PointLight;
+      mainMat:   THREE.MeshPhysicalMaterial;
+      extraMats: ExtraMat[];
     };
 
     const carrier = new THREE.Group();
@@ -360,31 +329,32 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
 
     const objects: Obj[] = CAROUSEL_ITEMS.map((item, i) => {
       const diff = getDiff(i, 0, N);
-      const g = new THREE.Group();
-      // Initial position based on diff from selectedIndex=0
+      const g    = new THREE.Group();
       g.position.set(
         diff * SPACING,
         diff === 0 ? 0.1 : 0,
         diff === 0 ? 0.3 : Math.abs(diff) === 1 ? -0.3 : -20,
       );
 
-      const { body, mainMat } = makeCosmicBody(i, item.color);
+      const { body, mainMat, extraMats } = makeShape(i, item.color);
       g.add(body);
 
+      // Invisible sphere hit-target for raycasting
       const hit = new THREE.Mesh(
         new THREE.SphereGeometry(1.1, 8, 8),
         new THREE.MeshBasicMaterial({ visible: false }),
       );
       g.add(hit);
 
+      // Per-object coloured point light for local glow
       const pt = new THREE.PointLight(item.color, 0, 5);
       g.add(pt);
 
       carrier.add(g);
-      return { group: g, body, hit, pt, mainMat };
+      return { group: g, body, hit, pt, mainMat, extraMats };
     });
 
-    // ── Raycasting — only test visible slots (front + adjacent) ──────────
+    // ── Raycasting — only test front + adjacent slots ────────────────────
     const raycaster = new THREE.Raycaster();
     const mouse     = new THREE.Vector2();
     let hoveredIdx  = -1;
@@ -395,7 +365,7 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
       mouse.y = -((e.clientY - rect.top)  / rect.height) * 2 + 1;
       raycaster.setFromCamera(mouse, camera);
       const candidates = objects
-        .filter((_, idx) => Math.abs(getDiff(idx, selectedRef.current, N)) <= 1)
+        .filter((_, ii) => Math.abs(getDiff(ii, selectedRef.current, N)) <= 1)
         .map(o => o.hit);
       const hits = raycaster.intersectObjects(candidates);
       return hits.length ? objects.findIndex(o => o.hit === hits[0].object) : -1;
@@ -406,10 +376,9 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
       renderer.domElement.style.cursor = hoveredIdx >= 0 ? "pointer" : "default";
     };
     const onClick = (e: MouseEvent) => {
-      const idx = getHitIdx(e);
-      if (idx >= 0) selectRef.current(idx);
+      const ii = getHitIdx(e);
+      if (ii >= 0) selectRef.current(ii);
     };
-
     renderer.domElement.addEventListener("mousemove", onMouseMove);
     renderer.domElement.addEventListener("click",     onClick);
 
@@ -422,44 +391,47 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
       const sel = selectedRef.current;
 
       objects.forEach((obj, i) => {
-        const diff     = getDiff(i, sel, N);
-        const isFront  = diff === 0;
-        const isAdj    = Math.abs(diff) === 1;
-        const isHovered = hoveredIdx === i && !isFront;
+        const diff    = getDiff(i, sel, N);
+        const front   = diff === 0;
+        const adj     = Math.abs(diff) === 1;
+        const hovered = hoveredIdx === i && !front;
+        const lerpF   = prefersReducedMotion ? 1 : 0.08;
 
-        // ── Target position ──
-        const tX = diff * SPACING;
-        const tZ = isFront ? 0.3 : isAdj ? -0.3 : -20;
-        const tY = isFront ? 0.12 : 0;
-        const lerpFactor = prefersReducedMotion ? 1 : 0.08;
-        obj.group.position.x += (tX - obj.group.position.x) * lerpFactor;
-        obj.group.position.z += (tZ - obj.group.position.z) * lerpFactor;
-        obj.group.position.y += (tY - obj.group.position.y) * lerpFactor;
+        // ── Position lerp ──
+        obj.group.position.x += (diff * SPACING          - obj.group.position.x) * lerpF;
+        obj.group.position.z += ((front ? 0.3 : adj ? -0.3 : -20) - obj.group.position.z) * lerpF;
+        obj.group.position.y += ((front ? 0.12 : 0)      - obj.group.position.y) * lerpF;
 
-        // ── Scale ──
-        const tScale = isFront   ? 1.40
-          : isHovered ? 0.65
-          : isAdj     ? 0.56
-          : 0.01;
-        obj.group.scale.lerp(new THREE.Vector3(tScale, tScale, tScale), prefersReducedMotion ? 1 : 0.08);
+        // ── Scale lerp ──
+        const tS = front ? 1.40 : hovered ? 0.65 : adj ? 0.56 : 0.01;
+        obj.group.scale.lerp(new THREE.Vector3(tS, tS, tS), prefersReducedMotion ? 1 : 0.08);
 
-        // ── Opacity ──
-        const tOpacity = isFront ? 1.0 : isAdj ? 0.52 : 0;
-        obj.mainMat.opacity += (tOpacity - obj.mainMat.opacity) * 0.10;
+        // ── Opacity — main material + proportional extras ──
+        const tOp = front ? 1.0 : adj ? 0.52 : 0;
+        obj.mainMat.opacity += (tOp - obj.mainMat.opacity) * 0.10;
         obj.mainMat.transparent = true;
+        obj.extraMats.forEach(({ mat, base }) => {
+          (mat as any).opacity     = base * obj.mainMat.opacity;
+          (mat as any).transparent = true;
+        });
 
         // ── Self-rotation ──
-        if (!prefersReducedMotion) selfAngles[i] += isFront ? 0.009 : isAdj ? 0.002 : 0;
+        if (!prefersReducedMotion) {
+          selfAngles[i] += front ? 0.009 : adj ? 0.002 : 0;
+          // Secondary axis rotations per shape
+          if (i === 1) obj.body.rotation.z = selfAngles[i] * 0.30; // knot tumbles
+          if (i === 2) obj.body.rotation.z = selfAngles[i] * 0.42; // helix twists
+          if (i === 6) obj.body.rotation.z = selfAngles[i] * 0.62; // rings gyrate
+        }
         obj.body.rotation.y = selfAngles[i];
-        if (i === 5) obj.body.rotation.y = selfAngles[i] * 0.4; // galaxy slow-spin
 
         // ── Emissive pulse ──
-        const tEmissive = isFront ? 0.20 : isAdj ? 0.04 : 0;
-        obj.mainMat.emissiveIntensity += (tEmissive - obj.mainMat.emissiveIntensity) * 0.1;
+        const tEm = front ? 0.24 : adj ? 0.04 : 0;
+        obj.mainMat.emissiveIntensity += (tEm - obj.mainMat.emissiveIntensity) * 0.10;
 
-        // ── Point light ──
-        const tIntensity = isFront ? 2.6 : isAdj ? 0.5 : 0;
-        obj.pt.intensity += (tIntensity - obj.pt.intensity) * 0.08;
+        // ── Point light glow ──
+        const tPt = front ? 2.8 : adj ? 0.5 : 0;
+        obj.pt.intensity += (tPt - obj.pt.intensity) * 0.08;
       });
 
       renderer.render(scene, camera);
@@ -486,11 +458,11 @@ export default function CategoryCarousel3D({ selectedIndex, onSelect }: Props) {
       if (container.contains(renderer.domElement)) container.removeChild(renderer.domElement);
       objects.forEach(o => {
         o.body.traverse(child => {
-          if ((child as THREE.Mesh).geometry) (child as THREE.Mesh).geometry.dispose();
-          if ((child as THREE.Mesh).material) {
-            const m = (child as THREE.Mesh).material;
-            if (Array.isArray(m)) m.forEach(x => x.dispose());
-            else (m as THREE.Material).dispose();
+          const m = child as THREE.Mesh;
+          if (m.geometry) m.geometry.dispose();
+          if (m.material) {
+            if (Array.isArray(m.material)) m.material.forEach(x => x.dispose());
+            else (m.material as THREE.Material).dispose();
           }
         });
         o.hit.geometry.dispose();

@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
 import { NEWS_ITEMS, NEWS_TAGS, type NewsItem } from "@/lib/newsData";
 import { BASE_PATH } from "@/lib/data";
+import { tagToTopicSlug } from "@/lib/topicsData";
 
 const SIG_STYLE = {
   landmark: { label: "Landmark",  bg: "#9F8CFF22", border: "#9F8CFF66", text: "#B6A6FF" },
@@ -12,7 +13,7 @@ const SIG_STYLE = {
   notable:  { label: "Notable",   bg: "#ffffff0a", border: "#ffffff22", text: "#8b8aad"  },
 };
 
-function NewsCard({ item }: { item: NewsItem }) {
+function NewsCard({ item, onTagFilter }: { item: NewsItem; onTagFilter: (tag: string) => void }) {
   const sig = SIG_STYLE[item.significance];
   return (
     <motion.article
@@ -24,7 +25,9 @@ function NewsCard({ item }: { item: NewsItem }) {
     >
       {/* Left: date + significance */}
       <div className="w-[96px] shrink-0 pt-0.5">
-        <p className="font-mono text-[11px] text-fg-4 mb-2">{item.date}</p>
+        <p className="font-mono text-[11px] text-fg-4 mb-2">
+          {item.dateDay ? `${item.dateDay} ${item.date}` : item.date}
+        </p>
         <span className="inline-flex font-mono text-[9px] tracking-[0.10em] uppercase px-2 py-0.5 rounded-full border"
           style={{ background: sig.bg, borderColor: sig.border, color: sig.text }}>
           {sig.label}
@@ -33,12 +36,18 @@ function NewsCard({ item }: { item: NewsItem }) {
 
       {/* Right: content */}
       <div className="flex-1 min-w-0">
-        {/* Provider tag */}
+        {/* Provider tag + country flag */}
         <div className="flex items-center gap-2 mb-2">
           <span className="w-2 h-2 rounded-full shrink-0" style={{ background: item.providerColor }} />
           <span className="font-mono text-[10px] tracking-[0.12em] uppercase" style={{ color: item.providerColor }}>
             {item.provider}
           </span>
+          {item.country === "BR" && (
+            <span title="Brazil" className="text-[13px] leading-none" aria-label="Brazil">🇧🇷</span>
+          )}
+          {item.country === "SE" && (
+            <span title="Sweden" className="text-[13px] leading-none" aria-label="Sweden">🇸🇪</span>
+          )}
         </div>
 
         {/* Title */}
@@ -49,14 +58,47 @@ function NewsCard({ item }: { item: NewsItem }) {
         {/* Summary */}
         <p className="font-sans text-[14px] leading-[1.65] text-fg-2 mb-4">{item.summary}</p>
 
+        {/* Why it matters + What to try */}
+        {(item.why_it_matters || item.what_to_try) && (
+          <div className="flex flex-col gap-2 mb-4 rounded-lg border border-violet/[0.14] bg-violet/[0.04] px-4 py-3">
+            {item.why_it_matters && (
+              <p className="font-sans text-[13px] leading-[1.55] text-fg-2">
+                <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-violet-bright mr-2">Why it matters</span>
+                {item.why_it_matters}
+              </p>
+            )}
+            {item.what_to_try && (
+              <p className="font-sans text-[13px] leading-[1.55] text-fg-2">
+                <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-cyan-ice mr-2">Try it</span>
+                {item.what_to_try}
+              </p>
+            )}
+          </div>
+        )}
+
         {/* Footer: tags + source link */}
         <div className="flex flex-wrap items-center gap-2">
           <div className="flex flex-wrap gap-1.5 flex-1">
-            {item.tags.map(tag => (
-              <span key={tag} className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12]">
-                {tag}
-              </span>
-            ))}
+            {item.tags.map(tag => {
+              const topicSlug = tagToTopicSlug(tag);
+              return topicSlug ? (
+                <a
+                  key={tag}
+                  href={`${BASE_PATH}/topics/${topicSlug}/`}
+                  className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12] hover:text-violet-bright hover:border-violet/40 transition-colors"
+                >
+                  {tag}
+                </a>
+              ) : (
+                <button
+                  key={tag}
+                  onClick={() => onTagFilter(tag)}
+                  className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12] hover:text-fg-1 hover:border-white/25 transition-colors"
+                >
+                  {tag}
+                </button>
+              );
+            })}
           </div>
           {item.url && (
             <a
@@ -75,9 +117,42 @@ function NewsCard({ item }: { item: NewsItem }) {
 }
 
 export default function AINewsPage() {
-  const [activeSig, setActiveSig]     = useState<string>("all");
-  const [activeTag, setActiveTag]     = useState<string>("all");
-  const [activeProvider, setProvider] = useState<string>("all");
+  const [activeSig, setActiveSig] = useState<string>(() => {
+    if (typeof window === "undefined") return "all";
+    return new URLSearchParams(window.location.search).get("sig") || "all";
+  });
+  const [activeTag, setActiveTag] = useState<string>(() => {
+    if (typeof window === "undefined") return "all";
+    return new URLSearchParams(window.location.search).get("tag") || "all";
+  });
+  const [activeProvider, setProvider] = useState<string>(() => {
+    if (typeof window === "undefined") return "all";
+    return new URLSearchParams(window.location.search).get("provider") || "all";
+  });
+  const [brazilOnly, setBrazilOnly] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return new URLSearchParams(window.location.search).get("brazil") === "1";
+  });
+  const [swedenOnly, setSwedenOnly] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return new URLSearchParams(window.location.search).get("sweden") === "1";
+  });
+  const [search, setSearch] = useState(() => {
+    if (typeof window === "undefined") return "";
+    return new URLSearchParams(window.location.search).get("q") || "";
+  });
+
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (activeSig      !== "all") params.set("sig",      activeSig);
+    if (activeTag      !== "all") params.set("tag",      activeTag);
+    if (activeProvider !== "all") params.set("provider", activeProvider);
+    if (brazilOnly)               params.set("brazil",   "1");
+    if (swedenOnly)               params.set("sweden",   "1");
+    if (search)                   params.set("q",        search);
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
   const providers = useMemo(() => {
     const ps = [...new Set(NEWS_ITEMS.map((n: NewsItem) => n.provider))].sort();
@@ -85,12 +160,25 @@ export default function AINewsPage() {
   }, []);
 
   const filtered = useMemo(() => {
-    return NEWS_ITEMS
+    const q = search.toLowerCase().trim();
+    return [...NEWS_ITEMS]
       .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
       .filter((n: NewsItem) => activeProvider === "all" || n.provider === activeProvider)
-      .sort((a: NewsItem, b: NewsItem) => b.dateNum - a.dateNum);
-  }, [activeSig, activeTag, activeProvider]);
+      .filter((n: NewsItem) => !brazilOnly || n.country === "BR")
+      .filter((n: NewsItem) => !swedenOnly || n.country === "SE")
+      .filter((n: NewsItem) => {
+        if (!q) return true;
+        return n.title.toLowerCase().includes(q) ||
+          n.summary.toLowerCase().includes(q) ||
+          n.tags.some((t: string) => t.toLowerCase().includes(q)) ||
+          n.provider.toLowerCase().includes(q);
+      })
+      .sort((a: NewsItem, b: NewsItem) => {
+        if (b.dateNum !== a.dateNum) return b.dateNum - a.dateNum;
+        return (b.dateDay ?? 1) - (a.dateDay ?? 1);
+      });
+  }, [activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
   // Group by year for visual breaks
   const grouped = useMemo(() => {
@@ -151,6 +239,22 @@ export default function AINewsPage() {
 
         {/* Filters */}
         <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] py-3 -mx-6 md:-mx-8 px-6 md:px-8">
+          {/* Search row */}
+          <div className="relative mb-2.5">
+            <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
+            <input
+              type="search"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              placeholder="Search events, models, companies…"
+              className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-1.5 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
+            />
+            {search && (
+              <button onClick={() => setSearch("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors" aria-label="Clear search">
+                <X size={12} />
+              </button>
+            )}
+          </div>
           <div className="flex items-center gap-3 flex-wrap">
             {/* Significance */}
             <div className="flex gap-1.5">
@@ -177,7 +281,35 @@ export default function AINewsPage() {
               {providers.map((p: string) => <option key={p} value={p}>{p}</option>)}
             </select>
 
-            {filtered.length !== NEWS_ITEMS.length && (
+            {/* Brazil filter */}
+            <button
+              onClick={() => { setBrazilOnly(v => !v); setSwedenOnly(false); }}
+              title={brazilOnly ? "Show all countries" : "Show Brazil news only"}
+              className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
+              style={{
+                background:  brazilOnly ? "#009c3b22" : "transparent",
+                borderColor: brazilOnly ? "#009c3b88" : "#ffffff18",
+                color:       brazilOnly ? "#4ade80"   : "#6b6a8a",
+              }}
+            >
+              🇧🇷 Brazil
+            </button>
+
+            {/* Sweden filter */}
+            <button
+              onClick={() => { setSwedenOnly(v => !v); setBrazilOnly(false); }}
+              title={swedenOnly ? "Show all countries" : "Show Sweden news only"}
+              className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
+              style={{
+                background:  swedenOnly ? "#006AA722" : "transparent",
+                borderColor: swedenOnly ? "#006AA788" : "#ffffff18",
+                color:       swedenOnly ? "#60a5fa"   : "#6b6a8a",
+              }}
+            >
+              🇸🇪 Sweden
+            </button>
+
+            {(search || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly || swedenOnly) && (
               <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} events</span>
             )}
           </div>
@@ -197,7 +329,7 @@ export default function AINewsPage() {
                   <div className="flex-1 h-px bg-violet/[0.12]" />
                   <span className="font-mono text-[11px] text-fg-4">{items.length} events</span>
                 </div>
-                {items.map(item => <NewsCard key={item.id} item={item} />)}
+                {items.map(item => <NewsCard key={item.id} item={item} onTagFilter={tag => setActiveTag(tag)} />)}
               </div>
             ))
           )}

@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search } from "lucide-react";
 import { AI_TOOLS, TOOL_CATEGORIES, type AITool, type ToolCategory } from "@/lib/toolsData";
 import { BASE_PATH } from "@/lib/data";
+import ToolModal from "./ToolModal";
 
 const PRICING_COLOR: Record<string, string> = {
   free:       "#10b981",
@@ -20,14 +21,12 @@ const PRICING_LABEL: Record<string, string> = {
   enterprise: "Enterprise",
 };
 
-function ToolCard({ tool }: { tool: AITool }) {
+function ToolCard({ tool, onOpen }: { tool: AITool; onOpen: (t: AITool) => void }) {
   const cat = TOOL_CATEGORIES.find(c => c.id === tool.category);
   return (
-    <a
-      href={tool.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200 hover:scale-[1.015] hover:shadow-lg bg-[#0d0a1c] border-violet/[0.12] hover:border-violet/40"
+    <button
+      onClick={() => onOpen(tool)}
+      className="group flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200 hover:scale-[1.015] hover:shadow-lg bg-[#0d0a1c] border-violet/[0.12] hover:border-violet/40 text-left w-full"
     >
       {/* Top row */}
       <div className="flex items-start justify-between gap-2">
@@ -62,14 +61,33 @@ function ToolCard({ tool }: { tool: AITool }) {
         </span>
         <span className="font-mono text-[10px] text-fg-4">{tool.priceNote}</span>
       </div>
-    </a>
+    </button>
   );
 }
 
 export default function ToolsDirectoryPage() {
-  const [activeCategory, setActiveCategory] = useState<ToolCategory | "all">("all");
-  const [activePricing, setActivePricing]   = useState<string>("all");
-  const [search, setSearch]                  = useState("");
+  const [selectedTool, setSelectedTool] = useState<AITool | null>(null);
+  const [activeCategory, setActiveCategory] = useState<ToolCategory | "all">(() => {
+    if (typeof window === "undefined") return "all";
+    return (new URLSearchParams(window.location.search).get("category") || "all") as ToolCategory | "all";
+  });
+  const [activePricing, setActivePricing] = useState<string>(() => {
+    if (typeof window === "undefined") return "all";
+    return new URLSearchParams(window.location.search).get("pricing") || "all";
+  });
+  const [search, setSearch] = useState(() => {
+    if (typeof window === "undefined") return "";
+    return new URLSearchParams(window.location.search).get("q") || "";
+  });
+
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (activeCategory !== "all") params.set("category", activeCategory);
+    if (activePricing  !== "all") params.set("pricing",  activePricing);
+    if (search)                   params.set("q",        search);
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [activeCategory, activePricing, search]);
 
   const filtered = useMemo(() => {
     return AI_TOOLS.filter(t => {
@@ -215,12 +233,13 @@ export default function ToolsDirectoryPage() {
                 transition={{ duration: 0.2 }}
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
               >
-                {filtered.map(tool => <ToolCard key={tool.id} tool={tool} />)}
+                {filtered.map(tool => <ToolCard key={tool.id} tool={tool} onOpen={setSelectedTool} />)}
               </motion.div>
             </AnimatePresence>
           )}
         </div>
       </div>
+      <ToolModal tool={selectedTool} onClose={() => setSelectedTool(null)} />
     </div>
   );
 }

@@ -7,6 +7,9 @@ export interface LabModel {
   freeAccess?: boolean;
   highlight?: string;
   speed?: "fast" | "medium" | "slow";
+  status?: "active" | "legacy" | "preview";
+  releaseDate?: string;
+  discontinuedDate?: string;
 }
 
 export interface AILab {
@@ -60,7 +63,7 @@ export const AI_LABS: AILab[] = [
       {
         name: "Claude Sonnet 4.6",
         type: "text",
-        contextWindow: "200K tokens",
+        contextWindow: "1M tokens",
         inputPrice: "$3 / M tokens",
         outputPrice: "$15 / M tokens",
         freeAccess: false,
@@ -70,11 +73,11 @@ export const AI_LABS: AILab[] = [
       {
         name: "Claude Opus 4.7",
         type: "text",
-        contextWindow: "200K tokens",
+        contextWindow: "1M tokens",
         inputPrice: "$5 / M tokens",
         outputPrice: "$25 / M tokens",
         freeAccess: false,
-        highlight: "Deepest reasoning, long-horizon tasks",
+        highlight: "Deepest reasoning, long-horizon tasks — step-change in agentic coding",
         speed: "slow",
       },
       {
@@ -125,7 +128,7 @@ export const AI_LABS: AILab[] = [
     website: "https://openai.com",
     focus: ["AGI", "Multimodal", "Reasoning", "Agents"],
     description:
-      "OpenAI pioneered large-scale language model research and brought AI to mass adoption with ChatGPT. The GPT-5 family (released Aug 2025) unified fast chat and deep reasoning into a single endpoint, free to all ChatGPT users. GPT-5.5 (Apr 2026) extended that with 1M-token context; GPT-5.5 Instant became the default ChatGPT model in May 2026. GPT-5.2-Codex targets autonomous multi-step software engineering.",
+      "OpenAI pioneered large-scale language model research and brought AI to mass adoption with ChatGPT. The GPT-5 family (released Aug 2025) unified fast chat and deep reasoning into a single endpoint, free to all ChatGPT users. GPT-5.5 (Apr 2026) extended that with 1M-token context and became the primary Codex model for complex coding and agentic workflows; GPT-5.5 Instant became the default ChatGPT model in May 2026. GPT-5.3-Codex-Spark (Feb 2026) is a real-time coding model delivering 1,000+ tokens/sec for ultra-low-latency editing, available in research preview to ChatGPT Pro subscribers.",
     models: [
       {
         name: "GPT-5.5 Instant",
@@ -164,12 +167,37 @@ export const AI_LABS: AILab[] = [
         speed: "medium",
       },
       {
+        name: "GPT-5.5 (Codex)",
+        type: "code",
+        contextWindow: "1M tokens",
+        inputPrice: "$5 / M tokens",
+        outputPrice: "$30 / M tokens",
+        freeAccess: false,
+        highlight: "Current primary Codex model — complex coding, computer use, agentic workflows (Apr 2026)",
+        speed: "medium",
+        status: "active",
+        releaseDate: "Apr 2026",
+      },
+      {
+        name: "GPT-5.3-Codex-Spark",
+        type: "code",
+        contextWindow: "128K tokens",
+        freeAccess: false,
+        highlight: "1,000+ tok/s real-time coding — research preview for ChatGPT Pro (Feb 2026)",
+        speed: "fast",
+        status: "preview",
+        releaseDate: "Feb 2026",
+      },
+      {
         name: "GPT-5.2-Codex",
         type: "code",
         contextWindow: "200K tokens",
         freeAccess: false,
-        highlight: "Autonomous repo-level coding and testing",
+        highlight: "Legacy Codex model — autonomous repo-level coding; superseded by GPT-5.5 (Apr 2026)",
         speed: "slow",
+        status: "legacy",
+        releaseDate: "Oct 2025",
+        discontinuedDate: "Apr 2026",
       },
       {
         name: "o4-mini",
@@ -238,9 +266,11 @@ export const AI_LABS: AILab[] = [
       {
         name: "Gemini 3.1 Pro",
         type: "multimodal",
-        contextWindow: "1M tokens",
+        contextWindow: "2M tokens",
+        inputPrice: "$2 / M tokens",
+        outputPrice: "$12 / M tokens",
         freeAccess: false,
-        highlight: "GPQA Diamond 94.3%, ARC-AGI-2 77.1% — top of all Feb 2026 benchmarks",
+        highlight: "2M context window — largest available; GPQA Diamond 94.3%, Feb 2026",
         speed: "medium",
       },
       {
@@ -379,55 +409,54 @@ export const AI_LABS: AILab[] = [
     website: "https://mistral.ai",
     focus: ["European AI", "Efficiency", "Open weights", "Code"],
     description:
-      "Mistral AI is Europe's leading frontier AI lab, known for releasing highly efficient models that punch well above their weight class. The company balances open-weight releases (Mistral 7B, Mixtral 8x7B) with proprietary frontier models on la Plateforme. Codestral is a purpose-built coding model supporting over 80 programming languages.",
+      "Mistral AI is Europe's leading frontier AI lab, known for releasing highly efficient models that punch above their weight class. Mistral Large 3 (Dec 2025) is a sparse MoE model ranking #2 among open non-reasoning models on LMArena. Mistral Small 4 (2026) unifies reasoning, vision, and coding into one ultra-cheap model at $0.15/M tokens. Devstral Small 24B is the top-ranked open model for agentic coding workflows.",
     models: [
       {
-        name: "Mistral Small 3.1",
-        type: "text",
-        contextWindow: "128K tokens",
-        inputPrice: "$0.10 / M tokens",
-        outputPrice: "$0.30 / M tokens",
-        freeAccess: false,
-        highlight: "Best price-performance for straightforward tasks",
-        speed: "fast",
-      },
-      {
-        name: "Mistral Large 2",
+        name: "Mistral Large 3",
         type: "text",
         contextWindow: "128K tokens",
         inputPrice: "$2 / M tokens",
         outputPrice: "$6 / M tokens",
         freeAccess: false,
-        highlight: "Top European frontier model",
+        highlight: "#2 open non-reasoning model on LMArena — 41B active / 675B total params (Dec 2025)",
+        speed: "medium",
+        releaseDate: "Dec 2025",
+      },
+      {
+        name: "Mistral Small 4",
+        type: "multimodal",
+        contextWindow: "128K tokens",
+        inputPrice: "$0.15 / M tokens",
+        outputPrice: "$0.60 / M tokens",
+        freeAccess: false,
+        highlight: "Unified reasoning + vision + coding — cheapest multimodal reasoning model",
+        speed: "fast",
+      },
+      {
+        name: "Mistral Medium 3.5",
+        type: "text",
+        contextWindow: "256K tokens",
+        freeAccess: true,
+        highlight: "Open-weight, 128B params — strong mid-tier model with 256K context",
         speed: "medium",
       },
       {
-        name: "Codestral",
+        name: "Devstral Small 24B",
         type: "code",
-        contextWindow: "256K tokens",
+        contextWindow: "128K tokens",
         inputPrice: "$0.20 / M tokens",
         outputPrice: "$0.60 / M tokens",
         freeAccess: false,
-        highlight: "Purpose-built for code, 80+ languages",
+        highlight: "Best open model for agentic coding workflows — 24B params",
         speed: "fast",
-      },
-      {
-        name: "Pixtral Large",
-        type: "multimodal",
-        contextWindow: "128K tokens",
-        inputPrice: "$2 / M tokens",
-        outputPrice: "$6 / M tokens",
-        freeAccess: false,
-        highlight: "Frontier multimodal with document understanding",
-        speed: "medium",
       },
     ],
     products: [
       "Le Chat",
       "la Plateforme (API)",
       "Mistral Agents",
-      "Mistral 7B (open-weight)",
-      "Mixtral 8x7B (open-weight)",
+      "Devstral (open-weight)",
+      "Mistral Medium 3.5 (open-weight)",
     ],
     api: {
       available: true,
@@ -461,27 +490,35 @@ export const AI_LABS: AILab[] = [
     website: "https://x.ai",
     focus: ["Real-time info", "Unfiltered AI", "X/Twitter integration", "Research"],
     description:
-      "xAI was founded by Elon Musk with a mission to build AI that genuinely understands the physical universe. Grok models have a unique advantage: real-time access to X (Twitter) data, giving them up-to-the-minute awareness of world events. The lab emphasizes fewer content restrictions compared to other frontier providers.",
+      "xAI was founded by Elon Musk with a mission to build AI that genuinely understands the physical universe. Grok models have a unique advantage: real-time access to X (Twitter) data, giving them up-to-the-minute awareness of world events. Grok 4.3 (beta, Apr 2026) added long-context video understanding and enhanced reasoning; Grok 4 Heavy is the most powerful tier available via SuperGrok Heavy subscriptions.",
     models: [
       {
-        name: "Grok 3",
+        name: "Grok 4.3 Beta",
+        type: "multimodal",
+        contextWindow: "256K tokens",
+        freeAccess: false,
+        highlight: "Latest Grok — enhanced long-context, multimodal video understanding (Apr 2026)",
+        speed: "medium",
+        status: "preview",
+        releaseDate: "Apr 2026",
+      },
+      {
+        name: "Grok 4.1",
         type: "text",
         contextWindow: "131K tokens",
         inputPrice: "$5 / M tokens",
         outputPrice: "$15 / M tokens",
         freeAccess: false,
-        highlight: "Real-time X/Twitter data access",
+        highlight: "Real-time X/Twitter data access — available to all users",
         speed: "medium",
       },
       {
-        name: "Grok 3 Mini",
+        name: "Grok 4 Heavy",
         type: "reasoning",
         contextWindow: "131K tokens",
-        inputPrice: "$0.30 / M tokens",
-        outputPrice: "$0.50 / M tokens",
         freeAccess: false,
-        highlight: "Fast reasoning for complex problems at low cost",
-        speed: "fast",
+        highlight: "Most powerful Grok — SuperGrok Heavy tier only",
+        speed: "slow",
       },
       {
         name: "Aurora",
@@ -493,6 +530,7 @@ export const AI_LABS: AILab[] = [
     products: [
       "Grok (X integration)",
       "xAI API",
+      "SuperGrok Heavy",
       "Aurora image generation",
     ],
     api: {

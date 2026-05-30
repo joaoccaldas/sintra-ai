@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { Search, Copy, Check, ArrowRight, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { searchAll, KIND_META, type SearchDocument, type EntityKind } from "@/lib/searchIndex";
+import { searchAll, KIND_META, SEARCH_INDEX, type SearchDocument, type EntityKind } from "@/lib/searchIndex";
 import { USE_CASES } from "@/lib/data";
 
 const MAX_PER_GROUP = 3;
@@ -135,7 +135,7 @@ export default function CommandPalette({ open, onClose }: Props) {
                 {!query.trim() ? (
                   <div className="px-4 py-8 text-center">
                     <p className="font-mono text-[12px] text-fg-4 leading-relaxed">
-                      Search across <span className="text-fg-2">294 documents</span> — prompts, tools, concepts, news, labs &amp; more.
+                      Search across <span className="text-fg-2">{SEARCH_INDEX.length} documents</span> — prompts, tools, concepts, news, labs &amp; more.
                     </p>
                     <p className="font-mono text-[10px] text-fg-4 mt-2 opacity-60">
                       For use-case results, Enter or Copy copies the prompt instantly.

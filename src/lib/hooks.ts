@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef, RefObject } from "react";
+import { useState, useEffect, useCallback, useRef, RefObject, useSyncExternalStore } from "react";
 
 export function useReducedMotion(): boolean {
   const [reduced, setReduced] = useState(false);
@@ -148,4 +148,47 @@ export function useFocusTrap<T extends HTMLElement>(active: boolean) {
   }, [active]);
 
   return ref;
+}
+
+const RECENT_KEY = "sintra_recent_v1";
+const RECENT_MAX = 8;
+
+export interface RecentItem {
+  id: number;
+  slug: string;
+  title: string;
+  category: string;
+}
+
+let _recentCache: RecentItem[] = [];
+let _recentRaw = "";
+
+function readRecent(): RecentItem[] {
+  if (typeof window === "undefined") return [];
+  const raw = localStorage.getItem(RECENT_KEY) || "[]";
+  if (raw !== _recentRaw) {
+    try { _recentCache = JSON.parse(raw); } catch { _recentCache = []; }
+    _recentRaw = raw;
+  }
+  return _recentCache;
+}
+
+const subscribers = new Set<() => void>();
+function notifyRecent() { subscribers.forEach(fn => fn()); }
+
+export function trackRecentlyViewed(item: RecentItem) {
+  const prev = readRecent().filter(r => r.id !== item.id);
+  const next = [item, ...prev].slice(0, RECENT_MAX);
+  localStorage.setItem(RECENT_KEY, JSON.stringify(next));
+  notifyRecent();
+}
+
+const EMPTY_RECENT: RecentItem[] = [];
+
+export function useRecentlyViewed(): RecentItem[] {
+  return useSyncExternalStore(
+    cb => { subscribers.add(cb); return () => subscribers.delete(cb); },
+    readRecent,
+    () => EMPTY_RECENT,
+  );
 }

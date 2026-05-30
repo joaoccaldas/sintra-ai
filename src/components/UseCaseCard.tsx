@@ -1,23 +1,13 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
-import { UseCase, DIFF_COLOR } from "@/lib/data";
+import { Copy, Check, Bookmark, BookmarkCheck, ExternalLink } from "lucide-react";
+import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH } from "@/lib/data";
+import { formatDate, isNew } from "@/lib/dateUtils";
+import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import CardVisual from "./CardVisual";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
-
-const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":     "#F4D06F",
-  "productivity":   "#8FE3D2",
-  "writing":        "#F08CA8",
-  "research":       "#B6A6FF",
-  "finance":        "#6EE7A0",
-  "data-analytics": "#E8C089",
-  "coding":         "#9F8CFF",
-  "creative-ai":    "#5EEAD4",
-  "game-advanced":  "#E9D9B6",
-};
 
 interface Props {
   item: UseCase;
@@ -29,11 +19,11 @@ interface Props {
 export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = false }: Props) {
   const diffColor = DIFF_COLOR[item.difficulty];
   const catColor  = CAT_ACCENT[item.category] || "#9F8CFF";
-  const ref = useRef<HTMLButtonElement>(null);
+  const ref = useRef<HTMLAnchorElement>(null);
   const [copied, setCopied] = useState(false);
   const { isSaved, toggle } = useSavedPrompts();
 
-  const onMouseMove = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
+  const onMouseMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     const el = ref.current;
     if (!el) return;
     const r = el.getBoundingClientRect();
@@ -45,7 +35,7 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
     el.style.setProperty("--sy", `${y * 100}%`);
   }, []);
 
-  const onMouseLeave = useCallback(() => {
+  const onMouseLeave = useCallback((_e?: React.MouseEvent<HTMLAnchorElement>) => {
     const el = ref.current;
     if (!el) return;
     el.style.transition = "border-color 200ms, box-shadow 200ms, transform 520ms cubic-bezier(0.22,1,0.36,1)";
@@ -60,10 +50,11 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
   };
 
   return (
-    <button
+    <a
       ref={ref}
+      href={`${BASE_PATH}/prompts/${item.slug}/`}
+      onClick={e => { e.preventDefault(); onOpen(item); }}
       className={`card group focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-bright focus-visible:-outline-offset-[3px]${isFeatured ? " card--featured" : ""}`}
-      onClick={() => onOpen(item)}
       aria-label={`Open use case: ${item.title}`}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
@@ -112,13 +103,23 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
         >
           {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy</>}
         </button>
+        <a
+          href={getLaunchUrl(item.best_llm, item.prompt)}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={e => e.stopPropagation()}
+          aria-label={`Open prompt in ${getLaunchLabel(item.best_llm)}`}
+          className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[#0E1120]/90 border border-violet/30 font-mono text-[10px] text-fg-3 hover:text-violet-bright hover:border-violet/60 backdrop-blur-sm transition-colors"
+        >
+          <ExternalLink size={10} /> {getLaunchLabel(item.best_llm)}
+        </a>
       </div>
 
       {/* Output-kind abstract visual */}
       <CardVisual kind={item.output_kind} difficulty={item.difficulty} isFeatured={isFeatured} />
 
-      {/* Difficulty · category eyebrow */}
-      <span className="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-fg-3 font-medium">
+      {/* Difficulty · category · date eyebrow */}
+      <span className="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-fg-3 font-medium flex-wrap">
         <span
           className="w-2 h-2 rounded-full shrink-0"
           style={{ background: diffColor, boxShadow: `0 0 8px ${diffColor}` }}
@@ -126,6 +127,18 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
         {item.difficulty}
         <span className="text-fg-4">·</span>
         <span style={{ color: catColor, opacity: 0.85 }}>{item.category}</span>
+        <span className="text-fg-4">·</span>
+        <span className="text-fg-4 normal-case tracking-normal">{formatDate(item.dateAdded)}</span>
+        {isNew(item.dateAdded) && (
+          <span className="px-1.5 py-0.5 rounded-sm bg-violet/20 border border-violet/40 text-violet-bright text-[9px] tracking-[0.12em] uppercase font-mono normal-case">
+            New
+          </span>
+        )}
+        {item.confidence === "high" && (
+          <span className="px-1.5 py-0.5 rounded-sm bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-[9px] tracking-[0.12em] uppercase font-mono normal-case">
+            ✓ Verified
+          </span>
+        )}
       </span>
 
       {/* Title */}
@@ -177,6 +190,6 @@ export default function UseCaseCard({ item, onOpen, onTagFilter, isFeatured = fa
           )
         ))}
       </div>
-    </button>
+    </a>
   );
 }

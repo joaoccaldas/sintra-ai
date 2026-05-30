@@ -2,9 +2,62 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ExternalLink, Search } from "lucide-react";
+import { ArrowLeft, ExternalLink, Search, Play } from "lucide-react";
 import { RESOURCES, RESOURCE_CATEGORIES, type ResourceLink, type ResourceCategory } from "@/lib/resourcesData";
+import { YOUTUBE_VIDEOS, type YouTubeVideo } from "@/lib/videoData";
 import { BASE_PATH } from "@/lib/data";
+
+function VideoCard({ video }: { video: YouTubeVideo }) {
+  return (
+    <a
+      href={video.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex flex-col rounded-xl overflow-hidden border border-white/[0.08] hover:border-violet/30 transition-all duration-200 hover:scale-[1.015] bg-[#0d0a1c]"
+    >
+      {/* Thumbnail */}
+      <div className="relative overflow-hidden" style={{ aspectRatio: "16/9" }}>
+        <img
+          src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`}
+          alt={video.title}
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+            <Play size={18} className="text-white ml-0.5" fill="white" />
+          </div>
+        </div>
+        {video.duration && (
+          <span className="absolute bottom-2 right-2 font-mono text-[10px] bg-black/70 text-white px-1.5 py-0.5 rounded">
+            {video.duration}
+          </span>
+        )}
+      </div>
+
+      {/* Meta */}
+      <div className="flex flex-col gap-2 p-3.5 flex-1">
+        <div>
+          <h3 className="font-serif text-[14px] text-fg-1 leading-[1.3] group-hover:text-white transition-colors line-clamp-2">
+            {video.title}
+          </h3>
+          <p className="font-mono text-[10px] text-violet-bright/70 mt-1">{video.channel}</p>
+        </div>
+        <p className="font-sans text-[12px] text-fg-3 leading-[1.5] line-clamp-3 flex-1">
+          {video.summary}
+        </p>
+        <div className="flex items-center gap-1.5 flex-wrap pt-2 border-t border-hairline/40">
+          {video.tags.slice(0, 3).map(tag => (
+            <span key={tag} className="font-mono text-[9px] px-1.5 py-0.5 rounded-sm bg-violet/[0.06] text-fg-4 border border-violet/[0.10]">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </a>
+  );
+}
 
 function ResourceCard({ res }: { res: ResourceLink }) {
   const cat = RESOURCE_CATEGORIES.find(c => c.id === res.category)!;
@@ -47,12 +100,29 @@ function ResourceCard({ res }: { res: ResourceLink }) {
   );
 }
 
+const VIDEOS_TAB = "videos" as const;
+
 export default function ResourcesPage() {
-  const [activeCategory, setActiveCategory] = useState<ResourceCategory | "all">("all");
+  const [activeCategory, setActiveCategory] = useState<ResourceCategory | "all" | "videos">("all");
   const [search, setSearch] = useState("");
   const [freeOnly, setFreeOnly] = useState(false);
 
+  const isVideosTab = activeCategory === VIDEOS_TAB;
+
+  const filteredVideos = useMemo(() => {
+    if (!isVideosTab) return [];
+    const q = search.toLowerCase().trim();
+    if (!q) return YOUTUBE_VIDEOS;
+    return YOUTUBE_VIDEOS.filter(v =>
+      v.title.toLowerCase().includes(q) ||
+      v.summary.toLowerCase().includes(q) ||
+      v.channel.toLowerCase().includes(q) ||
+      v.tags.some(t => t.toLowerCase().includes(q))
+    );
+  }, [isVideosTab, search]);
+
   const filtered = useMemo(() => {
+    if (isVideosTab) return [];
     return RESOURCES.filter(r => {
       if (activeCategory !== "all" && r.category !== activeCategory) return false;
       if (freeOnly && !r.free) return false;
@@ -65,7 +135,7 @@ export default function ResourcesPage() {
       }
       return true;
     });
-  }, [activeCategory, search, freeOnly]);
+  }, [activeCategory, search, freeOnly, isVideosTab]);
 
   // Group filtered results by category when showing all
   const grouped = useMemo(() => {
@@ -121,44 +191,47 @@ export default function ResourcesPage() {
               {RESOURCES.length} resources curated
             </span>
             <span className="text-fg-4">·</span>
-            <span>{RESOURCE_CATEGORIES.length} categories</span>
+            <span>{RESOURCE_CATEGORIES.length + 1} categories</span>
             <span className="text-fg-4">·</span>
-            <span>{RESOURCES.filter(r => r.free).length} free</span>
+            <span>{YOUTUBE_VIDEOS.length} videos</span>
           </div>
         </motion.header>
 
-        {/* Filters bar */}
-        <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] py-3 -mx-6 md:-mx-8 px-6 md:px-8">
-          <div className="flex items-center gap-3 flex-wrap">
+        {/* Sticky filter + tab bar */}
+        <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] -mx-6 md:-mx-8 px-6 md:px-8">
+          {/* Search row */}
+          <div className="flex items-center gap-3 flex-wrap pt-3 pb-2">
             <div className="relative flex-1 min-w-[160px] max-w-xs">
               <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
               <input
                 type="search"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                placeholder="Search resources…"
+                placeholder={isVideosTab ? "Search videos…" : "Search resources…"}
                 className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-3 py-1.5 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
               />
             </div>
-            <button
-              onClick={() => setFreeOnly(f => !f)}
-              className="font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
-              style={{
-                background:  freeOnly ? "#10b98122" : "transparent",
-                borderColor: freeOnly ? "#10b98188" : "#ffffff18",
-                color:       freeOnly ? "#10b981" : "#6b6a8a",
-              }}
-            >
-              Free only
-            </button>
+            {!isVideosTab && (
+              <button
+                onClick={() => setFreeOnly(f => !f)}
+                className="font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
+                style={{
+                  background:  freeOnly ? "#10b98122" : "transparent",
+                  borderColor: freeOnly ? "#10b98188" : "#ffffff18",
+                  color:       freeOnly ? "#10b981" : "#6b6a8a",
+                }}
+              >
+                Free only
+              </button>
+            )}
             {(search || freeOnly || activeCategory !== "all") && (
-              <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} results</span>
+              <span className="font-mono text-[11px] text-fg-4 ml-auto">
+                {isVideosTab ? filteredVideos.length : filtered.length} results
+              </span>
             )}
           </div>
-        </div>
-
-        {/* Category tabs */}
-        <div className="flex gap-2 overflow-x-auto scrollbar-none py-6 border-b border-violet/[0.06]" style={{ scrollbarWidth: "none" }}>
+          {/* Category tabs */}
+          <div className="flex gap-2 overflow-x-auto scrollbar-none pb-3" style={{ scrollbarWidth: "none" }}>
           <button
             onClick={() => setActiveCategory("all")}
             className="flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full border transition-all font-mono text-[11px] tracking-[0.04em]"
@@ -169,6 +242,18 @@ export default function ResourcesPage() {
             }}
           >
             🌐 All
+          </button>
+          {/* Videos tab */}
+          <button
+            onClick={() => { setActiveCategory(VIDEOS_TAB); setFreeOnly(false); }}
+            className="flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full border transition-all font-mono text-[11px] tracking-[0.04em]"
+            style={{
+              background:  activeCategory === VIDEOS_TAB ? "#ef444422" : "transparent",
+              borderColor: activeCategory === VIDEOS_TAB ? "#ef444488" : "#ffffff12",
+              color:       activeCategory === VIDEOS_TAB ? "#f87171" : "#6b6a8a",
+            }}
+          >
+            ▶ Videos
           </button>
           {RESOURCE_CATEGORIES.map(cat => (
             <button
@@ -185,6 +270,7 @@ export default function ResourcesPage() {
               {cat.icon} {cat.label}
             </button>
           ))}
+          </div>
         </div>
 
         {/* Content */}
@@ -197,7 +283,18 @@ export default function ResourcesPage() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              {filtered.length === 0 ? (
+              {isVideosTab ? (
+                filteredVideos.length === 0 ? (
+                  <div className="text-center py-24">
+                    <p className="font-serif text-[22px] text-fg-3 mb-3">No videos match</p>
+                    <button onClick={() => setSearch("")} className="font-mono text-[12px] text-violet-bright hover:underline">Clear search</button>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {filteredVideos.map(v => <VideoCard key={v.id} video={v} />)}
+                  </div>
+                )
+              ) : filtered.length === 0 ? (
                 <div className="text-center py-24">
                   <p className="font-serif text-[22px] text-fg-3 mb-3">Nothing found</p>
                   <button onClick={() => { setSearch(""); setActiveCategory("all"); setFreeOnly(false); }}

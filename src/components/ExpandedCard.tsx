@@ -1,11 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Copy, Check, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Copy, Check, X, ChevronLeft, ChevronRight, ExternalLink, Share2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { UseCase, DIFF_COLOR } from "@/lib/data";
+import Link from "next/link";
+import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH, USE_CASES } from "@/lib/data";
+import { formatDate, isNew } from "@/lib/dateUtils";
+import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
+import { tagToTopicSlug } from "@/lib/topicsData";
 import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import { useLanguage } from "@/context/LanguageContext";
@@ -16,29 +20,56 @@ interface Props {
   items?: UseCase[];
 }
 
-const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":     "#F4D06F",
-  "productivity":   "#8FE3D2",
-  "writing":        "#F08CA8",
-  "research":       "#B6A6FF",
-  "finance":        "#6EE7A0",
-  "data-analytics": "#E8C089",
-  "coding":         "#9F8CFF",
-  "creative-ai":    "#5EEAD4",
-  "game-advanced":  "#E9D9B6",
-};
-
 const FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+function RelatedRail({ shown, onOpen }: { shown: UseCase; onOpen: (u: UseCase) => void }) {
+  const related = useMemo(() => {
+    const shownTags = new Set(shown.tags);
+    return USE_CASES
+      .filter(u => u.id !== shown.id && u.tags.some(t => shownTags.has(t)))
+      .sort((a, b) => {
+        const sa = a.tags.filter(t => shownTags.has(t)).length;
+        const sb = b.tags.filter(t => shownTags.has(t)).length;
+        return sb - sa;
+      })
+      .slice(0, 4);
+  }, [shown]);
+
+  if (related.length === 0) return null;
+
+  return (
+    <div className="mt-6 pt-5 border-t border-hairline">
+      <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 block mb-3">Related prompts</span>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        {related.map(u => (
+          <button
+            key={u.id}
+            onClick={() => onOpen(u)}
+            className="group flex flex-col gap-1 p-3 rounded-xl border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-violet/[0.04] text-left transition-all"
+          >
+            <span className="font-mono text-[9px] tracking-[0.1em] uppercase" style={{ color: CAT_ACCENT[u.category] || "#9F8CFF" }}>
+              {u.category}
+            </span>
+            <span className="font-serif text-[13px] text-fg-2 group-hover:text-fg-1 leading-tight line-clamp-2 transition-colors">
+              {u.title}
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function ExpandedCard({ item, onClose, items }: Props) {
   const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
+  const [shared, setShared] = useState(false);
   const [currentItem, setCurrentItem] = useState<UseCase | null>(item);
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<Element | null>(null);
 
   // Sync internal item when parent opens a different card
-  useEffect(() => { setCurrentItem(item); setCopied(false); }, [item]);
+  useEffect(() => { setCurrentItem(item); setCopied(false); setShared(false); }, [item]);
 
   const shown = currentItem;
   const shownIdx = items && shown ? items.findIndex(u => u.id === shown.id) : -1;
@@ -99,6 +130,14 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
     setTimeout(() => setCopied(false), 1600);
   };
 
+  const share = () => {
+    if (!shown) return;
+    const url = `${window.location.origin}${window.location.pathname}#uc-${shown.id}`;
+    navigator.clipboard?.writeText(url);
+    setShared(true);
+    setTimeout(() => setShared(false), 1600);
+  };
+
   return (
     <AnimatePresence>
       {item && shown && (
@@ -151,11 +190,28 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
 
                 {/* Tool chips */}
                 {shown.tools.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5 mb-6">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
                     {shown.tools.map(tool => (
                       <span key={tool} className="font-mono text-[10px] px-2 py-1 rounded-sm bg-violet/[0.08] text-fg-2 border border-violet/20">
                         {tool}
                       </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Related tools — linked */}
+                {shown.related_tools && shown.related_tools.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-2 mb-6">
+                    <span className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">Try with:</span>
+                    {shown.related_tools.map(toolId => (
+                      <Link
+                        key={toolId}
+                        href={`${BASE_PATH}/tools/${toolId}/`}
+                        onClick={e => e.stopPropagation()}
+                        className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-violet/30 text-violet-bright bg-violet/[0.06] hover:bg-violet/[0.12] transition-colors capitalize"
+                      >
+                        {toolId.replace(/-/g, " ")}
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -200,6 +256,13 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                   {shown.difficulty}
                   <span className="text-fg-4">·</span>
                   <span style={{ color: CAT_ACCENT[shown.category] || "#9F8CFF" }}>{shown.category}</span>
+                  <span className="text-fg-4">·</span>
+                  <span className="text-fg-4 normal-case tracking-normal">{formatDate(shown.dateAdded)}</span>
+                  {isNew(shown.dateAdded) && (
+                    <span className="px-1.5 py-0.5 rounded-sm bg-violet/20 border border-violet/40 text-violet-bright text-[9px] tracking-[0.12em] uppercase font-mono normal-case">
+                      New
+                    </span>
+                  )}
                   {items && shownIdx >= 0 && (
                     <span className="ml-auto font-mono text-[10px] text-fg-4">
                       {shownIdx + 1} / {items.length}
@@ -221,6 +284,31 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                     style={{ borderColor: CAT_ACCENT[shown.category] || "#9F8CFF" }}>
                     {shown.outcome}
                   </p>
+                )}
+
+                {/* Trust badges */}
+                {(shown.confidence || shown.region || shown.last_verified) && (
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {shown.confidence && (
+                      <span className={`font-mono text-[10px] px-2.5 py-1 rounded-full border tracking-[0.08em] uppercase ${
+                        shown.confidence === "high" ? "border-emerald-500/40 text-emerald-400 bg-emerald-500/10" :
+                        shown.confidence === "medium" ? "border-amber-500/40 text-amber-400 bg-amber-500/10" :
+                        "border-red-500/40 text-red-400 bg-red-500/10"
+                      }`}>
+                        {shown.confidence === "high" ? "✓" : shown.confidence === "medium" ? "~" : "?"} {shown.confidence} confidence
+                      </span>
+                    )}
+                    {shown.region && shown.region !== "global" && (
+                      <span className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-blue-500/40 text-blue-300 bg-blue-500/10 tracking-[0.08em] uppercase">
+                        {shown.region === "brazil" ? "🇧🇷" : shown.region === "latam" ? "🌎" : shown.region === "us" ? "🇺🇸" : "🇪🇺"} {shown.region}
+                      </span>
+                    )}
+                    {shown.last_verified && (
+                      <span className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-white/[0.12] text-fg-4 bg-white/[0.04] tracking-[0.06em]">
+                        verified {shown.last_verified}
+                      </span>
+                    )}
+                  </div>
                 )}
 
                 {/* LLM recommendation */}
@@ -248,9 +336,25 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                 {/* Tags */}
                 {shown.tags.length > 0 && (
                   <div className="mt-6 pt-5 border-t border-hairline flex flex-wrap gap-1.5">
-                    {shown.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
+                    {shown.tags.map(tag => {
+                      const slug = tagToTopicSlug(tag);
+                      return slug ? (
+                        <a
+                          key={tag}
+                          href={`${BASE_PATH}/topics/${slug}/`}
+                          className="tag hover:text-violet-bright hover:border-violet/50 transition-colors"
+                        >
+                          {tag}
+                        </a>
+                      ) : (
+                        <span key={tag} className="tag">{tag}</span>
+                      );
+                    })}
                   </div>
                 )}
+
+                {/* Related prompts */}
+                <RelatedRail shown={shown} onOpen={u => { setCopied(false); setCurrentItem(u); }} />
               </div>
 
               {/* Close */}
@@ -286,8 +390,19 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                   </button>
                 </div>
               )}
-              <button className="btn" onClick={copy}>
+              <a
+                href={getLaunchUrl(shown.best_llm, shown.prompt)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+              >
+                <ExternalLink size={14} /> Open in {getLaunchLabel(shown.best_llm)}
+              </a>
+              <button className="btn btn-ghost" onClick={copy}>
                 {copied ? <><Check size={14} /> {t.expanded_copied}</> : <><Copy size={14} /> {t.expanded_copy}</>}
+              </button>
+              <button className="btn btn-ghost" onClick={share} title="Copy link to this prompt">
+                {shared ? <><Check size={14} /> Link copied!</> : <><Share2 size={14} /> Share</>}
               </button>
               <button className="btn btn-ghost" onClick={onClose}>{t.expanded_close}</button>
             </div>

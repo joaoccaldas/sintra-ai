@@ -1,16 +1,31 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useSyncExternalStore } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { ChevronLeft, ChevronRight, X, ArrowLeft, Search, Copy, Check } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, ArrowLeft, Search, Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
 import dynamic from "next/dynamic";
-import { USE_CASES, UseCase, DISC_COUNTS, DIFF_COLOR, matchesUseCase } from "@/lib/data";
+import { USE_CASES, UseCase, DISC_COUNTS, DIFF_COLOR, CAT_ACCENT, matchesUseCase } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
+import RecentlyViewed from "./RecentlyViewed";
 import { useLanguage } from "@/context/LanguageContext";
+import { useSavedPrompts } from "@/context/SavedPromptsContext";
+import { trackRecentlyViewed } from "@/lib/hooks";
 
 const CategoryCarousel3D = dynamic(() => import("./CategoryCarousel3D"), { ssr: false });
+
+function useIsMobile() {
+  return useSyncExternalStore(
+    cb => {
+      const mq = window.matchMedia("(max-width: 767px)");
+      mq.addEventListener("change", cb);
+      return () => mq.removeEventListener("change", cb);
+    },
+    () => window.matchMedia("(max-width: 767px)").matches,
+    () => false,
+  );
+}
 
 const DIFFS = ["all", "beginner", "intermediate", "advanced", "expert"] as const;
 
@@ -20,19 +35,14 @@ const POPULAR_TASKS = [
   "forecast model", "cold email",
 ];
 
-const CAT_ACCENT: Record<string, string> = {
-  "quick-wins":     "#F4D06F",
-  "productivity":   "#8FE3D2",
-  "writing":        "#F08CA8",
-  "research":       "#B6A6FF",
-  "finance":        "#6EE7A0",
-  "data-analytics": "#E8C089",
-  "coding":         "#9F8CFF",
-  "creative-ai":    "#5EEAD4",
-  "game-advanced":  "#E9D9B6",
-};
+const PAGE_SIZE = 24;
 
-function SearchResultRow({ item, onOpen }: { item: UseCase; onOpen: (item: UseCase) => void }) {
+function SearchResultRow({ item, onOpen, isSaved, onToggleSave }: {
+  item: UseCase;
+  onOpen: (item: UseCase) => void;
+  isSaved: boolean;
+  onToggleSave: (id: number) => void;
+}) {
   const [copied, setCopied] = useState(false);
   const catColor = CAT_ACCENT[item.category] || "#9F8CFF";
   const quickCopy = (e: React.MouseEvent) => {
@@ -53,7 +63,7 @@ function SearchResultRow({ item, onOpen }: { item: UseCase; onOpen: (item: UseCa
         <h3 className="font-serif text-[17px] leading-[1.18] text-fg-1 mb-1.5 group-hover:text-violet-bright transition-colors">
           {item.title}
         </h3>
-        <p className="font-sans text-[12.5px] text-fg-3 leading-[1.5] line-clamp-2">
+        <p className="font-sans text-[13px] text-fg-3 leading-[1.5] line-clamp-2">
           {item.outcome || item.desc}
         </p>
       </div>
@@ -64,12 +74,21 @@ function SearchResultRow({ item, onOpen }: { item: UseCase; onOpen: (item: UseCa
         >
           {copied ? <><Check size={10} /> Copied!</> : <><Copy size={10} /> Copy prompt</>}
         </button>
-        <button
-          onClick={() => onOpen(item)}
-          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-white/[0.08] font-mono text-[10px] text-fg-4 hover:text-fg-2 hover:border-white/20 transition-all whitespace-nowrap"
-        >
-          Full details
-        </button>
+        <div className="flex gap-1.5">
+          <button
+            onClick={e => { e.stopPropagation(); onToggleSave(item.id); }}
+            aria-label={isSaved ? "Remove from saved" : "Save prompt"}
+            className="inline-flex items-center justify-center w-7 h-7 rounded-lg border border-white/[0.08] text-fg-4 hover:text-violet-bright hover:border-violet/40 transition-all"
+          >
+            {isSaved ? <BookmarkCheck size={11} className="text-violet-bright" /> : <Bookmark size={11} />}
+          </button>
+          <button
+            onClick={() => onOpen(item)}
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-white/[0.08] font-mono text-[10px] text-fg-4 hover:text-fg-2 hover:border-white/20 transition-all whitespace-nowrap"
+          >
+            Details
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -81,7 +100,9 @@ interface Props {
 
 export default function CategoryBrowser({ heroSearch }: Props) {
   const { t } = useLanguage();
+  const { isSaved, toggle: toggleSaved } = useSavedPrompts();
   const prefersReducedMotion = useReducedMotion();
+  const isMobile = useIsMobile();
   const [selectedIdx, setSelectedIdx]   = useState(0);
   const [browsingIdx, setBrowsingIdx]   = useState<number | null>(null);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
@@ -96,6 +117,7 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   // Panel search/filter state
   const [panelSearch, setPanelSearch]   = useState("");
   const [panelDiff, setPanelDiff]       = useState<string>("all");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const CARD_VARIANTS = useMemo(() => ({
     hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 24, scale: prefersReducedMotion ? 1 : 0.97 },
@@ -114,6 +136,20 @@ export default function CategoryBrowser({ heroSearch }: Props) {
   // ── URL hash deep-linking ────────────────────────────────────────────────────
   useEffect(() => {
     const hash = window.location.hash.slice(1);
+    // Use case permalink: #uc-{id}
+    if (hash.startsWith("uc-")) {
+      const ucId = parseInt(hash.slice(3), 10);
+      const uc = USE_CASES.find(u => u.id === ucId);
+      if (uc) {
+        const catIdx = CAROUSEL_ITEMS.findIndex(c => c.id === uc.category);
+        if (catIdx >= 0) { setSelectedIdx(catIdx); setBrowsingIdx(catIdx); }
+        setExpanded(uc);
+        setExpandedItems(USE_CASES.filter(u => u.category === uc.category));
+        trackRecentlyViewed({ id: uc.id, slug: uc.slug, title: uc.title, category: uc.category });
+      }
+      return;
+    }
+    // Category panel deep-link: #writing, #coding, etc.
     const idx = CAROUSEL_ITEMS.findIndex(c => c.id === hash);
     if (idx >= 0) {
       setSelectedIdx(idx);
@@ -127,6 +163,13 @@ export default function CategoryBrowser({ heroSearch }: Props) {
     }
     // Don't reset to #explore on close — let the section anchor remain
   }, [browsingIdx]);
+
+  // Sync use case permalink in URL
+  useEffect(() => {
+    if (expanded) {
+      window.history.replaceState(null, "", `#uc-${expanded.id}`);
+    }
+  }, [expanded]);
 
   // ── Global search results — uses shared matchesUseCase helper ───────────────
   const globalResults = useMemo(() => {
@@ -150,79 +193,79 @@ export default function CategoryBrowser({ heroSearch }: Props) {
     });
   }, [cases, panelSearch, panelDiff]);
 
-  // Reset filters when panel opens
+  // Persona selector routing
+  useEffect(() => {
+    const fn = (e: Event) => {
+      const persona = (e as CustomEvent).detail;
+      const idx = CAROUSEL_ITEMS.findIndex(c => c.id === persona.category);
+      if (idx >= 0) {
+        setSelectedIdx(idx);
+        if (persona.region) setPanelSearch(persona.region === "brazil" ? "brasil" : persona.region);
+      }
+    };
+    window.addEventListener("sintra:persona", fn);
+    return () => window.removeEventListener("sintra:persona", fn);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Reset filters and pagination when panel opens or filters change
   useEffect(() => {
     if (browsingIdx !== null) {
       setPanelSearch("");
       setPanelDiff("all");
+      setVisibleCount(PAGE_SIZE);
     }
   }, [browsingIdx]);
+
+  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [panelSearch, panelDiff]);
 
   const prev = () => setSelectedIdx(i => (i - 1 + CAROUSEL_ITEMS.length) % CAROUSEL_ITEMS.length);
   const next = () => setSelectedIdx(i => (i + 1) % CAROUSEL_ITEMS.length);
 
-  // Clicking the 3D shape selects it; clicking again (already selected) opens the panel
+  // Single click selects AND opens the browse panel immediately (consistent with chip rail)
   const handleSelect = useCallback((idx: number) => {
-    if (idx === selectedIdx) {
-      setBrowsingIdx(idx);
-    } else {
-      setSelectedIdx(idx);
-    }
-  }, [selectedIdx]);
+    setSelectedIdx(idx);
+    setBrowsingIdx(idx);
+  }, []);
 
   const closeBrowsing = () => setBrowsingIdx(null);
 
   const handleOpenExpanded = useCallback((item: UseCase) => {
     setExpanded(item);
     setExpandedItems(filteredCases);
+    trackRecentlyViewed({ id: item.id, slug: item.slug, title: item.title, category: item.category });
   }, [filteredCases]);
 
   return (
     <section id="explore" className="relative bg-void overflow-hidden">
-      {/* ── Global search ────────────────────────────────────────────── */}
+      <RecentlyViewed onOpen={item => { setExpanded(item); setExpandedItems(USE_CASES.filter(u => u.category === item.category)); }} allItems={USE_CASES} />
+      {/* ── Quick-access task chips (replaces duplicate search bar) ──── */}
       <div className="relative z-20 max-w-2xl mx-auto px-6 pt-10 pb-0">
-        <div className="relative">
-          <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
-          <input
-            type="search"
-            value={globalSearch}
-            onChange={e => setGlobalSearch(e.target.value)}
-            placeholder={`Search ${USE_CASES.length} use cases by task, tool, or keyword…`}
-            aria-label="Search all use cases"
-            className="w-full bg-white/[0.04] border border-hairline rounded-xl pl-9 pr-9 py-3 font-mono text-[13px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
-          />
-          {globalSearch && (
-            <button
-              onClick={() => setGlobalSearch("")}
-              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors"
-              aria-label="Clear search"
-            >
-              <X size={13} />
-            </button>
-          )}
-        </div>
-
-        {/* Popular task chips */}
         {!globalSearch && (
-          <div className="flex flex-wrap gap-2 mt-3">
-            <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase self-center mr-1">Try:</span>
-            {POPULAR_TASKS.map(task => (
-              <button
-                key={task}
-                onClick={() => setGlobalSearch(task)}
-                className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-white/[0.1] text-fg-3 hover:text-fg-1 hover:border-violet/40 hover:bg-violet/[0.07] transition-all capitalize"
-              >
-                {task}
-              </button>
-            ))}
+          <div>
+            <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase block mb-2">Quick explore:</span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+              {POPULAR_TASKS.map(task => (
+                <button
+                  key={task}
+                  onClick={() => setGlobalSearch(task)}
+                  className="font-mono text-[10px] px-2.5 py-1.5 rounded-full border border-white/[0.1] text-fg-3 hover:text-fg-1 hover:border-violet/40 hover:bg-violet/[0.07] transition-all capitalize text-center"
+                >
+                  {task}
+                </button>
+              ))}
+            </div>
           </div>
         )}
 
         {globalSearch && (
-          <p className="font-mono text-[11px] text-fg-4 mt-2 ml-0.5">
-            {globalResults.length} result{globalResults.length !== 1 ? "s" : ""}
-            {globalResults.length > 0 && <span> — click Copy prompt to use immediately</span>}
-          </p>
+          <div className="flex items-center gap-3 mt-2 ml-0.5">
+            <p className="font-mono text-[11px] text-fg-4">
+              {globalResults.length} result{globalResults.length !== 1 ? "s" : ""} for &ldquo;{globalSearch}&rdquo;
+            </p>
+            <button onClick={() => setGlobalSearch("")} className="font-mono text-[11px] text-violet-bright hover:underline flex items-center gap-1">
+              <X size={10} /> Clear
+            </button>
+          </div>
         )}
       </div>
 
@@ -253,6 +296,8 @@ export default function CategoryBrowser({ heroSearch }: Props) {
                   <SearchResultRow
                     key={item.id}
                     item={item}
+                    isSaved={isSaved(item.id)}
+                    onToggleSave={toggleSaved}
                     onOpen={item => { setExpanded(item); setExpandedItems(globalResults); }}
                   />
                 ))}
@@ -268,17 +313,41 @@ export default function CategoryBrowser({ heroSearch }: Props) {
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
-        {/* ── 3D Carousel — full height on md+, compact on mobile ────── */}
-        <div className="relative h-[38vh] md:h-[56vh] min-h-[260px] md:min-h-[360px] max-h-[520px] w-full">
-          <CategoryCarousel3D selectedIndex={selectedIdx} onSelect={handleSelect} />
+        {/* ── 3D Carousel on desktop; 2D grid on mobile ────────────── */}
+        {isMobile ? (
+          <div className="px-6 pt-8 pb-2">
+            <div className="grid grid-cols-3 gap-2">
+              {CAROUSEL_ITEMS.map((item, i) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleSelect(i)}
+                  className="flex flex-col items-center gap-1.5 p-3 rounded-xl border transition-all"
+                  style={{
+                    background:  i === selectedIdx ? `${item.hex}18` : "rgba(255,255,255,0.02)",
+                    borderColor: i === selectedIdx ? `${item.hex}60` : "rgba(255,255,255,0.08)",
+                  }}
+                >
+                  <span className="w-3 h-3 rounded-full shrink-0" style={{ background: item.hex, opacity: i === selectedIdx ? 1 : 0.45 }} />
+                  <span className="font-mono text-[9px] tracking-[0.06em] uppercase text-center leading-tight"
+                    style={{ color: i === selectedIdx ? item.hex : "#6b6a8a" }}>
+                    {item.label}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="relative h-[56vh] min-h-[360px] max-h-[520px] w-full">
+            <CategoryCarousel3D selectedIndex={selectedIdx} onSelect={handleSelect} />
 
-          <button onClick={prev} className="carousel-arrow carousel-arrow--left" aria-label="Previous category">
-            <ChevronLeft size={22} />
-          </button>
-          <button onClick={next} className="carousel-arrow carousel-arrow--right" aria-label="Next category">
-            <ChevronRight size={22} />
-          </button>
-        </div>
+            <button onClick={prev} className="carousel-arrow carousel-arrow--left" aria-label="Previous category">
+              <ChevronLeft size={22} />
+            </button>
+            <button onClick={next} className="carousel-arrow carousel-arrow--right" aria-label="Next category">
+              <ChevronRight size={22} />
+            </button>
+          </div>
+        )}
 
         {/* ── Active category label ────────────────────────────────────── */}
         <div className="relative z-10 text-center py-8 md:py-10 px-6">
@@ -319,31 +388,14 @@ export default function CategoryBrowser({ heroSearch }: Props) {
             </motion.div>
           </AnimatePresence>
 
-          {/* Dot navigator */}
-          <div className="flex justify-center gap-2 mt-6">
-            {CAROUSEL_ITEMS.map((item, i) => (
-              <button
-                key={item.id}
-                onClick={() => setSelectedIdx(i)}
-                className="w-2 h-2 rounded-full transition-all duration-200"
-                style={{
-                  background: i === selectedIdx ? item.hex : "rgba(255,255,255,0.15)",
-                  transform:  i === selectedIdx ? "scale(1.4)" : "scale(1)",
-                  boxShadow:  i === selectedIdx ? `0 0 8px ${item.hex}` : "none",
-                }}
-                aria-label={item.label}
-              />
-            ))}
-          </div>
-
-          {/* Category chip rail — quick-select fallback */}
-          <div className="mt-6 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
-            <div className="flex gap-2 justify-center flex-wrap px-4 pb-1">
+          {/* Category chip rail */}
+          <div className="mt-6 pb-1">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:flex md:flex-wrap md:justify-center md:gap-2">
               {CAROUSEL_ITEMS.map((item, i) => (
                 <button
                   key={item.id}
                   onClick={() => { setSelectedIdx(i); setBrowsingIdx(i); }}
-                  className="font-mono text-[10px] tracking-[0.07em] uppercase px-3 py-1.5 rounded-full border transition-all duration-150 whitespace-nowrap"
+                  className="font-mono text-[10px] tracking-[0.07em] uppercase px-3 py-2 rounded-full border transition-all duration-150 whitespace-nowrap text-center"
                   style={{
                     background:  i === selectedIdx ? `${item.hex}20` : "transparent",
                     borderColor: i === selectedIdx ? `${item.hex}70` : "#ffffff15",
@@ -450,32 +502,44 @@ export default function CategoryBrowser({ heroSearch }: Props) {
                   </button>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                  <AnimatePresence mode="popLayout" initial={false}>
-                    {filteredCases.map((item, i) => {
-                      const featured = i === 0 && filteredCases.length >= 4;
-                      return (
-                        <motion.div
-                          key={item.id}
-                          layout
-                          custom={i}
-                          variants={CARD_VARIANTS}
-                          initial="hidden"
-                          animate="show"
-                          exit="exit"
-                          className={featured ? "sm:col-span-2 lg:col-span-2" : ""}
-                        >
-                          <UseCaseCard
-                            item={item}
-                            onOpen={handleOpenExpanded}
-                            onTagFilter={tag => { closeBrowsing(); setGlobalSearch(tag); }}
-                            isFeatured={featured}
-                          />
-                        </motion.div>
-                      );
-                    })}
-                  </AnimatePresence>
-                </div>
+                <>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <AnimatePresence mode="popLayout" initial={false}>
+                      {filteredCases.slice(0, visibleCount).map((item, i) => {
+                        const featured = i === 0 && filteredCases.length >= 4;
+                        return (
+                          <motion.div
+                            key={item.id}
+                            layout
+                            custom={i}
+                            variants={CARD_VARIANTS}
+                            initial="hidden"
+                            animate="show"
+                            exit="exit"
+                            className={featured ? "sm:col-span-2 lg:col-span-2" : ""}
+                          >
+                            <UseCaseCard
+                              item={item}
+                              onOpen={handleOpenExpanded}
+                              onTagFilter={tag => { closeBrowsing(); setGlobalSearch(tag); }}
+                              isFeatured={featured}
+                            />
+                          </motion.div>
+                        );
+                      })}
+                    </AnimatePresence>
+                  </div>
+                  {visibleCount < filteredCases.length && (
+                    <div className="flex flex-col items-center gap-2 mt-10">
+                      <button
+                        onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
+                        className="font-mono text-[11px] tracking-[0.1em] uppercase px-6 py-2.5 rounded-full border border-violet/40 text-violet-bright hover:bg-violet/10 hover:border-violet/70 transition-all"
+                      >
+                        Load more ({filteredCases.length - visibleCount} remaining)
+                      </button>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </motion.div>

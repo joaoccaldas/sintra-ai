@@ -1,3 +1,4 @@
+import Fuse from "fuse.js";
 import { USE_CASES, BASE_PATH } from "./data";
 import { AI_TOOLS } from "./toolsData";
 import { AI_NEWS } from "./newsData";
@@ -5,6 +6,8 @@ import { LEARNING_PATHS } from "./learningPathsData";
 import { CONCEPTS } from "./concepts";
 import { AI_LABS } from "./aiLabsData";
 import { RESOURCES } from "./resourcesData";
+import { TOPIC_HUBS } from "./topicsData";
+import { AI_MODELS } from "./modelsData";
 
 export type EntityKind =
   | "use_case"
@@ -13,7 +16,9 @@ export type EntityKind =
   | "lab"
   | "news"
   | "path"
-  | "resource";
+  | "resource"
+  | "topic"
+  | "model";
 
 export interface SearchDocument {
   id: string;
@@ -34,9 +39,11 @@ export const KIND_META: Record<EntityKind, { label: string; pluralLabel: string;
   news:     { label: "News",          pluralLabel: "News",           color: "#6EE7A0" },
   path:     { label: "Learning Path", pluralLabel: "Learning Paths", color: "#E8C089" },
   resource: { label: "Resource",      pluralLabel: "Resources",      color: "#B6A6FF" },
+  topic:    { label: "Topic Hub",     pluralLabel: "Topic Hubs",     color: "#FDA4AF" },
+  model:    { label: "AI Model",      pluralLabel: "AI Models",      color: "#E879F9" },
 };
 
-const KIND_ORDER: EntityKind[] = ["use_case", "tool", "concept", "news", "lab", "path", "resource"];
+const KIND_ORDER: EntityKind[] = ["use_case", "model", "tool", "concept", "news", "lab", "path", "resource", "topic"];
 
 export const SEARCH_INDEX: SearchDocument[] = [
   ...USE_CASES.map(u => ({
@@ -103,18 +110,47 @@ export const SEARCH_INDEX: SearchDocument[] = [
     href: `${BASE_PATH}/resources/`,
     body: [r.name, r.tagline, r.category, r.highlight ?? "", ...r.tags].join(" "),
   })),
+  ...AI_MODELS.map(m => ({
+    id: `model-${m.id}`,
+    kind: "model" as EntityKind,
+    title: m.name,
+    summary: m.highlight,
+    tags: [m.provider, m.tier, ...m.bestFor.slice(0, 3)],
+    href: `${BASE_PATH}/models/`,
+    body: [m.name, m.provider, m.highlight, m.tier, ...m.bestFor, m.apiId ?? ""].join(" "),
+  })),
+  ...TOPIC_HUBS.map(t => ({
+    id: `topic-${t.slug}`,
+    kind: "topic" as EntityKind,
+    title: t.label,
+    summary: t.description,
+    tags: t.matchTags,
+    href: `${BASE_PATH}/topics/${t.slug}/`,
+    body: [t.label, t.description, ...t.matchTags].join(" "),
+  })),
 ];
 
+const fuse = new Fuse(SEARCH_INDEX, {
+  keys: [
+    { name: "title",   weight: 3 },
+    { name: "tags",    weight: 2 },
+    { name: "summary", weight: 1.5 },
+    { name: "body",    weight: 0.8 },
+  ],
+  threshold: 0.35,
+  includeScore: true,
+  minMatchCharLength: 2,
+  ignoreLocation: true,
+});
+
 export function searchAll(query: string): { kind: EntityKind; docs: SearchDocument[] }[] {
-  const q = query.trim().toLowerCase();
+  const q = query.trim();
   if (!q) return [];
 
-  const matched = SEARCH_INDEX.filter(doc =>
-    doc.body.toLowerCase().includes(q) || doc.title.toLowerCase().includes(q)
-  );
+  const results = fuse.search(q).map(r => r.item);
 
   const grouped: Partial<Record<EntityKind, SearchDocument[]>> = {};
-  for (const doc of matched) {
+  for (const doc of results) {
     if (!grouped[doc.kind]) grouped[doc.kind] = [];
     grouped[doc.kind]!.push(doc);
   }

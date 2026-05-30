@@ -89,6 +89,10 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-18px)" },
         },
+        "ticker": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "hero-drift": "hero-drift 32s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate",
@@ -97,6 +101,7 @@ const config: Config = {
         "scrim-in": "scrim-in 240ms cubic-bezier(0.22, 1, 0.36, 1) forwards",
         "fade-up": "fade-up 480ms cubic-bezier(0.22, 1, 0.36, 1) forwards",
         "hero-float": "hero-float 7s ease-in-out infinite",
+        "ticker": "ticker 44s linear infinite",
       },
     },
   },

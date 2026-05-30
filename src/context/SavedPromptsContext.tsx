@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 
 const STORAGE_KEY = "sintra_saved";
 
@@ -19,14 +19,13 @@ const SavedPromptsContext = createContext<SavedCtx>({
 });
 
 export function SavedPromptsProvider({ children }: { children: ReactNode }) {
-  const [saved, setSaved] = useState<Set<number>>(new Set());
-
-  useEffect(() => {
+  const [saved, setSaved] = useState<Set<number>>(() => {
+    if (typeof window === "undefined") return new Set();
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) setSaved(new Set(JSON.parse(raw) as number[]));
-    } catch {}
-  }, []);
+      return raw ? new Set(JSON.parse(raw) as number[]) : new Set();
+    } catch { return new Set(); }
+  });
 
   const toggle = (id: number) => {
     setSaved(prev => {

@@ -34,10 +34,15 @@ const UseCaseSchema = z.object({
   best_llm:     z.string().optional(),
   llm_reason:   z.string().optional(),
   est_time:     z.string().optional(),
-  source:       z.string().optional(),
-  best_for:     z.string().optional(),
-  section:      z.string().optional(),
-  skill_emoji:  z.string().optional(),
+  source:         z.string().optional(),
+  best_for:       z.string().optional(),
+  section:        z.string().optional(),
+  skill_emoji:    z.string().optional(),
+  dateAdded:      z.string().optional(),
+  confidence:     z.enum(["high", "medium", "low"]).optional(),
+  region:         z.enum(["global", "brazil", "latam", "us", "eu"]).optional(),
+  last_verified:  z.string().optional(),
+  related_tools:  z.array(z.string()).optional(),
 });
 
 const raw = JSON.parse(readFileSync(DATA_FILE, "utf8"));

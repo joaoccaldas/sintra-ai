@@ -5,18 +5,14 @@ import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion
 import { Search } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useLanguage } from "@/context/LanguageContext";
+import NewsTicker from "@/components/NewsTicker";
 
-const Tesseract3D = dynamic(() => import("./Tesseract3D"), { ssr: false });
+const ParticleVortex = dynamic(() => import("./ParticleVortex"), { ssr: false });
 
 interface Props {
   total: number;
   onSearch: (query: string) => void;
 }
-
-const HERO_TASKS = [
-  "variance analysis", "meeting notes", "Python script",
-  "executive summary", "forecast model", "cold email",
-];
 
 const line = {
   hidden: { opacity: 0, y: 22 },
@@ -40,8 +36,7 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
   const textOpacity  = useTransform(scrollYProgress, [0, 0.55], [1, 0]);
   const textY        = useTransform(scrollYProgress, [0, 0.55], [0, -56]);
-  const orbitScale   = useTransform(scrollYProgress, [0, 0.45], [1, 1.18]);
-  const orbitOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0]);
+  const orbitOpacity = useTransform(scrollYProgress, [0, 0.50], [1, 0]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -66,39 +61,34 @@ export default function HeroMinimal({ total, onSearch }: Props) {
   return (
     <section
       ref={heroRef}
-      className="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-void"
+      className="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-black"
     >
-      {/* ── Tesseract hero orb ───────────────────────────────────────── */}
+      {/* ── Particle vortex hero background ──────────────────────────── */}
       <motion.div
         aria-hidden="true"
-        style={prefersReducedMotion ? {} : { scale: orbitScale, opacity: orbitOpacity }}
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        style={prefersReducedMotion ? {} : { opacity: orbitOpacity }}
+        className="absolute inset-0 pointer-events-none"
       >
-        <div style={{ width: "clamp(320px, 62vw, 620px)", height: "clamp(320px, 62vw, 620px)" }}>
-          <Tesseract3D />
-        </div>
+        <ParticleVortex />
       </motion.div>
 
-      {/* ── Radial vignette ──────────────────────────────────────────── */}
+      {/* ── Radial vignette — edges dark, galaxy centre exposed ─────── */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 68% 68% at 50% 50%, transparent 28%, rgba(5,6,15,0.88) 76%, rgba(5,6,15,1) 100%)",
+            "radial-gradient(ellipse 80% 80% at 50% 50%, transparent 38%, rgba(0,0,0,0.62) 72%, rgba(0,0,0,0.96) 100%)",
         }}
       />
 
-      {/* ── Grid overlay ─────────────────────────────────────────────── */}
+      {/* ── Subtle centre text-readability scrim ─────────────────────── */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 opacity-[0.14] pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(159,140,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(159,140,255,0.06) 1px, transparent 1px)",
-          backgroundSize: "88px 88px",
-          maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%)",
-          WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%)",
+          background:
+            "radial-gradient(ellipse 44% 36% at 50% 50%, rgba(0,0,0,0.38) 0%, transparent 100%)",
         }}
       />
 
@@ -143,17 +133,9 @@ export default function HeroMinimal({ total, onSearch }: Props) {
           {t.hero_tagline}
         </motion.p>
 
-        {/* ── Stats ────────────────────────────────────────────────────── */}
-        <motion.p
-          custom={3} variants={lineVariants} initial="hidden" animate="show"
-          className="font-mono text-[11px] tracking-[0.14em] uppercase text-fg-4 max-w-[380px] mx-auto mb-8"
-        >
-          {total} prompts &nbsp;·&nbsp; finance · data · code · writing &nbsp;·&nbsp; copy-ready
-        </motion.p>
-
         {/* ── Hero search ────────────────────────────────────────────── */}
         <motion.div
-          custom={4} variants={lineVariants} initial="hidden" animate="show"
+          custom={3} variants={lineVariants} initial="hidden" animate="show"
           className="w-full max-w-md mx-auto mb-3"
         >
           <form
@@ -182,26 +164,8 @@ export default function HeroMinimal({ total, onSearch }: Props) {
           </form>
         </motion.div>
 
-        {/* ── Popular task chips ────────────────────────────────────── */}
-        <motion.div
-          custom={5} variants={lineVariants} initial="hidden" animate="show"
-          className="flex flex-wrap justify-center gap-2 mb-8"
-        >
-          <span className="font-mono text-[10px] text-fg-4 tracking-[0.08em] uppercase self-center">Try:</span>
-          {HERO_TASKS.map(task => (
-            <button
-              key={task}
-              type="button"
-              onClick={() => { setQuery(task); submit(task); }}
-              className="font-mono text-[10px] px-2.5 py-1 rounded-full border border-white/[0.1] text-fg-3 hover:text-fg-1 hover:border-violet/40 hover:bg-violet/[0.07] transition-all capitalize"
-            >
-              {task}
-            </button>
-          ))}
-        </motion.div>
-
         {/* ── Primary CTA ──────────────────────────────────────────────── */}
-        <motion.div custom={6} variants={lineVariants} initial="hidden" animate="show">
+        <motion.div custom={4} variants={lineVariants} initial="hidden" animate="show">
           <a
             href="#explore"
             className="btn"
@@ -217,13 +181,18 @@ export default function HeroMinimal({ total, onSearch }: Props) {
 
       {/* ── Scroll cue ───────────────────────────────────────────────── */}
       <motion.div
-        custom={7} variants={lineVariants} initial="hidden" animate="show"
+        custom={5} variants={lineVariants} initial="hidden" animate="show"
         aria-hidden="true"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-mono text-[9px] tracking-[0.24em] uppercase text-fg-4"
+        className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 font-mono text-[9px] tracking-[0.24em] uppercase text-fg-4"
       >
         <span>{t.hero_scroll}</span>
         <span className="w-px h-8 bg-gradient-to-b from-violet/50 to-transparent animate-cue-pulse" />
       </motion.div>
+
+      {/* ── News ticker ──────────────────────────────────────────────── */}
+      <div className="absolute bottom-0 left-0 right-0 z-20">
+        <NewsTicker />
+      </div>
     </section>
   );
 }

@@ -171,7 +171,7 @@ At inference time you give it a prompt; it predicts the most likely continuation
 
 If the window is 128,000 tokens (~96,000 words) and your conversation exceeds that, earlier messages are dropped. The model has no memory of them.
 
-Modern frontier models: GPT-4o supports 128K tokens, Claude 3.5 supports 200K. This is critical for analysing long documents, maintaining long conversations, or processing entire codebases.`,
+Modern frontier models: GPT-5.5 supports 1M tokens, Claude Opus 4.7 and Sonnet 4.6 also support 1M, and Gemini 3.1 Pro extends to 2M — the largest of any frontier model as of mid-2026. This is critical for analysing long documents, maintaining long conversations, or processing entire codebases.`,
     analogy: "The context window is like a whiteboard in the room. The AI can only reference what's written on it — once it fills up, you must erase something to write more.",
     related: ["tokens", "llm", "rag"],
     addedAt: "2025-05-17",
@@ -188,7 +188,7 @@ Modern frontier models: GPT-4o supports 128K tokens, Claude 3.5 supports 200K. T
 
 This enables powerful operations: search by meaning (not keyword), cluster similar documents, detect anomalies, and power the retrieval step in RAG systems.
 
-Embedding models (e.g. OpenAI \`text-embedding-ada-002\`, Cohere \`embed-v3\`) are separate from generative models — smaller, faster, and cheap to run at scale.`,
+Embedding models (e.g. OpenAI \`text-embedding-3-small\`, Cohere \`embed-v3\`) are separate from generative models — smaller, faster, and cheap to run at scale.`,
     analogy: "Like placing concepts on a map — related ideas live close together, unrelated ones are distant. Ask 'what's nearest to Paris?' and find London, Berlin, Rome.",
     related: ["rag", "machine-learning", "llm"],
     addedAt: "2025-05-17",
@@ -335,5 +335,128 @@ Most frontier models support this: Anthropic calls it "tool use," OpenAI calls i
     analogy: "Like a consultant who mid-meeting says \"hold on, let me pull the live data\" — checks real numbers, then continues the conversation with actual facts.",
     related: ["agents", "api", "mcp", "skills"],
     addedAt: "2025-05-17",
+  },
+
+  // ── Open Source & Local ──────────────────────────────────────────────────
+  {
+    id:         "open-source-llms",
+    term:       "Open Source LLMs",
+    category:   "models",
+    tagline:    "Frontier-quality AI models anyone can download, run, and modify.",
+    icon:       "🔓",
+    difficulty: 2,
+    body: `**Open source LLMs** are models whose weights are publicly released — you download them, run them on your own hardware or a cloud VM, and pay no API fees. Quality has converged rapidly with closed models.
+
+**Best models by use case (mid-2026):**
+- **General chat & reasoning**: Llama 4 Maverick (Meta, MoE, 1M ctx), Qwen3-235B (Alibaba)
+- **Coding & agentic**: DeepSeek V4 (1.6T params, rivals GPT-5.5), Devstral Small 24B (Mistral), Qwen3-Coder
+- **Compact / edge**: Llama 4 Scout (17B active, 10M ctx), Gemma 4 E4B (Google, runs on phones), Mistral Small 4
+- **Long context**: Llama 4 Scout (10M tokens), Mistral Medium 3.5 (256K, open-weight)
+- **Multilingual**: Qwen3-7B (29 languages), Gemma 4 (140+ languages)
+
+Run via **Ollama**, **LM Studio**, or cloud APIs (Together AI, Groq, Fireworks AI). Apache-2.0 models allow commercial use without restriction.`,
+    analogy: "Like open-source software (Linux, Firefox): the community can inspect, improve, and redistribute the model — no vendor lock-in, no usage caps.",
+    related: ["llm", "fine-tuning", "running-local-models"],
+    addedAt: "2026-05-23",
+    learnMore: "https://huggingface.co/models",
+  },
+
+  {
+    id:         "running-local-models",
+    term:       "Running Models Locally",
+    category:   "tools",
+    tagline:    "How to run AI on your own machine — private, free, and offline.",
+    icon:       "💻",
+    difficulty: 2,
+    body: `Running a model locally means inference happens entirely on your hardware — no data leaves your machine, no API costs, no rate limits.
+
+**Tools (2026):**
+- **Ollama** — one-command install; OpenAI-compatible REST API, supports Llama 4, Gemma 4, Mistral Small 4
+- **LM Studio** — GUI desktop app; browse HuggingFace, download, chat, and serve models
+- **Jan.ai** — privacy-first local chat with built-in OpenAI-compatible server
+
+**Hardware requirements (Q4 quantisation):**
+| Model size | RAM / VRAM | Example models |
+|---|---|---|
+| 3–7B | 6–8 GB | Gemma 4 E4B, Mistral Small 4, Llama 4 Scout |
+| 13–27B | 12–16 GB | Devstral Small 24B, Gemma 4 26B A4B |
+| 70B+ | 40–80 GB VRAM | Llama 4 Maverick, Mistral Large 3 |
+
+**Apple Silicon** (M1–M4) excels: unified memory means a 16 GB MacBook Air runs Llama 4 Scout or Mistral Small 4 at 40+ tokens/s with full privacy. Gemma 4 E4B targets phones (Pixel, Snapdragon) at near-zero latency.`,
+    analogy: "Like running your own web server instead of using a cloud host — more control and privacy, but you manage the hardware.",
+    related: ["open-source-llms", "fine-tuning", "llm"],
+    addedAt: "2026-05-23",
+    learnMore: "https://ollama.com",
+  },
+
+  // ── Google I/O 2026 — Software Ecology frameworks ───────────────────────
+  {
+    id:         "jevons-paradox",
+    term:       "Jevons Paradox",
+    category:   "fundamentals",
+    tagline:    "Making AI cheaper creates more usage, not less.",
+    icon:       "⚡",
+    difficulty: 2,
+    body: `**Jevons Paradox** (1865) states that when the cost of a resource falls, total consumption rises — often dramatically — as new use cases become economically viable.
+
+In AI this plays out constantly: as token prices drop, organisations don't use the same amount of AI more cheaply; they find entirely new applications that were previously unaffordable. Claude Haiku 4.5 at $0.80/M tokens unlocks checks that teams would never have commissioned at $15/M.
+
+Two practical implications:
+- **Cost governance** — cheaper models don't reduce your AI bill; they expand the scope of what gets automated
+- **Second-order volume** — 10× velocity doesn't produce 10× productivity; it produces 10× output that must be reviewed, tested, and maintained by the same team
+
+Surfaced in Google's DORA research and Adam Bender's Google I/O 2026 talk on Software Ecology.`,
+    analogy: "When motorways improved, people didn't drive the same route faster — they drove 5× more miles. Fuel efficiency made us drive more, not less.",
+    related: ["tokens", "agents", "ai-as-amplifier"],
+    addedAt: "2026-05-24",
+    learnMore: "https://en.wikipedia.org/wiki/Jevons_paradox",
+  },
+
+  {
+    id:         "ai-as-amplifier",
+    term:       "AI as Amplifier",
+    shortTerm:  "Amplifier",
+    category:   "fundamentals",
+    tagline:    "AI multiplies what you already are — good or chaotic.",
+    icon:       "📣",
+    difficulty: 1,
+    body: `The **AI as Amplifier** principle — surfaced in Google's DORA research and framed by Adam Bender at Google I/O 2026 — states that AI is directionally neutral: it accelerates and scales *existing* processes, culture, and quality.
+
+Teams with clear processes, well-tested outputs, and solid data governance get dramatically more productive. Teams without those foundations generate confusion, technical debt, and low-quality output faster.
+
+This makes AI adoption a **diagnostic before it's a deployment**. Ask: *"If we 10× our output tomorrow, would we amplify good work — or amplify problems?"*
+
+Applied to FP&A: solid data models and review processes → AI amplifies accurate analysis. Fragmented spreadsheets and ad-hoc workflows → AI generates 10× more fragmented spreadsheets.
+
+The DORA State of DevOps report found the same pattern in software: elite performers improved further with AI; low performers saw marginal gains or regression.`,
+    analogy: "A loudspeaker amplifies whatever you put in. A great singer sounds better; a bad signal becomes louder noise. The speaker has no opinion on which.",
+    related: ["software-ecology", "jevons-paradox", "agents"],
+    addedAt: "2026-05-24",
+    learnMore: "https://dora.dev/research/",
+  },
+
+  {
+    id:         "software-ecology",
+    term:       "Software Ecology",
+    category:   "fundamentals",
+    tagline:    "The holistic study of social and technical systems that produce software.",
+    icon:       "🌿",
+    difficulty: 2,
+    body: `**Software Ecology** (Adam Bender, Google I/O 2026) is the study of *socio-technical ecosystems* — the humans, tools, processes, incentives, and cultural norms that together determine what gets built and how.
+
+The framework asks two questions of any team or process:
+- **WHY?** — Why do we test this way? Why this language, this review process, this deploy cadence?
+- **WHAT IF?** — What if AI wrote all the code? What if we removed this review layer entirely?
+
+It explains why identical AI tools produce wildly different results across teams: the tools are the same; the ecology differs. At 10× AI velocity, five **second-order effects** dominate before benefits:
+1. More code → more **liability**, not just more productivity
+2. 10× code → potentially 100–1000× test cases (quadratic growth)
+3. Code review becomes a **bottleneck** — tech leads can't review for 10 AI developers
+4. Internal APIs become **de-facto public** — agents find and call them without negotiation
+5. **Agentic edit wars** — one agent changes, another reverts; you pay tokens for both`,
+    analogy: "A forest ecologist doesn't study trees in isolation — she studies soil chemistry, species interactions, water cycles. Software ecology says code needs more than smart developers: it needs the right culture, process clarity, and incentive alignment.",
+    related: ["ai-as-amplifier", "jevons-paradox", "agents"],
+    addedAt: "2026-05-24",
+    learnMore: "https://www.youtube.com/watch?v=2n41YjR5QfU",
   },
 ];
