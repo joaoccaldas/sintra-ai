@@ -2,12 +2,15 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ExternalLink, Search, X } from "lucide-react";
+import { ArrowRight, ExternalLink, Search, X, Clock } from "lucide-react";
 import { BASE_PATH, USE_CASES, DISC_COUNTS, matchesUseCase, UseCase } from "@/lib/data";
 import { AI_NEWS } from "@/lib/newsData";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { AI_MODELS } from "@/lib/modelsData";
 import { CONCEPTS } from "@/lib/concepts";
+import { TOPIC_HUBS } from "@/lib/topicsData";
+import { LEARNING_PATHS } from "@/lib/learningPathsData";
+import { GUIDES } from "@/lib/guidesData";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
@@ -42,15 +45,16 @@ function SectionHead({ label, href, linkLabel }: { label: string; href?: string;
 /* ── 1. Overview strip ──────────────────────────────────────────────── */
 function OverviewStrip() {
   const destinations = [
-    { label: "Prompts",  count: USE_CASES.length,  desc: "Ready-to-use AI prompts",         href: "#library",             internal: true },
-    { label: "Tools",    count: AI_TOOLS.length,    desc: "Curated AI tools & apps",          href: `${BASE_PATH}/tools/`,  internal: false },
-    { label: "News",     count: AI_NEWS.length,     desc: "AI news & announcements",          href: `${BASE_PATH}/news/`,   internal: false },
-    { label: "Concepts", count: CONCEPTS.length,    desc: "Key AI concepts explained",        href: `${BASE_PATH}/concepts/`, internal: false },
-    { label: "Models",   count: AI_MODELS.length,   desc: "Model comparison & benchmarks",    href: `${BASE_PATH}/models/`, internal: false },
+    { label: "Prompts",  count: USE_CASES.length,   desc: "Ready-to-use AI prompts",         href: "#library",               internal: true  },
+    { label: "Tools",    count: AI_TOOLS.length,     desc: "Curated AI tools & apps",          href: `${BASE_PATH}/tools/`,    internal: false },
+    { label: "News",     count: AI_NEWS.length,      desc: "AI news & announcements",          href: `${BASE_PATH}/news/`,     internal: false },
+    { label: "Concepts", count: CONCEPTS.length,     desc: "Key AI concepts explained",        href: `${BASE_PATH}/concepts/`, internal: false },
+    { label: "Models",   count: AI_MODELS.length,    desc: "Model comparison & benchmarks",    href: `${BASE_PATH}/models/`,   internal: false },
+    { label: "Guides",   count: GUIDES.length,       desc: "Practical how-to guides",          href: `${BASE_PATH}/guides/`,   internal: false },
   ];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-14">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-14">
       {destinations.map((d, i) => (
         <motion.a
           key={d.label}
@@ -62,18 +66,92 @@ function OverviewStrip() {
           } : undefined}
           className="group flex flex-col gap-2 p-4 rounded-xl border border-hairline bg-white/[0.02] hover:border-violet/35 hover:bg-violet/[0.04] transition-all duration-200 cursor-pointer"
         >
-          <span className="font-mono text-[22px] font-medium text-fg-1 tabular-nums leading-none">
+          <span className="font-mono text-[24px] font-medium text-fg-1 tabular-nums leading-none">
             {d.count}
           </span>
           <div>
             <p className="font-mono text-[11px] text-fg-2 font-medium group-hover:text-violet-bright transition-colors">{d.label}</p>
-            <p className="font-sans text-[11px] text-fg-4 leading-[1.4] mt-0.5">{d.desc}</p>
+            <p className="font-sans text-[11px] text-fg-4 leading-[1.4] mt-0.5 hidden sm:block">{d.desc}</p>
           </div>
           <span className="mt-auto font-mono text-[9px] tracking-[0.08em] uppercase text-violet-bright opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
             Browse <ArrowRight size={9} />
           </span>
         </motion.a>
       ))}
+    </div>
+  );
+}
+
+/* ── 1b. Topic hubs ─────────────────────────────────────────────────── */
+function TopicHubs() {
+  return (
+    <div className="mb-14">
+      <SectionHead label="Browse by Topic" href={`${BASE_PATH}/topics/`} linkLabel={`All ${TOPIC_HUBS.length} topics`} />
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
+        {TOPIC_HUBS.map((topic, i) => (
+          <motion.a
+            key={topic.slug}
+            href={`${BASE_PATH}/topics/${topic.slug}/`}
+            custom={i} variants={fade} initial="hidden" animate="show"
+            className="group flex flex-col items-center gap-1.5 px-2 py-3 rounded-xl border border-hairline bg-white/[0.01] hover:bg-violet/[0.05] hover:border-violet/25 transition-all duration-200 text-center"
+          >
+            <span className="text-[16px] leading-none" style={{ color: topic.color }}>
+              {topic.icon}
+            </span>
+            <span className="font-mono text-[9px] tracking-[0.06em] uppercase text-fg-4 group-hover:text-fg-1 transition-colors leading-tight">
+              {topic.label}
+            </span>
+          </motion.a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ── 1c. Learning paths strip ───────────────────────────────────────── */
+const LEVEL_BADGE = {
+  beginner:     { label: "Beginner",     color: "#10b981" },
+  intermediate: { label: "Intermediate", color: "#9F8CFF" },
+  advanced:     { label: "Advanced",     color: "#ef4444" },
+};
+
+function LearningPathsStrip() {
+  return (
+    <div className="mb-14">
+      <SectionHead label="Learning Paths" href={`${BASE_PATH}/learn/`} linkLabel="Open all paths" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {LEARNING_PATHS.map((path, i) => {
+          const lvl = LEVEL_BADGE[path.level];
+          return (
+            <motion.a
+              key={path.id}
+              href={`${BASE_PATH}/learn/`}
+              custom={i} variants={fade} initial="hidden" animate="show"
+              className="group flex items-center gap-4 p-4 rounded-xl border bg-white/[0.015] hover:bg-white/[0.03] transition-all duration-200"
+              style={{ borderColor: path.color + "22" }}
+            >
+              <span className="text-2xl shrink-0 leading-none">{path.emoji}</span>
+              <div className="flex-1 min-w-0">
+                <p className="font-serif text-[15px] text-fg-1 group-hover:text-white transition-colors leading-[1.2] truncate mb-1">
+                  {path.title}
+                </p>
+                <div className="flex items-center gap-2">
+                  <span
+                    className="font-mono text-[9px] tracking-[0.10em] uppercase px-1.5 py-0.5 rounded-full border"
+                    style={{ color: lvl.color, borderColor: lvl.color + "44", background: lvl.color + "12" }}
+                  >
+                    {lvl.label}
+                  </span>
+                  <span className="font-mono text-[10px] text-fg-4 flex items-center gap-1">
+                    <Clock size={9} /> {path.totalDuration}
+                  </span>
+                </div>
+              </div>
+              <ArrowRight size={13} className="text-fg-4 group-hover:text-violet-bright transition-colors shrink-0" />
+            </motion.a>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -300,13 +378,19 @@ export default function ContentNav() {
       {/* 1 — what's here */}
       <OverviewStrip />
 
-      {/* 2 — latest news */}
+      {/* 2 — browse by topic */}
+      <TopicHubs />
+
+      {/* 3 — latest news */}
       <LatestNews />
 
-      {/* 3 — recently added prompts */}
+      {/* 4 — learning paths */}
+      <LearningPathsStrip />
+
+      {/* 5 — recently added prompts */}
       <RecentPrompts onOpen={openFromRecent} />
 
-      {/* 4 — full library */}
+      {/* 6 — full library */}
       <div id="library">
         <PromptLibrary />
       </div>

@@ -29,6 +29,7 @@ const NAV_GROUPS = [
     label: "Learn",
     items: [
       { href: `${BASE_PATH}/learn/`,      label: "Learning Paths", desc: "Structured paths for every level" },
+      { href: `${BASE_PATH}/guides/`,     label: "Guides",         desc: "Practical how-to guides" },
       { href: `${BASE_PATH}/resources/`,  label: "Resources",      desc: "APIs, frameworks & videos" },
       { href: `${BASE_PATH}/concepts/`,   label: "Concepts",       desc: "Core AI concepts explained" },
     ],
@@ -47,7 +48,7 @@ const NAV_GROUPS = [
 // Map path segment → active group label
 const PATH_TO_GROUP: Record<string, string> = {
   news: "Discover", topics: "Discover", "ai-history": "Discover", "ai-labs": "Discover",
-  learn: "Learn", resources: "Learn", concepts: "Learn",
+  learn: "Learn", guides: "Learn", resources: "Learn", concepts: "Learn",
   tools: "Reference", models: "Reference", claude: "Reference", "google-ai-tools": "Reference",
 };
 
