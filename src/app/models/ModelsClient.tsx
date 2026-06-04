@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { ExternalLink, ChevronUp, ChevronDown, Info } from "lucide-react";
+import { useState, useMemo, useCallback } from "react";
+import { ExternalLink, ChevronUp, ChevronDown, Info, Calculator } from "lucide-react";
 import { BASE_PATH } from "@/lib/data";
 import ModelWizard from "@/components/ModelWizard";
 import {
@@ -363,6 +363,140 @@ export default function ModelsClient() {
           </div>
         ))}
       </div>
+
+      <CostCalculator />
+    </div>
+  );
+}
+
+// ── Cost Calculator ────────────────────────────────────────────────────────
+
+function CostCalculator() {
+  const [inputTokens,  setInputTokens]  = useState(500);
+  const [outputTokens, setOutputTokens] = useState(800);
+  const [reqsPerDay,   setReqsPerDay]   = useState(1000);
+
+  const monthlyReqs = reqsPerDay * 30;
+
+  const priceable = useMemo(
+    () => AI_MODELS.filter(m => m.inputPrice !== null && m.outputPrice !== null)
+                   .sort((a, b) => {
+                     const costA = (a.inputPrice! * inputTokens + a.outputPrice! * outputTokens) / 1_000_000;
+                     const costB = (b.inputPrice! * inputTokens + b.outputPrice! * outputTokens) / 1_000_000;
+                     return costA - costB;
+                   }),
+    [inputTokens, outputTokens]
+  );
+
+  const fmtMonthlyCost = useCallback((m: ModelEntry) => {
+    if (m.inputPrice === null || m.outputPrice === null) return "—";
+    const costPerReq = (m.inputPrice * inputTokens + m.outputPrice * outputTokens) / 1_000_000;
+    const monthly = costPerReq * monthlyReqs;
+    if (monthly < 0.01) return "< $0.01";
+    if (monthly < 1) return `$${monthly.toFixed(3)}`;
+    if (monthly < 1000) return `$${monthly.toFixed(2)}`;
+    return `$${(monthly / 1000).toFixed(1)}k`;
+  }, [inputTokens, outputTokens, monthlyReqs]);
+
+  function NumInput({ label, value, onChange, min, max, step }: {
+    label: string; value: number; onChange: (v: number) => void;
+    min: number; max: number; step: number;
+  }) {
+    return (
+      <div>
+        <label className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4 block mb-1.5">{label}</label>
+        <input
+          type="number"
+          value={value}
+          min={min}
+          max={max}
+          step={step}
+          onChange={e => onChange(Math.max(min, Number(e.target.value)))}
+          className="w-full bg-white/[0.04] border border-hairline rounded-lg px-3 py-2 font-mono text-[13px] text-fg-1 outline-none focus:border-violet/50 transition-colors"
+        />
+      </div>
+    );
+  }
+
+  const cheapest = priceable[0];
+
+  return (
+    <div className="mt-12 pt-10 border-t border-white/[0.06]">
+      <div className="flex items-center gap-2 mb-6">
+        <Calculator size={16} className="text-violet-bright" />
+        <h2 className="font-serif text-[22px] text-fg-1">Cost Calculator</h2>
+      </div>
+      <p className="font-sans text-[14px] text-fg-3 mb-8 max-w-2xl">
+        Estimate your monthly API spend across all models. Adjust tokens per request and daily volume to see how costs compare.
+      </p>
+
+      {/* Inputs */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 p-5 rounded-2xl border border-violet/[0.12] bg-violet/[0.03]">
+        <NumInput label="Input tokens / request" value={inputTokens}  onChange={setInputTokens}  min={1}    max={500000} step={100} />
+        <NumInput label="Output tokens / request" value={outputTokens} onChange={setOutputTokens} min={1}    max={100000} step={100} />
+        <NumInput label="Requests / day"          value={reqsPerDay}   onChange={setReqsPerDay}   min={1}    max={10000000} step={100} />
+      </div>
+
+      {/* Summary */}
+      <div className="grid grid-cols-3 gap-3 mb-6">
+        {[
+          { label: "Tokens / request", value: (inputTokens + outputTokens).toLocaleString() },
+          { label: "Requests / month",  value: monthlyReqs.toLocaleString() },
+          { label: "Cheapest option",   value: cheapest ? `${cheapest.name} · ${fmtMonthlyCost(cheapest)}/mo` : "—" },
+        ].map(s => (
+          <div key={s.label} className="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06]">
+            <p className="font-mono text-[9px] tracking-[0.12em] uppercase text-fg-4 mb-1">{s.label}</p>
+            <p className="font-mono text-[12px] text-fg-1">{s.value}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Comparison table */}
+      <div className="rounded-xl border border-white/[0.07] overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-white/[0.03] border-b border-white/[0.07]">
+                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 w-52">Model</th>
+                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 w-28">Provider</th>
+                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 w-28 text-right">Per request</th>
+                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 text-right">Monthly cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              {priceable.map((m, i) => {
+                if (m.inputPrice === null || m.outputPrice === null) return null;
+                const perReq = (m.inputPrice * inputTokens + m.outputPrice * outputTokens) / 1_000_000;
+                const isFirst = i === 0;
+                return (
+                  <tr
+                    key={m.id}
+                    className={`border-b border-white/[0.04] ${isFirst ? "bg-emerald-500/[0.06]" : i % 2 === 0 ? "" : "bg-white/[0.015]"}`}
+                  >
+                    <td className="px-4 py-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm text-fg-1">{m.name}</span>
+                        {isFirst && <span className="font-mono text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">cheapest</span>}
+                      </div>
+                    </td>
+                    <td className="px-4 py-2.5 font-mono text-[11px]" style={{ color: m.providerColor }}>{m.provider}</td>
+                    <td className="px-4 py-2.5 font-mono text-[11px] text-fg-3 text-right">
+                      {perReq < 0.0001 ? `$${perReq.toExponential(1)}` : `$${perReq.toFixed(4)}`}
+                    </td>
+                    <td className="px-4 py-2.5 font-mono text-[13px] text-right" style={{ color: isFirst ? "#10b981" : "var(--fg-2)" }}>
+                      {fmtMonthlyCost(m)}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p className="mt-3 font-mono text-[10px] text-fg-4">
+        Estimates based on listed prices. Cached tokens, batch discounts, and free tiers not applied. Verify at provider docs before budgeting.
+      </p>
     </div>
   );
 }
