@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 04 Jun 2026 14:40:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 03:20:28 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -98,6 +98,96 @@
     <guid isPermaLink="true">https://portal.tcu.gov.br/imprensa/noticias/ai-experience-2026.htm</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>TCU</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Snowflake and Anthropic: Claude Runs Inside Cortex AI — No Data Egress, Full Governance]]></title>
+    <description><![CDATA[At Snowflake Summit 26 in San Francisco, Snowflake and Anthropic detailed the technical architecture of their $200M partnership: Claude models run inside Snowflake Cortex AI natively, processing customer data without egress, fully governed by Snowflake's row- and column-level security policies. Enterprises can invoke Claude via SQL or Python directly in Snowflake Notebooks. The integration addresses the #1 blocker to enterprise AI adoption in financial services, healthcare, and insurance.]]></description>
+    <link>https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-accelerate-enterprise-ai-adoption-driven-by-rising-demand-for-governed-ai/</link>
+    <guid isPermaLink="true">https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-accelerate-enterprise-ai-adoption-driven-by-rising-demand-for-governed-ai/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Salesforce Signs Agreement to Acquire Contentful for ~$1.5B to Power Agentforce AI Content]]></title>
+    <description><![CDATA[Salesforce signed a definitive agreement to acquire Contentful, a composable content management platform trusted by over 4,800 enterprises. The deal gives Agentforce a native content layer capable of delivering AI-assembled, personalised digital experiences at scale. The transaction is expected to close in Salesforce's fiscal Q3 2027, pending regulatory approval.]]></description>
+    <link>https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-contentful/</link>
+    <guid isPermaLink="true">https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-contentful/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Salesforce</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Alibaba Launches Qwen3.7-Plus — Multimodal GUI Agent Unifying Vision and Language]]></title>
+    <description><![CDATA[Alibaba released Qwen3.7-Plus, a multimodal agent model that unifies GUI and CLI operation across visual and text tasks in a single set of weights. On ScreenSpot Pro it scores 79.0% and Terminal-Bench 70.3%, leading the open-API GUI agent field. Available via Alibaba Cloud at $0.40/M input tokens with native vision for images and video up to 5 minutes.]]></description>
+    <link>https://www.marktechpost.com/2026/06/02/alibabas-qwen-team-launches-qwen3-7-plus-adding-vision-deep-reasoning-tool-invocation-and-autonomous-iteration-on-the-bailian-platform/</link>
+    <guid isPermaLink="true">https://www.marktechpost.com/2026/06/02/alibabas-qwen-team-launches-qwen3-7-plus-adding-vision-deep-reasoning-tool-invocation-and-autonomous-iteration-on-the-bailian-platform/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Alibaba</category>
+  </item>
+
+  <item>
+    <title><![CDATA[GitHub Copilot Switches to Token-Based Billing — Developers Report Bills Up to 20× Higher]]></title>
+    <description><![CDATA[GitHub migrated all Copilot plans to usage-based token billing on June 1, replacing per-request pricing with metered AI credit consumption. Each plan includes a monthly AI credit allotment ($10 for Pro, $39 for Pro+), with additional usage billed at model API rates. Code completions remain unlimited, but agentic features using frontier models triggered reports of bills jumping from $29/month to $750 or more, sparking developer backlash across Reddit, X, and GitHub forums.]]></description>
+    <link>https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</link>
+    <guid isPermaLink="true">https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Microsoft</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Microsoft Reveals Scout — 'Autopilot' Always-On AI Agent for Microsoft 365]]></title>
+    <description><![CDATA[Microsoft unveiled Scout at Build 2026, its first 'Autopilot' category AI agent: an always-on, identity-bearing assistant that operates continuously across Teams, Outlook, OneDrive, and SharePoint without being explicitly prompted. Scout handles meeting prep, scheduling conflicts, and routine tasks autonomously within user-set permissions. Initial access is in private preview through Microsoft's Frontier programme.]]></description>
+    <link>https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/</link>
+    <guid isPermaLink="true">https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Microsoft</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Microsoft Build 2026: Windows Repositioned as Agent Execution OS — Agent Runtime, IQ Grounding Layer]]></title>
+    <description><![CDATA[At Build 2026, Satya Nadella repositioned Windows as an agent execution platform with Windows Agent Framework, Microsoft Execution Containers, Intelligent Terminal, and Windows 365 for Agents. Microsoft IQ went generally available, providing four grounding layers — Web IQ, Work IQ, Foundry IQ, and Fabric IQ — enabling agents to query all four sources in a single inference call. GitHub Copilot Desktop with parallel sessions via git worktrees was released as part of the platform vision.]]></description>
+    <link>https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/</link>
+    <guid isPermaLink="true">https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Microsoft</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Salesforce Summer '26: Multi-Agent Orchestration and Agentforce Operations Generally Available]]></title>
+    <description><![CDATA[Salesforce's Summer 2026 release delivers Multi-Agent Orchestration enabling agents to collaborate as a unified team with shared context across all CRM channels, an Agentforce Self-Service Portal with AI-native UI, and Agentforce Operations targeting end-to-end back-office automation (AP, AR, procurement, HR onboarding). Tableau MCP integration allows AI agents to query analytics directly. Features are generally available from June 2–15, 2026.]]></description>
+    <link>https://www.salesforce.com/news/stories/summer-2026-product-release-announcement/</link>
+    <guid isPermaLink="true">https://www.salesforce.com/news/stories/summer-2026-product-release-announcement/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Salesforce</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU Proposes Cloud and AI Development Act (CADA) — Triple EU Datacenter Capacity, Cloud Sovereignty Framework]]></title>
+    <description><![CDATA[The European Commission presented the Cloud and AI Development Act (CADA), targeting tripling EU datacenter capacity within 5–7 years to fully meet EU enterprise demand by 2035. CADA introduces a 4-tier EU Cloud Sovereignty Framework classifying cloud services by supply chain control, data residency, and infrastructure location. Commission President von der Leyen stated: 'We want to be sure nobody has a kill switch.' The package also includes Chips Act 2.0 and an Open Source Strategy.]]></description>
+    <link>https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada</link>
+    <guid isPermaLink="true">https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Commission</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Brazil's Chamber Speaker Commits to AI Law Vote by Late June — Rapporteur Opinion June 9]]></title>
+    <description><![CDATA[Chamber of Deputies President Hugo Motta confirmed the special committee will deliver the rapporteur's final opinion by June 9 and the Plenary will vote before the July 18 recess. Rapporteur Deputy Aguinaldo Ribeiro (PP-PB) finalises the text of PL 2338/2023, which would establish Brazil's first comprehensive AI law with risk-tiered classification, ANPD enforcement, and fines up to R$50 million per infraction.]]></description>
+    <link>https://portuguese.news-pravda.com/brazil/2026/05/31/391600.html</link>
+    <guid isPermaLink="true">https://portuguese.news-pravda.com/brazil/2026/05/31/391600.html</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Câmara dos Deputados</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Mistral AI Breaks Ground on €1.2B Swedish AI Datacenter with EcoDataCenter in Borlänge]]></title>
+    <description><![CDATA[Mistral AI and EcoDataCenter formally broke ground on a €1.2 billion AI datacenter facility in Borlänge, Sweden — Mistral's first AI infrastructure investment outside France. The facility will host NVIDIA Vera Rubin GPUs and is scheduled to open in 2027, making Sweden one of Europe's largest recipients of dedicated AI infrastructure investment from a European AI lab.]]></description>
+    <link>https://ecodatacenter.tech/press/mistral-ai-and-ecodatacenter-partner-to-build-ai-focused-data-center-in-sweden-3431886</link>
+    <guid isPermaLink="true">https://ecodatacenter.tech/press/mistral-ai-and-ecodatacenter-partner-to-build-ai-focused-data-center-in-sweden-3431886</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Mistral AI</category>
   </item>
 
   <item>
@@ -366,96 +456,6 @@
     <description><![CDATA[OpenAI co-founder and former Tesla AI director Andrej Karpathy announced he is joining Anthropic's pre-training division, working under team lead Nick Joseph to apply Claude itself to accelerate pre-training research. Karpathy left his own startup Eureka Labs for the move, citing the next few years at the frontier as 'especially formative.' The hire signals Anthropic's conviction that the pre-training scaling era is far from over and represents one of the most high-profile talent moves in AI's recent history.]]></description>
     <link>https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Launches Gemini Omni — Any-to-Any Multimodal Generation Model]]></title>
-    <description><![CDATA[Google unveiled Gemini Omni at I/O 2026, a new model family capable of generating outputs in any modality (video, images, text) from any input, starting with video generation using realistic physics understanding. Gemini Omni Flash is immediately available to all Google AI Plus, Pro, and Ultra subscribers globally, as well as free to users in YouTube Shorts Remix. The model marks Google's push toward truly universal multimodal AI — what the company calls 'world understanding' — going well beyond text-and-image to native video synthesis.]]></description>
-    <link>https://blog.google/innovation-and-ai/sundar-pichai-io-2026/</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/sundar-pichai-io-2026/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nvidia Q1 FY2027: $81.6B Revenue (+85% YoY), Guides Q2 at $91B]]></title>
-    <description><![CDATA[Nvidia reported Q1 FY2027 revenue of $81.62 billion, up 85% year-over-year from $44.01 billion, crushing Wall Street's estimate of $78.9 billion. EPS came in at $2.39 versus the expected $1.75. Nvidia guided Q2 revenue to approximately $91 billion — above the analyst consensus of $87.3 billion — and announced an $80 billion stock buyback program. The results confirm that hyperscaler AI infrastructure spending remains at record levels with no visible slowdown.]]></description>
-    <link>https://gulfnews.com/technology/nvidia-q1-2026-revenue-soars-85-on-surging-ai-chip-demand-beats-wall-street-expectations-1.500547972</link>
-    <guid isPermaLink="true">https://gulfnews.com/technology/nvidia-q1-2026-revenue-soars-85-on-surging-ai-chip-demand-beats-wall-street-expectations-1.500547972</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Nvidia</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Projects $10.9B Q2 Revenue and Its First-Ever Operating Profit]]></title>
-    <description><![CDATA[Anthropic disclosed it is on track to generate $10.9 billion in Q2 2026 revenue — more than doubling the $4.8 billion earned in Q1 — and to post its first-ever operating profit of approximately $559 million. The financials also revealed a striking cost side: Anthropic is paying rival xAI $1.25 billion per month for GPU compute through a contract running to May 2029, a total potential commitment exceeding $40 billion. The milestone positions Anthropic as the fastest-growing AI company by revenue and has accelerated IPO speculation.]]></description>
-    <link>https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html</link>
-    <guid isPermaLink="true">https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Trump Postpones White House AI Executive Order Hours Before Signing]]></title>
-    <description><![CDATA[President Trump cancelled a signing ceremony for an AI cybersecurity executive order minutes before it was due, saying he 'didn't like certain aspects of it.' The order would have established a voluntary 90-day pre-launch review framework for frontier AI models, with NSA involvement in classified testing, and directed federal agencies to deploy AI for network defense. Trump cited concern that the order 'could have been a blocker' in the global race with China. The postponement surprised the AI policy community and left major frontier labs without a clear federal review pathway.]]></description>
-    <link>https://www.washingtonpost.com/technology/2026/05/21/white-house-tore-down-ai-rules-now-its-building-new-defenses/</link>
-    <guid isPermaLink="true">https://www.washingtonpost.com/technology/2026/05/21/white-house-tore-down-ai-rules-now-its-building-new-defenses/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>White House</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Codex Ships Appshots and Goal Mode GA for Autonomous Dev Loops]]></title>
-    <description><![CDATA[OpenAI released a major Codex update on May 21 with two headline features: Appshots, a macOS hotkey (⌘⌘) that injects a screenshot plus full extracted text from any frontmost app window directly into Codex as live context; and Goal Mode reaching general availability across the Codex CLI, IDE extension, and app, letting developers define an outcome and success criteria and let Codex run autonomous multi-step loops until completion. ChatGPT Business workspaces also gained team-level plugin sharing and admin analytics for tracking code acceptance rates.]]></description>
-    <link>https://www.digit.in/news/general/openai-upgrades-codex-with-appshots-goal-mode-and-more-developer-focused-tools.html</link>
-    <guid isPermaLink="true">https://www.digit.in/news/general/openai-upgrades-codex-with-appshots-goal-mode-and-more-developer-focused-tools.html</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Launches GPT-Realtime-2 With Three New Voice API Models]]></title>
-    <description><![CDATA[OpenAI released GPT-Realtime-2 alongside three new real-time audio API models optimised for live audio agents, real-time translation, and streaming transcription. The new tier adds larger context windows, adjustable reasoning effort for latency/quality trade-offs, tool transparency (the model explains what it's doing before calling a function), and stronger recovery behaviour after interruptions. The release targets voice-first product builders who need enterprise-grade multi-language support and lower-latency turn-taking.]]></description>
-    <link>https://openai.com/blog</link>
-    <guid isPermaLink="true">https://openai.com/blog</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Codex Can Now Control a Locked Mac via Apple Authorization Plugin]]></title>
-    <description><![CDATA[OpenAI added 'Locked Computer Use' to Codex — an Apple authorization plugin that temporarily unlocks a Mac with strict temporal and behavioral safeguards, enabling developers to trigger and monitor long-running agent tasks remotely from their phone even when the machine's screen is locked. The feature, rolling out to eligible Mac users, is intended for overnight coding runs and CI-style autonomous loops without requiring the developer to be physically present at the machine. Windows support has not been announced.]]></description>
-    <link>https://www.macrumors.com/2026/05/22/codex-use-mac-apps-when-locked/</link>
-    <guid isPermaLink="true">https://www.macrumors.com/2026/05/22/codex-use-mac-apps-when-locked/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Files Confidentially for IPO Targeting September 2026 Listing]]></title>
-    <description><![CDATA[OpenAI filed confidential IPO paperwork with the SEC on May 22, 2026, targeting a September listing. Anthropic is reportedly eyeing October as its own window. The dual-IPO timeline reflects the maturation of the frontier AI sector into publicly-traded companies, though analysts warned that cheap AI commoditisation could pressure the $800 billion-plus combined valuations both firms are believed to be seeking. The filings set up what could be the most-watched technology IPO cycle since Meta in 2012.]]></description>
-    <link>https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026</link>
-    <guid isPermaLink="true">https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Launches Daybreak — GPT-5.5 Cybersecurity Platform to Rival Anthropic Glasswing]]></title>
-    <description><![CDATA[OpenAI launched Daybreak on May 11, a platform that uses GPT-5.5 and Codex Security to automatically build threat models, detect and test vulnerabilities in isolated sandboxes, and propose patches inside existing development pipelines. Three model tiers ship: standard GPT-5.5, a Trusted Access variant for verified defensive work, and GPT-5.5-Cyber for red-teaming and penetration testing. Launch partners include Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto Networks, and Zscaler — a direct competitive response to Anthropic's Project Glasswing from April 2026.]]></description>
-    <link>https://openai.com/daybreak/</link>
-    <guid isPermaLink="true">https://openai.com/daybreak/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[KPMG and Anthropic Form First Big Four AI Alliance — 276,000 Employees on Claude]]></title>
-    <description><![CDATA[KPMG and Anthropic announced a global strategic alliance on May 20, 2026, embedding Claude directly into KPMG's Digital Gateway client delivery platform — making KPMG the first Big Four firm to deploy a frontier AI model at the core of its business operations. All 276,000 KPMG employees gain access through the platform, with initial workflows targeting tax, legal, and private equity client engagements. The deal signals a broader shift of professional services firms to Claude as their primary AI, following KPMG's evaluation of competing models from OpenAI and Google.]]></description>
-    <link>https://www.anthropic.com/news/anthropic-kpmg</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/anthropic-kpmg</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
   </item>
