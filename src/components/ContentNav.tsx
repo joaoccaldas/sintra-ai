@@ -50,11 +50,12 @@ function OverviewStrip() {
     { label: "News",     count: AI_NEWS.length,      desc: "AI news & announcements",          href: `${BASE_PATH}/news/`,     internal: false },
     { label: "Concepts", count: CONCEPTS.length,     desc: "Key AI concepts explained",        href: `${BASE_PATH}/concepts/`, internal: false },
     { label: "Models",   count: AI_MODELS.length,    desc: "Model comparison & benchmarks",    href: `${BASE_PATH}/models/`,   internal: false },
-    { label: "Guides",   count: GUIDES.length,       desc: "Practical how-to guides",          href: `${BASE_PATH}/guides/`,   internal: false },
+    { label: "Guides",    count: GUIDES.length,       desc: "Practical how-to guides",          href: `${BASE_PATH}/guides/`,    internal: false },
+    { label: "Research",  count: 20,                  desc: "Key AI papers in plain English",    href: `${BASE_PATH}/research/`,  internal: false },
   ];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-14">
+    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 mb-14">
       {destinations.map((d, i) => (
         <motion.a
           key={d.label}

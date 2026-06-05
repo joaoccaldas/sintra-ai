@@ -291,4 +291,129 @@ export const GUIDES: Guide[] = [
       { label: "Model Comparison (vision column)", href: `${BASE_PATH}/models` },
     ],
   },
+
+  // ── Domain Playbooks ──────────────────────────────────────────────────────
+
+  {
+    id: "finance-ai-playbook",
+    slug: "finance-ai-playbook",
+    emoji: "📊",
+    color: "#10b981",
+    title: "Finance & FP&A AI Playbook",
+    tagline: "High-ROI AI applications for financial planning, analysis, and reporting — with prompts that work.",
+    estimatedRead: "8 min",
+    level: "intermediate",
+    sections: [
+      {
+        heading: "Where AI delivers in finance",
+        body: "The highest-ROI AI applications in finance are variance analysis narration, budget commentary drafting, report summarisation, and data extraction from unstructured documents (PDFs, earnings transcripts, invoices). These tasks share a key property: they require language, pattern recognition, and contextual understanding — exactly what LLMs do well. AI underperforms on tasks requiring real-time market data, complex multi-step numerical modelling, or decisions with regulatory accountability — a human must own those.",
+        tip: "Start with variance commentary. It takes 2–4 hours per analyst per month and AI does it in minutes with comparable quality.",
+      },
+      {
+        heading: "Prompt patterns that work for FP&A",
+        body: "For variance commentary: 'You are a senior FP&A analyst. Write a 3-sentence variance commentary for the following data: Revenue was $X vs. $Y budget (Z% variance). Context: [reason]. Tone: professional, concise, no jargon.' For budget narrative: paste your key metrics table and ask for a 200-word executive summary organised as: Performance, Drivers, Outlook. For earnings transcript analysis: 'Extract and summarise the CEO's three key priorities, any numerical guidance given, and any risk factors mentioned' before pasting the full transcript.",
+      },
+      {
+        heading: "Connecting AI to your financial data",
+        body: "For Excel and Google Sheets: Microsoft 365 Copilot now works natively inside Excel for formula generation, data summarisation, and pivot analysis. For Python-based FP&A: use the Anthropic or OpenAI SDK to pipe dataframe summaries into prompts — never paste raw data files larger than ~50KB. For ERP data: build a RAG pipeline over your management reports and actuals data so AI can answer 'why did COGS increase in March?' against real documents rather than generalising from training data.",
+      },
+      {
+        heading: "Model selection for finance",
+        body: "For text generation (commentary, summaries, narratives): Claude Sonnet or GPT-4o — the writing quality is measurably better than smaller models. For data extraction from PDFs and scanned documents: use a vision-capable model (Claude, GPT-4o, Gemini) — OCR-then-parse pipelines are being replaced. For high-volume classification tasks (categorise 10,000 transactions): GPT-4o-mini or Claude Haiku — 10–20× cheaper, accurate enough. Avoid using reasoning models (o3, Claude with extended thinking) for routine commentary — the token cost is 5–10× higher with minimal quality gain for this use case.",
+      },
+      {
+        heading: "Governance and accuracy requirements",
+        body: "Finance is a domain where accuracy errors have material consequences. Establish clear rules: AI outputs used in board packs or external filings must be reviewed and signed off by a qualified finance professional. Never allow AI to generate numerical figures from scratch — it should always work from numbers you provide. Build a review checklist: does the commentary match the data? Are percentages calculated correctly? Are year labels accurate? The goal is AI as a first draft that reduces the blank-page problem, not as an autonomous financial reporter.",
+        tip: "Treat AI output in finance the same way you treat an intern's first draft: review thoroughly before it goes anywhere official.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Finance & FP&A prompts", href: `${BASE_PATH}/topics/finance` },
+      { label: "Concepts: RAG", href: `${BASE_PATH}/concepts#rag` },
+      { label: "Concepts: Structured Output", href: `${BASE_PATH}/concepts#structured-output` },
+      { label: "Choosing the Right AI Model", href: `${BASE_PATH}/guides` },
+    ],
+  },
+
+  {
+    id: "legal-ai-playbook",
+    slug: "legal-ai-playbook",
+    emoji: "⚖️",
+    color: "#6366f1",
+    title: "Legal AI Playbook",
+    tagline: "Contract review, legal research, and compliance use cases — with the caveats lawyers need to know.",
+    estimatedRead: "7 min",
+    level: "intermediate",
+    sections: [
+      {
+        heading: "What AI genuinely helps with in legal",
+        body: "AI delivers real value in legal for: first-pass contract review (identifying unusual clauses, flagging deviations from standard positions), legal research summarisation (summarising case law, identifying relevant precedents from a set of documents you provide), drafting standard documents (NDAs, employment agreements, service terms — with review), and extracting structured data from large document sets (due diligence, discovery). AI does not replace legal judgement, cannot give verified legal advice, and is unreliable for jurisdiction-specific accuracy without grounding in current authoritative sources.",
+        tip: "The safest framing: AI handles the reading, flagging, and first draft. A qualified lawyer handles the judgement, advice, and sign-off.",
+      },
+      {
+        heading: "Contract review workflow",
+        body: "Effective contract review with AI follows four steps: (1) Paste the full contract and ask for an executive summary of key terms — parties, governing law, payment, term, termination rights. (2) Ask for a clause-by-clause risk flag: 'Identify any clauses that deviate from standard market practice or that favour the counterparty significantly.' (3) Compare against your standard positions: paste your playbook positions and ask 'For each of these positions, does the contract match, deviate, or not address?' (4) Use AI to draft redlines for negotiation. Always have qualified counsel review output before sending to counterparty.",
+      },
+      {
+        heading: "Legal research with RAG",
+        body: "AI alone — without retrieval — is unreliable for legal research because it can hallucinate case citations and misstate holdings. The correct architecture: build a RAG pipeline over your authoritative sources (case law PDFs, regulatory guidance, firm precedents) and query against those documents. The model then cites actual documents rather than generating plausible-sounding but fictional citations. Tools like Harvey, CoCounsel, and Lexis+ AI are built on this architecture. For in-house use, you can replicate it: embed your firm's relevant precedent documents and regulatory guidance, then query with specificity.",
+      },
+      {
+        heading: "Compliance and regulatory monitoring",
+        body: "AI is particularly strong at regulatory change monitoring: set up a pipeline that ingests regulatory updates (SEC releases, GDPR guidance, local legislation) via RSS or web scraping, embeds them, and alerts when new content is relevant to your defined risk areas. For compliance questionnaire completion: paste the questionnaire and your policy documents together, ask AI to draft answers with citations to your policies. For audit preparation: AI can review large volumes of emails, contracts, or records and flag items matching specified criteria — reducing manual review from weeks to hours.",
+      },
+      {
+        heading: "The critical caveats",
+        body: "Unauthorised practice of law: in most jurisdictions, giving specific legal advice is restricted to qualified lawyers. AI outputs are not legal advice and should never be presented as such to clients or third parties without lawyer review. Confidentiality: major AI providers have enterprise terms that prevent training on submitted data, but verify this for your specific jurisdiction and risk appetite before inputting client-confidential matter details. Hallucination in legal contexts is especially dangerous — a fabricated case citation in a brief can result in sanctions. Always verify citations independently. Jurisdiction: laws vary enormously across jurisdictions; a contract clause that is standard in one country may be unenforceable in another.",
+        tip: "Before deploying AI for external-facing legal work, get a formal opinion from your firm's ethics or professional responsibility partner.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Concepts: RAG", href: `${BASE_PATH}/concepts#rag` },
+      { label: "Concepts: Hallucination", href: `${BASE_PATH}/concepts#hallucination` },
+      { label: "Concepts: Grounding", href: `${BASE_PATH}/concepts#grounding` },
+      { label: "AI Cost Optimization Playbook", href: `${BASE_PATH}/guides` },
+    ],
+  },
+
+  {
+    id: "healthcare-ai-playbook",
+    slug: "healthcare-ai-playbook",
+    emoji: "🏥",
+    color: "#06b6d4",
+    title: "Healthcare AI Playbook",
+    tagline: "Clinical documentation, research acceleration, and patient communication — with the safety guardrails required.",
+    estimatedRead: "8 min",
+    level: "intermediate",
+    sections: [
+      {
+        heading: "High-value healthcare AI applications",
+        body: "The highest-ROI, lowest-risk AI applications in healthcare are administrative and documentation tasks: clinical note generation from voice or transcript, discharge summary drafting, prior authorisation letter writing, patient communication (appointment reminders, discharge instructions), and research literature summarisation. These tasks are language-intensive, time-consuming for clinicians, and have lower stakes than diagnostic or treatment decisions. Administrative AI in healthcare consistently reduces documentation time by 30–60%, which directly translates to more patient-facing time.",
+        tip: "Ambient documentation — AI that listens to a patient encounter and generates a draft clinical note — is the single highest-ROI clinical AI application available today.",
+      },
+      {
+        heading: "Clinical documentation with AI",
+        body: "For SOAP note generation: record or transcribe the patient encounter, then prompt: 'You are a clinical documentation specialist. Based on this encounter transcript, generate a SOAP note. Use standard clinical terminology. Mark any information you are inferring (not explicitly stated) with [INFERRED].' The INFERRED flag is critical — it tells the reviewing clinician where to verify. For discharge summaries: provide the key clinical facts and ask for a structured summary including: chief complaint, hospital course, discharge diagnosis, medications at discharge, follow-up instructions. Always have the attending physician review and sign before it enters the medical record.",
+      },
+      {
+        heading: "Medical literature and research",
+        body: "AI excels at medical literature summarisation when grounded in actual papers you provide. Effective workflow: download the relevant PDFs, insert them into context (or build a RAG pipeline for ongoing use), then query with specificity: 'What does the evidence say about the efficacy of X for Y in patients with Z comorbidity? Summarise the key studies and their limitations.' Without grounding in actual papers, AI will synthesise plausible-sounding but potentially inaccurate summaries of the literature — dangerous for clinical decision-making. For systematic reviews, AI can dramatically accelerate abstract screening and data extraction, but should not replace the structured PRISMA review process.",
+      },
+      {
+        heading: "Patient communication",
+        body: "AI is highly effective for translating clinical language into plain-language patient communication. Workflow: write the clinical summary in standard medical terms, then ask AI to rewrite for a patient at a 6th-grade reading level, avoiding jargon, explaining any unavoidable medical terms. For multilingual communication: frontier models (Claude, GPT-4o, Gemini) can translate and culturally adapt patient communications in 30+ languages — validate with native-speaker review for high-stakes communications. Patient education materials (condition explanations, procedure prep instructions, post-discharge care) are a high-volume, high-value use case where AI quality typically matches or exceeds standard institutional materials.",
+      },
+      {
+        heading: "Regulatory, privacy, and safety requirements",
+        body: "HIPAA (US) / GDPR (EU) / LGPD (Brazil): most major AI providers offer Business Associate Agreements (BAAs) and Data Processing Agreements (DPAs). Verify your provider's healthcare compliance before inputting any patient-identifiable data. AI must never be the final decision-maker in clinical decisions — it is a decision support tool. FDA, CE marking, and ANVISA (Brazil) have specific requirements for AI used in clinical decision support; non-administrative applications typically require regulatory clearance. Red-line: do not use consumer AI products (ChatGPT free, Claude.ai free) for patient data — use enterprise APIs with appropriate agreements.",
+        tip: "For any AI touching patient data: consult your institution's privacy officer and legal team before deployment, not after.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Concepts: Grounding", href: `${BASE_PATH}/concepts#grounding` },
+      { label: "Concepts: Hallucination", href: `${BASE_PATH}/concepts#hallucination` },
+      { label: "Concepts: RAG", href: `${BASE_PATH}/concepts#rag` },
+      { label: "Fine-Tuning vs. Prompting", href: `${BASE_PATH}/guides` },
+    ],
+  },
 ];
