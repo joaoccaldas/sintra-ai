@@ -24,15 +24,24 @@ export default function HeroMinimal({ total }: Props) {
     : line;
 
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-6 pt-14 pb-10 md:pt-20 md:pb-14 overflow-hidden bg-void">
+    <section className="relative flex flex-col items-center justify-center text-center px-6 pt-14 pb-16 md:pt-20 md:pb-20 overflow-hidden bg-void">
 
-      {/* Subtle violet bloom at top */}
+      {/* Violet bloom */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 70% 55% at 50% 0%, rgba(159,140,255,0.10) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 50% -5%, rgba(159,140,255,0.13) 0%, transparent 70%)",
+        }}
+      />
+
+      {/* Fade bridge into content below */}
+      <div
+        aria-hidden="true"
+        className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
+        style={{
+          background: "linear-gradient(to bottom, transparent, rgba(10,10,20,0.6))",
         }}
       />
 
@@ -52,7 +61,7 @@ export default function HeroMinimal({ total }: Props) {
         {/* Title */}
         <motion.h1
           custom={1} variants={variants} initial="hidden" animate="show"
-          className="font-serif font-light text-[clamp(52px,9vw,96px)] leading-[1.0] tracking-[-0.03em] text-fg-1 mb-3"
+          className="font-serif font-light text-[clamp(52px,9vw,96px)] leading-[1.0] tracking-[-0.03em] text-fg-1 mb-4"
         >
           libr
           <em
@@ -69,12 +78,12 @@ export default function HeroMinimal({ total }: Props) {
           ry
         </motion.h1>
 
-        {/* Subtitle */}
+        {/* Subtitle — more purposeful */}
         <motion.p
           custom={2} variants={variants} initial="hidden" animate="show"
-          className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4"
+          className="font-mono text-[10px] tracking-[0.16em] uppercase text-fg-4"
         >
-          Prompts · Tools · News · Models · Concepts
+          {total.toLocaleString()} prompts · news · tools · models · research
         </motion.p>
 
       </div>

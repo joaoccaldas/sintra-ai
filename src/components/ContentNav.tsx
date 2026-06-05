@@ -2,13 +2,12 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ExternalLink, Search, X, Clock } from "lucide-react";
+import { ArrowRight, ExternalLink, Search, X, Clock, Zap, BookOpen, Wrench } from "lucide-react";
 import { BASE_PATH, USE_CASES, DISC_COUNTS, matchesUseCase, UseCase } from "@/lib/data";
 import { AI_NEWS } from "@/lib/newsData";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { AI_MODELS } from "@/lib/modelsData";
 import { CONCEPTS } from "@/lib/concepts";
-import { TOPIC_HUBS } from "@/lib/topicsData";
 import { LEARNING_PATHS } from "@/lib/learningPathsData";
 import { GUIDES } from "@/lib/guidesData";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
@@ -27,14 +26,24 @@ const fade = {
 };
 
 /* ── Section header ─────────────────────────────────────────────────── */
-function SectionHead({ label, href, linkLabel }: { label: string; href?: string; linkLabel?: string }) {
+function SectionHead({
+  label, href, linkLabel, count,
+}: {
+  label: string; href?: string; linkLabel?: string; count?: number;
+}) {
   return (
     <div className="flex items-center gap-3 mb-5">
       <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
       <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{label}</span>
+      {count !== undefined && (
+        <span className="font-mono text-[10px] text-fg-4 opacity-50">· {count}</span>
+      )}
       <span className="flex-1 h-px bg-hairline" />
       {href && (
-        <a href={href} className="font-mono text-[10px] text-fg-4 hover:text-violet-bright transition-colors flex items-center gap-1">
+        <a
+          href={href}
+          className="font-mono text-[10px] text-fg-4 hover:text-violet-bright transition-colors flex items-center gap-1"
+        >
           {linkLabel ?? "View all"} <ArrowRight size={10} />
         </a>
       )}
@@ -42,66 +51,170 @@ function SectionHead({ label, href, linkLabel }: { label: string; href?: string;
   );
 }
 
-/* ── 1. Overview strip ──────────────────────────────────────────────── */
-function OverviewStrip() {
-  const destinations = [
-    { label: "Prompts",  count: USE_CASES.length,   desc: "Ready-to-use AI prompts",         href: "#library",               internal: true  },
-    { label: "Tools",    count: AI_TOOLS.length,     desc: "Curated AI tools & apps",          href: `${BASE_PATH}/tools/`,    internal: false },
-    { label: "News",     count: AI_NEWS.length,      desc: "AI news & announcements",          href: `${BASE_PATH}/news/`,     internal: false },
-    { label: "Concepts", count: CONCEPTS.length,     desc: "Key AI concepts explained",        href: `${BASE_PATH}/concepts/`, internal: false },
-    { label: "Models",   count: AI_MODELS.length,    desc: "Model comparison & benchmarks",    href: `${BASE_PATH}/models/`,   internal: false },
-    { label: "Guides",    count: GUIDES.length,       desc: "Practical how-to guides",          href: `${BASE_PATH}/guides/`,    internal: false },
-    { label: "Research",  count: 20,                  desc: "Key AI papers in plain English",    href: `${BASE_PATH}/research/`,  internal: false },
-  ];
+/* ── 1. Intent nav — 3 clear entry points ───────────────────────────── */
+const INTENTS = [
+  {
+    id: "current",
+    icon: Zap,
+    color: "#9F8CFF",
+    gradient: "from-violet-500/10 to-violet-500/0",
+    label: "Stay Current",
+    desc: "What's happening in AI right now",
+    links: [
+      { label: "AI News",    sub: `${AI_NEWS.length} items · updated daily`, href: `${BASE_PATH}/news/`       },
+      { label: "AI History", sub: "70 years of milestones",                   href: `${BASE_PATH}/ai-history/` },
+      { label: "Research",   sub: "Key papers in plain English",              href: `${BASE_PATH}/research/`   },
+    ],
+  },
+  {
+    id: "learn",
+    icon: BookOpen,
+    color: "#10b981",
+    gradient: "from-emerald-500/10 to-emerald-500/0",
+    label: "Learn",
+    desc: "Build real understanding, fast",
+    links: [
+      { label: "Guides",         sub: `${GUIDES.length} practical how-to guides`,   href: `${BASE_PATH}/guides/`    },
+      { label: "Learning Paths", sub: `${LEARNING_PATHS.length} structured paths`,  href: `${BASE_PATH}/learn/`     },
+      { label: "Concepts",       sub: `${CONCEPTS.length} core AI concepts`,         href: `${BASE_PATH}/concepts/`  },
+    ],
+  },
+  {
+    id: "build",
+    icon: Wrench,
+    color: "#f59e0b",
+    gradient: "from-amber-500/10 to-amber-500/0",
+    label: "Build",
+    desc: "Prompts, tools and model intelligence",
+    links: [
+      { label: "Prompt Library", sub: `${USE_CASES.length} curated use cases`,     href: "#library",             internal: true },
+      { label: "AI Tools",       sub: `${AI_TOOLS.length} tools & apps`,           href: `${BASE_PATH}/tools/`   },
+      { label: "Model Pricing",  sub: `${AI_MODELS.length} models compared`,       href: `${BASE_PATH}/models/`  },
+    ],
+  },
+] as const;
 
+function IntentNav() {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 mb-14">
-      {destinations.map((d, i) => (
-        <motion.a
-          key={d.label}
-          href={d.href}
-          custom={i} variants={fade} initial="hidden" animate="show"
-          onClick={d.internal ? (e) => {
-            e.preventDefault();
-            document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
-          } : undefined}
-          className="group flex flex-col gap-2 p-4 rounded-xl border border-hairline bg-white/[0.02] hover:border-violet/35 hover:bg-violet/[0.04] transition-all duration-200 cursor-pointer"
-        >
-          <span className="font-mono text-[24px] font-medium text-fg-1 tabular-nums leading-none">
-            {d.count}
-          </span>
-          <div>
-            <p className="font-mono text-[11px] text-fg-2 font-medium group-hover:text-violet-bright transition-colors">{d.label}</p>
-            <p className="font-sans text-[11px] text-fg-4 leading-[1.4] mt-0.5 hidden sm:block">{d.desc}</p>
-          </div>
-          <span className="mt-auto font-mono text-[9px] tracking-[0.08em] uppercase text-violet-bright opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
-            Browse <ArrowRight size={9} />
-          </span>
-        </motion.a>
-      ))}
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
+      {INTENTS.map((intent, i) => {
+        const Icon = intent.icon;
+        return (
+          <motion.div
+            key={intent.id}
+            custom={i} variants={fade} initial="hidden" animate="show"
+            className={`relative rounded-2xl border border-white/8 bg-gradient-to-b ${intent.gradient} p-5 flex flex-col gap-4 overflow-hidden`}
+          >
+            {/* Header */}
+            <div className="flex items-center gap-3">
+              <span
+                className="flex items-center justify-center w-8 h-8 rounded-lg shrink-0"
+                style={{ background: intent.color + "18", color: intent.color }}
+              >
+                <Icon size={15} />
+              </span>
+              <div>
+                <p className="font-serif text-[15px] text-fg-1 leading-none">{intent.label}</p>
+                <p className="font-mono text-[10px] text-fg-4 mt-0.5">{intent.desc}</p>
+              </div>
+            </div>
+
+            {/* Links */}
+            <div className="flex flex-col gap-1">
+              {intent.links.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={"internal" in link && link.internal ? (e) => {
+                    e.preventDefault();
+                    document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
+                  } : undefined}
+                  className="group flex items-center justify-between gap-2 px-3 py-2 rounded-lg hover:bg-white/[0.05] transition-colors"
+                >
+                  <div className="min-w-0">
+                    <p
+                      className="font-mono text-[11px] font-medium group-hover:text-white transition-colors truncate"
+                      style={{ color: intent.color }}
+                    >
+                      {link.label}
+                    </p>
+                    <p className="font-mono text-[10px] text-fg-4 truncate">{link.sub}</p>
+                  </div>
+                  <ArrowRight
+                    size={11}
+                    className="shrink-0 text-fg-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all"
+                  />
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        );
+      })}
     </div>
   );
 }
 
-/* ── 1b. Topic hubs ─────────────────────────────────────────────────── */
-function TopicHubs() {
+/* ── 2. Latest news — lead with signal ──────────────────────────────── */
+const SIG_COLOR: Record<string, string> = {
+  landmark: "#f59e0b",
+  major:    "#9F8CFF",
+  notable:  "rgba(255,255,255,0.18)",
+};
+
+function LatestNews() {
+  const items = useMemo(() =>
+    [...AI_NEWS]
+      .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
+      .slice(0, 6),
+  []);
+
   return (
-    <div className="mb-14">
-      <SectionHead label="Browse by Topic" href={`${BASE_PATH}/topics/`} linkLabel={`All ${TOPIC_HUBS.length} topics`} />
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
-        {TOPIC_HUBS.map((topic, i) => (
+    <div className="mb-16">
+      <SectionHead
+        label="Latest in AI"
+        href={`${BASE_PATH}/news/`}
+        linkLabel={`All ${AI_NEWS.length}`}
+        count={AI_NEWS.length}
+      />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 divide-y divide-hairline md:divide-y-0">
+        {items.map((item, i) => (
           <motion.a
-            key={topic.slug}
-            href={`${BASE_PATH}/topics/${topic.slug}/`}
+            key={item.id}
+            href={item.url ?? `${BASE_PATH}/news/`}
+            target={item.url ? "_blank" : undefined}
+            rel={item.url ? "noopener noreferrer" : undefined}
             custom={i} variants={fade} initial="hidden" animate="show"
-            className="group flex flex-col items-center gap-1.5 px-2 py-3 rounded-xl border border-hairline bg-white/[0.01] hover:bg-violet/[0.05] hover:border-violet/25 transition-all duration-200 text-center"
+            className="group flex items-start gap-3 py-3 md:py-3 hover:bg-white/[0.02] -mx-3 px-3 rounded-lg transition-colors"
           >
-            <span className="text-[16px] leading-none" style={{ color: topic.color }}>
-              {topic.icon}
-            </span>
-            <span className="font-mono text-[9px] tracking-[0.06em] uppercase text-fg-4 group-hover:text-fg-1 transition-colors leading-tight">
-              {topic.label}
-            </span>
+            {/* Significance dot */}
+            <span
+              className="mt-[6px] shrink-0 w-1.5 h-1.5 rounded-full"
+              style={{ background: SIG_COLOR[item.significance] }}
+            />
+
+            <div className="flex-1 min-w-0">
+              {/* Provider + date */}
+              <div className="flex items-center gap-2 mb-0.5">
+                <span
+                  className="font-mono text-[9px] font-semibold tracking-wider uppercase"
+                  style={{ color: item.providerColor ?? "#9F8CFF" }}
+                >
+                  {item.provider}
+                </span>
+                <span className="font-mono text-[9px] text-fg-4">
+                  {item.dateDay ? `${item.dateDay} ` : ""}{item.date}
+                </span>
+              </div>
+              {/* Title */}
+              <p className="font-sans text-[13px] text-fg-2 leading-[1.4] group-hover:text-fg-1 transition-colors line-clamp-2">
+                {item.title}
+              </p>
+            </div>
+
+            <ExternalLink
+              size={10}
+              className="shrink-0 mt-1 text-fg-4 opacity-0 group-hover:opacity-50 transition-opacity"
+            />
           </motion.a>
         ))}
       </div>
@@ -109,7 +222,33 @@ function TopicHubs() {
   );
 }
 
-/* ── 1c. Learning paths strip ───────────────────────────────────────── */
+/* ── 3. Recently added prompts ──────────────────────────────────────── */
+function RecentPrompts({ onOpen }: { onOpen: (item: UseCase) => void }) {
+  const recent = useMemo(() =>
+    [...USE_CASES]
+      .sort((a, b) => b.dateAdded.localeCompare(a.dateAdded))
+      .slice(0, 3),
+  []);
+
+  return (
+    <div className="mb-16">
+      <SectionHead
+        label="New Prompts"
+        href="#library"
+        linkLabel={`Browse all ${USE_CASES.length}`}
+      />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {recent.map((item, i) => (
+          <motion.div key={item.id} custom={i} variants={fade} initial="hidden" animate="show">
+            <UseCaseCard item={item} onOpen={onOpen} />
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ── 4. Learning paths ──────────────────────────────────────────────── */
 const LEVEL_BADGE = {
   beginner:     { label: "Beginner",     color: "#10b981" },
   intermediate: { label: "Intermediate", color: "#9F8CFF" },
@@ -118,7 +257,7 @@ const LEVEL_BADGE = {
 
 function LearningPathsStrip() {
   return (
-    <div className="mb-14">
+    <div className="mb-16">
       <SectionHead label="Learning Paths" href={`${BASE_PATH}/learn/`} linkLabel="Open all paths" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {LEARNING_PATHS.map((path, i) => {
@@ -157,82 +296,7 @@ function LearningPathsStrip() {
   );
 }
 
-/* ── 2. Latest news ─────────────────────────────────────────────────── */
-function LatestNews() {
-  const items = useMemo(() =>
-    [...AI_NEWS]
-      .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
-      .slice(0, 5),
-  []);
-
-  return (
-    <div className="mb-14">
-      <SectionHead label="Latest News" href={`${BASE_PATH}/news/`} linkLabel={`All ${AI_NEWS.length}`} />
-      <div className="flex flex-col divide-y divide-hairline">
-        {items.map((item, i) => (
-          <motion.a
-            key={item.id}
-            href={item.url ?? `${BASE_PATH}/news/`}
-            target={item.url ? "_blank" : undefined}
-            rel={item.url ? "noopener noreferrer" : undefined}
-            custom={i} variants={fade} initial="hidden" animate="show"
-            className="group flex items-start gap-4 py-3 hover:bg-white/[0.02] -mx-3 px-3 rounded-lg transition-colors"
-          >
-            {/* Date */}
-            <span className="font-mono text-[10px] text-fg-4 whitespace-nowrap mt-px shrink-0 w-20">
-              {item.dateDay ? `${item.dateDay} ` : ""}{item.date}
-            </span>
-
-            {/* Significance */}
-            <span className="mt-1.5 shrink-0">
-              {item.significance === "landmark" ? (
-                <span className="block w-1.5 h-1.5 rounded-full bg-amber-400" />
-              ) : item.significance === "major" ? (
-                <span className="block w-1.5 h-1.5 rounded-full bg-violet/70" />
-              ) : (
-                <span className="block w-1.5 h-1.5 rounded-full bg-white/20" />
-              )}
-            </span>
-
-            {/* Title */}
-            <span className="flex-1 font-sans text-[13px] text-fg-2 leading-[1.45] group-hover:text-fg-1 transition-colors line-clamp-1">
-              {item.title}
-            </span>
-
-            {/* Provider */}
-            <span className="font-mono text-[10px] text-fg-4 shrink-0 hidden sm:block">{item.provider}</span>
-
-            <ExternalLink size={11} className="shrink-0 mt-0.5 text-fg-4 opacity-0 group-hover:opacity-60 transition-opacity" />
-          </motion.a>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-/* ── 3. Recently added prompts ──────────────────────────────────────── */
-function RecentPrompts({ onOpen }: { onOpen: (item: UseCase) => void }) {
-  const recent = useMemo(() =>
-    [...USE_CASES]
-      .sort((a, b) => b.dateAdded.localeCompare(a.dateAdded))
-      .slice(0, 3),
-  []);
-
-  return (
-    <div className="mb-14">
-      <SectionHead label="Recently Added" href="#library" linkLabel="All prompts" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {recent.map((item, i) => (
-          <motion.div key={item.id} custom={i} variants={fade} initial="hidden" animate="show">
-            <UseCaseCard item={item} onOpen={onOpen} />
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-/* ── 4. Prompt library (full browser) ───────────────────────────────── */
+/* ── 5. Prompt library ──────────────────────────────────────────────── */
 function PromptLibrary() {
   const [selectedCat, setSelectedCat] = useState<string>(CAROUSEL_ITEMS[0].id);
   const [search, setSearch]           = useState("");
@@ -247,7 +311,7 @@ function PromptLibrary() {
     return USE_CASES.filter(u => u.category === selectedCat);
   }, [selectedCat, search, isSearching]);
 
-  const visible = filtered.slice(0, visibleCount);
+  const visible  = filtered.slice(0, visibleCount);
   const hasMore  = visibleCount < filtered.length;
 
   const openCard = (item: UseCase) => {
@@ -260,9 +324,9 @@ function PromptLibrary() {
 
   return (
     <div>
-      <SectionHead label="Prompt Library" linkLabel={`${USE_CASES.length} prompts`} />
+      <SectionHead label="Prompt Library" count={USE_CASES.length} />
 
-      {/* Category sub-nav */}
+      {/* Category rail */}
       <div className="overflow-x-auto scrollbar-none -mx-6 px-6 md:mx-0 md:px-0 mb-4">
         <div className="flex gap-1.5 min-w-max">
           {CAROUSEL_ITEMS.map(cat => {
@@ -297,7 +361,10 @@ function PromptLibrary() {
           className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
         />
         {search && (
-          <button onClick={() => setSearch("")} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors">
+          <button
+            onClick={() => setSearch("")}
+            className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors"
+          >
             <X size={12} />
           </button>
         )}
@@ -310,11 +377,15 @@ function PromptLibrary() {
         </p>
       )}
 
-      {/* Grid */}
       {filtered.length === 0 ? (
         <div className="text-center py-20">
           <p className="font-mono text-[13px] text-fg-4">No prompts match.</p>
-          <button onClick={() => setSearch("")} className="mt-3 font-mono text-[11px] text-violet-bright hover:underline">Clear search</button>
+          <button
+            onClick={() => setSearch("")}
+            className="mt-3 font-mono text-[11px] text-violet-bright hover:underline"
+          >
+            Clear search
+          </button>
         </div>
       ) : (
         <>
@@ -363,7 +434,7 @@ function PromptLibrary() {
 
 /* ── Main export ─────────────────────────────────────────────────────── */
 export default function ContentNav() {
-  const [expanded, setExpanded]     = useState<UseCase | null>(null);
+  const [expanded, setExpanded]           = useState<UseCase | null>(null);
   const [expandedItems, setExpandedItems] = useState<UseCase[]>([]);
 
   const openFromRecent = (item: UseCase) => {
@@ -374,29 +445,25 @@ export default function ContentNav() {
   };
 
   return (
-    <section id="explore" className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-4">
+    <section id="explore" className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
 
-      {/* 1 — what's here */}
-      <OverviewStrip />
+      {/* 1 — three clear entry points */}
+      <IntentNav />
 
-      {/* 2 — browse by topic */}
-      <TopicHubs />
-
-      {/* 3 — latest news */}
+      {/* 2 — what's happening now */}
       <LatestNews />
 
-      {/* 4 — learning paths */}
-      <LearningPathsStrip />
-
-      {/* 5 — recently added prompts */}
+      {/* 3 — new prompts */}
       <RecentPrompts onOpen={openFromRecent} />
 
-      {/* 6 — full library */}
+      {/* 4 — structured learning */}
+      <LearningPathsStrip />
+
+      {/* 5 — full library */}
       <div id="library">
         <PromptLibrary />
       </div>
 
-      {/* Shared expanded card for "recently added" section */}
       <ExpandedCard
         item={expanded}
         onClose={() => { setExpanded(null); window.history.replaceState(null, "", "#"); }}
