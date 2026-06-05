@@ -14,6 +14,7 @@ import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
 import { trackRecentlyViewed } from "@/lib/hooks";
+import FeaturedThisWeek from "./FeaturedThisWeek";
 
 const PAGE_SIZE = 12;
 
@@ -450,7 +451,10 @@ export default function ContentNav() {
       {/* 1 — three clear entry points */}
       <IntentNav />
 
-      {/* 2 — what's happening now */}
+      {/* 2 — this week's editorial picks */}
+      <FeaturedThisWeek />
+
+      {/* 3 — what's happening now */}
       <LatestNews />
 
       {/* 3 — new prompts */}

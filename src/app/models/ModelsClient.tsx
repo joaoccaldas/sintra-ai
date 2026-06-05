@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback } from "react";
 import { ExternalLink, ChevronUp, ChevronDown, Info, Calculator } from "lucide-react";
 import { BASE_PATH } from "@/lib/data";
 import ModelWizard from "@/components/ModelWizard";
+import ModelCompare from "@/components/ModelCompare";
 import {
   AI_MODELS, MODEL_PROVIDERS, TIER_META, SPEED_META,
   type ModelEntry, type ModelTier,
@@ -111,6 +112,8 @@ export default function ModelsClient() {
       </div>
 
       <ModelWizard />
+
+      <ModelCompare />
 
       {/* Filters */}
       <div className="flex flex-wrap gap-3 mb-6 items-center">

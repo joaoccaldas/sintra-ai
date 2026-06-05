@@ -61,18 +61,56 @@ function RelatedRail({ shown, onOpen }: { shown: UseCase; onOpen: (u: UseCase) =
   );
 }
 
+// ── Prompt-with-fills renderer ────────────────────────────────────────────
+function PromptWithFills({
+  prompt, inputs, values,
+}: {
+  prompt: string;
+  inputs: { label: string }[];
+  values: Record<string, string>;
+}) {
+  if (inputs.length === 0) return <>{prompt}</>;
+  const parts: React.ReactNode[] = [];
+  const re = /\[([^\]]+)\]/g;
+  let last = 0, match: RegExpExecArray | null;
+  while ((match = re.exec(prompt)) !== null) {
+    if (match.index > last) parts.push(prompt.slice(last, match.index));
+    const val = values[match[1]];
+    parts.push(val
+      ? <mark key={match.index} className="bg-violet/20 text-violet-bright rounded px-0.5 not-italic">{val}</mark>
+      : <span key={match.index} className="text-cyan-ice">[{match[1]}]</span>
+    );
+    last = match.index + match[0].length;
+  }
+  if (last < prompt.length) parts.push(prompt.slice(last));
+  return <>{parts}</>;
+}
+
 export default function ExpandedCard({ item, onClose, items }: Props) {
   const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
   const [currentItem, setCurrentItem] = useState<UseCase | null>(item);
+  const [inputValues, setInputValues] = useState<Record<string, string>>({});
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<Element | null>(null);
 
-  // Sync internal item when parent opens a different card
-  useEffect(() => { setCurrentItem(item); setCopied(false); setShared(false); }, [item]);
+  // Sync internal item when parent opens a different card; reset fill state
+  useEffect(() => { setCurrentItem(item); setCopied(false); setShared(false); setInputValues({}); }, [item]);
 
   const shown = currentItem;
+
+  // Prompt with user-filled placeholders for copy / launch actions
+  const filledPrompt = useMemo(() => {
+    if (!shown) return "";
+    return shown.inputs.reduce((p, inp) => {
+      const val = inputValues[inp.label];
+      if (!val) return p;
+      const esc = inp.label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return p.replace(new RegExp(`\\[${esc}\\]`, "gi"), val);
+    }, shown.prompt);
+  }, [shown, inputValues]);
+
   const shownIdx = items && shown ? items.findIndex(u => u.id === shown.id) : -1;
   const hasPrev = shownIdx > 0;
   const hasNext = items ? shownIdx < items.length - 1 : false;
@@ -126,7 +164,7 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
 
   const copy = () => {
     if (!shown) return;
-    navigator.clipboard?.writeText(shown.prompt);
+    navigator.clipboard?.writeText(filledPrompt);
     recordCopy(shown.id);
     setCopied(true);
     setTimeout(() => setCopied(false), 1600);
@@ -218,15 +256,26 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                   </div>
                 )}
 
-                {/* What you'll need */}
+                {/* Interactive inputs — fill placeholders before copying */}
                 {shown.inputs.length > 0 && (
                   <div className="mb-6">
                     <span className="eyebrow block mb-2.5">{t.expanded_inputs}</span>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-col gap-2.5">
                       {shown.inputs.map(inp => (
-                        <span key={inp.label} className="font-mono text-[12px] px-2.5 py-1.5 rounded-sm bg-steel border border-hairline text-cyan-ice">
-                          [{inp.label}]
-                        </span>
+                        <div key={inp.label} className="flex flex-col gap-1">
+                          <label className="font-mono text-[9px] tracking-[0.10em] uppercase text-fg-4">
+                            {inp.label}
+                          </label>
+                          <input
+                            type="text"
+                            value={inputValues[inp.label] ?? ""}
+                            onChange={e =>
+                              setInputValues(prev => ({ ...prev, [inp.label]: e.target.value }))
+                            }
+                            placeholder={`Enter ${inp.label.toLowerCase()}…`}
+                            className="bg-white/[0.04] border border-hairline rounded-lg px-3 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
+                          />
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -243,7 +292,9 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                       {copied ? <><Check size={11} /> {t.expanded_copied}</> : <><Copy size={11} /> {t.expanded_copy}</>}
                     </button>
                   </div>
-                  <div className="prompt-block">{shown.prompt}</div>
+                  <div className="prompt-block">
+                    <PromptWithFills prompt={shown.prompt} inputs={shown.inputs} values={inputValues} />
+                  </div>
                 </div>
               </div>
 
@@ -393,7 +444,7 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
                 </div>
               )}
               <a
-                href={getLaunchUrl(shown.best_llm, shown.prompt)}
+                href={getLaunchUrl(shown.best_llm, filledPrompt)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn"
