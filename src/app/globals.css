@@ -10,22 +10,46 @@
   /* ── Layout ────────────────────────────────── */
   --sidebar-w: 224px;
 
-  /* ── Dark theme (default) ───────────────────── */
-  --void:           #05060B;
-  --abyss:          #090B14;
-  --night:          #0E1120;
-  --steel:          #161A2C;
-  --steel-2:        #1F2440;
-  --hairline:       #2A2F4A;
-  --hairline-soft:  rgba(159, 140, 255, 0.12);
+  /* ── Dark theme (default) — RGB channels ─── */
+  --void-rgb:           5 6 11;
+  --abyss-rgb:          9 11 20;
+  --night-rgb:          14 17 32;
+  --steel-rgb:          22 26 44;
+  --steel-2-rgb:        31 36 64;
+  --hairline-rgb:       42 47 74;
+  --violet-rgb:         159 140 255;
+  --violet-bright-rgb:  182 166 255;
+  --violet-deep-rgb:    110 91 217;
+  --cyan-ice-rgb:       143 227 210;
+  --fg-1-rgb:           244 242 234;
+  --fg-2-rgb:           197 195 214;
+  --fg-3-rgb:           139 138 166;
+  --fg-4-rgb:           90 90 120;
+  --fg-on-violet-rgb:   10 11 20;
 
-  --violet:         #9F8CFF;
-  --violet-bright:  #B6A6FF;
-  --violet-deep:    #6E5BD9;
-  --violet-haze:    rgba(159, 140, 255, 0.18);
-  --violet-glow:    0 0 24px rgba(159, 140, 255, 0.45);
+  /* ── Derived hex aliases (used in inline styles & gradients) */
+  --void:           rgb(var(--void-rgb));
+  --abyss:          rgb(var(--abyss-rgb));
+  --night:          rgb(var(--night-rgb));
+  --steel:          rgb(var(--steel-rgb));
+  --steel-2:        rgb(var(--steel-2-rgb));
+  --hairline:       rgb(var(--hairline-rgb));
+  --violet:         rgb(var(--violet-rgb));
+  --violet-bright:  rgb(var(--violet-bright-rgb));
+  --violet-deep:    rgb(var(--violet-deep-rgb));
+  --cyan-ice:       rgb(var(--cyan-ice-rgb));
+  --fg-1:           rgb(var(--fg-1-rgb));
+  --fg-2:           rgb(var(--fg-2-rgb));
+  --fg-3:           rgb(var(--fg-3-rgb));
+  --fg-4:           rgb(var(--fg-4-rgb));
+  --fg-on-violet:   rgb(var(--fg-on-violet-rgb));
 
-  --cyan-ice:       #8FE3D2;
+  /* ── Semantic aliases from RGB ─────────────── */
+  --hairline-soft:  rgba(var(--violet-rgb), 0.12);
+  --violet-haze:    rgba(var(--violet-rgb), 0.18);
+  --violet-glow:    0 0 24px rgba(var(--violet-rgb), 0.45);
+
+  /* ── Static semantic colours ──────────────── */
   --amber-warm:     #E8C089;
   --parchment:      #E9D9B6;
   --rose-pulse:     #F08CA8;
@@ -34,12 +58,6 @@
   --diff-intermediate: #F2C46D;
   --diff-advanced:     #8FE3D2;
   --diff-expert:       #9F8CFF;
-
-  --fg-1: #F4F2EA;
-  --fg-2: #C5C3D6;
-  --fg-3: #8B8AA6;
-  --fg-4: #5A5A78;
-  --fg-on-violet: #0A0B14;
 
   --font-serif:   "Cormorant Garamond", Georgia, serif;
   --font-sans:    "Geist", "Inter", system-ui, sans-serif;
@@ -54,86 +72,59 @@
 
 /* ── Light theme ──────────────────────────────────────────────── */
 [data-theme="light"] {
-  --void:           #EEEAE0;
-  --abyss:          #F5F3EC;
-  --night:          #EDE9E0;
-  --steel:          #E2DED4;
-  --steel-2:        #D6D1C6;
-  --hairline:       #C8C4B8;
-  --hairline-soft:  rgba(100, 80, 220, 0.14);
-
-  --violet:         #6B50E8;
-  --violet-bright:  #5540D0;
-  --violet-deep:    #4030B8;
-  --violet-haze:    rgba(107, 80, 232, 0.12);
-  --violet-glow:    0 0 24px rgba(107, 80, 232, 0.28);
-
-  --cyan-ice:       #0E8A72;
-  --amber-warm:     #A06020;
-  --parchment:      #7A6040;
-  --rose-pulse:     #C04060;
-
-  --fg-1: #1A1828;
-  --fg-2: #3C3A56;
-  --fg-3: #6C6A8C;
-  --fg-4: #9C9AB8;
-  --fg-on-violet: #FFFFFF;
+  --void-rgb:           238 234 224;
+  --abyss-rgb:          245 243 236;
+  --night-rgb:          237 233 224;
+  --steel-rgb:          226 222 212;
+  --steel-2-rgb:        214 209 198;
+  --hairline-rgb:       200 196 184;
+  --violet-rgb:         107 80 232;
+  --violet-bright-rgb:  85 64 208;
+  --violet-deep-rgb:    64 48 184;
+  --cyan-ice-rgb:       14 138 114;
+  --fg-1-rgb:           26 24 40;
+  --fg-2-rgb:           60 58 86;
+  --fg-3-rgb:           108 106 140;
+  --fg-4-rgb:           156 154 184;
+  --fg-on-violet-rgb:   255 255 255;
 }
 
 /* ── Forest theme ─────────────────────────────────────────────── */
 [data-theme="forest"] {
-  --void:           #060D08;
-  --abyss:          #08100C;
-  --night:          #0D1A10;
-  --steel:          #142218;
-  --steel-2:        #1C3020;
-  --hairline:       #2A422E;
-  --hairline-soft:  rgba(62, 207, 142, 0.12);
-
-  --violet:         #3ECF8E;
-  --violet-bright:  #5AEFAA;
-  --violet-deep:    #2AAF72;
-  --violet-haze:    rgba(62, 207, 142, 0.14);
-  --violet-glow:    0 0 24px rgba(62, 207, 142, 0.35);
-
-  --cyan-ice:       #7FE0C0;
-  --amber-warm:     #D4A060;
-  --parchment:      #C8B080;
-  --rose-pulse:     #E08090;
-
-  --fg-1: #E8F4EC;
-  --fg-2: #B0CEB8;
-  --fg-3: #789E82;
-  --fg-4: #4A6E54;
-  --fg-on-violet: #060D08;
+  --void-rgb:           6 13 8;
+  --abyss-rgb:          8 16 12;
+  --night-rgb:          13 26 16;
+  --steel-rgb:          20 34 24;
+  --steel-2-rgb:        28 48 32;
+  --hairline-rgb:       42 66 46;
+  --violet-rgb:         62 207 142;
+  --violet-bright-rgb:  90 239 170;
+  --violet-deep-rgb:    42 175 114;
+  --cyan-ice-rgb:       127 224 192;
+  --fg-1-rgb:           232 244 236;
+  --fg-2-rgb:           176 206 184;
+  --fg-3-rgb:           120 158 130;
+  --fg-4-rgb:           74 110 84;
+  --fg-on-violet-rgb:   6 13 8;
 }
 
 /* ── Ocean theme ──────────────────────────────────────────────── */
 [data-theme="ocean"] {
-  --void:           #040A14;
-  --abyss:          #060D1C;
-  --night:          #0A1428;
-  --steel:          #101E38;
-  --steel-2:        #182A4E;
-  --hairline:       #223A60;
-  --hairline-soft:  rgba(75, 166, 255, 0.13);
-
-  --violet:         #4BA6FF;
-  --violet-bright:  #6BBEFF;
-  --violet-deep:    #2A86E0;
-  --violet-haze:    rgba(75, 166, 255, 0.14);
-  --violet-glow:    0 0 24px rgba(75, 166, 255, 0.35);
-
-  --cyan-ice:       #80D8F0;
-  --amber-warm:     #E0A840;
-  --parchment:      #D0C080;
-  --rose-pulse:     #E08098;
-
-  --fg-1: #E4EEF8;
-  --fg-2: #B0C8E8;
-  --fg-3: #7098C8;
-  --fg-4: #4068A8;
-  --fg-on-violet: #040A14;
+  --void-rgb:           4 10 20;
+  --abyss-rgb:          6 13 28;
+  --night-rgb:          10 20 40;
+  --steel-rgb:          16 30 56;
+  --steel-2-rgb:        24 42 78;
+  --hairline-rgb:       34 58 96;
+  --violet-rgb:         75 166 255;
+  --violet-bright-rgb:  107 190 255;
+  --violet-deep-rgb:    42 134 224;
+  --cyan-ice-rgb:       128 216 240;
+  --fg-1-rgb:           228 238 248;
+  --fg-2-rgb:           176 200 232;
+  --fg-3-rgb:           112 152 200;
+  --fg-4-rgb:           64 104 168;
+  --fg-on-violet-rgb:   4 10 20;
 }
 
 /* ── Sidebar layout util ─────────────────────────────────────── */
