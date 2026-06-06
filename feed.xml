@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 05 Jun 2026 03:52:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 07:35:45 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -188,6 +188,78 @@
     <guid isPermaLink="true">https://ecodatacenter.tech/press/mistral-ai-and-ecodatacenter-partner-to-build-ai-focused-data-center-in-sweden-3431886</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Mistral AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI GPT-5.5 and Codex Now Generally Available on Amazon Bedrock]]></title>
+    <description><![CDATA[OpenAI and AWS made GPT-5.5, GPT-5.4, and Codex generally available on Amazon Bedrock on June 1, 2026, following an April limited preview. Pricing matches OpenAI first-party rates with no separate seat licences; all usage counts toward existing AWS cloud spending commitments. Amazon Bedrock Managed Agents powered by OpenAI also launched in limited preview.]]></description>
+    <link>https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/</link>
+    <guid isPermaLink="true">https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Expands Codex with Sites, Annotations, and 62 App Plugins]]></title>
+    <description><![CDATA[On June 3, 2026, OpenAI announced Codex Sites (hosted interactive web apps), Annotations (in-place editing), and six role-specific plugin packs connecting 62 business applications including Snowflake, Figma, and Salesforce. Non-developers now represent 20% of Codex's 5 million weekly users and are adopting the platform three times faster than engineers.]]></description>
+    <link>https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins</link>
+    <guid isPermaLink="true">https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic Expands Claude Mythos to Critical Infrastructure in 15+ Countries]]></title>
+    <description><![CDATA[Anthropic expanded Project Glasswing on June 2, 2026, extending Claude Mythos Preview access to approximately 150 new organisations across 15+ countries including Japan, South Korea, UK, France, Germany, Canada, and India. Participating organisations have already identified over 10,000 high- and critical-severity vulnerabilities. Samsung, SK Hynix, SK Telecom, Okta, NATO, and ENISA are among the new entrants.]]></description>
+    <link>https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU AI Office's GPAI Model Enforcement Powers Activate August 2, 2026]]></title>
+    <description><![CDATA[The EU AI Office confirmed that full enforcement powers for General-Purpose AI model obligations under the AI Act take effect on August 2, 2026. From that date the Commission can compel documentation, order model evaluations, and levy fines of up to €15 million or 3% of global revenue. All new models face immediate obligations; providers of models placed on the market before August 2025 have a grace period to August 2027.]]></description>
+    <link>https://www.lw.com/en/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place</link>
+    <guid isPermaLink="true">https://www.lw.com/en/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Union</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Brazil AI Bill Faces August Deadline as Camara Committee Nears Vote]]></title>
+    <description><![CDATA[Brazil's AI legislation (PL 2338/2023), already approved by the Senate, is under review in the Câmara dos Deputados where relator Aguinaldo Ribeiro is finalising the report. Analysts expect a committee vote before the August recess, but two unresolved issues — copyright liability for AI training data and the definition of high-risk systems — remain contentious. With October 2026 elections approaching, the legislative window is shrinking rapidly.]]></description>
+    <link>https://www.techpolicy.press/what-to-expect-from-brazil-on-tech-policy-in-2026/</link>
+    <guid isPermaLink="true">https://www.techpolicy.press/what-to-expect-from-brazil-on-tech-policy-in-2026/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Brazil Congress</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemini 3.5 Pro Enters Limited Vertex Preview with 2M-Token Context and Deep Think Reasoning]]></title>
+    <description><![CDATA[Google opened Gemini 3.5 Pro to select Vertex AI enterprise customers in limited preview in early June 2026, ahead of a broader GA Sundar Pichai described as 'next month' at Google I/O. The model targets a 2-million-token context window, Deep Think multi-step reasoning, and frontier multimodal understanding — absorbing the use cases previously routed to Gemini Ultra.]]></description>
+    <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/</link>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU Cloud and AI Development Act Text Released, Mandates Compute Reporting for Hyperscalers]]></title>
+    <description><![CDATA[The European Commission released the provisional text of the EU Cloud and AI Development Act in early June 2026, requiring hyperscalers operating in the EU to report AI compute capacity to the AI Office quarterly, share excess compute with European academic institutions at below-market rates, and submit AI-training energy consumption data. The Act pairs with the AI Act's GPAI obligations ahead of the August 2026 enforcement date.]]></description>
+    <link>https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai</link>
+    <guid isPermaLink="true">https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Union</category>
+  </item>
+
+  <item>
+    <title><![CDATA[GPT-Rosalind Update Opens Global Research Preview, Cuts Genomics Compute 31%]]></title>
+    <description><![CDATA[OpenAI published a substantial update to GPT-Rosalind on June 3, 2026, opening the research preview to eligible organisations worldwide for the first time. Three new evaluations show the updated model outperforms GPT-5.5 across all tested drug-discovery, genomics, and wet-lab domains while using 31% fewer tokens in genomics analyses. The Rosalind Biodefense programme simultaneously began onboarding vetted US government agencies.]]></description>
+    <link>https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/</link>
+    <guid isPermaLink="true">https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -384,78 +456,6 @@
     <description><![CDATA[Anthropic moved Claude add-ins for Excel, Word, and PowerPoint to general availability on May 7, 2026 across all paid Claude plans on Mac and Windows, and simultaneously launched Claude for Outlook in public beta. The standout feature is cross-app context: a single conversation thread persists across all four Microsoft 365 applications, so Claude remembers the financial model discussed in Excel when the user opens the related PowerPoint deck. The integration reaches more than 400 million Microsoft 365 commercial users and is deployable via Microsoft Admin Center.]]></description>
     <link>https://claude.com/claude-for-microsoft-365</link>
     <guid isPermaLink="true">https://claude.com/claude-for-microsoft-365</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Amazon Alexa+ Generates On-Demand AI Podcasts from Any Topic]]></title>
-    <description><![CDATA[Amazon launched Alexa Podcasts on May 18, 2026, letting Alexa+ subscribers request a podcast on any subject and receive a fully structured audio episode narrated by two AI co-hosts. The feature taps licensing agreements with over 200 news organisations — including AP, Reuters, the Washington Post, Forbes, and Condé Nast — plus 200+ local U.S. newspapers. Alexa+ is included with Amazon Prime at no extra cost; non-Prime users pay $19.99/month.]]></description>
-    <link>https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Amazon</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Cuts AI Ultra to $100/Month as Gemini Hits 900 Million Monthly Users]]></title>
-    <description><![CDATA[At Google I/O 2026, Google slashed the price of its Google AI Ultra subscription from $250 to $100 per month, bundling 5× higher Gemini app usage limits, 20 TB of cloud storage, and YouTube Premium, with beta access to Gemini Spark rolling out the following week for U.S. subscribers. The Gemini app has crossed 900 million monthly active users — up from 400 million a year earlier — doubling in a year. DeepMind CEO Demis Hassabis stated at the keynote that Artificial General Intelligence is 'just a few years away.']]></description>
-    <link>https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm</link>
-    <guid isPermaLink="true">https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple iOS 27 to Let Users Choose Between Claude, Gemini, and ChatGPT for Siri]]></title>
-    <description><![CDATA[Bloomberg reported on May 5, 2026 that Apple is preparing iOS 27 to support third-party AI models — including Google Gemini and Anthropic Claude — as alternatives to OpenAI across Siri, Writing Tools, and Image Playground. Apple is already in closed-door testing with Google and Anthropic and internally refers to the feature as 'Extensions', configurable from the Settings app. The shift is expected to be previewed at WWDC 2026 and ship with iOS 27 in fall 2026, opening Apple Intelligence to the full competitive frontier.]]></description>
-    <link>https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Apple</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Launches ChatGPT Personal Finance — Connect Bank Accounts via Plaid]]></title>
-    <description><![CDATA[OpenAI launched personal finance tools in ChatGPT on May 15, 2026 for Pro subscribers in the U.S., letting users connect accounts from 12,000+ financial institutions — including Chase, Fidelity, Schwab, Robinhood, and American Express — via Plaid. Once linked, ChatGPT surfaces a dashboard of portfolio performance, spending patterns, subscriptions, and upcoming payments, and can answer open-ended financial planning questions. Account numbers cannot be seen and no account changes can be made; OpenAI plans to expand to Plus users after refining the feature.]]></description>
-    <link>https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI and Google Partner on SynthID Watermarks and C2PA to Verify AI-Generated Images]]></title>
-    <description><![CDATA[OpenAI joined the C2PA Steering Committee on May 20, 2026 and partnered with Google DeepMind to embed SynthID invisible watermarks into all images generated through ChatGPT, Codex, and the OpenAI API. SynthID watermarks survive transformations like screenshots and format changes that strip standard metadata. OpenAI also launched a public verification tool at openai.com/verify where anyone can upload an image to check whether it originated from ChatGPT or the OpenAI API, with plans for cross-platform verification in coming months.]]></description>
-    <link>https://openai.com/index/advancing-content-provenance/</link>
-    <guid isPermaLink="true">https://openai.com/index/advancing-content-provenance/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Antigravity 2.0 — Standalone Agent Orchestration Platform with CLI, SDK, and Managed Agents]]></title>
-    <description><![CDATA[At Google I/O 2026's developer keynote on May 20, Google detailed Antigravity 2.0 as a full standalone desktop application for orchestrating multiple AI agents in parallel — replacing the Gemini CLI. The platform ships with the Antigravity CLI, Antigravity SDK, managed agent execution via the Gemini API, and enterprise support through the Gemini Enterprise Agent Platform. In a live demo, Antigravity and Gemini 3.5 Flash together built a functioning operating system from scratch in 12 hours; Antigravity is also the engine behind Gemini Spark running 24/7 background agents.]]></description>
-    <link>https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/</link>
-    <guid isPermaLink="true">https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Proposes WebMCP — Open Standard for Browser-Based AI Agents in Chrome 149]]></title>
-    <description><![CDATA[Google announced WebMCP at I/O 2026's developer keynote on May 20, a proposed open web standard co-developed with Microsoft and incubated at W3C that lets websites expose structured JavaScript functions and HTML forms directly to browser AI agents — replacing fragile HTML scraping. An origin trial launches in Chrome 149 with early support from Booking.com, Expedia, Instacart, Shopify, and Redfin. Where current agents guess at button locations by parsing HTML, WebMCP agents call machine-readable actions precisely, significantly increasing reliability and speed of browser automation.]]></description>
-    <link>https://developer.chrome.com/blog/chrome-at-io26</link>
-    <guid isPermaLink="true">https://developer.chrome.com/blog/chrome-at-io26</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Andrej Karpathy Joins Anthropic's Pre-Training Team]]></title>
-    <description><![CDATA[OpenAI co-founder and former Tesla AI director Andrej Karpathy announced he is joining Anthropic's pre-training division, working under team lead Nick Joseph to apply Claude itself to accelerate pre-training research. Karpathy left his own startup Eureka Labs for the move, citing the next few years at the frontier as 'especially formative.' The hire signals Anthropic's conviction that the pre-training scaling era is far from over and represents one of the most high-profile talent moves in AI's recent history.]]></description>
-    <link>https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
   </item>
