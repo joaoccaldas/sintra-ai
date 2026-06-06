@@ -2,6 +2,10 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { SavedPromptsProvider } from "@/context/SavedPromptsContext";
+import { ThemeProvider } from "@/context/ThemeContext";
+import { SidebarProvider } from "@/context/SidebarContext";
+import { DesktopSidebar, MobileSidebar } from "@/components/SidebarNav";
+import ScrollProgress from "@/components/ScrollProgress";
 import { USE_CASES } from "@/lib/data";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
@@ -59,7 +63,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Plausible — privacy-first, cookieless analytics */}
         <script
           defer
           data-domain="joaoccaldas.github.io"
@@ -68,9 +71,21 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/sintra-ai/tesseract-mark.svg" />
       </head>
       <body className="antialiased">
-        <LanguageProvider>
-          <SavedPromptsProvider>{children}</SavedPromptsProvider>
-        </LanguageProvider>
+        <ThemeProvider>
+          <SidebarProvider>
+            <LanguageProvider>
+              <SavedPromptsProvider>
+                <ScrollProgress />
+                <DesktopSidebar />
+                <MobileSidebar />
+                {/* Content shifts right on desktop to clear the sidebar */}
+                <div className="sidebar-content-shift">
+                  {children}
+                </div>
+              </SavedPromptsProvider>
+            </LanguageProvider>
+          </SidebarProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

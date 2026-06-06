@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
 import { NEWS_ITEMS, NEWS_TAGS, type NewsItem } from "@/lib/newsData";
@@ -199,7 +199,7 @@ export default function AINewsPage() {
       });
   }, [activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
-  // Group by year for visual breaks
+  // Group by year for visual breaks (full dataset — kept as-is per requirements)
   const grouped = useMemo(() => {
     const groups: Record<string, NewsItem[]> = {};
     filtered.forEach((item: NewsItem) => {
@@ -209,6 +209,55 @@ export default function AINewsPage() {
     });
     return Object.entries(groups).sort(([a], [b]) => Number(b) - Number(a));
   }, [filtered]);
+
+  // ── Pagination ──────────────────────────────────────────────────────────────
+  const BATCH = 30;
+  const [visibleCount, setVisibleCount] = useState(BATCH);
+  const sentinelRef = useRef<HTMLDivElement | null>(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
+
+  // Reset when filter state changes
+  useEffect(() => {
+    setVisibleCount(BATCH);
+  }, [filtered.length, activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
+
+  // Slice the flat filtered array, then re-group for the visible feed
+  const visibleItems = useMemo(() => filtered.slice(0, visibleCount), [filtered, visibleCount]);
+
+  const visibleGrouped = useMemo(() => {
+    const groups: Record<string, NewsItem[]> = {};
+    visibleItems.forEach((item: NewsItem) => {
+      const year = String(item.dateNum).slice(0, 4);
+      if (!groups[year]) groups[year] = [];
+      groups[year].push(item);
+    });
+    return Object.entries(groups).sort(([a], [b]) => Number(b) - Number(a));
+  }, [visibleItems]);
+
+  const allLoaded = visibleCount >= filtered.length;
+
+  // Set up / tear down IntersectionObserver on the sentinel
+  useEffect(() => {
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+      observerRef.current = null;
+    }
+    if (allLoaded || !sentinelRef.current) return;
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          setVisibleCount(c => Math.min(c + BATCH, filtered.length));
+        }
+      },
+      { rootMargin: "200px" },
+    );
+    observerRef.current.observe(sentinelRef.current);
+
+    return () => {
+      observerRef.current?.disconnect();
+    };
+  }, [allLoaded, filtered.length]);
 
   return (
     <div className="min-h-screen bg-abyss text-fg-1">
@@ -353,21 +402,38 @@ export default function AINewsPage() {
 
         {/* News feed */}
         <div className="pt-6 pb-24">
-          {grouped.length === 0 ? (
+          {visibleGrouped.length === 0 ? (
             <div className="text-center py-24">
               <p className="font-serif text-[22px] text-fg-3">No events match this filter.</p>
             </div>
           ) : (
-            grouped.map(([year, items]) => (
-              <div key={year}>
-                <div className="flex items-center gap-4 py-5">
-                  <span className="font-mono text-[13px] font-medium text-fg-3 tracking-[0.08em]">{year}</span>
-                  <div className="flex-1 h-px bg-violet/[0.12]" />
-                  <span className="font-mono text-[11px] text-fg-4">{items.length} events</span>
+            <>
+              {visibleGrouped.map(([year, items]) => (
+                <div key={year}>
+                  <div className="flex items-center gap-4 py-5">
+                    <span className="font-mono text-[13px] font-medium text-fg-3 tracking-[0.08em]">{year}</span>
+                    <div className="flex-1 h-px bg-violet/[0.12]" />
+                    <span className="font-mono text-[11px] text-fg-4">{items.length} events</span>
+                  </div>
+                  {items.map(item => <NewsCard key={item.id} item={item} onTagFilter={tag => setActiveTag(tag)} />)}
                 </div>
-                {items.map(item => <NewsCard key={item.id} item={item} onTagFilter={tag => setActiveTag(tag)} />)}
+              ))}
+
+              {/* Sentinel for IntersectionObserver */}
+              {!allLoaded && (
+                <div ref={sentinelRef} className="py-6 flex flex-col items-center gap-3">
+                  {/* Pulsing loading line */}
+                  <div className="w-32 h-px rounded-full bg-violet/40 animate-pulse" />
+                </div>
+              )}
+
+              {/* Status line */}
+              <div className="pt-4 pb-2 flex justify-center">
+                <span className="font-mono text-[11px] text-fg-4 tracking-[0.06em]">
+                  Showing {Math.min(visibleCount, filtered.length)} of {filtered.length} events
+                </span>
               </div>
-            ))
+            </>
           )}
         </div>
       </div>

@@ -7,6 +7,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap");
 
 :root {
+  /* ── Layout ────────────────────────────────── */
+  --sidebar-w: 224px;
+
+  /* ── Dark theme (default) ───────────────────── */
   --void:           #05060B;
   --abyss:          #090B14;
   --night:          #0E1120;
@@ -46,6 +50,118 @@
   --dur-fast:  140ms;
   --dur-base:  240ms;
   --dur-slow:  480ms;
+}
+
+/* ── Light theme ──────────────────────────────────────────────── */
+[data-theme="light"] {
+  --void:           #EEEAE0;
+  --abyss:          #F5F3EC;
+  --night:          #EDE9E0;
+  --steel:          #E2DED4;
+  --steel-2:        #D6D1C6;
+  --hairline:       #C8C4B8;
+  --hairline-soft:  rgba(100, 80, 220, 0.14);
+
+  --violet:         #6B50E8;
+  --violet-bright:  #5540D0;
+  --violet-deep:    #4030B8;
+  --violet-haze:    rgba(107, 80, 232, 0.12);
+  --violet-glow:    0 0 24px rgba(107, 80, 232, 0.28);
+
+  --cyan-ice:       #0E8A72;
+  --amber-warm:     #A06020;
+  --parchment:      #7A6040;
+  --rose-pulse:     #C04060;
+
+  --fg-1: #1A1828;
+  --fg-2: #3C3A56;
+  --fg-3: #6C6A8C;
+  --fg-4: #9C9AB8;
+  --fg-on-violet: #FFFFFF;
+}
+
+/* ── Forest theme ─────────────────────────────────────────────── */
+[data-theme="forest"] {
+  --void:           #060D08;
+  --abyss:          #08100C;
+  --night:          #0D1A10;
+  --steel:          #142218;
+  --steel-2:        #1C3020;
+  --hairline:       #2A422E;
+  --hairline-soft:  rgba(62, 207, 142, 0.12);
+
+  --violet:         #3ECF8E;
+  --violet-bright:  #5AEFAA;
+  --violet-deep:    #2AAF72;
+  --violet-haze:    rgba(62, 207, 142, 0.14);
+  --violet-glow:    0 0 24px rgba(62, 207, 142, 0.35);
+
+  --cyan-ice:       #7FE0C0;
+  --amber-warm:     #D4A060;
+  --parchment:      #C8B080;
+  --rose-pulse:     #E08090;
+
+  --fg-1: #E8F4EC;
+  --fg-2: #B0CEB8;
+  --fg-3: #789E82;
+  --fg-4: #4A6E54;
+  --fg-on-violet: #060D08;
+}
+
+/* ── Ocean theme ──────────────────────────────────────────────── */
+[data-theme="ocean"] {
+  --void:           #040A14;
+  --abyss:          #060D1C;
+  --night:          #0A1428;
+  --steel:          #101E38;
+  --steel-2:        #182A4E;
+  --hairline:       #223A60;
+  --hairline-soft:  rgba(75, 166, 255, 0.13);
+
+  --violet:         #4BA6FF;
+  --violet-bright:  #6BBEFF;
+  --violet-deep:    #2A86E0;
+  --violet-haze:    rgba(75, 166, 255, 0.14);
+  --violet-glow:    0 0 24px rgba(75, 166, 255, 0.35);
+
+  --cyan-ice:       #80D8F0;
+  --amber-warm:     #E0A840;
+  --parchment:      #D0C080;
+  --rose-pulse:     #E08098;
+
+  --fg-1: #E4EEF8;
+  --fg-2: #B0C8E8;
+  --fg-3: #7098C8;
+  --fg-4: #4068A8;
+  --fg-on-violet: #040A14;
+}
+
+/* ── Sidebar layout util ─────────────────────────────────────── */
+.sidebar-content-shift {
+  margin-left: var(--sidebar-w);
+  transition: margin-left 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (max-width: 1023px) {
+  .sidebar-content-shift { margin-left: 0 !important; }
+}
+
+/* ── Scroll progress bar ─────────────────────────────────────── */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--violet), var(--violet-bright));
+  transform-origin: left;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 200ms;
+}
+
+/* ── Sidebar transition ──────────────────────────────────────── */
+.sidebar-rail {
+  transition: width 240ms cubic-bezier(0.22, 1, 0.36, 1),
+              transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+              background 200ms;
 }
 
 * { box-sizing: border-box; }
