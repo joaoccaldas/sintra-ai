@@ -41,6 +41,72 @@ function BoolChip({ val }: { val: boolean }) {
 
 type SortKey = "name" | "contextWindow" | "inputPrice" | "mmlu" | "gpqa" | "sweBench" | "mathAime";
 
+// ── QuickPick: 3 hero cards (fastest / cheapest / best coding) ────────────
+
+function QuickPick() {
+  const fastest = useMemo(
+    () => AI_MODELS.filter(m => m.speed === "fast" && m.inputPrice !== null)
+                   .sort((a, b) => (a.inputPrice ?? 0) - (b.inputPrice ?? 0))[0],
+    []
+  );
+  const cheapest = useMemo(
+    () => [...AI_MODELS].filter(m => m.inputPrice !== null)
+                        .sort((a, b) => (a.inputPrice ?? 0) - (b.inputPrice ?? 0))[0],
+    []
+  );
+  const bestCode = useMemo(
+    () => [...AI_MODELS].filter(m => m.sweBench !== null)
+                        .sort((a, b) => (b.sweBench ?? 0) - (a.sweBench ?? 0))[0],
+    []
+  );
+
+  const picks = [
+    { label: "Fastest",       emoji: "⚡", model: fastest,  accent: "#5EEAD4" },
+    { label: "Cheapest API",  emoji: "💸", model: cheapest, accent: "#10b981" },
+    { label: "Best Coding",   emoji: "🧠", model: bestCode, accent: "#9F8CFF" },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+      {picks.map(({ label, emoji, model, accent }) =>
+        model ? (
+          <a
+            key={label}
+            href={model.docsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col gap-2 p-4 rounded-xl border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/15 transition-all duration-200"
+          >
+            <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">
+              {emoji} {label}
+            </span>
+            <div>
+              <p className="font-serif text-[16px] text-fg-1 leading-snug group-hover:text-white transition-colors">
+                {model.name}
+              </p>
+              <p className="font-mono text-[10px] mt-0.5" style={{ color: model.providerColor }}>
+                {model.provider}
+              </p>
+            </div>
+            <div className="mt-auto flex items-center justify-between">
+              {label === "Best Coding" ? (
+                <span className="font-mono text-[11px]" style={{ color: accent }}>
+                  SWE {model.sweBench}%
+                </span>
+              ) : (
+                <span className="font-mono text-[11px]" style={{ color: accent }}>
+                  {model.inputPrice !== null ? `$${model.inputPrice}/1M in` : ""}
+                </span>
+              )}
+              <ExternalLink size={10} className="text-fg-4 group-hover:text-fg-2 transition-colors" />
+            </div>
+          </a>
+        ) : null
+      )}
+    </div>
+  );
+}
+
 // ── Main component ─────────────────────────────────────────────────────────
 
 export default function ModelsClient() {
@@ -110,6 +176,8 @@ export default function ModelsClient() {
           Pricing and benchmarks are approximate and change frequently. Always verify at provider docs before production use. Last verified May 2026.
         </p>
       </div>
+
+      <QuickPick />
 
       <ModelWizard />
 

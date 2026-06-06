@@ -13,6 +13,18 @@ const SIG_STYLE = {
   notable:  { label: "Notable",   bg: "#ffffff0a", border: "#ffffff22", text: "#8b8aad"  },
 };
 
+type PresetId = "all" | "landmark" | "deals" | "policy" | "models" | "brazil" | "sweden";
+
+const PRESETS: { id: PresetId; emoji: string; label: string; filter?: (n: NewsItem) => boolean }[] = [
+  { id: "all",      emoji: "",   label: "All" },
+  { id: "landmark", emoji: "🔥", label: "Landmark", filter: n => n.significance === "landmark" },
+  { id: "deals",    emoji: "💰", label: "Deals",    filter: n => n.tags.some(t => ["Funding","IPO","Acquisition","Markets","Finance"].includes(t)) },
+  { id: "policy",   emoji: "🏛", label: "Policy",   filter: n => n.tags.some(t => ["Policy","Regulation","AI Act","EU","Government","GDPR","LGPD"].includes(t)) },
+  { id: "models",   emoji: "🤖", label: "Models",   filter: n => n.tags.some(t => ["Model Release","Benchmark","GPT","Claude","Gemini","Llama","Mistral","Reasoning"].includes(t)) },
+  { id: "brazil",   emoji: "🇧🇷", label: "Brazil",  filter: n => n.country === "BR" },
+  { id: "sweden",   emoji: "🇸🇪", label: "Sweden",  filter: n => n.country === "SE" },
+];
+
 function NewsCard({ item, onTagFilter }: { item: NewsItem; onTagFilter: (tag: string) => void }) {
   const sig = SIG_STYLE[item.significance];
   return (
@@ -141,9 +153,14 @@ export default function AINewsPage() {
     if (typeof window === "undefined") return "";
     return new URLSearchParams(window.location.search).get("q") || "";
   });
+  const [activePreset, setActivePreset] = useState<PresetId>(() => {
+    if (typeof window === "undefined") return "all";
+    return (new URLSearchParams(window.location.search).get("preset") || "all") as PresetId;
+  });
 
   useEffect(() => {
     const params = new URLSearchParams();
+    if (activePreset   !== "all") params.set("preset",   activePreset);
     if (activeSig      !== "all") params.set("sig",      activeSig);
     if (activeTag      !== "all") params.set("tag",      activeTag);
     if (activeProvider !== "all") params.set("provider", activeProvider);
@@ -152,7 +169,7 @@ export default function AINewsPage() {
     if (search)                   params.set("q",        search);
     const qs = params.toString();
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
+  }, [activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
   const providers = useMemo(() => {
     const ps = [...new Set(NEWS_ITEMS.map((n: NewsItem) => n.provider))].sort();
@@ -161,7 +178,9 @@ export default function AINewsPage() {
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
+    const preset = PRESETS.find(p => p.id === activePreset);
     return [...NEWS_ITEMS]
+      .filter((n: NewsItem) => !preset?.filter || preset.filter(n))
       .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
       .filter((n: NewsItem) => activeProvider === "all" || n.provider === activeProvider)
@@ -178,7 +197,7 @@ export default function AINewsPage() {
         if (b.dateNum !== a.dateNum) return b.dateNum - a.dateNum;
         return (b.dateDay ?? 1) - (a.dateDay ?? 1);
       });
-  }, [activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
+  }, [activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
   // Group by year for visual breaks
   const grouped = useMemo(() => {
@@ -239,6 +258,23 @@ export default function AINewsPage() {
 
         {/* Filters */}
         <div className="sticky top-16 z-40 bg-abyss/95 backdrop-blur-md border-b border-violet/[0.08] py-3 -mx-6 md:-mx-8 px-6 md:px-8">
+          {/* Preset strip */}
+          <div className="flex gap-1.5 overflow-x-auto pb-2.5 mb-2.5 scrollbar-none -mx-1 px-1">
+            {PRESETS.map(p => (
+              <button
+                key={p.id}
+                onClick={() => setActivePreset(p.id)}
+                className="flex-shrink-0 font-mono text-[10px] tracking-[0.06em] px-3 py-1.5 rounded-full border transition-all whitespace-nowrap"
+                style={{
+                  background:  activePreset === p.id ? "#9F8CFF22" : "transparent",
+                  borderColor: activePreset === p.id ? "#9F8CFF88" : "#ffffff18",
+                  color:       activePreset === p.id ? "#B6A6FF"   : "#6b6a8a",
+                }}
+              >
+                {p.emoji ? `${p.emoji} ${p.label}` : p.label}
+              </button>
+            ))}
+          </div>
           {/* Search row */}
           <div className="relative mb-2.5">
             <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
@@ -309,7 +345,7 @@ export default function AINewsPage() {
               🇸🇪 Sweden
             </button>
 
-            {(search || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly || swedenOnly) && (
+            {(search || activePreset !== "all" || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly || swedenOnly) && (
               <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} events</span>
             )}
           </div>
