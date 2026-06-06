@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 06 Jun 2026 07:35:45 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 07:38:20 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -263,6 +263,60 @@
   </item>
 
   <item>
+    <title><![CDATA[OpenAI Rolls Out 'Dreaming V3' Hierarchical Memory Architecture to ChatGPT]]></title>
+    <description><![CDATA[OpenAI began deploying Dreaming V3, a hierarchical background-synthesis memory system, to ChatGPT Plus and Pro users in the US on June 4, 2026. The architecture replaces the saved-memories list, running a background process that continuously synthesises context across conversations. A 5× reduction in compute cost enables the rollout to extend memory capabilities to Free-tier users for the first time.]]></description>
+    <link>https://openai.com/index/chatgpt-memory-dreaming/</link>
+    <guid isPermaLink="true">https://openai.com/index/chatgpt-memory-dreaming/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Supabase Raises $500M Series F at $10.5B Valuation on 600% Database Growth from AI Agents]]></title>
+    <description><![CDATA[Supabase closed a $500 million Series F round led by GIC on June 4, 2026, valuing the open-source Postgres platform at $10.5 billion — doubling its $5B Series E from October 2025. The company cited 600% year-over-year growth in databases driven primarily by AI coding agents, with Claude Code named as the single largest contributor. Investors include Stripe (second cheque), Salesforce Ventures, Accel, Y Combinator, and Coatue.]]></description>
+    <link>https://supabase.com/blog/supabase-series-f</link>
+    <guid isPermaLink="true">https://supabase.com/blog/supabase-series-f</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Supabase</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Brain-Inspired AI Startup Flourish Raises $500M at $2.5B Valuation Backed by Bezos]]></title>
+    <description><![CDATA[Flourish, a startup developing brain-inspired AI models targeting 20-watt energy budgets versus ~600 watts for a modern GPU chip, raised $500 million at a $2.5 billion valuation, closing around June 4, 2026. Backers include Jeff Bezos (anchoring with ~$100M), GV (Alphabet's venture arm), Lux Capital, and Catalio Capital. The company was co-founded by Thomas Reardon (creator of Internet Explorer, CTRL-labs founder) and former Amazon S-team executive Rob Williams.]]></description>
+    <link>https://siliconangle.com/2026/06/04/ai-startup-flourish-reportedly-raises-500m-round-backed-jeff-bezos/</link>
+    <guid isPermaLink="true">https://siliconangle.com/2026/06/04/ai-startup-flourish-reportedly-raises-500m-round-backed-jeff-bezos/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Flourish</category>
+  </item>
+
+  <item>
+    <title><![CDATA[AI Finance Platform Ramp Raises $750M Series F at $44B Valuation]]></title>
+    <description><![CDATA[AI-powered finance platform Ramp closed a $750 million Series F led by ICONIQ, GIC, and Ontario Teachers' Pension Plan, valuing the company at $44 billion as of June 4, 2026 — the most valuable private fintech in the US. Ramp reported ~170% year-over-year growth in total payment volume in March 2026, its highest rate in three years. New investors include Goldman Sachs Alternatives, D.E. Shaw, and Morgan Stanley Investment Management.]]></description>
+    <link>https://www.prnewswire.com/news-releases/ramp-raises-series-f-at-44-billion-valuation-302791103.html</link>
+    <guid isPermaLink="true">https://www.prnewswire.com/news-releases/ramp-raises-series-f-at-44-billion-valuation-302791103.html</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Ramp</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Extends GPT-5.5-Cyber to EU Defenders Under New EU Cyber Action Plan]]></title>
+    <description><![CDATA[OpenAI began limited-preview access of GPT-5.5-Cyber to vetted European organisations — including EU institutions, national cyber agencies, and governments — under a newly announced EU Cyber Action Plan. The cybersecurity-tuned model is more permissive for authorised security tasks such as vulnerability analysis, malware reverse-engineering, and patch validation. Advanced Account Security became mandatory for API members with trusted access from June 1, 2026.]]></description>
+    <link>https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/</link>
+    <guid isPermaLink="true">https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU Appoints 60-Expert Scientific Panel to Enforce AI Act Ahead of August Deadline]]></title>
+    <description><![CDATA[The European Commission formally appointed a 60-member Scientific Panel and a 174-member Advisory Forum on June 2, 2026 to support enforcement of the EU AI Act. The Scientific Panel — composed of leading independent experts in frontier AI, engineering, and technical auditing — will focus on GPAI model classification, systemic-risk assessment, evaluation methodologies, and cross-border market surveillance. Most AI Act rules apply from August 2, 2026.]]></description>
+    <link>https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support</link>
+    <guid isPermaLink="true">https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Commission</category>
+  </item>
+
+  <item>
     <title><![CDATA[Anthropic Hits $30B Revenue Run-Rate — $950B Valuation Talks]]></title>
     <description><![CDATA[Anthropic's annualized revenue surpassed $30 billion in May 2026 — more than triple its $9 billion run-rate at end of 2025 — driven by explosive enterprise adoption of Claude Opus 4.7 and Claude Code. The company entered talks to raise $30–50 billion at a valuation approaching $950 billion, which would make it one of the most valuable private companies in history. Anthropic simultaneously expanded its compute partnership with Google and Broadcom to support the infrastructure demands of serving its rapidly growing customer base.]]></description>
     <link>https://joaoccaldas.github.io/sintra-ai/news/</link>
@@ -404,60 +458,6 @@
     <guid isPermaLink="true">https://tech.eu/2026/05/13/recursive-superintelligence-emerges-from-stealth-with-650m-raise/</guid>
     <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
     <category>Recursive Superintelligence</category>
-  </item>
-
-  <item>
-    <title><![CDATA[EU Parliament and Council Agree AI Act Omnibus Simplification]]></title>
-    <description><![CDATA[The European Parliament and Council reached a provisional agreement on May 7, 2026 on the Digital Omnibus package, delaying high-risk AI compliance deadlines — standalone systems to December 2027, product-embedded systems to August 2028 — and reducing administrative burdens for SMEs and mid-caps. New prohibitions on non-consensual intimate AI imagery and CSAM generation take effect December 2026. The deal also broadens permissions for sensitive data use in bias mitigation; formal adoption is expected before the original August 2, 2026 deadline.]]></description>
-    <link>https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/</link>
-    <guid isPermaLink="true">https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>European Union</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Jury Dismisses All of Musk's Claims Against OpenAI in Under Two Hours]]></title>
-    <description><![CDATA[A California jury deliberated less than two hours on May 18, 2026 before rejecting all claims in Elon Musk's lawsuit against OpenAI, Sam Altman, and Greg Brockman. The jury found Musk was aware of OpenAI's shift to a for-profit structure as early as 2021, barring his claims under the statute of limitations. Musk had sought up to $134 billion in damages and Altman's removal; he vowed to appeal, calling the verdict a 'technicality.']]></description>
-    <link>https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed</link>
-    <guid isPermaLink="true">https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Cursor Releases Composer 2.5 — Opus 4.7-Level Coding at a Fraction of the Price]]></title>
-    <description><![CDATA[Cursor launched Composer 2.5 on May 18, 2026, achieving 79.8% on SWE-Bench Multilingual and Terminal-Bench scores matching Claude Opus 4.7, while pricing stays at $0.50/$2.50 per million input/output tokens — a fraction of frontier model costs. The model was trained on 25× more synthetic tasks with tougher reinforcement-learning environments, enabling longer multi-file editing sessions and more reliable terminal operations. Cursor's valuation stands at $29 billion following its most recent funding round.]]></description>
-    <link>https://winbuzzer.com/2026/05/18/cursor-releases-composer-25-saying-its-better-at-s-xcxwbn/</link>
-    <guid isPermaLink="true">https://winbuzzer.com/2026/05/18/cursor-releases-composer-25-saying-its-better-at-s-xcxwbn/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Cursor</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Pope Leo XIV Announces 'Magnifica Humanitas' — First Papal Encyclical on AI, Co-Presented with Anthropic Co-Founder]]></title>
-    <description><![CDATA[The Vatican announced on May 18, 2026 that Pope Leo XIV will publish 'Magnifica Humanitas,' the first papal encyclical on artificial intelligence, on May 25 — signed May 15, exactly 135 years after Leo XIII's Rerum Novarum addressed the Industrial Revolution. The document will be co-presented at the Vatican's Synod Hall alongside Christopher Olah, co-founder of Anthropic, alongside cardinals and theologians. The encyclical addresses preserving human dignity in the age of AI and was developed as AI companies, including Anthropic, have resisted pressure to remove safety guardrails for autonomous weapons.]]></description>
-    <link>https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html</link>
-    <guid isPermaLink="true">https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Launches Self-Serve ChatGPT Ads Manager — No Minimum Spend]]></title>
-    <description><![CDATA[OpenAI opened ChatGPT Ads Manager to U.S. businesses on May 5, 2026, eliminating the previous $50,000 minimum spend requirement and introducing cost-per-click bidding with real-time campaign management. The platform targets $2.5 billion in ad revenue for 2026 and $100 billion by 2030; ad agency partners include Dentsu, Omnicom, Publicis, and WPP, with ad-tech integrations through Adobe, Criteo, Kargo, and StackAdapt. OpenAI confirmed no user conversations or personal data are shared with advertisers.]]></description>
-    <link>https://openai.com/index/new-ways-to-buy-chatgpt-ads/</link>
-    <guid isPermaLink="true">https://openai.com/index/new-ways-to-buy-chatgpt-ads/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Claude for Microsoft 365 Reaches GA — Excel, Word, PowerPoint, and Outlook Beta]]></title>
-    <description><![CDATA[Anthropic moved Claude add-ins for Excel, Word, and PowerPoint to general availability on May 7, 2026 across all paid Claude plans on Mac and Windows, and simultaneously launched Claude for Outlook in public beta. The standout feature is cross-app context: a single conversation thread persists across all four Microsoft 365 applications, so Claude remembers the financial model discussed in Excel when the user opens the related PowerPoint deck. The integration reaches more than 400 million Microsoft 365 commercial users and is deployable via Microsoft Admin Center.]]></description>
-    <link>https://claude.com/claude-for-microsoft-365</link>
-    <guid isPermaLink="true">https://claude.com/claude-for-microsoft-365</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
   </item>
   </channel>
 </rss>
