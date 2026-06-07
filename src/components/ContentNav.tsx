@@ -7,6 +7,7 @@ import {
   Zap, BookOpen, Wrench, Newspaper, Lightbulb, FlaskConical,
 } from "lucide-react";
 import { BASE_PATH, USE_CASES, DISC_COUNTS, matchesUseCase, type UseCase } from "@/lib/data";
+import TodayInHistory from "./TodayInHistory";
 import { AI_NEWS } from "@/lib/newsData";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { AI_MODELS } from "@/lib/modelsData";
@@ -513,10 +514,13 @@ export default function ContentNav() {
       {/* 2 — this week: editorial picks + latest news (tabbed) */}
       <ThisWeekHub />
 
-      {/* 3 — structured learning */}
+      {/* 3 — today in AI history */}
+      <TodayInHistory />
+
+      {/* 4 — structured learning */}
       <LearningPathsStrip />
 
-      {/* 4 — full library */}
+      {/* 5 — full library */}
       <div id="library">
         <PromptLibrary />
       </div>

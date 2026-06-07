@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import NewsTicker from "./NewsTicker";
 
 interface Props { total: number; }
 
@@ -42,7 +43,7 @@ export default function HeroMinimal({ total }: Props) {
     : line;
 
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 md:pt-32 md:pb-24 overflow-hidden bg-void min-h-[50vh]">
+    <section className="relative flex flex-col items-center justify-center text-center px-6 pt-28 pb-28 md:pt-32 md:pb-32 overflow-hidden bg-void min-h-[50vh]">
 
       {/* Violet bloom — parallaxes faster */}
       <div
@@ -106,6 +107,9 @@ export default function HeroMinimal({ total }: Props) {
         </motion.p>
 
       </div>
+
+      {/* News ticker pinned to bottom of hero */}
+      <NewsTicker />
     </section>
   );
 }
