@@ -63,6 +63,33 @@ export const COLLECTIONS: Collection[] = [
     category: "coding",
     limit: 6,
   },
+  {
+    id: "research-toolkit",
+    title: "Research Toolkit",
+    tagline: "Literature reviews, synthesis, citations, and study plans.",
+    icon: "🔭",
+    color: "#5EEAD4",
+    category: "research",
+    limit: 6,
+  },
+  {
+    id: "creative-studio",
+    title: "Creative Studio",
+    tagline: "Storytelling, scripts, world-building, and creative direction.",
+    icon: "🎨",
+    color: "#F08CA8",
+    category: "creative",
+    limit: 6,
+  },
+  {
+    id: "productivity-pro",
+    title: "Productivity Pro",
+    tagline: "Meeting notes, task prioritisation, email, and inbox zero.",
+    icon: "🚀",
+    color: "#F4D06F",
+    category: "productivity",
+    limit: 6,
+  },
 ];
 
 /** Returns the use cases matching a collection's filters. */

@@ -17,7 +17,8 @@ export type ResourceCategory =
   | "mcp"
   | "evals"
   | "communities"
-  | "research";
+  | "research"
+  | "videos";
 
 export interface ResourceCategoryMeta {
   id: ResourceCategory;
@@ -36,6 +37,7 @@ export const RESOURCE_CATEGORIES: ResourceCategoryMeta[] = [
   { id: "evals",          label: "Evals & Benchmarks",        icon: "📊", color: "#B6A6FF", desc: "Testing, evaluation, and quality tools" },
   { id: "communities",    label: "Communities",               icon: "🌐", color: "#F4D06F", desc: "Forums, Discord servers, and news feeds" },
   { id: "research",       label: "Research & Papers",         icon: "📖", color: "#8FE3D2", desc: "Academic papers, blogs, and technical writing" },
+  { id: "videos",         label: "Video Tutorials",           icon: "▶️",  color: "#F08CA8", desc: "Lectures, keynotes, and walkthroughs" },
 ];
 
 export const RESOURCES: ResourceLink[] = [
@@ -523,5 +525,47 @@ export const RESOURCES: ResourceLink[] = [
     tags: ["DevOps", "benchmarks", "AI adoption", "engineering metrics", "DORA"],
     free: true,
     highlight: "Original source of the 'AI as amplifier' finding — DORA data shows AI lifts elite performers most; teams with weak practices see minimal gains or regression",
+  },
+
+  // ── Video Tutorials ───────────────────────────────────────────────────────
+  {
+    id: "karpathy-intro-llm-res",
+    name: "Intro to Large Language Models — Karpathy",
+    tagline: "60-min visual intro to LLMs, training, RLHF, and emergent capabilities",
+    url: "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+    category: "videos",
+    tags: ["LLM", "fundamentals", "Karpathy", "beginner"],
+    free: true,
+    highlight: "Best single video for engineers entering AI — no maths required, covers tokenization → fine-tuning → alignment in one session",
+  },
+  {
+    id: "3b1b-neural-nets-res",
+    name: "Neural Networks — 3Blue1Brown",
+    tagline: "Stunning animated series from neurons to backpropagation to transformers",
+    url: "https://www.youtube.com/watch?v=aircAruvnKk",
+    category: "videos",
+    tags: ["neural networks", "visual", "backprop", "3Blue1Brown"],
+    free: true,
+    highlight: "The definitive visual explanation — watch the 4-part series in order for the clearest mental model of how LLMs actually learn",
+  },
+  {
+    id: "diamandis-ai-market-2026",
+    name: "Anthropic IPO, Trump AI EO & ChatGPT 1B Users — Moonshots EP #262",
+    tagline: "Peter Diamandis covers Anthropic's $965B valuation, AI policy and the 1B-user milestone",
+    url: "https://www.youtube.com/watch?v=hyeoYsVl1No",
+    category: "videos",
+    tags: ["AI market", "IPO", "Anthropic", "OpenAI", "policy", "podcast", "2026"],
+    free: true,
+    highlight: "Essential for understanding the AI investment landscape in mid-2026 — covers Anthropic S-1, Trump EO dynamics, Claude's 640% YoY growth, and AI robotics strategy",
+  },
+  {
+    id: "google-io-2026-keynote-res",
+    name: "Google I/O 2026 Keynote",
+    tagline: "Gemini 3.5, Antigravity agents, AI Mode at 1B users — the full 2-hour keynote",
+    url: "https://www.youtube.com/watch?v=CdJjph8-2Oc",
+    category: "videos",
+    tags: ["Google", "Gemini", "agents", "keynote", "2026"],
+    free: true,
+    highlight: "The most product-dense Google I/O in history — watch from 1:20:00 for the Project Astra and Antigravity agent demos that define the 2026 agentic AI playbook",
   },
 ];

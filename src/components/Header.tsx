@@ -21,7 +21,7 @@ const PATH_LABEL: Record<string, string> = {
   "ai-history": "AI History", "ai-labs": "AI Labs", research: "Research",
   learn: "Learning Paths", guides: "Guides", resources: "Resources", concepts: "Concepts",
   tools: "AI Tools", models: "Models", claude: "Claude", "google-ai-tools": "Google AI",
-  collections: "Collections", prompts: "Prompt",
+  collections: "Collections", prompts: "Prompt", videos: "Videos",
 };
 
 export default function Header({ total }: Props) {

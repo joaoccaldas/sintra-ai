@@ -8,7 +8,7 @@ import {
   Newspaper, Calendar, Tag, Clock, FlaskConical, BookOpen,
   GraduationCap, FileText, Archive, Lightbulb,
   Wrench, Cpu, Brain, Search as SearchIcon,
-  Home, Sun, Moon, Leaf, Waves, Palette,
+  Home, Sun, Moon, Leaf, Waves, Palette, Play,
 } from "lucide-react";
 import TesseractMark from "./TesseractMark";
 import { useSidebar } from "@/context/SidebarContext";
@@ -53,6 +53,7 @@ const NAV: NavGroup[] = [
       { href: `${BASE_PATH}/guides/`,    label: "Guides",         Icon: FileText,       pathKey: "guides" },
       { href: `${BASE_PATH}/resources/`, label: "Resources",      Icon: Archive,        pathKey: "resources" },
       { href: `${BASE_PATH}/concepts/`,  label: "Concepts",       Icon: Lightbulb,      pathKey: "concepts" },
+      { href: `${BASE_PATH}/videos/`,    label: "Videos",         Icon: Play,           pathKey: "videos" },
     ],
   },
   {

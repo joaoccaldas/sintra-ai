@@ -1,10 +1,44 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, useSyncExternalStore } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ChevronRight, Clock, ArrowRight, X } from "lucide-react";
+import { ArrowLeft, ChevronRight, Clock, ArrowRight, X, CheckCircle2 } from "lucide-react";
 import { LEARNING_PATHS, type LearningPath, type PathStep } from "@/lib/learningPathsData";
 import { BASE_PATH } from "@/lib/data";
+
+// ── Progress tracking (localStorage) ────────────────────────────────────────
+const STORE_KEY = "sintra-path-progress";
+
+function readProgress(): Record<string, Set<number>> {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = JSON.parse(localStorage.getItem(STORE_KEY) ?? "{}") as Record<string, number[]>;
+    return Object.fromEntries(Object.entries(raw).map(([k, v]) => [k, new Set(v)]));
+  } catch { return {}; }
+}
+
+function writeProgress(data: Record<string, Set<number>>) {
+  const serialisable = Object.fromEntries(Object.entries(data).map(([k, v]) => [k, [...v]]));
+  localStorage.setItem(STORE_KEY, JSON.stringify(serialisable));
+  window.dispatchEvent(new Event("sintra-progress"));
+}
+
+function usePathProgress(pathId: string) {
+  const completed = useSyncExternalStore(
+    cb => { window.addEventListener("sintra-progress", cb); return () => window.removeEventListener("sintra-progress", cb); },
+    () => readProgress()[pathId] ?? new Set<number>(),
+    () => new Set<number>(),
+  );
+
+  const toggle = useCallback((idx: number) => {
+    const all = readProgress();
+    const cur = new Set(all[pathId] ?? []);
+    cur.has(idx) ? cur.delete(idx) : cur.add(idx);
+    writeProgress({ ...all, [pathId]: cur });
+  }, [pathId]);
+
+  return { completed, toggle };
+}
 
 const LEVEL_STYLE = {
   beginner:     { label: "Beginner",     color: "#10b981" },
@@ -22,6 +56,10 @@ const STEP_TYPE_ICON: Record<PathStep["type"], string> = {
 
 function PathCard({ path, onClick }: { path: LearningPath; onClick: () => void }) {
   const lvl = LEVEL_STYLE[path.level];
+  const { completed } = usePathProgress(path.id);
+  const pct = path.steps.length > 0 ? Math.round((completed.size / path.steps.length) * 100) : 0;
+  const done = pct === 100;
+
   return (
     <motion.button
       onClick={onClick}
@@ -30,16 +68,27 @@ function PathCard({ path, onClick }: { path: LearningPath; onClick: () => void }
       className="group text-left rounded-2xl border p-6 transition-all duration-200 bg-[#0d0a1c] w-full"
       style={{ borderColor: path.color + "28" }}
     >
-      {/* Accent top */}
-      <div className="h-[2px] w-16 rounded-full mb-5" style={{ background: path.color }} />
+      {/* Accent top with progress fill */}
+      <div className="h-[2px] w-full rounded-full mb-5 bg-white/[0.06]">
+        <div className="h-full rounded-full transition-all duration-500" style={{ width: `${pct}%`, background: path.color }} />
+      </div>
 
       {/* Emoji + level */}
       <div className="flex items-center justify-between mb-4">
         <span className="text-4xl">{path.emoji}</span>
-        <span className="font-mono text-[9px] tracking-[0.12em] uppercase px-2 py-0.5 rounded-full border"
-          style={{ color: lvl.color, borderColor: lvl.color + "44", background: lvl.color + "12" }}>
-          {lvl.label}
-        </span>
+        <div className="flex items-center gap-2">
+          {pct > 0 && (
+            <span className="font-mono text-[9px] tracking-[0.06em] px-2 py-0.5 rounded-full flex items-center gap-1"
+              style={{ background: path.color + "18", color: path.color }}>
+              {done ? <CheckCircle2 size={9} /> : null}
+              {done ? "Complete" : `${pct}%`}
+            </span>
+          )}
+          <span className="font-mono text-[9px] tracking-[0.12em] uppercase px-2 py-0.5 rounded-full border"
+            style={{ color: lvl.color, borderColor: lvl.color + "44", background: lvl.color + "12" }}>
+            {lvl.label}
+          </span>
+        </div>
       </div>
 
       <h3 className="font-serif text-[22px] font-normal text-fg-1 leading-[1.15] mb-2 group-hover:text-white transition-colors">
@@ -54,16 +103,19 @@ function PathCard({ path, onClick }: { path: LearningPath; onClick: () => void }
         </span>
         <span className="text-fg-4">·</span>
         <span className="font-mono text-[10px]">{path.steps.length} steps</span>
-        <span className="text-fg-4">·</span>
-        <span className="font-mono text-[10px]">{path.audience}</span>
+        {completed.size > 0 && <><span className="text-fg-4">·</span><span className="font-mono text-[10px]" style={{ color: path.color }}>{completed.size}/{path.steps.length} done</span></>}
       </div>
 
       {/* Steps preview */}
       <div className="flex items-center gap-1 mt-4 pt-4 border-t border-hairline/40">
         {path.steps.slice(0, 5).map((step, i) => (
           <span key={i} title={step.label}
-            className="w-7 h-7 rounded-lg flex items-center justify-center text-sm bg-white/[0.04] border border-hairline/60">
-            {step.icon}
+            className="w-7 h-7 rounded-lg flex items-center justify-center text-sm border transition-all"
+            style={completed.has(i)
+              ? { background: path.color + "22", borderColor: path.color + "55" }
+              : { background: "rgba(255,255,255,0.04)", borderColor: "rgba(255,255,255,0.1)" }
+            }>
+            {completed.has(i) ? "✓" : step.icon}
           </span>
         ))}
         {path.steps.length > 5 && (
@@ -77,6 +129,8 @@ function PathCard({ path, onClick }: { path: LearningPath; onClick: () => void }
 
 function PathDetail({ path, onClose }: { path: LearningPath; onClose: () => void }) {
   const lvl = LEVEL_STYLE[path.level];
+  const { completed, toggle } = usePathProgress(path.id);
+  const pct = path.steps.length > 0 ? Math.round((completed.size / path.steps.length) * 100) : 0;
   return (
     <>
       <motion.div key="scrim" className="fixed inset-0 z-[80] bg-void/75 backdrop-blur-sm"
@@ -116,21 +170,40 @@ function PathDetail({ path, onClose }: { path: LearningPath; onClose: () => void
             style={{ borderColor: path.color }}>
             {path.tagline}
           </p>
-          <p className="font-mono text-[11px] text-fg-4 mb-8">{path.audience}</p>
+          <p className="font-mono text-[11px] text-fg-4 mb-4">{path.audience}</p>
+
+          {/* Progress bar */}
+          <div className="mb-8">
+            <div className="flex items-center justify-between mb-1.5">
+              <span className="font-mono text-[10px] text-fg-4">Progress</span>
+              <span className="font-mono text-[10px]" style={{ color: path.color }}>{completed.size}/{path.steps.length} steps · {pct}%</span>
+            </div>
+            <div className="h-1 w-full rounded-full bg-white/[0.06]">
+              <div className="h-full rounded-full transition-all duration-500" style={{ width: `${pct}%`, background: path.color }} />
+            </div>
+          </div>
 
           {/* Steps */}
           <div className="flex flex-col gap-0">
-            {path.steps.map((step, idx) => (
+            {path.steps.map((step, idx) => {
+              const isDone = completed.has(idx);
+              return (
               <div key={idx} className="relative flex gap-4">
                 {/* Line */}
                 {idx < path.steps.length - 1 && (
-                  <div className="absolute left-[19px] top-[38px] bottom-0 w-px" style={{ background: path.color + "30" }} />
+                  <div className="absolute left-[19px] top-[38px] bottom-0 w-px" style={{ background: isDone ? path.color + "60" : path.color + "30" }} />
                 )}
-                {/* Icon */}
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0 z-10 border"
-                  style={{ background: path.color + "14", borderColor: path.color + "44" }}>
-                  {step.icon}
-                </div>
+                {/* Icon — clickable checkbox */}
+                <button
+                  onClick={() => toggle(idx)}
+                  title={isDone ? "Mark incomplete" : "Mark complete"}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0 z-10 border transition-all duration-200"
+                  style={isDone
+                    ? { background: path.color + "30", borderColor: path.color, color: "white" }
+                    : { background: path.color + "14", borderColor: path.color + "44" }
+                  }>
+                  {isDone ? <CheckCircle2 size={18} style={{ color: path.color }} /> : step.icon}
+                </button>
                 {/* Content */}
                 <div className="flex-1 pb-6">
                   <div className="flex items-center gap-2 mb-1">
@@ -150,7 +223,7 @@ function PathDetail({ path, onClose }: { path: LearningPath; onClose: () => void
                   </a>
                 </div>
               </div>
-            ))}
+            );})}
           </div>
         </div>
       </motion.div>

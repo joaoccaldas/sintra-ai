@@ -107,4 +107,16 @@ export const YOUTUBE_VIDEOS: YouTubeVideo[] = [
     duration: "~2h",
     year: 2026,
   },
+  {
+    id: "diamandis-anthropic-ipo-chatgpt-1b",
+    videoId: "hyeoYsVl1No",
+    title: "Anthropic Files $965B IPO, Trump Signs AI Executive Order, and ChatGPT Crosses 1B Users",
+    channel: "Moonshots with Peter Diamandis",
+    summary:
+      "EP #262 of the Moonshots podcast covers the week's biggest AI market moves: Anthropic's confidential S-1 IPO filing at a $965B valuation, Trump's AI executive order establishing voluntary 30-day pre-release reviews, ChatGPT crossing 1 billion monthly active users (the fastest consumer product adoption in history), Claude's 640% year-over-year growth, and OpenAI's push into robotics. Also covers Bernie Sanders' AI sovereign wealth fund bill and three major longevity breakthroughs.",
+    url: "https://www.youtube.com/watch?v=hyeoYsVl1No",
+    tags: ["AI Market", "IPO", "Anthropic", "OpenAI", "Policy", "Industry", "Podcast", "2026"],
+    duration: "~45 min",
+    year: 2026,
+  },
 ];

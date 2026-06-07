@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, ExternalLink, Search, X, Clock,
   Zap, BookOpen, Wrench, Newspaper, Lightbulb, FlaskConical,
+  Rss, Play,
 } from "lucide-react";
 import { BASE_PATH, USE_CASES, DISC_COUNTS, matchesUseCase, type UseCase } from "@/lib/data";
 import TodayInHistory from "./TodayInHistory";
@@ -15,6 +16,7 @@ import { CONCEPTS } from "@/lib/concepts";
 import { LEARNING_PATHS } from "@/lib/learningPathsData";
 import { GUIDES } from "@/lib/guidesData";
 import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featuredData";
+import { YOUTUBE_VIDEOS } from "@/lib/videoData";
 import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
@@ -494,6 +496,86 @@ function PromptLibrary() {
 }
 
 /* ── Main export ─────────────────────────────────────────────────────── */
+/* ── 6. Stats bar ────────────────────────────────────────────────────────── */
+const STATS = [
+  { label: "AI prompts",    value: () => USE_CASES.length.toLocaleString(),       href: "#library" },
+  { label: "news items",    value: () => AI_NEWS.length.toLocaleString(),          href: `${BASE_PATH}/news/` },
+  { label: "tools",         value: () => AI_TOOLS.length.toLocaleString(),         href: `${BASE_PATH}/tools/` },
+  { label: "concepts",      value: () => CONCEPTS.length.toLocaleString(),         href: `${BASE_PATH}/concepts/` },
+  { label: "video lessons", value: () => YOUTUBE_VIDEOS.length.toLocaleString(),   href: `${BASE_PATH}/videos/` },
+  { label: "models tracked",value: () => AI_MODELS.length.toLocaleString(),        href: `${BASE_PATH}/models/` },
+  { label: "guides",        value: () => GUIDES.length.toLocaleString(),           href: `${BASE_PATH}/guides/` },
+  { label: "learning paths",value: () => LEARNING_PATHS.length.toLocaleString(),   href: `${BASE_PATH}/learn/` },
+];
+
+function StatsBar() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 6 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 0.2 }}
+      className="mb-14 -mx-6 md:-mx-8 px-6 md:px-8 py-5 border-y border-hairline/50 bg-white/[0.015]"
+    >
+      <div className="flex flex-wrap gap-x-6 gap-y-3 justify-center md:justify-start">
+        {STATS.map(s => (
+          <a
+            key={s.label}
+            href={s.href}
+            onClick={s.href === "#library" ? (e) => {
+              e.preventDefault();
+              document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
+            } : undefined}
+            className="group flex items-baseline gap-1.5 hover:opacity-70 transition-opacity"
+          >
+            <span className="font-mono text-[15px] font-semibold text-fg-1 group-hover:text-violet-bright transition-colors tabular-nums">
+              {s.value()}
+            </span>
+            <span className="font-mono text-[10px] text-fg-4 tracking-[0.06em]">{s.label}</span>
+          </a>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
+/* ── 7. Newsletter / RSS CTA ─────────────────────────────────────────────── */
+function NewsletterCTA() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 8 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4 }}
+      className="mb-16 rounded-2xl border border-violet/[0.14] bg-gradient-to-br from-violet/[0.06] to-transparent p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5"
+    >
+      <div className="flex items-center justify-center w-11 h-11 rounded-xl shrink-0 bg-violet/[0.14] border border-violet/[0.25]">
+        <Rss size={18} className="text-violet-bright" />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="font-serif text-[15px] text-fg-1 leading-[1.2] mb-0.5">Stay ahead of AI — follow the RSS feed</p>
+        <p className="font-mono text-[11px] text-fg-4 leading-[1.5]">
+          Subscribe in any RSS reader to get every new prompt, news item, and model update from Sintra.
+        </p>
+      </div>
+      <div className="flex gap-2 shrink-0">
+        <a
+          href={`${BASE_PATH}/feed.xml`}
+          className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-violet/40 bg-violet/[0.10] text-violet-bright hover:bg-violet/[0.20] transition-all"
+        >
+          <Rss size={11} /> RSS Feed
+        </a>
+        <a
+          href={`${BASE_PATH}/videos/`}
+          className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
+        >
+          <Play size={10} /> Videos
+        </a>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ── Main export ──────────────────────────────────────────────────────────── */
 export default function ContentNav() {
   const [expanded, setExpanded]           = useState<UseCase | null>(null);
   const [expandedItems, setExpandedItems] = useState<UseCase[]>([]);
@@ -508,19 +590,25 @@ export default function ContentNav() {
   return (
     <section id="explore" className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
 
-      {/* 1 — three clear entry points */}
+      {/* 1 — site stats bar */}
+      <StatsBar />
+
+      {/* 2 — three clear entry points */}
       <IntentNav />
 
-      {/* 2 — this week: editorial picks + latest news (tabbed) */}
+      {/* 3 — this week: editorial picks + latest news (tabbed) */}
       <ThisWeekHub />
 
-      {/* 3 — today in AI history */}
+      {/* 4 — today in AI history */}
       <TodayInHistory />
 
-      {/* 4 — structured learning */}
+      {/* 5 — structured learning */}
       <LearningPathsStrip />
 
-      {/* 5 — full library */}
+      {/* 6 — newsletter + RSS CTA */}
+      <NewsletterCTA />
+
+      {/* 7 — full library */}
       <div id="library">
         <PromptLibrary />
       </div>
