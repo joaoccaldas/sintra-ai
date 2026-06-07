@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://joaoccaldas.github.io/sintra-ai/sitemap.xml
