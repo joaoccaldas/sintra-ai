@@ -1,0 +1,17 @@
+{
+  "name": "Sintra Tesseract",
+  "short_name": "Sintra AI",
+  "description": "One-stop shop for AI — prompts, tools, news, and learning paths.",
+  "start_url": "/sintra-ai/",
+  "scope": "/sintra-ai/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090B14",
+  "theme_color": "#090B14",
+  "icons": [
+    { "src": "/sintra-ai/tesseract-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "categories": ["productivity", "education", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}
