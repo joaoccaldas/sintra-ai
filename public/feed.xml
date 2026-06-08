@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 07 Jun 2026 10:45:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 16:40:35 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -425,39 +425,39 @@
   </item>
 
   <item>
-    <title><![CDATA[Anthropic Hits $30B Revenue Run-Rate — $950B Valuation Talks]]></title>
-    <description><![CDATA[Anthropic's annualized revenue surpassed $30 billion in May 2026 — more than triple its $9 billion run-rate at end of 2025 — driven by explosive enterprise adoption of Claude Opus 4.7 and Claude Code. The company entered talks to raise $30–50 billion at a valuation approaching $950 billion, which would make it one of the most valuable private companies in history. Anthropic simultaneously expanded its compute partnership with Google and Broadcom to support the infrastructure demands of serving its rapidly growing customer base.]]></description>
-    <link>https://joaoccaldas.github.io/sintra-ai/news/</link>
-    <guid isPermaLink="false">https://joaoccaldas.github.io/sintra-ai/news/#anthropic-30b-revenue</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[xAI Dissolved — SpaceX Hands Colossus 1 Compute to Anthropic]]></title>
-    <description><![CDATA[Elon Musk announced on May 6, 2026 that xAI would be dissolved as an independent company and rebranded SpaceXAI, citing Anthropic's rapid growth and safety focus as factors in his change of view. Anthropic simultaneously signed a compute agreement with SpaceX giving it exclusive access to the Colossus 1 facility in Memphis — over 220,000 NVIDIA H100/H200/GB200 GPUs and 300 megawatts of capacity — driven by an 80-fold revenue surge in a single quarter that overwhelmed Anthropic's existing infrastructure. Anthropic also expressed interest in extending the partnership to gigawatt-scale orbital compute with SpaceX.]]></description>
-    <link>https://x.ai/news/anthropic-compute-partnership</link>
-    <guid isPermaLink="true">https://x.ai/news/anthropic-compute-partnership</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Mistral Medium 3.5 — 128B Open-Weight Model With 77.6% SWE-bench]]></title>
-    <description><![CDATA[Mistral AI released Medium 3.5, a 128-billion-parameter dense model with a 256,000-token context window, scoring 77.6% on SWE-bench Verified and unifying instruction-following, reasoning, coding, and vision in a single set of weights. The model was released with open weights under a modified MIT license and priced at $1.50/$7.50 per million input/output tokens via API. Mistral simultaneously launched Work Mode in Le Chat — an agentic interface powered by Medium 3.5 that executes multi-step workflows across connected tools in parallel.]]></description>
-    <link>https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5</link>
-    <guid isPermaLink="true">https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[Mistral AI Now Summit: Vibe Assistant, Industrial AI Platform, and €4B Compute Expansion Announced]]></title>
+    <description><![CDATA[At its inaugural AI Now Summit in Paris on May 28, Mistral announced the rebrand of Le Chat to Vibe — a broader organisational AI assistant targeting email, documents, and code workflows — alongside Mistral for Industrial Engineering, an integrated AI-plus-physics-simulation stack built partly on the acquisition of Emmi AI. The company disclosed 1,000 employees, a €1 billion 2026 revenue target, and a new 10 MW Les Ulis inference data centre (Q3 2026) powered by NVIDIA GB300 NVL72 accelerators. Mistral Compute, its infrastructure arm, targets 200 MW by 2027 and 1 GW by 2030 as part of a €4 billion programme in France and Sweden.]]></description>
+    <link>https://venturebeat.com/technology/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai</link>
+    <guid isPermaLink="true">https://venturebeat.com/technology/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Mistral AI</category>
   </item>
 
   <item>
-    <title><![CDATA[Microsoft Agent 365 Generally Available — Enterprise AI Agent Governance]]></title>
-    <description><![CDATA[Microsoft made Agent 365 generally available on May 1, 2026, introducing enterprise-grade visibility, governance, and security controls for AI agent fleets at $15 per user per month. The platform extends Microsoft Entra network controls to Copilot Studio agents and locally-running agents, enabling IT teams to identify unsanctioned AI usage, restrict connections to approved destinations, and block prompt-injection attacks. Agent 365 is bundled into the new Microsoft 365 E7 tier alongside Copilot and the full Microsoft 365 E5 suite.]]></description>
-    <link>https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/</link>
-    <guid isPermaLink="true">https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/</guid>
-    <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
-    <category>Microsoft</category>
+    <title><![CDATA[Bpifrance, Mistral, and MGX Expand Campus AI to 3 GW Nationwide — Second French Site Selected]]></title>
+    <description><![CDATA[On June 2, the Campus AI joint venture — comprising Bpifrance, Mistral AI, MGX (Abu Dhabi), and NVIDIA — announced the imminent selection of a second French site, doubling its initial investment and targeting 3 GW of AI compute capacity across a pan-European network of AI factories. The first flagship campus at Fouju in Seine-et-Marne is already underway; construction at the second site is scheduled to begin H2 2026, with operations targeted for 2028. The expansion reinforces France's position as Europe's primary destination for large-scale, decarbonised AI compute.]]></description>
+    <link>https://presse.bpifrance.fr/bpifrance-mistral-et-mgx-etendent-campus-ai-a-lechelle-nationale-pour-batir-un-reseau-de-3-gw-dusines-dia/?lang=fra</link>
+    <guid isPermaLink="true">https://presse.bpifrance.fr/bpifrance-mistral-et-mgx-etendent-campus-ai-a-lechelle-nationale-pour-batir-un-reseau-de-3-gw-dusines-dia/?lang=fra</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Bpifrance</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Poland PM Tusk Announces 'Sovereignty Test' for Government Tech Purchases at European Financial Congress]]></title>
+    <description><![CDATA[At the European Financial Congress in Sopot on June 2, Polish Prime Minister Donald Tusk announced that Poland will introduce a mandatory 'sovereignty test' for significant state purchases of technology, requiring annual public reports on IT independence progress. Tusk warned that Poland's dependency on a narrow group of foreign technology suppliers had reached dangerous proportions and cited France, Denmark, and Germany as models to emulate. The government simultaneously confirmed a nearly €500 million allocation — mostly from EU funds — to deploy AI laboratories in 12,000 Polish schools.]]></description>
+    <link>https://thenextweb.com/news/poland-tusk-tech-sovereignty-ai-procurement-test</link>
+    <guid isPermaLink="true">https://thenextweb.com/news/poland-tusk-tech-sovereignty-ai-procurement-test</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Polish Government</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU €20B AI Gigafactory Programme Stumbles — Bids Drop from 70 to ~10, Funding Round Pushed to July]]></title>
+    <description><![CDATA[Bloomberg reported on June 2 that the EU's €20 billion InvestAI gigafactory programme — designed to build at least five 100,000-chip, 1 GW AI data centres — is facing a severe credibility crisis. The bidding round originally scheduled for May was deferred to July, and only two of the five centres can receive subsidy disbursements before the EU's 2028 budget cycle; interest from potential bidders has shrunk from 70 companies to roughly 10, with at least two consortia reconsidering entirely. Schwarz Group and Deutsche Telekom have dampened enthusiasm and are proceeding with independent data centre investments instead.]]></description>
+    <link>https://thenextweb.com/news/eu-ai-data-centre-gigafactory-delays-funding-stumble</link>
+    <guid isPermaLink="true">https://thenextweb.com/news/eu-ai-data-centre-gigafactory-delays-funding-stumble</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Commission</category>
   </item>
   </channel>
 </rss>
