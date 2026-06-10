@@ -670,33 +670,6 @@ export const AI_NEWS: NewsItem[] = [
     what_to_try: "Pass a full codebase or lengthy legal document set to Gemini 3.1 Ultra's 2M context and compare answer quality to your current chunked retrieval approach on 5 representative queries.",
   },
   {
-    id: "google-gemma-4",
-    date: "Apr 2026",
-    dateNum: 202604,
-    dateDay: 2,
-    title: "Gemma 4 — Google's Most Capable Open-Source Model Family",
-    summary:
-      "Google released Gemma 4 on April 2, 2026 under Apache 2.0, in four sizes (2B to 31B parameters) with 256K context windows, native vision and audio processing, and support for 140+ languages. The 31B dense flagship targets advanced reasoning, multi-step planning, agentic workflows, and offline code generation — available on Hugging Face, Kaggle, and Google AI Studio.",
-    tags: ["Google", "Gemma", "Open Source", "Multimodal", "Reasoning"],
-    significance: "major",
-    provider: "Google",
-    providerColor: "#4285f4",
-    url: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
-  },
-  {
-    id: "gemini-3-1-ultra",
-    date: "Apr 2026",
-    dateNum: 202604,
-    title: "Gemini 3.1 Ultra — 2M-Token Context Window, Full Native Multimodal",
-    summary:
-      "Google released Gemini 3.1 Ultra in April 2026 with the largest context window of any publicly available model at 2 million tokens — double the 1M-token limit of Gemini 3.1 Pro. The model reasons natively across text, image, audio, and video in a single pass without separate pipelines, enabling tasks like auditing a full year of all-hands recordings alongside a complete legal discovery set in one prompt. Gemini 3.1 Ultra surpassed GPT-5.5 on the MMLU-Pro and GPQA Diamond benchmarks, making it Google's most capable model available via the Vertex AI API at launch.",
-    tags: ["Google", "Gemini 3.1 Ultra", "2M Context", "Multimodal", "Benchmark", "Vertex AI"],
-    significance: "major",
-    provider: "Google",
-    providerColor: "#4285f4",
-    url: "https://medium.com/@WinTK-Bangladesh/gemini-3-1-ultra-is-here-2-million-token-context-full-multimodal-zero-compromise-ca3f2a8d1254",
-  },
-  {
     id: "claude-opus-4-7",
     date: "Apr 2026",
     dateNum: 202604,
@@ -710,20 +683,6 @@ export const AI_NEWS: NewsItem[] = [
     url: "https://www.anthropic.com/news/claude-opus-4-7",
     why_it_matters: "Enhanced vision and coding in Anthropic's 2026 flagship means complex screen-understanding and long-horizon coding tasks can now be delegated to a single model without specialized pipelines.",
     what_to_try: "Test Claude Opus 4.7 on a task combining visual reasoning and code generation — such as converting a UI screenshot into a working component — and measure round-trip quality.",
-  },
-  {
-    id: "deepseek-v4",
-    date: "Apr 2026",
-    dateNum: 202604,
-    dateDay: 24,
-    title: "DeepSeek V4 — 1.6T-Parameter MoE, 80.6% SWE-bench Verified",
-    summary:
-      "DeepSeek released V4-Pro and V4-Flash on April 24, 2026 under MIT license. V4-Pro packs 1.6T total parameters with 49B active via mixture-of-experts, a 1M-token context window, and scored 80.6% on SWE-bench Verified — matching frontier closed-source models. Weights are on Hugging Face; V4-Flash (284B total, 13B active) targets cost-efficient inference.",
-    tags: ["DeepSeek", "V4", "Open Source", "MoE", "Coding", "SWE-bench"],
-    significance: "major",
-    provider: "DeepSeek",
-    providerColor: "#1a73e8",
-    url: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
   },
   {
     id: "gpt-5-5",
@@ -3588,80 +3547,6 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#820ad1",
     url: "https://pulse2.com/nubank-r45-billion-investment-plan-in-brazil-targets-ai-product-expansion-and-financial-inclusion-growth/",
     country: "BR",
-  },
-
-  {
-    id: "google-search-ai-mode-overhaul",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 19,
-    title: "Google Search's Biggest Redesign in 25 Years — AI Agents and Generative UI",
-    summary:
-      "Google unveiled a complete AI overhaul of Search at Google I/O on May 19, 2026, described as the biggest change to the search box in over 25 years. The new intelligent search box accepts text, images, files, videos, and Chrome tabs as inputs; agentic 'information agents' launching in summer 2026 will monitor the web continuously and alert users to changes. Generative UI, powered by Gemini 3.5 Flash, allows Search to dynamically produce custom interfaces, simulations, graphs, and mini-apps in response to queries. AI Mode already surpassed one billion monthly users with query volumes more than doubling every quarter since launch.",
-    tags: ["Google", "Search", "AI Mode", "Agents", "Generative UI", "Google I/O", "Gemini"],
-    significance: "major",
-    provider: "Google",
-    providerColor: "#4285f4",
-    url: "https://blog.google/products-and-platforms/products/search/search-io-2026/",
-  },
-
-  // ── Auto-updated 2026-05-20 ────────────────────────────────────────────
-
-  {
-    id: "gemini-spark-agent-io2026",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 19,
-    title: "Gemini Spark — Google's 24/7 AI Agent Launches at Google I/O 2026",
-    summary:
-      "Google announced Gemini Spark at Google I/O on May 19, 2026 — a cloud-based AI agent that runs continuously in the background, reasoning across connected apps and taking actions on behalf of users. Spark integrates with Gmail, Docs, Uber, OpenTable, Lyft, Zillow, and dozens of third-party services, enabling autonomous multi-step workflows such as booking restaurants, tracking packages, and organizing calendar events. Beta access is included with the new Google AI Ultra subscription at $100 per month, rolling out first to trusted testers.",
-    tags: ["Google", "Gemini Spark", "Google I/O", "Agents", "Automation", "AI Ultra"],
-    significance: "major",
-    provider: "Google",
-    providerColor: "#4285f4",
-    url: "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
-  },
-  {
-    id: "gemini-omni-io2026",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 19,
-    title: "Gemini Omni — Google's Unified Video-Image Generation Model Unveiled",
-    summary:
-      "Google DeepMind CEO Demis Hassabis unveiled Gemini Omni at Google I/O 2026, a multimodal model that unifies text, image, and video generation in a single set of weights — the first top-tier AI system to do so. Omni supports conversational video editing via voice commands, allowing users to transform uploaded footage by adjusting characters, backgrounds, and framing in real time. The initial release, Gemini Omni Flash, is grounded in real-world knowledge via Google Search and is planned for launch in summer 2026.",
-    tags: ["Google", "Gemini Omni", "Google I/O", "Video Generation", "Multimodal", "DeepMind"],
-    significance: "major",
-    provider: "Google",
-    providerColor: "#4285f4",
-    url: "https://www.businesstoday.in/technology/artificial-intelligence/story/google-io-2026-google-unveils-gemini-omni-ai-video-editing-model-532350-2026-05-19",
-  },
-  {
-    id: "google-samsung-xr-glasses",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 19,
-    title: "Google and Samsung Unveil Gemini-Powered Android XR Smart Glasses",
-    summary:
-      "Google and Samsung revealed the first Android XR smart glasses at Google I/O 2026, with eyewear frames designed by Gentle Monster and Warby Parker for fall 2026 availability. The two-tier lineup includes audio-only glasses with cameras and microphones for all-day wear, and an optional in-lens display variant for private contextual information. Powered by Gemini, the glasses support live translation, navigation, calls, messaging, and real-time visual assistance, activated by voice or a tap on the frame.",
-    tags: ["Google", "Samsung", "Android XR", "Smart Glasses", "Wearables", "Gemini", "Google I/O"],
-    significance: "notable",
-    provider: "Google",
-    providerColor: "#4285f4",
-    url: "https://www.techradar.com/news/live/google-io-2026-live",
-  },
-  {
-    id: "anthropic-dreaming-agents",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 6,
-    title: "Anthropic Dreaming — Claude Agents Now Self-Improve Between Sessions",
-    summary:
-      "Anthropic launched Dreaming on May 6, 2026, a scheduled maintenance layer that reviews an agent's past sessions, extracts patterns across them, and curates memory stores so agents improve over time without modifying model weights. Supported on Claude Opus 4.7 and Sonnet 4.6, Dreaming feeds up to 100 past sessions into a single 'dream' and surfaces recurring mistakes, convergent workflows, and team-wide preferences. Early adopter Harvey (legal AI) reported a 6× increase in task completion rates after implementing the feature; access is currently gated behind a request form.",
-    tags: ["Anthropic", "Claude", "Dreaming", "Agents", "Memory", "Self-Improvement"],
-    significance: "major",
-    provider: "Anthropic",
-    providerColor: "#d97706",
-    url: "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes",
   },
 
   // ── May 2026 — Global ─────────────────────────────────────────────────────
