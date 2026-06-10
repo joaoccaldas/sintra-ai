@@ -119,4 +119,28 @@ export const YOUTUBE_VIDEOS: YouTubeVideo[] = [
     duration: "~45 min",
     year: 2026,
   },
+  {
+    id: "anthropic-introducing-claude-fable-5",
+    videoId: "Y9Wz2PV404E",
+    title: "Introducing Claude Fable 5",
+    channel: "Anthropic",
+    summary:
+      "Anthropic's official launch video for Claude Fable 5, released June 9, 2026. Walks through the model's headline numbers — 95% on SWE-bench Verified, a 1M-token context window, and always-on adaptive thinking — and shows how it sustains long-horizon agentic tasks with built-in self-verification and sub-agent delegation.",
+    url: "https://www.youtube.com/watch?v=Y9Wz2PV404E",
+    tags: ["Claude Fable 5", "Anthropic", "Launch", "Agents", "2026"],
+    duration: "~5 min",
+    year: 2026,
+  },
+  {
+    id: "claude-fable-5-coding-demo",
+    videoId: "I3PYGi_tGy0",
+    title: "Claude Fable 5 in Claude Code: The Hardest Coding Test Yet",
+    channel: "Anthropic",
+    summary:
+      "A hands-on walkthrough of Claude Fable 5 running inside Claude Code on a multi-day refactoring task — using the memory tool to persist progress across sessions, delegating sub-tasks to background agents, and self-verifying its own changes before reporting completion. Demonstrates the kind of long-horizon, low-supervision workflow Fable 5's 1M-token context and adaptive thinking are designed for.",
+    url: "https://www.youtube.com/watch?v=I3PYGi_tGy0",
+    tags: ["Claude Fable 5", "Claude Code", "Coding", "Agents", "Demo"],
+    duration: "~18 min",
+    year: 2026,
+  },
 ];

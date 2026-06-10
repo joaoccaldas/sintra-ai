@@ -2,7 +2,7 @@ export interface ClaudeModel {
   id: string;
   name: string;
   tagline: string;
-  tier: "haiku" | "sonnet" | "opus";
+  tier: "haiku" | "sonnet" | "opus" | "fable";
   color: string;
   contextWindow: string;
   inputPrice: string;
@@ -107,6 +107,31 @@ export const CLAUDE_MODELS: ClaudeModel[] = [
       "Ideal for long-horizon autonomous agent tasks",
       "Superior performance on graduate-level STEM problems",
       "Best-in-class for nuanced multi-step decision making",
+    ],
+    freeAccess: false,
+  },
+  {
+    id: "claude-fable-5",
+    name: "Claude Fable 5",
+    tagline: "Anthropic's most capable model — frontier agentic reasoning",
+    tier: "fable",
+    color: "#e11d48",
+    contextWindow: "1M",
+    inputPrice: "$10 / 1M tokens",
+    outputPrice: "$50 / 1M tokens",
+    speed: "most capable",
+    bestFor: [
+      "Multi-day autonomous agents",
+      "Frontier software engineering",
+      "Long-horizon planning",
+      "Scientific research",
+    ],
+    features: [
+      "95% on SWE-bench Verified — state of the art at launch",
+      "1M-token context window with up to 128K output tokens",
+      "Always-on adaptive thinking — no separate 'extended thinking' toggle",
+      "Sustains autonomous multi-day tasks with self-verification and sub-agent delegation",
+      "Memory tool, code execution, and programmatic tool calling built in",
     ],
     freeAccess: false,
   },

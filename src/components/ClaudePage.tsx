@@ -18,6 +18,7 @@ const TIER_LABEL: Record<ClaudeModel["tier"], string> = {
   haiku:  "Haiku",
   sonnet: "Sonnet",
   opus:   "Opus",
+  fable:  "Fable",
 };
 
 const SPEED_ICON: Record<ClaudeModel["speed"], string> = {
@@ -246,8 +247,8 @@ export default function ClaudePage() {
           {/* Quick stats */}
           <div className="flex flex-wrap items-center gap-8">
             {[
-              { label: "3 models",      note: "Haiku · Sonnet · Opus" },
-              { label: "200K context",  note: "Across all tiers" },
+              { label: "4 models",      note: "Haiku · Sonnet · Opus · Fable" },
+              { label: "Up to 1M context", note: "Claude Fable 5 flagship" },
               { label: "Since 2021",    note: "Built by Anthropic" },
             ].map(stat => (
               <div key={stat.label} className="flex flex-col gap-0.5">
@@ -272,15 +273,16 @@ export default function ClaudePage() {
               <span className="eyebrow violet">Model Family</span>
             </div>
             <h2 className="font-serif font-light text-[clamp(28px,4vw,48px)] leading-[1.06] tracking-[-0.02em] text-fg-1 mb-3">
-              Three tiers, one context window
+              Four tiers, frontier context
             </h2>
             <p className="font-sans text-[15px] text-fg-3 max-w-lg leading-[1.6]">
-              Every Claude model shares a 200K token context window. Choose your tier by the
-              cost-performance trade-off your application demands.
+              Haiku, Sonnet, and Opus share a 200K token context window. Claude Fable 5 — Anthropic's
+              new flagship — extends that to 1M tokens. Choose your tier by the cost-performance
+              trade-off your application demands.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {CLAUDE_MODELS.map((model, i) => (
               <ModelCard key={model.id} model={model} index={i} />
             ))}
