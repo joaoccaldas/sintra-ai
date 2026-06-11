@@ -25,7 +25,7 @@ const PRESETS: { id: PresetId; emoji: string; label: string; filter?: (n: NewsIt
   { id: "sweden",   emoji: "🇸🇪", label: "Sweden",  filter: n => n.country === "SE" },
 ];
 
-function NewsCard({ item, onTagFilter }: { item: NewsItem; onTagFilter: (tag: string) => void }) {
+function NewsCard({ item, onTagFilter, isNew }: { item: NewsItem; onTagFilter: (tag: string) => void; isNew?: boolean }) {
   const sig = SIG_STYLE[item.significance];
   return (
     <motion.article
@@ -40,10 +40,17 @@ function NewsCard({ item, onTagFilter }: { item: NewsItem; onTagFilter: (tag: st
         <p className="font-mono text-[11px] text-fg-4 mb-2">
           {item.dateDay ? `${item.dateDay} ${item.date}` : item.date}
         </p>
-        <span className="inline-flex font-mono text-[9px] tracking-[0.10em] uppercase px-2 py-0.5 rounded-full border"
-          style={{ background: sig.bg, borderColor: sig.border, color: sig.text }}>
-          {sig.label}
-        </span>
+        <div className="flex flex-col items-start gap-1.5">
+          {isNew && (
+            <span className="inline-flex font-mono text-[9px] tracking-[0.10em] uppercase px-2 py-0.5 rounded-full border border-amber-400/50 bg-amber-400/10 text-amber-300">
+              New
+            </span>
+          )}
+          <span className="inline-flex font-mono text-[9px] tracking-[0.10em] uppercase px-2 py-0.5 rounded-full border"
+            style={{ background: sig.bg, borderColor: sig.border, color: sig.text }}>
+            {sig.label}
+          </span>
+        </div>
       </div>
 
       {/* Right: content */}
@@ -157,6 +164,18 @@ export default function AINewsPage() {
     if (typeof window === "undefined") return "all";
     return (new URLSearchParams(window.location.search).get("preset") || "all") as PresetId;
   });
+
+  // "New since your last visit" — read the previous visit's watermark, then
+  // bump it to the current latest item so only items added after this visit
+  // are highlighted next time.
+  const [lastVisitKey, setLastVisitKey] = useState<number | null>(null);
+  useEffect(() => {
+    const STORAGE_KEY = "sintra:news-last-visit";
+    const stored = window.localStorage.getItem(STORAGE_KEY);
+    setLastVisitKey(stored ? Number(stored) : null);
+    const latestKey = Math.max(...NEWS_ITEMS.map(n => n.dateNum * 100 + (n.dateDay ?? 1)));
+    window.localStorage.setItem(STORAGE_KEY, String(latestKey));
+  }, []);
 
   useEffect(() => {
     const params = new URLSearchParams();
@@ -420,7 +439,14 @@ export default function AINewsPage() {
                     <div className="flex-1 h-px bg-violet/[0.12]" />
                     <span className="font-mono text-[11px] text-fg-4">{items.length} events</span>
                   </div>
-                  {items.map(item => <NewsCard key={item.id} item={item} onTagFilter={tag => setActiveTag(tag)} />)}
+                  {items.map(item => (
+                    <NewsCard
+                      key={item.id}
+                      item={item}
+                      onTagFilter={tag => setActiveTag(tag)}
+                      isNew={lastVisitKey !== null && (item.dateNum * 100 + (item.dateDay ?? 1)) > lastVisitKey}
+                    />
+                  ))}
                 </div>
               ))}
 
