@@ -17,7 +17,7 @@ import { LEARNING_PATHS } from "@/lib/learningPathsData";
 import { GUIDES } from "@/lib/guidesData";
 import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featuredData";
 import { YOUTUBE_VIDEOS } from "@/lib/videoData";
-import { CAROUSEL_ITEMS } from "./CategoryCarousel3D";
+import { CAROUSEL_ITEMS } from "@/lib/carouselData";
 import UseCaseCard from "./UseCaseCard";
 import ExpandedCard from "./ExpandedCard";
 import { trackRecentlyViewed } from "@/lib/hooks";

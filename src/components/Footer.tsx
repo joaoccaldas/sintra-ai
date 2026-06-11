@@ -30,6 +30,7 @@ const NAV_COLS = [
     head: "Elsewhere",
     links: [
       ["GitHub ↗",             "https://github.com/joaoccaldas/sintra-ai"],
+      ["RSS Feed ↗",           `${BASE_PATH}/feed.xml`],
     ],
   },
 ];

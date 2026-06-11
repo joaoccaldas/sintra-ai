@@ -25,13 +25,18 @@ export default function NewsTicker() {
 
       <div className="absolute inset-0 border-t border-white/[0.06]" />
 
-      <div className="flex items-center h-full animate-ticker" style={{ width: "max-content" }}>
+      <div
+        className="flex items-center h-full animate-ticker pointer-events-auto hover:[animation-play-state:paused]"
+        style={{ width: "max-content" }}
+      >
         {ticker.map((item, i) => (
           <a
             key={`${item.id}-${i}`}
             href={item.url ?? `${BASE_PATH}/news/`}
             target={item.url ? "_blank" : undefined}
             rel={item.url ? "noopener noreferrer" : undefined}
+            aria-hidden={i >= items.length}
+            tabIndex={i >= items.length ? -1 : undefined}
             className="pointer-events-auto flex items-center gap-3 px-5 shrink-0 hover:opacity-70 transition-opacity"
           >
             <span
