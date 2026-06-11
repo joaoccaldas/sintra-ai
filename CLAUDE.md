@@ -119,6 +119,35 @@ Do **not** commit `dist/` — deployment is handled separately via git plumbing.
 
 ---
 
+## Shared helpers & patterns worth knowing
+
+- **`getLatestNewsDate()`** (`src/lib/newsData.ts`) — returns the most recent
+  `AI_NEWS` item's date formatted as `"9 Jun 2026"` (falls back to the raw
+  `date` string if `dateDay` is missing). Used for the "News updated …" /
+  "Updated …" freshness badges in `ContentNav.tsx` and `AINewsPage.tsx`.
+  Reuse this instead of hardcoding a date anywhere a "last updated" label is
+  needed.
+- **Lazy Fuse.js index** (`src/lib/searchIndex.ts`) — `getFuse()` builds the
+  `Fuse` instance on first non-empty query instead of at module load, so the
+  search index isn't constructed on every page load (only when ⌘K /
+  `UniversalSearch` is actually used).
+- **`/news` JSON-LD** (`src/app/news/page.tsx`) — emits a schema.org
+  `ItemList`/`NewsArticle` block for the 20 most recent items via
+  `newsJsonLd()`. Keep this in sync if `AI_NEWS`'s shape changes.
+
+### Known issue: `USE_CASES` imported just for `.length`
+
+`/news` and `/topics/[tag]` (and a few other routes) import the full
+`USE_CASES` array (backed by the 8600+ line `src/data/useCases.json`) only to
+pass `Header total={USE_CASES.length}` — this drags the entire prompt dataset
+into routes that don't otherwise need it, inflating their First Load JS.
+A future fix should hoist the count into a small generated constant (e.g. a
+`USE_CASES_COUNT` export computed at build time) so these routes don't need
+the full JSON. Not yet fixed — flagged here so the count doesn't silently
+drift if someone "fixes" it by hardcoding a number.
+
+---
+
 ## Page patterns
 
 ### Client component with SEO metadata
@@ -150,7 +179,8 @@ function useIsMobile() {
 }
 ```
 
-Used in `CategoryBrowser.tsx` to swap the Three.js carousel for a 2D grid on mobile.
+Used across the codebase (e.g. `Header.tsx`, `HeroMinimal.tsx`) to branch
+rendering by viewport without a hydration mismatch.
 
 ### Deployment sequence
 ```bash
@@ -171,12 +201,30 @@ git reset HEAD   # clean up the index
 | `Header.tsx` | Nav with 3 dropdown groups (Discover / Learn / Reference) + ⌘K |
 | `HeroMinimal.tsx` | Full-screen hero, particle vortex, search bar, news ticker |
 | `SiteHub.tsx` | 7 destination cards with live counts — orients new visitors |
-| `ThePulse.tsx` | Tabbed module: AI Signals · New Prompts · Learn |
-| `CategoryBrowser.tsx` | Main prompt library — 3D carousel (desktop) + 2D grid (mobile) |
+| `CategoryBrowser.tsx` | Main prompt library — flat responsive grid (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`), reads category data from `src/lib/carouselData.ts` |
 | `ExpandedCard.tsx` | Prompt detail slide-up panel with related-prompts rail |
-| `CommandPalette.tsx` | ⌘K unified search across all 7 content types (Fuse.js) |
+| `CommandPalette.tsx` | ⌘K unified search across all 7 content types (Fuse.js, lazy-built index — see `src/lib/searchIndex.ts`) |
 | `UniversalSearch.tsx` | Inline search results on landing page (same index as ⌘K) |
 | `PersonaEntry.tsx` | Role-based entry routing (routes `sintra:persona` custom event) |
 | `FeaturedCollections.tsx` | Curated prompt collections with expandable panels |
 | `AIHistoryTimeline.tsx` | Three.js interactive timeline (full-screen, desktop-heavy) |
-| `NewsTicker.tsx` | Horizontal scrolling news ticker pinned to hero bottom |
+| `NewsTicker.tsx` | Horizontal scrolling news ticker pinned to hero bottom (110s loop, pauses on hover, duplicated set marked `aria-hidden`) |
+| `ContentNav.tsx` | "This Week" hub + content pillars; shows live "News updated {date}" badge via `getLatestNewsDate()` |
+
+### Orphaned components (not imported anywhere — verify before editing)
+
+These files exist in `src/components/` but are not referenced by any page or
+other component (confirmed via `grep -rn "<name>" src/`). They're kept for
+potential future use but receive **zero traffic** on the live site — don't
+spend time polishing them, and don't assume CLAUDE.md history that calls
+them "active" is current:
+
+- `ThePulse.tsx` — tabbed "AI Signals · New Prompts · Learn" module, never mounted
+- `CategoryCarousel3D.tsx` — old Three.js carousel; `CategoryBrowser.tsx` now
+  uses the flat grid instead. Only its data (`CAROUSEL_ITEMS`) is reused, via
+  `src/lib/carouselData.ts`
+- `Tesseract3D.tsx`, `ParticleVortex.tsx` — Three.js helpers used only by the
+  orphaned carousel above
+
+If reviving any of these, re-check bundle size impact (`npm run build`) —
+THREE.js pulls in a large chunk.

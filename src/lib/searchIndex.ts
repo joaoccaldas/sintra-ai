@@ -130,24 +130,30 @@ export const SEARCH_INDEX: SearchDocument[] = [
   })),
 ];
 
-const fuse = new Fuse(SEARCH_INDEX, {
-  keys: [
-    { name: "title",   weight: 3 },
-    { name: "tags",    weight: 2 },
-    { name: "summary", weight: 1.5 },
-    { name: "body",    weight: 0.8 },
-  ],
-  threshold: 0.35,
-  includeScore: true,
-  minMatchCharLength: 2,
-  ignoreLocation: true,
-});
+let fuse: Fuse<SearchDocument> | null = null;
+function getFuse(): Fuse<SearchDocument> {
+  if (!fuse) {
+    fuse = new Fuse(SEARCH_INDEX, {
+      keys: [
+        { name: "title",   weight: 3 },
+        { name: "tags",    weight: 2 },
+        { name: "summary", weight: 1.5 },
+        { name: "body",    weight: 0.8 },
+      ],
+      threshold: 0.35,
+      includeScore: true,
+      minMatchCharLength: 2,
+      ignoreLocation: true,
+    });
+  }
+  return fuse;
+}
 
 export function searchAll(query: string): { kind: EntityKind; docs: SearchDocument[] }[] {
   const q = query.trim();
   if (!q) return [];
 
-  const results = fuse.search(q).map(r => r.item);
+  const results = getFuse().search(q).map(r => r.item);
 
   const grouped: Partial<Record<EntityKind, SearchDocument[]>> = {};
   for (const doc of results) {

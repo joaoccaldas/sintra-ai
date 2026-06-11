@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { BASE_PATH, USE_CASES, DISC_COUNTS, matchesUseCase, type UseCase } from "@/lib/data";
 import TodayInHistory from "./TodayInHistory";
-import { AI_NEWS } from "@/lib/newsData";
+import { AI_NEWS, getLatestNewsDate } from "@/lib/newsData";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { AI_MODELS } from "@/lib/modelsData";
 import { CONCEPTS } from "@/lib/concepts";
@@ -263,6 +263,9 @@ function ThisWeekHub() {
         <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
         <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">This Week</span>
         <span className="font-mono text-[10px] text-fg-4 opacity-40">· {THIS_WEEK.weekOf}</span>
+        <span className="font-mono text-[10px] text-emerald-400 opacity-80 hidden sm:inline">
+          · News updated {getLatestNewsDate()}
+        </span>
 
         {/* Tab strip */}
         <div className="flex gap-0.5 p-0.5 rounded-lg bg-white/[0.03] border border-hairline ml-1">

@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
-import { NEWS_ITEMS, NEWS_TAGS, type NewsItem } from "@/lib/newsData";
+import { NEWS_ITEMS, NEWS_TAGS, getLatestNewsDate, type NewsItem } from "@/lib/newsData";
 import { BASE_PATH } from "@/lib/data";
 import { tagToTopicSlug } from "@/lib/topicsData";
 
@@ -302,6 +302,11 @@ export default function AINewsPage() {
             </span>
             <span className="text-fg-4">·</span>
             <span>2023 – present</span>
+            <span className="text-fg-4">·</span>
+            <span className="inline-flex items-center gap-1.5 text-emerald-400">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              Updated {getLatestNewsDate()}
+            </span>
           </div>
         </motion.header>
 

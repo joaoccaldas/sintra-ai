@@ -6072,3 +6072,20 @@ export const NEWS_ITEMS = AI_NEWS;
 export const NEWS_TAGS: string[] = Array.from(
   new Set(AI_NEWS.flatMap((item) => item.tags))
 ).sort();
+
+const MONTH_NAMES = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+];
+
+/** Formatted date of the most recent item, e.g. "9 Jun 2026". Falls back to the item's `date` field if `dateDay` is missing. */
+export function getLatestNewsDate(): string {
+  const latest = [...AI_NEWS].sort(
+    (a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0)
+  )[0];
+  if (!latest) return "";
+  if (!latest.dateDay) return latest.date;
+  const month = MONTH_NAMES[(latest.dateNum % 100) - 1];
+  const year = Math.floor(latest.dateNum / 100);
+  return `${latest.dateDay} ${month} ${year}`;
+}
