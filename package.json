@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npx tsx scripts/generate-rss.ts",
+    "prebuild": "npx tsx scripts/generate-rss.ts && npx tsx scripts/generate-use-cases-count.ts",
     "build": "next build",
     "start": "next start",
     "update-news": "node scripts/update-news.mjs",

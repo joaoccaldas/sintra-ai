@@ -9,7 +9,7 @@ import { type UseCase, BASE_PATH } from "@/lib/data";
 import ExpandedCard from "@/components/ExpandedCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 function CollectionCard({ collection, isOpen, onToggle }: {
   collection: Collection;
@@ -119,7 +119,7 @@ export default function CollectionsClient() {
 
   return (
     <div className="min-h-screen bg-abyss text-fg-1">
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
 
       <main className="max-w-[1100px] mx-auto px-6 md:px-8 pt-28 pb-24">
         {/* Breadcrumb */}

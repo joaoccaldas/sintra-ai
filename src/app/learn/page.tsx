@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LearningPathsPage from "@/components/LearningPathsPage";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 export const metadata: Metadata = {
   title: "AI Learning Paths — Sintra Tesseract",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function LearnRoute() {
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <main className="pt-16">
         <LearningPathsPage />
       </main>

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AINewsPage from "@/components/AINewsPage";
-import { USE_CASES, BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import { AI_NEWS } from "@/lib/newsData";
 
 export const metadata: Metadata = {
@@ -58,7 +59,7 @@ export default function NewsRoute() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(newsJsonLd()) }}
       />
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <main className="pt-16">
         <AINewsPage />
       </main>

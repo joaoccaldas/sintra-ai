@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GuidesClient from "./GuidesClient";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 export const metadata: Metadata = {
   title: "AI Guides & Playbooks — Sintra Tesseract",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function GuidesRoute() {
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <main className="pt-16">
         <GuidesClient />
       </main>

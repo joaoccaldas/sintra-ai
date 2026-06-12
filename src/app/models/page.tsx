@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ModelsClient from "./ModelsClient";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import { AI_MODELS } from "@/lib/modelsData";
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function ModelsPage() {
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <main className="pt-16 min-h-screen bg-void">
         <ModelsClient />
       </main>

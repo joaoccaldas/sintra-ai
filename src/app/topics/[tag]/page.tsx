@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TopicHubClient from "./TopicHubClient";
 import { TOPIC_HUBS, getTopicContent } from "@/lib/topicsData";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 export function generateStaticParams() {
   return TOPIC_HUBS.map(t => ({ tag: t.slug }));
@@ -43,7 +43,7 @@ export default async function TopicPage({
 
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <main className="pt-16 min-h-screen bg-void">
         <TopicHubClient topic={topic} content={content} />
       </main>

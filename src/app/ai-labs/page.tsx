@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AILabsPage from "@/components/AILabsPage";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import { AI_LABS } from "@/lib/aiLabsData";
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function AILabsRoute() {
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <AILabsPage />
       <Footer />
     </>

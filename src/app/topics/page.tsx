@@ -3,7 +3,8 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { TOPIC_HUBS, getTopicContent } from "@/lib/topicsData";
-import { USE_CASES, BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 export const metadata: Metadata = {
   title: "AI Topic Hubs — Prompts, News & Tools by Theme | Sintra Tesseract",
@@ -24,7 +25,7 @@ export default function TopicsIndexPage() {
 
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <main className="pt-16 min-h-screen bg-void">
         <div className="max-w-4xl mx-auto px-4 py-12">
           <nav className="text-xs text-fg-4 mb-6 flex items-center gap-1.5">

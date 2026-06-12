@@ -17,7 +17,7 @@ import { usePageVisits } from "@/hooks/usePageVisits";
 import { BASE_PATH } from "@/lib/data";
 import { AI_NEWS } from "@/lib/newsData";
 import { AI_TOOLS } from "@/lib/toolsData";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 // ── Nav tree definition ────────────────────────────────────────────────────
 
@@ -168,7 +168,7 @@ function SidebarTree({
           >
             <Home size={15} className={!segment ? "text-violet-bright" : "text-fg-4"} />
             <span className="flex-1 truncate">Library</span>
-            <span className="font-mono text-[10px] text-fg-4">{USE_CASES.length}</span>
+            <span className="font-mono text-[10px] text-fg-4">{USE_CASES_COUNT}</span>
           </a>
         )}
 

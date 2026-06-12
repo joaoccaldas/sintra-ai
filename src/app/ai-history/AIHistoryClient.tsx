@@ -2,12 +2,12 @@
 
 import AIHistoryTimeline from "@/components/AIHistoryTimeline";
 import Header from "@/components/Header";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 export default function AIHistoryPage() {
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <main className="w-full overflow-hidden" style={{ height: "100dvh" }}>
         <AIHistoryTimeline />
       </main>

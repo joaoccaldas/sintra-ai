@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ResearchClient from "./ResearchClient";
-import { USE_CASES } from "@/lib/data";
+import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 export const metadata: Metadata = {
   title: "AI Research Digest — Key Papers Explained | Sintra Tesseract",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function ResearchPage() {
   return (
     <>
-      <Header total={USE_CASES.length} />
+      <Header total={USE_CASES_COUNT} />
       <ResearchClient />
       <Footer />
     </>
