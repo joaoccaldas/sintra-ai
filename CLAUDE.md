@@ -7,7 +7,7 @@ All content lives in TypeScript data files under `src/lib/` and `src/data/`.
 Build: `npm run build` → output in `dist/`.
 Check (validate + typecheck + build): `npm run check`.
 
-**Current counts (May 2026):** 149 use cases · 220 news items · 55 tools · 30 concepts · 4 learning paths · 43 resources · 70+ history milestones
+**Current counts (May 2026):** 197 use cases · 220 news items · 55 tools · 30 concepts · 4 learning paths · 43 resources · 70+ history milestones
 
 ---
 
@@ -105,14 +105,14 @@ Do **not** commit `dist/` — deployment is handled separately via git plumbing.
 | `src/lib/videoData.ts` | `AI_VIDEOS` | — | As notable videos appear |
 | `src/lib/collections.ts` | `COLLECTIONS` | — | When curating new kits |
 | `src/lib/aiLabsData.ts` | `AI_LABS` | — | On new lab launch or major change |
-| `src/data/useCases.json` | (via `src/lib/data.ts`) | 149 use cases | Ongoing |
+| `src/data/useCases.json` | (via `src/lib/data.ts`) | 197 use cases | Ongoing |
 
 ---
 
 ## Key constraints
 
 - **Static export** (`output: 'export'`). No server-side code, no API routes, no runtime fetch.
-- **`BASE_PATH = "/sintra-ai"`** — all internal links must use this prefix via `import { BASE_PATH } from "@/lib/data"`.
+- **`BASE_PATH = "/sintra-ai"`** — all internal links must use this prefix via `import { BASE_PATH } from "@/lib/constants"` (re-exported from `@/lib/data` too, but prefer `constants` directly — see below).
 - **Tailwind literal strings** — no dynamic class construction (`text-${color}-500` is invisible to the purger).
 - **`.btn` + `hidden` conflict** — `.btn` CSS has higher specificity than Tailwind `hidden`. Never combine them; use conditional rendering.
 - **`dist/` is never committed** — only deployed to `gh-pages` via git plumbing.
@@ -135,16 +135,37 @@ Do **not** commit `dist/` — deployment is handled separately via git plumbing.
   `ItemList`/`NewsArticle` block for the 20 most recent items via
   `newsJsonLd()`. Keep this in sync if `AI_NEWS`'s shape changes.
 
-### Known issue: `USE_CASES` imported just for `.length`
+- **`src/lib/useCasesCount.generated.ts`** — `USE_CASES_COUNT`, written by
+  `scripts/generate-use-cases-count.ts` on every `npm run prebuild`. Routes
+  that only need the prompt count for `Header total={...}` (e.g. `/news`,
+  `/topics`, `/claude`, `/models`) import this instead of `USE_CASES`, so they
+  don't pull `src/data/useCases.json` into their bundle just to read `.length`.
+- **`src/lib/constants.ts`** — side-effect-free types/helpers (`BASE_PATH`,
+  `UseCase`, `Category`, `Difficulty`, `DIFF_COLOR`, `CAT_ACCENT`,
+  `matchesUseCase`, `slugify`, …) split out of `src/lib/data.ts`. `data.ts`
+  re-exports everything from `constants.ts` via `export * from "./constants"`
+  for backward compatibility, but components that don't need `USE_CASES`
+  itself (e.g. `Header.tsx`, `Footer.tsx`, `NewsTicker.tsx`, `AINewsPage.tsx`)
+  should import from `@/lib/constants` directly.
+- **`src/lib/topicHubs.ts`** — same split applied to `src/lib/topicsData.ts`:
+  `TOPIC_HUBS`, `TopicDef`, and `tagToTopicSlug` (used by `AINewsPage.tsx`,
+  `ExpandedCard.tsx`, `app/sitemap.ts`) live here and don't need `USE_CASES`.
+  `topicsData.ts` re-exports them via `export * from "./topicHubs"` and keeps
+  only `getTopicContent` (which does filter `USE_CASES`).
 
-`/news` and `/topics/[tag]` (and a few other routes) import the full
-`USE_CASES` array (backed by the 8600+ line `src/data/useCases.json`) only to
-pass `Header total={USE_CASES.length}` — this drags the entire prompt dataset
-into routes that don't otherwise need it, inflating their First Load JS.
-A future fix should hoist the count into a small generated constant (e.g. a
-`USE_CASES_COUNT` export computed at build time) so these routes don't need
-the full JSON. Not yet fixed — flagged here so the count doesn't silently
-drift if someone "fixes" it by hardcoding a number.
+### Fixed: `USE_CASES`/`useCases.json` leaking into unrelated bundles
+
+Both splits above existed because TS/webpack treats a module with top-level
+side-effect computation (`USE_CASES = rawData.map(...)`) as monolithic —
+importing *any* export from `data.ts` (even just `BASE_PATH`) pulled the
+whole 8600-line `useCases.json` into the bundle. Since `Header.tsx` and
+`AINewsPage.tsx` are used on nearly every page, this inflated First Load JS
+across the board. After the `constants.ts`/`topicHubs.ts` extraction:
+`/news` dropped 488 kB → 304 kB, `/collections` and `/topics/[tag]` dropped
+541 kB → 337 kB. Pages that legitimately render prompt data (`/`, `/weekly`,
+`CategoryBrowser`-based routes) are unchanged. When adding new shared
+helpers, default to putting side-effect-free code in `constants.ts` /
+`topicHubs.ts` rather than back in `data.ts` / `topicsData.ts`.
 
 ---
 

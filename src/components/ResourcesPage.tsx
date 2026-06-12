@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search, Play } from "lucide-react";
 import { RESOURCES, RESOURCE_CATEGORIES, type ResourceLink, type ResourceCategory } from "@/lib/resourcesData";
 import { YOUTUBE_VIDEOS, type YouTubeVideo } from "@/lib/videoData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 function VideoCard({ video }: { video: YouTubeVideo }) {
   return (

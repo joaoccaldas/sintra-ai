@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { ArrowRight, RotateCcw } from "lucide-react";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 import { AI_MODELS, TIER_META, SPEED_META, type ModelEntry } from "@/lib/modelsData";
 
 // ── Question definitions ───────────────────────────────────────────────────

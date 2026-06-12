@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, X, ExternalLink, Search, Clock, ArrowLeft } from "lucide-react";
 import { YOUTUBE_VIDEOS, type YouTubeVideo } from "@/lib/videoData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 const ALL_TAGS = Array.from(new Set(YOUTUBE_VIDEOS.flatMap(v => v.tags))).sort();
 

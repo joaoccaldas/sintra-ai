@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Copy, Check, X, Clock } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { UseCase, DIFF_COLOR } from "@/lib/data";
+import { UseCase, DIFF_COLOR } from "@/lib/constants";
 import { useFocusTrap, useKeyShortcut } from "@/lib/hooks";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 

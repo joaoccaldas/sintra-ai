@@ -9,7 +9,7 @@ import Link from "next/link";
 import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH, USE_CASES } from "@/lib/data";
 import { formatDate, isNew } from "@/lib/dateUtils";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
-import { tagToTopicSlug } from "@/lib/topicsData";
+import { tagToTopicSlug } from "@/lib/topicHubs";
 import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import { useLanguage } from "@/context/LanguageContext";

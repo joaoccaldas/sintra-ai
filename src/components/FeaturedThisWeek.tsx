@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Newspaper, Lightbulb, BookOpen, FlaskConical, type LucideProps } from "lucide-react";
 import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featuredData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 
 type LucideIcon = ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;

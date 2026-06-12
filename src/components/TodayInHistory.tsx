@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Clock, ArrowRight } from "lucide-react";
 import { MILESTONES } from "@/lib/timelineData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 export default function TodayInHistory() {
   const milestone = useMemo(() => {

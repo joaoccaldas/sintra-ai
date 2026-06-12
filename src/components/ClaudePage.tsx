@@ -10,7 +10,7 @@ import {
   type ClaudeModel,
   type ClaudeCapability,
 } from "@/lib/claudeData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 

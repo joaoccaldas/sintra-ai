@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { COLLECTIONS, getCollectionItems, type Collection } from "@/lib/collections";
-import { type UseCase, BASE_PATH } from "@/lib/data";
+import { type UseCase, BASE_PATH } from "@/lib/constants";
 import ExpandedCard from "@/components/ExpandedCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

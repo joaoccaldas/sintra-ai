@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search } from "lucide-react";
 import { AI_TOOLS, TOOL_CATEGORIES, type AITool, type ToolCategory } from "@/lib/toolsData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 import ToolModal from "./ToolModal";
 
 const PRICING_COLOR: Record<string, string> = {

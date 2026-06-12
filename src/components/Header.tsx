@@ -8,7 +8,7 @@ import TesseractMark from "./TesseractMark";
 import { useLanguage } from "@/context/LanguageContext";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 import { useSidebar } from "@/context/SidebarContext";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 const CommandPalette = dynamic(() => import("./CommandPalette"), { ssr: false });
 const SavedPanel     = dynamic(() => import("./SavedPanel"),     { ssr: false });

@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import { AI_NEWS } from "@/lib/newsData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 export default function NewsTicker() {
   const items = useMemo(() =>

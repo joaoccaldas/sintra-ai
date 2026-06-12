@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 import { AI_NEWS } from "@/lib/newsData";
 
 const SITE = BASE_PATH;

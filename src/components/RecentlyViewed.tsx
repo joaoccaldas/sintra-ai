@@ -1,6 +1,6 @@
 "use client";
 
-import { UseCase, BASE_PATH, CAT_ACCENT } from "@/lib/data";
+import { UseCase, BASE_PATH, CAT_ACCENT } from "@/lib/constants";
 import { useRecentlyViewed } from "@/lib/hooks";
 
 interface Props {

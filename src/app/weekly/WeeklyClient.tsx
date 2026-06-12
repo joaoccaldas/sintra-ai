@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ExternalLink, Newspaper, Lightbulb, BookOpen, FlaskConical } from "lucide-react";
 import { AI_NEWS, type NewsItem } from "@/lib/newsData";
 import { THIS_WEEK, type FeaturedItem } from "@/lib/featuredData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 

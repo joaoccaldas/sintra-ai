@@ -2,7 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import { Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
-import { UseCase, CAT_ACCENT, BASE_PATH } from "@/lib/data";
+import { UseCase, CAT_ACCENT, BASE_PATH } from "@/lib/constants";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 
 interface Props {

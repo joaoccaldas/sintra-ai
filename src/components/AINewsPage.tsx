@@ -4,8 +4,8 @@ import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
 import { NEWS_ITEMS, NEWS_TAGS, getLatestNewsDate, type NewsItem } from "@/lib/newsData";
-import { BASE_PATH } from "@/lib/data";
-import { tagToTopicSlug } from "@/lib/topicsData";
+import { BASE_PATH } from "@/lib/constants";
+import { tagToTopicSlug } from "@/lib/topicHubs";
 
 const SIG_STYLE = {
   landmark: { label: "Landmark",  bg: "#9F8CFF22", border: "#9F8CFF66", text: "#B6A6FF" },

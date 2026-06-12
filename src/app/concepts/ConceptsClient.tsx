@@ -9,7 +9,7 @@ import {
   CONCEPTS, CAT_META, DIFF_HEX, DIFF_LABEL,
   ConceptCategory, Concept,
 } from "@/lib/concepts";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 const ALL_CATS = ["all", "fundamentals", "models", "tools", "protocols"] as const;
 type Filter = (typeof ALL_CATS)[number];

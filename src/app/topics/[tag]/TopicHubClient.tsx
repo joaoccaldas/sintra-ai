@@ -3,14 +3,14 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ExternalLink, ArrowLeft } from "lucide-react";
-import type { TopicDef } from "@/lib/topicsData";
+import type { TopicDef } from "@/lib/topicHubs";
 import type { UseCase } from "@/lib/data";
 import type { NewsItem } from "@/lib/newsData";
 import type { AITool } from "@/lib/toolsData";
 import type { Concept } from "@/lib/concepts";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 import ExpandedCard from "@/components/ExpandedCard";
-import { TOPIC_HUBS } from "@/lib/topicsData";
+import { TOPIC_HUBS } from "@/lib/topicHubs";
 
 interface TopicContent {
   prompts: UseCase[];

@@ -14,7 +14,7 @@ import TesseractMark from "./TesseractMark";
 import { useSidebar } from "@/context/SidebarContext";
 import { useTheme, type Theme } from "@/context/ThemeContext";
 import { usePageVisits } from "@/hooks/usePageVisits";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 import { AI_NEWS } from "@/lib/newsData";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import TesseractMark from "./TesseractMark";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 const NAV_COLS = [
   {

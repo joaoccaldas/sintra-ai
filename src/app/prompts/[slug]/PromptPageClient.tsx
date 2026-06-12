@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Copy, Check, Share2, ExternalLink } from "lucide-react";
-import { UseCase } from "@/lib/data";
+import { UseCase } from "@/lib/constants";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import { recordCopy } from "@/lib/copyCountStore";
 

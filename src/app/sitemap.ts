@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { USE_CASES } from "@/lib/data";
 import { AI_TOOLS } from "@/lib/toolsData";
-import { TOPIC_HUBS } from "@/lib/topicsData";
+import { TOPIC_HUBS } from "@/lib/topicHubs";
 
 export const dynamic = "force-static";
 

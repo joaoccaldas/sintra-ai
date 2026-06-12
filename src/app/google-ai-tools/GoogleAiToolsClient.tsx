@@ -6,7 +6,7 @@ import {
   ArrowLeft, ChevronDown, ExternalLink, Zap, Video, Code, Globe, Bot,
   Sparkles, Glasses, Cpu, Search, Sunrise, Clock,
 } from "lucide-react";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 // ── Types ──────────────────────────────────────────────────────────────────
 

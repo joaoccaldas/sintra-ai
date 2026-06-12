@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import { ExternalLink, ChevronUp, ChevronDown, Info, Calculator } from "lucide-react";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 import ModelWizard from "@/components/ModelWizard";
 import ModelCompare from "@/components/ModelCompare";
 import {

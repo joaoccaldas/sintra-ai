@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, Clock, ExternalLink, X } from "lucide-react";
 import { GUIDES, type Guide } from "@/lib/guidesData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 const LEVEL_STYLE = {
   beginner:     { label: "Beginner",     color: "#10b981" },

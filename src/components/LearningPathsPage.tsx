@@ -4,7 +4,7 @@ import { useState, useCallback, useSyncExternalStore } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ChevronRight, Clock, ArrowRight, X, CheckCircle2 } from "lucide-react";
 import { LEARNING_PATHS, type LearningPath, type PathStep } from "@/lib/learningPathsData";
-import { BASE_PATH } from "@/lib/data";
+import { BASE_PATH } from "@/lib/constants";
 
 // ── Progress tracking (localStorage) ────────────────────────────────────────
 const STORE_KEY = "sintra-path-progress";
