@@ -199,7 +199,7 @@ git reset HEAD   # clean up the index
 | Component | Purpose |
 |-----------|---------|
 | `Header.tsx` | Nav with 3 dropdown groups (Discover / Learn / Reference) + ⌘K |
-| `HeroMinimal.tsx` | Full-screen hero, particle vortex, search bar, news ticker |
+| `HeroMinimal.tsx` | Full-screen hero — parallax violet bloom (CSS gradient), search bar, news ticker |
 | `SiteHub.tsx` | 7 destination cards with live counts — orients new visitors |
 | `CategoryBrowser.tsx` | Main prompt library — flat responsive grid (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`), reads category data from `src/lib/carouselData.ts` |
 | `ExpandedCard.tsx` | Prompt detail slide-up panel with related-prompts rail |
@@ -220,11 +220,9 @@ spend time polishing them, and don't assume CLAUDE.md history that calls
 them "active" is current:
 
 - `ThePulse.tsx` — tabbed "AI Signals · New Prompts · Learn" module, never mounted
-- `CategoryCarousel3D.tsx` — old Three.js carousel; `CategoryBrowser.tsx` now
-  uses the flat grid instead. Only its data (`CAROUSEL_ITEMS`) is reused, via
-  `src/lib/carouselData.ts`
-- `Tesseract3D.tsx`, `ParticleVortex.tsx` — Three.js helpers used only by the
-  orphaned carousel above
 
-If reviving any of these, re-check bundle size impact (`npm run build`) —
-THREE.js pulls in a large chunk.
+`CategoryCarousel3D.tsx`, `Tesseract3D.tsx`, and `ParticleVortex.tsx` (the old
+Three.js category carousel, ~480kB) were removed entirely — `CategoryBrowser.tsx`
+uses a flat grid instead, and the only thing worth keeping (`CAROUSEL_ITEMS`)
+already lives in `src/lib/carouselData.ts`. If a 3D carousel is wanted again,
+write it fresh against `carouselData.ts` rather than restoring these files.
