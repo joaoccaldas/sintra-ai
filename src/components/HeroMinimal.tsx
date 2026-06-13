@@ -98,16 +98,29 @@ export default function HeroMinimal({ total }: Props) {
           ry
         </motion.h1>
 
-        {/* Subtitle */}
+        {/* Tagline — value proposition */}
         <motion.p
           custom={2} variants={variants} initial="hidden" animate="show"
+          className="text-[15px] md:text-[17px] leading-relaxed text-fg-3 mb-6"
+        >
+          {t.hero_tagline.split("\n").map((line, i) => (
+            <span key={i}>
+              {line}
+              {i < t.hero_tagline.split("\n").length - 1 && <br />}
+            </span>
+          ))}
+        </motion.p>
+
+        {/* Subtitle */}
+        <motion.p
+          custom={3} variants={variants} initial="hidden" animate="show"
           className="font-mono text-[10px] tracking-[0.16em] uppercase text-fg-4 mb-8"
         >
           {total.toLocaleString()} prompts · news · tools · models · research
         </motion.p>
 
         {/* CTA */}
-        <motion.div custom={3} variants={variants} initial="hidden" animate="show">
+        <motion.div custom={4} variants={variants} initial="hidden" animate="show">
           <a
             href="#library"
             onClick={(e) => {
