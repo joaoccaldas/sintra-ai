@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 13 Jun 2026 07:18:23 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 08:16:11 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -53,6 +53,15 @@
     <guid isPermaLink="true">https://www.anthropic.com/news/claude-fable-5-mythos-5</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OWASP and Cisco 2026 Reports: Prompt Injection Remains the Top Agentic AI Security Risk]]></title>
+    <description><![CDATA[OWASP's 2026 guidance for agentic AI applications places prompt injection at the center of agent risk, cataloguing CVEs, supply-chain compromises, and enterprise data-leakage incidents where agents acted on untrusted content from emails, documents, and tool outputs. Cisco's State of AI Security 2026 report found that 83% of organizations plan to deploy agentic AI, but only 29% feel ready to do so securely.]]></description>
+    <link>https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/</link>
+    <guid isPermaLink="true">https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Cisco</category>
   </item>
 
   <item>
@@ -449,15 +458,6 @@
     <guid isPermaLink="true">https://status.cloud.google.com</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Perplexity Unveils Hybrid Inference Orchestrator at Computex]]></title>
-    <description><![CDATA[Perplexity demonstrated a hybrid inference orchestrator at Computex 2026 that dynamically routes queries across multiple model providers and on-device models based on cost, latency, and complexity. The company said the system reduces average query cost while maintaining answer quality for its consumer search product.]]></description>
-    <link>https://www.perplexity.ai</link>
-    <guid isPermaLink="true">https://www.perplexity.ai</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Perplexity</category>
   </item>
   </channel>
 </rss>

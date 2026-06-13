@@ -6274,6 +6274,38 @@ export const AI_NEWS: NewsItem[] = [
     why_it_matters: "This is the first time a US export-control directive has forced a frontier AI lab to cut off global access to a model over jailbreak concerns — just three days after launch — raising major questions about how national-security policy will govern access to future frontier models.",
     what_to_try: "Teams with international staff or infrastructure using Fable 5 or Mythos 5 (via the API, AWS Bedrock, Vertex AI, or Microsoft Foundry) should check Anthropic's and their cloud provider's status pages for current access restrictions before depending on these models in production workflows.",
   },
+  {
+    id: "anthropic-claude-cowork-usage-limits-doubled-june2026",
+    date: "Jun 2026",
+    dateNum: 202606,
+    dateDay: 5,
+    title: "Anthropic Doubles Claude Cowork Usage Limits Through July 2026 as Desktop Agent Use Surges",
+    summary:
+      "Anthropic temporarily doubled the 5-hour usage limit for Claude Cowork — its macOS desktop agent that reads local files and operates apps like Word, Excel, and Chrome — for Pro, Max, Team, and legacy seat-based Enterprise users from June 5 through July 5, 2026. The increase follows Cowork's exit from research preview and reflects rapidly growing demand for desktop automation agents as one of June's most-used 'real world' AI workflows.",
+    tags: ["Anthropic", "Claude Cowork", "Agents", "Desktop Agent", "Automation"],
+    significance: "notable",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://mer.vin/2026/06/anthropic-doubles-claude-cowork-5-hour-limits-through-july-2026/",
+    why_it_matters: "Desktop agents like Cowork are becoming one of the most popular agentic AI use cases this month — automating spreadsheet, document, and browser tasks directly on a user's machine — which also widens the attack surface for prompt injection from untrusted local files and web pages.",
+    what_to_try: "If you use Cowork or a similar desktop agent, avoid opening untrusted downloaded documents or web pages in the same session you grant it file or browser access — a hidden instruction inside a file can be read by the agent as a command. See the 'Prompt Injection' concept on this site for mitigation patterns.",
+  },
+  {
+    id: "owasp-cisco-agentic-ai-prompt-injection-report-june2026",
+    date: "Jun 2026",
+    dateNum: 202606,
+    dateDay: 11,
+    title: "OWASP and Cisco 2026 Reports: Prompt Injection Remains the Top Agentic AI Security Risk",
+    summary:
+      "OWASP's 2026 guidance for agentic AI applications places prompt injection at the center of agent risk, cataloguing CVEs, supply-chain compromises, and enterprise data-leakage incidents where agents acted on untrusted content from emails, documents, and tool outputs. Cisco's State of AI Security 2026 report found that 83% of organizations plan to deploy agentic AI, but only 29% feel ready to do so securely.",
+    tags: ["Security", "Prompt Injection", "OWASP", "Cisco", "Agentic AI"],
+    significance: "major",
+    provider: "Cisco",
+    providerColor: "#049fd4",
+    url: "https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/",
+    why_it_matters: "Prompt injection — malicious instructions hidden in emails, documents, or web pages that hijack an agent's behavior — is now the leading real-world cause of agentic AI security failures, and most organizations rushing to deploy agents this year haven't closed the readiness gap.",
+    what_to_try: "Before connecting any agent (Claude Cowork, ChatGPT agents, Copilot, etc.) to your inbox, files, or browser, apply least-privilege scoping — limit what it can read and require confirmation for sensitive actions — and review the 'Prompt Injection' concept on this site for a fuller defense checklist.",
+  },
 ];
 
 // ── Derived exports ────────────────────────────────────────────────────────
@@ -6285,7 +6317,7 @@ export const NEWS_TAGS: string[] = Array.from(
   new Set(AI_NEWS.flatMap((item) => item.tags))
 ).sort();
 
-const MONTH_NAMES = [
+export const MONTH_NAMES = [
   "Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
 ];
@@ -6300,4 +6332,62 @@ export function getLatestNewsDate(): string {
   const month = MONTH_NAMES[(latest.dateNum % 100) - 1];
   const year = Math.floor(latest.dateNum / 100);
   return `${latest.dateDay} ${month} ${year}`;
+}
+
+/** "May 2026" from a YYYYMM dateNum. */
+export function monthLabel(dateNum: number): string {
+  const month = MONTH_NAMES[(dateNum % 100) - 1];
+  const year = Math.floor(dateNum / 100);
+  return `${month} ${year}`;
+}
+
+/** "2026-05" from a YYYYMM dateNum, for archive URLs. */
+export function monthSlug(dateNum: number): string {
+  const year = Math.floor(dateNum / 100);
+  const month = String(dateNum % 100).padStart(2, "0");
+  return `${year}-${month}`;
+}
+
+/** YYYYMM from a "2026-05" archive URL slug. */
+export function monthFromSlug(slug: string): number {
+  const [year, month] = slug.split("-").map(Number);
+  return year * 100 + month;
+}
+
+/** The most recent month present in AI_NEWS (YYYYMM) — shown on the main /news page. */
+export const CURRENT_MONTH_NUM = Math.max(...AI_NEWS.map((n) => n.dateNum));
+
+/** "June 2026" — the label for the current month shown on /news. */
+export const CURRENT_MONTH_LABEL = monthLabel(CURRENT_MONTH_NUM);
+
+/** News items for the current month, sorted newest first. */
+export const CURRENT_MONTH_NEWS: NewsItem[] = AI_NEWS
+  .filter((n) => n.dateNum === CURRENT_MONTH_NUM)
+  .sort((a, b) => (b.dateDay ?? 1) - (a.dateDay ?? 1));
+
+export interface ArchiveMonth {
+  dateNum: number;
+  slug: string;
+  label: string;
+  count: number;
+}
+
+/** Older months (excluding the current one), newest first — for /news/archive. */
+export const ARCHIVE_MONTHS: ArchiveMonth[] = (() => {
+  const counts = new Map<number, number>();
+  AI_NEWS.forEach((n) => {
+    if (n.dateNum !== CURRENT_MONTH_NUM) {
+      counts.set(n.dateNum, (counts.get(n.dateNum) ?? 0) + 1);
+    }
+  });
+  return [...counts.entries()]
+    .sort((a, b) => b[0] - a[0])
+    .map(([dateNum, count]) => ({ dateNum, slug: monthSlug(dateNum), label: monthLabel(dateNum), count }));
+})();
+
+/** News items for a given month (YYYYMM), sorted newest first. */
+export function getNewsForMonth(dateNum: number): NewsItem[] {
+  return AI_NEWS
+    .filter((n) => n.dateNum === dateNum)
+    .sort((a, b) => (b.dateDay ?? 1) - (a.dateDay ?? 1));
 }

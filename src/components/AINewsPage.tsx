@@ -2,16 +2,10 @@
 
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink, Search, X } from "lucide-react";
-import { NEWS_ITEMS, NEWS_TAGS, getLatestNewsDate, type NewsItem } from "@/lib/newsData";
+import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
+import { CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL, ARCHIVE_MONTHS, getLatestNewsDate, type NewsItem } from "@/lib/newsData";
 import { BASE_PATH } from "@/lib/constants";
-import { tagToTopicSlug } from "@/lib/topicHubs";
-
-const SIG_STYLE = {
-  landmark: { label: "Landmark",  bg: "#9F8CFF22", border: "#9F8CFF66", text: "#B6A6FF" },
-  major:    { label: "Major",     bg: "#5EEAD422", border: "#5EEAD466", text: "#5EEAD4" },
-  notable:  { label: "Notable",   bg: "#ffffff0a", border: "#ffffff22", text: "#8b8aad"  },
-};
+import { NewsCard, SIG_STYLE } from "@/components/NewsCard";
 
 type PresetId = "all" | "landmark" | "deals" | "policy" | "models" | "brazil" | "sweden";
 
@@ -24,116 +18,6 @@ const PRESETS: { id: PresetId; emoji: string; label: string; filter?: (n: NewsIt
   { id: "brazil",   emoji: "🇧🇷", label: "Brazil",  filter: n => n.country === "BR" },
   { id: "sweden",   emoji: "🇸🇪", label: "Sweden",  filter: n => n.country === "SE" },
 ];
-
-function NewsCard({ item, onTagFilter, isNew }: { item: NewsItem; onTagFilter: (tag: string) => void; isNew?: boolean }) {
-  const sig = SIG_STYLE[item.significance];
-  return (
-    <motion.article
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-30px" }}
-      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="flex gap-5 py-7 border-b border-hairline/60 last:border-0"
-    >
-      {/* Left: date + significance */}
-      <div className="w-[96px] shrink-0 pt-0.5">
-        <p className="font-mono text-[11px] text-fg-4 mb-2">
-          {item.dateDay ? `${item.dateDay} ${item.date}` : item.date}
-        </p>
-        <div className="flex flex-col items-start gap-1.5">
-          {isNew && (
-            <span className="inline-flex font-mono text-[9px] tracking-[0.10em] uppercase px-2 py-0.5 rounded-full border border-amber-400/50 bg-amber-400/10 text-amber-300">
-              New
-            </span>
-          )}
-          <span className="inline-flex font-mono text-[9px] tracking-[0.10em] uppercase px-2 py-0.5 rounded-full border"
-            style={{ background: sig.bg, borderColor: sig.border, color: sig.text }}>
-            {sig.label}
-          </span>
-        </div>
-      </div>
-
-      {/* Right: content */}
-      <div className="flex-1 min-w-0">
-        {/* Provider tag + country flag */}
-        <div className="flex items-center gap-2 mb-2">
-          <span className="w-2 h-2 rounded-full shrink-0" style={{ background: item.providerColor }} />
-          <span className="font-mono text-[10px] tracking-[0.12em] uppercase" style={{ color: item.providerColor }}>
-            {item.provider}
-          </span>
-          {item.country === "BR" && (
-            <span title="Brazil" className="text-[13px] leading-none" aria-label="Brazil">🇧🇷</span>
-          )}
-          {item.country === "SE" && (
-            <span title="Sweden" className="text-[13px] leading-none" aria-label="Sweden">🇸🇪</span>
-          )}
-        </div>
-
-        {/* Title */}
-        <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3">
-          {item.title}
-        </h3>
-
-        {/* Summary */}
-        <p className="font-sans text-[14px] leading-[1.65] text-fg-2 mb-4">{item.summary}</p>
-
-        {/* Why it matters + What to try */}
-        {(item.why_it_matters || item.what_to_try) && (
-          <div className="flex flex-col gap-2 mb-4 rounded-lg border border-violet/[0.14] bg-violet/[0.04] px-4 py-3">
-            {item.why_it_matters && (
-              <p className="font-sans text-[13px] leading-[1.55] text-fg-2">
-                <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-violet-bright mr-2">Why it matters</span>
-                {item.why_it_matters}
-              </p>
-            )}
-            {item.what_to_try && (
-              <p className="font-sans text-[13px] leading-[1.55] text-fg-2">
-                <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-cyan-ice mr-2">Try it</span>
-                {item.what_to_try}
-              </p>
-            )}
-          </div>
-        )}
-
-        {/* Footer: tags + source link */}
-        <div className="flex flex-wrap items-center gap-2">
-          <div className="flex flex-wrap gap-1.5 flex-1">
-            {item.tags.map(tag => {
-              const topicSlug = tagToTopicSlug(tag);
-              return topicSlug ? (
-                <a
-                  key={tag}
-                  href={`${BASE_PATH}/topics/${topicSlug}/`}
-                  className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12] hover:text-violet-bright hover:border-violet/40 transition-colors"
-                >
-                  {tag}
-                </a>
-              ) : (
-                <button
-                  key={tag}
-                  onClick={() => onTagFilter(tag)}
-                  className="font-mono text-[10px] px-2 py-0.5 rounded-sm bg-violet/[0.08] text-fg-3 border border-violet/[0.12] hover:text-fg-1 hover:border-white/25 transition-colors"
-                >
-                  {tag}
-                </button>
-              );
-            })}
-          </div>
-          {item.url && (
-            <a
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-flex items-center gap-1.5 font-mono text-[11px] font-medium px-3 py-1.5 rounded-md bg-violet/10 border border-violet/30 text-violet-bright hover:bg-violet/20 hover:border-violet/60 transition-all duration-150"
-            >
-              Read source <ExternalLink size={11} />
-            </a>
-          )}
-        </div>
-      </div>
-    </motion.article>
-  );
-}
 
 export default function AINewsPage() {
   const [activeSig, setActiveSig] = useState<string>(() => {
@@ -173,7 +57,7 @@ export default function AINewsPage() {
     const STORAGE_KEY = "sintra:news-last-visit";
     const stored = window.localStorage.getItem(STORAGE_KEY);
     setLastVisitKey(stored ? Number(stored) : null);
-    const latestKey = Math.max(...NEWS_ITEMS.map(n => n.dateNum * 100 + (n.dateDay ?? 1)));
+    const latestKey = Math.max(...CURRENT_MONTH_NEWS.map(n => n.dateNum * 100 + (n.dateDay ?? 1)));
     window.localStorage.setItem(STORAGE_KEY, String(latestKey));
   }, []);
 
@@ -191,14 +75,14 @@ export default function AINewsPage() {
   }, [activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
   const providers = useMemo(() => {
-    const ps = [...new Set(NEWS_ITEMS.map((n: NewsItem) => n.provider))].sort();
+    const ps = [...new Set(CURRENT_MONTH_NEWS.map((n: NewsItem) => n.provider))].sort();
     return ps;
   }, []);
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
     const preset = PRESETS.find(p => p.id === activePreset);
-    return [...NEWS_ITEMS]
+    return [...CURRENT_MONTH_NEWS]
       .filter((n: NewsItem) => !preset?.filter || preset.filter(n))
       .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
@@ -218,17 +102,6 @@ export default function AINewsPage() {
       });
   }, [activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
-  // Group by year for visual breaks (full dataset — kept as-is per requirements)
-  const grouped = useMemo(() => {
-    const groups: Record<string, NewsItem[]> = {};
-    filtered.forEach((item: NewsItem) => {
-      const year = String(item.dateNum).slice(0, 4);
-      if (!groups[year]) groups[year] = [];
-      groups[year].push(item);
-    });
-    return Object.entries(groups).sort(([a], [b]) => Number(b) - Number(a));
-  }, [filtered]);
-
   // ── Pagination ──────────────────────────────────────────────────────────────
   const BATCH = 30;
   const [visibleCount, setVisibleCount] = useState(BATCH);
@@ -240,18 +113,8 @@ export default function AINewsPage() {
     setVisibleCount(BATCH);
   }, [filtered.length, activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
 
-  // Slice the flat filtered array, then re-group for the visible feed
+  // Slice the flat filtered array for the visible feed
   const visibleItems = useMemo(() => filtered.slice(0, visibleCount), [filtered, visibleCount]);
-
-  const visibleGrouped = useMemo(() => {
-    const groups: Record<string, NewsItem[]> = {};
-    visibleItems.forEach((item: NewsItem) => {
-      const year = String(item.dateNum).slice(0, 4);
-      if (!groups[year]) groups[year] = [];
-      groups[year].push(item);
-    });
-    return Object.entries(groups).sort(([a], [b]) => Number(b) - Number(a));
-  }, [visibleItems]);
 
   const allLoaded = visibleCount >= filtered.length;
 
@@ -314,18 +177,24 @@ export default function AINewsPage() {
           <p className="font-sans text-[17px] text-fg-2 max-w-xl leading-[1.55]">
             Landmark releases, model launches, and paradigm shifts — curated for signal, not noise.
           </p>
-          <div className="flex items-center gap-4 mt-6 font-mono text-[11px] text-fg-3 tracking-[0.06em]">
+          <div className="flex items-center gap-4 mt-6 font-mono text-[11px] text-fg-3 tracking-[0.06em] flex-wrap">
             <span className="inline-flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-violet-bright" />
-              {NEWS_ITEMS.length} events documented
+              {CURRENT_MONTH_NEWS.length} events this month
             </span>
             <span className="text-fg-4">·</span>
-            <span>2023 – present</span>
+            <span>{CURRENT_MONTH_LABEL}</span>
             <span className="text-fg-4">·</span>
             <span className="inline-flex items-center gap-1.5 text-emerald-400">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Updated {getLatestNewsDate()}
             </span>
+            <span className="text-fg-4">·</span>
+            <a href={`${BASE_PATH}/news/archive/`}
+              className="inline-flex items-center gap-1 text-fg-3 hover:text-violet-bright transition-colors">
+              Browse archive ({ARCHIVE_MONTHS.reduce((sum, m) => sum + m.count, 0)} earlier events)
+              <ArrowRight size={11} />
+            </a>
           </div>
         </motion.header>
 
@@ -426,28 +295,19 @@ export default function AINewsPage() {
 
         {/* News feed */}
         <div className="pt-6 pb-24">
-          {visibleGrouped.length === 0 ? (
+          {visibleItems.length === 0 ? (
             <div className="text-center py-24">
               <p className="font-serif text-[22px] text-fg-3">No events match this filter.</p>
             </div>
           ) : (
             <>
-              {visibleGrouped.map(([year, items]) => (
-                <div key={year}>
-                  <div className="flex items-center gap-4 py-5">
-                    <span className="font-mono text-[13px] font-medium text-fg-3 tracking-[0.08em]">{year}</span>
-                    <div className="flex-1 h-px bg-violet/[0.12]" />
-                    <span className="font-mono text-[11px] text-fg-4">{items.length} events</span>
-                  </div>
-                  {items.map(item => (
-                    <NewsCard
-                      key={item.id}
-                      item={item}
-                      onTagFilter={tag => setActiveTag(tag)}
-                      isNew={lastVisitKey !== null && (item.dateNum * 100 + (item.dateDay ?? 1)) > lastVisitKey}
-                    />
-                  ))}
-                </div>
+              {visibleItems.map(item => (
+                <NewsCard
+                  key={item.id}
+                  item={item}
+                  onTagFilter={tag => setActiveTag(tag)}
+                  isNew={lastVisitKey !== null && (item.dateNum * 100 + (item.dateDay ?? 1)) > lastVisitKey}
+                />
               ))}
 
               {/* Sentinel for IntersectionObserver */}
@@ -466,6 +326,14 @@ export default function AINewsPage() {
               </div>
             </>
           )}
+
+          {/* Archive link */}
+          <div className="pt-10 flex justify-center">
+            <a href={`${BASE_PATH}/news/archive/`}
+              className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.10em] uppercase px-4 py-2 rounded-full border border-violet/[0.18] text-fg-3 hover:text-violet-bright hover:border-violet/40 transition-colors">
+              Browse older months <ArrowRight size={12} />
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { USE_CASES } from "@/lib/data";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { TOPIC_HUBS } from "@/lib/topicHubs";
+import { ARCHIVE_MONTHS } from "@/lib/newsData";
 
 export const dynamic = "force-static";
 
@@ -46,5 +47,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...topLevel, ...topicPages, ...promptPages, ...toolPages];
+  const newsArchivePages: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/news/archive/`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.5 },
+    ...ARCHIVE_MONTHS.map(m => ({
+      url: `${SITE_URL}/news/archive/${m.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: "yearly" as const,
+      priority: 0.4,
+    })),
+  ];
+
+  return [...topLevel, ...topicPages, ...promptPages, ...toolPages, ...newsArchivePages];
 }
