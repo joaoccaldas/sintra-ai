@@ -17,6 +17,7 @@ export interface Translations {
   hero_eyebrow:    (n: number) => string;
   hero_tagline:    string;
   hero_cta:        string;
+  hero_cta_news:   string;
   hero_scroll:     string;
 
   carousel_back:        string;
@@ -68,9 +69,10 @@ const translations: Record<Locale, Translations> = {
     nav_enter_library: "Enter library →",
     use_cases_count:   (n) => `${n} use cases`,
 
-    hero_eyebrow:    (n) => `${n} ready-to-use AI prompts`,
-    hero_tagline:    "Pick a discipline. Copy a prompt.\nCustomize and ship the work.",
+    hero_eyebrow:    (n) => `Daily AI intelligence · ${n} prompts`,
+    hero_tagline:    "Track AI as it moves — daily news, model updates, and ready-to-use prompts.\nStay current. Ship the work.",
     hero_cta:        "Browse the library →",
+    hero_cta_news:   "Today's AI news →",
     hero_scroll:     "Scroll",
 
     carousel_back:        "Universe",
@@ -120,9 +122,10 @@ const translations: Record<Locale, Translations> = {
     nav_enter_library: "Entrar na biblioteca →",
     use_cases_count:   (n) => `${n} casos de uso`,
 
-    hero_eyebrow:    (n) => `${n} prompts de IA prontos para uso`,
-    hero_tagline:    "Escolha uma disciplina. Copie um prompt.\nPersonalize e entregue o trabalho.",
+    hero_eyebrow:    (n) => `Inteligência de IA diária · ${n} prompts`,
+    hero_tagline:    "Acompanhe a IA em movimento — notícias diárias, atualizações de modelos e prompts prontos para uso.\nFique atualizado. Entregue o trabalho.",
     hero_cta:        "Ver a biblioteca →",
+    hero_cta_news:   "Notícias de IA de hoje →",
     hero_scroll:     "Rolar",
 
     carousel_back:        "Universo",

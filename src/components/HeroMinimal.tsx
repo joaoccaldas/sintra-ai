@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { BASE_PATH } from "@/lib/constants";
 import NewsTicker from "./NewsTicker";
 
 interface Props { total: number; }
@@ -119,15 +120,21 @@ export default function HeroMinimal({ total }: Props) {
           {total.toLocaleString()} prompts · news · tools · models · research
         </motion.p>
 
-        {/* CTA */}
-        <motion.div custom={4} variants={variants} initial="hidden" animate="show">
+        {/* CTAs */}
+        <motion.div
+          custom={4} variants={variants} initial="hidden" animate="show"
+          className="flex flex-wrap items-center justify-center gap-3"
+        >
+          <a href={`${BASE_PATH}/news/`} className="btn">
+            {t.hero_cta_news}
+          </a>
           <a
             href="#library"
             onClick={(e) => {
               e.preventDefault();
               document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="btn"
+            className="btn btn-ghost"
           >
             {t.hero_cta}
           </a>
