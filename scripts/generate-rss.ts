@@ -14,7 +14,7 @@ function dateNumToRFC822(dateNum: number): string {
 }
 
 const items = [...AI_NEWS]
-  .sort((a, b) => b.dateNum - a.dateNum)
+  .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
   .slice(0, 50)
   .map(n => `
   <item>
