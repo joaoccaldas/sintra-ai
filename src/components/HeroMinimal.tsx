@@ -101,10 +101,24 @@ export default function HeroMinimal({ total }: Props) {
         {/* Subtitle */}
         <motion.p
           custom={2} variants={variants} initial="hidden" animate="show"
-          className="font-mono text-[10px] tracking-[0.16em] uppercase text-fg-4"
+          className="font-mono text-[10px] tracking-[0.16em] uppercase text-fg-4 mb-8"
         >
           {total.toLocaleString()} prompts · news · tools · models · research
         </motion.p>
+
+        {/* CTA */}
+        <motion.div custom={3} variants={variants} initial="hidden" animate="show">
+          <a
+            href="#library"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="btn"
+          >
+            {t.hero_cta}
+          </a>
+        </motion.div>
 
       </div>
 
