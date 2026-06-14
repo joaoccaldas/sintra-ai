@@ -4,14 +4,14 @@ import Footer from "@/components/Footer";
 import AINewsPage from "@/components/AINewsPage";
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
-import { AI_NEWS } from "@/lib/newsData";
+import { AI_NEWS, CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL } from "@/lib/newsData";
 
 export const metadata: Metadata = {
-  title: "AI News Timeline — Sintra Tesseract",
-  description: `${AI_NEWS.length} curated AI milestones from GPT-3 to today. Track model releases, benchmark records, and landmark industry events on one timeline.`,
+  title: `${CURRENT_MONTH_LABEL} AI News — Daily Digest — Sintra Tesseract`,
+  description: `${CURRENT_MONTH_NEWS.length} AI news items for ${CURRENT_MONTH_LABEL}, updated daily — model releases, benchmark records, and industry events. Browse ${AI_NEWS.length - CURRENT_MONTH_NEWS.length} more in the archive.`,
   openGraph: {
-    title: "AI News Timeline — Sintra Tesseract",
-    description: `${AI_NEWS.length} AI milestones — model releases, benchmarks, and industry events.`,
+    title: `${CURRENT_MONTH_LABEL} AI News — Daily Digest — Sintra Tesseract`,
+    description: `${CURRENT_MONTH_NEWS.length} AI news items for ${CURRENT_MONTH_LABEL} — model releases, benchmarks, and industry events, updated daily.`,
   },
   alternates: {
     types: {
