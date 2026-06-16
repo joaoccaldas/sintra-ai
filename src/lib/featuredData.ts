@@ -18,49 +18,93 @@ export interface FeaturedItem {
 }
 
 export interface WeeklyFeature {
-  /** Display date shown to users, e.g. "2 Jun 2026" */
+  /** Display date shown to users, e.g. "15 Jun 2026" */
   weekOf: string;
   /** 1–2 sentence overall editorial framing for the week */
   editorial: string;
   items: [FeaturedItem, FeaturedItem, FeaturedItem, FeaturedItem];
 }
 
+// ── Archive of past weekly digests ────────────────────────────────────────
+
+export const WEEKLY_ARCHIVE: WeeklyFeature[] = [
+  {
+    weekOf: "2 Jun 2026",
+    editorial:
+      "Microsoft repositioned Windows as an agent OS at Build, OpenAI launched its enterprise deployment JV, and Brazil's AI law vote is now confirmed for late June. This week: the agentic era becomes infrastructure.",
+    items: [
+      {
+        type: "news",
+        title: "Microsoft Build 2026: Windows Is Now an Agent Execution Platform",
+        why: "Scout, Windows Agent Framework, and MCP-native execution containers arrived simultaneously — the enterprise agentic stack just became an OS feature.",
+        href: "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+        badge: "Microsoft",
+        badgeColor: "#0078d4",
+      },
+      {
+        type: "prompt",
+        title: "M&A Due Diligence Data Room Analyser",
+        why: "Deal teams can now compress a 500-page data room review from 3 days to half a day — the most time-intensive part of any deal.",
+        href: "#library",
+        badge: "Finance",
+        badgeColor: "#10b981",
+      },
+      {
+        type: "guide",
+        title: "AI Security: Prompt Injection & Hardening",
+        why: "Every agent that reads untrusted content is vulnerable — this guide covers the attacks and the defences before you shift.",
+        href: "/sintra-ai/guides/",
+        badge: "Guide",
+        badgeColor: "#ef4444",
+      },
+      {
+        type: "paper",
+        title: "ReAct: Synergizing Reasoning and Acting in Language Models",
+        why: "The Thought→Action→Observation loop that underpins every tool-using agent today — foundational reading before building anything agentic.",
+        href: "https://arxiv.org/abs/2210.03629",
+        badge: "Research",
+        badgeColor: "#9F8CFF",
+      },
+    ],
+  },
+];
+
 // ── Update every Monday ────────────────────────────────────────────────────
 
 export const THIS_WEEK: WeeklyFeature = {
-  weekOf: "2 Jun 2026",
+  weekOf: "15 Jun 2026",
   editorial:
-    "Microsoft repositioned Windows as an agent OS at Build, OpenAI launched its enterprise deployment JV, and Brazil's AI law vote is now confirmed for late June. This week: the agentic era becomes infrastructure.",
+    "Apple bet on Gemini to rebuild Siri for a billion devices, Anthropic locked in 220,000 GPUs at Colossus 1, Salesforce spent $3.6B on an AI support agent, and world leaders debated AI governance over the Alps. The agent economy is now a geopolitical priority.",
   items: [
     {
       type: "news",
-      title: "Microsoft Build 2026: Windows Is Now an Agent Execution Platform",
-      why: "Scout, Windows Agent Framework, and MCP-native execution containers arrived simultaneously — the enterprise agentic stack just became an OS feature.",
-      href: "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
-      badge: "Microsoft",
-      badgeColor: "#0078d4",
+      title: "Apple Unveils 'Siri AI' at WWDC 2026 — Rebuilt on Google Gemini",
+      why: "Apple distributing Gemini to 1B+ devices is the largest single AI rollout in consumer history — and it changes what users expect from every other AI assistant.",
+      href: "https://www.apple.com/newsroom/",
+      badge: "Apple",
+      badgeColor: "#555555",
     },
     {
       type: "prompt",
-      title: "M&A Due Diligence Data Room Analyser",
-      why: "Deal teams can now compress a 500-page data room review from 3 days to half a day — the most time-intensive part of any deal.",
+      title: "Board Presentation Builder",
+      why: "With enterprise AI partnerships closing at record speed this week, the real bottleneck is communicating AI strategy clearly to boards — this prompt structures it.",
       href: "#library",
-      badge: "Finance",
-      badgeColor: "#10b981",
+      badge: "Writing",
+      badgeColor: "#f59e0b",
     },
     {
-      type: "guide",
-      title: "AI Security: Prompt Injection & Hardening",
-      why: "Every agent that reads untrusted content is vulnerable — this guide covers the attacks and the defences before you ship.",
-      href: "/sintra-ai/guides/",
-      badge: "Guide",
-      badgeColor: "#ef4444",
+      type: "tool",
+      title: "Kimi K2.7-Code — Free 1T-Parameter Coding Model",
+      why: "A 1-trillion-parameter Apache 2.0 coding model that outperforms Claude on SWE-Bench is now free for commercial use — the cost floor for code generation just hit zero.",
+      href: "https://huggingface.co/moonshotai",
+      badge: "Open Source",
+      badgeColor: "#6B5CFF",
     },
     {
       type: "paper",
-      title: "ReAct: Synergizing Reasoning and Acting in Language Models",
-      why: "The Thought→Action→Observation loop that underpins every tool-using agent today — foundational reading before building anything agentic.",
-      href: "https://arxiv.org/abs/2210.03629",
+      title: "Scaling Laws for Neural Language Models (Kaplan et al., 2020)",
+      why: "With Anthropic securing 220,000 GPUs at Colossus 1, understanding what that compute actually buys in terms of capability is the most relevant background reading this week.",
+      href: "https://arxiv.org/abs/2001.08361",
       badge: "Research",
       badgeColor: "#9F8CFF",
     },

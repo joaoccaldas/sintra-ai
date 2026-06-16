@@ -4,7 +4,7 @@ import { useMemo, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ExternalLink, Newspaper, Lightbulb, BookOpen, FlaskConical } from "lucide-react";
 import { AI_NEWS, type NewsItem } from "@/lib/newsData";
-import { THIS_WEEK, type FeaturedItem } from "@/lib/featuredData";
+import { THIS_WEEK, WEEKLY_ARCHIVE, type FeaturedItem } from "@/lib/featuredData";
 import { BASE_PATH } from "@/lib/constants";
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -291,6 +291,10 @@ export default function WeeklyClient() {
               <a href={`${BASE_PATH}/news/`} className="hover:text-violet-bright transition-colors">
                 Full archive →
               </a>
+              <span className="text-fg-4">·</span>
+              <a href={`${BASE_PATH}/weekly/archive/`} className="hover:text-violet-bright transition-colors">
+                Past digests ({WEEKLY_ARCHIVE.length}) →
+              </a>
             </div>
           </motion.header>
 
@@ -367,13 +371,13 @@ export default function WeeklyClient() {
                 {AI_NEWS.length} events documented since 2023. Filter by significance, provider, region, or topic.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
-                <a href={`${BASE_PATH}/news/`}
+                <a href={`${BASE_PATH}/weekly/archive/`}
                   className="inline-flex items-center gap-2 font-mono text-[12px] tracking-[0.08em] uppercase px-5 py-2.5 rounded-lg bg-violet/20 border border-violet/40 text-violet-bright hover:bg-violet/30 transition-colors">
-                  AI News Archive <ArrowRight size={12} />
+                  Past Digests <ArrowRight size={12} />
                 </a>
-                <a href={`${BASE_PATH}/`}
+                <a href={`${BASE_PATH}/news/`}
                   className="inline-flex items-center gap-2 font-mono text-[12px] tracking-[0.08em] uppercase px-5 py-2.5 rounded-lg border border-white/[0.10] text-fg-3 hover:text-fg-1 hover:border-white/20 transition-colors">
-                  Back to Sintra
+                  Full News Archive <ArrowRight size={12} />
                 </a>
               </div>
             </div>

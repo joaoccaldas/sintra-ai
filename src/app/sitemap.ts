@@ -21,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/ai-labs/`,       lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/google-ai-tools/`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE_URL}/models/`,          lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/weekly/`,          lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
+    { url: `${SITE_URL}/weekly/archive/`,  lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
   ];
 
   const promptPages: MetadataRoute.Sitemap = USE_CASES.map(u => ({
