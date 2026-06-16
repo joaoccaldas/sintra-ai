@@ -74,15 +74,15 @@ export const WEEKLY_ARCHIVE: WeeklyFeature[] = [
 export const THIS_WEEK: WeeklyFeature = {
   weekOf: "15 Jun 2026",
   editorial:
-    "Apple bet on Gemini to rebuild Siri for a billion devices, Anthropic locked in 220,000 GPUs at Colossus 1, Salesforce spent $3.6B on an AI support agent, and world leaders debated AI governance over the Alps. The agent economy is now a geopolitical priority.",
+    "Claude Fable 5 landed at 95% on SWE-bench Verified and redrew the frontier — then a researcher cracked its system prompt within days. Meanwhile Apple handed Siri to Gemini, Anthropic locked in 220,000 GPUs at Colossus 1, Salesforce paid $3.6B for an AI agent, and world leaders met in Évian to debate who governs all of it.",
   items: [
     {
       type: "news",
-      title: "Apple Unveils 'Siri AI' at WWDC 2026 — Rebuilt on Google Gemini",
-      why: "Apple distributing Gemini to 1B+ devices is the largest single AI rollout in consumer history — and it changes what users expect from every other AI assistant.",
-      href: "https://www.apple.com/newsroom/",
-      badge: "Apple",
-      badgeColor: "#555555",
+      title: "Claude Fable 5 — 95% SWE-bench, 1M Context, Always-On Thinking",
+      why: "Anthropic's new flagship rewrites what 'capable' means for coding agents — 95% SWE-bench Verified and 128K output tokens means multi-file refactors finally work end-to-end.",
+      href: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      badge: "Anthropic",
+      badgeColor: "#d97706",
     },
     {
       type: "prompt",
