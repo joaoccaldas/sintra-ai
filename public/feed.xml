@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 17 Jun 2026 07:23:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 07:32:55 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -283,8 +283,8 @@
   <item>
     <title><![CDATA[Apple WWDC 2026: Gemini-Powered Siri Overhaul, iOS 27, and $1B/Year Google Deal Confirmed at Keynote]]></title>
     <description><![CDATA[At WWDC 2026, Apple unveiled a completely rebuilt Siri powered by a custom ~1.2-trillion-parameter Gemini model from Google at approximately $1 billion per year. The new Siri features a standalone app with personal-context access across emails, photos, and files, Dynamic Island integration, on-screen awareness, deep cross-app actions, and third-party extension support for Claude and ChatGPT. iOS 27, iPadOS 27, macOS 27, and visionOS 27 were also previewed in what is widely expected to be CEO Tim Cook's final WWDC keynote before stepping down September 1.]]></description>
-    <link>https://letsdatascience.com/news/apple-unveils-gemini-powered-siri-and-ios-27-at-wwdc-2026-b757953c</link>
-    <guid isPermaLink="true">https://letsdatascience.com/news/apple-unveils-gemini-powered-siri-and-ios-27-at-wwdc-2026-b757953c</guid>
+    <link>https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/</link>
+    <guid isPermaLink="true">https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Apple</category>
   </item>
@@ -341,15 +341,6 @@
     <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-08/openai-filed-confidentially-for-ipo-as-rivals-race-to-market</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple Unveils 'Siri AI' at WWDC 2026, Built on Google Gemini]]></title>
-    <description><![CDATA[Apple introduced a complete overhaul of Siri, rebranded 'Siri AI', at WWDC 2026 on June 8 — its first major assistant redesign in over a decade. The new assistant supports multi-turn conversations, draws on real-time world knowledge, and reaches across personal data and apps, with a redesigned interface embedded in the Dynamic Island and a new standalone app. Apple confirmed the system runs partly on a custom Google Gemini model alongside its own Apple Intelligence models.]]></description>
-    <link>https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/</link>
-    <guid isPermaLink="true">https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Apple</category>
   </item>
 
   <item>
@@ -458,6 +449,15 @@
     <guid isPermaLink="true">https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU Appoints 60-Expert Scientific Panel to Enforce AI Act Ahead of August Deadline]]></title>
+    <description><![CDATA[The European Commission formally appointed a 60-member Scientific Panel and a 174-member Advisory Forum on June 2, 2026 to support enforcement of the EU AI Act. The Scientific Panel — composed of leading independent experts in frontier AI, engineering, and technical auditing — will focus on GPAI model classification, systemic-risk assessment, evaluation methodologies, and cross-border market surveillance. Most AI Act rules apply from August 2, 2026.]]></description>
+    <link>https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support</link>
+    <guid isPermaLink="true">https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Commission</category>
   </item>
   </channel>
 </rss>

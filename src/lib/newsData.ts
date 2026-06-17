@@ -817,20 +817,6 @@ export const AI_NEWS: NewsItem[] = [
     what_to_try: "Try Claude for Small Business's pre-built CRM and invoicing workflows in a trial environment and measure time-to-automation against building the same workflow manually via the API.",
   },
   {
-    id: "anthropic-gates-foundation",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 14,
-    title: "Anthropic and Gates Foundation Launch $200M Global Health and Education AI Initiative",
-    summary:
-      "Anthropic and the Bill & Melinda Gates Foundation announced a $200 million, four-year partnership on May 14, 2026 to deploy Claude in global health, education, and agriculture programs serving low- and middle-income countries. The deal includes grant funding, Claude usage credits, and technical support, targeting disease response acceleration, evidence-based K-12 tutoring, and smallholder farming assistance in sub-Saharan Africa and India. The partnership is four times the size of OpenAI's $50 million Gates deal announced in January 2026.",
-    tags: ["Anthropic", "Claude", "Gates Foundation", "Global Health", "Education", "Partnership"],
-    significance: "notable",
-    provider: "Anthropic",
-    providerColor: "#d97706",
-    url: "https://www.anthropic.com/news/gates-foundation-partnership",
-  },
-  {
     id: "gemini-3-5-flash-io2026",
     date: "May 2026",
     dateNum: 202605,
@@ -1019,7 +1005,7 @@ export const AI_NEWS: NewsItem[] = [
     provider: "European Union",
     providerColor: "#003399",
     url: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
-    why_it_matters: "Simplified EU AI Act obligations reduce compliance overhead for startups and SMEs deploying limited-risk AI systems in Europe, lowering the regulatory barrier to launch.",
+    why_it_matters: "Simplified EU AI Act obligations reduce compliance overhead for startups and SMEs deploying limited-risk AI systems in Europe, lowering the regulatory barrier to launch — though GPAI enforcement on August 2 is unchanged.",
     what_to_try: "Re-assess your EU AI Act compliance roadmap against the final Omnibus text to identify obligations that were removed or deferred — you may be able to reduce legal review scope.",
   },
   {
@@ -1037,20 +1023,6 @@ export const AI_NEWS: NewsItem[] = [
     url: "https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed",
     why_it_matters: "A complete dismissal removes a significant legal overhang on OpenAI's corporate restructuring, clearing a path for its planned IPO and for-profit conversion.",
     what_to_try: "If your business depends on OpenAI APIs, review the implications of their for-profit conversion on pricing and API terms — monitor the updated service agreement expected post-IPO.",
-  },
-  {
-    id: "cursor-composer-25",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 18,
-    title: "Cursor Releases Composer 2.5 — Opus 4.7-Level Coding at a Fraction of the Price",
-    summary:
-      "Cursor launched Composer 2.5 on May 18, 2026, achieving 79.8% on SWE-Bench Multilingual and Terminal-Bench scores matching Claude Opus 4.7, while pricing stays at $0.50/$2.50 per million input/output tokens — a fraction of frontier model costs. The model was trained on 25× more synthetic tasks with tougher reinforcement-learning environments, enabling longer multi-file editing sessions and more reliable terminal operations. Cursor's valuation stands at $29 billion following its most recent funding round.",
-    tags: ["Cursor", "Coding", "SWE-Bench", "IDE", "Developer Tools"],
-    significance: "notable",
-    provider: "Cursor",
-    providerColor: "#8b5cf6",
-    url: "https://winbuzzer.com/2026/05/18/cursor-releases-composer-25-saying-its-better-at-s-xcxwbn/",
   },
   {
     id: "pope-leo-magnifica-humanitas-encyclical",
@@ -4704,22 +4676,6 @@ export const AI_NEWS: NewsItem[] = [
     why_it_matters: "AI-powered autonomous vulnerability discovery reaching NATO and national grid operators marks a shift from enterprise software security into sovereign and critical infrastructure defence.",
   },
   {
-    id: "eu-ai-act-omnibus-may7-2026",
-    date: "May 2026",
-    dateNum: 202605,
-    dateDay: 7,
-    title: "EU Reaches Provisional Deal on AI Act Omnibus: High-Risk Deadlines Extended to 2027–28",
-    summary:
-      "The European Parliament and Council reached a provisional political agreement on the Digital Omnibus on AI on May 7, 2026. Key changes extend the compliance deadline for standalone high-risk AI systems to December 2027 and for product-embedded systems to August 2028; they also add new Article 5 prohibitions on AI-generated CSAM and non-consensual intimate imagery. The deal requires formal adoption before August 2, 2026.",
-    tags: ["EU", "AI Act", "Regulation", "Policy", "High-Risk AI"],
-    significance: "major",
-    provider: "European Union",
-    providerColor: "#003399",
-    url: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
-    country: "SE",
-    why_it_matters: "Extending high-risk deadlines by 12–18 months gives European and global AI deployers meaningful additional time for conformity assessments — but GPAI enforcement on August 2 is unchanged.",
-  },
-  {
     id: "eu-gpai-enforcement-begins-aug2026-prep",
     date: "Jun 2026",
     dateNum: 202606,
@@ -4981,6 +4937,7 @@ export const AI_NEWS: NewsItem[] = [
     providerColor: "#2563eb",
     url: "https://www.prnewswire.com/news-releases/ramp-raises-series-f-at-44-billion-valuation-302791103.html",
     why_it_matters: "Ramp's 170% payment-volume growth acceleration demonstrates that AI-native financial tools are compounding faster as enterprises double down on spend visibility and automation.",
+    what_to_try: "Evaluate Ramp's AI expense-categorization and agentic approval workflows for finance team automation.",
   },
   {
     id: "openai-gpt-5-5-cyber-eu-rollout-june2026",
@@ -5571,9 +5528,10 @@ export const AI_NEWS: NewsItem[] = [
     significance: "landmark",
     provider: "Apple",
     providerColor: "#555555",
-    url: "https://letsdatascience.com/news/apple-unveils-gemini-powered-siri-and-ios-27-at-wwdc-2026-b757953c",
+    url: "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
     why_it_matters:
       "Apple embedding Google Gemini into Siri reverses a decade of rivalry and gives Gemini access to 2+ billion active Apple devices — signaling that no single company can build every layer of the AI stack alone.",
+    what_to_try: "If you build apps with Siri/App Intents integrations, review Apple's updated Siri AI developer docs for the new conversational and cross-app action APIs before iOS 27 ships.",
   },
   // ──── Brazil / LatAm additions ────────────────────────────────────────────
   {
@@ -5804,22 +5762,6 @@ export const AI_NEWS: NewsItem[] = [
     url: "https://openai.com",
     why_it_matters: "Provides a rare data-access channel for independent economists to study real-world AI labor effects rather than relying on surveys.",
     what_to_try: "Researchers studying AI labor-market effects should monitor the application process for the Exchange.",
-  },
-  {
-    id: "ramp-750m-funding-44b-valuation-june2026",
-    date: "Jun 2026",
-    dateNum: 202606,
-    dateDay: 5,
-    title: "Ramp Raises $750M at $44B Valuation as AI Finance Automation Demand Accelerates",
-    summary:
-      "Finance automation platform Ramp raised $750 million in a round led by Iconiq, GIC, and Ontario Teachers' Pension Plan, valuing the seven-year-old company at $44 billion. The raise reflects continued investor appetite for AI-driven corporate finance and expense automation tools as enterprises replace manual back-office workflows with agentic systems.",
-    tags: ["Ramp", "Finance Automation", "Funding", "Enterprise AI"],
-    significance: "notable",
-    provider: "Ramp",
-    providerColor: "#2563eb",
-    url: "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
-    why_it_matters: "One of the largest fintech rounds of 2026, underscoring how AI-driven automation is reshaping corporate finance valuations.",
-    what_to_try: "Evaluate Ramp's AI expense-categorization and agentic approval workflows for finance team automation.",
   },
   {
     id: "sferical-ai-sweden-sovereign-supercomputer-launch",
@@ -6305,22 +6247,6 @@ export const AI_NEWS: NewsItem[] = [
     url: "https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/",
     why_it_matters: "Prompt injection — malicious instructions hidden in emails, documents, or web pages that hijack an agent's behavior — is now the leading real-world cause of agentic AI security failures, and most organizations rushing to deploy agents this year haven't closed the readiness gap.",
     what_to_try: "Before connecting any agent (Claude Cowork, ChatGPT agents, Copilot, etc.) to your inbox, files, or browser, apply least-privilege scoping — limit what it can read and require confirmation for sensitive actions — and review the 'Prompt Injection' concept on this site for a fuller defense checklist.",
-  },
-  {
-    id: "apple-siri-ai-wwdc2026",
-    date: "Jun 2026",
-    dateNum: 202606,
-    dateDay: 8,
-    title: "Apple Unveils 'Siri AI' at WWDC 2026, Built on Google Gemini",
-    summary:
-      "Apple introduced a complete overhaul of Siri, rebranded 'Siri AI', at WWDC 2026 on June 8 — its first major assistant redesign in over a decade. The new assistant supports multi-turn conversations, draws on real-time world knowledge, and reaches across personal data and apps, with a redesigned interface embedded in the Dynamic Island and a new standalone app. Apple confirmed the system runs partly on a custom Google Gemini model alongside its own Apple Intelligence models.",
-    tags: ["Apple", "Siri", "Gemini", "Google", "WWDC", "Assistants"],
-    significance: "landmark",
-    provider: "Apple",
-    providerColor: "#555555",
-    url: "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
-    why_it_matters: "Apple partnering with Google for Siri's core intelligence — after years of in-house struggles — reshapes the assistant market and puts Gemini on roughly a billion iPhones overnight.",
-    what_to_try: "If you build apps with Siri/App Intents integrations, review Apple's updated Siri AI developer docs for the new conversational and cross-app action APIs before iOS 27 ships.",
   },
   {
     id: "cyera-600m-series-ai-trust-layer",
