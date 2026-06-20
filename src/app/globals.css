@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap");
-
 :root {
   /* ── Layout ────────────────────────────────── */
   --sidebar-w: 224px;
@@ -59,9 +55,9 @@
   --diff-advanced:     #8FE3D2;
   --diff-expert:       #9F8CFF;
 
-  --font-serif:   "Cormorant Garamond", Georgia, serif;
-  --font-sans:    "Geist", "Inter", system-ui, sans-serif;
-  --font-mono:    "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-serif:   var(--font-cormorant), Georgia, serif;
+  --font-sans:    var(--font-geist-sans), "Inter", system-ui, sans-serif;
+  --font-mono:    var(--font-geist-mono), "JetBrains Mono", ui-monospace, monospace;
 
   --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
   --ease-std:  cubic-bezier(0.4, 0, 0.2, 1);
