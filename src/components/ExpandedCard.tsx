@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Copy, Check, X, ChevronLeft, ChevronRight, ExternalLink, Share2 } from "lucide-react";
+import { Copy, Check, X, ChevronLeft, ChevronRight, ExternalLink, Share2, Bookmark } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
@@ -14,6 +14,7 @@ import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 import { useLanguage } from "@/context/LanguageContext";
 import { recordCopy } from "@/lib/copyCountStore";
+import { useSavedPrompts } from "@/context/SavedPromptsContext";
 
 interface Props {
   item: UseCase | null;
@@ -88,6 +89,7 @@ function PromptWithFills({
 
 export default function ExpandedCard({ item, onClose, items }: Props) {
   const { t } = useLanguage();
+  const { isSaved, toggle } = useSavedPrompts();
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
   const [currentItem, setCurrentItem] = useState<UseCase | null>(item);
@@ -456,6 +458,14 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
               </button>
               <button className="btn btn-ghost" onClick={share} title="Copy link to this prompt">
                 {shared ? <><Check size={14} /> Link copied!</> : <><Share2 size={14} /> Share</>}
+              </button>
+              <button
+                className="btn btn-ghost"
+                onClick={() => toggle(shown.id)}
+                aria-pressed={isSaved(shown.id)}
+                title={isSaved(shown.id) ? "Remove from saved" : "Save this prompt"}
+              >
+                <Bookmark size={14} fill={isSaved(shown.id) ? "currentColor" : "none"} /> {isSaved(shown.id) ? "Saved" : "Save"}
               </button>
               <button className="btn btn-ghost" onClick={onClose}>{t.expanded_close}</button>
             </div>

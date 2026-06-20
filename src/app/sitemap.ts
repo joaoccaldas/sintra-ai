@@ -3,6 +3,7 @@ import { USE_CASES } from "@/lib/data";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { TOPIC_HUBS } from "@/lib/topicHubs";
 import { ARCHIVE_MONTHS, AI_NEWS } from "@/lib/newsData";
+import { GUIDES } from "@/lib/guidesData";
 
 export const dynamic = "force-static";
 
@@ -46,7 +47,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/models/`,          changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/weekly/`,          lastModified: newsDate, changeFrequency: "weekly", priority: 0.85 },
     { url: `${SITE_URL}/weekly/archive/`,  changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE_URL}/guides/`,          changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/videos/`,          changeFrequency: "weekly",  priority: 0.7 },
+    { url: `${SITE_URL}/research/`,        changeFrequency: "weekly",  priority: 0.7 },
+    { url: `${SITE_URL}/collections/`,     changeFrequency: "weekly",  priority: 0.7 },
   ];
+
+  const guidePages: MetadataRoute.Sitemap = GUIDES.map(g => ({
+    url: `${SITE_URL}/guides/${g.slug}/`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   const promptPages: MetadataRoute.Sitemap = USE_CASES.map(u => ({
     url: `${SITE_URL}/prompts/${u.slug}/`,
@@ -80,5 +91,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...topLevel, ...topicPages, ...promptPages, ...toolPages, ...newsArchivePages];
+  return [...topLevel, ...topicPages, ...promptPages, ...toolPages, ...guidePages, ...newsArchivePages];
 }

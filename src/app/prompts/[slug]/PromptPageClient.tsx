@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { Copy, Check, Share2, ExternalLink } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Copy, Check, Share2, ExternalLink, Bookmark } from "lucide-react";
 import { UseCase } from "@/lib/constants";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
 import { recordCopy } from "@/lib/copyCountStore";
+import { trackRecentlyViewed } from "@/lib/hooks";
+import { useSavedPrompts } from "@/context/SavedPromptsContext";
 
 interface Props {
   item: UseCase;
@@ -14,6 +16,14 @@ interface Props {
 export default function PromptPageClient({ item, catColor }: Props) {
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
+  const { isSaved, toggle } = useSavedPrompts();
+  const saved = isSaved(item.id);
+
+  // Record the visit so direct hits / Google-landed deep links feed the
+  // "Recently viewed" rail, just like opening a card from the library does.
+  useEffect(() => {
+    trackRecentlyViewed({ id: item.id, slug: item.slug, title: item.title, category: item.category });
+  }, [item.id, item.slug, item.title, item.category]);
 
   const copy = () => {
     navigator.clipboard?.writeText(item.prompt);
@@ -45,6 +55,15 @@ export default function PromptPageClient({ item, catColor }: Props) {
       <div className="flex items-center justify-between mb-3">
         <h2 className="eyebrow">The prompt</h2>
         <div className="flex items-center gap-2">
+          <button
+            onClick={() => toggle(item.id)}
+            aria-pressed={saved}
+            className={`inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.06em] uppercase transition-colors ${
+              saved ? "text-violet-bright" : "text-fg-3 hover:text-fg-1"
+            }`}
+          >
+            <Bookmark size={11} fill={saved ? "currentColor" : "none"} /> {saved ? "Saved" : "Save"}
+          </button>
           <button
             onClick={share}
             className="inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.06em] uppercase text-fg-3 hover:text-fg-1 transition-colors"

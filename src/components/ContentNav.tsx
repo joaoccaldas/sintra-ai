@@ -20,6 +20,7 @@ import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featu
 import { YOUTUBE_VIDEOS } from "@/lib/videoData";
 import { CAROUSEL_ITEMS } from "@/lib/carouselData";
 import UseCaseCard from "./UseCaseCard";
+import RecentlyViewed from "./RecentlyViewed";
 import { trackRecentlyViewed } from "@/lib/hooks";
 
 // Only needed once a user clicks a card — defers react-markdown, remark-gfm,
@@ -401,6 +402,9 @@ function PromptLibrary() {
   return (
     <div>
       <SectionHead label="Prompt Library" count={USE_CASES.length} />
+
+      {/* Recently viewed — self-hides when localStorage has no history */}
+      <RecentlyViewed onOpen={openCard} allItems={USE_CASES} />
 
       {/* Category rail */}
       <div className="overflow-x-auto scrollbar-none -mx-6 px-6 md:mx-0 md:px-0 mb-4">

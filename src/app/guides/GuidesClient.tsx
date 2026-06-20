@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ArrowRight, Clock, ExternalLink, X } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
 import { GUIDES, type Guide } from "@/lib/guidesData";
 import { BASE_PATH } from "@/lib/constants";
 
@@ -12,14 +11,14 @@ const LEVEL_STYLE = {
   advanced:     { label: "Advanced",     color: "#ef4444" },
 };
 
-function GuideCard({ guide, onClick }: { guide: Guide; onClick: () => void }) {
+function GuideCard({ guide }: { guide: Guide }) {
   const lvl = LEVEL_STYLE[guide.level];
   return (
-    <motion.button
-      onClick={onClick}
+    <motion.a
+      href={`${BASE_PATH}/guides/${guide.slug}/`}
       whileHover={{ scale: 1.012 }}
       whileTap={{ scale: 0.99 }}
-      className="group text-left w-full rounded-2xl border p-6 bg-[#0d0a1c] transition-all duration-200 hover:bg-[#110e22]"
+      className="group block text-left w-full rounded-2xl border p-6 bg-[#0d0a1c] transition-all duration-200 hover:bg-[#110e22]"
       style={{ borderColor: guide.color + "28" }}
     >
       <div className="h-[2px] w-14 rounded-full mb-5" style={{ background: guide.color }} />
@@ -47,103 +46,11 @@ function GuideCard({ guide, onClick }: { guide: Guide; onClick: () => void }) {
         </div>
         <ArrowRight size={14} className="text-fg-4 group-hover:text-violet-bright transition-colors" />
       </div>
-    </motion.button>
-  );
-}
-
-function GuideDetail({ guide, onClose }: { guide: Guide; onClose: () => void }) {
-  const lvl = LEVEL_STYLE[guide.level];
-  return (
-    <>
-      <motion.div
-        key="scrim"
-        className="fixed inset-0 z-[80] bg-void/75 backdrop-blur-sm"
-        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-        transition={{ duration: 0.22 }}
-        onClick={onClose}
-      />
-      <motion.div
-        key="panel"
-        className="fixed inset-y-0 right-0 z-[90] w-full max-w-[600px] overflow-y-auto bg-[#0d0a1c] border-l border-violet/15 shadow-2xl"
-        initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
-        transition={{ type: "spring", stiffness: 260, damping: 32 }}
-      >
-        <div className="h-[3px] w-full" style={{ background: `linear-gradient(90deg, ${guide.color}, transparent)` }} />
-
-        <div className="px-7 pt-6 pb-20">
-          {/* Header */}
-          <div className="flex items-start justify-between gap-4 mb-8">
-            <div>
-              <span className="text-4xl block mb-3">{guide.emoji}</span>
-              <h2 className="font-serif text-[26px] font-normal text-fg-1 leading-[1.1] mb-2">{guide.title}</h2>
-              <div className="flex items-center gap-3 flex-wrap">
-                <span className="font-mono text-[10px] tracking-[0.12em] uppercase px-2 py-0.5 rounded-full border"
-                  style={{ color: lvl.color, borderColor: lvl.color + "44", background: lvl.color + "12" }}>
-                  {lvl.label}
-                </span>
-                <span className="font-mono text-[10px] text-fg-4 flex items-center gap-1">
-                  <Clock size={10} /> {guide.estimatedRead}
-                </span>
-              </div>
-            </div>
-            <button
-              onClick={onClose}
-              className="shrink-0 w-9 h-9 rounded-full bg-violet/[0.10] border border-violet/20 flex items-center justify-center text-fg-3 hover:text-fg-1 transition-all mt-1"
-            >
-              <X size={15} />
-            </button>
-          </div>
-
-          <p className="font-serif italic text-[16px] leading-[1.55] text-fg-2 pl-4 border-l-2 mb-8"
-            style={{ borderColor: guide.color }}>
-            {guide.tagline}
-          </p>
-
-          {/* Sections */}
-          <div className="flex flex-col gap-8">
-            {guide.sections.map((section, idx) => (
-              <div key={idx}>
-                <h3 className="font-sans text-[13px] font-semibold tracking-[0.02em] text-fg-1 mb-3 uppercase">
-                  {idx + 1}. {section.heading}
-                </h3>
-                <p className="font-sans text-[14px] text-fg-2 leading-[1.7]">{section.body}</p>
-                {section.tip && (
-                  <div className="mt-4 px-4 py-3 rounded-lg border-l-2 bg-violet/[0.06] font-sans text-[13px] text-fg-2 italic leading-[1.55]"
-                    style={{ borderColor: guide.color + "99" }}>
-                    {section.tip}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Related links */}
-          {guide.relatedLinks && guide.relatedLinks.length > 0 && (
-            <div className="mt-10 pt-8 border-t border-violet/[0.12]">
-              <p className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 mb-4">Related</p>
-              <div className="flex flex-col gap-2">
-                {guide.relatedLinks.map(link => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    className="inline-flex items-center gap-2 font-sans text-[13px] text-fg-3 hover:text-violet-bright transition-colors group"
-                  >
-                    <ExternalLink size={11} className="shrink-0 text-fg-4 group-hover:text-violet-bright transition-colors" />
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </motion.div>
-    </>
+    </motion.a>
   );
 }
 
 export default function GuidesClient() {
-  const [activeGuide, setActiveGuide] = useState<Guide | null>(null);
-
   return (
     <div className="min-h-screen bg-abyss text-fg-1">
       <div aria-hidden className="fixed inset-0 overflow-hidden pointer-events-none z-0">
@@ -197,7 +104,7 @@ export default function GuidesClient() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
               >
-                <GuideCard guide={guide} onClick={() => setActiveGuide(guide)} />
+                <GuideCard guide={guide} />
               </motion.div>
             ))}
           </motion.div>
@@ -209,12 +116,6 @@ export default function GuidesClient() {
           </p>
         </div>
       </div>
-
-      <AnimatePresence>
-        {activeGuide && (
-          <GuideDetail key={activeGuide.id} guide={activeGuide} onClose={() => setActiveGuide(null)} />
-        )}
-      </AnimatePresence>
     </div>
   );
 }
