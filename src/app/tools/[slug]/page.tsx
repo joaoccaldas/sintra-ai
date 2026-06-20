@@ -33,8 +33,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: tool.tagline,
       url: `${SITE_URL}/tools/${tool.id}/`,
       type: "website",
+      images: [{ url: `${SITE_URL}/tesseract-hero.webp`, width: 1200, height: 630 }],
     },
-    twitter: { card: "summary", title: tool.name, description: tool.tagline },
+    twitter: { card: "summary_large_image", title: tool.name, description: tool.tagline, images: [`${SITE_URL}/tesseract-hero.webp`] },
     alternates: { canonical: `${SITE_URL}/tools/${tool.id}/` },
   };
 }
@@ -54,23 +55,35 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
     .filter(u => u.related_tools?.includes(tool.id))
     .slice(0, 4);
 
-  // JSON-LD SoftwareApplication
+  // JSON-LD: SoftwareApplication + BreadcrumbList
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: tool.name,
-    description: tool.description,
-    applicationCategory: cat?.label ?? "AIApplication",
-    offers: {
-      "@type": "Offer",
-      price: tool.pricing === "free" ? "0" : undefined,
-      priceCurrency: "USD",
-      availability: "https://schema.org/OnlineOnly",
-      description: tool.priceNote,
-    },
-    url: tool.url,
-    provider: { "@type": "Organization", name: tool.provider },
-    keywords: tool.tags.join(", "),
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        name: tool.name,
+        description: tool.description,
+        applicationCategory: cat?.label ?? "AIApplication",
+        offers: {
+          "@type": "Offer",
+          price: tool.pricing === "free" ? "0" : undefined,
+          priceCurrency: "USD",
+          availability: "https://schema.org/OnlineOnly",
+          description: tool.priceNote,
+        },
+        url: tool.url,
+        provider: { "@type": "Organization", name: tool.provider },
+        keywords: tool.tags.join(", "),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "AI Tools", item: `${SITE_URL}/tools/` },
+          { "@type": "ListItem", position: 3, name: tool.name, item: `${SITE_URL}/tools/${tool.id}/` },
+        ],
+      },
+    ],
   };
 
   const PRICING_COLOR: Record<string, string> = {

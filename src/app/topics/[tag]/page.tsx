@@ -27,6 +27,7 @@ export async function generateMetadata({
       description: topic.description,
       type: "website",
     },
+    alternates: { canonical: `https://joaoccaldas.github.io/sintra-ai/topics/${topic.slug}/` },
   };
 }
 

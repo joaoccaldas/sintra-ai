@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: `${CURRENT_MONTH_NEWS.length} AI news items for ${CURRENT_MONTH_LABEL} — model releases, benchmarks, and industry events, updated daily.`,
   },
   alternates: {
+    canonical: "https://joaoccaldas.github.io/sintra-ai/news/",
     types: {
       "application/rss+xml": "/sintra-ai/feed.xml",
     },

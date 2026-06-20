@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: desc,
       url: `${SITE_URL}/prompts/${item.slug}/`,
       type: "article",
+      publishedTime: item.dateAdded ? new Date(item.dateAdded).toISOString() : undefined,
       images: [{ url: `${SITE_URL}/tesseract-hero.webp`, width: 1200, height: 630 }],
     },
     twitter: {
@@ -55,23 +56,35 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
     .filter(u => u.category === item.category && u.id !== item.id)
     .slice(0, 3);
 
-  // JSON-LD HowTo structured data
+  // JSON-LD: HowTo + BreadcrumbList
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: item.title,
-    description: item.outcome || item.desc,
-    step: item.inputs.length > 0
-      ? item.inputs.map((inp, i) => ({
-          "@type": "HowToStep",
-          position: i + 1,
-          name: inp.label,
-          text: `Provide: ${inp.label}`,
-        }))
-      : [{ "@type": "HowToStep", position: 1, name: "Copy prompt", text: "Copy the prompt and paste it into your AI assistant." }],
-    tool: item.tools.map(t => ({ "@type": "HowToTool", name: t })),
-    totalTime: item.est_time ? `PT${item.est_time.replace(/\D/g, "")}M` : undefined,
-    supply: [{ "@type": "HowToSupply", name: item.best_llm }],
+    "@graph": [
+      {
+        "@type": "HowTo",
+        name: item.title,
+        description: item.outcome || item.desc,
+        step: item.inputs.length > 0
+          ? item.inputs.map((inp, i) => ({
+              "@type": "HowToStep",
+              position: i + 1,
+              name: inp.label,
+              text: `Provide: ${inp.label}`,
+            }))
+          : [{ "@type": "HowToStep", position: 1, name: "Copy prompt", text: "Copy the prompt and paste it into your AI assistant." }],
+        tool: item.tools.map(t => ({ "@type": "HowToTool", name: t })),
+        totalTime: item.est_time ? `PT${item.est_time.replace(/\D/g, "")}M` : undefined,
+        supply: [{ "@type": "HowToSupply", name: item.best_llm }],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: catLabel, item: `${SITE_URL}/#library` },
+          { "@type": "ListItem", position: 3, name: item.title, item: `${SITE_URL}/prompts/${item.slug}/` },
+        ],
+      },
+    ],
   };
 
   return (

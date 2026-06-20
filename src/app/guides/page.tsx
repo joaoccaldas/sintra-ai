@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "AI Guides & Playbooks — Sintra Tesseract",
     description: "Practical how-to guides for AI practitioners.",
   },
+  alternates: { canonical: "https://joaoccaldas.github.io/sintra-ai/guides/" },
 };
 
 export default function GuidesRoute() {
