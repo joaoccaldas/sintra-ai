@@ -4,6 +4,7 @@ import { AI_TOOLS } from "@/lib/toolsData";
 import { TOPIC_HUBS } from "@/lib/topicHubs";
 import { ARCHIVE_MONTHS, AI_NEWS } from "@/lib/newsData";
 import { GUIDES } from "@/lib/guidesData";
+import { CONCEPTS } from "@/lib/concepts";
 
 export const dynamic = "force-static";
 
@@ -59,6 +60,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const conceptPages: MetadataRoute.Sitemap = CONCEPTS.map(c => ({
+    url: `${SITE_URL}/concepts/${c.id}/`,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
   const promptPages: MetadataRoute.Sitemap = USE_CASES.map(u => ({
     url: `${SITE_URL}/prompts/${u.slug}/`,
     lastModified: new Date(u.dateAdded),
@@ -91,5 +98,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...topLevel, ...topicPages, ...promptPages, ...toolPages, ...guidePages, ...newsArchivePages];
+  return [...topLevel, ...topicPages, ...promptPages, ...toolPages, ...guidePages, ...conceptPages, ...newsArchivePages];
 }

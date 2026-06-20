@@ -1,10 +1,8 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, X, ExternalLink } from "lucide-react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import { ArrowLeft } from "lucide-react";
 import {
   CONCEPTS, CAT_META, DIFF_HEX, DIFF_LABEL,
   ConceptCategory, Concept,
@@ -18,21 +16,19 @@ type Filter = (typeof ALL_CATS)[number];
 
 function ConceptCard({
   concept,
-  onClick,
 }: {
   concept: Concept;
-  onClick: (c: Concept) => void;
 }) {
   const cat = CAT_META[concept.category];
   return (
-    <motion.button
+    <motion.a
+      href={`${BASE_PATH}/concepts/${concept.id}/`}
       layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-      onClick={() => onClick(concept)}
-      className="group text-left w-full rounded-2xl border border-hairline bg-steel/40 hover:bg-steel/70 transition-all duration-240 overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet/60"
+      className="group text-left w-full rounded-2xl border border-hairline bg-steel/40 hover:bg-steel/70 transition-all duration-240 overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet/60 block"
     >
       {/* Accent bar */}
       <div className="h-[3px]" style={{ background: `linear-gradient(90deg, ${cat.hex}, transparent)` }} />
@@ -104,238 +100,7 @@ function ConceptCard({
           </div>
         )}
       </div>
-    </motion.button>
-  );
-}
-
-// ── Expanded Drawer ───────────────────────────────────────────────────────────
-
-function ConceptDrawer({
-  concept,
-  onClose,
-  onNavigate,
-}: {
-  concept: Concept | null;
-  onClose: () => void;
-  onNavigate: (id: string) => void;
-}) {
-  useEffect(() => {
-    if (!concept) return;
-    document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
-  }, [concept]);
-
-  useEffect(() => {
-    if (!concept) return;
-    const fn = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
-    window.addEventListener("keydown", fn);
-    return () => window.removeEventListener("keydown", fn);
-  }, [concept, onClose]);
-
-  return (
-    <AnimatePresence>
-      {concept && (
-        <>
-          {/* Scrim */}
-          <motion.div
-            key="scrim"
-            className="fixed inset-0 z-[90] bg-void/80 backdrop-blur-sm"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            onClick={onClose}
-          />
-
-          {/* Panel */}
-          <motion.div
-            key="panel"
-            className="expanded-card"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="cd-title"
-            initial={{ y: "100%" }}
-            animate={{ y: 0 }}
-            exit={{ y: "100%" }}
-            transition={{ type: "spring", stiffness: 280, damping: 32 }}
-          >
-            {/* Accent bar */}
-            <div
-              className="h-[3px] w-full rounded-t-[inherit] shrink-0"
-              style={{
-                background: `linear-gradient(90deg, ${CAT_META[concept.category].hex}, transparent)`,
-              }}
-            />
-
-            <div className="expanded-card__inner">
-              {/* ── Left column ── */}
-              <div className="expanded-card__left">
-                {/* Icon */}
-                <div
-                  className="w-full aspect-square max-h-[220px] rounded-2xl flex items-center justify-center text-[80px] mb-6"
-                  style={{
-                    background: `radial-gradient(ellipse at center, ${CAT_META[concept.category].hex}18 0%, transparent 72%)`,
-                    boxShadow: `0 0 60px ${CAT_META[concept.category].hex}22`,
-                  }}
-                >
-                  {concept.icon}
-                </div>
-
-                {/* Category + difficulty */}
-                <div className="flex flex-col gap-2 mb-6">
-                  <div className="flex items-center gap-2">
-                    <span
-                      className="font-mono text-[11px] tracking-[0.14em] uppercase px-2 py-1 rounded border"
-                      style={{
-                        color: CAT_META[concept.category].hex,
-                        borderColor: `${CAT_META[concept.category].hex}50`,
-                        background: `${CAT_META[concept.category].hex}10`,
-                      }}
-                    >
-                      {CAT_META[concept.category].label}
-                    </span>
-                    <span
-                      className="font-mono text-[11px] tracking-[0.1em] uppercase px-2 py-1 rounded border border-hairline"
-                      style={{ color: DIFF_HEX[concept.difficulty] }}
-                    >
-                      {DIFF_LABEL[concept.difficulty]}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Related concepts */}
-                {concept.related.length > 0 && (
-                  <div>
-                    <span className="eyebrow block mb-3">Related concepts</span>
-                    <div className="flex flex-wrap gap-2">
-                      {concept.related.map(id => {
-                        const rel = CONCEPTS.find(c => c.id === id);
-                        return rel ? (
-                          <button
-                            key={id}
-                            onClick={() => onNavigate(id)}
-                            className="font-mono text-[11px] px-2.5 py-1.5 rounded-sm border border-hairline text-fg-2 bg-night hover:border-violet/40 hover:text-violet-bright transition-colors"
-                          >
-                            {rel.icon} {rel.shortTerm ?? rel.term}
-                          </button>
-                        ) : null;
-                      })}
-                    </div>
-                  </div>
-                )}
-
-                {/* Learn more */}
-                {concept.learnMore && (
-                  <a
-                    href={concept.learnMore}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.08em] uppercase text-cyan-ice/70 hover:text-cyan-ice transition-colors"
-                  >
-                    <ExternalLink size={11} />
-                    Learn more
-                  </a>
-                )}
-              </div>
-
-              {/* ── Right column ── */}
-              <div className="expanded-card__right">
-                {/* Eyebrow */}
-                <span className="flex gap-2 items-center flex-wrap font-mono text-[11px] tracking-[0.18em] uppercase text-fg-3 mb-3">
-                  <span
-                    className="w-2 h-2 rounded-full shrink-0"
-                    style={{
-                      background: DIFF_HEX[concept.difficulty],
-                      boxShadow: `0 0 8px ${DIFF_HEX[concept.difficulty]}`,
-                    }}
-                  />
-                  {DIFF_LABEL[concept.difficulty]}
-                  <span className="text-fg-4">·</span>
-                  <span style={{ color: CAT_META[concept.category].hex }}>
-                    {CAT_META[concept.category].label}
-                  </span>
-                  <span className="text-fg-4">·</span>
-                  <time dateTime={concept.addedAt} className="text-fg-4 normal-case tracking-normal">
-                    Added {new Date(concept.addedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
-                  </time>
-                </span>
-
-                {/* Title */}
-                <div className="flex items-start gap-3 flex-wrap mb-2">
-                  <h2
-                    id="cd-title"
-                    className="font-serif font-normal text-[clamp(26px,3.5vw,44px)] leading-[1.06] tracking-[-0.015em] text-fg-1"
-                  >
-                    {concept.term}
-                  </h2>
-                  {concept.shortTerm && (
-                    <span
-                      className="font-mono text-[13px] px-2 py-1 rounded border self-center"
-                      style={{
-                        color: CAT_META[concept.category].hex,
-                        borderColor: `${CAT_META[concept.category].hex}50`,
-                        background: `${CAT_META[concept.category].hex}10`,
-                      }}
-                    >
-                      {concept.shortTerm}
-                    </span>
-                  )}
-                </div>
-
-                {/* Tagline */}
-                <p
-                  className="font-serif italic text-[18px] md:text-[20px] leading-[1.45] text-fg-2 mb-7 border-l-2 pl-5"
-                  style={{ borderColor: CAT_META[concept.category].hex }}
-                >
-                  {concept.tagline}
-                </p>
-
-                {/* Body */}
-                <div className="sample-output mb-8">
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                    {concept.body}
-                  </ReactMarkdown>
-                </div>
-
-                {/* Analogy */}
-                <div className="rounded-xl border border-violet/20 bg-violet/[0.05] px-5 py-4">
-                  <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 block mb-2">
-                    ⬡ Analogy
-                  </span>
-                  <p className="font-serif text-[16px] leading-[1.6] text-fg-2 italic">
-                    {concept.analogy}
-                  </p>
-                </div>
-              </div>
-
-              {/* Close */}
-              <button
-                onClick={onClose}
-                className="expanded-card__close"
-                aria-label="Close"
-              >
-                <X size={16} />
-              </button>
-            </div>
-
-            {/* Bottom bar */}
-            <div className="expanded-card__bar">
-              {concept.learnMore && (
-                <a
-                  href={concept.learnMore}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                >
-                  <ExternalLink size={14} /> Learn more
-                </a>
-              )}
-              <button className="btn btn-ghost" onClick={onClose}>Close</button>
-            </div>
-          </motion.div>
-        </>
-      )}
-    </AnimatePresence>
+    </motion.a>
   );
 }
 
@@ -343,19 +108,11 @@ function ConceptDrawer({
 
 export default function ConceptsPage() {
   const [activeFilter, setActiveFilter] = useState<Filter>("all");
-  const [expanded, setExpanded]         = useState<Concept | null>(null);
 
   const filtered = useMemo(() => {
     if (activeFilter === "all") return CONCEPTS;
     return CONCEPTS.filter(c => c.category === activeFilter);
   }, [activeFilter]);
-
-  const openConcept = useCallback((c: Concept) => setExpanded(c), []);
-
-  const navigateTo = useCallback((id: string) => {
-    const target = CONCEPTS.find(c => c.id === id);
-    if (target) setExpanded(target);
-  }, []);
 
   const totalByCategory = useMemo(
     () => Object.fromEntries(
@@ -469,7 +226,6 @@ export default function ConceptsPage() {
               <ConceptCard
                 key={concept.id}
                 concept={concept}
-                onClick={openConcept}
               />
             ))}
           </AnimatePresence>
@@ -501,13 +257,6 @@ export default function ConceptsPage() {
           </div>
         </motion.div>
       </div>
-
-      {/* ── Expanded drawer ───────────────────────────────────────────── */}
-      <ConceptDrawer
-        concept={expanded}
-        onClose={() => setExpanded(null)}
-        onNavigate={navigateTo}
-      />
     </main>
   );
 }
