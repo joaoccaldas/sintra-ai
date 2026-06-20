@@ -17,7 +17,7 @@ export default function ResourcesRoute() {
   return (
     <>
       <Header total={USE_CASES_COUNT} />
-      <main className="pt-16">
+      <main id="main-content" className="pt-16">
         <ResourcesPage />
       </main>
       <Footer />

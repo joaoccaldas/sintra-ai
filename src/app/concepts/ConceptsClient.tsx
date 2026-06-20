@@ -368,7 +368,7 @@ export default function ConceptsPage() {
   );
 
   return (
-    <main className="min-h-screen bg-void text-fg-1">
+    <main id="main-content" className="min-h-screen bg-void text-fg-1">
       {/* ── Header bar ───────────────────────────────────────────────── */}
       <div className="sticky top-0 z-30 h-14 flex items-center px-6 md:px-8 border-b border-hairline bg-void/90 backdrop-blur-md">
         <a

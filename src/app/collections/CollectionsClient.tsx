@@ -121,7 +121,7 @@ export default function CollectionsClient() {
     <div className="min-h-screen bg-abyss text-fg-1">
       <Header total={USE_CASES_COUNT} />
 
-      <main className="max-w-[1100px] mx-auto px-6 md:px-8 pt-28 pb-24">
+      <main id="main-content" className="max-w-[1100px] mx-auto px-6 md:px-8 pt-28 pb-24">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-10">
           <Link href={`${BASE_PATH}/`} className="hover:text-fg-2 transition-colors">Home</Link>

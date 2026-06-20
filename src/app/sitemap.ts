@@ -2,27 +2,50 @@ import type { MetadataRoute } from "next";
 import { USE_CASES } from "@/lib/data";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { TOPIC_HUBS } from "@/lib/topicHubs";
-import { ARCHIVE_MONTHS } from "@/lib/newsData";
+import { ARCHIVE_MONTHS, AI_NEWS } from "@/lib/newsData";
 
 export const dynamic = "force-static";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
 
+/** Real publish date of the most recent news item — used as the freshness
+ * signal for pages whose content tracks the news feed, instead of stamping
+ * every build with `new Date()` (which falsely claims daily changes). */
+function latestNewsDate(): Date {
+  const latest = [...AI_NEWS].sort(
+    (a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0)
+  )[0];
+  if (!latest) return new Date();
+  const year = Math.floor(latest.dateNum / 100);
+  const month = (latest.dateNum % 100) - 1;
+  return new Date(year, month, latest.dateDay ?? 1);
+}
+
+/** Last calendar day of an archived YYYYMM month — archived months are
+ * immutable, so this is a real (not fabricated) lastModified date. */
+function lastDayOfMonth(dateNum: number): Date {
+  const year = Math.floor(dateNum / 100);
+  const month = dateNum % 100;
+  return new Date(year, month, 0);
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const newsDate = latestNewsDate();
+
   const topLevel: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/`,               lastModified: new Date(), changeFrequency: "daily",   priority: 1.0 },
-    { url: `${SITE_URL}/tools/`,         lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9 },
-    { url: `${SITE_URL}/news/`,          lastModified: new Date(), changeFrequency: "daily",   priority: 0.9 },
-    { url: `${SITE_URL}/learn/`,         lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
-    { url: `${SITE_URL}/claude/`,        lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
-    { url: `${SITE_URL}/resources/`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.7 },
-    { url: `${SITE_URL}/concepts/`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${SITE_URL}/ai-history/`,    lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${SITE_URL}/ai-labs/`,       lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${SITE_URL}/google-ai-tools/`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${SITE_URL}/models/`,          lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${SITE_URL}/weekly/`,          lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
-    { url: `${SITE_URL}/weekly/archive/`,  lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE_URL}/`,               lastModified: newsDate, changeFrequency: "daily",   priority: 1.0 },
+    { url: `${SITE_URL}/tools/`,         changeFrequency: "weekly",  priority: 0.9 },
+    { url: `${SITE_URL}/news/`,          lastModified: newsDate, changeFrequency: "daily",   priority: 0.9 },
+    { url: `${SITE_URL}/learn/`,         changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${SITE_URL}/claude/`,        changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${SITE_URL}/resources/`,     changeFrequency: "weekly",  priority: 0.7 },
+    { url: `${SITE_URL}/concepts/`,      changeFrequency: "monthly", priority: 0.7 },
+    { url: `${SITE_URL}/ai-history/`,    changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE_URL}/ai-labs/`,       changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE_URL}/google-ai-tools/`, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE_URL}/models/`,          changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/weekly/`,          lastModified: newsDate, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${SITE_URL}/weekly/archive/`,  changeFrequency: "weekly", priority: 0.7 },
   ];
 
   const promptPages: MetadataRoute.Sitemap = USE_CASES.map(u => ({
@@ -34,26 +57,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const toolPages: MetadataRoute.Sitemap = AI_TOOLS.map(t => ({
     url: `${SITE_URL}/tools/${t.id}/`,
-    lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   const topicPages: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/topics/`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: `${SITE_URL}/topics/`, changeFrequency: "weekly" as const, priority: 0.8 },
     ...TOPIC_HUBS.map(t => ({
       url: `${SITE_URL}/topics/${t.slug}/`,
-      lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.75,
     })),
   ];
 
   const newsArchivePages: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/news/archive/`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.5 },
+    { url: `${SITE_URL}/news/archive/`, lastModified: newsDate, changeFrequency: "monthly" as const, priority: 0.5 },
     ...ARCHIVE_MONTHS.map(m => ({
       url: `${SITE_URL}/news/archive/${m.slug}/`,
-      lastModified: new Date(),
+      lastModified: lastDayOfMonth(m.dateNum),
       changeFrequency: "yearly" as const,
       priority: 0.4,
     })),

@@ -29,7 +29,7 @@ export default function ModelsPage() {
   return (
     <>
       <Header total={USE_CASES_COUNT} />
-      <main className="pt-16 min-h-screen bg-void">
+      <main id="main-content" className="pt-16 min-h-screen bg-void">
         <ModelsClient />
       </main>
       <Footer />

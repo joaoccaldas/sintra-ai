@@ -9,7 +9,9 @@
   "background_color": "#090B14",
   "theme_color": "#090B14",
   "icons": [
-    { "src": "/sintra-ai/tesseract-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "/sintra-ai/tesseract-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/sintra-ai/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/sintra-ai/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
   ],
   "categories": ["productivity", "education", "utilities"],
   "lang": "en",

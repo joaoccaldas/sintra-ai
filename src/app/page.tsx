@@ -18,7 +18,7 @@ export default function Home() {
       </a>
       <div className="bg-void min-h-screen">
         <Header total={USE_CASES_COUNT} />
-        <main>
+        <main id="main-content">
           <HeroMinimal total={USE_CASES_COUNT} />
           <ContentNav />
         </main>

@@ -40,7 +40,7 @@ export default async function NewsArchiveMonthPage({
   return (
     <>
       <Header total={USE_CASES_COUNT} />
-      <main className="pt-16 min-h-screen bg-abyss text-fg-1">
+      <main id="main-content" className="pt-16 min-h-screen bg-abyss text-fg-1">
         <div className="max-w-[860px] mx-auto px-6 md:px-8">
           <div className="pt-10 pb-6">
             <a href={`${BASE_PATH}/news/archive/`}

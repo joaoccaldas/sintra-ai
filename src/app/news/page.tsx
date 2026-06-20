@@ -60,7 +60,7 @@ export default function NewsRoute() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(newsJsonLd()) }}
       />
       <Header total={USE_CASES_COUNT} />
-      <main className="pt-16">
+      <main id="main-content" className="pt-16">
         <AINewsPage />
       </main>
       <Footer />

@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import { SidebarProvider } from "@/context/SidebarContext";
 import { DesktopSidebar, MobileSidebar } from "@/components/SidebarNav";
 import ScrollProgress from "@/components/ScrollProgress";
+import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
@@ -58,24 +59,53 @@ export const metadata: Metadata = {
   },
 };
 
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Sintra Tesseract",
+      url: SITE_URL,
+      logo: `${SITE_URL}/tesseract-mark.svg`,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: "Sintra Tesseract",
+      description: "Daily AI news, model updates, and copy-ready prompts for finance, data analytics, writing, and software teams.",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://plausible.io" />
         <script
           defer
           data-domain="joaoccaldas.github.io"
           src="https://plausible.io/js/script.js"
         />
-        <link rel="apple-touch-icon" href="/sintra-ai/tesseract-mark.svg" />
+        <link rel="icon" href="/sintra-ai/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/sintra-ai/tesseract-mark.svg" />
+        <link rel="apple-touch-icon" href="/sintra-ai/apple-touch-icon.png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
       </head>
       <body className="antialiased">
         <ThemeProvider>
           <SidebarProvider>
             <LanguageProvider>
               <SavedPromptsProvider>
+                <ServiceWorkerRegister />
                 <ScrollProgress />
                 <DesktopSidebar />
                 <MobileSidebar />

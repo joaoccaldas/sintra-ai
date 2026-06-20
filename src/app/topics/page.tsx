@@ -26,7 +26,7 @@ export default function TopicsIndexPage() {
   return (
     <>
       <Header total={USE_CASES_COUNT} />
-      <main className="pt-16 min-h-screen bg-void">
+      <main id="main-content" className="pt-16 min-h-screen bg-void">
         <div className="max-w-4xl mx-auto px-4 py-12">
           <nav className="text-xs text-fg-4 mb-6 flex items-center gap-1.5">
             <Link href="/" className="hover:text-fg-2 transition-colors">Home</Link>

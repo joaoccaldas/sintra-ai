@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, ExternalLink, Search, X, Clock,
@@ -19,8 +20,11 @@ import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featu
 import { YOUTUBE_VIDEOS } from "@/lib/videoData";
 import { CAROUSEL_ITEMS } from "@/lib/carouselData";
 import UseCaseCard from "./UseCaseCard";
-import ExpandedCard from "./ExpandedCard";
 import { trackRecentlyViewed } from "@/lib/hooks";
+
+// Only needed once a user clicks a card — defers react-markdown, remark-gfm,
+// and framer-motion's AnimatePresence out of the homepage's initial bundle.
+const ExpandedCard = dynamic(() => import("./ExpandedCard"), { ssr: false });
 
 const PAGE_SIZE = 12;
 
