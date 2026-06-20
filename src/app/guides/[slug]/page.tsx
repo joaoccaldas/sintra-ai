@@ -33,7 +33,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: guide.tagline,
       url: `${SITE_URL}/guides/${guide.slug}/`,
       type: "article",
-      images: [{ url: `${SITE_URL}/tesseract-hero.webp`, width: 1200, height: 630 }],
     },
     twitter: { card: "summary_large_image", title: guide.title, description: guide.tagline },
     alternates: { canonical: `${SITE_URL}/guides/${guide.slug}/` },

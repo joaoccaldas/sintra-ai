@@ -40,7 +40,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  // Origin only (no /sintra-ai path) — Next already applies `basePath` when
+  // resolving the file-convention opengraph-image routes, so including the
+  // path here as well doubled it (.../sintra-ai/sintra-ai/opengraph-image).
+  // All other absolute URLs in this app are built manually from SITE_URL
+  // and don't depend on this resolution.
+  metadataBase: new URL("https://joaoccaldas.github.io"),
   manifest: "/sintra-ai/manifest.json",
   title: "Sintra Tesseract — Daily AI News & Use Case Library",
   description: `Daily AI news, model updates, and ${USE_CASES_COUNT} copy-ready prompts for finance, data analytics, writing, and software teams. Stay current, then ship the work.`,
