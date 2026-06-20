@@ -7,6 +7,7 @@ import { SidebarProvider } from "@/context/SidebarContext";
 import { DesktopSidebar, MobileSidebar } from "@/components/SidebarNav";
 import ScrollProgress from "@/components/ScrollProgress";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
+import MotionProvider from "@/components/MotionProvider";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
@@ -105,14 +106,16 @@ export default function RootLayout({
           <SidebarProvider>
             <LanguageProvider>
               <SavedPromptsProvider>
-                <ServiceWorkerRegister />
-                <ScrollProgress />
-                <DesktopSidebar />
-                <MobileSidebar />
-                {/* Content shifts right on desktop to clear the sidebar */}
-                <div className="sidebar-content-shift">
-                  {children}
-                </div>
+                <MotionProvider>
+                  <ServiceWorkerRegister />
+                  <ScrollProgress />
+                  <DesktopSidebar />
+                  <MobileSidebar />
+                  {/* Content shifts right on desktop to clear the sidebar */}
+                  <div className="sidebar-content-shift">
+                    {children}
+                  </div>
+                </MotionProvider>
               </SavedPromptsProvider>
             </LanguageProvider>
           </SidebarProvider>

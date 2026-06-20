@@ -112,12 +112,16 @@ function VideoCard({ video, onPlay }: { video: YouTubeVideo; onPlay: () => void 
         onClick={onPlay}
         role="button"
         tabIndex={0}
-        onKeyDown={e => e.key === "Enter" && onPlay()}
+        onKeyDown={e => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPlay(); }
+        }}
         aria-label={`Play ${video.title}`}
       >
         <img
           src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`}
           alt={video.title}
+          width={320}
+          height={180}
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />

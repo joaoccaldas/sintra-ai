@@ -20,6 +20,8 @@ function VideoCard({ video }: { video: YouTubeVideo }) {
         <img
           src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`}
           alt={video.title}
+          width={320}
+          height={180}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
         />
