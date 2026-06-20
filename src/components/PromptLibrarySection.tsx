@@ -88,8 +88,29 @@ export default function PromptLibrary() {
       {/* Recently viewed — self-hides when localStorage has no history */}
       <RecentlyViewed onOpen={openCard} allItems={USE_CASES} />
 
-      {/* Category rail */}
-      <div className="overflow-x-auto scrollbar-none -mx-6 px-6 md:mx-0 md:px-0 mb-4">
+      {/* Category rail — clean 3x3 grid on mobile (9 categories), horizontal
+          scrolling pill row from sm up where labels fit on one line */}
+      <div className="grid grid-cols-3 gap-1.5 mb-4 sm:hidden">
+        {CAROUSEL_ITEMS.map(cat => {
+          const active = cat.id === selectedCat && !isSearching;
+          return (
+            <button
+              key={cat.id}
+              onClick={() => { setSelectedCat(cat.id); setSearch(""); setVisibleCount(PAGE_SIZE); }}
+              className="flex flex-col items-center justify-center gap-0.5 text-center font-mono text-[9px] leading-tight tracking-[0.04em] uppercase px-1.5 py-2.5 rounded-xl border transition-all duration-150"
+              style={{
+                background:  active ? "rgba(159,140,255,0.12)" : "transparent",
+                borderColor: active ? "rgba(159,140,255,0.50)" : "rgba(255,255,255,0.08)",
+                color:       active ? "#B6A6FF" : "#6b6a8a",
+              }}
+            >
+              <span>{cat.label}</span>
+              <span className="opacity-40 text-[8px]">{DISC_COUNTS[cat.id] ?? 0}</span>
+            </button>
+          );
+        })}
+      </div>
+      <div className="hidden sm:block overflow-x-auto scrollbar-none mb-4">
         <div className="flex gap-1.5 min-w-max">
           {CAROUSEL_ITEMS.map(cat => {
             const active = cat.id === selectedCat && !isSearching;
