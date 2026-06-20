@@ -31,15 +31,34 @@ function SectionHead({ label, count }: { label: string; count?: number }) {
 }
 
 export default function PromptLibrary() {
-  const [selectedCat, setSelectedCat] = useState<string>(CAROUSEL_ITEMS[0].id);
-  const [search, setSearch]           = useState("");
+  const [selectedCat, setSelectedCat] = useState<string>(() => {
+    if (typeof window === "undefined") return CAROUSEL_ITEMS[0].id;
+    return new URLSearchParams(window.location.search).get("cat") || CAROUSEL_ITEMS[0].id;
+  });
+  const [search, setSearch] = useState(() => {
+    if (typeof window === "undefined") return "";
+    return new URLSearchParams(window.location.search).get("q") || "";
+  });
+  const [sortByUsage, setSortByUsage] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return new URLSearchParams(window.location.search).get("sort") === "used";
+  });
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
   const [expandedItems, setExpandedItems] = useState<UseCase[]>([]);
-  const [sortByUsage, setSortByUsage]   = useState(false);
   const [copyCounts, setCopyCounts]     = useState<Record<string, number>>({});
 
   useEffect(() => { setCopyCounts(getCopyCounts()); }, []);
+
+  // Keep cat/search/sort in the URL so filtered views are shareable/bookmarkable.
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (selectedCat !== CAROUSEL_ITEMS[0].id) params.set("cat", selectedCat);
+    if (search) params.set("q", search);
+    if (sortByUsage) params.set("sort", "used");
+    const qs = params.toString();
+    window.history.replaceState(null, "", `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`);
+  }, [selectedCat, search, sortByUsage]);
 
   const isSearching = search.trim().length > 0;
 

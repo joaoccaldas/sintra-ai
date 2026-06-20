@@ -297,7 +297,19 @@ export default function AINewsPage() {
         <div className="pt-6 pb-24">
           {visibleItems.length === 0 ? (
             <div className="text-center py-24">
-              <p className="font-serif text-[22px] text-fg-3">No events match this filter.</p>
+              <p className="font-serif text-[22px] text-fg-3 mb-3">
+                No events match this filter in {CURRENT_MONTH_LABEL}.
+              </p>
+              <p className="font-sans text-[13px] text-fg-4 mb-6">
+                {search
+                  ? <>&ldquo;{search}&rdquo; might be in an earlier month — </>
+                  : <>This filter has no matches this month — </>}
+                {ARCHIVE_MONTHS.reduce((sum, m) => sum + m.count, 0)} more events are archived.
+              </p>
+              <a href={`${BASE_PATH}/news/archive/`}
+                className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.10em] uppercase px-4 py-2 rounded-full border border-violet/40 text-violet-bright hover:bg-violet/10 transition-colors">
+                Search the archive <ArrowRight size={12} />
+              </a>
             </div>
           ) : (
             <>
