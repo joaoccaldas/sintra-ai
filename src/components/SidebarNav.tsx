@@ -107,6 +107,7 @@ function NavLink({
   return (
     <a
       href={item.href}
+      aria-current={active ? "page" : undefined}
       className={[
         "flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[13px] transition-all duration-150 group relative",
         active
@@ -157,12 +158,14 @@ function SidebarTree({
         {collapsed ? (
           <Tip label="Library">
             <a href={`${BASE_PATH}/`}
+              aria-current={!segment ? "page" : undefined}
               className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${!segment ? "bg-violet/[0.16] text-violet-bright border border-violet/[0.24]" : "text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] border border-transparent"}`}>
               <Home size={15} />
             </a>
           </Tip>
         ) : (
           <a href={`${BASE_PATH}/`}
+            aria-current={!segment ? "page" : undefined}
             className={`flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[13px] transition-all duration-150 border ${!segment ? "bg-violet/[0.16] text-violet-bright border-violet/[0.24]" : "text-fg-3 hover:text-fg-1 hover:bg-white/[0.05] border-transparent"}`}
             onClick={onNavigate}
           >
@@ -218,6 +221,7 @@ function SidebarTree({
                             <a
                               href={item.href}
                               onClick={onNavigate}
+                              aria-current={segment === item.pathKey ? "page" : undefined}
                               className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all border ${segment === item.pathKey ? "bg-violet/[0.16] text-violet-bright border-violet/[0.24]" : "text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] border-transparent"}`}
                             >
                               <item.Icon size={15} />

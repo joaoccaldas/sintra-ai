@@ -1,14 +1,15 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, X } from "lucide-react";
+import { Search, X, Flame } from "lucide-react";
 import { USE_CASES, DISC_COUNTS, matchesUseCase, type UseCase } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "@/lib/carouselData";
 import UseCaseCard from "./UseCaseCard";
 import RecentlyViewed from "./RecentlyViewed";
 import { trackRecentlyViewed } from "@/lib/hooks";
+import { getCopyCounts } from "@/lib/copyCountStore";
 
 // Loaded once a user opens a card — defers react-markdown / remark-gfm / the
 // AnimatePresence modal out of this (already lazy) section's chunk.
@@ -35,13 +36,20 @@ export default function PromptLibrary() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
   const [expandedItems, setExpandedItems] = useState<UseCase[]>([]);
+  const [sortByUsage, setSortByUsage]   = useState(false);
+  const [copyCounts, setCopyCounts]     = useState<Record<string, number>>({});
+
+  useEffect(() => { setCopyCounts(getCopyCounts()); }, []);
 
   const isSearching = search.trim().length > 0;
 
   const filtered = useMemo(() => {
-    if (isSearching) return USE_CASES.filter(u => matchesUseCase(u, search));
-    return USE_CASES.filter(u => u.category === selectedCat);
-  }, [selectedCat, search, isSearching]);
+    const base = isSearching
+      ? USE_CASES.filter(u => matchesUseCase(u, search))
+      : USE_CASES.filter(u => u.category === selectedCat);
+    if (!sortByUsage) return base;
+    return [...base].sort((a, b) => (copyCounts[b.id] ?? 0) - (copyCounts[a.id] ?? 0));
+  }, [selectedCat, search, isSearching, sortByUsage, copyCounts]);
 
   const visible = filtered.slice(0, visibleCount);
   const hasMore = visibleCount < filtered.length;
@@ -85,22 +93,36 @@ export default function PromptLibrary() {
         </div>
       </div>
 
-      {/* Search */}
-      <div className="relative mb-5 max-w-sm">
-        <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
-        <input
-          type="search"
-          value={search}
-          onChange={e => { setSearch(e.target.value); setVisibleCount(PAGE_SIZE); }}
-          placeholder={`Search ${USE_CASES.length} prompts…`}
-          className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
-        />
-        {search && (
-          <button onClick={() => setSearch("")}
-            className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors">
-            <X size={12} />
-          </button>
-        )}
+      {/* Search + sort */}
+      <div className="flex items-center gap-3 mb-5 flex-wrap">
+        <div className="relative max-w-sm flex-1 min-w-[200px]">
+          <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
+          <input
+            type="search"
+            value={search}
+            onChange={e => { setSearch(e.target.value); setVisibleCount(PAGE_SIZE); }}
+            placeholder={`Search ${USE_CASES.length} prompts…`}
+            className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
+          />
+          {search && (
+            <button onClick={() => setSearch("")}
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors">
+              <X size={12} />
+            </button>
+          )}
+        </div>
+        <button
+          onClick={() => setSortByUsage(v => !v)}
+          aria-pressed={sortByUsage}
+          className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] uppercase px-3 py-2 rounded-lg border transition-all"
+          style={{
+            background:  sortByUsage ? "rgba(245,158,11,0.10)" : "transparent",
+            borderColor: sortByUsage ? "rgba(245,158,11,0.45)" : "rgba(255,255,255,0.08)",
+            color:       sortByUsage ? "#F59E0B" : "#6b6a8a",
+          }}
+        >
+          <Flame size={11} /> Most used
+        </button>
       </div>
 
       {isSearching && (
@@ -132,7 +154,7 @@ export default function PromptLibrary() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.28, delay: Math.min(i, 8) * 0.04, ease: [0.22, 1, 0.36, 1] as const }}
                 >
-                  <UseCaseCard item={item} onOpen={openCard} />
+                  <UseCaseCard item={item} onOpen={openCard} copyCount={copyCounts[item.id] ?? 0} />
                 </motion.div>
               ))}
             </motion.div>

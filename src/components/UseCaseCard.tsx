@@ -1,18 +1,20 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { Copy, Check, Bookmark, BookmarkCheck } from "lucide-react";
+import { Copy, Check, Bookmark, BookmarkCheck, Flame } from "lucide-react";
 import { UseCase, CAT_ACCENT, BASE_PATH } from "@/lib/constants";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
+import { recordCopy } from "@/lib/copyCountStore";
 
 interface Props {
   item: UseCase;
   onOpen: (item: UseCase) => void;
   onTagFilter?: (tag: string) => void;
   isFeatured?: boolean;
+  copyCount?: number;
 }
 
-export default function UseCaseCard({ item, onOpen, isFeatured = false }: Props) {
+export default function UseCaseCard({ item, onOpen, isFeatured = false, copyCount = 0 }: Props) {
   const catColor = CAT_ACCENT[item.category] || "#9F8CFF";
   const ref = useRef<HTMLAnchorElement>(null);
   const [copied, setCopied] = useState(false);
@@ -40,6 +42,7 @@ export default function UseCaseCard({ item, onOpen, isFeatured = false }: Props)
   const quickCopy = (e: React.MouseEvent) => {
     e.stopPropagation();
     navigator.clipboard?.writeText(item.prompt);
+    recordCopy(item.id);
     setCopied(true);
     setTimeout(() => setCopied(false), 1600);
   };
@@ -76,12 +79,23 @@ export default function UseCaseCard({ item, onOpen, isFeatured = false }: Props)
       </div>
 
       {/* Category */}
-      <span
-        className="font-mono text-[9px] tracking-[0.14em] uppercase font-medium"
-        style={{ color: catColor, opacity: 0.8 }}
-      >
-        {item.category}
-      </span>
+      <div className="flex items-center gap-2">
+        <span
+          className="font-mono text-[9px] tracking-[0.14em] uppercase font-medium"
+          style={{ color: catColor, opacity: 0.8 }}
+        >
+          {item.category}
+        </span>
+        {copyCount > 0 && (
+          <span
+            className="inline-flex items-center gap-0.5 font-mono text-[9px] text-fg-4 opacity-70"
+            title={`Copied ${copyCount} time${copyCount === 1 ? "" : "s"} on this device`}
+          >
+            <Flame size={9} className="text-amber-500/80" />
+            {copyCount}
+          </span>
+        )}
+      </div>
 
       {/* Title */}
       <h3 className={`font-serif font-normal leading-[1.18] tracking-[-0.01em] text-fg-1 m-0 text-left transition-colors duration-150 group-hover:text-violet-bright${isFeatured ? " text-[26px]" : " text-[20px]"}`}>
