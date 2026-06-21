@@ -163,7 +163,7 @@ whole 8600-line `useCases.json` into the bundle. Since `Header.tsx` and
 across the board. After the `constants.ts`/`topicHubs.ts` extraction:
 `/news` dropped 488 kB → 304 kB, `/collections` and `/topics/[tag]` dropped
 541 kB → 337 kB. Pages that legitimately render prompt data (`/`, `/weekly`,
-`CategoryBrowser`-based routes) are unchanged. When adding new shared
+`PromptLibrarySection`-based routes) are unchanged. When adding new shared
 helpers, default to putting side-effect-free code in `constants.ts` /
 `topicHubs.ts` rather than back in `data.ts` / `topicsData.ts`.
 
@@ -222,7 +222,7 @@ git reset HEAD   # clean up the index
 | `Header.tsx` | Nav with 3 dropdown groups (Discover / Learn / Reference) + ⌘K |
 | `HeroMinimal.tsx` | Full-screen hero — parallax violet bloom (CSS gradient), search bar, news ticker |
 | `SiteHub.tsx` | 7 destination cards with live counts — orients new visitors |
-| `CategoryBrowser.tsx` | Main prompt library — flat responsive grid (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`), reads category data from `src/lib/carouselData.ts` |
+| `PromptLibrarySection.tsx` | Main prompt library (mounted lazily via `ContentNav.tsx`) — category rail (3x3 grid on mobile, scrolling pills from `sm:`), search, difficulty filter + sort, flat responsive card grid (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`), reads category data from `src/lib/carouselData.ts` |
 | `ExpandedCard.tsx` | Prompt detail slide-up panel with related-prompts rail |
 | `CommandPalette.tsx` | ⌘K unified search across all 7 content types (Fuse.js, lazy-built index — see `src/lib/searchIndex.ts`) |
 | `UniversalSearch.tsx` | Inline search results on landing page (same index as ⌘K) |
@@ -241,9 +241,14 @@ spend time polishing them, and don't assume CLAUDE.md history that calls
 them "active" is current:
 
 - `ThePulse.tsx` — tabbed "AI Signals · New Prompts · Learn" module, never mounted
+- `CategoryBrowser.tsx` — an earlier standalone version of the prompt library.
+  Superseded by `PromptLibrarySection.tsx` (lazy-mounted in `ContentNav.tsx`),
+  which now owns the category rail, search, filter, and sort UI. Apply
+  library UI changes to `PromptLibrarySection.tsx`, not this file.
 
 `CategoryCarousel3D.tsx`, `Tesseract3D.tsx`, and `ParticleVortex.tsx` (the old
-Three.js category carousel, ~480kB) were removed entirely — `CategoryBrowser.tsx`
-uses a flat grid instead, and the only thing worth keeping (`CAROUSEL_ITEMS`)
-already lives in `src/lib/carouselData.ts`. If a 3D carousel is wanted again,
-write it fresh against `carouselData.ts` rather than restoring these files.
+Three.js category carousel, ~480kB) were removed entirely — the flat grid in
+`PromptLibrarySection.tsx` replaced it, and the only thing worth keeping
+(`CAROUSEL_ITEMS`) already lives in `src/lib/carouselData.ts`. If a 3D
+carousel is wanted again, write it fresh against `carouselData.ts` rather
+than restoring these files.
