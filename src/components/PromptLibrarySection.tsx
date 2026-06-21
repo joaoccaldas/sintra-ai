@@ -3,8 +3,8 @@
 import { useState, useMemo, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, X, Flame } from "lucide-react";
-import { USE_CASES, DISC_COUNTS, matchesUseCase, type UseCase } from "@/lib/data";
+import { Search, X } from "lucide-react";
+import { USE_CASES, DISC_COUNTS, matchesUseCase, DIFF_COLOR, type UseCase } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "@/lib/carouselData";
 import UseCaseCard from "./UseCaseCard";
 import RecentlyViewed from "./RecentlyViewed";
@@ -16,6 +16,25 @@ import { getCopyCounts } from "@/lib/copyCountStore";
 const ExpandedCard = dynamic(() => import("./ExpandedCard"), { ssr: false });
 
 const PAGE_SIZE = 12;
+
+const DIFFICULTIES = ["all", "beginner", "intermediate", "advanced", "expert"] as const;
+type DiffFilter = (typeof DIFFICULTIES)[number];
+
+const SORTS = [
+  { id: "default", label: "Featured" },
+  { id: "most-used", label: "Most used" },
+  { id: "newest", label: "Newest" },
+  { id: "quickest", label: "Quickest" },
+] as const;
+type SortId = (typeof SORTS)[number]["id"];
+
+/** Parse an est_time string like "10 min" / "1 hr" into minutes for sorting. */
+function timeToMinutes(t: string): number {
+  if (!t) return Number.MAX_SAFE_INTEGER;
+  const n = parseFloat(t);
+  if (isNaN(n)) return Number.MAX_SAFE_INTEGER;
+  return /hr|hour/i.test(t) ? n * 60 : n;
+}
 
 function SectionHead({ label, count }: { label: string; count?: number }) {
   return (
@@ -39,9 +58,16 @@ export default function PromptLibrary() {
     if (typeof window === "undefined") return "";
     return new URLSearchParams(window.location.search).get("q") || "";
   });
-  const [sortByUsage, setSortByUsage] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return new URLSearchParams(window.location.search).get("sort") === "used";
+  const [difficulty, setDifficulty] = useState<DiffFilter>(() => {
+    if (typeof window === "undefined") return "all";
+    const d = new URLSearchParams(window.location.search).get("diff");
+    return d && (DIFFICULTIES as readonly string[]).includes(d) ? (d as DiffFilter) : "all";
+  });
+  const [sortBy, setSortBy] = useState<SortId>(() => {
+    if (typeof window === "undefined") return "default";
+    const s = new URLSearchParams(window.location.search).get("sort");
+    if (s === "used") return "most-used"; // back-compat with the old ?sort=used param
+    return s && SORTS.some(o => o.id === s) ? (s as SortId) : "default";
   });
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
@@ -50,25 +76,38 @@ export default function PromptLibrary() {
 
   useEffect(() => { setCopyCounts(getCopyCounts()); }, []);
 
-  // Keep cat/search/sort in the URL so filtered views are shareable/bookmarkable.
+  // Keep cat/search/diff/sort in the URL so filtered views are shareable/bookmarkable.
   useEffect(() => {
     const params = new URLSearchParams();
     if (selectedCat !== CAROUSEL_ITEMS[0].id) params.set("cat", selectedCat);
     if (search) params.set("q", search);
-    if (sortByUsage) params.set("sort", "used");
+    if (difficulty !== "all") params.set("diff", difficulty);
+    if (sortBy !== "default") params.set("sort", sortBy);
     const qs = params.toString();
     window.history.replaceState(null, "", `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`);
-  }, [selectedCat, search, sortByUsage]);
+  }, [selectedCat, search, difficulty, sortBy]);
+
+  // Reset pagination when any filter changes.
+  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [selectedCat, search, difficulty, sortBy]);
 
   const isSearching = search.trim().length > 0;
 
   const filtered = useMemo(() => {
-    const base = isSearching
+    let base = isSearching
       ? USE_CASES.filter(u => matchesUseCase(u, search))
       : USE_CASES.filter(u => u.category === selectedCat);
-    if (!sortByUsage) return base;
-    return [...base].sort((a, b) => (copyCounts[b.id] ?? 0) - (copyCounts[a.id] ?? 0));
-  }, [selectedCat, search, isSearching, sortByUsage, copyCounts]);
+
+    if (difficulty !== "all") base = base.filter(u => u.difficulty === difficulty);
+
+    if (sortBy === "most-used") {
+      base = [...base].sort((a, b) => (copyCounts[b.id] ?? 0) - (copyCounts[a.id] ?? 0));
+    } else if (sortBy === "newest") {
+      base = [...base].sort((a, b) => (b.dateAdded || "").localeCompare(a.dateAdded || ""));
+    } else if (sortBy === "quickest") {
+      base = [...base].sort((a, b) => timeToMinutes(a.est_time) - timeToMinutes(b.est_time));
+    }
+    return base;
+  }, [selectedCat, search, isSearching, difficulty, sortBy, copyCounts]);
 
   const visible = filtered.slice(0, visibleCount);
   const hasMore = visibleCount < filtered.length;
@@ -133,36 +172,62 @@ export default function PromptLibrary() {
         </div>
       </div>
 
-      {/* Search + sort */}
-      <div className="flex items-center gap-3 mb-5 flex-wrap">
-        <div className="relative max-w-sm flex-1 min-w-[200px]">
-          <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
-          <input
-            type="search"
-            value={search}
-            onChange={e => { setSearch(e.target.value); setVisibleCount(PAGE_SIZE); }}
-            placeholder={`Search ${USE_CASES.length} prompts…`}
-            className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
-          />
-          {search && (
-            <button onClick={() => setSearch("")}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors">
-              <X size={12} />
-            </button>
-          )}
+      {/* Search */}
+      <div className="relative max-w-sm mb-4">
+        <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-fg-4 pointer-events-none" />
+        <input
+          type="search"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder={`Search ${USE_CASES.length} prompts…`}
+          className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 transition-colors"
+        />
+        {search && (
+          <button onClick={() => setSearch("")}
+            className="absolute right-2.5 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors">
+            <X size={12} />
+          </button>
+        )}
+      </div>
+
+      {/* Difficulty filter + sort */}
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
+        <div className="flex items-center gap-1.5 flex-wrap" role="group" aria-label="Filter by difficulty">
+          {DIFFICULTIES.map(d => {
+            const active = difficulty === d;
+            return (
+              <button
+                key={d}
+                onClick={() => setDifficulty(d)}
+                aria-pressed={active}
+                className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.04em] capitalize px-3 py-1.5 rounded-full border transition-all duration-150"
+                style={{
+                  background:  active ? "rgba(159,140,255,0.12)" : "transparent",
+                  borderColor: active ? "rgba(159,140,255,0.5)" : "rgba(255,255,255,0.08)",
+                  color:       active ? "#B6A6FF" : "#6b6a8a",
+                }}
+              >
+                {d !== "all" && (
+                  <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: DIFF_COLOR[d] }} />
+                )}
+                {d === "all" ? "All levels" : d}
+              </button>
+            );
+          })}
         </div>
-        <button
-          onClick={() => setSortByUsage(v => !v)}
-          aria-pressed={sortByUsage}
-          className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] uppercase px-3 py-2 rounded-lg border transition-all"
-          style={{
-            background:  sortByUsage ? "rgba(245,158,11,0.10)" : "transparent",
-            borderColor: sortByUsage ? "rgba(245,158,11,0.45)" : "rgba(255,255,255,0.08)",
-            color:       sortByUsage ? "#F59E0B" : "#6b6a8a",
-          }}
-        >
-          <Flame size={11} /> Most used
-        </button>
+
+        <label className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.08em] text-fg-4">
+          Sort
+          <select
+            value={sortBy}
+            onChange={e => setSortBy(e.target.value as SortId)}
+            className="bg-white/[0.04] border border-hairline rounded-lg px-2.5 py-1.5 font-mono text-[11px] text-fg-2 outline-none focus:border-violet/50 transition-colors cursor-pointer"
+          >
+            {SORTS.map(o => (
+              <option key={o.id} value={o.id} className="bg-night text-fg-1">{o.label}</option>
+            ))}
+          </select>
+        </label>
       </div>
 
       {isSearching && (
@@ -174,9 +239,9 @@ export default function PromptLibrary() {
 
       {filtered.length === 0 ? (
         <div className="text-center py-20">
-          <p className="font-mono text-[13px] text-fg-4">No prompts match.</p>
-          <button onClick={() => setSearch("")}
-            className="mt-3 font-mono text-[11px] text-violet-bright hover:underline">Clear search</button>
+          <p className="font-mono text-[13px] text-fg-4">No prompts match your filters.</p>
+          <button onClick={() => { setSearch(""); setDifficulty("all"); }}
+            className="mt-3 font-mono text-[11px] text-violet-bright hover:underline">Clear filters</button>
         </div>
       ) : (
         <>
