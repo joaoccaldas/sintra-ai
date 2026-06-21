@@ -8,7 +8,7 @@ import {
   Newspaper, Calendar, Tag, Clock, FlaskConical, BookOpen,
   GraduationCap, FileText, Archive, Lightbulb,
   Wrench, Cpu, Brain, Search as SearchIcon,
-  Home, Sun, Moon, Leaf, Waves, Palette, Play,
+  Home, Sun, Moon, Leaf, Waves, Palette, Play, Calculator,
 } from "lucide-react";
 import TesseractMark from "./TesseractMark";
 import { useSidebar } from "@/context/SidebarContext";
@@ -63,6 +63,7 @@ const NAV: NavGroup[] = [
       { href: `${BASE_PATH}/models/`,          label: "Models",    Icon: Cpu,                             pathKey: "models" },
       { href: `${BASE_PATH}/claude/`,          label: "Claude",    Icon: Brain,                           pathKey: "claude" },
       { href: `${BASE_PATH}/google-ai-tools/`, label: "Google AI", Icon: SearchIcon,                      pathKey: "google-ai-tools" },
+      { href: `${BASE_PATH}/token-calculator/`,label: "Cost Calc", Icon: Calculator,                      pathKey: "token-calculator" },
     ],
   },
 ];

@@ -21,6 +21,7 @@ const PATH_LABEL: Record<string, string> = {
   "ai-history": "AI History", "ai-labs": "AI Labs", research: "Research",
   learn: "Learning Paths", guides: "Guides", resources: "Resources", concepts: "Concepts",
   tools: "AI Tools", models: "Models", claude: "Claude", "google-ai-tools": "Google AI",
+  "token-calculator": "Cost Calc",
   collections: "Collections", prompts: "Prompt", videos: "Videos",
 };
 

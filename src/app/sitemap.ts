@@ -49,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/weekly/`,          lastModified: newsDate, changeFrequency: "weekly", priority: 0.85 },
     { url: `${SITE_URL}/weekly/archive/`,  changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE_URL}/guides/`,          changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/token-calculator/`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/videos/`,          changeFrequency: "weekly",  priority: 0.7 },
     { url: `${SITE_URL}/research/`,        changeFrequency: "weekly",  priority: 0.7 },
     { url: `${SITE_URL}/collections/`,     changeFrequency: "weekly",  priority: 0.7 },
