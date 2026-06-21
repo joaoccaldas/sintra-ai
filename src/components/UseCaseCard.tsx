@@ -1,10 +1,11 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { Copy, Check, Bookmark, BookmarkCheck, Flame } from "lucide-react";
-import { UseCase, CAT_ACCENT, BASE_PATH } from "@/lib/constants";
+import { Copy, Check, Bookmark, BookmarkCheck, Flame, Clock } from "lucide-react";
+import { UseCase, CAT_ACCENT, DIFF_COLOR, BASE_PATH } from "@/lib/constants";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 import { recordCopy } from "@/lib/copyCountStore";
+import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
 
 interface Props {
   item: UseCase;
@@ -106,6 +107,24 @@ export default function UseCaseCard({ item, onOpen, isFeatured = false, copyCoun
       <p className="font-sans text-[13px] leading-[1.55] text-fg-3 m-0 text-left line-clamp-2 mt-auto">
         {item.outcome || item.desc}
       </p>
+
+      {/* Meta: difficulty · output kind · time — scannable at a glance */}
+      <div className="flex items-center gap-x-3 gap-y-1 flex-wrap font-mono text-[9.5px] text-fg-4">
+        <span className="inline-flex items-center gap-1.5 capitalize" title={`${item.difficulty} difficulty`}>
+          <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: DIFF_COLOR[item.difficulty] }} />
+          {item.difficulty}
+        </span>
+        <span className="inline-flex items-center gap-1" title={`Output: ${outputKindLabel(item.output_kind)}`}>
+          <OutputKindIcon kind={item.output_kind} size={11} />
+          {outputKindLabel(item.output_kind)}
+        </span>
+        {item.est_time && (
+          <span className="inline-flex items-center gap-1" title="Estimated time">
+            <Clock size={10} />
+            {item.est_time}
+          </span>
+        )}
+      </div>
 
       {/* Tags */}
       <div className="flex gap-1.5 flex-wrap">

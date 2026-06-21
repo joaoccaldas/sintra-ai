@@ -80,8 +80,8 @@
   --cyan-ice-rgb:       14 138 114;
   --fg-1-rgb:           26 24 40;
   --fg-2-rgb:           60 58 86;
-  --fg-3-rgb:           108 106 140;
-  --fg-4-rgb:           156 154 184;
+  --fg-3-rgb:           92 90 124;
+  --fg-4-rgb:           118 116 148;
   --fg-on-violet-rgb:   255 255 255;
 }
 
@@ -99,8 +99,8 @@
   --cyan-ice-rgb:       127 224 192;
   --fg-1-rgb:           232 244 236;
   --fg-2-rgb:           176 206 184;
-  --fg-3-rgb:           120 158 130;
-  --fg-4-rgb:           74 110 84;
+  --fg-3-rgb:           134 172 144;
+  --fg-4-rgb:           104 140 114;
   --fg-on-violet-rgb:   6 13 8;
 }
 
@@ -118,8 +118,8 @@
   --cyan-ice-rgb:       128 216 240;
   --fg-1-rgb:           228 238 248;
   --fg-2-rgb:           176 200 232;
-  --fg-3-rgb:           112 152 200;
-  --fg-4-rgb:           64 104 168;
+  --fg-3-rgb:           128 166 212;
+  --fg-4-rgb:           96 136 196;
   --fg-on-violet-rgb:   4 10 20;
 }
 
@@ -286,7 +286,7 @@ button { font-family: inherit; cursor: pointer; }
   --sy: 50%;
   position: relative;
   background: linear-gradient(180deg, rgba(255,255,255,0.045) 0%, rgba(255,255,255,0) 50%) padding-box,
-              linear-gradient(180deg, #161A2C, #0E1120) padding-box;
+              linear-gradient(180deg, var(--steel), var(--night)) padding-box;
   border: 1px solid var(--hairline);
   border-radius: 8px;
   padding: 20px;
@@ -424,7 +424,7 @@ a.tag:focus-visible {
   max-width: 720px;
   max-height: 86vh;
   overflow-y: auto;
-  background: linear-gradient(180deg, #161A2C, #0E1120);
+  background: linear-gradient(180deg, var(--steel), var(--night));
   border: 1px solid var(--hairline);
   border-radius: 12px;
   box-shadow: 0 24px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(159,140,255,0.25), 0 0 80px rgba(159,140,255,0.15);
