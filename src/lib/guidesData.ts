@@ -416,4 +416,49 @@ export const GUIDES: Guide[] = [
       { label: "Fine-Tuning vs. Prompting", href: `${BASE_PATH}/guides` },
     ],
   },
+
+  {
+    id: "higgsfield-claude-workflow",
+    slug: "higgsfield-claude-workflow",
+    emoji: "🎬",
+    color: "#a855f7",
+    title: "How to Use Higgsfield with Claude",
+    tagline: "Connect Higgsfield's image and video models to Claude via MCP and direct cinematic generations from a chat.",
+    estimatedRead: "7 min",
+    level: "intermediate",
+    sections: [
+      {
+        heading: "What Higgsfield actually is",
+        body: "Higgsfield is a generative media platform built around 30+ underlying image and video models, packaged into purpose-built tools rather than a single generic prompt box. The headline tools are Cinema Studio (camera moves, lighting, and shot composition modelled on real cinematography techniques), SOUL ID (a consistent, reusable AI character/persona across generations), Higgsfield Audio (sound and voice generation to pair with video), and a Sora 2 Enhancer (post-processing pass that improves coherence and fidelity on Sora-generated clips). The platform's pitch is that good-looking AI video needs cinematographic control, not just a better diffusion model.",
+        tip: "Think of Higgsfield as a director's toolkit on top of several video models, not a single model you're picking by name.",
+      },
+      {
+        heading: "Connecting Higgsfield to Claude via MCP",
+        body: "Higgsfield exposes a hosted MCP (Model Context Protocol) server at https://mcp.higgsfield.ai/mcp, which means Claude can call its generation tools directly inside a conversation instead of you switching to a separate app. Add it once from the terminal: `claude mcp add --transport http --scope user higgsfield https://mcp.higgsfield.ai/mcp`. The `--scope user` flag makes the connection available across all your projects, not just the current directory. This works the same way whether you're using Claude.ai web chat, Claude Cowork, or Claude Code.",
+        tip: "If you only need Higgsfield for one project, drop `--scope user` and run the same command from inside that project's directory instead.",
+      },
+      {
+        heading: "Authentication: no API key to manage",
+        body: "Unlike most MCP integrations that require you to generate and paste an API key, Higgsfield's server authenticates through a browser-based OAuth flow. The first time Claude tries to call a Higgsfield tool, it opens a login prompt in your browser; once you approve it, the session is stored and reused for future calls. There's no key to copy, rotate, or accidentally commit to a repo — authentication state lives with your Higgsfield account, not in a config file.",
+      },
+      {
+        heading: "Generating with a conversational prompt",
+        body: "Once connected, you describe what you want in plain language and Claude routes the request to the right Higgsfield tool — you don't need to know which of the 30+ underlying models to pick. For a single image: \"Generate a SOUL ID portrait of a calm narrator character in soft daylight, then give me three variations with different camera angles.\" For video: \"Use Cinema Studio to create a 10-second tracking shot moving through a neon-lit street market, dusk lighting, slow dolly-in.\" For audio: \"Add an ambient ‘rainy café' soundscape to that last clip.\" Claude handles the back-and-forth — refining a prompt, retrying a failed generation, or chaining a video output into the audio tool — inside the same conversation.",
+        tip: "Be specific about camera language (dolly-in, tracking shot, low angle) — Cinema Studio responds well to real cinematography vocabulary, not just visual adjectives.",
+      },
+      {
+        heading: "Resolution, duration, and platform limits",
+        body: "Higgsfield's current generation limits: images up to 4K resolution, video clips up to 15 seconds. These caps apply regardless of which underlying model handles the request, so plan multi-shot sequences as separate 15-second generations stitched together afterward rather than expecting one continuous long-form clip. SOUL ID consistency holds best within a single session — for a character that needs to recur across many separate generations over time, save and reuse the SOUL ID reference rather than re-describing the character from scratch each time.",
+      },
+      {
+        heading: "Production tips and where this fits",
+        body: "Use Higgsfield through Claude for storyboarding, ad creative drafts, social video concepts, and rapid client-facing previews — places where iteration speed matters more than frame-perfect final output. For final deliverables, treat AI-generated video the way you'd treat a rough cut: review for continuity errors (a known weak spot for all current video models across longer sequences), check audio sync if you layered in Higgsfield Audio separately, and keep a human edit pass before anything ships externally. Because the MCP connection is account-scoped, usage and any billing happen through your Higgsfield account, not through Claude — check Higgsfield's own pricing page for current generation costs.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Concepts: MCP", href: `${BASE_PATH}/concepts#mcp` },
+      { label: "Multimodal AI: Images, Documents, and Vision", href: `${BASE_PATH}/guides` },
+      { label: "Build Your First AI Agent", href: `${BASE_PATH}/guides` },
+    ],
+  },
 ];
