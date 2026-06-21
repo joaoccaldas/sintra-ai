@@ -1,11 +1,14 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ExternalLink, Search } from "lucide-react";
+import { ArrowLeft, ExternalLink, Search, Scale, Check } from "lucide-react";
 import { AI_TOOLS, TOOL_CATEGORIES, type AITool, type ToolCategory } from "@/lib/toolsData";
 import { BASE_PATH } from "@/lib/constants";
 import ToolModal from "./ToolModal";
+import { ToolCompareBar, ToolCompareModal } from "./ToolCompareTray";
+
+const MAX_COMPARE = 4;
 
 const PRICING_COLOR: Record<string, string> = {
   free:       "#10b981",
@@ -21,13 +24,37 @@ const PRICING_LABEL: Record<string, string> = {
   enterprise: "Enterprise",
 };
 
-function ToolCard({ tool, onOpen }: { tool: AITool; onOpen: (t: AITool) => void }) {
+function ToolCard({ tool, onOpen, isComparing, onToggleCompare, compareDisabled }: {
+  tool: AITool;
+  onOpen: (t: AITool) => void;
+  isComparing: boolean;
+  onToggleCompare: () => void;
+  compareDisabled: boolean;
+}) {
   const cat = TOOL_CATEGORIES.find(c => c.id === tool.category);
   return (
     <button
       onClick={() => onOpen(tool)}
-      className="group flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200 hover:scale-[1.015] hover:shadow-lg bg-[#0d0a1c] border-violet/[0.12] hover:border-violet/40 text-left w-full"
+      className={`group relative flex flex-col gap-3 rounded-xl border p-5 transition-all duration-200 hover:scale-[1.015] hover:shadow-lg bg-[#0d0a1c] text-left w-full ${
+        isComparing ? "border-violet/60" : "border-violet/[0.12] hover:border-violet/40"
+      }`}
     >
+      {/* Compare toggle */}
+      <span
+        role="checkbox"
+        aria-checked={isComparing}
+        aria-label={isComparing ? `Remove ${tool.name} from comparison` : `Add ${tool.name} to comparison`}
+        title={compareDisabled && !isComparing ? `You can compare up to ${MAX_COMPARE} tools at once` : "Add to comparison"}
+        onClick={e => { e.stopPropagation(); if (!compareDisabled || isComparing) onToggleCompare(); }}
+        className={`absolute top-3 right-3 z-10 flex items-center justify-center w-6 h-6 rounded-full border transition-all cursor-pointer ${
+          isComparing
+            ? "bg-violet border-violet text-fg-on-violet"
+            : `bg-[#0d0a1c]/80 border-white/15 text-fg-4 hover:text-violet-bright hover:border-violet/40 ${compareDisabled ? "opacity-30 cursor-not-allowed" : ""}`
+        }`}
+      >
+        {isComparing ? <Check size={11} /> : <Scale size={11} />}
+      </span>
+
       {/* Top row */}
       <div className="flex items-start justify-between gap-2">
         <div className="flex-1 min-w-0">
@@ -39,7 +66,7 @@ function ToolCard({ tool, onOpen }: { tool: AITool; onOpen: (t: AITool) => void 
           </div>
           <p className="font-sans text-[12px] text-fg-4">{tool.provider}</p>
         </div>
-        <div className="flex items-center gap-1.5 shrink-0">
+        <div className="flex items-center gap-1.5 shrink-0 pr-7">
           <span className="font-mono text-[9px] px-2 py-0.5 rounded-full border uppercase tracking-[0.08em]"
             style={{ color: PRICING_COLOR[tool.pricing], borderColor: PRICING_COLOR[tool.pricing] + "44", background: PRICING_COLOR[tool.pricing] + "12" }}>
             {PRICING_LABEL[tool.pricing]}
@@ -67,6 +94,8 @@ function ToolCard({ tool, onOpen }: { tool: AITool; onOpen: (t: AITool) => void 
 
 export default function ToolsDirectoryPage() {
   const [selectedTool, setSelectedTool] = useState<AITool | null>(null);
+  const [compareIds, setCompareIds] = useState<string[]>([]);
+  const [compareOpen, setCompareOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<ToolCategory | "all">(() => {
     if (typeof window === "undefined") return "all";
     return (new URLSearchParams(window.location.search).get("category") || "all") as ToolCategory | "all";
@@ -100,6 +129,17 @@ export default function ToolsDirectoryPage() {
       return true;
     });
   }, [activeCategory, activePricing, search]);
+
+  const compareTools = useMemo(
+    () => compareIds.map(id => AI_TOOLS.find(t => t.id === id)).filter((t): t is AITool => !!t),
+    [compareIds]
+  );
+
+  const toggleCompare = useCallback((id: string) => {
+    setCompareIds(prev =>
+      prev.includes(id) ? prev.filter(x => x !== id) : prev.length < MAX_COMPARE ? [...prev, id] : prev
+    );
+  }, []);
 
   return (
     <div className="min-h-screen bg-abyss text-fg-1">
@@ -233,13 +273,30 @@ export default function ToolsDirectoryPage() {
                 transition={{ duration: 0.2 }}
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
               >
-                {filtered.map(tool => <ToolCard key={tool.id} tool={tool} onOpen={setSelectedTool} />)}
+                {filtered.map(tool => (
+                  <ToolCard
+                    key={tool.id}
+                    tool={tool}
+                    onOpen={setSelectedTool}
+                    isComparing={compareIds.includes(tool.id)}
+                    onToggleCompare={() => toggleCompare(tool.id)}
+                    compareDisabled={compareIds.length >= MAX_COMPARE}
+                  />
+                ))}
               </motion.div>
             </AnimatePresence>
           )}
         </div>
       </div>
       <ToolModal tool={selectedTool} onClose={() => setSelectedTool(null)} />
+
+      <ToolCompareBar
+        tools={compareTools}
+        onRemove={id => setCompareIds(prev => prev.filter(x => x !== id))}
+        onClear={() => setCompareIds([])}
+        onOpenCompare={() => setCompareOpen(true)}
+      />
+      <ToolCompareModal tools={compareTools} open={compareOpen} onClose={() => setCompareOpen(false)} />
     </div>
   );
 }
