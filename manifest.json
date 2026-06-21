@@ -14,6 +14,11 @@
     { "src": "/sintra-ai/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
   ],
   "categories": ["productivity", "education", "utilities"],
+  "shortcuts": [
+    { "name": "Today's AI News", "short_name": "News", "url": "/sintra-ai/news/" },
+    { "name": "Prompt Library", "short_name": "Library", "url": "/sintra-ai/#library" },
+    { "name": "AI Tools", "short_name": "Tools", "url": "/sintra-ai/tools/" }
+  ],
   "lang": "en",
   "dir": "ltr"
 }
