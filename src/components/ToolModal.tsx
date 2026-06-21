@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ExternalLink } from "lucide-react";
 import { AITool, TOOL_CATEGORIES } from "@/lib/toolsData";
+import type { UseCase } from "@/lib/constants";
 
 interface Props {
   tool: AITool | null;
@@ -62,6 +64,18 @@ export default function ToolModal({ tool, onClose }: Props) {
   }, [tool, onClose]);
 
   const cat = tool ? TOOL_CATEGORIES.find(c => c.id === tool.category) : null;
+
+  // Lazy-loaded so the (large) prompt dataset isn't bundled into every page that mounts this modal.
+  const [relatedPrompts, setRelatedPrompts] = useState<UseCase[]>([]);
+  useEffect(() => {
+    if (!tool) { setRelatedPrompts([]); return; }
+    const toolId = tool.id;
+    let active = true;
+    import("@/lib/data").then(({ USE_CASES }) => {
+      if (active) setRelatedPrompts(USE_CASES.filter(u => u.related_tools?.includes(toolId)).slice(0, 3));
+    });
+    return () => { active = false; };
+  }, [tool]);
 
   return (
     <AnimatePresence>
@@ -157,6 +171,29 @@ export default function ToolModal({ tool, onClose }: Props) {
                 </div>
               )}
 
+              {/* Related prompts */}
+              {relatedPrompts.length > 0 && (
+                <div className="mb-8">
+                  <span className="eyebrow block mb-3">Prompts that work great with {tool.name}</span>
+                  <div className="flex flex-col gap-2">
+                    {relatedPrompts.map(p => (
+                      <Link
+                        key={p.id}
+                        href={`/prompts/${p.slug}/`}
+                        onClick={onClose}
+                        className="flex items-start gap-3 p-3 rounded-lg border border-white/[0.06] hover:border-violet/30 bg-white/[0.02] hover:bg-white/[0.04] transition-all group"
+                      >
+                        <div className="flex-1 min-w-0">
+                          <p className="font-serif text-[13.5px] text-fg-1 group-hover:text-violet-bright transition-colors">{p.title}</p>
+                          <p className="font-sans text-[11.5px] text-fg-3 mt-0.5 line-clamp-1">{p.outcome || p.desc}</p>
+                        </div>
+                        <span className="font-mono text-[10px] text-fg-4 capitalize shrink-0 pt-0.5">{p.difficulty}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* CTA */}
               <div className="flex items-center gap-3">
                 <a
@@ -167,6 +204,9 @@ export default function ToolModal({ tool, onClose }: Props) {
                 >
                   <ExternalLink size={14} /> Open {tool.name}
                 </a>
+                <Link href={`/tools/${tool.id}/`} onClick={onClose} className="btn btn-ghost">
+                  Full details
+                </Link>
                 <button className="btn btn-ghost" onClick={onClose}>Close</button>
               </div>
             </div>
