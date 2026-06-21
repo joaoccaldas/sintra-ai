@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 20 Jun 2026 11:41:47 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 07:51:27 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -56,6 +56,33 @@
   </item>
 
   <item>
+    <title><![CDATA[Inference startup Baseten nears $1.5B raise at $13B valuation]]></title>
+    <description><![CDATA[Baseten is finalizing a $1.5 billion round at up to a $13 billion valuation, up from $5 billion just five months earlier, co-led by Spark Capital, Sands Capital, Altimeter Capital and Wellington Management. The company's annualized revenue grew from roughly $200 million to $600 million in a single quarter, driven by demand for running and optimizing open-source models.]]></description>
+    <link>https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Baseten</category>
+  </item>
+
+  <item>
+    <title><![CDATA[FERC orders six US grid operators to justify or reform data center connection rules]]></title>
+    <description><![CDATA[The Federal Energy Regulatory Commission issued tailored show-cause orders on June 18 to PJM, MISO, SPP, CAISO, ISO-NE and NYISO, giving each 60 days to justify current large-load interconnection tariffs or propose reforms, plus a 30-day deadline to report on generation adequacy. The orders target faster grid access for AI data centers while addressing cost-shifting and co-location rules.]]></description>
+    <link>https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration</link>
+    <guid isPermaLink="true">https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>FERC</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Macron and Modi headline VivaTech with India as AI country partner]]></title>
+    <description><![CDATA[French President Emmanuel Macron and Indian Prime Minister Narendra Modi appeared together at VivaTech 2026 on June 18, with India serving as the event's official AI Country Partner for its 10th edition. The event drew over 200,000 visitors and is positioned as a venue for tracking Europe's "AI buildout moving to construction phase."]]></description>
+    <link>https://www.techtimes.com/articles/318752/20260620/vivatech-2026-closes-decade-public-festival-europe-ai-buildout-moves-construction-phase.htm</link>
+    <guid isPermaLink="true">https://www.techtimes.com/articles/318752/20260620/vivatech-2026-closes-decade-public-festival-europe-ai-buildout-moves-construction-phase.htm</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>French Government</category>
+  </item>
+
+  <item>
     <title><![CDATA[NVIDIA Blackwell Sweeps Every MLPerf Training 6.0 Benchmark]]></title>
     <description><![CDATA[NVIDIA's Blackwell platform topped every category in MLPerf Training v6.0, posting the fastest time-to-train across all benchmarks and the largest-scale submission to date — 8,192 GPUs on GB200 NVL72 systems. New GB300 NVL72 systems delivered up to 1.6x faster training than GB200 at the same rack scale, and NVIDIA set records on two new MoE pretraining workloads added this round, DeepSeek-V3 671B and GPT-OSS-20B.]]></description>
     <link>https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/</link>
@@ -71,6 +98,60 @@
     <guid isPermaLink="true">https://openai.com/index/introducing-life-sci-bench/</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI publishes "near-autonomous AI chemist" research alongside new lab benchmark]]></title>
+    <description><![CDATA[OpenAI released research on June 17 describing a near-autonomous AI system capable of planning and executing multi-step chemistry experiments with limited human intervention. The publication accompanied a new evaluation framework for measuring AI performance on life-sciences research tasks.]]></description>
+    <link>https://openai.com/news/</link>
+    <guid isPermaLink="true">https://openai.com/news/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU's 2026 State of the Digital Decade report flags AI adoption gap despite 48% growth]]></title>
+    <description><![CDATA[The European Commission's fourth State of the Digital Decade report, published June 17, found AI adoption among EU businesses rose 48% in 2025 but remains under 20%, trailing cloud computing (46.7%) and data analytics (39.9%) adoption. The report warns that structural gaps in compute capacity, skills and scale-up funding could cause the EU to miss its 2030 digital targets.]]></description>
+    <link>https://digital-strategy.ec.europa.eu/en/news/2026-state-digital-decade-report-shows-progress-urges-closing-structural-gaps-reach-2030-goals</link>
+    <guid isPermaLink="true">https://digital-strategy.ec.europa.eu/en/news/2026-state-digital-decade-report-shows-progress-urges-closing-structural-gaps-reach-2030-goals</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Commission</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Mistral AI and Nvidia launch "Mistral Compute" sovereign cloud at VivaTech]]></title>
+    <description><![CDATA[At VivaTech Paris, Mistral AI and Nvidia confirmed the launch of Mistral Compute, a sovereign European AI infrastructure and GPU cloud platform built on 18,000 Grace Blackwell Superchips, partially operational at the Bruyères-le-Châtel data center. Launch partners include Black Forest Labs, BNP Paribas, and Thales; CEO Arthur Mensch said Mistral is expanding "from an AI company doing software to a cloud company."]]></description>
+    <link>https://blogs.nvidia.com/blog/france-advances-europes-ai-future/</link>
+    <guid isPermaLink="true">https://blogs.nvidia.com/blog/france-advances-europes-ai-future/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Mistral AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Foxconn and Bull to build Nvidia Vera Rubin NVL72 servers in France]]></title>
+    <description><![CDATA[Foxconn, French computing firm Bull, and Nvidia formalized a partnership at VivaTech under which Vera Rubin NVL72 rack-scale AI supercomputer components will be produced at Foxconn's Czech Republic facilities, then assembled and validated at Bull's factory in Angers, France, backed by an initial investment exceeding €120 million. Foxconn also showed a wheeled humanoid robot performing dual-arm factory assembly tasks, its formal European robotics debut.]]></description>
+    <link>https://www.prnewswire.com/news-releases/hon-hai-technology-group-foxconn-accelerates-global-leadership-in-ai-factories-infrastructure-at-europes-vivatech-302802796.html</link>
+    <guid isPermaLink="true">https://www.prnewswire.com/news-releases/hon-hai-technology-group-foxconn-accelerates-global-leadership-in-ai-factories-infrastructure-at-europes-vivatech-302802796.html</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Foxconn</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nvidia's Jensen Huang pledges 10x European AI compute capacity]]></title>
+    <description><![CDATA[In his GTC Paris keynote opening VivaTech 2026, Nvidia CEO Jensen Huang said the company will increase European AI computing capacity "by a factor of ten" over the next two years, framing AI infrastructure buildout as a generational industrial shift. The keynote coincided with multiple sovereign-AI infrastructure deals announced on the show floor.]]></description>
+    <link>https://www.techtimes.com/articles/318178/20260610/nvidia-gtc-paris-keynote-headlines-vivatech-june-17-20ai-factories-sovereign-ai-robotics-europe.htm</link>
+    <guid isPermaLink="true">https://www.techtimes.com/articles/318178/20260610/nvidia-gtc-paris-keynote-headlines-vivatech-june-17-20ai-factories-sovereign-ai-robotics-europe.htm</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Nvidia</category>
+  </item>
+
+  <item>
+    <title><![CDATA[China's embodied-AI financing surpasses 20 billion yuan for 2026, over 30 disclosed deals]]></title>
+    <description><![CDATA[Cumulative financing for China's embodied-intelligence and humanoid-robotics sector passed 20 billion yuan (roughly $2.8 billion) in 2026, spread across more than 30 disclosed funding rounds, already exceeding full-year 2025 totals. The surge coincides with Unitree's IPO progress and rising state-utility robot procurement, with some estimates citing China's broader 2026 robotics investment ambitions reaching into the hundreds of billions of dollars.]]></description>
+    <link>https://eu.36kr.com/en/p/3716564621489796</link>
+    <guid isPermaLink="true">https://eu.36kr.com/en/p/3716564621489796</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Various</category>
   </item>
 
   <item>
@@ -92,6 +173,42 @@
   </item>
 
   <item>
+    <title><![CDATA[Microsoft routes GitHub traffic through AWS as AI coding agents overwhelm Azure]]></title>
+    <description><![CDATA[Microsoft confirmed on June 16 that it is offloading GitHub traffic to Amazon Web Services after AI coding-agent activity pushed the platform past its reliability limits, with GitHub processing roughly 275 million commits per week (14 billion annualized, versus 1 billion in 2025). GitHub logged nine service-degrading incidents in May 2026 alone, with June availability tracking below 99%.]]></description>
+    <link>https://www.techtimes.com/articles/318481/20260616/githubs-ai-agent-crisis-forces-microsoft-tap-aws-outages-break-enterprise-slas.htm</link>
+    <guid isPermaLink="true">https://www.techtimes.com/articles/318481/20260616/githubs-ai-agent-crisis-forces-microsoft-tap-aws-outages-break-enterprise-slas.htm</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Microsoft</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Swedish AI patent platform Lightbringer raises $10M Series A]]></title>
+    <description><![CDATA[Malmö-based legaltech startup Lightbringer raised €8.6M ($10M) in a Series A co-led by London's 6 Degrees Capital and Amsterdam's Newion to fund US expansion. Founded in 2023, the AI-native patent platform cuts filing timelines from roughly two months to a few days and has served 200+ deep-tech companies across 17 countries.]]></description>
+    <link>https://www.eu-startups.com/2026/06/swedish-ai-patent-platform-lightbringer-raises-e8-6-million-to-take-on-big-law-and-replace-existing-patent-firms</link>
+    <guid isPermaLink="true">https://www.eu-startups.com/2026/06/swedish-ai-patent-platform-lightbringer-raises-e8-6-million-to-take-on-big-law-and-replace-existing-patent-firms</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Lightbringer</category>
+  </item>
+
+  <item>
+    <title><![CDATA[DeepSeek closes first-ever external funding round at $7.4B, state fund alone gets voting rights]]></title>
+    <description><![CDATA[DeepSeek closed its maiden external fundraise on June 16, 2026, raising roughly 51 billion yuan ($7.4 billion) at a post-money valuation above $50 billion. Under an unusual structure, commercial investors including Tencent (~10B yuan) and CATL (~5B yuan) accepted a five-year lock-up and gave up voting rights, while China's National AI Industry Investment Fund retained full voting control; founder Liang Wenfeng personally contributed the largest single stake (~20B yuan).]]></description>
+    <link>https://www.theinformation.com/articles/deepseek-closes-record-7-billion-plus-funding-unusual-deal-structure</link>
+    <guid isPermaLink="true">https://www.theinformation.com/articles/deepseek-closes-record-7-billion-plus-funding-unusual-deal-structure</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>DeepSeek</category>
+  </item>
+
+  <item>
+    <title><![CDATA[SoftBank launches OpenAI-powered "Patching as a Service" for Japan's critical infrastructure]]></title>
+    <description><![CDATA[SoftBank Group and SB OAI Japan announced "Patching as a Service" on June 16, 2026 in Tokyo, an AI-driven cybersecurity offering targeting Japan's roughly 3,000 largest critical-infrastructure companies (power, transport, airports). The service uses OpenAI's models to scan systems for vulnerabilities and produce remediation plans, with human teams handling implementation; the launch team of ~50 people is slated to scale to 1,000, and OpenAI CEO Sam Altman appeared via video at the event.]]></description>
+    <link>https://group.softbank/en/news/press/20260616</link>
+    <guid isPermaLink="true">https://group.softbank/en/news/press/20260616</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>SoftBank</category>
+  </item>
+
+  <item>
     <title><![CDATA[Salesforce to Acquire Fin (formerly Intercom) for $3.6 Billion]]></title>
     <description><![CDATA[Salesforce announced on June 15, 2026 a definitive agreement to acquire Fin, the AI customer-service agent company formerly known as Intercom, for approximately $3.6 billion. Fin's AI Agent, powered by its proprietary Apex model, resolves customer queries end-to-end across chat, email, WhatsApp, SMS, phone, and Slack; the deal is the largest acquisition of an agentic customer-experience provider to date and is expected to close in Salesforce's fiscal Q4 2027 pending regulatory approval.]]></description>
     <link>https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/</link>
@@ -107,6 +224,60 @@
     <guid isPermaLink="true">https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-copilot-into-1-click-data-theft-tool/</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Microsoft</category>
+  </item>
+
+  <item>
+    <title><![CDATA[China's State Grid earmarks $1B for 8,500 embodied-AI robots in 2026]]></title>
+    <description><![CDATA[China's State Grid Corporation set aside 6.8 billion yuan (about $1 billion) to procure roughly 8,500 embodied-intelligence robots in 2026 for power-grid operations and maintenance. Including similar plans from China Southern Power Grid and other utilities, industry estimates put total embodied-AI investment in the power sector above 10 billion yuan this year.]]></description>
+    <link>https://www.scmp.com/economy/china-economy/article/3351323/china-plans-invest-billions-robot-army-run-its-power-grid</link>
+    <guid isPermaLink="true">https://www.scmp.com/economy/china-economy/article/3351323/china-plans-invest-billions-robot-army-run-its-power-grid</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>State Grid Corporation of China</category>
+  </item>
+
+  <item>
+    <title><![CDATA[India's Sarvam AI becomes a unicorn with $234M Series B led by HCLTech]]></title>
+    <description><![CDATA[Sarvam AI announced on June 15, 2026 that it raised $234 million in the first close of a planned $300 million Series B, reaching a post-money valuation of $1.5 billion. HCLTech and Bessemer Venture Partners led the round, with existing backers Khosla Ventures and Peak XV Partners also participating; funds will go toward training Sarvam's next frontier model for agentic, coding, and cybersecurity use cases.]]></description>
+    <link>https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Sarvam AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI launches Partner Network with $150M investment]]></title>
+    <description><![CDATA[OpenAI introduced its first formal global partner program on June 14, backing it with $150 million to help consulting firms and systems integrators deploy enterprise AI, with a target of 300,000 certified consultants by end of 2026. Launch partners include Accenture, Bain, BCG, McKinsey and PwC across three tiers (Select, Advanced, Elite).]]></description>
+    <link>https://openai.com/index/introducing-openai-partner-network/</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-openai-partner-network/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google in talks with Samsung to manufacture part of next-gen "Icefish" TPU]]></title>
+    <description><![CDATA[Google is discussing having Samsung Foundry produce the I/O die for its 10th-generation TPU (codenamed Icefish) on a 2nm process, while TSMC continues making the 1.4nm compute die, as reported June 14. The move reflects hyperscalers hedging against TSMC's AI-driven capacity crunch, with mass production targeted for 2028.]]></description>
+    <link>https://www.techtimes.com/articles/318307/20260614/samsung-could-make-part-google-icefish-tpu-hyperscalers-hedge-against-tsmc.htm</link>
+    <guid isPermaLink="true">https://www.techtimes.com/articles/318307/20260614/samsung-could-make-part-google-icefish-tpu-hyperscalers-hedge-against-tsmc.htm</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Zhipu AI releases GLM-5.2 with 1M-token context, fully open-sourced under MIT license]]></title>
+    <description><![CDATA[Zhipu AI (Z.ai) released GLM-5.2, a Mixture-of-Experts model with roughly 744B total parameters and ~40B active per query, expanding context from GLM-5.1's 200K tokens to 1 million. The model shipped first via the GLM Coding Plan with day-one support for eight agentic IDEs, with open weights released under an MIT license days later; Zhipu's Hong Kong-listed shares jumped as much as 48% intraday on the news.]]></description>
+    <link>https://www.scmp.com/tech/tech-trends/article/3357115/zhipu-ais-stock-rockets-after-chinese-firm-makes-glm-52-open-source</link>
+    <guid isPermaLink="true">https://www.scmp.com/tech/tech-trends/article/3357115/zhipu-ais-stock-rockets-after-chinese-firm-makes-glm-52-open-source</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Zhipu AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Zhipu trains GLM-5.2 entirely on Huawei chips, without Nvidia hardware]]></title>
+    <description><![CDATA[Zhipu AI confirmed GLM-5.2 was trained exclusively on Huawei silicon, marking one of the first frontier-class open-weight models trained without any Nvidia GPUs. The disclosure came alongside the model's June 2026 release and underscores progress in China's domestic AI-chip stack under continued US export controls.]]></description>
+    <link>https://www.digitaltoday.co.kr/en/view/68873/z-ai-unveils-glm-5-2-trained-with-only-huawei-chips-without-nvidia</link>
+    <guid isPermaLink="true">https://www.digitaltoday.co.kr/en/view/68873/z-ai-unveils-glm-5-2-trained-with-only-huawei-chips-without-nvidia</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Zhipu AI</category>
   </item>
 
   <item>
@@ -182,6 +353,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Brazil and EU sign Digital Partnership covering AI governance and data sovereignty]]></title>
+    <description><![CDATA[Brazil and the European Union signed a Digital Partnership in Brasília on June 12, 2026, making Brazil the fifth country (and first from the Global South) to hold such an agreement with the EU, after Japan, South Korea, Singapore, and Canada. The deal commits both sides to annual meetings on AI governance, data governance, and 5G/6G infrastructure, signed by EU Executive VP Henna Virkkunen and Brazil's Secretary Alex Giacomelli da Silva, alongside a parallel agreement between the European Commission and Brazil's data protection authority (ANPD) on child online safety.]]></description>
+    <link>https://www.gov.br/mcom/pt-br/noticias/2026/junho-1/brasil-e-uniao-europeia-assinam-parceria-digital-para-impulsionar-conectividade-ia-e-infraestrutura-tecnologica</link>
+    <guid isPermaLink="true">https://www.gov.br/mcom/pt-br/noticias/2026/junho-1/brasil-e-uniao-europeia-assinam-parceria-digital-para-impulsionar-conectividade-ia-e-infraestrutura-tecnologica</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Government of Brazil</category>
+  </item>
+
+  <item>
     <title><![CDATA[MiniMax Publishes Open Weights for M3, a 1M-Context Model Claiming Frontier Coding Scores]]></title>
     <description><![CDATA[Shanghai-based MiniMax published open weights and a technical report for M3, roughly ten days after announcing the model on June 1. M3 combines a 1-million-token context window, native multimodal (image/video) understanding, and a new MiniMax Sparse Attention architecture that MiniMax says delivers about 15.6x faster decoding at 1M context versus its predecessor M2. MiniMax reported 59.0% on SWE-Bench Pro, ahead of GPT-5.5 and Gemini 3.1 Pro, but independent verification of the architecture claims is only now possible with weights available on Hugging Face.]]></description>
     <link>https://datanorth.ai/news/minimax-launches-m3</link>
@@ -227,6 +407,33 @@
   </item>
 
   <item>
+    <title><![CDATA[Bezos-backed Prometheus raises $12B for physical-world AI at $41B valuation]]></title>
+    <description><![CDATA[Prometheus, the industrial AI startup co-founded by Jeff Bezos and former Verily co-founder Vik Bajaj, closed a $12 billion round valuing it at $41 billion, up from $6.2 billion at its November launch. The company is building an "artificial general engineer" to automate design and manufacturing of physical systems, with backing from JPMorgan, Goldman Sachs and BlackRock.]]></description>
+    <link>https://www.geekwire.com/2026/bezos-ai-startup-prometheus-raises-12b-at-41b-valuation-and-the-ceos-explain-what-theyre-doing/</link>
+    <guid isPermaLink="true">https://www.geekwire.com/2026/bezos-ai-startup-prometheus-raises-12b-at-41b-valuation-and-the-ceos-explain-what-theyre-doing/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Prometheus</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Web Summit Rio 2026 closes with record 40,287 attendees, AI infrastructure focus]]></title>
+    <description><![CDATA[Web Summit Rio 2026 (June 8-11, Riocentro) closed with a record 40,287 participants from over 100 countries, 1,572 startups, and 688 investors, with the conference's dominant theme shifting from generative AI applications to AI infrastructure and digital sovereignty. Oracle, Claro, and Nvidia jointly presented an AI stack architecture (cloud, connectivity, and processing) built specifically for Brazilian operators, and Rio's city hall (IplanRio) showcased a WhatsApp-based municipal AI agent that won Bloomberg Philanthropies' 2025-2026 Mayors Challenge.]]></description>
+    <link>https://startups.com.br/artigo/web-summit-rio-2026-o-que-a-abertura-do-evento-revelou-sobre-a-proxima-fase-da-ia/</link>
+    <guid isPermaLink="true">https://startups.com.br/artigo/web-summit-rio-2026-o-que-a-abertura-do-evento-revelou-sobre-a-proxima-fase-da-ia/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Web Summit</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nubank details nuFormer foundation model strategy across credit and three countries]]></title>
+    <description><![CDATA[On June 11, 2026, Nubank's CTO Eric Young and Head of AI Core Rohan Ramanath detailed nuFormer, Nu's proprietary self-supervised foundation model trained on transaction data, on the Nu Videocast. The model is already live in Nu's largest Brazilian credit segment and is expanding to personal loans and to Mexico and Colombia, with the company crediting AI-assisted development for cutting nearly a year off a backend architecture migration.]]></description>
+    <link>https://international.nubank.com.br/company/nubank-details-ai-transformation-strategy-built-on-data-foundation-models-and-democratized-financial-advice/</link>
+    <guid isPermaLink="true">https://international.nubank.com.br/company/nubank-details-ai-transformation-strategy-built-on-data-foundation-models-and-democratized-financial-advice/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Nubank</category>
+  </item>
+
+  <item>
     <title><![CDATA[Google Releases DiffusionGemma, a 26B Open-Weight Text-Diffusion Model 4x Faster Than Gemma 4]]></title>
     <description><![CDATA[Google DeepMind released DiffusionGemma, a 26B-parameter Mixture-of-Experts model (3.8B active, built on the Gemma 4 backbone) that generates text via diffusion instead of autoregressive decoding, producing whole blocks of text in parallel. It delivers up to 4x faster generation — over 700 tokens/sec on an RTX 5090 and 1,000+ tokens/sec on a single H100 — but scores lower than standard Gemma 4 on MMLU and coding benchmarks, and Google recommends it for low-latency single-user workloads rather than quality-critical production use.]]></description>
     <link>https://developers.googleblog.com/diffusiongemma-the-developer-guide/</link>
@@ -251,213 +458,6 @@
     <guid isPermaLink="true">https://www.techradar.com/pro/microsoft-limits-employee-use-of-claude-fable-5-over-data-retention-concerns</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Microsoft</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Researcher Jailbreaks Claude Fable 5 Within Days of Launch, Leaks 120,000-Character System Prompt]]></title>
-    <description><![CDATA[Security researcher 'Pliny the Liberator' reported defeating Claude Fable 5's safety classifiers using multi-agent decomposition, Unicode obfuscation, and narrative framing — leaking the model's roughly 120,000-character system prompt and eliciting restricted outputs. Separately, the UK's AI Security Institute said it made early progress toward a universal jailbreak during initial testing. Anthropic has said it considers fully preventing universal jailbreaks unlikely and instead aims to make any that remain slow and costly enough to catch before large-scale misuse.]]></description>
-    <link>https://cybersecuritynews.com/anthropics-claude-fable-5-jailbroken/</link>
-    <guid isPermaLink="true">https://cybersecuritynews.com/anthropics-claude-fable-5-jailbroken/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Models Now Payable via Oracle Universal Credits as Stargate Adds 4.5GW with Oracle]]></title>
-    <description><![CDATA[OpenAI and Oracle announced that Oracle Cloud Infrastructure customers can now apply pre-committed Oracle Universal Credits toward OpenAI frontier models and Codex, without a new vendor agreement or security review. Separately, the companies agreed to develop an additional 4.5 gigawatts of Stargate data center capacity in the US, building on their existing roughly $300 billion cloud computing agreement.]]></description>
-    <link>https://openai.com/index/openai-on-oracle-cloud/</link>
-    <guid isPermaLink="true">https://openai.com/index/openai-on-oracle-cloud/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Volvo Autonomous Solutions to Remove Safety Drivers from Texas Trucking Routes in Q1 2027]]></title>
-    <description><![CDATA[At Volvo Group's Capital Markets Day in Sweden on June 10, 2026, Volvo Autonomous Solutions said it will remove the human safety driver and run fully driverless trucks on its existing Dallas-Houston freight corridor starting Q1 2027, scaling to more than 300 autonomous trucks by the end of 2027 and targeting roughly $3 billion in autonomous-business revenue within five years. The trucks combine Volvo's VNL Autonomous platform with Aurora's self-driving software, building on V.A.S.'s commercial depot-to-depot operations that have logged over 1 million autonomous miles since 2023.]]></description>
-    <link>https://www.freightwaves.com/news/volvo-driverless-trucks-q1-2027</link>
-    <guid isPermaLink="true">https://www.freightwaves.com/news/volvo-driverless-trucks-q1-2027</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Volvo</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Cyera Raises $600M at $12B Valuation to Build 'Trust Layer' for AI Agents]]></title>
-    <description><![CDATA[Data security startup Cyera raised $600 million led by Evolution Equity Partners on June 10, 2026, quadrupling its valuation to $12 billion in 18 months. The round funds expansion of Cyera's Data Security Posture Management platform into agentic security, addressing what the company says is a gap where 68% of organizations cannot distinguish human activity from AI agent activity inside their own systems.]]></description>
-    <link>https://www.businesswire.com/news/home/20260610121080/en/Cyera-Raises-600-Million-at-12-Billion-Valuation-to-Continue-Building-the-Trust-Layer-for-the-AI-Era</link>
-    <guid isPermaLink="true">https://www.businesswire.com/news/home/20260610121080/en/Cyera-Raises-600-Million-at-12-Billion-Valuation-to-Continue-Building-the-Trust-Layer-for-the-AI-Era</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Cyera</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Neura Robotics Raises Up to $1.4B Series C, Europe's Largest Robotics Round]]></title>
-    <description><![CDATA[German humanoid robotics maker Neura Robotics announced a Series C of up to $1.4 billion on June 10, 2026, at a $7 billion valuation — the largest funding round on record for a full-stack robotics company. The round was led by Tether with participation from Qualcomm, Amazon, Nvidia, Bosch, Schaeffler, and the European Investment Bank, and will fund serial production of humanoid robots and 'NEURA Gyms' real-world training environments for Physical AI.]]></description>
-    <link>https://neura-robotics.com/record-series-c/</link>
-    <guid isPermaLink="true">https://neura-robotics.com/record-series-c/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Neura Robotics</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Claude Fable 5 — Anthropic's Most Capable Model Yet, 95% on SWE-bench Verified]]></title>
-    <description><![CDATA[Anthropic released Claude Fable 5 on June 9, 2026, alongside the restricted Claude Mythos 5, describing it as its most capable generally-available model to date. Fable 5 scores roughly 95% on SWE-bench Verified and 92.6% on GPQA Diamond, ships with a 1M-token context window and up to 128K output tokens, and runs with always-on adaptive thinking — the legacy 'disable thinking' option is no longer supported. API pricing is $10 per million input tokens and $50 per million output tokens, with new safety classifiers that can return a 'refusal' stop reason for dual-use cyber, bio, and chem topics and automatically fall back to Claude Opus 4.8.]]></description>
-    <link>https://www.anthropic.com/news/claude-fable-5-mythos-5</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/claude-fable-5-mythos-5</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Brings Scheduled Cron Jobs and Secure CLI Access to Managed Agents (Public Beta)]]></title>
-    <description><![CDATA[Anthropic announced public beta support for Claude Managed Agents that run on a cron schedule and securely call CLI tools and authenticated services without hosting custom infrastructure. Credentials are vault-stored and attached only at the network boundary to allowlisted domains, so secrets never enter the model's context — mitigating prompt-injection-based credential theft.]]></description>
-    <link>https://www.anthropic.com/engineering/managed-agents</link>
-    <guid isPermaLink="true">https://www.anthropic.com/engineering/managed-agents</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nebius and Nvidia Launch Physical AI Living Lab for UK and European Robotics Startups]]></title>
-    <description><![CDATA[Nebius announced a six-month 'Physical AI Living Lab' giving UK and European robotics startups access to Nvidia OSMO, Cosmos world foundation models, Isaac Sim/Isaac Lab, and the Physical AI Data Factory Blueprint, running on Nebius's UK infrastructure with RTX PRO 6000 Blackwell Server Edition GPUs. The first cohort begins in September 2026, with synthetic data generation provided via Voxel51's FiftyOne integration.]]></description>
-    <link>https://nebius.com/newsroom/nebius-launches-physical-ai-living-lab-for-uk-and-european-robotics-startups-built-with-nvidia-technologies</link>
-    <guid isPermaLink="true">https://nebius.com/newsroom/nebius-launches-physical-ai-living-lab-for-uk-and-european-robotics-startups-built-with-nvidia-technologies</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Nebius</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Klarna CEO: Agentic Shopping Won't Erase Brand Loyalty, Pushes Open Agentic Commerce Protocol]]></title>
-    <description><![CDATA[Klarna CEO Sebastian Siemiatkowski argued that as AI shopping agents take over checkout, brand affinity will persist and matter more than UI design. Klarna has developed an open Agentic Commerce Protocol allowing merchants to catalog products for discovery by AI agents, positioned as complementary to the Stripe/OpenAI Agentic Commerce Protocol.]]></description>
-    <link>https://www.semafor.com/article/06/09/2026/klarna-on-the-fight-for-top-of-wallet-in-an-ai-agentic-commerce-world</link>
-    <guid isPermaLink="true">https://www.semafor.com/article/06/09/2026/klarna-on-the-fight-for-top-of-wallet-in-an-ai-agentic-commerce-world</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Klarna</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Launches Economic Research Exchange for External AI Impact Studies]]></title>
-    <description><![CDATA[OpenAI launched the OpenAI Economic Research Exchange on June 9, 2026, a platform inviting selected external researchers to propose privacy-protected, structured collaborations studying AI's economic impacts using OpenAI usage data. The initiative aims to support more rigorous, independent research on labor market and productivity effects of generative AI adoption.]]></description>
-    <link>https://openai.com</link>
-    <guid isPermaLink="true">https://openai.com</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Confidentially Files for IPO at ~$965B Valuation]]></title>
-    <description><![CDATA[Anthropic submitted a confidential S-1 filing to the SEC in early June 2026, taking a formal step toward a public listing at a valuation reportedly approaching $965 billion. The filing follows the company's $30B+ revenue run-rate disclosed in May and would rank among the largest tech IPOs in history if completed at the reported valuation.]]></description>
-    <link>https://www.anthropic.com</link>
-    <guid isPermaLink="true">https://www.anthropic.com</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Fortune: Claude Fable 5's System Card Discloses Hidden Capability Throttles]]></title>
-    <description><![CDATA[Reporting on Claude Fable 5's release, Fortune highlighted system-card disclosures showing Anthropic deliberately throttles certain dual-use capabilities (cyber, bio, chem) behind safety classifiers even when the underlying model could perform the task. Anthropic said the approach lets it ship a more capable base model while keeping high-risk outputs gated pending further evaluation.]]></description>
-    <link>https://fortune.com</link>
-    <guid isPermaLink="true">https://fortune.com</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Sets Retirement Date for Claude Sonnet 4 and Opus 4 API Access]]></title>
-    <description><![CDATA[Anthropic announced it will retire API access to Claude Sonnet 4 and Claude Opus 4 later in 2026, directing developers to migrate to Sonnet 4.6, Opus 4.7, or Fable 5. The company published migration guides covering prompt and tool-use differences between the legacy and current model generations.]]></description>
-    <link>https://docs.anthropic.com</link>
-    <guid isPermaLink="true">https://docs.anthropic.com</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Rolls Out ChatGPT Memory 'Dreaming' v3 — Background Memory Consolidation]]></title>
-    <description><![CDATA[OpenAI began rolling out version 3 of its background memory consolidation feature, nicknamed 'dreaming' internally, which periodically reviews and reorganizes a user's saved ChatGPT memories during idle periods to surface more relevant context in future conversations. OpenAI said the update reduces redundant or contradictory memory entries reported by users of earlier versions.]]></description>
-    <link>https://openai.com</link>
-    <guid isPermaLink="true">https://openai.com</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[China Drafts $295 Billion Plan for Nationwide AI Data Center Network, Mandates 80% Domestic Chips]]></title>
-    <description><![CDATA[China's National Development and Reform Commission is drafting a plan to spend roughly 2 trillion yuan ($295 billion) over five years building a nationwide network of interconnected AI computing hubs, operated primarily by state firms China Mobile and China Telecom. The draft mandates that at least 80% of core hardware, including AI chips, come from domestic suppliers such as Huawei — effectively excluding Nvidia and AMD from the buildout.]]></description>
-    <link>https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout</link>
-    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>China</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple WWDC 2026: Gemini-Powered Siri Overhaul, iOS 27, and $1B/Year Google Deal Confirmed at Keynote]]></title>
-    <description><![CDATA[At WWDC 2026, Apple unveiled a completely rebuilt Siri powered by a custom ~1.2-trillion-parameter Gemini model from Google at approximately $1 billion per year. The new Siri features a standalone app with personal-context access across emails, photos, and files, Dynamic Island integration, on-screen awareness, deep cross-app actions, and third-party extension support for Claude and ChatGPT. iOS 27, iPadOS 27, macOS 27, and visionOS 27 were also previewed in what is widely expected to be CEO Tim Cook's final WWDC keynote before stepping down September 1.]]></description>
-    <link>https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/</link>
-    <guid isPermaLink="true">https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Apple</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Alibaba's Accio Work Agentic AI Platform Expands to New Markets, Surpasses 10M Monthly Users]]></title>
-    <description><![CDATA[Alibaba International's Accio Work, a no-code agentic AI platform for SMEs, reported surpassing 10 million monthly active users as it expanded to new markets including Korea and Pakistan in late May/June 2026. The platform deploys autonomous agents for compliance (VAT filings, customs documentation across 100+ markets), supplier negotiation/RFQs, and logistics automation via WhatsApp and Telegram.]]></description>
-    <link>https://accio.works/</link>
-    <guid isPermaLink="true">https://accio.works/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Alibaba</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Banco do Brasil Trains 36,000+ Employees in Generative and Agentic AI]]></title>
-    <description><![CDATA[Banco do Brasil launched the 2026 edition of AcademIA BB, its internal AI training program, enrolling over 36,000 employees with a new focus on generative and agentic AI, up from 24,000 in the 2024 edition. The bank reports operating more than 12,000 Copilot agents and over 1,200 AI models in production, with content curated alongside Microsoft, Google Cloud and IBM.]]></description>
-    <link>https://tiinside.com.br/08/06/2026/banco-do-brasil-engaja-mais-de-36-mil-funcionarios-em-programa-de-capacitacao-para-ia-generativa-e-agentica/</link>
-    <guid isPermaLink="true">https://tiinside.com.br/08/06/2026/banco-do-brasil-engaja-mais-de-36-mil-funcionarios-em-programa-de-capacitacao-para-ia-generativa-e-agentica/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Banco do Brasil</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Taps Intel Foundry for Next-Generation TPU Manufacturing]]></title>
-    <description><![CDATA[Google signed an agreement with Intel Foundry to manufacture a portion of its next-generation Tensor Processing Units, diversifying away from a sole reliance on TSMC. The deal is part of a broader push by U.S. chipmakers and hyperscalers to expand domestic AI chip production capacity.]]></description>
-    <link>https://www.google.com</link>
-    <guid isPermaLink="true">https://www.google.com</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Congress Circulates Discussion Draft of the 'Great American AI Act']]></title>
-    <description><![CDATA[Lawmakers released a discussion draft of the 'Great American AI Act,' proposing a federal framework for frontier-model reporting requirements, a national AI incident database, and pre-emption of certain state-level AI laws. The draft follows the administration's earlier executive order establishing voluntary 30-day pre-release reviews for frontier models.]]></description>
-    <link>https://www.congress.gov</link>
-    <guid isPermaLink="true">https://www.congress.gov</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>U.S. Congress</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Boston Dynamics Begins Commercial Shipments of Electric Atlas Humanoid]]></title>
-    <description><![CDATA[Boston Dynamics shipped its first commercial units of the electric Atlas humanoid robot to industrial customers, following an extended pilot program in automotive manufacturing. The company said early deployments focus on parts handling and logistics tasks in factory environments, with broader availability planned for later in 2026.]]></description>
-    <link>https://bostondynamics.com</link>
-    <guid isPermaLink="true">https://bostondynamics.com</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Boston Dynamics</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Confidentially Files for IPO, Joining Trillion-Dollar AI Listing Pipeline]]></title>
-    <description><![CDATA[OpenAI confidentially filed paperwork for an initial public offering on June 8, 2026, a week after Anthropic filed its own preliminary IPO paperwork with the SEC on June 1. Bloomberg estimated the combined prospective value of the AI IPO pipeline — including OpenAI, Anthropic, and SpaceX — at roughly $3.6 trillion, though OpenAI has not disclosed a timeline, share count, or price range.]]></description>
-    <link>https://www.bloomberg.com/news/articles/2026-06-08/openai-filed-confidentially-for-ipo-as-rivals-race-to-market</link>
-    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-08/openai-filed-confidentially-for-ipo-as-rivals-race-to-market</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Make and Zapier Expand Autonomous 'AI Agent' Tiers Across No-Code Automation Platforms]]></title>
-    <description><![CDATA[No-code automation platforms Make and Zapier continued rolling out autonomous agent capabilities in 2026: Make's 'Maia' assistant builds automation scenarios from natural-language descriptions and now powers 'Make AI Agents' for autonomous task execution, while Zapier Agents read email, conduct research, and take actions across its 8,000+ app integrations and an MCP server exposing 30,000+ actions to external LLMs.]]></description>
-    <link>https://www.make.com/en/ai-agents</link>
-    <guid isPermaLink="true">https://www.make.com/en/ai-agents</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Make</category>
   </item>
   </channel>
 </rss>
