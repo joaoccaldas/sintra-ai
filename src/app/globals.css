@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 :root {
+  /* Opts out of the browser's own per-element dark-mode heuristics (e.g.
+     Android Chrome's "force dark") now that we declare our own themes. */
+  color-scheme: dark light;
+
   /* ── Layout ────────────────────────────────── */
   --sidebar-w: 224px;
 
@@ -68,6 +72,7 @@
 
 /* ── Light theme ──────────────────────────────────────────────── */
 [data-theme="light"] {
+  color-scheme: light dark;
   --void-rgb:           238 234 224;
   --abyss-rgb:          245 243 236;
   --night-rgb:          237 233 224;

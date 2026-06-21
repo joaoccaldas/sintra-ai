@@ -37,6 +37,10 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#090B14",
+  // Declaring this opts out of Android Chrome's "force dark" heuristic, which
+  // otherwise re-colors individual elements (e.g. card titles going
+  // dark-on-dark) on pages that don't explicitly state they support dark mode.
+  colorScheme: "dark light",
 };
 
 export const metadata: Metadata = {
