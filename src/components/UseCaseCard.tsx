@@ -82,7 +82,7 @@ export default function UseCaseCard({ item, onOpen, isFeatured = false, copyCoun
       <div className="flex items-center gap-2">
         <span
           className="font-mono text-[9px] tracking-[0.14em] uppercase font-medium"
-          style={{ color: catColor, opacity: 0.8 }}
+          style={{ color: catColor }}
         >
           {item.category}
         </span>
@@ -98,7 +98,7 @@ export default function UseCaseCard({ item, onOpen, isFeatured = false, copyCoun
       </div>
 
       {/* Title */}
-      <h3 className={`font-serif font-normal leading-[1.18] tracking-[-0.01em] text-fg-1 m-0 text-left transition-colors duration-150 group-hover:text-violet-bright${isFeatured ? " text-[26px]" : " text-[20px]"}`}>
+      <h3 className={`font-serif font-semibold leading-[1.18] tracking-[-0.01em] text-fg-1 m-0 text-left transition-colors duration-150 group-hover:text-violet-bright${isFeatured ? " text-[26px]" : " text-[20px]"}`}>
         {item.title}
       </h3>
 

@@ -89,7 +89,7 @@ export function NewsCard({ item, onTagFilter, isNew }: { item: NewsItem; onTagFi
         </div>
 
         {/* Title */}
-        <h3 className="font-serif text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3">
+        <h3 className="font-serif font-medium text-[18px] md:text-[22px] leading-[1.2] tracking-[-0.01em] text-fg-1 mb-3">
           {item.title}
         </h3>
 
