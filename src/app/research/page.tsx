@@ -7,7 +7,7 @@ import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 export const metadata: Metadata = {
   title: "AI Research Digest — Key Papers Explained | Sintra Tesseract",
   description:
-    "Foundational and frontier AI research papers explained in plain English for practitioners. Transformers, RLHF, LoRA, SWE-bench, DeepSeek-R1, and more.",
+    "Foundational and frontier AI research papers explained in plain English for practitioners, plus a rolling feed of the latest papers from the last two months. Transformers, RLHF, LoRA, SWE-bench, DeepSeek-R1, and more.",
   openGraph: {
     title: "AI Research Digest — Key Papers Explained",
     description:

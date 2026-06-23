@@ -568,4 +568,14 @@ export const RESOURCES: ResourceLink[] = [
     free: true,
     highlight: "The most product-dense Google I/O in history — watch from 1:20:00 for the Project Astra and Antigravity agent demos that define the 2026 agentic AI playbook",
   },
+  {
+    id: "ordax-ai-agents-linkedin",
+    name: "AI Agents — Eduardo Ordax",
+    tagline: "Practitioner take on AI agents from AWS's GenAI go-to-market lead",
+    url: "https://www.linkedin.com/posts/eordax_ai-agents-ugcPost-7474918609539125251-ORIc/",
+    category: "videos",
+    tags: ["AI agents", "LinkedIn", "AWS", "practitioner"],
+    free: true,
+    highlight: "Short-form practitioner video on AI agents from Eduardo Ordax (AWS) — hosted on LinkedIn rather than YouTube, so no embed preview is available on this site",
+  },
 ];

@@ -5,10 +5,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, BookOpen, ExternalLink, ChevronRight, Search } from "lucide-react";
 import {
   RESEARCH_PAPERS,
+  LATEST_PAPERS,
   CATEGORY_META,
   type ResearchPaper,
   type ResearchCategory,
 } from "@/lib/researchData";
+
+function formatDateAdded(iso: string): string {
+  return new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", {
+    day: "numeric", month: "short", year: "numeric", timeZone: "UTC",
+  });
+}
 
 const DIFFICULTY_COLOR: Record<string, string> = {
   beginner:     "text-emerald-400",
@@ -43,6 +50,11 @@ function PaperCard({
             <span className={`text-xs font-medium ${DIFFICULTY_COLOR[paper.difficulty]}`}>
               {paper.difficulty}
             </span>
+            {paper.dateAdded && (
+              <span className="text-xs font-medium text-emerald-400">
+                🆕 {formatDateAdded(paper.dateAdded)}
+              </span>
+            )}
           </div>
           <h3 className="font-semibold text-sm text-white/90 leading-snug line-clamp-2">
             {paper.shortTitle}
@@ -92,6 +104,7 @@ function PaperDetail({
           </h2>
           <p className="text-xs text-white/40">
             {paper.authors} · {paper.institution} · {paper.year}
+            {paper.dateAdded && <> · added {formatDateAdded(paper.dateAdded)}</>}
           </p>
         </div>
         <button
@@ -217,6 +230,22 @@ export default function ResearchClient() {
           </p>
         </div>
       </div>
+
+      {/* Latest research — rolling feed of papers published in the last ~2 months */}
+      {LATEST_PAPERS.length > 0 && (
+        <div className="max-w-6xl mx-auto px-6 pt-10">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-lg">🆕</span>
+            <h2 className="text-lg font-bold text-white">Latest research</h2>
+            <span className="text-xs text-white/40">— published in the last 2 months</span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-10 border-b border-white/8">
+            {LATEST_PAPERS.map((paper) => (
+              <PaperCard key={paper.id} paper={paper} onClick={() => setActivePaper(paper)} />
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="max-w-6xl mx-auto px-6 py-8">
         {/* Search */}
