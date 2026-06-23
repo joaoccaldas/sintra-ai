@@ -1,16 +1,39 @@
-// Sintra Tesseract service worker.
-// Strategy: network-first for page navigations (so the daily news digest
-// never serves stale content while online), cache-first for fingerprinted
-// static assets (Next.js content-hashes its JS/CSS, so they're safe to
-// cache aggressively). Falls back to cache when the network is unavailable.
-const CACHE_NAME = "sintra-tesseract-v2";
+// Sintra AI service worker.
+// Network-first navigation keeps editorial content current. Fingerprinted assets
+// remain cache-first. HTML responses receive the current runnerless hardening layer.
+const CACHE_NAME = "sintra-ai-v3-8fa880d";
 const OFFLINE_URL = "/sintra-ai/offline.html";
+const RUNTIME_URL = "/sintra-ai/runtime-hardening.js?v=8fa880d";
+
+function withRuntime(response) {
+  const type = response.headers.get("content-type") || "";
+  if (!type.includes("text/html")) return Promise.resolve(response);
+
+  return response.text().then((html) => {
+    if (!html.includes("runtime-hardening.js")) {
+      const boot = '<script>(function(){try{var t=["dark","light","forest","ocean"],s=localStorage.getItem("sintra-theme"),v=t.indexOf(s)>=0?s:(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",v)}catch(e){}})();<\/script>';
+      const runtime = `<script src="${RUNTIME_URL}" defer><\/script>`;
+      html = html.replace("</head>", `${boot}${runtime}</head>`);
+    }
+
+    const headers = new Headers(response.headers);
+    headers.delete("content-length");
+    headers.delete("content-encoding");
+    headers.set("x-sintra-release", "8fa880d");
+
+    return new Response(html, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    });
+  });
+}
 
 self.addEventListener("install", (event) => {
-  // Precache the offline fallback so even a never-visited page has something
-  // branded to show on a cold cache instead of the browser's dino error.
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.add(OFFLINE_URL)).catch(() => {})
+    caches.open(CACHE_NAME)
+      .then((cache) => cache.addAll([OFFLINE_URL, RUNTIME_URL]))
+      .catch(() => {})
   );
   self.skipWaiting();
 });
@@ -18,18 +41,31 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+      Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
     )
   );
   self.clients.claim();
 });
 
 self.addEventListener("fetch", (event) => {
-  const { request } = event;
+  const request = event.request;
   if (request.method !== "GET") return;
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  if (url.pathname.endsWith("/runtime-hardening.js")) {
+    event.respondWith(
+      fetch(request, { cache: "no-store" })
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
 
   if (request.mode === "navigate") {
     event.respondWith(
@@ -37,13 +73,12 @@ self.addEventListener("fetch", (event) => {
         .then((response) => {
           const copy = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
-          return response;
+          return withRuntime(response);
         })
         .catch(() =>
-          caches
-            .match(request)
+          caches.match(request)
             .then((cached) => cached || caches.match(url.pathname) || caches.match(OFFLINE_URL))
-            .then((res) => res || caches.match(OFFLINE_URL))
+            .then((response) => response ? withRuntime(response) : caches.match(OFFLINE_URL))
         )
     );
     return;
