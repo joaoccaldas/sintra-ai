@@ -32,18 +32,22 @@ export interface SearchDocument {
 }
 
 export const KIND_META: Record<EntityKind, { label: string; pluralLabel: string; color: string }> = {
-  use_case: { label: "Use Case",      pluralLabel: "Use Cases",      color: "#9F8CFF" },
-  tool:     { label: "Tool",          pluralLabel: "Tools",          color: "#8FE3D2" },
-  concept:  { label: "Concept",       pluralLabel: "Concepts",       color: "#F4D06F" },
-  lab:      { label: "AI Lab",        pluralLabel: "AI Labs",        color: "#F08CA8" },
-  news:     { label: "News",          pluralLabel: "News",           color: "#6EE7A0" },
-  path:     { label: "Learning Path", pluralLabel: "Learning Paths", color: "#E8C089" },
-  resource: { label: "Resource",      pluralLabel: "Resources",      color: "#B6A6FF" },
-  topic:    { label: "Topic Hub",     pluralLabel: "Topic Hubs",     color: "#FDA4AF" },
-  model:    { label: "AI Model",      pluralLabel: "AI Models",      color: "#E879F9" },
+  use_case: { label: "Use Case", pluralLabel: "Use Cases", color: "#9F8CFF" },
+  tool: { label: "Tool", pluralLabel: "Tools", color: "#8FE3D2" },
+  concept: { label: "Concept", pluralLabel: "Concepts", color: "#F4D06F" },
+  lab: { label: "AI Lab", pluralLabel: "AI Labs", color: "#F08CA8" },
+  news: { label: "News", pluralLabel: "News", color: "#6EE7A0" },
+  path: { label: "Learning Path", pluralLabel: "Learning Paths", color: "#E8C089" },
+  resource: { label: "Resource", pluralLabel: "Resources", color: "#B6A6FF" },
+  topic: { label: "Topic Hub", pluralLabel: "Topic Hubs", color: "#FDA4AF" },
+  model: { label: "AI Model", pluralLabel: "AI Models", color: "#E879F9" },
 };
 
 const KIND_ORDER: EntityKind[] = ["use_case", "model", "tool", "concept", "news", "lab", "path", "resource", "topic"];
+
+function internalSearchHref(route: string, query: string): string {
+  return `${BASE_PATH}/${route}/?q=${encodeURIComponent(query)}`;
+}
 
 export const SEARCH_INDEX: SearchDocument[] = [
   ...USE_CASES.map(u => ({
@@ -52,7 +56,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: u.title,
     summary: u.desc || u.outcome,
     tags: u.tags,
-    href: `${BASE_PATH}/#explore`,
+    href: `${BASE_PATH}/prompts/${u.slug}/`,
     body: [u.title, u.desc, u.outcome, u.prompt, u.best_llm, ...u.tags, ...u.tools, ...u.inputs.map(i => i.label)].join(" "),
     useCaseId: u.id,
   })),
@@ -62,7 +66,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: t.name,
     summary: t.tagline,
     tags: t.tags,
-    href: `${BASE_PATH}/tools/`,
+    href: `${BASE_PATH}/tools/${t.id}/`,
     body: [t.name, t.tagline, t.description, t.provider, t.category, t.highlight, ...t.tags].join(" "),
   })),
   ...CONCEPTS.map(c => ({
@@ -71,7 +75,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: c.term + (c.shortTerm ? ` (${c.shortTerm})` : ""),
     summary: c.tagline,
     tags: [c.category, ...c.related].slice(0, 4),
-    href: `${BASE_PATH}/concepts/`,
+    href: `${BASE_PATH}/concepts/${c.id}/`,
     body: [c.term, c.shortTerm ?? "", c.tagline, c.body, c.analogy, c.category, ...c.related].join(" "),
   })),
   ...AI_NEWS.map(n => ({
@@ -80,7 +84,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: n.title,
     summary: n.summary,
     tags: n.tags,
-    href: `${BASE_PATH}/news/`,
+    href: internalSearchHref("news", n.title),
     body: [n.title, n.summary, n.provider, n.date, n.significance, ...n.tags].join(" "),
   })),
   ...AI_LABS.map(l => ({
@@ -89,7 +93,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: l.name,
     summary: l.tagline,
     tags: l.focus.slice(0, 3),
-    href: `${BASE_PATH}/ai-labs/`,
+    href: `${BASE_PATH}/ai-labs/#${l.id}`,
     body: [l.name, l.tagline, l.type, l.description, ...l.focus, ...l.strengths, ...l.useCases, ...l.products, ...l.models.map(m => m.name)].join(" "),
   })),
   ...LEARNING_PATHS.map(p => ({
@@ -98,7 +102,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: p.title,
     summary: p.tagline,
     tags: [p.level, p.audience],
-    href: `${BASE_PATH}/learn/`,
+    href: `${BASE_PATH}/learn/?path=${encodeURIComponent(p.id)}`,
     body: [p.title, p.tagline, p.level, p.audience, ...p.steps.map(s => `${s.label} ${s.desc}`)].join(" "),
   })),
   ...RESOURCES.map(r => ({
@@ -107,7 +111,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: r.name,
     summary: r.tagline,
     tags: r.tags,
-    href: `${BASE_PATH}/resources/`,
+    href: internalSearchHref("resources", r.name),
     body: [r.name, r.tagline, r.category, r.highlight ?? "", ...r.tags].join(" "),
   })),
   ...AI_MODELS.map(m => ({
@@ -116,7 +120,7 @@ export const SEARCH_INDEX: SearchDocument[] = [
     title: m.name,
     summary: m.highlight,
     tags: [m.provider, m.tier, ...m.bestFor.slice(0, 3)],
-    href: `${BASE_PATH}/models/`,
+    href: `${BASE_PATH}/models/?model=${encodeURIComponent(m.id)}`,
     body: [m.name, m.provider, m.highlight, m.tier, ...m.bestFor, m.apiId ?? ""].join(" "),
   })),
   ...TOPIC_HUBS.map(t => ({
@@ -131,14 +135,15 @@ export const SEARCH_INDEX: SearchDocument[] = [
 ];
 
 let fuse: Fuse<SearchDocument> | null = null;
+
 function getFuse(): Fuse<SearchDocument> {
   if (!fuse) {
     fuse = new Fuse(SEARCH_INDEX, {
       keys: [
-        { name: "title",   weight: 3 },
-        { name: "tags",    weight: 2 },
+        { name: "title", weight: 3 },
+        { name: "tags", weight: 2 },
         { name: "summary", weight: 1.5 },
-        { name: "body",    weight: 0.8 },
+        { name: "body", weight: 0.8 },
       ],
       threshold: 0.35,
       includeScore: true,
@@ -153,15 +158,15 @@ export function searchAll(query: string): { kind: EntityKind; docs: SearchDocume
   const q = query.trim();
   if (!q) return [];
 
-  const results = getFuse().search(q).map(r => r.item);
-
+  const results = getFuse().search(q).map(result => result.item);
   const grouped: Partial<Record<EntityKind, SearchDocument[]>> = {};
+
   for (const doc of results) {
     if (!grouped[doc.kind]) grouped[doc.kind] = [];
     grouped[doc.kind]!.push(doc);
   }
 
   return KIND_ORDER
-    .filter(k => grouped[k] && grouped[k]!.length > 0)
-    .map(k => ({ kind: k, docs: grouped[k]! }));
+    .filter(kind => grouped[kind]?.length)
+    .map(kind => ({ kind, docs: grouped[kind]! }));
 }
