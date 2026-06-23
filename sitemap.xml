@@ -2031,6 +2031,16 @@
 <priority>0.6</priority>
 </url>
 <url>
+<loc>https://joaoccaldas.github.io/sintra-ai/concepts/agents/</loc>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://joaoccaldas.github.io/sintra-ai/concepts/function-calling/</loc>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
 <loc>https://joaoccaldas.github.io/sintra-ai/concepts/computer-use/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>

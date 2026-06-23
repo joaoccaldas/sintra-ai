@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 21 Jun 2026 17:16:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 06:50:32 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -33,6 +33,15 @@
     <description><![CDATA[The European Commission selected the EUROPA consortium, led by Italian company Domyn, as winner of its Frontier AI Grand Challenge launched in February 2026. EUROPA will build an open-source frontier AI model covering all 24 official EU languages with computational capacity equivalent to at least 400 billion parameters, using efficient Mixture-of-Experts architectures, and will receive up to 2.5% of EuroHPC's total AI-optimized supercomputing capacity for one year.]]></description>
     <link>https://ieu-monitoring.com/editorial/eu-commission-picks-europa-consortium-led-by-domyn-to-build-open-frontier-ai-model/1243623</link>
     <guid isPermaLink="true">https://ieu-monitoring.com/editorial/eu-commission-picks-europa-consortium-led-by-domyn-to-build-open-frontier-ai-model/1243623</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>European Commission</category>
+  </item>
+
+  <item>
+    <title><![CDATA[EU AI Act Advisory Forum Holds Inaugural Session With 174 Members]]></title>
+    <description><![CDATA[The European Commission hosted the first session of the AI Act Advisory Forum, the general advisory body supporting AI Act implementation and enforcement, with 174 members selected from over 700 applicants across civil society, academia, industry, and SMEs and startups. It runs alongside the separately appointed 60-member Scientific Panel focused on general-purpose AI model classification and systemic-risk evaluation.]]></description>
+    <link>https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support</link>
+    <guid isPermaLink="true">https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>European Commission</category>
   </item>
@@ -80,6 +89,51 @@
     <guid isPermaLink="true">https://www.techtimes.com/articles/318752/20260620/vivatech-2026-closes-decade-public-festival-europe-ai-buildout-moves-construction-phase.htm</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>French Government</category>
+  </item>
+
+  <item>
+    <title><![CDATA[São Paulo Study Finds AI Moved R$1.7 Billion in the City During 2025]]></title>
+    <description><![CDATA[A São Paulo Negócios (the city's investment-promotion agency) study of 52 respondents — tech companies, consultancies, research institutes, and government bodies — found AI-related activity moved R$1.7 billion ($310M) in the city of São Paulo in 2025, with a calculated R$2.7 billion impact on participating companies' revenue, R$116 million in tax collection, and R$1.5 billion added to municipal GDP. About a third of respondents said São Paulo's AI market is more advanced than the rest of Brazil and Latin America.]]></description>
+    <link>https://www.datacenterdynamics.com/br/not%C3%ADcias/estudo-da-s%C3%A3o-paulo-neg%C3%B3cios-mostra-que-ia-movimentou-r-17-bilh%C3%A3o-em-2025/</link>
+    <guid isPermaLink="true">https://www.datacenterdynamics.com/br/not%C3%ADcias/estudo-da-s%C3%A3o-paulo-neg%C3%B3cios-mostra-que-ia-movimentou-r-17-bilh%C3%A3o-em-2025/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>São Paulo Negócios</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Claude Fable 5 Access Restored With Nationality-Based Restrictions After Six-Day Outage]]></title>
+    <description><![CDATA[Anthropic restored Claude Fable 5 access roughly six days after the US government's export-control directive forced a global shutdown for foreign nationals, but the restored model now ships with nationality-based access controls and enhanced compliance screening. Developers reported more frequent fallback to Claude Opus 4.8 on cybersecurity, chemistry, and biology prompts; Claude Mythos 5 remained offline, restricted to a limited partner program.]]></description>
+    <link>https://techjacksolutions.com/ai-brief/claude-fable-5-returns-with-nationality-controls-developers/</link>
+    <guid isPermaLink="true">https://techjacksolutions.com/ai-brief/claude-fable-5-returns-with-nationality-controls-developers/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Adds Usage Analytics and Spend Controls to ChatGPT Enterprise]]></title>
+    <description><![CDATA[OpenAI introduced a Global Admin Console feature for ChatGPT Enterprise that surfaces credit consumption across ChatGPT and Codex by user, product, and model, plus configurable workspace credit limits, group-level caps, and individual spend overrides, all available via a unified Cost API. The launch targets enterprise customers facing rising scrutiny over AI spend.]]></description>
+    <link>https://openai.com/index/chatgpt-enterprise-spend-controls/</link>
+    <guid isPermaLink="true">https://openai.com/index/chatgpt-enterprise-spend-controls/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Perplexity Launches 'Brain,' a Self-Improving Memory System for Its Computer Agent]]></title>
+    <description><![CDATA[Perplexity launched Brain, a system that builds a context graph of work performed by its 'Computer' agent product and periodically retrains itself to improve task performance over time. The feature is rolling out in research preview to Perplexity Max and Enterprise Max subscribers.]]></description>
+    <link>https://www.marktechpost.com/2026/06/18/perplexity-launches-brain/</link>
+    <guid isPermaLink="true">https://www.marktechpost.com/2026/06/18/perplexity-launches-brain/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Perplexity</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gallup: Tech Workers Who Skip AI Face Triple the Layoff Risk]]></title>
+    <description><![CDATA[A Gallup study based on its Feb. 4–19, 2026 survey of 23,717 US employees (including 660 who reported being unemployed after their jobs were eliminated) found tech workers who use AI at least monthly face a predicted layoff risk of about 6%, versus 18% for those who use it less often — three times higher. Separately, 31% of tech-sector workers believe their job is somewhat or very likely to be eliminated within five years due to technology, AI, or automation, versus 18% of US workers overall.]]></description>
+    <link>https://www.gallup.com/workplace/704225/rising-adoption-spurs-workforce-changes.aspx</link>
+    <guid isPermaLink="true">https://www.gallup.com/workplace/704225/rising-adoption-spurs-workforce-changes.aspx</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Gallup</category>
   </item>
 
   <item>
@@ -152,6 +206,24 @@
     <guid isPermaLink="true">https://eu.36kr.com/en/p/3716564621489796</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Various</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic Opens Seoul Office, Lands NAVER, Samsung, and LG Across Korea]]></title>
+    <description><![CDATA[Anthropic opened its third Asia-Pacific office in Seoul, led by KiYoung Choi, alongside a wave of Korean enterprise deals: NAVER is deploying Claude Code across its entire engineering organization, Samsung SDS is rolling out Claude Cowork and Claude Code across Samsung Electronics, Nexon is using Claude Code for live-service game development, and LG CNS is deploying Claude across the LG Group. Anthropic also signed an MOU with Korea's Ministry of Science and ICT and will give up to 60 researchers at KAIST, Korea University, Yonsei, and POSTECH access to Claude.]]></description>
+    <link>https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem</link>
+    <guid isPermaLink="true">https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Sweden's Legora and Ironclad Launch Bidirectional 'AI-to-AI' Legal Integration]]></title>
+    <description><![CDATA[Stockholm-founded legal-AI platform Legora and US contract-lifecycle AI platform Ironclad announced a bidirectional integration connecting Legora's legal research and analysis AI with Ironclad's contracting AI. Legora CEO Max Junestrand said it is the first time two legal AI platforms have been connected this deeply and in both directions; rollout is phased to mutual customers.]]></description>
+    <link>https://www.artificiallawyer.com/2026/06/17/ironclad-legora-partner-for-unusual-ai-to-ai-integration/</link>
+    <guid isPermaLink="true">https://www.artificiallawyer.com/2026/06/17/ironclad-legora-partner-for-unusual-ai-to-ai-integration/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Legora</category>
   </item>
 
   <item>
@@ -386,78 +458,6 @@
     <guid isPermaLink="true">https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Cisco</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Acquires Ona (ex-Gitpod) to Give Codex Persistent Cloud Environments]]></title>
-    <description><![CDATA[OpenAI announced on June 11, 2026 that it will acquire Ona, a Kiel, Germany-based cloud platform (formerly Gitpod) that provides secure, reproducible cloud environments for autonomous coding agents and serves 2 million developers. Ona's orchestration and sandboxing technology will be folded into Codex, letting agents run longer tasks in persistent cloud environments while users are away from their machines. Financial terms were not disclosed.]]></description>
-    <link>https://openai.com/index/openai-to-acquire-ona/</link>
-    <guid isPermaLink="true">https://openai.com/index/openai-to-acquire-ona/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic and TCS Form Global Premier Partnership, Will Train 50,000 Staff on Claude]]></title>
-    <description><![CDATA[Tata Consultancy Services and Anthropic announced a global strategic partnership on June 11, 2026, making TCS a Global Premier Partner in the Claude Partner Network. TCS will train 50,000 associates on Claude, stand up a dedicated AI business unit, and deploy Claude across its own engineering, finance, legal, and sales functions, with a focus on regulated industries including financial services, healthcare, and aviation.]]></description>
-    <link>https://www.anthropic.com/news/tcs-anthropic-partnership</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/tcs-anthropic-partnership</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Bezos-backed Prometheus raises $12B for physical-world AI at $41B valuation]]></title>
-    <description><![CDATA[Prometheus, the industrial AI startup co-founded by Jeff Bezos and former Verily co-founder Vik Bajaj, closed a $12 billion round valuing it at $41 billion, up from $6.2 billion at its November launch. The company is building an "artificial general engineer" to automate design and manufacturing of physical systems, with backing from JPMorgan, Goldman Sachs and BlackRock.]]></description>
-    <link>https://www.geekwire.com/2026/bezos-ai-startup-prometheus-raises-12b-at-41b-valuation-and-the-ceos-explain-what-theyre-doing/</link>
-    <guid isPermaLink="true">https://www.geekwire.com/2026/bezos-ai-startup-prometheus-raises-12b-at-41b-valuation-and-the-ceos-explain-what-theyre-doing/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Prometheus</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Web Summit Rio 2026 closes with record 40,287 attendees, AI infrastructure focus]]></title>
-    <description><![CDATA[Web Summit Rio 2026 (June 8-11, Riocentro) closed with a record 40,287 participants from over 100 countries, 1,572 startups, and 688 investors, with the conference's dominant theme shifting from generative AI applications to AI infrastructure and digital sovereignty. Oracle, Claro, and Nvidia jointly presented an AI stack architecture (cloud, connectivity, and processing) built specifically for Brazilian operators, and Rio's city hall (IplanRio) showcased a WhatsApp-based municipal AI agent that won Bloomberg Philanthropies' 2025-2026 Mayors Challenge.]]></description>
-    <link>https://startups.com.br/artigo/web-summit-rio-2026-o-que-a-abertura-do-evento-revelou-sobre-a-proxima-fase-da-ia/</link>
-    <guid isPermaLink="true">https://startups.com.br/artigo/web-summit-rio-2026-o-que-a-abertura-do-evento-revelou-sobre-a-proxima-fase-da-ia/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Web Summit</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nubank details nuFormer foundation model strategy across credit and three countries]]></title>
-    <description><![CDATA[On June 11, 2026, Nubank's CTO Eric Young and Head of AI Core Rohan Ramanath detailed nuFormer, Nu's proprietary self-supervised foundation model trained on transaction data, on the Nu Videocast. The model is already live in Nu's largest Brazilian credit segment and is expanding to personal loans and to Mexico and Colombia, with the company crediting AI-assisted development for cutting nearly a year off a backend architecture migration.]]></description>
-    <link>https://international.nubank.com.br/company/nubank-details-ai-transformation-strategy-built-on-data-foundation-models-and-democratized-financial-advice/</link>
-    <guid isPermaLink="true">https://international.nubank.com.br/company/nubank-details-ai-transformation-strategy-built-on-data-foundation-models-and-democratized-financial-advice/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Nubank</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Releases DiffusionGemma, a 26B Open-Weight Text-Diffusion Model 4x Faster Than Gemma 4]]></title>
-    <description><![CDATA[Google DeepMind released DiffusionGemma, a 26B-parameter Mixture-of-Experts model (3.8B active, built on the Gemma 4 backbone) that generates text via diffusion instead of autoregressive decoding, producing whole blocks of text in parallel. It delivers up to 4x faster generation — over 700 tokens/sec on an RTX 5090 and 1,000+ tokens/sec on a single H100 — but scores lower than standard Gemma 4 on MMLU and coding benchmarks, and Google recommends it for low-latency single-user workloads rather than quality-critical production use.]]></description>
-    <link>https://developers.googleblog.com/diffusiongemma-the-developer-guide/</link>
-    <guid isPermaLink="true">https://developers.googleblog.com/diffusiongemma-the-developer-guide/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google for Brazil 2026: TacticAI Football Assistant Debuts with Palmeiras, Gemini Expands in Portuguese]]></title>
-    <description><![CDATA[At its annual Google for Brazil event on June 10, 2026, Google announced that DeepMind's TacticAI — an AI assistant that predicts football play dynamics roughly 8 seconds before they happen — will debut with Sociedade Esportiva Palmeiras and the Brazilian Football Confederation (CBF). Google also rolled out Ask Maps in Portuguese and expanded Gemini in Chrome to Brazil with page-summarization and cross-tab comparison features.]]></description>
-    <link>https://blog.google/company-news/inside-google/around-the-globe/google-latin-america/google-for-brazil-2026/</link>
-    <guid isPermaLink="true">https://blog.google/company-news/inside-google/around-the-globe/google-latin-america/google-for-brazil-2026/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Google</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Microsoft Bars Employees from Using Claude Fable 5 Internally Over Data-Retention Policy]]></title>
-    <description><![CDATA[Microsoft removed Claude Fable 5 from its internal GitHub Copilot model picker and blocked employee access to its API endpoints and web interface via Intune, citing Anthropic's new 30-day data-retention policy for Fable 5 inputs and outputs (with flagged content retained up to two years) used for safety-classifier review. Earlier Claude models remain available internally under Zero Data Retention agreements, even as Microsoft continues to offer Fable 5 to GitHub Copilot and Azure AI Foundry customers externally.]]></description>
-    <link>https://www.techradar.com/pro/microsoft-limits-employee-use-of-claude-fable-5-over-data-retention-concerns</link>
-    <guid isPermaLink="true">https://www.techradar.com/pro/microsoft-limits-employee-use-of-claude-fable-5-over-data-retention-concerns</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Microsoft</category>
   </item>
   </channel>
 </rss>
