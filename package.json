@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "next lint",
     "validate-data": "node scripts/validate-data.mjs",
-    "validate-content": "tsx scripts/validate-content.ts",
+    "validate-content": "tsx scripts/validate-content.ts && tsx scripts/validate-latest-news.ts",
     "test": "tsx --test scripts/tests/*.test.ts",
     "audit:static": "npm run validate-data && npm run validate-content && npm test && npm run typecheck",
     "check": "npm run audit:static && npm run build"
