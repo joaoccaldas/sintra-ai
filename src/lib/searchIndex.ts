@@ -1,7 +1,7 @@
 import Fuse from "fuse.js";
 import { USE_CASES, BASE_PATH } from "./data";
 import { AI_TOOLS } from "./toolsData";
-import { AI_NEWS } from "./newsData";
+import { AI_NEWS } from "./newsDataCombined";
 import { LEARNING_PATHS } from "./learningPathsData";
 import { CONCEPTS } from "./concepts";
 import { AI_LABS } from "./aiLabsData";
