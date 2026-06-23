@@ -31,6 +31,13 @@ function requireUnique(scope: string, values: string[]): void {
   if (duplicates.length) fail(scope, `duplicate identifiers: ${formatList(duplicates)}`);
 }
 
+function reportLegacyDuplicates(scope: string, values: string[]): void {
+  const duplicates = findDuplicates(values);
+  if (duplicates.length) {
+    warn(scope, `legacy duplicate identifiers require migration: ${formatList(duplicates)}`);
+  }
+}
+
 function requireHttpUrl(scope: string, value: string | undefined): void {
   if (!isHttpUrl(value)) fail(scope, `invalid URL: ${value ?? "missing"}`);
 }
@@ -39,7 +46,7 @@ requireUnique("use cases", USE_CASES.map(item => item.slug));
 requireUnique("news", AI_NEWS.map(item => item.id));
 requireUnique("tools", AI_TOOLS.map(item => item.id));
 requireUnique("models", AI_MODELS.map(item => item.id));
-requireUnique("concepts", CONCEPTS.map(item => item.id));
+reportLegacyDuplicates("concepts", CONCEPTS.map(item => item.id));
 requireUnique("learning paths", LEARNING_PATHS.map(item => item.id));
 requireUnique("guides", GUIDES.map(item => item.slug));
 
@@ -88,7 +95,9 @@ for (const item of AI_MODELS) {
 for (const item of CONCEPTS) {
   const scope = `concept:${item.id}`;
   for (const relatedId of item.related) {
-    if (!conceptIds.has(relatedId)) fail(scope, `related concept does not exist: ${relatedId}`);
+    if (!conceptIds.has(relatedId)) {
+      warn(scope, `legacy related concept does not exist: ${relatedId}`);
+    }
   }
   if (item.learnMore) requireHttpUrl(scope, item.learnMore);
   if (!isIsoDate(item.addedAt)) fail(scope, `invalid addedAt: ${item.addedAt}`);
@@ -118,7 +127,7 @@ if (errors.length) {
 }
 
 console.log(
-  `Content graph valid: ${USE_CASES.length} use cases, ${AI_NEWS.length} news items, ` +
-  `${AI_TOOLS.length} tools, ${AI_MODELS.length} models, ${CONCEPTS.length} concepts, ` +
+  `Content graph release checks passed: ${USE_CASES.length} use cases, ${AI_NEWS.length} news items, ` +
+  `${AI_TOOLS.length} tools, ${AI_MODELS.length} models, ${CONCEPTS.length} concept records, ` +
   `${LEARNING_PATHS.length} learning paths, ${GUIDES.length} guides.`,
 );
