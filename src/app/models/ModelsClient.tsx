@@ -1,159 +1,158 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
-import { ExternalLink, ChevronUp, ChevronDown, Info, Calculator } from "lucide-react";
-import { BASE_PATH } from "@/lib/constants";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { Calculator, ChevronDown, ChevronUp, ExternalLink, Info } from "lucide-react";
 import ModelWizard from "@/components/ModelWizard";
 import ModelCompare from "@/components/ModelCompare";
 import {
-  AI_MODELS, MODEL_PROVIDERS, TIER_META, SPEED_META,
-  type ModelEntry, type ModelTier,
+  AI_MODELS,
+  MODEL_PROVIDERS,
+  SPEED_META,
+  TIER_META,
+  type ModelEntry,
+  type ModelTier,
 } from "@/lib/modelsData";
 
-// ── Helpers ────────────────────────────────────────────────────────────────
-
-function fmt(n: number | null, suffix = ""): string {
-  if (n === null) return "—";
-  return `${n}${suffix}`;
+function formatContext(thousands: number): string {
+  return thousands >= 1000 ? `${thousands / 1000}M` : `${thousands}k`;
 }
 
-function fmtCtx(k: number): string {
-  return k >= 1000 ? `${k / 1000}M` : `${k}k`;
+function formatPrice(value: number | null): string {
+  if (value === null) return "—";
+  return value < 1 ? `$${value.toFixed(2)}` : `$${value}`;
 }
 
-function fmtPrice(n: number | null): string {
-  if (n === null) return "—";
-  if (n < 1) return `$${n.toFixed(2)}`;
-  return `$${n}`;
-}
-
-function Score({ value, warn = 60 }: { value: number | null; warn?: number }) {
+function Score({ value, warningThreshold = 60 }: { value: number | null; warningThreshold?: number }) {
   if (value === null) return <span className="text-fg-4 text-xs">—</span>;
-  const color = value >= 80 ? "#10b981" : value >= warn ? "#f59e0b" : "#ef4444";
+  const color = value >= 80 ? "#10b981" : value >= warningThreshold ? "#f59e0b" : "#ef4444";
   return <span className="text-xs font-mono font-medium" style={{ color }}>{value}%</span>;
 }
 
-function BoolChip({ val }: { val: boolean }) {
-  return val
-    ? <span className="text-[10px] text-emerald-400">✓</span>
-    : <span className="text-[10px] text-fg-4">—</span>;
+function BooleanMark({ value }: { value: boolean }) {
+  return value
+    ? <span className="text-[11px] text-emerald-400" aria-label="Yes">✓</span>
+    : <span className="text-[11px] text-fg-4" aria-label="No">—</span>;
 }
 
 type SortKey = "name" | "contextWindow" | "inputPrice" | "mmlu" | "gpqa" | "sweBench" | "mathAime";
 
-// ── QuickPick: 3 hero cards (fastest / cheapest / best coding) ────────────
+function latestVerificationLabel(): string {
+  const latest = AI_MODELS.map(model => model.lastVerified).sort((a, b) => b.localeCompare(a))[0];
+  return new Intl.DateTimeFormat("en", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })
+    .format(new Date(`${latest}T00:00:00Z`));
+}
 
-function QuickPick() {
-  const fastest = useMemo(
-    () => AI_MODELS.filter(m => m.speed === "fast" && m.inputPrice !== null)
-                   .sort((a, b) => (a.inputPrice ?? 0) - (b.inputPrice ?? 0))[0],
-    []
+function QuickPicks({ onSelect }: { onSelect: (model: ModelEntry) => void }) {
+  const fastValue = useMemo(
+    () => [...AI_MODELS]
+      .filter(model => model.speed === "fast" && model.inputPrice !== null)
+      .sort((a, b) => (a.inputPrice ?? Infinity) - (b.inputPrice ?? Infinity))[0],
+    [],
   );
   const cheapest = useMemo(
-    () => [...AI_MODELS].filter(m => m.inputPrice !== null)
-                        .sort((a, b) => (a.inputPrice ?? 0) - (b.inputPrice ?? 0))[0],
-    []
+    () => [...AI_MODELS]
+      .filter(model => model.inputPrice !== null)
+      .sort((a, b) => (a.inputPrice ?? Infinity) - (b.inputPrice ?? Infinity))[0],
+    [],
   );
-  const bestCode = useMemo(
-    () => [...AI_MODELS].filter(m => m.sweBench !== null)
-                        .sort((a, b) => (b.sweBench ?? 0) - (a.sweBench ?? 0))[0],
-    []
+  const reportedCodingLeader = useMemo(
+    () => [...AI_MODELS]
+      .filter(model => model.sweBench !== null)
+      .sort((a, b) => (b.sweBench ?? 0) - (a.sweBench ?? 0))[0],
+    [],
   );
 
   const picks = [
-    { label: "Fastest",       emoji: "⚡", model: fastest,  accent: "#5EEAD4" },
-    { label: "Cheapest API",  emoji: "💸", model: cheapest, accent: "#10b981" },
-    { label: "Best Coding",   emoji: "🧠", model: bestCode, accent: "#9F8CFF" },
+    { label: "Lowest-cost fast model", model: fastValue, detail: fastValue ? `${formatPrice(fastValue.inputPrice)}/1M input` : "", accent: "#5EEAD4" },
+    { label: "Cheapest listed API", model: cheapest, detail: cheapest ? `${formatPrice(cheapest.inputPrice)}/1M input` : "", accent: "#10b981" },
+    { label: "Highest reported coding score", model: reportedCodingLeader, detail: reportedCodingLeader ? `SWE ${reportedCodingLeader.sweBench}%` : "", accent: "#9F8CFF" },
   ];
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-      {picks.map(({ label, emoji, model, accent }) =>
-        model ? (
-          <a
-            key={label}
-            href={model.docsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col gap-2 p-4 rounded-xl border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/15 transition-all duration-200"
-          >
-            <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">
-              {emoji} {label}
-            </span>
-            <div>
-              <p className="font-serif text-[16px] text-fg-1 leading-snug group-hover:text-white transition-colors">
-                {model.name}
-              </p>
-              <p className="font-mono text-[10px] mt-0.5" style={{ color: model.providerColor }}>
-                {model.provider}
-              </p>
-            </div>
-            <div className="mt-auto flex items-center justify-between">
-              {label === "Best Coding" ? (
-                <span className="font-mono text-[11px]" style={{ color: accent }}>
-                  SWE {model.sweBench}%
-                </span>
-              ) : (
-                <span className="font-mono text-[11px]" style={{ color: accent }}>
-                  {model.inputPrice !== null ? `$${model.inputPrice}/1M in` : ""}
-                </span>
-              )}
-              <ExternalLink size={10} className="text-fg-4 group-hover:text-fg-2 transition-colors" />
-            </div>
-          </a>
-        ) : null
-      )}
+      {picks.map(pick => pick.model && (
+        <button
+          type="button"
+          key={pick.label}
+          onClick={() => onSelect(pick.model!)}
+          className="group flex flex-col gap-2 p-4 rounded-xl border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/15 transition-all duration-200 text-left"
+        >
+          <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4">{pick.label}</span>
+          <span>
+            <span className="block font-serif text-[17px] text-fg-1 leading-snug group-hover:text-white transition-colors">{pick.model.name}</span>
+            <span className="block font-mono text-[10px] mt-0.5" style={{ color: pick.model.providerColor }}>{pick.model.provider}</span>
+          </span>
+          <span className="mt-auto font-mono text-[11px]" style={{ color: pick.accent }}>{pick.detail}</span>
+        </button>
+      ))}
     </div>
   );
 }
 
-// ── Main component ─────────────────────────────────────────────────────────
-
 export default function ModelsClient() {
   const [tierFilter, setTierFilter] = useState<ModelTier | "all">("all");
-  const [providerFilter, setProviderFilter] = useState<string>("all");
+  const [providerFilter, setProviderFilter] = useState("all");
   const [sortKey, setSortKey] = useState<SortKey>("name");
-  const [sortDir, setSortDir] = useState<"asc" | "desc">("asc");
-  const [selected, setSelected] = useState<ModelEntry | null>(null);
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
+  const [selectedId, setSelectedId] = useState<string | null>(() => {
+    if (typeof window === "undefined") return null;
+    return new URLSearchParams(window.location.search).get("model");
+  });
 
+  const selected = useMemo(() => AI_MODELS.find(model => model.id === selectedId) ?? null, [selectedId]);
   const tiers: ModelTier[] = ["flagship", "balanced", "efficient", "reasoning", "open"];
 
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    selectedId ? url.searchParams.set("model", selectedId) : url.searchParams.delete("model");
+    window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    if (selectedId) {
+      window.setTimeout(() => document.getElementById(`model-${selectedId}`)?.scrollIntoView({ behavior: "smooth", block: "center" }), 80);
+    }
+  }, [selectedId]);
+
   function handleSort(key: SortKey) {
-    if (sortKey === key) {
-      setSortDir(d => d === "asc" ? "desc" : "asc");
-    } else {
+    if (sortKey === key) setSortDirection(direction => direction === "asc" ? "desc" : "asc");
+    else {
       setSortKey(key);
-      setSortDir(key === "name" ? "asc" : "desc");
+      setSortDirection(key === "name" ? "asc" : "desc");
     }
   }
 
   const filtered = useMemo(() => {
-    let list = [...AI_MODELS];
-    if (tierFilter !== "all") list = list.filter(m => m.tier === tierFilter);
-    if (providerFilter !== "all") list = list.filter(m => m.provider === providerFilter);
-    list.sort((a, b) => {
-      const av = a[sortKey] ?? (sortDir === "asc" ? Infinity : -Infinity);
-      const bv = b[sortKey] ?? (sortDir === "asc" ? Infinity : -Infinity);
-      if (typeof av === "string" && typeof bv === "string") {
-        return sortDir === "asc" ? av.localeCompare(bv) : bv.localeCompare(av);
-      }
-      return sortDir === "asc"
-        ? (av as number) - (bv as number)
-        : (bv as number) - (av as number);
-    });
-    return list;
-  }, [tierFilter, providerFilter, sortKey, sortDir]);
+    const list = AI_MODELS.filter(model =>
+      (tierFilter === "all" || model.tier === tierFilter) &&
+      (providerFilter === "all" || model.provider === providerFilter),
+    );
 
-  function SortBtn({ col, label }: { col: SortKey; label: string }) {
-    const active = sortKey === col;
+    return list.sort((a, b) => {
+      const aValue = sortKey === "name" ? a.name : a[sortKey];
+      const bValue = sortKey === "name" ? b.name : b[sortKey];
+      if (typeof aValue === "string" && typeof bValue === "string") {
+        return sortDirection === "asc" ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+      }
+      const left = aValue ?? (sortDirection === "asc" ? Infinity : -Infinity);
+      const right = bValue ?? (sortDirection === "asc" ? Infinity : -Infinity);
+      return sortDirection === "asc" ? Number(left) - Number(right) : Number(right) - Number(left);
+    });
+  }, [providerFilter, sortDirection, sortKey, tierFilter]);
+
+  const selectModel = useCallback((model: ModelEntry) => {
+    setSelectedId(current => current === model.id ? null : model.id);
+  }, []);
+
+  function SortButton({ column, label }: { column: SortKey; label: string }) {
+    const active = sortKey === column;
     return (
       <button
-        onClick={() => handleSort(col)}
+        type="button"
+        onClick={() => handleSort(column)}
         className={`flex items-center gap-0.5 font-mono text-[10px] tracking-[0.08em] uppercase whitespace-nowrap transition-colors ${active ? "text-violet-bright" : "text-fg-4 hover:text-fg-2"}`}
+        aria-label={`Sort by ${label}`}
       >
         {label}
         {active
-          ? sortDir === "asc" ? <ChevronUp size={10} /> : <ChevronDown size={10} />
+          ? sortDirection === "asc" ? <ChevronUp size={10} /> : <ChevronDown size={10} />
           : <ChevronDown size={10} className="opacity-30" />}
       </button>
     );
@@ -161,138 +160,114 @@ export default function ModelsClient() {
 
   return (
     <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-12">
-      {/* Header */}
-      <div className="mb-10">
+      <header className="mb-10">
         <div className="flex items-center gap-3 mb-4">
           <span className="w-9 h-px bg-gradient-to-r from-transparent to-violet-bright" />
           <span className="font-mono text-[10px] tracking-[0.18em] uppercase text-fg-4">Reference</span>
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-fg-1 mb-3">AI Model Comparison</h1>
-        <p className="text-fg-2 text-lg max-w-2xl mb-6">
-          API pricing, context windows, and benchmark scores for {AI_MODELS.length} frontier models — side by side.
+        <h1 className="font-serif text-[clamp(36px,5vw,64px)] font-light text-fg-1 mb-3">AI model comparison</h1>
+        <p className="text-fg-2 text-[17px] max-w-2xl mb-6">
+          Compare listed API pricing, context windows, capabilities, and reported benchmark scores across {AI_MODELS.length} models.
         </p>
-        <p className="text-xs text-fg-4 flex items-center gap-1.5">
-          <Info size={11} />
-          Pricing and benchmarks are approximate and change frequently. Always verify at provider docs before production use. Last verified May 2026.
+        <p className="text-[12px] text-fg-4 flex items-start gap-1.5 max-w-3xl">
+          <Info size={12} className="mt-0.5 shrink-0" />
+          Pricing and benchmarks change frequently and may use different evaluation settings. Verify provider documentation before production decisions. Latest item verification: {latestVerificationLabel()}.
         </p>
-      </div>
+      </header>
 
-      <QuickPick />
-
+      <QuickPicks onSelect={selectModel} />
       <ModelWizard />
-
       <ModelCompare />
 
-      {/* Filters */}
       <div className="flex flex-wrap gap-3 mb-6 items-center">
-        <div className="flex gap-1.5 flex-wrap">
+        <div className="flex gap-1.5 flex-wrap" role="group" aria-label="Model tier filter">
           <button
+            type="button"
             onClick={() => setTierFilter("all")}
-            className={`px-2.5 py-1 rounded-full border font-mono text-[10px] tracking-[0.06em] transition-all ${tierFilter === "all" ? "bg-violet/20 border-violet/60 text-violet-bright" : "border-white/10 text-fg-3 hover:border-white/20"}`}
+            aria-pressed={tierFilter === "all"}
+            className={`px-3 py-1.5 rounded-full border font-mono text-[10px] tracking-[0.06em] transition-all ${tierFilter === "all" ? "bg-violet/20 border-violet/60 text-violet-bright" : "border-white/10 text-fg-3 hover:border-white/20"}`}
           >All tiers</button>
-          {tiers.map(t => (
-            <button key={t} onClick={() => setTierFilter(t === tierFilter ? "all" : t)}
-              className={`px-2.5 py-1 rounded-full border font-mono text-[10px] tracking-[0.06em] transition-all ${tierFilter === t ? "border-current" : "border-white/10 text-fg-3 hover:border-white/20"}`}
-              style={tierFilter === t ? { color: TIER_META[t].color, borderColor: TIER_META[t].color + "88", background: TIER_META[t].color + "18" } : {}}
+          {tiers.map(tier => (
+            <button
+              type="button"
+              key={tier}
+              onClick={() => setTierFilter(tier === tierFilter ? "all" : tier)}
+              aria-pressed={tierFilter === tier}
+              className={`px-3 py-1.5 rounded-full border font-mono text-[10px] tracking-[0.06em] transition-all ${tierFilter === tier ? "border-current" : "border-white/10 text-fg-3 hover:border-white/20"}`}
+              style={tierFilter === tier ? { color: TIER_META[tier].color, borderColor: `${TIER_META[tier].color}88`, background: `${TIER_META[tier].color}18` } : undefined}
             >
-              {TIER_META[t].label}
+              {TIER_META[tier].label}
             </button>
           ))}
         </div>
 
         <select
           value={providerFilter}
-          onChange={e => setProviderFilter(e.target.value)}
+          onChange={event => setProviderFilter(event.target.value)}
           className="font-mono text-[11px] bg-white/[0.04] border border-hairline rounded-lg px-3 py-1.5 text-fg-2 outline-none focus:border-violet/60 transition-colors"
+          aria-label="Filter by provider"
         >
           <option value="all">All providers</option>
-          {MODEL_PROVIDERS.map(p => <option key={p} value={p}>{p}</option>)}
+          {MODEL_PROVIDERS.map(provider => <option key={provider} value={provider}>{provider}</option>)}
         </select>
 
-        <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} models</span>
+        <span className="font-mono text-[11px] text-fg-4 ml-auto" role="status">{filtered.length} models</span>
       </div>
 
-      {/* Desktop table */}
       <div className="hidden md:block rounded-2xl border border-white/[0.07] overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-white/[0.03] border-b border-white/[0.07]">
-                <th className="px-4 py-3 w-52 sticky left-0 bg-[#0d0a1c]">
-                  <SortBtn col="name" label="Model" />
-                </th>
-                <th className="px-3 py-3 w-28">Tier</th>
-                <th className="px-3 py-3 w-24">
-                  <SortBtn col="contextWindow" label="Context" />
-                </th>
-                <th className="px-3 py-3 w-28">
-                  <SortBtn col="inputPrice" label="Price in/out" />
-                </th>
-                <th className="px-3 py-3 w-20">
-                  <SortBtn col="mmlu" label="MMLU" />
-                </th>
-                <th className="px-3 py-3 w-20">
-                  <SortBtn col="gpqa" label="GPQA" />
-                </th>
-                <th className="px-3 py-3 w-20">
-                  <SortBtn col="sweBench" label="SWE" />
-                </th>
-                <th className="px-3 py-3 w-20">
-                  <SortBtn col="mathAime" label="AIME" />
-                </th>
-                <th className="px-3 py-3 w-12 text-center">
-                  <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4">MM</span>
-                </th>
-                <th className="px-3 py-3 w-12 text-center">
-                  <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4">OS</span>
-                </th>
-                <th className="px-3 py-3 w-20">
-                  <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4">Speed</span>
-                </th>
+                <th className="px-4 py-3 w-52 sticky left-0 bg-[#0d0a1c]"><SortButton column="name" label="Model" /></th>
+                <th className="px-3 py-3 w-28"><span className="font-mono text-[10px] uppercase text-fg-4">Tier</span></th>
+                <th className="px-3 py-3 w-24"><SortButton column="contextWindow" label="Context" /></th>
+                <th className="px-3 py-3 w-28"><SortButton column="inputPrice" label="Price in/out" /></th>
+                <th className="px-3 py-3 w-20"><SortButton column="mmlu" label="MMLU" /></th>
+                <th className="px-3 py-3 w-20"><SortButton column="gpqa" label="GPQA" /></th>
+                <th className="px-3 py-3 w-20"><SortButton column="sweBench" label="SWE" /></th>
+                <th className="px-3 py-3 w-20"><SortButton column="mathAime" label="AIME" /></th>
+                <th className="px-3 py-3 w-12 text-center"><span className="font-mono text-[10px] uppercase text-fg-4">MM</span></th>
+                <th className="px-3 py-3 w-12 text-center"><span className="font-mono text-[10px] uppercase text-fg-4">OS</span></th>
+                <th className="px-3 py-3 w-20"><span className="font-mono text-[10px] uppercase text-fg-4">Speed</span></th>
               </tr>
             </thead>
             <tbody>
-              {filtered.map((m, i) => {
-                const tier = TIER_META[m.tier];
-                const speed = SPEED_META[m.speed];
+              {filtered.map((model, index) => {
+                const tier = TIER_META[model.tier];
+                const speed = SPEED_META[model.speed];
+                const active = selectedId === model.id;
                 return (
                   <tr
-                    key={m.id}
-                    onClick={() => setSelected(m === selected ? null : m)}
-                    className={`border-b border-white/[0.04] cursor-pointer transition-colors ${
-                      selected?.id === m.id ? "bg-violet/[0.06]" : i % 2 === 0 ? "hover:bg-white/[0.02]" : "bg-white/[0.015] hover:bg-white/[0.03]"
-                    }`}
+                    id={`model-${model.id}`}
+                    key={model.id}
+                    tabIndex={0}
+                    onClick={() => selectModel(model)}
+                    onKeyDown={event => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        selectModel(model);
+                      }
+                    }}
+                    aria-selected={active}
+                    className={`border-b border-white/[0.04] cursor-pointer transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-bright ${active ? "bg-violet/[0.06]" : index % 2 === 0 ? "hover:bg-white/[0.02]" : "bg-white/[0.015] hover:bg-white/[0.03]"}`}
                   >
                     <td className="px-4 py-3 sticky left-0 bg-inherit">
-                      <div className="flex flex-col gap-0.5">
-                        <span className="text-sm font-medium text-fg-1">{m.name}</span>
-                        <span className="font-mono text-[10px]" style={{ color: m.providerColor }}>{m.provider}</span>
-                      </div>
-                    </td>
-                    <td className="px-3 py-3">
-                      <span className="font-mono text-[10px] px-1.5 py-0.5 rounded border"
-                        style={{ color: tier.color, borderColor: tier.color + "44", background: tier.color + "14" }}>
-                        {tier.label}
+                      <span className="flex flex-col gap-0.5">
+                        <span className="text-sm font-medium text-fg-1">{model.name}</span>
+                        <span className="font-mono text-[10px]" style={{ color: model.providerColor }}>{model.provider}</span>
                       </span>
                     </td>
-                    <td className="px-3 py-3">
-                      <span className="font-mono text-xs text-fg-2">{fmtCtx(m.contextWindow)}</span>
-                    </td>
-                    <td className="px-3 py-3">
-                      <div className="flex flex-col gap-0.5">
-                        <span className="font-mono text-[11px] text-fg-1">{fmtPrice(m.inputPrice)}</span>
-                        <span className="font-mono text-[10px] text-fg-4">{fmtPrice(m.outputPrice)} out</span>
-                      </div>
-                    </td>
-                    <td className="px-3 py-3 text-center"><Score value={m.mmlu} /></td>
-                    <td className="px-3 py-3 text-center"><Score value={m.gpqa} /></td>
-                    <td className="px-3 py-3 text-center"><Score value={m.sweBench} warn={40} /></td>
-                    <td className="px-3 py-3 text-center"><Score value={m.mathAime} warn={50} /></td>
-                    <td className="px-3 py-3 text-center"><BoolChip val={m.multimodal} /></td>
-                    <td className="px-3 py-3 text-center"><BoolChip val={m.openSource} /></td>
-                    <td className="px-3 py-3">
-                      <span className="font-mono text-[10px]" style={{ color: speed.color }}>{speed.label}</span>
-                    </td>
+                    <td className="px-3 py-3"><span className="font-mono text-[10px] px-1.5 py-0.5 rounded border" style={{ color: tier.color, borderColor: `${tier.color}44`, background: `${tier.color}14` }}>{tier.label}</span></td>
+                    <td className="px-3 py-3 font-mono text-xs text-fg-2">{formatContext(model.contextWindow)}</td>
+                    <td className="px-3 py-3"><span className="flex flex-col gap-0.5"><span className="font-mono text-[11px] text-fg-1">{formatPrice(model.inputPrice)}</span><span className="font-mono text-[10px] text-fg-4">{formatPrice(model.outputPrice)} out</span></span></td>
+                    <td className="px-3 py-3 text-center"><Score value={model.mmlu} /></td>
+                    <td className="px-3 py-3 text-center"><Score value={model.gpqa} /></td>
+                    <td className="px-3 py-3 text-center"><Score value={model.sweBench} warningThreshold={40} /></td>
+                    <td className="px-3 py-3 text-center"><Score value={model.mathAime} warningThreshold={50} /></td>
+                    <td className="px-3 py-3 text-center"><BooleanMark value={model.multimodal} /></td>
+                    <td className="px-3 py-3 text-center"><BooleanMark value={model.openSource} /></td>
+                    <td className="px-3 py-3"><span className="font-mono text-[10px]" style={{ color: speed.color }}>{speed.label}</span></td>
                   </tr>
                 );
               })}
@@ -301,136 +276,45 @@ export default function ModelsClient() {
         </div>
       </div>
 
-      {/* Mobile cards */}
       <div className="md:hidden space-y-3">
-        {filtered.map(m => {
-          const tier = TIER_META[m.tier];
+        {filtered.map(model => {
+          const tier = TIER_META[model.tier];
+          const active = selectedId === model.id;
           return (
             <button
-              key={m.id}
-              onClick={() => setSelected(m === selected ? null : m)}
-              className={`w-full text-left p-4 rounded-2xl border transition-all ${
-                selected?.id === m.id ? "border-violet/40 bg-violet/[0.06]" : "border-white/[0.07] bg-white/[0.02] hover:border-white/15"
-              }`}
+              type="button"
+              id={`model-${model.id}`}
+              key={model.id}
+              onClick={() => selectModel(model)}
+              aria-pressed={active}
+              className={`w-full text-left p-4 rounded-2xl border transition-all ${active ? "border-violet/40 bg-violet/[0.06]" : "border-white/[0.07] bg-white/[0.02] hover:border-white/15"}`}
             >
-              <div className="flex items-start justify-between mb-2">
-                <div>
-                  <p className="font-medium text-fg-1 text-sm">{m.name}</p>
-                  <p className="font-mono text-[10px] mt-0.5" style={{ color: m.providerColor }}>{m.provider}</p>
-                </div>
-                <span className="font-mono text-[10px] px-1.5 py-0.5 rounded border shrink-0"
-                  style={{ color: tier.color, borderColor: tier.color + "44", background: tier.color + "14" }}>
-                  {tier.label}
-                </span>
-              </div>
-              <div className="grid grid-cols-3 gap-2 text-center">
-                <div>
-                  <p className="font-mono text-[9px] text-fg-4 uppercase tracking-wide">Context</p>
-                  <p className="font-mono text-xs text-fg-2 mt-0.5">{fmtCtx(m.contextWindow)}</p>
-                </div>
-                <div>
-                  <p className="font-mono text-[9px] text-fg-4 uppercase tracking-wide">Price/1M</p>
-                  <p className="font-mono text-xs text-fg-2 mt-0.5">{fmtPrice(m.inputPrice)}</p>
-                </div>
-                <div>
-                  <p className="font-mono text-[9px] text-fg-4 uppercase tracking-wide">MMLU</p>
-                  <div className="mt-0.5"><Score value={m.mmlu} /></div>
-                </div>
-              </div>
+              <span className="flex items-start justify-between mb-2">
+                <span><span className="block font-medium text-fg-1 text-sm">{model.name}</span><span className="block font-mono text-[10px] mt-0.5" style={{ color: model.providerColor }}>{model.provider}</span></span>
+                <span className="font-mono text-[10px] px-1.5 py-0.5 rounded border shrink-0" style={{ color: tier.color, borderColor: `${tier.color}44`, background: `${tier.color}14` }}>{tier.label}</span>
+              </span>
+              <span className="grid grid-cols-3 gap-2 text-center">
+                <span><span className="block font-mono text-[9px] text-fg-4 uppercase">Context</span><span className="block font-mono text-xs text-fg-2 mt-0.5">{formatContext(model.contextWindow)}</span></span>
+                <span><span className="block font-mono text-[9px] text-fg-4 uppercase">Price/1M</span><span className="block font-mono text-xs text-fg-2 mt-0.5">{formatPrice(model.inputPrice)}</span></span>
+                <span><span className="block font-mono text-[9px] text-fg-4 uppercase">MMLU</span><span className="block mt-0.5"><Score value={model.mmlu} /></span></span>
+              </span>
             </button>
           );
         })}
       </div>
 
-      {/* Detail panel */}
-      {selected && (
-        <div className="mt-6 p-6 rounded-2xl border border-violet/20 bg-violet/[0.04]">
-          <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
-            <div>
-              <h2 className="text-xl font-bold text-fg-1">{selected.name}</h2>
-              <p className="font-mono text-[11px] mt-1" style={{ color: selected.providerColor }}>{selected.provider} · {selected.releaseDate}</p>
-            </div>
-            <a
-              href={selected.docsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 font-mono text-[11px] px-3 py-1.5 rounded-lg border border-violet/30 text-violet-bright hover:bg-violet/10 transition-colors"
-            >
-              Docs <ExternalLink size={11} />
-            </a>
-          </div>
+      {selected && <ModelDetail model={selected} />}
 
-          <p className="text-sm text-fg-2 mb-5">{selected.highlight}</p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
-            <Stat label="Context window" value={fmtCtx(selected.contextWindow)} />
-            <Stat label="Input price" value={selected.inputPrice !== null ? `${fmtPrice(selected.inputPrice)}/1M` : "No public API"} note={selected.priceNote} />
-            <Stat label="Output price" value={selected.outputPrice !== null ? `${fmtPrice(selected.outputPrice)}/1M` : "—"} />
-            <Stat label="Speed" value={SPEED_META[selected.speed].label} color={SPEED_META[selected.speed].color} />
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-4 mb-5">
-            <div>
-              <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-2">Benchmarks</p>
-              <div className="space-y-1.5">
-                {([
-                  ["MMLU (general knowledge)", selected.mmlu],
-                  ["GPQA (graduate science)", selected.gpqa],
-                  ["SWE-bench Verified (coding)", selected.sweBench],
-                  ["AIME 2024 (math)", selected.mathAime],
-                ] as [string, number | null][]).map(([label, val]) => (
-                  <div key={label} className="flex items-center justify-between">
-                    <span className="text-xs text-fg-3">{label}</span>
-                    <Score value={val} />
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-2">Capabilities</p>
-              <div className="space-y-1.5">
-                {([
-                  ["Multimodal (vision/image)", selected.multimodal],
-                  ["Extended thinking", selected.extendedThinking],
-                  ["Web search", selected.webSearch],
-                  ["Code execution", selected.codeExecution],
-                  ["Open source weights", selected.openSource],
-                ] as [string, boolean][]).map(([label, val]) => (
-                  <div key={label} className="flex items-center justify-between">
-                    <span className="text-xs text-fg-3">{label}</span>
-                    <BoolChip val={val} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-2">Best for</p>
-            <div className="flex flex-wrap gap-1.5">
-              {selected.bestFor.map(s => (
-                <span key={s} className="font-mono text-[10px] px-2 py-0.5 rounded bg-white/[0.05] border border-white/[0.08] text-fg-2">{s}</span>
-              ))}
-            </div>
-          </div>
-
-          {selected.apiId && (
-            <p className="mt-4 font-mono text-[10px] text-fg-4">API identifier: <code className="text-fg-2">{selected.apiId}</code></p>
-          )}
-        </div>
-      )}
-
-      {/* Column legend */}
       <div className="mt-8 pt-6 border-t border-white/[0.05] grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {[
-          { label: "MMLU", desc: "Massive Multitask Language Understanding — general knowledge across 57 subjects" },
-          { label: "GPQA", desc: "Graduate-level science questions — PhD-level biology, chemistry, physics" },
-          { label: "SWE", desc: "SWE-bench Verified — % of real GitHub issues resolved end-to-end" },
-          { label: "AIME", desc: "American Invitational Mathematics Exam 2024 — competition math accuracy" },
-        ].map(({ label, desc }) => (
-          <div key={label}>
-            <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-violet-bright mb-1">{label}</p>
-            <p className="text-[11px] text-fg-4 leading-snug">{desc}</p>
+          { label: "MMLU", description: "General knowledge across many academic subjects" },
+          { label: "GPQA", description: "Graduate-level science questions" },
+          { label: "SWE", description: "Reported SWE-bench Verified issue-resolution rate" },
+          { label: "AIME", description: "Competition mathematics accuracy" },
+        ].map(item => (
+          <div key={item.label}>
+            <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-violet-bright mb-1">{item.label}</p>
+            <p className="text-[12px] text-fg-4 leading-snug">{item.description}</p>
           </div>
         ))}
       </div>
@@ -440,123 +324,125 @@ export default function ModelsClient() {
   );
 }
 
-// ── Cost Calculator ────────────────────────────────────────────────────────
+function ModelDetail({ model }: { model: ModelEntry }) {
+  return (
+    <section className="mt-6 p-6 rounded-2xl border border-violet/20 bg-violet/[0.04]" aria-labelledby={`model-detail-${model.id}`}>
+      <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
+        <div>
+          <h2 id={`model-detail-${model.id}`} className="text-xl font-bold text-fg-1">{model.name}</h2>
+          <p className="font-mono text-[11px] mt-1" style={{ color: model.providerColor }}>{model.provider} · {model.releaseDate} · verified {model.lastVerified}</p>
+        </div>
+        <a href={model.docsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono text-[11px] px-3 py-1.5 rounded-lg border border-violet/30 text-violet-bright hover:bg-violet/10 transition-colors">
+          Provider docs <ExternalLink size={11} />
+        </a>
+      </div>
+
+      <p className="text-sm text-fg-2 mb-5">{model.highlight}</p>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
+        <Stat label="Context window" value={formatContext(model.contextWindow)} />
+        <Stat label="Input price" value={model.inputPrice !== null ? `${formatPrice(model.inputPrice)}/1M` : "No public API"} note={model.priceNote} />
+        <Stat label="Output price" value={model.outputPrice !== null ? `${formatPrice(model.outputPrice)}/1M` : "—"} />
+        <Stat label="Speed category" value={SPEED_META[model.speed].label} color={SPEED_META[model.speed].color} />
+      </div>
+
+      <div className="grid sm:grid-cols-2 gap-6 mb-5">
+        <div>
+          <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-2">Reported benchmarks</p>
+          <div className="space-y-1.5">
+            {([
+              ["MMLU", model.mmlu],
+              ["GPQA", model.gpqa],
+              ["SWE-bench Verified", model.sweBench],
+              ["AIME", model.mathAime],
+            ] as [string, number | null][]).map(([label, value]) => (
+              <div key={label} className="flex items-center justify-between"><span className="text-xs text-fg-3">{label}</span><Score value={value} /></div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-2">Capabilities</p>
+          <div className="space-y-1.5">
+            {([
+              ["Multimodal", model.multimodal],
+              ["Extended thinking", model.extendedThinking],
+              ["Web search", model.webSearch],
+              ["Code execution", model.codeExecution],
+              ["Open weights", model.openSource],
+            ] as [string, boolean][]).map(([label, value]) => (
+              <div key={label} className="flex items-center justify-between"><span className="text-xs text-fg-3">{label}</span><BooleanMark value={value} /></div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-2">Best for</p>
+      <div className="flex flex-wrap gap-1.5">
+        {model.bestFor.map(item => <span key={item} className="font-mono text-[10px] px-2 py-0.5 rounded bg-white/[0.05] border border-white/[0.08] text-fg-2">{item}</span>)}
+      </div>
+      {model.apiId && <p className="mt-4 font-mono text-[10px] text-fg-4">API identifier: <code className="text-fg-2">{model.apiId}</code></p>}
+    </section>
+  );
+}
 
 function CostCalculator() {
-  const [inputTokens,  setInputTokens]  = useState(500);
+  const [inputTokens, setInputTokens] = useState(500);
   const [outputTokens, setOutputTokens] = useState(800);
-  const [reqsPerDay,   setReqsPerDay]   = useState(1000);
+  const [requestsPerDay, setRequestsPerDay] = useState(1000);
+  const monthlyRequests = requestsPerDay * 30;
 
-  const monthlyReqs = reqsPerDay * 30;
+  const priceable = useMemo(() => AI_MODELS
+    .filter(model => model.inputPrice !== null && model.outputPrice !== null)
+    .sort((a, b) => {
+      const aCost = (a.inputPrice! * inputTokens + a.outputPrice! * outputTokens) / 1_000_000;
+      const bCost = (b.inputPrice! * inputTokens + b.outputPrice! * outputTokens) / 1_000_000;
+      return aCost - bCost;
+    }), [inputTokens, outputTokens]);
 
-  const priceable = useMemo(
-    () => AI_MODELS.filter(m => m.inputPrice !== null && m.outputPrice !== null)
-                   .sort((a, b) => {
-                     const costA = (a.inputPrice! * inputTokens + a.outputPrice! * outputTokens) / 1_000_000;
-                     const costB = (b.inputPrice! * inputTokens + b.outputPrice! * outputTokens) / 1_000_000;
-                     return costA - costB;
-                   }),
-    [inputTokens, outputTokens]
-  );
-
-  const fmtMonthlyCost = useCallback((m: ModelEntry) => {
-    if (m.inputPrice === null || m.outputPrice === null) return "—";
-    const costPerReq = (m.inputPrice * inputTokens + m.outputPrice * outputTokens) / 1_000_000;
-    const monthly = costPerReq * monthlyReqs;
-    if (monthly < 0.01) return "< $0.01";
-    if (monthly < 1) return `$${monthly.toFixed(3)}`;
-    if (monthly < 1000) return `$${monthly.toFixed(2)}`;
-    return `$${(monthly / 1000).toFixed(1)}k`;
-  }, [inputTokens, outputTokens, monthlyReqs]);
-
-  function NumInput({ label, value, onChange, min, max, step }: {
-    label: string; value: number; onChange: (v: number) => void;
-    min: number; max: number; step: number;
-  }) {
-    return (
-      <div>
-        <label className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4 block mb-1.5">{label}</label>
-        <input
-          type="number"
-          value={value}
-          min={min}
-          max={max}
-          step={step}
-          onChange={e => onChange(Math.max(min, Number(e.target.value)))}
-          className="w-full bg-white/[0.04] border border-hairline rounded-lg px-3 py-2 font-mono text-[13px] text-fg-1 outline-none focus:border-violet/50 transition-colors"
-        />
-      </div>
-    );
-  }
+  const monthlyCost = useCallback((model: ModelEntry) => {
+    if (model.inputPrice === null || model.outputPrice === null) return "—";
+    const requestCost = (model.inputPrice * inputTokens + model.outputPrice * outputTokens) / 1_000_000;
+    const total = requestCost * monthlyRequests;
+    if (total < 0.01) return "< $0.01";
+    if (total < 1) return `$${total.toFixed(3)}`;
+    if (total < 1000) return `$${total.toFixed(2)}`;
+    return `$${(total / 1000).toFixed(1)}k`;
+  }, [inputTokens, monthlyRequests, outputTokens]);
 
   const cheapest = priceable[0];
 
   return (
-    <div className="mt-12 pt-10 border-t border-white/[0.06]">
-      <div className="flex items-center gap-2 mb-6">
+    <section className="mt-12 pt-10 border-t border-white/[0.06]" aria-labelledby="cost-calculator-title">
+      <div className="flex items-center gap-2 mb-3">
         <Calculator size={16} className="text-violet-bright" />
-        <h2 className="font-serif text-[22px] text-fg-1">Cost Calculator</h2>
+        <h2 id="cost-calculator-title" className="font-serif text-[22px] text-fg-1">Cost calculator</h2>
       </div>
-      <p className="font-sans text-[14px] text-fg-3 mb-8 max-w-2xl">
-        Estimate your monthly API spend across all models. Adjust tokens per request and daily volume to see how costs compare.
-      </p>
+      <p className="font-sans text-[14px] text-fg-3 mb-8 max-w-2xl">Estimate monthly API spend using the listed token prices. Discounts, caching, free tiers, and batch pricing are not included.</p>
 
-      {/* Inputs */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 p-5 rounded-2xl border border-violet/[0.12] bg-violet/[0.03]">
-        <NumInput label="Input tokens / request" value={inputTokens}  onChange={setInputTokens}  min={1}    max={500000} step={100} />
-        <NumInput label="Output tokens / request" value={outputTokens} onChange={setOutputTokens} min={1}    max={100000} step={100} />
-        <NumInput label="Requests / day"          value={reqsPerDay}   onChange={setReqsPerDay}   min={1}    max={10000000} step={100} />
+        <NumberInput label="Input tokens per request" value={inputTokens} onChange={setInputTokens} min={1} max={500000} step={100} />
+        <NumberInput label="Output tokens per request" value={outputTokens} onChange={setOutputTokens} min={1} max={100000} step={100} />
+        <NumberInput label="Requests per day" value={requestsPerDay} onChange={setRequestsPerDay} min={1} max={10000000} step={100} />
       </div>
 
-      {/* Summary */}
-      <div className="grid grid-cols-3 gap-3 mb-6">
-        {[
-          { label: "Tokens / request", value: (inputTokens + outputTokens).toLocaleString() },
-          { label: "Requests / month",  value: monthlyReqs.toLocaleString() },
-          { label: "Cheapest option",   value: cheapest ? `${cheapest.name} · ${fmtMonthlyCost(cheapest)}/mo` : "—" },
-        ].map(s => (
-          <div key={s.label} className="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06]">
-            <p className="font-mono text-[9px] tracking-[0.12em] uppercase text-fg-4 mb-1">{s.label}</p>
-            <p className="font-mono text-[12px] text-fg-1">{s.value}</p>
-          </div>
-        ))}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+        <Stat label="Tokens per request" value={(inputTokens + outputTokens).toLocaleString()} />
+        <Stat label="Requests per month" value={monthlyRequests.toLocaleString()} />
+        <Stat label="Cheapest listed option" value={cheapest ? `${cheapest.name} · ${monthlyCost(cheapest)}/mo` : "—"} />
       </div>
 
-      {/* Comparison table */}
       <div className="rounded-xl border border-white/[0.07] overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="bg-white/[0.03] border-b border-white/[0.07]">
-                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 w-52">Model</th>
-                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 w-28">Provider</th>
-                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 w-28 text-right">Per request</th>
-                <th className="px-4 py-2.5 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4 text-right">Monthly cost</th>
-              </tr>
-            </thead>
+            <thead><tr className="bg-white/[0.03] border-b border-white/[0.07]"><th className="px-4 py-2.5 font-mono text-[10px] uppercase text-fg-4">Model</th><th className="px-4 py-2.5 font-mono text-[10px] uppercase text-fg-4">Provider</th><th className="px-4 py-2.5 font-mono text-[10px] uppercase text-fg-4 text-right">Per request</th><th className="px-4 py-2.5 font-mono text-[10px] uppercase text-fg-4 text-right">Monthly</th></tr></thead>
             <tbody>
-              {priceable.map((m, i) => {
-                if (m.inputPrice === null || m.outputPrice === null) return null;
-                const perReq = (m.inputPrice * inputTokens + m.outputPrice * outputTokens) / 1_000_000;
-                const isFirst = i === 0;
+              {priceable.map((model, index) => {
+                const perRequest = (model.inputPrice! * inputTokens + model.outputPrice! * outputTokens) / 1_000_000;
                 return (
-                  <tr
-                    key={m.id}
-                    className={`border-b border-white/[0.04] ${isFirst ? "bg-emerald-500/[0.06]" : i % 2 === 0 ? "" : "bg-white/[0.015]"}`}
-                  >
-                    <td className="px-4 py-2.5">
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm text-fg-1">{m.name}</span>
-                        {isFirst && <span className="font-mono text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">cheapest</span>}
-                      </div>
-                    </td>
-                    <td className="px-4 py-2.5 font-mono text-[11px]" style={{ color: m.providerColor }}>{m.provider}</td>
-                    <td className="px-4 py-2.5 font-mono text-[11px] text-fg-3 text-right">
-                      {perReq < 0.0001 ? `$${perReq.toExponential(1)}` : `$${perReq.toFixed(4)}`}
-                    </td>
-                    <td className="px-4 py-2.5 font-mono text-[13px] text-right" style={{ color: isFirst ? "#10b981" : "var(--fg-2)" }}>
-                      {fmtMonthlyCost(m)}
-                    </td>
+                  <tr key={model.id} className={`border-b border-white/[0.04] ${index === 0 ? "bg-emerald-500/[0.06]" : index % 2 ? "bg-white/[0.015]" : ""}`}>
+                    <td className="px-4 py-2.5 text-sm text-fg-1">{model.name}{index === 0 && <span className="ml-2 font-mono text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">cheapest</span>}</td>
+                    <td className="px-4 py-2.5 font-mono text-[11px]" style={{ color: model.providerColor }}>{model.provider}</td>
+                    <td className="px-4 py-2.5 font-mono text-[11px] text-fg-3 text-right">{perRequest < 0.0001 ? `$${perRequest.toExponential(1)}` : `$${perRequest.toFixed(4)}`}</td>
+                    <td className="px-4 py-2.5 font-mono text-[13px] text-fg-2 text-right">{monthlyCost(model)}</td>
                   </tr>
                 );
               })}
@@ -564,11 +450,24 @@ function CostCalculator() {
           </table>
         </div>
       </div>
+    </section>
+  );
+}
 
-      <p className="mt-3 font-mono text-[10px] text-fg-4">
-        Estimates based on listed prices. Cached tokens, batch discounts, and free tiers not applied. Verify at provider docs before budgeting.
-      </p>
-    </div>
+function NumberInput({ label, value, onChange, min, max, step }: { label: string; value: number; onChange: (value: number) => void; min: number; max: number; step: number }) {
+  return (
+    <label className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">
+      {label}
+      <input
+        type="number"
+        value={value}
+        min={min}
+        max={max}
+        step={step}
+        onChange={event => onChange(Math.min(max, Math.max(min, Number(event.target.value) || min)))}
+        className="mt-1.5 w-full bg-white/[0.04] border border-hairline rounded-lg px-3 py-2 font-mono text-[13px] text-fg-1 outline-none focus:border-violet/50 transition-colors"
+      />
+    </label>
   );
 }
 
@@ -576,7 +475,7 @@ function Stat({ label, value, note, color }: { label: string; value: string; not
   return (
     <div className="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06]">
       <p className="font-mono text-[9px] tracking-[0.12em] uppercase text-fg-4 mb-1">{label}</p>
-      <p className="font-mono text-sm font-medium" style={{ color: color || "var(--fg-1)" }}>{value}</p>
+      <p className="font-mono text-sm font-medium" style={{ color: color ?? "var(--fg-1)" }}>{value}</p>
       {note && <p className="text-[10px] text-fg-4 mt-0.5">{note}</p>}
     </div>
   );

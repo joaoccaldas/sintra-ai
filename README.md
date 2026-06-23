@@ -1,348 +1,167 @@
-# Sintra Tesseract
+# Sintra AI
 
-A one-stop AI knowledge base — prompts, news, tools, concepts, learning paths, and history — deployed as a static site on GitHub Pages.
+Sintra AI is a static, privacy-conscious AI intelligence and learning portal. It connects daily news, concepts, research, tools, models, learning paths, videos, guides, and practical use cases so visitors can move from **what changed** to **what it means** to **what to do next**.
 
-**Live site:** https://joaoccaldas.github.io/sintra-ai/
+- Live site: https://joaoccaldas.github.io/sintra-ai/
+- Framework: Next.js 15 App Router
+- Output: static export
+- Hosting: GitHub Pages
+- Primary language: English, with partial Portuguese UI localization
 
-> **For AI coding assistants:** This README is your primary reference. Every section has actionable commands and explicit rules. `CLAUDE.md` has the news-update procedure and AI-assistant-specific context.
+## Product architecture
 
----
+Sintra is organized around five user intentions:
 
-## What's in the site
+| Intent | Main routes | Purpose |
+|---|---|---|
+| Stay current | `/news/`, `/weekly/`, `/topics/` | Track meaningful AI developments without reading an unfiltered feed |
+| Learn | `/learn/`, `/concepts/`, `/guides/`, `/videos/` | Build structured understanding and retain progress locally |
+| Build | `/`, `/prompts/[slug]/`, `/collections/` | Apply AI to real tasks with copy-ready workflows |
+| Compare | `/models/`, `/tools/`, `/token-calculator/` | Choose models and tools using explicit dimensions and source links |
+| Research | `/research/`, `/ai-labs/`, `/ai-history/` | Understand papers, organizations, technical context, and history |
 
-| Section | URL | Content |
-|---------|-----|---------|
-| Prompt library | `/` → `#explore` | 149 copy-ready AI templates across 9 categories |
-| AI News | `/news/` | 220+ curated news items with significance tiers |
-| Tools directory | `/tools/` | 55 AI tools with pricing and detail pages |
-| Concepts | `/concepts/` | 30+ core AI concepts in plain English |
-| Learning paths | `/learn/` | 4 structured paths from beginner to advanced |
-| Resources | `/resources/` | 43 developer resources — APIs, frameworks, videos |
-| AI History | `/ai-history/` | Interactive timeline of 70+ milestones since 1950 |
-| AI Labs | `/ai-labs/` | Lab profiles and model comparison matrix |
-| Claude guide | `/claude/` | Anthropic models, products, capabilities |
-| Google AI guide | `/google-ai-tools/` | Google I/O 2026 tools step-by-step |
+The homepage is an orientation layer, not a duplicate directory. It introduces the product, offers intent-based entry points, highlights current editorial picks, and then loads the large prompt library below the fold.
 
----
-
-## Tech stack
+## Technology
 
 | Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 15 (App Router) |
-| Styling | Tailwind CSS + custom CSS variables |
-| Animation | Framer Motion |
-| 3D graphics | Three.js (`CategoryCarousel3D`, `AIHistoryTimeline`) |
-| Language | TypeScript (strict) |
-| Search | Fuse.js — unified index across all 7 content types |
-| Output | **Static export** — no server, no API routes |
-| Hosting | GitHub Pages (`gh-pages` branch) |
-| Analytics | Plausible (cookieless, GDPR-friendly) |
-| Base path | `/sintra-ai` in production, `` (empty) in dev |
+|---|---|
+| Framework | Next.js 15, React 18, App Router |
+| Language | TypeScript |
+| Styling | Tailwind CSS plus semantic CSS variables |
+| Motion | Framer Motion |
+| Search | Fuse.js client-side unified index |
+| Content | Typed TypeScript modules plus `src/data/useCases.json` |
+| Analytics | Plausible, cookieless |
+| Offline | Service worker with network-first navigation |
+| Deployment | Static export to `gh-pages` |
 
----
+## Repository map
 
-## Local setup
+```text
+src/
+  app/                    Route entry points and metadata
+  components/             Shared and page-level UI
+  context/                Theme, language, sidebar, saved prompts
+  data/useCases.json      Prompt and use-case corpus
+  lib/                    Typed content collections and shared logic
+public/                   Static assets, manifest, service worker, RSS
+scripts/                  Generators, validators, tests, update helpers
+docs/                     Architecture, audit decisions, debugging
+```
+
+Important files:
+
+| Task | File |
+|---|---|
+| Homepage composition | `src/app/page.tsx`, `src/components/ContentNav.tsx` |
+| Global navigation | `src/components/SidebarNav.tsx`, `src/components/Header.tsx` |
+| Unified search | `src/lib/searchIndex.ts`, `src/components/CommandPalette.tsx` |
+| Prompt data | `src/data/useCases.json`, `src/lib/data.ts` |
+| News | `src/lib/newsData.ts`, `src/components/AINewsPage.tsx` |
+| Models | `src/lib/modelsData.ts`, `src/app/models/ModelsClient.tsx` |
+| Tools | `src/lib/toolsData.ts`, `src/components/ToolsDirectoryPage.tsx` |
+| Learning | `src/lib/learningPathsData.ts`, `src/components/LearningPathsPage.tsx` |
+| Concepts | `src/lib/concepts.ts` |
+| Design tokens | `src/app/globals.css`, `src/app/hardening.css`, `tailwind.config.ts` |
+| Static SEO | `src/app/sitemap.ts`, route metadata, JSON-LD |
+
+## Local development
 
 ```bash
 git clone https://github.com/joaoccaldas/sintra-ai.git
 cd sintra-ai
-npm install
-npm run dev        # http://localhost:3000
+npm ci
+npm run dev
 ```
 
-In dev mode the site runs at `localhost:3000` without the `/sintra-ai` base path — internal links resolve correctly without configuration changes.
+Development runs without the production `/sintra-ai` prefix. Internal links must therefore use the shared `BASE_PATH` constant from `src/lib/constants.ts`.
 
----
-
-## Project structure
-
-```
-sintra-ai/
-├── src/
-│   ├── app/                        # Next.js pages — one folder = one URL route
-│   │   ├── page.tsx                # Home (/) — "use client"
-│   │   ├── layout.tsx              # Root layout + global metadata + PWA manifest
-│   │   ├── globals.css             # Global styles and Tailwind base
-│   │   ├── sitemap.ts              # Auto-generated sitemap.xml
-│   │   ├── robots.ts               # robots.txt
-│   │   ├── news/page.tsx
-│   │   ├── tools/page.tsx + [slug]/page.tsx
-│   │   ├── prompts/[slug]/page.tsx # Individual prompt pages (SSG)
-│   │   ├── learn/page.tsx
-│   │   ├── resources/page.tsx
-│   │   ├── ai-labs/page.tsx
-│   │   ├── claude/page.tsx
-│   │   ├── concepts/
-│   │   │   ├── page.tsx            # Server component — exports SEO metadata
-│   │   │   └── ConceptsClient.tsx  # "use client" — actual UI
-│   │   ├── ai-history/
-│   │   │   ├── page.tsx            # Server component — exports SEO metadata
-│   │   │   └── AIHistoryClient.tsx # "use client" — actual UI
-│   │   └── google-ai-tools/
-│   │       ├── page.tsx            # Server component — exports SEO metadata
-│   │       └── GoogleAiToolsClient.tsx
-│   │
-│   ├── components/                 # All React components (39 total)
-│   │   ├── Header.tsx              # Top nav with 3 dropdown groups + ⌘K
-│   │   ├── HeroMinimal.tsx         # Full-screen hero with particle vortex + search
-│   │   ├── SiteHub.tsx             # 7 destination cards with live counts
-│   │   ├── ThePulse.tsx            # Tabs: AI Signals / New Prompts / Learn
-│   │   ├── PersonaEntry.tsx        # Role-based routing into prompt library
-│   │   ├── CategoryBrowser.tsx     # Main prompt browser (3D carousel + panels)
-│   │   ├── CategoryCarousel3D.tsx  # Three.js 3D category carousel (desktop only)
-│   │   ├── FeaturedCollections.tsx # Curated prompt collections
-│   │   ├── ExpandedCard.tsx        # Prompt detail panel + related prompts rail
-│   │   ├── UseCaseCard.tsx         # Prompt card component
-│   │   ├── CommandPalette.tsx      # ⌘K unified search (all 7 content types)
-│   │   ├── UniversalSearch.tsx     # Inline search results on landing page
-│   │   ├── AINewsPage.tsx          # /news page
-│   │   ├── AIHistoryTimeline.tsx   # Three.js interactive history timeline
-│   │   ├── NewsTicker.tsx          # Scrolling ticker in hero bottom bar
-│   │   └── ...                     # See src/components/ for full list
-│   │
-│   ├── context/
-│   │   ├── LanguageContext.tsx     # EN / PT-BR toggle
-│   │   └── SavedPromptsContext.tsx # Saved prompts (localStorage)
-│   │
-│   └── lib/                        # All content data — edit here to update content
-│       ├── data.ts                 # USE_CASES, BASE_PATH, CAT_ACCENT, DIFF_COLOR
-│       ├── newsData.ts             # AI_NEWS — 220+ items (primary daily-update target)
-│       ├── toolsData.ts            # AI_TOOLS — 55 tools
-│       ├── concepts.ts             # CONCEPTS — 30+ AI concepts
-│       ├── learningPathsData.ts    # LEARNING_PATHS — 4 paths
-│       ├── resourcesData.ts        # RESOURCES — 43 developer resources
-│       ├── claudeData.ts           # Claude models and Anthropic products
-│       ├── timelineData.ts         # MILESTONES — AI history events
-│       ├── videoData.ts            # AI_VIDEOS — curated YouTube content
-│       ├── collections.ts          # COLLECTIONS — curated prompt kits
-│       ├── aiLabsData.ts           # AI_LABS — lab profiles
-│       ├── searchIndex.ts          # Fuse.js unified search index (7 types)
-│       ├── i18n.ts                 # UI strings in EN and PT-BR
-│       ├── dateUtils.ts            # relativeDate, formatDate, isNew
-│       ├── launchInAI.ts           # "Open in Claude/ChatGPT/Gemini" URL builder
-│       └── hooks.ts                # Shared React hooks
-│
-├── src/data/
-│   └── useCases.json               # 149 prompt use cases (validate before committing)
-│
-├── public/
-│   ├── feed.xml                    # RSS feed — auto-generated, do not edit manually
-│   ├── manifest.json               # PWA manifest for installability
-│   ├── tesseract-hero.webp         # OG image (1200×630)
-│   ├── tesseract-mark.svg          # Logo / apple-touch-icon
-│   └── io-texture.png              # Texture used by CategoryCarousel3D
-│
-├── scripts/
-│   ├── generate-rss.ts             # Prebuild hook → writes public/feed.xml
-│   ├── validate-data.mjs           # Schema-checks useCases.json
-│   ├── update-news.mjs             # AI-assisted news update helper
-│   └── enrich.py                   # Data enrichment utility
-│
-├── dist/                           # ⚠️ BUILD OUTPUT — never commit, never push
-├── CLAUDE.md                       # AI assistant: news procedure + content guidelines
-└── USE_CASE_SCHEMA.md              # Schema reference for prompt use cases
-```
-
----
-
-## Available scripts
-
-| Command | What it does |
-|---------|-------------|
-| `npm run dev` | Dev server with hot reload at `localhost:3000` |
-| `npm run build` | Production build → `dist/` (also regenerates `feed.xml`) |
-| `npm run typecheck` | TypeScript check without emitting files |
-| `npm run validate-data` | Schema-check `useCases.json` |
-| `npm run check` | **validate-data + typecheck + build** — run before every push |
+## Quality commands
 
 ```bash
-# Pre-push checklist
-npm run check          # must pass — zero errors
-git add <specific files>
-git commit -m "..."
-git push
+npm run validate-data      # validate the prompt JSON schema
+npm run validate-content   # validate IDs, dates, URLs, and cross-links
+npm test                   # deterministic unit tests for audit helpers
+npm run typecheck          # TypeScript without emitting files
+npm run build              # production static export
+npm run audit:static       # validation + tests + typecheck
+npm run check              # complete release gate, including build
 ```
 
----
+`npm run check` is the required pre-release command. The `Quality` GitHub workflow runs the same command on pull requests and pushes to `main` when hosted runners are available.
 
-## Non-negotiable rules
+## Content integrity rules
 
-### Rule 1 — Never commit `dist/`
-`dist/` is build output. It is in `.gitignore`. Never override this.
+1. Every entity ID or slug must be unique within its collection.
+2. Dates use `YYYY-MM-DD` unless a schema explicitly defines another format.
+3. Mutable claims must carry a source URL and a verification date where the schema supports it.
+4. Concept relationships must point to real concept IDs.
+5. Learning steps must use `BASE_PATH` and point to valid routes or concept anchors.
+6. External links must use HTTP or HTTPS.
+7. New content types must be added to the unified search index and sitemap when appropriate.
+8. UI labels should describe user outcomes, not only inventory counts.
 
-### Rule 2 — Build order matters
-Running `npm run dev` then deploying corrupts production. Always run `npm run build` before deploying.
+## Design principles
 
-```
-✅  edit → npm run check → npm run build → deploy
-❌  edit → npm run dev → deploy  ← corrupts dist/
-```
+- **Clarity before spectacle.** Motion and glow reinforce hierarchy; they do not replace it.
+- **Stable navigation.** Canonical menu order never changes based on visit history.
+- **Direct retrieval.** Search results open the exact entity whenever an entity route exists.
+- **Keyboard parity.** Every pointer action has a keyboard equivalent.
+- **Visible provenance.** Current facts should be distinguishable from editorial interpretation.
+- **Progressive loading.** Large corpora are kept out of the initial homepage bundle.
+- **One source of truth.** Shared paths, colors, counts, and schemas are imported rather than duplicated.
 
-### Rule 3 — Static export only
-No `getServerSideProps`, no `/api/*` routes, no `fetch()` at render time. All data must be TypeScript imports compiled at build time.
+## Adding content
 
-### Rule 4 — Tailwind classes must be literal strings
-No dynamic construction: ~~`` `text-${color}-500` ``~~  
-Write the full class: `"text-red-500"`, `"text-blue-500"`. Tailwind scans source text — dynamic strings produce missing styles in production.
+### Prompt or use case
 
-### Rule 5 — Never combine `.btn` with `hidden`
-`.btn` has higher CSS specificity than Tailwind's `hidden`. Use conditional rendering: `{show && <Button />}`.
-
-### Rule 6 — Always use `BASE_PATH` for internal links
-```ts
-import { BASE_PATH } from "@/lib/data";
-href={`${BASE_PATH}/news/`}   // ✅
-href="/sintra-ai/news/"       // ❌ breaks in dev
-```
-
-### Rule 7 — "use client" pages need a server wrapper for SEO metadata
-Next.js prohibits `export const metadata` in client components. Pattern:
-```
-src/app/your-page/
-  page.tsx              ← server component — exports metadata, renders <YourPageClient />
-  YourPageClient.tsx    ← "use client" — all interactive UI here
-```
-See `concepts/`, `ai-history/`, `google-ai-tools/` as working examples.
-
-### Rule 8 — Stage specific files only
-```bash
-git add src/lib/newsData.ts public/feed.xml   # ✅
-git add -A                                     # ⚠️ verify carefully first
-```
-
----
-
-## Content updates
-
-All content lives in data files. No code changes needed to add items.
-
-### Adding a news item
-
-Append to `AI_NEWS` in `src/lib/newsData.ts` before the closing `];`:
-
-```ts
-{
-  id: "unique-kebab-case-id",       // globally unique across all items
-  date: "May 2026",                 // "Mon YYYY"
-  dateNum: 202605,                  // YYYYMM — primary sort key
-  dateDay: 25,                      // optional: day for intra-month ordering
-  title: "Concise factual title",
-  summary: "2–3 sentences. Factual. Specific numbers/benchmarks. No hype.",
-  tags: ["Company", "Feature", "Topic"],
-  significance: "landmark" | "major" | "notable",
-  provider: "Company Name",
-  providerColor: "#hexcolor",
-  url: "https://direct-link-to-source",
-  country: "BR",                    // optional: "BR" or "SE" for regional items
-  why_it_matters: "...",            // optional
-  what_to_try: "...",               // optional
-},
-```
-
-Significance: `landmark` (≤3/year, changes the field) · `major` (practitioners must know) · `notable` (worth tracking)
-
-Provider colours: OpenAI `#10a37f` · Anthropic `#d97706` · Google `#4285f4` · Meta `#0866ff` · Microsoft `#0078d4` · Mistral `#ff7000` · DeepSeek `#1a73e8` · xAI `#000000` · Nvidia `#76b900`
+Edit `src/data/useCases.json`, then run:
 
 ```bash
-npm run build
-git add src/lib/newsData.ts public/feed.xml
-git commit -m "chore: news update $(date -u +%Y-%m-%d)"
+npm run validate-data
+npm run validate-content
 ```
 
-### Adding a prompt use case
+### News
 
-See `USE_CASE_SCHEMA.md` for the full field spec.
+Edit `src/lib/newsData.ts`. Use a unique ID, accurate event date, direct source URL, provider, significance, and concise factual summary. RSS is regenerated during `prebuild`.
 
-```bash
-# 1. Edit src/data/useCases.json
-npm run validate-data   # must pass
-npm run build
-git add src/data/useCases.json public/feed.xml
-git commit -m "feat: add use case — [title]"
-```
+### Concept
 
----
+Edit `src/lib/concepts.ts`. All entries require a unique ID, difficulty, explanation, analogy, related concept IDs, and `addedAt` date. `npm run validate-content` rejects dead relationships.
+
+### Tool or model
+
+Edit `src/lib/toolsData.ts` or `src/lib/modelsData.ts`. Use official documentation links and update verification dates whenever pricing or capabilities change.
+
+### Learning path
+
+Edit `src/lib/learningPathsData.ts`. Import `BASE_PATH`; never hardcode `/sintra-ai`. Concept anchors must use canonical concept IDs.
 
 ## Deployment
 
-The site deploys to `gh-pages` using git plumbing — `dist/` contents are committed as the root of the git tree, which is what GitHub Pages requires.
+Source changes land on `main`. The production site is built into `dist/` and published from the `gh-pages` branch.
 
 ```bash
-# 1. Build
+npm run check
 npm run build
 
-# 2. Deploy (run as one block)
 TREE=$(git --work-tree=dist add -f -A && git --work-tree=dist write-tree)
 PARENT=$(git rev-parse refs/remotes/origin/gh-pages)
-COMMIT=$(echo "deploy: $(date -u +%Y-%m-%d)" | git commit-tree $TREE -p $PARENT)
-git push origin $COMMIT:refs/heads/gh-pages
-git reset HEAD    # unstage dist files from working index
+COMMIT=$(echo "deploy: $(date -u +%Y-%m-%d)" | git commit-tree "$TREE" -p "$PARENT")
+git push origin "$COMMIT":refs/heads/gh-pages
+git reset HEAD
 ```
 
-Pages propagates in 1–3 minutes. `git reset HEAD` cleans up the index so `git status` stays clean.
+Never commit `dist/` to `main`.
 
----
+## Current strategic direction
 
-## Component architecture
+Sintra is evolving from a broad content portal into an AI mastery system:
 
-### Landing page render order
-```
-Header
-HeroMinimal          ← particle vortex, search bar, news ticker at bottom
-  └─ UniversalSearch ← inline results for hero search (Fuse.js, 7 types)
-SiteHub              ← 7 destination cards with live data counts
-ThePulse             ← tabs: AI Signals (news) / New Prompts / Learn
-PersonaEntry         ← role picker routing to relevant category
-CategoryBrowser      ← main prompt library
-  ├─ desktop: CategoryCarousel3D   ← Three.js 3D selector
-  ├─ mobile:  2D category grid     ← via useIsMobile() hook
-  └─ ExpandedCard                  ← detail panel + RelatedRail (tag-matched prompts)
-FeaturedCollections  ← curated prompt kits
-Footer
+```text
+Discover → Understand → Decide → Practise → Build → Prove → Stay current
 ```
 
-### Unified search
-`src/lib/searchIndex.ts` exports a single Fuse.js index over 7 types. Both `CommandPalette` (⌘K) and `UniversalSearch` call `searchAll(query)` from it.
-
-### Navigation groups (Header.tsx)
-- **Discover** → AI News · AI History · AI Labs
-- **Learn** → Learning Paths · Resources · Concepts
-- **Reference** → AI Tools · Claude · Google AI
-
----
-
-## Troubleshooting
-
-| Symptom | Cause | Fix |
-|---------|-------|-----|
-| GitHub Pages 404 | Files at `dist/index.html` not root | Use `git --work-tree=dist add -f -A` |
-| Wrong styles in production | `dist/` built with `npm run dev` | Re-run `npm run build`, redeploy |
-| Missing Tailwind classes | Dynamic class construction | Use full literal class strings |
-| TypeScript error after data edit | Schema mismatch | `npm run typecheck` to find it |
-| `validate-data` fails | Bad field in `useCases.json` | Check `USE_CASE_SCHEMA.md` |
-| News item not appearing | Duplicate `id` | Every `id` must be globally unique |
-| Internal link 404 in production | Hardcoded path without `BASE_PATH` | `${BASE_PATH}/path/` from `@/lib/data` |
-| Page missing OG/Twitter metadata | `"use client"` page.tsx | Add server wrapper + `*Client.tsx` split |
-| `git status` dirty after deploy | Deploy script left dist staged | Run `git reset HEAD` |
-
----
-
-## Quick reference
-
-| Task | File |
-|------|------|
-| Add news | `src/lib/newsData.ts` + `public/feed.xml` (auto) |
-| Add use case | `src/data/useCases.json` |
-| Add tool | `src/lib/toolsData.ts` |
-| Add AI concept | `src/lib/concepts.ts` |
-| Add history milestone | `src/lib/timelineData.ts` |
-| Change hero text | `src/lib/i18n.ts` + `src/components/HeroMinimal.tsx` |
-| Change nav links | `src/components/Header.tsx` → `NAV_GROUPS` |
-| Change landing hub cards | `src/components/SiteHub.tsx` |
-| Change "The Pulse" tabs | `src/components/ThePulse.tsx` |
-| Change category colours | `src/lib/data.ts` → `CAT_ACCENT` |
-| Change prompt card layout | `src/components/UseCaseCard.tsx` |
-| Change prompt detail panel | `src/components/ExpandedCard.tsx` |
-| Add a page with SEO | `src/app/route/page.tsx` (server) + `*Client.tsx` |
-| Base path constant | `src/lib/data.ts` → `BASE_PATH` |
+The implementation record and remaining roadmap live in `docs/AUDIT_IMPLEMENTATION_2026-06-23.md`.

@@ -11,51 +11,51 @@ import { useSidebar } from "@/context/SidebarContext";
 import { BASE_PATH } from "@/lib/constants";
 
 const CommandPalette = dynamic(() => import("./CommandPalette"), { ssr: false });
-const SavedPanel     = dynamic(() => import("./SavedPanel"),     { ssr: false });
+const SavedPanel = dynamic(() => import("./SavedPanel"), { ssr: false });
 
 interface Props { total: number; }
 
-// Breadcrumb label map
 const PATH_LABEL: Record<string, string> = {
   news: "AI News", weekly: "Weekly Digest", topics: "Topic Hubs",
   "ai-history": "AI History", "ai-labs": "AI Labs", research: "Research",
   learn: "Learning Paths", guides: "Guides", resources: "Resources", concepts: "Concepts",
   tools: "AI Tools", models: "Models", claude: "Claude", "google-ai-tools": "Google AI",
-  "token-calculator": "Cost Calc",
-  collections: "Collections", prompts: "Prompt", videos: "Videos",
+  "token-calculator": "Cost Calc", collections: "Collections", prompts: "Prompt", videos: "Videos",
 };
 
-export default function Header({ total }: Props) {
-  const { t, locale, toggle } = useLanguage();
+export default function Header({ total: _total }: Props) {
+  const { locale, toggle } = useLanguage();
   const { saved } = useSavedPrompts();
   const { setMobileOpen } = useSidebar();
   const pathname = usePathname();
 
-  const [scrolled,       setScrolled]       = useState(false);
-  const [paletteOpen,    setPaletteOpen]    = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [paletteOpen, setPaletteOpen] = useState(false);
   const [savedPanelOpen, setSavedPanelOpen] = useState(false);
 
   const segment = pathname.split("/").filter(Boolean)[0] ?? "";
-  const crumb   = PATH_LABEL[segment];
+  const crumb = PATH_LABEL[segment];
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 24);
-    window.addEventListener("scroll", fn, { passive: true });
-    fn();
-    return () => window.removeEventListener("scroll", fn);
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
-    const fn = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") { e.preventDefault(); setPaletteOpen(p => !p); }
+    const onKeyDown = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        setPaletteOpen(open => !open);
+      }
     };
-    window.addEventListener("keydown", fn);
-    return () => window.removeEventListener("keydown", fn);
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
   return (
     <>
-      {/* Skip link */}
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:px-3 focus:py-2 focus:rounded focus:bg-steel focus:text-fg-1 focus:outline focus:outline-violet-bright"
@@ -73,10 +73,9 @@ export default function Header({ total }: Props) {
         ].join(" ")}
         style={{ transition: "left 240ms cubic-bezier(0.22,1,0.36,1), background 200ms" }}
       >
-        <div className="w-full px-4 md:px-6 flex items-center gap-3">
-
-          {/* Mobile: hamburger → opens sidebar drawer */}
+        <div className="w-full px-4 md:px-6 flex items-center gap-2 md:gap-3">
           <button
+            type="button"
             className="lg:hidden flex items-center justify-center w-9 h-9 shrink-0 text-fg-3 hover:text-fg-1 transition-colors"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
@@ -84,7 +83,6 @@ export default function Header({ total }: Props) {
             <Menu size={19} />
           </button>
 
-          {/* Mobile: logo (desktop logo lives in sidebar) */}
           <a href={`${BASE_PATH}/`} className="lg:hidden flex items-center gap-2 text-violet-bright shrink-0">
             <TesseractMark size={18} />
             <span className="font-serif text-[15px] text-fg-1 leading-none">
@@ -92,30 +90,29 @@ export default function Header({ total }: Props) {
             </span>
           </a>
 
-          {/* Desktop: breadcrumb */}
           {crumb && (
             <div className="hidden lg:flex items-center gap-2 text-fg-4 font-mono text-[11px] tracking-[0.06em]">
               <a href={`${BASE_PATH}/`} className="hover:text-fg-2 transition-colors">Library</a>
-              <span>/</span>
+              <span aria-hidden="true">/</span>
               <span className="text-fg-2">{crumb}</span>
             </div>
           )}
 
           <div className="flex-1" />
 
-          {/* ⌘K search pill */}
           <button
+            type="button"
             onClick={() => setPaletteOpen(true)}
             className="hidden md:flex items-center gap-2 h-8 px-3 rounded-lg bg-white/[0.04] border border-hairline font-mono text-[11px] text-fg-4 hover:text-fg-1 hover:border-violet/30 hover:bg-white/[0.07] transition-all"
-            aria-label="Search (⌘K)"
+            aria-label="Search (Command or Control K)"
           >
             <Search size={12} className="shrink-0" />
             <span>Search</span>
             <kbd className="ml-0.5 text-[9px] px-1 py-0.5 rounded bg-white/[0.05] border border-hairline leading-none">⌘K</kbd>
           </button>
 
-          {/* Mobile search icon */}
           <button
+            type="button"
             onClick={() => setPaletteOpen(true)}
             className="md:hidden flex items-center justify-center w-9 h-9 text-fg-3 hover:text-fg-1 transition-colors"
             aria-label="Search"
@@ -123,8 +120,8 @@ export default function Header({ total }: Props) {
             <Search size={18} />
           </button>
 
-          {/* Saved prompts */}
           <button
+            type="button"
             onClick={() => setSavedPanelOpen(true)}
             className="relative flex items-center justify-center w-8 h-8 rounded-full border border-hairline text-fg-3 hover:text-violet-bright hover:border-violet/40 transition-all"
             aria-label={`Saved prompts${saved.size > 0 ? ` (${saved.size})` : ""}`}
@@ -137,14 +134,14 @@ export default function Header({ total }: Props) {
             )}
           </button>
 
-          {/* Language toggle */}
           <button
+            type="button"
             onClick={toggle}
-            className="hidden lg:inline-flex items-center gap-1 h-8 px-2.5 rounded-lg font-mono text-[11px] tracking-[0.06em] text-fg-4 hover:text-fg-1 hover:bg-white/[0.06] transition-all shrink-0"
+            className="inline-flex items-center gap-1 h-8 min-w-8 px-2 rounded-lg font-mono text-[11px] tracking-[0.06em] text-fg-4 hover:text-fg-1 hover:bg-white/[0.06] transition-all shrink-0"
             aria-label={locale === "en" ? "Switch to Portuguese" : "Switch to English"}
           >
             <Globe size={12} className="shrink-0" />
-            {locale === "en" ? "PT" : "EN"}
+            <span>{locale === "en" ? "PT" : "EN"}</span>
           </button>
         </div>
       </header>
