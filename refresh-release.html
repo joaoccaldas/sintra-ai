@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Activating Sintra AI release</title>
+  <style>
+    :root{color-scheme:dark;background:#090b14;color:#f6f3ff;font-family:system-ui,sans-serif}
+    body{min-height:100vh;margin:0;display:grid;place-items:center;padding:24px}
+    main{max-width:520px;text-align:center}
+    h1{font-weight:500}p{color:#b9b5c9;line-height:1.6}
+    .bar{height:4px;background:#24263b;border-radius:99px;overflow:hidden;margin:24px 0}
+    .bar span{display:block;height:100%;width:40%;background:#9f8cff;animation:move 1s linear infinite}
+    @keyframes move{from{transform:translateX(-120%)}to{transform:translateX(360%)}}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Activating Sintra AI</h1>
+    <p id="status">Updating the offline worker and removing the previous cached release.</p>
+    <div class="bar" aria-hidden="true"><span></span></div>
+  </main>
+  <script>
+    (async function () {
+      const target = '/sintra-ai/?release=8fa880d';
+      const status = document.getElementById('status');
+      try {
+        if ('caches' in window) {
+          const keys = await caches.keys();
+          await Promise.all(keys.map((key) => caches.delete(key)));
+        }
+        if ('serviceWorker' in navigator) {
+          const registration = await navigator.serviceWorker.register('/sintra-ai/sw.js?v=8fa880d', {
+            scope: '/sintra-ai/',
+            updateViaCache: 'none'
+          });
+          await registration.update();
+          if (registration.waiting) registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+        }
+        status.textContent = 'Release activated. Opening Sintra AI…';
+      } catch (error) {
+        status.textContent = 'Cache cleared. Opening Sintra AI…';
+      }
+      window.setTimeout(function () { window.location.replace(target); }, 500);
+    })();
+  </script>
+</body>
+</html>
