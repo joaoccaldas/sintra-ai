@@ -1,0 +1,32 @@
+/* Cross-theme safeguards that should remain small, explicit, and testable. */
+
+[data-theme="light"] {
+  /* 5.4:1 against the light page background; the previous value was ~4.0:1. */
+  --fg-4-rgb: 98 96 126;
+}
+
+:where(a, button, input, select, textarea, [role="button"]):focus-visible {
+  outline: 2px solid var(--violet-bright);
+  outline-offset: 3px;
+}
+
+:where(h1, h2, h3, h4, [id]) {
+  scroll-margin-top: 5rem;
+}
+
+@media (max-width: 640px) {
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.16em;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --hairline-rgb: 78 84 118;
+  }
+
+  [data-theme="light"] {
+    --hairline-rgb: 154 150 138;
+  }
+}
