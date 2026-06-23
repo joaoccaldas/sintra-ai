@@ -3,6 +3,12 @@
 
   var release = "8fa880decde7cf904ed8448880329c9efaad7287";
   var themes = ["dark", "light", "forest", "ocean"];
+  var navOrder = [
+    "Library",
+    "AI News", "Weekly Digest", "Topic Hubs", "AI History", "AI Labs", "Research",
+    "Learning Paths", "Guides", "Resources", "Concepts", "Videos",
+    "AI Tools", "Models", "Claude", "Google AI", "Cost Calc"
+  ];
 
   try {
     var saved = localStorage.getItem("sintra-theme");
@@ -27,12 +33,17 @@
     document.head.appendChild(style);
   }
 
-  function normalizeMetadata() {
+  function normalizeBrand() {
     document.title = document.title.replace(/Sintra Tesseract/g, "Sintra AI");
     var selectors = 'meta[property="og:site_name"],meta[property="og:title"],meta[name="twitter:title"]';
     document.querySelectorAll(selectors).forEach(function (meta) {
       var value = meta.getAttribute("content") || "";
       meta.setAttribute("content", value.replace(/Sintra Tesseract/g, "Sintra AI"));
+    });
+    document.querySelectorAll("h1,h2,h3,a,span,p").forEach(function (node) {
+      if (node.children.length === 0 && /Sintra Tesseract/.test(node.textContent || "")) {
+        node.textContent = (node.textContent || "").replace(/Sintra Tesseract/g, "Sintra AI");
+      }
     });
     var marker = document.querySelector('meta[name="sintra-release"]');
     if (!marker) {
@@ -52,6 +63,27 @@
         button.classList.add("sintra-runtime-language");
         if (!label) button.setAttribute("aria-label", text === "PT" ? "Switch to Portuguese" : "Switch to English");
       }
+    });
+  }
+
+  function stabilizeNavigation() {
+    document.querySelectorAll("nav").forEach(function (nav) {
+      nav.querySelectorAll("a").forEach(function (link) {
+        var label = (link.textContent || "").replace(/\d+$/, "").trim();
+        if (!link.getAttribute("aria-label") && label) link.setAttribute("aria-label", label);
+        link.querySelectorAll('[title^="Visited"]').forEach(function (item) { item.remove(); });
+      });
+      nav.querySelectorAll(":scope > div").forEach(function (group) {
+        var containers = Array.prototype.slice.call(group.children).filter(function (child) { return child.querySelector && child.querySelector("a"); });
+        containers.forEach(function (container) {
+          var links = Array.prototype.slice.call(container.children).filter(function (child) { return child.tagName === "A"; });
+          links.sort(function (left, right) {
+            var a = navOrder.indexOf((left.textContent || "").replace(/\d+$/, "").trim());
+            var b = navOrder.indexOf((right.textContent || "").replace(/\d+$/, "").trim());
+            return (a < 0 ? 999 : a) - (b < 0 ? 999 : b);
+          }).forEach(function (link) { container.appendChild(link); });
+        });
+      });
     });
   }
 
@@ -81,6 +113,26 @@
     document.body.insertBefore(link, document.body.firstChild);
   }
 
+  function applyDeepLinks() {
+    var params = new URLSearchParams(window.location.search);
+    var pathId = params.get("path");
+    if (pathId && window.location.pathname.indexOf("/learn") >= 0) {
+      var pathText = pathId.replace(/-/g, " ").toLowerCase();
+      Array.prototype.slice.call(document.querySelectorAll("button")).some(function (button) {
+        if ((button.textContent || "").toLowerCase().indexOf(pathText) >= 0) { button.click(); return true; }
+        return false;
+      });
+    }
+    var modelId = params.get("model");
+    if (modelId && window.location.pathname.indexOf("/models") >= 0) {
+      var modelText = modelId.replace(/-/g, " ").toLowerCase();
+      var target = Array.prototype.slice.call(document.querySelectorAll("button,tr")).find(function (node) {
+        return (node.textContent || "").toLowerCase().indexOf(modelText) >= 0;
+      });
+      if (target) target.scrollIntoView({ block: "center" });
+    }
+  }
+
   function addReleaseMarker() {
     if (document.querySelector(".sintra-release-marker")) return;
     var footer = document.querySelector("footer");
@@ -94,8 +146,9 @@
 
   function apply() {
     addStyles();
-    normalizeMetadata();
+    normalizeBrand();
     exposeLanguageToggle();
+    stabilizeNavigation();
     repairControls();
     ensureSkipLink();
     addReleaseMarker();
@@ -104,6 +157,6 @@
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", apply, { once: true });
   else apply();
-  window.setTimeout(apply, 800);
+  window.setTimeout(function () { apply(); applyDeepLinks(); }, 800);
   window.setTimeout(apply, 2200);
 })();
