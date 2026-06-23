@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 23 Jun 2026 06:10:29 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 06:41:01 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -101,15 +101,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Gemini Co-Lead Noam Shazeer Leaves Google for OpenAI]]></title>
-    <description><![CDATA[Noam Shazeer, co-lead of Google's Gemini models and co-author of the 2017 'Attention Is All You Need' Transformer paper, announced he is leaving Google to join OpenAI. Alphabet shares fell on the news; Sam Altman publicly welcomed him, saying OpenAI had wanted to hire him 'since the very beginning.']]></description>
-    <link>https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html</link>
-    <guid isPermaLink="true">https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Claude Fable 5 Access Restored With Nationality-Based Restrictions After Six-Day Outage]]></title>
     <description><![CDATA[Anthropic restored Claude Fable 5 access roughly six days after the US government's export-control directive forced a global shutdown for foreign nationals, but the restored model now ships with nationality-based access controls and enhanced compliance screening. Developers reported more frequent fallback to Claude Opus 4.8 on cybersecurity, chemistry, and biology prompts; Claude Mythos 5 remained offline, restricted to a limited partner program.]]></description>
     <link>https://techjacksolutions.com/ai-brief/claude-fable-5-returns-with-nationality-controls-developers/</link>
@@ -125,15 +116,6 @@
     <guid isPermaLink="true">https://openai.com/index/chatgpt-enterprise-spend-controls/</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[FERC Issues Show-Cause Orders to All Six US Grid Operators Over AI Data Center Power Connections]]></title>
-    <description><![CDATA[The Federal Energy Regulatory Commission issued tailored Section 206 show-cause orders to PJM, MISO, SPP, CAISO, ISO-NE, and NYISO, giving each 60 days to justify or reform tariffs governing how data centers and other large loads connect to the grid, plus 30-day resource-adequacy reporting requirements. FERC said the action affects regions serving roughly 200 million Americans.]]></description>
-    <link>https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration</link>
-    <guid isPermaLink="true">https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>FERC</category>
   </item>
 
   <item>
@@ -299,24 +281,6 @@
   </item>
 
   <item>
-    <title><![CDATA[SpaceX Files $60B All-Stock Deal to Acquire Cursor Maker Anysphere]]></title>
-    <description><![CDATA[SpaceX exercised a call option and filed a binding merger agreement with the SEC to acquire Anysphere, maker of the AI coding assistant Cursor, in an all-stock deal valuing the company at $60 billion — up from the $50 billion valuation Cursor was reportedly seeking in funding talks weeks earlier. The deal is expected to close in Q3 2026 pending regulatory approval and is among the largest acquisitions of a VC-backed AI startup to date.]]></description>
-    <link>https://www.axios.com/2026/06/16/spacex-cursor-60-billion-musk</link>
-    <guid isPermaLink="true">https://www.axios.com/2026/06/16/spacex-cursor-60-billion-musk</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>SpaceX</category>
-  </item>
-
-  <item>
-    <title><![CDATA[SoftBank and OpenAI Launch AI Cybersecurity Service for Japan's Top 3,000 Infrastructure Firms]]></title>
-    <description><![CDATA[SoftBank Group, SoftBank Corp, and the 50:50 SB OAI Japan joint venture with OpenAI launched an AI-powered vulnerability-assessment and remediation service called 'Patching as a Service,' targeting Japan's roughly 3,000 most critical infrastructure companies across airports, power, and transportation. SoftBank CEO Masayoshi Son called Japan's cyber vulnerability 'a crisis,' and the joint venture plans to scale its team from about 50 to 1,000 staff.]]></description>
-    <link>https://asia.nikkei.com/spotlight/cybersecurity/softbank-launches-openai-cybersecurity-in-japan-as-us-restricts-rival-model</link>
-    <guid isPermaLink="true">https://asia.nikkei.com/spotlight/cybersecurity/softbank-launches-openai-cybersecurity-in-japan-as-us-restricts-rival-model</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>SoftBank / OpenAI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Salesforce to Acquire Fin (formerly Intercom) for $3.6 Billion]]></title>
     <description><![CDATA[Salesforce announced on June 15, 2026 a definitive agreement to acquire Fin, the AI customer-service agent company formerly known as Intercom, for approximately $3.6 billion. Fin's AI Agent, powered by its proprietary Apex model, resolves customer queries end-to-end across chat, email, WhatsApp, SMS, phone, and Slack; the deal is the largest acquisition of an agentic customer-experience provider to date and is expected to close in Salesforce's fiscal Q4 2027 pending regulatory approval.]]></description>
     <link>https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/</link>
@@ -458,6 +422,42 @@
     <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-12/france-s-mistral-in-funding-talks-at-about-20-billion-valuation</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Mistral AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Brazil and EU sign Digital Partnership covering AI governance and data sovereignty]]></title>
+    <description><![CDATA[Brazil and the European Union signed a Digital Partnership in Brasília on June 12, 2026, making Brazil the fifth country (and first from the Global South) to hold such an agreement with the EU, after Japan, South Korea, Singapore, and Canada. The deal commits both sides to annual meetings on AI governance, data governance, and 5G/6G infrastructure, signed by EU Executive VP Henna Virkkunen and Brazil's Secretary Alex Giacomelli da Silva, alongside a parallel agreement between the European Commission and Brazil's data protection authority (ANPD) on child online safety.]]></description>
+    <link>https://www.gov.br/mcom/pt-br/noticias/2026/junho-1/brasil-e-uniao-europeia-assinam-parceria-digital-para-impulsionar-conectividade-ia-e-infraestrutura-tecnologica</link>
+    <guid isPermaLink="true">https://www.gov.br/mcom/pt-br/noticias/2026/junho-1/brasil-e-uniao-europeia-assinam-parceria-digital-para-impulsionar-conectividade-ia-e-infraestrutura-tecnologica</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Government of Brazil</category>
+  </item>
+
+  <item>
+    <title><![CDATA[MiniMax Publishes Open Weights for M3, a 1M-Context Model Claiming Frontier Coding Scores]]></title>
+    <description><![CDATA[Shanghai-based MiniMax published open weights and a technical report for M3, roughly ten days after announcing the model on June 1. M3 combines a 1-million-token context window, native multimodal (image/video) understanding, and a new MiniMax Sparse Attention architecture that MiniMax says delivers about 15.6x faster decoding at 1M context versus its predecessor M2. MiniMax reported 59.0% on SWE-Bench Pro, ahead of GPT-5.5 and Gemini 3.1 Pro, but independent verification of the architecture claims is only now possible with weights available on Hugging Face.]]></description>
+    <link>https://datanorth.ai/news/minimax-launches-m3</link>
+    <guid isPermaLink="true">https://datanorth.ai/news/minimax-launches-m3</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>MiniMax</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Claude Fable 5, One Week In: 80.3% SWE-Bench Pro, Enterprise Rollouts, and What YouTube Reviewers Found]]></title>
+    <description><![CDATA[A week after its June 9 launch, Claude Fable 5 reached general availability on the Claude API, AWS Bedrock, Vertex AI, Microsoft Foundry, and Databricks (via Unity AI Gateway), and is selectable directly in Claude Code CLI, Claude Code for web, and Claude Cowork. Anthropic reported 80.3% on SWE-Bench Pro versus 69.2% for Opus 4.8 and 58.6% for GPT-5.5, with reviewers noting markedly better tool-use accuracy and the ability to explore an unfamiliar codebase, identify available tools and constraints, and then execute long-running tasks without losing the plot. Early YouTube coverage — videos like 'We Tested Anthropic's Fable 5 for a Week' and 'Claude Fable 5: No Hype Full Breakdown & Testing' — focused on long-context agentic coding, document-heavy research (finance, legal, architecture), and how the model's safety-classifier routing handles edge-case prompts.]]></description>
+    <link>https://www.anthropic.com/news/claude-fable-5-mythos-5</link>
+    <guid isPermaLink="true">https://www.anthropic.com/news/claude-fable-5-mythos-5</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OWASP and Cisco 2026 Reports: Prompt Injection Remains the Top Agentic AI Security Risk]]></title>
+    <description><![CDATA[OWASP's 2026 guidance for agentic AI applications places prompt injection at the center of agent risk, cataloguing CVEs, supply-chain compromises, and enterprise data-leakage incidents where agents acted on untrusted content from emails, documents, and tool outputs. Cisco's State of AI Security 2026 report found that 83% of organizations plan to deploy agentic AI, but only 29% feel ready to do so securely.]]></description>
+    <link>https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/</link>
+    <guid isPermaLink="true">https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Cisco</category>
   </item>
   </channel>
 </rss>
