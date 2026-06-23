@@ -5,22 +5,32 @@ import ModelsClient from "./ModelsClient";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import { AI_MODELS } from "@/lib/modelsData";
 
+const latestVerification = AI_MODELS
+  .map(model => model.lastVerified)
+  .sort((a, b) => b.localeCompare(a))[0];
+
+const verificationLabel = new Intl.DateTimeFormat("en", {
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(new Date(`${latestVerification}T00:00:00Z`));
+
 export const metadata: Metadata = {
-  title: `AI Model Comparison — Pricing, Benchmarks & Capabilities | Sintra Tesseract`,
-  description: `Compare ${AI_MODELS.length} frontier AI models side-by-side: API pricing, context windows, MMLU/GPQA/SWE-bench scores, and capability flags. Updated May 2026.`,
+  title: "AI Model Comparison — Pricing, Benchmarks & Capabilities | Sintra AI",
+  description: `Compare ${AI_MODELS.length} AI models side by side: API pricing, context windows, benchmark scores, and capability flags. Data verified through ${verificationLabel}.`,
   keywords: [
     "AI model comparison",
-    "GPT-4o vs Claude vs Gemini",
     "LLM pricing comparison",
     "AI benchmark scores 2026",
     "best AI model for coding",
+    "AI context window comparison",
     "ChatGPT API price",
     "Claude API price",
-    "Gemini 2.5 Pro benchmarks",
+    "Gemini API price",
   ],
   openGraph: {
     title: "AI Model Comparison — Pricing, Benchmarks & Capabilities",
-    description: `Compare ${AI_MODELS.length} frontier models: pricing, context windows, and benchmark scores in one table.`,
+    description: `Compare ${AI_MODELS.length} models across pricing, context windows, benchmarks, and capabilities. Verified through ${verificationLabel}.`,
     type: "website",
   },
 };
