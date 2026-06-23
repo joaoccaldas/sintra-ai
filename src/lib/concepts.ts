@@ -1135,6 +1135,58 @@ Mark static prompt sections with \`"cache_control": {"type": "ephemeral"}\`. The
   },
 
   {
+    id: "agents",
+    term: "AI Agents",
+    category: "tools",
+    tagline: "An AI that plans, takes actions through tools, and adapts based on what it observes.",
+    icon: "🤖",
+    difficulty: 2,
+    body: `An **AI agent** is a model wrapped in a loop: it receives a goal, decides on an action (often by calling a tool), observes the result, and repeats — instead of producing one reply and stopping.
+
+**What separates an agent from a chatbot:**
+- **Autonomy**: It chooses its own next step rather than following a fixed script.
+- **Tool use**: It can call external functions — search the web, run code, query a database, edit a file — and read back the results (see Function Calling / Tool Use).
+- **Multi-step execution**: It keeps working across many turns until the goal is met or it hits a limit, rather than answering once.
+- **Environment feedback**: Each action's outcome (a search result, a test failure, a file diff) becomes input to the next decision.
+
+**Common agent loop (the "ReAct" pattern):** Reason about what to do → Act by calling a tool → Observe the result → Reason again, until done.
+
+**Where you'll meet agents already:** Claude Code and similar coding assistants (write code → run tests → fix failures, repeat), deep-research tools (search → read → search again), and customer-support or sales bots that look up records and take actions rather than just answering FAQs.
+
+**Why agents are harder to build than chatbots:** Errors compound across steps, they can get stuck in loops, and a single corrupted observation (e.g. a malicious webpage) can hijack the rest of the run — see Prompt Injection.`,
+    analogy: "A chatbot is a phone-a-friend for one question. An agent is a contractor you hand a job to: it figures out the steps, uses tools to get them done, and checks back only when it's finished or stuck.",
+    related: ["function-calling", "multi-agent", "ai-memory", "reasoning-model"],
+    addedAt: "2026-06-23",
+    learnMore: "https://www.linkedin.com/posts/eordax_ai-agents-ugcPost-7474918609539125251-ORIc/",
+  },
+
+  {
+    id: "function-calling",
+    term: "Function Calling / Tool Use",
+    shortTerm: "Tool Use",
+    category: "tools",
+    tagline: "How a model triggers real code — a search, a database query, a calculation — instead of just generating text.",
+    icon: "🔧",
+    difficulty: 2,
+    body: `**Function calling** (also called tool use) lets a model do more than generate text: it can request that a specific function be run, with specific arguments, and then use the function's output to continue.
+
+**How it works:**
+1. You describe available tools to the model (name, purpose, expected arguments) alongside the prompt.
+2. Instead of replying in plain text, the model returns a structured request to call one of those tools with specific argument values.
+3. Your application code actually runs the function (the model never executes anything itself) and returns the result.
+4. The model reads that result and continues — answering, calling another tool, or stopping.
+
+**Typical tools:** web search, a calculator, a code execution sandbox, a database lookup, an internal API (e.g. "get_order_status"), or a file read/write.
+
+**Why it matters:** It's the mechanism that turns a model from "writes text about your data" into "looks up and acts on your actual data" — and it's the building block every AI agent loop is made of.
+
+**A key risk:** the model decides *which* tool to call and *what arguments* to pass based on its (possibly manipulated) context — so untrusted input reaching the model can trigger unintended tool calls. Validate and constrain what tools are allowed to do, especially anything destructive (deleting data, sending messages, spending money).`,
+    analogy: "Like a phone operator who can't fix your bill themselves but can transfer you to billing, IT, or sales — the model 'routes' the request to the right tool and relays back what it learns.",
+    related: ["agents", "multi-agent", "prompt-injection", "mcp"],
+    addedAt: "2026-06-23",
+  },
+
+  {
     id: "computer-use",
     term: "Computer Use",
     category: "tools",
