@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./hardening.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { SavedPromptsProvider } from "@/context/SavedPromptsContext";
 import { ThemeProvider } from "@/context/ThemeContext";
@@ -20,12 +21,14 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   display: "swap",
 });
+
 const geist = Geist({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-geist-sans",
   display: "swap",
 });
+
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
@@ -36,55 +39,58 @@ const geistMono = Geist_Mono({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#090B14",
-  // Declaring this opts out of Android Chrome's "force dark" heuristic, which
-  // otherwise re-colors individual elements (e.g. card titles going
-  // dark-on-dark) on pages that don't explicitly state they support dark mode.
   colorScheme: "dark light",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#090B14" },
+    { media: "(prefers-color-scheme: light)", color: "#F5F3EC" },
+  ],
 };
 
 export const metadata: Metadata = {
-  // Origin only (no /sintra-ai path) — Next already applies `basePath` when
-  // resolving the file-convention opengraph-image routes, so including the
-  // path here as well doubled it (.../sintra-ai/sintra-ai/opengraph-image).
-  // All other absolute URLs in this app are built manually from SITE_URL
-  // and don't depend on this resolution.
   metadataBase: new URL("https://joaoccaldas.github.io"),
+  applicationName: "Sintra AI",
   manifest: "/sintra-ai/manifest.json",
-  title: "Sintra Tesseract — Daily AI News & Use Case Library",
-  description: `Daily AI news, model updates, and ${USE_CASES_COUNT} copy-ready prompts for finance, data analytics, writing, and software teams. Stay current, then ship the work.`,
+  title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
+  description: `Track what is changing in AI, understand how it works, compare tools and models, and apply ${USE_CASES_COUNT} practical use cases.`,
   keywords: [
-    "AI news", "AI news digest", "daily AI updates",
-    "AI prompts", "ChatGPT prompts", "Claude prompts",
-    "AI use cases", "prompt engineering",
-    "FP&A AI", "finance AI prompts", "data analytics AI",
-    "productivity prompts", "copy-ready AI templates",
+    "AI news",
+    "AI learning paths",
+    "AI tools",
+    "AI model comparison",
+    "AI prompts",
+    "ChatGPT prompts",
+    "Claude prompts",
+    "AI use cases",
+    "prompt engineering",
+    "FP&A AI",
+    "finance AI prompts",
+    "data analytics AI",
   ],
   openGraph: {
-    title: "Sintra Tesseract — Daily AI News & Use Case Library",
-    description: `Daily AI news and model updates, plus ${USE_CASES_COUNT} copy-ready prompts for finance, analytics & knowledge work.`,
+    title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
+    description: `Track AI developments, build practical understanding, compare tools and models, and use ${USE_CASES_COUNT} copy-ready workflows.`,
     url: SITE_URL,
-    siteName: "Sintra Tesseract",
+    siteName: "Sintra AI",
     type: "website",
     images: [
       {
         url: `${SITE_URL}/tesseract-hero.webp`,
         width: 1200,
         height: 630,
-        alt: "Sintra Tesseract — Daily AI News & Use Case Library",
+        alt: "Sintra AI — daily intelligence, structured learning and practical use cases",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sintra Tesseract — Daily AI News & Use Case Library",
-    description: `Daily AI news and model updates, plus ${USE_CASES_COUNT} copy-ready prompts for finance, analytics & knowledge work.`,
+    title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
+    description: `Track AI developments, build practical understanding, and use ${USE_CASES_COUNT} copy-ready workflows.`,
     images: [`${SITE_URL}/tesseract-hero.webp`],
   },
   alternates: {
     types: {
       "application/rss+xml": [
-        { url: `${SITE_URL}/feed.xml`, title: "Sintra Tesseract — AI News Feed" },
+        { url: `${SITE_URL}/feed.xml`, title: "Sintra AI — AI News Feed" },
       ],
     },
   },
@@ -96,7 +102,7 @@ const siteJsonLd = {
     {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
-      name: "Sintra Tesseract",
+      name: "Sintra AI",
       url: SITE_URL,
       logo: `${SITE_URL}/tesseract-mark.svg`,
     },
@@ -104,19 +110,35 @@ const siteJsonLd = {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: "Sintra Tesseract",
-      description: "Daily AI news, model updates, and copy-ready prompts for finance, data analytics, writing, and software teams.",
+      name: "Sintra AI",
+      description: "Daily AI intelligence, structured learning, model and tool comparisons, and practical use cases.",
       publisher: { "@id": `${SITE_URL}/#organization` },
+      inLanguage: ["en", "pt-BR"],
     },
   ],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+const themeBootScript = `
+(function () {
+  try {
+    var allowed = ["dark", "light", "forest", "ocean"];
+    var saved = localStorage.getItem("sintra-theme");
+    var theme = allowed.indexOf(saved) >= 0
+      ? saved
+      : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    document.documentElement.dataset.theme = theme;
+  } catch (_) {}
+})();`;
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${cormorant.variable} ${geist.variable} ${geistMono.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${cormorant.variable} ${geist.variable} ${geistMono.variable}`}
+    >
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
         <link rel="preconnect" href="https://plausible.io" />
         <script
           defer
@@ -141,10 +163,7 @@ export default function RootLayout({
                   <ScrollProgress />
                   <DesktopSidebar />
                   <MobileSidebar />
-                  {/* Content shifts right on desktop to clear the sidebar */}
-                  <div className="sidebar-content-shift">
-                    {children}
-                  </div>
+                  <div className="sidebar-content-shift">{children}</div>
                 </MotionProvider>
               </SavedPromptsProvider>
             </LanguageProvider>
