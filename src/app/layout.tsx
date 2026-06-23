@@ -89,9 +89,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     types: {
-      "application/rss+xml": [
-        { url: `${SITE_URL}/feed.xml`, title: "Sintra AI — AI News Feed" },
-      ],
+      "application/rss+xml": `${SITE_URL}/feed.xml`,
     },
   },
 };
