@@ -13,6 +13,14 @@ Check (validate + typecheck + build): `npm run check`.
 
 ## Daily news update task
 
+> **Scheduled daily updates run `/update-news`** (`.claude/commands/update-news.md`),
+> which appends new items to **`LATEST_AI_NEWS` in `src/lib/newsLatestData.ts`**
+> (the curated feed that wins over the historical archive via
+> `newsDataCombined.ts`), gates on `npm run check`, deploys, and opens a GitHub
+> issue on any failure. New daily items go in `newsLatestData.ts`, not the
+> historical `newsData.ts`. The manual procedure below documents the schema and
+> still applies for ad-hoc edits to the historical archive.
+
 When asked to update the news, follow this procedure exactly:
 
 ### 1. Check what's already in the database
