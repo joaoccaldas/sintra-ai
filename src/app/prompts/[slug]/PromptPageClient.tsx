@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Copy, Check, Share2, ExternalLink, Bookmark } from "lucide-react";
 import { UseCase } from "@/lib/constants";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
+import PromptRunner from "@/components/PromptRunner";
 import { recordCopy } from "@/lib/copyCountStore";
 import { trackRecentlyViewed } from "@/lib/hooks";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
@@ -97,6 +98,7 @@ export default function PromptPageClient({ item, catColor }: Props) {
         >
           <ExternalLink size={14} /> Open in {getLaunchLabel(item.best_llm)}
         </a>
+        <PromptRunner prompt={item.prompt} />
         <button onClick={copy} className="btn btn-ghost">
           {copied ? <><Check size={14} /> Copied!</> : <><Copy size={14} /> Copy prompt</>}
         </button>

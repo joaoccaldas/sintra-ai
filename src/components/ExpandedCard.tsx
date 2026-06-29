@@ -9,6 +9,7 @@ import Link from "next/link";
 import { UseCase, DIFF_COLOR, CAT_ACCENT, BASE_PATH, USE_CASES } from "@/lib/data";
 import { formatDate, isNew } from "@/lib/dateUtils";
 import { getLaunchUrl, getLaunchLabel } from "@/lib/launchInAI";
+import PromptRunner from "@/components/PromptRunner";
 import { tagToTopicSlug } from "@/lib/topicHubs";
 import CardVisual from "./CardVisual";
 import OutputKindIcon, { outputKindLabel } from "./OutputKindIcon";
@@ -453,6 +454,7 @@ export default function ExpandedCard({ item, onClose, items }: Props) {
               >
                 <ExternalLink size={14} /> Open in {getLaunchLabel(shown.best_llm)}
               </a>
+              <PromptRunner prompt={filledPrompt} onRun={() => recordCopy(shown.id)} />
               <button className="btn btn-ghost" onClick={copy}>
                 {copied ? <><Check size={14} /> {t.expanded_copied}</> : <><Copy size={14} /> {t.expanded_copy}</>}
               </button>

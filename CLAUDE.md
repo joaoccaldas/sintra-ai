@@ -231,7 +231,8 @@ git reset HEAD   # clean up the index
 | `HeroMinimal.tsx` | Full-screen hero — parallax violet bloom (CSS gradient), search bar, news ticker |
 | `SiteHub.tsx` | 7 destination cards with live counts — orients new visitors |
 | `PromptLibrarySection.tsx` | Main prompt library (mounted lazily via `ContentNav.tsx`) — category rail (3x3 grid on mobile, scrolling pills from `sm:`), search, difficulty filter + sort, flat responsive card grid (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`), reads category data from `src/lib/carouselData.ts` |
-| `ExpandedCard.tsx` | Prompt detail slide-up panel with related-prompts rail |
+| `ExpandedCard.tsx` | Prompt detail slide-up panel with related-prompts rail; hosts the "Try free" runner |
+| `PromptRunner.tsx` | "Try free — no login" menu: copies the filled prompt to the clipboard, then deep-links to free, no-login AI tools (`src/lib/freeAiRunners.ts` — Perplexity/DuckDuckGo prefill via `?q=`, LMArena/Perchance are paste-based). No backend, API key, or account. Mounted in `ExpandedCard.tsx` and `app/prompts/[slug]/PromptPageClient.tsx`, beside the login-required `launchInAI` deep link. |
 | `CommandPalette.tsx` | ⌘K unified search across all 7 content types (Fuse.js, lazy-built index — see `src/lib/searchIndex.ts`) |
 | `UniversalSearch.tsx` | Inline search results on landing page (same index as ⌘K) |
 | `PersonaEntry.tsx` | Role-based entry routing (routes `sintra:persona` custom event) |
