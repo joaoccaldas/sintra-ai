@@ -75,9 +75,18 @@ news, add nothing and say so. Never invent or pad.
    git reset HEAD
    ```
 
-8. **Report success**: print a one-line summary — count + titles of items added,
-   or "No new verified items today." If you're subscribed to a chat/report
-   channel, post that summary there.
+8. **Report success (summary notification)**: print a one-line summary — count +
+   titles of items added (or "No new verified items today"). Then post the same
+   summary to the persistent GitHub log so each run is visible without digging
+   through commits:
+   - Find/locate the open issue titled **`📰 Daily news log`** in
+     `joaoccaldas/sintra-ai` (use the GitHub MCP — `search_issues` /
+     `list_issues`). If it doesn't exist, create it once with `issue_write`.
+   - Add a comment (`add_issue_comment`) with the date, item count, titles, and
+     the deploy commit sha. On a "no new items" day, still comment so the absence
+     is logged (proves the task ran).
+   - If a reliable headless email/Slack connector is configured for scheduled
+     runs, also send the summary there; otherwise the GitHub log is the channel.
 
 ## On failure (any GATE or step error)
 - **Do NOT deploy.** Leave the feed unshipped rather than ship malformed data.
