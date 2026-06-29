@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 29 Jun 2026 04:51:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 08:15:42 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[OpenAI Previews GPT-5.6 Family: Sol, Terra, and Luna]]></title>
+    <description><![CDATA[OpenAI began a limited preview of the GPT-5.6 series — Sol (flagship), Terra (balanced everyday model), and Luna (fast and affordable) — advancing the frontier on software engineering, computer use, professional knowledge work, scientific research, and cybersecurity. API pricing per 1M tokens is $5/$30 (input/output) for Sol, $2.50/$15 for Terra, and $1/$6 for Luna; during the preview the models are available via the OpenAI API and Codex to a limited group of trusted partners, with general availability planned in the coming weeks. The GPT-5.6 Preview System Card was published June 25.]]></description>
+    <link>https://openai.com/index/previewing-gpt-5-6-sol/</link>
+    <guid isPermaLink="true">https://openai.com/index/previewing-gpt-5-6-sol/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[Anthropic's 'Cadences' Economic Index Report Links Claude Usage to Daily Rhythms]]></title>
@@ -47,6 +56,15 @@
   </item>
 
   <item>
+    <title><![CDATA[ServiceNow Index: Brazil's AI Spending Jumps 127% but Maturity Trails Global Average]]></title>
+    <description><![CDATA[ServiceNow's Enterprise AI Maturity Index, released in June 2026, found Brazil's AI spending jumped 127% over the prior year — above the global average — yet the country's maturity score stood at 48 points, below the global level of 51. The gap points to fast investment growth running ahead of the governance, integration, and skills needed to operationalize AI.]]></description>
+    <link>https://www.datacenterdynamics.com/br/noticias/indice-da-servicenow-mostra-que-brasil-aumenta-gastos-com-ia/</link>
+    <guid isPermaLink="true">https://www.datacenterdynamics.com/br/noticias/indice-da-servicenow-mostra-que-brasil-aumenta-gastos-com-ia/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>ServiceNow</category>
+  </item>
+
+  <item>
     <title><![CDATA[Anthropic Launches Claude Tag, a Claude That Joins Teams as a Slack Member]]></title>
     <description><![CDATA[Anthropic introduced Claude Tag, a new way for teams to work with Claude that starts on Slack, where Claude can be added to channels and DMs and act as a team member — picking up context from conversations, answering questions, and carrying out tasks in the thread. It targets collaborative, in-the-flow work rather than a separate chat window.]]></description>
     <link>https://www.anthropic.com/news/introducing-claude-tag</link>
@@ -56,12 +74,30 @@
   </item>
 
   <item>
+    <title><![CDATA[Mistral Releases OCR 4 With Bounding Boxes and 170-Language Support]]></title>
+    <description><![CDATA[Mistral released OCR 4, a document-intelligence model that returns bounding boxes, block classification, and inline confidence scores alongside extracted text, with support for 170 languages across 10 language groups. It runs in a single container for fully self-hosted deployments and is positioned as an ingestion component for enterprise search, RAG, and domain-specific retrieval pipelines.]]></description>
+    <link>https://mistral.ai/news/ocr-4/</link>
+    <guid isPermaLink="true">https://mistral.ai/news/ocr-4/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Mistral AI</category>
+  </item>
+
+  <item>
     <title><![CDATA[OpenAI Expands Daybreak With GPT-5.5-Cyber Setting an 85.6% CyberGym Record]]></title>
     <description><![CDATA[OpenAI expanded its Daybreak cybersecurity initiative with GPT-5.5-Cyber, a security-specialized model that scored a record 85.6% on CyberGym (a test of whether an agent can reproduce known vulnerabilities), versus 81.8% for the standard GPT-5.5. The wave also added Codex Security updates and 'Patch the Planet,' an open-source maintainer initiative run with Trail of Bits. Access to GPT-5.5-Cyber stays restricted to verified defenders under a limited release with extra monitoring.]]></description>
     <link>https://openai.com/index/daybreak-securing-the-world/</link>
     <guid isPermaLink="true">https://openai.com/index/daybreak-securing-the-world/</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Sweden's AI-Native Startups More Than Triple Funding to €454M in 2026]]></title>
+    <description><![CDATA[Sweden's AI-native startups have more than tripled their funding so far in 2026, reaching roughly €454 million, led by names like app-builder Lovable and legaltech Legora. The surge underscores Stockholm's position as one of Europe's densest AI startup hubs, even as Swedish founders warn that the national AI strategy isn't enough to stop talent drain to San Francisco.]]></description>
+    <link>https://sifted.eu/articles/ai-native-startups-sweden-funding</link>
+    <guid isPermaLink="true">https://sifted.eu/articles/ai-native-startups-sweden-funding</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Sifted</category>
   </item>
 
   <item>
@@ -188,6 +224,15 @@
     <guid isPermaLink="true">https://www.gallup.com/workplace/704225/rising-adoption-spurs-workforce-changes.aspx</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Gallup</category>
+  </item>
+
+  <item>
+    <title><![CDATA[xAI's Grok 4.3 Reaches Amazon Bedrock and Databricks for Enterprise Use]]></title>
+    <description><![CDATA[xAI's Grok 4.3 became generally available on Amazon Bedrock — which xAI says reaches the lowest hallucination rate among frontier models, with a 1-million-token context window and configurable reasoning effort — and the Grok models also went natively available on Databricks Agent Bricks, announced at the Databricks 2026 Data + AI Summit on June 18. The moves push Grok into the managed enterprise platforms where governed data and agents already live.]]></description>
+    <link>https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock/</link>
+    <guid isPermaLink="true">https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>xAI</category>
   </item>
 
   <item>
@@ -413,51 +458,6 @@
     <guid isPermaLink="true">https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Ukraine's AI-Guided Drones Strike Russian Logistics Up to 150km Behind the Front]]></title>
-    <description><![CDATA[Ukraine is fielding AI-guided strike drones with autonomous, jam-resistant targeting that can hit fuel depots, ammunition dumps, and command posts up to 150km behind Russian lines, contributing to a 40% month-over-month jump in strikes on Russian tanker trucks in May. Separately, Ukrainian firm MaXon Systems deployed an autonomous air-defense system that automatically detects, identifies, and locks onto Shahed drones, automating roughly 95% of interceptions while keeping final engagement decisions under human control.]]></description>
-    <link>https://www.bloomberg.com/news/articles/2026-06-12/ukraine-s-ai-drones-have-given-kyiv-a-fresh-edge-on-battlefield</link>
-    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-12/ukraine-s-ai-drones-have-given-kyiv-a-fresh-edge-on-battlefield</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Ukraine</category>
-  </item>
-
-  <item>
-    <title><![CDATA[SpaceX Prices IPO at $135/Share, Debuts on Nasdaq as 'SPCX' in Largest-Ever Stock Offering]]></title>
-    <description><![CDATA[SpaceX priced its initial public offering at $135 per share for 555,555,555 Class A shares — implying a valuation near $1.75 trillion — and began trading on Nasdaq under the ticker SPCX on June 12, 2026, opening around $150 and closing up roughly 19% at $161. The offering, the largest in stock-market history, was led by Goldman Sachs, Morgan Stanley, and a syndicate of major banks, and arrives as OpenAI and Anthropic also pursue public listings.]]></description>
-    <link>https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html</link>
-    <guid isPermaLink="true">https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>SpaceX</category>
-  </item>
-
-  <item>
-    <title><![CDATA[US Export-Control Directive Forces Anthropic to Suspend Fable 5 and Mythos 5 Access for Foreign Nationals]]></title>
-    <description><![CDATA[Anthropic said it received a US government directive on June 12, 2026 at 5:21pm ET ordering it to suspend all access to Claude Fable 5 and Mythos 5 for foreign nationals worldwide — including Anthropic's own foreign employees — citing export-control concerns after the government learned of a method to 'jailbreak' Fable 5. Anthropic stated it believes the directive reflects a misunderstanding and is working with the government to restore access as quickly as possible, while partners including AWS began revoking access to comply.]]></description>
-    <link>https://www.anthropic.com/news/fable-mythos-access</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/fable-mythos-access</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Moonshot AI Releases Kimi K2.7-Code, a 1T-Parameter Open-Source Coding Model]]></title>
-    <description><![CDATA[Moonshot AI released Kimi K2.7-Code on June 12, 2026, a 1-trillion-parameter Mixture-of-Experts model (32B active, 384 experts) with a 256K-token context window under a Modified MIT license. The model scores +21.8% on Moonshot's Kimi Code Bench v2 and +11.0% on Program Bench versus K2.6 while using roughly 30% fewer reasoning tokens. Weights are available on Hugging Face and ModelScope; API access via the Moonshot platform is priced at $0.95/$4.00 per million input/output tokens.]]></description>
-    <link>https://cryptobriefing.com/kimi-k2-7-code-open-source-release/</link>
-    <guid isPermaLink="true">https://cryptobriefing.com/kimi-k2-7-code-open-source-release/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Moonshot AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI Retires GPT-5.2 from ChatGPT, Migrates Conversations to GPT-5.5]]></title>
-    <description><![CDATA[As of June 12, 2026, GPT-5.2 Instant, Thinking, and Pro are no longer available in ChatGPT, following OpenAI's standard 90-day sunset window after a successor model ships. Existing conversations that used GPT-5.2 automatically continue on the corresponding GPT-5.5 model. OpenAI separately confirmed GPT-4.5 will be retired from ChatGPT on June 27, 2026, and o3 on August 26, 2026.]]></description>
-    <link>https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm</link>
-    <guid isPermaLink="true">https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
   </channel>
 </rss>
