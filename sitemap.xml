@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://joaoccaldas.github.io/sintra-ai/</loc>
-<lastmod>2026-06-19T00:00:00.000Z</lastmod>
+<lastmod>2026-06-26T00:00:00.000Z</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -13,7 +13,7 @@
 </url>
 <url>
 <loc>https://joaoccaldas.github.io/sintra-ai/news/</loc>
-<lastmod>2026-06-19T00:00:00.000Z</lastmod>
+<lastmod>2026-06-26T00:00:00.000Z</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.9</priority>
 </url>
@@ -59,7 +59,7 @@
 </url>
 <url>
 <loc>https://joaoccaldas.github.io/sintra-ai/weekly/</loc>
-<lastmod>2026-06-19T00:00:00.000Z</lastmod>
+<lastmod>2026-06-26T00:00:00.000Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.85</priority>
 </url>
@@ -2082,7 +2082,7 @@
 </url>
 <url>
 <loc>https://joaoccaldas.github.io/sintra-ai/news/archive/</loc>
-<lastmod>2026-06-19T00:00:00.000Z</lastmod>
+<lastmod>2026-06-26T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

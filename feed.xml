@@ -7,8 +7,62 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 23 Jun 2026 06:50:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 04:51:35 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Anthropic's 'Cadences' Economic Index Report Links Claude Usage to Daily Rhythms]]></title>
+    <description><![CDATA[Anthropic published its Economic Index report 'Cadences,' showing how the rhythms of the external world shape Claude usage — work queries subside on weekends, news requests peak in the morning, sleep-advice requests peak around 5 a.m., and tax requests surge near filing deadlines. The report draws on chat and Cowork conversations sampled April 10–June 10, 2026, and links about 9,700 survey respondents to their usage data using privacy-preserving methods, finding most respondents expect significant AI progress over the next year.]]></description>
+    <link>https://www.anthropic.com/research/economic-index-june-2026-report</link>
+    <guid isPermaLink="true">https://www.anthropic.com/research/economic-index-june-2026-report</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI and Broadcom Unveil 'Jalapeño,' OpenAI's First Custom Inference Chip]]></title>
+    <description><![CDATA[OpenAI and Broadcom unveiled Jalapeño, OpenAI's first custom AI accelerator, a blank-slate design built specifically for LLM inference rather than adapted from general-purpose AI hardware. Co-developed from initial design to tape-out in roughly nine months, OpenAI says early results show significantly better performance-per-watt than current state-of-the-art alternatives, with initial deployment targeted by the end of 2026. Broadcom handled silicon and networking; Celestica contributed board, rack, and system integration.]]></description>
+    <link>https://openai.com/index/openai-broadcom-jalapeno-inference-chip/</link>
+    <guid isPermaLink="true">https://openai.com/index/openai-broadcom-jalapeno-inference-chip/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Samsung Electronics Rolls Out ChatGPT and Codex to Employees]]></title>
+    <description><![CDATA[OpenAI and Samsung Electronics announced that ChatGPT and Codex will be made available to all Samsung Electronics employees in Korea and all employees worldwide in its Device eXperience (DX) division — one of OpenAI's largest enterprise deployments to date. Samsung plans to use the tools across software development, marketing, product development, and manufacturing, with Codex also letting non-technical teams build internal tools and automated workflows. The deal expands an existing relationship in which Samsung supplies advanced memory for AI infrastructure.]]></description>
+    <link>https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/</link>
+    <guid isPermaLink="true">https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Samsung Electronics</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google Makes 'Computer Use' a Built-In Tool in Gemini 3.5 Flash]]></title>
+    <description><![CDATA[Google announced that computer use is now a built-in tool in Gemini 3.5 Flash, letting developers build agents that can interact across platforms and software interfaces directly through the model. It extends the agentic capabilities Google showcased at I/O 2026 into a generally available developer tool on its fast, lower-cost Flash tier.]]></description>
+    <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/</link>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Google</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic Launches Claude Tag, a Claude That Joins Teams as a Slack Member]]></title>
+    <description><![CDATA[Anthropic introduced Claude Tag, a new way for teams to work with Claude that starts on Slack, where Claude can be added to channels and DMs and act as a team member — picking up context from conversations, answering questions, and carrying out tasks in the thread. It targets collaborative, in-the-flow work rather than a separate chat window.]]></description>
+    <link>https://www.anthropic.com/news/introducing-claude-tag</link>
+    <guid isPermaLink="true">https://www.anthropic.com/news/introducing-claude-tag</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI Expands Daybreak With GPT-5.5-Cyber Setting an 85.6% CyberGym Record]]></title>
+    <description><![CDATA[OpenAI expanded its Daybreak cybersecurity initiative with GPT-5.5-Cyber, a security-specialized model that scored a record 85.6% on CyberGym (a test of whether an agent can reproduce known vulnerabilities), versus 81.8% for the standard GPT-5.5. The wave also added Codex Security updates and 'Patch the Planet,' an open-source maintainer initiative run with Trail of Bits. Access to GPT-5.5-Cyber stays restricted to verified defenders under a limited release with extra monitoring.]]></description>
+    <link>https://openai.com/index/daybreak-securing-the-world/</link>
+    <guid isPermaLink="true">https://openai.com/index/daybreak-securing-the-world/</guid>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[Nobel Laureate John Jumper Leaves Google DeepMind for Anthropic]]></title>
@@ -404,60 +458,6 @@
     <guid isPermaLink="true">https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm</guid>
     <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AI Lab Leaders to Join G7 Leaders' Summit in Évian-les-Bains]]></title>
-    <description><![CDATA[Bloomberg reported on June 12, 2026 that executives from Anthropic, OpenAI, Google DeepMind, and Mistral AI — including Dario Amodei, Sam Altman, Demis Hassabis, and Arthur Mensch — are expected to attend the G7 Leaders' Summit in Évian-les-Bains, France, running June 15–17, 2026. France is crafting an agenda that places AI alongside broader economic and security topics for the gathering of G7 heads of state.]]></description>
-    <link>https://www.bloomberg.com/news/articles/2026-06-12/anthropic-openai-google-executives-plan-to-attend-g7-summit</link>
-    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-12/anthropic-openai-google-executives-plan-to-attend-g7-summit</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>G7</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Mistral AI in Early Talks to Raise €3B at €20B Valuation]]></title>
-    <description><![CDATA[Bloomberg reported on June 12, 2026 that French AI lab Mistral AI is in early discussions to raise about €3 billion ($3.5 billion), which would value the company at roughly €20 billion ($23.15 billion) — nearly double its €11.7 billion Series C valuation from September 2025. Mistral has set a target of surpassing $1 billion in annual recurring revenue by the end of 2026; terms are still early and could change.]]></description>
-    <link>https://www.bloomberg.com/news/articles/2026-06-12/france-s-mistral-in-funding-talks-at-about-20-billion-valuation</link>
-    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-12/france-s-mistral-in-funding-talks-at-about-20-billion-valuation</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Mistral AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Brazil and EU sign Digital Partnership covering AI governance and data sovereignty]]></title>
-    <description><![CDATA[Brazil and the European Union signed a Digital Partnership in Brasília on June 12, 2026, making Brazil the fifth country (and first from the Global South) to hold such an agreement with the EU, after Japan, South Korea, Singapore, and Canada. The deal commits both sides to annual meetings on AI governance, data governance, and 5G/6G infrastructure, signed by EU Executive VP Henna Virkkunen and Brazil's Secretary Alex Giacomelli da Silva, alongside a parallel agreement between the European Commission and Brazil's data protection authority (ANPD) on child online safety.]]></description>
-    <link>https://www.gov.br/mcom/pt-br/noticias/2026/junho-1/brasil-e-uniao-europeia-assinam-parceria-digital-para-impulsionar-conectividade-ia-e-infraestrutura-tecnologica</link>
-    <guid isPermaLink="true">https://www.gov.br/mcom/pt-br/noticias/2026/junho-1/brasil-e-uniao-europeia-assinam-parceria-digital-para-impulsionar-conectividade-ia-e-infraestrutura-tecnologica</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Government of Brazil</category>
-  </item>
-
-  <item>
-    <title><![CDATA[MiniMax Publishes Open Weights for M3, a 1M-Context Model Claiming Frontier Coding Scores]]></title>
-    <description><![CDATA[Shanghai-based MiniMax published open weights and a technical report for M3, roughly ten days after announcing the model on June 1. M3 combines a 1-million-token context window, native multimodal (image/video) understanding, and a new MiniMax Sparse Attention architecture that MiniMax says delivers about 15.6x faster decoding at 1M context versus its predecessor M2. MiniMax reported 59.0% on SWE-Bench Pro, ahead of GPT-5.5 and Gemini 3.1 Pro, but independent verification of the architecture claims is only now possible with weights available on Hugging Face.]]></description>
-    <link>https://datanorth.ai/news/minimax-launches-m3</link>
-    <guid isPermaLink="true">https://datanorth.ai/news/minimax-launches-m3</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>MiniMax</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Claude Fable 5, One Week In: 80.3% SWE-Bench Pro, Enterprise Rollouts, and What YouTube Reviewers Found]]></title>
-    <description><![CDATA[A week after its June 9 launch, Claude Fable 5 reached general availability on the Claude API, AWS Bedrock, Vertex AI, Microsoft Foundry, and Databricks (via Unity AI Gateway), and is selectable directly in Claude Code CLI, Claude Code for web, and Claude Cowork. Anthropic reported 80.3% on SWE-Bench Pro versus 69.2% for Opus 4.8 and 58.6% for GPT-5.5, with reviewers noting markedly better tool-use accuracy and the ability to explore an unfamiliar codebase, identify available tools and constraints, and then execute long-running tasks without losing the plot. Early YouTube coverage — videos like 'We Tested Anthropic's Fable 5 for a Week' and 'Claude Fable 5: No Hype Full Breakdown & Testing' — focused on long-context agentic coding, document-heavy research (finance, legal, architecture), and how the model's safety-classifier routing handles edge-case prompts.]]></description>
-    <link>https://www.anthropic.com/news/claude-fable-5-mythos-5</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/claude-fable-5-mythos-5</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OWASP and Cisco 2026 Reports: Prompt Injection Remains the Top Agentic AI Security Risk]]></title>
-    <description><![CDATA[OWASP's 2026 guidance for agentic AI applications places prompt injection at the center of agent risk, cataloguing CVEs, supply-chain compromises, and enterprise data-leakage incidents where agents acted on untrusted content from emails, documents, and tool outputs. Cisco's State of AI Security 2026 report found that 83% of organizations plan to deploy agentic AI, but only 29% feel ready to do so securely.]]></description>
-    <link>https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/</link>
-    <guid isPermaLink="true">https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Cisco</category>
   </item>
   </channel>
 </rss>
