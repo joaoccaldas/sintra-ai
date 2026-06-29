@@ -7762,7 +7762,7 @@
       "Excel"
     ],
     "est_time": "Half-day",
-    "output_kind": "document",
+    "output_kind": "analysis",
     "sample_output": "**Issues Log \u2014 Acme Co Acquisition**\n\n| # | Area | Finding | Severity | Action |\n|---|------|---------|----------|--------|\n| 1 | Revenue | 3 customers = 61% revenue; largest contract expires Oct 2026 unrenewed | Critical | Obtain renewal LOI or price into model |\n| 2 | Working Capital | DSO increased 18\u219229 days YoY; AR aging not provided | Significant | Request aging schedule |\n| 3 | Debt | \u20ac4.2M lease liability not on face of balance sheet (IFRS 16 non-compliant) | Significant | Restate for normalised net debt |\n| 4 | Tax | \u20ac900K deferred tax asset assumes profitability \u2014 not supported by 3-year plan | Minor | Sensitise |\n\n**Normalised EBITDA bridge:** Reported \u20ac8.1M \u2192 +\u20ac0.4M owner salary \u2192 \u2212\u20ac1.1M one-off contract \u2192 **Adjusted \u20ac7.4M (8.1\u00d7 at \u20ac60M bid)**",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -7806,7 +7806,7 @@
       "Claude"
     ],
     "est_time": "2-3 hours",
-    "output_kind": "document",
+    "output_kind": "analysis",
     "sample_output": "**CEO Opening (excerpt)**\n'Revenue grew 12% to $2.4B \u2014 our sixth consecutive quarter of double-digit growth. Importantly, this was broad-based: all three segments expanded. We're reaffirming full-year guidance of $9.8\u201310.0B.'\n\n**Hardest Q \u2014 Analyst simulation**\nQ: 'Gross margin compressed 180bps despite the pricing actions you took in Q2. What's structurally different?'\nA: 'Two items: first, the new data-centre contracts we signed in H2 carry lower initial margins that normalise by year 2; second, we deliberately accelerated cloud migration spend. Excluding both, underlying margins expanded 40bps.'\n\n\u26a0\ufe0f Legal flag: 'We expect to close the acquisition by year-end' is forward-looking \u2014 add customary safe-harbour language.",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -7897,7 +7897,7 @@
       "Claude"
     ],
     "est_time": "2-4 hours per contract",
-    "output_kind": "document",
+    "output_kind": "analysis",
     "sample_output": "**Contract: Acme SaaS + Implementation + Training Bundle \u2014 $480K**\n\n**Performance obligations identified (3):**\n1. SaaS subscription \u2014 $320K SSP \u2014 recognised ratably over 24 months\n2. Implementation services \u2014 $130K SSP \u2014 POC method (estimated 65% complete at period end \u2192 $84.5K recognised)\n3. Training \u2014 $30K SSP \u2014 on delivery (2 days in Feb)\n\n**Variable consideration:** SLA penalty clause (max $24K) \u2192 fully constrained; not included in transaction price\n\n**Complexity: Medium** \u2014 Implementation % completion estimate requires documented methodology\n\n**Journal entry (period end):** DR Contract asset $84.5K / CR Revenue $84.5K",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -7948,7 +7948,7 @@
       "Claude"
     ],
     "est_time": "1-2 hours",
-    "output_kind": "document",
+    "output_kind": "deck",
     "sample_output": "**CFO Narrative (excerpt)**\nRevenue of \u00a38.4M came in \u00a3210K ahead of budget (+2.6%), driven by enterprise new business closing 3 weeks earlier than planned. Gross margin compressed 80bps to 68.2% as we absorbed the new AWS region migration costs; this is a one-off and normalises next quarter. EBITDA of \u00a31.1M was \u00a390K below budget \u2014 entirely the margin item; operating leverage remains on track for H2.\n\n**EBITDA Bridge**\n| Item | \u00a3K |\n|------|----|\n| Budget EBITDA | 1,190 |\n| + Revenue beat | +210 |\n| \u2212 Gross margin miss | \u2212310 |\n| \u2212 Opex (within plan) | +10 |\n| **Actual EBITDA** | **1,100** |",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8061,7 +8061,7 @@
       "Excel"
     ],
     "est_time": "Half-day",
-    "output_kind": "document",
+    "output_kind": "analysis",
     "sample_output": "**Net Exposure \u2014 EUR (largest):** +$18.4M receivable over 6 months\n**Hedge target (80%):** $14.7M\n\n**Instrument comparison:**\n| Instrument | Cost | Protection | Upside |\n|------------|------|-----------|--------|\n| Forward | Zero (locked rate) | Full | None |\n| EUR Put option | $147K premium | Full below strike | Retained |\n| Zero-cost collar | Zero | Below floor | Capped |\n**Recommendation:** Zero-cost collar (floor 1.04, cap 1.12) \u2014 board risk appetite met at zero cost\n\n**P&L Sensitivity (EUR, hedged)**\n| FX Move | Unhedged P&L | Hedged P&L |\n|---------|--------------|-----------|\n| \u221215% | \u2212$2.8M | \u2212$0.3M |\n| \u221210% | \u2212$1.8M | \u2212$0.2M |\n| +10% | +$1.8M | +$1.3M |",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8217,7 +8217,7 @@
       "Claude"
     ],
     "est_time": "2-3 hours",
-    "output_kind": "document",
+    "output_kind": "plan",
     "sample_output": "**Bottleneck #1: Intercompany reconciliation (Day 3\u20134)**\nRoot cause: 12 entities post in different time zones; no automated matching\nFix: Implement continuous matching in NetSuite (native IC module) + hard cutoff at D+1 18:00 UTC\nEstimated saving: 0.8 days\n\n**Journal Entry Review Checklist**\n- [ ] Accrued expenses: all POs >$10K with no invoice matched?\n- [ ] Prepayments: confirm amortisation schedule updated for any new contracts\n- [ ] Payroll accrual: H2 headcount change reflected?\n- [ ] Intercompany: all IC invoices matched and eliminated?\n- [ ] Revenue: deferred revenue roll-forward agrees to contract schedule?",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8268,7 +8268,7 @@
       "Claude"
     ],
     "est_time": "Half-day per transaction",
-    "output_kind": "document",
+    "output_kind": "templates",
     "sample_output": "**Method assessment:** TNMM is appropriate for a limited-risk distributor; CUP would require internal comparables you don't have.\n\n**Functional Analysis (excerpt):**\n'Entity B (UK distribution subsidiary) performs limited distribution functions: it takes title to goods, manages local warehousing, and bears routine market risk. Entity A (US parent) owns the IP, bears product liability, and sets pricing policy. Under the OECD functional analysis, Entity B is characterised as a limited-risk distributor and TNMM is the most appropriate method.'\n\n**Top 3 audit risks:**\n1. Management fee quantum \u2014 no time-recording supports the 3% allocation\n2. IP royalty rate \u2014 last benchmarked 2019; HMRC likely to challenge currency\n3. Intercompany loan rate \u2014 Libor-based; must be updated to SONIA",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8341,7 +8341,7 @@
       "Claude"
     ],
     "est_time": "Half-day",
-    "output_kind": "document",
+    "output_kind": "templates",
     "sample_output": "**GRI 305-1 Direct (Scope 1) Emissions**\n| Metric | 2024 | 2025 | Change |\n|--------|------|------|--------|\n| Gross Scope 1 (tCO2e) | 4,820 | 4,310 | \u221211% |\n| Natural gas combustion | 3,200 | 2,780 | \u221213% |\n| Company vehicles | 1,620 | 1,530 | \u22126% |\n\n**TCFD Physical Risk (excerpt):** 'Our primary manufacturing facility in Valencia faces elevated chronic risk from rising average temperatures (RCP 4.5: +1.8\u00b0C by 2050) and acute risk from increased flooding frequency (return period shortening from 1-in-50 to 1-in-25 by 2040 under IPCC Tier 2 scenarios).'\n\n**Data gap #1:** Scope 3 Category 11 (use of sold products) not calculated \u2014 material for a hardware manufacturer; auditor will qualify.",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8395,7 +8395,7 @@
       "Claude"
     ],
     "est_time": "2-3 hours",
-    "output_kind": "document",
+    "output_kind": "templates",
     "sample_output": "**Executive Summary \u2014 RECOMMEND APPROVE (with conditions)**\nAcme Manufacturing Ltd requests a \u00a37.5M, 5-year term loan to finance the acquisition of a complementary distribution business. Pro-forma leverage of 2.8\u00d7 EBITDA is within policy (3.5\u00d7 max); interest cover of 4.1\u00d7 provides adequate headroom. Primary risk is customer concentration (top 3 = 58% revenue); mitigated by contractual 24-month frameworks and proposed covenant structure.\n\n**Ratio Analysis**\n| Ratio | PY | LTM | Policy |\n|-------|----|-----|--------|\n| Net Leverage | 1.9\u00d7 | 2.8\u00d7 | \u22643.5\u00d7 \u2713 |\n| EBITDA/Interest | 5.2\u00d7 | 4.1\u00d7 | \u22653.0\u00d7 \u2713 |\n| Current Ratio | 1.4 | 1.3 | \u22651.0 \u2713 |\n\n**Conditions:** (1) Audited accounts within 120 days; (2) No additional debt without consent; (3) Annual covenant test.",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8443,7 +8443,7 @@
       "Claude"
     ],
     "est_time": "Half-day",
-    "output_kind": "document",
+    "output_kind": "templates",
     "sample_output": "**Q: Why has free cash flow conversion been below 70% for three consecutive quarters?**\n*Short form:* The primary driver is timing of customer collections \u2014 our enterprise renewal cycle concentrates cash receipts in Q1 and Q3. Underlying conversion ex-timing is 82%.\n*Long form:* Free cash flow conversion of 64\u201368% over the last three quarters reflects two items: first, we shifted our largest enterprise renewal cohort to January starts (from October) to align with customer fiscal years \u2014 this creates a structural Q4 working capital outflow that reverses in Q1. Second, we accelerated $12M of data-centre capex to lock in pricing. Stripping both items, underlying FCF conversion is 82%, consistent with historical norms.\n\n\u26a0\ufe0f Consistency flag: Q1 2025 transcript states 'we expect FCF conversion of 75%+ for the full year' \u2014 current guidance of 68% contradicts this; recommend proactive explanation.",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8501,7 +8501,7 @@
       "Excel"
     ],
     "est_time": "Half-day",
-    "output_kind": "document",
+    "output_kind": "plan",
     "sample_output": "**H2 Revenue Bridge (Budget to Reforecast)**\n| Driver | \u00a3M |\n|--------|----- |\n| Budget H2 revenue | 52.0 |\n| \u2212 Price (avg \u22122% on renewals) | \u22121.0 |\n| \u2212 Volume (2 lost enterprise deals) | \u22122.4 |\n| + Mix (upsell beat) | +0.8 |\n| **Base Reforecast** | **49.4** |\n\n**Scenarios:**\n| | Revenue | EBITDA | EBITDA margin |\n|--|---------|--------|---------------|\n| Bull | \u00a354.2M | \u00a39.1M | 16.8% |\n| Base | \u00a349.4M | \u00a37.3M | 14.8% |\n| Bear | \u00a342.0M | \u00a34.2M | 10.0% |\n\n\u26a0\ufe0f Flag: Sales capacity budget assumes 12 AEs fully ramped by July \u2014 H1 hiring miss means only 9 will be productive; H2 new-logo budget is unachievable by ~\u00a32.8M.",
     "dateAdded": "2026-06-05",
     "related_tools": [
@@ -8510,7 +8510,7 @@
     ]
   },
   {
-    "domain": "Research & Strategy",
+    "domain": "Research & Analysis",
     "section": "AI Market Intelligence",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "\ud83d\udfe1",
@@ -8536,7 +8536,7 @@
       "Claude"
     ],
     "est_time": "15 min",
-    "output_kind": "document",
+    "output_kind": "analysis",
     "dateAdded": "2026-06-07",
     "related_tools": [
       "claude",
@@ -8544,7 +8544,7 @@
     ]
   },
   {
-    "domain": "Research & Strategy",
+    "domain": "Research & Analysis",
     "section": "AI Market Intelligence",
     "skill_level": "INTERMEDIATE",
     "skill_emoji": "\ud83d\udfe1",
@@ -8588,7 +8588,7 @@
       "Claude"
     ],
     "est_time": "20 min",
-    "output_kind": "document",
+    "output_kind": "analysis",
     "dateAdded": "2026-06-07",
     "related_tools": [
       "claude",
@@ -8596,7 +8596,7 @@
     ]
   },
   {
-    "domain": "Research & Strategy",
+    "domain": "Research & Analysis",
     "section": "AI Adoption",
     "skill_level": "BEGINNER",
     "skill_emoji": "\ud83d\udd34",
@@ -8639,6 +8639,494 @@
     "est_time": "30 min",
     "output_kind": "plan",
     "dateAdded": "2026-06-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Forecasting",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udd35",
+    "title": "Driver-Based Rolling Forecast Builder",
+    "prompt": "Act as an FP&A modeling expert. Help me build a driver-based rolling forecast.\n\nBusiness model: [SaaS / retail / services / manufacturing]\nForecast horizon: [e.g. 12-month rolling]\nKey revenue drivers: [e.g. new logos, ARPU, churn, units, price]\nKey cost drivers: [e.g. headcount, COGS %, marketing as % revenue]\nHistorical data I can paste: [last 6-12 months of actuals]\nGranularity: [monthly / quarterly, by department or product]\n\nPlease:\n1. Map each line item to its underlying driver(s) and the formula linking them\n2. List the assumptions to set, with a sensible default and a source/logic for each\n3. Give the Excel formula structure (driver tab -> calc tab -> output) with example cell references\n4. Build a 3-scenario sensitivity table (base / upside / downside) on the 3 most material drivers\n5. Flag the 2-3 drivers that most move the forecast and how I should pressure-test them monthly",
+    "tags": [
+      "FP&A",
+      "forecasting",
+      "driver-based",
+      "Excel"
+    ],
+    "best_for": "FP&A analysts, finance managers, controllers moving off static annual budgets",
+    "source": "FP&A rolling-forecast practice",
+    "outcome": "A documented driver-based rolling forecast with formulas, assumptions, and a sensitivity table you can drop into Excel.",
+    "inputs": [
+      {
+        "label": "SaaS / retail / services / manufacturing"
+      },
+      {
+        "label": "12-month rolling"
+      },
+      {
+        "label": "new logos, ARPU, churn"
+      },
+      {
+        "label": "headcount, COGS %"
+      },
+      {
+        "label": "last 6-12 months actuals"
+      },
+      {
+        "label": "monthly / by department"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "45 min",
+    "output_kind": "spec",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Long-context, structured financial reasoning and reliable formula construction across linked schedules.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Management Reporting",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Budget vs Actuals Variance Commentary Writer",
+    "prompt": "You are an FP&A analyst writing variance commentary for a monthly management pack.\n\nPaste my budget vs actuals table (line item, budget, actual, variance $, variance %): [paste]\nMateriality threshold: [e.g. > $25k or > 10%]\nContext on the month: [one-offs, timing, known drivers]\nAudience: [CFO / board / department heads]\n\nPlease:\n1. Identify every variance above the materiality threshold\n2. For each, write 1-2 sentences of plain-English commentary explaining the likely driver (price vs volume vs timing vs one-off)\n3. Separate permanent variances from timing differences that will reverse\n4. Summarize the net P&L impact and the 3 movements that matter most for the month\n5. End with 2-3 questions I should ask the business owners to confirm the drivers",
+    "tags": [
+      "FP&A",
+      "variance analysis",
+      "management reporting",
+      "commentary"
+    ],
+    "best_for": "FP&A analysts and controllers preparing monthly management reporting",
+    "source": "Month-end management reporting workflow",
+    "outcome": "Board-ready variance commentary that explains the 'why' behind each material movement, not just the numbers.",
+    "inputs": [
+      {
+        "label": "paste budget vs actuals table"
+      },
+      {
+        "label": "materiality threshold"
+      },
+      {
+        "label": "one-offs / timing"
+      },
+      {
+        "label": "CFO / board"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "20 min",
+    "output_kind": "analysis",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Strong at concise, accurate business narrative from tabular financial data.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Cash & Liquidity",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udd35",
+    "title": "13-Week Cash Flow Forecast & Scenario Planner",
+    "prompt": "Act as a treasury / FP&A expert. Help me build a 13-week direct cash flow forecast.\n\nBusiness: [industry, B2B/B2C, rough monthly revenue]\nOpening cash position: [amount]\nMain cash inflows: [AR collections, terms, seasonality]\nMain cash outflows: [payroll cadence, AP terms, rent, debt service, tax]\nFacilities: [revolver / overdraft limit if any]\n\nPlease:\n1. Lay out the weekly line-item structure (inflows, outflows, net, running balance) for 13 weeks\n2. Show how to phase AR collections and AP payments using DSO/DPO assumptions\n3. Add a base / downside / stress scenario (e.g. collections slip 2 weeks, a large customer delays)\n4. Build a minimum-cash / covenant early-warning flag that triggers when the balance falls below [threshold]\n5. List the 5 levers I can pull first if the downside hits, ranked by speed and reversibility",
+    "tags": [
+      "cash flow",
+      "treasury",
+      "13-week",
+      "scenario planning"
+    ],
+    "best_for": "Controllers, treasury, and CFOs at cash-sensitive or PE-backed companies",
+    "source": "Treasury 13-week cash forecasting practice",
+    "outcome": "A 13-week direct cash flow forecast structure with scenario toggles and an early-warning liquidity view.",
+    "inputs": [
+      {
+        "label": "industry, B2B/B2C, monthly revenue"
+      },
+      {
+        "label": "opening cash"
+      },
+      {
+        "label": "AR terms, seasonality"
+      },
+      {
+        "label": "payroll, AP, debt service"
+      },
+      {
+        "label": "revolver limit"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "40 min",
+    "output_kind": "table",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Handles multi-week interdependent cash mechanics and scenario logic without losing the running balance.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Financial Modeling",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Three-Statement Model Integrity Checker",
+    "prompt": "You are a financial modeling reviewer. Audit my three-statement model for integrity.\n\nDescribe the model: [purpose, period, monthly/annual]\nPaste the key drivers/assumptions and any outputs you're unsure about: [paste]\nKnown issues or 'it doesn't balance' symptoms: [describe]\n\nPlease:\n1. List the standard checks: does the balance sheet balance, does cash on the BS tie to the cash flow ending balance, does net income flow to retained earnings\n2. Flag common error sources: circularity/iterative calc, hardcoded plugs, sign errors, broken depreciation or debt schedules\n3. Give me a step-by-step reconciliation order to isolate where it breaks\n4. List 8-10 sanity checks (margins, growth rates, ratios) that catch unrealistic assumptions\n5. Suggest 3 error-trap formulas I can add so the model self-flags future breaks",
+    "tags": [
+      "financial modeling",
+      "three-statement",
+      "audit",
+      "Excel"
+    ],
+    "best_for": "Analysts and associates who inherit or review three-statement models",
+    "source": "Financial model review checklist",
+    "outcome": "A structured audit of your 3-statement model that catches broken links, plugs, and assumptions that don't tie.",
+    "inputs": [
+      {
+        "label": "purpose, period, monthly/annual"
+      },
+      {
+        "label": "paste drivers/assumptions"
+      },
+      {
+        "label": "'doesn't balance' symptoms"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "30 min",
+    "output_kind": "analysis",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Rigorous step-by-step reconciliation logic and accounting consistency checks.",
+    "dateAdded": "2026-06-28",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Master Data Management",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udd35",
+    "title": "Master Data Golden Record & Dedup Ruleset",
+    "prompt": "Act as a master data management (MDM) expert. Help me design a golden-record ruleset to deduplicate my [customer / vendor / product] master.\n\nFields available: [e.g. name, tax ID, email, address, phone, account #]\nKnown data issues: [duplicates, typos, abbreviations, missing IDs]\nSystem of record: [ERP/CRM name]\nMatch tolerance: [strict / fuzzy acceptable]\n\nPlease:\n1. Propose deterministic match rules (exact keys like tax ID) and fuzzy match rules (name + address similarity) with suggested thresholds\n2. Define survivorship rules: for each field, which source/record wins (most recent, most complete, trusted source)\n3. Describe how to build a golden record and keep cross-references to the merged source IDs\n4. Give a tiered confidence model (auto-merge / review queue / no-match) and what % to expect in each\n5. List the data quality checks to run before and after, and the metrics to report (duplicate rate, match rate, completeness)",
+    "tags": [
+      "master data",
+      "MDM",
+      "deduplication",
+      "data quality"
+    ],
+    "best_for": "Data stewards, MDM leads, analysts cleaning customer/vendor master data",
+    "source": "MDM golden-record design practice",
+    "outcome": "A concrete matching, survivorship, and golden-record ruleset for cleaning a customer or vendor master.",
+    "inputs": [
+      {
+        "label": "fields available"
+      },
+      {
+        "label": "known data issues"
+      },
+      {
+        "label": "system of record"
+      },
+      {
+        "label": "match tolerance"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "40 min",
+    "output_kind": "spec",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Precise rule design and edge-case reasoning for matching/survivorship logic.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Quality",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Data Quality Audit & Cleansing Plan",
+    "prompt": "You are a data quality expert. Help me audit and plan cleansing for a dataset.\n\nDataset / table purpose: [describe]\nColumns and types: [paste schema or list]\nSample rows (anonymized) or known problems: [paste]\nHow the data is used downstream: [reporting, ML, billing, compliance]\n\nPlease:\n1. Assess against the 6 data quality dimensions: completeness, validity, accuracy, consistency, uniqueness, timeliness\n2. For each column, flag likely issues and the check/SQL pattern to detect them\n3. Prioritize fixes by downstream impact vs effort (quick wins first)\n4. Recommend cleansing rules (standardization, validation, default handling) and which to automate vs review manually\n5. Propose 5 ongoing data quality metrics and thresholds to monitor so it doesn't degrade again",
+    "tags": [
+      "data quality",
+      "data cleansing",
+      "governance",
+      "analytics"
+    ],
+    "best_for": "Data analysts and stewards tasked with cleaning up a messy dataset or table",
+    "source": "Data quality assessment framework",
+    "outcome": "A prioritized data quality assessment across the six core dimensions with a concrete cleansing backlog.",
+    "inputs": [
+      {
+        "label": "dataset purpose"
+      },
+      {
+        "label": "columns and types"
+      },
+      {
+        "label": "sample rows / problems"
+      },
+      {
+        "label": "downstream use"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "30 min",
+    "output_kind": "plan",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Systematic coverage of data quality dimensions with practical detection patterns.",
+    "dateAdded": "2026-06-28",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Governance",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Master Data Governance Policy Drafter",
+    "prompt": "Act as a data governance advisor. Draft a master data governance policy for my organization.\n\nOrganization size and industry: [describe]\nMaster data domains in scope: [customer, vendor, product, employee, chart of accounts]\nCurrent state: [no policy / ad hoc / partial]\nKey systems: [ERP, CRM, data warehouse]\nBiggest pain: [duplicates, inconsistent definitions, unclear ownership]\n\nPlease draft:\n1. Roles & responsibilities (data owner, data steward, custodian) with a simple RACI\n2. Data standards: naming, mandatory fields, validation rules, definitions per domain\n3. The create/change/deactivate workflow for a master record, including approvals\n4. Quality KPIs and review cadence (completeness, duplicate rate, time-to-create)\n5. A pragmatic 90-day rollout plan so this lands without stalling the business",
+    "tags": [
+      "data governance",
+      "master data",
+      "policy",
+      "RACI"
+    ],
+    "best_for": "Data governance leads, MDM owners, operations managers standing up governance",
+    "source": "Data governance policy framework",
+    "outcome": "A right-sized master data governance policy: ownership, standards, workflows, and KPIs your team will actually follow.",
+    "inputs": [
+      {
+        "label": "org size and industry"
+      },
+      {
+        "label": "domains in scope"
+      },
+      {
+        "label": "current state"
+      },
+      {
+        "label": "key systems"
+      },
+      {
+        "label": "biggest pain"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "35 min",
+    "output_kind": "templates",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Produces structured, organization-appropriate policy language with clear ownership models.",
+    "dateAdded": "2026-06-27",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Processes & Procedures",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "\ud83d\udfe2",
+    "title": "Standard Operating Procedure (SOP) Writer",
+    "prompt": "You are an operations documentation specialist. Turn my rough process into a clean Standard Operating Procedure (SOP).\n\nProcess name: [e.g. onboarding a new vendor]\nWho performs it: [role(s)]\nHow it works today (rough steps, even messy): [describe / paste]\nSystems/tools involved: [list]\nHow often and how critical: [frequency, risk if done wrong]\n\nPlease produce an SOP with:\n1. Purpose, scope, and when this procedure applies\n2. Roles & responsibilities and any prerequisites/inputs needed before starting\n3. Numbered step-by-step instructions in plain language, with the system/screen for each step\n4. Decision points and exception handling ('if X, then...')\n5. Quality checks / definition of done, and a short revision-history table\nKeep it concise enough that a new hire could follow it without asking questions.",
+    "tags": [
+      "SOP",
+      "process documentation",
+      "operations",
+      "procedures"
+    ],
+    "best_for": "Operations managers, team leads, and anyone documenting a repeatable process",
+    "source": "SOP documentation best practice",
+    "outcome": "A clear, step-by-step SOP with roles, prerequisites, and checks that a new hire could follow unaided.",
+    "inputs": [
+      {
+        "label": "process name"
+      },
+      {
+        "label": "who performs it"
+      },
+      {
+        "label": "rough steps"
+      },
+      {
+        "label": "systems/tools"
+      },
+      {
+        "label": "frequency & risk"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "20 min",
+    "output_kind": "templates",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Reliable, well-structured procedural writing that stays clear for non-expert readers.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Processes & Procedures",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "\ud83d\udfe1",
+    "title": "Process Map & RACI Builder",
+    "prompt": "Act as a business process analyst. Help me map a process and build its RACI.\n\nProcess: [e.g. purchase-to-pay, quote-to-cash, employee onboarding]\nStart trigger and end state: [describe]\nSteps as I understand them: [list, even if incomplete]\nRoles/teams involved: [list]\nKnown problems: [delays, rework, unclear ownership]\n\nPlease:\n1. Produce the end-to-end process as ordered steps grouped by swimlane (role), noting inputs/outputs and systems per step\n2. Mark handoffs between roles and where delays or rework typically occur\n3. Build a RACI matrix (Responsible, Accountable, Consulted, Informed) for each step\n4. Flag gaps: steps with no clear Accountable, multiple Accountables, or missing controls\n5. Recommend 3-5 concrete improvements (automation, eliminate, reorder, add control) ranked by impact",
+    "tags": [
+      "process mapping",
+      "RACI",
+      "workflow",
+      "operations"
+    ],
+    "best_for": "Process owners, PMOs, and operations teams mapping or improving a workflow",
+    "source": "Process mapping & RACI methodology",
+    "outcome": "A clean end-to-end process map (as steps/swimlanes) plus a RACI matrix that exposes handoffs and gaps.",
+    "inputs": [
+      {
+        "label": "process name"
+      },
+      {
+        "label": "start trigger and end state"
+      },
+      {
+        "label": "steps"
+      },
+      {
+        "label": "roles/teams"
+      },
+      {
+        "label": "known problems"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "30 min",
+    "output_kind": "spec",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Strong at decomposing workflows into roles, handoffs, and accountability without losing structure.",
+    "dateAdded": "2026-06-28",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Processes & Procedures",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "\ud83d\udd35",
+    "title": "Internal Control & Procedure Gap Assessment",
+    "prompt": "You are an internal controls / risk advisor. Assess a business process for control gaps.\n\nProcess: [e.g. accounts payable, payroll, revenue recognition, vendor onboarding]\nHow it works today: [describe steps, approvals, systems]\nWho can do what: [roles and their system access]\nFramework I care about (if any): [SOX, COSO, ISO, internal]\n\nPlease:\n1. Identify the key risks in this process (financial misstatement, fraud, error, compliance)\n2. Map existing controls to those risks and rate each as preventive/detective and manual/automated\n3. Flag gaps: missing controls, segregation-of-duties conflicts, single points of failure, no audit trail\n4. Prioritize gaps by risk severity and likelihood, with a recommended control for each\n5. Suggest the evidence/documentation needed to make this process audit-ready",
+    "tags": [
+      "internal controls",
+      "risk",
+      "segregation of duties",
+      "audit"
+    ],
+    "best_for": "Controllers, internal audit, risk, and compliance leads reviewing a process",
+    "source": "Internal controls gap-assessment practice",
+    "outcome": "A risk-based review of a process that pinpoints missing controls, segregation-of-duties issues, and audit-readiness gaps.",
+    "inputs": [
+      {
+        "label": "process name"
+      },
+      {
+        "label": "how it works today"
+      },
+      {
+        "label": "roles and system access"
+      },
+      {
+        "label": "framework (SOX/COSO/ISO)"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "35 min",
+    "output_kind": "analysis",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Careful risk-and-control reasoning with attention to segregation of duties and audit evidence.",
+    "dateAdded": "2026-06-27",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
     "related_tools": [
       "claude",
       "chatgpt"

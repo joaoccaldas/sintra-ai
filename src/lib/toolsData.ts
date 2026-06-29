@@ -1116,36 +1116,6 @@ export const AI_TOOLS: AITool[] = [
   },
   // ─── IMAGE (2026) ─────────────────────────────────────────────────────────
   {
-    id: "ideogram",
-    name: "Ideogram",
-    tagline: "Best AI text-in-image generation — now open-weight 9.3B",
-    description:
-      "Ideogram pioneered reliable text rendering inside AI-generated images and leads accuracy benchmarks for typography in visuals. The June 2026 Ideogram 4.0 is the first open-weight release — a 9.3B-parameter model with JSON bounding-box layout control and native 2K output, with Apache 2.0 weights on Hugging Face. The commercial API renders logos, posters, social media assets, and product mockups with readable text.\n\n**Step-by-step:** 1) Use ideogram.ai for the web app. 2) For open-weight local use: download from HuggingFace (`ideogram-ai/ideogram-4.0`). 3) Pass a text prompt + optional JSON bounding-box layout. 4) Get 2K output. **Best for:** marketing designers, social media teams, logo concepts, poster generation, any use case requiring readable text in images.",
-    category: "image",
-    pricing: "freemium",
-    priceNote: "Free (25 images/day) · Basic $7/mo · Pro $16/mo",
-    url: "https://ideogram.ai",
-    provider: "Ideogram",
-    tags: ["text-in-image", "typography", "open-weight", "2K", "posters", "logos"],
-    status: "available",
-    highlight: "Best text-in-image accuracy in the industry — now open-weight 9.3B with 2K native output.",
-  },
-  {
-    id: "adobe-firefly",
-    name: "Adobe Firefly",
-    tagline: "Adobe's generative AI trained entirely on licensed creative assets",
-    description:
-      "Adobe Firefly is Adobe's generative AI platform built into Photoshop, Illustrator, and Express. All models are trained exclusively on Adobe Stock, openly licensed content, and public domain works — making it commercially safe for professional use. Key capabilities include Generative Fill (edit photos with text), Generative Expand (outpaint beyond image edges), text-to-image, text-to-vector, and text effects. Firefly is also available as a standalone API for B2B workflows.\n\n**Step-by-step:** 1) Open Photoshop 2026. 2) Select a region or the whole canvas. 3) Type what to add/remove/change in the Generative Fill bar. 4) Press Generate. 5) Pick from 3 variations. **Best for:** professional designers and photographers, commercial clients needing IP-safe content, marketing teams using Adobe Creative Cloud.",
-    category: "image",
-    pricing: "freemium",
-    priceNote: "Free (25 credits/mo with Adobe account) · Creative Cloud plans from $59.99/mo",
-    url: "https://firefly.adobe.com",
-    provider: "Adobe",
-    tags: ["Photoshop", "generative fill", "commercial safe", "licensed training", "vector", "text effects"],
-    status: "available",
-    highlight: "Trained only on licensed content — the only frontier image AI that's fully commercially safe.",
-  },
-  {
     id: "krea-ai",
     name: "Krea AI",
     tagline: "Real-time AI image generation and enhancement with live canvas editing",
@@ -1177,21 +1147,6 @@ export const AI_TOOLS: AITool[] = [
     highlight: "Reference Mode keeps characters consistent across scenes — used in Hollywood productions.",
   },
   {
-    id: "heygen",
-    name: "HeyGen",
-    tagline: "AI video avatars — turn text scripts into talking-head videos in minutes",
-    description:
-      "HeyGen generates professional talking-head videos from text scripts using AI avatars — no camera, studio, or recording required. You choose from 300+ stock avatars or create a personal avatar clone from 2 minutes of footage. Key features include video translation with lip-sync in 40+ languages, streaming avatars for real-time interactive use cases, and API access for automated video workflows.\n\n**Step-by-step:** 1) Sign up at heygen.com. 2) Choose an avatar (or clone yourself). 3) Paste your script. 4) Pick a voice. 5) Generate in ~2 min. 6) Export MP4 or use the API. **Best for:** corporate training teams, L&D departments, marketers needing product explainer videos, YouTubers wanting multi-language content, customer success teams.",
-    category: "video",
-    pricing: "freemium",
-    priceNote: "Free (1 min video) · Creator $29/mo · Team $89/mo",
-    url: "https://www.heygen.com",
-    provider: "HeyGen",
-    tags: ["AI avatar", "talking head", "video dubbing", "lip-sync", "translation", "training video"],
-    status: "available",
-    highlight: "Translate and lip-sync your videos into 40+ languages — no re-recording required.",
-  },
-  {
     id: "pika-labs",
     name: "Pika",
     tagline: "AI video generation and editing with scene-modify and Pikaffects",
@@ -1207,21 +1162,6 @@ export const AI_TOOLS: AITool[] = [
     highlight: "Pikaffects (Inflate, Explode, Squish) create surreal, share-worthy effects no other tool offers.",
   },
   // ─── AUDIO (2026) ─────────────────────────────────────────────────────────
-  {
-    id: "elevenlabs",
-    name: "ElevenLabs",
-    tagline: "Best-in-class AI voice cloning and text-to-speech",
-    description:
-      "ElevenLabs produces the most natural AI voices available and is the standard for professional voice cloning. With 3 minutes of audio, it clones any voice with emotional range intact. Features include: Text to Speech, Voice Cloning, Dubbing (video translation + lip-sync), Sound Effects (SFX), AI Agents for real-time voice conversations, and the Projects feature for audiobook/podcast production. Used by audiobook publishers, game studios, and media companies.\n\n**Step-by-step (voice clone):** 1) Sign up at elevenlabs.io. 2) Go to Voices → Add Voice → Instant Clone. 3) Upload 3+ min of clean audio. 4) Type your script. 5) Generate and download MP3. **Best for:** audiobook narrators, game dialogue, podcast production, corporate voice-overs, content creators dubbing in multiple languages.",
-    category: "audio",
-    pricing: "freemium",
-    priceNote: "Free (10K chars/mo) · Starter $5/mo · Creator $22/mo · Pro $99/mo",
-    url: "https://elevenlabs.io",
-    provider: "ElevenLabs",
-    tags: ["voice cloning", "text-to-speech", "dubbing", "audiobooks", "SFX", "AI agents"],
-    status: "available",
-    highlight: "3 minutes of audio → a perfect voice clone with full emotional range and multiple languages.",
-  },
   // ─── RESEARCH (2026) ──────────────────────────────────────────────────────
   {
     id: "scite",
