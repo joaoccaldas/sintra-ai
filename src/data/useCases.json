@@ -8643,5 +8643,493 @@
       "claude",
       "chatgpt"
     ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Forecasting",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Driver-Based Rolling Forecast Builder",
+    "prompt": "Act as an FP&A modeling expert. Help me build a driver-based rolling forecast.\n\nBusiness model: [SaaS / retail / services / manufacturing]\nForecast horizon: [e.g. 12-month rolling]\nKey revenue drivers: [e.g. new logos, ARPU, churn, units, price]\nKey cost drivers: [e.g. headcount, COGS %, marketing as % revenue]\nHistorical data I can paste: [last 6-12 months of actuals]\nGranularity: [monthly / quarterly, by department or product]\n\nPlease:\n1. Map each line item to its underlying driver(s) and the formula linking them\n2. List the assumptions to set, with a sensible default and a source/logic for each\n3. Give the Excel formula structure (driver tab -> calc tab -> output) with example cell references\n4. Build a 3-scenario sensitivity table (base / upside / downside) on the 3 most material drivers\n5. Flag the 2-3 drivers that most move the forecast and how I should pressure-test them monthly",
+    "tags": [
+      "FP&A",
+      "forecasting",
+      "driver-based",
+      "Excel"
+    ],
+    "best_for": "FP&A analysts, finance managers, controllers moving off static annual budgets",
+    "source": "FP&A rolling-forecast practice",
+    "outcome": "A documented driver-based rolling forecast with formulas, assumptions, and a sensitivity table you can drop into Excel.",
+    "inputs": [
+      {
+        "label": "SaaS / retail / services / manufacturing"
+      },
+      {
+        "label": "12-month rolling"
+      },
+      {
+        "label": "new logos, ARPU, churn"
+      },
+      {
+        "label": "headcount, COGS %"
+      },
+      {
+        "label": "last 6-12 months actuals"
+      },
+      {
+        "label": "monthly / by department"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "45 min",
+    "output_kind": "spec",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Long-context, structured financial reasoning and reliable formula construction across linked schedules.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Management Reporting",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Budget vs Actuals Variance Commentary Writer",
+    "prompt": "You are an FP&A analyst writing variance commentary for a monthly management pack.\n\nPaste my budget vs actuals table (line item, budget, actual, variance $, variance %): [paste]\nMateriality threshold: [e.g. > $25k or > 10%]\nContext on the month: [one-offs, timing, known drivers]\nAudience: [CFO / board / department heads]\n\nPlease:\n1. Identify every variance above the materiality threshold\n2. For each, write 1-2 sentences of plain-English commentary explaining the likely driver (price vs volume vs timing vs one-off)\n3. Separate permanent variances from timing differences that will reverse\n4. Summarize the net P&L impact and the 3 movements that matter most for the month\n5. End with 2-3 questions I should ask the business owners to confirm the drivers",
+    "tags": [
+      "FP&A",
+      "variance analysis",
+      "management reporting",
+      "commentary"
+    ],
+    "best_for": "FP&A analysts and controllers preparing monthly management reporting",
+    "source": "Month-end management reporting workflow",
+    "outcome": "Board-ready variance commentary that explains the 'why' behind each material movement, not just the numbers.",
+    "inputs": [
+      {
+        "label": "paste budget vs actuals table"
+      },
+      {
+        "label": "materiality threshold"
+      },
+      {
+        "label": "one-offs / timing"
+      },
+      {
+        "label": "CFO / board"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "20 min",
+    "output_kind": "analysis",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Strong at concise, accurate business narrative from tabular financial data.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Cash & Liquidity",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "13-Week Cash Flow Forecast & Scenario Planner",
+    "prompt": "Act as a treasury / FP&A expert. Help me build a 13-week direct cash flow forecast.\n\nBusiness: [industry, B2B/B2C, rough monthly revenue]\nOpening cash position: [amount]\nMain cash inflows: [AR collections, terms, seasonality]\nMain cash outflows: [payroll cadence, AP terms, rent, debt service, tax]\nFacilities: [revolver / overdraft limit if any]\n\nPlease:\n1. Lay out the weekly line-item structure (inflows, outflows, net, running balance) for 13 weeks\n2. Show how to phase AR collections and AP payments using DSO/DPO assumptions\n3. Add a base / downside / stress scenario (e.g. collections slip 2 weeks, a large customer delays)\n4. Build a minimum-cash / covenant early-warning flag that triggers when the balance falls below [threshold]\n5. List the 5 levers I can pull first if the downside hits, ranked by speed and reversibility",
+    "tags": [
+      "cash flow",
+      "treasury",
+      "13-week",
+      "scenario planning"
+    ],
+    "best_for": "Controllers, treasury, and CFOs at cash-sensitive or PE-backed companies",
+    "source": "Treasury 13-week cash forecasting practice",
+    "outcome": "A 13-week direct cash flow forecast structure with scenario toggles and an early-warning liquidity view.",
+    "inputs": [
+      {
+        "label": "industry, B2B/B2C, monthly revenue"
+      },
+      {
+        "label": "opening cash"
+      },
+      {
+        "label": "AR terms, seasonality"
+      },
+      {
+        "label": "payroll, AP, debt service"
+      },
+      {
+        "label": "revolver limit"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "40 min",
+    "output_kind": "table",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Handles multi-week interdependent cash mechanics and scenario logic without losing the running balance.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Financial Modeling",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Three-Statement Model Integrity Checker",
+    "prompt": "You are a financial modeling reviewer. Audit my three-statement model for integrity.\n\nDescribe the model: [purpose, period, monthly/annual]\nPaste the key drivers/assumptions and any outputs you're unsure about: [paste]\nKnown issues or 'it doesn't balance' symptoms: [describe]\n\nPlease:\n1. List the standard checks: does the balance sheet balance, does cash on the BS tie to the cash flow ending balance, does net income flow to retained earnings\n2. Flag common error sources: circularity/iterative calc, hardcoded plugs, sign errors, broken depreciation or debt schedules\n3. Give me a step-by-step reconciliation order to isolate where it breaks\n4. List 8-10 sanity checks (margins, growth rates, ratios) that catch unrealistic assumptions\n5. Suggest 3 error-trap formulas I can add so the model self-flags future breaks",
+    "tags": [
+      "financial modeling",
+      "three-statement",
+      "audit",
+      "Excel"
+    ],
+    "best_for": "Analysts and associates who inherit or review three-statement models",
+    "source": "Financial model review checklist",
+    "outcome": "A structured audit of your 3-statement model that catches broken links, plugs, and assumptions that don't tie.",
+    "inputs": [
+      {
+        "label": "purpose, period, monthly/annual"
+      },
+      {
+        "label": "paste drivers/assumptions"
+      },
+      {
+        "label": "'doesn't balance' symptoms"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "30 min",
+    "output_kind": "analysis",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Rigorous step-by-step reconciliation logic and accounting consistency checks.",
+    "dateAdded": "2026-06-28",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Master Data Management",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Master Data Golden Record & Dedup Ruleset",
+    "prompt": "Act as a master data management (MDM) expert. Help me design a golden-record ruleset to deduplicate my [customer / vendor / product] master.\n\nFields available: [e.g. name, tax ID, email, address, phone, account #]\nKnown data issues: [duplicates, typos, abbreviations, missing IDs]\nSystem of record: [ERP/CRM name]\nMatch tolerance: [strict / fuzzy acceptable]\n\nPlease:\n1. Propose deterministic match rules (exact keys like tax ID) and fuzzy match rules (name + address similarity) with suggested thresholds\n2. Define survivorship rules: for each field, which source/record wins (most recent, most complete, trusted source)\n3. Describe how to build a golden record and keep cross-references to the merged source IDs\n4. Give a tiered confidence model (auto-merge / review queue / no-match) and what % to expect in each\n5. List the data quality checks to run before and after, and the metrics to report (duplicate rate, match rate, completeness)",
+    "tags": [
+      "master data",
+      "MDM",
+      "deduplication",
+      "data quality"
+    ],
+    "best_for": "Data stewards, MDM leads, analysts cleaning customer/vendor master data",
+    "source": "MDM golden-record design practice",
+    "outcome": "A concrete matching, survivorship, and golden-record ruleset for cleaning a customer or vendor master.",
+    "inputs": [
+      {
+        "label": "fields available"
+      },
+      {
+        "label": "known data issues"
+      },
+      {
+        "label": "system of record"
+      },
+      {
+        "label": "match tolerance"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "40 min",
+    "output_kind": "spec",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Precise rule design and edge-case reasoning for matching/survivorship logic.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Quality",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Data Quality Audit & Cleansing Plan",
+    "prompt": "You are a data quality expert. Help me audit and plan cleansing for a dataset.\n\nDataset / table purpose: [describe]\nColumns and types: [paste schema or list]\nSample rows (anonymized) or known problems: [paste]\nHow the data is used downstream: [reporting, ML, billing, compliance]\n\nPlease:\n1. Assess against the 6 data quality dimensions: completeness, validity, accuracy, consistency, uniqueness, timeliness\n2. For each column, flag likely issues and the check/SQL pattern to detect them\n3. Prioritize fixes by downstream impact vs effort (quick wins first)\n4. Recommend cleansing rules (standardization, validation, default handling) and which to automate vs review manually\n5. Propose 5 ongoing data quality metrics and thresholds to monitor so it doesn't degrade again",
+    "tags": [
+      "data quality",
+      "data cleansing",
+      "governance",
+      "analytics"
+    ],
+    "best_for": "Data analysts and stewards tasked with cleaning up a messy dataset or table",
+    "source": "Data quality assessment framework",
+    "outcome": "A prioritized data quality assessment across the six core dimensions with a concrete cleansing backlog.",
+    "inputs": [
+      {
+        "label": "dataset purpose"
+      },
+      {
+        "label": "columns and types"
+      },
+      {
+        "label": "sample rows / problems"
+      },
+      {
+        "label": "downstream use"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "30 min",
+    "output_kind": "plan",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Systematic coverage of data quality dimensions with practical detection patterns.",
+    "dateAdded": "2026-06-28",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Data & Analytics",
+    "section": "Data Governance",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Master Data Governance Policy Drafter",
+    "prompt": "Act as a data governance advisor. Draft a master data governance policy for my organization.\n\nOrganization size and industry: [describe]\nMaster data domains in scope: [customer, vendor, product, employee, chart of accounts]\nCurrent state: [no policy / ad hoc / partial]\nKey systems: [ERP, CRM, data warehouse]\nBiggest pain: [duplicates, inconsistent definitions, unclear ownership]\n\nPlease draft:\n1. Roles & responsibilities (data owner, data steward, custodian) with a simple RACI\n2. Data standards: naming, mandatory fields, validation rules, definitions per domain\n3. The create/change/deactivate workflow for a master record, including approvals\n4. Quality KPIs and review cadence (completeness, duplicate rate, time-to-create)\n5. A pragmatic 90-day rollout plan so this lands without stalling the business",
+    "tags": [
+      "data governance",
+      "master data",
+      "policy",
+      "RACI"
+    ],
+    "best_for": "Data governance leads, MDM owners, operations managers standing up governance",
+    "source": "Data governance policy framework",
+    "outcome": "A right-sized master data governance policy: ownership, standards, workflows, and KPIs your team will actually follow.",
+    "inputs": [
+      {
+        "label": "org size and industry"
+      },
+      {
+        "label": "domains in scope"
+      },
+      {
+        "label": "current state"
+      },
+      {
+        "label": "key systems"
+      },
+      {
+        "label": "biggest pain"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "35 min",
+    "output_kind": "templates",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Produces structured, organization-appropriate policy language with clear ownership models.",
+    "dateAdded": "2026-06-27",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Processes & Procedures",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Standard Operating Procedure (SOP) Writer",
+    "prompt": "You are an operations documentation specialist. Turn my rough process into a clean Standard Operating Procedure (SOP).\n\nProcess name: [e.g. onboarding a new vendor]\nWho performs it: [role(s)]\nHow it works today (rough steps, even messy): [describe / paste]\nSystems/tools involved: [list]\nHow often and how critical: [frequency, risk if done wrong]\n\nPlease produce an SOP with:\n1. Purpose, scope, and when this procedure applies\n2. Roles & responsibilities and any prerequisites/inputs needed before starting\n3. Numbered step-by-step instructions in plain language, with the system/screen for each step\n4. Decision points and exception handling ('if X, then...')\n5. Quality checks / definition of done, and a short revision-history table\nKeep it concise enough that a new hire could follow it without asking questions.",
+    "tags": [
+      "SOP",
+      "process documentation",
+      "operations",
+      "procedures"
+    ],
+    "best_for": "Operations managers, team leads, and anyone documenting a repeatable process",
+    "source": "SOP documentation best practice",
+    "outcome": "A clear, step-by-step SOP with roles, prerequisites, and checks that a new hire could follow unaided.",
+    "inputs": [
+      {
+        "label": "process name"
+      },
+      {
+        "label": "who performs it"
+      },
+      {
+        "label": "rough steps"
+      },
+      {
+        "label": "systems/tools"
+      },
+      {
+        "label": "frequency & risk"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "20 min",
+    "output_kind": "templates",
+    "best_llm": "Claude Sonnet 4.6",
+    "llm_reason": "Reliable, well-structured procedural writing that stays clear for non-expert readers.",
+    "dateAdded": "2026-06-29",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Processes & Procedures",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Process Map & RACI Builder",
+    "prompt": "Act as a business process analyst. Help me map a process and build its RACI.\n\nProcess: [e.g. purchase-to-pay, quote-to-cash, employee onboarding]\nStart trigger and end state: [describe]\nSteps as I understand them: [list, even if incomplete]\nRoles/teams involved: [list]\nKnown problems: [delays, rework, unclear ownership]\n\nPlease:\n1. Produce the end-to-end process as ordered steps grouped by swimlane (role), noting inputs/outputs and systems per step\n2. Mark handoffs between roles and where delays or rework typically occur\n3. Build a RACI matrix (Responsible, Accountable, Consulted, Informed) for each step\n4. Flag gaps: steps with no clear Accountable, multiple Accountables, or missing controls\n5. Recommend 3-5 concrete improvements (automation, eliminate, reorder, add control) ranked by impact",
+    "tags": [
+      "process mapping",
+      "RACI",
+      "workflow",
+      "operations"
+    ],
+    "best_for": "Process owners, PMOs, and operations teams mapping or improving a workflow",
+    "source": "Process mapping & RACI methodology",
+    "outcome": "A clean end-to-end process map (as steps/swimlanes) plus a RACI matrix that exposes handoffs and gaps.",
+    "inputs": [
+      {
+        "label": "process name"
+      },
+      {
+        "label": "start trigger and end state"
+      },
+      {
+        "label": "steps"
+      },
+      {
+        "label": "roles/teams"
+      },
+      {
+        "label": "known problems"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "30 min",
+    "output_kind": "spec",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Strong at decomposing workflows into roles, handoffs, and accountability without losing structure.",
+    "dateAdded": "2026-06-28",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Personal Productivity",
+    "section": "Processes & Procedures",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Internal Control & Procedure Gap Assessment",
+    "prompt": "You are an internal controls / risk advisor. Assess a business process for control gaps.\n\nProcess: [e.g. accounts payable, payroll, revenue recognition, vendor onboarding]\nHow it works today: [describe steps, approvals, systems]\nWho can do what: [roles and their system access]\nFramework I care about (if any): [SOX, COSO, ISO, internal]\n\nPlease:\n1. Identify the key risks in this process (financial misstatement, fraud, error, compliance)\n2. Map existing controls to those risks and rate each as preventive/detective and manual/automated\n3. Flag gaps: missing controls, segregation-of-duties conflicts, single points of failure, no audit trail\n4. Prioritize gaps by risk severity and likelihood, with a recommended control for each\n5. Suggest the evidence/documentation needed to make this process audit-ready",
+    "tags": [
+      "internal controls",
+      "risk",
+      "segregation of duties",
+      "audit"
+    ],
+    "best_for": "Controllers, internal audit, risk, and compliance leads reviewing a process",
+    "source": "Internal controls gap-assessment practice",
+    "outcome": "A risk-based review of a process that pinpoints missing controls, segregation-of-duties issues, and audit-readiness gaps.",
+    "inputs": [
+      {
+        "label": "process name"
+      },
+      {
+        "label": "how it works today"
+      },
+      {
+        "label": "roles and system access"
+      },
+      {
+        "label": "framework (SOX/COSO/ISO)"
+      }
+    ],
+    "tools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "est_time": "35 min",
+    "output_kind": "analysis",
+    "best_llm": "Claude Opus 4.8",
+    "llm_reason": "Careful risk-and-control reasoning with attention to segregation of duties and audit evidence.",
+    "dateAdded": "2026-06-27",
+    "confidence": "high",
+    "region": "global",
+    "last_verified": "2026-06-29",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   }
 ]
