@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "update-news": "node scripts/update-news.mjs",
+    "export:obsidian": "tsx scripts/export-obsidian.ts",
     "typecheck": "tsc --noEmit",
     "lint": "next lint",
     "validate-data": "node scripts/validate-data.mjs",
