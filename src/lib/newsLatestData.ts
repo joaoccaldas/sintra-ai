@@ -7,6 +7,38 @@ import type { NewsItem } from "./newsData";
  */
 export const LATEST_AI_NEWS: NewsItem[] = [
   {
+    id: "anthropic-claude-sonnet-5-release",
+    date: "Jun 2026",
+    dateNum: 202606,
+    dateDay: 30,
+    title: "Anthropic Releases Claude Sonnet 5",
+    summary:
+      "Anthropic released Claude Sonnet 5 on June 30, 2026 — a strict improvement over Claude Sonnet 4.6 with gains in coding, agentic search, multimodal reasoning, and professional-task performance, and a wider range of cost-performance options than Opus 4.8. It ships everywhere at an introductory $2 per million input / $10 per million output tokens through August 31, 2026, then moves to standard pricing of $3 / $15. Anthropic benchmarked it on agentic-search (BrowseComp) and computer-use (OSWorld-Verified) evaluations.",
+    tags: ["Anthropic", "Claude", "Sonnet 5", "Model Release", "Agents"],
+    significance: "major",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.anthropic.com/news/claude-sonnet-5",
+    why_it_matters: "A mid-tier model that strictly beats the prior Sonnet while spanning more of the cost-performance curve than Opus lets teams push more agentic and coding work down to a cheaper tier without giving up quality.",
+    what_to_try: "Re-run your highest-volume Sonnet 4.6 or Opus 4.8 workloads on Sonnet 5 during the discounted intro window and compare blended cost-per-task before standard pricing kicks in on Sep 1.",
+  },
+  {
+    id: "anthropic-briefing-ai-for-science-sf-2026",
+    date: "Jun 2026",
+    dateNum: 202606,
+    dateDay: 30,
+    title: "Anthropic Hosts 'The Briefing: AI for Science' in San Francisco",
+    summary:
+      "Anthropic held 'The Briefing: AI for Science' in San Francisco on June 30, 2026, bringing together company leadership, life-sciences executives, and leading research institutions to show how Claude is being used across scientific research, with a public livestream at 9:00am PST. The event underscores Anthropic's growing push into AI-for-science and wet-lab partnerships.",
+    tags: ["Anthropic", "AI for Science", "Claude", "Research", "Life Sciences"],
+    significance: "notable",
+    provider: "Anthropic",
+    providerColor: "#d97706",
+    url: "https://www.anthropic.com/events/the-briefing-ai-for-science",
+    why_it_matters: "It signals Anthropic is formalizing AI-for-science as a strategic vertical — pairing frontier models with real research institutions rather than treating science as a generic use case.",
+    what_to_try: "If you work in R&D or life sciences, watch the briefing replay for concrete Claude workflows (literature synthesis, protocol design, data analysis) you can adapt to your own lab.",
+  },
+  {
     id: "anthropic-claude-tag-slack-teammate",
     date: "Jun 2026",
     dateNum: 202606,
