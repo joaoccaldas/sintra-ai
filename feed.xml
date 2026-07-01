@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 29 Jun 2026 14:06:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 03:44:30 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Anthropic Releases Claude Sonnet 5]]></title>
+    <description><![CDATA[Anthropic released Claude Sonnet 5 on June 30, 2026 — a strict improvement over Claude Sonnet 4.6 with gains in coding, agentic search, multimodal reasoning, and professional-task performance, and a wider range of cost-performance options than Opus 4.8. It ships everywhere at an introductory $2 per million input / $10 per million output tokens through August 31, 2026, then moves to standard pricing of $3 / $15. Anthropic benchmarked it on agentic-search (BrowseComp) and computer-use (OSWorld-Verified) evaluations.]]></description>
+    <link>https://www.anthropic.com/news/claude-sonnet-5</link>
+    <guid isPermaLink="true">https://www.anthropic.com/news/claude-sonnet-5</guid>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic Hosts 'The Briefing: AI for Science' in San Francisco]]></title>
+    <description><![CDATA[Anthropic held 'The Briefing: AI for Science' in San Francisco on June 30, 2026, bringing together company leadership, life-sciences executives, and leading research institutions to show how Claude is being used across scientific research, with a public livestream at 9:00am PST. The event underscores Anthropic's growing push into AI-for-science and wet-lab partnerships.]]></description>
+    <link>https://www.anthropic.com/events/the-briefing-ai-for-science</link>
+    <guid isPermaLink="true">https://www.anthropic.com/events/the-briefing-ai-for-science</guid>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
 
   <item>
     <title><![CDATA[OpenAI Previews GPT-5.6 Family: Sol, Terra, and Luna]]></title>
@@ -440,24 +458,6 @@
     <guid isPermaLink="true">https://www.bol.uol.com.br/noticias/2026/06/19/fachin-defende-responsabilizacao-das-plataformas-digitais-diante-dos-impactos-da-tecnologia.htm</guid>
     <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
     <category>Supremo Tribunal Federal</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nobel Laureate John Jumper Leaves Google DeepMind for Anthropic]]></title>
-    <description><![CDATA[John Jumper, co-creator of AlphaFold and 2024 Nobel Chemistry laureate, announced on June 19, 2026 that he is leaving Google DeepMind after nearly nine years to join Anthropic. AlphaFold has predicted the 3D structures of over 200 million proteins, and Jumper's departure follows Gemini co-lead Noam Shazeer's exit to OpenAI by just one day — two landmark talent losses for Google within 48 hours.]]></description>
-    <link>https://www.bloomberg.com/news/articles/2026-06-19/nobel-winner-john-jumper-to-leave-google-deepmind-for-anthropic</link>
-    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-19/nobel-winner-john-jumper-to-leave-google-deepmind-for-anthropic</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[SK Telecom Named as Trigger Behind Anthropic Mythos Export Ban; Anthropic Opens Seoul Office]]></title>
-    <description><![CDATA[Reporting on June 19, 2026 revealed that SK Telecom — South Korea's largest carrier, added to Anthropic's Project Glasswing in early June — had its Claude Mythos access revoked by Anthropic at the White House's request over alleged China ties, an episode that escalated into the June 12 US export-control directive barring foreign nationals from Mythos 5 and Fable 5. SK Telecom denies any China ties, citing roughly $1.9 million in Chinese revenue and seven China-based employees in 2024. Anthropic opened a Seoul office the same week even as the export ban cuts Korean access to its top models.]]></description>
-    <link>https://www.tomshardware.com/tech-industry/artificial-intelligence/sk-telecom-named-as-the-korean-carrier-at-the-center-of-anthropics-mythos-export-controls</link>
-    <guid isPermaLink="true">https://www.tomshardware.com/tech-industry/artificial-intelligence/sk-telecom-named-as-the-korean-carrier-at-the-center-of-anthropics-mythos-export-controls</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
   </item>
   </channel>
 </rss>
