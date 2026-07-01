@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 01 Jul 2026 03:44:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 04:36:11 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Anthropic Positions Claude Sonnet 5 as a Cheaper Way to Run Agents]]></title>
+    <description><![CDATA[TechCrunch reported that Anthropic is pitching Claude Sonnet 5 as a lower-cost way to run agents at scale: it is now the default model on Free and Pro plans and is available across Max, Team, Enterprise, Claude Code, and the API. At an introductory $2 per million input / $10 per million output tokens (versus Opus 4.8's $5 / $25), Anthropic is steering high-volume agentic and coding workloads toward the mid-tier model.]]></description>
+    <link>https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/</guid>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic Prices Sonnet 5 Far Below Opus as It Races Toward an IPO]]></title>
+    <description><![CDATA[VentureBeat framed the Claude Sonnet 5 launch as an aggressive pricing move — a steep discount to Anthropic's top-tier Opus 4.8 — as the company races toward a blockbuster IPO. The introductory $2 / $10 per-million-token rate (through August 31, 2026, then $3 / $15) undercuts Opus while delivering near-Opus performance, a bid to capture market share and revenue ahead of a public listing.]]></description>
+    <link>https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-at-a-steep-discount-to-its-top-model-as-the-company-races-toward-a-blockbuster-ipo</link>
+    <guid isPermaLink="true">https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-at-a-steep-discount-to-its-top-model-as-the-company-races-toward-a-blockbuster-ipo</guid>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Claude Sonnet 5 Beats Sonnet 4.6 Across Benchmarks and Narrows the Gap to Opus 4.8]]></title>
+    <description><![CDATA[Coverage from The New Stack and others noted Sonnet 5 improves on Sonnet 4.6 on every published benchmark — roughly 63.2% on SWE-bench Pro (vs 58.1%), 76.1% on Terminal-bench (vs 55.4%), and 81.2% on OSWorld-Verified — and on the GDPval-AA v2 knowledge-work eval it scored 1,618, edging Opus 4.8's 1,615. Anthropic's system card also reports lower hallucination and sycophancy, better refusal of malicious requests, and stronger resistance to prompt injection in agentic contexts.]]></description>
+    <link>https://thenewstack.io/claude-sonnet-5-launch/</link>
+    <guid isPermaLink="true">https://thenewstack.io/claude-sonnet-5-launch/</guid>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
 
   <item>
     <title><![CDATA[Anthropic Releases Claude Sonnet 5]]></title>
@@ -431,33 +458,6 @@
     <guid isPermaLink="true">https://www.svd.se/a/3pm3PP/imf-varnar-ai-hotar-banker-potentiell-chock</guid>
     <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
     <category>Svenska Dagbladet</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Brazil Prepares R$2 Billion Domestic AI Supercomputer]]></title>
-    <description><![CDATA[Brazil's federal government is expected to announce a supercomputer project worth nearly R$2 billion for training AI models domestically. The system is planned for operation in 2027 and is intended to support health, agriculture, climate research and public digital services.]]></description>
-    <link>https://exame.com/inteligencia-artificial/brasil-pode-ganhar-supercomputador-de-r-2-bilhoes-para-treinar-ia-no-pais/</link>
-    <guid isPermaLink="true">https://exame.com/inteligencia-artificial/brasil-pode-ganhar-supercomputador-de-r-2-bilhoes-para-treinar-ia-no-pais/</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Brazilian Federal Government</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Brazil Government AI Lab Plans Reusable Solutions Bank]]></title>
-    <description><![CDATA[Brazil's federal AI innovation laboratory plans to activate a repository of reusable government AI solutions during the second half of 2026. The effort aims to prevent agencies from rebuilding similar systems independently and to spread proven implementations across public bodies.]]></description>
-    <link>https://convergenciadigital.com.br/governo/laboratorio-de-inteligencia-artificial-do-governo-vai-ativar-banco-de-reuso-de-solucoes-no-2o-semestre/</link>
-    <guid isPermaLink="true">https://convergenciadigital.com.br/governo/laboratorio-de-inteligencia-artificial-do-governo-vai-ativar-banco-de-reuso-de-solucoes-no-2o-semestre/</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>LIIA</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Brazil's Supreme Court President Calls for Platform Accountability]]></title>
-    <description><![CDATA[STF President Edson Fachin said digital platforms must be held responsible as artificial intelligence and other technologies reshape public debate. He also called for the judiciary to address the ethical consequences of AI while protecting human dignity.]]></description>
-    <link>https://www.bol.uol.com.br/noticias/2026/06/19/fachin-defende-responsabilizacao-das-plataformas-digitais-diante-dos-impactos-da-tecnologia.htm</link>
-    <guid isPermaLink="true">https://www.bol.uol.com.br/noticias/2026/06/19/fachin-defende-responsabilizacao-das-plataformas-digitais-diante-dos-impactos-da-tecnologia.htm</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Supremo Tribunal Federal</category>
   </item>
   </channel>
 </rss>
