@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 02 Jul 2026 11:02:27 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 11:07:31 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[South Korea Unveils an $880 Billion, 10-Year AI, Chip and Robotics Plan]]></title>
+    <description><![CDATA[President Lee Jae-myung announced a national plan to invest at least $880 billion (about 1,350 trillion won) over the next decade in semiconductors, AI data centers, and robotics — his 'Three Mega Projects.' Samsung Electronics and SK Hynix are expected to put in roughly 800 trillion won (~$518 billion) to build new chip-production hubs in the country's southwest, while groups including SK, GS, and Naver back large-scale AI data-center construction with about 550 trillion won ($356 billion).]]></description>
+    <link>https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom</link>
+    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom</guid>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <category>South Korea</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Chamath Palihapitiya Takes CEO Role at 8090 Labs on a $135M Raise]]></title>
+    <description><![CDATA[Enterprise AI-coding startup 8090 Labs closed a $135 million Series A led by Salesforce Ventures, with Chamath Palihapitiya moving from board member to full-time CEO. Its product, Software Factory, is an AI coding agent built for regulated enterprises (healthcare, insurance, aerospace, financial services, government), pitched on production-grade, audited code rather than prototype-quality output.]]></description>
+    <link>https://www.techtimes.com/articles/319378/20260630/palihapitiya-takes-ceo-role-8090-labs-after-135m-salesforce-ventures-led-round.htm</link>
+    <guid isPermaLink="true">https://www.techtimes.com/articles/319378/20260630/palihapitiya-takes-ceo-role-8090-labs-after-135m-salesforce-ventures-led-round.htm</guid>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <category>8090 Labs</category>
+  </item>
 
   <item>
     <title><![CDATA[Anthropic Positions Claude Sonnet 5 as a Cheaper Way to Run Agents]]></title>
@@ -65,6 +83,15 @@
   </item>
 
   <item>
+    <title><![CDATA[General Intuition Raises $320M to Train AI Agents on Video-Game Data]]></title>
+    <description><![CDATA[General Intuition raised a $320 million Series A at a $2.3 billion valuation, led by Khosla Ventures, to build foundational AI models that learn to act from human gameplay data — aimed at robotics, simulation, and gaming. The bet is that video games are a rich, cheap source of embodied 'intuition' for agents that must act in dynamic environments, not just answer questions.]]></description>
+    <link>https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/</guid>
+    <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
+    <category>General Intuition</category>
+  </item>
+
+  <item>
     <title><![CDATA[Anthropic's 'Cadences' Economic Index Report Links Claude Usage to Daily Rhythms]]></title>
     <description><![CDATA[Anthropic published its Economic Index report 'Cadences,' showing how the rhythms of the external world shape Claude usage — work queries subside on weekends, news requests peak in the morning, sleep-advice requests peak around 5 a.m., and tax requests surge near filing deadlines. The report draws on chat and Cowork conversations sampled April 10–June 10, 2026, and links about 9,700 survey respondents to their usage data using privacy-preserving methods, finding most respondents expect significant AI progress over the next year.]]></description>
     <link>https://www.anthropic.com/research/economic-index-june-2026-report</link>
@@ -80,6 +107,15 @@
     <guid isPermaLink="true">https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html</guid>
     <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Qualcomm Unveils 'Dragonfly' Data-Center CPU and Signs Meta as a Customer]]></title>
+    <description><![CDATA[Qualcomm rolled out a data-center CPU roadmap for the agentic-AI era, including a chip called Dragonfly, and named Meta as a major customer — Meta will use Qualcomm CPUs in its next-generation server fleet when production begins in 2028. Qualcomm framed the push around power-efficient compute for agentic workloads and projected over $15 billion in annual data-center revenue by fiscal 2029.]]></description>
+    <link>https://www.cnbc.com/2026/06/24/qualcomm-data-center-cpu-meta.html</link>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/06/24/qualcomm-data-center-cpu-meta.html</guid>
+    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Qualcomm</category>
   </item>
 
   <item>
@@ -215,6 +251,15 @@
     <guid isPermaLink="true">https://www.reuters.com/markets/europe/european-shares-set-open-lower-fed-rate-hike-bets-tech-weakness-weigh-2026-06-23/</guid>
     <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
     <category>Reuters</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Groq Raises $650M to Scale Its AI Inference Cloud]]></title>
+    <description><![CDATA[Inference-chip company Groq raised $650 million to expand its AI inference cloud, in a round led by Disruptive and Infinitum. Groq says it runs 13 data centers across North America, Europe, the Middle East, and APAC serving more than five million developers, and plans to scale toward 200 megawatts of capacity by the end of 2027 — deepening the shift toward fast, low-cost inference as a distinct infrastructure layer.]]></description>
+    <link>https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business</link>
+    <guid isPermaLink="true">https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business</guid>
+    <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+    <category>Groq</category>
   </item>
 
   <item>
@@ -413,51 +458,6 @@
     <guid isPermaLink="true">https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal</guid>
     <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
     <category>Space Computing Industry Innovation Center</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Europe 2031 Scenario Drives Debate Over AI Sovereignty]]></title>
-    <description><![CDATA[A speculative scenario portraying an economically weakened Europe dependent on U.S. and Chinese AI gained attention among European policymakers. Supporters say it clarifies strategic risk, while critics warn that fictional forecasts can overstate uncertain infrastructure and adoption assumptions.]]></description>
-    <link>https://www.theguardian.com/technology/2026/jun/20/europe-sleepwalking-ai-disaster-us-china</link>
-    <guid isPermaLink="true">https://www.theguardian.com/technology/2026/jun/20/europe-sleepwalking-ai-disaster-us-china</guid>
-    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-    <category>The Guardian</category>
-  </item>
-
-  <item>
-    <title><![CDATA[France Mobilises €13B Tibi-III Fund for European Tech Sovereignty]]></title>
-    <description><![CDATA[On June 19, 2026, alongside a joint Franco-German call for tech sovereignty, France announced €13B (about $14.9B) in new institutional-investor commitments under the third phase of its Tibi initiative to back French and European tech firms, with roughly half targeting deep tech — AI, quantum, space, and biotech. New backers include SNCF, RATP, Naval Group, MBDA, and Eutelsat; the program aims to reach €15B by 2030.]]></description>
-    <link>https://techfundingnews.com/france-13b-tibi-national-investment-model-europe-follow/</link>
-    <guid isPermaLink="true">https://techfundingnews.com/france-13b-tibi-national-investment-model-europe-follow/</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>France (Tibi initiative)</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AlphaFold Scientist John Jumper Leaves DeepMind for Anthropic]]></title>
-    <description><![CDATA[Nobel Prize-winning scientist John Jumper, a co-creator of AlphaFold, announced he is leaving Google DeepMind to join Anthropic. The move adds a leading AI-for-science researcher to Anthropic amid intensifying competition for frontier talent.]]></description>
-    <link>https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/</link>
-    <guid isPermaLink="true">https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[EU Selects EUROPA to Build Open Frontier Model]]></title>
-    <description><![CDATA[The European Commission selected the Domyn-led EUROPA consortium to build an open frontier AI model covering all 24 official EU languages. The challenge sought proposals at a scale above 400 billion parameters using European high-performance computing resources.]]></description>
-    <link>https://italy.representation.ec.europa.eu/notizie-ed-eventi/notizie/la-commissione-assegna-al-consorzio-europa-il-frontier-ai-grand-challenge-2026-06-19_it</link>
-    <guid isPermaLink="true">https://italy.representation.ec.europa.eu/notizie-ed-eventi/notizie/la-commissione-assegna-al-consorzio-europa-il-frontier-ai-grand-challenge-2026-06-19_it</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>European Commission</category>
-  </item>
-
-  <item>
-    <title><![CDATA[IMF Warning Highlights Sweden's Exposure to AI-Driven Cyber Risk]]></title>
-    <description><![CDATA[The IMF and Swedish cybersecurity specialists warned that AI can shorten the time needed to discover and exploit software vulnerabilities. Sweden's extensive digitalization and dependence on shared services such as BankID and Swish were identified as factors that could amplify coordinated disruption.]]></description>
-    <link>https://www.svd.se/a/3pm3PP/imf-varnar-ai-hotar-banker-potentiell-chock</link>
-    <guid isPermaLink="true">https://www.svd.se/a/3pm3PP/imf-varnar-ai-hotar-banker-potentiell-chock</guid>
-    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Svenska Dagbladet</category>
   </item>
   </channel>
 </rss>
