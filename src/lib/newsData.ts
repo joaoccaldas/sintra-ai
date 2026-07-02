@@ -10,6 +10,7 @@ export interface NewsItem {
   provider: string;      // company name
   providerColor: string; // hex color
   url?: string;          // link to original announcement
+  image?: string;        // optional logo/thumbnail URL override; defaults to a provider logo (see newsImage.ts)
   country?: string;      // ISO-3166-1 alpha-2, e.g. "BR" for Brazil-specific news
   why_it_matters?: string; // 1-sentence practitioner-level implication
   what_to_try?: string;    // 1 concrete action the reader can take today

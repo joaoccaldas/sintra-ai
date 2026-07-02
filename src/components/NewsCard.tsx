@@ -7,6 +7,31 @@ import { BASE_PATH } from "@/lib/constants";
 import { tagToTopicSlug } from "@/lib/topicHubs";
 import { relativeDate } from "@/lib/dateUtils";
 import type { NewsItem } from "@/lib/newsData";
+import { newsLogo } from "@/lib/newsImage";
+
+/** Provider logo avatar with a brand-colored ring; falls back to a colored dot
+ *  if there's no logo or the image fails to load. */
+function ProviderMark({ item }: { item: NewsItem }) {
+  const logo = newsLogo(item);
+  const [ok, setOk] = useState(Boolean(logo));
+  if (logo && ok) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={logo}
+        alt=""
+        aria-hidden="true"
+        width={16}
+        height={16}
+        loading="lazy"
+        onError={() => setOk(false)}
+        className="w-4 h-4 rounded-sm shrink-0 bg-white/90 object-contain"
+        style={{ boxShadow: `0 0 0 1px ${item.providerColor}55` }}
+      />
+    );
+  }
+  return <span className="w-2 h-2 rounded-full shrink-0" style={{ background: item.providerColor }} />;
+}
 
 export const SIG_STYLE = {
   landmark: { label: "Landmark",  bg: "#9F8CFF22", border: "#9F8CFF66", text: "#B6A6FF" },
@@ -76,7 +101,7 @@ export function NewsCard({ item, onTagFilter, isNew }: { item: NewsItem; onTagFi
       <div className="flex-1 min-w-0">
         {/* Provider tag + country flag */}
         <div className="flex items-center gap-2 mb-2">
-          <span className="w-2 h-2 rounded-full shrink-0" style={{ background: item.providerColor }} />
+          <ProviderMark item={item} />
           <span className="font-mono text-[10px] tracking-[0.12em] uppercase" style={{ color: item.providerColor }}>
             {item.provider}
           </span>
