@@ -3,7 +3,7 @@
 import { useMemo, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ExternalLink, Newspaper, Lightbulb, BookOpen, FlaskConical } from "lucide-react";
-import { AI_NEWS, type NewsItem } from "@/lib/newsData";
+import { AI_NEWS, type NewsItem } from "@/lib/newsDataCombined";
 import { THIS_WEEK, WEEKLY_ARCHIVE, type FeaturedItem } from "@/lib/featuredData";
 import { BASE_PATH } from "@/lib/constants";
 

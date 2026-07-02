@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import AINewsPage from "@/components/AINewsPage";
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
-import { AI_NEWS, CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL } from "@/lib/newsData";
+import { AI_NEWS, CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL } from "@/lib/newsDataCombined";
 
 export const metadata: Metadata = {
   title: `${CURRENT_MONTH_LABEL} AI News — Daily Digest — Sintra Tesseract`,

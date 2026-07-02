@@ -11,7 +11,7 @@ import {
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import TodayInHistory from "./TodayInHistory";
-import { AI_NEWS, getLatestNewsDate } from "@/lib/newsData";
+import { AI_NEWS, getLatestNewsDate } from "@/lib/newsDataCombined";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { AI_MODELS } from "@/lib/modelsData";
 import { CONCEPTS } from "@/lib/concepts";

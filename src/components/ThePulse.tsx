@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
-import { AI_NEWS } from "@/lib/newsData";
+import { AI_NEWS } from "@/lib/newsDataCombined";
 
 const SITE = BASE_PATH;
 

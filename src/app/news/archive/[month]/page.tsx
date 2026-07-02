@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
-import { ARCHIVE_MONTHS, getNewsForMonth, monthFromSlug } from "@/lib/newsData";
+import { ARCHIVE_MONTHS, getNewsForMonth, monthFromSlug } from "@/lib/newsDataCombined";
 import { NewsCard } from "@/components/NewsCard";
 import { ArrowLeft } from "lucide-react";
 

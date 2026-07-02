@@ -1,5 +1,5 @@
 import { USE_CASES } from "@/lib/data";
-import { AI_NEWS } from "@/lib/newsData";
+import { AI_NEWS } from "@/lib/newsDataCombined";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { CONCEPTS } from "@/lib/concepts";
 import { tagsMatch, type TopicDef } from "./topicHubs";

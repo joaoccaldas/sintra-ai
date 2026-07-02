@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
-import { CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL, ARCHIVE_MONTHS, getLatestNewsDate, type NewsItem } from "@/lib/newsData";
+import { CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL, ARCHIVE_MONTHS, getLatestNewsDate, type NewsItem } from "@/lib/newsDataCombined";
 import { BASE_PATH } from "@/lib/constants";
 import { NewsCard, SIG_STYLE } from "@/components/NewsCard";
 

@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
-import { ARCHIVE_MONTHS, CURRENT_MONTH_LABEL } from "@/lib/newsData";
+import { ARCHIVE_MONTHS, CURRENT_MONTH_LABEL } from "@/lib/newsDataCombined";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
