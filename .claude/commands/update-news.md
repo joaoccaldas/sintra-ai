@@ -31,8 +31,11 @@ news, add nothing and say so. Never invent or pad.
    the feed/archive.
 
 4. **Append** `NewsItem` objects to the **`LATEST_AI_NEWS`** array in
-   `src/lib/newsLatestData.ts` (NOT `newsData.ts`). Required schema — every
-   field must be present and non-empty except `country`/`dateDay`:
+   `src/lib/newsLatestData.ts` (NOT `newsData.ts`). All news pages read the
+   combined feed (`src/lib/newsDataCombined.ts` = curated over historical), so
+   items land everywhere automatically — a regression test
+   (`scripts/tests/news-feed-wiring.test.ts`) enforces this wiring. Required
+   schema — every field must be present and non-empty except `country`/`dateDay`:
    ```ts
    {
      id: "kebab-case-unique-id",        // unique across LATEST_AI_NEWS and newsData.ts
