@@ -45,3 +45,30 @@ ${items}
 const out = join(__dirname, "../public/feed.xml");
 writeFileSync(out, xml, "utf8");
 console.log(`✓ RSS feed written → public/feed.xml (${AI_NEWS.length} items)`);
+
+// ── JSON Feed 1.1 (https://jsonfeed.org) — modern readers & JS clients ──────
+const jsonItems = [...AI_NEWS]
+  .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
+  .slice(0, 50)
+  .map(n => ({
+    id: n.url || `${SITE_URL}/news/#${n.id}`,
+    url: n.url || `${SITE_URL}/news/`,
+    title: n.title,
+    content_text: n.summary,
+    date_published: new Date(dateNumToRFC822(n.dateNum, n.dateDay)).toISOString(),
+    tags: [n.provider, ...(n.tags ?? [])].filter(Boolean),
+  }));
+
+const jsonFeed = {
+  version: "https://jsonfeed.org/version/1.1",
+  title: "Sintra AI — AI News",
+  home_page_url: `${SITE_URL}/news/`,
+  feed_url: `${SITE_URL}/feed.json`,
+  description: "Curated AI news: model releases, benchmarks, research breakthroughs, and industry events.",
+  language: "en-us",
+  items: jsonItems,
+};
+
+const jsonOut = join(__dirname, "../public/feed.json");
+writeFileSync(jsonOut, JSON.stringify(jsonFeed, null, 2) + "\n", "utf8");
+console.log(`✓ JSON Feed written → public/feed.json (${jsonItems.length} items)`);

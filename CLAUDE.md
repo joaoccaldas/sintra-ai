@@ -7,7 +7,7 @@ All content lives in TypeScript data files under `src/lib/` and `src/data/`.
 Build: `npm run build` → output in `dist/`.
 Check (validate + typecheck + build): `npm run check`.
 
-**Current counts (May 2026):** 197 use cases · 220 news items · 55 tools · 30 concepts · 4 learning paths · 43 resources · 70+ history milestones
+**Current counts (Jul 2026):** 211 use cases · 509 news items · 74 tools · 20 models · 54 concepts · 4 learning paths · 52 resources · 11 guides · 70+ history milestones · 40–60 live-feed items (regenerated per build)
 
 ---
 
@@ -103,17 +103,35 @@ Do **not** commit `dist/` — deployment is handled separately via git plumbing.
 
 | File | Export | Count | Update cadence |
 |------|--------|-------|----------------|
-| `src/lib/newsData.ts` | `AI_NEWS` | 220+ items | Daily |
-| `src/lib/toolsData.ts` | `AI_TOOLS` | 55 tools | Weekly |
+| `src/lib/newsData.ts` (historical) + `src/lib/newsLatestData.ts` (curated) → `src/lib/newsDataCombined.ts` | `AI_NEWS` | 509 items | Daily (curated feed) |
+| `src/lib/toolsData.ts` | `AI_TOOLS` | 74 tools | Weekly |
 | `src/lib/learningPathsData.ts` | `LEARNING_PATHS` | 4 paths | Monthly |
-| `src/lib/resourcesData.ts` | `RESOURCES` | 43 resources | Weekly |
+| `src/lib/resourcesData.ts` | `RESOURCES` | 52 resources | Weekly |
 | `src/lib/claudeData.ts` | various | — | On Anthropic release |
-| `src/lib/concepts.ts` | `CONCEPTS` | 30+ concepts | As new concepts emerge |
+| `src/lib/concepts.ts` | `CONCEPTS` | 54 concepts | As new concepts emerge |
 | `src/lib/timelineData.ts` | `MILESTONES`, `ERAS` | 70+ events | Quarterly |
 | `src/lib/videoData.ts` | `AI_VIDEOS` | — | As notable videos appear |
 | `src/lib/collections.ts` | `COLLECTIONS` | — | When curating new kits |
 | `src/lib/aiLabsData.ts` | `AI_LABS` | — | On new lab launch or major change |
-| `src/data/useCases.json` | (via `src/lib/data.ts`) | 197 use cases | Ongoing |
+| `src/data/useCases.json` | (via `src/lib/data.ts`) | 211 use cases | Ongoing |
+| `src/data/liveFeed.generated.json` | (via `src/lib/liveFeedData.ts`) | 40–60 items | Every build (auto) |
+| `src/lib/featuredData.ts` | `THIS_WEEK` / `WEEKLY_ARCHIVE` | 4 picks/week | Weekly (Monday) |
+
+### Live feed pipeline (auto, every build)
+
+- **`scripts/aggregate-live-feed.mjs`** (runs first in `prebuild`) pulls ~11
+  primary sources (DeepMind, OpenAI, Google AI, Hugging Face, arXiv cs.AI,
+  BAIR, MIT Tech Review, TechCrunch AI, VentureBeat AI, Simon Willison,
+  Hacker News), normalises + https-upgrades + dedupes + caps, and writes
+  `src/data/liveFeed.generated.json`. Fault-tolerant: dead sources are skipped;
+  if *all* sources fail (egress-blocked sandbox), the previous committed
+  snapshot is kept rather than overwritten. Surfaced at **`/live`** and the
+  homepage "Live from the frontier" strip.
+- **`scripts/audit-freshness.mjs`** (in `npm run audit:static`) gates on live
+  feed schema + freshness (<48h warn), weekly-picks staleness (<14d warn), and
+  BASE_PATH link hygiene in editorial files.
+- **`scripts/generate-rss.ts`** emits both `public/feed.xml` (RSS 2.0) and
+  `public/feed.json` (JSON Feed 1.1) from the combined news feed.
 
 ---
 

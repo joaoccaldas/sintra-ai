@@ -37,19 +37,25 @@ All use cases live in `src/data/useCases.json`. Each object must follow this sch
 
 ## Domain → Category Mapping
 
-| `domain` value | Page category | Carousel position |
+| `domain` value | Page category | Position |
 |---|---|---|
 | `"Quick Wins"` | Quick Wins | 1 — beginner-friendly |
 | `"Personal Productivity"` | Productivity | 2 |
 | `"Communication & Writing"` | Writing & Copy | 3 |
 | `"Research & Analysis"` | Research | 4 |
-| `"Business Intelligence"` | Data & Finance | 5 |
-| `"Software Development"` | Code & Build | 6 |
-| `"Creative AI"` | Creative AI | 7 |
-| `"Design & Creative"` | Creative AI | 7 — legacy alias |
-| `"Game Development"` | Game & Advanced | 8 |
+| `"Finance & FP&A"` | Finance & FP&A | 5 |
+| `"Data & Analytics"` | Data & Analytics | 6 |
+| `"Software Development"` | Code & Automation | 7 |
+| `"Creative AI"` | Creative & Design | 8 |
+| `"Design & Creative"` | Creative & Design | 8 — legacy alias |
+| `"Game Development"` | Game & Advanced | 9 |
 
-To add a new top-level category, update `DOMAIN_MAP` in `src/lib/data.ts` and add the entry to `CAROUSEL_ITEMS` in `src/components/CategoryCarousel3D.tsx`.
+The authoritative list is `VALID_DOMAINS` in `scripts/validate-data.mjs` — the
+validator rejects any `domain` not in that list. To add a new top-level
+category, update `DOMAIN_MAP` in `src/lib/data.ts`, add the domain to
+`VALID_DOMAINS` in `scripts/validate-data.mjs`, and add the entry to
+`CAROUSEL_ITEMS` in `src/lib/carouselData.ts` (the old
+`CategoryCarousel3D.tsx` component was removed).
 
 ---
 

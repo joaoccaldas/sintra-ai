@@ -29,6 +29,45 @@ export interface WeeklyFeature {
 
 export const WEEKLY_ARCHIVE: WeeklyFeature[] = [
   {
+    weekOf: "15 Jun 2026",
+    editorial:
+      "Claude Fable 5 landed at 95% on SWE-bench Verified and redrew the frontier — then a researcher cracked its system prompt within days. Meanwhile Apple handed Siri to Gemini, Anthropic locked in 220,000 GPUs at Colossus 1, Salesforce paid $3.6B for an AI agent, and world leaders met in Évian to debate who governs all of it.",
+    items: [
+      {
+        type: "news",
+        title: "Claude Fable 5 — 95% SWE-bench, 1M Context, Always-On Thinking",
+        why: "Anthropic's new flagship rewrites what 'capable' means for coding agents — 95% SWE-bench Verified and 128K output tokens means multi-file refactors finally work end-to-end.",
+        href: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+        badge: "Anthropic",
+        badgeColor: "#d97706",
+      },
+      {
+        type: "prompt",
+        title: "Board Presentation Builder",
+        why: "With enterprise AI partnerships closing at record speed this week, the real bottleneck is communicating AI strategy clearly to boards — this prompt structures it.",
+        href: "#library",
+        badge: "Writing",
+        badgeColor: "#f59e0b",
+      },
+      {
+        type: "tool",
+        title: "Kimi K2.7-Code — Free 1T-Parameter Coding Model",
+        why: "A 1-trillion-parameter Apache 2.0 coding model that outperforms Claude on SWE-Bench is now free for commercial use — the cost floor for code generation just hit zero.",
+        href: "https://huggingface.co/moonshotai",
+        badge: "Open Source",
+        badgeColor: "#6B5CFF",
+      },
+      {
+        type: "paper",
+        title: "Scaling Laws for Neural Language Models (Kaplan et al., 2020)",
+        why: "With Anthropic securing 220,000 GPUs at Colossus 1, understanding what that compute actually buys in terms of capability is the most relevant background reading this week.",
+        href: "https://arxiv.org/abs/2001.08361",
+        badge: "Research",
+        badgeColor: "#9F8CFF",
+      },
+    ],
+  },
+  {
     weekOf: "2 Jun 2026",
     editorial:
       "Microsoft repositioned Windows as an agent OS at Build, OpenAI launched its enterprise deployment JV, and Brazil's AI law vote is now confirmed for late June. This week: the agentic era becomes infrastructure.",
@@ -53,7 +92,7 @@ export const WEEKLY_ARCHIVE: WeeklyFeature[] = [
         type: "guide",
         title: "AI Security: Prompt Injection & Hardening",
         why: "Every agent that reads untrusted content is vulnerable — this guide covers the attacks and the defences before you shift.",
-        href: "/sintra-ai/guides/",
+        href: "https://joaoccaldas.github.io/sintra-ai/guides/",
         badge: "Guide",
         badgeColor: "#ef4444",
       },
@@ -72,39 +111,39 @@ export const WEEKLY_ARCHIVE: WeeklyFeature[] = [
 // ── Update every Monday ────────────────────────────────────────────────────
 
 export const THIS_WEEK: WeeklyFeature = {
-  weekOf: "15 Jun 2026",
+  weekOf: "6 Jul 2026",
   editorial:
-    "Claude Fable 5 landed at 95% on SWE-bench Verified and redrew the frontier — then a researcher cracked its system prompt within days. Meanwhile Apple handed Siri to Gemini, Anthropic locked in 220,000 GPUs at Colossus 1, Salesforce paid $3.6B for an AI agent, and world leaders met in Évian to debate who governs all of it.",
+    "Anthropic made Claude Sonnet 5 the default for every Free and Pro user, and Claude Fable 5 came back online on 1 July after three weeks under export controls. Meanwhile the White House moved toward voluntary frontier-model release standards — the week agentic capability got cheaper and the rules around it got real.",
   items: [
     {
       type: "news",
-      title: "Claude Fable 5 — 95% SWE-bench, 1M Context, Always-On Thinking",
-      why: "Anthropic's new flagship rewrites what 'capable' means for coding agents — 95% SWE-bench Verified and 128K output tokens means multi-file refactors finally work end-to-end.",
-      href: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      title: "Claude Sonnet 5 Becomes the Default for Every Free & Pro User",
+      why: "The most agentic Sonnet yet ships as the everyday default at introductory $2/$10 pricing — frontier-adjacent tool use and autonomy without the flagship bill, right when enterprises are reining in agent costs.",
+      href: "https://www.anthropic.com/news",
       badge: "Anthropic",
       badgeColor: "#d97706",
     },
     {
       type: "prompt",
       title: "Board Presentation Builder",
-      why: "With enterprise AI partnerships closing at record speed this week, the real bottleneck is communicating AI strategy clearly to boards — this prompt structures it.",
+      why: "With model choice and AI cost now a board-level topic, the bottleneck is communicating strategy clearly — this prompt structures the narrative, the numbers, and the ask.",
       href: "#library",
       badge: "Writing",
       badgeColor: "#f59e0b",
     },
     {
       type: "tool",
-      title: "Kimi K2.7-Code — Free 1T-Parameter Coding Model",
-      why: "A 1-trillion-parameter Apache 2.0 coding model that outperforms Claude on SWE-Bench is now free for commercial use — the cost floor for code generation just hit zero.",
-      href: "https://huggingface.co/moonshotai",
-      badge: "Open Source",
-      badgeColor: "#6B5CFF",
+      title: "Claude Fable 5 — Restored After Export-Control Pause",
+      why: "The first Mythos-class model returned across Claude.ai, the API, and Claude Code on 1 July — the most capable coding model on the market is available again, with a hardened safety classifier.",
+      href: "https://www.anthropic.com/news",
+      badge: "Anthropic",
+      badgeColor: "#d97706",
     },
     {
       type: "paper",
-      title: "Scaling Laws for Neural Language Models (Kaplan et al., 2020)",
-      why: "With Anthropic securing 220,000 GPUs at Colossus 1, understanding what that compute actually buys in terms of capability is the most relevant background reading this week.",
-      href: "https://arxiv.org/abs/2001.08361",
+      title: "ReAct: Synergizing Reasoning and Acting in Language Models",
+      why: "As agentic defaults reach every user, the Thought→Action→Observation loop is the mental model that explains what these systems are actually doing — foundational reading.",
+      href: "https://arxiv.org/abs/2210.03629",
       badge: "Research",
       badgeColor: "#9F8CFF",
     },
