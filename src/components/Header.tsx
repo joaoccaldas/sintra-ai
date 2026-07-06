@@ -16,7 +16,7 @@ const SavedPanel = dynamic(() => import("./SavedPanel"), { ssr: false });
 interface Props { total: number; }
 
 const PATH_LABEL: Record<string, string> = {
-  news: "AI News", weekly: "Weekly Digest", topics: "Topic Hubs",
+  news: "AI News", live: "Live Feed", weekly: "Weekly Digest", topics: "Topic Hubs",
   "ai-history": "AI History", "ai-labs": "AI Labs", research: "Research",
   learn: "Learning Paths", guides: "Guides", resources: "Resources", concepts: "Concepts",
   tools: "AI Tools", models: "Models", claude: "Claude", "google-ai-tools": "Google AI",

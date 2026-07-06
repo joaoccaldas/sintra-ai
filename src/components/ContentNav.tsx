@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, ExternalLink, Clock,
   Zap, BookOpen, Wrench, Newspaper, Lightbulb, FlaskConical,
-  Rss, Play,
+  Rss, Play, Radio,
 } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
@@ -19,6 +19,7 @@ import { LEARNING_PATHS } from "@/lib/learningPathsData";
 import { GUIDES } from "@/lib/guidesData";
 import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featuredData";
 import { YOUTUBE_VIDEOS } from "@/lib/videoData";
+import { LIVE_ITEMS, liveAge } from "@/lib/liveFeedData";
 
 // The prompt library pulls in the full 455 kB useCases.json. It lives below
 // the fold, so it's code-split out of the homepage's initial bundle and loaded
@@ -414,6 +415,51 @@ function StatsBar() {
   );
 }
 
+/* ── 6b. Live feed strip — freshest posts from primary sources ───────────── */
+function LiveStrip() {
+  const items = LIVE_ITEMS.slice(0, 5);
+  if (!items.length) return null;
+  return (
+    <div className="mb-16">
+      <SectionHead
+        label="Live from the frontier"
+        count={LIVE_ITEMS.length}
+        href={`${BASE_PATH}/live/`}
+        linkLabel="Open live feed"
+      />
+      <div className="rounded-2xl border border-white/[0.06] bg-white/[0.015] divide-y divide-white/[0.05] overflow-hidden">
+        {items.map((it, i) => (
+          <motion.a
+            key={it.id}
+            href={it.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            custom={i}
+            variants={fade}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="group flex items-center gap-3 px-4 py-3 hover:bg-white/[0.03] transition-colors"
+          >
+            <span
+              aria-hidden="true"
+              className="inline-block w-1.5 h-1.5 rounded-full shrink-0"
+              style={{ background: it.color, boxShadow: `0 0 8px ${it.color}66` }}
+            />
+            <span className="font-mono text-[10px] tracking-[0.06em] uppercase text-fg-4 w-28 shrink-0 truncate hidden sm:block">
+              {it.source}
+            </span>
+            <span className="flex-1 text-[13px] text-fg-2 group-hover:text-fg-1 transition-colors truncate">
+              {it.title}
+            </span>
+            <span className="font-mono text-[10px] text-fg-4 shrink-0">{liveAge(it.publishedAt)}</span>
+          </motion.a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* ── 7. Newsletter / RSS CTA ─────────────────────────────────────────────── */
 function NewsletterCTA() {
   return (
@@ -441,6 +487,12 @@ function NewsletterCTA() {
           <Rss size={11} /> RSS Feed
         </a>
         <a
+          href={`${BASE_PATH}/live/`}
+          className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
+        >
+          <Radio size={10} /> Live Feed
+        </a>
+        <a
           href={`${BASE_PATH}/videos/`}
           className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
         >
@@ -464,6 +516,9 @@ export default function ContentNav() {
 
       {/* 3 — this week: editorial picks + latest news (tabbed) */}
       <ThisWeekHub />
+
+      {/* 3b — live feed strip */}
+      <LiveStrip />
 
       {/* 4 — today in AI history */}
       <TodayInHistory />

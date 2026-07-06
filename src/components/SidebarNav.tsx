@@ -23,6 +23,7 @@ import {
   Newspaper,
   Palette,
   Play,
+  Radio,
   Search as SearchIcon,
   Sun,
   Tag,
@@ -55,6 +56,7 @@ const NAV: NavGroup[] = [
   {
     label: "Discover",
     items: [
+      { href: `${BASE_PATH}/live/`, label: "Live Feed", Icon: Radio, pathKey: "live" },
       { href: `${BASE_PATH}/news/`, label: "AI News", Icon: Newspaper, count: AI_NEWS.length, pathKey: "news" },
       { href: `${BASE_PATH}/weekly/`, label: "Weekly Digest", Icon: Calendar, pathKey: "weekly" },
       { href: `${BASE_PATH}/topics/`, label: "Topic Hubs", Icon: Tag, pathKey: "topics" },
