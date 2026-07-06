@@ -1,0 +1,165 @@
+{
+  "generatedAt": "2026-07-06T21:48:33Z",
+  "note": "Initial snapshot seeded from web-search-verified articles (RSS egress is blocked in the build sandbox). scripts/aggregate-live-feed.mjs replaces this with live RSS data on the first networked build.",
+  "sourceCount": 5,
+  "sources": [
+    "Google AI",
+    "Hugging Face",
+    "OpenAI",
+    "TechCrunch AI",
+    "VentureBeat AI"
+  ],
+  "itemCount": 15,
+  "items": [
+    {
+      "id": "live-0-techcrunch-com--midjourney-wants-hollywo",
+      "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+      "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+      "summary": "Midjourney is seeking to compel Disney, Universal, and Warner Bros. to disclose how they use AI internally, as part of its fair-use defense in the studios' copyright suits over its image models.",
+      "publishedAt": "2026-07-04T12:00:00.000Z",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#0a8f3c"
+    },
+    {
+      "id": "live-1-venturebeat-com--how-america-s-250th-bir",
+      "title": "How America's 250th birthday became a test of AI-powered collective intelligence",
+      "url": "https://venturebeat.com/technology/how-americas-250th-birthday-became-a-test-of-ai-powered-collective-intelligence",
+      "summary": "Specialized AI agents connected groups in real time for large-scale civic discussion around the US semiquincentennial — an experiment in 'hyper-communication' at national scale.",
+      "publishedAt": "2026-07-04T12:00:00.000Z",
+      "source": "VentureBeat AI",
+      "category": "Press",
+      "color": "#c8102e"
+    },
+    {
+      "id": "live-2-venturebeat-com--trunk-tools--stack-cut",
+      "title": "Trunk Tools' stack cut document review from 60 days to 10 by ditching general-purpose models",
+      "url": "https://venturebeat.com/orchestration/trunk-tools-stack-cut-document-review-from-60-days-to-10-by-ditching-general-purpose-models",
+      "summary": "A specialized three-layer architecture for construction-document automation shrank review cycles from months to days — a case study in domain models beating general-purpose LLMs.",
+      "publishedAt": "2026-07-03T12:00:00.000Z",
+      "source": "VentureBeat AI",
+      "category": "Press",
+      "color": "#c8102e"
+    },
+    {
+      "id": "live-3-techcrunch-com--microsoft-launches-its-o",
+      "title": "Microsoft launches its own AI deployment company with $2.5 billion commitment",
+      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "summary": "Microsoft Frontier Company is a new operating business focused on enterprise AI deployments, backed by $2.5 billion and 6,000 industry and engineering experts.",
+      "publishedAt": "2026-07-02T12:00:00.000Z",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#0a8f3c"
+    },
+    {
+      "id": "live-4-blog-google--the-latest-ai-news-we-annou",
+      "title": "The latest AI news we announced in June 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+      "summary": "Google's June roundup: Gemini 3.5 Live Translate speech-to-speech across 70+ languages, a Gemini-built smart speaker, and Android 17 AI features.",
+      "publishedAt": "2026-06-30T12:00:00.000Z",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#4285f4"
+    },
+    {
+      "id": "live-5-openai-com--previewing-gpt-5-6-sol--a-ne",
+      "title": "Previewing GPT-5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "summary": "OpenAI began a limited preview of the GPT-5.6 series — Sol (flagship), Terra, and Luna — advancing coding, computer use, scientific research, and cybersecurity, with GA planned in the coming weeks.",
+      "publishedAt": "2026-06-28T12:00:00.000Z",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#10a37f"
+    },
+    {
+      "id": "live-6-openai-com--openai-and-broadcom-unveil-l",
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "summary": "Jalapeño is OpenAI's first custom AI accelerator — a blank-slate inference design co-developed with Broadcom from design to tape-out in about nine months, targeting deployment by end of 2026.",
+      "publishedAt": "2026-06-24T12:00:00.000Z",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#10a37f"
+    },
+    {
+      "id": "live-7-openai-com--samsung-electronics-brings-c",
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+      "summary": "ChatGPT and Codex roll out to all Samsung Electronics employees in Korea and its worldwide DX division — one of OpenAI's largest enterprise deployments to date.",
+      "publishedAt": "2026-06-24T12:00:00.000Z",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#10a37f"
+    },
+    {
+      "id": "live-8-openai-com--patch-the-planet--a-daybreak",
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "url": "https://openai.com/index/patch-the-planet/",
+      "summary": "A Daybreak program run with Trail of Bits that applies GPT-5.5-Cyber to finding and patching vulnerabilities in critical open-source projects.",
+      "publishedAt": "2026-06-23T12:00:00.000Z",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#10a37f"
+    },
+    {
+      "id": "live-9-huggingface-co--introducing-the-ffasr-le",
+      "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
+      "url": "https://huggingface.co/blog/ffasr-leaderboard",
+      "summary": "A new far-field automatic speech recognition benchmark and leaderboard measuring ASR systems under real-world acoustic conditions.",
+      "publishedAt": "2026-06-22T12:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#ff9d00"
+    },
+    {
+      "id": "live-10-techcrunch-com--the-running-list--major",
+      "title": "The running list: major tech layoffs in 2026 where employers cited AI",
+      "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "summary": "TechCrunch's running tally of 2026 tech layoffs where companies explicitly cited AI as a factor — a live index of AI's labor-market impact.",
+      "publishedAt": "2026-06-22T12:00:00.000Z",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#0a8f3c"
+    },
+    {
+      "id": "live-11-huggingface-co--hugging-face-on-jfrog-ar",
+      "title": "Hugging Face on JFrog Artifactory: An Enterprise Guide (and What Changes in June 2026)",
+      "url": "https://huggingface.co/blog/jeffboudier/jfrog-artifactory-june-2026",
+      "summary": "How enterprises mirror and govern Hugging Face models through JFrog Artifactory, and what changed in the June 2026 integration.",
+      "publishedAt": "2026-06-15T12:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#ff9d00"
+    },
+    {
+      "id": "live-12-blog-google--google-i-o-2026--sundar-pic",
+      "title": "Google I/O 2026: Sundar Pichai's opening keynote",
+      "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+      "summary": "Pichai's I/O 2026 keynote: Gemini Omni, Gemini 3.5 Flash as the new AI Mode default, Gemini Spark, and the road to Gemini 3.5 Pro.",
+      "publishedAt": "2026-05-20T12:00:00.000Z",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#4285f4"
+    },
+    {
+      "id": "live-13-venturebeat-com--85--of-it-teams-claim-e",
+      "title": "85% of IT teams claim every AI agent is under control. Only 42% actually know who owns them.",
+      "url": "https://venturebeat.com/security/85-of-it-teams-claim-every-ai-agent-is-under-control-only-42-actually-know-who-owns-them",
+      "summary": "New research on agent sprawl: most IT teams assert every deployed AI agent has a named owner, but fewer than half say ownership is actually clear.",
+      "publishedAt": null,
+      "source": "VentureBeat AI",
+      "category": "Press",
+      "color": "#c8102e"
+    },
+    {
+      "id": "live-14-huggingface-co--state-of-open-source-on",
+      "title": "State of Open Source on Hugging Face: Spring 2026",
+      "url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+      "summary": "Hugging Face's periodic survey of the open-source model ecosystem: release velocity, license trends, and the open-weights leaderboard landscape.",
+      "publishedAt": null,
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#ff9d00"
+    }
+  ]
+}
