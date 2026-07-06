@@ -1,0 +1,757 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Sintra AI — AI News",
+  "home_page_url": "https://joaoccaldas.github.io/sintra-ai/news/",
+  "feed_url": "https://joaoccaldas.github.io/sintra-ai/feed.json",
+  "description": "Curated AI news: model releases, benchmarks, research breakthroughs, and industry events.",
+  "language": "en-us",
+  "items": [
+    {
+      "id": "https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom",
+      "title": "South Korea Unveils an $880 Billion, 10-Year AI, Chip and Robotics Plan",
+      "content_text": "President Lee Jae-myung announced a national plan to invest at least $880 billion (about 1,350 trillion won) over the next decade in semiconductors, AI data centers, and robotics — his 'Three Mega Projects.' Samsung Electronics and SK Hynix are expected to put in roughly 800 trillion won (~$518 billion) to build new chip-production hubs in the country's southwest, while groups including SK, GS, and Naver back large-scale AI data-center construction with about 550 trillion won ($356 billion).",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "South Korea",
+        "South Korea",
+        "AI Infrastructure",
+        "Semiconductors",
+        "Data Centers",
+        "Investment"
+      ]
+    },
+    {
+      "id": "https://www.techtimes.com/articles/319378/20260630/palihapitiya-takes-ceo-role-8090-labs-after-135m-salesforce-ventures-led-round.htm",
+      "url": "https://www.techtimes.com/articles/319378/20260630/palihapitiya-takes-ceo-role-8090-labs-after-135m-salesforce-ventures-led-round.htm",
+      "title": "Chamath Palihapitiya Takes CEO Role at 8090 Labs on a $135M Raise",
+      "content_text": "Enterprise AI-coding startup 8090 Labs closed a $135 million Series A led by Salesforce Ventures, with Chamath Palihapitiya moving from board member to full-time CEO. Its product, Software Factory, is an AI coding agent built for regulated enterprises (healthcare, insurance, aerospace, financial services, government), pitched on production-grade, audited code rather than prototype-quality output.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "8090 Labs",
+        "8090 Labs",
+        "Funding",
+        "AI Coding",
+        "Enterprise AI",
+        "Agents"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "title": "Anthropic Positions Claude Sonnet 5 as a Cheaper Way to Run Agents",
+      "content_text": "TechCrunch reported that Anthropic is pitching Claude Sonnet 5 as a lower-cost way to run agents at scale: it is now the default model on Free and Pro plans and is available across Max, Team, Enterprise, Claude Code, and the API. At an introductory $2 per million input / $10 per million output tokens (versus Opus 4.8's $5 / $25), Anthropic is steering high-volume agentic and coding workloads toward the mid-tier model.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude",
+        "Sonnet 5",
+        "AI Agents",
+        "Pricing"
+      ]
+    },
+    {
+      "id": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-at-a-steep-discount-to-its-top-model-as-the-company-races-toward-a-blockbuster-ipo",
+      "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-at-a-steep-discount-to-its-top-model-as-the-company-races-toward-a-blockbuster-ipo",
+      "title": "Anthropic Prices Sonnet 5 Far Below Opus as It Races Toward an IPO",
+      "content_text": "VentureBeat framed the Claude Sonnet 5 launch as an aggressive pricing move — a steep discount to Anthropic's top-tier Opus 4.8 — as the company races toward a blockbuster IPO. The introductory $2 / $10 per-million-token rate (through August 31, 2026, then $3 / $15) undercuts Opus while delivering near-Opus performance, a bid to capture market share and revenue ahead of a public listing.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude",
+        "Sonnet 5",
+        "Pricing",
+        "IPO"
+      ]
+    },
+    {
+      "id": "https://thenewstack.io/claude-sonnet-5-launch/",
+      "url": "https://thenewstack.io/claude-sonnet-5-launch/",
+      "title": "Claude Sonnet 5 Beats Sonnet 4.6 Across Benchmarks and Narrows the Gap to Opus 4.8",
+      "content_text": "Coverage from The New Stack and others noted Sonnet 5 improves on Sonnet 4.6 on every published benchmark — roughly 63.2% on SWE-bench Pro (vs 58.1%), 76.1% on Terminal-bench (vs 55.4%), and 81.2% on OSWorld-Verified — and on the GDPval-AA v2 knowledge-work eval it scored 1,618, edging Opus 4.8's 1,615. Anthropic's system card also reports lower hallucination and sycophancy, better refusal of malicious requests, and stronger resistance to prompt injection in agentic contexts.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude",
+        "Sonnet 5",
+        "Benchmarks",
+        "AI Safety"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/claude-sonnet-5",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "title": "Anthropic Releases Claude Sonnet 5",
+      "content_text": "Anthropic released Claude Sonnet 5 on June 30, 2026 — a strict improvement over Claude Sonnet 4.6 with gains in coding, agentic search, multimodal reasoning, and professional-task performance, and a wider range of cost-performance options than Opus 4.8. It ships everywhere at an introductory $2 per million input / $10 per million output tokens through August 31, 2026, then moves to standard pricing of $3 / $15. Anthropic benchmarked it on agentic-search (BrowseComp) and computer-use (OSWorld-Verified) evaluations.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude",
+        "Sonnet 5",
+        "Model Release",
+        "Agents"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/events/the-briefing-ai-for-science",
+      "url": "https://www.anthropic.com/events/the-briefing-ai-for-science",
+      "title": "Anthropic Hosts 'The Briefing: AI for Science' in San Francisco",
+      "content_text": "Anthropic held 'The Briefing: AI for Science' in San Francisco on June 30, 2026, bringing together company leadership, life-sciences executives, and leading research institutions to show how Claude is being used across scientific research, with a public livestream at 9:00am PST. The event underscores Anthropic's growing push into AI-for-science and wet-lab partnerships.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "AI for Science",
+        "Claude",
+        "Research",
+        "Life Sciences"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "title": "OpenAI Previews GPT-5.6 Family: Sol, Terra, and Luna",
+      "content_text": "OpenAI began a limited preview of the GPT-5.6 series — Sol (flagship), Terra (balanced everyday model), and Luna (fast and affordable) — advancing the frontier on software engineering, computer use, professional knowledge work, scientific research, and cybersecurity. API pricing per 1M tokens is $5/$30 (input/output) for Sol, $2.50/$15 for Terra, and $1/$6 for Luna; during the preview the models are available via the OpenAI API and Codex to a limited group of trusted partners, with general availability planned in the coming weeks. The GPT-5.6 Preview System Card was published June 25.",
+      "date_published": "2026-06-28T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "GPT-5.6",
+        "Model Release",
+        "Agents",
+        "Coding"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+      "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+      "title": "General Intuition Raises $320M to Train AI Agents on Video-Game Data",
+      "content_text": "General Intuition raised a $320 million Series A at a $2.3 billion valuation, led by Khosla Ventures, to build foundational AI models that learn to act from human gameplay data — aimed at robotics, simulation, and gaming. The bet is that video games are a rich, cheap source of embodied 'intuition' for agents that must act in dynamic environments, not just answer questions.",
+      "date_published": "2026-06-26T00:00:00.000Z",
+      "tags": [
+        "General Intuition",
+        "General Intuition",
+        "Funding",
+        "AI Agents",
+        "Robotics",
+        "Simulation"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "title": "Anthropic's 'Cadences' Economic Index Report Links Claude Usage to Daily Rhythms",
+      "content_text": "Anthropic published its Economic Index report 'Cadences,' showing how the rhythms of the external world shape Claude usage — work queries subside on weekends, news requests peak in the morning, sleep-advice requests peak around 5 a.m., and tax requests surge near filing deadlines. The report draws on chat and Cowork conversations sampled April 10–June 10, 2026, and links about 9,700 survey respondents to their usage data using privacy-preserving methods, finding most respondents expect significant AI progress over the next year.",
+      "date_published": "2026-06-26T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Economic Index",
+        "Research",
+        "AI Adoption",
+        "Claude"
+      ]
+    },
+    {
+      "id": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
+      "url": "https://www.cnbc.com/2026/06/26/openai-limits-new-ai-models-to-trusted-partners-request-us-government.html",
+      "title": "OpenAI Limits GPT-5.6 to 'Trusted Partners' at US Government Request",
+      "content_text": "OpenAI said it complied with a US government request to initially restrict access to its new GPT-5.6 models (Sol, Terra, Luna) to a small group of trusted partners while a federal safety-assessment framework is developed. OpenAI said it is working with the administration on a 'repeatable process for future model releases' but publicly cautioned that such government access processes should not become the long-term default, arguing they keep the best tools from developers and enterprises.",
+      "date_published": "2026-06-26T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "GPT-5.6",
+        "AI Policy",
+        "Government",
+        "Export Controls"
+      ]
+    },
+    {
+      "id": "https://www.cnbc.com/2026/06/24/qualcomm-data-center-cpu-meta.html",
+      "url": "https://www.cnbc.com/2026/06/24/qualcomm-data-center-cpu-meta.html",
+      "title": "Qualcomm Unveils 'Dragonfly' Data-Center CPU and Signs Meta as a Customer",
+      "content_text": "Qualcomm rolled out a data-center CPU roadmap for the agentic-AI era, including a chip called Dragonfly, and named Meta as a major customer — Meta will use Qualcomm CPUs in its next-generation server fleet when production begins in 2028. Qualcomm framed the push around power-efficient compute for agentic workloads and projected over $15 billion in annual data-center revenue by fiscal 2029.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "Qualcomm",
+        "Qualcomm",
+        "Meta",
+        "AI Chips",
+        "Data Center",
+        "CPU"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "title": "OpenAI and Broadcom Unveil 'Jalapeño,' OpenAI's First Custom Inference Chip",
+      "content_text": "OpenAI and Broadcom unveiled Jalapeño, OpenAI's first custom AI accelerator, a blank-slate design built specifically for LLM inference rather than adapted from general-purpose AI hardware. Co-developed from initial design to tape-out in roughly nine months, OpenAI says early results show significantly better performance-per-watt than current state-of-the-art alternatives, with initial deployment targeted by the end of 2026. Broadcom handled silicon and networking; Celestica contributed board, rack, and system integration.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Broadcom",
+        "AI Chips",
+        "Inference",
+        "Hardware"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+      "title": "Samsung Electronics Rolls Out ChatGPT and Codex to Employees",
+      "content_text": "OpenAI and Samsung Electronics announced that ChatGPT and Codex will be made available to all Samsung Electronics employees in Korea and all employees worldwide in its Device eXperience (DX) division — one of OpenAI's largest enterprise deployments to date. Samsung plans to use the tools across software development, marketing, product development, and manufacturing, with Codex also letting non-technical teams build internal tools and automated workflows. The deal expands an existing relationship in which Samsung supplies advanced memory for AI infrastructure.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "Samsung Electronics",
+        "OpenAI",
+        "Samsung",
+        "ChatGPT Enterprise",
+        "Codex",
+        "Enterprise AI"
+      ]
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+      "title": "Google Makes 'Computer Use' a Built-In Tool in Gemini 3.5 Flash",
+      "content_text": "Google announced that computer use is now a built-in tool in Gemini 3.5 Flash, letting developers build agents that can interact across platforms and software interfaces directly through the model. It extends the agentic capabilities Google showcased at I/O 2026 into a generally available developer tool on its fast, lower-cost Flash tier.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "Google",
+        "Gemini",
+        "Computer Use",
+        "AI Agents",
+        "Developers"
+      ]
+    },
+    {
+      "id": "https://www.datacenterdynamics.com/br/noticias/indice-da-servicenow-mostra-que-brasil-aumenta-gastos-com-ia/",
+      "url": "https://www.datacenterdynamics.com/br/noticias/indice-da-servicenow-mostra-que-brasil-aumenta-gastos-com-ia/",
+      "title": "ServiceNow Index: Brazil's AI Spending Jumps 127% but Maturity Trails Global Average",
+      "content_text": "ServiceNow's Enterprise AI Maturity Index, released in June 2026, found Brazil's AI spending jumped 127% over the prior year — above the global average — yet the country's maturity score stood at 48 points, below the global level of 51. The gap points to fast investment growth running ahead of the governance, integration, and skills needed to operationalize AI.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "ServiceNow",
+        "Brazil",
+        "Enterprise AI",
+        "AI Adoption",
+        "ServiceNow",
+        "Investment"
+      ]
+    },
+    {
+      "id": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+      "url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+      "title": "Anthropic Accuses Alibaba-Affiliated Operators of Largest-Known Distillation Attack on Claude",
+      "content_text": "In a June 10 letter to the US Senate Banking Committee made public on June 24, Anthropic accused operators affiliated with Alibaba's Qwen lab of running roughly 28.8 million model exchanges via about 25,000 fraudulent accounts between April 22 and June 5 to extract Claude's software-engineering and agentic-reasoning capabilities. Anthropic called it the largest known distillation attack on its models to date; Alibaba's Hong Kong shares fell to a 16-month low on the report.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Alibaba",
+        "Model Distillation",
+        "Security",
+        "US-China"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/",
+      "url": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/",
+      "title": "Meta Tests a Stand-Alone AI Companion App for Facebook Creators",
+      "content_text": "Meta began testing a stand-alone AI companion app for Facebook creators — a reimagined Creator Studio with its recently launched AI creator assistant built in to help brainstorm content, analyze performance, and grow audiences. The app is positioned to retain creators against TikTok and YouTube and to reduce their reliance on third-party tools like ChatGPT.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "Meta",
+        "Meta",
+        "Facebook",
+        "Creators",
+        "AI Assistant",
+        "Product"
+      ]
+    },
+    {
+      "id": "https://www.ericsson.com/en/press-releases/2026/6/ericsson-and-partners-launch-national-5g-6g-and-ai-test-center-in-sweden",
+      "url": "https://www.ericsson.com/en/press-releases/2026/6/ericsson-and-partners-launch-national-5g-6g-and-ai-test-center-in-sweden",
+      "title": "Ericsson and Telia Launch 'Digital Arena Sweden' National 5G/6G/AI Test Center",
+      "content_text": "Ericsson, Telia, RISE (and subsidiary AstaZero), Future by Lund, Lund University and KTH launched Digital Arena Sweden, a national pre-commercial 5G, 6G and AI test center announced at the Almedalen forum on Gotland. The initiative represents an investment of over SEK 300 million (about $31 million), supported by Vinnova through the Avancerad Digitalisering program, and targets industries from mining and transport to defense and medtech.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "Ericsson",
+        "Sweden",
+        "Ericsson",
+        "Telia",
+        "6G",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "id": "https://www.businesswire.com/news/home/20260624153948/en/CoreWeave-Partners-With-Conapto-to-Expand-AI-Cloud-Capacity-in-Sweden-Powered-by-Renewable-Energy",
+      "url": "https://www.businesswire.com/news/home/20260624153948/en/CoreWeave-Partners-With-Conapto-to-Expand-AI-Cloud-Capacity-in-Sweden-Powered-by-Renewable-Energy",
+      "title": "CoreWeave Partners With Conapto to Expand Renewable-Powered AI Cloud in Sweden",
+      "content_text": "AI hyperscaler CoreWeave signed a colocation agreement with Stockholm-based Conapto spanning two campuses, with initial capacity already online at Stockholm 4 South, powered by 100% renewable energy with heat recovery into Stockholm's district heating network. The deal brings CoreWeave's European sites to eight; as of March 31, 2026 CoreWeave operated 49 data centers globally with over 1GW active and 3.5GW+ contracted power.",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "CoreWeave",
+        "Sweden",
+        "CoreWeave",
+        "Conapto",
+        "AI Infrastructure",
+        "Data Center"
+      ]
+    },
+    {
+      "id": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2026/junho/programa-ideia-terra-brasil-vai-usar-inteligencia-artificial-para-aprimorar-governanca-de-dados-territoriais-e-ambientais",
+      "url": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2026/junho/programa-ideia-terra-brasil-vai-usar-inteligencia-artificial-para-aprimorar-governanca-de-dados-territoriais-e-ambientais",
+      "title": "Brazil Launches 'Ideia Terra Brasil' to Apply AI to Territorial and Environmental Data",
+      "content_text": "Brazil's Ministry of Management and Innovation in Public Services (MGI) and the National Education and Research Network (RNP) launched 'Ideia Terra Brasil,' a public digital infrastructure that applies AI to improve governance of territorial and environmental data, strengthen inspection, and expand transparency. The 48-month initiative is part of Axis 3 (AI for public services) of the Brazilian AI Plan (PBIA 2024–2028).",
+      "date_published": "2026-06-24T00:00:00.000Z",
+      "tags": [
+        "Brazilian Government (MGI / RNP)",
+        "Brazil",
+        "Government AI",
+        "PBIA",
+        "Environmental Data",
+        "Public Sector"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/introducing-claude-tag",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "title": "Anthropic Launches Claude Tag, a Claude That Joins Teams as a Slack Member",
+      "content_text": "Anthropic introduced Claude Tag, a new way for teams to work with Claude that starts on Slack, where Claude can be added to channels and DMs and act as a team member — picking up context from conversations, answering questions, and carrying out tasks in the thread. It targets collaborative, in-the-flow work rather than a separate chat window.",
+      "date_published": "2026-06-23T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude",
+        "Slack",
+        "AI Agents",
+        "Collaboration"
+      ]
+    },
+    {
+      "id": "https://mistral.ai/news/ocr-4/",
+      "url": "https://mistral.ai/news/ocr-4/",
+      "title": "Mistral Releases OCR 4 With Bounding Boxes and 170-Language Support",
+      "content_text": "Mistral released OCR 4, a document-intelligence model that returns bounding boxes, block classification, and inline confidence scores alongside extracted text, with support for 170 languages across 10 language groups. It runs in a single container for fully self-hosted deployments and is positioned as an ingestion component for enterprise search, RAG, and domain-specific retrieval pipelines.",
+      "date_published": "2026-06-23T00:00:00.000Z",
+      "tags": [
+        "Mistral AI",
+        "Mistral AI",
+        "OCR",
+        "Document Intelligence",
+        "RAG",
+        "Enterprise AI"
+      ]
+    },
+    {
+      "id": "https://www.cnbc.com/2026/06/23/ai-memory-startup-focused-on-cutting-token-costs-raises-98-million.html",
+      "url": "https://www.cnbc.com/2026/06/23/ai-memory-startup-focused-on-cutting-token-costs-raises-98-million.html",
+      "title": "AI 'Learned Memory' Startup Engram Raises $98M to Cut Token Costs",
+      "content_text": "Engram, a 13-person startup founded less than a year ago, raised $98 million from General Catalyst, Kleiner Perkins, Sequoia, and Anthropic co-founder-era figure Andrej Karpathy. Its 'learned memory' models recall organization-specific workflows and context, and the company claims they can match or beat frontier labs while using up to 100x fewer tokens. Early clients reportedly include Microsoft, Notion, and legal-AI startup Harvey.",
+      "date_published": "2026-06-23T00:00:00.000Z",
+      "tags": [
+        "Engram",
+        "Engram",
+        "Funding",
+        "Memory",
+        "Token Efficiency",
+        "Agents"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
+      "url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
+      "title": "Stockholm's Fika Jobs Raises $4M for AI-Agent Video Hiring Platform",
+      "content_text": "Stockholm-based Fika Jobs raised a $4 million pre-seed round led by Luminar Ventures, with Alliance VC and Candy Crush / King co-founders Sebastian Knutsson and Riccardo Zacconi participating. The platform pairs short-form video profiles with AI interview agents (currently powered by Google's Gemini) that generate personalized questions and run roughly 10-minute candidate interviews. It is free for job seekers; employers pay 10% of a successful hire's first-year salary, with about 100 companies on the waitlist.",
+      "date_published": "2026-06-23T00:00:00.000Z",
+      "tags": [
+        "Fika Jobs",
+        "Sweden",
+        "Fika Jobs",
+        "AI Agents",
+        "HR Tech",
+        "Funding"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/world/asia-pacific/ai-startup-baseten-hits-13-billion-valuation-australias-blackbird-makes-record-2026-06-23/",
+      "url": "https://www.reuters.com/world/asia-pacific/ai-startup-baseten-hits-13-billion-valuation-australias-blackbird-makes-record-2026-06-23/",
+      "title": "Baseten Raises $1.5 Billion at $13 Billion Valuation",
+      "content_text": "AI inference infrastructure company Baseten raised $1.5 billion in a round led by Sands Capital and Wellington Management. The company said revenue increased twentyfold over the past year and plans to expand compute capacity, software and hiring.",
+      "date_published": "2026-06-23T00:00:00.000Z",
+      "tags": [
+        "Baseten",
+        "Baseten",
+        "Funding",
+        "Inference",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/markets/europe/european-shares-set-open-lower-fed-rate-hike-bets-tech-weakness-weigh-2026-06-23/",
+      "url": "https://www.reuters.com/markets/europe/european-shares-set-open-lower-fed-rate-hike-bets-tech-weakness-weigh-2026-06-23/",
+      "title": "European Tech Stocks Slide as AI Spending Meets Higher Rates",
+      "content_text": "European technology shares fell 2.6% as investors reassessed debt-backed AI capital spending amid expectations of higher interest rates. The wider STOXX 600 also declined, with semiconductor companies among the notable losers.",
+      "date_published": "2026-06-23T00:00:00.000Z",
+      "tags": [
+        "Reuters",
+        "Europe",
+        "Markets",
+        "AI Infrastructure",
+        "Finance"
+      ]
+    },
+    {
+      "id": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
+      "url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
+      "title": "Groq Raises $650M to Scale Its AI Inference Cloud",
+      "content_text": "Inference-chip company Groq raised $650 million to expand its AI inference cloud, in a round led by Disruptive and Infinitum. Groq says it runs 13 data centers across North America, Europe, the Middle East, and APAC serving more than five million developers, and plans to scale toward 200 megawatts of capacity by the end of 2027 — deepening the shift toward fast, low-cost inference as a distinct infrastructure layer.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Groq",
+        "Groq",
+        "Funding",
+        "Inference",
+        "AI Infrastructure",
+        "Chips"
+      ]
+    },
+    {
+      "id": "https://sifted.eu/articles/ai-native-startups-sweden-funding",
+      "url": "https://sifted.eu/articles/ai-native-startups-sweden-funding",
+      "title": "Sweden's AI-Native Startups More Than Triple Funding to €454M in 2026",
+      "content_text": "Sweden's AI-native startups have more than tripled their funding so far in 2026, reaching roughly €454 million, led by names like app-builder Lovable and legaltech Legora. The surge underscores Stockholm's position as one of Europe's densest AI startup hubs, even as Swedish founders warn that the national AI strategy isn't enough to stop talent drain to San Francisco.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Sifted",
+        "Sweden",
+        "Startups",
+        "Funding",
+        "AI Ecosystem",
+        "Stockholm"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/business/micron-anthropic-sign-ai-infrastructure-supply-agreement-2026-06-22/",
+      "url": "https://www.reuters.com/business/micron-anthropic-sign-ai-infrastructure-supply-agreement-2026-06-22/",
+      "title": "Micron and Anthropic Sign AI Memory and Storage Agreement",
+      "content_text": "Micron agreed to supply Anthropic with memory and storage products and made a strategic investment in Anthropic's latest funding round. The companies will analyze how memory and storage interact with the broader infrastructure used to train and serve Claude.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Micron",
+        "Claude",
+        "Semiconductors",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/business/media-telecom/ai-startup-reflection-signs-computing-power-deal-with-spacex-2026-06-22/",
+      "url": "https://www.reuters.com/business/media-telecom/ai-startup-reflection-signs-computing-power-deal-with-spacex-2026-06-22/",
+      "title": "Reflection Secures SpaceX Colossus 2 Compute Through 2029",
+      "content_text": "Open-source AI startup Reflection signed a compute agreement with SpaceX for immediate access to Nvidia GB300 systems at the Colossus 2 data center. Reported payments rise to $150 million per month from July 2026 through 2029.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Reflection AI",
+        "Reflection AI",
+        "SpaceX",
+        "Nvidia",
+        "Open Source",
+        "Compute"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/legal/transactional/qualcomm-nearing-deal-ai-chip-startup-modular-bloomberg-news-reports-2026-06-22/",
+      "url": "https://www.reuters.com/legal/transactional/qualcomm-nearing-deal-ai-chip-startup-modular-bloomberg-news-reports-2026-06-22/",
+      "title": "Qualcomm Nears $4 Billion Deal for AI Chip Startup Modular",
+      "content_text": "Qualcomm entered advanced discussions to acquire AI chip software company Modular in a transaction reportedly valuing it at about $4 billion. Modular had been valued at $1.6 billion nine months earlier.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Qualcomm",
+        "Qualcomm",
+        "Modular",
+        "Acquisition",
+        "AI Chips",
+        "Compilers"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/business/media-telecom/google-deepmind-signs-ai-research-deal-with-film-studio-a24-2026-06-22/",
+      "url": "https://www.reuters.com/business/media-telecom/google-deepmind-signs-ai-research-deal-with-film-studio-a24-2026-06-22/",
+      "title": "Google DeepMind and A24 Form AI Filmmaking Research Partnership",
+      "content_text": "Google DeepMind and independent studio A24 announced a partnership to explore how artificial intelligence can support filmmakers and creative professionals. The agreement brings a frontier AI laboratory into direct research collaboration with a major film studio.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Google DeepMind",
+        "Google DeepMind",
+        "A24",
+        "Creative AI",
+        "Film",
+        "Research"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/technology/ibm-partners-with-openai-enterprise-security-ai-2026-06-22/",
+      "url": "https://www.reuters.com/technology/ibm-partners-with-openai-enterprise-security-ai-2026-06-22/",
+      "title": "IBM and OpenAI Partner on Enterprise Security AI",
+      "content_text": "IBM partnered with OpenAI to integrate frontier AI capabilities into enterprise security workflows. The companies said the collaboration is intended to help organizations respond to faster-changing cyber threats.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "IBM",
+        "IBM",
+        "OpenAI",
+        "Cybersecurity",
+        "Enterprise AI",
+        "Partnership"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/business/upscale-ai-valued-2-billion-after-funding-extension-2026-06-22/",
+      "url": "https://www.reuters.com/business/upscale-ai-valued-2-billion-after-funding-extension-2026-06-22/",
+      "title": "Upscale AI Reaches $2 Billion Valuation After Funding Extension",
+      "content_text": "AI networking infrastructure company Upscale AI raised a $190 million extension to its early-stage funding round. The financing brought the company's reported valuation to $2 billion.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Upscale AI",
+        "Upscale AI",
+        "Funding",
+        "Networking",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "id": "https://www.axios.com/2026/06/22/openai-rolls-out-more-capable-version-of-cyber-model",
+      "url": "https://www.axios.com/2026/06/22/openai-rolls-out-more-capable-version-of-cyber-model",
+      "title": "OpenAI Expands GPT-5.5-Cyber for Vetted Security Teams",
+      "content_text": "OpenAI released a more capable and permissive version of GPT-5.5-Cyber for authorized cybersecurity work. Access remains limited to vetted security companies and researchers, alongside new programs for customer-environment defense and international partnerships.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "GPT-5.5",
+        "Cybersecurity",
+        "Model Update",
+        "Access Control"
+      ]
+    },
+    {
+      "id": "https://www.axios.com/2026/06/22/nvidia-humanoid-ai-robotics",
+      "url": "https://www.axios.com/2026/06/22/nvidia-humanoid-ai-robotics",
+      "title": "Nvidia Launches Halos Safety Architecture for Humanoid Robots",
+      "content_text": "Nvidia introduced Halos for Robotics, combining software, compute, sensors and inspection capabilities into a safety architecture for humanoid systems. Agility is the first customer and plans to use it in deployments serving companies including Amazon and Toyota.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Nvidia",
+        "Nvidia",
+        "Robotics",
+        "Humanoids",
+        "Safety",
+        "Embodied AI"
+      ]
+    },
+    {
+      "id": "https://www.axios.com/2026/06/22/nvidia-data-center-water-solution",
+      "url": "https://www.axios.com/2026/06/22/nvidia-data-center-water-solution",
+      "title": "Nvidia Details 45°C Liquid Cooling for Rubin Data Centers",
+      "content_text": "Nvidia said its Rubin-generation reference design can use recirculated liquid at 113°F, or 45°C, reducing dependence on chillers and cooling towers. The design targets lower cooling-related water and energy use, though electricity generation and construction impacts remain.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Nvidia",
+        "Nvidia",
+        "Rubin",
+        "Data Centers",
+        "Cooling",
+        "Sustainability"
+      ]
+    },
+    {
+      "id": "https://www.axios.com/newsletters/axios-closer-f56c702f-09eb-4f59-a2f6-0f193e8670e9",
+      "url": "https://www.axios.com/newsletters/axios-closer-f56c702f-09eb-4f59-a2f6-0f193e8670e9",
+      "title": "Chevron Signs 20-Year Power Deal for Microsoft AI Campus",
+      "content_text": "Chevron agreed to supply a new Microsoft data center in West Texas under a 20-year arrangement tied to Project Kilby. The planned co-located generation facility could produce 2.67 gigawatts and is expected to come online in 2028 if approved.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Microsoft",
+        "Microsoft",
+        "Chevron",
+        "Data Centers",
+        "Energy",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/business/energy/data-center-investors-buy-up-power-developers-race-build--reeii-2026-06-22/",
+      "url": "https://www.reuters.com/business/energy/data-center-investors-buy-up-power-developers-race-build--reeii-2026-06-22/",
+      "title": "DigitalBridge Buys ArcLight as AI Investors Chase Power Assets",
+      "content_text": "DigitalBridge agreed to acquire power infrastructure developer ArcLight Capital for $1.1 billion. The transaction reflects a wider trend in which data-center investors are buying generation and grid-development expertise to secure capacity faster.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "DigitalBridge",
+        "DigitalBridge",
+        "ArcLight",
+        "Acquisition",
+        "Energy",
+        "Data Centers"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/legal/litigation/us-curbs-ai-spur-european-firms-spread-risk-2026-06-22/",
+      "url": "https://www.reuters.com/legal/litigation/us-curbs-ai-spur-european-firms-spread-risk-2026-06-22/",
+      "title": "European Companies Diversify AI Providers After U.S. Restrictions",
+      "content_text": "European firms including Siemens, Renault and Orange are spreading workloads across U.S., European, Chinese and open models after U.S. restrictions highlighted supplier-access risk. The shift is strengthening interest in on-premise deployment, open weights and digital sovereignty.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Reuters",
+        "Europe",
+        "AI Sovereignty",
+        "Open Source",
+        "Enterprise AI",
+        "Policy"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/world/asia-pacific/five-eyes-intelligence-alliance-warns-that-new-ai-models-pose-urgent-cyber-risk-2026-06-22/",
+      "url": "https://www.reuters.com/world/asia-pacific/five-eyes-intelligence-alliance-warns-that-new-ai-models-pose-urgent-cyber-risk-2026-06-22/",
+      "title": "Five Eyes Warns Frontier AI Could Transform Cyberattacks Within Months",
+      "content_text": "The Five Eyes intelligence alliance warned that frontier models could rapidly increase both offensive and defensive cyber capabilities within months rather than years. The joint statement urged faster patching, reduced exposure and proactive adoption of AI-enabled defense.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Five Eyes",
+        "Five Eyes",
+        "Cybersecurity",
+        "Frontier Models",
+        "Government",
+        "Risk"
+      ]
+    },
+    {
+      "id": "https://www.reuters.com/legal/transactional/three-ways-trump-could-get-stake-ai-firms-us-2026-06-22/",
+      "url": "https://www.reuters.com/legal/transactional/three-ways-trump-could-get-stake-ai-firms-us-2026-06-22/",
+      "title": "U.S. Debate Opens Over Public Stakes in Leading AI Firms",
+      "content_text": "Policy proposals under discussion in the United States include targeted taxes, equity in exchange for federal support and public wealth mechanisms tied to leading AI companies. The debate centers on whether citizens should share more directly in returns from publicly enabled AI growth.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Reuters",
+        "United States",
+        "Policy",
+        "Public Investment",
+        "OpenAI",
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "https://www.adelaidenow.com.au/news/south-australia/state-election/premier-peter-malinauskas-reveals-data-centre-strategy-to-capitalise-on-artificial-intelligence-boom/news-story/01165be8355402a8963629bc46c535aa",
+      "url": "https://www.adelaidenow.com.au/news/south-australia/state-election/premier-peter-malinauskas-reveals-data-centre-strategy-to-capitalise-on-artificial-intelligence-boom/news-story/01165be8355402a8963629bc46c535aa",
+      "title": "South Australia Unveils Dedicated AI Data Center Strategy",
+      "content_text": "South Australia outlined a strategy to attract large AI data centers using renewable energy and international fiber connectivity. Proposed legislation would govern development and resource use, while identified projects include facilities approaching one gigawatt.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "Government of South Australia",
+        "Australia",
+        "Data Centers",
+        "AI Infrastructure",
+        "Energy",
+        "Government"
+      ]
+    },
+    {
+      "id": "https://arxiv.org/abs/2606.22883",
+      "url": "https://arxiv.org/abs/2606.22883",
+      "title": "CLI-Universe Releases 6,000 Verified Terminal-Agent Trajectories",
+      "content_text": "Researchers introduced CLI-Universe, a synthesis and verification pipeline for executable terminal-agent tasks. Fine-tuning Qwen3-32B on its 6,000-trajectory dataset achieved 33.4% on Terminal-Bench 2.0, reported as a new open-data result for models at or below 32 billion parameters.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "arXiv",
+        "Research",
+        "AI Agents",
+        "Terminal Agents",
+        "Dataset",
+        "Benchmark"
+      ]
+    },
+    {
+      "id": "https://arxiv.org/abs/2606.22916",
+      "url": "https://arxiv.org/abs/2606.22916",
+      "title": "Researchers Propose Intent-Governed Authorization for AI Agents",
+      "content_text": "A new paper proposes Intent-Governed Access Control, a server-side authorization layer that checks whether tool calls and payloads remain consistent with the user's expressed request. The design ensures that inferred intent can narrow existing permissions but cannot expand them.",
+      "date_published": "2026-06-22T00:00:00.000Z",
+      "tags": [
+        "arXiv",
+        "Research",
+        "AI Agents",
+        "Authorization",
+        "Security",
+        "Tool Use"
+      ]
+    },
+    {
+      "id": "https://portal.rondoniaovivo.com/noticia/geral/2026/06/21/chuva-em-3h-inteligencia-artificial-criado-pela-inpa-e-eficiente-em-previsao-de-chuva.html",
+      "url": "https://portal.rondoniaovivo.com/noticia/geral/2026/06/21/chuva-em-3h-inteligencia-artificial-criado-pela-inpa-e-eficiente-em-previsao-de-chuva.html",
+      "title": "Brazilian Tupann Model Forecasts Rain Three Hours Ahead",
+      "content_text": "Researchers at IMPA developed Tupann, an AI model that forecasts rainfall up to three hours ahead using satellite data rather than depending on ground radar. Google Brazil and the City of Rio supported the project, and Rio has already used the system.",
+      "date_published": "2026-06-21T00:00:00.000Z",
+      "tags": [
+        "IMPA",
+        "Brazil",
+        "Climate AI",
+        "IMPA",
+        "Google",
+        "Weather"
+      ]
+    },
+    {
+      "id": "https://arxiv.org/abs/2606.22692",
+      "url": "https://arxiv.org/abs/2606.22692",
+      "title": "VISTA Architect Uses Provenance Graphs for Tumor Board Preparation",
+      "content_text": "VISTA Architect converts longitudinal electronic health records into a provenance-linked clinical knowledge graph for repeated downstream use. In a thoracic oncology demonstration across 1,180 patients, it reported 96.4% accuracy on 17,700 evaluations and prepared a 30-patient cohort in about 2.2 minutes.",
+      "date_published": "2026-06-21T00:00:00.000Z",
+      "tags": [
+        "Stanford Medicine",
+        "Research",
+        "Healthcare AI",
+        "Knowledge Graphs",
+        "EHR",
+        "Agents"
+      ]
+    },
+    {
+      "id": "https://m.economictimes.com/news/company/corporate-trends/reliance-agm-2026-key-takeaways-jio-ipo-ai-satellite-connectivity-jioteleframe-more-10-biggest-announcements-from-ambanis-vision-for-the-future/articleshow/131853757.cms",
+      "url": "https://m.economictimes.com/news/company/corporate-trends/reliance-agm-2026-key-takeaways-jio-ipo-ai-satellite-connectivity-jioteleframe-more-10-biggest-announcements-from-ambanis-vision-for-the-future/articleshow/131853757.cms",
+      "title": "Reliance Plans India AI Backbone Supporting 22 Languages",
+      "content_text": "Reliance Industries said its AI execution phase will center on infrastructure in Jamnagar and services spanning 22 Indian languages. The company also plans to evolve MyJio into a personal AI assistant and add generative media capabilities across its platforms.",
+      "date_published": "2026-06-20T00:00:00.000Z",
+      "tags": [
+        "Reliance Industries",
+        "Reliance",
+        "India",
+        "Multilingual AI",
+        "AI Infrastructure",
+        "Consumer AI"
+      ]
+    },
+    {
+      "id": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal",
+      "title": "China Organizes National Push for Orbiting AI Data Centers",
+      "content_text": "China established a Space Computing Industry Innovation Center to coordinate satellite, launch, chip and AI organizations around orbital computing. The initiative targets space-hardened chips, low-power models and distributed space-ground infrastructure.",
+      "date_published": "2026-06-20T00:00:00.000Z",
+      "tags": [
+        "Space Computing Industry Innovation Center",
+        "China",
+        "Space Computing",
+        "AI Infrastructure",
+        "Satellites",
+        "Semiconductors"
+      ]
+    }
+  ]
+}
