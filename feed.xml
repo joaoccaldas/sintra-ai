@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 07 Jul 2026 07:16:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 09:54:35 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Fazeshift Raises $17M Series A for AI Agents That Run Accounts Receivable]]></title>
+    <description><![CDATA[Fazeshift, which deploys AI agents to automate accounts receivable — invoicing, follow-ups, reconciliation, and cash application — raised a $17 million Series A led by F-Prime Capital, with participation from Google's Gradient Ventures and Y Combinator. Investors are betting on AI-powered finance operations starting with AR, the transactional-finance segment where AI results have been strongest.]]></description>
+    <link>https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/</link>
+    <guid isPermaLink="true">https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/</guid>
+    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Fazeshift</category>
+  </item>
 
   <item>
     <title><![CDATA[South Korea Unveils an $880 Billion, 10-Year AI, Chip and Robotics Plan]]></title>
@@ -449,15 +458,6 @@
     <guid isPermaLink="true">https://m.economictimes.com/news/company/corporate-trends/reliance-agm-2026-key-takeaways-jio-ipo-ai-satellite-connectivity-jioteleframe-more-10-biggest-announcements-from-ambanis-vision-for-the-future/articleshow/131853757.cms</guid>
     <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
     <category>Reliance Industries</category>
-  </item>
-
-  <item>
-    <title><![CDATA[China Organizes National Push for Orbiting AI Data Centers]]></title>
-    <description><![CDATA[China established a Space Computing Industry Innovation Center to coordinate satellite, launch, chip and AI organizations around orbital computing. The initiative targets space-hardened chips, low-power models and distributed space-ground infrastructure.]]></description>
-    <link>https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal</link>
-    <guid isPermaLink="true">https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal</guid>
-    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Space Computing Industry Innovation Center</category>
   </item>
   </channel>
 </rss>
