@@ -1,0 +1,45 @@
+name: Build & Deploy
+
+# Deploys the site to GitHub Pages on every push to main, and once daily so the
+# live feed (scripts/aggregate-live-feed.mjs) refreshes itself without a human.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC daily — refresh the live feed
+  workflow_dispatch: {} # manual "Run workflow" button
+
+permissions:
+  contents: write # push to gh-pages
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Validate + typecheck + tests
+        run: npm run audit:static
+
+      - name: Build (prebuild refreshes the live feed + RSS/JSON feeds)
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          commit_message: "deploy: ${{ github.sha }}"
