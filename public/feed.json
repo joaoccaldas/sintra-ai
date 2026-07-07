@@ -7,6 +7,21 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
+      "url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
+      "title": "Fazeshift Raises $17M Series A for AI Agents That Run Accounts Receivable",
+      "content_text": "Fazeshift, which deploys AI agents to automate accounts receivable — invoicing, follow-ups, reconciliation, and cash application — raised a $17 million Series A led by F-Prime Capital, with participation from Google's Gradient Ventures and Y Combinator. Investors are betting on AI-powered finance operations starting with AR, the transactional-finance segment where AI results have been strongest.",
+      "date_published": "2026-07-01T00:00:00.000Z",
+      "tags": [
+        "Fazeshift",
+        "Fazeshift",
+        "Funding",
+        "Accounts Receivable",
+        "Finance Ops",
+        "AI Agents"
+      ]
+    },
+    {
       "id": "https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom",
       "url": "https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom",
       "title": "South Korea Unveils an $880 Billion, 10-Year AI, Chip and Robotics Plan",
@@ -736,21 +751,6 @@
         "Multilingual AI",
         "AI Infrastructure",
         "Consumer AI"
-      ]
-    },
-    {
-      "id": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal",
-      "url": "https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal",
-      "title": "China Organizes National Push for Orbiting AI Data Centers",
-      "content_text": "China established a Space Computing Industry Innovation Center to coordinate satellite, launch, chip and AI organizations around orbital computing. The initiative targets space-hardened chips, low-power models and distributed space-ground infrastructure.",
-      "date_published": "2026-06-20T00:00:00.000Z",
-      "tags": [
-        "Space Computing Industry Innovation Center",
-        "China",
-        "Space Computing",
-        "AI Infrastructure",
-        "Satellites",
-        "Semiconductors"
       ]
     }
   ]
