@@ -68,8 +68,14 @@ news, add nothing and say so. Never invent or pad.
    ```
    Never commit `dist/`.
 
-7. **Deploy to gh-pages** (git plumbing — do not commit dist to a tracked branch):
+7. **Deploy**: the push to `main` in step 6 triggers the **Build & Deploy**
+   GitHub Action (`.github/workflows/deploy.yml`), which runs `audit:static`,
+   rebuilds (refreshing the live feed on networked runners), and publishes to
+   `gh-pages`. Confirm the run goes green (GitHub MCP `actions_list` for
+   `deploy.yml`); if it fails or Actions is unavailable, fall back to manual
+   plumbing (never commit dist to a tracked branch):
    ```bash
+   npm run build
    git fetch origin gh-pages
    TREE=$(git --work-tree=dist add -f -A && git --work-tree=dist write-tree)
    PARENT=$(git rev-parse refs/remotes/origin/gh-pages)

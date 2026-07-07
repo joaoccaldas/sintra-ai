@@ -101,8 +101,9 @@ surfaces, `next build` bundle-budget check in CI, and a decision on B7
 Run `npm run check` for the full validate-and-build; `npm run aggregate-feed`
 to refresh the live feed on demand.
 
-> **Deployment note (per project owner):** GitHub-side automation is
-> intentionally disabled — builds and deploys run through the scheduled Claude
-> task (`/update-news`) and the manual gh-pages plumbing, both of which re-run
-> the aggregator via `prebuild`. The `deploy.yml` GitHub Action described in the
-> original brief was deliberately **not** installed.
+> **Deployment note:** `.github/workflows/deploy.yml` (added by the project
+> owner, 7 Jul 2026) builds and publishes `dist/` to `gh-pages` on every push
+> to `main` and daily at 06:00 UTC — each run re-fetches the live feed on
+> GitHub's networked runners. The scheduled Claude task (`/update-news`)
+> curates news and pushes to `main`, which triggers that deploy; the manual
+> gh-pages plumbing remains as a fallback only.
