@@ -16,7 +16,7 @@ const SavedPanel = dynamic(() => import("./SavedPanel"), { ssr: false });
 interface Props { total: number; }
 
 const PATH_LABEL: Record<string, string> = {
-  news: "AI News", live: "Live Feed", weekly: "Weekly Digest", topics: "Topic Hubs",
+  news: "AI News", live: "Live Feed", automate: "Automation Hub", weekly: "Weekly Digest", topics: "Topic Hubs",
   "ai-history": "AI History", "ai-labs": "AI Labs", research: "Research",
   learn: "Learning Paths", guides: "Guides", resources: "Resources", concepts: "Concepts",
   tools: "AI Tools", models: "Models", claude: "Claude", "google-ai-tools": "Google AI",
@@ -78,24 +78,25 @@ export default function Header({ total: _total }: Props) {
             type="button"
             className="lg:hidden flex items-center justify-center w-9 h-9 shrink-0 text-fg-3 hover:text-fg-1 transition-colors"
             onClick={() => setMobileOpen(true)}
-            aria-label="Open menu"
+            aria-label="Open navigation"
           >
-            <Menu size={19} />
+            <Menu size={20} />
           </button>
 
-          <a href={`${BASE_PATH}/`} className="lg:hidden flex items-center gap-2 text-violet-bright shrink-0">
-            <TesseractMark size={18} />
-            <span className="font-serif text-[15px] text-fg-1 leading-none">
+          <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0 shrink-0">
+            <TesseractMark size={28} />
+            <span className="hidden sm:inline font-serif text-[18px] leading-none tracking-[-0.01em] text-fg-1">
               Sintra <em className="italic text-violet-bright">AI</em>
             </span>
           </a>
 
           {crumb && (
-            <div className="hidden lg:flex items-center gap-2 text-fg-4 font-mono text-[11px] tracking-[0.06em]">
-              <a href={`${BASE_PATH}/`} className="hover:text-fg-2 transition-colors">Library</a>
-              <span aria-hidden="true">/</span>
-              <span className="text-fg-2">{crumb}</span>
-            </div>
+            <>
+              <span className="hidden md:block h-4 w-px bg-hairline" />
+              <span className="hidden md:block font-mono text-[11px] tracking-[0.10em] uppercase text-fg-4 truncate">
+                {crumb}
+              </span>
+            </>
           )}
 
           <div className="flex-1" />
@@ -103,33 +104,24 @@ export default function Header({ total: _total }: Props) {
           <button
             type="button"
             onClick={() => setPaletteOpen(true)}
-            className="hidden md:flex items-center gap-2 h-8 px-3 rounded-lg bg-white/[0.04] border border-hairline font-mono text-[11px] text-fg-4 hover:text-fg-1 hover:border-violet/30 hover:bg-white/[0.07] transition-all"
-            aria-label="Search (Command or Control K)"
+            className="hidden sm:flex items-center gap-2 h-9 px-3 rounded-lg border border-hairline text-fg-4 hover:text-fg-2 hover:border-violet/30 transition-colors"
+            aria-label="Open search"
           >
-            <Search size={12} className="shrink-0" />
-            <span>Search</span>
-            <kbd className="ml-0.5 text-[9px] px-1 py-0.5 rounded bg-white/[0.05] border border-hairline leading-none">⌘K</kbd>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setPaletteOpen(true)}
-            className="md:hidden flex items-center justify-center w-9 h-9 text-fg-3 hover:text-fg-1 transition-colors"
-            aria-label="Search"
-          >
-            <Search size={18} />
+            <Search size={14} />
+            <span className="font-mono text-[11px]">Search</span>
+            <kbd className="font-mono text-[9px] text-fg-4 border border-hairline rounded px-1 py-0.5">⌘K</kbd>
           </button>
 
           <button
             type="button"
             onClick={() => setSavedPanelOpen(true)}
-            className="relative flex items-center justify-center w-8 h-8 rounded-full border border-hairline text-fg-3 hover:text-violet-bright hover:border-violet/40 transition-all"
-            aria-label={`Saved prompts${saved.size > 0 ? ` (${saved.size})` : ""}`}
+            className="relative flex items-center justify-center w-9 h-9 rounded-lg text-fg-4 hover:text-fg-2 hover:bg-white/[0.05] transition-colors"
+            aria-label="Open saved prompts"
           >
-            <Bookmark size={14} />
-            {saved.size > 0 && (
-              <span className="absolute -top-1 -right-1 flex items-center justify-center w-4 h-4 rounded-full bg-violet text-fg-on-violet font-mono text-[9px] font-bold leading-none">
-                {saved.size > 9 ? "9+" : saved.size}
+            <Bookmark size={16} />
+            {saved.length > 0 && (
+              <span className="absolute -top-1 -right-1 min-w-4 h-4 px-1 rounded-full bg-violet text-white font-mono text-[9px] flex items-center justify-center">
+                {saved.length}
               </span>
             )}
           </button>
@@ -137,11 +129,11 @@ export default function Header({ total: _total }: Props) {
           <button
             type="button"
             onClick={toggle}
-            className="inline-flex items-center gap-1 h-8 min-w-8 px-2 rounded-lg font-mono text-[11px] tracking-[0.06em] text-fg-4 hover:text-fg-1 hover:bg-white/[0.06] transition-all shrink-0"
+            className="sintra-runtime-language flex items-center gap-1.5 h-9 px-2.5 rounded-lg text-fg-4 hover:text-fg-2 hover:bg-white/[0.05] transition-colors"
             aria-label={locale === "en" ? "Switch to Portuguese" : "Switch to English"}
           >
-            <Globe size={12} className="shrink-0" />
-            <span>{locale === "en" ? "PT" : "EN"}</span>
+            <Globe size={15} />
+            <span className="font-mono text-[11px] uppercase">{locale === "en" ? "PT" : "EN"}</span>
           </button>
         </div>
       </header>
