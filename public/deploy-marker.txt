@@ -1,0 +1,5 @@
+deploy-requested-at=2026-07-09T12:10:17Z
+expected-homepage-marker=The operating map for AI work
+expected-stack-marker=Scroll the AI stack
+expected-route=/sintra-ai/automate/
+source-commit-before-trigger=8b70244e301bdb8be44ba031587372ce8b925570
