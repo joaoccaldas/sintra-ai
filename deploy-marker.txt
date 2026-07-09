@@ -1,0 +1,7 @@
+deployed-at=2026-07-09T12:10:17Z
+method=emergency-gh-pages-hotfix
+main-trigger-commit=9c7a015b8030b6a5c2cf482bfac02208aa6ec6b7
+gh-pages-hotfix-commit=501875befa0e14510f9a1f6d014b5f938757671d
+homepage-marker=The operating map for AI work
+stack-marker=Scroll the AI stack
+status=homepage-hotfixed-full-next-build-still-pending
