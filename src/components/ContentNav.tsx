@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, ExternalLink, Clock,
   Zap, BookOpen, Wrench, Newspaper, Lightbulb, FlaskConical,
-  Rss, Play, Radio,
+  Rss, Play, Radio, Workflow,
 } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
@@ -20,6 +20,7 @@ import { GUIDES } from "@/lib/guidesData";
 import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featuredData";
 import { YOUTUBE_VIDEOS } from "@/lib/videoData";
 import { LIVE_ITEMS, liveAge } from "@/lib/liveFeedData";
+import { AUTOMATION_WORKFLOWS } from "@/lib/automationData";
 
 // The prompt library pulls in the full 455 kB useCases.json. It lives below
 // the fold, so it's code-split out of the homepage's initial bundle and loaded
@@ -59,17 +60,28 @@ function SectionHead({
   );
 }
 
-/* ── 1. Intent nav — 3 clear entry points ───────────────────────────── */
+/* ── 1. Intent nav — clear operating modes ───────────────────────────── */
 const INTENTS = [
   {
     id: "current", icon: Zap,
     color: "#9F8CFF", glow: "rgba(159,140,255,0.08)",
     gradient: "from-violet-500/8 to-violet-500/0",
-    label: "Stay Current", desc: "What's happening in AI right now",
+    label: "Track", desc: "What's changing in AI now",
     links: [
-      { label: "AI News",    sub: `${AI_NEWS.length} items · updated daily`, href: `${BASE_PATH}/news/`       },
-      { label: "AI History", sub: "70 years of milestones",                  href: `${BASE_PATH}/ai-history/` },
-      { label: "Research",   sub: "Key papers in plain English",             href: `${BASE_PATH}/research/`   },
+      { label: "Live Feed",  sub: `${LIVE_ITEMS.length} live signals`,          href: `${BASE_PATH}/live/`       },
+      { label: "AI News",    sub: `${AI_NEWS.length} items · updated daily`,    href: `${BASE_PATH}/news/`       },
+      { label: "Research",   sub: "Key papers in plain English",              href: `${BASE_PATH}/research/`   },
+    ],
+  },
+  {
+    id: "automate", icon: Workflow,
+    color: "#8FE3D2", glow: "rgba(143,227,210,0.08)",
+    gradient: "from-cyan-500/8 to-cyan-500/0",
+    label: "Automate", desc: "Turn AI into repeatable work",
+    links: [
+      { label: "Automation Hub", sub: `${AUTOMATION_WORKFLOWS.length} workflow blueprints`, href: `${BASE_PATH}/automate/` },
+      { label: "Prompt Library", sub: `${USE_CASES_COUNT} executable use cases`, href: "#library", internal: true },
+      { label: "AI Tools",       sub: `${AI_TOOLS.length} tools & apps`,         href: `${BASE_PATH}/tools/` },
     ],
   },
   {
@@ -80,25 +92,25 @@ const INTENTS = [
     links: [
       { label: "Guides",         sub: `${GUIDES.length} practical how-to guides`,  href: `${BASE_PATH}/guides/`   },
       { label: "Learning Paths", sub: `${LEARNING_PATHS.length} structured paths`, href: `${BASE_PATH}/learn/`    },
-      { label: "Concepts",       sub: `${CONCEPTS.length} core AI concepts`,        href: `${BASE_PATH}/concepts/` },
+      { label: "Concepts",       sub: `${CONCEPTS.length} core AI concepts`,       href: `${BASE_PATH}/concepts/` },
     ],
   },
   {
     id: "build", icon: Wrench,
     color: "#f59e0b", glow: "rgba(245,158,11,0.08)",
     gradient: "from-amber-500/8 to-amber-500/0",
-    label: "Build", desc: "Prompts, tools and model intelligence",
+    label: "Build", desc: "Models, tools and decision support",
     links: [
-      { label: "Prompt Library", sub: `${USE_CASES_COUNT} curated use cases`,   href: "#library",            internal: true },
-      { label: "AI Tools",       sub: `${AI_TOOLS.length} tools & apps`,         href: `${BASE_PATH}/tools/`  },
-      { label: "Model Pricing",  sub: `${AI_MODELS.length} models compared`,     href: `${BASE_PATH}/models/` },
+      { label: "Model Radar",     sub: `${AI_MODELS.length} models compared`, href: `${BASE_PATH}/models/` },
+      { label: "AI History",      sub: "70 years of milestones",             href: `${BASE_PATH}/ai-history/` },
+      { label: "Videos",          sub: `${YOUTUBE_VIDEOS.length} lessons`,     href: `${BASE_PATH}/videos/` },
     ],
   },
 ] as const;
 
 function IntentNav() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-16">
       {INTENTS.map((intent, i) => {
         const Icon = intent.icon;
         return (
@@ -109,10 +121,7 @@ function IntentNav() {
             transition={{ duration: 0.18, ease: "easeOut" }}
             className={`relative rounded-2xl border border-white/[0.07] bg-gradient-to-b ${intent.gradient} p-5 flex flex-col gap-4 overflow-hidden cursor-default`}
           >
-            {/* Accent line */}
             <div className="absolute top-0 left-5 right-5 h-px" style={{ background: `linear-gradient(90deg, transparent, ${intent.color}44, transparent)` }} />
-
-            {/* Header */}
             <div className="flex items-center gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-lg shrink-0"
                 style={{ background: intent.color + "18", color: intent.color }}>
@@ -123,8 +132,6 @@ function IntentNav() {
                 <p className="font-mono text-[10px] text-fg-4 mt-0.5">{intent.desc}</p>
               </div>
             </div>
-
-            {/* Links */}
             <div className="flex flex-col gap-0.5">
               {intent.links.map((link) => (
                 <a
@@ -156,8 +163,6 @@ function IntentNav() {
 }
 
 /* ── 2. This Week hub — tabbed editorial picks + latest news ─────────── */
-
-// Icon map for FeaturedItem types
 const PICK_ICON: Record<FeaturedItemType, React.ComponentType<{ size?: number; className?: string }>> = {
   news:   Newspaper as React.ComponentType<{ size?: number; className?: string }>,
   prompt: Lightbulb as React.ComponentType<{ size?: number; className?: string }>,
@@ -262,7 +267,6 @@ function ThisWeekHub() {
 
   return (
     <div className="mb-16">
-      {/* Header row with inline tabs */}
       <div className="flex items-center gap-3 mb-5">
         <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
         <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">This Week</span>
@@ -270,8 +274,6 @@ function ThisWeekHub() {
         <span className="font-mono text-[10px] text-emerald-400 opacity-80 hidden sm:inline">
           · News updated {getLatestNewsDate()}
         </span>
-
-        {/* Tab strip */}
         <div className="flex gap-0.5 p-0.5 rounded-lg bg-white/[0.03] border border-hairline ml-1">
           {(["picks", "news"] as WeekTab[]).map(t => (
             <button
@@ -287,16 +289,12 @@ function ThisWeekHub() {
             </button>
           ))}
         </div>
-
         <span className="flex-1 h-px bg-hairline" />
-
         <a href={`${BASE_PATH}/news/`}
           className="font-mono text-[10px] text-fg-4 hover:text-violet-bright transition-colors flex items-center gap-1">
           All {AI_NEWS.length} <ArrowRight size={10} />
         </a>
       </div>
-
-      {/* Tab content */}
       <AnimatePresence mode="wait">
         {tab === "picks" ? (
           <motion.div
@@ -372,17 +370,16 @@ function LearningPathsStrip() {
   );
 }
 
-/* ── Main export ─────────────────────────────────────────────────────── */
 /* ── 6. Stats bar ────────────────────────────────────────────────────────── */
 const STATS = [
-  { label: "AI prompts",    value: () => USE_CASES_COUNT.toLocaleString(),        href: "#library" },
-  { label: "news items",    value: () => AI_NEWS.length.toLocaleString(),          href: `${BASE_PATH}/news/` },
-  { label: "tools",         value: () => AI_TOOLS.length.toLocaleString(),         href: `${BASE_PATH}/tools/` },
-  { label: "concepts",      value: () => CONCEPTS.length.toLocaleString(),         href: `${BASE_PATH}/concepts/` },
-  { label: "video lessons", value: () => YOUTUBE_VIDEOS.length.toLocaleString(),   href: `${BASE_PATH}/videos/` },
-  { label: "models tracked",value: () => AI_MODELS.length.toLocaleString(),        href: `${BASE_PATH}/models/` },
-  { label: "guides",        value: () => GUIDES.length.toLocaleString(),           href: `${BASE_PATH}/guides/` },
-  { label: "learning paths",value: () => LEARNING_PATHS.length.toLocaleString(),   href: `${BASE_PATH}/learn/` },
+  { label: "AI prompts",     value: () => USE_CASES_COUNT.toLocaleString(),        href: "#library" },
+  { label: "live signals",   value: () => LIVE_ITEMS.length.toLocaleString(),       href: `${BASE_PATH}/live/` },
+  { label: "workflows",      value: () => AUTOMATION_WORKFLOWS.length.toLocaleString(), href: `${BASE_PATH}/automate/` },
+  { label: "news items",     value: () => AI_NEWS.length.toLocaleString(),          href: `${BASE_PATH}/news/` },
+  { label: "tools",          value: () => AI_TOOLS.length.toLocaleString(),         href: `${BASE_PATH}/tools/` },
+  { label: "models tracked", value: () => AI_MODELS.length.toLocaleString(),        href: `${BASE_PATH}/models/` },
+  { label: "guides",         value: () => GUIDES.length.toLocaleString(),           href: `${BASE_PATH}/guides/` },
+  { label: "learning paths", value: () => LEARNING_PATHS.length.toLocaleString(),   href: `${BASE_PATH}/learn/` },
 ];
 
 function StatsBar() {
@@ -460,6 +457,45 @@ function LiveStrip() {
   );
 }
 
+/* ── 6c. Automation preview ─────────────────────────────────────────────── */
+function AutomationPreview() {
+  const items = AUTOMATION_WORKFLOWS.slice(0, 3);
+  return (
+    <div className="mb-16">
+      <SectionHead
+        label="Automation operating system"
+        count={AUTOMATION_WORKFLOWS.length}
+        href={`${BASE_PATH}/automate/`}
+        linkLabel="Open automation hub"
+      />
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+        {items.map((workflow, i) => (
+          <motion.a
+            key={workflow.id}
+            href={`${BASE_PATH}/automate/#workflows`}
+            custom={i}
+            variants={fade}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="group rounded-2xl border border-white/[0.07] bg-white/[0.018] p-5 hover:bg-white/[0.04] hover:border-white/[0.14] transition-colors"
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <span className="h-2 w-2 rounded-full" style={{ background: workflow.color, boxShadow: `0 0 8px ${workflow.color}66` }} />
+              <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{workflow.domain}</span>
+            </div>
+            <h3 className="font-serif text-[20px] leading-tight text-fg-1 group-hover:text-white transition-colors mb-3">{workflow.title}</h3>
+            <p className="text-[13px] leading-relaxed text-fg-3 mb-4 line-clamp-3">{workflow.summary}</p>
+            <span className="inline-flex items-center gap-1 font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4 group-hover:text-violet-bright transition-colors">
+              View blueprint <ArrowRight size={10} />
+            </span>
+          </motion.a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* ── 7. Newsletter / RSS CTA ─────────────────────────────────────────────── */
 function NewsletterCTA() {
   return (
@@ -476,10 +512,10 @@ function NewsletterCTA() {
       <div className="flex-1 min-w-0">
         <p className="font-serif text-[15px] text-fg-1 leading-[1.2] mb-0.5">Stay ahead of AI — follow the RSS feed</p>
         <p className="font-mono text-[11px] text-fg-4 leading-[1.5]">
-          Subscribe in any RSS reader to get every new prompt, news item, and model update from Sintra.
+          Subscribe in any RSS reader to get every new prompt, news item, live signal and model update from Sintra.
         </p>
       </div>
-      <div className="flex gap-2 shrink-0">
+      <div className="flex flex-wrap gap-2 shrink-0">
         <a
           href={`${BASE_PATH}/feed.xml`}
           className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-violet/40 bg-violet/[0.10] text-violet-bright hover:bg-violet/[0.20] transition-all"
@@ -491,6 +527,12 @@ function NewsletterCTA() {
           className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
         >
           <Radio size={10} /> Live Feed
+        </a>
+        <a
+          href={`${BASE_PATH}/automate/`}
+          className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
+        >
+          <Workflow size={10} /> Automate
         </a>
         <a
           href={`${BASE_PATH}/videos/`}
@@ -507,11 +549,10 @@ function NewsletterCTA() {
 export default function ContentNav() {
   return (
     <section id="explore" className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
-
       {/* 1 — site stats bar */}
       <StatsBar />
 
-      {/* 2 — three clear entry points */}
+      {/* 2 — clear operating modes */}
       <IntentNav />
 
       {/* 3 — this week: editorial picks + latest news (tabbed) */}
@@ -519,6 +560,9 @@ export default function ContentNav() {
 
       {/* 3b — live feed strip */}
       <LiveStrip />
+
+      {/* 3c — automation preview */}
+      <AutomationPreview />
 
       {/* 4 — today in AI history */}
       <TodayInHistory />
