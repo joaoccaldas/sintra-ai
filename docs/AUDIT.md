@@ -1,13 +1,14 @@
 # Sintra AI — Audit & Top 10 Improvements
 
-_Audit date: 6 Jul 2026 · Scope: full webapp review, bug hunt, schema standardisation, and a roadmap to make Sintra the one-stop shop for AI._
+_Audit date: 6 Jul 2026 · Updated 9 Jul 2026 · Scope: full webapp review, bug hunt, schema standardisation, command-center homepage, automation hub, and a roadmap to make Sintra the one-stop shop for AI._
 
 The site is already a mature Next.js 15 static export with a strong design
 system (4 themes, CSS-variable tokens, framer-motion), robust content
-validation, and a well-documented daily-news workflow. This audit builds on that
-foundation rather than reworking it. Improvements 1–9 below are **implemented and
-verified** in this pass (full `next build` + `npm run audit:static` green);
-#10 is scoped for the next pass.
+validation, a live-feed pipeline, a dedicated automation hub, and a clearer
+homepage architecture. This audit builds on that foundation rather than
+reworking it. The next design principle is: **motion must explain structure**.
+Sintra should feel cinematic, but every animation should help the user move from
+AI signal to execution.
 
 ---
 
@@ -23,67 +24,61 @@ verified** in this pass (full `next build` + `npm run audit:static` green);
 | B6 | **Low** | Outbound feed was RSS-only; no JSON Feed for modern/JS readers. | ✅ Fixed (feed.json) |
 | B7 | **Low** | `CAT_ACCENT` in `constants.ts` maps every category to the same violet — category accents carry no signal. Likely intentional (monochrome brand); left as-is, flagged for a design decision. | ⏳ Noted |
 | B8 | **Low** | No automated freshness/staleness gate in CI. | ✅ Fixed (audit-freshness) |
+| B9 | **Med** | Homepage had strong content density but not enough product story; it needed a clearer operating map for a one-stop-shop experience. | ✅ Fixed (command-center hero + AI stack journey) |
+| B10 | **Med** | AI automation was present indirectly through prompts/tools, but not elevated as a first-class information architecture. | ✅ Fixed (`/automate`) |
 
 ---
 
-## Top 10 improvements
+## Top improvements now implemented
 
-### ✅ 1. Live AI feed aggregator (the headline feature)
-`scripts/aggregate-live-feed.mjs` — a dependency-free, fault-tolerant build-time
-aggregator pulling the newest posts from ~11 primary sources (Google DeepMind,
-OpenAI, Google AI, Hugging Face, arXiv cs.AI, BAIR Berkeley, MIT Tech Review,
-TechCrunch, VentureBeat, Simon Willison, Hacker News). Output is normalised,
-https-upgraded, deduped, date-sorted, and capped, written to
-`src/data/liveFeed.generated.json`. Runs in `prebuild`, so every deploy ships a
-fresh snapshot with **zero runtime fetch** (respecting the static-export
-constraint). A dead source is logged and skipped — never a broken build; if
-every source is unreachable (egress-blocked CI), the previous committed
-snapshot is kept rather than overwritten.
+### ✅ 1. Live AI feed aggregator
+`scripts/aggregate-live-feed.mjs` is a dependency-free, fault-tolerant build-time
+aggregator pulling newest posts from primary sources. It writes
+`src/data/liveFeed.generated.json`, normalises links to HTTPS, dedupes, sorts and
+caps the feed. A dead source is logged and skipped; if every source is
+unreachable, the committed snapshot is kept rather than overwritten.
 
 ### ✅ 2. Standardised content schemas + validator
-`src/lib/liveFeedData.ts` gives the app a typed loader (`LiveFeedItem`,
-`LIVE_ITEMS`, `liveAge`, `liveFeedAgeHours`). `scripts/audit-freshness.mjs`
-enforces the live-feed schema (id/title/https-url/ISO-date/source/category) so a
-malformed feed can never ship. This is the standardised daily-update contract.
+`src/lib/liveFeedData.ts` gives the app a typed loader. `scripts/audit-freshness.mjs`
+enforces live-feed schema, freshness and link hygiene, so a stale or malformed
+feed becomes visible before deploy.
 
 ### ✅ 3. Freshness & staleness audit
-`scripts/audit-freshness.mjs` (wired into `audit:static`) gates on: live feed
-non-empty + fresh (<48h), weekly picks not stale (<14d), and base-path link
-hygiene. Catches the exact failure modes that quietly degrade a "daily" site.
+`audit:static` now includes the freshness gate. This protects the site from the
+quiet decay that makes daily AI sites feel abandoned.
 
-### ✅ 4. Live Feed page — clean, animated, professional
-`/live` (`LiveFeedPage.tsx`): a category-filterable feed with source badges,
-relative timestamps, a pulsing LIVE indicator, staggered scroll-reveal
-animation, empty-state, and full reduced-motion support — built entirely in the
-existing void/violet/Cormorant design language.
+### ✅ 4. Live Feed page
+`/live` is a category-filterable feed with source badges, relative timestamps,
+reduced-motion support and DataFeed JSON-LD.
 
-### ✅ 5. Homepage "Live from the frontier" strip
-The 5 freshest posts render on the landing page (`ContentNav` → `LiveStrip`),
-linking through to `/live`. Wired into the sidebar nav (Radio icon) and header
-breadcrumb; the RSS CTA now also links to the live feed.
+### ✅ 5. Command-center homepage
+The hero now positions Sintra as **the operating map for AI work** rather than a
+plain library. It shows live signals, workflow blueprints and use-case counts,
+then guides users toward live intelligence, automation and the full map.
 
-### ✅ 6. Outbound feed surface expanded
-`generate-rss.ts` now emits **both** `feed.xml` (RSS 2.0) and `feed.json`
-(JSON Feed 1.1). `/live` and the feeds are in the sitemap and page metadata.
+### ✅ 6. Cinematic AI Stack Journey
+`AIStackJourney.tsx` adds the downward scroll concept: Signal → Meaning →
+Automation → Decision → Mastery → Trust. The motion is deliberately tied to the
+information architecture, so the animation clarifies how Sintra works instead of
+becoming decoration.
 
-### ✅ 7. Weekly picks refreshed + self-healing
-`THIS_WEEK` refreshed with verified 6 Jul 2026 news (Sonnet 5 default, Fable 5
-restored, White House frontier standards); the prior week archived. The
-freshness audit stops it from silently ageing again.
+### ✅ 7. Automation Hub
+`/automate` elevates AI automation into a first-class destination. It includes
+the Sense → Reason → Act → Learn operating loop, reusable workflow blueprints,
+the automation stack, and guardrails for safe execution.
 
-### ✅ 8. Documentation synced to reality
-`CLAUDE.md` counts corrected, live-feed pipeline documented, data-file map
-updated. `USE_CASE_SCHEMA.md` domain table reconciled with the validator and the
-dead component reference removed.
+### ✅ 8. Homepage live + automation previews
+The homepage now shows both the live frontier feed and a preview of the
+Automation Hub. This makes the front page feel like a working AI cockpit rather
+than a catalogue.
 
-### ✅ 9. Discoverability / SEO
-`/live` carries a schema.org `DataFeed` JSON-LD block and canonical + RSS
-alternates; added to `sitemap.ts` with an `hourly` change frequency.
+### ✅ 9. Outbound feeds and SEO
+`feed.xml` and `feed.json` are generated. `/live` and `/automate` have metadata,
+canonical URLs and structured data.
 
-### ⏳ 10. Accessibility & performance pass (next)
-Recommended next: automated contrast + keyboard-focus audit across the new
-surfaces, `next build` bundle-budget check in CI, and a decision on B7
-(category accent colours — unify intentionally or restore per-category signal).
+### ✅ 10. Search and tests updated
+Automation workflows are part of the global search index. Tests now guard the
+Automation Hub data and the command-center homepage wiring.
 
 ---
 
@@ -95,15 +90,15 @@ surfaces, `next build` bundle-budget check in CI, and a decision on B7
    `newsLatestData.ts` (wins over the historical archive via `newsDataCombined`).
 3. **Weekly** (Monday): update `THIS_WEEK` in `featuredData.ts`; archive the
    previous week.
-4. **Gate**: `npm run audit:static` runs validate-data + validate-content +
+4. **Automation updates**: add reusable workflow patterns to `automationData.ts`;
+   tests enforce safe IDs, links, steps and stack examples.
+5. **Gate**: `npm run audit:static` runs validate-data + validate-content +
    **audit:freshness** + tests + typecheck before any deploy.
 
 Run `npm run check` for the full validate-and-build; `npm run aggregate-feed`
 to refresh the live feed on demand.
 
-> **Deployment note:** `.github/workflows/deploy.yml` (added by the project
-> owner, 7 Jul 2026) builds and publishes `dist/` to `gh-pages` on every push
-> to `main` and daily at 06:00 UTC — each run re-fetches the live feed on
-> GitHub's networked runners. The scheduled Claude task (`/update-news`)
-> curates news and pushes to `main`, which triggers that deploy; the manual
-> gh-pages plumbing remains as a fallback only.
+> **Deployment note:** `.github/workflows/deploy.yml` builds and publishes
+> `dist/` to `gh-pages` on every push to `main` and daily at 06:00 UTC — each run
+> re-fetches the live feed on GitHub's networked runners. The manual gh-pages
+> plumbing remains a fallback only.
