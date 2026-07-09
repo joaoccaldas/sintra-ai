@@ -8,6 +8,7 @@ import { AI_LABS } from "./aiLabsData";
 import { RESOURCES } from "./resourcesData";
 import { TOPIC_HUBS } from "./topicsData";
 import { AI_MODELS } from "./modelsData";
+import { AUTOMATION_WORKFLOWS } from "./automationData";
 
 export type EntityKind =
   | "use_case"
@@ -18,7 +19,8 @@ export type EntityKind =
   | "path"
   | "resource"
   | "topic"
-  | "model";
+  | "model"
+  | "automation";
 
 export interface SearchDocument {
   id: string;
@@ -41,9 +43,10 @@ export const KIND_META: Record<EntityKind, { label: string; pluralLabel: string;
   resource: { label: "Resource", pluralLabel: "Resources", color: "#B6A6FF" },
   topic: { label: "Topic Hub", pluralLabel: "Topic Hubs", color: "#FDA4AF" },
   model: { label: "AI Model", pluralLabel: "AI Models", color: "#E879F9" },
+  automation: { label: "Automation", pluralLabel: "Automation", color: "#8FE3D2" },
 };
 
-const KIND_ORDER: EntityKind[] = ["use_case", "model", "tool", "concept", "news", "lab", "path", "resource", "topic"];
+const KIND_ORDER: EntityKind[] = ["use_case", "automation", "model", "tool", "concept", "news", "lab", "path", "resource", "topic"];
 
 // The concept corpus contains a small amount of legacy duplicate-ID debt.
 // Last-write-wins keeps search IDs deterministic until the source migration is complete.
@@ -72,6 +75,23 @@ export const SEARCH_INDEX: SearchDocument[] = [
       ...useCase.inputs.map(input => input.label),
     ].join(" "),
     useCaseId: useCase.id,
+  })),
+  ...AUTOMATION_WORKFLOWS.map(workflow => ({
+    id: `automation-${workflow.id}`,
+    kind: "automation" as EntityKind,
+    title: workflow.title,
+    summary: workflow.summary,
+    tags: [workflow.domain, workflow.maturity, ...workflow.tools.slice(0, 3)],
+    href: `${BASE_PATH}/automate/#workflows`,
+    body: [
+      workflow.title,
+      workflow.domain,
+      workflow.summary,
+      workflow.outcome,
+      workflow.maturity,
+      ...workflow.steps,
+      ...workflow.tools,
+    ].join(" "),
   })),
   ...AI_TOOLS.map(tool => ({
     id: `tool-${tool.id}`,
