@@ -23,6 +23,11 @@ const PATH_LABEL: Record<string, string> = {
   "token-calculator": "Cost Calc", collections: "Collections", prompts: "Prompt", videos: "Videos",
 };
 
+function activeSegment(pathname: string): string {
+  const segments = pathname.split("/").filter(Boolean);
+  return segments[0] === "sintra-ai" ? segments[1] ?? "" : segments[0] ?? "";
+}
+
 export default function Header({ total: _total }: Props) {
   const { locale, toggle } = useLanguage();
   const { saved } = useSavedPrompts();
@@ -33,7 +38,7 @@ export default function Header({ total: _total }: Props) {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [savedPanelOpen, setSavedPanelOpen] = useState(false);
 
-  const segment = pathname.split("/").filter(Boolean)[0] ?? "";
+  const segment = activeSegment(pathname);
   const crumb = PATH_LABEL[segment];
 
   useEffect(() => {
