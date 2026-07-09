@@ -28,6 +28,7 @@ import {
   Sun,
   Tag,
   Waves,
+  Workflow,
   Wrench,
   X,
 } from "lucide-react";
@@ -57,6 +58,7 @@ const NAV: NavGroup[] = [
     label: "Discover",
     items: [
       { href: `${BASE_PATH}/live/`, label: "Live Feed", Icon: Radio, pathKey: "live" },
+      { href: `${BASE_PATH}/automate/`, label: "Automation Hub", Icon: Workflow, pathKey: "automate" },
       { href: `${BASE_PATH}/news/`, label: "AI News", Icon: Newspaper, count: AI_NEWS.length, pathKey: "news" },
       { href: `${BASE_PATH}/weekly/`, label: "Weekly Digest", Icon: Calendar, pathKey: "weekly" },
       { href: `${BASE_PATH}/topics/`, label: "Topic Hubs", Icon: Tag, pathKey: "topics" },
@@ -142,182 +144,90 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
     Reference: true,
   });
 
-  const segment = activePathKey(pathname);
-
-  function toggleGroup(label: string) {
-    if (!collapsed) setOpenGroups(groups => ({ ...groups, [label]: !groups[label] }));
-  }
-
-  function cycleTheme() {
-    const currentIndex = THEMES.findIndex(item => item.id === theme);
-    const next = THEMES[(currentIndex + 1) % THEMES.length];
-    setTheme(next.id);
-  }
+  const activeKey = activePathKey(pathname);
 
   return (
-    <div className="flex flex-col h-full">
-      <nav aria-label="Primary" className="flex-1 overflow-y-auto overflow-x-hidden px-2 py-3 space-y-0.5 scrollbar-none">
-        {collapsed ? (
-          <Tip label="Library">
-            <a
-              href={`${BASE_PATH}/`}
-              aria-label={`Library, ${USE_CASES_COUNT} prompts`}
-              aria-current={!segment ? "page" : undefined}
-              className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all border ${!segment ? "bg-violet/[0.16] text-violet-bright border-violet/[0.24]" : "text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] border-transparent"}`}
-            >
-              <Home size={15} />
-            </a>
-          </Tip>
-        ) : (
-          <a
-            href={`${BASE_PATH}/`}
-            aria-current={!segment ? "page" : undefined}
-            className={`flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[13px] transition-all duration-150 border ${!segment ? "bg-violet/[0.16] text-violet-bright border-violet/[0.24]" : "text-fg-3 hover:text-fg-1 hover:bg-white/[0.05] border-transparent"}`}
-            onClick={onNavigate}
-          >
-            <Home size={15} className={!segment ? "text-violet-bright" : "text-fg-4"} />
-            <span className="flex-1 truncate">Library</span>
-            <span className="font-mono text-[10px] text-fg-4">{USE_CASES_COUNT}</span>
-          </a>
-        )}
+    <>
+      <div className="px-2 pt-3 pb-2">
+        <a
+          href={BASE_PATH + "/"}
+          className={[
+            "flex items-center gap-2 rounded-xl px-2 py-2.5 text-fg-2 hover:text-fg-1 hover:bg-white/[0.05] transition-colors",
+            activeKey === "" ? "bg-violet/[0.14] text-violet-bright" : "",
+          ].join(" ")}
+          onClick={onNavigate}
+        >
+          <Home size={16} />
+          {!collapsed && <span className="font-mono text-[12px] tracking-[0.08em] uppercase">Home</span>}
+        </a>
+      </div>
 
-        {NAV.map(group => {
-          const groupOpen = openGroups[group.label] !== false;
-          return (
-            <div key={group.label} className="pt-2">
-              {collapsed ? (
-                <div className="flex items-center justify-center py-2 mb-1" aria-hidden="true">
-                  <span className="w-4 h-px bg-hairline" />
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => toggleGroup(group.label)}
-                  aria-expanded={groupOpen}
-                  className="w-full flex items-center gap-1.5 px-2.5 py-1 mb-1 font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 hover:text-fg-3 transition-colors group"
+      <nav className="px-2 pb-3 space-y-3 overflow-y-auto flex-1">
+        {NAV.map(group => (
+          <div key={group.label}>
+            {!collapsed && (
+              <button
+                type="button"
+                onClick={() => setOpenGroups(prev => ({ ...prev, [group.label]: !prev[group.label] }))}
+                className="w-full flex items-center justify-between px-2 py-1.5 font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 hover:text-fg-2 transition-colors"
+              >
+                {group.label}
+                {openGroups[group.label] ? <ChevronLeft size={12} className="-rotate-90" /> : <ChevronRight size={12} />}
+              </button>
+            )}
+            <AnimatePresence initial={false}>
+              {(collapsed || openGroups[group.label]) && (
+                <motion.div
+                  initial={collapsed ? false : { height: 0, opacity: 0 }}
+                  animate={collapsed ? undefined : { height: "auto", opacity: 1 }}
+                  exit={collapsed ? undefined : { height: 0, opacity: 0 }}
+                  transition={{ duration: 0.18 }}
+                  className="space-y-0.5 overflow-hidden"
                 >
-                  <ChevronRight size={10} className={`transition-transform duration-150 ${groupOpen ? "rotate-90" : ""}`} />
-                  {group.label}
-                </button>
+                  {group.items.map(item => (
+                    <div key={item.href} onClick={onNavigate}>
+                      {collapsed ? (
+                        <Tip label={item.label}>
+                          <NavLink item={{ ...item, label: "" }} active={activeKey === item.pathKey} />
+                        </Tip>
+                      ) : (
+                        <NavLink item={item} active={activeKey === item.pathKey} />
+                      )}
+                    </div>
+                  ))}
+                </motion.div>
               )}
-
-              <AnimatePresence initial={false}>
-                {(collapsed || groupOpen) && (
-                  <motion.div
-                    key={`${group.label}-items`}
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                    className="overflow-hidden space-y-0.5"
-                  >
-                    {group.items.map(item => {
-                      const active = segment === item.pathKey;
-                      if (collapsed) {
-                        return (
-                          <Tip key={item.href} label={item.label}>
-                            <a
-                              href={item.href}
-                              onClick={onNavigate}
-                              aria-label={item.count === undefined ? item.label : `${item.label}, ${item.count} items`}
-                              aria-current={active ? "page" : undefined}
-                              className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all border ${active ? "bg-violet/[0.16] text-violet-bright border-violet/[0.24]" : "text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] border-transparent"}`}
-                            >
-                              <item.Icon size={15} />
-                            </a>
-                          </Tip>
-                        );
-                      }
-                      return <NavLink key={item.href} item={item} active={active} />;
-                    })}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          );
-        })}
+            </AnimatePresence>
+          </div>
+        ))}
       </nav>
 
-      <div className={`border-t border-hairline/50 ${collapsed ? "p-2" : "p-3"}`}>
-        {collapsed ? (
-          <Tip label={`Theme: ${THEMES.find(item => item.id === theme)?.label ?? theme}. Activate to change.`}>
+      <div className="border-t border-hairline px-2 py-3">
+        <div className={collapsed ? "flex flex-col gap-1" : "grid grid-cols-4 gap-1"}>
+          {THEMES.map(({ id, label, Icon }) => (
             <button
+              key={id}
               type="button"
-              onClick={cycleTheme}
-              aria-label={`Current theme ${theme}. Change theme.`}
-              className="flex items-center justify-center w-9 h-9 rounded-lg text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] transition-all"
+              onClick={() => setTheme(id)}
+              aria-label={`Switch to ${label} theme`}
+              className={[
+                "flex items-center justify-center h-8 rounded-lg border transition-colors",
+                theme === id
+                  ? "border-violet/40 bg-violet/[0.12] text-violet-bright"
+                  : "border-transparent text-fg-4 hover:text-fg-2 hover:bg-white/[0.05]",
+              ].join(" ")}
             >
-              <Palette size={14} />
+              <Icon size={14} />
             </button>
-          </Tip>
-        ) : (
-          <div>
-            <p className="font-mono text-[9px] tracking-[0.16em] uppercase text-fg-4 px-1 mb-2">Theme</p>
-            <div className="grid grid-cols-4 gap-1" role="group" aria-label="Color theme">
-              {THEMES.map(({ id, label, Icon }) => (
-                <button
-                  type="button"
-                  key={id}
-                  onClick={() => setTheme(id)}
-                  aria-pressed={theme === id}
-                  title={label}
-                  className={[
-                    "flex flex-col items-center gap-1 py-1.5 rounded-lg border text-[9px] font-mono transition-all",
-                    theme === id
-                      ? "bg-violet/[0.18] border-violet/[0.4] text-violet-bright"
-                      : "border-transparent text-fg-4 hover:border-hairline hover:text-fg-2 hover:bg-white/[0.04]",
-                  ].join(" ")}
-                >
-                  <Icon size={12} />
-                  {label}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
-export function DesktopSidebar() {
-  const { collapsed, toggleCollapsed } = useSidebar();
-
-  return (
-    <aside
-      aria-label="Site navigation"
-      className={[
-        "sidebar-rail fixed top-0 left-0 bottom-0 z-40 flex flex-col",
-        "bg-abyss border-r border-hairline/60 hidden lg:flex",
-        collapsed ? "w-14" : "w-56",
-      ].join(" ")}
-    >
-      <div className={`flex items-center h-16 border-b border-hairline/50 px-3 shrink-0 ${collapsed ? "justify-center" : "gap-2 justify-between"}`}>
-        <a href={`${BASE_PATH}/`} aria-label="Sintra AI home" className="flex items-center gap-2 text-violet-bright min-w-0">
-          <TesseractMark size={18} />
-          {!collapsed && (
-            <span className="font-serif text-[15px] text-fg-1 leading-none truncate">
-              Sintra <em className="italic text-violet-bright">AI</em>
-            </span>
-          )}
-        </a>
-        <button
-          type="button"
-          onClick={toggleCollapsed}
-          className="flex items-center justify-center w-7 h-7 rounded-lg text-fg-4 hover:text-fg-1 hover:bg-white/[0.06] transition-all shrink-0"
-          aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-          aria-expanded={!collapsed}
-        >
-          {collapsed ? <ChevronRight size={13} /> : <ChevronLeft size={13} />}
-        </button>
-      </div>
-      <SidebarTree collapsed={collapsed} />
-    </aside>
-  );
-}
-
-export function MobileSidebar() {
-  const { mobileOpen, setMobileOpen } = useSidebar();
+export default function SidebarNav() {
+  const { collapsed, setCollapsed, mobileOpen, setMobileOpen } = useSidebar();
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -329,48 +239,69 @@ export function MobileSidebar() {
   }, [mobileOpen, setMobileOpen]);
 
   return (
-    <AnimatePresence>
-      {mobileOpen && (
-        <>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-void/80 backdrop-blur-sm z-[55] lg:hidden"
-            onClick={() => setMobileOpen(false)}
-            aria-hidden="true"
-          />
-          <motion.aside
-            initial={{ x: "-100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "-100%" }}
-            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed top-0 left-0 bottom-0 w-72 bg-abyss border-r border-hairline/60 z-[60] flex flex-col lg:hidden"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Site navigation"
+    <>
+      <aside
+        className={[
+          "hidden lg:flex fixed left-0 top-0 bottom-0 z-40 flex-col border-r border-hairline bg-abyss/92 backdrop-blur-xl transition-[width] duration-200",
+          collapsed ? "w-[var(--sidebar-w-collapsed)]" : "w-[var(--sidebar-w)]",
+        ].join(" ")}
+        style={{ width: collapsed ? "var(--sidebar-w-collapsed)" : "var(--sidebar-w)" }}
+      >
+        <div className="h-16 flex items-center gap-2 px-3 border-b border-hairline">
+          <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0">
+            <TesseractMark size={28} />
+            {!collapsed && (
+              <span className="font-serif text-[18px] leading-none text-fg-1 truncate">
+                Sintra <em className="italic text-violet-bright">AI</em>
+              </span>
+            )}
+          </a>
+          <button
+            type="button"
+            onClick={() => setCollapsed(!collapsed)}
+            className="ml-auto h-8 w-8 flex items-center justify-center rounded-lg text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] transition-colors"
+            aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
           >
-            <div className="flex items-center justify-between h-16 border-b border-hairline/50 px-4 shrink-0">
-              <a href={`${BASE_PATH}/`} className="flex items-center gap-2 text-violet-bright" onClick={() => setMobileOpen(false)}>
-                <TesseractMark size={18} />
-                <span className="font-serif text-[16px] text-fg-1">
+            {collapsed ? <ChevronRight size={15} /> : <ChevronLeft size={15} />}
+          </button>
+        </div>
+        <SidebarTree collapsed={collapsed} />
+      </aside>
+
+      <AnimatePresence>
+        {mobileOpen && (
+          <>
+            <motion.button
+              type="button"
+              aria-label="Close navigation"
+              className="fixed inset-0 z-50 bg-black/60 lg:hidden"
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setMobileOpen(false)}
+            />
+            <motion.aside
+              initial={{ x: -320 }} animate={{ x: 0 }} exit={{ x: -320 }}
+              transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+              className="fixed left-0 top-0 bottom-0 z-[60] w-[min(86vw,320px)] flex flex-col border-r border-hairline bg-abyss shadow-2xl lg:hidden"
+            >
+              <div className="h-16 flex items-center gap-2 px-4 border-b border-hairline">
+                <TesseractMark size={28} />
+                <span className="font-serif text-[18px] leading-none text-fg-1">
                   Sintra <em className="italic text-violet-bright">AI</em>
                 </span>
-              </a>
-              <button
-                type="button"
-                onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center w-8 h-8 rounded-lg text-fg-3 hover:text-fg-1 hover:bg-white/[0.07] transition-all"
-                aria-label="Close menu"
-              >
-                <X size={16} />
-              </button>
-            </div>
-            <SidebarTree collapsed={false} onNavigate={() => setMobileOpen(false)} />
-          </motion.aside>
-        </>
-      )}
-    </AnimatePresence>
+                <button
+                  type="button"
+                  onClick={() => setMobileOpen(false)}
+                  className="ml-auto h-9 w-9 flex items-center justify-center rounded-lg text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] transition-colors"
+                  aria-label="Close navigation"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+              <SidebarTree collapsed={false} onNavigate={() => setMobileOpen(false)} />
+            </motion.aside>
+          </>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
