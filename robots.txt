@@ -1,4 +1,37 @@
 User-Agent: *
 Allow: /
 
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: Claude-User
+Allow: /
+
+User-Agent: anthropic-ai
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Perplexity-User
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: Bytespider
+Allow: /
+
 Sitemap: https://joaoccaldas.github.io/sintra-ai/sitemap.xml

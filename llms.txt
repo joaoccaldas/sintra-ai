@@ -1,0 +1,115 @@
+# Sintra AI
+
+> A structured, source-backed reference for AI: live signals, verified news, a 253-prompt library, tool and model comparisons, plain-English concepts, and topic playbooks. Built for people and for agents — every page below either has schema.org structured data or a matching JSON endpoint, and topics with a playbook include design principles, a recommended stack, best use cases, common pitfalls, and tips, not just a definition.
+
+## Topic Playbooks
+Structured, actionable briefs — start here if you need to *act* on a topic, not just read about it. Each has `about` (DefinedTerm), `hasPart` ItemLists (design principles / recommended stack / best use cases / common pitfalls), and a `HowTo` for tips, all in JSON-LD on the page.
+- [Generative UI](https://joaoccaldas.github.io/sintra-ai/topics/generative-ui/): Generative UI is a model choosing and assembling interface components at runtime — picking a chart vs. a table vs. a form, and filling in its props — rather than a developer pre-building one fixed screen per possible state. The model decides *what* to show; the application still owns *how* each piece renders.
+
+## Other Topic Hubs
+Aggregated prompts/news/tools/concepts by theme — no authored playbook yet.
+- [AI Agents](https://joaoccaldas.github.io/sintra-ai/topics/agents/): Autonomous AI systems that plan, use tools, and act across multi-step workflows.
+- [Coding](https://joaoccaldas.github.io/sintra-ai/topics/coding/): Prompts, tools and news for software development, debugging, and code generation.
+- [Writing](https://joaoccaldas.github.io/sintra-ai/topics/writing/): Content creation, copywriting, editing, and storytelling with AI.
+- [Research](https://joaoccaldas.github.io/sintra-ai/topics/research/): Literature review, synthesis, citation, and knowledge discovery.
+- [Multimodal](https://joaoccaldas.github.io/sintra-ai/topics/multimodal/): Models and tools that work across text, images, audio, and video.
+- [Reasoning](https://joaoccaldas.github.io/sintra-ai/topics/reasoning/): Chain-of-thought, math, logic, and deep analytical thinking in AI systems.
+- [Open Source](https://joaoccaldas.github.io/sintra-ai/topics/open-source/): Open-weight models, self-hosted tools, and community-driven AI development.
+- [Productivity](https://joaoccaldas.github.io/sintra-ai/topics/productivity/): Workflows, automation, and AI tools that multiply personal and team output.
+- [Anthropic](https://joaoccaldas.github.io/sintra-ai/topics/anthropic/): Claude models, research, and products from Anthropic.
+- [OpenAI](https://joaoccaldas.github.io/sintra-ai/topics/openai/): GPT, ChatGPT, Sora, and the broader OpenAI ecosystem.
+- [Google AI](https://joaoccaldas.github.io/sintra-ai/topics/google/): Gemini, Vertex AI, Google DeepMind, and AI Overviews.
+- [Enterprise AI](https://joaoccaldas.github.io/sintra-ai/topics/enterprise/): Deployment at scale, governance, compliance, and ROI in large organizations.
+- [Finance & FP&A](https://joaoccaldas.github.io/sintra-ai/topics/finance/): Financial analysis, modeling, forecasting, and AI in fintech.
+- [Brazil](https://joaoccaldas.github.io/sintra-ai/topics/brazil/): AI news, regulations, and use cases specific to Brazil and Latin America.
+- [Sweden](https://joaoccaldas.github.io/sintra-ai/topics/sweden/): AI ecosystem, research, and policy in Sweden and the Nordic region.
+- [AI Safety](https://joaoccaldas.github.io/sintra-ai/topics/safety/): Alignment, interpretability, regulation, and responsible AI development.
+- [Infrastructure](https://joaoccaldas.github.io/sintra-ai/topics/infrastructure/): GPUs, data centers, chips, and the compute layer powering modern AI.
+
+## Concepts
+Plain-English AI definitions, each with a real-world analogy and a `DefinedTerm` JSON-LD block.
+- [Machine Learning](https://joaoccaldas.github.io/sintra-ai/concepts/machine-learning/): Teaching computers to learn from examples, not rules.
+- [Tokens](https://joaoccaldas.github.io/sintra-ai/concepts/tokens/): The tiny chunks of text an AI reads, one at a time.
+- [Prompt Engineering](https://joaoccaldas.github.io/sintra-ai/concepts/prompt-engineering/): The art of asking AI the right question in the right way.
+- [Large Language Model (LLM)](https://joaoccaldas.github.io/sintra-ai/concepts/llm/): AI trained on vast text to understand and generate language.
+- [Context Window](https://joaoccaldas.github.io/sintra-ai/concepts/context-window/): How much text an AI can see and remember at once.
+- [Embeddings](https://joaoccaldas.github.io/sintra-ai/concepts/embeddings/): Turning words and ideas into numbers that capture meaning.
+- [Retrieval-Augmented Generation (RAG)](https://joaoccaldas.github.io/sintra-ai/concepts/rag/): Giving the AI access to your documents before it answers.
+- [Fine-tuning](https://joaoccaldas.github.io/sintra-ai/concepts/fine-tuning/): Specialising a general AI model on your specific data and style.
+- [AI Agents](https://joaoccaldas.github.io/sintra-ai/concepts/agents/): AI that plans and takes actions without you guiding every step.
+- [Skills](https://joaoccaldas.github.io/sintra-ai/concepts/skills/): Pre-built capabilities you attach to an AI to extend what it can do.
+- [Connectors](https://joaoccaldas.github.io/sintra-ai/concepts/connectors/): Bridges that let AI read from and write to your apps and services.
+- [API (API)](https://joaoccaldas.github.io/sintra-ai/concepts/api/): A standardised way for software to talk to other software.
+- [Model Context Protocol (MCP)](https://joaoccaldas.github.io/sintra-ai/concepts/mcp/): A universal standard for AI to connect to any tool or data source.
+- [Function Calling (Tool Use)](https://joaoccaldas.github.io/sintra-ai/concepts/function-calling/): Letting an AI invoke real code and APIs mid-reasoning.
+- [Open Source LLMs](https://joaoccaldas.github.io/sintra-ai/concepts/open-source-llms/): Frontier-quality AI models anyone can download, run, and modify.
+- [Running Models Locally](https://joaoccaldas.github.io/sintra-ai/concepts/running-local-models/): How to run AI on your own machine — private, free, and offline.
+- [Jevons Paradox](https://joaoccaldas.github.io/sintra-ai/concepts/jevons-paradox/): Making AI cheaper creates more usage, not less.
+- [AI as Amplifier (Amplifier)](https://joaoccaldas.github.io/sintra-ai/concepts/ai-as-amplifier/): AI multiplies what you already are — good or chaotic.
+- [Software Ecology](https://joaoccaldas.github.io/sintra-ai/concepts/software-ecology/): The holistic study of social and technical systems that produce software.
+- [Temperature (temp)](https://joaoccaldas.github.io/sintra-ai/concepts/temperature/): The dial that controls how random or predictable an AI's output is.
+- [Hallucination](https://joaoccaldas.github.io/sintra-ai/concepts/hallucination/): When an AI generates confident-sounding facts that are simply wrong.
+- [System Prompt](https://joaoccaldas.github.io/sintra-ai/concepts/system-prompt/): The hidden instruction that shapes how an AI behaves before you say anything.
+- [Chain of Thought (CoT)](https://joaoccaldas.github.io/sintra-ai/concepts/chain-of-thought/): Prompting a model to reason step-by-step before giving its final answer.
+- [Multimodal AI](https://joaoccaldas.github.io/sintra-ai/concepts/multimodal/): AI that understands and generates more than one type of media — text, images, audio, or video.
+- [Vector Database](https://joaoccaldas.github.io/sintra-ai/concepts/vector-database/): A database that stores meaning, not just text — finding similar content by concept rather than keyword.
+- [Inference](https://joaoccaldas.github.io/sintra-ai/concepts/inference/): The moment a trained model actually runs and generates output.
+- [AI Benchmark](https://joaoccaldas.github.io/sintra-ai/concepts/benchmark/): Standardised tests that measure what a model can actually do.
+- [AI Safety](https://joaoccaldas.github.io/sintra-ai/concepts/ai-safety/): The field working to ensure AI systems do what humans actually want — now and as they become more capable.
+- [Transformer](https://joaoccaldas.github.io/sintra-ai/concepts/transformer/): The architecture that made modern AI possible — attention over sequences.
+- [Attention Mechanism](https://joaoccaldas.github.io/sintra-ai/concepts/attention-mechanism/): How a model decides which words to focus on when understanding a sentence.
+- [Mixture of Experts (MoE)](https://joaoccaldas.github.io/sintra-ai/concepts/mixture-of-experts/): A model architecture that activates only a fraction of its parameters per request.
+- [Reinforcement Learning from Human Feedback (RLHF)](https://joaoccaldas.github.io/sintra-ai/concepts/rlhf/): Training AI to be helpful and safe by learning from human preference ratings.
+- [Constitutional AI (CAI)](https://joaoccaldas.github.io/sintra-ai/concepts/constitutional-ai/): Teaching AI to critique and revise its own outputs against a written set of principles.
+- [Quantization](https://joaoccaldas.github.io/sintra-ai/concepts/quantization/): Compressing a model's weights to use less memory and run faster — with minimal quality loss.
+- [Diffusion Model](https://joaoccaldas.github.io/sintra-ai/concepts/diffusion-model/): The AI behind image generation: learning to reverse the process of adding noise.
+- [Reasoning Model](https://joaoccaldas.github.io/sintra-ai/concepts/reasoning-model/): AI that thinks through a problem step by step before giving its final answer.
+- [Few-Shot Prompting](https://joaoccaldas.github.io/sintra-ai/concepts/few-shot/): Giving an AI 2–5 examples of the task before asking it to do yours.
+- [Zero-Shot Prompting](https://joaoccaldas.github.io/sintra-ai/concepts/zero-shot/): Asking an AI to do a task with no examples — just instructions.
+- [Knowledge Cutoff](https://joaoccaldas.github.io/sintra-ai/concepts/knowledge-cutoff/): The date after which an AI model has no training data — and doesn't know what happened.
+- [Grounding](https://joaoccaldas.github.io/sintra-ai/concepts/grounding/): Connecting an AI's response to real, verifiable sources rather than memory alone.
+- [Prompt Injection](https://joaoccaldas.github.io/sintra-ai/concepts/prompt-injection/): A security attack where malicious instructions hidden in content hijack an AI agent.
+- [Prompt Caching](https://joaoccaldas.github.io/sintra-ai/concepts/prompt-caching/): Reusing the processed version of a repeated prompt prefix to cut cost and latency.
+- [Structured Output](https://joaoccaldas.github.io/sintra-ai/concepts/structured-output/): Forcing an AI to respond in valid JSON or a specific schema — every time.
+- [Streaming](https://joaoccaldas.github.io/sintra-ai/concepts/streaming/): Receiving an AI's response token by token as it's generated, not all at once.
+- [AI Agents](https://joaoccaldas.github.io/sintra-ai/concepts/agents/): An AI that plans, takes actions through tools, and adapts based on what it observes.
+- [Function Calling / Tool Use (Tool Use)](https://joaoccaldas.github.io/sintra-ai/concepts/function-calling/): How a model triggers real code — a search, a database query, a calculation — instead of just generating text.
+- [Computer Use](https://joaoccaldas.github.io/sintra-ai/concepts/computer-use/): AI that can see a screen and control a computer — mouse, keyboard, and all.
+- [Multi-Agent Systems](https://joaoccaldas.github.io/sintra-ai/concepts/multi-agent/): Multiple AI agents working together, each handling a specialised role in a larger workflow.
+- [AI Memory](https://joaoccaldas.github.io/sintra-ai/concepts/ai-memory/): How AI agents store and retrieve information across turns, sessions, and tasks.
+- [Agent-to-Agent Protocol (A2A)](https://joaoccaldas.github.io/sintra-ai/concepts/a2a-protocol/): A standard for AI agents from different systems to communicate and delegate tasks to each other.
+- [Red-Teaming](https://joaoccaldas.github.io/sintra-ai/concepts/red-teaming/): Adversarial testing of AI systems to find failure modes before deployment.
+- [Model Card](https://joaoccaldas.github.io/sintra-ai/concepts/model-card/): A standardised document describing what an AI model can do, how it was built, and where it falls short.
+- [Direct Preference Optimisation (DPO)](https://joaoccaldas.github.io/sintra-ai/concepts/dpo/): A simpler alternative to RLHF that trains models on human preferences without a reward model.
+- [Context Compression](https://joaoccaldas.github.io/sintra-ai/concepts/context-compression/): Techniques to fit more useful information into a limited context window.
+
+## Guides
+Step-by-step how-tos, each with `Article` + `FAQPage` JSON-LD.
+- [Build Your First AI Agent](https://joaoccaldas.github.io/sintra-ai/guides/build-your-first-agent/): From a single LLM call to an autonomous multi-step agent — the practical path.
+- [RAG Architecture: Ground AI in Your Data](https://joaoccaldas.github.io/sintra-ai/guides/rag-architecture/): Build retrieval-augmented generation pipelines that give models access to your documents.
+- [Choosing the Right AI Model](https://joaoccaldas.github.io/sintra-ai/guides/choosing-the-right-model/): A practical decision framework for matching models to tasks — based on cost, capability, and speed.
+- [Fine-Tuning vs. Prompting](https://joaoccaldas.github.io/sintra-ai/guides/fine-tuning-vs-prompting/): When a well-crafted prompt is enough — and when you genuinely need a custom-trained model.
+- [AI Cost Optimization Playbook](https://joaoccaldas.github.io/sintra-ai/guides/cost-optimization/): Cut your AI API spend by 60–90% without sacrificing quality — techniques that actually work.
+- [AI Security: Prompt Injection & Hardening](https://joaoccaldas.github.io/sintra-ai/guides/prompt-injection-security/): The attacks that target AI agents in production — and the defences that actually work.
+- [Multimodal AI: Images, Documents, and Vision](https://joaoccaldas.github.io/sintra-ai/guides/multimodal-ai-practical/): How to effectively use AI vision — from screenshots and PDFs to complex document analysis.
+- [Finance & FP&A AI Playbook](https://joaoccaldas.github.io/sintra-ai/guides/finance-ai-playbook/): High-ROI AI applications for financial planning, analysis, and reporting — with prompts that work.
+- [Legal AI Playbook](https://joaoccaldas.github.io/sintra-ai/guides/legal-ai-playbook/): Contract review, legal research, and compliance use cases — with the caveats lawyers need to know.
+- [Healthcare AI Playbook](https://joaoccaldas.github.io/sintra-ai/guides/healthcare-ai-playbook/): Clinical documentation, research acceleration, and patient communication — with the safety guardrails required.
+- [How to Use Higgsfield with Claude](https://joaoccaldas.github.io/sintra-ai/guides/higgsfield-claude-workflow/): Connect Higgsfield's image and video models to Claude via MCP and direct cinematic generations from a chat.
+
+## Prompt Library
+- [Browse all 253 prompts](https://joaoccaldas.github.io/sintra-ai/library/): searchable and filterable by category, difficulty, and tool. Each prompt page (`/prompts/{slug}/`) carries `HowTo` JSON-LD with the full prompt text, inputs, and a sample output.
+
+## Tools & Models
+- [AI Tools Directory](https://joaoccaldas.github.io/sintra-ai/tools/): 74 tools compared across category, pricing, and provider.
+- [Model Radar](https://joaoccaldas.github.io/sintra-ai/models/): 20 models compared across capability tier and release date.
+
+## News & Live Feed
+- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 546 verified items, updated daily, each tagged with a significance rating (landmark / major / notable) and an official source URL.
+- [Live Feed](https://joaoccaldas.github.io/sintra-ai/live/): primary-source signals from ~11 feeds (labs, arXiv, major outlets), refreshed every build.
+- Syndication: [RSS](https://joaoccaldas.github.io/sintra-ai/feed.xml), [JSON Feed](https://joaoccaldas.github.io/sintra-ai/feed.json)
+
+## Machine-readable data
+- [/llms-full.txt](https://joaoccaldas.github.io/sintra-ai/llms-full.txt) — full text of every concept, guide, and topic playbook in one file
+- [/api/concepts.json](https://joaoccaldas.github.io/sintra-ai/api/concepts.json), [/api/topics.json](https://joaoccaldas.github.io/sintra-ai/api/topics.json) (includes full playbooks), [/api/guides.json](https://joaoccaldas.github.io/sintra-ai/api/guides.json), [/api/tools.json](https://joaoccaldas.github.io/sintra-ai/api/tools.json), [/api/models.json](https://joaoccaldas.github.io/sintra-ai/api/models.json), [/api/use-cases.json](https://joaoccaldas.github.io/sintra-ai/api/use-cases.json) — structured JSON per content type
+- [/agents/](https://joaoccaldas.github.io/sintra-ai/agents/) — how to query this site programmatically, written for the agent reading this file right now

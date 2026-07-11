@@ -1,0 +1,5130 @@
+{
+  "source": "https://github.com/joaoccaldas/sintra-ai",
+  "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
+  "generatedAt": "2026-07-11T07:53:37.714Z",
+  "count": 253,
+  "data": [
+    {
+      "id": 212,
+      "slug": "headcount-workforce-cost-planning-model",
+      "title": "Headcount & Workforce Cost Planning Model",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "FP&A",
+        "headcount",
+        "workforce planning",
+        "budgeting"
+      ],
+      "outcome": "A driver-based headcount plan: FTE roster logic, fully-loaded cost, hiring ramp, and scenario toggles.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/headcount-workforce-cost-planning-model/"
+    },
+    {
+      "id": 213,
+      "slug": "capex-investment-appraisal-builder-npv-irr-payback",
+      "title": "CAPEX Investment Appraisal Builder (NPV / IRR / Payback)",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "capex",
+        "NPV",
+        "IRR",
+        "investment appraisal"
+      ],
+      "outcome": "A complete capex appraisal: cash-flow layout, NPV/IRR/payback with formulas, and a decision memo.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/capex-investment-appraisal-builder-npv-irr-payback/"
+    },
+    {
+      "id": 214,
+      "slug": "gross-margin-bridge-price-volume-mix-analysis",
+      "title": "Gross Margin Bridge & Price-Volume-Mix Analysis",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "margin bridge",
+        "price-volume-mix",
+        "profitability",
+        "FP&A"
+      ],
+      "outcome": "A period-over-period margin bridge decomposed into price, volume, mix, cost, and FX effects.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/gross-margin-bridge-price-volume-mix-analysis/"
+    },
+    {
+      "id": 215,
+      "slug": "saas-metrics-arr-waterfall-builder",
+      "title": "SaaS Metrics & ARR Waterfall Builder",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "SaaS",
+        "ARR",
+        "NRR",
+        "metrics"
+      ],
+      "outcome": "An ARR waterfall (new, expansion, contraction, churn) plus NRR/GRR, CAC payback, and Rule of 40.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "35 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/saas-metrics-arr-waterfall-builder/"
+    },
+    {
+      "id": 216,
+      "slug": "intercompany-reconciliation-elimination-assistant",
+      "title": "Intercompany Reconciliation & Elimination Assistant",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "intercompany",
+        "consolidation",
+        "reconciliation",
+        "close"
+      ],
+      "outcome": "A matching and elimination workflow for intercompany balances that ties out before consolidation.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "45 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/intercompany-reconciliation-elimination-assistant/"
+    },
+    {
+      "id": 217,
+      "slug": "customer-profitability-cost-to-serve-analysis",
+      "title": "Customer Profitability & Cost-to-Serve Analysis",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "customer profitability",
+        "cost to serve",
+        "commercial finance",
+        "pricing"
+      ],
+      "outcome": "A ranked customer-profitability view with cost-to-serve allocation and actions per quadrant.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "45 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/customer-profitability-cost-to-serve-analysis/"
+    },
+    {
+      "id": 218,
+      "slug": "annual-budget-process-calendar-designer",
+      "title": "Annual Budget Process & Calendar Designer",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "budgeting",
+        "process design",
+        "FP&A",
+        "planning"
+      ],
+      "outcome": "A complete budget-cycle design: calendar, templates list, RACI, and guidance pack for budget owners.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "25 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/annual-budget-process-calendar-designer/"
+    },
+    {
+      "id": 219,
+      "slug": "monthly-flash-report-builder",
+      "title": "Monthly Flash Report Builder",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "flash report",
+        "month-end",
+        "reporting",
+        "KPIs"
+      ],
+      "outcome": "A one-page day-3 flash: headline P&L, KPIs, variances vs plan, and commentary bullets.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/monthly-flash-report-builder/"
+    },
+    {
+      "id": 220,
+      "slug": "macro-scenario-sensitivity-stress-tester",
+      "title": "Macro Scenario & Sensitivity Stress-Tester",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "scenario planning",
+        "stress test",
+        "macro",
+        "treasury"
+      ],
+      "outcome": "P&L and cash stress scenarios (rates, FX, demand, input costs) with quantified impacts and triggers.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "45 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/macro-scenario-sensitivity-stress-tester/"
+    },
+    {
+      "id": 221,
+      "slug": "cost-allocation-driver-model-designer",
+      "title": "Cost Allocation & Driver Model Designer",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "cost allocation",
+        "management accounting",
+        "drivers",
+        "controlling"
+      ],
+      "outcome": "A defensible cost-allocation model: pools, drivers, rates, and the fairness trade-offs made explicit.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/cost-allocation-driver-model-designer/"
+    },
+    {
+      "id": 222,
+      "slug": "fp-a-kpi-dictionary-standardiser",
+      "title": "FP&A KPI Dictionary Standardiser",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "KPI",
+        "data governance",
+        "definitions",
+        "FP&A"
+      ],
+      "outcome": "A single KPI dictionary: definition, formula, source system, owner, and refresh cadence per metric.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "35 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/fp-a-kpi-dictionary-standardiser/"
+    },
+    {
+      "id": 223,
+      "slug": "lease-accounting-classifier-ifrs-16-asc-842",
+      "title": "Lease Accounting Classifier (IFRS 16 / ASC 842)",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "lease accounting",
+        "IFRS 16",
+        "ASC 842",
+        "technical accounting"
+      ],
+      "outcome": "Per-lease classification, ROU asset and liability schedules, and the journal entries.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/lease-accounting-classifier-ifrs-16-asc-842/"
+    },
+    {
+      "id": 224,
+      "slug": "goodwill-asset-impairment-test-memo-drafter",
+      "title": "Goodwill & Asset Impairment Test Memo Drafter",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "impairment",
+        "goodwill",
+        "IAS 36",
+        "technical accounting"
+      ],
+      "outcome": "A structured impairment test: CGU setup, value-in-use model inputs, headroom, and the audit-ready memo.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "45 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/goodwill-asset-impairment-test-memo-drafter/"
+    },
+    {
+      "id": 225,
+      "slug": "audit-pbc-list-generator",
+      "title": "Audit PBC List Generator",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "audit",
+        "PBC",
+        "controls",
+        "close"
+      ],
+      "outcome": "A complete prepared-by-client list mapped to owners and dates, with evidence-quality guidance.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "25 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/audit-pbc-list-generator/"
+    },
+    {
+      "id": 226,
+      "slug": "procurement-spend-cube-savings-finder",
+      "title": "Procurement Spend Cube & Savings Finder",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "spend analysis",
+        "procurement",
+        "savings",
+        "analytics"
+      ],
+      "outcome": "A cleansed spend cube (supplier × category × BU) with ranked savings opportunities.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/procurement-spend-cube-savings-finder/"
+    },
+    {
+      "id": 227,
+      "slug": "public-comps-financial-benchmarking-brief",
+      "title": "Public-Comps Financial Benchmarking Brief",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "benchmarking",
+        "public comps",
+        "strategy",
+        "IR"
+      ],
+      "outcome": "A peer benchmarking pack: growth, margins, returns, and multiples vs 5-8 public comparables.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "35 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/public-comps-financial-benchmarking-brief/"
+    },
+    {
+      "id": 228,
+      "slug": "ar-collections-prioritisation-playbook",
+      "title": "AR Collections Prioritisation Playbook",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "accounts receivable",
+        "collections",
+        "DSO",
+        "order to cash"
+      ],
+      "outcome": "A risk-scored collections worklist with cadence, scripts, and escalation rules that cut DSO.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ar-collections-prioritisation-playbook/"
+    },
+    {
+      "id": 229,
+      "slug": "finance-ai-agent-governance-checklist",
+      "title": "Finance AI Agent Governance Checklist",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "AI governance",
+        "finance agents",
+        "controls",
+        "SOX"
+      ],
+      "outcome": "A control framework for deploying AI agents in finance: scope, approvals, audit trail, and kill-switch.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/finance-ai-agent-governance-checklist/"
+    },
+    {
+      "id": 230,
+      "slug": "gl-to-subledger-reconciliation-agent",
+      "title": "GL-to-Subledger Reconciliation Agent",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "finance",
+        "reconciliation",
+        "month-end-close",
+        "general-ledger"
+      ],
+      "outcome": "A classified reconciliation table per account with differences explained, aged, and a concrete follow-up query list for the unexplained residual.",
+      "tools": [
+        "Claude",
+        "Excel",
+        "ERP export"
+      ],
+      "est_time": "2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/gl-to-subledger-reconciliation-agent/"
+    },
+    {
+      "id": 231,
+      "slug": "vendor-master-deduplication-enrichment",
+      "title": "Vendor Master Deduplication & Enrichment",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "master-data",
+        "vendor-management",
+        "accounts-payable"
+      ],
+      "outcome": "A duplicate-cluster report with survivor records chosen, fraud-risk flags, and a cleanup queue ordered by spend exposure.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/vendor-master-deduplication-enrichment/"
+    },
+    {
+      "id": 232,
+      "slug": "customer-master-data-quality-audit",
+      "title": "Customer Master Data Quality Audit",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "master-data",
+        "data-quality",
+        "order-to-cash"
+      ],
+      "outcome": "A field-by-field data quality scorecard, a conflict list across sales orgs, quantified credit exposure on bad records, and an owner-assigned remediation plan.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/customer-master-data-quality-audit/"
+    },
+    {
+      "id": 233,
+      "slug": "chart-of-accounts-rationalisation-mapping",
+      "title": "Chart of Accounts Rationalisation & Mapping",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "finance",
+        "chart-of-accounts",
+        "master-data",
+        "erp-migration"
+      ],
+      "outcome": "A complete legacy-to-target CoA mapping table with confidence ratings, a dormant/duplicate kill list, and a short human-decision queue with precise questions.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "3-4 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/chart-of-accounts-rationalisation-mapping/"
+    },
+    {
+      "id": 234,
+      "slug": "cost-center-entity-hierarchy-mapper-erp-epm",
+      "title": "Cost Center & Entity Hierarchy Mapper (ERP → EPM)",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "master-data",
+        "fp&a",
+        "planning-systems"
+      ],
+      "outcome": "A three-way diff of ERP vs EPM hierarchies, structural error list, corrected tree, and a paste-ready change note for planning admins.",
+      "tools": [
+        "Claude",
+        "Excel",
+        "EPM export"
+      ],
+      "est_time": "1-2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/cost-center-entity-hierarchy-mapper-erp-epm/"
+    },
+    {
+      "id": 235,
+      "slug": "bank-reconciliation-exception-triage",
+      "title": "Bank Reconciliation Exception Triage",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "finance",
+        "bank-reconciliation",
+        "treasury",
+        "month-end-close"
+      ],
+      "outcome": "Proposed matches with explicit logic, a categorised remainder (book / carry / investigate), and draft journals for fees — cutting manual matching time sharply.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "45 minutes",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/bank-reconciliation-exception-triage/"
+    },
+    {
+      "id": 236,
+      "slug": "fixed-asset-register-vs-gl-tie-out",
+      "title": "Fixed Asset Register vs GL Tie-Out",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "fixed-assets",
+        "reconciliation",
+        "audit"
+      ],
+      "outcome": "An audit-ready fixed asset tie-out schedule with roll-forward proof and each difference attributed to a specific transaction type.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "1-2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/fixed-asset-register-vs-gl-tie-out/"
+    },
+    {
+      "id": 237,
+      "slug": "payroll-to-gl-reconciliation-checker",
+      "title": "Payroll-to-GL Reconciliation Checker",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "payroll",
+        "reconciliation",
+        "month-end-close"
+      ],
+      "outcome": "A component-by-component payroll tie-out with clearing-account proof, accrual consistency check, and a close-ready checklist splitting HR vs accounting follow-ups.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/payroll-to-gl-reconciliation-checker/"
+    },
+    {
+      "id": 238,
+      "slug": "finance-sop-generator-from-a-process-interview",
+      "title": "Finance SOP Generator from a Process Interview",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "finance",
+        "process-documentation",
+        "sop",
+        "internal-controls"
+      ],
+      "outcome": "A formal, control-aware SOP plus a one-page quick reference, with ambiguities surfaced as questions instead of invented steps.",
+      "tools": [
+        "Claude",
+        "Word"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/finance-sop-generator-from-a-process-interview/"
+    },
+    {
+      "id": 239,
+      "slug": "month-end-close-calendar-raci-builder",
+      "title": "Month-End Close Calendar & RACI Builder",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "month-end-close",
+        "process-design",
+        "raci"
+      ],
+      "outcome": "A dependency-aware close calendar, RACI for core tasks, the identified critical path with the three highest-leverage changes, and a stand-up template.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/month-end-close-calendar-raci-builder/"
+    },
+    {
+      "id": 240,
+      "slug": "as-is-to-be-process-map-designer",
+      "title": "As-Is / To-Be Process Map Designer",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "process-design",
+        "process-mapping",
+        "automation"
+      ],
+      "outcome": "Paste-ready as-is and to-be Mermaid flowcharts, waste annotations, tagged automation candidates, and a pilot-first recommendation with impact estimates.",
+      "tools": [
+        "Claude",
+        "Mermaid",
+        "Miro"
+      ],
+      "est_time": "1-2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/as-is-to-be-process-map-designer/"
+    },
+    {
+      "id": 241,
+      "slug": "sox-control-narrative-test-script-writer",
+      "title": "SOX Control Narrative & Test Script Writer",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "finance",
+        "sox",
+        "internal-controls",
+        "audit"
+      ],
+      "outcome": "Audit-standard control narrative, walkthrough question set, a complete OE test script with sampling logic, and a deficiency/remediation playbook.",
+      "tools": [
+        "Claude",
+        "Word"
+      ],
+      "est_time": "2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/sox-control-narrative-test-script-writer/"
+    },
+    {
+      "id": 242,
+      "slug": "finance-policy-drafter-t-e-delegation-of-authority",
+      "title": "Finance Policy Drafter (T&E, Delegation of Authority)",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "finance",
+        "policy",
+        "governance",
+        "t&e"
+      ],
+      "outcome": "A complete, enforceable policy draft with threshold matrix and exception process, plus a flagged list of local-law items to verify rather than invented specifics.",
+      "tools": [
+        "Claude",
+        "Word"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/finance-policy-drafter-t-e-delegation-of-authority/"
+    },
+    {
+      "id": 243,
+      "slug": "desktop-procedure-dtp-writer-from-a-walkthrough-transcript",
+      "title": "Desktop Procedure (DTP) Writer from a Walkthrough Transcript",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "finance",
+        "process-documentation",
+        "dtp",
+        "business-continuity"
+      ],
+      "outcome": "A vacation-proof desktop procedure with checkpoints and failure branches, honest [VERIFY] marks where the source was unclear.",
+      "tools": [
+        "Claude",
+        "Word"
+      ],
+      "est_time": "30 minutes",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/desktop-procedure-dtp-writer-from-a-walkthrough-transcript/"
+    },
+    {
+      "id": 244,
+      "slug": "process-mining-readiness-event-log-specification",
+      "title": "Process Mining Readiness: Event Log Specification",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "finance",
+        "process-mining",
+        "procure-to-pay",
+        "data-engineering"
+      ],
+      "outcome": "A complete event-log specification with case ID rationale, per-activity extraction logic, data-quality trap list, and the first five analyses to run.",
+      "tools": [
+        "Claude",
+        "Celonis",
+        "Python"
+      ],
+      "est_time": "3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/process-mining-readiness-event-log-specification/"
+    },
+    {
+      "id": 245,
+      "slug": "customer-credit-limit-review-memo",
+      "title": "Customer Credit Limit Review Memo",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "credit-management",
+        "order-to-cash",
+        "risk"
+      ],
+      "outcome": "A credit analysis with concentration math and a committee-ready one-page memo containing a clear conditional recommendation.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "45 minutes",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/customer-credit-limit-review-memo/"
+    },
+    {
+      "id": 246,
+      "slug": "three-way-match-exception-resolver",
+      "title": "Three-Way Match Exception Resolver",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "accounts-payable",
+        "procure-to-pay",
+        "three-way-match"
+      ],
+      "outcome": "A classified exception worklist with owner and resolution per item, repeat-offender vendor analysis, and quick-wins sorted first.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/three-way-match-exception-resolver/"
+    },
+    {
+      "id": 247,
+      "slug": "duplicate-payment-detection-sweep",
+      "title": "Duplicate Payment Detection Sweep",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "finance",
+        "accounts-payable",
+        "duplicate-payments",
+        "audit"
+      ],
+      "outcome": "A scored duplicate-payment hit list with recurring-charge false positives excluded, recovery letters drafted, and preventive controls mapped to actual findings.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/duplicate-payment-detection-sweep/"
+    },
+    {
+      "id": 248,
+      "slug": "payment-run-pre-flight-review",
+      "title": "Payment Run Pre-Flight Review",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "finance",
+        "payments",
+        "fraud-prevention",
+        "treasury"
+      ],
+      "outcome": "A line-by-line go/no-go with reasons, catching bank-detail fraud signals, threshold-splitting, and early-payment leakage before money leaves.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "20 minutes",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/payment-run-pre-flight-review/"
+    },
+    {
+      "id": 249,
+      "slug": "contract-to-invoice-billing-leakage-audit",
+      "title": "Contract-to-Invoice Billing Leakage Audit",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "finance",
+        "revenue-assurance",
+        "billing",
+        "order-to-cash"
+      ],
+      "outcome": "A quantified billing-leakage report with per-cause breakdown, recovery ranking, drafted correction letters, and a proposed recurring control.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/contract-to-invoice-billing-leakage-audit/"
+    },
+    {
+      "id": 250,
+      "slug": "monte-carlo-risk-simulator-for-the-annual-budget-python",
+      "title": "Monte Carlo Risk Simulator for the Annual Budget (Python)",
+      "category": "finance",
+      "difficulty": "expert",
+      "tags": [
+        "finance",
+        "monte-carlo",
+        "scenario-planning",
+        "python"
+      ],
+      "outcome": "A runnable, config-driven Monte Carlo script with justified distributions and correlations, P10/P50/P90 outputs, tornado analysis, and concrete risk buy-down advice.",
+      "tools": [
+        "Claude Code",
+        "Python",
+        "Excel"
+      ],
+      "est_time": "Half a day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/monte-carlo-risk-simulator-for-the-annual-budget-python/"
+    },
+    {
+      "id": 251,
+      "slug": "s-op-finance-review-pack",
+      "title": "S&OP Finance Review Pack",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "s&op",
+        "fp&a",
+        "supply-chain-finance"
+      ],
+      "outcome": "A finance translation of the S&OP volume plan with plan-vs-forecast disconnects exposed and a decision-oriented five-slide outline.",
+      "tools": [
+        "Claude",
+        "Excel",
+        "PowerPoint"
+      ],
+      "est_time": "2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/s-op-finance-review-pack/"
+    },
+    {
+      "id": 252,
+      "slug": "shared-services-chargeback-model",
+      "title": "Shared Services Chargeback Model",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "shared-services",
+        "chargeback",
+        "cost-allocation"
+      ],
+      "outcome": "Unit-rate math per service, a three-model comparison scored on fairness/stability/gaming, a recommendation with transition path, and a drafted service catalog.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "2-3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/shared-services-chargeback-model/"
+    },
+    {
+      "id": 253,
+      "slug": "flux-analysis-for-external-audit",
+      "title": "Flux Analysis for External Audit",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "finance",
+        "audit",
+        "flux-analysis",
+        "year-end"
+      ],
+      "outcome": "An audit-ready flux schedule where every explanation is quantified and residual unexplained amounts are surfaced instead of papered over.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "1-2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/flux-analysis-for-external-audit/"
+    },
+    {
+      "id": 208,
+      "slug": "invoice-coding-ai-agent",
+      "title": "Invoice Coding AI Agent",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "ai-agents",
+        "invoice-processing",
+        "automation",
+        "finance-operations"
+      ],
+      "outcome": "A touchless invoice coding pipeline where AI makes routine coding decisions and only exceptions reach humans — cutting processing time by 70-90%.",
+      "tools": [
+        "SAP",
+        "RPA",
+        "Python",
+        "ERP"
+      ],
+      "est_time": "2-3 days",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/invoice-coding-ai-agent/"
+    },
+    {
+      "id": 209,
+      "slug": "genai-employee-assistant-for-hr-admin",
+      "title": "GenAI Employee Assistant for HR & Admin",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "genai",
+        "employee-assistant",
+        "hr-automation",
+        "self-service"
+      ],
+      "outcome": "A 24/7 AI assistant that handles 60-80% of routine employee queries without human intervention, freeing HR and IT for strategic work.",
+      "tools": [
+        "ChatGPT",
+        "Teams",
+        "Workday",
+        "SAP",
+        "Notion"
+      ],
+      "est_time": "1-2 weeks",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/genai-employee-assistant-for-hr-admin/"
+    },
+    {
+      "id": 210,
+      "slug": "data-first-ai-strategy-for-fp-a",
+      "title": "Data-First AI Strategy for FP&A",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "data-strategy",
+        "data-governance",
+        "fpna-transformation",
+        "ai-readiness"
+      ],
+      "outcome": "A documented data strategy with clean, governed data that enables AI-powered forecasting, automated reporting, and real-time analytics.",
+      "tools": [
+        "Excel",
+        "Power BI",
+        "SAP",
+        "Python",
+        "Data Warehouse"
+      ],
+      "est_time": "4-8 weeks",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/data-first-ai-strategy-for-fp-a/"
+    },
+    {
+      "id": 211,
+      "slug": "ai-transformation-change-management-playbook",
+      "title": "AI Transformation Change Management Playbook",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "change-management",
+        "ai-adoption",
+        "training",
+        "fpna-team"
+      ],
+      "outcome": "A structured change program that moves the FP&A team from skepticism to confident AI use, with measurable adoption rates and productivity gains.",
+      "tools": [
+        "Teams",
+        "PowerPoint",
+        "Notion",
+        "Excel"
+      ],
+      "est_time": "2-4 weeks",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-transformation-change-management-playbook/"
+    },
+    {
+      "id": 198,
+      "slug": "driver-based-rolling-forecast-builder",
+      "title": "Driver-Based Rolling Forecast Builder",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "FP&A",
+        "forecasting",
+        "driver-based",
+        "Excel"
+      ],
+      "outcome": "A documented driver-based rolling forecast with formulas, assumptions, and a sensitivity table you can drop into Excel.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "45 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/driver-based-rolling-forecast-builder/"
+    },
+    {
+      "id": 199,
+      "slug": "budget-vs-actuals-variance-commentary-writer",
+      "title": "Budget vs Actuals Variance Commentary Writer",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "FP&A",
+        "variance analysis",
+        "management reporting",
+        "commentary"
+      ],
+      "outcome": "Board-ready variance commentary that explains the 'why' behind each material movement, not just the numbers.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/budget-vs-actuals-variance-commentary-writer/"
+    },
+    {
+      "id": 200,
+      "slug": "13-week-cash-flow-forecast-scenario-planner",
+      "title": "13-Week Cash Flow Forecast & Scenario Planner",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "cash flow",
+        "treasury",
+        "13-week",
+        "scenario planning"
+      ],
+      "outcome": "A 13-week direct cash flow forecast structure with scenario toggles and an early-warning liquidity view.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/13-week-cash-flow-forecast-scenario-planner/"
+    },
+    {
+      "id": 202,
+      "slug": "master-data-golden-record-dedup-ruleset",
+      "title": "Master Data Golden Record & Dedup Ruleset",
+      "category": "data-analytics",
+      "difficulty": "advanced",
+      "tags": [
+        "master data",
+        "MDM",
+        "deduplication",
+        "data quality"
+      ],
+      "outcome": "A concrete matching, survivorship, and golden-record ruleset for cleaning a customer or vendor master.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "40 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/master-data-golden-record-dedup-ruleset/"
+    },
+    {
+      "id": 205,
+      "slug": "standard-operating-procedure-sop-writer",
+      "title": "Standard Operating Procedure (SOP) Writer",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "SOP",
+        "process documentation",
+        "operations",
+        "procedures"
+      ],
+      "outcome": "A clear, step-by-step SOP with roles, prerequisites, and checks that a new hire could follow unaided.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/standard-operating-procedure-sop-writer/"
+    },
+    {
+      "id": 201,
+      "slug": "three-statement-model-integrity-checker",
+      "title": "Three-Statement Model Integrity Checker",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "financial modeling",
+        "three-statement",
+        "audit",
+        "Excel"
+      ],
+      "outcome": "A structured audit of your 3-statement model that catches broken links, plugs, and assumptions that don't tie.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/three-statement-model-integrity-checker/"
+    },
+    {
+      "id": 203,
+      "slug": "data-quality-audit-cleansing-plan",
+      "title": "Data Quality Audit & Cleansing Plan",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "data quality",
+        "data cleansing",
+        "governance",
+        "analytics"
+      ],
+      "outcome": "A prioritized data quality assessment across the six core dimensions with a concrete cleansing backlog.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/data-quality-audit-cleansing-plan/"
+    },
+    {
+      "id": 206,
+      "slug": "process-map-raci-builder",
+      "title": "Process Map & RACI Builder",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "process mapping",
+        "RACI",
+        "workflow",
+        "operations"
+      ],
+      "outcome": "A clean end-to-end process map (as steps/swimlanes) plus a RACI matrix that exposes handoffs and gaps.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/process-map-raci-builder/"
+    },
+    {
+      "id": 204,
+      "slug": "master-data-governance-policy-drafter",
+      "title": "Master Data Governance Policy Drafter",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "data governance",
+        "master data",
+        "policy",
+        "RACI"
+      ],
+      "outcome": "A right-sized master data governance policy: ownership, standards, workflows, and KPIs your team will actually follow.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "35 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/master-data-governance-policy-drafter/"
+    },
+    {
+      "id": 207,
+      "slug": "internal-control-procedure-gap-assessment",
+      "title": "Internal Control & Procedure Gap Assessment",
+      "category": "productivity",
+      "difficulty": "advanced",
+      "tags": [
+        "internal controls",
+        "risk",
+        "segregation of duties",
+        "audit"
+      ],
+      "outcome": "A risk-based review of a process that pinpoints missing controls, segregation-of-duties issues, and audit-readiness gaps.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "35 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/internal-control-procedure-gap-assessment/"
+    },
+    {
+      "id": 195,
+      "slug": "ai-industry-weekly-briefing",
+      "title": "AI Industry Weekly Briefing",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "AI market",
+        "strategy",
+        "weekly-brief",
+        "news"
+      ],
+      "outcome": "A 400-word executive briefing with 5 structured sections ready to share with a leadership team.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-industry-weekly-briefing/"
+    },
+    {
+      "id": 196,
+      "slug": "ai-company-valuation-analysis",
+      "title": "AI Company Valuation Analysis",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "AI market",
+        "valuation",
+        "investment",
+        "strategy"
+      ],
+      "outcome": "A structured valuation memo with revenue multiples, bull/bear assumptions, and a clear verdict.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-company-valuation-analysis/"
+    },
+    {
+      "id": 197,
+      "slug": "ai-adoption-gap-analysis-for-my-business",
+      "title": "AI Adoption Gap Analysis for My Business",
+      "category": "research",
+      "difficulty": "beginner",
+      "tags": [
+        "AI adoption",
+        "business",
+        "ROI",
+        "quick-wins"
+      ],
+      "outcome": "A personalised AI adoption roadmap with 5 ranked use cases, tools, timelines, and one same-day quick win.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-adoption-gap-analysis-for-my-business/"
+    },
+    {
+      "id": 180,
+      "slug": "m-a-due-diligence-data-room-analyser",
+      "title": "M&A Due Diligence Data Room Analyser",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "m&a",
+        "due-diligence",
+        "corporate-finance",
+        "deal"
+      ],
+      "outcome": "A structured issues log with severity ratings, a normalised P&L bridging management accounts to quality-of-earnings, and a list of information requests for the next data room round.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/m-a-due-diligence-data-room-analyser/"
+    },
+    {
+      "id": 181,
+      "slug": "earnings-call-prep-analyst-q-a-simulator",
+      "title": "Earnings Call Prep & Analyst Q&A Simulator",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "earnings",
+        "investor-relations",
+        "cfo",
+        "communications"
+      ],
+      "outcome": "A ready-to-rehearse earnings call script with CEO and CFO remarks, 10 stress-tested Q&A pairs with legal-safe framing, and three proactive narrative insertions.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "2-3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/earnings-call-prep-analyst-q-a-simulator/"
+    },
+    {
+      "id": 182,
+      "slug": "zero-based-budget-line-item-challenger",
+      "title": "Zero-Based Budget Line-Item Challenger",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "zero-based-budget",
+        "zbb",
+        "cost-reduction",
+        "budgeting"
+      ],
+      "outcome": "A ZBB decision table with eliminate / halve / approve recommendations for every line above threshold, with benchmarks and challenge rationale — typically identifies 15–25% addressable savings.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/zero-based-budget-line-item-challenger/"
+    },
+    {
+      "id": 183,
+      "slug": "revenue-recognition-risk-screener-asc-606-ifrs-15",
+      "title": "Revenue Recognition Risk Screener (ASC 606 / IFRS 15)",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "revenue-recognition",
+        "asc606",
+        "ifrs15",
+        "accounting"
+      ],
+      "outcome": "A performance-obligation schedule with SSP allocations, a variable-consideration assessment, and a recommended journal entry template — with a complexity flag for items needing external specialist review.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "2-4 hours per contract",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/revenue-recognition-risk-screener-asc-606-ifrs-15/"
+    },
+    {
+      "id": 184,
+      "slug": "cfo-board-pack-builder",
+      "title": "CFO Board Pack Builder",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "board-pack",
+        "cfo",
+        "reporting",
+        "governance"
+      ],
+      "outcome": "A ready-to-paste CFO board narrative, EBITDA bridge table, five board Q&A pairs, and a CEO forward-looking statement — from raw financials in under an hour.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "1-2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/cfo-board-pack-builder/"
+    },
+    {
+      "id": 185,
+      "slug": "working-capital-optimisation-playbook",
+      "title": "Working Capital Optimisation Playbook",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "working-capital",
+        "cash-flow",
+        "dso",
+        "dpo"
+      ],
+      "outcome": "A benchmarked CCC analysis with quantified cash-release potential (typically 3–8% of revenue) and a prioritised 12-month improvement roadmap with owner and estimated impact by quarter.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/working-capital-optimisation-playbook/"
+    },
+    {
+      "id": 186,
+      "slug": "treasury-fx-exposure-hedging-strategy-brief",
+      "title": "Treasury FX Exposure & Hedging Strategy Brief",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "fx",
+        "hedging",
+        "treasury",
+        "ifrs9"
+      ],
+      "outcome": "A net exposure schedule by currency, an instrument recommendation with cost comparison, an IFRS 9 hedge designation narrative, and a P&L sensitivity table — ready for board or audit committee review.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/treasury-fx-exposure-hedging-strategy-brief/"
+    },
+    {
+      "id": 187,
+      "slug": "debt-covenant-compliance-monitor",
+      "title": "Debt Covenant Compliance Monitor",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "covenants",
+        "debt",
+        "lenders",
+        "compliance"
+      ],
+      "outcome": "A covenant dashboard with RAG status, a lender-ready compliance certificate narrative, a break-even EBITDA table, and three specific headroom-improvement actions.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "2-3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/debt-covenant-compliance-monitor/"
+    },
+    {
+      "id": 188,
+      "slug": "private-equity-portfolio-kpi-roll-up-board-memo",
+      "title": "Private Equity Portfolio KPI Roll-Up & Board Memo",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "private-equity",
+        "portfolio-monitoring",
+        "gp-lp",
+        "fund"
+      ],
+      "outcome": "A fund-level dashboard with live MOIC and IRR per company, a traffic-light flags table, top 2 value-creation and risk items, and a GP board narrative ready for LP distribution.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/private-equity-portfolio-kpi-roll-up-board-memo/"
+    },
+    {
+      "id": 189,
+      "slug": "month-end-close-accelerator",
+      "title": "Month-End Close Accelerator",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "month-end-close",
+        "controller",
+        "accounting",
+        "automation"
+      ],
+      "outcome": "A benchmarked close gap analysis, root-cause map, 30-60-90 day roadmap with quick wins, and a journal entry review checklist — typically reduces close cycle by 1-2 days in 90 days.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "2-3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/month-end-close-accelerator/"
+    },
+    {
+      "id": 190,
+      "slug": "transfer-pricing-documentation-assistant",
+      "title": "Transfer Pricing Documentation Assistant",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "transfer-pricing",
+        "tax",
+        "beps",
+        "international-tax"
+      ],
+      "outcome": "A Local File functional analysis narrative, a documentation gap assessment, recommended benchmark criteria, and an audit-risk ranking — typically covering 80% of a TP documentation sprint in one session.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Half-day per transaction",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/transfer-pricing-documentation-assistant/"
+    },
+    {
+      "id": 191,
+      "slug": "esg-csrd-disclosure-writer",
+      "title": "ESG / CSRD Disclosure Writer",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "esg",
+        "csrd",
+        "tcfd",
+        "sustainability"
+      ],
+      "outcome": "A TCFD climate risk narrative, GRI 305 emissions table, CSRD ESRS E1 KPI table, a data-gap log, and three credible target proposals — covering the core of a first CSRD report in one session.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/esg-csrd-disclosure-writer/"
+    },
+    {
+      "id": 192,
+      "slug": "commercial-lending-credit-memo-writer",
+      "title": "Commercial Lending Credit Memo Writer",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "credit",
+        "lending",
+        "banking",
+        "credit-memo"
+      ],
+      "outcome": "A full credit memo with executive recommendation, 5-section risk analysis, ratio table, and proposed covenant package — covering the core of a credit application in 2-3 hours rather than 2 days.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "2-3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/commercial-lending-credit-memo-writer/"
+    },
+    {
+      "id": 193,
+      "slug": "investor-relations-q-a-library-builder",
+      "title": "Investor Relations Q&A Library Builder",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "investor-relations",
+        "ir",
+        "q&a",
+        "earnings"
+      ],
+      "outcome": "A 40-question IR Q&A library with short-form and long-form answers, a 'weak answers' improvement list, a consistency check across past guidance, and three narrative update drafts for investor day.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/investor-relations-q-a-library-builder/"
+    },
+    {
+      "id": 194,
+      "slug": "mid-year-budget-reforecast-automation",
+      "title": "Mid-Year Budget Reforecast Automation",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "reforecast",
+        "fp&a",
+        "budget",
+        "scenario-planning"
+      ],
+      "outcome": "A base/bear/bull reforecast with H2 bridge, a 3-risk P&L table with quantified impact, a CFO-ready reforecast narrative, and flagged budget lines that H1 actuals make unachievable.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Half-day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/mid-year-budget-reforecast-automation/"
+    },
+    {
+      "id": 150,
+      "slug": "write-unit-tests",
+      "title": "Write Unit Tests",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "testing",
+        "unit-tests",
+        "tdd",
+        "quality"
+      ],
+      "outcome": "A complete runnable test file with happy-path, edge-case, and error tests covering 90%+ of branches.",
+      "tools": [
+        "Claude",
+        "ChatGPT",
+        "GitHub Copilot"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-unit-tests/"
+    },
+    {
+      "id": 151,
+      "slug": "code-review-checklist",
+      "title": "Code Review Checklist",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "code-review",
+        "pull-request",
+        "quality",
+        "security"
+      ],
+      "outcome": "A structured review report with categorized issues, risk levels, and actionable fix suggestions.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/code-review-checklist/"
+    },
+    {
+      "id": 152,
+      "slug": "debug-this-error",
+      "title": "Debug This Error",
+      "category": "coding",
+      "difficulty": "beginner",
+      "tags": [
+        "debugging",
+        "error-handling",
+        "stack-trace",
+        "troubleshooting"
+      ],
+      "outcome": "Plain-English explanation of the error, ranked root causes, a concrete code fix, and prevention tips.",
+      "tools": [
+        "Claude",
+        "ChatGPT",
+        "GitHub Copilot"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/debug-this-error/"
+    },
+    {
+      "id": 153,
+      "slug": "design-a-rest-api",
+      "title": "Design a REST API",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "api-design",
+        "rest",
+        "backend",
+        "architecture"
+      ],
+      "outcome": "A complete REST API spec with endpoints, schemas, auth, error codes, and design recommendations.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/design-a-rest-api/"
+    },
+    {
+      "id": 154,
+      "slug": "sql-query-builder",
+      "title": "SQL Query Builder",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "sql",
+        "database",
+        "query",
+        "analytics"
+      ],
+      "outcome": "A complete, commented SQL query with index recommendations, complexity rating, and correctness warnings.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/sql-query-builder/"
+    },
+    {
+      "id": 155,
+      "slug": "docker-setup",
+      "title": "Docker Setup",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "docker",
+        "devops",
+        "containerization",
+        "docker-compose"
+      ],
+      "outcome": "A production-ready Dockerfile, docker-compose.yml, .dockerignore, and .env.example with explanatory comments.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/docker-setup/"
+    },
+    {
+      "id": 156,
+      "slug": "refactor-legacy-code",
+      "title": "Refactor Legacy Code",
+      "category": "coding",
+      "difficulty": "advanced",
+      "tags": [
+        "refactoring",
+        "legacy-code",
+        "modernization",
+        "clean-code"
+      ],
+      "outcome": "Refactored code with a change log, behavior-change warnings, remaining tech debt list, and follow-up suggestions.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/refactor-legacy-code/"
+    },
+    {
+      "id": 157,
+      "slug": "security-code-audit",
+      "title": "Security Code Audit",
+      "category": "coding",
+      "difficulty": "advanced",
+      "tags": [
+        "security",
+        "owasp",
+        "audit",
+        "vulnerability"
+      ],
+      "outcome": "A prioritized vulnerability report with severity ratings, attack scenarios, and remediation code for each finding.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/security-code-audit/"
+    },
+    {
+      "id": 158,
+      "slug": "write-api-documentation",
+      "title": "Write API Documentation",
+      "category": "coding",
+      "difficulty": "beginner",
+      "tags": [
+        "documentation",
+        "api",
+        "openapi",
+        "developer-experience"
+      ],
+      "outcome": "Complete API documentation in the chosen format with examples, error codes, and a Quick Start section.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-api-documentation/"
+    },
+    {
+      "id": 159,
+      "slug": "database-schema-design",
+      "title": "Database Schema Design",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "database",
+        "schema-design",
+        "sql",
+        "postgresql"
+      ],
+      "outcome": "Production-ready CREATE TABLE statements, ER description, index recommendations, and scale risk warnings.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/database-schema-design/"
+    },
+    {
+      "id": 160,
+      "slug": "git-commit-message",
+      "title": "Git Commit Message",
+      "category": "coding",
+      "difficulty": "beginner",
+      "tags": [
+        "git",
+        "commit",
+        "conventional-commits",
+        "version-control"
+      ],
+      "outcome": "A Conventional Commits-compliant commit message with body, footer, and two alternative subject lines.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "2 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/git-commit-message/"
+    },
+    {
+      "id": 161,
+      "slug": "system-design-interview",
+      "title": "System Design Interview",
+      "category": "coding",
+      "difficulty": "advanced",
+      "tags": [
+        "system-design",
+        "architecture",
+        "scalability",
+        "interview"
+      ],
+      "outcome": "A complete system design walkthrough with capacity estimates, architecture decisions, trade-offs, and follow-up questions.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/system-design-interview/"
+    },
+    {
+      "id": 162,
+      "slug": "performance-optimization",
+      "title": "Performance Optimization",
+      "category": "coding",
+      "difficulty": "advanced",
+      "tags": [
+        "performance",
+        "optimization",
+        "profiling",
+        "scalability"
+      ],
+      "outcome": "Ranked list of bottlenecks with optimized code, complexity analysis, and measurement recommendations.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/performance-optimization/"
+    },
+    {
+      "id": 163,
+      "slug": "write-a-readme",
+      "title": "Write a README",
+      "category": "coding",
+      "difficulty": "beginner",
+      "tags": [
+        "documentation",
+        "readme",
+        "open-source",
+        "developer-experience"
+      ],
+      "outcome": "A complete, well-structured README.md that lets a new developer go from zero to running the project in under 10 minutes.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-a-readme/"
+    },
+    {
+      "id": 164,
+      "slug": "tech-stack-selection",
+      "title": "Tech Stack Selection",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "tech-stack",
+        "architecture",
+        "decision-making",
+        "engineering"
+      ],
+      "outcome": "An opinionated stack recommendation per layer with justifications, alternatives, things to avoid, and key open questions.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/tech-stack-selection/"
+    },
+    {
+      "id": 165,
+      "slug": "case-study-writer",
+      "title": "Case Study Writer",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "case-study",
+        "content-marketing",
+        "copywriting",
+        "b2b"
+      ],
+      "outcome": "A 600–800 word case study with headline, challenge/solution/results structure, pull quote, and CTA.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/case-study-writer/"
+    },
+    {
+      "id": 166,
+      "slug": "technical-blog-post",
+      "title": "Technical Blog Post",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "seo",
+        "blog",
+        "content-marketing",
+        "technical-writing"
+      ],
+      "outcome": "An SEO-ready outline, hook introduction, meta description, and differentiation strategy for a technical blog post.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/technical-blog-post/"
+    },
+    {
+      "id": 167,
+      "slug": "product-changelog",
+      "title": "Product Changelog",
+      "category": "writing",
+      "difficulty": "beginner",
+      "tags": [
+        "changelog",
+        "release-notes",
+        "product-writing",
+        "communication"
+      ],
+      "outcome": "A polished user-facing changelog grouped by change type with benefit-focused language and a highlights summary.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/product-changelog/"
+    },
+    {
+      "id": 168,
+      "slug": "job-description",
+      "title": "Job Description",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "recruiting",
+        "hr",
+        "job-description",
+        "hiring"
+      ],
+      "outcome": "A structured, bias-reduced job description with impact-focused summary, responsibilities, requirements, and benefits.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/job-description/"
+    },
+    {
+      "id": 169,
+      "slug": "internal-announcement",
+      "title": "Internal Announcement",
+      "category": "writing",
+      "difficulty": "beginner",
+      "tags": [
+        "internal-comms",
+        "memo",
+        "announcement",
+        "leadership"
+      ],
+      "outcome": "A complete internal announcement with clear news statement, context, employee impact, FAQ, and next steps.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/internal-announcement/"
+    },
+    {
+      "id": 170,
+      "slug": "exploratory-data-analysis-plan",
+      "title": "Exploratory Data Analysis Plan",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "eda",
+        "data-analysis",
+        "pandas",
+        "python"
+      ],
+      "outcome": "A step-by-step EDA plan with code snippets, a data quality scorecard, and 3 targeted analyses for the business question.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/exploratory-data-analysis-plan/"
+    },
+    {
+      "id": 171,
+      "slug": "kpi-dashboard-design",
+      "title": "KPI Dashboard Design",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "kpi",
+        "dashboard",
+        "business-intelligence",
+        "metrics"
+      ],
+      "outcome": "A complete KPI hierarchy with formulas, sources, targets, layout recommendation, and vanity-metric warnings.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/kpi-dashboard-design/"
+    },
+    {
+      "id": 172,
+      "slug": "a-b-test-design",
+      "title": "A/B Test Design",
+      "category": "data-analytics",
+      "difficulty": "advanced",
+      "tags": [
+        "ab-testing",
+        "experimentation",
+        "statistics",
+        "product-analytics"
+      ],
+      "outcome": "A complete experiment design with sample size, duration, randomization unit, decision framework, and validity threats.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/a-b-test-design/"
+    },
+    {
+      "id": 173,
+      "slug": "customer-churn-analysis",
+      "title": "Customer Churn Analysis",
+      "category": "data-analytics",
+      "difficulty": "advanced",
+      "tags": [
+        "churn",
+        "retention",
+        "customer-analytics",
+        "saas"
+      ],
+      "outcome": "A churn archetype framework, leading indicators, retention playbook per segment, and a 90-day analytics roadmap.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/customer-churn-analysis/"
+    },
+    {
+      "id": 174,
+      "slug": "anomaly-detection-strategy",
+      "title": "Anomaly Detection Strategy",
+      "category": "data-analytics",
+      "difficulty": "advanced",
+      "tags": [
+        "anomaly-detection",
+        "time-series",
+        "statistics",
+        "monitoring"
+      ],
+      "outcome": "A complete anomaly detection strategy with algorithm recommendation, baseline approach, alert design, and implementation steps.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/anomaly-detection-strategy/"
+    },
+    {
+      "id": 175,
+      "slug": "weekly-review",
+      "title": "Weekly Review",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "weekly-review",
+        "productivity",
+        "planning",
+        "reflection"
+      ],
+      "outcome": "A week-in-review narrative, 3 learnings, a day-blocked task list for next week, and one thing to drop.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/weekly-review/"
+    },
+    {
+      "id": 176,
+      "slug": "meeting-agenda",
+      "title": "Meeting Agenda",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "meeting",
+        "agenda",
+        "facilitation",
+        "productivity"
+      ],
+      "outcome": "A complete meeting package: pre-meeting checklist, time-boxed agenda, key questions, and follow-up template.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/meeting-agenda/"
+    },
+    {
+      "id": 177,
+      "slug": "decision-matrix",
+      "title": "Decision Matrix",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "decision-making",
+        "decision-matrix",
+        "frameworks",
+        "strategy"
+      ],
+      "outcome": "A weighted decision matrix with scores, sensitivity analysis, steelman arguments, and a recommended decision with rationale.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/decision-matrix/"
+    },
+    {
+      "id": 178,
+      "slug": "learning-roadmap",
+      "title": "Learning Roadmap",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "learning",
+        "skill-development",
+        "roadmap",
+        "career"
+      ],
+      "outcome": "A 90-day structured roadmap with weekly schedule, curated resources, a portfolio project, and minimum viable competency definition.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/learning-roadmap/"
+    },
+    {
+      "id": 179,
+      "slug": "project-kickoff-brief",
+      "title": "Project Kickoff Brief",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "project-management",
+        "kickoff",
+        "planning",
+        "team"
+      ],
+      "outcome": "A complete kickoff brief with success criteria, scope, milestone plan, RACI, risk register, and first-week actions.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/project-kickoff-brief/"
+    },
+    {
+      "id": 98,
+      "slug": "ai-amplifier-readiness-assessment",
+      "title": "AI Amplifier Readiness Assessment",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "ai-strategy",
+        "fpna",
+        "readiness",
+        "governance"
+      ],
+      "outcome": "A structured readiness report identifying which processes will amplify good outcomes vs. which will amplify existing problems — with a prioritised action list before rolling out AI tools.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "45 minutes",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-amplifier-readiness-assessment/"
+    },
+    {
+      "id": 99,
+      "slug": "second-order-effects-analysis-for-ai-automation",
+      "title": "Second-Order Effects Analysis for AI Automation",
+      "category": "research",
+      "difficulty": "advanced",
+      "tags": [
+        "ai-strategy",
+        "second-order",
+        "systems-thinking",
+        "governance"
+      ],
+      "outcome": "A structured analysis of what will break at scale when a proposed AI automation goes live — covering review bottlenecks, testing load, version control, API surface, cost curves, and intellectual control.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/second-order-effects-analysis-for-ai-automation/"
+    },
+    {
+      "id": 100,
+      "slug": "calculadora-de-pix-para-pequenos-negocios",
+      "title": "Calculadora de Pix para Pequenos Negócios",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "pix",
+        "brasil",
+        "finanças",
+        "mei"
+      ],
+      "outcome": "Um resumo claro dos fluxos de Pix do negócio, identificando os horários de pico, limites relevantes e recomendações para otimizar o caixa.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/calculadora-de-pix-para-pequenos-negocios/"
+    },
+    {
+      "id": 101,
+      "slug": "guia-de-abertura-de-mei-com-ia",
+      "title": "Guia de Abertura de MEI com IA",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "mei",
+        "brasil",
+        "empreendedorismo",
+        "cnpj"
+      ],
+      "outcome": "Um guia passo a passo personalizado para abrir o MEI, com enquadramento de CNAE, obrigações mensais e dicas de gestão financeira.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/guia-de-abertura-de-mei-com-ia/"
+    },
+    {
+      "id": 102,
+      "slug": "otimizador-de-declaracao-do-imposto-de-renda-irpf",
+      "title": "Otimizador de Declaração do Imposto de Renda (IRPF)",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "irpf",
+        "imposto de renda",
+        "brasil",
+        "finanças"
+      ],
+      "outcome": "Uma análise comparativa entre declaração simplificada e completa, com lista personalizada de deduções e alertas de malha fina.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/otimizador-de-declaracao-do-imposto-de-renda-irpf/"
+    },
+    {
+      "id": 103,
+      "slug": "analise-fundamentalista-de-acoes-na-b3",
+      "title": "Análise Fundamentalista de Ações na B3",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "b3",
+        "ações",
+        "brasil",
+        "investimentos"
+      ],
+      "outcome": "Uma análise fundamentalista completa de uma ação, com avaliação de indicadores financeiros, riscos setoriais e comparação com pares.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "25 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/analise-fundamentalista-de-acoes-na-b3/"
+    },
+    {
+      "id": 104,
+      "slug": "templates-de-mensagens-para-whatsapp-business",
+      "title": "Templates de Mensagens para WhatsApp Business",
+      "category": "writing",
+      "difficulty": "beginner",
+      "tags": [
+        "whatsapp",
+        "brasil",
+        "marketing",
+        "vendas"
+      ],
+      "outcome": "Um conjunto de templates de mensagens para WhatsApp Business cobrindo boas-vindas, follow-up, confirmação de pedido, cobrança e recuperação de carrinho abandonado.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/templates-de-mensagens-para-whatsapp-business/"
+    },
+    {
+      "id": 105,
+      "slug": "checklist-de-conformidade-lgpd-para-pequenas-empresas",
+      "title": "Checklist de Conformidade LGPD para Pequenas Empresas",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "lgpd",
+        "brasil",
+        "privacidade",
+        "conformidade"
+      ],
+      "outcome": "Um diagnóstico de conformidade LGPD personalizado com checklist priorizado, políticas-chave e próximos passos para PMEs.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/checklist-de-conformidade-lgpd-para-pequenas-empresas/"
+    },
+    {
+      "id": 106,
+      "slug": "gerador-de-nota-fiscal-de-servico-nfs-e",
+      "title": "Gerador de Nota Fiscal de Serviço (NFS-e)",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "nfe",
+        "nota fiscal",
+        "brasil",
+        "iss"
+      ],
+      "outcome": "Um guia completo para emissão de NFS-e com os dados corretos, alíquotas de ISS por município e orientações para evitar erros comuns.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/gerador-de-nota-fiscal-de-servico-nfs-e/"
+    },
+    {
+      "id": 107,
+      "slug": "consultor-de-direitos-trabalhistas-clt",
+      "title": "Consultor de Direitos Trabalhistas CLT",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "clt",
+        "brasil",
+        "direitos trabalhistas",
+        "demissão"
+      ],
+      "outcome": "Uma análise clara dos direitos e obrigações trabalhistas em situações concretas, com referências à CLT e orientações sobre o que fazer.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/consultor-de-direitos-trabalhistas-clt/"
+    },
+    {
+      "id": 108,
+      "slug": "fluxo-de-caixa-para-pme-brasileira",
+      "title": "Fluxo de Caixa para PME Brasileira",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "fluxo de caixa",
+        "pme",
+        "brasil",
+        "capital de giro"
+      ],
+      "outcome": "Um modelo de fluxo de caixa estruturado para 90 dias, com identificação de ciclo financeiro, sazonalidades e recomendações para melhorar a liquidez.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/fluxo-de-caixa-para-pme-brasileira/"
+    },
+    {
+      "id": 109,
+      "slug": "pitch-deck-para-investidores-brasileiros",
+      "title": "Pitch Deck para Investidores Brasileiros",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "startup",
+        "brasil",
+        "pitch",
+        "venture capital"
+      ],
+      "outcome": "Um roteiro completo de pitch deck em 12 slides adaptado ao mercado brasileiro, com narrativa, métricas-chave e respostas às perguntas mais frequentes de investidores de VC brasileiro.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "2 horas",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/pitch-deck-para-investidores-brasileiros/"
+    },
+    {
+      "id": 110,
+      "slug": "meeting-notes-to-action-items",
+      "title": "Meeting Notes to Action Items",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "meetings",
+        "productivity",
+        "action-items",
+        "quick"
+      ],
+      "outcome": "A clean, scannable action item list extracted from raw meeting notes in under a minute.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "2 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/meeting-notes-to-action-items/"
+    },
+    {
+      "id": 111,
+      "slug": "rewrite-this-email-to-sound-more-professional",
+      "title": "Rewrite This Email to Sound More Professional",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "email",
+        "writing",
+        "professional",
+        "communication"
+      ],
+      "outcome": "A polished, professional version of your email that's cleaner and more effective.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "3 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/rewrite-this-email-to-sound-more-professional/"
+    },
+    {
+      "id": 112,
+      "slug": "write-a-compelling-blog-introduction",
+      "title": "Write a Compelling Blog Introduction",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "blog",
+        "writing",
+        "intro",
+        "content"
+      ],
+      "outcome": "Three ready-to-use blog introductions, each using a different hook approach.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-a-compelling-blog-introduction/"
+    },
+    {
+      "id": 113,
+      "slug": "one-line-tldr-for-any-article",
+      "title": "One-Line TLDR for Any Article",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "reading",
+        "summary",
+        "research",
+        "quick"
+      ],
+      "outcome": "A one-line TLDR, three key bullets, and one unanswered question — in under 30 seconds.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "1 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/one-line-tldr-for-any-article/"
+    },
+    {
+      "id": 114,
+      "slug": "prioritize-your-task-list-by-impact-and-effort",
+      "title": "Prioritize Your Task List by Impact and Effort",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "productivity",
+        "prioritization",
+        "tasks",
+        "quick"
+      ],
+      "outcome": "Your task list organized into four clear quadrants with a recommended do-first order.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "3 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/prioritize-your-task-list-by-impact-and-effort/"
+    },
+    {
+      "id": 115,
+      "slug": "turn-any-feedback-into-a-constructive-response",
+      "title": "Turn Any Feedback into a Constructive Response",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "feedback",
+        "communication",
+        "professional",
+        "mindset"
+      ],
+      "outcome": "A clear interpretation of the feedback and a professional, non-defensive draft response.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/turn-any-feedback-into-a-constructive-response/"
+    },
+    {
+      "id": 116,
+      "slug": "write-a-resume-bullet-that-shows-impact",
+      "title": "Write a Resume Bullet That Shows Impact",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "resume",
+        "career",
+        "impact",
+        "writing"
+      ],
+      "outcome": "A polished, impact-first resume bullet with a result, plus tips if you lack exact metrics.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "3 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-a-resume-bullet-that-shows-impact/"
+    },
+    {
+      "id": 117,
+      "slug": "generate-team-icebreaker-questions",
+      "title": "Generate Team Icebreaker Questions",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "team",
+        "icebreaker",
+        "meetings",
+        "remote"
+      ],
+      "outcome": "10 ready-to-use icebreaker questions tailored to your team type and tone.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "2 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/generate-team-icebreaker-questions/"
+    },
+    {
+      "id": 118,
+      "slug": "explain-a-technical-error-message-in-plain-english",
+      "title": "Explain a Technical Error Message in Plain English",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "debugging",
+        "error",
+        "developer",
+        "quick"
+      ],
+      "outcome": "A plain-English explanation of your error plus a step-by-step fix to try immediately.",
+      "tools": [
+        "Claude",
+        "ChatGPT",
+        "cursor",
+        "github-copilot"
+      ],
+      "est_time": "3 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/explain-a-technical-error-message-in-plain-english/"
+    },
+    {
+      "id": 119,
+      "slug": "simplify-a-legal-or-technical-clause",
+      "title": "Simplify a Legal or Technical Clause",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "legal",
+        "contracts",
+        "plain-language",
+        "quick"
+      ],
+      "outcome": "A plain-English breakdown of the clause: what it means, what it requires, and any gotchas.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "2 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/simplify-a-legal-or-technical-clause/"
+    },
+    {
+      "id": 120,
+      "slug": "write-5-subject-line-variants-for-an-email-campaign",
+      "title": "Write 5 Subject Line Variants for an Email Campaign",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "email",
+        "marketing",
+        "subject-line",
+        "copywriting"
+      ],
+      "outcome": "5 ready-to-test subject lines using 5 different proven copywriting techniques.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-5-subject-line-variants-for-an-email-campaign/"
+    },
+    {
+      "id": 121,
+      "slug": "write-a-cover-letter-opening-paragraph",
+      "title": "Write a Cover Letter Opening Paragraph",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "career",
+        "cover-letter",
+        "job-search",
+        "writing"
+      ],
+      "outcome": "Three differentiated cover letter openings, each with a distinct strategy.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-a-cover-letter-opening-paragraph/"
+    },
+    {
+      "id": 122,
+      "slug": "create-a-negotiation-script-for-a-salary-conversation",
+      "title": "Create a Negotiation Script for a Salary Conversation",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "salary",
+        "negotiation",
+        "career",
+        "scripts"
+      ],
+      "outcome": "A ready-to-use negotiation script with lines for the most common pushbacks.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/create-a-negotiation-script-for-a-salary-conversation/"
+    },
+    {
+      "id": 123,
+      "slug": "instant-habit-tracker-design",
+      "title": "Instant Habit Tracker Design",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "habits",
+        "productivity",
+        "health",
+        "self-improvement"
+      ],
+      "outcome": "A minimal, sustainable habit tracking system you can start using today.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/instant-habit-tracker-design/"
+    },
+    {
+      "id": 124,
+      "slug": "turn-a-wall-of-text-into-a-skimmable-summary",
+      "title": "Turn a Wall of Text into a Skimmable Summary",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "writing",
+        "formatting",
+        "readability",
+        "documents"
+      ],
+      "outcome": "Your original text reformatted with headlines, bullets, and a TL;DR for fast scanning.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "2 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/turn-a-wall-of-text-into-a-skimmable-summary/"
+    },
+    {
+      "id": 125,
+      "slug": "brand-voice-and-tone-guide",
+      "title": "Brand Voice and Tone Guide",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "brand",
+        "voice",
+        "copywriting",
+        "marketing"
+      ],
+      "outcome": "A practical brand voice guide your whole team can use to write consistently.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "45 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/brand-voice-and-tone-guide/"
+    },
+    {
+      "id": 126,
+      "slug": "cold-email-sequence-3-touch",
+      "title": "Cold Email Sequence (3-Touch)",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "cold-email",
+        "sales",
+        "outreach",
+        "copywriting"
+      ],
+      "outcome": "A 3-touch cold email sequence that feels human, avoids spam triggers, and gets replies.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/cold-email-sequence-3-touch/"
+    },
+    {
+      "id": 127,
+      "slug": "product-launch-announcement",
+      "title": "Product Launch Announcement",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "launch",
+        "PR",
+        "announcement",
+        "marketing"
+      ],
+      "outcome": "A launch announcement in your chosen format that leads with benefits, not features.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/product-launch-announcement/"
+    },
+    {
+      "id": 128,
+      "slug": "linkedin-thought-leadership-post",
+      "title": "LinkedIn Thought Leadership Post",
+      "category": "writing",
+      "difficulty": "advanced",
+      "tags": [
+        "linkedin",
+        "thought-leadership",
+        "content",
+        "personal-brand"
+      ],
+      "outcome": "A 200-300 word LinkedIn post with a scroll-stopping hook and a comment-driving close.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/linkedin-thought-leadership-post/"
+    },
+    {
+      "id": 129,
+      "slug": "rewrite-technical-documentation-for-non-technical-readers",
+      "title": "Rewrite Technical Documentation for Non-Technical Readers",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "documentation",
+        "technical-writing",
+        "communication",
+        "stakeholders"
+      ],
+      "outcome": "A business-readable version of your technical docs with a 'what this means for you' summary.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/rewrite-technical-documentation-for-non-technical-readers/"
+    },
+    {
+      "id": 130,
+      "slug": "podcast-episode-outline-and-show-notes",
+      "title": "Podcast Episode Outline and Show Notes",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "podcast",
+        "content",
+        "interview",
+        "production"
+      ],
+      "outcome": "A complete episode package: title options, outline, questions, show notes, and social teasers.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/podcast-episode-outline-and-show-notes/"
+    },
+    {
+      "id": 131,
+      "slug": "press-release-that-gets-picked-up",
+      "title": "Press Release That Gets Picked Up",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "press-release",
+        "PR",
+        "media",
+        "communications"
+      ],
+      "outcome": "A publication-ready press release in AP style with all standard elements.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/press-release-that-gets-picked-up/"
+    },
+    {
+      "id": 132,
+      "slug": "customer-case-study-from-raw-interview-notes",
+      "title": "Customer Case Study from Raw Interview Notes",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "case-study",
+        "customer-success",
+        "marketing",
+        "proof"
+      ],
+      "outcome": "A polished, credible case study with a results-first headline and a sidebar of key metrics.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/customer-case-study-from-raw-interview-notes/"
+    },
+    {
+      "id": 133,
+      "slug": "sales-deck-narrative-script",
+      "title": "Sales Deck Narrative Script",
+      "category": "writing",
+      "difficulty": "advanced",
+      "tags": [
+        "sales",
+        "presentation",
+        "deck",
+        "storytelling"
+      ],
+      "outcome": "A speaker-ready script for each slide with talk tracks, engagement questions, and objection pre-emption.",
+      "tools": [
+        "Claude",
+        "ChatGPT",
+        "gamma"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/sales-deck-narrative-script/"
+    },
+    {
+      "id": 134,
+      "slug": "apology-email-that-rebuilds-trust",
+      "title": "Apology Email That Rebuilds Trust",
+      "category": "writing",
+      "difficulty": "advanced",
+      "tags": [
+        "crisis",
+        "email",
+        "trust",
+        "customer-service"
+      ],
+      "outcome": "A sincere, specific apology email that takes accountability and offers a concrete remedy.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/apology-email-that-rebuilds-trust/"
+    },
+    {
+      "id": 135,
+      "slug": "guia-para-conseguir-consulta-pelo-sus",
+      "title": "Guia para Conseguir Consulta pelo SUS",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "sus",
+        "saúde",
+        "brasil",
+        "consulta"
+      ],
+      "outcome": "Um guia passo a passo para conseguir consulta médica pelo SUS, com documentação, direitos e alternativas.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/guia-para-conseguir-consulta-pelo-sus/"
+    },
+    {
+      "id": 136,
+      "slug": "como-contestar-negativa-do-plano-de-saude",
+      "title": "Como Contestar Negativa do Plano de Saúde",
+      "category": "quick-wins",
+      "difficulty": "intermediate",
+      "tags": [
+        "plano de saúde",
+        "ans",
+        "brasil",
+        "direitos"
+      ],
+      "outcome": "Um guia completo para contestar negativa de plano de saúde, com fundamentos legais, recurso e modelo de carta.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/como-contestar-negativa-do-plano-de-saude/"
+    },
+    {
+      "id": 137,
+      "slug": "verificador-de-interacoes-medicamentosas",
+      "title": "Verificador de Interações Medicamentosas",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "medicamentos",
+        "saúde",
+        "interações",
+        "brasil"
+      ],
+      "outcome": "Um relatório educacional de possíveis interações medicamentosas e perguntas para levar ao médico.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/verificador-de-interacoes-medicamentosas/"
+    },
+    {
+      "id": 138,
+      "slug": "plano-de-manejo-de-doenca-cronica",
+      "title": "Plano de Manejo de Doença Crônica",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "doença crônica",
+        "saúde",
+        "brasil",
+        "monitoramento"
+      ],
+      "outcome": "Um plano semanal de manejo com rotina, alertas, apps gratuitos e checklist para consulta médica.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/plano-de-manejo-de-doenca-cronica/"
+    },
+    {
+      "id": 139,
+      "slug": "perguntas-para-fazer-na-emergencia",
+      "title": "Perguntas para Fazer na Emergência",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "emergência",
+        "saúde",
+        "sus",
+        "brasil"
+      ],
+      "outcome": "Orientação de triagem de urgência com o que fazer, o que levar e quando chamar o SAMU.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "3 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/perguntas-para-fazer-na-emergencia/"
+    },
+    {
+      "id": 140,
+      "slug": "plano-de-estudos-para-o-enem",
+      "title": "Plano de Estudos para o ENEM",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "enem",
+        "educação",
+        "brasil",
+        "estudos"
+      ],
+      "outcome": "Um cronograma de estudos personalizado para o ENEM com prioridades, recursos gratuitos e estratégia de redação.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/plano-de-estudos-para-o-enem/"
+    },
+    {
+      "id": 141,
+      "slug": "estrutura-de-redacao-para-vestibular",
+      "title": "Estrutura de Redação para Vestibular",
+      "category": "writing",
+      "difficulty": "beginner",
+      "tags": [
+        "redação",
+        "vestibular",
+        "enem",
+        "escrita"
+      ],
+      "outcome": "Uma estrutura completa de redação com tese, argumentos, repertório e proposta de intervenção para a banca escolhida.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/estrutura-de-redacao-para-vestibular/"
+    },
+    {
+      "id": 142,
+      "slug": "roteiro-de-tcc-do-zero-a-estrutura",
+      "title": "Roteiro de TCC — Do Zero à Estrutura",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "tcc",
+        "acadêmico",
+        "brasil",
+        "pesquisa"
+      ],
+      "outcome": "Uma estrutura completa de TCC com problema de pesquisa, objetivos, metodologia, cronograma e fontes.",
+      "tools": [
+        "Claude",
+        "ChatGPT",
+        "perplexity"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/roteiro-de-tcc-do-zero-a-estrutura/"
+    },
+    {
+      "id": 143,
+      "slug": "explicar-tema-de-escola-para-pais-ajudarem-os-filhos",
+      "title": "Explicar Tema de Escola para Pais Ajudarem os Filhos",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "educação",
+        "pais",
+        "escola",
+        "brasil"
+      ],
+      "outcome": "Uma explicação simples do tema escolar com analogia, atividade prática e forma de testar o aprendizado.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "5 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/explicar-tema-de-escola-para-pais-ajudarem-os-filhos/"
+    },
+    {
+      "id": 144,
+      "slug": "comparador-de-cursinhos-e-universidades",
+      "title": "Comparador de Cursinhos e Universidades",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "vestibular",
+        "universidade",
+        "brasil",
+        "educação"
+      ],
+      "outcome": "Uma comparação estruturada entre opções de universidade com notas de corte, financiamento e cronograma.",
+      "tools": [
+        "Claude",
+        "ChatGPT",
+        "perplexity"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/comparador-de-cursinhos-e-universidades/"
+    },
+    {
+      "id": 145,
+      "slug": "revisao-de-contrato-de-aluguel",
+      "title": "Revisão de Contrato de Aluguel",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "aluguel",
+        "brasil",
+        "contratos",
+        "imóveis"
+      ],
+      "outcome": "Uma análise das cláusulas do contrato de aluguel com identificação de pontos abusivos e sugestões de negociação.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/revisao-de-contrato-de-aluguel/"
+    },
+    {
+      "id": 146,
+      "slug": "guia-de-divorcio-amigavel-no-brasil",
+      "title": "Guia de Divórcio Amigável no Brasil",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "divórcio",
+        "família",
+        "brasil",
+        "direito"
+      ],
+      "outcome": "Um guia educacional completo do processo de divórcio amigável no Brasil com documentos, custos e prazos.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/guia-de-divorcio-amigavel-no-brasil/"
+    },
+    {
+      "id": 147,
+      "slug": "reclamacao-no-procon-passo-a-passo",
+      "title": "Reclamação no Procon — Passo a Passo",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "procon",
+        "consumidor",
+        "brasil",
+        "direitos"
+      ],
+      "outcome": "Um guia completo para registrar reclamação no Procon com modelo de texto, prazos e escalada se necessário.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/reclamacao-no-procon-passo-a-passo/"
+    },
+    {
+      "id": 148,
+      "slug": "modelo-de-procuracao-simples",
+      "title": "Modelo de Procuração Simples",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "procuração",
+        "documentos",
+        "brasil",
+        "legal"
+      ],
+      "outcome": "Um modelo de procuração preenchido com seus dados, instruções de reconhecimento de firma e como revogar.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/modelo-de-procuracao-simples/"
+    },
+    {
+      "id": 149,
+      "slug": "guia-do-juizado-especial-civel-pequenas-causas",
+      "title": "Guia do Juizado Especial Cível (Pequenas Causas)",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "juizado especial",
+        "brasil",
+        "justiça",
+        "direitos"
+      ],
+      "outcome": "Um guia prático para entrar com ação no Juizado Especial sem advogado, com modelo de petição e lista de documentos.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/guia-do-juizado-especial-civel-pequenas-causas/"
+    },
+    {
+      "id": 92,
+      "slug": "build-any-power-bi-chart-with-a-natural-language-prompt",
+      "title": "Build Any Power BI Chart with a Natural Language Prompt",
+      "category": "data-analytics",
+      "difficulty": "beginner",
+      "tags": [
+        "power-bi",
+        "copilot",
+        "ai-charts",
+        "natural-language"
+      ],
+      "outcome": "A ready-to-paste Copilot prompt, the correct visual type with justification, a starter DAX measure, and two formatting tips.",
+      "tools": [
+        "Power BI Copilot",
+        "Power BI Desktop"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/build-any-power-bi-chart-with-a-natural-language-prompt/"
+    },
+    {
+      "id": 93,
+      "slug": "auto-generate-dax-measures-from-plain-english",
+      "title": "Auto-Generate DAX Measures from Plain English",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "dax",
+        "power-bi",
+        "measures",
+        "ai-assisted"
+      ],
+      "outcome": "A production-ready DAX measure in VAR/RETURN style, plain-English explanations of every function, edge-case warnings, and a simplified version.",
+      "tools": [
+        "Claude Sonnet",
+        "Power BI Desktop",
+        "Power BI Copilot"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/auto-generate-dax-measures-from-plain-english/"
+    },
+    {
+      "id": 94,
+      "slug": "design-a-full-power-bi-report-page-with-ai",
+      "title": "Design a Full Power BI Report Page with AI",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "power-bi",
+        "report-design",
+        "copilot",
+        "kpi"
+      ],
+      "outcome": "A labelled page layout blueprint, DAX for every KPI card, a ready-to-use Copilot prompt, and one tailored design tip.",
+      "tools": [
+        "Claude Sonnet",
+        "Power BI Copilot",
+        "Power BI Desktop"
+      ],
+      "est_time": "45 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/design-a-full-power-bi-report-page-with-ai/"
+    },
+    {
+      "id": 95,
+      "slug": "prepare-your-power-bi-semantic-model-for-ai-copilot",
+      "title": "Prepare Your Power BI Semantic Model for AI & Copilot",
+      "category": "data-analytics",
+      "difficulty": "advanced",
+      "tags": [
+        "power-bi",
+        "semantic-model",
+        "copilot",
+        "ai-prep"
+      ],
+      "outcome": "Eight field descriptions, complete AI Instructions text, synonym list, and a gap analysis flagging which natural-language questions your model can and cannot yet answer.",
+      "tools": [
+        "Claude Sonnet",
+        "Power BI Desktop",
+        "Power BI Service"
+      ],
+      "est_time": "1.5 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/prepare-your-power-bi-semantic-model-for-ai-copilot/"
+    },
+    {
+      "id": 96,
+      "slug": "ask-your-power-bi-dashboard-questions-in-plain-english",
+      "title": "Ask Your Power BI Dashboard Questions in Plain English",
+      "category": "data-analytics",
+      "difficulty": "beginner",
+      "tags": [
+        "power-bi",
+        "q-and-a",
+        "natural-language",
+        "copilot"
+      ],
+      "outcome": "An exact natural-language query for each of your business questions, the expected visual type, a drill-down follow-up, and a refinement tip per question.",
+      "tools": [
+        "Power BI Copilot",
+        "Power BI Q&A visual"
+      ],
+      "est_time": "20 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ask-your-power-bi-dashboard-questions-in-plain-english/"
+    },
+    {
+      "id": 97,
+      "slug": "ai-built-fp-a-dashboard-in-power-bi-step-by-step",
+      "title": "AI-Built FP&A Dashboard in Power BI — Step by Step",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "power-bi",
+        "fpa",
+        "finance",
+        "dashboard"
+      ],
+      "outcome": "End-to-end build guide: Power Query AI prompts, DAX for all financial measures, Copilot design prompts per visual, a CFO commentary template, and row-level security setup instructions.",
+      "tools": [
+        "Power BI Desktop",
+        "Power BI Copilot",
+        "Claude Sonnet",
+        "Power Query",
+        "Excel"
+      ],
+      "est_time": "3–4 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-built-fp-a-dashboard-in-power-bi-step-by-step/"
+    },
+    {
+      "id": 1,
+      "slug": "quick-insights-from-spreadsheets",
+      "title": "Quick Insights from Spreadsheets",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "finance",
+        "excel",
+        "quick-analysis",
+        "non-technical"
+      ],
+      "outcome": "A plain-English readout of the top three trends, three chart specs you can paste into Excel, and two follow-up questions for the business.",
+      "tools": [
+        "ChatGPT",
+        "Excel"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/quick-insights-from-spreadsheets/"
+    },
+    {
+      "id": 2,
+      "slug": "rolling-forecast-model",
+      "title": "Rolling Forecast Model",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "forecasting",
+        "excel",
+        "financial-modeling",
+        "planning"
+      ],
+      "outcome": "A structured 5-step build plan: model layout, formula spec, risk table, and a variance-analysis template — all wired to your historicals.",
+      "tools": [
+        "Claude",
+        "Excel",
+        "Google Sheets"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/rolling-forecast-model/"
+    },
+    {
+      "id": 3,
+      "slug": "automated-fp-a-pipeline",
+      "title": "Automated FP&A Pipeline",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "automation",
+        "data-pipeline",
+        "fp&a"
+      ],
+      "outcome": "A production-ready Python architecture: ingestion, validation, forecasting, alerting, and audit trail — with a deployment plan and testing strategy.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel",
+        "Python"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/automated-fp-a-pipeline/"
+    },
+    {
+      "id": 4,
+      "slug": "enterprise-financial-platform",
+      "title": "Enterprise Financial Platform",
+      "category": "finance",
+      "difficulty": "expert",
+      "tags": [
+        "enterprise",
+        "architecture",
+        "financial-platform",
+        "strategy"
+      ],
+      "outcome": "An 18-month transformation plan: architecture, stack, data model, security framework, hiring plan, and total cost of ownership.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-year",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/enterprise-financial-platform/"
+    },
+    {
+      "id": 5,
+      "slug": "customer-feedback-summary",
+      "title": "Customer Feedback Summary",
+      "category": "research",
+      "difficulty": "beginner",
+      "tags": [
+        "sales",
+        "customer-insights",
+        "feedback-analysis",
+        "quick-win"
+      ],
+      "outcome": "Five clustered themes, the top five complaints with frequency, three quick wins, and a tracking template — drawn from your raw verbatims.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/customer-feedback-summary/"
+    },
+    {
+      "id": 6,
+      "slug": "competitive-analysis",
+      "title": "Competitive Analysis",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "strategy",
+        "competitive-intelligence",
+        "market-analysis",
+        "presentation"
+      ],
+      "outcome": "A SWOT, a pricing comparison, a market-share approach, and three strategic scenarios with pros/cons — packaged for the leadership memo.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/competitive-analysis/"
+    },
+    {
+      "id": 7,
+      "slug": "real-time-market-intelligence-dashboard",
+      "title": "Real-Time Market Intelligence Dashboard",
+      "category": "research",
+      "difficulty": "advanced",
+      "tags": [
+        "dashboard",
+        "real-time",
+        "competitive-intel",
+        "python"
+      ],
+      "outcome": "A full technical spec: scraping infra, data pipeline, alert thresholds, dashboard wireframe, and a cost estimate.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "JavaScript",
+        "Power BI",
+        "Python"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/real-time-market-intelligence-dashboard/"
+    },
+    {
+      "id": 8,
+      "slug": "process-improvement-ideas",
+      "title": "Process Improvement Ideas",
+      "category": "data-analytics",
+      "difficulty": "beginner",
+      "tags": [
+        "operations",
+        "process-improvement",
+        "lean",
+        "quick-win"
+      ],
+      "outcome": "Three concrete improvement ideas, a before/after side-by-side, a proposal email draft, and the metrics worth tracking.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/process-improvement-ideas/"
+    },
+    {
+      "id": 9,
+      "slug": "supply-chain-optimization",
+      "title": "Supply Chain Optimization",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "supply-chain",
+        "operations-research",
+        "roi",
+        "optimization"
+      ],
+      "outcome": "An inefficiency map, three optimisation scenarios with ROI math, an implementation roadmap, and a risk register.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/supply-chain-optimization/"
+    },
+    {
+      "id": 10,
+      "slug": "response-templates",
+      "title": "Response Templates",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "customer-service",
+        "templates",
+        "troubleshooting",
+        "training"
+      ],
+      "outcome": "Five reusable response templates, a troubleshooting flowchart for your common issue, an info-collection checklist, and a team FAQ.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/response-templates/"
+    },
+    {
+      "id": 11,
+      "slug": "first-contact-resolution",
+      "title": "First Contact Resolution",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "customer-service",
+        "quality",
+        "metrics",
+        "training"
+      ],
+      "outcome": "A decision tree, type-specific response templates, training topics, KPIs, and a quality monitoring checklist.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/first-contact-resolution/"
+    },
+    {
+      "id": 12,
+      "slug": "ai-support-assistant",
+      "title": "AI Support Assistant",
+      "category": "productivity",
+      "difficulty": "advanced",
+      "tags": [
+        "ai-ml",
+        "nlp",
+        "customer-service",
+        "automation"
+      ],
+      "outcome": "An NLP pipeline architecture, training-data requirements, model selection, phased rollout, and success metrics.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-support-assistant/"
+    },
+    {
+      "id": 13,
+      "slug": "ai-assisted-variance-analysis",
+      "title": "AI-Assisted Variance Analysis",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "fp&a",
+        "variance-analysis",
+        "month-end",
+        "beginner"
+      ],
+      "outcome": "The top five variances with one-paragraph explanations, an action vs. noise call on each, and a ready-to-send manager email.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-assisted-variance-analysis/"
+    },
+    {
+      "id": 14,
+      "slug": "automated-commentary-writing",
+      "title": "Automated Commentary Writing",
+      "category": "finance",
+      "difficulty": "beginner",
+      "tags": [
+        "fp&a",
+        "commentary",
+        "reporting",
+        "writing"
+      ],
+      "outcome": "An executive-summary block, narrative sections for each P&L line, professional phrasing, red-flag highlights, and graphic suggestions.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/automated-commentary-writing/"
+    },
+    {
+      "id": 15,
+      "slug": "ai-powered-forecasting-assistant",
+      "title": "AI-Powered Forecasting Assistant",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "fp&a",
+        "forecasting",
+        "scenario-planning",
+        "intermediate"
+      ],
+      "outcome": "A trend + seasonality breakdown, adjustments for known events, three scenarios, and the narrative for leadership.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-powered-forecasting-assistant/"
+    },
+    {
+      "id": 16,
+      "slug": "financial-modeling-with-ai",
+      "title": "Financial Modeling with AI",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "fp&a",
+        "financial-modeling",
+        "excel",
+        "intermediate"
+      ],
+      "outcome": "A complete 3-statement model spec: structure, drivers, sensitivities, dashboard, audit checks, and documentation.",
+      "tools": [
+        "Claude",
+        "Excel",
+        "Google Sheets"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/financial-modeling-with-ai/"
+    },
+    {
+      "id": 17,
+      "slug": "board-presentation-builder",
+      "title": "Board Presentation Builder",
+      "category": "finance",
+      "difficulty": "intermediate",
+      "tags": [
+        "fp&a",
+        "presentation",
+        "board",
+        "executive"
+      ],
+      "outcome": "A story arc, slide-by-slide outline, chart picks, timed speaker notes, a backup appendix, and five anticipated questions with answers.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/board-presentation-builder/"
+    },
+    {
+      "id": 18,
+      "slug": "fp-a-process-automation",
+      "title": "FP&A Process Automation",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "fp&a",
+        "automation",
+        "process-improvement",
+        "advanced"
+      ],
+      "outcome": "A process map (as-is vs. to-be), automation approach, tool selection, error handling, validation, and a change-management plan.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel",
+        "Python"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/fp-a-process-automation/"
+    },
+    {
+      "id": 19,
+      "slug": "ai-powered-financial-analysis-pipeline",
+      "title": "AI-Powered Financial Analysis Pipeline",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "fp&a",
+        "ai-pipeline",
+        "automation",
+        "nlp"
+      ],
+      "outcome": "A complete AI-assisted FP&A system: architecture, data pipeline, model selection, integration plan, governance, and ROI math.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Multi-month",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-powered-financial-analysis-pipeline/"
+    },
+    {
+      "id": 20,
+      "slug": "enterprise-fp-a-transformation",
+      "title": "Enterprise FP&A Transformation",
+      "category": "finance",
+      "difficulty": "expert",
+      "tags": [
+        "fp&a",
+        "transformation",
+        "strategy",
+        "enterprise"
+      ],
+      "outcome": "A phased 3–5 year roadmap with org design, tech stack, investment case, risks, vendor criteria, and success metrics.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Multi-year",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/enterprise-fp-a-transformation/"
+    },
+    {
+      "id": 21,
+      "slug": "ai-powered-spreadsheet-analysis",
+      "title": "AI-Powered Spreadsheet Analysis",
+      "category": "data-analytics",
+      "difficulty": "beginner",
+      "tags": [
+        "excel",
+        "google-sheets",
+        "data-analysis",
+        "beginner"
+      ],
+      "outcome": "A structured analysis with trends, anomalies, summary stats, three insights, and chart recommendations — shareable as-is.",
+      "tools": [
+        "ChatGPT",
+        "Excel",
+        "Google Sheets"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-powered-spreadsheet-analysis/"
+    },
+    {
+      "id": 22,
+      "slug": "natural-language-excel-updates",
+      "title": "Natural Language Excel Updates",
+      "category": "data-analytics",
+      "difficulty": "beginner",
+      "tags": [
+        "excel",
+        "financial-modeling",
+        "automation",
+        "beginner"
+      ],
+      "outcome": "Latest actuals pulled into the tab you named, column headers swapped from E → A, variance commentary inline, and a source log appended.",
+      "tools": [
+        "ChatGPT",
+        "Excel"
+      ],
+      "est_time": "5–10 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/natural-language-excel-updates/"
+    },
+    {
+      "id": 23,
+      "slug": "ai-assisted-financial-model-audit",
+      "title": "AI-Assisted Financial Model Audit",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "excel",
+        "financial-modeling",
+        "audit",
+        "intermediate"
+      ],
+      "outcome": "An audit report with severity-tagged findings: assumption consistency, formula integrity, broken links, anomalies, and improvements.",
+      "tools": [
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-assisted-financial-model-audit/"
+    },
+    {
+      "id": 24,
+      "slug": "power-bi-model-optimization-with-ai",
+      "title": "Power BI Model Optimization with AI",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "powerbi",
+        "dax",
+        "data-modeling",
+        "intermediate"
+      ],
+      "outcome": "A naming + organisation rewrite, hidden FK columns, descriptions on every measure, drill hierarchies, type-optimised columns, and full documentation.",
+      "tools": [
+        "Claude",
+        "Power BI"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/power-bi-model-optimization-with-ai/"
+    },
+    {
+      "id": 25,
+      "slug": "create-calculation-table-with-measures",
+      "title": "Create Calculation Table with Measures",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "powerbi",
+        "dax",
+        "measures",
+        "intermediate"
+      ],
+      "outcome": "A new measure table, an aggregate-amount calc per category value, a Net measure, and a full suite of monthly time-intelligence measures — placeholder fields hidden.",
+      "tools": [
+        "Claude",
+        "Power BI"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/create-calculation-table-with-measures/"
+    },
+    {
+      "id": 26,
+      "slug": "cube-function-dashboard-excel",
+      "title": "Cube Function Dashboard (Excel)",
+      "category": "data-analytics",
+      "difficulty": "intermediate",
+      "tags": [
+        "excel",
+        "cube-functions",
+        "cubedata",
+        "dashboard"
+      ],
+      "outcome": "A custom Excel cube-function dashboard: CUBESET dimensions, CUBEMEMBER labels, CUBEVALUE measures, Top-N ranks, and KPI conditional formatting.",
+      "tools": [
+        "Claude",
+        "Excel",
+        "Power BI"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/cube-function-dashboard-excel/"
+    },
+    {
+      "id": 27,
+      "slug": "ai-powered-bi-documentation-generator",
+      "title": "AI-Powered BI Documentation Generator",
+      "category": "data-analytics",
+      "difficulty": "advanced",
+      "tags": [
+        "powerbi",
+        "documentation",
+        "data-dictionary",
+        "advanced"
+      ],
+      "outcome": "A complete ~60-page Markdown doc with executive summary, mermaid relationship diagram, per-measure DAX + plain-English business logic, data sources, and usage scenarios.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel",
+        "Power BI"
+      ],
+      "est_time": "2–4 days",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-powered-bi-documentation-generator/"
+    },
+    {
+      "id": 28,
+      "slug": "autonomous-workflow-system",
+      "title": "Autonomous Workflow System",
+      "category": "data-analytics",
+      "difficulty": "advanced",
+      "tags": [
+        "automation",
+        "workflows",
+        "agents",
+        "advanced"
+      ],
+      "outcome": "A blueprint for 36+ scheduled AI workflows: agent hierarchy, scheduling, integration with Claude Code / Codex / Cloud Code, monitoring, and error handling.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/autonomous-workflow-system/"
+    },
+    {
+      "id": 29,
+      "slug": "overwhelm-recovery",
+      "title": "Overwhelm Recovery",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "productivity",
+        "time-management",
+        "beginner-friendly",
+        "1-hour"
+      ],
+      "outcome": "A prioritisation framework, a daily + weekly schedule template, three focus habits, and platform-specific tool picks.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/overwhelm-recovery/"
+    },
+    {
+      "id": 30,
+      "slug": "personal-productivity-system",
+      "title": "Personal Productivity System",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "productivity",
+        "notion",
+        "obsidian",
+        "system-design"
+      ],
+      "outcome": "A PARA-style organisation scheme, a weekly review process, meeting and project templates, and lightweight automations.",
+      "tools": [
+        "Claude",
+        "Notion",
+        "Obsidian"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/personal-productivity-system/"
+    },
+    {
+      "id": 31,
+      "slug": "automated-productivity-system",
+      "title": "Automated Productivity System",
+      "category": "productivity",
+      "difficulty": "advanced",
+      "tags": [
+        "automation",
+        "python",
+        "javascript",
+        "api-integration"
+      ],
+      "outcome": "An end-to-end personal productivity automation: task ingestion, AI scoring, deep-work scheduling, time tracking, weekly reports, and integrations.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "JavaScript",
+        "Python"
+      ],
+      "est_time": "2–4 days",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/automated-productivity-system/"
+    },
+    {
+      "id": 32,
+      "slug": "meeting-prep",
+      "title": "Meeting Prep",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "meetings",
+        "preparation",
+        "templates",
+        "15-minutes"
+      ],
+      "outcome": "An agenda, five sharp questions, a follow-up email template, and an action-items tracker — all in 5 minutes.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "15 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/meeting-prep/"
+    },
+    {
+      "id": 33,
+      "slug": "meeting-effectiveness",
+      "title": "Meeting Effectiveness",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "meetings",
+        "efficiency",
+        "templates",
+        "half-day"
+      ],
+      "outcome": "A meeting-quality checklist, agenda templates by type, a note-taking framework, a decision log, and a follow-up automation plan.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/meeting-effectiveness/"
+    },
+    {
+      "id": 34,
+      "slug": "meeting-intelligence-system",
+      "title": "Meeting Intelligence System",
+      "category": "productivity",
+      "difficulty": "advanced",
+      "tags": [
+        "ai",
+        "transcription",
+        "automation",
+        "privacy"
+      ],
+      "outcome": "A privacy-friendly transcription + extraction system: local Whisper for ASR, LLM for action items / decisions, topic trending, follow-up agenda suggestions, UI mocks.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/meeting-intelligence-system/"
+    },
+    {
+      "id": 35,
+      "slug": "30-day-learning-plan",
+      "title": "30-Day Learning Plan",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "tags": [
+        "learning",
+        "career-development",
+        "beginner",
+        "self-paced"
+      ],
+      "outcome": "A 30-day learning plan, free/cheap resources, beginner-level practice projects, a progress tracker, and milestone moments.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "Self-paced",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/30-day-learning-plan/"
+    },
+    {
+      "id": 36,
+      "slug": "career-development-plan",
+      "title": "Career Development Plan",
+      "category": "productivity",
+      "difficulty": "intermediate",
+      "tags": [
+        "career",
+        "upskilling",
+        "planning",
+        "half-day"
+      ],
+      "outcome": "A competency map, a milestone learning path, project-based practice, an accountability system, a portfolio strategy, and a networking plan.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/career-development-plan/"
+    },
+    {
+      "id": 37,
+      "slug": "page-layout-help",
+      "title": "Page Layout Help",
+      "category": "creative-ai",
+      "difficulty": "beginner",
+      "tags": [
+        "ui-design",
+        "layout",
+        "beginner",
+        "1-hour"
+      ],
+      "outcome": "A suggested layout, a colour scheme, an essentials list, the most common mistakes to avoid, and free tool picks.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/page-layout-help/"
+    },
+    {
+      "id": 38,
+      "slug": "full-app-design",
+      "title": "Full App Design",
+      "category": "creative-ai",
+      "difficulty": "intermediate",
+      "tags": [
+        "ux-design",
+        "wireframes",
+        "design-system",
+        "half-day"
+      ],
+      "outcome": "User flows, wireframe descriptions, component specs, responsive considerations, a11y requirements, and a design-system recommendation.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/full-app-design/"
+    },
+    {
+      "id": 39,
+      "slug": "design-system-build",
+      "title": "Design System Build",
+      "category": "creative-ai",
+      "difficulty": "advanced",
+      "tags": [
+        "design-system",
+        "components",
+        "accessibility",
+        "multi-week"
+      ],
+      "outcome": "A component architecture, token structure, code examples, documentation template, and governance process — across Figma + React + Storybook.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Figma",
+        "JavaScript"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/design-system-build/"
+    },
+    {
+      "id": 40,
+      "slug": "chart-selection-help",
+      "title": "Chart Selection Help",
+      "category": "creative-ai",
+      "difficulty": "beginner",
+      "tags": [
+        "data-viz",
+        "charts",
+        "beginner",
+        "1-hour"
+      ],
+      "outcome": "Chart-type picks per metric, clarity tips, a colour scheme, the labels/annotations you need, and tool suggestions.",
+      "tools": [
+        "ChatGPT",
+        "Excel",
+        "Google Sheets"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/chart-selection-help/"
+    },
+    {
+      "id": 41,
+      "slug": "dashboard-design",
+      "title": "Dashboard Design",
+      "category": "creative-ai",
+      "difficulty": "intermediate",
+      "tags": [
+        "dashboard",
+        "data-viz",
+        "kpi",
+        "half-day"
+      ],
+      "outcome": "A sectioned layout, chart-type picks per KPI, interaction design (filters, drill-down), an alert/notification scheme, and a mobile adaptation plan.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/dashboard-design/"
+    },
+    {
+      "id": 42,
+      "slug": "real-time-analytics-dashboard",
+      "title": "Real-Time Analytics Dashboard",
+      "category": "creative-ai",
+      "difficulty": "advanced",
+      "tags": [
+        "dashboard",
+        "real-time",
+        "frontend",
+        "multi-week"
+      ],
+      "outcome": "A frontend architecture, data pipeline design, state management, performance optimisations, and a testing strategy.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "D3",
+        "JavaScript"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/real-time-analytics-dashboard/"
+    },
+    {
+      "id": 43,
+      "slug": "social-media-post",
+      "title": "Social Media Post",
+      "category": "creative-ai",
+      "difficulty": "beginner",
+      "tags": [
+        "content",
+        "social-media",
+        "marketing",
+        "1-hour"
+      ],
+      "outcome": "Ten platform-tailored draft posts, suggested hashtags, image direction, and a posting schedule.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/social-media-post/"
+    },
+    {
+      "id": 44,
+      "slug": "content-strategy",
+      "title": "Content Strategy",
+      "category": "creative-ai",
+      "difficulty": "intermediate",
+      "tags": [
+        "content-strategy",
+        "marketing",
+        "editorial",
+        "half-day"
+      ],
+      "outcome": "Content pillars, an editorial calendar template, a content-mix recipe, a repurposing plan, and success metrics.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/content-strategy/"
+    },
+    {
+      "id": 45,
+      "slug": "ai-content-engine",
+      "title": "AI Content Engine",
+      "category": "creative-ai",
+      "difficulty": "advanced",
+      "tags": [
+        "ai-content",
+        "marketing-automation",
+        "seo",
+        "multi-week"
+      ],
+      "outcome": "A generation pipeline, brand-voice tuning approach, quality control, automation workflows, and a performance tracking system.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-content-engine/"
+    },
+    {
+      "id": 46,
+      "slug": "repetitive-task-elimination",
+      "title": "Repetitive Task Elimination",
+      "category": "coding",
+      "difficulty": "beginner",
+      "tags": [
+        "automation",
+        "excel",
+        "beginner",
+        "quick-win"
+      ],
+      "outcome": "A yes/no on whether it's automatable, the easiest path, step-by-step instructions, formulas/scripts, and a maintenance guide.",
+      "tools": [
+        "ChatGPT",
+        "Excel"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/repetitive-task-elimination/"
+    },
+    {
+      "id": 47,
+      "slug": "python-automation",
+      "title": "Python Automation",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "automation",
+        "scripting",
+        "half-day"
+      ],
+      "outcome": "A commented Python script, setup instructions, error handling, scheduling guidance, and a documentation template.",
+      "tools": [
+        "Claude",
+        "Python"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/python-automation/"
+    },
+    {
+      "id": 48,
+      "slug": "automation-platform",
+      "title": "Automation Platform",
+      "category": "coding",
+      "difficulty": "advanced",
+      "tags": [
+        "platform",
+        "microservices",
+        "devops",
+        "multi-week"
+      ],
+      "outcome": "A microservices architecture, core service skeleton, DB schema, deployment pipeline, monitoring setup, and DR plan.",
+      "tools": [
+        "Airflow",
+        "ChatGPT",
+        "Claude",
+        "Python"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/automation-platform/"
+    },
+    {
+      "id": 49,
+      "slug": "data-cleaning",
+      "title": "Data Cleaning",
+      "category": "coding",
+      "difficulty": "beginner",
+      "tags": [
+        "data-engineering",
+        "python",
+        "pandas",
+        "beginner"
+      ],
+      "outcome": "Pandas code to clean the data, exploration snippets, simple visualisations, and a clean export.",
+      "tools": [
+        "ChatGPT",
+        "Excel",
+        "Python"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/data-cleaning/"
+    },
+    {
+      "id": 50,
+      "slug": "data-pipeline",
+      "title": "Data Pipeline",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "data-pipeline",
+        "etl",
+        "data-modeling",
+        "half-day"
+      ],
+      "outcome": "A pipeline architecture, ETL/ELT approach, data model, quality checks, documentation standards, and tool picks.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/data-pipeline/"
+    },
+    {
+      "id": 51,
+      "slug": "modern-data-platform",
+      "title": "Modern Data Platform",
+      "category": "coding",
+      "difficulty": "advanced",
+      "tags": [
+        "data-platform",
+        "architecture",
+        "multi-week",
+        "enterprise"
+      ],
+      "outcome": "A platform architecture, tool selection, phased rollout, team structure, cost estimate, and migration strategy.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/modern-data-platform/"
+    },
+    {
+      "id": 52,
+      "slug": "ai-feasibility-check",
+      "title": "AI Feasibility Check",
+      "category": "coding",
+      "difficulty": "beginner",
+      "tags": [
+        "ai",
+        "feasibility",
+        "beginner",
+        "consulting"
+      ],
+      "outcome": "An honest take on whether AI fits, the simplest approach, data requirements, no-code/low-code tools, and an effort/accuracy estimate.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-feasibility-check/"
+    },
+    {
+      "id": 53,
+      "slug": "ml-model-build",
+      "title": "ML Model Build",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "tags": [
+        "machine-learning",
+        "modeling",
+        "deployment",
+        "half-day-to-week"
+      ],
+      "outcome": "A data prep pipeline, model selection + training, evaluation framework, deployment approach, monitoring setup, and business metrics.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day – 1 week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ml-model-build/"
+    },
+    {
+      "id": 54,
+      "slug": "enterprise-ml-platform",
+      "title": "Enterprise ML Platform",
+      "category": "coding",
+      "difficulty": "advanced",
+      "tags": [
+        "mlops",
+        "enterprise",
+        "platform",
+        "multi-month"
+      ],
+      "outcome": "A multi-cloud MLOps platform: architecture, components, rollout roadmap, team plan, cost model, and metrics.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-month",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/enterprise-ml-platform/"
+    },
+    {
+      "id": 55,
+      "slug": "quick-market-scan",
+      "title": "Quick Market Scan",
+      "category": "research",
+      "difficulty": "beginner",
+      "tags": [
+        "market-research",
+        "overview",
+        "quick-scan",
+        "1-hour"
+      ],
+      "outcome": "Top five players, market size + growth, key trends, recent news, and three deeper sources.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/quick-market-scan/"
+    },
+    {
+      "id": 56,
+      "slug": "deep-dive-report",
+      "title": "Deep Dive Report",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "market-research",
+        "report",
+        "strategy",
+        "half-day-to-day"
+      ],
+      "outcome": "A full market analysis: exec summary, structure, top-5 competitor profiles, trends, opportunities, risks, and recommendations.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day – 1 day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/deep-dive-report/"
+    },
+    {
+      "id": 57,
+      "slug": "competitor-profile",
+      "title": "Competitor Profile",
+      "category": "research",
+      "difficulty": "intermediate",
+      "tags": [
+        "competitive-intel",
+        "profiling",
+        "strategy",
+        "half-day"
+      ],
+      "outcome": "A complete intelligence brief: company overview, portfolio, pricing, position, strengths/weaknesses, recent moves, financials, and threat level.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/competitor-profile/"
+    },
+    {
+      "id": 58,
+      "slug": "competitive-monitoring-system",
+      "title": "Competitive Monitoring System",
+      "category": "research",
+      "difficulty": "advanced",
+      "tags": [
+        "competitive-intel",
+        "automation",
+        "monitoring",
+        "multi-week"
+      ],
+      "outcome": "An automated CI system spec: data sources, scraping infrastructure, analysis pipeline, alerts, and report templates.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/competitive-monitoring-system/"
+    },
+    {
+      "id": 59,
+      "slug": "process-documentation",
+      "title": "Process Documentation",
+      "category": "writing",
+      "difficulty": "beginner",
+      "tags": [
+        "documentation",
+        "process",
+        "knowledge-management",
+        "1-hour"
+      ],
+      "outcome": "A step-by-step guide with checkpoints, a troubleshooting section, a scannable format, and a storage recommendation.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/process-documentation/"
+    },
+    {
+      "id": 60,
+      "slug": "technical-documentation",
+      "title": "Technical Documentation",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "technical-writing",
+        "documentation",
+        "developer-experience",
+        "half-day"
+      ],
+      "outcome": "A complete tech doc set: overview + architecture, setup, API reference, examples, troubleshooting, FAQ, and changelog template — Markdown-ready.",
+      "tools": [
+        "Claude",
+        "Notion"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/technical-documentation/"
+    },
+    {
+      "id": 61,
+      "slug": "documentation-platform",
+      "title": "Documentation Platform",
+      "category": "writing",
+      "difficulty": "advanced",
+      "tags": [
+        "documentation",
+        "platform",
+        "knowledge-management",
+        "multi-week"
+      ],
+      "outcome": "An info architecture, tool selection + setup, writing standards, maintenance process, and migration plan.",
+      "tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/documentation-platform/"
+    },
+    {
+      "id": 62,
+      "slug": "slide-content",
+      "title": "Slide Content",
+      "category": "writing",
+      "difficulty": "beginner",
+      "tags": [
+        "presentation",
+        "slides",
+        "storytelling",
+        "1-hour"
+      ],
+      "outcome": "A title + 3–5 section outline, speaker notes, suggested visuals/charts, a recommended slide count, and opening + closing statements.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "1 hour",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/slide-content/"
+    },
+    {
+      "id": 63,
+      "slug": "presentation-design",
+      "title": "Presentation Design",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "presentation",
+        "design",
+        "storytelling",
+        "persuasion"
+      ],
+      "outcome": "A narrative arc, storyboard, viz recommendations, timed speaker notes, anticipated Q&A, and a handout.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/presentation-design/"
+    },
+    {
+      "id": 64,
+      "slug": "automated-presentation-generation",
+      "title": "Automated Presentation Generation",
+      "category": "writing",
+      "difficulty": "advanced",
+      "tags": [
+        "presentation",
+        "automation",
+        "data-to-slides",
+        "multi-week"
+      ],
+      "outcome": "An end-to-end data-to-deck system: architecture, template design, data-to-slide mapping, automation pipeline, and quality checks.",
+      "tools": [
+        "ChatGPT",
+        "Claude",
+        "Excel"
+      ],
+      "est_time": "Multi-week",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/automated-presentation-generation/"
+    },
+    {
+      "id": 65,
+      "slug": "email-templates",
+      "title": "Email Templates",
+      "category": "writing",
+      "difficulty": "beginner",
+      "tags": [
+        "email",
+        "templates",
+        "communication",
+        "30-minutes"
+      ],
+      "outcome": "Five reusable templates — initial outreach, follow-up, meeting request, thank-you, status update — short and actionable.",
+      "tools": [
+        "ChatGPT"
+      ],
+      "est_time": "30 min",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/email-templates/"
+    },
+    {
+      "id": 66,
+      "slug": "communication-strategy",
+      "title": "Communication Strategy",
+      "category": "writing",
+      "difficulty": "intermediate",
+      "tags": [
+        "communication",
+        "change-management",
+        "strategy",
+        "half-day"
+      ],
+      "outcome": "A core message, a 10-question FAQ, a comms timeline, channel-specific drafts, a resistance plan, and a feedback loop design.",
+      "tools": [
+        "Claude"
+      ],
+      "est_time": "Half day",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/communication-strategy/"
+    },
+    {
+      "id": 67,
+      "slug": "explain-anything-in-plain-english",
+      "title": "Explain Anything in Plain English",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "learning",
+        "explainer",
+        "beginner",
+        "quick"
+      ],
+      "outcome": "A jargon-free explanation with an analogy and the three things that actually matter.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/explain-anything-in-plain-english/"
+    },
+    {
+      "id": 68,
+      "slug": "summarise-any-document-or-article",
+      "title": "Summarise Any Document or Article",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "summary",
+        "reading",
+        "quick",
+        "productivity"
+      ],
+      "outcome": "5-bullet summary with the top insight, risks flagged, and one concrete action.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/summarise-any-document-or-article/"
+    },
+    {
+      "id": 69,
+      "slug": "rewrite-this-more-clearly",
+      "title": "Rewrite This More Clearly",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "editing",
+        "clarity",
+        "writing",
+        "quick"
+      ],
+      "outcome": "A polished, plain-English rewrite plus a one-line explanation of the key edit.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/rewrite-this-more-clearly/"
+    },
+    {
+      "id": 70,
+      "slug": "draft-a-quick-reply-email",
+      "title": "Draft a Quick Reply Email",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "email",
+        "communication",
+        "quick",
+        "writing"
+      ],
+      "outcome": "A concise, professional reply under 80 words with a clear next step.",
+      "tools": [
+        "Claude",
+        "Gmail",
+        "Outlook"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/draft-a-quick-reply-email/"
+    },
+    {
+      "id": 71,
+      "slug": "turn-meeting-notes-into-action-items",
+      "title": "Turn Meeting Notes into Action Items",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "meetings",
+        "productivity",
+        "notes",
+        "quick"
+      ],
+      "outcome": "Structured action item table + a 2-sentence Slack-ready summary.",
+      "tools": [
+        "Claude",
+        "Notion",
+        "Slack"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/turn-meeting-notes-into-action-items/"
+    },
+    {
+      "id": 72,
+      "slug": "generate-a-pro-con-list",
+      "title": "Generate a Pro/Con List",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "decision-making",
+        "planning",
+        "quick",
+        "analysis"
+      ],
+      "outcome": "A weighted pro/con table for both options plus a clear recommendation.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/generate-a-pro-con-list/"
+    },
+    {
+      "id": 73,
+      "slug": "create-a-template-from-a-one-off-doc",
+      "title": "Create a Template from a One-Off Doc",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "templates",
+        "documentation",
+        "reuse",
+        "quick"
+      ],
+      "outcome": "A clean, labelled template with placeholder instructions ready to reuse.",
+      "tools": [
+        "Claude",
+        "Notion",
+        "Google Docs"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/create-a-template-from-a-one-off-doc/"
+    },
+    {
+      "id": 74,
+      "slug": "write-a-linkedin-post-from-a-rough-idea",
+      "title": "Write a LinkedIn Post from a Rough Idea",
+      "category": "quick-wins",
+      "difficulty": "beginner",
+      "tags": [
+        "linkedin",
+        "social-media",
+        "writing",
+        "quick"
+      ],
+      "outcome": "A 200-word LinkedIn post with a hook opening and clear takeaway.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-a-linkedin-post-from-a-rough-idea/"
+    },
+    {
+      "id": 75,
+      "slug": "write-your-first-image-generation-prompt",
+      "title": "Write Your First Image Generation Prompt",
+      "category": "creative-ai",
+      "difficulty": "beginner",
+      "tags": [
+        "image-generation",
+        "midjourney",
+        "dalle",
+        "prompt-engineering"
+      ],
+      "outcome": "Three ready-to-use image prompts at different style directions, with negative prompts included.",
+      "tools": [
+        "Midjourney",
+        "DALL-E 3",
+        "Stable Diffusion"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-your-first-image-generation-prompt/"
+    },
+    {
+      "id": 76,
+      "slug": "ai-product-photography-brief",
+      "title": "AI Product Photography Brief",
+      "category": "creative-ai",
+      "difficulty": "intermediate",
+      "tags": [
+        "product-photography",
+        "e-commerce",
+        "midjourney",
+        "brand"
+      ],
+      "outcome": "5-shot AI photography brief with full prompts, lighting, and platform specs for each.",
+      "tools": [
+        "Midjourney",
+        "DALL-E 3",
+        "Adobe Firefly"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-product-photography-brief/"
+    },
+    {
+      "id": 77,
+      "slug": "midjourney-style-guide-for-a-brand",
+      "title": "Midjourney Style Guide for a Brand",
+      "category": "creative-ai",
+      "difficulty": "intermediate",
+      "tags": [
+        "brand",
+        "midjourney",
+        "style-guide",
+        "visual-identity"
+      ],
+      "outcome": "A reusable Midjourney style guide with core suffix, 5 style references, and brand-safe guardrails.",
+      "tools": [
+        "Midjourney",
+        "Notion"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/midjourney-style-guide-for-a-brand/"
+    },
+    {
+      "id": 78,
+      "slug": "ai-video-script-and-shot-list",
+      "title": "AI Video Script and Shot List",
+      "category": "creative-ai",
+      "difficulty": "intermediate",
+      "tags": [
+        "video",
+        "runway",
+        "sora",
+        "scriptwriting"
+      ],
+      "outcome": "A 60-second production doc with VO script, shot descriptions, and AI video prompts for each scene.",
+      "tools": [
+        "Runway",
+        "Pika",
+        "Sora",
+        "CapCut"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-video-script-and-shot-list/"
+    },
+    {
+      "id": 79,
+      "slug": "character-design-sheet-with-ai",
+      "title": "Character Design Sheet with AI",
+      "category": "creative-ai",
+      "difficulty": "advanced",
+      "tags": [
+        "character-design",
+        "stable-diffusion",
+        "concept-art",
+        "game-art"
+      ],
+      "outcome": "A full character art direction sheet with canonical prompt, pose/expression variants, and SD consistency notes.",
+      "tools": [
+        "Stable Diffusion",
+        "Midjourney",
+        "ComfyUI"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/character-design-sheet-with-ai/"
+    },
+    {
+      "id": 80,
+      "slug": "generate-a-full-ui-design-system-prompt-library",
+      "title": "Generate a Full UI Design System Prompt Library",
+      "category": "creative-ai",
+      "difficulty": "advanced",
+      "tags": [
+        "ui-design",
+        "design-system",
+        "midjourney",
+        "product-design"
+      ],
+      "outcome": "5 reusable AI prompts covering icons, illustrations, heroes, onboarding, and empty states — all in a consistent visual language.",
+      "tools": [
+        "Midjourney",
+        "DALL-E 3",
+        "Figma"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/generate-a-full-ui-design-system-prompt-library/"
+    },
+    {
+      "id": 81,
+      "slug": "ai-interior-design-concepts",
+      "title": "AI Interior Design Concepts",
+      "category": "creative-ai",
+      "difficulty": "beginner",
+      "tags": [
+        "interior-design",
+        "home",
+        "midjourney",
+        "visualization"
+      ],
+      "outcome": "Three distinct interior design concept prompts ready for AI image generation.",
+      "tools": [
+        "Midjourney",
+        "DALL-E 3",
+        "Interior AI"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-interior-design-concepts/"
+    },
+    {
+      "id": 82,
+      "slug": "design-a-core-game-loop",
+      "title": "Design a Core Game Loop",
+      "category": "game-advanced",
+      "difficulty": "intermediate",
+      "tags": [
+        "game-design",
+        "game-loop",
+        "mechanics",
+        "prototyping"
+      ],
+      "outcome": "A structured core loop design with action/feedback/goals mapped out and 3 risk areas identified.",
+      "tools": [
+        "Claude",
+        "Notion",
+        "Unity",
+        "Godot"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/design-a-core-game-loop/"
+    },
+    {
+      "id": 83,
+      "slug": "write-branching-npc-dialogue",
+      "title": "Write Branching NPC Dialogue",
+      "category": "game-advanced",
+      "difficulty": "intermediate",
+      "tags": [
+        "narrative",
+        "dialogue",
+        "npc",
+        "rpg"
+      ],
+      "outcome": "Three fully-written branching dialogue paths with distinct outcomes for different player approaches.",
+      "tools": [
+        "Claude",
+        "Twine",
+        "Ink",
+        "Unity"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/write-branching-npc-dialogue/"
+    },
+    {
+      "id": 84,
+      "slug": "generate-unity-c-game-systems",
+      "title": "Generate Unity C# Game Systems",
+      "category": "game-advanced",
+      "difficulty": "advanced",
+      "tags": [
+        "unity",
+        "csharp",
+        "game-programming",
+        "systems"
+      ],
+      "outcome": "A production-quality Unity C# script with architecture notes, events-based design, and full comments.",
+      "tools": [
+        "Unity",
+        "Visual Studio",
+        "Claude"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/generate-unity-c-game-systems/"
+    },
+    {
+      "id": 85,
+      "slug": "balance-a-game-economy",
+      "title": "Balance a Game Economy",
+      "category": "game-advanced",
+      "difficulty": "advanced",
+      "tags": [
+        "game-economy",
+        "balancing",
+        "monetization",
+        "design"
+      ],
+      "outcome": "Root-cause diagnosis, 3 fixes with trade-offs, and a spreadsheet schema for economy modeling.",
+      "tools": [
+        "Claude",
+        "Google Sheets",
+        "Excel"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/balance-a-game-economy/"
+    },
+    {
+      "id": 86,
+      "slug": "design-an-llm-powered-npc-brain",
+      "title": "Design an LLM-Powered NPC Brain",
+      "category": "game-advanced",
+      "difficulty": "expert",
+      "tags": [
+        "llm",
+        "ai-npc",
+        "game-ai",
+        "agents"
+      ],
+      "outcome": "Full LLM-NPC architecture with memory design, cost controls, system prompt, and API structure.",
+      "tools": [
+        "Claude API",
+        "OpenAI API",
+        "Unity",
+        "Unreal Engine"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/design-an-llm-powered-npc-brain/"
+    },
+    {
+      "id": 87,
+      "slug": "procedural-level-design-system",
+      "title": "Procedural Level Design System",
+      "category": "game-advanced",
+      "difficulty": "expert",
+      "tags": [
+        "procedural-generation",
+        "level-design",
+        "algorithms",
+        "game-programming"
+      ],
+      "outcome": "A complete procedural level design specification with grammar rules, constraints, pseudocode, and sample output.",
+      "tools": [
+        "Claude",
+        "Python",
+        "Unity",
+        "Godot"
+      ],
+      "est_time": "",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/procedural-level-design-system/"
+    },
+    {
+      "id": 88,
+      "slug": "build-a-personal-finance-ai-agent",
+      "title": "Build a Personal Finance AI Agent",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "personal-finance",
+        "ai-agent",
+        "automation",
+        "plaid"
+      ],
+      "outcome": "Full architecture for a self-hosted personal finance AI agent with ingestion pipeline, DB schema, categorisation logic, anomaly detection, and daily briefing template.",
+      "tools": [
+        "Claude API",
+        "Plaid API",
+        "Python",
+        "SQLite"
+      ],
+      "est_time": "3–5 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/build-a-personal-finance-ai-agent/"
+    },
+    {
+      "id": 89,
+      "slug": "tax-strategy-finder-cpa-level-automation",
+      "title": "Tax Strategy Finder (CPA-Level Automation)",
+      "category": "finance",
+      "difficulty": "advanced",
+      "tags": [
+        "tax",
+        "tax-strategy",
+        "cpa",
+        "deductions"
+      ],
+      "outcome": "Ranked list of tax strategies with mechanisms, estimated savings, risk flags, and a concrete action checklist for the current tax year.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "30 minutes",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/tax-strategy-finder-cpa-level-automation/"
+    },
+    {
+      "id": 90,
+      "slug": "ai-health-data-tracker-interpreter",
+      "title": "AI Health Data Tracker & Interpreter",
+      "category": "quick-wins",
+      "difficulty": "intermediate",
+      "tags": [
+        "health",
+        "blood-work",
+        "biometrics",
+        "wellness"
+      ],
+      "outcome": "Clear interpretation of health metrics with optimal vs. reference range comparison, pattern flags, lifestyle suggestions, and a ready-to-use doctor conversation summary.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "10 minutes",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-health-data-tracker-interpreter/"
+    },
+    {
+      "id": 91,
+      "slug": "ghost-database-for-ai-agents",
+      "title": "Ghost Database for AI Agents",
+      "category": "coding",
+      "difficulty": "expert",
+      "tags": [
+        "ai-agent",
+        "memory",
+        "vector-db",
+        "architecture"
+      ],
+      "outcome": "Complete ghost-database architecture spec with schemas for all three memory types, retrieval orchestration pseudocode, system-prompt injection template, and write/read decision rules.",
+      "tools": [
+        "Claude API",
+        "OpenAI API",
+        "Chroma",
+        "Pinecone",
+        "Redis",
+        "PostgreSQL",
+        "Python"
+      ],
+      "est_time": "2–4 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ghost-database-for-ai-agents/"
+    }
+  ]
+}
