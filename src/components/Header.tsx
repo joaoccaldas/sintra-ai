@@ -88,7 +88,7 @@ export default function Header({ total: _total }: Props) {
             <Menu size={20} />
           </button>
 
-          <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0 shrink-0">
+          <a href={BASE_PATH + "/"} className="lg:hidden flex items-center gap-2 min-w-0 shrink-0">
             <TesseractMark size={28} />
             <span className="hidden sm:inline font-serif text-[18px] leading-none tracking-[-0.01em] text-fg-1">
               Sintra <em className="italic text-violet-bright">AI</em>
