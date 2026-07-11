@@ -1,16 +1,14 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  ArrowRight, ExternalLink, Clock,
+  ArrowRight, ExternalLink,
   Zap, BookOpen, Wrench, Newspaper, Lightbulb, FlaskConical,
   Rss, Play, Radio, Workflow,
 } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
-import TodayInHistory from "./TodayInHistory";
 import { AI_NEWS, getLatestNewsDate } from "@/lib/newsDataCombined";
 import { AI_TOOLS } from "@/lib/toolsData";
 import { AI_MODELS } from "@/lib/modelsData";
@@ -21,13 +19,7 @@ import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featu
 import { YOUTUBE_VIDEOS } from "@/lib/videoData";
 import { LIVE_ITEMS, liveAge } from "@/lib/liveFeedData";
 import { AUTOMATION_WORKFLOWS } from "@/lib/automationData";
-
-// The prompt library pulls in the full 455 kB useCases.json. It lives below
-// the fold, so it's code-split out of the homepage's initial bundle and loaded
-// when the user reaches the #library section.
-const PromptLibrarySection = dynamic(() => import("./PromptLibrarySection"), { ssr: false });
-
-const PAGE_SIZE = 12;
+import LibraryTeaser from "./LibraryTeaser";
 
 const fade = {
   hidden: { opacity: 0, y: 10 },
@@ -80,7 +72,7 @@ const INTENTS = [
     label: "Automate", desc: "Turn AI into repeatable work",
     links: [
       { label: "Automation Hub", sub: `${AUTOMATION_WORKFLOWS.length} workflow blueprints`, href: `${BASE_PATH}/automate/` },
-      { label: "Prompt Library", sub: `${USE_CASES_COUNT} executable use cases`, href: "#library", internal: true },
+      { label: "Prompt Library", sub: `${USE_CASES_COUNT} executable use cases`, href: `${BASE_PATH}/library/` },
       { label: "AI Tools",       sub: `${AI_TOOLS.length} tools & apps`,         href: `${BASE_PATH}/tools/` },
     ],
   },
@@ -137,10 +129,6 @@ function IntentNav() {
                 <a
                   key={link.label}
                   href={link.href}
-                  onClick={"internal" in link && link.internal ? (e) => {
-                    e.preventDefault();
-                    document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
-                  } : undefined}
                   className="group flex items-center justify-between gap-2 px-3 py-2 rounded-lg hover:bg-white/[0.05] transition-colors"
                 >
                   <div className="min-w-0">
@@ -185,10 +173,6 @@ function PickCard({ item, index }: { item: FeaturedItem; index: number }) {
       href={href}
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
-      onClick={item.href === "#library" ? (e) => {
-        e.preventDefault();
-        document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
-      } : undefined}
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: 0.05 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
@@ -323,96 +307,7 @@ function ThisWeekHub() {
   );
 }
 
-/* ── 3. Learning paths ──────────────────────────────────────────────── */
-const LEVEL_BADGE = {
-  beginner:     { label: "Beginner",     color: "#10b981" },
-  intermediate: { label: "Intermediate", color: "#9F8CFF" },
-  advanced:     { label: "Advanced",     color: "#ef4444" },
-};
-
-function LearningPathsStrip() {
-  return (
-    <div className="mb-16">
-      <SectionHead label="Learning Paths" href={`${BASE_PATH}/learn/`} linkLabel="Open all paths" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {LEARNING_PATHS.map((path, i) => {
-          const lvl = LEVEL_BADGE[path.level];
-          return (
-            <motion.a
-              key={path.id}
-              href={`${BASE_PATH}/learn/`}
-              custom={i} variants={fade} initial="hidden" animate="show"
-              whileHover={{ y: -1 }}
-              className="group flex items-center gap-4 p-4 rounded-xl border bg-white/[0.015] hover:bg-white/[0.03] transition-all duration-200"
-              style={{ borderColor: path.color + "22" }}
-            >
-              <span className="text-2xl shrink-0 leading-none">{path.emoji}</span>
-              <div className="flex-1 min-w-0">
-                <p className="font-serif text-[15px] text-fg-1 group-hover:text-white transition-colors leading-[1.2] truncate mb-1">
-                  {path.title}
-                </p>
-                <div className="flex items-center gap-2">
-                  <span className="font-mono text-[9px] tracking-[0.10em] uppercase px-1.5 py-0.5 rounded-full border"
-                    style={{ color: lvl.color, borderColor: lvl.color + "44", background: lvl.color + "12" }}>
-                    {lvl.label}
-                  </span>
-                  <span className="font-mono text-[10px] text-fg-4 flex items-center gap-1">
-                    <Clock size={9} /> {path.totalDuration}
-                  </span>
-                </div>
-              </div>
-              <ArrowRight size={13} className="text-fg-4 group-hover:text-violet-bright transition-colors shrink-0" />
-            </motion.a>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-/* ── 6. Stats bar ────────────────────────────────────────────────────────── */
-const STATS = [
-  { label: "AI prompts",     value: () => USE_CASES_COUNT.toLocaleString(),        href: "#library" },
-  { label: "live signals",   value: () => LIVE_ITEMS.length.toLocaleString(),       href: `${BASE_PATH}/live/` },
-  { label: "workflows",      value: () => AUTOMATION_WORKFLOWS.length.toLocaleString(), href: `${BASE_PATH}/automate/` },
-  { label: "news items",     value: () => AI_NEWS.length.toLocaleString(),          href: `${BASE_PATH}/news/` },
-  { label: "tools",          value: () => AI_TOOLS.length.toLocaleString(),         href: `${BASE_PATH}/tools/` },
-  { label: "models tracked", value: () => AI_MODELS.length.toLocaleString(),        href: `${BASE_PATH}/models/` },
-  { label: "guides",         value: () => GUIDES.length.toLocaleString(),           href: `${BASE_PATH}/guides/` },
-  { label: "learning paths", value: () => LEARNING_PATHS.length.toLocaleString(),   href: `${BASE_PATH}/learn/` },
-];
-
-function StatsBar() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 6 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: 0.2 }}
-      className="mb-14 -mx-6 md:-mx-8 px-6 md:px-8 py-5 border-y border-hairline/50 bg-white/[0.015]"
-    >
-      <div className="flex flex-wrap gap-x-6 gap-y-3 justify-center md:justify-start">
-        {STATS.map(s => (
-          <a
-            key={s.label}
-            href={s.href}
-            onClick={s.href === "#library" ? (e) => {
-              e.preventDefault();
-              document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
-            } : undefined}
-            className="group flex items-baseline gap-1.5 hover:opacity-70 transition-opacity"
-          >
-            <span className="font-mono text-[15px] font-semibold text-fg-1 group-hover:text-violet-bright transition-colors tabular-nums">
-              {s.value()}
-            </span>
-            <span className="font-mono text-[10px] text-fg-4 tracking-[0.06em]">{s.label}</span>
-          </a>
-        ))}
-      </div>
-    </motion.div>
-  );
-}
-
-/* ── 6b. Live feed strip — freshest posts from primary sources ───────────── */
+/* ── 3. Live feed strip — freshest posts from primary sources ───────────── */
 function LiveStrip() {
   const items = LIVE_ITEMS.slice(0, 5);
   if (!items.length) return null;
@@ -457,46 +352,7 @@ function LiveStrip() {
   );
 }
 
-/* ── 6c. Automation preview ─────────────────────────────────────────────── */
-function AutomationPreview() {
-  const items = AUTOMATION_WORKFLOWS.slice(0, 3);
-  return (
-    <div className="mb-16">
-      <SectionHead
-        label="Automation operating system"
-        count={AUTOMATION_WORKFLOWS.length}
-        href={`${BASE_PATH}/automate/`}
-        linkLabel="Open automation hub"
-      />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
-        {items.map((workflow, i) => (
-          <motion.a
-            key={workflow.id}
-            href={`${BASE_PATH}/automate/#workflows`}
-            custom={i}
-            variants={fade}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="group rounded-2xl border border-white/[0.07] bg-white/[0.018] p-5 hover:bg-white/[0.04] hover:border-white/[0.14] transition-colors"
-          >
-            <div className="flex items-center gap-2 mb-4">
-              <span className="h-2 w-2 rounded-full" style={{ background: workflow.color, boxShadow: `0 0 8px ${workflow.color}66` }} />
-              <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{workflow.domain}</span>
-            </div>
-            <h3 className="font-serif text-[20px] leading-tight text-fg-1 group-hover:text-white transition-colors mb-3">{workflow.title}</h3>
-            <p className="text-[13px] leading-relaxed text-fg-3 mb-4 line-clamp-3">{workflow.summary}</p>
-            <span className="inline-flex items-center gap-1 font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4 group-hover:text-violet-bright transition-colors">
-              View blueprint <ArrowRight size={10} />
-            </span>
-          </motion.a>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-/* ── 7. Newsletter / RSS CTA ─────────────────────────────────────────────── */
+/* ── 4. Newsletter / RSS CTA ─────────────────────────────────────────────── */
 function NewsletterCTA() {
   return (
     <motion.div
@@ -549,34 +405,21 @@ function NewsletterCTA() {
 export default function ContentNav() {
   return (
     <section id="explore" className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
-      {/* 1 — site stats bar */}
-      <StatsBar />
-
-      {/* 2 — clear operating modes */}
+      {/* 1 — clear operating modes (the one on-page IA recap; the sidebar is
+             the persistent one) */}
       <IntentNav />
 
-      {/* 3 — this week: editorial picks + latest news (tabbed) */}
+      {/* 2 — this week: editorial picks + latest news (tabbed) */}
       <ThisWeekHub />
 
-      {/* 3b — live feed strip */}
+      {/* 3 — live feed strip */}
       <LiveStrip />
 
-      {/* 3c — automation preview */}
-      <AutomationPreview />
+      {/* 4 — prompt library teaser — full library lives at /library/ */}
+      <LibraryTeaser />
 
-      {/* 4 — today in AI history */}
-      <TodayInHistory />
-
-      {/* 5 — structured learning */}
-      <LearningPathsStrip />
-
-      {/* 6 — newsletter + RSS CTA */}
+      {/* 5 — newsletter + RSS CTA */}
       <NewsletterCTA />
-
-      {/* 7 — full library (code-split — see PromptLibrarySection) */}
-      <div id="library">
-        <PromptLibrarySection />
-      </div>
     </section>
   );
 }

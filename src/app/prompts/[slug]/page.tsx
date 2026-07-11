@@ -80,7 +80,7 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-          { "@type": "ListItem", position: 2, name: catLabel, item: `${SITE_URL}/#library` },
+          { "@type": "ListItem", position: 2, name: catLabel, item: `${SITE_URL}/library/` },
           { "@type": "ListItem", position: 3, name: item.title, item: `${SITE_URL}/prompts/${item.slug}/` },
         ],
       },

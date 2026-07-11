@@ -6,22 +6,11 @@ import assert from "node:assert/strict";
 const root = process.cwd();
 const read = (path: string) => readFileSync(join(root, path), "utf8");
 
-test("homepage includes the cinematic AI stack journey", () => {
+test("homepage composes hero directly into ContentNav, no duplicate IA section", () => {
   const page = read("src/app/page.tsx");
-  assert.match(page, /import AIStackJourney from "@\/components\/AIStackJourney"/);
   assert.match(page, /<HeroMinimal total=\{USE_CASES_COUNT\} \/>/);
-  assert.match(page, /<AIStackJourney \/>/);
   assert.match(page, /<ContentNav \/>/);
-});
-
-test("AI stack journey defines the six professional layers", () => {
-  const source = read("src/components/AIStackJourney.tsx");
-  for (const layer of ["signal", "meaning", "automation", "decision", "mastery", "trust"]) {
-    assert.match(source, new RegExp(`id: "${layer}"`));
-  }
-  assert.match(source, /Scroll the AI stack/);
-  assert.match(source, /A downward journey from/);
-  assert.match(source, /Build workflows/);
+  assert.doesNotMatch(page, /AIStackJourney/);
 });
 
 test("hero positions Sintra as an AI command center", () => {
@@ -30,4 +19,23 @@ test("hero positions Sintra as an AI command center", () => {
   assert.match(hero, /The operating map for/);
   assert.match(hero, /Explore live AI/);
   assert.match(hero, /Build an automation/);
+});
+
+test("ContentNav keeps one IA recap (IntentNav) and a library teaser linking to /library/", () => {
+  const source = read("src/components/ContentNav.tsx");
+  assert.match(source, /function IntentNav/);
+  assert.doesNotMatch(source, /function StatsBar/);
+  assert.doesNotMatch(source, /function AutomationPreview/);
+  assert.doesNotMatch(source, /function LearningPathsStrip/);
+  assert.match(source, /import LibraryTeaser from "\.\/LibraryTeaser"/);
+});
+
+test("LibraryTeaser does not import the full use-case dataset", () => {
+  const source = read("src/components/LibraryTeaser.tsx");
+  assert.doesNotMatch(source, /from "@\/lib\/data"/);
+});
+
+test("dedicated /library/ route hosts the full prompt library", () => {
+  const source = read("src/app/library/page.tsx");
+  assert.match(source, /PromptLibrarySection/);
 });

@@ -14,7 +14,7 @@ const LINKS = [
   { href: "/news/", label: "AI News" },
   { href: "/tools/", label: "AI Tools" },
   { href: "/guides/", label: "Guides" },
-  { href: "/#library", label: "Prompt Library" },
+  { href: "/library/", label: "Prompt Library" },
 ];
 
 export default function NotFound() {

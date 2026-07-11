@@ -23,7 +23,7 @@ export interface LearningPath {
 
 const concept = (id: string) => `${BASE_PATH}/concepts/#${id}`;
 const page = (route: string) => `${BASE_PATH}/${route.replace(/^\/+|\/+$/g, "")}/`;
-const library = `${BASE_PATH}/#library`;
+const library = `${BASE_PATH}/library/`;
 
 export const LEARNING_PATHS: LearningPath[] = [
   {
