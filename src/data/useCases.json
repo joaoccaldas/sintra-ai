@@ -9345,5 +9345,1536 @@
       "chatgpt",
       "teams"
     ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "GL-to-Subledger Reconciliation Agent",
+    "prompt": "\"Act as a senior accountant. I will paste two extracts: (A) GL balances for accounts [account range, e.g., 1200–1299 AR] and (B) the subledger totals for the same period [month/year].\n\nFor each account:\n1. Match GL balance to subledger total and compute the difference\n2. Classify each difference: timing, mapping error, manual journal, FX revaluation, or unknown\n3. For 'unknown', list the exact follow-up query I should run in [ERP system]\n4. Produce a reconciliation summary table I can paste into my close binder, with aging of unreconciled items\n\nGL extract: [paste]\nSubledger extract: [paste]\"",
+    "tags": [
+      "finance",
+      "reconciliation",
+      "month-end-close",
+      "general-ledger",
+      "accounting"
+    ],
+    "best_for": "Controllers and senior accountants doing recurring GL-to-subledger tie-outs at close",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A classified reconciliation table per account with differences explained, aged, and a concrete follow-up query list for the unexplained residual.",
+    "inputs": [
+      {
+        "label": "account range, e.g., 1200–1299 AR"
+      },
+      {
+        "label": "month/year"
+      },
+      {
+        "label": "ERP system"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel",
+      "ERP export"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "table",
+    "sample_output": "| Account | GL | Subledger | Diff | Class | Action |\n|---|---|---|---|---|---|\n| 1210 AR-Trade | 4,218,400 | 4,204,150 | 14,250 | Timing | 3 receipts posted 07-01, clears next run |\n| 1230 AR-IC | 812,000 | 790,500 | 21,500 | Mapping | JE 4471 booked to 1230 instead of 1231 — reclass |\n| 1250 Unbilled | 240,300 | 240,300 | 0 | — | Reconciled |\n\n**Aging of open items:** 1 item <30d (14,250) · 1 item 30–60d (21,500)\n**Follow-up:** run FBL3N on 1230 filtered to doc type SA for June.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Intercompany Reconciliation & Mismatch Resolver",
+    "prompt": "\"I need to reconcile intercompany balances across [number] entities before consolidation.\n\nI will paste the IC matrix (payables and receivables by entity pair) from [system].\n\nPlease:\n1. Identify every entity pair where AR ≠ AP and rank by absolute mismatch\n2. Classify likely causes: FX rate differences, in-transit invoices, missed eliminations, one-sided bookings\n3. Draft the email to each counterparty controller with the exact items to confirm\n4. Propose which mismatches can be cleared with a top-side adjustment vs which need entity-level correction\n\nIC matrix: [paste]\nGroup FX rates used: [paste]\"",
+    "tags": [
+      "finance",
+      "intercompany",
+      "consolidation",
+      "reconciliation",
+      "month-end-close"
+    ],
+    "best_for": "Group controllers and consolidation teams closing multi-entity structures",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A ranked mismatch list with root-cause classification, ready-to-send counterparty emails, and a clear top-side vs entity-level fix decision for each pair.",
+    "inputs": [
+      {
+        "label": "number"
+      },
+      {
+        "label": "system"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel",
+      "Consolidation system"
+    ],
+    "est_time": "2-3 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Top mismatches**\n1. SE01↔DE02: AR 1,204k vs AP 1,187k → diff 17k. Cause: invoice 88123 in transit (shipped 06-29, received 07-02). Fix: accrue on DE02.\n2. NO01↔SE01: 9k. Cause: FX — NO01 books at daily rate, group uses monthly avg. Fix: top-side, recurring — propose policy alignment.\n\n**Draft email (DE02 controller):** \"Hi Anna — for June close, can you confirm receipt-side booking of SE01 invoice 88123 (17,050 EUR, shipped 29 June)? We show AR open...\"",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Vendor Master Deduplication & Enrichment",
+    "prompt": "\"Here is an export of our vendor master file with [number] records: [paste columns: vendor ID, name, VAT/tax ID, address, bank account, payment terms].\n\nPlease:\n1. Flag likely duplicates — same tax ID, near-identical names (e.g., 'ACME GmbH' vs 'Acme Gmbh.'), or same bank account under different IDs\n2. Flag risk records: missing tax ID, PO-box-only address, bank account changed in the last [period]\n3. Propose a canonical 'survivor' record for each duplicate cluster with the merge rationale\n4. Output a cleanup action list ordered by payment volume at risk\"",
+    "tags": [
+      "finance",
+      "master-data",
+      "vendor-management",
+      "accounts-payable",
+      "data-quality"
+    ],
+    "best_for": "AP managers and master data teams cleaning vendor files before an ERP migration or audit",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A duplicate-cluster report with survivor records chosen, fraud-risk flags, and a cleanup queue ordered by spend exposure.",
+    "inputs": [
+      {
+        "label": "number"
+      },
+      {
+        "label": "paste columns: vendor ID, name, VAT/tax ID, address, bank account, payment terms"
+      },
+      {
+        "label": "period"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "table",
+    "sample_output": "**Duplicate clusters found: 14 (covering 31 records)**\n\n| Cluster | Records | Signal | Survivor | Rationale |\n|---|---|---|---|---|\n| C1 | V1004, V2381 | Same VAT DE811... | V1004 | Older, 96% of spend, complete bank data |\n| C2 | V1877, V3010, V3011 | Same IBAN | V1877 | Others created same week — likely upload error |\n\n**Risk flags:** 6 vendors missing VAT ID (total 12m spend) · 2 bank-account changes in last 60 days without PO history — verify by phone before next payment run.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Customer Master Data Quality Audit",
+    "prompt": "\"Audit this customer master extract for data quality issues before we roll out [new CRM/billing system].\n\nColumns: [customer ID, legal name, country, VAT ID, credit limit, payment terms, sales org, dunning level].\nData: [paste]\n\nPlease:\n1. Score each field for completeness and validity (VAT format per country, terms within policy [policy])\n2. Find customers with conflicting records across sales orgs (different terms or credit limits for the same legal entity)\n3. Quantify the exposure: total credit limit sitting on records with missing/invalid tax data\n4. Give me a prioritised remediation plan with owner suggestions (sales ops vs finance vs shared services)\"",
+    "tags": [
+      "finance",
+      "master-data",
+      "data-quality",
+      "order-to-cash",
+      "credit-management"
+    ],
+    "best_for": "Finance and sales ops teams preparing a CRM/billing migration or credit policy review",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A field-by-field data quality scorecard, a conflict list across sales orgs, quantified credit exposure on bad records, and an owner-assigned remediation plan.",
+    "inputs": [
+      {
+        "label": "new CRM/billing system"
+      },
+      {
+        "label": "customer ID, legal name, country, VAT ID, credit limit, payment terms, sales org, dunning level"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "policy"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Field quality scorecard**\n- VAT ID: 88% valid format · 7% missing · 5% wrong country pattern\n- Payment terms: 91% within policy · 43 records at NET90 (policy max NET60)\n\n**Conflicts:** 12 legal entities carry different credit limits across sales orgs — largest: Contoso AB (2.0m in SE10 vs 0.5m in SE20).\n\n**Exposure:** 8.4m of credit limit sits on records with missing VAT data.\n\n**Remediation:** 1) NET90 records → finance review this week; 2) VAT gaps → shared services, batch of 50/week; 3) Credit conflicts → credit manager sign-off.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Chart of Accounts Rationalisation & Mapping",
+    "prompt": "\"We are rationalising our chart of accounts from [current count] accounts to a leaner group CoA, and mapping legacy accounts to the new structure.\n\nHere is the current CoA with account, description, last-12-month activity (count and value): [paste]\nTarget structure principles: [e.g., max 400 accounts, IFRS statement mapping, no company-specific accounts]\n\nPlease:\n1. Flag dormant accounts (no postings in 12 months) and near-duplicate accounts by description\n2. Propose the target account for every legacy account with a confidence rating\n3. List accounts that need a human decision (mixed usage, P&L/BS ambiguity) with the specific question to resolve\n4. Output the mapping as a two-column table ready for the migration load file\"",
+    "tags": [
+      "finance",
+      "chart-of-accounts",
+      "master-data",
+      "erp-migration",
+      "accounting"
+    ],
+    "best_for": "Controllers and ERP teams running CoA harmonisation or S/4-style migrations",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A complete legacy-to-target CoA mapping table with confidence ratings, a dormant/duplicate kill list, and a short human-decision queue with precise questions.",
+    "inputs": [
+      {
+        "label": "current count"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "e.g., max 400 accounts, IFRS statement mapping, no company-specific accounts"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "3-4 hours",
+    "output_kind": "table",
+    "sample_output": "**Kill list:** 214 dormant accounts (no postings ≥12m) · 38 near-duplicates (e.g., 60110 'Travel - Air' / 60111 'Airfare').\n\n| Legacy | Description | Target | Confidence |\n|---|---|---|---|\n| 60110 | Travel - Air | 6410 Travel | High |\n| 60111 | Airfare | 6410 Travel | High |\n| 71200 | Consulting - Mixed | ? | **Decision needed** |\n\n**Decision queue:** 71200 has 60% opex consulting, 40% capitalisable project spend — split into 6520/1810, or keep single with project-code discipline? Ask group accounting policy owner.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "claude-code"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Cost Center & Entity Hierarchy Mapper (ERP → EPM)",
+    "prompt": "\"Our planning tool [EPM, e.g., Anaplan/Adaptive/Pigment] hierarchy has drifted from the ERP cost center master.\n\nERP cost center list (code, name, valid-from, responsible, company): [paste]\nEPM hierarchy export (node, parent, level): [paste]\n\nPlease:\n1. Diff the two: cost centers missing in EPM, nodes in EPM with no ERP counterpart, and name/owner mismatches\n2. Detect structural issues — orphan nodes, cost centers reporting to two parents, closed cost centers still receiving plan data\n3. Propose the corrected hierarchy as an indented tree\n4. Write the change log entry and the note to planning admins\"",
+    "tags": [
+      "finance",
+      "master-data",
+      "fp&a",
+      "planning-systems",
+      "hierarchy"
+    ],
+    "best_for": "FP&A systems owners keeping EPM structures in sync with the ERP",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A three-way diff of ERP vs EPM hierarchies, structural error list, corrected tree, and a paste-ready change note for planning admins.",
+    "inputs": [
+      {
+        "label": "EPM, e.g., Anaplan/Adaptive/Pigment"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel",
+      "EPM export"
+    ],
+    "est_time": "1-2 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Diff summary**\n- 7 ERP cost centers missing in EPM (all created after 05-15) → add under listed parents\n- 3 EPM nodes with no ERP counterpart: CC_9810, CC_9811 (test nodes — delete), CC_4413 (closed 03-31 but received 240k of plan — reallocate to CC_4410)\n- 2 owner mismatches (CC_2201, CC_2205)\n\n**Corrected tree (extract)**\nNordics\n├─ SE Operations\n│  ├─ CC_2201 Stockholm Ops (owner: L. Berg)\n│  └─ CC_2210 Gothenburg Ops *(new)*\n└─ NO Operations …",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Bank Reconciliation Exception Triage",
+    "prompt": "\"Help me clear my bank reconciliation exceptions faster.\n\nI will paste (A) unmatched bank statement lines and (B) unmatched cash ledger entries for [account/period].\n\nPlease:\n1. Propose matches across the two lists (amount, date proximity, reference fragments, sums of multiple items to one)\n2. For each proposed match, state the matching logic so I can verify\n3. Group the remainder: bank fees to book, timing items to carry, and true investigations\n4. Draft the journal entries for the fees and charges\n\nBank lines: [paste]\nLedger lines: [paste]\"",
+    "tags": [
+      "finance",
+      "bank-reconciliation",
+      "treasury",
+      "month-end-close",
+      "quick-win"
+    ],
+    "best_for": "Accountants clearing weekly or month-end bank rec exceptions",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "Proposed matches with explicit logic, a categorised remainder (book / carry / investigate), and draft journals for fees — cutting manual matching time sharply.",
+    "inputs": [
+      {
+        "label": "account/period"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "45 minutes",
+    "output_kind": "table",
+    "sample_output": "**Proposed matches (verify before accepting)**\n1. Bank -12,450.00 (06-28, ref 'INV88*') ↔ ledger 12,450.00 INV-8812 — exact amount, ref fragment\n2. Bank -3,300.00 ↔ ledger 1,100 + 2,200 (same payee, same day) — 2:1 split\n\n**Book now:** bank charges 214.50 → Dr 6810 Bank fees / Cr 1010 Cash\n**Carry:** 2 deposits in transit (06-30)\n**Investigate:** unknown incoming 5,000.00 'AUTOGIRO K.' — ask AR who invoiced this payer.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "copilot"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Fixed Asset Register vs GL Tie-Out",
+    "prompt": "\"Tie out our fixed asset register to the general ledger for [period].\n\nFA register summary by class (cost, accumulated depreciation, NBV): [paste]\nGL balances for asset and depreciation accounts: [paste]\nMovements this period (additions, disposals, transfers, depreciation run): [paste]\n\nPlease:\n1. Reconcile cost and accumulated depreciation by asset class and isolate differences\n2. Check the movement schedule roll-forward: opening + additions − disposals ± transfers = closing\n3. Flag classic culprits: assets capitalised in GL but not in the register, disposal proceeds booked without register retirement, depreciation posted manually\n4. Produce the tie-out schedule for the audit file\"",
+    "tags": [
+      "finance",
+      "fixed-assets",
+      "reconciliation",
+      "audit",
+      "accounting"
+    ],
+    "best_for": "Accountants preparing asset schedules for close or year-end audit",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "An audit-ready fixed asset tie-out schedule with roll-forward proof and each difference attributed to a specific transaction type.",
+    "inputs": [
+      {
+        "label": "period"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "1-2 hours",
+    "output_kind": "table",
+    "sample_output": "**Cost reconciliation by class**\n| Class | Register | GL | Diff | Cause |\n|---|---|---|---|---|\n| IT equipment | 3,412k | 3,458k | 46k | JE 5512 capitalised in GL, asset shell not created |\n| Vehicles | 890k | 890k | 0 | — |\n\n**Roll-forward:** opening 12,400k + additions 610k − disposals 180k = 12,830k ✓ matches register.\n\n**Actions:** create asset for JE 5512 (46k, in-service 06-12); reverse manual depreciation JE 5580 (system run covered it — double count 8k).",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Master Data & Reconciliation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Payroll-to-GL Reconciliation Checker",
+    "prompt": "\"Reconcile our payroll run to the GL posting for [month].\n\nPayroll register totals (gross, employer taxes, benefits, net pay, by cost center if available): [paste]\nGL payroll journal as posted: [paste]\nAccrual balances (bonus, vacation) before and after: [paste]\n\nPlease:\n1. Tie each payroll register component to its GL account and list the deltas\n2. Check the clearing account nets to zero after the net-pay bank file\n3. Verify accrual movements are consistent with the register (vacation taken vs accrued)\n4. Summarise in a checklist I can attach to the close task, and flag anything for HR vs accounting follow-up\"",
+    "tags": [
+      "finance",
+      "payroll",
+      "reconciliation",
+      "month-end-close",
+      "accounting"
+    ],
+    "best_for": "Accountants and payroll accountants who own the payroll close task",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A component-by-component payroll tie-out with clearing-account proof, accrual consistency check, and a close-ready checklist splitting HR vs accounting follow-ups.",
+    "inputs": [
+      {
+        "label": "month"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "1 hour",
+    "output_kind": "table",
+    "sample_output": "| Component | Register | GL | Δ | Note |\n|---|---|---|---|---|\n| Gross pay | 2,140,300 | 2,140,300 | 0 | ✓ |\n| Employer tax | 672,450 | 668,200 | 4,250 | Rate table stale for 2 new hires — HR to correct, accrue now |\n| Net pay clearing | — | 0 | 0 | ✓ nets after bank file |\n\n**Accruals:** vacation accrual −38k vs register-reported vacation taken 41k → 3k gap, likely June starters; acceptable, monitor.\n**Checklist:** 6/7 ticks green; 1 open (employer tax) with owner + due date.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Process Design & Documentation",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Finance SOP Generator from a Process Interview",
+    "prompt": "\"I will describe (or paste a transcript of) how we actually perform [process, e.g., supplier onboarding] today, including the messy parts.\n\nPlease turn it into a formal SOP with:\n1. Purpose, scope, roles, systems used\n2. Numbered step-by-step procedure with screenshots placeholders and decision points ('if X then Y')\n3. Controls embedded at the right steps (who approves, what evidence is kept)\n4. A one-page quick-reference version for new joiners\n5. Open questions where my description was ambiguous — don't invent details\n\nTranscript/description: [paste]\"",
+    "tags": [
+      "finance",
+      "process-documentation",
+      "sop",
+      "internal-controls",
+      "onboarding"
+    ],
+    "best_for": "Anyone documenting tribal-knowledge finance processes for the first time",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A formal, control-aware SOP plus a one-page quick reference, with ambiguities surfaced as questions instead of invented steps.",
+    "inputs": [
+      {
+        "label": "process, e.g., supplier onboarding"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Word"
+    ],
+    "est_time": "1 hour",
+    "output_kind": "templates",
+    "sample_output": "**SOP-AP-003: Supplier Onboarding** (v0.1 draft)\n\n**Purpose:** Ensure new suppliers are validated before first payment.\n**Roles:** Requester (business), AP analyst, AP manager (approver).\n\n**Procedure**\n1. Requester submits form F-12 with VAT ID and bank details\n2. AP analyst validates VAT ID against VIES → *if invalid, return to requester (Control C1)*\n3. Bank details confirmed via call-back to number on official letterhead — never the email (Control C2)\n...\n\n**Open questions:** Who approves suppliers above 100k annual spend — AP manager or procurement director? What is the SLA for step 3?",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Process Design & Documentation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Month-End Close Calendar & RACI Builder",
+    "prompt": "\"Design a month-end close calendar for our finance team.\n\nContext:\n- Entities: [number and names]\n- Team: [roles and headcount]\n- Systems: [ERP, consolidation, reporting tools]\n- Current close: workday [X]; target: workday [Y]\n- Known bottlenecks: [e.g., intercompany, late accruals from ops]\n\nPlease produce:\n1. A day-by-day close calendar (WD-2 to WD+[Y]) with task, owner, dependency, and cut-off time\n2. A RACI matrix for the 15–20 core close tasks\n3. The critical path and which 3 changes most likely save a day\n4. A daily 15-minute close stand-up agenda template\"",
+    "tags": [
+      "finance",
+      "month-end-close",
+      "process-design",
+      "raci",
+      "close-optimisation"
+    ],
+    "best_for": "Controllers compressing the close or onboarding a new team structure",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A dependency-aware close calendar, RACI for core tasks, the identified critical path with the three highest-leverage changes, and a stand-up template.",
+    "inputs": [
+      {
+        "label": "number and names"
+      },
+      {
+        "label": "roles and headcount"
+      },
+      {
+        "label": "ERP, consolidation, reporting tools"
+      },
+      {
+        "label": "X"
+      },
+      {
+        "label": "Y"
+      },
+      {
+        "label": "e.g., intercompany, late accruals from ops"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "plan",
+    "sample_output": "**Close calendar (extract)**\n| Day | Task | Owner | Depends on | Cut-off |\n|---|---|---|---|---|\n| WD-1 | AP cut-off + accrual list from ops | AP analyst | — | 16:00 |\n| WD1 | Payroll posting + rec | Payroll acct | HR file WD-1 | 12:00 |\n| WD2 | IC confirmation deadline | Entity ctrl | WD1 postings | 14:00 |\n\n**Critical path:** ops accruals → IC → consolidation. \n**3 changes:** (1) move ops accrual template to WD-2 with estimates allowed, (2) auto-match IC below 5k, (3) pre-close FX rates on WD-1.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Process Design & Documentation",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "As-Is / To-Be Process Map Designer",
+    "prompt": "\"Help me redesign our [finance process, e.g., customer credit approval] process.\n\nAs-is description (who does what, in which system, typical delays): [paste]\nPain points: [paste]\nConstraints: [e.g., ERP can't change, 4-eyes principle mandatory]\n\nPlease:\n1. Draw the as-is flow as a Mermaid swimlane-style flowchart (roles as lanes)\n2. Mark waste: handoffs, rework loops, waiting, duplicate data entry\n3. Propose the to-be flow (also Mermaid), respecting constraints, with automation candidates tagged [AUTO]\n4. Quantify expected impact per change (time saved, error reduction) and list what to pilot first\"",
+    "tags": [
+      "finance",
+      "process-design",
+      "process-mapping",
+      "automation",
+      "mermaid"
+    ],
+    "best_for": "Finance process owners preparing an improvement or automation case",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "Paste-ready as-is and to-be Mermaid flowcharts, waste annotations, tagged automation candidates, and a pilot-first recommendation with impact estimates.",
+    "inputs": [
+      {
+        "label": "finance process, e.g., customer credit approval"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "e.g., ERP can't change, 4-eyes principle mandatory"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Mermaid",
+      "Miro"
+    ],
+    "est_time": "1-2 hours",
+    "output_kind": "visual",
+    "sample_output": "```mermaid\nflowchart LR\n  subgraph Sales\n    A[Request credit limit] --> B[Fill form F-3]\n  end\n  subgraph Finance\n    B --> C{Complete?}\n    C -- no --> B\n    C -- yes --> D[Pull credit report]\n    D --> E[Approve/Reject]\n  end\n```\n**Waste:** 34% of forms bounce at C (missing VAT ID) — rework loop costs ~2 days.\n**To-be:** form pre-filled from CRM [AUTO], credit report pulled via API [AUTO], approval in workflow tool with 4-eyes preserved. Expected cycle time: 5 days → 1 day. **Pilot:** CRM pre-fill (no IT dependency on ERP).",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Process Design & Documentation",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "SOX Control Narrative & Test Script Writer",
+    "prompt": "\"Write the control documentation for [control, e.g., quarterly balance sheet reconciliation review].\n\nContext:\n- Risk addressed: [e.g., material misstatement of account balances]\n- Control frequency and owner: [detail]\n- Evidence produced: [detail]\n- Systems involved: [detail]\nProcess walkthrough notes: [paste]\n\nPlease produce:\n1. A control narrative (objective, risk, control activity, precision, evidence) in standard SOX format\n2. The design-effectiveness walkthrough questions an auditor would ask\n3. An operating-effectiveness test script: population, sample size logic, attributes to test, pass/fail criteria\n4. Common deficiency scenarios for this control and how to remediate each\"",
+    "tags": [
+      "finance",
+      "sox",
+      "internal-controls",
+      "audit",
+      "compliance"
+    ],
+    "best_for": "Internal controls teams and process owners preparing for SOX or internal audit cycles",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "Audit-standard control narrative, walkthrough question set, a complete OE test script with sampling logic, and a deficiency/remediation playbook.",
+    "inputs": [
+      {
+        "label": "control, e.g., quarterly balance sheet reconciliation review"
+      },
+      {
+        "label": "e.g., material misstatement of account balances"
+      },
+      {
+        "label": "detail"
+      },
+      {
+        "label": "detail"
+      },
+      {
+        "label": "detail"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Word"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "templates",
+    "sample_output": "**Control C-BS-04: Balance Sheet Reconciliation Review**\n*Objective:* All balance sheet accounts >50k are reconciled and independently reviewed quarterly.\n*Precision:* Reviewer checks support ties to GL within 1k and open items <90 days.\n\n**Test script**\n- Population: all recs Q1–Q3 (est. 240)\n- Sample: 25 (random, per firm sampling guide for quarterly control)\n- Attributes: (a) preparer ≠ reviewer, (b) evidence attached, (c) review before WD10, (d) open items aged & actioned\n\n**Deficiency scenario:** reviewer = preparer on 2 samples → segregation failure; remediate with system-enforced reviewer field + retrain.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Process Design & Documentation",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Finance Policy Drafter (T&E, Delegation of Authority)",
+    "prompt": "\"Draft a [policy type, e.g., travel & expense / delegation of authority / credit] policy for a [size, industry] company operating in [countries].\n\nRequirements:\n- Approval thresholds: [paste or ask me]\n- Non-negotiables: [e.g., no cash advances, board approval above X]\n- Tone: clear and enforceable, not legalese\n\nPlease:\n1. Draft the full policy with numbered sections\n2. Include a threshold matrix table\n3. Add an exceptions process (who can approve deviations, how logged)\n4. List country-specific points I must verify with local advisors (per-diem rules, works council, tax caps) — flag, don't guess\"",
+    "tags": [
+      "finance",
+      "policy",
+      "governance",
+      "t&e",
+      "delegation-of-authority"
+    ],
+    "best_for": "Finance managers formalising policies as the company scales",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A complete, enforceable policy draft with threshold matrix and exception process, plus a flagged list of local-law items to verify rather than invented specifics.",
+    "inputs": [
+      {
+        "label": "policy type, e.g., travel & expense / delegation of authority / credit"
+      },
+      {
+        "label": "size, industry"
+      },
+      {
+        "label": "countries"
+      },
+      {
+        "label": "paste or ask me"
+      },
+      {
+        "label": "e.g., no cash advances, board approval above X"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Word"
+    ],
+    "est_time": "1 hour",
+    "output_kind": "templates",
+    "sample_output": "**Travel & Expense Policy — v1.0 draft**\n\n**3. Approval thresholds**\n| Expense | Limit | Approver |\n|---|---|---|\n| Hotel/night | 180 EUR (capital cities 220) | Manager |\n| Team event/person | 60 EUR | Cost center owner |\n| Any single expense > 1,000 EUR | — | Director + receipt mandatory |\n\n**7. Exceptions:** CFO approval, logged in exceptions register with reason; reviewed quarterly by audit committee.\n\n**Verify locally (do not adopt blindly):** SE per-diem tax-free rates (Skatteverket table), DE works-council notification, BR CLT meal-allowance rules.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Process Design & Documentation",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Desktop Procedure (DTP) Writer from a Walkthrough Transcript",
+    "prompt": "\"I recorded myself performing [task, e.g., the monthly FX revaluation run] and have the transcript (or my rough notes) here: [paste].\n\nTurn it into a desktop procedure that a competent stand-in could follow during my vacation:\n1. Numbered clicks/steps with system names, transaction codes, and exact field values\n2. 'What good looks like' checkpoints after each major step (expected record counts, control totals)\n3. Failure branches: the 3 most likely errors and exactly what to do\n4. Prerequisites and timing (what must be done before, deadlines)\nKeep it under 2 pages. Mark any step where my transcript was unclear with [VERIFY].\"",
+    "tags": [
+      "finance",
+      "process-documentation",
+      "dtp",
+      "business-continuity",
+      "quick-win"
+    ],
+    "best_for": "Anyone who is the single point of failure for a recurring finance task",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A vacation-proof desktop procedure with checkpoints and failure branches, honest [VERIFY] marks where the source was unclear.",
+    "inputs": [
+      {
+        "label": "task, e.g., the monthly FX revaluation run"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Word"
+    ],
+    "est_time": "30 minutes",
+    "output_kind": "templates",
+    "sample_output": "**DTP: Monthly FX Revaluation (SAP FAGL_FCV)**\n*Prereqs:* month-end rates loaded (check OB08 has current-month EURSEK, EURNOK); all bank recs posted.\n\n1. T-code FAGL_FCV → variant 'MONTHLY_PROD'\n2. Valuation area: 20, period: current, **test run first**\n3. ✅ Checkpoint: log shows ~340–360 items, delta < 500k absolute. If >500k → STOP, check OB08 rate typo\n4. Remove test flag, execute, note session number in close checklist\n\n*Failure branch:* 'Period locked' → ask GL lead to open period via OB52 [VERIFY: who covers when GL lead is also out?]",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "otter-ai"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Process Design & Documentation",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Process Mining Readiness: Event Log Specification",
+    "prompt": "\"We want to run process mining on our [process, e.g., purchase-to-pay] process in [tool, e.g., Celonis/open-source PM4Py].\n\nSystems involved and their tables/logs: [describe what you know]\n\nPlease:\n1. Define the event log spec: case ID choice (and why), mandatory activities with their timestamp sources, and attributes worth extracting (amount, vendor, plant, user)\n2. Write the extraction logic per activity (which table/field marks 'PO created', 'goods receipt', 'invoice posted', 'payment cleared')\n3. List data quality traps: missing timestamps, batch-job users, timezone mixing, deleted documents\n4. Propose the first 5 analyses to run and the concrete question each answers\"",
+    "tags": [
+      "finance",
+      "process-mining",
+      "procure-to-pay",
+      "data-engineering",
+      "analytics"
+    ],
+    "best_for": "Finance transformation teams scoping their first process mining project",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A complete event-log specification with case ID rationale, per-activity extraction logic, data-quality trap list, and the first five analyses to run.",
+    "inputs": [
+      {
+        "label": "process, e.g., purchase-to-pay"
+      },
+      {
+        "label": "tool, e.g., Celonis/open-source PM4Py"
+      },
+      {
+        "label": "describe what you know"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Celonis",
+      "Python"
+    ],
+    "est_time": "3 hours",
+    "output_kind": "spec",
+    "sample_output": "**Case ID:** PO line item (EBELN+EBELP) — invoice-level cases fragment multi-PO invoices; header-level hides line splits.\n\n**Activities**\n| Activity | Source | Timestamp |\n|---|---|---|\n| PO created | EKKO | AEDAT + creation time from CDHDR |\n| Goods receipt | MSEG (BWART 101) | CPUDT/CPUTM |\n| Invoice posted | RBKP | CPUDT |\n| Payment cleared | BSAK | AUGDT ⚠ date only — day precision |\n\n**Traps:** AUGDT has no time (order same-day events explicitly); batch user 'RFC_BATCH' masks real actor — join CDHDR.\n\n**First analyses:** maverick buying rate; touchless invoice %; approval bottleneck by plant; payment-term leakage; rework loops (PO changes after GR).",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "claude-code",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Order-to-Cash & Procure-to-Pay",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "AR Collections Prioritisation & Dunning Sequence",
+    "prompt": "\"Here is our AR aging by customer: [paste: customer, total due, buckets 0-30/31-60/61-90/90+, payment history notes, strategic flag].\n\nPlease:\n1. Score and rank collection priorities — combine amount at risk, aging velocity (moved a bucket this month?), and payment history\n2. Recommend the action per tier: friendly nudge / firm reminder / call / escalate to sales / credit hold\n3. Draft the email sequence (3 touches) for the top tier, professional but firm, referencing [payment terms]\n4. Flag accounts where dunning could damage a strategic relationship and propose the alternative route\"",
+    "tags": [
+      "finance",
+      "accounts-receivable",
+      "collections",
+      "order-to-cash",
+      "cash-flow"
+    ],
+    "best_for": "AR teams and controllers running weekly collections without dedicated software",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A scored collection worklist with per-tier actions, a three-touch dunning email sequence, and strategic-account exceptions routed away from standard dunning.",
+    "inputs": [
+      {
+        "label": "paste: customer, total due, buckets 0-30/31-60/61-90/90+, payment history notes, strategic flag"
+      },
+      {
+        "label": "payment terms"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "1 hour",
+    "output_kind": "templates",
+    "sample_output": "**Priority worklist**\n| Rank | Customer | 90+ | Velocity | Action |\n|---|---|---|---|---|\n| 1 | Nordic Retail AS | 184k | ↑2 buckets | Call today + credit hold warning |\n| 2 | ACME GmbH | 92k | stable | Firm reminder (touch 2) |\n| 3 | KeyStrat AB ⭐ | 210k | ↑1 | **Route via account exec** — renewal in Q3, no dunning\n\n**Touch 1 (day 3 overdue):** \"Hi [name], a quick note that invoice [no] for [amount] fell due on [date]. Could you confirm payment timing? …\"",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "copilot"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Order-to-Cash & Procure-to-Pay",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Customer Credit Limit Review Memo",
+    "prompt": "\"Prepare a credit limit review for [customer].\n\nInputs:\n- Requested limit: [amount] (current: [amount])\n- Their latest financials or credit report summary: [paste]\n- Our trading history: [paste: revenue, payment behaviour, disputes]\n- Our exposure appetite: [policy, e.g., max 10% of receivables per customer]\n\nPlease:\n1. Analyse their capacity to pay: liquidity, leverage, trend, any red flags in the report\n2. Compute our concentration exposure at the requested limit\n3. Recommend approve / approve with conditions / decline, with specific conditions (payment terms, security, review cadence)\n4. Write the one-page memo for the credit committee\"",
+    "tags": [
+      "finance",
+      "credit-management",
+      "order-to-cash",
+      "risk",
+      "memo"
+    ],
+    "best_for": "Credit controllers and finance managers who own credit decisions",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A credit analysis with concentration math and a committee-ready one-page memo containing a clear conditional recommendation.",
+    "inputs": [
+      {
+        "label": "customer"
+      },
+      {
+        "label": "amount"
+      },
+      {
+        "label": "amount"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste: revenue, payment behaviour, disputes"
+      },
+      {
+        "label": "policy, e.g., max 10% of receivables per customer"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "45 minutes",
+    "output_kind": "analysis",
+    "sample_output": "**Credit Review: Contoso AB — requested 500k (current 250k)**\n\n*Capacity:* current ratio 1.4 (stable), net debt/EBITDA 2.1→2.6 (rising, acquisition-driven), payment index good (avg 4 days late, no disputes 24m).\n*Concentration:* at 500k, Contoso = 8.7% of receivables — inside 10% policy but top-2 exposure.\n\n**Recommendation: approve with conditions**\n- 350k now, 500k after H1 accounts show leverage < 2.5\n- Terms stay NET30 (no extension to NET60 as requested)\n- Auto-review trigger: any invoice >14 days late",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Order-to-Cash & Procure-to-Pay",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Three-Way Match Exception Resolver",
+    "prompt": "\"Help me clear our blocked-invoice queue (PO / goods receipt / invoice mismatches).\n\nExceptions export: [paste: invoice no, vendor, PO, invoice qty/price, GR qty, PO qty/price, block reason]\nTolerance policy: [e.g., 2% or 50 EUR price, no qty tolerance]\n\nPlease:\n1. Classify each block: price variance, qty variance (over-delivery vs missing GR), unit-of-measure confusion, or duplicate\n2. State the resolution per class and who acts (AP posts / buyer confirms / warehouse posts GR / vendor credit note)\n3. Identify repeat-offender vendors and root causes worth fixing upstream\n4. Output the worklist sorted so the fastest 80% clears first\"",
+    "tags": [
+      "finance",
+      "accounts-payable",
+      "procure-to-pay",
+      "three-way-match",
+      "process-improvement"
+    ],
+    "best_for": "AP teams drowning in blocked invoices before a payment run",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A classified exception worklist with owner and resolution per item, repeat-offender vendor analysis, and quick-wins sorted first.",
+    "inputs": [
+      {
+        "label": "paste: invoice no, vendor, PO, invoice qty/price, GR qty, PO qty/price, block reason"
+      },
+      {
+        "label": "e.g., 2% or 50 EUR price, no qty tolerance"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "1 hour",
+    "output_kind": "table",
+    "sample_output": "**Queue: 47 blocked invoices, 312k total**\n\n| Class | Count | Resolution | Owner |\n|---|---|---|---|\n| Missing GR | 21 | Chase receipt confirmation | Warehouse |\n| Price var < tolerance | 9 | Release (system misconfig — tolerance not applied to this doc type) | AP |\n| UoM (kg vs ton) | 6 | Correct PO UoM, reprocess | Buyer |\n| Over-delivery | 8 | Buyer accept or vendor credit note | Buyer |\n| Duplicate | 3 | Reject, link to original | AP |\n\n**Repeat offender:** Vendor V2210 = 11 of 47 (always UoM) → fix their item master once, kills ~25% of future queue.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Order-to-Cash & Procure-to-Pay",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Duplicate Payment Detection Sweep",
+    "prompt": "\"Run a duplicate-payment risk sweep over this AP payment history: [paste 6–12 months: payment date, vendor, invoice ref, amount, bank account].\n\nPlease:\n1. Apply layered matching: exact (vendor+ref+amount), fuzzy ref (INV-123 vs 123/INV), same amount ±0 days across *different* vendor IDs (the vendor-master-duplicate case), and split-then-full payments\n2. Score each hit by likelihood and recovery value; exclude plausible recurring charges (rent, leases) with reasoning\n3. Draft the vendor recovery letter for confirmed duplicates\n4. Recommend the 3 preventive controls that would have caught the top hits at entry\"",
+    "tags": [
+      "finance",
+      "accounts-payable",
+      "duplicate-payments",
+      "audit",
+      "recovery"
+    ],
+    "best_for": "Controllers and internal audit doing periodic AP hygiene or pre-audit sweeps",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A scored duplicate-payment hit list with recurring-charge false positives excluded, recovery letters drafted, and preventive controls mapped to actual findings.",
+    "inputs": [
+      {
+        "label": "paste 6–12 months: payment date, vendor, invoice ref, amount, bank account"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Hits: 9 candidates, est. recovery 61k**\n\n1. **HIGH (23,400):** V1004 'INV-8812' paid 03-14 and V2381 'inv 8812' paid 03-28 — same IBAN, vendor-master duplicate. → recovery letter drafted.\n2. **HIGH (18,000):** ref '2026-044' paid as 9,000 × 2 (04-02) then full 18,000 (04-30) after vendor re-sent statement.\n3. *Excluded:* 12 × 4,150 monthly to V3300 — matches lease contract cadence.\n\n**Preventive controls:** normalise invoice refs on entry (strip separators); block same-IBAN different-vendor-ID; statement-vs-ledger match before re-payment.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "claude-code",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Order-to-Cash & Procure-to-Pay",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Payment Run Pre-Flight Review",
+    "prompt": "\"Before I release this payment run, review the proposal list for red flags: [paste: vendor, invoice refs, amount, bank country, due date, payment method].\n\nCheck for:\n1. Amounts that break round-number or benford-style patterns vs this vendor's history [paste history if available]\n2. Bank account country ≠ vendor country, or first payment to a recently changed account\n3. Invoices being paid well before due date (early-payment without discount = free lending)\n4. Same-day multiple payments to one vendor (split to stay under approval threshold?)\n\nGive me a go/no-go per line with a one-line reason, and the summary I can paste into the release approval.\"",
+    "tags": [
+      "finance",
+      "payments",
+      "fraud-prevention",
+      "treasury",
+      "quick-win"
+    ],
+    "best_for": "Anyone with payment release authority who wants a second pair of eyes",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A line-by-line go/no-go with reasons, catching bank-detail fraud signals, threshold-splitting, and early-payment leakage before money leaves.",
+    "inputs": [
+      {
+        "label": "paste: vendor, invoice refs, amount, bank country, due date, payment method"
+      },
+      {
+        "label": "paste history if available"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "20 minutes",
+    "output_kind": "table",
+    "sample_output": "**Run 2026-07-08 — 84 lines, 1.24m**\n\n| Line | Vendor | Amount | Verdict | Reason |\n|---|---|---|---|---|\n| 12 | V2210 | 49,900 | ⚠ HOLD | 2nd payment today; combined 99,800 vs 100k approval threshold |\n| 31 | V1877 | 18,300 | ⚠ HOLD | Bank account changed 06-30, first payment since — call-back verify |\n| 55 | V3300 | 4,150 | ✓ GO | Matches monthly lease |\n\n**Summary for approver:** 82 GO (1.17m) · 2 HOLD (68k) pending verification. Early payments: 6 lines avg 9 days early, no discount — consider aligning run date.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Order-to-Cash & Procure-to-Pay",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Contract-to-Invoice Billing Leakage Audit",
+    "prompt": "\"Audit whether we are billing customers what their contracts say.\n\nContract terms extract: [paste per customer: price/rate card, indexation clause, volume tiers, minimum commitments, expiry]\nActual invoicing last [period]: [paste: customer, item, qty, unit price, total]\n\nPlease:\n1. Compare invoiced prices vs contract rates line by line; flag undercharges, missed indexation (CPI uplift not applied), lapsed-but-still-honoured discounts, and unbilled minimum-commitment shortfalls\n2. Quantify total leakage and rank by recovery potential (contractual right + customer relationship risk)\n3. Draft the internal note to sales ops and the customer-facing correction letter for the top case\n4. Recommend which check should become a monthly automated control\"",
+    "tags": [
+      "finance",
+      "revenue-assurance",
+      "billing",
+      "order-to-cash",
+      "contracts"
+    ],
+    "best_for": "Revenue controllers and CFO teams in subscription, services, or volume-contract businesses",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A quantified billing-leakage report with per-cause breakdown, recovery ranking, drafted correction letters, and a proposed recurring control.",
+    "inputs": [
+      {
+        "label": "paste per customer: price/rate card, indexation clause, volume tiers, minimum commitments, expiry"
+      },
+      {
+        "label": "period"
+      },
+      {
+        "label": "paste: customer, item, qty, unit price, total"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "3 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Leakage found: 214k over 6 months (1.8% of billed revenue)**\n\n| Cause | Amount | Cases |\n|---|---|---|\n| CPI indexation not applied (Jan uplift 3.2%) | 96k | 14 customers |\n| Volume tier not stepped up | 62k | 4 |\n| Expired discount still active | 41k | 7 |\n| Minimum commitment shortfall unbilled | 15k | 2 |\n\n**Top recovery:** Contoso — contract §4.2 allows retro-billing 12m of missed indexation (38k, low relationship risk — clause is standard).\n**Automate:** monthly price-vs-rate-card diff; indexation flag every January.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "claude-code"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Planning & Performance",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Headcount & Workforce Cost Planning Model",
+    "prompt": "\"Build a headcount and personnel cost plan for [year/period].\n\nInputs:\n- Current roster by department: [paste: dept, role, FTE, base salary, start date]\n- Planned changes: [hires with start months, backfills, terminations, planned raises %]\n- Cost drivers: employer tax rates by country [rates], bonus scheme [rules], salary review month [month]\n\nPlease:\n1. Design the monthly personnel cost model: existing roster roll-forward + hires phased by start month with ramp assumptions\n2. Compute fully-loaded cost per head (salary + employer tax + benefits + bonus accrual)\n3. Produce the department × month cost table and the bridge from last year (rate vs volume vs mix)\n4. Flag the sensitivities: which single assumption moves the total most?\"",
+    "tags": [
+      "finance",
+      "fp&a",
+      "headcount-planning",
+      "budgeting",
+      "workforce"
+    ],
+    "best_for": "FP&A analysts building the personnel cost line — usually 60-70% of opex",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A monthly fully-loaded workforce cost model with phased hires, a prior-year bridge split into rate/volume/mix, and the dominant sensitivity identified.",
+    "inputs": [
+      {
+        "label": "year/period"
+      },
+      {
+        "label": "paste: dept, role, FTE, base salary, start date"
+      },
+      {
+        "label": "hires with start months, backfills, terminations, planned raises %"
+      },
+      {
+        "label": "rates"
+      },
+      {
+        "label": "rules"
+      },
+      {
+        "label": "month"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2-3 hours",
+    "output_kind": "spec",
+    "sample_output": "**Model structure**\n- Tab 1 Roster: one row per employee, monthly columns, auto-prorate starters/leavers by day\n- Tab 2 Hires: start month + 1-month recruiting lag assumption; loaded factor by country (SE 1.42, NO 1.19, DK 1.13)\n- Tab 3 Output: dept × month + YoY bridge\n\n**Bridge FY25→FY26 (total +3.1m):** rate +1.4m (3.5% review) · volume +2.0m (12 net adds) · mix −0.3m (2 senior→junior backfills)\n\n**Dominant sensitivity:** hire start-month slip — each month of average delay on the 12 planned hires = −480k cost (and the matching revenue risk). Track 'planned vs actual start date' monthly.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "copilot"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Planning & Performance",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Capex Business Case & Post-Investment Review Pack",
+    "prompt": "\"Help me build the business case for [investment, e.g., warehouse automation, 2.4m] and the post-investment review template that will hold it accountable.\n\nInputs:\n- Investment cost and phasing: [detail]\n- Expected benefits: [savings/revenue, with the operational logic]\n- Discount rate / hurdle: [rate], asset life: [years]\n\nPlease:\n1. Structure the case: NPV, IRR, payback, and the 3 assumptions the case actually hinges on\n2. Stress-test: benefits at 70%, one-year delay, cost overrun 20% — does it still clear the hurdle?\n3. Write the one-page investment committee summary (recommendation up front)\n4. Create the post-investment review template: which metrics, measured when, by whom — so benefits are tracked, not forgotten\"",
+    "tags": [
+      "finance",
+      "capex",
+      "business-case",
+      "investment-appraisal",
+      "fp&a"
+    ],
+    "best_for": "Finance business partners supporting investment decisions",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "An NPV/IRR case with honest hinge-assumptions and stress tests, a committee one-pager, and a benefits-tracking PIR template that survives approval.",
+    "inputs": [
+      {
+        "label": "investment, e.g., warehouse automation, 2.4m"
+      },
+      {
+        "label": "detail"
+      },
+      {
+        "label": "savings/revenue, with the operational logic"
+      },
+      {
+        "label": "rate"
+      },
+      {
+        "label": "years"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "templates",
+    "sample_output": "**Case summary: Warehouse automation, 2.4m**\n- NPV @9%: +1.1m · IRR 16.8% · payback 4.2y (hurdle: 12%, 5y) → **clears**\n- Hinges on: (1) 14 FTE reduction actually realised via attrition, (2) 99.2% pick accuracy, (3) volume growth ≥4%/yr\n\n**Stress:** benefits 70% → IRR 10.9% ✗ below hurdle. The case fails if FTE reduction slips — make it contractual with ops.\n\n**PIR template:** FTE count and pick-accuracy monthly from month 6, reviewed by controller (not the project sponsor); formal review at months 12/24 vs this exact case.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "gemini"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Planning & Performance",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Price-Volume-Mix Revenue Bridge",
+    "prompt": "\"Build a price-volume-mix (PVM) bridge explaining revenue change from [period A] to [period B].\n\nData: [paste: product/SKU or customer level — units and revenue for both periods; FX rates if multi-currency]\n\nPlease:\n1. Decompose the revenue change into price, volume, mix (and FX if applicable) — state the decomposition convention you use and why order matters\n2. Handle edge cases explicitly: new products (no base period), discontinued products, and negative-margin items\n3. Produce the waterfall table and a Mermaid/ASCII waterfall sketch\n4. Write the 5-bullet commentary a CFO would actually say, naming the products driving each bar\"",
+    "tags": [
+      "finance",
+      "fp&a",
+      "revenue-analysis",
+      "pvm",
+      "variance-analysis"
+    ],
+    "best_for": "FP&A analysts explaining revenue movements beyond 'volume was up'",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A methodologically explicit PVM decomposition with new/discontinued products handled correctly, a waterfall visual, and CFO-ready commentary.",
+    "inputs": [
+      {
+        "label": "period A"
+      },
+      {
+        "label": "period B"
+      },
+      {
+        "label": "paste: product/SKU or customer level — units and revenue for both periods; FX rates if multi-currency"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Convention:** price effect at base-period volumes, volume at base prices, mix as cross-term allocated to mix (stated so results are reproducible).\n\n**Bridge Q1→Q2: +2.10m**\n| Driver | Δ |\n|---|---|\n| Price | +0.85m |\n| Volume | +1.60m |\n| Mix | −0.55m |\n| New products | +0.35m |\n| Discontinued | −0.15m |\n\n**Commentary (extract):** \"Mix is negative because Basic-tier units grew 22% while Premium was flat — we sold more, cheaper. Absent the January price increase (+0.85m), underlying growth is entirely volume-led.\"",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "claude-code",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Planning & Performance",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "SaaS ARR Waterfall & Cohort Metrics Pack",
+    "prompt": "\"Build our ARR waterfall and cohort retention pack from raw subscription data.\n\nData: [paste: customer, plan, MRR/ARR, start date, end date/renewal, upgrades/downgrades with dates]\nPeriod: [e.g., trailing 8 quarters]\n\nPlease:\n1. Construct the ARR waterfall per quarter: opening → new → expansion → contraction → churn → closing, with each customer movement classified exactly once\n2. Compute NRR and GRR (state formulas), logo retention, and expansion rate — flag any classification judgment calls (e.g., plan change at renewal = expansion or new?)\n3. Build the cohort table: NRR by start-quarter cohort\n4. Summarise the 3 findings an investor would probe, with the data behind each\"",
+    "tags": [
+      "finance",
+      "saas-metrics",
+      "arr",
+      "fp&a",
+      "investor-reporting"
+    ],
+    "best_for": "SaaS finance teams preparing board or fundraising metrics from raw data",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A per-quarter ARR waterfall with single-classification integrity, NRR/GRR with explicit formulas, cohort retention table, and investor-grade findings.",
+    "inputs": [
+      {
+        "label": "paste: customer, plan, MRR/ARR, start date, end date/renewal, upgrades/downgrades with dates"
+      },
+      {
+        "label": "e.g., trailing 8 quarters"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel",
+      "Python"
+    ],
+    "est_time": "3 hours",
+    "output_kind": "table",
+    "sample_output": "**ARR waterfall Q2-26**\nOpening 24.0m → +New 1.8m → +Expansion 1.1m → −Contraction 0.4m → −Churn 0.9m → **Closing 25.6m**\n\n**Metrics:** NRR 103.1% = (24.0+1.1−0.4−0.9)/24.0 · GRR 94.6% · logo retention 91%\n*Judgment call flagged:* 3 customers downgraded at renewal then upgraded within 30 days — netted as contraction, not churn+new (documented).\n\n**Investor probes:** (1) NRR fell 108→103 over 4 quarters — driven by 2024 cohort contraction; (2) churn concentrates in <10k ARR segment (78% of logos churned); (3) expansion is 80% seat-growth, 20% cross-sell — single-product dependency.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "claude-code",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Planning & Performance",
+    "skill_level": "EXPERT",
+    "skill_emoji": "⚫",
+    "title": "Monte Carlo Scenario Engine for Budget Risk",
+    "prompt": "\"Build me a Monte Carlo simulation over our budget to quantify the range around our EBITDA target, in Python.\n\nBudget structure and key uncertain drivers: [paste: e.g., revenue growth by segment, gross margin, FX pairs, energy cost, wage inflation]\nFor each driver give my low/base/high estimates: [paste]\nCorrelations I believe exist: [e.g., FX and export revenue move together]\n\nPlease:\n1. Write a clean, commented Python script (numpy/pandas) using appropriate distributions per driver (justify each choice) and a correlation matrix via Cholesky\n2. Run 10,000 iterations; output P10/P50/P90 EBITDA, probability of missing the target, and a tornado chart of driver contributions\n3. Tell me which 2 drivers to buy down (hedge, contract, index) for the biggest P10 improvement\n4. Keep every assumption in a config block I can edit without touching the logic\"",
+    "tags": [
+      "finance",
+      "monte-carlo",
+      "scenario-planning",
+      "python",
+      "risk-management",
+      "fp&a"
+    ],
+    "best_for": "Senior FP&A and treasury teams putting confidence intervals on the plan",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A runnable, config-driven Monte Carlo script with justified distributions and correlations, P10/P50/P90 outputs, tornado analysis, and concrete risk buy-down advice.",
+    "inputs": [
+      {
+        "label": "paste: e.g., revenue growth by segment, gross margin, FX pairs, energy cost, wage inflation"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "e.g., FX and export revenue move together"
+      }
+    ],
+    "tools": [
+      "Claude Code",
+      "Python",
+      "Excel"
+    ],
+    "est_time": "Half a day",
+    "output_kind": "code",
+    "sample_output": "```python\nCONFIG = {\n  'iterations': 10_000,\n  'drivers': {\n    'rev_growth':  {'dist': 'triangular', 'low': -0.02, 'base': 0.06, 'high': 0.11},\n    'gross_margin':{'dist': 'normal',     'mu': 0.415, 'sigma': 0.012},\n    'eursek':      {'dist': 'lognormal',  'base': 11.4, 'vol': 0.06},\n  },\n  'correlations': [('eursek', 'rev_growth', -0.45)],\n}\n```\n**Output:** P10 38.2m · P50 44.6m · P90 50.1m · P(miss 42m target) = 31%\n**Tornado:** rev_growth explains 52% of variance; eursek 27%.\n**Buy-down:** hedging 70% of EURSEK exposure lifts P10 by 1.9m; indexing top-3 customer contracts to CPI lifts P10 by 1.1m.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude-code",
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Planning & Performance",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "S&OP Finance Review Pack",
+    "prompt": "\"Prepare the finance view for our monthly S&OP (sales & operations planning) meeting.\n\nInputs:\n- Demand plan vs budget vs last cycle: [paste]\n- Supply constraints and inventory: [paste]\n- Standard costs and price assumptions: [paste]\n\nPlease:\n1. Translate the volume plan into revenue, margin, and inventory cash impact vs budget — show the bridge from last cycle's projection\n2. Flag disconnects: demand plan implies revenue above/below the financial forecast we told the board\n3. Quantify the cost of the top supply constraint (expediting, lost sales) vs the cost of fixing it\n4. Produce the 5-slide pack outline with one decision to make per slide, not status updates\"",
+    "tags": [
+      "finance",
+      "s&op",
+      "fp&a",
+      "supply-chain-finance",
+      "forecasting"
+    ],
+    "best_for": "FP&A business partners who sit in S&OP and own the financial reconciliation",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A finance translation of the S&OP volume plan with plan-vs-forecast disconnects exposed and a decision-oriented five-slide outline.",
+    "inputs": [
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel",
+      "PowerPoint"
+    ],
+    "est_time": "2 hours",
+    "output_kind": "deck",
+    "sample_output": "**Bridge (this cycle vs last):** revenue projection +1.2m (demand up in DE) but margin −0.4m (product mix shifts to low-margin SKUs) — net EBITDA +0.3m.\n\n**Disconnect flagged:** demand plan totals 102m revenue-equivalent vs 98m in the board forecast — someone is wrong by 4m; propose holding board number, listing the 4m as upside until 2 months of order intake confirm.\n\n**Slide outline:** 1) One-line plan-vs-forecast gap → decision: re-forecast or hold? 2) Mix-driven margin erosion → decision: price action on SKU family X? 3) Constraint economics: expediting 190k vs extra shift 120k → decision ...",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "gamma"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Profitability & Cost Management",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Cost Allocation Model Designer",
+    "prompt": "\"Design a defensible cost allocation model for [purpose: e.g., product profitability / entity charges / transfer pricing support].\n\nCost pools to allocate: [paste: pool, annual amount, current method if any]\nAvailable drivers: [paste: headcount, revenue, transactions, system users, square meters, tickets]\nConstraints: [e.g., must be explainable to country managers, tax-defensible, stable month to month]\n\nPlease:\n1. Match each cost pool to the most causally-linked driver — justify each, and say where revenue-based allocation is lazy but acceptable\n2. Show the allocation math on last period's numbers and who wins/loses vs the current method\n3. Stress the model: what happens when a driver swings 20%? Any death-spiral risks (fixed cost on shrinking base)?\n4. Write the methodology note for auditors/tax and the change communication for the managers who lose\"",
+    "tags": [
+      "finance",
+      "cost-allocation",
+      "profitability",
+      "management-accounting",
+      "transfer-pricing"
+    ],
+    "best_for": "Controllers redesigning allocations that everyone currently argues about",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A driver-justified allocation model with winner/loser impact vs today, stability stress test, and both the audit methodology note and the political communication drafted.",
+    "inputs": [
+      {
+        "label": "purpose: e.g., product profitability / entity charges / transfer pricing support"
+      },
+      {
+        "label": "paste: pool, annual amount, current method if any"
+      },
+      {
+        "label": "paste: headcount, revenue, transactions, system users, square meters, tickets"
+      },
+      {
+        "label": "e.g., must be explainable to country managers, tax-defensible, stable month to month"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "3-4 hours",
+    "output_kind": "spec",
+    "sample_output": "**Pool-driver matrix**\n| Pool | Amount | Driver | Why |\n|---|---|---|---|\n| IT run | 4.2m | Active users | Causal; ticket-weighted rejected (penalises honest reporters) |\n| Facilities | 2.1m | m² occupied | Direct |\n| Group finance | 1.8m | Revenue | Lazy-but-acceptable: no better driver; disclosed as such |\n\n**Impact:** Entity SE +310k charge, DK −280k. **Death-spiral check:** IT run is 80% fixed — if SE cuts users 20%, per-user rate rises 14% for everyone; propose 2-year fixed rate card instead of pure actuals.\n\n**Methodology note** and **manager comms** drafted (loser entities get the rate-card stability argument).",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Profitability & Cost Management",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Customer & Product Profitability Deep Dive",
+    "prompt": "\"Analyse true profitability by [customer/product] beyond gross margin.\n\nData: [paste: revenue and COGS by customer/product, plus cost-to-serve data you have — freight, returns, support tickets, payment terms, order frequency/size]\n\nPlease:\n1. Build the profitability waterfall per customer/product: gross margin → minus cost-to-serve components → contribution\n2. Rank and expose the classic pattern: which large 'good' customers are actually marginal after small orders, returns, and free freight?\n3. Draw the whale curve (cumulative profit by customer rank) and interpret it\n4. Propose one action per bottom-quartile account: reprice, minimum order, service-level change, or managed exit — with the revenue at risk quantified\"",
+    "tags": [
+      "finance",
+      "profitability",
+      "cost-to-serve",
+      "pricing",
+      "management-accounting"
+    ],
+    "best_for": "Finance business partners in product, sales, or commercial functions",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A cost-to-serve profitability waterfall, whale-curve interpretation, and account-specific fixes for the bottom quartile with the revenue at risk stated.",
+    "inputs": [
+      {
+        "label": "customer/product"
+      },
+      {
+        "label": "paste: revenue and COGS by customer/product, plus cost-to-serve data you have — freight, returns, support tickets, payment terms, order frequency/size"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2-3 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Whale curve:** top 20 customers deliver 142% of total profit; bottom 30 destroy 42%.\n\n| Customer | Revenue | GM% | After cost-to-serve | Driver |\n|---|---|---|---|---|\n| Nordic Retail | 2.4m | 34% | **11%** | 214 small orders (avg 480), free freight |\n| Contoso | 1.1m | 28% | 24% | Clean — large orders, e-invoice |\n\n**Actions:** Nordic Retail → 750 minimum order or 4% small-order fee (models to +19% contribution; revenue at risk if they walk: 2.4m, but current contribution is only 264k). Returns-heavy SKU family B → inspect packaging root cause before pricing action.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "copilot"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Profitability & Cost Management",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Shared Services Chargeback Model",
+    "prompt": "\"Design the chargeback model for our shared service center covering [functions, e.g., AP, AR, payroll, IT helpdesk] serving [number] entities.\n\nInputs:\n- SSC cost base by function: [paste]\n- Volume data per entity: [paste: invoices processed, employees paid, tickets]\n- Current model and complaints about it: [describe]\n\nPlease:\n1. Propose unit rates per service (cost per invoice, per payslip, per ticket) with the volume math shown\n2. Compare three models — pure actuals, fixed rate card, banded subscription — on fairness, stability, admin effort, and gaming risk\n3. Recommend one, with the transition path from the current model\n4. Draft the service catalog page: service, unit, rate, what's included/excluded, SLA\"",
+    "tags": [
+      "finance",
+      "shared-services",
+      "chargeback",
+      "cost-allocation",
+      "service-catalog"
+    ],
+    "best_for": "SSC controllers and group finance designing or defending intercompany charges",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "Unit-rate math per service, a three-model comparison scored on fairness/stability/gaming, a recommendation with transition path, and a drafted service catalog.",
+    "inputs": [
+      {
+        "label": "functions, e.g., AP, AR, payroll, IT helpdesk"
+      },
+      {
+        "label": "number"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "paste: invoices processed, employees paid, tickets"
+      },
+      {
+        "label": "describe"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "2-3 hours",
+    "output_kind": "spec",
+    "sample_output": "**Unit rates (from cost base / normal volumes):** invoice 3.84 · payslip 6.10 · ticket 11.20\n\n| Model | Fairness | Stability | Gaming risk |\n|---|---|---|---|\n| Pure actuals | High | Low (rates jump with volume dips) | Entities time volumes |\n| **Rate card (rec.)** | High | High — reset annually | Low |\n| Subscription bands | Medium | Highest | Band-edge fights |\n\n**Recommendation:** rate card, trued-up annually if actual/plan volume deviates >10%. Transition: parallel-run one quarter, publish both numbers.\n**Catalog entry:** \"AP invoice processing — 3.84/invoice. Includes: capture, match, vendor query L1. Excludes: PO creation. SLA: 95% touchless within 48h.\"",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Profitability & Cost Management",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Peer Benchmarking from Public Financials",
+    "prompt": "\"Benchmark our cost structure against [3–5 public peers] using their published financials.\n\nOur figures: [paste: revenue, gross margin, opex by line (S&M, R&D, G&A), headcount, revenue per FTE]\nPeers: [names + tickers]\n\nPlease:\n1. Pull the comparable lines from their latest annual reports (I'll paste extracts if you can't access them: [paste])\n2. Normalise honestly: flag where peer disclosure differs (capitalised R&D, distribution in COGS vs opex) rather than forcing false comparability\n3. Build the benchmark table: margin structure, opex ratios, revenue per FTE — with our gap to median per line\n4. Interpret: which gaps are strategy (we choose to spend more) vs inefficiency, and which 2 deserve a deep dive\"",
+    "tags": [
+      "finance",
+      "benchmarking",
+      "cost-structure",
+      "competitive-analysis",
+      "fp&a"
+    ],
+    "best_for": "CFO teams preparing strategy reviews or cost programs with an outside-in view",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A disclosure-aware peer benchmark with false-comparability traps flagged, gap-to-median per cost line, and a strategy-vs-inefficiency interpretation.",
+    "inputs": [
+      {
+        "label": "3–5 public peers"
+      },
+      {
+        "label": "paste: revenue, gross margin, opex by line (S&M, R&D, G&A), headcount, revenue per FTE"
+      },
+      {
+        "label": "names + tickers"
+      },
+      {
+        "label": "paste"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Perplexity",
+      "Excel"
+    ],
+    "est_time": "2-3 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Benchmark vs 4 peers (latest FY)**\n| Line | Us | Peer median | Gap |\n|---|---|---|---|\n| Gross margin | 41.5% | 44.2% | −2.7pp |\n| G&A % revenue | 9.8% | 7.1% | **−2.7pp** |\n| Revenue/FTE | 312k | 348k | −10% |\n\n⚠ *Comparability:* Peer B capitalises 60% of development (we expense) — R&D line excluded from ranking; Peer D includes distribution in COGS — GM gap partly definitional (~1pp).\n\n**Interpretation:** G&A gap is the clean finding (same disclosure basis) → deep dive #1. GM gap shrinks to ~1.7pp after definitional adjustment → deep dive #2 is freight recovery, not pricing.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "perplexity",
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Record-to-Report & Audit",
+    "skill_level": "BEGINNER",
+    "skill_emoji": "🟢",
+    "title": "Audit PBC Request List Manager",
+    "prompt": "\"Our auditors sent their PBC (prepared-by-client) request list for the [year-end/interim] audit: [paste list].\n\nPlease:\n1. Parse it into a tracker: item, auditor ref, our owner (suggest based on typical finance roles: [list your team]), source system, effort estimate, due date\n2. Group requests answerable from the same extract (one GL download can serve 6 requests) so we pull data once\n3. Flag ambiguous requests with the clarifying question to send the auditors *before* we waste effort\n4. Draft the kickoff email allocating items to owners with deadlines set [X days] before the auditor deadline\"",
+    "tags": [
+      "finance",
+      "audit",
+      "pbc",
+      "year-end",
+      "project-management"
+    ],
+    "best_for": "Controllers coordinating audit season without drowning the team",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A deduplicated, owner-assigned PBC tracker with shared-extract grouping, pre-emptive clarification questions, and the allocation email drafted.",
+    "inputs": [
+      {
+        "label": "year-end/interim"
+      },
+      {
+        "label": "paste list"
+      },
+      {
+        "label": "list your team"
+      },
+      {
+        "label": "X days"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "45 minutes",
+    "output_kind": "table",
+    "sample_output": "**Tracker: 68 requests → 51 unique efforts (17 covered by shared extracts)**\n\n| # | Request | Owner | Source | Group |\n|---|---|---|---|---|\n| A-12 | GL detail full year | J.L. | ERP | G1 (serves A-12, B-3, B-7, C-2) |\n| B-3 | Journal entries > 100k | J.L. | — | G1 filter |\n| C-9 | 'Significant contracts' | ? | — | ⚠ ask: define significant — value threshold or judgment? |\n\n**Kickoff email:** owners, internal deadline WD-3 before auditor date, single shared folder structure /Audit26/[ref].",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "notion-ai"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Record-to-Report & Audit",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "Flux Analysis for External Audit",
+    "prompt": "\"Prepare the year-over-year flux analysis our auditors require, with explanations that will hold up to follow-up questions.\n\nTrial balance current vs prior [period]: [paste]\nAuditor's threshold: explain movements > [amount] or > [%]\nWhat I know happened this year: [bullet the big events: acquisition, price increase, restructuring, new lease]\n\nPlease:\n1. Compute the flux per line and flag which cross the threshold\n2. Draft the explanation per flagged line — specific and quantified ('energy costs +18% driven by new DE contract at +0.4m and volume +0.2m'), never 'increase due to higher costs'\n3. Mark explanations where my input doesn't fully cover the movement — tell me the residual I still need to explain\n4. Format as the standard flux schedule (account, PY, CY, Δ, Δ%, explanation, support ref)\"",
+    "tags": [
+      "finance",
+      "audit",
+      "flux-analysis",
+      "year-end",
+      "variance-analysis"
+    ],
+    "best_for": "Accountants and controllers answering auditor analytics questions",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "An audit-ready flux schedule where every explanation is quantified and residual unexplained amounts are surfaced instead of papered over.",
+    "inputs": [
+      {
+        "label": "period"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "amount"
+      },
+      {
+        "label": "%"
+      },
+      {
+        "label": "bullet the big events: acquisition, price increase, restructuring, new lease"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "1-2 hours",
+    "output_kind": "table",
+    "sample_output": "| Account | PY | CY | Δ | Explanation | Residual |\n|---|---|---|---|---|---|\n| Energy | 3.4m | 4.1m | +0.7m | DE contract renewal +0.4m; volume +0.2m | ⚠ 0.1m unexplained — check FX on NO site |\n| Consulting | 1.1m | 2.3m | +1.2m | ERP project 0.9m (capitalisation memo M-4); restructuring advisors 0.3m | ✓ full |\n\n**Auditor-proofing note:** 2 explanations reference support docs that don't exist yet (M-4) — create before fieldwork.",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Finance & FP&A",
+    "section": "Record-to-Report & Audit",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "IFRS 16 Lease Portfolio Reviewer",
+    "prompt": "\"Review our lease portfolio for IFRS 16 accounting completeness and correctness.\n\nLease register: [paste: asset, start, term, payments, options, discount rate used]\nRoU asset and lease liability balances in GL: [paste]\nRecent events: [e.g., renegotiations, terminations, new contracts, indexation resets]\n\nPlease:\n1. Recalculate liability and RoU roll-forward per lease and tie to GL — flag deviations > [threshold]\n2. Check judgment areas: are renewal options 'reasonably certain' assessments documented? Discount rates stale? Indexation remeasurements booked when CPI reset?\n3. Identify modification vs reassessment treatments for the recent events and the required entries\n4. Draft the position memo for the audit file covering the top 2 judgment calls\"",
+    "tags": [
+      "finance",
+      "ifrs16",
+      "leases",
+      "technical-accounting",
+      "audit"
+    ],
+    "best_for": "Group accountants owning lease accounting without specialised software",
+    "source": "Sintra editorial — finance operations expansion (Jul 2026)",
+    "outcome": "A lease-by-lease recalculation tied to GL, judgment-area review (options, rates, indexation), correct modification entries for recent events, and audit-file memos.",
+    "inputs": [
+      {
+        "label": "paste: asset, start, term, payments, options, discount rate used"
+      },
+      {
+        "label": "paste"
+      },
+      {
+        "label": "e.g., renegotiations, terminations, new contracts, indexation resets"
+      },
+      {
+        "label": "threshold"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Excel"
+    ],
+    "est_time": "3 hours",
+    "output_kind": "analysis",
+    "sample_output": "**Recalc summary (34 leases):** 31 tie within threshold · 3 deviations:\n1. Stockholm office: CPI reset (Apr, +4.1%) not remeasured → liability understated 380k. Entry: Dr RoU / Cr Liability 380k.\n2. Fleet batch: discount rate from 2023 (2.1%) still applied to 2026 renewals — IBR now 3.8%. Remeasure at modification date.\n3. Warehouse DE: 5y extension exercised → **modification**, not new lease (same asset, scope unchanged): remeasure with revised term.\n\n**Memo drafted:** renewal-option certainty for Stockholm office (relocation decision pending — documented as *not* reasonably certain, sensitivity shown).",
+    "dateAdded": "2026-07-07",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
   }
 ]
