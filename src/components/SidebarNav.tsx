@@ -227,7 +227,7 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
 }
 
 export default function SidebarNav() {
-  const { collapsed, setCollapsed, mobileOpen, setMobileOpen } = useSidebar();
+  const { collapsed, toggleCollapsed, mobileOpen, setMobileOpen } = useSidebar();
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -258,7 +258,7 @@ export default function SidebarNav() {
           </a>
           <button
             type="button"
-            onClick={() => setCollapsed(!collapsed)}
+            onClick={toggleCollapsed}
             className="ml-auto h-8 w-8 flex items-center justify-center rounded-lg text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] transition-colors"
             aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
           >

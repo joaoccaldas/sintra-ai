@@ -124,9 +124,9 @@ export default function Header({ total: _total }: Props) {
             aria-label="Open saved prompts"
           >
             <Bookmark size={16} />
-            {saved.length > 0 && (
+            {saved.size > 0 && (
               <span className="absolute -top-1 -right-1 min-w-4 h-4 px-1 rounded-full bg-violet text-white font-mono text-[9px] flex items-center justify-center">
-                {saved.length}
+                {saved.size}
               </span>
             )}
           </button>

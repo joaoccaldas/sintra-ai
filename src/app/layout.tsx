@@ -6,7 +6,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { SavedPromptsProvider } from "@/context/SavedPromptsContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SidebarProvider } from "@/context/SidebarContext";
-import { DesktopSidebar, MobileSidebar } from "@/components/SidebarNav";
+import SidebarNav from "@/components/SidebarNav";
 import ScrollProgress from "@/components/ScrollProgress";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 import MotionProvider from "@/components/MotionProvider";
@@ -159,8 +159,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <MotionProvider>
                   <ServiceWorkerRegister />
                   <ScrollProgress />
-                  <DesktopSidebar />
-                  <MobileSidebar />
+                  <SidebarNav />
                   <div className="sidebar-content-shift">{children}</div>
                 </MotionProvider>
               </SavedPromptsProvider>
