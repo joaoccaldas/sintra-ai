@@ -7,6 +7,235 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://www.nextgov.com/artificial-intelligence/2026/07/openais-advanced-gpt-56-models-be-available-public/414651/",
+      "url": "https://www.nextgov.com/artificial-intelligence/2026/07/openais-advanced-gpt-56-models-be-available-public/414651/",
+      "title": "OpenAI Makes GPT-5.6 Generally Available to All Users",
+      "content_text": "OpenAI made the GPT-5.6 family — Sol, Terra, and Luna — generally available across ChatGPT, Codex, and the API on July 9, ending a two-week limited preview that began June 26 under a government-coordinated review. Pricing is $5/$30 (Sol), $2.50/$15 (Terra), and $1/$6 (Luna) per million input/output tokens; it is the first time since the June 12 Fable 5 export-control episode that every major US frontier lab has a publicly available flagship model simultaneously.",
+      "date_published": "2026-07-09T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "GPT-5.6",
+        "Frontier Models",
+        "Policy"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
+      "url": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
+      "title": "Anthropic Launches 'Reflect,' a Usage-Habits Dashboard for Claude",
+      "content_text": "Anthropic introduced Reflect on July 9, a beta dashboard on Free, Pro, and Max plans that shows a monthly recap of which topics users spent time on, their most active day and peak hour, plus optional break reminders and quiet hours. The feature requires memory to be enabled and ships on web and Claude Desktop first.",
+      "date_published": "2026-07-09T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude",
+        "Product",
+        "Wellbeing"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+      "title": "SpaceXAI Launches Grok 4.5, Claiming 'Opus-Class' Performance",
+      "content_text": "SpaceXAI released Grok 4.5 on July 8, its first model trained specifically for coding and agentic work, pricing it at $2 per million input tokens and $6 per million output tokens. Elon Musk positioned it as roughly on par with Claude Opus 4.7 but faster and cheaper; independent benchmark charts released alongside the launch showed it ahead of Opus 4.8 on some tasks and behind on others.",
+      "date_published": "2026-07-08T00:00:00.000Z",
+      "tags": [
+        "SpaceXAI",
+        "SpaceXAI",
+        "Grok",
+        "Frontier Models",
+        "Coding Agents"
+      ]
+    },
+    {
+      "id": "https://fortune.com/2026/07/08/china-mulls-limiting-foreign-access-advanced-ai-models/",
+      "url": "https://fortune.com/2026/07/08/china-mulls-limiting-foreign-access-advanced-ai-models/",
+      "title": "China Weighs Restricting Foreign Access to Its Most Advanced AI Models",
+      "content_text": "China's Ministry of Commerce has held talks with Alibaba, ByteDance, and Z.ai about restricting overseas access to their top-tier models — including unreleased ones — with options ranging from a bar on public release to domestic-use-only limits, and possibly classifying unauthorized model disclosure as a national-security violation. No decision has been made; the talks follow Alibaba's internal ban on employee use of Claude Code.",
+      "date_published": "2026-07-08T00:00:00.000Z",
+      "tags": [
+        "Reuters",
+        "China",
+        "Policy",
+        "Export Controls",
+        "Alibaba",
+        "ByteDance"
+      ]
+    },
+    {
+      "id": "https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026",
+      "title": "Claude Fable 5 Moves From Subscription Plans to Usage-Based Credits on July 8",
+      "content_text": "July 7 is the final day Claude Fable 5 is included at no extra cost in Claude Pro, Max, Team, and select Enterprise plans; from July 8 the Mythos-class model requires usage credits billed outside the standard subscription. The change lands one week after Fable 5's global restoration and separates frontier-tier capacity from flat-rate consumer pricing.",
+      "date_published": "2026-07-07T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude Fable 5",
+        "Pricing",
+        "Subscriptions"
+      ]
+    },
+    {
+      "id": "https://finance.yahoo.com/technology/ai/articles/xai-makes-rebrand-spacexai-complete-215010760.html",
+      "url": "https://finance.yahoo.com/technology/ai/articles/xai-makes-rebrand-spacexai-complete-215010760.html",
+      "title": "xAI Completes Its Rebrand to SpaceXAI With a New Logo",
+      "content_text": "The company formerly known as xAI unveiled its new identity as SpaceXAI on July 6, completing the integration that began when SpaceX acquired xAI in an all-stock deal that closed February 2. The rebrand, announced on X alongside a new logo, formally ends xAI's existence as an independent brand and folds the Grok model family into SpaceX's combined AI-and-space business.",
+      "date_published": "2026-07-06T00:00:00.000Z",
+      "tags": [
+        "SpaceXAI",
+        "SpaceXAI",
+        "xAI",
+        "Grok",
+        "Acquisition",
+        "Rebrand"
+      ]
+    },
+    {
+      "id": "https://news.un.org/en/story/2026/07/1167862",
+      "url": "https://news.un.org/en/story/2026/07/1167862",
+      "title": "UN Opens First Global Dialogue on AI Governance With 169 Countries in Geneva",
+      "content_text": "The inaugural UN Global Dialogue on AI Governance opened in Geneva on July 6, convening delegates from 169 countries in the most significant multilateral AI governance meeting yet held. The dialogue's independent scientific panel warned that governance safeguards are not keeping pace with capability advances and that the window for effective global coordination may be closing.",
+      "date_published": "2026-07-06T00:00:00.000Z",
+      "tags": [
+        "United Nations",
+        "United Nations",
+        "AI Governance",
+        "Policy",
+        "International"
+      ]
+    },
+    {
+      "id": "https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026",
+      "title": "White House in Advanced Talks With OpenAI, Google, and Anthropic on Voluntary Frontier Standards",
+      "content_text": "Reports on July 3 said the White House is in advanced talks with OpenAI, Google, and Anthropic to finalize a voluntary standards framework for frontier AI model releases, covering benchmarks, testing timelines, and access rules. The framework is widely seen as the gating event for OpenAI expanding GPT-5.6 beyond its roughly 20 government-vetted partner organizations.",
+      "date_published": "2026-07-03T00:00:00.000Z",
+      "tags": [
+        "White House",
+        "Policy",
+        "White House",
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "Frontier Models"
+      ]
+    },
+    {
+      "id": "https://hipther.com/latest-news/2026/07/03/114537/ai-dispatch-daily-trends-and-innovations-july-3-2026-microsoft-frontier-company-meta-compute-nvidia-ai-factories-and-ai-powered-device-inflation/",
+      "url": "https://hipther.com/latest-news/2026/07/03/114537/ai-dispatch-daily-trends-and-innovations-july-3-2026-microsoft-frontier-company-meta-compute-nvidia-ai-factories-and-ai-powered-device-inflation/",
+      "title": "Nvidia Partners With AI Clouds on Revenue-Sharing 'AI Factory' Deployments",
+      "content_text": "Nvidia announced a program on July 3 to deploy large-scale, multi-tenant AI factories with partner AI clouds under a revenue-sharing and credit-support model, lowering the upfront capital burden on smaller providers. The structure shifts Nvidia from pure hardware vendor toward a participant in its customers' inference economics.",
+      "date_published": "2026-07-03T00:00:00.000Z",
+      "tags": [
+        "Nvidia",
+        "Nvidia",
+        "AI Infrastructure",
+        "Cloud",
+        "Data Centers"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "title": "Microsoft Launches $2.5B 'Frontier Company' With 6,000 Forward-Deployed Engineers",
+      "content_text": "Microsoft announced Microsoft Frontier Company on July 2 — a new operating business backed by $2.5 billion that embeds 6,000 industry and engineering experts inside customer organizations to co-design, deploy, and operate AI systems against measurable business outcomes. Longtime enterprise leader Rodrigo Kede Lima will run the unit, partnering with firms including Accenture and KPMG.",
+      "date_published": "2026-07-02T00:00:00.000Z",
+      "tags": [
+        "Microsoft",
+        "Microsoft",
+        "Enterprise AI",
+        "AI Deployment",
+        "Consulting"
+      ]
+    },
+    {
+      "id": "https://cryptobriefing.com/kling-ai-raises-2b-venture-capital/",
+      "url": "https://cryptobriefing.com/kling-ai-raises-2b-venture-capital/",
+      "title": "Kuaishou's Kling AI Closes $2B Round at an $18B Valuation",
+      "content_text": "Kling AI formally closed a $2 billion round led by General Atlantic on July 2, valuing the Kuaishou-backed video-generation company at $18 billion. The close confirms the process first disclosed in mid-June and ranks among the largest single rounds ever raised by a Chinese AI company ahead of an expected IPO.",
+      "date_published": "2026-07-02T00:00:00.000Z",
+      "tags": [
+        "Kuaishou",
+        "Kling AI",
+        "Kuaishou",
+        "Video Generation",
+        "Funding",
+        "China"
+      ]
+    },
+    {
+      "id": "https://finance.yahoo.com/technology/ai/articles/laying-off-8-000-employees-121545621.html",
+      "url": "https://finance.yahoo.com/technology/ai/articles/laying-off-8-000-employees-121545621.html",
+      "title": "Zuckerberg Tells Staff Meta's AI Agent Push 'Hasn't Really Accelerated' as Expected",
+      "content_text": "At a July 2 internal town hall, Mark Zuckerberg told employees that Meta's Superintelligence Labs agentic-AI effort had not accelerated over the prior four months despite the company's restructuring, and that the reorg's benefits 'haven't come to fruition yet.' The admission followed May's layoff of roughly 8,000 employees (about 10% of headcount) and a July reassignment of 7,000 staff into AI-focused roles, against a backdrop of roughly $145 billion in planned 2026 AI infrastructure spending.",
+      "date_published": "2026-07-02T00:00:00.000Z",
+      "tags": [
+        "Meta",
+        "Meta",
+        "AI Agents",
+        "Restructuring",
+        "Superintelligence Labs"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/redeploying-fable-5",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "title": "Claude Fable 5 Returns Globally After US Export Controls Are Lifted",
+      "content_text": "Anthropic restored Claude Fable 5 to users worldwide on July 1 after the US government lifted the export-control directive that had constrained access since June 12. The Mythos-class model is again available on Claude.ai, the Claude Platform API, Claude Code, and Claude Cowork at $10 per million input tokens and $50 per million output tokens, and reclaims the top coding spot at 80.3% on SWE-Bench Pro.",
+      "date_published": "2026-07-01T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude Fable 5",
+        "Export Controls",
+        "Frontier Models"
+      ]
+    },
+    {
+      "id": "https://techstartups.com/2026/07/01/venture-capital-startup-funding-roundup-july-1-2026/",
+      "url": "https://techstartups.com/2026/07/01/venture-capital-startup-funding-roundup-july-1-2026/",
+      "title": "Together AI Raises $800M Series C Led by Aramco Ventures at $8.3B Valuation",
+      "content_text": "Together AI announced an $800 million Series C on July 1, led by Aramco Ventures at an $8.3 billion post-money valuation, with participation from Nvidia, Vista Equity Partners, and General Catalyst. The open-source-focused inference cloud said annual bookings crossed $1.15 billion in the second quarter.",
+      "date_published": "2026-07-01T00:00:00.000Z",
+      "tags": [
+        "Together AI",
+        "Together AI",
+        "Funding",
+        "AI Infrastructure",
+        "Inference"
+      ]
+    },
+    {
+      "id": "https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607",
+      "url": "https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607",
+      "title": "Meta Reportedly Building 'Meta Compute' to Sell Surplus AI Capacity",
+      "content_text": "Reports on July 1 said Meta is developing an internal cloud unit called Meta Compute to sell surplus AI training and inference capacity — along with access to its Llama model family — to enterprise customers. The move would turn Meta's massive data-center buildout from a pure cost center into a revenue line competing with established AI clouds.",
+      "date_published": "2026-07-01T00:00:00.000Z",
+      "tags": [
+        "Meta",
+        "Meta",
+        "AI Infrastructure",
+        "Cloud",
+        "Llama"
+      ]
+    },
+    {
+      "id": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
+      "url": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
+      "title": "Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector",
+      "content_text": "Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.",
+      "date_published": "2026-07-01T00:00:00.000Z",
+      "tags": [
+        "Swedish Government",
+        "Sweden",
+        "Public Sector",
+        "AI Adoption",
+        "Government"
+      ]
+    },
+    {
       "id": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
       "url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
       "title": "Fazeshift Raises $17M Series A for AI Agents That Run Accounts Receivable",
@@ -127,6 +356,65 @@
       ]
     },
     {
+      "id": "https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html",
+      "url": "https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html",
+      "title": "Anthropic Launches Claude Science and Its Own Neglected-Disease Drug Programs",
+      "content_text": "Anthropic released Claude Science in beta on June 30 — a research workbench integrating more than 60 scientific databases and functions across genomics, proteomics, structural biology, and cheminformatics — and announced it will run its own preclinical drug-discovery programs targeting neglected diseases. Novo Nordisk and the Allen Institute are early adopters, and selected biomedical projects can receive up to $30,000 in compute credits.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude Science",
+        "Drug Discovery",
+        "Healthcare AI",
+        "Science"
+      ]
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+      "title": "Google Ships Gemini 3.5 Live Translate for Real-Time Speech-to-Speech Translation",
+      "content_text": "Google's June AI roundup introduced Gemini 3.5 Live Translate, an audio model for live speech-to-speech translation that auto-detects more than 70 languages while preserving the speaker's natural intonation, targeting multilingual calls, meetings, and travel. The month also brought Nano Banana 2 Lite as Google's fastest image model and Gemini Omni Flash reaching APIs in public preview.",
+      "date_published": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "Google",
+        "Gemini",
+        "Translation",
+        "Voice AI",
+        "Multimodal"
+      ]
+    },
+    {
+      "id": "https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/",
+      "url": "https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/",
+      "title": "California Gives Every State Agency Access to Claude at a 50% Discount",
+      "content_text": "Governor Gavin Newsom announced a first-of-its-kind partnership with Anthropic on June 29 that makes Claude available to all California state agencies — plus cities and counties that opt in — at a 50% discount through the state's new SITeS shared-services portal. State workers also receive free training and technical assistance; the DMV and Department of Health Care Services were already using Claude in pilots.",
+      "date_published": "2026-06-29T00:00:00.000Z",
+      "tags": [
+        "State of California",
+        "Anthropic",
+        "Claude",
+        "Government",
+        "Public Sector",
+        "United States"
+      ]
+    },
+    {
+      "id": "https://www.traverssmith.com/knowledge/knowledge-container/eu-agrees-to-delay-key-ai-act-compliance-deadlines/",
+      "url": "https://www.traverssmith.com/knowledge/knowledge-container/eu-agrees-to-delay-key-ai-act-compliance-deadlines/",
+      "title": "EU Council Gives Final Approval to AI Act Simplification, Locking In Delayed Deadlines",
+      "content_text": "The Council of the EU gave its final green light to the AI Act digital omnibus package on June 29, following the European Parliament's endorsement on June 16. High-risk obligations for stand-alone Annex III systems are deferred to December 2, 2027, and for AI embedded in regulated products to August 2, 2028 — while Article 50 transparency duties still take effect August 2, 2026. Publication in the Official Journal is expected in July.",
+      "date_published": "2026-06-29T00:00:00.000Z",
+      "tags": [
+        "European Union",
+        "European Union",
+        "AI Act",
+        "Regulation",
+        "Policy"
+      ]
+    },
+    {
       "id": "https://openai.com/index/previewing-gpt-5-6-sol/",
       "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
       "title": "OpenAI Previews GPT-5.6 Family: Sol, Terra, and Luna",
@@ -139,6 +427,33 @@
         "Model Release",
         "Agents",
         "Coding"
+      ]
+    },
+    {
+      "id": "https://releasebot.io/updates/xai",
+      "url": "https://releasebot.io/updates/xai",
+      "title": "Musk Confirms Grok 4.5 Is in Private Beta on a 1.5-Trillion-Parameter V9 Base",
+      "content_text": "Elon Musk confirmed on June 28 that Grok 4.5 is running in private beta with teams at SpaceX and Tesla, built on a new V9 foundation of roughly 1.5 trillion parameters. No public release date was given; Grok 4.3 meanwhile remains the flagship, recently reaching Amazon Bedrock at $1.25 per million input tokens.",
+      "date_published": "2026-06-28T00:00:00.000Z",
+      "tags": [
+        "SpaceXAI",
+        "SpaceXAI",
+        "Grok",
+        "Frontier Models"
+      ]
+    },
+    {
+      "id": "https://wccftech.com/nvidia-squashes-vera-rubin-rumors-first-shipments-rolling-out-in-july-to-ai-customers/",
+      "url": "https://wccftech.com/nvidia-squashes-vera-rubin-rumors-first-shipments-rolling-out-in-july-to-ai-customers/",
+      "title": "Nvidia Confirms First Vera Rubin Shipments Roll Out in July to Major AI Customers",
+      "content_text": "Nvidia dismissed rumors of Vera Rubin delays on June 28, confirming that first shipments of the next-generation platform reach major AI customers in July with mass production ramping in the second half of 2026. Rubin pairs with Nvidia's newly detailed 45°C warm-water liquid cooling design for dense data-center deployments.",
+      "date_published": "2026-06-28T00:00:00.000Z",
+      "tags": [
+        "Nvidia",
+        "Nvidia",
+        "Vera Rubin",
+        "GPUs",
+        "AI Infrastructure"
       ]
     },
     {
@@ -184,6 +499,35 @@
         "AI Policy",
         "Government",
         "Export Controls"
+      ]
+    },
+    {
+      "id": "https://www.cnn.com/2026/06/26/tech/anthropic-mythos-release",
+      "url": "https://www.cnn.com/2026/06/26/tech/anthropic-mythos-release",
+      "title": "US Clears Claude Mythos 5 for Roughly 100 Critical-Infrastructure Defenders",
+      "content_text": "The Commerce Department notified Anthropic on June 26 that Claude Mythos 5 — the unrestricted variant whose autonomous vulnerability discovery triggered the June 12 export-control directive — may be redeployed without an export license to a defined set of about 100 US organizations that operate and defend critical infrastructure. The model had uncovered thousands of high-severity flaws, including a 27-year-old OpenBSD vulnerability and chained Linux kernel exploits.",
+      "date_published": "2026-06-26T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Anthropic",
+        "Claude Mythos",
+        "Cybersecurity",
+        "Export Controls",
+        "Policy"
+      ]
+    },
+    {
+      "id": "https://releasebot.io/updates/openai",
+      "url": "https://releasebot.io/updates/openai",
+      "title": "OpenAI Ships gpt-realtime-2.1 With 25% Lower Voice Latency",
+      "content_text": "OpenAI released gpt-realtime-2.1 and gpt-realtime-2.1-mini on June 26 for low-latency voice and multimodal experiences, cutting p95 latency by at least 25% across Realtime voice models while improving speech recognition in noisy conditions, tool use, and instruction following. The same release window retired GPT-4.5 from ChatGPT and added enterprise usage analytics and spend controls.",
+      "date_published": "2026-06-26T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Voice AI",
+        "Realtime API",
+        "Developers"
       ]
     },
     {
@@ -394,363 +738,6 @@
         "AI Agents",
         "HR Tech",
         "Funding"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/world/asia-pacific/ai-startup-baseten-hits-13-billion-valuation-australias-blackbird-makes-record-2026-06-23/",
-      "url": "https://www.reuters.com/world/asia-pacific/ai-startup-baseten-hits-13-billion-valuation-australias-blackbird-makes-record-2026-06-23/",
-      "title": "Baseten Raises $1.5 Billion at $13 Billion Valuation",
-      "content_text": "AI inference infrastructure company Baseten raised $1.5 billion in a round led by Sands Capital and Wellington Management. The company said revenue increased twentyfold over the past year and plans to expand compute capacity, software and hiring.",
-      "date_published": "2026-06-23T00:00:00.000Z",
-      "tags": [
-        "Baseten",
-        "Baseten",
-        "Funding",
-        "Inference",
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/markets/europe/european-shares-set-open-lower-fed-rate-hike-bets-tech-weakness-weigh-2026-06-23/",
-      "url": "https://www.reuters.com/markets/europe/european-shares-set-open-lower-fed-rate-hike-bets-tech-weakness-weigh-2026-06-23/",
-      "title": "European Tech Stocks Slide as AI Spending Meets Higher Rates",
-      "content_text": "European technology shares fell 2.6% as investors reassessed debt-backed AI capital spending amid expectations of higher interest rates. The wider STOXX 600 also declined, with semiconductor companies among the notable losers.",
-      "date_published": "2026-06-23T00:00:00.000Z",
-      "tags": [
-        "Reuters",
-        "Europe",
-        "Markets",
-        "AI Infrastructure",
-        "Finance"
-      ]
-    },
-    {
-      "id": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
-      "url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
-      "title": "Groq Raises $650M to Scale Its AI Inference Cloud",
-      "content_text": "Inference-chip company Groq raised $650 million to expand its AI inference cloud, in a round led by Disruptive and Infinitum. Groq says it runs 13 data centers across North America, Europe, the Middle East, and APAC serving more than five million developers, and plans to scale toward 200 megawatts of capacity by the end of 2027 — deepening the shift toward fast, low-cost inference as a distinct infrastructure layer.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Groq",
-        "Groq",
-        "Funding",
-        "Inference",
-        "AI Infrastructure",
-        "Chips"
-      ]
-    },
-    {
-      "id": "https://sifted.eu/articles/ai-native-startups-sweden-funding",
-      "url": "https://sifted.eu/articles/ai-native-startups-sweden-funding",
-      "title": "Sweden's AI-Native Startups More Than Triple Funding to €454M in 2026",
-      "content_text": "Sweden's AI-native startups have more than tripled their funding so far in 2026, reaching roughly €454 million, led by names like app-builder Lovable and legaltech Legora. The surge underscores Stockholm's position as one of Europe's densest AI startup hubs, even as Swedish founders warn that the national AI strategy isn't enough to stop talent drain to San Francisco.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Sifted",
-        "Sweden",
-        "Startups",
-        "Funding",
-        "AI Ecosystem",
-        "Stockholm"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/business/micron-anthropic-sign-ai-infrastructure-supply-agreement-2026-06-22/",
-      "url": "https://www.reuters.com/business/micron-anthropic-sign-ai-infrastructure-supply-agreement-2026-06-22/",
-      "title": "Micron and Anthropic Sign AI Memory and Storage Agreement",
-      "content_text": "Micron agreed to supply Anthropic with memory and storage products and made a strategic investment in Anthropic's latest funding round. The companies will analyze how memory and storage interact with the broader infrastructure used to train and serve Claude.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Anthropic",
-        "Anthropic",
-        "Micron",
-        "Claude",
-        "Semiconductors",
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/business/media-telecom/ai-startup-reflection-signs-computing-power-deal-with-spacex-2026-06-22/",
-      "url": "https://www.reuters.com/business/media-telecom/ai-startup-reflection-signs-computing-power-deal-with-spacex-2026-06-22/",
-      "title": "Reflection Secures SpaceX Colossus 2 Compute Through 2029",
-      "content_text": "Open-source AI startup Reflection signed a compute agreement with SpaceX for immediate access to Nvidia GB300 systems at the Colossus 2 data center. Reported payments rise to $150 million per month from July 2026 through 2029.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Reflection AI",
-        "Reflection AI",
-        "SpaceX",
-        "Nvidia",
-        "Open Source",
-        "Compute"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/legal/transactional/qualcomm-nearing-deal-ai-chip-startup-modular-bloomberg-news-reports-2026-06-22/",
-      "url": "https://www.reuters.com/legal/transactional/qualcomm-nearing-deal-ai-chip-startup-modular-bloomberg-news-reports-2026-06-22/",
-      "title": "Qualcomm Nears $4 Billion Deal for AI Chip Startup Modular",
-      "content_text": "Qualcomm entered advanced discussions to acquire AI chip software company Modular in a transaction reportedly valuing it at about $4 billion. Modular had been valued at $1.6 billion nine months earlier.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Qualcomm",
-        "Qualcomm",
-        "Modular",
-        "Acquisition",
-        "AI Chips",
-        "Compilers"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/business/media-telecom/google-deepmind-signs-ai-research-deal-with-film-studio-a24-2026-06-22/",
-      "url": "https://www.reuters.com/business/media-telecom/google-deepmind-signs-ai-research-deal-with-film-studio-a24-2026-06-22/",
-      "title": "Google DeepMind and A24 Form AI Filmmaking Research Partnership",
-      "content_text": "Google DeepMind and independent studio A24 announced a partnership to explore how artificial intelligence can support filmmakers and creative professionals. The agreement brings a frontier AI laboratory into direct research collaboration with a major film studio.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Google DeepMind",
-        "Google DeepMind",
-        "A24",
-        "Creative AI",
-        "Film",
-        "Research"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/technology/ibm-partners-with-openai-enterprise-security-ai-2026-06-22/",
-      "url": "https://www.reuters.com/technology/ibm-partners-with-openai-enterprise-security-ai-2026-06-22/",
-      "title": "IBM and OpenAI Partner on Enterprise Security AI",
-      "content_text": "IBM partnered with OpenAI to integrate frontier AI capabilities into enterprise security workflows. The companies said the collaboration is intended to help organizations respond to faster-changing cyber threats.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "IBM",
-        "IBM",
-        "OpenAI",
-        "Cybersecurity",
-        "Enterprise AI",
-        "Partnership"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/business/upscale-ai-valued-2-billion-after-funding-extension-2026-06-22/",
-      "url": "https://www.reuters.com/business/upscale-ai-valued-2-billion-after-funding-extension-2026-06-22/",
-      "title": "Upscale AI Reaches $2 Billion Valuation After Funding Extension",
-      "content_text": "AI networking infrastructure company Upscale AI raised a $190 million extension to its early-stage funding round. The financing brought the company's reported valuation to $2 billion.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Upscale AI",
-        "Upscale AI",
-        "Funding",
-        "Networking",
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "id": "https://www.axios.com/2026/06/22/openai-rolls-out-more-capable-version-of-cyber-model",
-      "url": "https://www.axios.com/2026/06/22/openai-rolls-out-more-capable-version-of-cyber-model",
-      "title": "OpenAI Expands GPT-5.5-Cyber for Vetted Security Teams",
-      "content_text": "OpenAI released a more capable and permissive version of GPT-5.5-Cyber for authorized cybersecurity work. Access remains limited to vetted security companies and researchers, alongside new programs for customer-environment defense and international partnerships.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "GPT-5.5",
-        "Cybersecurity",
-        "Model Update",
-        "Access Control"
-      ]
-    },
-    {
-      "id": "https://www.axios.com/2026/06/22/nvidia-humanoid-ai-robotics",
-      "url": "https://www.axios.com/2026/06/22/nvidia-humanoid-ai-robotics",
-      "title": "Nvidia Launches Halos Safety Architecture for Humanoid Robots",
-      "content_text": "Nvidia introduced Halos for Robotics, combining software, compute, sensors and inspection capabilities into a safety architecture for humanoid systems. Agility is the first customer and plans to use it in deployments serving companies including Amazon and Toyota.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Nvidia",
-        "Nvidia",
-        "Robotics",
-        "Humanoids",
-        "Safety",
-        "Embodied AI"
-      ]
-    },
-    {
-      "id": "https://www.axios.com/2026/06/22/nvidia-data-center-water-solution",
-      "url": "https://www.axios.com/2026/06/22/nvidia-data-center-water-solution",
-      "title": "Nvidia Details 45°C Liquid Cooling for Rubin Data Centers",
-      "content_text": "Nvidia said its Rubin-generation reference design can use recirculated liquid at 113°F, or 45°C, reducing dependence on chillers and cooling towers. The design targets lower cooling-related water and energy use, though electricity generation and construction impacts remain.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Nvidia",
-        "Nvidia",
-        "Rubin",
-        "Data Centers",
-        "Cooling",
-        "Sustainability"
-      ]
-    },
-    {
-      "id": "https://www.axios.com/newsletters/axios-closer-f56c702f-09eb-4f59-a2f6-0f193e8670e9",
-      "url": "https://www.axios.com/newsletters/axios-closer-f56c702f-09eb-4f59-a2f6-0f193e8670e9",
-      "title": "Chevron Signs 20-Year Power Deal for Microsoft AI Campus",
-      "content_text": "Chevron agreed to supply a new Microsoft data center in West Texas under a 20-year arrangement tied to Project Kilby. The planned co-located generation facility could produce 2.67 gigawatts and is expected to come online in 2028 if approved.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Microsoft",
-        "Microsoft",
-        "Chevron",
-        "Data Centers",
-        "Energy",
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/business/energy/data-center-investors-buy-up-power-developers-race-build--reeii-2026-06-22/",
-      "url": "https://www.reuters.com/business/energy/data-center-investors-buy-up-power-developers-race-build--reeii-2026-06-22/",
-      "title": "DigitalBridge Buys ArcLight as AI Investors Chase Power Assets",
-      "content_text": "DigitalBridge agreed to acquire power infrastructure developer ArcLight Capital for $1.1 billion. The transaction reflects a wider trend in which data-center investors are buying generation and grid-development expertise to secure capacity faster.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "DigitalBridge",
-        "DigitalBridge",
-        "ArcLight",
-        "Acquisition",
-        "Energy",
-        "Data Centers"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/legal/litigation/us-curbs-ai-spur-european-firms-spread-risk-2026-06-22/",
-      "url": "https://www.reuters.com/legal/litigation/us-curbs-ai-spur-european-firms-spread-risk-2026-06-22/",
-      "title": "European Companies Diversify AI Providers After U.S. Restrictions",
-      "content_text": "European firms including Siemens, Renault and Orange are spreading workloads across U.S., European, Chinese and open models after U.S. restrictions highlighted supplier-access risk. The shift is strengthening interest in on-premise deployment, open weights and digital sovereignty.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Reuters",
-        "Europe",
-        "AI Sovereignty",
-        "Open Source",
-        "Enterprise AI",
-        "Policy"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/world/asia-pacific/five-eyes-intelligence-alliance-warns-that-new-ai-models-pose-urgent-cyber-risk-2026-06-22/",
-      "url": "https://www.reuters.com/world/asia-pacific/five-eyes-intelligence-alliance-warns-that-new-ai-models-pose-urgent-cyber-risk-2026-06-22/",
-      "title": "Five Eyes Warns Frontier AI Could Transform Cyberattacks Within Months",
-      "content_text": "The Five Eyes intelligence alliance warned that frontier models could rapidly increase both offensive and defensive cyber capabilities within months rather than years. The joint statement urged faster patching, reduced exposure and proactive adoption of AI-enabled defense.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Five Eyes",
-        "Five Eyes",
-        "Cybersecurity",
-        "Frontier Models",
-        "Government",
-        "Risk"
-      ]
-    },
-    {
-      "id": "https://www.reuters.com/legal/transactional/three-ways-trump-could-get-stake-ai-firms-us-2026-06-22/",
-      "url": "https://www.reuters.com/legal/transactional/three-ways-trump-could-get-stake-ai-firms-us-2026-06-22/",
-      "title": "U.S. Debate Opens Over Public Stakes in Leading AI Firms",
-      "content_text": "Policy proposals under discussion in the United States include targeted taxes, equity in exchange for federal support and public wealth mechanisms tied to leading AI companies. The debate centers on whether citizens should share more directly in returns from publicly enabled AI growth.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Reuters",
-        "United States",
-        "Policy",
-        "Public Investment",
-        "OpenAI",
-        "Anthropic"
-      ]
-    },
-    {
-      "id": "https://www.adelaidenow.com.au/news/south-australia/state-election/premier-peter-malinauskas-reveals-data-centre-strategy-to-capitalise-on-artificial-intelligence-boom/news-story/01165be8355402a8963629bc46c535aa",
-      "url": "https://www.adelaidenow.com.au/news/south-australia/state-election/premier-peter-malinauskas-reveals-data-centre-strategy-to-capitalise-on-artificial-intelligence-boom/news-story/01165be8355402a8963629bc46c535aa",
-      "title": "South Australia Unveils Dedicated AI Data Center Strategy",
-      "content_text": "South Australia outlined a strategy to attract large AI data centers using renewable energy and international fiber connectivity. Proposed legislation would govern development and resource use, while identified projects include facilities approaching one gigawatt.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "Government of South Australia",
-        "Australia",
-        "Data Centers",
-        "AI Infrastructure",
-        "Energy",
-        "Government"
-      ]
-    },
-    {
-      "id": "https://arxiv.org/abs/2606.22883",
-      "url": "https://arxiv.org/abs/2606.22883",
-      "title": "CLI-Universe Releases 6,000 Verified Terminal-Agent Trajectories",
-      "content_text": "Researchers introduced CLI-Universe, a synthesis and verification pipeline for executable terminal-agent tasks. Fine-tuning Qwen3-32B on its 6,000-trajectory dataset achieved 33.4% on Terminal-Bench 2.0, reported as a new open-data result for models at or below 32 billion parameters.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "arXiv",
-        "Research",
-        "AI Agents",
-        "Terminal Agents",
-        "Dataset",
-        "Benchmark"
-      ]
-    },
-    {
-      "id": "https://arxiv.org/abs/2606.22916",
-      "url": "https://arxiv.org/abs/2606.22916",
-      "title": "Researchers Propose Intent-Governed Authorization for AI Agents",
-      "content_text": "A new paper proposes Intent-Governed Access Control, a server-side authorization layer that checks whether tool calls and payloads remain consistent with the user's expressed request. The design ensures that inferred intent can narrow existing permissions but cannot expand them.",
-      "date_published": "2026-06-22T00:00:00.000Z",
-      "tags": [
-        "arXiv",
-        "Research",
-        "AI Agents",
-        "Authorization",
-        "Security",
-        "Tool Use"
-      ]
-    },
-    {
-      "id": "https://portal.rondoniaovivo.com/noticia/geral/2026/06/21/chuva-em-3h-inteligencia-artificial-criado-pela-inpa-e-eficiente-em-previsao-de-chuva.html",
-      "url": "https://portal.rondoniaovivo.com/noticia/geral/2026/06/21/chuva-em-3h-inteligencia-artificial-criado-pela-inpa-e-eficiente-em-previsao-de-chuva.html",
-      "title": "Brazilian Tupann Model Forecasts Rain Three Hours Ahead",
-      "content_text": "Researchers at IMPA developed Tupann, an AI model that forecasts rainfall up to three hours ahead using satellite data rather than depending on ground radar. Google Brazil and the City of Rio supported the project, and Rio has already used the system.",
-      "date_published": "2026-06-21T00:00:00.000Z",
-      "tags": [
-        "IMPA",
-        "Brazil",
-        "Climate AI",
-        "IMPA",
-        "Google",
-        "Weather"
-      ]
-    },
-    {
-      "id": "https://arxiv.org/abs/2606.22692",
-      "url": "https://arxiv.org/abs/2606.22692",
-      "title": "VISTA Architect Uses Provenance Graphs for Tumor Board Preparation",
-      "content_text": "VISTA Architect converts longitudinal electronic health records into a provenance-linked clinical knowledge graph for repeated downstream use. In a thoracic oncology demonstration across 1,180 patients, it reported 96.4% accuracy on 17,700 evaluations and prepared a 30-patient cohort in about 2.2 minutes.",
-      "date_published": "2026-06-21T00:00:00.000Z",
-      "tags": [
-        "Stanford Medicine",
-        "Research",
-        "Healthcare AI",
-        "Knowledge Graphs",
-        "EHR",
-        "Agents"
-      ]
-    },
-    {
-      "id": "https://m.economictimes.com/news/company/corporate-trends/reliance-agm-2026-key-takeaways-jio-ipo-ai-satellite-connectivity-jioteleframe-more-10-biggest-announcements-from-ambanis-vision-for-the-future/articleshow/131853757.cms",
-      "url": "https://m.economictimes.com/news/company/corporate-trends/reliance-agm-2026-key-takeaways-jio-ipo-ai-satellite-connectivity-jioteleframe-more-10-biggest-announcements-from-ambanis-vision-for-the-future/articleshow/131853757.cms",
-      "title": "Reliance Plans India AI Backbone Supporting 22 Languages",
-      "content_text": "Reliance Industries said its AI execution phase will center on infrastructure in Jamnagar and services spanning 22 Indian languages. The company also plans to evolve MyJio into a personal AI assistant and add generative media capabilities across its platforms.",
-      "date_published": "2026-06-20T00:00:00.000Z",
-      "tags": [
-        "Reliance Industries",
-        "Reliance",
-        "India",
-        "Multilingual AI",
-        "AI Infrastructure",
-        "Consumer AI"
       ]
     }
   ]

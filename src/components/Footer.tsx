@@ -29,6 +29,7 @@ const NAV_COLS = [
   {
     head: "Elsewhere",
     links: [
+      ["AI Keynote ↗",         `${BASE_PATH}/keynote/`],
       ["GitHub ↗",             "https://github.com/joaoccaldas/sintra-ai"],
       ["RSS Feed ↗",           `${BASE_PATH}/feed.xml`],
     ],
