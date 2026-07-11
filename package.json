@@ -6,7 +6,7 @@
     "dev": "next dev",
     "aggregate-feed": "node scripts/aggregate-live-feed.mjs",
     "audit:freshness": "node scripts/audit-freshness.mjs",
-    "prebuild": "node scripts/aggregate-live-feed.mjs && npx tsx scripts/generate-rss.ts && npx tsx scripts/generate-use-cases-count.ts",
+    "prebuild": "node scripts/aggregate-live-feed.mjs && npx tsx scripts/generate-rss.ts && npx tsx scripts/generate-use-cases-count.ts && npx tsx scripts/generate-api-json.ts && npx tsx scripts/generate-llms-txt.ts",
     "build": "next build",
     "start": "next start",
     "update-news": "node scripts/update-news.mjs",

@@ -4,6 +4,27 @@
 // TOPIC_HUBS / tagToTopicSlug (like AINewsPage.tsx, ExpandedCard.tsx,
 // app/sitemap.ts) don't pull the full USE_CASES array into their bundle.
 
+/**
+ * A structured, actionable brief for a topic — written for an agent (or a
+ * person) that needs to *act* on the topic, not just read about it. Kept
+ * optional so existing topics don't all need one at once; populate the
+ * highest-value topics first.
+ */
+export interface TopicPlaybook {
+  /** 1-2 sentence definition — what this actually is, no marketing language. */
+  whatItIs: string;
+  /** Non-negotiable design/engineering principles for working in this space. */
+  designPrinciples: string[];
+  /** Concrete, specific tools/frameworks/models recommended today. */
+  recommendedStack: string[];
+  /** Situations where this approach is the right call. */
+  bestUseCases: string[];
+  /** Failure modes seen in practice — specific, not generic. */
+  commonPitfalls: string[];
+  /** Small, immediately-actionable tips. */
+  tips: string[];
+}
+
 export interface TopicDef {
   slug: string;
   label: string;
@@ -11,6 +32,7 @@ export interface TopicDef {
   color: string;
   description: string;
   matchTags: string[];   // case-insensitive, partial-match allowed
+  playbook?: TopicPlaybook;
 }
 
 export const TOPIC_HUBS: TopicDef[] = [
@@ -149,6 +171,50 @@ export const TOPIC_HUBS: TopicDef[] = [
     color: "#6b7280",
     description: "GPUs, data centers, chips, and the compute layer powering modern AI.",
     matchTags: ["infrastructure", "gpu", "nvidia", "chips", "data center", "compute", "hardware"],
+  },
+  {
+    slug: "generative-ui",
+    label: "Generative UI",
+    icon: "◆",
+    color: "#ec4899",
+    description: "Interfaces a model composes at runtime from a fixed component vocabulary, instead of a developer hand-coding every screen state in advance.",
+    matchTags: ["generative ui", "generative-ui", "dynamic ui", "adaptive interface", "ai ui", "rsc", "streamui", "component generation", "ai-generated interface"],
+    playbook: {
+      whatItIs:
+        "Generative UI is a model choosing and assembling interface components at runtime — picking a chart vs. a table vs. a form, and filling in its props — rather than a developer pre-building one fixed screen per possible state. The model decides *what* to show; the application still owns *how* each piece renders.",
+      designPrinciples: [
+        "Constrain generation to a fixed, finite component vocabulary — never let the model emit raw HTML/CSS. It should choose and configure pre-built, pre-tested components via structured output (tool calls / JSON), not author markup.",
+        "Schema-validate every generated payload before render. Treat model output as untrusted input: validate against a strict schema and fail closed to a safe default view on any validation error.",
+        "Stream incrementally. Render a skeleton immediately, then hydrate with structure and content as it arrives, rather than blocking on the full response.",
+        "Keep state ownership with the application, not the model. The model selects and configures views; your code still owns data fetching, validation, and any mutation — never let generated UI directly trigger unvalidated actions.",
+        "Solve accessibility once, at the component level. Because generation composes pre-built components, each component only needs to be accessible once — it doesn't need to be re-verified per generation.",
+        "Always keep a deterministic fallback path. Every generatively-composed view should degrade to a static, testable equivalent; the generative path should never be the only path that renders the data.",
+      ],
+      recommendedStack: [
+        "Vercel AI SDK's streamUI / React Server Components — the most mature generative-UI primitive as of 2026: the model's tool calls stream React components directly to the client.",
+        "Claude (or another tool-use-capable model) with UI components defined as callable tools with strict JSON-schema inputs — the model 'renders' by calling the right tool with the right props.",
+        "Zod (or an equivalent runtime validator) to check every generated prop payload against its schema before a component ever mounts.",
+        "A small, well-documented component library (e.g. shadcn/ui) so the model is choosing from a constrained, known vocabulary rather than an open-ended design space.",
+      ],
+      bestUseCases: [
+        "Adaptive dashboards that reconfigure based on a natural-language query (\"show churn by region this quarter\" → the model picks the chart type and filters, not a fixed pre-built dashboard).",
+        "Dynamic form generation, where fields are added or removed based on earlier answers in a conversation rather than a static form schema.",
+        "Chat-driven data exploration, where the model decides whether a table, a chart, or a one-line summary best answers a specific question.",
+        "Adaptive onboarding flows that change shape based on the user's role or prior answers.",
+      ],
+      commonPitfalls: [
+        "Letting the model generate raw HTML, CSS, or arbitrary JS directly — this is an XSS risk and produces inconsistent, unmaintainable output. Constrain to a component vocabulary instead.",
+        "Skipping runtime validation and trusting model output structurally — a single malformed prop can crash the render tree with no safe fallback.",
+        "No fallback state — a bad or partial generation leaves the user with a blank screen instead of a safe default view.",
+        "Over-generating: treating every pixel as model-decided when most UIs are mostly static chrome plus a smaller generative region. Over-generation hurts consistency, cost, and latency for little benefit.",
+      ],
+      tips: [
+        "Start with a small, fixed set of 5-8 components before expanding the vocabulary — prove selection quality on a narrow set first.",
+        "Log every generation (input query, chosen component, props) — it's the dataset you'll need to evaluate and improve selection quality over time.",
+        "Cache generated layouts for identical or near-identical queries where the underlying data hasn't changed.",
+        "Ship the skeleton-then-hydrate streaming pattern from day one — retrofitting it later is much harder than building it in.",
+      ],
+    },
   },
 ];
 

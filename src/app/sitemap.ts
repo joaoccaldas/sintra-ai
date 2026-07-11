@@ -40,6 +40,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/news/`,          lastModified: newsDate, changeFrequency: "daily",   priority: 0.9 },
     { url: `${SITE_URL}/live/`,          changeFrequency: "hourly",  priority: 0.85 },
     { url: `${SITE_URL}/automate/`,      changeFrequency: "weekly",  priority: 0.88 },
+    { url: `${SITE_URL}/library/`,       changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${SITE_URL}/agents/`,        changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/learn/`,         changeFrequency: "weekly",  priority: 0.8 },
     { url: `${SITE_URL}/claude/`,        changeFrequency: "weekly",  priority: 0.8 },
     { url: `${SITE_URL}/resources/`,     changeFrequency: "weekly",  priority: 0.7 },

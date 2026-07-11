@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ExternalLink, ArrowLeft } from "lucide-react";
-import type { TopicDef } from "@/lib/topicHubs";
+import type { TopicDef, TopicPlaybook } from "@/lib/topicHubs";
 import type { UseCase } from "@/lib/data";
 import type { NewsItem } from "@/lib/newsData";
 import type { AITool } from "@/lib/toolsData";
@@ -130,6 +130,42 @@ function PromptRow({ item, onOpen, accent }: { item: UseCase; onOpen: (u: UseCas
   );
 }
 
+function PlaybookList({ label, items, accent }: { label: string; items: string[]; accent: string }) {
+  return (
+    <div>
+      <h3 className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 mb-3">{label}</h3>
+      <ul className="space-y-2.5">
+        {items.map((item, i) => (
+          <li key={i} className="flex items-start gap-2.5 font-sans text-[13px] text-fg-2 leading-[1.55]">
+            <span className="shrink-0 w-1 h-1 rounded-full mt-2" style={{ background: accent }} />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function PlaybookSection({ playbook, accent }: { playbook: TopicPlaybook; accent: string }) {
+  return (
+    <section className="mb-12 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 md:p-8">
+      <h2 className="eyebrow flex items-center gap-2 mb-4">
+        <span style={{ color: accent }}>◆</span> Playbook
+      </h2>
+      <p className="font-serif text-[17px] text-fg-1 leading-[1.5] mb-8 max-w-2xl">{playbook.whatItIs}</p>
+      <div className="grid md:grid-cols-2 gap-x-10 gap-y-8">
+        <PlaybookList label="Design Principles" items={playbook.designPrinciples} accent={accent} />
+        <PlaybookList label="Recommended Stack" items={playbook.recommendedStack} accent={accent} />
+        <PlaybookList label="Best Use Cases" items={playbook.bestUseCases} accent={accent} />
+        <PlaybookList label="Common Pitfalls" items={playbook.commonPitfalls} accent={accent} />
+      </div>
+      <div className="mt-8 pt-8 border-t border-white/[0.06]">
+        <PlaybookList label="Tips" items={playbook.tips} accent={accent} />
+      </div>
+    </section>
+  );
+}
+
 export default function TopicHubClient({
   topic,
   content,
@@ -206,6 +242,9 @@ export default function TopicHubClient({
             )}
           </div>
         </div>
+
+        {/* Playbook — the actionable brief, shown first when present */}
+        {topic.playbook && <PlaybookSection playbook={topic.playbook} accent={topic.color} />}
 
         {/* Content sections */}
         <div className="space-y-12">
