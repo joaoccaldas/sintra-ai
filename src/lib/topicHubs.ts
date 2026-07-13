@@ -216,6 +216,51 @@ export const TOPIC_HUBS: TopicDef[] = [
       ],
     },
   },
+  {
+    slug: "ai-scratch-games",
+    label: "AI-Built Scratch Games",
+    icon: "▲",
+    color: "#14b8a6",
+    description: "Using AI to build a full Scratch (.sb3) game from idea to sprites to a loadable project file — and to test-play it via browser control and computer vision.",
+    matchTags: ["scratch", "sb3", "scratch game", "game development", "computer use", "playwright", "browser agent", "sprite generation"],
+    playbook: {
+    whatItIs:
+      "An .sb3 file is a ZIP archive containing project.json (a JSON graph of sprites, scripts, and blocks — not visual drag-and-drop data) plus asset files named by content hash. That structure is simple enough for an AI agent to construct directly; a second, separate AI loop can then play the finished game in a browser by screenshotting the stage and reasoning over the pixels, since Scratch exposes no external debug/state API.",
+    designPrinciples: [
+      "Treat generation and testing as two separate systems: one produces the .sb3 file (mostly one-shot generation), the other plays it back (a perception-action loop). Don't couple them.",
+      "Lock the design brief before generating any art — a fixed sprite list, control scheme, and win/lose condition stated as one sentence each, so the block-graph logic has something concrete to target.",
+      "Generate sprite costumes on transparent backgrounds, never baked into a scene — Scratch composites sprites onto the backdrop itself.",
+      "Validate a hand-built project.json against the Scratch Foundation's published JSON Schema before assuming it will load — most load failures are a missing required field, not a zip-format error.",
+      "The browser-testing agent must read game state from screenshots only. There is no console or state API to query from outside — this is a genuine computer-vision task, not a shortcut.",
+      "Build and verify the simplest possible project (one sprite, one script) by hand-loading it into the Scratch editor before generating anything complex.",
+    ],
+    recommendedStack: [
+      "Claude for the generative half: design-brief writing, block-graph construction, sprite-prompt generation.",
+      "Plain JSON + zip handling (Python or Node, no Scratch-specific SDK required) to assemble project.json and package the .sb3.",
+      "Playwright — via its MCP server or Anthropic's Computer Use pattern — as the actual browser-control mechanism for the testing half; there is no Scratch-specific browser-automation tool.",
+      "Claude's vision input to read stage-canvas screenshots directly; no separate OCR/object-detection step needed for typical simple 2D Scratch games.",
+      "Nous Research's Hermes models as an open-weight substitute for the generation half if a fully self-hosted pipeline is required — verify current licensing before commercial use.",
+    ],
+    bestUseCases: [
+      "Rapid prototyping: turn a one-paragraph game idea into a loadable .sb3 for playtesting within one session.",
+      "Automated regression testing of an existing Scratch project after an edit, using the perceive-decide-act loop to catch a stuck sprite or unreachable game-over state.",
+      "Generating a batch of sprite/backdrop variations for the same game concept to compare art directions quickly.",
+      "Teaching contexts: showing how a visual, block-based format maps to a plain JSON graph underneath, as an intro to how agents 'see' structured formats generally.",
+    ],
+    commonPitfalls: [
+      "Hand-guessing the project.json shape instead of validating against the real JSON Schema — small omissions (a missing `shadow` or `topLevel` field) cause silent load failures.",
+      "Baking backgrounds into sprite art, which breaks compositing and makes sprites look pasted-on once moving over the actual backdrop.",
+      "Sending the full browser screenshot (including the block editor and menus) to the vision model instead of cropping to just the stage canvas — this adds noise and produces less reliable state reads.",
+      "Skipping manual verification of the generated .sb3 before wiring up the autonomous playtester — debugging a malformed block graph is much harder once a testing loop is also in the mix.",
+    ],
+    tips: [
+      "Generate the backdrop last, after seeing the sprite art style, so the two match.",
+      "Crop screenshots to the stage canvas only before sending them to the vision model.",
+      "Start the perceive-decide-act loop with a generous fixed interval between cycles and tune it down — too fast wastes calls on near-identical frames, too slow misses fast game state changes.",
+      "Ask the testing agent for structured pass/fail output (stuck sprite? reachable win state? score behaving correctly?) so repeated playtest runs are actually comparable.",
+    ],
+    },
+  },
 ];
 
 export function tagsMatch(itemTags: string[], matchTags: string[]): boolean {

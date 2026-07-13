@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
-import HeroMinimal from "@/components/HeroMinimal";
+import ImmersiveHero from "@/components/ImmersiveHero";
 import ContentNav from "@/components/ContentNav";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -13,7 +13,7 @@ export default function Home() {
       <div className="bg-void min-h-screen">
         <Header total={USE_CASES_COUNT} />
         <main id="main-content">
-          <HeroMinimal total={USE_CASES_COUNT} />
+          <ImmersiveHero total={USE_CASES_COUNT} />
           <ContentNav />
         </main>
         <Footer />

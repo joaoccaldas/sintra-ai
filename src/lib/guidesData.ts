@@ -461,4 +461,73 @@ export const GUIDES: Guide[] = [
       { label: "Build Your First AI Agent", href: `${BASE_PATH}/guides` },
     ],
   },
+  {
+    id: "ai-scratch-game-pipeline",
+    slug: "ai-scratch-game-pipeline",
+    emoji: "🎮",
+    color: "#14b8a6",
+    title: "Build and Auto-Test a Scratch Game with AI",
+    tagline: "From idea to a real .sb3 file, then a browser agent that plays it back with computer vision — the full pipeline.",
+    estimatedRead: "14 min",
+    level: "advanced",
+    sections: [
+      {
+        heading: "Two separate AI loops, not one",
+        body: "This pipeline has two distinct halves that use AI very differently. Phase one is generative: an LLM (Claude) turns a vague idea into a design brief, sprite art, and a working Scratch project file — mostly one-shot generation with a human or agent assembling the pieces. Phase two is agentic: a browser-driving agent opens the finished game in the Scratch player, takes screenshots, reasons about what it sees, and issues keyboard input in a loop — perception and action, repeated, with no fixed script. Treat them as separate systems. Building the game doesn't require the browser agent; testing it doesn't require regenerating any art.",
+        tip: "Get phase one working with a game you build and check by hand first. Don't build the autonomous playtester against a game you haven't verified is actually playable.",
+      },
+      {
+        heading: "From idea to a design brief an agent can build from",
+        body: "Scratch games fail as AI-generation targets when the idea stays vague — \"a platformer\" gives an agent nothing concrete to build. Push for a design brief with: the win/lose condition stated as a single sentence, the exact controls (which keys, what each does), a fixed sprite list (name, role, roughly how many costumes each needs for animation), and a level count. A prompt like \"design a single-screen dodge game: player moves left/right with arrow keys, avoid falling objects, game over on collision, score = seconds survived\" gives Claude everything it needs to name sprites, plan variables (score, game state), and scope the block logic — before any art or code exists.",
+      },
+      {
+        heading: "Generating sprites and backdrops",
+        body: "Ask an image model for individual costume frames on a transparent background, not a finished scene — Scratch composites sprites onto a backdrop itself, and a sprite with baked-in background can't move over anything convincingly. Request each costume as its own square PNG (Scratch scales freely, but square avoids distortion), 2-4 frames per animated sprite (idle, and one or two motion frames — Scratch's own costume-cycling handles the rest), and the backdrop as a single full-canvas image separately. Keep a consistent art style prompt across every asset in one project — mismatched styles are the fastest way to make an otherwise-solid AI-built game look unfinished.",
+        tip: "Generate the backdrop last, after you've seen the sprite style — it's easier to match a background to characters than the reverse.",
+      },
+      {
+        heading: "How Scratch actually represents a game",
+        body: "A Scratch project is not code in the traditional sense — it's a JSON tree describing sprites and the block-scripts attached to them. Every sprite (and the stage) is a \"target\" with its own costumes, sounds, variables, and a `blocks` dictionary: a flat map of block-ID to block-object, linked into scripts via `next`/`parent` pointers rather than nesting. A block like \"move 10 steps\" is `{ opcode: \"motion_movesteps\", inputs: { STEPS: [1, [4, \"10\"]] }, next: <id-of-next-block>, parent: <id-of-hat-block> }`. This matters because it means an agent doesn't need to understand Scratch's drag-and-drop UI at all to build a game — it needs to understand this graph structure, which is just JSON.",
+      },
+      {
+        heading: "Writing the project.json and packaging the .sb3",
+        body: "An `.sb3` file is a ZIP archive containing one `project.json` plus every costume/sound file, each named `<md5-of-its-own-bytes>.<ext>` and referenced from the JSON by that same hash. The practical build pattern: write a small script (Python or Node — this is plain JSON and zip handling, no Scratch-specific library required) that (1) computes the md5 of each generated sprite PNG and renames it accordingly, (2) constructs the `targets` array — one object per sprite plus the stage — with `costumes` pointing at those hashed filenames, (3) builds each sprite's `blocks` dictionary from the design brief's logic (a \"when green flag clicked → forever → check keys → move\" pattern is a handful of linked block objects), and (4) zips `project.json` with every asset file at the archive root — no subfolders. The official JSON Schema for this (`sb3_schema.json`, in the Scratch Foundation's parser repo) is worth validating against before you trust a hand-built file will actually load.",
+        tip: "Build and open the simplest possible project first — one sprite, one \"move on arrow key\" script — before generating anything complex. It's much easier to debug a malformed block graph with five blocks than fifty.",
+      },
+      {
+        heading: "Loading the finished game into scratch.mit.edu",
+        body: "The Scratch web editor's File menu has a \"Load from your computer\" option that accepts any valid `.sb3` — this is the actual handoff point for a human player, and it's also how you should first verify an AI-built file works at all, before wiring up any automated testing. If a file fails to load, the error is usually a schema mismatch (a missing required field on a target or block) rather than a zip-format problem; validating against the JSON Schema first will catch most of these before you even try loading it. TurboWarp — a widely-used Scratch-compatible runtime — can also open `.sb3` files and is worth knowing about if you need a faster iteration loop than the official editor, though check its current project status before depending on it for anything production-facing.",
+      },
+      {
+        heading: "Setting up a browser agent to play the game",
+        body: "The testing half of this pipeline is a standard browser-automation agent pointed at the Scratch player, not anything Scratch-specific. Claude driving Playwright — either through the Playwright MCP server or Anthropic's Computer Use tooling — is the current well-documented pattern for this: the agent gets tools to navigate, screenshot, click, and send key presses, and Claude decides what to call. Point it at the project's player page (or load the file into a locally-hosted player if you don't want to publish the project to test it), and give it one clear task: \"click the green flag to start, then play to survive as long as possible using arrow keys.\"",
+      },
+      {
+        heading: "Reading the game from pixels, not a debug API",
+        body: "Scratch has no console or state-inspection API exposed to an outside browser script — everything the agent knows about the game has to come from what a screenshot actually shows. This is a genuine computer-vision task, not a shortcut: the agent needs to look at the stage canvas and determine sprite positions, whether a game-over screen or score text is showing, and whether anything changed since the last frame. Claude's vision input handles this directly on a raw screenshot — no separate OCR or object-detection step is required for most simple 2D Scratch games, since sprites and score displays tend to be visually distinct and score/text is usually rendered as an actual on-canvas text object.",
+        tip: "Crop the screenshot to just the stage canvas before sending it to the model — cutting out the block editor and menus reduces noise and gets more reliable state reads.",
+      },
+      {
+        heading: "Closing the loop: perceive, decide, act",
+        body: "The play loop is: screenshot → send to Claude with a prompt describing the current objective and control scheme → Claude returns a decision (which key to press, or \"do nothing this frame\") → Playwright issues that keypress → wait a short fixed interval → screenshot again. This is the same perception-action pattern documented for general computer-use game automation: no game-specific code, just a vision model reasoning over pixels each cycle. Keep the interval short enough to react to a fast game but long enough that each screenshot reflects a meaningfully different state — for a simple single-screen Scratch game, a few hundred milliseconds per cycle is a reasonable starting point to tune from.",
+      },
+      {
+        heading: "Turning playtests into bug reports",
+        body: "Run the perceive-decide-act loop for a fixed number of cycles or until a game-over state is detected, then have Claude summarize the run: did the game reach a clear end state, did any sprite appear stuck or unreachable, did the score behave as expected, did anything visually break (missing sprite, wrong layer order)? Ask for this as structured output — a short list of pass/fail checks plus freeform notes — so repeated runs are comparable. This turns what would otherwise be a novelty demo into an actual QA step: catching a stuck sprite or an unreachable win condition before a human ever opens the project.",
+      },
+      {
+        heading: "Tools — and one that doesn't fit here",
+        body: "Claude is the right tool for both halves: design-brief generation, block-graph reasoning, and the vision-based play loop. Playwright (via its MCP server, or through Anthropic's Computer Use pattern) is the actual browser-control mechanism — there's no Scratch-specific automation tool that does this. If you want a fully self-hosted or open-weight pipeline, Nous Research's Hermes models (open-weight, tool-use-tuned Llama fine-tunes) are a reasonable substitute for the generation half, though verify current licensing terms before commercial use. One note worth being direct about: OpenClaw is a real, actively-developed project, but it's a messaging-app-to-agent gateway (WhatsApp/Telegram/Slack to an AI backend) — not a computer-vision or browser-testing tool, and not part of this pipeline despite the name sounding like it might fit.",
+      },
+      {
+        heading: "AI format reference: project.json cheat-sheet",
+        body: "For an agent building or reasoning about a Scratch file directly — top level: `targets` (array, stage + sprites), `monitors` (visible variable watchers), `extensions` (used extension IDs, e.g. `pen`), `meta` (semver + VM version). Each **target**: `isStage`, `name`, `variables`/`lists`/`broadcasts` (dicts keyed by ID), `blocks` (dict keyed by block ID), `costumes`/`sounds` (arrays, each with `name`, `md5ext`, dimensions), `currentCostume`, plus sprite-only `x`/`y`/`size`/`direction`/`visible`/`rotationStyle`/`draggable`. Each **block**: `opcode` (e.g. `event_whenflagclicked`, `motion_movesteps`, `control_forever`, `sensing_keypressed`), `next`/`parent` (block-ID pointers or null), `inputs` (dict of plugged-in reporter blocks or literal values), `fields` (dropdown/variable-name values), `shadow` (bool), and `topLevel` (bool, with `x`/`y` canvas position if true). The authoritative schema lives in the Scratch Foundation's parser repo as `sb3_schema.json` — validate against it, don't hand-guess the shape.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Concepts: AI Agents", href: `${BASE_PATH}/concepts#agents` },
+      { label: "Concepts: Multimodal AI", href: `${BASE_PATH}/concepts` },
+      { label: "Build Your First AI Agent", href: `${BASE_PATH}/guides` },
+    ],
+  },
 ];
