@@ -7,6 +7,20 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+      "url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+      "title": "Apple Sues OpenAI and Two Former Employees Over Alleged Hardware Trade-Secret Theft",
+      "content_text": "Apple filed suit in Northern California federal court on July 10-11 against OpenAI and two former Apple employees, alleging a coordinated scheme to steal hardware trade secrets tied to OpenAI's io Products consumer-hardware venture (co-founded by former Apple design chief Jony Ive). The complaint alleges OpenAI's hardware chief Tang Tan — a former Apple VP — coached departing Apple staff on evading security processes, and that job candidates were told to bring 'actual parts' from Apple to interviews; Apple says over 400 former employees now work at OpenAI. OpenAI says it has 'no interest in other companies' trade secrets.'",
+      "date_published": "2026-07-11T00:00:00.000Z",
+      "tags": [
+        "Apple",
+        "Apple",
+        "OpenAI",
+        "Litigation",
+        "Hardware"
+      ]
+    },
+    {
       "id": "https://www.nextgov.com/artificial-intelligence/2026/07/openais-advanced-gpt-56-models-be-available-public/414651/",
       "url": "https://www.nextgov.com/artificial-intelligence/2026/07/openais-advanced-gpt-56-models-be-available-public/414651/",
       "title": "OpenAI Makes GPT-5.6 Generally Available to All Users",
@@ -32,6 +46,20 @@
         "Claude",
         "Product",
         "Wellbeing"
+      ]
+    },
+    {
+      "id": "https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/",
+      "url": "https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/",
+      "title": "Fed Chair Warsh Names Marc Andreessen to Co-Lead New AI and Productivity Task Force",
+      "content_text": "Federal Reserve Chair Kevin Warsh announced five new external task forces on July 9, naming a16z co-founder Marc Andreessen to co-lead the one studying AI's economic impact, alongside Stanford economist Charles I. Jones and Microsoft Xbox CEO Asha Sharma. The task force's mandate is to assess the economic impact of general-purpose technologies including AI to inform Fed policy judgments, with recommendations due by the end of 2026.",
+      "date_published": "2026-07-09T00:00:00.000Z",
+      "tags": [
+        "Federal Reserve",
+        "Policy",
+        "Federal Reserve",
+        "Economics",
+        "United States"
       ]
     },
     {
@@ -61,6 +89,20 @@
         "Export Controls",
         "Alibaba",
         "ByteDance"
+      ]
+    },
+    {
+      "id": "https://www.infosecurity-magazine.com/news/researchers-first-agentic/",
+      "url": "https://www.infosecurity-magazine.com/news/researchers-first-agentic/",
+      "title": "Sysdig Documents 'JadePuffer' — the First Fully Autonomous AI Ransomware Attack",
+      "content_text": "Cloud security firm Sysdig documented an extortion operation, dubbed JadePuffer, in which an AI agent handled the entire technical execution of a ransomware attack — exploiting a Langflow remote-code-execution flaw (CVE-2025-3248), stealing credentials, moving laterally through the network, encrypting files, and writing its own ransom note, adapting its tactics in real time after failed attempts. A human still chose the victim, provisioned infrastructure, and supplied credentials, but the technical attack chain ran without operator input.",
+      "date_published": "2026-07-08T00:00:00.000Z",
+      "tags": [
+        "Sysdig",
+        "Cybersecurity",
+        "AI Agents",
+        "Ransomware",
+        "Sysdig"
       ]
     },
     {
@@ -693,51 +735,6 @@
         "Slack",
         "AI Agents",
         "Collaboration"
-      ]
-    },
-    {
-      "id": "https://mistral.ai/news/ocr-4/",
-      "url": "https://mistral.ai/news/ocr-4/",
-      "title": "Mistral Releases OCR 4 With Bounding Boxes and 170-Language Support",
-      "content_text": "Mistral released OCR 4, a document-intelligence model that returns bounding boxes, block classification, and inline confidence scores alongside extracted text, with support for 170 languages across 10 language groups. It runs in a single container for fully self-hosted deployments and is positioned as an ingestion component for enterprise search, RAG, and domain-specific retrieval pipelines.",
-      "date_published": "2026-06-23T00:00:00.000Z",
-      "tags": [
-        "Mistral AI",
-        "Mistral AI",
-        "OCR",
-        "Document Intelligence",
-        "RAG",
-        "Enterprise AI"
-      ]
-    },
-    {
-      "id": "https://www.cnbc.com/2026/06/23/ai-memory-startup-focused-on-cutting-token-costs-raises-98-million.html",
-      "url": "https://www.cnbc.com/2026/06/23/ai-memory-startup-focused-on-cutting-token-costs-raises-98-million.html",
-      "title": "AI 'Learned Memory' Startup Engram Raises $98M to Cut Token Costs",
-      "content_text": "Engram, a 13-person startup founded less than a year ago, raised $98 million from General Catalyst, Kleiner Perkins, Sequoia, and Anthropic co-founder-era figure Andrej Karpathy. Its 'learned memory' models recall organization-specific workflows and context, and the company claims they can match or beat frontier labs while using up to 100x fewer tokens. Early clients reportedly include Microsoft, Notion, and legal-AI startup Harvey.",
-      "date_published": "2026-06-23T00:00:00.000Z",
-      "tags": [
-        "Engram",
-        "Engram",
-        "Funding",
-        "Memory",
-        "Token Efficiency",
-        "Agents"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
-      "url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
-      "title": "Stockholm's Fika Jobs Raises $4M for AI-Agent Video Hiring Platform",
-      "content_text": "Stockholm-based Fika Jobs raised a $4 million pre-seed round led by Luminar Ventures, with Alliance VC and Candy Crush / King co-founders Sebastian Knutsson and Riccardo Zacconi participating. The platform pairs short-form video profiles with AI interview agents (currently powered by Google's Gemini) that generate personalized questions and run roughly 10-minute candidate interviews. It is free for job seekers; employers pay 10% of a successful hire's first-year salary, with about 100 companies on the waitlist.",
-      "date_published": "2026-06-23T00:00:00.000Z",
-      "tags": [
-        "Fika Jobs",
-        "Sweden",
-        "Fika Jobs",
-        "AI Agents",
-        "HR Tech",
-        "Funding"
       ]
     }
   ]

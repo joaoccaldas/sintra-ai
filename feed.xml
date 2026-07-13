@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 13 Jul 2026 07:12:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 09:26:51 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Apple Sues OpenAI and Two Former Employees Over Alleged Hardware Trade-Secret Theft]]></title>
+    <description><![CDATA[Apple filed suit in Northern California federal court on July 10-11 against OpenAI and two former Apple employees, alleging a coordinated scheme to steal hardware trade secrets tied to OpenAI's io Products consumer-hardware venture (co-founded by former Apple design chief Jony Ive). The complaint alleges OpenAI's hardware chief Tang Tan — a former Apple VP — coached departing Apple staff on evading security processes, and that job candidates were told to bring 'actual parts' from Apple to interviews; Apple says over 400 former employees now work at OpenAI. OpenAI says it has 'no interest in other companies' trade secrets.']]></description>
+    <link>https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html</link>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html</guid>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Apple</category>
+  </item>
 
   <item>
     <title><![CDATA[OpenAI Makes GPT-5.6 Generally Available to All Users]]></title>
@@ -29,6 +38,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Fed Chair Warsh Names Marc Andreessen to Co-Lead New AI and Productivity Task Force]]></title>
+    <description><![CDATA[Federal Reserve Chair Kevin Warsh announced five new external task forces on July 9, naming a16z co-founder Marc Andreessen to co-lead the one studying AI's economic impact, alongside Stanford economist Charles I. Jones and Microsoft Xbox CEO Asha Sharma. The task force's mandate is to assess the economic impact of general-purpose technologies including AI to inform Fed policy judgments, with recommendations due by the end of 2026.]]></description>
+    <link>https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/</link>
+    <guid isPermaLink="true">https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/</guid>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Federal Reserve</category>
+  </item>
+
+  <item>
     <title><![CDATA[SpaceXAI Launches Grok 4.5, Claiming 'Opus-Class' Performance]]></title>
     <description><![CDATA[SpaceXAI released Grok 4.5 on July 8, its first model trained specifically for coding and agentic work, pricing it at $2 per million input tokens and $6 per million output tokens. Elon Musk positioned it as roughly on par with Claude Opus 4.7 but faster and cheaper; independent benchmark charts released alongside the launch showed it ahead of Opus 4.8 on some tasks and behind on others.]]></description>
     <link>https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/</link>
@@ -44,6 +62,15 @@
     <guid isPermaLink="true">https://fortune.com/2026/07/08/china-mulls-limiting-foreign-access-advanced-ai-models/</guid>
     <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
     <category>Reuters</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Sysdig Documents 'JadePuffer' — the First Fully Autonomous AI Ransomware Attack]]></title>
+    <description><![CDATA[Cloud security firm Sysdig documented an extortion operation, dubbed JadePuffer, in which an AI agent handled the entire technical execution of a ransomware attack — exploiting a Langflow remote-code-execution flaw (CVE-2025-3248), stealing credentials, moving laterally through the network, encrypting files, and writing its own ransom note, adapting its tactics in real time after failed attempts. A human still chose the victim, provisioned infrastructure, and supplied credentials, but the technical attack chain ran without operator input.]]></description>
+    <link>https://www.infosecurity-magazine.com/news/researchers-first-agentic/</link>
+    <guid isPermaLink="true">https://www.infosecurity-magazine.com/news/researchers-first-agentic/</guid>
+    <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Sysdig</category>
   </item>
 
   <item>
@@ -431,33 +458,6 @@
     <guid isPermaLink="true">https://www.anthropic.com/news/introducing-claude-tag</guid>
     <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Mistral Releases OCR 4 With Bounding Boxes and 170-Language Support]]></title>
-    <description><![CDATA[Mistral released OCR 4, a document-intelligence model that returns bounding boxes, block classification, and inline confidence scores alongside extracted text, with support for 170 languages across 10 language groups. It runs in a single container for fully self-hosted deployments and is positioned as an ingestion component for enterprise search, RAG, and domain-specific retrieval pipelines.]]></description>
-    <link>https://mistral.ai/news/ocr-4/</link>
-    <guid isPermaLink="true">https://mistral.ai/news/ocr-4/</guid>
-    <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Mistral AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AI 'Learned Memory' Startup Engram Raises $98M to Cut Token Costs]]></title>
-    <description><![CDATA[Engram, a 13-person startup founded less than a year ago, raised $98 million from General Catalyst, Kleiner Perkins, Sequoia, and Anthropic co-founder-era figure Andrej Karpathy. Its 'learned memory' models recall organization-specific workflows and context, and the company claims they can match or beat frontier labs while using up to 100x fewer tokens. Early clients reportedly include Microsoft, Notion, and legal-AI startup Harvey.]]></description>
-    <link>https://www.cnbc.com/2026/06/23/ai-memory-startup-focused-on-cutting-token-costs-raises-98-million.html</link>
-    <guid isPermaLink="true">https://www.cnbc.com/2026/06/23/ai-memory-startup-focused-on-cutting-token-costs-raises-98-million.html</guid>
-    <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Engram</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Stockholm's Fika Jobs Raises $4M for AI-Agent Video Hiring Platform]]></title>
-    <description><![CDATA[Stockholm-based Fika Jobs raised a $4 million pre-seed round led by Luminar Ventures, with Alliance VC and Candy Crush / King co-founders Sebastian Knutsson and Riccardo Zacconi participating. The platform pairs short-form video profiles with AI interview agents (currently powered by Google's Gemini) that generate personalized questions and run roughly 10-minute candidate interviews. It is free for job seekers; employers pay 10% of a successful hire's first-year salary, with about 100 companies on the waitlist.]]></description>
-    <link>https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/</guid>
-    <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Fika Jobs</category>
   </item>
   </channel>
 </rss>

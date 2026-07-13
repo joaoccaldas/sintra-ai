@@ -5,6 +5,7 @@
 ## Topic Playbooks
 Structured, actionable briefs — start here if you need to *act* on a topic, not just read about it. Each has `about` (DefinedTerm), `hasPart` ItemLists (design principles / recommended stack / best use cases / common pitfalls), and a `HowTo` for tips, all in JSON-LD on the page.
 - [Generative UI](https://joaoccaldas.github.io/sintra-ai/topics/generative-ui/): Generative UI is a model choosing and assembling interface components at runtime — picking a chart vs. a table vs. a form, and filling in its props — rather than a developer pre-building one fixed screen per possible state. The model decides *what* to show; the application still owns *how* each piece renders.
+- [AI-Built Scratch Games](https://joaoccaldas.github.io/sintra-ai/topics/ai-scratch-games/): An .sb3 file is a ZIP archive containing project.json (a JSON graph of sprites, scripts, and blocks — not visual drag-and-drop data) plus asset files named by content hash. That structure is simple enough for an AI agent to construct directly; a second, separate AI loop can then play the finished game in a browser by screenshotting the stage and reasoning over the pixels, since Scratch exposes no external debug/state API.
 
 ## Other Topic Hubs
 Aggregated prompts/news/tools/concepts by theme — no authored playbook yet.
@@ -96,6 +97,7 @@ Step-by-step how-tos, each with `Article` + `FAQPage` JSON-LD.
 - [Legal AI Playbook](https://joaoccaldas.github.io/sintra-ai/guides/legal-ai-playbook/): Contract review, legal research, and compliance use cases — with the caveats lawyers need to know.
 - [Healthcare AI Playbook](https://joaoccaldas.github.io/sintra-ai/guides/healthcare-ai-playbook/): Clinical documentation, research acceleration, and patient communication — with the safety guardrails required.
 - [How to Use Higgsfield with Claude](https://joaoccaldas.github.io/sintra-ai/guides/higgsfield-claude-workflow/): Connect Higgsfield's image and video models to Claude via MCP and direct cinematic generations from a chat.
+- [Build and Auto-Test a Scratch Game with AI](https://joaoccaldas.github.io/sintra-ai/guides/ai-scratch-game-pipeline/): From idea to a real .sb3 file, then a browser agent that plays it back with computer vision — the full pipeline.
 
 ## Prompt Library
 - [Browse all 253 prompts](https://joaoccaldas.github.io/sintra-ai/library/): searchable and filterable by category, difficulty, and tool. Each prompt page (`/prompts/{slug}/`) carries `HowTo` JSON-LD with the full prompt text, inputs, and a sample output.
@@ -105,7 +107,7 @@ Step-by-step how-tos, each with `Article` + `FAQPage` JSON-LD.
 - [Model Radar](https://joaoccaldas.github.io/sintra-ai/models/): 20 models compared across capability tier and release date.
 
 ## News & Live Feed
-- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 546 verified items, updated daily, each tagged with a significance rating (landmark / major / notable) and an official source URL.
+- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 549 verified items, updated daily, each tagged with a significance rating (landmark / major / notable) and an official source URL.
 - [Live Feed](https://joaoccaldas.github.io/sintra-ai/live/): primary-source signals from ~11 feeds (labs, arXiv, major outlets), refreshed every build.
 - Syndication: [RSS](https://joaoccaldas.github.io/sintra-ai/feed.xml), [JSON Feed](https://joaoccaldas.github.io/sintra-ai/feed.json)
 
