@@ -7,8 +7,44 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 18 Jul 2026 06:43:18 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 02:35:29 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Moonshot AI Launches Kimi K3, a 2.8-Trillion-Parameter Open-Weight Model]]></title>
+    <description><![CDATA[Moonshot AI released Kimi K3 on July 16 — a 2.8-trillion-parameter Mixture-of-Experts model (896 experts, 16 active per token) built on Kimi Delta Attention hybrid linear attention, with native vision understanding and up to a 1-million-token context window. It went live via Kimi's apps and API immediately, debuting at No. 3 on the Artificial Analysis leaderboard behind Claude Fable 5 and GPT-5.6 Sol while topping Arena.ai's front-end web-dev benchmark. Full open weights are scheduled for July 27 under a Modified MIT license — the first model at this parameter scale to ship openly.]]></description>
+    <link>https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html</link>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html</guid>
+    <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Moonshot AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[China Launches World AI Cooperation Organization With 29 Founding Nations]]></title>
+    <description><![CDATA[Twenty-nine countries — including Brazil, Russia, Indonesia, Pakistan, Kazakhstan, Belarus, Serbia, Cuba, and Venezuela — signed an agreement in Shanghai on July 16 establishing the World AI Cooperation Organization (WAICO), a China-headquartered body positioned as an alternative to Western-led AI governance frameworks. Chinese Foreign Minister Wang Yi and founding-member representatives signed the accord in the presence of UN Secretary-General António Guterres. China committed to provide 5,000 AI training slots for developing countries over five years and to establish cooperation centers with ASEAN, the African Union, CELAC, the SCO, and BRICS.]]></description>
+    <link>https://english.news.cn/20260716/2d364f232dd7456c8edf1d67d5125d37/c.html</link>
+    <guid isPermaLink="true">https://english.news.cn/20260716/2d364f232dd7456c8edf1d67d5125d37/c.html</guid>
+    <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+    <category>WAICO</category>
+  </item>
+
+  <item>
+    <title><![CDATA[IBM Shares Crash 25% — Worst Day on Record — as Clients Shift Spend to AI Infrastructure]]></title>
+    <description><![CDATA[IBM shares plummeted 25% on July 14 after preliminary Q2 results fell short of expectations, the company's worst trading day on record (surpassing its prior worst day, October 19, 1987). CEO Arvind Krishna told investors that in late June, clients shifted quarterly capex toward servers, storage, and memory purchases to secure supply-constrained AI infrastructure ahead of expected price increases, causing large software and consulting deals to slip. IBM guided to Q2 revenue of $17.2B and adjusted EPS of $2.93, both below consensus.]]></description>
+    <link>https://www.cnbc.com/2026/07/14/ibm-warns-second-quarter-earnings-fell-short-of-expectations.html</link>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/07/14/ibm-warns-second-quarter-earnings-fell-short-of-expectations.html</guid>
+    <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+    <category>IBM</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Monzo Co-Founder Tom Blomfield Takes Leave From Y Combinator to Join Anthropic]]></title>
+    <description><![CDATA[Tom Blomfield — co-founder of Monzo and GoCardless, and a Y Combinator general partner since 2023 — announced on July 13 that he is taking a leave of absence from YC to join Anthropic's compute team under co-founder Tom Brown. He said that as the industry enters the early stages of recursive self-improvement, compute availability is becoming one of the most important problems to solve, extending Anthropic's 2026 hiring run that already brought in Andrej Karpathy and DeepMind's John Jumper.]]></description>
+    <link>https://techfundingnews.com/monzo-co-founder-tom-blomfield-takes-leave-from-y-combinator-to-join-anthropic/</link>
+    <guid isPermaLink="true">https://techfundingnews.com/monzo-co-founder-tom-blomfield-takes-leave-from-y-combinator-to-join-anthropic/</guid>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
 
   <item>
     <title><![CDATA[Apple Sues OpenAI and Two Former Employees Over Alleged Hardware Trade-Secret Theft]]></title>
@@ -80,6 +116,15 @@
     <guid isPermaLink="true">https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026</guid>
     <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Future of Life Institute's Summer 2026 AI Safety Index: Top Grade Is a C+]]></title>
+    <description><![CDATA[The Future of Life Institute published its Summer 2026 AI Safety Index on July 7, grading nine leading AI companies across 37 indicators in six domains on evidence collected through June 3. Anthropic took the top overall grade at C+ (2.66), leading five of six domains; OpenAI followed at C (2.28) and Google DeepMind at C (2.01); Meta landed at D+, with xAI, DeepSeek, and Mistral receiving failing grades. Reviewers noted that several labs, including Anthropic, OpenAI, Google DeepMind, and Meta, have weakened or eliminated earlier commitments to pause development if systems approached specified danger thresholds.]]></description>
+    <link>https://futureoflife.org/ai-safety-index-summer-2026/</link>
+    <guid isPermaLink="true">https://futureoflife.org/ai-safety-index-summer-2026/</guid>
+    <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Future of Life Institute</category>
   </item>
 
   <item>
@@ -412,51 +457,6 @@
     <link>https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html</link>
     <guid isPermaLink="true">https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html</guid>
     <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Anthropic</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta Tests a Stand-Alone AI Companion App for Facebook Creators]]></title>
-    <description><![CDATA[Meta began testing a stand-alone AI companion app for Facebook creators — a reimagined Creator Studio with its recently launched AI creator assistant built in to help brainstorm content, analyze performance, and grow audiences. The app is positioned to retain creators against TikTok and YouTube and to reduce their reliance on third-party tools like ChatGPT.]]></description>
-    <link>https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Meta</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Ericsson and Telia Launch 'Digital Arena Sweden' National 5G/6G/AI Test Center]]></title>
-    <description><![CDATA[Ericsson, Telia, RISE (and subsidiary AstaZero), Future by Lund, Lund University and KTH launched Digital Arena Sweden, a national pre-commercial 5G, 6G and AI test center announced at the Almedalen forum on Gotland. The initiative represents an investment of over SEK 300 million (about $31 million), supported by Vinnova through the Avancerad Digitalisering program, and targets industries from mining and transport to defense and medtech.]]></description>
-    <link>https://www.ericsson.com/en/press-releases/2026/6/ericsson-and-partners-launch-national-5g-6g-and-ai-test-center-in-sweden</link>
-    <guid isPermaLink="true">https://www.ericsson.com/en/press-releases/2026/6/ericsson-and-partners-launch-national-5g-6g-and-ai-test-center-in-sweden</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Ericsson</category>
-  </item>
-
-  <item>
-    <title><![CDATA[CoreWeave Partners With Conapto to Expand Renewable-Powered AI Cloud in Sweden]]></title>
-    <description><![CDATA[AI hyperscaler CoreWeave signed a colocation agreement with Stockholm-based Conapto spanning two campuses, with initial capacity already online at Stockholm 4 South, powered by 100% renewable energy with heat recovery into Stockholm's district heating network. The deal brings CoreWeave's European sites to eight; as of March 31, 2026 CoreWeave operated 49 data centers globally with over 1GW active and 3.5GW+ contracted power.]]></description>
-    <link>https://www.businesswire.com/news/home/20260624153948/en/CoreWeave-Partners-With-Conapto-to-Expand-AI-Cloud-Capacity-in-Sweden-Powered-by-Renewable-Energy</link>
-    <guid isPermaLink="true">https://www.businesswire.com/news/home/20260624153948/en/CoreWeave-Partners-With-Conapto-to-Expand-AI-Cloud-Capacity-in-Sweden-Powered-by-Renewable-Energy</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-    <category>CoreWeave</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Brazil Launches 'Ideia Terra Brasil' to Apply AI to Territorial and Environmental Data]]></title>
-    <description><![CDATA[Brazil's Ministry of Management and Innovation in Public Services (MGI) and the National Education and Research Network (RNP) launched 'Ideia Terra Brasil,' a public digital infrastructure that applies AI to improve governance of territorial and environmental data, strengthen inspection, and expand transparency. The 48-month initiative is part of Axis 3 (AI for public services) of the Brazilian AI Plan (PBIA 2024–2028).]]></description>
-    <link>https://www.gov.br/gestao/pt-br/assuntos/noticias/2026/junho/programa-ideia-terra-brasil-vai-usar-inteligencia-artificial-para-aprimorar-governanca-de-dados-territoriais-e-ambientais</link>
-    <guid isPermaLink="true">https://www.gov.br/gestao/pt-br/assuntos/noticias/2026/junho/programa-ideia-terra-brasil-vai-usar-inteligencia-artificial-para-aprimorar-governanca-de-dados-territoriais-e-ambientais</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-    <category>Brazilian Government (MGI / RNP)</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic Launches Claude Tag, a Claude That Joins Teams as a Slack Member]]></title>
-    <description><![CDATA[Anthropic introduced Claude Tag, a new way for teams to work with Claude that starts on Slack, where Claude can be added to channels and DMs and act as a team member — picking up context from conversations, answering questions, and carrying out tasks in the thread. It targets collaborative, in-the-flow work rather than a separate chat window.]]></description>
-    <link>https://www.anthropic.com/news/introducing-claude-tag</link>
-    <guid isPermaLink="true">https://www.anthropic.com/news/introducing-claude-tag</guid>
-    <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
     <category>Anthropic</category>
   </item>
   </channel>

@@ -1,9 +1,70 @@
 {
   "source": "https://github.com/joaoccaldas/sintra-ai",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-07-18T06:43:19.431Z",
-  "count": 253,
+  "generatedAt": "2026-07-19T02:35:30.654Z",
+  "count": 256,
   "data": [
+    {
+      "id": 254,
+      "slug": "ai-vendor-safety-governance-due-diligence-checklist",
+      "title": "AI Vendor Safety & Governance Due Diligence Checklist",
+      "category": "security",
+      "difficulty": "intermediate",
+      "tags": [
+        "security",
+        "governance",
+        "safety",
+        "vendor-risk"
+      ],
+      "outcome": "A one-page vendor risk summary with specific gaps flagged as dealbreaker vs. mitigable, ready for procurement or legal review.",
+      "tools": [
+        "Claude",
+        "ChatGPT",
+        "Perplexity AI"
+      ],
+      "est_time": "1-2 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-vendor-safety-governance-due-diligence-checklist/"
+    },
+    {
+      "id": 255,
+      "slug": "agentic-ai-incident-response-triage",
+      "title": "Agentic AI Incident Response Triage",
+      "category": "security",
+      "difficulty": "advanced",
+      "tags": [
+        "security",
+        "incident-response",
+        "ai-agents",
+        "ransomware"
+      ],
+      "outcome": "A triage assessment distinguishing agentic from human-operated attack patterns, immediate containment steps, and a leadership-ready incident summary.",
+      "tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "est_time": "2-4 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/agentic-ai-incident-response-triage/"
+    },
+    {
+      "id": 256,
+      "slug": "ai-agent-least-privilege-blast-radius-review",
+      "title": "AI Agent Least-Privilege & Blast-Radius Review",
+      "category": "security",
+      "difficulty": "advanced",
+      "tags": [
+        "security",
+        "ai-agents",
+        "least-privilege",
+        "prompt-injection"
+      ],
+      "outcome": "A least-privilege permission set for the agent, a worst-case blast-radius comparison, and specific monitoring recommendations.",
+      "tools": [
+        "Claude",
+        "Claude Code"
+      ],
+      "est_time": "2-3 hours",
+      "url": "https://joaoccaldas.github.io/sintra-ai/prompts/ai-agent-least-privilege-blast-radius-review/"
+    },
     {
       "id": 212,
       "slug": "headcount-workforce-cost-planning-model",
