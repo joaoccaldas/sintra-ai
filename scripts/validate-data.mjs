@@ -18,6 +18,7 @@ const VALID_DOMAINS = [
   "Quick Wins", "Personal Productivity", "Communication & Writing",
   "Research & Analysis", "Finance & FP&A", "Data & Analytics",
   "Software Development", "Creative AI", "Design & Creative", "Game Development",
+  "Security & Risk",
 ];
 
 const UseCaseSchema = z.object({

@@ -22,7 +22,8 @@ export type Category =
   | "data-analytics"
   | "coding"
   | "creative-ai"
-  | "game-advanced";
+  | "game-advanced"
+  | "security";
 
 export type Difficulty =
   | "all"
@@ -94,6 +95,7 @@ export const CAT_ACCENT: Record<string, string> = {
   "coding":         "#9F8CFF",
   "creative-ai":    "#9F8CFF",
   "game-advanced":  "#9F8CFF",
+  "security":       "#9F8CFF",
 };
 
 /** Single source of truth for all use-case search — used by global search and panel search. */

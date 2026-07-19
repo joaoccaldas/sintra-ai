@@ -59,6 +59,12 @@ const LLM_MAP: Record<string, Record<string, { model: string; reason: string }>>
     advanced:     { model: "Claude Sonnet 4.6", reason: "Complex game mechanics and AI agent workflows" },
     expert:       { model: "Claude Opus 4.7",   reason: "Deep systems design for advanced game architecture" },
   },
+  "security": {
+    beginner:     { model: "Claude Sonnet 4.6", reason: "Clear, structured guidance for vendor risk and process questions" },
+    intermediate: { model: "Claude Sonnet 4.6", reason: "Strong at structured triage and checklist-driven analysis" },
+    advanced:     { model: "Claude Opus 4.7",   reason: "Deep reasoning for incident triage and adversarial scenarios" },
+    expert:       { model: "Claude Opus 4.7",   reason: "Most rigorous reasoning for high-stakes security judgment calls" },
+  },
 };
 
 const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
@@ -72,6 +78,7 @@ const DOMAIN_MAP: Record<string, Exclude<Category, "all">> = {
   "Creative AI":             "creative-ai",
   "Design & Creative":       "creative-ai",
   "Game Development":        "game-advanced",
+  "Security & Risk":         "security",
 };
 
 export const USE_CASES: UseCase[] = (rawData as any[])
@@ -117,6 +124,7 @@ export const CATEGORIES: { id: Category; label: string }[] = [
   { id: "coding",         label: "Code & Automation" },
   { id: "creative-ai",    label: "Creative & Design" },
   { id: "game-advanced",  label: "Game & Advanced" },
+  { id: "security",       label: "Security & Risk" },
 ];
 
 export const DIFFICULTIES: { id: Difficulty; label: string; color: string }[] = [

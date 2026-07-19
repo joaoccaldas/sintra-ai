@@ -1,6 +1,6 @@
 # Sintra AI
 
-> A structured, source-backed reference for AI: live signals, verified news, a 253-prompt library, tool and model comparisons, plain-English concepts, and topic playbooks. Built for people and for agents — every page below either has schema.org structured data or a matching JSON endpoint, and topics with a playbook include design principles, a recommended stack, best use cases, common pitfalls, and tips, not just a definition.
+> A structured, source-backed reference for AI: live signals, verified news, a 256-prompt library, tool and model comparisons, plain-English concepts, and topic playbooks. Built for people and for agents — every page below either has schema.org structured data or a matching JSON endpoint, and topics with a playbook include design principles, a recommended stack, best use cases, common pitfalls, and tips, not just a definition.
 
 ## Topic Playbooks
 Structured, actionable briefs — start here if you need to *act* on a topic, not just read about it. Each has `about` (DefinedTerm), `hasPart` ItemLists (design principles / recommended stack / best use cases / common pitfalls), and a `HowTo` for tips, all in JSON-LD on the page.
@@ -100,14 +100,14 @@ Step-by-step how-tos, each with `Article` + `FAQPage` JSON-LD.
 - [Build and Auto-Test a Scratch Game with AI](https://joaoccaldas.github.io/sintra-ai/guides/ai-scratch-game-pipeline/): From idea to a real .sb3 file, then a browser agent that plays it back with computer vision — the full pipeline.
 
 ## Prompt Library
-- [Browse all 253 prompts](https://joaoccaldas.github.io/sintra-ai/library/): searchable and filterable by category, difficulty, and tool. Each prompt page (`/prompts/{slug}/`) carries `HowTo` JSON-LD with the full prompt text, inputs, and a sample output.
+- [Browse all 256 prompts](https://joaoccaldas.github.io/sintra-ai/library/): searchable and filterable by category, difficulty, and tool. Each prompt page (`/prompts/{slug}/`) carries `HowTo` JSON-LD with the full prompt text, inputs, and a sample output.
 
 ## Tools & Models
 - [AI Tools Directory](https://joaoccaldas.github.io/sintra-ai/tools/): 74 tools compared across category, pricing, and provider.
 - [Model Radar](https://joaoccaldas.github.io/sintra-ai/models/): 20 models compared across capability tier and release date.
 
 ## News & Live Feed
-- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 549 verified items, updated daily, each tagged with a significance rating (landmark / major / notable) and an official source URL.
+- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 554 verified items, updated daily, each tagged with a significance rating (landmark / major / notable) and an official source URL.
 - [Live Feed](https://joaoccaldas.github.io/sintra-ai/live/): primary-source signals from ~11 feeds (labs, arXiv, major outlets), refreshed every build.
 - Syndication: [RSS](https://joaoccaldas.github.io/sintra-ai/feed.xml), [JSON Feed](https://joaoccaldas.github.io/sintra-ai/feed.json)
 

@@ -11185,5 +11185,133 @@
       "claude",
       "chatgpt"
     ]
+  },
+  {
+    "domain": "Security & Risk",
+    "section": "AI Vendor & Governance",
+    "skill_level": "INTERMEDIATE",
+    "skill_emoji": "🟡",
+    "title": "AI Vendor Safety & Governance Due Diligence Checklist",
+    "prompt": "\"I'm evaluating an AI vendor/model provider for [use case: e.g., customer support agent, code generation, data analysis]. Help me build a due-diligence checklist that goes beyond capability benchmarks.\n\nVendor: [name]\nPublic safety/transparency reports available: [paste links or 'none found']\nOur risk tolerance: [regulated industry / consumer-facing / internal tool only]\n\nPlease:\n1. List the specific questions to ask about their safety framework, red-teaming process, and incident disclosure history\n2. Flag what an independent report card (like FLI's AI Safety Index) actually measures vs. what it doesn't cover\n3. Draft a one-page vendor risk summary I can bring to procurement/legal\n4. Note which gaps are dealbreakers for our risk tolerance vs. acceptable with mitigations\"",
+    "tags": [
+      "security",
+      "governance",
+      "safety",
+      "vendor-risk",
+      "procurement"
+    ],
+    "best_for": "IT procurement, security/compliance teams, and engineering leads selecting an AI provider",
+    "source": "Sintra editorial — prompted by FLI's Summer 2026 AI Safety Index (Jul 2026)",
+    "outcome": "A one-page vendor risk summary with specific gaps flagged as dealbreaker vs. mitigable, ready for procurement or legal review.",
+    "inputs": [
+      {
+        "label": "use case: e.g., customer support agent, code generation, data analysis"
+      },
+      {
+        "label": "name"
+      },
+      {
+        "label": "paste links or 'none found'"
+      },
+      {
+        "label": "regulated industry / consumer-facing / internal tool only"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT",
+      "Perplexity AI"
+    ],
+    "est_time": "1-2 hours",
+    "output_kind": "table",
+    "sample_output": "**Vendor Risk Summary — [Vendor]**\n\n| Domain | Evidence found | Gap | Verdict |\n|---|---|---|---|\n| Red-teaming | Public system card, 3rd-party eval cited | No incident-disclosure history published | Mitigable — require SLA on disclosure |\n| Pause commitments | Referenced in 2024 pledge | Not reaffirmed in 2026 policy update | Dealbreaker for regulated use case |\n| Data handling | SOC 2 Type II | No model-training opt-out documented | Mitigable — contractual clause needed |\n\n**Recommendation:** Proceed with contractual mitigations on data handling; escalate pause-commitment gap to legal before regulated-industry rollout.",
+    "dateAdded": "2026-07-19",
+    "related_tools": [
+      "claude",
+      "chatgpt",
+      "perplexity"
+    ]
+  },
+  {
+    "domain": "Security & Risk",
+    "section": "Agentic Threat Response",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "Agentic AI Incident Response Triage",
+    "prompt": "\"We may have an AI-agent-driven security incident (not a standard human-operated attack). Help me triage it using an agentic-threat lens.\n\nWhat we've observed: [describe: unusual lateral movement, credential use patterns, timing, adaptive behavior after failed attempts]\nSystems/tools exposed: [list: e.g., internal RCE-vulnerable app, exposed API, agent framework in use]\nLogs available: [paste key excerpts or describe]\n\nPlease:\n1. Assess whether the behavior pattern is consistent with autonomous agentic execution vs. a human operator running scripts (cite the specific signals either way)\n2. List the immediate containment steps specific to an adaptive, real-time-reasoning adversary (these differ from static-malware playbooks)\n3. Identify which of our exposed systems/CVEs most plausibly explain initial access\n4. Draft the incident summary for leadership, flagging what remains unconfirmed\"",
+    "tags": [
+      "security",
+      "incident-response",
+      "ai-agents",
+      "ransomware",
+      "cybersecurity"
+    ],
+    "best_for": "Security operations and incident response teams facing agent-driven or agent-assisted attacks",
+    "source": "Sintra editorial — prompted by Sysdig's JadePuffer autonomous-ransomware disclosure (Jul 2026)",
+    "outcome": "A triage assessment distinguishing agentic from human-operated attack patterns, immediate containment steps, and a leadership-ready incident summary.",
+    "inputs": [
+      {
+        "label": "describe: unusual lateral movement, credential use patterns, timing, adaptive behavior after failed attempts"
+      },
+      {
+        "label": "list: e.g., internal RCE-vulnerable app, exposed API, agent framework in use"
+      },
+      {
+        "label": "paste key excerpts or describe"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "est_time": "2-4 hours",
+    "output_kind": "plan",
+    "sample_output": "**Assessment:** Behavior consistent with autonomous agentic execution — tactic changed within minutes of first failed lateral-move attempt, no operator-typical pauses between recon and exploitation (signal: sub-90-second adaptation time).\n\n**Immediate containment:**\n1. Isolate the Langflow instance (matches CVE-2025-3248 exposure) — patch or take offline\n2. Rotate all credentials touched by the compromised host, not just the initially stolen ones\n3. Treat this as a new detection category — static YARA rules on the ransomware binary will miss the reasoning layer\n\n**Unconfirmed:** Initial access vector into the credential store — logs show usage but not acquisition method.",
+    "dateAdded": "2026-07-19",
+    "related_tools": [
+      "claude",
+      "chatgpt"
+    ]
+  },
+  {
+    "domain": "Security & Risk",
+    "section": "Agent Permissions & Access",
+    "skill_level": "ADVANCED",
+    "skill_emoji": "🔵",
+    "title": "AI Agent Least-Privilege & Blast-Radius Review",
+    "prompt": "\"Review the permission scope of an AI agent we're deploying and help me minimize its blast radius if it's ever compromised or misbehaves.\n\nAgent's purpose: [describe: e.g., automates ticket triage, has file-system + email + internal API access]\nCurrent permissions/credentials it holds: [list everything it can read/write/execute]\nHow it's invoked: [always-on service / triggered by user request / fully autonomous loop]\n\nPlease:\n1. Flag every permission that exceeds what the stated purpose actually requires\n2. Propose a least-privilege version — what could be read-only, time-boxed, or removed entirely\n3. Identify the worst plausible outcome if this agent's reasoning were manipulated (prompt injection, poisoned tool output) under current permissions vs. the reduced set\n4. Suggest monitoring/alerting that would catch misuse specific to this agent's scope\"",
+    "tags": [
+      "security",
+      "ai-agents",
+      "least-privilege",
+      "prompt-injection",
+      "governance"
+    ],
+    "best_for": "Platform/security engineers deploying agentic AI with real system access",
+    "source": "Sintra editorial — prompted by the rise of agent-driven security incidents in 2026",
+    "outcome": "A least-privilege permission set for the agent, a worst-case blast-radius comparison, and specific monitoring recommendations.",
+    "inputs": [
+      {
+        "label": "describe: e.g., automates ticket triage, has file-system + email + internal API access"
+      },
+      {
+        "label": "list everything it can read/write/execute"
+      },
+      {
+        "label": "always-on service / triggered by user request / fully autonomous loop"
+      }
+    ],
+    "tools": [
+      "Claude",
+      "Claude Code"
+    ],
+    "est_time": "2-3 hours",
+    "output_kind": "plan",
+    "sample_output": "**Excess permissions found:** Agent holds write access to the production email-send API but only ever needs to draft, not send; holds full filesystem read when it only touches /tickets/.\n\n**Least-privilege version:** Scope filesystem access to /tickets/ only; downgrade email to draft-only with human send approval; add a 15-minute credential TTL instead of a standing service account.\n\n**Blast radius comparison:** Current — a poisoned ticket could trigger unsolicited mass email + exfiltrate unrelated files. Reduced — worst case is a bad draft awaiting human approval.\n\n**Monitoring:** Alert on any filesystem read outside /tickets/, and on any API call attempted outside the agent's declared tool list.",
+    "dateAdded": "2026-07-19",
+    "related_tools": [
+      "claude",
+      "claude-code"
+    ]
   }
 ]
