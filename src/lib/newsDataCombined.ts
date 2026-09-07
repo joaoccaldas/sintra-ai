@@ -1,14 +1,74 @@
 import { AI_NEWS as HISTORICAL_AI_NEWS, type NewsItem } from "./newsData";
 import { LATEST_AI_NEWS } from "./newsLatestData";
+import { LIVE_ITEMS, type LiveFeedItem } from "./liveFeedData";
 
 /**
  * Canonical news feed consumed by the application.
- * Reviewed current items win when an identifier already exists in the
- * historical append-only corpus.
+ *
+ * Three sources, merged in priority order (first writer wins per id/title):
+ *   1. LATEST_AI_NEWS   — hand-reviewed current items (highest quality).
+ *   2. HISTORICAL_AI_NEWS — the append-only historical corpus.
+ *   3. Live feed         — the build-time aggregated feed (aggregate-live-feed.mjs),
+ *      converted to news items so the site keeps surfacing fresh headlines
+ *      automatically between manual curation passes. This is what keeps
+ *      /news current without any API key or human in the loop.
  */
+
+const MONTH_ABBR = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+];
+
+/**
+ * Only higher-signal categories are promoted into the editorial /news surface.
+ * Research (arXiv firehose) and Community (Hacker News) stay in the live-signals
+ * ticker but would dilute the news archive, so they're excluded here.
+ */
+const LIVE_NEWS_CATEGORIES = new Set(["Labs", "Press", "Open Source", "Practitioner"]);
+const LIVE_NEWS_MAX = 18; // cap promoted live items so the archive stays curated-feeling
+
+const slugify = (s: string): string =>
+  s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 64);
+
+const normTitle = (s: string): string =>
+  s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+function liveItemToNews(it: LiveFeedItem): NewsItem | null {
+  if (!it.title || !it.url || !it.publishedAt) return null;
+  const d = new Date(it.publishedAt);
+  if (Number.isNaN(d.getTime())) return null;
+  const year = d.getUTCFullYear();
+  const month = d.getUTCMonth() + 1;
+  const day = d.getUTCDate();
+  return {
+    id: `live-${slugify(it.title)}`,
+    date: `${MONTH_ABBR[month - 1]} ${year}`,
+    dateNum: year * 100 + month,
+    dateDay: day,
+    title: it.title,
+    summary: it.summary || `${it.source} — ${it.category}`,
+    tags: Array.from(new Set([it.source, it.category, "Live"])),
+    significance: "notable",
+    provider: it.source,
+    providerColor: it.color || "#6366f1",
+    url: it.url,
+  };
+}
+
+const liveNews: NewsItem[] = LIVE_ITEMS
+  .filter((it) => LIVE_NEWS_CATEGORIES.has(it.category))
+  .map(liveItemToNews)
+  .filter((x): x is NewsItem => x !== null)
+  .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
+  .slice(0, LIVE_NEWS_MAX);
+
 const byId = new Map<string, NewsItem>();
-for (const item of [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS]) {
-  if (!byId.has(item.id)) byId.set(item.id, item);
+const seenTitles = new Set<string>();
+for (const item of [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS, ...liveNews]) {
+  const t = normTitle(item.title);
+  if (byId.has(item.id) || seenTitles.has(t)) continue;
+  byId.set(item.id, item);
+  seenTitles.add(t);
 }
 
 export const AI_NEWS: NewsItem[] = [...byId.values()];
