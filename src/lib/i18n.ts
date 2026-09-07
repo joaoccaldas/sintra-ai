@@ -124,6 +124,24 @@ export interface Translations {
   hdr_skip:         string;
   hdr_switch_to_pt: string;
   hdr_switch_to_en: string;
+
+  hero_eyebrow_cmd:     string;
+  hero_h1_pre:          string;
+  hero_h1_em:           string;
+  hero_lead:            string;
+  hero_stat_signals:    string;
+  hero_stat_blueprints: string;
+  hero_stat_usecases:   string;
+  hero_cta_live:        string;
+  hero_cta_automation:  string;
+  hero_cta_map:         string;
+  hero_sources:         (n: number) => string;
+  hero_feeds:           string;
+  hero_trust:           string;
+  hero_feed_checked:    string;
+  hero_feed_just:       string;
+  hero_feed_hours:      (h: number) => string;
+  hero_feed_days:       (d: number) => string;
 }
 
 const translations: Record<Locale, Translations> = {
@@ -251,6 +269,24 @@ const translations: Record<Locale, Translations> = {
     hdr_skip:         "Skip to content",
     hdr_switch_to_pt: "Switch to Portuguese",
     hdr_switch_to_en: "Switch to English",
+
+    hero_eyebrow_cmd:     "AI command center · live intelligence · automation",
+    hero_h1_pre:          "The operating map for ",
+    hero_h1_em:           "AI work",
+    hero_lead:            "Track what is changing, understand what matters, compare tools and models, then turn it into prompts, workflows and automation systems.",
+    hero_stat_signals:    "live signals",
+    hero_stat_blueprints: "workflow blueprints",
+    hero_stat_usecases:   "AI use cases",
+    hero_cta_live:        "Explore live AI",
+    hero_cta_automation:  "Build an automation",
+    hero_cta_map:         "Browse the map",
+    hero_sources:         (n) => `${n} sources`,
+    hero_feeds:           "RSS + JSON feed",
+    hero_trust:           "static, auditable, source-backed",
+    hero_feed_checked:    "feed timestamp checked",
+    hero_feed_just:       "feed fresh · just updated",
+    hero_feed_hours:      (h) => `feed fresh · ${h}h old`,
+    hero_feed_days:       (d) => `feed snapshot · ${d}d old`,
   },
   pt: {
     nav_explore:       "Explorar",
@@ -376,6 +412,24 @@ const translations: Record<Locale, Translations> = {
     hdr_skip:         "Pular para o conteúdo",
     hdr_switch_to_pt: "Mudar para português",
     hdr_switch_to_en: "Mudar para inglês",
+
+    hero_eyebrow_cmd:     "Central de comando de IA · inteligência ao vivo · automação",
+    hero_h1_pre:          "O mapa operacional para ",
+    hero_h1_em:           "o trabalho com IA",
+    hero_lead:            "Acompanhe o que está mudando, entenda o que importa, compare ferramentas e modelos e transforme tudo em prompts, fluxos de trabalho e sistemas de automação.",
+    hero_stat_signals:    "sinais ao vivo",
+    hero_stat_blueprints: "modelos de fluxo",
+    hero_stat_usecases:   "casos de uso de IA",
+    hero_cta_live:        "Explorar IA ao vivo",
+    hero_cta_automation:  "Criar uma automação",
+    hero_cta_map:         "Explorar o mapa",
+    hero_sources:         (n) => `${n} fontes`,
+    hero_feeds:           "Feed RSS + JSON",
+    hero_trust:           "estático, auditável, com fontes",
+    hero_feed_checked:    "carimbo do feed verificado",
+    hero_feed_just:       "feed atualizado · agora mesmo",
+    hero_feed_hours:      (h) => `feed atualizado · há ${h}h`,
+    hero_feed_days:       (d) => `snapshot do feed · há ${d}d`,
   },
 };
 
