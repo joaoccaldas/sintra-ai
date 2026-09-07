@@ -52,6 +52,36 @@ export interface Translations {
   footer_love:   string;
   footer_and:    string;
   footer_claude: string;
+
+  footer_newsletter_eyebrow:  string;
+  footer_newsletter_title:    string;
+  footer_newsletter_sub:      string;
+  footer_newsletter_disabled: string;
+  footer_newsletter_done:     string;
+  footer_subscribe:           string;
+  footer_sending:             string;
+  footer_newsletter_error:    string;
+  footer_tagline:             string;
+  footer_free:                string;
+  footer_col_discover:        string;
+  footer_col_reference:       string;
+  footer_col_elsewhere:       string;
+  footer_copyright:           string;
+  footer_void:                string;
+  footer_link_use_cases:   string;
+  footer_link_collections: string;
+  footer_link_tools:       string;
+  footer_link_news:        string;
+  footer_link_learn:       string;
+  footer_link_resources:   string;
+  footer_link_claude:      string;
+  footer_link_concepts:    string;
+  footer_link_history:     string;
+  footer_link_labs:        string;
+  footer_link_google:      string;
+  footer_link_keynote:     string;
+  footer_link_github:      string;
+  footer_link_rss:         string;
 }
 
 const translations: Record<Locale, Translations> = {
@@ -107,6 +137,36 @@ const translations: Record<Locale, Translations> = {
     footer_love:   "love",
     footer_and:    "and",
     footer_claude: "Claude",
+
+    footer_newsletter_eyebrow:  "Stay current",
+    footer_newsletter_title:    "New prompts & AI news, weekly",
+    footer_newsletter_sub:      "No noise. Curated highlights from the library.",
+    footer_newsletter_disabled: "Newsletter signup is currently disabled.",
+    footer_newsletter_done:     "Subscribed.",
+    footer_subscribe:           "Subscribe",
+    footer_sending:             "Sending…",
+    footer_newsletter_error:    "Subscription failed. Try again later.",
+    footer_tagline:             "A curated library of AI use cases, mapped across every way to think with a machine.",
+    footer_free:                "Open source · Free forever",
+    footer_col_discover:        "Discover",
+    footer_col_reference:       "Reference",
+    footer_col_elsewhere:       "Elsewhere",
+    footer_copyright:           "© 2026 Sintra · Curated in the open.",
+    footer_void:                "Built on the void.",
+    footer_link_use_cases:   "Use Cases",
+    footer_link_collections: "Collections",
+    footer_link_tools:       "AI Tools Directory",
+    footer_link_news:        "AI News",
+    footer_link_learn:       "Learning Paths",
+    footer_link_resources:   "Resources & Links",
+    footer_link_claude:      "Claude & Anthropic",
+    footer_link_concepts:    "AI Concepts",
+    footer_link_history:     "AI History",
+    footer_link_labs:        "AI Labs",
+    footer_link_google:      "Google AI Tools",
+    footer_link_keynote:     "AI Keynote ↗",
+    footer_link_github:      "GitHub ↗",
+    footer_link_rss:         "RSS Feed ↗",
   },
   pt: {
     nav_explore:       "Explorar",
@@ -160,6 +220,36 @@ const translations: Record<Locale, Translations> = {
     footer_love:   "amor",
     footer_and:    "e",
     footer_claude: "Claude",
+
+    footer_newsletter_eyebrow:  "Fique por dentro",
+    footer_newsletter_title:    "Novos prompts e notícias de IA, toda semana",
+    footer_newsletter_sub:      "Sem ruído. Destaques selecionados da biblioteca.",
+    footer_newsletter_disabled: "A inscrição na newsletter está desativada no momento.",
+    footer_newsletter_done:     "Inscrito.",
+    footer_subscribe:           "Inscrever-se",
+    footer_sending:             "Enviando…",
+    footer_newsletter_error:    "Falha na inscrição. Tente novamente mais tarde.",
+    footer_tagline:             "Uma biblioteca selecionada de casos de uso de IA, mapeada por todas as formas de pensar com uma máquina.",
+    footer_free:                "Código aberto · Grátis para sempre",
+    footer_col_discover:        "Descobrir",
+    footer_col_reference:       "Referência",
+    footer_col_elsewhere:       "Em outros lugares",
+    footer_copyright:           "© 2026 Sintra · Curado abertamente.",
+    footer_void:                "Construído sobre o vazio.",
+    footer_link_use_cases:   "Casos de uso",
+    footer_link_collections: "Coleções",
+    footer_link_tools:       "Diretório de ferramentas de IA",
+    footer_link_news:        "Notícias de IA",
+    footer_link_learn:       "Trilhas de aprendizado",
+    footer_link_resources:   "Recursos e links",
+    footer_link_claude:      "Claude e Anthropic",
+    footer_link_concepts:    "Conceitos de IA",
+    footer_link_history:     "História da IA",
+    footer_link_labs:        "Labs de IA",
+    footer_link_google:      "Ferramentas Google AI",
+    footer_link_keynote:     "Palestra de IA ↗",
+    footer_link_github:      "GitHub ↗",
+    footer_link_rss:         "Feed RSS ↗",
   },
 };
 
