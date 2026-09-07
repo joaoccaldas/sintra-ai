@@ -82,6 +82,48 @@ export interface Translations {
   footer_link_keynote:     string;
   footer_link_github:      string;
   footer_link_rss:         string;
+
+  side_home:            string;
+  side_group_discover:  string;
+  side_group_learn:     string;
+  side_group_reference: string;
+  side_live:      string;
+  side_automate:  string;
+  side_library:   string;
+  side_news:      string;
+  side_weekly:    string;
+  side_topics:    string;
+  side_history:   string;
+  side_labs:      string;
+  side_research:  string;
+  side_learn:     string;
+  side_guides:    string;
+  side_resources: string;
+  side_concepts:  string;
+  side_videos:    string;
+  side_tools:     string;
+  side_models:    string;
+  side_claude:    string;
+  side_google:    string;
+  side_costcalc:  string;
+  side_expand:    string;
+  side_collapse:  string;
+  side_close_nav: string;
+  theme_dark:   string;
+  theme_light:  string;
+  theme_forest: string;
+  theme_ocean:  string;
+  theme_switch: (label: string) => string;
+
+  side_collections: string;
+  side_prompt:      string;
+  hdr_search:       string;
+  hdr_open_search:  string;
+  hdr_saved:        string;
+  hdr_open_nav:     string;
+  hdr_skip:         string;
+  hdr_switch_to_pt: string;
+  hdr_switch_to_en: string;
 }
 
 const translations: Record<Locale, Translations> = {
@@ -167,6 +209,48 @@ const translations: Record<Locale, Translations> = {
     footer_link_keynote:     "AI Keynote ↗",
     footer_link_github:      "GitHub ↗",
     footer_link_rss:         "RSS Feed ↗",
+
+    side_home:            "Home",
+    side_group_discover:  "Discover",
+    side_group_learn:     "Learn",
+    side_group_reference: "Reference",
+    side_live:      "Live Feed",
+    side_automate:  "Automation Hub",
+    side_library:   "Prompt Library",
+    side_news:      "AI News",
+    side_weekly:    "Weekly Digest",
+    side_topics:    "Topic Hubs",
+    side_history:   "AI History",
+    side_labs:      "AI Labs",
+    side_research:  "Research",
+    side_learn:     "Learning Paths",
+    side_guides:    "Guides",
+    side_resources: "Resources",
+    side_concepts:  "Concepts",
+    side_videos:    "Videos",
+    side_tools:     "AI Tools",
+    side_models:    "Models",
+    side_claude:    "Claude",
+    side_google:    "Google AI",
+    side_costcalc:  "Cost Calc",
+    side_expand:    "Expand sidebar",
+    side_collapse:  "Collapse sidebar",
+    side_close_nav: "Close navigation",
+    theme_dark:   "Dark",
+    theme_light:  "Light",
+    theme_forest: "Forest",
+    theme_ocean:  "Ocean",
+    theme_switch: (label) => `Switch to ${label} theme`,
+
+    side_collections: "Collections",
+    side_prompt:      "Prompt",
+    hdr_search:       "Search",
+    hdr_open_search:  "Open search",
+    hdr_saved:        "Open saved prompts",
+    hdr_open_nav:     "Open navigation",
+    hdr_skip:         "Skip to content",
+    hdr_switch_to_pt: "Switch to Portuguese",
+    hdr_switch_to_en: "Switch to English",
   },
   pt: {
     nav_explore:       "Explorar",
@@ -250,6 +334,48 @@ const translations: Record<Locale, Translations> = {
     footer_link_keynote:     "Palestra de IA ↗",
     footer_link_github:      "GitHub ↗",
     footer_link_rss:         "Feed RSS ↗",
+
+    side_home:            "Início",
+    side_group_discover:  "Descobrir",
+    side_group_learn:     "Aprender",
+    side_group_reference: "Referência",
+    side_live:      "Feed ao vivo",
+    side_automate:  "Central de automação",
+    side_library:   "Biblioteca de prompts",
+    side_news:      "Notícias de IA",
+    side_weekly:    "Resumo semanal",
+    side_topics:    "Centrais de tópicos",
+    side_history:   "História da IA",
+    side_labs:      "Labs de IA",
+    side_research:  "Pesquisa",
+    side_learn:     "Trilhas de aprendizado",
+    side_guides:    "Guias",
+    side_resources: "Recursos",
+    side_concepts:  "Conceitos",
+    side_videos:    "Vídeos",
+    side_tools:     "Ferramentas de IA",
+    side_models:    "Modelos",
+    side_claude:    "Claude",
+    side_google:    "Google AI",
+    side_costcalc:  "Calc. de custo",
+    side_expand:    "Expandir barra lateral",
+    side_collapse:  "Recolher barra lateral",
+    side_close_nav: "Fechar navegação",
+    theme_dark:   "Escuro",
+    theme_light:  "Claro",
+    theme_forest: "Floresta",
+    theme_ocean:  "Oceano",
+    theme_switch: (label) => `Mudar para o tema ${label}`,
+
+    side_collections: "Coleções",
+    side_prompt:      "Prompt",
+    hdr_search:       "Buscar",
+    hdr_open_search:  "Abrir busca",
+    hdr_saved:        "Abrir prompts salvos",
+    hdr_open_nav:     "Abrir navegação",
+    hdr_skip:         "Pular para o conteúdo",
+    hdr_switch_to_pt: "Mudar para português",
+    hdr_switch_to_en: "Mudar para inglês",
   },
 };
 
