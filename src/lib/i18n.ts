@@ -178,6 +178,48 @@ export interface Translations {
   news_search_archive:  string;
   news_showing:         (x: number, y: number) => string;
   news_browse_older:    string;
+
+  home_intent_track:         string;
+  home_intent_track_desc:    string;
+  home_intent_automate:      string;
+  home_intent_automate_desc: string;
+  home_intent_learn:         string;
+  home_intent_learn_desc:    string;
+  home_intent_build:         string;
+  home_intent_build_desc:    string;
+  home_link_model_radar:     string;
+  home_sub_live:      (n: number) => string;
+  home_sub_news:      (n: number) => string;
+  home_sub_research:  string;
+  home_sub_automate:  (n: number) => string;
+  home_sub_library:   (n: number) => string;
+  home_sub_tools:     (n: number) => string;
+  home_sub_guides:    (n: number) => string;
+  home_sub_paths:     (n: number) => string;
+  home_sub_concepts:  (n: number) => string;
+  home_sub_models:    (n: number) => string;
+  home_sub_history:   string;
+  home_sub_videos:    (n: number) => string;
+  home_pick_story:    string;
+  home_pick_prompt:   string;
+  home_pick_guide:    string;
+  home_pick_paper:    string;
+  home_pick_tool:     string;
+  home_read:          string;
+  home_this_week:     string;
+  home_news_updated:  (d: string) => string;
+  home_tab_picks:     string;
+  home_tab_news:      string;
+  home_all_n:         (n: number) => string;
+  home_live_frontier: string;
+  home_open_live:     string;
+  home_view_all:      string;
+  home_rss_title:     string;
+  home_rss_sub:       string;
+  home_rss_btn:       string;
+  home_automate_btn:  string;
+  home_browse_all:    (n: number) => string;
+  home_open:          string;
 }
 
 const translations: Record<Locale, Translations> = {
@@ -359,6 +401,48 @@ const translations: Record<Locale, Translations> = {
     news_search_archive:  "Search the archive",
     news_showing:         (x, y) => `Showing ${x} of ${y} events`,
     news_browse_older:    "Browse older months",
+
+    home_intent_track:         "Track",
+    home_intent_track_desc:    "What's changing in AI now",
+    home_intent_automate:      "Automate",
+    home_intent_automate_desc: "Turn AI into repeatable work",
+    home_intent_learn:         "Learn",
+    home_intent_learn_desc:    "Build real understanding, fast",
+    home_intent_build:         "Build",
+    home_intent_build_desc:    "Models, tools and decision support",
+    home_link_model_radar:     "Model Radar",
+    home_sub_live:      (n) => `${n} live signals`,
+    home_sub_news:      (n) => `${n} items · updated daily`,
+    home_sub_research:  "Key papers in plain English",
+    home_sub_automate:  (n) => `${n} workflow blueprints`,
+    home_sub_library:   (n) => `${n} executable use cases`,
+    home_sub_tools:     (n) => `${n} tools & apps`,
+    home_sub_guides:    (n) => `${n} practical how-to guides`,
+    home_sub_paths:     (n) => `${n} structured paths`,
+    home_sub_concepts:  (n) => `${n} core AI concepts`,
+    home_sub_models:    (n) => `${n} models compared`,
+    home_sub_history:   "70 years of milestones",
+    home_sub_videos:    (n) => `${n} lessons`,
+    home_pick_story:    "Story",
+    home_pick_prompt:   "Prompt",
+    home_pick_guide:    "Guide",
+    home_pick_paper:    "Paper",
+    home_pick_tool:     "Tool",
+    home_read:          "Read",
+    home_this_week:     "This Week",
+    home_news_updated:  (d) => `News updated ${d}`,
+    home_tab_picks:     "Picks",
+    home_tab_news:      "News",
+    home_all_n:         (n) => `All ${n}`,
+    home_live_frontier: "Live from the frontier",
+    home_open_live:     "Open live feed",
+    home_view_all:      "View all",
+    home_rss_title:     "Stay ahead of AI — follow the RSS feed",
+    home_rss_sub:       "Subscribe in any RSS reader to get every new prompt, news item, live signal and model update from Sintra.",
+    home_rss_btn:       "RSS Feed",
+    home_automate_btn:  "Automate",
+    home_browse_all:    (n) => `Browse all ${n}`,
+    home_open:          "Open",
   },
   pt: {
     nav_explore:       "Explorar",
@@ -538,6 +622,48 @@ const translations: Record<Locale, Translations> = {
     news_search_archive:  "Buscar no arquivo",
     news_showing:         (x, y) => `Mostrando ${x} de ${y} eventos`,
     news_browse_older:    "Ver meses anteriores",
+
+    home_intent_track:         "Acompanhar",
+    home_intent_track_desc:    "O que está mudando na IA agora",
+    home_intent_automate:      "Automatizar",
+    home_intent_automate_desc: "Transforme IA em trabalho repetível",
+    home_intent_learn:         "Aprender",
+    home_intent_learn_desc:    "Construa entendimento real, rápido",
+    home_intent_build:         "Construir",
+    home_intent_build_desc:    "Modelos, ferramentas e apoio à decisão",
+    home_link_model_radar:     "Radar de modelos",
+    home_sub_live:      (n) => `${n} sinais ao vivo`,
+    home_sub_news:      (n) => `${n} itens · atualizado diariamente`,
+    home_sub_research:  "Artigos-chave em linguagem simples",
+    home_sub_automate:  (n) => `${n} modelos de fluxo`,
+    home_sub_library:   (n) => `${n} casos de uso executáveis`,
+    home_sub_tools:     (n) => `${n} ferramentas e apps`,
+    home_sub_guides:    (n) => `${n} guias práticos`,
+    home_sub_paths:     (n) => `${n} trilhas estruturadas`,
+    home_sub_concepts:  (n) => `${n} conceitos essenciais de IA`,
+    home_sub_models:    (n) => `${n} modelos comparados`,
+    home_sub_history:   "70 anos de marcos",
+    home_sub_videos:    (n) => `${n} lições`,
+    home_pick_story:    "Notícia",
+    home_pick_prompt:   "Prompt",
+    home_pick_guide:    "Guia",
+    home_pick_paper:    "Artigo",
+    home_pick_tool:     "Ferramenta",
+    home_read:          "Ler",
+    home_this_week:     "Esta semana",
+    home_news_updated:  (d) => `Notícias atualizadas ${d}`,
+    home_tab_picks:     "Destaques",
+    home_tab_news:      "Notícias",
+    home_all_n:         (n) => `Todos ${n}`,
+    home_live_frontier: "Ao vivo da fronteira",
+    home_open_live:     "Abrir feed ao vivo",
+    home_view_all:      "Ver tudo",
+    home_rss_title:     "Fique à frente da IA — assine o feed RSS",
+    home_rss_sub:       "Assine em qualquer leitor de RSS para receber cada novo prompt, notícia, sinal ao vivo e atualização de modelo do Sintra.",
+    home_rss_btn:       "Feed RSS",
+    home_automate_btn:  "Automatizar",
+    home_browse_all:    (n) => `Ver todos ${n}`,
+    home_open:          "Abrir",
   },
 };
 
