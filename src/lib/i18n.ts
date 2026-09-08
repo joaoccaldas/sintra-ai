@@ -142,6 +142,42 @@ export interface Translations {
   hero_feed_just:       string;
   hero_feed_hours:      (h: number) => string;
   hero_feed_days:       (d: number) => string;
+
+  news_preset_all:      string;
+  news_preset_landmark: string;
+  news_preset_deals:    string;
+  news_preset_policy:   string;
+  news_preset_models:   string;
+  news_preset_brazil:   string;
+  news_preset_sweden:   string;
+  news_back:            string;
+  news_eyebrow:         string;
+  news_h1_pre:          string;
+  news_h1_em:           string;
+  news_lead:            string;
+  news_events_month:    (n: number) => string;
+  news_updated:         (d: string) => string;
+  news_browse_archive:  (n: number) => string;
+  news_search_ph:       string;
+  news_clear_search:    string;
+  news_sig_all:         string;
+  news_sig_landmark:    string;
+  news_sig_major:       string;
+  news_sig_notable:     string;
+  news_all_providers:   string;
+  news_show_all_countries: string;
+  news_show_brazil:     string;
+  news_show_sweden:     string;
+  news_label_brazil:    string;
+  news_label_sweden:    string;
+  news_events_count:    (n: number) => string;
+  news_none_match:      (month: string) => string;
+  news_none_search:     (q: string) => string;
+  news_none_filter:     string;
+  news_archived_more:   (n: number) => string;
+  news_search_archive:  string;
+  news_showing:         (x: number, y: number) => string;
+  news_browse_older:    string;
 }
 
 const translations: Record<Locale, Translations> = {
@@ -287,6 +323,42 @@ const translations: Record<Locale, Translations> = {
     hero_feed_just:       "feed fresh · just updated",
     hero_feed_hours:      (h) => `feed fresh · ${h}h old`,
     hero_feed_days:       (d) => `feed snapshot · ${d}d old`,
+
+    news_preset_all:      "All",
+    news_preset_landmark: "Landmark",
+    news_preset_deals:    "Deals",
+    news_preset_policy:   "Policy",
+    news_preset_models:   "Models",
+    news_preset_brazil:   "Brazil",
+    news_preset_sweden:   "Sweden",
+    news_back:            "Back to Sintra",
+    news_eyebrow:         "AI Intelligence",
+    news_h1_pre:          "The AI ",
+    news_h1_em:           "digest.",
+    news_lead:            "Landmark releases, model launches, and paradigm shifts — curated for signal, not noise.",
+    news_events_month:    (n) => `${n} events this month`,
+    news_updated:         (d) => `Updated ${d}`,
+    news_browse_archive:  (n) => `Browse archive (${n} earlier events)`,
+    news_search_ph:       "Search events, models, companies…",
+    news_clear_search:    "Clear search",
+    news_sig_all:         "All",
+    news_sig_landmark:    "Landmark",
+    news_sig_major:       "Major",
+    news_sig_notable:     "Notable",
+    news_all_providers:   "All providers",
+    news_show_all_countries: "Show all countries",
+    news_show_brazil:     "Show Brazil news only",
+    news_show_sweden:     "Show Sweden news only",
+    news_label_brazil:    "Brazil",
+    news_label_sweden:    "Sweden",
+    news_events_count:    (n) => `${n} events`,
+    news_none_match:      (month) => `No events match this filter in ${month}.`,
+    news_none_search:     (q) => `“${q}” might be in an earlier month — `,
+    news_none_filter:     "This filter has no matches this month — ",
+    news_archived_more:   (n) => `${n} more events are archived.`,
+    news_search_archive:  "Search the archive",
+    news_showing:         (x, y) => `Showing ${x} of ${y} events`,
+    news_browse_older:    "Browse older months",
   },
   pt: {
     nav_explore:       "Explorar",
@@ -430,6 +502,42 @@ const translations: Record<Locale, Translations> = {
     hero_feed_just:       "feed atualizado · agora mesmo",
     hero_feed_hours:      (h) => `feed atualizado · há ${h}h`,
     hero_feed_days:       (d) => `snapshot do feed · há ${d}d`,
+
+    news_preset_all:      "Todos",
+    news_preset_landmark: "Marco",
+    news_preset_deals:    "Negócios",
+    news_preset_policy:   "Política",
+    news_preset_models:   "Modelos",
+    news_preset_brazil:   "Brasil",
+    news_preset_sweden:   "Suécia",
+    news_back:            "Voltar ao Sintra",
+    news_eyebrow:         "Inteligência de IA",
+    news_h1_pre:          "O resumo de ",
+    news_h1_em:           "IA.",
+    news_lead:            "Lançamentos marcantes, novos modelos e mudanças de paradigma — selecionados por sinal, não por ruído.",
+    news_events_month:    (n) => `${n} eventos neste mês`,
+    news_updated:         (d) => `Atualizado ${d}`,
+    news_browse_archive:  (n) => `Ver arquivo (${n} eventos anteriores)`,
+    news_search_ph:       "Buscar eventos, modelos, empresas…",
+    news_clear_search:    "Limpar busca",
+    news_sig_all:         "Todos",
+    news_sig_landmark:    "Marco",
+    news_sig_major:       "Importante",
+    news_sig_notable:     "Notável",
+    news_all_providers:   "Todos os provedores",
+    news_show_all_countries: "Mostrar todos os países",
+    news_show_brazil:     "Mostrar só notícias do Brasil",
+    news_show_sweden:     "Mostrar só notícias da Suécia",
+    news_label_brazil:    "Brasil",
+    news_label_sweden:    "Suécia",
+    news_events_count:    (n) => `${n} eventos`,
+    news_none_match:      (month) => `Nenhum evento corresponde a este filtro em ${month}.`,
+    news_none_search:     (q) => `“${q}” pode estar em um mês anterior — `,
+    news_none_filter:     "Este filtro não tem resultados neste mês — ",
+    news_archived_more:   (n) => `mais ${n} eventos estão arquivados.`,
+    news_search_archive:  "Buscar no arquivo",
+    news_showing:         (x, y) => `Mostrando ${x} de ${y} eventos`,
+    news_browse_older:    "Ver meses anteriores",
   },
 };
 
