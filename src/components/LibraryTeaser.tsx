@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 import { BASE_PATH, DIFF_COLOR } from "@/lib/constants";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
@@ -26,15 +27,16 @@ const fade = {
 };
 
 export default function LibraryTeaser() {
+  const { t } = useLanguage();
   return (
     <div className="mb-16">
       <div className="flex items-center gap-3 mb-5">
         <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
-        <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">Prompt Library</span>
+        <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{t.side_library}</span>
         <span className="flex-1 h-px bg-hairline" />
         <a href={`${BASE_PATH}/library/`}
           className="font-mono text-[10px] text-fg-4 hover:text-violet-bright transition-colors flex items-center gap-1">
-          Browse all {USE_CASES_COUNT} <ArrowRight size={10} />
+          {t.home_browse_all(USE_CASES_COUNT)} <ArrowRight size={10} />
         </a>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -58,7 +60,7 @@ export default function LibraryTeaser() {
             </p>
             <p className="font-mono text-[10px] text-fg-4 leading-[1.5] line-clamp-2">{item.outcome}</p>
             <span className="mt-auto flex items-center gap-1 font-mono text-[9px] tracking-[0.10em] uppercase text-fg-4 group-hover:text-violet-bright transition-colors">
-              Open <ArrowRight size={9} className="group-hover:translate-x-0.5 transition-transform" />
+              {t.home_open} <ArrowRight size={9} className="group-hover:translate-x-0.5 transition-transform" />
             </span>
           </motion.a>
         ))}

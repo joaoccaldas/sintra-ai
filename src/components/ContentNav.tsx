@@ -8,6 +8,8 @@ import {
   Rss, Play, Radio, Workflow,
 } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
+import { useLanguage } from "@/context/LanguageContext";
+import type { Translations } from "@/lib/i18n";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import { AI_NEWS, getLatestNewsDate } from "@/lib/newsDataCombined";
 import { AI_TOOLS } from "@/lib/toolsData";
@@ -35,6 +37,7 @@ function SectionHead({
 }: {
   label: string; href?: string; linkLabel?: string; count?: number;
 }) {
+  const { t } = useLanguage();
   return (
     <div className="flex items-center gap-3 mb-5">
       <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
@@ -45,7 +48,7 @@ function SectionHead({
       <span className="flex-1 h-px bg-hairline" />
       {href && (
         <a href={href} className="font-mono text-[10px] text-fg-4 hover:text-violet-bright transition-colors flex items-center gap-1">
-          {linkLabel ?? "View all"} <ArrowRight size={10} />
+          {linkLabel ?? t.home_view_all} <ArrowRight size={10} />
         </a>
       )}
     </div>
@@ -53,54 +56,58 @@ function SectionHead({
 }
 
 /* ── 1. Intent nav — clear operating modes ───────────────────────────── */
-const INTENTS = [
-  {
-    id: "current", icon: Zap,
-    color: "#9F8CFF", glow: "rgba(159,140,255,0.08)",
-    gradient: "from-violet-500/8 to-violet-500/0",
-    label: "Track", desc: "What's changing in AI now",
-    links: [
-      { label: "Live Feed",  sub: `${LIVE_ITEMS.length} live signals`,          href: `${BASE_PATH}/live/`       },
-      { label: "AI News",    sub: `${AI_NEWS.length} items · updated daily`,    href: `${BASE_PATH}/news/`       },
-      { label: "Research",   sub: "Key papers in plain English",              href: `${BASE_PATH}/research/`   },
-    ],
-  },
-  {
-    id: "automate", icon: Workflow,
-    color: "#8FE3D2", glow: "rgba(143,227,210,0.08)",
-    gradient: "from-cyan-500/8 to-cyan-500/0",
-    label: "Automate", desc: "Turn AI into repeatable work",
-    links: [
-      { label: "Automation Hub", sub: `${AUTOMATION_WORKFLOWS.length} workflow blueprints`, href: `${BASE_PATH}/automate/` },
-      { label: "Prompt Library", sub: `${USE_CASES_COUNT} executable use cases`, href: `${BASE_PATH}/library/` },
-      { label: "AI Tools",       sub: `${AI_TOOLS.length} tools & apps`,         href: `${BASE_PATH}/tools/` },
-    ],
-  },
-  {
-    id: "learn", icon: BookOpen,
-    color: "#10b981", glow: "rgba(16,185,129,0.08)",
-    gradient: "from-emerald-500/8 to-emerald-500/0",
-    label: "Learn", desc: "Build real understanding, fast",
-    links: [
-      { label: "Guides",         sub: `${GUIDES.length} practical how-to guides`,  href: `${BASE_PATH}/guides/`   },
-      { label: "Learning Paths", sub: `${LEARNING_PATHS.length} structured paths`, href: `${BASE_PATH}/learn/`    },
-      { label: "Concepts",       sub: `${CONCEPTS.length} core AI concepts`,       href: `${BASE_PATH}/concepts/` },
-    ],
-  },
-  {
-    id: "build", icon: Wrench,
-    color: "#f59e0b", glow: "rgba(245,158,11,0.08)",
-    gradient: "from-amber-500/8 to-amber-500/0",
-    label: "Build", desc: "Models, tools and decision support",
-    links: [
-      { label: "Model Radar",     sub: `${AI_MODELS.length} models compared`, href: `${BASE_PATH}/models/` },
-      { label: "AI History",      sub: "70 years of milestones",             href: `${BASE_PATH}/ai-history/` },
-      { label: "Videos",          sub: `${YOUTUBE_VIDEOS.length} lessons`,     href: `${BASE_PATH}/videos/` },
-    ],
-  },
-] as const;
+function buildIntents(t: Translations) {
+  return [
+    {
+      id: "current", icon: Zap,
+      color: "#9F8CFF", glow: "rgba(159,140,255,0.08)",
+      gradient: "from-violet-500/8 to-violet-500/0",
+      label: t.home_intent_track, desc: t.home_intent_track_desc,
+      links: [
+        { label: t.side_live,     sub: t.home_sub_live(LIVE_ITEMS.length),   href: `${BASE_PATH}/live/`     },
+        { label: t.side_news,     sub: t.home_sub_news(AI_NEWS.length),       href: `${BASE_PATH}/news/`     },
+        { label: t.side_research, sub: t.home_sub_research,                   href: `${BASE_PATH}/research/` },
+      ],
+    },
+    {
+      id: "automate", icon: Workflow,
+      color: "#8FE3D2", glow: "rgba(143,227,210,0.08)",
+      gradient: "from-cyan-500/8 to-cyan-500/0",
+      label: t.home_intent_automate, desc: t.home_intent_automate_desc,
+      links: [
+        { label: t.side_automate, sub: t.home_sub_automate(AUTOMATION_WORKFLOWS.length), href: `${BASE_PATH}/automate/` },
+        { label: t.side_library,  sub: t.home_sub_library(USE_CASES_COUNT),              href: `${BASE_PATH}/library/`  },
+        { label: t.side_tools,    sub: t.home_sub_tools(AI_TOOLS.length),                href: `${BASE_PATH}/tools/`    },
+      ],
+    },
+    {
+      id: "learn", icon: BookOpen,
+      color: "#10b981", glow: "rgba(16,185,129,0.08)",
+      gradient: "from-emerald-500/8 to-emerald-500/0",
+      label: t.home_intent_learn, desc: t.home_intent_learn_desc,
+      links: [
+        { label: t.side_guides,   sub: t.home_sub_guides(GUIDES.length),        href: `${BASE_PATH}/guides/`   },
+        { label: t.side_learn,    sub: t.home_sub_paths(LEARNING_PATHS.length),  href: `${BASE_PATH}/learn/`    },
+        { label: t.side_concepts, sub: t.home_sub_concepts(CONCEPTS.length),     href: `${BASE_PATH}/concepts/` },
+      ],
+    },
+    {
+      id: "build", icon: Wrench,
+      color: "#f59e0b", glow: "rgba(245,158,11,0.08)",
+      gradient: "from-amber-500/8 to-amber-500/0",
+      label: t.home_intent_build, desc: t.home_intent_build_desc,
+      links: [
+        { label: t.home_link_model_radar, sub: t.home_sub_models(AI_MODELS.length), href: `${BASE_PATH}/models/`     },
+        { label: t.side_history,          sub: t.home_sub_history,                  href: `${BASE_PATH}/ai-history/` },
+        { label: t.side_videos,           sub: t.home_sub_videos(YOUTUBE_VIDEOS.length), href: `${BASE_PATH}/videos/` },
+      ],
+    },
+  ];
+}
 
 function IntentNav() {
+  const { t } = useLanguage();
+  const INTENTS = buildIntents(t);
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-16">
       {INTENTS.map((intent, i) => {
@@ -127,7 +134,7 @@ function IntentNav() {
             <div className="flex flex-col gap-0.5">
               {intent.links.map((link) => (
                 <a
-                  key={link.label}
+                  key={link.href}
                   href={link.href}
                   className="group flex items-center justify-between gap-2 px-3 py-2 rounded-lg hover:bg-white/[0.05] transition-colors"
                 >
@@ -158,11 +165,19 @@ const PICK_ICON: Record<FeaturedItemType, React.ComponentType<{ size?: number; c
   paper:  FlaskConical as React.ComponentType<{ size?: number; className?: string }>,
   tool:   Lightbulb as React.ComponentType<{ size?: number; className?: string }>,
 };
-const PICK_LABEL: Record<FeaturedItemType, string> = {
-  news: "Story", prompt: "Prompt", guide: "Guide", paper: "Paper", tool: "Tool",
-};
+
+function pickLabel(t: Translations, type: FeaturedItemType): string {
+  switch (type) {
+    case "news":   return t.home_pick_story;
+    case "prompt": return t.home_pick_prompt;
+    case "guide":  return t.home_pick_guide;
+    case "paper":  return t.home_pick_paper;
+    case "tool":   return t.home_pick_tool;
+  }
+}
 
 function PickCard({ item, index }: { item: FeaturedItem; index: number }) {
+  const { t } = useLanguage();
   const Icon = PICK_ICON[item.type];
   const href = item.href.startsWith("http") || item.href.startsWith("#")
     ? item.href : `${BASE_PATH}${item.href}`;
@@ -181,7 +196,7 @@ function PickCard({ item, index }: { item: FeaturedItem; index: number }) {
     >
       <div className="flex items-center justify-between gap-2">
         <span className="flex items-center gap-1.5 font-mono text-[9px] tracking-[0.14em] uppercase text-fg-4">
-          <Icon size={10} />{PICK_LABEL[item.type]}
+          <Icon size={10} />{pickLabel(t, item.type)}
         </span>
         {item.badge && (
           <span className="font-mono text-[9px] tracking-[0.08em] uppercase px-1.5 py-0.5 rounded-full border"
@@ -195,7 +210,7 @@ function PickCard({ item, index }: { item: FeaturedItem; index: number }) {
       </p>
       <p className="font-mono text-[10px] text-fg-4 leading-[1.5] line-clamp-2">{item.why}</p>
       <span className="mt-auto flex items-center gap-1 font-mono text-[9px] tracking-[0.10em] uppercase text-fg-4 group-hover:text-violet-bright transition-colors">
-        Read <ArrowRight size={9} className="group-hover:translate-x-0.5 transition-transform" />
+        {t.home_read} <ArrowRight size={9} className="group-hover:translate-x-0.5 transition-transform" />
       </span>
     </motion.a>
   );
@@ -247,36 +262,37 @@ function NewsGrid() {
 type WeekTab = "picks" | "news";
 
 function ThisWeekHub() {
+  const { t } = useLanguage();
   const [tab, setTab] = useState<WeekTab>("picks");
 
   return (
     <div className="mb-16">
       <div className="flex items-center gap-3 mb-5">
         <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
-        <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">This Week</span>
+        <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{t.home_this_week}</span>
         <span className="font-mono text-[10px] text-fg-4 opacity-40">· {THIS_WEEK.weekOf}</span>
         <span className="font-mono text-[10px] text-emerald-400 opacity-80 hidden sm:inline">
-          · News updated {getLatestNewsDate()}
+          · {t.home_news_updated(getLatestNewsDate())}
         </span>
         <div className="flex gap-0.5 p-0.5 rounded-lg bg-white/[0.03] border border-hairline ml-1">
-          {(["picks", "news"] as WeekTab[]).map(t => (
+          {(["picks", "news"] as WeekTab[]).map(wt => (
             <button
-              key={t}
-              onClick={() => setTab(t)}
+              key={wt}
+              onClick={() => setTab(wt)}
               className={`font-mono text-[9px] tracking-[0.10em] uppercase px-2.5 py-1 rounded-md transition-all duration-150 ${
-                tab === t
+                tab === wt
                   ? "bg-violet/20 text-violet-bright"
                   : "text-fg-4 hover:text-fg-2"
               }`}
             >
-              {t === "picks" ? "Picks" : "News"}
+              {wt === "picks" ? t.home_tab_picks : t.home_tab_news}
             </button>
           ))}
         </div>
         <span className="flex-1 h-px bg-hairline" />
         <a href={`${BASE_PATH}/news/`}
           className="font-mono text-[10px] text-fg-4 hover:text-violet-bright transition-colors flex items-center gap-1">
-          All {AI_NEWS.length} <ArrowRight size={10} />
+          {t.home_all_n(AI_NEWS.length)} <ArrowRight size={10} />
         </a>
       </div>
       <AnimatePresence mode="wait">
@@ -309,15 +325,16 @@ function ThisWeekHub() {
 
 /* ── 3. Live feed strip — freshest posts from primary sources ───────────── */
 function LiveStrip() {
+  const { t } = useLanguage();
   const items = LIVE_ITEMS.slice(0, 5);
   if (!items.length) return null;
   return (
     <div className="mb-16">
       <SectionHead
-        label="Live from the frontier"
+        label={t.home_live_frontier}
         count={LIVE_ITEMS.length}
         href={`${BASE_PATH}/live/`}
-        linkLabel="Open live feed"
+        linkLabel={t.home_open_live}
       />
       <div className="rounded-2xl border border-white/[0.06] bg-white/[0.015] divide-y divide-white/[0.05] overflow-hidden">
         {items.map((it, i) => (
@@ -354,6 +371,7 @@ function LiveStrip() {
 
 /* ── 4. Newsletter / RSS CTA ─────────────────────────────────────────────── */
 function NewsletterCTA() {
+  const { t } = useLanguage();
   return (
     <motion.div
       initial={{ opacity: 0, y: 8 }}
@@ -366,9 +384,9 @@ function NewsletterCTA() {
         <Rss size={18} className="text-violet-bright" />
       </div>
       <div className="flex-1 min-w-0">
-        <p className="font-serif text-[15px] text-fg-1 leading-[1.2] mb-0.5">Stay ahead of AI — follow the RSS feed</p>
+        <p className="font-serif text-[15px] text-fg-1 leading-[1.2] mb-0.5">{t.home_rss_title}</p>
         <p className="font-mono text-[11px] text-fg-4 leading-[1.5]">
-          Subscribe in any RSS reader to get every new prompt, news item, live signal and model update from Sintra.
+          {t.home_rss_sub}
         </p>
       </div>
       <div className="flex flex-wrap gap-2 shrink-0">
@@ -376,25 +394,25 @@ function NewsletterCTA() {
           href={`${BASE_PATH}/feed.xml`}
           className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-violet/40 bg-violet/[0.10] text-violet-bright hover:bg-violet/[0.20] transition-all"
         >
-          <Rss size={11} /> RSS Feed
+          <Rss size={11} /> {t.home_rss_btn}
         </a>
         <a
           href={`${BASE_PATH}/live/`}
           className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
         >
-          <Radio size={10} /> Live Feed
+          <Radio size={10} /> {t.side_live}
         </a>
         <a
           href={`${BASE_PATH}/automate/`}
           className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
         >
-          <Workflow size={10} /> Automate
+          <Workflow size={10} /> {t.home_automate_btn}
         </a>
         <a
           href={`${BASE_PATH}/videos/`}
           className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-4 py-2 rounded-lg border border-hairline text-fg-3 hover:border-violet/30 hover:text-fg-1 transition-all"
         >
-          <Play size={10} /> Videos
+          <Play size={10} /> {t.side_videos}
         </a>
       </div>
     </motion.div>

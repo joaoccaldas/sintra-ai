@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import * as THREE from "three";
 import { ArrowRight, Radio, ShieldCheck, Workflow } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
+import { useLanguage } from "@/context/LanguageContext";
+import type { Translations } from "@/lib/i18n";
 import { LIVE_FEED, LIVE_ITEMS } from "@/lib/liveFeedData";
 import { AUTOMATION_WORKFLOWS } from "@/lib/automationData";
 import NewsTicker from "./NewsTicker";
@@ -19,13 +21,13 @@ const line = {
   }),
 };
 
-function feedFreshnessLabel(): string {
+function feedFreshnessLabel(t: Translations): string {
   const generated = new Date(LIVE_FEED.generatedAt).getTime();
-  if (Number.isNaN(generated)) return "feed timestamp checked";
+  if (Number.isNaN(generated)) return t.hero_feed_checked;
   const hours = Math.max(0, Math.floor((Date.now() - generated) / 3.6e6));
-  if (hours < 1) return "feed fresh · just updated";
-  if (hours < 24) return `feed fresh · ${hours}h old`;
-  return `feed snapshot · ${Math.floor(hours / 24)}d old`;
+  if (hours < 1) return t.hero_feed_just;
+  if (hours < 24) return t.hero_feed_hours(hours);
+  return t.hero_feed_days(Math.floor(hours / 24));
 }
 
 /**
@@ -173,6 +175,7 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
 }
 
 export default function ImmersiveHero({ total }: Props) {
+  const { t } = useLanguage();
   const prefersReducedMotion = useReducedMotion();
   const heroRef = useRef<HTMLElement>(null);
 
@@ -210,7 +213,7 @@ export default function ImmersiveHero({ total }: Props) {
           className="flex items-center justify-center gap-3 mb-7"
         >
           <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet-bright" />
-          <span className="eyebrow violet">AI command center · live intelligence · automation</span>
+          <span className="eyebrow violet">{t.hero_eyebrow_cmd}</span>
           <span className="w-6 h-px bg-gradient-to-l from-transparent to-violet-bright" />
         </motion.div>
 
@@ -218,14 +221,14 @@ export default function ImmersiveHero({ total }: Props) {
           custom={1} variants={variants} initial="hidden" animate="show"
           className="font-serif font-light text-[clamp(52px,9vw,112px)] leading-[0.94] tracking-[-0.055em] text-fg-1 mb-6"
         >
-          The operating map for <em className="italic text-violet-bright">AI work</em>.
+          {t.hero_h1_pre}<em className="italic text-violet-bright">{t.hero_h1_em}</em>.
         </motion.h1>
 
         <motion.p
           custom={2} variants={variants} initial="hidden" animate="show"
           className="text-[16px] md:text-[20px] leading-relaxed text-fg-3 mb-7 max-w-2xl mx-auto"
         >
-          Track what is changing, understand what matters, compare tools and models, then turn it into prompts, workflows and automation systems.
+          {t.hero_lead}
         </motion.p>
 
         <motion.div
@@ -234,15 +237,15 @@ export default function ImmersiveHero({ total }: Props) {
         >
           <div className="rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 backdrop-blur-sm">
             <p className="font-mono text-[15px] text-fg-1 tabular-nums">{LIVE_ITEMS.length}</p>
-            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">live signals</p>
+            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">{t.hero_stat_signals}</p>
           </div>
           <div className="rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 backdrop-blur-sm">
             <p className="font-mono text-[15px] text-fg-1 tabular-nums">{AUTOMATION_WORKFLOWS.length}</p>
-            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">workflow blueprints</p>
+            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">{t.hero_stat_blueprints}</p>
           </div>
           <div className="rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 backdrop-blur-sm">
             <p className="font-mono text-[15px] text-fg-1 tabular-nums">{total.toLocaleString()}</p>
-            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">AI use cases</p>
+            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">{t.hero_stat_usecases}</p>
           </div>
         </motion.div>
 
@@ -251,10 +254,10 @@ export default function ImmersiveHero({ total }: Props) {
           className="flex flex-wrap items-center justify-center gap-3 mb-8"
         >
           <a href={`${BASE_PATH}/live/`} className="btn inline-flex items-center gap-2">
-            <Radio size={13} /> Explore live AI
+            <Radio size={13} /> {t.hero_cta_live}
           </a>
           <a href={`${BASE_PATH}/automate/`} className="btn btn-ghost inline-flex items-center gap-2">
-            <Workflow size={13} /> Build an automation
+            <Workflow size={13} /> {t.hero_cta_automation}
           </a>
           <a
             href="#explore"
@@ -264,7 +267,7 @@ export default function ImmersiveHero({ total }: Props) {
             }}
             className="btn btn-ghost inline-flex items-center gap-2"
           >
-            Browse the map <ArrowRight size={13} />
+            {t.hero_cta_map} <ArrowRight size={13} />
           </a>
         </motion.div>
 
@@ -272,10 +275,10 @@ export default function ImmersiveHero({ total }: Props) {
           custom={5} variants={variants} initial="hidden" animate="show"
           className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4"
         >
-          <span className="inline-flex items-center gap-1.5 text-emerald-400"><ShieldCheck size={12} /> {feedFreshnessLabel()}</span>
-          <span>{LIVE_FEED.sourceCount} sources</span>
-          <span>RSS + JSON feed</span>
-          <span>static, auditable, source-backed</span>
+          <span className="inline-flex items-center gap-1.5 text-emerald-400"><ShieldCheck size={12} /> {feedFreshnessLabel(t)}</span>
+          <span>{t.hero_sources(LIVE_FEED.sourceCount)}</span>
+          <span>{t.hero_feeds}</span>
+          <span>{t.hero_trust}</span>
         </motion.div>
       </div>
 

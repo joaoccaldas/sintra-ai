@@ -5,21 +5,28 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
 import { CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL, ARCHIVE_MONTHS, getLatestNewsDate, type NewsItem } from "@/lib/newsDataCombined";
 import { BASE_PATH } from "@/lib/constants";
-import { NewsCard, SIG_STYLE } from "@/components/NewsCard";
+import { NewsCard } from "@/components/NewsCard";
+import { useLanguage } from "@/context/LanguageContext";
+import type { Translations } from "@/lib/i18n";
 
 type PresetId = "all" | "landmark" | "deals" | "policy" | "models" | "brazil" | "sweden";
 
-const PRESETS: { id: PresetId; emoji: string; label: string; filter?: (n: NewsItem) => boolean }[] = [
-  { id: "all",      emoji: "",   label: "All" },
-  { id: "landmark", emoji: "🔥", label: "Landmark", filter: n => n.significance === "landmark" },
-  { id: "deals",    emoji: "💰", label: "Deals",    filter: n => n.tags.some(t => ["Funding","IPO","Acquisition","Markets","Finance"].includes(t)) },
-  { id: "policy",   emoji: "🏛", label: "Policy",   filter: n => n.tags.some(t => ["Policy","Regulation","AI Act","EU","Government","GDPR","LGPD"].includes(t)) },
-  { id: "models",   emoji: "🤖", label: "Models",   filter: n => n.tags.some(t => ["Model Release","Benchmark","GPT","Claude","Gemini","Llama","Mistral","Reasoning"].includes(t)) },
-  { id: "brazil",   emoji: "🇧🇷", label: "Brazil",  filter: n => n.country === "BR" },
-  { id: "sweden",   emoji: "🇸🇪", label: "Sweden",  filter: n => n.country === "SE" },
+const PRESETS: { id: PresetId; emoji: string; labelKey: keyof Translations; filter?: (n: NewsItem) => boolean }[] = [
+  { id: "all",      emoji: "",   labelKey: "news_preset_all" },
+  { id: "landmark", emoji: "🔥", labelKey: "news_preset_landmark", filter: n => n.significance === "landmark" },
+  { id: "deals",    emoji: "💰", labelKey: "news_preset_deals",    filter: n => n.tags.some(t => ["Funding","IPO","Acquisition","Markets","Finance"].includes(t)) },
+  { id: "policy",   emoji: "🏛", labelKey: "news_preset_policy",   filter: n => n.tags.some(t => ["Policy","Regulation","AI Act","EU","Government","GDPR","LGPD"].includes(t)) },
+  { id: "models",   emoji: "🤖", labelKey: "news_preset_models",   filter: n => n.tags.some(t => ["Model Release","Benchmark","GPT","Claude","Gemini","Llama","Mistral","Reasoning"].includes(t)) },
+  { id: "brazil",   emoji: "🇧🇷", labelKey: "news_preset_brazil",  filter: n => n.country === "BR" },
+  { id: "sweden",   emoji: "🇸🇪", labelKey: "news_preset_sweden",  filter: n => n.country === "SE" },
 ];
 
+const SIG_LABEL_KEY: Record<string, keyof Translations> = {
+  all: "news_sig_all", landmark: "news_sig_landmark", major: "news_sig_major", notable: "news_sig_notable",
+};
+
 export default function AINewsPage() {
+  const { t } = useLanguage();
   const [activeSig, setActiveSig] = useState<string>(() => {
     if (typeof window === "undefined") return "all";
     return new URLSearchParams(window.location.search).get("sig") || "all";
@@ -155,7 +162,7 @@ export default function AINewsPage() {
           <a href={`${BASE_PATH}/`}
             className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] uppercase text-fg-3 hover:text-violet-bright transition-colors group">
             <ArrowLeft size={13} className="group-hover:-translate-x-0.5 transition-transform" />
-            Back to Sintra
+            {t.news_back}
           </a>
         </div>
 
@@ -165,34 +172,34 @@ export default function AINewsPage() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}>
           <div className="inline-flex gap-3.5 items-center mb-6">
             <span className="w-9 h-px bg-gradient-to-r from-transparent to-violet-bright" />
-            <span className="eyebrow violet">AI Intelligence</span>
+            <span className="eyebrow violet">{t.news_eyebrow}</span>
           </div>
           <h1 className="font-serif font-light text-[clamp(40px,6vw,80px)] leading-[1.04] tracking-[-0.025em] text-fg-1 mb-5">
-            The AI{" "}
+            {t.news_h1_pre}
             <em className="italic" style={{
               backgroundImage: "linear-gradient(180deg, #F4F2EA 0%, #9F8CFF 100%)",
               WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent",
-            }}>digest.</em>
+            }}>{t.news_h1_em}</em>
           </h1>
           <p className="font-sans text-[17px] text-fg-2 max-w-xl leading-[1.55]">
-            Landmark releases, model launches, and paradigm shifts — curated for signal, not noise.
+            {t.news_lead}
           </p>
           <div className="flex items-center gap-4 mt-6 font-mono text-[11px] text-fg-3 tracking-[0.06em] flex-wrap">
             <span className="inline-flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-violet-bright" />
-              {CURRENT_MONTH_NEWS.length} events this month
+              {t.news_events_month(CURRENT_MONTH_NEWS.length)}
             </span>
             <span className="text-fg-4">·</span>
             <span>{CURRENT_MONTH_LABEL}</span>
             <span className="text-fg-4">·</span>
             <span className="inline-flex items-center gap-1.5 text-emerald-400">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              Updated {getLatestNewsDate()}
+              {t.news_updated(getLatestNewsDate())}
             </span>
             <span className="text-fg-4">·</span>
             <a href={`${BASE_PATH}/news/archive/`}
               className="inline-flex items-center gap-1 text-fg-3 hover:text-violet-bright transition-colors">
-              Browse archive ({ARCHIVE_MONTHS.reduce((sum, m) => sum + m.count, 0)} earlier events)
+              {t.news_browse_archive(ARCHIVE_MONTHS.reduce((sum, m) => sum + m.count, 0))}
               <ArrowRight size={11} />
             </a>
           </div>
@@ -213,7 +220,7 @@ export default function AINewsPage() {
                   color:       activePreset === p.id ? "#B6A6FF"   : "#6b6a8a",
                 }}
               >
-                {p.emoji ? `${p.emoji} ${p.label}` : p.label}
+                {p.emoji ? `${p.emoji} ${t[p.labelKey] as string}` : (t[p.labelKey] as string)}
               </button>
             ))}
           </div>
@@ -224,11 +231,11 @@ export default function AINewsPage() {
               type="search"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              placeholder="Search events, models, companies…"
+              placeholder={t.news_search_ph}
               className="w-full bg-white/[0.04] border border-hairline rounded-lg pl-8 pr-8 py-1.5 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/60 transition-colors"
             />
             {search && (
-              <button onClick={() => setSearch("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors" aria-label="Clear search">
+              <button onClick={() => setSearch("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-fg-4 hover:text-fg-2 transition-colors" aria-label={t.news_clear_search}>
                 <X size={12} />
               </button>
             )}
@@ -244,7 +251,7 @@ export default function AINewsPage() {
                     borderColor: activeSig === s ? "#9F8CFF88" : "#ffffff18",
                     color:       activeSig === s ? "#B6A6FF"   : "#6b6a8a",
                   }}>
-                  {s === "all" ? "All" : SIG_STYLE[s].label}
+                  {t[SIG_LABEL_KEY[s]] as string}
                 </button>
               ))}
             </div>
@@ -255,14 +262,14 @@ export default function AINewsPage() {
               onChange={e => setProvider(e.target.value)}
               className="font-mono text-[11px] bg-white/[0.04] border border-hairline rounded-lg px-3 py-1.5 text-fg-2 outline-none focus:border-violet/60 transition-colors"
             >
-              <option value="all">All providers</option>
+              <option value="all">{t.news_all_providers}</option>
               {providers.map((p: string) => <option key={p} value={p}>{p}</option>)}
             </select>
 
             {/* Brazil filter */}
             <button
               onClick={() => { setBrazilOnly(v => !v); setSwedenOnly(false); }}
-              title={brazilOnly ? "Show all countries" : "Show Brazil news only"}
+              title={brazilOnly ? t.news_show_all_countries : t.news_show_brazil}
               className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
               style={{
                 background:  brazilOnly ? "#009c3b22" : "transparent",
@@ -270,13 +277,13 @@ export default function AINewsPage() {
                 color:       brazilOnly ? "#4ade80"   : "#6b6a8a",
               }}
             >
-              🇧🇷 Brazil
+              🇧🇷 {t.news_label_brazil}
             </button>
 
             {/* Sweden filter */}
             <button
               onClick={() => { setSwedenOnly(v => !v); setBrazilOnly(false); }}
-              title={swedenOnly ? "Show all countries" : "Show Sweden news only"}
+              title={swedenOnly ? t.news_show_all_countries : t.news_show_sweden}
               className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] px-2.5 py-1 rounded-full border transition-all"
               style={{
                 background:  swedenOnly ? "#006AA722" : "transparent",
@@ -284,11 +291,11 @@ export default function AINewsPage() {
                 color:       swedenOnly ? "#60a5fa"   : "#6b6a8a",
               }}
             >
-              🇸🇪 Sweden
+              🇸🇪 {t.news_label_sweden}
             </button>
 
             {(search || activePreset !== "all" || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly || swedenOnly) && (
-              <span className="font-mono text-[11px] text-fg-4 ml-auto">{filtered.length} events</span>
+              <span className="font-mono text-[11px] text-fg-4 ml-auto">{t.news_events_count(filtered.length)}</span>
             )}
           </div>
         </div>
@@ -298,17 +305,15 @@ export default function AINewsPage() {
           {visibleItems.length === 0 ? (
             <div className="text-center py-24">
               <p className="font-serif text-[22px] text-fg-3 mb-3">
-                No events match this filter in {CURRENT_MONTH_LABEL}.
+                {t.news_none_match(CURRENT_MONTH_LABEL)}
               </p>
               <p className="font-sans text-[13px] text-fg-4 mb-6">
-                {search
-                  ? <>&ldquo;{search}&rdquo; might be in an earlier month — </>
-                  : <>This filter has no matches this month — </>}
-                {ARCHIVE_MONTHS.reduce((sum, m) => sum + m.count, 0)} more events are archived.
+                {search ? t.news_none_search(search) : t.news_none_filter}
+                {t.news_archived_more(ARCHIVE_MONTHS.reduce((sum, m) => sum + m.count, 0))}
               </p>
               <a href={`${BASE_PATH}/news/archive/`}
                 className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.10em] uppercase px-4 py-2 rounded-full border border-violet/40 text-violet-bright hover:bg-violet/10 transition-colors">
-                Search the archive <ArrowRight size={12} />
+                {t.news_search_archive} <ArrowRight size={12} />
               </a>
             </div>
           ) : (
@@ -333,7 +338,7 @@ export default function AINewsPage() {
               {/* Status line */}
               <div className="pt-4 pb-2 flex justify-center">
                 <span className="font-mono text-[11px] text-fg-4 tracking-[0.06em]">
-                  Showing {Math.min(visibleCount, filtered.length)} of {filtered.length} events
+                  {t.news_showing(Math.min(visibleCount, filtered.length), filtered.length)}
                 </span>
               </div>
             </>
@@ -343,7 +348,7 @@ export default function AINewsPage() {
           <div className="pt-10 flex justify-center">
             <a href={`${BASE_PATH}/news/archive/`}
               className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.10em] uppercase px-4 py-2 rounded-full border border-violet/[0.18] text-fg-3 hover:text-violet-bright hover:border-violet/40 transition-colors">
-              Browse older months <ArrowRight size={12} />
+              {t.news_browse_older} <ArrowRight size={12} />
             </a>
           </div>
         </div>
