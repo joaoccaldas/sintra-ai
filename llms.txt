@@ -4,8 +4,9 @@
 
 ## Start here: workflows, skills and evidence
 - [Agent manifest](https://joaoccaldas.github.io/sintra-ai/api/index.json): endpoint discovery, retrieval instructions and trust policy. Public static HTTPS GET; no API key. This site does not host an MCP server.
-- [Knowledge collection](https://joaoccaldas.github.io/sintra-ai/api/knowledge.json): 18 briefs with stable IDs, cited facts, source-check dates, review-due dates, example steps, prompts and validation criteria.
-- [Browse knowledge](https://joaoccaldas.github.io/sintra-ai/knowledge/): Claude, Microsoft 365, Excel, PowerPoint, Power BI and source-backed customer examples.
+- [Compact knowledge index](https://joaoccaldas.github.io/sintra-ai/api/knowledge-index.json): select by audience, tags and task, then fetch one resourceUrl. Keeps citations, status and review dates close to each result.
+- [Knowledge collection](https://joaoccaldas.github.io/sintra-ai/api/knowledge.json): 38 briefs with stable IDs, cited facts, source-check dates, review-due dates, example steps, prompts and validation criteria.
+- [Browse knowledge](https://joaoccaldas.github.io/sintra-ai/knowledge/): ChatGPT, Claude Code, Claude Cowork, cloud integrations, Office, finance and source-backed customer examples.
 - [Choose the right Power BI MCP server](https://joaoccaldas.github.io/sintra-ai/api/knowledge/power-bi-mcp.json): capability; checked 2026-10-18; primary-documentation.
 - [Explain budget variance with Power BI](https://joaoccaldas.github.io/sintra-ai/api/knowledge/power-bi-variance-review.json): workflow; checked 2026-10-18; example-workflow.
 - [Review a DAX measure change before applying it](https://joaoccaldas.github.io/sintra-ai/api/knowledge/power-bi-model-change.json): workflow; checked 2026-10-18; example-workflow.
@@ -24,9 +25,29 @@
 - [Turn a Teams meeting into a checked action register](https://joaoccaldas.github.io/sintra-ai/api/knowledge/teams-meeting-actions.json): workflow; checked 2026-10-18; example-workflow.
 - [Real use case: Crunched reviews specialist Excel models](https://joaoccaldas.github.io/sintra-ai/api/knowledge/crunched-excel-case-study.json): case-study; checked 2026-10-18; provider-case-study.
 - [Real use case: Softcat builds Copilot adoption through practice](https://joaoccaldas.github.io/sintra-ai/api/knowledge/softcat-copilot-case-study.json): case-study; checked 2026-10-18; provider-case-study.
+- [Turn current research into a decision memo](https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-research-decision.json): workflow; checked 2026-10-18; example-workflow.
+- [Consolidate spreadsheets with a reconciliation receipt](https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-spreadsheet-consolidation.json): workflow; checked 2026-10-18; example-workflow.
+- [Learn a concept from a bounded source pack](https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-source-learning.json): workflow; checked 2026-10-18; example-workflow.
+- [Keep a reusable project brief and decision log](https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-project-handoff.json): workflow; checked 2026-10-18; example-workflow.
+- [Turn a successful task into a tested skill](https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-reusable-skill.json): workflow; checked 2026-10-18; example-workflow.
+- [Pilot a recurring brief before scheduling it](https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-scheduled-brief.json): workflow; checked 2026-10-18; example-workflow.
+- [Run a bounded bug fix in an existing cloud environment](https://joaoccaldas.github.io/sintra-ai/api/knowledge/codex-cloud-bugfix.json): workflow; checked 2026-10-18; example-workflow.
+- [Map an unfamiliar repository before changing it](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-code-repo-map.json): workflow; checked 2026-10-18; example-workflow.
+- [Fix a reproducible bug with Claude Code](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-code-bugfix.json): workflow; checked 2026-10-18; example-workflow.
+- [Pilot a code migration on one representative slice](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-code-migration-pilot.json): workflow; checked 2026-10-18; example-workflow.
+- [Organize a folder with a reversible move plan](https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-file-organization.json): workflow; checked 2026-10-18; example-workflow.
+- [Draft a weekly update from existing tools](https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-weekly-update.json): workflow; checked 2026-10-18; example-workflow.
+- [Prepare a prospect brief from CRM and documents](https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-account-research.json): workflow; checked 2026-10-18; example-workflow.
+- [Triage an inbox into a reviewable action list](https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-inbox-triage.json): workflow; checked 2026-10-18; example-workflow.
+- [Choose a skill, connector, plugin or cloud task](https://joaoccaldas.github.io/sintra-ai/api/knowledge/integration-choices.json): capability; checked 2026-10-18; primary-documentation.
+- [Check a connection before trusting its answers](https://joaoccaldas.github.io/sintra-ai/api/knowledge/connector-access-review.json): capability; checked 2026-10-18; primary-documentation.
+- [Claude Code Review leaves preview](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-code-review-october.json): announcement; checked 2026-10-18; provider-announcement.
+- [Claude adds dashboard and motion betas](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-dashboards-motion-october.json): announcement; checked 2026-10-18; provider-announcement.
+- [ChatGPT expands mobile dots and work continuity](https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-dots-october.json): announcement; checked 2026-10-18; provider-announcement.
+- [Real use case: Block orchestrates code migrations](https://joaoccaldas.github.io/sintra-ai/api/knowledge/block-migration-case-study.json): case-study; checked 2026-10-18; provider-case-study.
 
 ## Replication skills
-- [Skills index](https://joaoccaldas.github.io/sintra-ai/api/skills.json): 9 guides with supported environments, canonical brief URLs and portable SKILL.md links. Each brief includes inputs, launch steps, procedure, practice, acceptance cases and troubleshooting. Suggested cases are not completed product tests. Copilot does not import SKILL.md as a native feature; follow the steps in the named app.
+- [Skills index](https://joaoccaldas.github.io/sintra-ai/api/skills.json): 23 guides with supported environments, canonical brief URLs and portable SKILL.md links. Each brief includes inputs, launch steps, procedure, practice, acceptance cases and troubleshooting. Suggested cases are not completed product tests. Copilot does not import SKILL.md as a native feature; follow the steps in the named app.
 
 ## Tested public example
 - [Power BI variance evidence](https://joaoccaldas.github.io/sintra-ai/api/workflows/power-bi-variance.json): LAB-FPNA-01 synthetic dataset, calculated totals, DAX, Power Query import and HoldingCo / Finance AI Lab receipt. Follow workflowResource from the existing variance brief. Synthetic calculations are tested; DAX runtime, tenant access and LLM quality remain untested.
@@ -139,14 +160,14 @@ Step-by-step how-tos, each with `Article` + `FAQPage` JSON-LD.
 - [Model Radar](https://joaoccaldas.github.io/sintra-ai/models/): 24 models compared across capability tier and release date.
 
 ## News & Live Feed
-- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 578 dated items from editorial history and aggregated feeds. Check per-item provenance; publication is not verification.
+- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 581 dated items from editorial history and aggregated feeds. Check per-item provenance; publication is not verification.
 - [Live Feed](https://joaoccaldas.github.io/sintra-ai/live/): aggregated signals from labs, arXiv and other publishers, refreshed every build.
 - Syndication: [RSS](https://joaoccaldas.github.io/sintra-ai/feed.xml), [JSON Feed](https://joaoccaldas.github.io/sintra-ai/feed.json)
 
 ## Machine-readable data
 - [/api/skills.json](https://joaoccaldas.github.io/sintra-ai/api/skills.json) — replication guide index; follow skillUrl for Markdown and resourceUrl for the full canonical JSON record
 - [/api/index.json](https://joaoccaldas.github.io/sintra-ai/api/index.json) — discovery manifest and retrieval policy
-- [/api/knowledge.json](https://joaoccaldas.github.io/sintra-ai/api/knowledge.json) — full finance and MCP briefs, also available individually under /api/knowledge/{id}.json
+- [/api/knowledge.json](https://joaoccaldas.github.io/sintra-ai/api/knowledge.json) — full cited assistant, Office, finance and MCP briefs, also available individually under /api/knowledge/{id}.json
 - [/llms-full.txt](https://joaoccaldas.github.io/sintra-ai/llms-full.txt) — full knowledge briefs, concepts, guides, and topic playbooks in one file
 - [/api/concepts.json](https://joaoccaldas.github.io/sintra-ai/api/concepts.json), [/api/topics.json](https://joaoccaldas.github.io/sintra-ai/api/topics.json) (includes full playbooks), [/api/guides.json](https://joaoccaldas.github.io/sintra-ai/api/guides.json), [/api/tools.json](https://joaoccaldas.github.io/sintra-ai/api/tools.json), [/api/models.json](https://joaoccaldas.github.io/sintra-ai/api/models.json), [/api/use-cases.json](https://joaoccaldas.github.io/sintra-ai/api/use-cases.json) — structured JSON per content type
 - [/agents/](https://joaoccaldas.github.io/sintra-ai/agents/) — how to query this site programmatically, written for the agent reading this file right now

@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 18 Oct 2026 04:08:53 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 04:38:53 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -155,6 +155,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Claude Code Review leaves preview]]></title>
+    <description><![CDATA[Anthropic announced Code Review general availability on October 15 for Team and Enterprise, with repository-level Quick, Standard and Deep review settings.]]></description>
+    <link>https://claude.com/resources/articles/code-review-is-now-generally-available</link>
+    <guid isPermaLink="true">https://claude.com/resources/articles/code-review-is-now-generally-available</guid>
+    <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
+  </item>
+
+  <item>
     <title><![CDATA[Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/ibm-granite/granite-switch-4-1</link>
@@ -179,6 +188,24 @@
     <guid isPermaLink="true">https://openai.com/index/introducing-the-rosalind-academic-plan</guid>
     <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[ChatGPT expands mobile dots and work continuity]]></title>
+    <description><![CDATA[OpenAI’s October 5–9 update describes creating dots on mobile and expanded context from existing chats, Codex threads and automations.]]></description>
+    <link>https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026</link>
+    <guid isPermaLink="true">https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026</guid>
+    <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Claude adds dashboard and motion betas]]></title>
+    <description><![CDATA[On October 8, Anthropic announced Dashboards beta on paid plans and Motion beta on Team and Enterprise. Docs, Slides and Design left beta on all plans. The provider describes query visibility and refresh timestamps for dashboard charts. Enterprise admins control availability; beta access is not universal.]]></description>
+    <link>https://claude.com/resources/articles/dashboards-and-motion</link>
+    <guid isPermaLink="true">https://claude.com/resources/articles/dashboards-and-motion</guid>
+    <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Anthropic</category>
   </item>
 
   <item>
@@ -431,33 +458,6 @@
     <guid isPermaLink="true">https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607</guid>
     <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
     <category>Meta</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector]]></title>
-    <description><![CDATA[Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.]]></description>
-    <link>https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</link>
-    <guid isPermaLink="true">https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
-    <category>Swedish Government</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Fazeshift Raises $17M Series A for AI Agents That Run Accounts Receivable]]></title>
-    <description><![CDATA[Fazeshift, which deploys AI agents to automate accounts receivable — invoicing, follow-ups, reconciliation, and cash application — raised a $17 million Series A led by F-Prime Capital, with participation from Google's Gradient Ventures and Y Combinator. Investors are betting on AI-powered finance operations starting with AR, the transactional-finance segment where AI results have been strongest.]]></description>
-    <link>https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/</link>
-    <guid isPermaLink="true">https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
-    <category>Fazeshift</category>
-  </item>
-
-  <item>
-    <title><![CDATA[South Korea Unveils an $880 Billion, 10-Year AI, Chip and Robotics Plan]]></title>
-    <description><![CDATA[President Lee Jae-myung announced a national plan to invest at least $880 billion (about 1,350 trillion won) over the next decade in semiconductors, AI data centers, and robotics — his 'Three Mega Projects.' Samsung Electronics and SK Hynix are expected to put in roughly 800 trillion won (~$518 billion) to build new chip-production hubs in the country's southwest, while groups including SK, GS, and Naver back large-scale AI data-center construction with about 550 trillion won ($356 billion).]]></description>
-    <link>https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom</link>
-    <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom</guid>
-    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
-    <category>South Korea</category>
   </item>
   </channel>
 </rss>

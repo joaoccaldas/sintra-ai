@@ -327,6 +327,27 @@
       ]
     },
     {
+      "id": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+      "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+      "title": "Claude Code Review leaves preview",
+      "content_text": "Anthropic announced Code Review general availability on October 15 for Team and Enterprise, with repository-level Quick, Standard and Deep review settings.",
+      "_sintra": {
+        "origin": "primary-checked",
+        "checkedAt": "2026-10-18",
+        "knowledgeUrl": "https://joaoccaldas.github.io/sintra-ai/knowledge/claude-code-review-october/",
+        "workflowResource": null,
+        "verification": "primary-source-checked"
+      },
+      "date_published": "2026-10-15T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "Development",
+        "News"
+      ]
+    },
+    {
       "id": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
@@ -384,6 +405,51 @@
         "OpenAI",
         "Labs",
         "Live"
+      ]
+    },
+    {
+      "id": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026",
+      "url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026",
+      "title": "ChatGPT expands mobile dots and work continuity",
+      "content_text": "OpenAI’s October 5–9 update describes creating dots on mobile and expanded context from existing chats, Codex threads and automations.",
+      "_sintra": {
+        "origin": "primary-checked",
+        "checkedAt": "2026-10-18",
+        "knowledgeUrl": "https://joaoccaldas.github.io/sintra-ai/knowledge/chatgpt-dots-october/",
+        "workflowResource": null,
+        "verification": "primary-source-checked"
+      },
+      "date_published": "2026-10-09T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "Codex",
+        "Cloud",
+        "News",
+        "Personal"
+      ]
+    },
+    {
+      "id": "https://claude.com/resources/articles/dashboards-and-motion",
+      "url": "https://claude.com/resources/articles/dashboards-and-motion",
+      "title": "Claude adds dashboard and motion betas",
+      "content_text": "On October 8, Anthropic announced Dashboards beta on paid plans and Motion beta on Team and Enterprise. Docs, Slides and Design left beta on all plans. The provider describes query visibility and refresh timestamps for dashboard charts. Enterprise admins control availability; beta access is not universal.",
+      "_sintra": {
+        "origin": "primary-checked",
+        "checkedAt": "2026-10-18",
+        "knowledgeUrl": "https://joaoccaldas.github.io/sintra-ai/knowledge/claude-dashboards-motion-october/",
+        "workflowResource": null,
+        "verification": "primary-source-checked"
+      },
+      "date_published": "2026-10-08T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Claude Cowork",
+        "Cloud",
+        "News",
+        "Data",
+        "Design"
       ]
     },
     {
@@ -976,71 +1042,6 @@
         "AI Infrastructure",
         "Cloud",
         "Llama"
-      ]
-    },
-    {
-      "id": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
-      "url": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
-      "title": "Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector",
-      "content_text": "Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.",
-      "_sintra": {
-        "origin": "editorial",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-07-01T00:00:00.000Z",
-      "tags": [
-        "Swedish Government",
-        "Sweden",
-        "Public Sector",
-        "AI Adoption",
-        "Government"
-      ]
-    },
-    {
-      "id": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
-      "url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
-      "title": "Fazeshift Raises $17M Series A for AI Agents That Run Accounts Receivable",
-      "content_text": "Fazeshift, which deploys AI agents to automate accounts receivable — invoicing, follow-ups, reconciliation, and cash application — raised a $17 million Series A led by F-Prime Capital, with participation from Google's Gradient Ventures and Y Combinator. Investors are betting on AI-powered finance operations starting with AR, the transactional-finance segment where AI results have been strongest.",
-      "_sintra": {
-        "origin": "editorial",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-07-01T00:00:00.000Z",
-      "tags": [
-        "Fazeshift",
-        "Fazeshift",
-        "Funding",
-        "Accounts Receivable",
-        "Finance Ops",
-        "AI Agents"
-      ]
-    },
-    {
-      "id": "https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom",
-      "title": "South Korea Unveils an $880 Billion, 10-Year AI, Chip and Robotics Plan",
-      "content_text": "President Lee Jae-myung announced a national plan to invest at least $880 billion (about 1,350 trillion won) over the next decade in semiconductors, AI data centers, and robotics — his 'Three Mega Projects.' Samsung Electronics and SK Hynix are expected to put in roughly 800 trillion won (~$518 billion) to build new chip-production hubs in the country's southwest, while groups including SK, GS, and Naver back large-scale AI data-center construction with about 550 trillion won ($356 billion).",
-      "_sintra": {
-        "origin": "editorial",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-06-30T00:00:00.000Z",
-      "tags": [
-        "South Korea",
-        "South Korea",
-        "AI Infrastructure",
-        "Semiconductors",
-        "Data Centers",
-        "Investment"
       ]
     }
   ]

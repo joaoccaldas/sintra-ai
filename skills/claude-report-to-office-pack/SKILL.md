@@ -49,6 +49,8 @@ Expected: All formats show 20% revenue growth; costs remain missing and no margi
 - Only text is returned → Check file-creation availability and request the actual XLSX/PPTX artifacts explicitly.
 - A formula is only a hard-coded value → Ask for formula-driven calculations and recalculate in Excel.
 
+
+
 ## Limits
 - Recipe not executed in Claude by Sintra; a generated file is not proof of correct contents.
 - The Box architecture and reported outcomes are not reproduced. Treat generated charts and summaries as drafts.
