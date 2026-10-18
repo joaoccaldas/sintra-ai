@@ -62,3 +62,14 @@ test("existing topic hubs discover canonical briefs without parallel topic copie
     assert.ok(content.prompts.length || content.news.length || content.tools.length);
   }
 });
+
+test("weekly picks resolve to checked knowledge and retain the previous edition as history", async () => {
+  const { THIS_WEEK, WEEKLY_ARCHIVE } = await import("../../src/lib/featuredData");
+  assert.ok(WEEKLY_ARCHIVE.some(edition => edition.weekOf === "6 Jul 2026"));
+  assert.ok(!WEEKLY_ARCHIVE.some(edition => edition.weekOf === THIS_WEEK.weekOf));
+  for (const pick of THIS_WEEK.items) {
+    const record = KNOWLEDGE.find(item => pick.href === `/knowledge/${item.id}/`);
+    assert.ok(record && record.sources.length && record.reviewedAt);
+    assert.equal(record.title, pick.title);
+  }
+});

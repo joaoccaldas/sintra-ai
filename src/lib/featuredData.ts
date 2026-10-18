@@ -1,3 +1,5 @@
+import { KNOWLEDGE } from "./knowledgeData";
+
 /**
  * Weekly editorial picks — update this file every Monday.
  * Items are hand-curated: one news story, one prompt, one guide, one tool/paper.
@@ -28,6 +30,45 @@ export interface WeeklyFeature {
 // ── Archive of past weekly digests ────────────────────────────────────────
 
 export const WEEKLY_ARCHIVE: WeeklyFeature[] = [
+  {
+  weekOf: "6 Jul 2026",
+  editorial:
+    "Anthropic made Claude Sonnet 5 the default for every Free and Pro user, and Claude Fable 5 came back online on 1 July after three weeks under export controls. Meanwhile the White House moved toward voluntary frontier-model release standards — the week agentic capability got cheaper and the rules around it got real.",
+  items: [
+    {
+      type: "news",
+      title: "Claude Sonnet 5 Becomes the Default for Every Free & Pro User",
+      why: "The most agentic Sonnet yet ships as the everyday default at introductory $2/$10 pricing — frontier-adjacent tool use and autonomy without the flagship bill, right when enterprises are reining in agent costs.",
+      href: "https://www.anthropic.com/news",
+      badge: "Anthropic",
+      badgeColor: "#d97706",
+    },
+    {
+      type: "prompt",
+      title: "Board Presentation Builder",
+      why: "With model choice and AI cost now a board-level topic, the bottleneck is communicating strategy clearly — this prompt structures the narrative, the numbers, and the ask.",
+      href: "/library/",
+      badge: "Writing",
+      badgeColor: "#f59e0b",
+    },
+    {
+      type: "tool",
+      title: "Claude Fable 5 — Restored After Export-Control Pause",
+      why: "The first Mythos-class model returned across Claude.ai, the API, and Claude Code on 1 July — the most capable coding model on the market is available again, with a hardened safety classifier.",
+      href: "https://www.anthropic.com/news",
+      badge: "Anthropic",
+      badgeColor: "#d97706",
+    },
+    {
+      type: "paper",
+      title: "ReAct: Synergizing Reasoning and Acting in Language Models",
+      why: "As agentic defaults reach every user, the Thought→Action→Observation loop is the mental model that explains what these systems are actually doing — foundational reading.",
+      href: "https://arxiv.org/abs/2210.03629",
+      badge: "Research",
+      badgeColor: "#9F8CFF",
+    },
+  ],
+},
   {
     weekOf: "15 Jun 2026",
     editorial:
@@ -110,42 +151,20 @@ export const WEEKLY_ARCHIVE: WeeklyFeature[] = [
 
 // ── Update every Monday ────────────────────────────────────────────────────
 
+function knowledgePick(id: string, type: FeaturedItemType, why: string): FeaturedItem {
+  const record = KNOWLEDGE.find(item => item.id === id);
+  if (!record) throw new Error(`Missing featured knowledge: ${id}`);
+  return { type, title: record.title, why, href: `/knowledge/${id}/`, badge: record.tags[0], badgeColor: "#ae5a38" };
+}
+
+/** Editorial selection reviewed 18 October; not automatically renewed by a build. */
 export const THIS_WEEK: WeeklyFeature = {
-  weekOf: "6 Jul 2026",
-  editorial:
-    "Anthropic made Claude Sonnet 5 the default for every Free and Pro user, and Claude Fable 5 came back online on 1 July after three weeks under export controls. Meanwhile the White House moved toward voluntary frontier-model release standards — the week agentic capability got cheaper and the rules around it got real.",
+  weekOf: "12 Oct 2026",
+  editorial: "Move from AI news to a task you can repeat: review the latest Claude Code release, compare evidence with ChatGPT, and try a bounded Cowork workflow. Each pick links to sources, practical checks and an explicit execution status.",
   items: [
-    {
-      type: "news",
-      title: "Claude Sonnet 5 Becomes the Default for Every Free & Pro User",
-      why: "The most agentic Sonnet yet ships as the everyday default at introductory $2/$10 pricing — frontier-adjacent tool use and autonomy without the flagship bill, right when enterprises are reining in agent costs.",
-      href: "https://www.anthropic.com/news",
-      badge: "Anthropic",
-      badgeColor: "#d97706",
-    },
-    {
-      type: "prompt",
-      title: "Board Presentation Builder",
-      why: "With model choice and AI cost now a board-level topic, the bottleneck is communicating strategy clearly — this prompt structures the narrative, the numbers, and the ask.",
-      href: "/library/",
-      badge: "Writing",
-      badgeColor: "#f59e0b",
-    },
-    {
-      type: "tool",
-      title: "Claude Fable 5 — Restored After Export-Control Pause",
-      why: "The first Mythos-class model returned across Claude.ai, the API, and Claude Code on 1 July — the most capable coding model on the market is available again, with a hardened safety classifier.",
-      href: "https://www.anthropic.com/news",
-      badge: "Anthropic",
-      badgeColor: "#d97706",
-    },
-    {
-      type: "paper",
-      title: "ReAct: Synergizing Reasoning and Acting in Language Models",
-      why: "As agentic defaults reach every user, the Thought→Action→Observation loop is the mental model that explains what these systems are actually doing — foundational reading.",
-      href: "https://arxiv.org/abs/2210.03629",
-      badge: "Research",
-      badgeColor: "#9F8CFF",
-    },
+    knowledgePick("claude-code-review-october", "news", "The October 15 release changes availability; assess its findings against your own code and review process."),
+    knowledgePick("chatgpt-research-decision", "guide", "Turn current sources into a decision memo with counter-evidence and a clear cutoff date."),
+    knowledgePick("cowork-file-organization", "guide", "Start with copied files and a reversible move plan before using a personal or team folder."),
+    knowledgePick("connector-access-review", "guide", "Check identity, scope and one known record before relying on connected answers."),
   ],
 };
