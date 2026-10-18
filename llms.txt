@@ -2,10 +2,10 @@
 
 > An AI learning reference: live signals, dated news, a 256-prompt library, tool and model comparisons, plain-English concepts, and topic playbooks. Built for people and for agents — every page below either has schema.org structured data or a matching JSON endpoint, and topics with a playbook include design principles, a recommended stack, best use cases, common pitfalls, and tips, not just a definition.
 
-## Start here: current finance and MCP knowledge
+## Start here: workflows, skills and evidence
 - [Agent manifest](https://joaoccaldas.github.io/sintra-ai/api/index.json): endpoint discovery, retrieval instructions and trust policy. Public static HTTPS GET; no API key. This site does not host an MCP server.
-- [Knowledge collection](https://joaoccaldas.github.io/sintra-ai/api/knowledge.json): 8 briefs with stable IDs, cited facts, source-check dates, review-due dates, example steps, prompts and validation criteria.
-- [Browse knowledge](https://joaoccaldas.github.io/sintra-ai/knowledge/): Power BI/Fabric IQ, Anthropic finance agents, advisor connectors, customer stories and practical finance workflows.
+- [Knowledge collection](https://joaoccaldas.github.io/sintra-ai/api/knowledge.json): 18 briefs with stable IDs, cited facts, source-check dates, review-due dates, example steps, prompts and validation criteria.
+- [Browse knowledge](https://joaoccaldas.github.io/sintra-ai/knowledge/): Claude, Microsoft 365, Excel, PowerPoint, Power BI and source-backed customer examples.
 - [Choose the right Power BI MCP server](https://joaoccaldas.github.io/sintra-ai/api/knowledge/power-bi-mcp.json): capability; checked 2026-10-18; primary-documentation.
 - [Explain budget variance with Power BI](https://joaoccaldas.github.io/sintra-ai/api/knowledge/power-bi-variance-review.json): workflow; checked 2026-10-18; example-workflow.
 - [Review a DAX measure change before applying it](https://joaoccaldas.github.io/sintra-ai/api/knowledge/power-bi-model-change.json): workflow; checked 2026-10-18; example-workflow.
@@ -14,6 +14,19 @@
 - [Prepare a month-end exception pack](https://joaoccaldas.github.io/sintra-ai/api/knowledge/month-end-close.json): workflow; checked 2026-10-18; example-workflow.
 - [Prepare an advisor meeting from connected records](https://joaoccaldas.github.io/sintra-ai/api/knowledge/advisor-meeting-prep.json): announcement; checked 2026-10-18; provider-announcement.
 - [Real use case: Brex expense review](https://joaoccaldas.github.io/sintra-ai/api/knowledge/brex-expense-review.json): case-study; checked 2026-10-18; provider-case-study.
+- [Audit an existing Excel model with Claude](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-excel-model-audit.json): workflow; checked 2026-10-18; example-workflow.
+- [Turn one source pack into Excel, a memo and slides](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-report-to-office-pack.json): workflow; checked 2026-10-18; example-workflow.
+- [Update an existing PowerPoint deck with Claude](https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-powerpoint-template-review.json): workflow; checked 2026-10-18; example-workflow.
+- [Build a checked analysis inside Excel with Copilot](https://joaoccaldas.github.io/sintra-ai/api/knowledge/copilot-excel-analysis.json): workflow; checked 2026-10-18; example-workflow.
+- [Make an Excel reporting step repeatable with Office Scripts](https://joaoccaldas.github.io/sintra-ai/api/knowledge/excel-office-scripts-report.json): workflow; checked 2026-10-18; example-workflow.
+- [Create a cited decision brief with Microsoft 365 Researcher](https://joaoccaldas.github.io/sintra-ai/api/knowledge/m365-researcher-brief.json): workflow; checked 2026-10-18; example-workflow.
+- [Build a source-grounded PowerPoint slide with Copilot](https://joaoccaldas.github.io/sintra-ai/api/knowledge/copilot-powerpoint-source-slide.json): workflow; checked 2026-10-18; example-workflow.
+- [Turn a Teams meeting into a checked action register](https://joaoccaldas.github.io/sintra-ai/api/knowledge/teams-meeting-actions.json): workflow; checked 2026-10-18; example-workflow.
+- [Real use case: Crunched reviews specialist Excel models](https://joaoccaldas.github.io/sintra-ai/api/knowledge/crunched-excel-case-study.json): case-study; checked 2026-10-18; provider-case-study.
+- [Real use case: Softcat builds Copilot adoption through practice](https://joaoccaldas.github.io/sintra-ai/api/knowledge/softcat-copilot-case-study.json): case-study; checked 2026-10-18; provider-case-study.
+
+## Replication skills
+- [Skills index](https://joaoccaldas.github.io/sintra-ai/api/skills.json): 9 guides with supported environments, canonical brief URLs and portable SKILL.md links. Each brief includes inputs, launch steps, procedure, practice, acceptance cases and troubleshooting. Suggested cases are not completed product tests. Copilot does not import SKILL.md as a native feature; follow the steps in the named app.
 
 ## Tested public example
 - [Power BI variance evidence](https://joaoccaldas.github.io/sintra-ai/api/workflows/power-bi-variance.json): LAB-FPNA-01 synthetic dataset, calculated totals, DAX, Power Query import and HoldingCo / Finance AI Lab receipt. Follow workflowResource from the existing variance brief. Synthetic calculations are tested; DAX runtime, tenant access and LLM quality remain untested.
@@ -131,6 +144,7 @@ Step-by-step how-tos, each with `Article` + `FAQPage` JSON-LD.
 - Syndication: [RSS](https://joaoccaldas.github.io/sintra-ai/feed.xml), [JSON Feed](https://joaoccaldas.github.io/sintra-ai/feed.json)
 
 ## Machine-readable data
+- [/api/skills.json](https://joaoccaldas.github.io/sintra-ai/api/skills.json) — replication guide index; follow skillUrl for Markdown and resourceUrl for the full canonical JSON record
 - [/api/index.json](https://joaoccaldas.github.io/sintra-ai/api/index.json) — discovery manifest and retrieval policy
 - [/api/knowledge.json](https://joaoccaldas.github.io/sintra-ai/api/knowledge.json) — full finance and MCP briefs, also available individually under /api/knowledge/{id}.json
 - [/llms-full.txt](https://joaoccaldas.github.io/sintra-ai/llms-full.txt) — full knowledge briefs, concepts, guides, and topic playbooks in one file

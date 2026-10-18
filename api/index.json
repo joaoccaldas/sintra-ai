@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-18T03:47:21.510Z",
+  "generatedAt": "2026-10-18T04:08:54.408Z",
   "access": {
     "transport": "static HTTPS GET",
     "authentication": "none",
@@ -23,6 +23,12 @@
   ],
   "resources": [
     {
+      "id": "skills",
+      "url": "https://joaoccaldas.github.io/sintra-ai/api/skills.json",
+      "contains": "Replication guide index with portable SKILL.md instructions. App execution is untested unless explicitly stated; use the named environment and existing access.",
+      "count": 9
+    },
+    {
       "id": "power-bi-variance",
       "url": "https://joaoccaldas.github.io/sintra-ai/api/workflows/power-bi-variance.json",
       "contains": "Synthetic fixture, reconciled result, DAX and Power Query, HoldingCo / Finance AI Lab receipt; live Power BI execution untested"
@@ -31,7 +37,7 @@
       "id": "knowledge",
       "url": "https://joaoccaldas.github.io/sintra-ai/api/knowledge.json",
       "contains": "Full cited finance and MCP briefs, example procedures, prompts, checks and limitations",
-      "count": 8
+      "count": 18
     },
     {
       "id": "use-cases",

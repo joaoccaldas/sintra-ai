@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "source": "https://github.com/joaoccaldas/sintra-ai",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-18T03:47:21.510Z",
+  "generatedAt": "2026-10-18T04:08:54.408Z",
   "count": 1,
   "policy": {
     "generatedAt": "Time the static file was assembled; not a source verification date.",
@@ -19,6 +19,54 @@
       "executionStatus": "not-run-in-sintra",
       "id": "earnings-review",
       "title": "Build an earnings review with traceable claims",
+      "replication": {
+        "version": "1.0.0",
+        "environment": "Claude with supplied filings; optional Excel and PowerPoint add-ins",
+        "useWhen": "Update an existing earnings brief without losing the source of each changed assumption.",
+        "timeEstimate": "30–45 min first pilot; planning estimate",
+        "inputs": [
+          {
+            "name": "Current and prior filings",
+            "detail": "Use issuer documents with dates and page numbers; attach a transcript only if you have access."
+          },
+          {
+            "name": "Existing model and brief",
+            "detail": "Provide the approved fiscal period, units, model version and materiality threshold."
+          }
+        ],
+        "launch": [
+          "Open Claude and attach the authorized documents. Ask for a source inventory before analysis.",
+          "If using Office add-ins, open a review copy of the existing workbook and deck; keep the same reporting scope."
+        ],
+        "practice": {
+          "task": "Supply two clearly labeled synthetic periods: revenue 100 then 120; adjusted earnings absent in both.",
+          "expected": "Revenue growth is 20%; adjusted earnings remains unavailable. No fabricated bridge or guidance."
+        },
+        "acceptanceTests": [
+          {
+            "scenario": "Management guidance is absent",
+            "expected": "Return not disclosed and keep analyst assumptions separate."
+          },
+          {
+            "scenario": "A claim has no page or section",
+            "expected": "Flag the claim for review rather than presenting it as sourced."
+          }
+        ],
+        "troubleshooting": [
+          {
+            "symptom": "The transcript is unavailable",
+            "action": "Proceed with the supplied filing and explicitly limit the brief; do not invent call remarks."
+          },
+          {
+            "symptom": "A model assumption conflicts with the source",
+            "action": "Show the source and cell reference for the owner's decision before changing it."
+          }
+        ],
+        "relatedPrompts": [
+          "financial-modeling-with-ai",
+          "cfo-board-pack-builder"
+        ]
+      },
       "summary": "Move from filings and transcripts to a concise change log, preserving the source of every material number.",
       "kind": "workflow",
       "evidenceLevel": "example-workflow",
@@ -68,8 +116,11 @@
       "prompt": "From the supplied current and prior filings and transcript, build an earnings change log. Cite document and page/section for each material claim. Separate reported results, guidance and estimates. Show formulas and units, reconcile adjusted metrics where disclosed, and list contradictions or missing evidence. Do not infer unsupported figures.",
       "related": [
         "anthropic-finance-agents",
-        "power-bi-variance-review"
+        "power-bi-variance-review",
+        "claude-excel-model-audit",
+        "claude-powerpoint-template-review"
       ],
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/earnings-review/SKILL.md",
       "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/earnings-review/",
       "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/earnings-review.json"
     }
