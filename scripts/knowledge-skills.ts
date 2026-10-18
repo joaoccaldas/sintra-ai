@@ -41,6 +41,8 @@ ${bullets(guide.acceptanceTests.map(check => `${check.scenario} → ${check.expe
 ## Troubleshooting and stopping conditions
 ${bullets(guide.troubleshooting.map(issue => `${issue.symptom} → ${issue.action}`))}
 
+${record.tips?.length ? `## Practical tips\n${bullets(record.tips)}\n` : ""}
+${record.integrations?.length ? `## Tools and access\n${bullets(record.integrations.map(tool => `${tool.name}: ${tool.purpose} (${tool.access})`))}\n` : ""}
 ## Limits
 ${bullets(record.limitations)}
 

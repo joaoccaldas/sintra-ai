@@ -49,6 +49,8 @@ Expected: Flag the sign/formula issue, cite the cells and propose Revenue−Cost
 - Claude has no cell citations → Narrow to a sheet/range and request the literal formula before trusting the finding.
 - The workbook relies on VBA or data tables → Keep those tests with their existing Excel process; record the unsupported scope.
 
+
+
 ## Limits
 - Source-backed recipe; the add-in was not executed by Sintra.
 - The add-in does not support macros/VBA or data tables. Specialist product checks and claimed time savings are not reproduced here.

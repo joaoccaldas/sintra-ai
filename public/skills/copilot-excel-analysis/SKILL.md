@@ -50,6 +50,8 @@ Expected: Budget EUR 21,000; actual EUR 19,650; variance −EUR 1,350; total −
 - Only chat is available → Review the account/client capability; use suggested formulas manually and label the route accurately.
 - The total percentage is wrong → Check filters, numeric types and denominator; recompute from aggregate amounts.
 
+
+
 ## Limits
 - Copilot was not run by Sintra; only the existing public reference calculation is tested.
 - Licensing and mode names can vary by rollout. Do not infer that an available chat pane can edit the workbook.

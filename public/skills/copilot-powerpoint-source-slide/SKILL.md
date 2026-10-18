@@ -49,6 +49,8 @@ Expected: The slide preserves the result, includes the unresolved question as un
 - Copilot is absent → Check the current account's license/client/organization settings; do not start a trial automatically.
 - The slide invents a figure → Return to the source section and remove or correct the unsupported figure before use.
 
+
+
 ## Limits
 - Source-backed recipe; no PowerPoint session was executed by Sintra.
 - UI routes and rollout differ. A topic-generated deck is not evidence that the selected file was read.

@@ -162,7 +162,7 @@ export default function AINewsPage() {
 
         <aside className="rounded-xl border border-hairline bg-steel p-4 mb-3 text-sm text-fg-3 leading-relaxed">
           Headlines show publication dates. Source checks are labeled separately; aggregated and older items have not been reverified in this review. Search and filters include the archive.
-          <a href={`${BASE_PATH}/knowledge/`} className="block mt-2 text-violet-bright">Explore source-checked finance &amp; MCP briefs →</a>
+          <a href={`${BASE_PATH}/knowledge/`} className="block mt-2 text-violet-bright">Explore source-checked workflows &amp; skills →</a>
         </aside>
         {/* Hero */}
         <motion.header className="pt-6 pb-12 border-b border-violet/[0.12]"

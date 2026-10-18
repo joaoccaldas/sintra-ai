@@ -12,15 +12,15 @@ export const metadata: Metadata = {
     "Browse AI prompts, news, and tools organized by topic — Agents, Coding, Writing, Finance, Safety, Open Source, and more.",
   openGraph: {
     title: "AI Topic Hubs | Sintra Tesseract",
-    description: "Cross-silo views of prompts, news, tools, and concepts for 17 AI topics.",
+    description: "Source-backed workflows, prompts, news, tools and concepts across AI topics.",
     type: "website",
   },
 };
 
 export default function TopicsIndexPage() {
   const topics = TOPIC_HUBS.map(t => {
-    const { prompts, news, tools, concepts } = getTopicContent(t);
-    return { ...t, counts: { prompts: prompts.length, news: news.length, tools: tools.length, concepts: concepts.length } };
+    const { prompts, news, tools, concepts, knowledge } = getTopicContent(t);
+    return { ...t, counts: { knowledge: knowledge.length, prompts: prompts.length, news: news.length, tools: tools.length, concepts: concepts.length } };
   });
 
   return (
@@ -36,7 +36,7 @@ export default function TopicsIndexPage() {
 
           <h1 className="text-3xl font-bold text-fg-1 mb-2">Topic Hubs</h1>
           <p className="text-fg-3 mb-10 text-lg">
-            Cross-silo views of prompts, news, tools, and concepts — pick a theme to explore everything in one place.
+            Workflows, skills, prompts, news, tools and concepts — choose a theme and follow the evidence.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -52,24 +52,25 @@ export default function TopicsIndexPage() {
                 </div>
                 <p className="text-xs text-fg-3 mb-4 line-clamp-2">{t.description}</p>
                 <div className="flex flex-wrap gap-1.5">
+                  {t.counts.knowledge > 0 && <span className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-fg-3">{t.counts.knowledge} cited briefs</span>}
                   {t.counts.prompts > 0 && (
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-fg-3">
-                      {t.counts.prompts}p
+                      {t.counts.prompts} prompts
                     </span>
                   )}
                   {t.counts.news > 0 && (
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-fg-3">
-                      {t.counts.news}n
+                      {t.counts.news} news
                     </span>
                   )}
                   {t.counts.tools > 0 && (
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-fg-3">
-                      {t.counts.tools}t
+                      {t.counts.tools} tools
                     </span>
                   )}
                   {t.counts.concepts > 0 && (
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-fg-3">
-                      {t.counts.concepts}c
+                      {t.counts.concepts} concepts
                     </span>
                   )}
                 </div>

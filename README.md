@@ -185,3 +185,11 @@ frontmatter helper. The browser and JSON use the same collection. Source-backed
 instructions, hypothetical acceptance cases and actual app execution remain
 distinct. These Office recipes are not execution-tested in the provider apps.
 See `/agents/` for manual use and Claude custom-skill packaging instructions.
+
+### Assistant knowledge and progressive retrieval
+
+The canonical knowledge collection now includes ChatGPT, Codex Cloud, Claude Code and Claude Cowork alongside Office/finance. `assistantKnowledge.ts` contributes source-backed records to `KNOWLEDGE`; it is not a second catalog. Audience filters, practical tips and read-scope integration examples are preserved in JSON and portable skill exports. Existing generic prompts and automation playbooks remain the starting points linked by the recipes.
+
+Use `/api/index.json` → `/api/knowledge-index.json` → one `resourceUrl` to retrieve only the relevant full brief. `/api/skills.json` links the same records to derived `SKILL.md` files. No authentication or MCP server is hosted by this static site. Installation and tool access follow the named host's current documentation.
+
+News with `knowledgeId` derives from dated announcement records; checking a source does not change its publication date. Customer stories and provider demonstrations are attributed, while Sintra procedures and acceptance cases are Sintra-authored suggestions. Provider application execution remains untested unless a specific receipt states otherwise. Builds and scheduled feed refreshes do not certify claims or create provider automations.

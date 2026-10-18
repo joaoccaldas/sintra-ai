@@ -49,6 +49,8 @@ Expected: The brief cites both providers, separates subscriptions and identifies
 - Researcher or Claude is missing → Record the subscription/policy limit and use the available tool without claiming the unavailable model ran.
 - A source is outdated → Find current primary documentation and keep the old source labeled historical.
 
+
+
 ## Limits
 - Researcher was not executed by Sintra. Citations and a polished report do not certify correctness.
 - Claude in Researcher is a tenant-controlled option; do not assume availability from a separate Claude subscription.

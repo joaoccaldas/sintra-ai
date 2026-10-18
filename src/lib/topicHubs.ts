@@ -130,7 +130,7 @@ export const TOPIC_HUBS: TopicDef[] = [
     icon: "⬡",
     color: "#0078d4",
     description: "Deployment at scale, governance, compliance, and ROI in large organizations.",
-    matchTags: ["enterprise", "enterprise ai", "governance", "compliance", "b2b", "deployment"],
+    matchTags: ["corporate", "enterprise", "enterprise ai", "governance", "compliance", "b2b", "deployment"],
   },
   {
     slug: "finance",

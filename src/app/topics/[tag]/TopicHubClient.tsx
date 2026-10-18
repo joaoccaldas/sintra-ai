@@ -13,6 +13,7 @@ import ExpandedCard from "@/components/ExpandedCard";
 import { TOPIC_HUBS } from "@/lib/topicHubs";
 
 interface TopicContent {
+  knowledge: { id: string; title: string; summary: string; reviewedAt: string; executionStatus: string }[];
   prompts: UseCase[];
   news: NewsItem[];
   tools: AITool[];
@@ -220,6 +221,7 @@ export default function TopicHubClient({
 
           {/* Stat pills */}
           <div className="flex flex-wrap gap-2">
+            {content.knowledge.length > 0 && <span className="font-mono text-[11px] px-3 py-1 rounded-full border border-white/[0.08] bg-white/[0.03] text-fg-3">{content.knowledge.length} cited briefs</span>}
             {content.prompts.length > 0 && (
               <span className="font-mono text-[11px] px-3 py-1 rounded-full border border-white/[0.08] bg-white/[0.03] text-fg-3">
                 {content.prompts.length} prompt{content.prompts.length !== 1 ? "s" : ""}
@@ -248,7 +250,11 @@ export default function TopicHubClient({
 
         {/* Content sections */}
         <div className="space-y-12">
-          {/* Prompts */}
+          {/* Canonical knowledge briefs */}
+          {content.knowledge.length > 0 && <section>
+            <h2 className="font-serif text-2xl text-fg-1 mb-4">Source-backed workflows and skills</h2>
+            <div className="grid sm:grid-cols-2 gap-3">{content.knowledge.map(item => <Link key={item.id} href={`/knowledge/${item.id}/`} className="rounded-xl border border-hairline bg-steel p-5 hover:border-violet-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-bright"><h3 className="font-serif text-lg text-fg-1 mb-2">{item.title}</h3><p className="text-sm leading-relaxed text-fg-3 mb-3">{item.summary}</p><p className="text-xs text-fg-4">Sources checked {item.reviewedAt} · {item.executionStatus === "synthetic-calculation-tested" ? "Synthetic calculation tested" : "Provider execution untested"}</p></Link>)}</div>
+          </section>}
           {content.prompts.length > 0 && (
             <section>
               <div className="flex items-center justify-between mb-5">

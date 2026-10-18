@@ -49,6 +49,8 @@ Expected: First and second runs have the same rows, values and one table; only t
 - Automate or a connector action is missing → Check existing license and organization policy rather than widening permissions automatically.
 - The flow targets the wrong script location → Choose Run script for OneDrive or Run script from SharePoint library as appropriate.
 
+
+
 ## Limits
 - Recipe not executed in Excel/Power Automate by Sintra; no schedule has been enabled.
 - A defined schedule is not proof of delivery. Connector permissions and runtime limits must be checked in the target tenant.

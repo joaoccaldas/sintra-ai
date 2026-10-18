@@ -8,8 +8,8 @@ import { buildKnowledgeSkill } from "../knowledge-skills";
 test("replication guides reuse existing prompt identities and preserve execution boundaries", () => {
   const skills = KNOWLEDGE.filter(record => record.replication);
   const slugs = new Set(USE_CASES.map(record => record.slug));
-  assert.equal(skills.length, 9);
-  assert.equal(KNOWLEDGE.length, 18);
+  assert.equal(skills.length, 23);
+  assert.equal(KNOWLEDGE.length, 38);
   assert.equal(USE_CASES.length, 256);
   for (const record of skills) {
     const guide = record.replication!;

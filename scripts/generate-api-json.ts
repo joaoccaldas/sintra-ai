@@ -13,7 +13,7 @@ import { TOPIC_HUBS } from "../src/lib/topicHubs.js";
 import { AI_TOOLS } from "../src/lib/toolsData.js";
 import { AI_MODELS } from "../src/lib/modelsData.js";
 
-import { buildKnowledgeExport, buildUseCaseExport } from "../src/lib/knowledgeExport.js";
+import { buildKnowledgeExport, buildKnowledgeIndex, buildUseCaseExport } from "../src/lib/knowledgeExport.js";
 import { buildVarianceExport } from "../src/lib/varianceExport.js";
 import { varianceCsv, VARIANCE_DAX, VARIANCE_IMPORT } from "../src/lib/varianceWorkflow.js";
 import { buildKnowledgeSkill } from "./knowledge-skills.js";
@@ -47,6 +47,7 @@ write("models", AI_MODELS.map(m => ({ ...m, url: `${SITE_URL}/models/` })));
 write("use-cases", buildUseCaseExport(USE_CASES, SITE_URL));
 
 const knowledge = buildKnowledgeExport(SITE_URL, new Date().toISOString());
+writeFileSync(join(outDir, "knowledge-index.json"), JSON.stringify(buildKnowledgeIndex(SITE_URL, knowledge.generatedAt), null, 2));
 const skillRecords = KNOWLEDGE.filter(record => record.replication);
 for (const record of skillRecords) {
   const directory = join(__dirname, "../public/skills", record.id);
@@ -75,9 +76,10 @@ writeFileSync(join(outDir, "index.json"), JSON.stringify({
     "For live tenant data, connect the documented provider MCP separately; Sintra contains public reference material only.",
   ],
   resources: [
+    { id: "knowledge-index", url: `${SITE_URL}/api/knowledge-index.json`, contains: "Compact discovery: titles, audiences, tags, provenance, dates and links to individual full briefs. Start here, then retrieve only the relevant record.", count: knowledge.count },
     { id: "skills", url: `${SITE_URL}/api/skills.json`, contains: "Replication guide index with portable SKILL.md instructions. App execution is untested unless explicitly stated; use the named environment and existing access.", count: skillRecords.length },
     { id: "power-bi-variance", url: variance.resourceUrl, contains: "Synthetic fixture, reconciled result, DAX and Power Query, HoldingCo / Finance AI Lab receipt; live Power BI execution untested" },
-    { id: "knowledge", url: `${SITE_URL}/api/knowledge.json`, contains: "Full cited finance and MCP briefs, example procedures, prompts, checks and limitations", count: knowledge.count },
+    { id: "knowledge", url: `${SITE_URL}/api/knowledge.json`, contains: "Full cited ChatGPT, Claude Code, Cowork, Office, finance and MCP briefs, example procedures, prompts, checks and limitations", count: knowledge.count },
     { id: "use-cases", url: `${SITE_URL}/api/use-cases.json`, contains: "Complete prompt library including inputs, prompt text and sample outputs; examples, not execution evidence" },
     { id: "models", url: `${SITE_URL}/api/models.json`, contains: "Model specifications with individual lastVerified dates; currentSnapshot identifies the newly checked Claude lineup" },
     ...["tools", "topics", "concepts", "guides"].map(id => ({ id, url: `${SITE_URL}/api/${id}.json`, contains: "Reference collection; review source dates before relying on volatile claims" })),

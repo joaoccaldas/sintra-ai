@@ -49,6 +49,8 @@ Expected: One committed action for Alex; the dashboard remains a proposal with o
 - An owner or due date looks inferred → Open the cited passage and replace unsupported fields with unassigned.
 - Open in Excel is unavailable → Check whether the response is a table and whether meeting policy permits export.
 
+
+
 ## Limits
 - Recipe not executed in Teams by Sintra. No messages, Planner tasks or notifications are created by this guide.
 - No transcript means no substantiated post-meeting spoken-content analysis; export can be disabled by policy.

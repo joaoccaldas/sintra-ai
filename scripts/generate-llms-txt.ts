@@ -32,8 +32,9 @@ const llmsTxt = `# Sintra AI
 
 ## Start here: workflows, skills and evidence
 - [Agent manifest](${SITE_URL}/api/index.json): endpoint discovery, retrieval instructions and trust policy. Public static HTTPS GET; no API key. This site does not host an MCP server.
+- [Compact knowledge index](${SITE_URL}/api/knowledge-index.json): select by audience, tags and task, then fetch one resourceUrl. Keeps citations, status and review dates close to each result.
 - [Knowledge collection](${SITE_URL}/api/knowledge.json): ${KNOWLEDGE.length} briefs with stable IDs, cited facts, source-check dates, review-due dates, example steps, prompts and validation criteria.
-- [Browse knowledge](${SITE_URL}/knowledge/): Claude, Microsoft 365, Excel, PowerPoint, Power BI and source-backed customer examples.
+- [Browse knowledge](${SITE_URL}/knowledge/): ChatGPT, Claude Code, Claude Cowork, cloud integrations, Office, finance and source-backed customer examples.
 ${KNOWLEDGE.map(k => `- [${k.title}](${SITE_URL}/api/knowledge/${k.id}.json): ${k.kind}; checked ${k.reviewedAt}; ${k.evidenceLevel}.`).join("\n")}
 
 ## Replication skills
@@ -76,7 +77,7 @@ ${GUIDES.map(g => `- [${g.title}](${SITE_URL}/guides/${g.slug}/): ${g.tagline}`)
 ## Machine-readable data
 - [/api/skills.json](${SITE_URL}/api/skills.json) — replication guide index; follow skillUrl for Markdown and resourceUrl for the full canonical JSON record
 - [/api/index.json](${SITE_URL}/api/index.json) — discovery manifest and retrieval policy
-- [/api/knowledge.json](${SITE_URL}/api/knowledge.json) — full finance and MCP briefs, also available individually under /api/knowledge/{id}.json
+- [/api/knowledge.json](${SITE_URL}/api/knowledge.json) — full cited assistant, Office, finance and MCP briefs, also available individually under /api/knowledge/{id}.json
 - [/llms-full.txt](${SITE_URL}/llms-full.txt) — full knowledge briefs, concepts, guides, and topic playbooks in one file
 - [/api/concepts.json](${SITE_URL}/api/concepts.json), [/api/topics.json](${SITE_URL}/api/topics.json) (includes full playbooks), [/api/guides.json](${SITE_URL}/api/guides.json), [/api/tools.json](${SITE_URL}/api/tools.json), [/api/models.json](${SITE_URL}/api/models.json), [/api/use-cases.json](${SITE_URL}/api/use-cases.json) — structured JSON per content type
 - [/agents/](${SITE_URL}/agents/) — how to query this site programmatically, written for the agent reading this file right now
@@ -129,7 +130,7 @@ const llmsFullTxt = `# Sintra AI — Full Reference
 
 # Workflows, skills and evidence
 
-${KNOWLEDGE.map(k => `## ${k.title}\n\n${k.summary}\n\nEvidence: ${k.evidenceLevel}. Sources checked ${k.reviewedAt}; review due ${k.reviewDueAt}. Execution: ${k.executionStatus}.${k.workflowResource ? ` Evidence: ${SITE_URL}${k.workflowResource}.` : ""}\n\n${k.facts.map(f => `${f.text} [${f.sourceIds.join(", ")}]`).join("\n\n")}\n\n${k.replication ? `Replication guide: ${JSON.stringify(k.replication, null, 2)}\nPortable instructions: ${SITE_URL}/skills/${k.id}/SKILL.md\n\n` : ""}Prerequisites: ${k.prerequisites.join(" ")}\n\nSuggested steps:\n${k.steps.map((step, i) => `${i + 1}. ${step}`).join("\n")}\n\nExpected output: ${k.output}\n\nValidation: ${k.validation.join(" ")}\n\nLimits: ${k.limitations.join(" ")}\n\n${k.prompt ? `Example prompt: ${k.prompt}\n\n` : ""}Sources:\n${k.sources.map(source => `- [${source.id}] ${source.url} (checked ${source.checkedAt})`).join("\n")}\n\nBrief: ${SITE_URL}/knowledge/${k.id}/`).join("\n\n")}
+${KNOWLEDGE.map(k => `## ${k.title}\n\n${k.summary}\n\nEvidence: ${k.evidenceLevel}. Sources checked ${k.reviewedAt}; review due ${k.reviewDueAt}. Execution: ${k.executionStatus}.${k.workflowResource ? ` Evidence: ${SITE_URL}${k.workflowResource}.` : ""}\n\n${k.facts.map(f => `${f.text} [${f.sourceIds.join(", ")}]`).join("\n\n")}\n\n${k.replication ? `Replication guide: ${JSON.stringify(k.replication, null, 2)}\nPortable instructions: ${SITE_URL}/skills/${k.id}/SKILL.md\n\n` : ""}${k.tips?.length ? `Tips: ${k.tips.join(" ")}\n\n` : ""}${k.integrations?.length ? `Tools: ${JSON.stringify(k.integrations)}\n\n` : ""}Prerequisites: ${k.prerequisites.join(" ")}\n\nSuggested steps:\n${k.steps.map((step, i) => `${i + 1}. ${step}`).join("\n")}\n\nExpected output: ${k.output}\n\nValidation: ${k.validation.join(" ")}\n\nLimits: ${k.limitations.join(" ")}\n\n${k.prompt ? `Example prompt: ${k.prompt}\n\n` : ""}Sources:\n${k.sources.map(source => `- [${source.id}] ${source.url} (checked ${source.checkedAt})`).join("\n")}\n\nBrief: ${SITE_URL}/knowledge/${k.id}/`).join("\n\n")}
 
 # Topic Playbooks
 

@@ -36,7 +36,7 @@ export default function ReplicationGuide({ record }: { record: KnowledgeRecord }
         <a href={`${BASE_PATH}/skills/${record.id}/SKILL.md`} download className="text-violet-bright underline underline-offset-4">Download skill instructions (.md) ↓</a>
         <a href="#procedure" className="text-fg-3 underline underline-offset-4">Follow the full procedure →</a>
       </div>
-      <p className="text-xs leading-relaxed text-fg-4 mt-4">Use the steps and prompt in the named app. The download is a portable instruction file; it does not install a Copilot feature or grant access. Claude users can review and package it as a custom skill where that feature is available.</p>
+      <p className="text-xs leading-relaxed text-fg-4 mt-4">Use the steps and prompt in the named app. The download is a portable instruction file; it does not install a Copilot feature or grant access. Review the host-specific installation guidance on the LLM access page. ChatGPT, Codex and Claude support different skill locations and distribution paths.</p>
     </section>
   );
 }
