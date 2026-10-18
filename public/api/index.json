@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-18T04:32:12.335Z",
+  "generatedAt": "2026-10-18T05:01:11.945Z",
   "access": {
     "transport": "static HTTPS GET",
     "authentication": "none",
@@ -26,13 +26,13 @@
       "id": "knowledge-index",
       "url": "https://joaoccaldas.github.io/sintra-ai/api/knowledge-index.json",
       "contains": "Compact discovery: titles, audiences, tags, provenance, dates and links to individual full briefs. Start here, then retrieve only the relevant record.",
-      "count": 38
+      "count": 140
     },
     {
       "id": "skills",
       "url": "https://joaoccaldas.github.io/sintra-ai/api/skills.json",
       "contains": "Replication guide index with portable SKILL.md instructions. App execution is untested unless explicitly stated; use the named environment and existing access.",
-      "count": 23
+      "count": 123
     },
     {
       "id": "power-bi-variance",
@@ -43,7 +43,7 @@
       "id": "knowledge",
       "url": "https://joaoccaldas.github.io/sintra-ai/api/knowledge.json",
       "contains": "Full cited ChatGPT, Claude Code, Cowork, Office, finance and MCP briefs, example procedures, prompts, checks and limitations",
-      "count": 38
+      "count": 140
     },
     {
       "id": "use-cases",

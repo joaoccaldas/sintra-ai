@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-18T04:32:12.335Z",
-  "count": 38,
+  "generatedAt": "2026-10-18T05:01:11.945Z",
+  "count": 140,
   "policy": {
     "generatedAt": "Time the static file was assembled; not a source verification date.",
     "reviewedAt": "Date an editor checked the linked primary sources for this record.",
@@ -1147,6 +1147,4210 @@
       "related": [
         "claude-code-migration-pilot",
         "codex-cloud-bugfix"
+      ]
+    },
+    {
+      "id": "3d-modular-corridor",
+      "title": "Build a snapping corridor kit",
+      "summary": "Four 2 m wall modules, one corner and a 1 m doorway on a 0.25 m grid. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-modular-corridor/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-modular-corridor.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/modular-corridor.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-modular-corridor/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-loot-chest",
+      "title": "Rig a reusable loot chest",
+      "summary": "One 0.8 m chest, lid, hinge empty and open angle of 100 degrees. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/constraints/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-loot-chest/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-loot-chest.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/loot-chest.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-loot-chest/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-breakable-crate",
+      "title": "Create a breakable crate with bounded debris",
+      "summary": "One intact 0.6 m crate and six hand-authored break pieces. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/rigid_body/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-breakable-crate/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-breakable-crate.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/breakable-crate.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-breakable-crate/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-weapon-sockets",
+      "title": "Attach a tool to a character socket",
+      "summary": "A licensed character rig, one 0.4 m tool and a named hand socket. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/armatures/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-weapon-sockets/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-weapon-sockets.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/weapon-sockets.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-weapon-sockets/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-terrain-collider",
+      "title": "Separate terrain visuals from collision",
+      "summary": "A 20 m terrain patch, a visible rocky edge and a low-resolution collision surface. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-terrain-collider/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-terrain-collider.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/terrain-collider.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-terrain-collider/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-navmesh-room",
+      "title": "Make a room navigable for an NPC",
+      "summary": "An 8 by 6 m room, two obstacles and a 0.5 m agent radius. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/navigation/navigation_introduction_3d.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-navmesh-room/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-navmesh-room.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/navmesh-room.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-navmesh-room/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-pickup-inspection",
+      "title": "Build a rotating collectible with inspection",
+      "summary": "One collectible mesh, an inspection camera and a 0.3 m interaction radius. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/GLTFLoader.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-pickup-inspection/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-pickup-inspection.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/pickup-inspection.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-pickup-inspection/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-prop-lod",
+      "title": "Compare three prop LODs",
+      "summary": "One decorative statue and 100%, 50%, 20% geometry candidates. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-prop-lod/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-prop-lod.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/prop-lod.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-prop-lod/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-normal-bake-prop",
+      "title": "Bake a high-detail prop onto a game mesh",
+      "summary": "One high-detail panel, a low-detail panel, a non-overlapping UV map and a 1024 px normal target. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/cycles/baking.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-normal-bake-prop/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-normal-bake-prop.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/normal-bake-prop.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-normal-bake-prop/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-interactive-door",
+      "title": "Wire a door without exporting game logic",
+      "summary": "A 0.9 m door leaf, hinge pivot, frame and open/closed collision states. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Game assets",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-interactive-door/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-interactive-door.json",
+      "spatial": {
+        "category": "game-assets",
+        "categoryLabel": "Game assets",
+        "tools": [
+          "Blender → Godot or Unity"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/interactive-door.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-interactive-door/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-heightmap-terrain",
+      "title": "Turn a heightmap into a bounded landscape",
+      "summary": "A licensed 256 by 256 grayscale heightmap, a 100 m square and a 12 m height range. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-heightmap-terrain/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-heightmap-terrain.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/heightmap-terrain.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-heightmap-terrain/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-river-spline",
+      "title": "Build a river ribbon along a curve",
+      "summary": "A 30 m curve, 2 m channel width and marked flow direction. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/curves/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-river-spline/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-river-spline.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/river-spline.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-river-spline/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-forest-scatter",
+      "title": "Scatter a forest without cloning every tree",
+      "summary": "Three approved tree meshes, a 40 m terrain, seed 42 and an exclusion path. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-forest-scatter/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-forest-scatter.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/forest-scatter.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-forest-scatter/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-city-block",
+      "title": "Generate a readable city block from parcels",
+      "summary": "A 60 by 40 m block, six parcel rectangles and street setback of 3 m. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-city-block/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-city-block.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/city-block.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-city-block/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-cave-blockout",
+      "title": "Block out a traversable cave",
+      "summary": "Three chambers linked by a 2 m minimum passage. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-cave-blockout/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cave-blockout.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/cave-blockout.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cave-blockout/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-floating-island",
+      "title": "Design an illustrative floating island",
+      "summary": "A 12 m top platform, a tapered underside and three access anchors. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-floating-island/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-floating-island.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/floating-island.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-floating-island/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-road-network",
+      "title": "Sweep roads through an existing terrain",
+      "summary": "Three intersecting centerlines, 4 m width and a maximum intended grade. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/curves/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-road-network/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-road-network.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/road-network.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-road-network/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-cliff-rock-variants",
+      "title": "Make a small coherent rock family",
+      "summary": "One base boulder and five seeds with identical maximum dimensions. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-cliff-rock-variants/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cliff-rock-variants.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/cliff-rock-variants.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cliff-rock-variants/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-cloud-cards",
+      "title": "Create a lightweight distant cloud layer",
+      "summary": "Four licensed cloud alpha images and a fixed distant sky band. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-cloud-cards/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cloud-cards.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/cloud-cards.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cloud-cards/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-season-vegetation",
+      "title": "Reuse one vegetation mesh across seasons",
+      "summary": "One approved tree, three leaf palettes and a winter visibility mask. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Worlds & environments",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-season-vegetation/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-season-vegetation.json",
+      "spatial": {
+        "category": "environments",
+        "categoryLabel": "Worlds & environments",
+        "tools": [
+          "Blender Geometry Nodes"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/season-vegetation.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-season-vegetation/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-parametric-chair",
+      "title": "Adapt a parametric chair to a size brief",
+      "summary": "An existing chair generator, 0.45 m seat height and 0.48 m seat width. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-parametric-chair/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-parametric-chair.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/parametric-chair.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-parametric-chair/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-turned-vase",
+      "title": "Model a vase from a measured profile",
+      "summary": "A 0.30 m profile, 0.08 m rim diameter and 0.004 m intended wall. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/curves/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-turned-vase/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-turned-vase.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/turned-vase.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-turned-vase/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-watch-exploded",
+      "title": "Create a semantic exploded product diagram",
+      "summary": "A generic watch assembly with case, dial, glass and strap parts. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/constraints/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-watch-exploded/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-watch-exploded.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/watch-exploded.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-watch-exploded/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-bike-fit-proxy",
+      "title": "Build an adjustable bicycle fit proxy",
+      "summary": "Wheelbase 1.02 m, saddle height 0.74 m and handlebar reach 0.48 m. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/api/4.5/info_quickstart.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-bike-fit-proxy/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-bike-fit-proxy.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/bike-fit-proxy.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-bike-fit-proxy/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-enclosure-fit",
+      "title": "Check a product enclosure around a component",
+      "summary": "A 60 by 40 by 15 mm component proxy, 2 mm wall and 1 mm clearance. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-enclosure-fit/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-enclosure-fit.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/enclosure-fit.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-enclosure-fit/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-retopology-joint",
+      "title": "Retopologize a deforming elbow",
+      "summary": "A licensed high-resolution arm and a low-resolution target cage. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/meshes/retopology.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-retopology-joint/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-retopology-joint.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/retopology-joint.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-retopology-joint/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-scan-cleanup",
+      "title": "Clean a scan while preserving measured scale",
+      "summary": "A licensed object scan with a photographed 0.1 m scale reference. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/meshes/retopology.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-scan-cleanup/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-scan-cleanup.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/scan-cleanup.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-scan-cleanup/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-print-preflight",
+      "title": "Prepare a mesh for a printability review",
+      "summary": "A closed 50 mm token mesh and the intended printer/process settings. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-print-preflight/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-print-preflight.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/print-preflight.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-print-preflight/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-photogrammetry-prop",
+      "title": "Reconstruct a prop from overlapping photos",
+      "summary": "Thirty licensed photos of one stationary matte object and a scale marker. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://colmap.github.io/tutorial.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-photogrammetry-prop/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-photogrammetry-prop.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/photogrammetry-prop.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-photogrammetry-prop/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-splat-collision-proxy",
+      "title": "Pair a radiance-field capture with collision geometry",
+      "summary": "One owned scene capture, a trained viewing representation and a coarse room proxy. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Modeling & reconstruction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.nerf.studio/quickstart/first_nerf.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-splat-collision-proxy/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-splat-collision-proxy.json",
+      "spatial": {
+        "category": "modeling",
+        "categoryLabel": "Modeling & reconstruction",
+        "tools": [
+          "Blender",
+          "COLMAP",
+          "Nerfstudio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/splat-collision-proxy.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-splat-collision-proxy/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-oak-material",
+      "title": "Build a reusable oak material study",
+      "summary": "One neutral plinth, a licensed oak texture and 0.6 m real-world mapping width. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-oak-material/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-oak-material.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/oak-material.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-oak-material/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-brushed-metal",
+      "title": "Make anisotropic brushed metal readable",
+      "summary": "A cylindrical metal sample, roughness 0.3 and an explicit brushing direction. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-brushed-metal/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-brushed-metal.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/brushed-metal.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-brushed-metal/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-glass-display",
+      "title": "Review glass thickness and transmission",
+      "summary": "A 6 mm glass panel, an object behind it and a neutral stage. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-glass-display/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-glass-display.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/glass-display.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-glass-display/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-fabric-weave",
+      "title": "Show fabric weave without excessive geometry",
+      "summary": "A cushion mesh, a licensed weave map and 5 mm visual repeat. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-fabric-weave/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-fabric-weave.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/fabric-weave.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-fabric-weave/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-wet-ground",
+      "title": "Create a controlled wet-ground variant",
+      "summary": "A dry pavement material and a separate puddle mask. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-wet-ground/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-wet-ground.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/wet-ground.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-wet-ground/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-triplanar-rock",
+      "title": "Evaluate triplanar projection for rock faces",
+      "summary": "A scaled boulder, a licensed rock texture and a 1 m mapping reference. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/shader_nodes/shader/principled.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-triplanar-rock/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-triplanar-rock.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/triplanar-rock.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-triplanar-rock/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-decal-label",
+      "title": "Apply a legible product label decal",
+      "summary": "One generic bottle, a licensed label image and a front-facing camera. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/meshes/uv/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-decal-label/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-decal-label.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/decal-label.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-decal-label/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-texture-atlas",
+      "title": "Consolidate prop textures into an atlas",
+      "summary": "Four small props, their source materials and a 2048 px trial atlas. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/meshes/uv/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-texture-atlas/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-texture-atlas.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/texture-atlas.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-texture-atlas/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-static-lightmap",
+      "title": "Bake room lighting for a runtime",
+      "summary": "A fixed room, non-overlapping lightmap UVs and one moving character. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/classes/class_lightmapgi.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-static-lightmap/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-static-lightmap.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/static-lightmap.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-static-lightmap/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-material-variants",
+      "title": "Ship one mesh with reviewed finish variants",
+      "summary": "A single plinth mesh and two approved finish candidates. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Materials & lighting",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/addons/import_export/scene_gltf2.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-material-variants/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-material-variants.json",
+      "spatial": {
+        "category": "materials",
+        "categoryLabel": "Materials & lighting",
+        "tools": [
+          "Blender shaders",
+          "runtime materials"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/material-variants.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-material-variants/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-walk-cycle",
+      "title": "Author a loopable walk cycle",
+      "summary": "One licensed rig, 24 fps and a 24-frame in-place cycle. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/armatures/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-walk-cycle/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-walk-cycle.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/walk-cycle.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-walk-cycle/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-facial-shapes",
+      "title": "Build a small facial expression set",
+      "summary": "A neutral head mesh and smile, blink and brow shape targets. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/shape_keys/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-facial-shapes/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-facial-shapes.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/facial-shapes.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-facial-shapes/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-camera-rail",
+      "title": "Animate a camera along a product rail",
+      "summary": "A 4 m curve, 120 frames and one look-at target. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/constraints/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-camera-rail/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-camera-rail.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/camera-rail.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-camera-rail/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-mechanical-linkage",
+      "title": "Animate a constrained mechanical linkage",
+      "summary": "Two generic bars, three pivot markers and a 90 degree driver motion. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/constraints/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-mechanical-linkage/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-mechanical-linkage.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/mechanical-linkage.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-mechanical-linkage/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-crowd-variation",
+      "title": "Create a bounded background crowd",
+      "summary": "Three licensed animated characters, twelve positions and three phase offsets. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/InstancedMesh.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-crowd-variation/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-crowd-variation.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/crowd-variation.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-crowd-variation/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-flag-animation",
+      "title": "Create a wind-driven flag loop candidate",
+      "summary": "A 1 by 0.6 m flag, pinned pole edge and 120-frame trial. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/cloth/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-flag-animation/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-flag-animation.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/flag-animation.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-flag-animation/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-hair-cards",
+      "title": "Build a small hair-card style",
+      "summary": "A head proxy, six card strips and a licensed hair alpha atlas. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/meshes/uv/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-hair-cards/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-hair-cards.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/hair-cards.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-hair-cards/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-retarget-motion",
+      "title": "Retarget a licensed motion clip",
+      "summary": "Source and target rigs, one 2-second walk and an explicit bone mapping. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/armatures/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-retarget-motion/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-retarget-motion.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/retarget-motion.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-retarget-motion/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-assembly-explainer",
+      "title": "Animate an assembly sequence with callouts",
+      "summary": "A four-part generic lamp and a 10-second storyboard. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/constraints/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-assembly-explainer/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-assembly-explainer.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/assembly-explainer.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-assembly-explainer/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-viseme-timing",
+      "title": "Align authored mouth shapes to a speech track",
+      "summary": "A consented 3-second voice clip and five existing mouth-shape targets. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Animation & characters",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/animation/shape_keys/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-viseme-timing/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-viseme-timing.json",
+      "spatial": {
+        "category": "animation",
+        "categoryLabel": "Animation & characters",
+        "tools": [
+          "Blender animation",
+          "engine clips"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/viseme-timing.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-viseme-timing/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-rigid-stack",
+      "title": "Test a small rigid-body stack",
+      "summary": "Five 0.2 m cubes, a passive floor and a 120-frame trial. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/rigid_body/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-rigid-stack/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-rigid-stack.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/rigid-stack.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-rigid-stack/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-domino-chain",
+      "title": "Find a reliable domino spacing",
+      "summary": "Ten 0.1 m dominoes with 0.04 m trial spacing. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/rigid_body/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-domino-chain/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-domino-chain.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/domino-chain.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-domino-chain/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-cloth-drape",
+      "title": "Drape fabric over a measured table",
+      "summary": "A 1.2 m cloth square, a 0.8 m table and pinned/no-pin trial variants. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/cloth/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-cloth-drape/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cloth-drape.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/cloth-drape.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cloth-drape/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-liquid-pour",
+      "title": "Prototype a bounded liquid pour",
+      "summary": "A 0.5 m domain, a cup proxy and a 48-frame inflow trial. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/fluid/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-liquid-pour/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-liquid-pour.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/liquid-pour.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-liquid-pour/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-smoke-burst",
+      "title": "Make a short gas simulation preview",
+      "summary": "A 1 m gas domain, a 12-frame source pulse and a 72-frame preview. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/fluid/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-smoke-burst/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-smoke-burst.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/smoke-burst.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-smoke-burst/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-soft-body-drop",
+      "title": "Compare a soft-body drop against a rigid baseline",
+      "summary": "A 0.3 m rounded cube dropped 0.5 m onto a passive plane. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/soft_body/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-soft-body-drop/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-soft-body-drop.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/soft-body-drop.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-soft-body-drop/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-flock-path",
+      "title": "Create a constrained flock visual",
+      "summary": "Twenty low-detail birds, a goal marker and an obstacle volume. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/particles/emitter/physics/boids.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-flock-path/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-flock-path.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/flock-path.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-flock-path/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-pendulum-study",
+      "title": "Compare an animated pendulum with an analytical period",
+      "summary": "A 1 m pendulum, small initial angle and gravity 9.81 m/s². An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/physics/rigid_body/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-pendulum-study/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-pendulum-study.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/pendulum-study.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-pendulum-study/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-robot-reach",
+      "title": "Visualize a robot arm's sampled reach",
+      "summary": "A licensed MuJoCo arm model, joint limits and 100 sampled configurations. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://mujoco.readthedocs.io/en/stable/overview.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-robot-reach/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-robot-reach.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/robot-reach.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-robot-reach/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-gripper-contact",
+      "title": "Run a toy gripper contact experiment",
+      "summary": "A generic two-finger gripper, one box and three friction trials. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Physics & simulation",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://mujoco.readthedocs.io/en/stable/overview.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-gripper-contact/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-gripper-contact.json",
+      "spatial": {
+        "category": "simulation",
+        "categoryLabel": "Physics & simulation",
+        "tools": [
+          "Blender",
+          "MuJoCo"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/gripper-contact.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-gripper-contact/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-floorplan-room",
+      "title": "Build a room from a dimensioned floor plan",
+      "summary": "An owned plan, one 4 m reference wall and a 2.7 m ceiling. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-floorplan-room/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-floorplan-room.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/floorplan-room.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-floorplan-room/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-daylight-comparison",
+      "title": "Compare two daylight design options",
+      "summary": "One room, two window options and a fixed sun direction/time label. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/lights/light_object.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-daylight-comparison/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-daylight-comparison.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/daylight-comparison.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-daylight-comparison/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-retail-layout",
+      "title": "Compare shelf layouts with product proxies",
+      "summary": "A 10 by 8 m shop, four shelves and a marked circulation route. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/InstancedMesh.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-retail-layout/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-retail-layout.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/retail-layout.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-retail-layout/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-museum-story-room",
+      "title": "Compose a museum room around a narrative",
+      "summary": "Six owned objects, three story chapters and one existing room runtime. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/cameras.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-museum-story-room/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-museum-story-room.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/museum-story-room.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-museum-story-room/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-product-configurator",
+      "title": "Build a finish-and-part product configurator",
+      "summary": "One generic lamp, two shades and three material finishes. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/GLTFLoader.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-product-configurator/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-product-configurator.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/product-configurator.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-product-configurator/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-packshot-turntable",
+      "title": "Plan a consistent product turntable",
+      "summary": "One approved product, 36 views and a fixed 50 mm perspective camera. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/cameras.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-packshot-turntable/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-packshot-turntable.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/packshot-turntable.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-packshot-turntable/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-assembly-clearance",
+      "title": "Show an assembly clearance envelope",
+      "summary": "Two generic mating parts and a 2 mm proposed clearance envelope. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/modifiers/introduction.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-assembly-clearance/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-assembly-clearance.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/assembly-clearance.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-assembly-clearance/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-acoustic-zones",
+      "title": "Visualize an acoustic planning hypothesis",
+      "summary": "A room, two speaker markers and hand-authored quiet/focus zones. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-acoustic-zones/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-acoustic-zones.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/acoustic-zones.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-acoustic-zones/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-accessibility-route",
+      "title": "Review a route with dimensional proxies",
+      "summary": "A room, user-supplied route requirements and a turning-envelope proxy. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-accessibility-route/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-accessibility-route.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/accessibility-route.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-accessibility-route/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-camera-match",
+      "title": "Match a camera to a reference photograph",
+      "summary": "One owned photograph, visible parallel lines and a known dimension. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Architecture & products",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/cameras.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-camera-match/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-camera-match.json",
+      "spatial": {
+        "category": "visualization",
+        "categoryLabel": "Architecture & products",
+        "tools": [
+          "Blender",
+          "Three.js"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/camera-match.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-camera-match/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-solar-ephemeris",
+      "title": "Visualize Solar System positions from ephemerides",
+      "summary": "Sun, Earth and Mars vectors for one named UTC interval with an explicit center/frame. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://ssd.jpl.nasa.gov/horizons/manual.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-solar-ephemeris/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-solar-ephemeris.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/solar-ephemeris.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-solar-ephemeris/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-two-body-orbit",
+      "title": "Compare an N-body orbit with a two-body reference",
+      "summary": "A synthetic star/planet pair in declared units, one orbital period and two time steps. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://rebound.hanno-rein.de/"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-two-body-orbit/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-two-body-orbit.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/two-body-orbit.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-two-body-orbit/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-star-catalog",
+      "title": "Build a star field from a cited catalog sample",
+      "summary": "A licensed catalog sample with RA, Dec, distance units and a stated epoch. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.astropy.org/en/stable/coordinates/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-star-catalog/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-star-catalog.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/star-catalog.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-star-catalog/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-galactic-distance",
+      "title": "Explain astronomical distance scales without distortion",
+      "summary": "A small cited distance table from planets through nearby galaxies. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.astropy.org/en/stable/coordinates/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-galactic-distance/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-galactic-distance.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/galactic-distance.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-galactic-distance/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-exoplanet-transit",
+      "title": "Animate a synthetic exoplanet transit",
+      "summary": "A toy star of radius 1, planet radius 0.1 and a central transit path. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://rebound.hanno-rein.de/"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-exoplanet-transit/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-exoplanet-transit.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/exoplanet-transit.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-exoplanet-transit/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-asteroid-trajectory",
+      "title": "Compare an asteroid trajectory with source dates",
+      "summary": "One Horizons asteroid target, seven dated samples and an explicit observer/center. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://ssd.jpl.nasa.gov/horizons/manual.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-asteroid-trajectory/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-asteroid-trajectory.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/asteroid-trajectory.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-asteroid-trajectory/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-earth-terrain",
+      "title": "Place a terrain tile on a geospatial globe",
+      "summary": "One licensed georeferenced terrain/model tile, CRS and height datum metadata. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://cesium.com/learn/3d-tiling/ion-tile-3d-models/"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-earth-terrain/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-earth-terrain.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/earth-terrain.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-earth-terrain/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-satellite-groundtrack",
+      "title": "Visualize a dated satellite ground track",
+      "summary": "A supplied validated state-vector series, timestamps and Earth orientation assumptions. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.astropy.org/en/stable/coordinates/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-satellite-groundtrack/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-satellite-groundtrack.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/satellite-groundtrack.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-satellite-groundtrack/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-black-hole-illustration",
+      "title": "Create a labelled black-hole concept illustration",
+      "summary": "An artistic accretion disk, a central mask and a caption stating not ray-traced GR. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-black-hole-illustration/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-black-hole-illustration.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/black-hole-illustration.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-black-hole-illustration/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-cosmic-web",
+      "title": "Visualize a provided cosmological simulation snapshot",
+      "summary": "A licensed snapshot extract with x/y/z, units, periodic-box size and a maximum 10000-point preview. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Space & scientific data",
+        "Blender",
+        "Skills",
+        "Scientific visualization"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/Points.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-cosmic-web/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cosmic-web.json",
+      "spatial": {
+        "category": "space",
+        "categoryLabel": "Space & scientific data",
+        "tools": [
+          "NASA",
+          "Astropy",
+          "REBOUND → Blender or web"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/cosmic-web.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cosmic-web/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-glb-viewer",
+      "title": "Load a reviewed GLB in an existing web viewer",
+      "summary": "One self-contained licensed GLB and the project's existing Three.js loader. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/GLTFLoader.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-glb-viewer/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-glb-viewer.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/glb-viewer.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-glb-viewer/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-instanced-props",
+      "title": "Instance repeated static props efficiently",
+      "summary": "One static bench mesh and a table of 100 transforms. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/InstancedMesh.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-instanced-props/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-instanced-props.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/instanced-props.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-instanced-props/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-object-picking",
+      "title": "Add semantic object selection",
+      "summary": "Three meshes with stable IDs and a details panel. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/Raycaster.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-object-picking/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-object-picking.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/object-picking.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-object-picking/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-ar-placement",
+      "title": "Prototype surface placement in supported AR",
+      "summary": "One metre-scaled model and an AR-capable device/browser. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/manual/pages/webxr-basics.html",
+        "https://immersive-web.github.io/hit-test/"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-ar-placement/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-ar-placement.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/ar-placement.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-ar-placement/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-vr-room",
+      "title": "Walk through an existing room in VR",
+      "summary": "One reviewed room, two controller inputs and an XR-capable device. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/manual/pages/webxr-basics.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-vr-room/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-vr-room.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/vr-room.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-vr-room/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-first-person-room",
+      "title": "Add a bounded first-person room tour",
+      "summary": "An existing room, simple collision and a player capsule. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-first-person-room/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-first-person-room.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/first-person-room.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-first-person-room/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-point-cloud-view",
+      "title": "Display a bounded measured point cloud",
+      "summary": "A licensed 10000-point sample with XYZ units and optional color. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/Points.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-point-cloud-view/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-point-cloud-view.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/point-cloud-view.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-point-cloud-view/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-section-view",
+      "title": "Create a reversible section cut",
+      "summary": "One building mesh and a horizontal cut height of 1.2 m. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/Material.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-section-view/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-section-view.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/section-view.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-section-view/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-annotation-tour",
+      "title": "Attach durable annotations to model parts",
+      "summary": "Five semantic part IDs and authored explanatory text. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/GLTFLoader.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-annotation-tour/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-annotation-tour.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/annotation-tour.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-annotation-tour/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-panorama-tour",
+      "title": "Connect licensed panoramas into a simple tour",
+      "summary": "Three owned 360 panoramas, room names and transition hotspots. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "Web, XR & interaction",
+        "Blender",
+        "Skills"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/cameras.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-panorama-tour/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-panorama-tour.json",
+      "spatial": {
+        "category": "web-xr",
+        "categoryLabel": "Web, XR & interaction",
+        "tools": [
+          "Three.js",
+          "WebXR"
+        ],
+        "complexity": "Intermediate",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/panorama-tour.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-panorama-tour/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-mcp-connection-audit",
+      "title": "Inspect an existing Blender MCP connection",
+      "summary": "One installed MCP entry, its exact package/add-on versions and an empty test scene. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://github.com/ahujasid/mcp-for-blender"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-mcp-connection-audit/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-mcp-connection-audit.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/mcp-connection-audit.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-mcp-connection-audit/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-asset-inventory",
+      "title": "Discover reusable assets through read-only MCP",
+      "summary": "An existing authorized spatial catalog and an explicit project scope. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://code.claude.com/docs/en/mcp"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-asset-inventory/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-asset-inventory.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/asset-inventory.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-asset-inventory/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-parameter-contract",
+      "title": "Turn an LLM design brief into bounded parameters",
+      "summary": "A generic prop generator and width 0.4–0.8 m, height 0.3–0.6 m ranges. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/api/4.5/info_quickstart.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-parameter-contract/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-parameter-contract.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/parameter-contract.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-parameter-contract/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-seeded-variants",
+      "title": "Make procedural variants reproducible",
+      "summary": "One existing generator, seeds 41/42/43 and a fixed parameter JSON. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-seeded-variants/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-seeded-variants.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/seeded-variants.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-seeded-variants/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-export-validator",
+      "title": "Validate an export before engine handoff",
+      "summary": "One GLB, its source identity and the existing project's Khronos validator. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://github.com/KhronosGroup/glTF-Validator"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-export-validator/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-export-validator.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/export-validator.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-export-validator/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-texture-budget",
+      "title": "Compare compressed texture delivery candidates",
+      "summary": "One reviewed material set and baseline/512/1024 px candidates. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://threejs.org/docs/pages/KTX2Loader.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-texture-budget/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-texture-budget.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/texture-budget.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-texture-budget/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-visual-regression",
+      "title": "Create a source-bound visual comparison",
+      "summary": "One model hash, fixed camera, viewport, lighting and two material candidates. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/render/cameras.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-visual-regression/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-visual-regression.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/visual-regression.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-visual-regression/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-production-receipt",
+      "title": "Record a reusable 3D production receipt",
+      "summary": "One completed local candidate export and its measured file/dimension data. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/api/4.5/info_quickstart.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-production-receipt/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-production-receipt.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/production-receipt.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-production-receipt/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-llm-knowledge-retrieval",
+      "title": "Retrieve one 3D procedure without loading the whole catalog",
+      "summary": "Sintra's public compact knowledge index and an authorized HTTP-capable client. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-llm-knowledge-retrieval/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-llm-knowledge-retrieval.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/llm-knowledge-retrieval.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-llm-knowledge-retrieval/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-asset-rights",
+      "title": "Keep provenance and rights attached to a 3D derivative",
+      "summary": "One approved source asset, its license text and a derived export. An LLM-assisted recipe with a concrete practice case, visual procedure and review gates.",
+      "kind": "workflow",
+      "tags": [
+        "3D",
+        "LLMs, MCP & production",
+        "Blender",
+        "Skills",
+        "MCP"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "example-workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/manual/en/4.5/addons/import_export/scene_gltf2.html"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-asset-rights/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-asset-rights.json",
+      "spatial": {
+        "category": "production",
+        "categoryLabel": "LLMs, MCP & production",
+        "tools": [
+          "Claude Code",
+          "Codex",
+          "existing Studio"
+        ],
+        "complexity": "Advanced",
+        "diagramUrl": "https://joaoccaldas.github.io/sintra-ai/visuals/3d/asset-rights.svg"
+      },
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-asset-rights/SKILL.md",
+      "related": [
+        "3d-mcp-connections",
+        "3d-start-here"
+      ]
+    },
+    {
+      "id": "3d-start-here",
+      "title": "Choose an LLM-assisted 3D workflow",
+      "summary": "Start with a bounded object, room, motion or scientific dataset; choose a documented tool path and judge the actual output.",
+      "kind": "capability",
+      "tags": [
+        "3D",
+        "Blender",
+        "MCP",
+        "Connectors"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "primary-documentation",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://docs.blender.org/api/4.5/info_quickstart.html",
+        "https://docs.blender.org/manual/en/4.5/modeling/geometry_nodes/index.html",
+        "https://docs.blender.org/manual/en/4.5/addons/import_export/scene_gltf2.html",
+        "https://docs.astropy.org/en/stable/coordinates/index.html",
+        "https://rebound.hanno-rein.de/",
+        "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-start-here/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-start-here.json",
+      "related": [
+        "3d-mcp-connections",
+        "3d-modular-corridor",
+        "3d-solar-ephemeris",
+        "3d-parametric-chair"
+      ]
+    },
+    {
+      "id": "3d-mcp-connections",
+      "title": "Choose and inspect 3D MCP connections",
+      "summary": "Compare three documented community integrations, existing read-only Studio discovery and the script-only alternative. Nothing here installs a server.",
+      "kind": "capability",
+      "tags": [
+        "3D",
+        "Blender",
+        "MCP",
+        "Connectors"
+      ],
+      "audiences": [
+        "personal",
+        "corporate",
+        "developer"
+      ],
+      "evidenceLevel": "primary-documentation",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "sourceUrls": [
+        "https://github.com/ahujasid/mcp-for-blender",
+        "https://github.com/Coding-Solo/godot-mcp",
+        "https://github.com/CoplayDev/unity-mcp",
+        "https://code.claude.com/docs/en/mcp",
+        "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+      ],
+      "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/3d-mcp-connections/",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-mcp-connections.json",
+      "related": [
+        "3d-mcp-connection-audit",
+        "3d-asset-inventory",
+        "3d-export-validator",
+        "3d-start-here"
       ]
     }
   ]

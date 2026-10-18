@@ -2,6 +2,7 @@
  * Review dates are editorial events, never advanced by a build or feed refresh.
  * Workflow steps are Sintra examples; a source check is not an integration test.
  */
+import { SPATIAL_KNOWLEDGE } from "./spatialKnowledge";
 import { ASSISTANT_KNOWLEDGE } from "./assistantKnowledge";
 import { OFFICE_KNOWLEDGE, EARNINGS_REPLICATION } from "./officeKnowledge";
 
@@ -50,6 +51,13 @@ export interface KnowledgeRecord {
   executionStatus: "not-run-in-sintra" | "synthetic-calculation-tested";
   workflowResource?: string;
   replication?: ReplicationGuide;
+  spatial?: {
+    category: string;
+    categoryLabel: string;
+    tools: string[];
+    complexity: "Intermediate" | "Advanced";
+    diagram: { url: string; alt: string; caption: string };
+  };
   news?: { publishedAt: string; provider: string; providerColor: string };
 }
 
@@ -181,18 +189,18 @@ export const KNOWLEDGE: KnowledgeRecord[] = [
   },
   ...OFFICE_KNOWLEDGE,
   ...ASSISTANT_KNOWLEDGE,
+  ...SPATIAL_KNOWLEDGE,
 ];
 
-export const KNOWLEDGE_KIND_LABELS: Record<KnowledgeKind, string> = {
-  capability: "Capability guide", announcement: "Provider announcement", workflow: "Example workflow", "case-study": "Customer story",
-};
+export { KNOWLEDGE_KIND_LABELS, KNOWLEDGE_AUDIENCES, KNOWLEDGE_TOPICS } from "./knowledgeMeta";
 
-export const KNOWLEDGE_AUDIENCES = { personal: "Personal", corporate: "Corporate", developer: "Developer" } as const;
-export const KNOWLEDGE_TOPICS = ["ChatGPT", "Claude Code", "Claude Cowork", "Claude", "Microsoft 365", "Excel", "PowerPoint", "Power BI", "Finance", "Skills", "Plugins", "Connectors", "Cloud", "MCP", "Anthropic"];
+export function knowledgeSearchText(item: KnowledgeRecord) {
+  return [item.title, item.summary, ...item.tags, ...(item.tips ?? []), ...(item.integrations?.map(tool => tool.name) ?? []), ...item.facts.map(f => f.text), ...item.steps].join(" ").toLowerCase();
+}
 
 export function searchKnowledge(query: string, tag = "all", kind = "all", audience = "all", skillsOnly = false) {
   const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
   return KNOWLEDGE.filter(item => (tag === "all" || item.tags.includes(tag)) && (kind === "all" || item.kind === kind) &&
     (audience === "all" || item.audiences?.some(value => value === audience)) && (!skillsOnly || !!item.replication) &&
-    terms.every(term => [item.title, item.summary, ...item.tags, ...(item.tips ?? []), ...(item.integrations?.map(tool => tool.name) ?? []), ...item.facts.map(f => f.text), ...item.steps].join(" ").toLowerCase().includes(term)));
+    terms.every(term => knowledgeSearchText(item).includes(term)));
 }
