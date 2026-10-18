@@ -33,6 +33,7 @@ import {
   X,
 } from "lucide-react";
 import TesseractMark from "./TesseractMark";
+import { useFocusTrap } from "@/lib/hooks";
 import { useSidebar } from "@/context/SidebarContext";
 import { useTheme, type Theme } from "@/context/ThemeContext";
 import { useLanguage } from "@/context/LanguageContext";
@@ -122,12 +123,13 @@ function Tip({ label, children }: { label: string; children: React.ReactNode }) 
   );
 }
 
-function NavLink({ item, active, label }: { item: NavItem; active: boolean; label: string }) {
+function NavLink({ item, active, label, iconOnly = false }: { item: NavItem; active: boolean; label: string; iconOnly?: boolean }) {
   const { Icon } = item;
   return (
     <a
       href={item.href}
       aria-current={active ? "page" : undefined}
+      aria-label={iconOnly ? label : undefined}
       className={[
         "flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[13px] transition-all duration-150 group relative border",
         active
@@ -136,8 +138,8 @@ function NavLink({ item, active, label }: { item: NavItem; active: boolean; labe
       ].join(" ")}
     >
       <Icon size={15} className={active ? "text-violet-bright" : "text-fg-4 group-hover:text-fg-2 transition-colors"} />
-      {label && <span className="flex-1 truncate leading-none">{label}</span>}
-      {item.count !== undefined && <span className="font-mono text-[10px] text-fg-4 shrink-0">{item.count}</span>}
+      {!iconOnly && <span className="flex-1 truncate leading-none">{label}</span>}
+      {!iconOnly && item.count !== undefined && <span className="font-mono text-[10px] text-fg-4 shrink-0">{item.count}</span>}
     </a>
   );
 }
@@ -159,6 +161,8 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
       <div className="px-2 pt-3 pb-2">
         <a
           href={BASE_PATH + "/"}
+          aria-label={t.side_home}
+          aria-current={activeKey === "" ? "page" : undefined}
           className={[
             "flex items-center gap-2 rounded-xl px-2 py-2.5 text-fg-2 hover:text-fg-1 hover:bg-white/[0.05] transition-colors",
             activeKey === "" ? "bg-violet/[0.14] text-violet-bright" : "",
@@ -177,6 +181,7 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
               <button
                 type="button"
                 onClick={() => setOpenGroups(prev => ({ ...prev, [group.id]: !prev[group.id] }))}
+                aria-expanded={openGroups[group.id]}
                 className="w-full flex items-center justify-between px-2 py-1.5 font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 hover:text-fg-2 transition-colors"
               >
                 {t[group.labelKey] as string}
@@ -198,7 +203,7 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
                       <div key={item.href} onClick={onNavigate}>
                         {collapsed ? (
                           <Tip label={label}>
-                            <NavLink item={item} active={activeKey === item.pathKey} label="" />
+                            <NavLink item={item} active={activeKey === item.pathKey} label={label} iconOnly />
                           </Tip>
                         ) : (
                           <NavLink item={item} active={activeKey === item.pathKey} label={label} />
@@ -223,6 +228,7 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
                 type="button"
                 onClick={() => setTheme(id)}
                 aria-label={t.theme_switch(label)}
+                aria-pressed={theme === id}
                 className={[
                   "flex items-center justify-center h-8 rounded-lg border transition-colors",
                   theme === id
@@ -243,6 +249,7 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
 export default function SidebarNav() {
   const { collapsed, toggleCollapsed, mobileOpen, setMobileOpen } = useSidebar();
   const { t } = useLanguage();
+  const drawerRef = useFocusTrap<HTMLElement>(mobileOpen);
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -257,20 +264,20 @@ export default function SidebarNav() {
     <>
       <aside
         className={[
-          "hidden lg:flex fixed left-0 top-0 bottom-0 z-40 flex-col border-r border-hairline bg-abyss/92 backdrop-blur-xl transition-[width] duration-200",
+          "sidebar-rail hidden lg:flex fixed left-0 top-0 bottom-0 z-40 flex-col border-r border-hairline bg-abyss/92 backdrop-blur-xl transition-[width] duration-200",
           collapsed ? "w-[var(--sidebar-w-collapsed)]" : "w-[var(--sidebar-w)]",
         ].join(" ")}
         style={{ width: collapsed ? "var(--sidebar-w-collapsed)" : "var(--sidebar-w)" }}
       >
         <div className="h-16 flex items-center gap-2 px-3 border-b border-hairline">
-          <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0">
-            <TesseractMark size={28} />
-            {!collapsed && (
+          {!collapsed && (
+            <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0">
+              <TesseractMark size={28} />
               <span className="font-serif text-[18px] leading-none text-fg-1 truncate">
                 Sintra <em className="italic text-violet-bright">AI</em>
               </span>
-            )}
-          </a>
+            </a>
+          )}
           <button
             type="button"
             onClick={toggleCollapsed}
@@ -294,9 +301,13 @@ export default function SidebarNav() {
               onClick={() => setMobileOpen(false)}
             />
             <motion.aside
+              ref={drawerRef}
+              role="dialog"
+              aria-modal="true"
+              aria-label={t.hdr_open_nav}
               initial={{ x: -320 }} animate={{ x: 0 }} exit={{ x: -320 }}
               transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed left-0 top-0 bottom-0 z-[60] w-[min(86vw,320px)] flex flex-col border-r border-hairline bg-abyss shadow-2xl lg:hidden"
+              className="sidebar-rail fixed left-0 top-0 bottom-0 z-[60] w-[min(86vw,320px)] flex flex-col border-r border-hairline bg-abyss shadow-2xl lg:hidden"
             >
               <div className="h-16 flex items-center gap-2 px-4 border-b border-hairline">
                 <TesseractMark size={28} />

@@ -8,8 +8,8 @@
  *   1. Live feed schema — every item has id/title/https-url/ISO-date/source.
  *   2. Live feed freshness — the snapshot isn't empty and isn't stale.
  *   3. Weekly picks freshness — THIS_WEEK.weekOf hasn't fallen behind the news.
- *   4. Link hygiene — internal hrefs use BASE_PATH, never a hardcoded
- *      "/sintra-ai/" prefix (breaks in dev) or a bare "/path" (breaks on Pages).
+ *   4. Editorial links stay raw; all consumers resolve them with withBasePath.
+ *      Hardcoded production prefixes break the raw-path contract.
  *
  * Exit code 1 on any ERROR; WARN is advisory. Tune thresholds via the CONFIG
  * block below.
@@ -94,9 +94,7 @@ for (const relFile of ["src/lib/featuredData.ts"]) {
     const hrefs = [...src.matchAll(/href:\s*["']([^"']+)["']/g)].map((m) => m[1]);
     for (const h of hrefs) {
       if (h.startsWith("/sintra-ai/")) {
-        fail(`${relFile}: hardcoded base path "${h}" — use \`\${BASE_PATH}${h.replace("/sintra-ai", "")}\` so it works in dev too`);
-      } else if (h.startsWith("/") && !h.startsWith("//")) {
-        warn(`${relFile}: bare internal href "${h}" — prefix with \${BASE_PATH} for GitHub Pages`);
+        fail(`${relFile}: hardcoded base path "${h}" — keep raw editorial paths and resolve with withBasePath`);
       }
     }
     if (!errors.length) pass(`${relFile} link hygiene clean`);

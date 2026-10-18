@@ -123,7 +123,7 @@ export default function CommandPalette({ open, onClose }: Props) {
           >
             <div
               ref={dialogRef}
-              className="rounded-2xl border border-violet/20 bg-[#0C0E1A] shadow-[0_24px_80px_rgba(0,0,0,0.7),0_0_0_1px_rgba(159,140,255,0.08)] overflow-hidden"
+              className="rounded-2xl border border-violet/20 bg-abyss shadow-[0_24px_80px_rgba(0,0,0,0.7),0_0_0_1px_rgba(159,140,255,0.08)] overflow-hidden"
             >
               <div className="flex items-center gap-3 px-4 py-3.5 border-b border-hairline">
                 <Search size={15} className="text-fg-4 shrink-0" aria-hidden="true" />
@@ -134,7 +134,7 @@ export default function CommandPalette({ open, onClose }: Props) {
                   onChange={event => setQuery(event.target.value)}
                   placeholder="Search prompts, tools, concepts, news…"
                   aria-label="Search prompts, tools, concepts and news"
-                  className="flex-1 bg-transparent font-mono text-[14px] text-fg-1 placeholder:text-fg-4 outline-none"
+                  className="min-w-0 flex-1 bg-transparent font-mono text-[14px] text-fg-1 placeholder:text-fg-4 outline-none"
                   autoComplete="off"
                   spellCheck={false}
                 />

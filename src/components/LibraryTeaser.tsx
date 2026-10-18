@@ -46,7 +46,7 @@ export default function LibraryTeaser() {
             href={`${BASE_PATH}/prompts/${item.slug}/`}
             custom={i} variants={fade} initial="hidden" animate="show"
             whileHover={{ y: -1 }}
-            className="group flex flex-col gap-3 p-4 rounded-xl border border-white/[0.07] bg-white/[0.015] hover:bg-white/[0.04] hover:border-white/[0.14] transition-all duration-200"
+            className="surface-panel group flex flex-col gap-3 p-4 rounded-xl border border-white/[0.07] bg-white/[0.015] hover:bg-white/[0.04] hover:border-white/[0.14] transition-all duration-200"
           >
             <div className="flex items-center justify-between gap-2">
               <span className="font-mono text-[9px] tracking-[0.14em] uppercase text-fg-4 truncate">{item.category}</span>
@@ -55,7 +55,7 @@ export default function LibraryTeaser() {
                 {item.difficulty}
               </span>
             </div>
-            <p className="font-serif text-[14px] text-fg-1 leading-[1.35] group-hover:text-white transition-colors line-clamp-2">
+            <p className="font-serif text-[14px] text-fg-1 leading-[1.35] group-hover:text-violet-bright transition-colors line-clamp-2">
               {item.title}
             </p>
             <p className="font-mono text-[10px] text-fg-4 leading-[1.5] line-clamp-2">{item.outcome}</p>

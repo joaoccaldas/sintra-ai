@@ -53,7 +53,7 @@ export default function PromptPageClient({ item, catColor }: Props) {
 
   return (
     <div className="mb-10">
-      <div className="flex items-center justify-between mb-3">
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
         <h2 className="eyebrow">The prompt</h2>
         <div className="flex items-center gap-2">
           <button
@@ -89,7 +89,7 @@ export default function PromptPageClient({ item, catColor }: Props) {
       </div>
 
       {/* Primary CTA */}
-      <div className="flex items-center gap-3 mt-4">
+      <div className="flex flex-wrap items-center gap-3 mt-4">
         <a
           href={getLaunchUrl(item.best_llm, item.prompt)}
           target="_blank"

@@ -33,9 +33,10 @@ export const LIVE_CATEGORIES: string[] = CATEGORY_ORDER.filter((c) =>
 );
 
 /** Relative "3h ago" / "2d ago" label for a feed item. */
-export function liveAge(iso: string | null): string {
+export function liveAge(iso: string | null, now = Date.parse(LIVE_FEED.generatedAt)): string {
   if (!iso) return "";
-  const ms = Date.now() - new Date(iso).getTime();
+  const ms = now - new Date(iso).getTime();
+  if (!Number.isFinite(ms)) return "";
   const mins = Math.floor(ms / 60000);
   if (mins < 60) return `${Math.max(1, mins)}m ago`;
   const hrs = Math.floor(mins / 60);
@@ -46,6 +47,6 @@ export function liveAge(iso: string | null): string {
 }
 
 /** Feed freshness in hours, for the "updated Xh ago" badge. */
-export function liveFeedAgeHours(): number {
-  return Math.floor((Date.now() - new Date(LIVE_FEED.generatedAt).getTime()) / 3.6e6);
+export function liveFeedAgeHours(now = Date.parse(LIVE_FEED.generatedAt)): number {
+  return Math.max(0, Math.floor((now - Date.parse(LIVE_FEED.generatedAt)) / 3.6e6));
 }

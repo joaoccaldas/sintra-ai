@@ -1,5 +1,7 @@
 "use client";
 
+import { useFeedClock } from "@/hooks/useFeedClock";
+
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -7,7 +9,7 @@ import {
   Zap, BookOpen, Wrench, Newspaper, Lightbulb, FlaskConical,
   Rss, Play, Radio, Workflow,
 } from "lucide-react";
-import { BASE_PATH } from "@/lib/constants";
+import { BASE_PATH, withBasePath } from "@/lib/constants";
 import { useLanguage } from "@/context/LanguageContext";
 import type { Translations } from "@/lib/i18n";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
@@ -39,7 +41,7 @@ function SectionHead({
 }) {
   const { t } = useLanguage();
   return (
-    <div className="flex items-center gap-3 mb-5">
+    <div className="sintra-week-heading flex items-center gap-3 mb-5">
       <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
       <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{label}</span>
       {count !== undefined && (
@@ -179,8 +181,7 @@ function pickLabel(t: Translations, type: FeaturedItemType): string {
 function PickCard({ item, index }: { item: FeaturedItem; index: number }) {
   const { t } = useLanguage();
   const Icon = PICK_ICON[item.type];
-  const href = item.href.startsWith("http") || item.href.startsWith("#")
-    ? item.href : `${BASE_PATH}${item.href}`;
+  const href = withBasePath(item.href);
   const isExternal = item.href.startsWith("http");
 
   return (
@@ -263,15 +264,15 @@ type WeekTab = "picks" | "news";
 
 function ThisWeekHub() {
   const { t } = useLanguage();
-  const [tab, setTab] = useState<WeekTab>("picks");
+  const [tab, setTab] = useState<WeekTab>("news");
 
   return (
     <div className="mb-16">
-      <div className="flex items-center gap-3 mb-5">
+      <div className="sintra-week-heading flex items-center gap-3 mb-5">
         <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
         <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{t.home_this_week}</span>
-        <span className="font-mono text-[10px] text-fg-4 opacity-40">· {THIS_WEEK.weekOf}</span>
-        <span className="font-mono text-[10px] text-emerald-400 opacity-80 hidden sm:inline">
+        {tab === "picks" && <span className="font-mono text-[10px] text-fg-4">· {THIS_WEEK.weekOf}</span>}
+        <span className="font-mono text-[10px] text-cyan-ice opacity-80 hidden sm:inline">
           · {t.home_news_updated(getLatestNewsDate())}
         </span>
         <div className="flex gap-0.5 p-0.5 rounded-lg bg-white/[0.03] border border-hairline ml-1">
@@ -325,6 +326,7 @@ function ThisWeekHub() {
 
 /* ── 3. Live feed strip — freshest posts from primary sources ───────────── */
 function LiveStrip() {
+  const now = useFeedClock();
   const { t } = useLanguage();
   const items = LIVE_ITEMS.slice(0, 5);
   if (!items.length) return null;
@@ -336,7 +338,7 @@ function LiveStrip() {
         href={`${BASE_PATH}/live/`}
         linkLabel={t.home_open_live}
       />
-      <div className="rounded-2xl border border-white/[0.06] bg-white/[0.015] divide-y divide-white/[0.05] overflow-hidden">
+      <div className="surface-panel rounded-2xl border border-white/[0.06] bg-white/[0.015] divide-y divide-white/[0.05] overflow-hidden">
         {items.map((it, i) => (
           <motion.a
             key={it.id}
@@ -361,7 +363,7 @@ function LiveStrip() {
             <span className="flex-1 text-[13px] text-fg-2 group-hover:text-fg-1 transition-colors truncate">
               {it.title}
             </span>
-            <span className="font-mono text-[10px] text-fg-4 shrink-0">{liveAge(it.publishedAt)}</span>
+            <span className="font-mono text-[10px] text-fg-4 shrink-0">{liveAge(it.publishedAt, now)}</span>
           </motion.a>
         ))}
       </div>
@@ -422,7 +424,7 @@ function NewsletterCTA() {
 /* ── Main export ──────────────────────────────────────────────────────────── */
 export default function ContentNav() {
   return (
-    <section id="explore" className="w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
+    <section id="explore" className="sintra-content w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
       {/* 1 — clear operating modes (the one on-page IA recap; the sidebar is
              the persistent one) */}
       <IntentNav />

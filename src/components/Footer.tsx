@@ -15,7 +15,7 @@ const NAV_COLS: NavCol[] = [
   {
     head: "footer_col_discover",
     links: [
-      ["footer_link_use_cases", "#explore"],
+      ["footer_link_use_cases", `${BASE_PATH}/library/`],
       ["footer_link_collections", `${BASE_PATH}/collections/`],
       ["footer_link_tools", `${BASE_PATH}/tools/`],
       ["footer_link_news", `${BASE_PATH}/news/`],
@@ -110,7 +110,7 @@ export default function Footer() {
     <footer className="border-t border-violet/[0.12] pt-14 pb-8 bg-abyss">
       <div className="max-w-[1200px] mx-auto px-6 md:px-8">
         <NewsletterCapture />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-10" style={{ gridTemplateColumns: "2fr 1fr 1fr 1fr" }}>
+        <div className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8 pb-10">
           <div className="col-span-2 md:col-span-1 flex flex-col gap-2.5">
             <a href={`${BASE_PATH}/`} className="flex items-center gap-2.5 text-violet-bright">
               <TesseractMark size={18} />

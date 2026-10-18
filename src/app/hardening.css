@@ -1,8 +1,8 @@
 /* Cross-theme safeguards that should remain small, explicit, and testable. */
 
 [data-theme="light"] {
-  /* 5.4:1 against the light page background; the previous value was ~4.0:1. */
-  --fg-4-rgb: 98 96 126;
+  /* Muted ink remains readable on KONA sand and paper surfaces. */
+  --fg-4-rgb: 95 106 114;
 }
 
 :where(a, button, input, select, textarea, [role="button"]):focus-visible {
@@ -29,4 +29,32 @@
   [data-theme="light"] {
     --hairline-rgb: 154 150 138;
   }
+}
+
+/* Shared material and control rhythm, adapted to Sintra's existing components. */
+.sintra-header {
+  background: color-mix(in srgb, var(--abyss) 94%, transparent);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--hairline);
+}
+.sintra-header button { min-height: var(--brand-touch); }
+.sintra-header button[aria-label] { min-width: var(--brand-touch); }
+.sidebar-rail nav a { min-height: 44px; }
+.sidebar-rail nav button { min-height: 36px; }
+.sidebar-rail button[aria-pressed] { min-height: 44px; }
+.sintra-hero { min-height: min(850px, 100svh); padding-top: 128px; padding-bottom: 104px; }
+.sintra-hero-scene { opacity: .22; }
+.sintra-hero-stats > div { background: var(--abyss); border: 1px solid var(--hairline); border-radius: var(--brand-control-radius); }
+.sintra-hero-stats p:last-child { line-height: 1.5; letter-spacing: .06em; }
+.sintra-content { border-top: 1px solid var(--hairline); }
+.sintra-week-heading { flex-wrap: wrap; row-gap: 12px; }
+.sintra-week-heading button { min-height: 40px; }
+.surface-panel { background: var(--abyss); border-color: var(--hairline); }
+@media (max-width: 640px) {
+  .sintra-hero { min-height: auto; padding: 112px 20px 88px; }
+  .sintra-hero h1 { font-size: clamp(48px, 12vw, 72px); }
+  .sintra-hero .eyebrow { max-width: 290px; font-size: 10px; line-height: 1.8; }
+  .sintra-hero-scene { opacity: .12; }
+  .sintra-hero-stats > div { padding: 12px 6px; }
+  .sintra-hero-stats p:last-child { font-size: 9px; }
 }

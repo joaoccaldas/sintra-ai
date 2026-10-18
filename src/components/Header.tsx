@@ -72,7 +72,7 @@ export default function Header({ total: _total }: Props) {
 
       <header
         className={[
-          "fixed top-0 right-0 z-30 h-16 flex items-center transition-all duration-200",
+          "sintra-header fixed top-0 right-0 z-30 h-16 flex items-center transition-all duration-200",
           "left-0 lg:left-[var(--sidebar-w)]",
           scrolled
             ? "bg-abyss/80 backdrop-blur-[14px] border-b border-violet/[0.10]"
@@ -111,12 +111,12 @@ export default function Header({ total: _total }: Props) {
           <button
             type="button"
             onClick={() => setPaletteOpen(true)}
-            className="hidden sm:flex items-center gap-2 h-9 px-3 rounded-lg border border-hairline text-fg-4 hover:text-fg-2 hover:border-violet/30 transition-colors"
+            className="flex items-center gap-2 h-9 px-3 rounded-lg border border-hairline text-fg-4 hover:text-fg-2 hover:border-violet/30 transition-colors"
             aria-label={t.hdr_open_search}
           >
             <Search size={14} />
-            <span className="font-mono text-[11px]">{t.hdr_search}</span>
-            <kbd className="font-mono text-[9px] text-fg-4 border border-hairline rounded px-1 py-0.5">⌘K</kbd>
+            <span className="hidden sm:inline font-mono text-[11px]">{t.hdr_search}</span>
+            <kbd className="hidden sm:inline font-mono text-[9px] text-fg-4 border border-hairline rounded px-1 py-0.5">⌘K</kbd>
           </button>
 
           <button

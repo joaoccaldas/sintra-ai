@@ -7,7 +7,7 @@
     "aggregate-feed": "node scripts/aggregate-live-feed.mjs",
     "audit:freshness": "node scripts/audit-freshness.mjs",
     "prebuild": "node scripts/aggregate-live-feed.mjs && npx tsx scripts/generate-rss.ts && npx tsx scripts/generate-use-cases-count.ts && npx tsx scripts/generate-api-json.ts && npx tsx scripts/generate-llms-txt.ts",
-    "build": "next build",
+    "build": "next build && node scripts/validate-export.mjs",
     "start": "next start",
     "update-news": "node scripts/update-news.mjs",
     "export:obsidian": "tsx scripts/export-obsidian.ts",
@@ -17,7 +17,7 @@
     "validate-content": "tsx scripts/validate-content.ts && tsx scripts/validate-latest-news.ts",
     "test": "tsx --test scripts/tests/*.test.ts",
     "audit:static": "npm run validate-data && npm run validate-content && npm run audit:freshness && npm test && npm run typecheck",
-    "check": "npm run audit:static && npm run build"
+    "check": "npm run prebuild && npm run audit:static && npm run build --ignore-scripts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 import { USE_CASES } from "@/lib/data";
 
-const FOCUSABLE = 'a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])';
+import { useFocusTrap } from "@/lib/hooks";
 
 interface Props {
   open: boolean;
@@ -14,6 +14,7 @@ interface Props {
 }
 
 export default function SavedPanel({ open, onClose }: Props) {
+  const panelRef = useFocusTrap<HTMLElement>(open);
   const { saved, toggle, clear } = useSavedPrompts();
   const [copiedId, setCopiedId] = useState<number | null>(null);
 
@@ -40,8 +41,9 @@ export default function SavedPanel({ open, onClose }: Props) {
           />
 
           <motion.aside
+            ref={panelRef}
             key="panel"
-            className="fixed top-0 right-0 bottom-0 z-[90] w-full max-w-[420px] bg-[#0C0E1A] border-l border-hairline flex flex-col shadow-[0_0_60px_rgba(0,0,0,0.5)]"
+            className="fixed top-0 right-0 bottom-0 z-[90] w-full max-w-[420px] bg-abyss border-l border-hairline flex flex-col shadow-[0_0_60px_rgba(0,0,0,0.5)]"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}

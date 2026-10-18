@@ -1,7 +1,11 @@
 "use client";
 
+import { useReducedMotion } from "@/lib/hooks";
+
+import { useFeedClock } from "@/hooks/useFeedClock";
+
 import { useEffect, useRef } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight, Radio, ShieldCheck, Workflow } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 import { LIVE_FEED, LIVE_ITEMS } from "@/lib/liveFeedData";
@@ -18,16 +22,17 @@ const line = {
   }),
 };
 
-function feedFreshnessLabel(): string {
+function feedFreshnessLabel(now: number): string {
   const generated = new Date(LIVE_FEED.generatedAt).getTime();
   if (Number.isNaN(generated)) return "feed timestamp checked";
-  const hours = Math.max(0, Math.floor((Date.now() - generated) / 3.6e6));
+  const hours = Math.max(0, Math.floor((now - generated) / 3.6e6));
   if (hours < 1) return "feed fresh · just updated";
   if (hours < 24) return `feed fresh · ${hours}h old`;
   return `feed snapshot · ${Math.floor(hours / 24)}d old`;
 }
 
 export default function HeroMinimal({ total }: Props) {
+  const now = useFeedClock();
   const prefersReducedMotion = useReducedMotion();
   const bloomRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -156,7 +161,7 @@ export default function HeroMinimal({ total }: Props) {
           custom={5} variants={variants} initial="hidden" animate="show"
           className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4"
         >
-          <span className="inline-flex items-center gap-1.5 text-emerald-400"><ShieldCheck size={12} /> {feedFreshnessLabel()}</span>
+          <span className="inline-flex items-center gap-1.5 text-emerald-400"><ShieldCheck size={12} /> {feedFreshnessLabel(now)}</span>
           <span>{LIVE_FEED.sourceCount} sources</span>
           <span>RSS + JSON feed</span>
           <span>static, auditable, source-backed</span>

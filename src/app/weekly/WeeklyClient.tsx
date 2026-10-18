@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ExternalLink, Newspaper, Lightbulb, BookOpen, FlaskConical } from "lucide-react";
 import { AI_NEWS, type NewsItem } from "@/lib/newsDataCombined";
 import { THIS_WEEK, WEEKLY_ARCHIVE, type FeaturedItem } from "@/lib/featuredData";
-import { BASE_PATH } from "@/lib/constants";
+import { BASE_PATH, withBasePath } from "@/lib/constants";
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
@@ -130,9 +130,7 @@ const PICK_LABEL: Record<string, string> = {
 
 function PickRow({ item, index }: { item: FeaturedItem; index: number }) {
   const Icon = PICK_ICON[item.type] ?? Lightbulb;
-  const href = item.href.startsWith("http") || item.href.startsWith("#")
-    ? item.href
-    : `${BASE_PATH}${item.href}`;
+  const href = withBasePath(item.href);
   const isExternal = item.href.startsWith("http");
 
   return (

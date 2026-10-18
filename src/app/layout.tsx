@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Geist, Geist_Mono } from "next/font/google";
+import { BASE_PATH } from "@/lib/constants";
+import { Instrument_Serif, Manrope, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./hardening.css";
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -14,19 +15,12 @@ import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-cormorant",
-  display: "swap",
+const editorial = Instrument_Serif({
+  subsets: ["latin"], weight: "400", style: ["normal", "italic"],
+  variable: "--font-instrument", display: "swap",
 });
-
-const geist = Geist({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-geist-sans",
-  display: "swap",
+const manrope = Manrope({
+  subsets: ["latin"], variable: "--font-manrope", display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -41,15 +35,15 @@ export const viewport: Viewport = {
   initialScale: 1,
   colorScheme: "dark light",
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#090B14" },
-    { media: "(prefers-color-scheme: light)", color: "#F5F3EC" },
+    { media: "(prefers-color-scheme: dark)", color: "#0e1216" },
+    { media: "(prefers-color-scheme: light)", color: "#f4efe7" },
   ],
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joaoccaldas.github.io"),
   applicationName: "Sintra AI",
-  manifest: "/sintra-ai/manifest.json",
+  manifest: `${BASE_PATH}/manifest.json`,
   title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
   description: `Track what is changing in AI, understand how it works, compare tools and models, and apply ${USE_CASES_COUNT} practical use cases.`,
   keywords: [
@@ -133,7 +127,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${cormorant.variable} ${geist.variable} ${geistMono.variable}`}
+      className={`${editorial.variable} ${manrope.variable} ${geistMono.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
@@ -143,9 +137,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           data-domain="joaoccaldas.github.io"
           src="https://plausible.io/js/script.js"
         />
-        <link rel="icon" href="/sintra-ai/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/svg+xml" href="/sintra-ai/tesseract-mark.svg" />
-        <link rel="apple-touch-icon" href="/sintra-ai/apple-touch-icon.png" />
+        <link rel="icon" href={`${BASE_PATH}/favicon.ico`} sizes="any" />
+        <link rel="icon" type="image/svg+xml" href={`${BASE_PATH}/tesseract-mark.svg`} />
+        <link rel="apple-touch-icon" href={`${BASE_PATH}/apple-touch-icon.png`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
