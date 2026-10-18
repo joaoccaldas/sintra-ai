@@ -1,5 +1,5 @@
 export interface NewsItem {
-  origin?: "editorial" | "aggregated" | "primary-checked";
+  origin?: "editorial" | "aggregated" | "primary-checked" | "lab-tested";
   checkedAt?: string;
   knowledgeId?: string;
   id: string;

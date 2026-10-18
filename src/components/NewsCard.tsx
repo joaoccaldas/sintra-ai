@@ -99,7 +99,7 @@ export function NewsCard({ item, onTagFilter, isNew }: { item: NewsItem; onTagFi
 
       {/* Right: content */}
       <div className="flex-1 min-w-0">
-        <p className="text-[10px] leading-relaxed text-fg-4 mb-2">{item.checkedAt ? `Primary source checked ${item.checkedAt}` : item.origin === "aggregated" ? "Aggregated headline · not reverified" : "Editorial archive · not reverified in this review"}</p>
+        <p className="text-[10px] leading-relaxed text-fg-4 mb-2">{item.origin === "lab-tested" ? "Synthetic calculation tested · Power BI tenant untested" : item.checkedAt ? `Primary source checked ${item.checkedAt}` : item.origin === "aggregated" ? "Aggregated headline · not reverified" : "Editorial archive · not reverified in this review"}</p>
         {item.knowledgeId && <a href={`${BASE_PATH}/knowledge/${item.knowledgeId}/`} className="inline-block text-xs text-violet-bright underline underline-offset-4 mb-3">Read the practical brief →</a>}
 
         {/* Provider tag + country flag */}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-18T03:18:08.996Z",
+  "generatedAt": "2026-10-18T03:43:20.317Z",
   "access": {
     "transport": "static HTTPS GET",
     "authentication": "none",
@@ -22,6 +22,11 @@
     "For live tenant data, connect the documented provider MCP separately; Sintra contains public reference material only."
   ],
   "resources": [
+    {
+      "id": "power-bi-variance",
+      "url": "https://joaoccaldas.github.io/sintra-ai/api/workflows/power-bi-variance.json",
+      "contains": "Synthetic fixture, reconciled result, DAX and Power Query, HoldingCo / Finance AI Lab receipt; live Power BI execution untested"
+    },
     {
       "id": "knowledge",
       "url": "https://joaoccaldas.github.io/sintra-ai/api/knowledge.json",

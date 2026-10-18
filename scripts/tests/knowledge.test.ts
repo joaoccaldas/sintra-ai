@@ -16,7 +16,7 @@ test("knowledge claims resolve to primary sources, with stable identities and re
     assert.match(item.id, /^[a-z0-9-]+$/);
     assert.ok(isIsoDate(item.reviewedAt) && isIsoDate(item.reviewDueAt));
     assert.ok(item.reviewDueAt > item.reviewedAt);
-    assert.equal(item.executionStatus, "not-run-in-sintra");
+    assert.equal(item.executionStatus, item.id === "power-bi-variance-review" ? "synthetic-calculation-tested" : "not-run-in-sintra");
     assert.ok(item.prerequisites.length && item.steps.length && item.validation.length && item.limitations.length);
     for (const source of item.sources) {
       assert.ok(["learn.microsoft.com", "www.anthropic.com", "claude.com"].includes(new URL(source.url).hostname));

@@ -29,7 +29,8 @@ export interface KnowledgeRecord {
   limitations: string[];
   prompt?: string;
   related: string[];
-  executionStatus: "not-run-in-sintra";
+  executionStatus: "not-run-in-sintra" | "synthetic-calculation-tested";
+  workflowResource?: string;
   news?: { publishedAt: string; provider: string; providerColor: string };
 }
 
@@ -64,14 +65,15 @@ export const KNOWLEDGE: KnowledgeRecord[] = [
   },
   {
     ...base, id: "power-bi-variance-review", title: "Explain budget variance with Power BI",
-    summary: "Turn governed measures into a traceable actual-versus-budget explanation, with an explicit reconciliation step.",
+    executionStatus: "synthetic-calculation-tested", workflowResource: "/api/workflows/power-bi-variance.json",
+    summary: "A complete synthetic example: sample data, read-only DAX, a reconciled revenue bridge and evidence an LLM can retrieve.",
     kind: "workflow", evidenceLevel: "example-workflow", tags: ["Power BI", "FP&A", "Finance", "MCP"],
-    facts: [{ text: "Fabric IQ exposes discovery, metadata and DAX execution tools. The calling agent composes the analysis; the server does not supply a natural-language answer itself.", sourceIds: [fabric.id] }], sources: [fabric],
+    facts: [{ text: "Fabric IQ exposes discovery, metadata and DAX execution tools. The calling agent composes the analysis; the server does not supply a natural-language answer itself.", sourceIds: [fabric.id] }, { text: "DAX DIVIDE returns BLANK for a zero denominator by default. SUMMARIZECOLUMNS groups query results; this example uses query-scoped measures and explicit entity, period and currency filters.", sourceIds: ["dax-divide", "dax-summarize"] }], sources: [fabric, { id: "dax-divide", title: "DIVIDE function", publisher: "Microsoft", url: "https://learn.microsoft.com/en-us/dax/divide-function-dax", checkedAt }, { id: "dax-summarize", title: "SUMMARIZECOLUMNS function", publisher: "Microsoft", url: "https://learn.microsoft.com/en-us/dax/summarizecolumns-function-dax", checkedAt }],
     prerequisites: ["Access to the finance report through Fabric IQ.", "Actual and budget measures, fiscal period, reporting currency, sign convention and entity scope agreed with the report owner."],
     steps: ["Find the finance report and inspect its filters, schema and measure definitions.", "Resolve the exact entity and period values. Reuse the approved measures in a read-only DAX query.", "Compare actual and budget at the same grain. Separate absolute variance from percentage variance; flag a zero budget.", "Reconcile the total to the report. Attribute drivers only where returned data supports them; list unexplained residuals."],
     output: "Variance table, query and filter receipt, driver commentary, and open questions.",
     validation: ["The query total matches the report under identical filters.", "Driver amounts sum to total variance; currency, period and denominator are explicit.", "Narrative distinguishes observed differences from causal hypotheses."],
-    limitations: ["This is a proposed Sintra workflow, not a benchmark or completed tenant test.", "An LLM explanation cannot establish causality from aggregated variance alone."],
+    limitations: ["The public synthetic calculation is tested and cross-checked against HoldingCo. Power BI DAX, Power Query, OAuth, MCP, permissions and live tenant totals have not been exercised.", "Commentary is authored from deterministic results; no LLM quality benchmark or business impact is claimed.", "This revenue-only example rejects negative inputs and missing scenario rows. Expense favorability, credits, FX and real fiscal calendars need separate policies.", "An LLM explanation cannot establish causality from aggregated variance alone."],
     prompt: "Using my accessible finance report, inspect the schema and report filters first. For [entity], [fiscal period] and [currency], compare the approved Actual and Budget measures at the same grain. Show DAX, filters, absolute variance and percentage variance, handling a zero budget explicitly. Reconcile to the report total, then describe supported drivers and unexplained residuals. Do not modify the model or invent figures.",
     related: ["power-bi-mcp", "power-bi-model-change"],
   },

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import VarianceExample from "@/components/VarianceExample";
 import { BASE_PATH } from "@/lib/constants";
 import { KNOWLEDGE, KNOWLEDGE_KIND_LABELS } from "@/lib/knowledgeData";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
@@ -23,7 +24,8 @@ export default async function KnowledgeDetail({ params }: { params: Promise<{ id
   return <><Header total={USE_CASES_COUNT} /><main id="main-content" className="pt-16 min-h-screen bg-void"><article className="[overflow-wrap:anywhere] max-w-3xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />
     <Link href="/knowledge/" className="text-sm text-violet-bright">← All knowledge</Link>
-    <header className="mt-8 mb-10"><p className="font-mono text-[11px] uppercase tracking-wider text-violet-bright mb-4">{KNOWLEDGE_KIND_LABELS[item.kind]}</p><h1 className="font-serif text-[clamp(34px,5vw,54px)] leading-[1.08] text-fg-1 mb-5">{item.title}</h1><p className="text-lg leading-relaxed text-fg-2 mb-5">{item.summary}</p><div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-fg-4"><span>Sources checked <time dateTime={item.reviewedAt}>{item.reviewedAt}</time></span><span>Review due <time dateTime={item.reviewDueAt}>{item.reviewDueAt}</time></span><span>No Sintra execution test</span></div></header>
+    <header className="mt-8 mb-10"><p className="font-mono text-[11px] uppercase tracking-wider text-violet-bright mb-4">{KNOWLEDGE_KIND_LABELS[item.kind]}</p><h1 className="font-serif text-[clamp(34px,5vw,54px)] leading-[1.08] text-fg-1 mb-5">{item.title}</h1><p className="text-lg leading-relaxed text-fg-2 mb-5">{item.summary}</p><div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-fg-4"><span>Sources checked <time dateTime={item.reviewedAt}>{item.reviewedAt}</time></span><span>Review due <time dateTime={item.reviewDueAt}>{item.reviewDueAt}</time></span><span>{item.executionStatus === "synthetic-calculation-tested" ? "Synthetic calculation tested · tenant untested" : "No Sintra execution test"}</span></div></header>
+    {item.id === "power-bi-variance-review" && <VarianceExample />}
     <section className="rounded-2xl border border-hairline bg-steel p-5 sm:p-7 mb-10"><h2 className="font-serif text-2xl text-fg-1 mb-4">What the sources establish</h2><ul className="space-y-4 text-sm leading-relaxed text-fg-2">{item.facts.map((fact, i) => <li key={i}>{fact.text}<span className="ml-2 inline-flex gap-2">{fact.sourceIds.map(sourceId => { const index = item.sources.findIndex(s => s.id === sourceId); return <a key={sourceId} href={`#source-${sourceId}`} className="text-violet-bright underline underline-offset-2" aria-label={`Source ${index + 1}`}>[{index + 1}]</a>; })}</span></li>)}</ul></section>
     <div className="space-y-9">
       <section><h2 className="font-serif text-2xl text-fg-1 mb-3">Before you start</h2><ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed text-fg-3">{item.prerequisites.map(text => <li key={text}>{text}</li>)}</ul></section>

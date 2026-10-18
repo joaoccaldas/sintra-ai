@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "source": "https://github.com/joaoccaldas/sintra-ai",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-18T03:18:08.996Z",
+  "generatedAt": "2026-10-18T03:43:20.317Z",
   "count": 8,
   "policy": {
     "generatedAt": "Time the static file was assembled; not a source verification date.",
@@ -105,10 +105,11 @@
     {
       "reviewedAt": "2026-10-18",
       "reviewDueAt": "2026-11-17",
-      "executionStatus": "not-run-in-sintra",
+      "executionStatus": "synthetic-calculation-tested",
       "id": "power-bi-variance-review",
       "title": "Explain budget variance with Power BI",
-      "summary": "Turn governed measures into a traceable actual-versus-budget explanation, with an explicit reconciliation step.",
+      "workflowResource": "https://joaoccaldas.github.io/sintra-ai/api/workflows/power-bi-variance.json",
+      "summary": "A complete synthetic example: sample data, read-only DAX, a reconciled revenue bridge and evidence an LLM can retrieve.",
       "kind": "workflow",
       "evidenceLevel": "example-workflow",
       "tags": [
@@ -123,6 +124,13 @@
           "sourceIds": [
             "fabric-iq"
           ]
+        },
+        {
+          "text": "DAX DIVIDE returns BLANK for a zero denominator by default. SUMMARIZECOLUMNS groups query results; this example uses query-scoped measures and explicit entity, period and currency filters.",
+          "sourceIds": [
+            "dax-divide",
+            "dax-summarize"
+          ]
         }
       ],
       "sources": [
@@ -131,6 +139,20 @@
           "title": "Fabric IQ MCP: setup and tool contract",
           "publisher": "Microsoft",
           "url": "https://learn.microsoft.com/en-us/fabric/iq/connectors/fabric-iq-mcp",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "id": "dax-divide",
+          "title": "DIVIDE function",
+          "publisher": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/dax/divide-function-dax",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "id": "dax-summarize",
+          "title": "SUMMARIZECOLUMNS function",
+          "publisher": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/dax/summarizecolumns-function-dax",
           "checkedAt": "2026-10-18"
         }
       ],
@@ -151,7 +173,9 @@
         "Narrative distinguishes observed differences from causal hypotheses."
       ],
       "limitations": [
-        "This is a proposed Sintra workflow, not a benchmark or completed tenant test.",
+        "The public synthetic calculation is tested and cross-checked against HoldingCo. Power BI DAX, Power Query, OAuth, MCP, permissions and live tenant totals have not been exercised.",
+        "Commentary is authored from deterministic results; no LLM quality benchmark or business impact is claimed.",
+        "This revenue-only example rejects negative inputs and missing scenario rows. Expense favorability, credits, FX and real fiscal calendars need separate policies.",
         "An LLM explanation cannot establish causality from aggregated variance alone."
       ],
       "prompt": "Using my accessible finance report, inspect the schema and report filters first. For [entity], [fiscal period] and [currency], compare the approved Actual and Budget measures at the same grain. Show DAX, filters, absolute variance and percentage variance, handling a zero budget explicitly. Reconcile to the report total, then describe supported drivers and unexplained residuals. Do not modify the model or invent figures.",

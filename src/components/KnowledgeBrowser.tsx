@@ -49,7 +49,7 @@ export default function KnowledgeBrowser() {
         {results.map(item => <a key={item.id} href={`${BASE_PATH}/knowledge/${item.id}/`} className="group flex flex-col rounded-2xl border border-hairline bg-steel p-6 hover:border-violet-bright transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-bright">
           <p className="font-mono text-[10px] tracking-wider uppercase text-violet-bright mb-4">{KNOWLEDGE_KIND_LABELS[item.kind]}</p>
           <h2 className="font-serif text-2xl leading-tight text-fg-1 mb-3">{item.title}</h2>
-          <p className="text-sm leading-relaxed text-fg-3 mb-5">{item.summary}</p>
+          <p className="text-sm leading-relaxed text-fg-3 mb-5">{item.summary}</p>{item.workflowResource && <p className="text-xs text-violet-bright mb-4">Synthetic calculation tested · data &amp; results included</p>}
           <div className="mt-auto pt-4 border-t border-hairline flex items-center justify-between gap-3 text-xs text-fg-4"><span>Sources checked <time dateTime={item.reviewedAt}>{item.reviewedAt}</time></span><ArrowRight size={17} className="shrink-0 text-violet-bright group-hover:translate-x-1 transition-transform" /></div>
         </a>)}
       </div>

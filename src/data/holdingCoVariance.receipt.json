@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "knowledgeId": "power-bi-variance-review",
+  "datasetSha256": "0e7456b917f7d570b80e6e4b70d63fe80c1cd675b56259995cbb14be9c396497",
+  "source": {
+    "project": "HoldingCo / Finance AI Lab",
+    "revision": "0f8ca027dbce738fb2d14b79e87cd516e96dc206",
+    "workingTreeFilesClean": true,
+    "files": {
+      "src/caldas_os/finance/pvm_engine.py": "e273fb91e88d3d058ba812af999ba3f70998a71132cd2562b9c6dfd71bdcee5a",
+      "src/caldas_os/research/experiments/base.py": "2b9062c111611d729cd520a16f3d4d63aed77b173d2b9a7b446d29ef2597da5e",
+      "src/caldas_os/research/experiments/manifest.py": "364075793e73d4b556aabd4872aea6953c3fd62dee0fc9eb79af256613348e16"
+    }
+  },
+  "labResult": {
+    "experiment_id": "LAB-FPNA-01",
+    "version": "1.0.0",
+    "hypothesis": "The public synthetic revenue variance reconciles to the existing HoldingCo PVM engine.",
+    "status": "DRY_RUN_COMPLETE",
+    "experiment_stage": "DRY_RUN",
+    "result_origin": "DERIVED",
+    "empirical_status": "SYNTHETIC_CALCULATION_ONLY",
+    "reproducibility_status": "VERIFIED_LOCAL",
+    "passed": true,
+    "decision_recommendation": "Publish the synthetic example; tenant execution remains untested.",
+    "derived_results": {
+      "checks": {
+        "actual_matches_control": true,
+        "budget_matches_control": true,
+        "variance_matches_control": true,
+        "pvm_reconciles": true
+      },
+      "pvm": {
+        "prior_revenue": 21000.0,
+        "current_revenue": 19650.0,
+        "total_variance": -1350.0,
+        "price_variance": 150.0,
+        "volume_variance": -1235.29,
+        "mix_variance": -264.71,
+        "reconciliation_delta": 0.0,
+        "reconciliation_passed": true,
+        "convention": "ALEXANDER_WEIGHTED_AVERAGE",
+        "sku_details": [
+          {
+            "sku_id": "Core",
+            "name": "Core",
+            "prior_revenue": 10000.0,
+            "current_revenue": 11550.0,
+            "revenue_change": 1550.0,
+            "price_variance": 550.0,
+            "mix_variance": -373.7
+          },
+          {
+            "sku_id": "New offer",
+            "name": "New offer",
+            "prior_revenue": 0.0,
+            "current_revenue": 0.0,
+            "revenue_change": 0.0,
+            "price_variance": 0.0,
+            "mix_variance": 0.0
+          },
+          {
+            "sku_id": "Plus",
+            "name": "Plus",
+            "prior_revenue": 10000.0,
+            "current_revenue": 7600.0,
+            "revenue_change": -2400.0,
+            "price_variance": -400.0,
+            "mix_variance": -539.79
+          },
+          {
+            "sku_id": "Services",
+            "name": "Services",
+            "prior_revenue": 1000.0,
+            "current_revenue": 500.0,
+            "revenue_change": -500.0,
+            "price_variance": 0.0,
+            "mix_variance": 648.79
+          }
+        ]
+      }
+    },
+    "raw_results": [],
+    "cost_usd": 0.0,
+    "latency_ms": 0.034,
+    "confounders": [],
+    "limitations": [
+      "No Power BI tenant, DAX runtime, MCP handshake, RLS or refresh was exercised.",
+      "No LLM was called; commentary is an authored explanation of calculated values.",
+      "PVM allocation follows HoldingCo's weighted-average convention; it does not prove economic causality.",
+      "The private HoldingCo implementation is referenced by hash, not copied into Sintra."
+    ],
+    "source_refs": [
+      "src/caldas_os/finance/pvm_engine.py",
+      "src/caldas_os/research/experiments/base.py"
+    ],
+    "dataset_id": "LAB-FPNA-01",
+    "run_id": "sintra_8f6c28c6bfee4f2e9f91801d185e96d4",
+    "manifest": {
+      "model": "none",
+      "provider": "none",
+      "network_access": "NONE",
+      "database_access": "NONE",
+      "dataset_classification": "P1_PUBLIC_SYNTHETIC"
+    },
+    "created_at": "2026-10-18T03:42:08.736850+00:00"
+  }
+}

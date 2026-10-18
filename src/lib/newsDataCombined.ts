@@ -3,6 +3,8 @@ import { CURRENT_CLAUDE_MODELS } from "./modelsData";
 import { AI_NEWS as HISTORICAL_AI_NEWS, type NewsItem } from "./newsData";
 import { LATEST_AI_NEWS } from "./newsLatestData";
 import { LIVE_ITEMS, type LiveFeedItem } from "./liveFeedData";
+import varianceReceipt from "../data/holdingCoVariance.receipt.json";
+import { VARIANCE_COMMENTARY } from "./varianceWorkflow";
 
 /**
  * Canonical news feed consumed by the application.
@@ -89,7 +91,18 @@ const primaryNews: NewsItem[] = [
 
 const byId = new Map<string, NewsItem>();
 const seenTitles = new Set<string>();
-for (const item of [...primaryNews, ...LATEST_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...HISTORICAL_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...liveNews.map(item => ({ ...item, origin: "aggregated" as const }))]) {
+// A Sintra lab publication, not a newly dated Microsoft announcement. Identity
+// stays stable across daily rebuilds and links to the existing variance brief.
+const [labYear, labMonth, labDay] = varianceReceipt.labResult.created_at.slice(0, 10).split("-").map(Number);
+const labNews: NewsItem = {
+  id: "lab-fpna-01-variance", title: "Sintra Lab: a reproducible Power BI variance example",
+  date: `${MONTH_ABBR[labMonth - 1]} ${labYear}`, dateNum: labYear * 100 + labMonth, dateDay: labDay,
+  summary: `${VARIANCE_COMMENTARY[0].claim} Download the synthetic data, query and HoldingCo cross-check. Tenant and DAX execution remain untested.`,
+  tags: ["Power BI", "Finance", "Tested example"], provider: "Sintra Lab", providerColor: "#ae5a38",
+  significance: "notable", origin: "lab-tested", knowledgeId: "power-bi-variance-review",
+  url: "https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-variance-review/",
+};
+for (const item of [labNews, ...primaryNews, ...LATEST_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...HISTORICAL_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...liveNews.map(item => ({ ...item, origin: "aggregated" as const }))]) {
   const t = normTitle(item.title);
   if (byId.has(item.id) || seenTitles.has(t)) continue;
   byId.set(item.id, item);
