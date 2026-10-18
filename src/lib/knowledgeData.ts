@@ -2,6 +2,7 @@
  * Review dates are editorial events, never advanced by a build or feed refresh.
  * Workflow steps are Sintra examples; a source check is not an integration test.
  */
+import { ASSISTANT_KNOWLEDGE } from "./assistantKnowledge";
 import { OFFICE_KNOWLEDGE, EARNINGS_REPLICATION } from "./officeKnowledge";
 
 export type KnowledgeKind = "capability" | "announcement" | "workflow" | "case-study";
@@ -29,6 +30,9 @@ export interface KnowledgeRecord {
   id: string;
   title: string;
   summary: string;
+  audiences?: ("personal" | "corporate" | "developer")[];
+  tips?: string[];
+  integrations?: { name: string; purpose: string; access: "read" | "write" | "local" }[];
   kind: KnowledgeKind;
   tags: string[];
   reviewedAt: string;
@@ -58,7 +62,7 @@ const authoring: KnowledgeSource = { id: "powerbi-authoring", title: "Power BI A
 const finance: KnowledgeSource = { id: "finance-agents", title: "Agents for financial services", publisher: "Anthropic", url: "https://www.anthropic.com/news/finance-agents", publishedAt: "2026-05-05", checkedAt };
 const advisors: KnowledgeSource = { id: "financial-advisors", title: "Claude for Financial Advisors", publisher: "Anthropic", url: "https://claude.com/resources/articles/claude-for-financial-advisors", publishedAt: "2026-09-14", checkedAt };
 
-const base = { reviewedAt: checkedAt, reviewDueAt, executionStatus: "not-run-in-sintra" as const };
+const base = { audiences: ["corporate"] as ("corporate")[], reviewedAt: checkedAt, reviewDueAt, executionStatus: "not-run-in-sintra" as const };
 
 export const KNOWLEDGE: KnowledgeRecord[] = [
   {
@@ -176,14 +180,19 @@ export const KNOWLEDGE: KnowledgeRecord[] = [
     related: ["month-end-close", "anthropic-finance-agents"],
   },
   ...OFFICE_KNOWLEDGE,
+  ...ASSISTANT_KNOWLEDGE,
 ];
 
 export const KNOWLEDGE_KIND_LABELS: Record<KnowledgeKind, string> = {
   capability: "Capability guide", announcement: "Provider announcement", workflow: "Example workflow", "case-study": "Customer story",
 };
 
-export function searchKnowledge(query: string, tag = "all", kind = "all") {
+export const KNOWLEDGE_AUDIENCES = { personal: "Personal", corporate: "Corporate", developer: "Developer" } as const;
+export const KNOWLEDGE_TOPICS = ["ChatGPT", "Claude Code", "Claude Cowork", "Claude", "Microsoft 365", "Excel", "PowerPoint", "Power BI", "Finance", "Skills", "Plugins", "Connectors", "Cloud", "MCP", "Anthropic"];
+
+export function searchKnowledge(query: string, tag = "all", kind = "all", audience = "all", skillsOnly = false) {
   const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
   return KNOWLEDGE.filter(item => (tag === "all" || item.tags.includes(tag)) && (kind === "all" || item.kind === kind) &&
-    terms.every(term => [item.title, item.summary, ...item.tags, ...item.facts.map(f => f.text), ...item.steps].join(" ").toLowerCase().includes(term)));
+    (audience === "all" || item.audiences?.some(value => value === audience)) && (!skillsOnly || !!item.replication) &&
+    terms.every(term => [item.title, item.summary, ...item.tags, ...(item.tips ?? []), ...(item.integrations?.map(tool => tool.name) ?? []), ...item.facts.map(f => f.text), ...item.steps].join(" ").toLowerCase().includes(term)));
 }

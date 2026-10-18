@@ -20,10 +20,10 @@ export async function generateMetadata({
   const { tag } = await params;
   const topic = TOPIC_HUBS.find(t => t.slug === tag);
   if (!topic) return {};
-  const { prompts, news, tools } = getTopicContent(topic);
+  const { prompts, news, tools, knowledge } = getTopicContent(topic);
   return {
     title: `${topic.label} — AI Prompts, News & Tools | Sintra Tesseract`,
-    description: `${topic.description} Browse ${prompts.length} prompts, ${news.length} news items, and ${tools.length} tools on one page.`,
+    description: `${topic.description} Browse ${knowledge.length} cited briefs, ${prompts.length} prompts, ${news.length} news items, and ${tools.length} tools on one page.`,
     openGraph: {
       title: `${topic.label} — AI Hub`,
       description: topic.description,

@@ -1,7 +1,7 @@
 import type { KnowledgeRecord, KnowledgeSource, ReplicationGuide } from "./knowledgeData";
 
 const checkedAt = "2026-10-18";
-const base = { reviewedAt: checkedAt, reviewDueAt: "2026-11-17", executionStatus: "not-run-in-sintra" as const };
+const base = { audiences: ["corporate"] as ("corporate")[], reviewedAt: checkedAt, reviewDueAt: "2026-11-17", executionStatus: "not-run-in-sintra" as const };
 const source = (id: string, title: string, publisher: string, url: string): KnowledgeSource => ({ id, title, publisher, url, checkedAt });
 const excel = source("claude-excel", "Use Claude for Excel", "Anthropic", "https://claude.com/docs/office-agents/excel");
 const files = source("claude-files", "Create and edit files with Claude", "Anthropic", "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude");

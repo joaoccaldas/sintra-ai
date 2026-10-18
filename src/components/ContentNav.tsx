@@ -88,6 +88,7 @@ function buildIntents(t: Translations) {
       gradient: "from-emerald-500/8 to-emerald-500/0",
       label: t.home_intent_learn, desc: t.home_intent_learn_desc,
       links: [
+        { label: t.side_knowledge, sub: t.home_sub_knowledge, href: `${BASE_PATH}/knowledge/` },
         { label: t.side_guides,   sub: t.home_sub_guides(GUIDES.length),        href: `${BASE_PATH}/guides/`   },
         { label: t.side_learn,    sub: t.home_sub_paths(LEARNING_PATHS.length),  href: `${BASE_PATH}/learn/`    },
         { label: t.side_concepts, sub: t.home_sub_concepts(CONCEPTS.length),     href: `${BASE_PATH}/concepts/` },

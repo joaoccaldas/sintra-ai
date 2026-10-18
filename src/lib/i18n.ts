@@ -90,6 +90,7 @@ export interface Translations {
   side_live:      string;
   side_automate:  string;
   side_knowledge: string;
+  home_sub_knowledge: string;
   side_agents: string;
   side_library:   string;
   side_news:      string;
@@ -315,6 +316,7 @@ const translations: Record<Locale, Translations> = {
     side_live:      "Live Feed",
     side_automate:  "Automation Hub",
     side_knowledge: "Workflows & skills",
+    home_sub_knowledge: "Cited workflows, skills & real examples",
     side_agents: "For LLMs",
     side_library:   "Prompt Library",
     side_news:      "AI News",
@@ -538,6 +540,7 @@ const translations: Record<Locale, Translations> = {
     side_live:      "Feed ao vivo",
     side_automate:  "Central de automação",
     side_knowledge: "Fluxos e competências",
+    home_sub_knowledge: "Fluxos e exemplos com fontes",
     side_agents: "Para LLMs",
     side_library:   "Biblioteca de prompts",
     side_news:      "Notícias de IA",

@@ -3,8 +3,8 @@
   "source": "https://github.com/joaoccaldas/sintra-ai",
   "freshness": "generatedAt is file assembly time, not source verification. Inspect per-record review dates; missing dates mean unknown.",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-18T04:02:06.477Z",
-  "count": 9,
+  "generatedAt": "2026-10-18T04:32:12.342Z",
+  "count": 23,
   "data": [
     {
       "id": "earnings-review",
@@ -95,6 +95,146 @@
       "reviewDueAt": "2026-11-17",
       "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/teams-meeting-actions/SKILL.md",
       "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/teams-meeting-actions.json"
+    },
+    {
+      "id": "chatgpt-research-decision",
+      "title": "Turn current research into a decision memo",
+      "environment": "ChatGPT Work with deep research",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/chatgpt-research-decision/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-research-decision.json"
+    },
+    {
+      "id": "chatgpt-spreadsheet-consolidation",
+      "title": "Consolidate spreadsheets with a reconciliation receipt",
+      "environment": "ChatGPT Work with file creation",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/chatgpt-spreadsheet-consolidation/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-spreadsheet-consolidation.json"
+    },
+    {
+      "id": "chatgpt-source-learning",
+      "title": "Learn a concept from a bounded source pack",
+      "environment": "ChatGPT Chat or Work",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/chatgpt-source-learning/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-source-learning.json"
+    },
+    {
+      "id": "chatgpt-project-handoff",
+      "title": "Keep a reusable project brief and decision log",
+      "environment": "ChatGPT Projects",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/chatgpt-project-handoff/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-project-handoff.json"
+    },
+    {
+      "id": "chatgpt-reusable-skill",
+      "title": "Turn a successful task into a tested skill",
+      "environment": "ChatGPT skill creator or Codex",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/chatgpt-reusable-skill/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-reusable-skill.json"
+    },
+    {
+      "id": "chatgpt-scheduled-brief",
+      "title": "Pilot a recurring brief before scheduling it",
+      "environment": "ChatGPT Scheduled with an existing brief workflow",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/chatgpt-scheduled-brief/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/chatgpt-scheduled-brief.json"
+    },
+    {
+      "id": "codex-cloud-bugfix",
+      "title": "Run a bounded bug fix in an existing cloud environment",
+      "environment": "Codex Cloud",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/codex-cloud-bugfix/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/codex-cloud-bugfix.json"
+    },
+    {
+      "id": "claude-code-repo-map",
+      "title": "Map an unfamiliar repository before changing it",
+      "environment": "Claude Code",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/claude-code-repo-map/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-code-repo-map.json"
+    },
+    {
+      "id": "claude-code-bugfix",
+      "title": "Fix a reproducible bug with Claude Code",
+      "environment": "Claude Code",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/claude-code-bugfix/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-code-bugfix.json"
+    },
+    {
+      "id": "claude-code-migration-pilot",
+      "title": "Pilot a code migration on one representative slice",
+      "environment": "Claude Code",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/claude-code-migration-pilot/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/claude-code-migration-pilot.json"
+    },
+    {
+      "id": "cowork-file-organization",
+      "title": "Organize a folder with a reversible move plan",
+      "environment": "Claude Cowork in the desktop app",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/cowork-file-organization/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-file-organization.json"
+    },
+    {
+      "id": "cowork-weekly-update",
+      "title": "Draft a weekly update from existing tools",
+      "environment": "Claude Cowork with existing team sources",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/cowork-weekly-update/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-weekly-update.json"
+    },
+    {
+      "id": "cowork-account-research",
+      "title": "Prepare a prospect brief from CRM and documents",
+      "environment": "Claude Cowork",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/cowork-account-research/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-account-research.json"
+    },
+    {
+      "id": "cowork-inbox-triage",
+      "title": "Triage an inbox into a reviewable action list",
+      "environment": "Claude Cowork with an authorized email connection or export",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/cowork-inbox-triage/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-inbox-triage.json"
     }
   ]
 }

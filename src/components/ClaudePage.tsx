@@ -303,7 +303,7 @@ export default function ClaudePage() {
           <p className="eyebrow violet mb-3">Finance in practice</p>
           <h2 className="font-serif text-3xl text-fg-1 mb-3">From published capabilities to useful work</h2>
           <p className="text-sm leading-relaxed text-fg-3 max-w-2xl mb-5">Explore the finance agent templates, September’s advisor connectors, a Brex customer story and reviewable workflows for earnings and month-end close. Each brief separates primary-source facts from suggested steps.</p>
-          <div className="flex flex-wrap gap-5 text-sm"><a href={`${BASE_PATH}/knowledge/?tag=Anthropic`} className="text-violet-bright underline underline-offset-4">Explore Claude finance briefs →</a><a href="https://platform.claude.com/docs/en/models/overview" target="_blank" rel="noopener noreferrer" className="text-fg-3 underline underline-offset-4">Current model documentation ↗</a></div>
+          <div className="flex flex-wrap gap-5 text-sm"><a href={`${BASE_PATH}/knowledge/?tag=Anthropic`} className="text-violet-bright underline underline-offset-4">Explore Claude workflows &amp; skills →</a><a href="https://platform.claude.com/docs/en/models/overview" target="_blank" rel="noopener noreferrer" className="text-fg-3 underline underline-offset-4">Current model documentation ↗</a></div>
         </section>
 
         {/* ── Claude Code section ───────────────────────────────────────── */}

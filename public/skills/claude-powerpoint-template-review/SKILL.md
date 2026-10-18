@@ -49,6 +49,8 @@ Expected: The edited slide shows 20% growth, keeps the template and leaves the o
 - The add-in is unavailable → Use the file-creation workflow for an exported draft; do not claim in-app editing took place.
 - The deck's visual style changes → Return to the existing layouts and narrow the edit to one slide.
 
+
+
 ## Limits
 - Provider-demonstrated capability; Sintra did not run the add-in.
 - A branded first draft still requires visual and factual review; no exact fidelity or time saving is guaranteed.
