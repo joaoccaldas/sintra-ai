@@ -1,7 +1,9 @@
 {
+  "schemaVersion": "1.1",
   "source": "https://github.com/joaoccaldas/sintra-ai",
+  "freshness": "generatedAt is file assembly time, not source verification. Inspect per-record review dates; missing dates mean unknown.",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-17T06:17:57.781Z",
+  "generatedAt": "2026-10-18T03:47:21.503Z",
   "count": 74,
   "data": [
     {
@@ -22,7 +24,8 @@
         "safety"
       ],
       "status": "available",
-      "highlight": "Best-in-class long-context reasoning with a strong safety and honesty focus."
+      "highlight": "Best-in-class long-context reasoning with a strong safety and honesty focus.",
+      "providerUrl": "https://claude.ai"
     },
     {
       "id": "chatgpt",
@@ -42,7 +45,8 @@
         "browsing"
       ],
       "status": "available",
-      "highlight": "The most widely used AI assistant with the broadest feature set of any consumer product."
+      "highlight": "The most widely used AI assistant with the broadest feature set of any consumer product.",
+      "providerUrl": "https://chatgpt.com"
     },
     {
       "id": "gemini",
@@ -62,7 +66,8 @@
         "real-time"
       ],
       "status": "available",
-      "highlight": "Deep Google Search integration and 1M-token context window in Advanced tier."
+      "highlight": "Deep Google Search integration and 1M-token context window in Advanced tier.",
+      "providerUrl": "https://gemini.google.com"
     },
     {
       "id": "copilot",
@@ -82,7 +87,8 @@
         "citations"
       ],
       "status": "available",
-      "highlight": "Native across Windows and Microsoft 365 with live Bing-grounded answers."
+      "highlight": "Native across Windows and Microsoft 365 with live Bing-grounded answers.",
+      "providerUrl": "https://copilot.microsoft.com"
     },
     {
       "id": "grok",
@@ -102,7 +108,8 @@
         "Aurora"
       ],
       "status": "available",
-      "highlight": "Unique real-time awareness via live access to the X/Twitter data firehose."
+      "highlight": "Unique real-time awareness via live access to the X/Twitter data firehose.",
+      "providerUrl": "https://grok.com"
     },
     {
       "id": "meta-ai",
@@ -122,7 +129,8 @@
         "Llama 4"
       ],
       "status": "available",
-      "highlight": "Completely free assistant embedded across Meta's 3B+ user social platforms."
+      "highlight": "Completely free assistant embedded across Meta's 3B+ user social platforms.",
+      "providerUrl": "https://www.meta.ai"
     },
     {
       "id": "le-chat",
@@ -142,7 +150,8 @@
         "multilingual"
       ],
       "status": "available",
-      "highlight": "Fast, GDPR-compliant European assistant with strong multilingual support."
+      "highlight": "Fast, GDPR-compliant European assistant with strong multilingual support.",
+      "providerUrl": "https://chat.mistral.ai"
     },
     {
       "id": "jasper",
@@ -162,7 +171,8 @@
         "templates"
       ],
       "status": "available",
-      "highlight": "Brand Voice training ensures every piece of content sounds consistently on-brand."
+      "highlight": "Brand Voice training ensures every piece of content sounds consistently on-brand.",
+      "providerUrl": "https://jasper.ai"
     },
     {
       "id": "copy-ai",
@@ -182,7 +192,8 @@
         "templates"
       ],
       "status": "available",
-      "highlight": "Evolved beyond copywriting into a full GTM workflow automation platform."
+      "highlight": "Evolved beyond copywriting into a full GTM workflow automation platform.",
+      "providerUrl": "https://copy.ai"
     },
     {
       "id": "grammarly",
@@ -202,7 +213,8 @@
         "Google Docs"
       ],
       "status": "available",
-      "highlight": "30M+ daily users rely on its real-time grammar and clarity suggestions."
+      "highlight": "30M+ daily users rely on its real-time grammar and clarity suggestions.",
+      "providerUrl": "https://grammarly.com"
     },
     {
       "id": "notion-ai",
@@ -222,7 +234,8 @@
         "knowledge base"
       ],
       "status": "available",
-      "highlight": "Q&A across your entire workspace surfaces answers from any page instantly."
+      "highlight": "Q&A across your entire workspace surfaces answers from any page instantly.",
+      "providerUrl": "https://notion.so/product/ai"
     },
     {
       "id": "writesonic",
@@ -242,7 +255,8 @@
         "Surfer SEO"
       ],
       "status": "available",
-      "highlight": "Built-in Surfer SEO integration optimizes articles for search rankings."
+      "highlight": "Built-in Surfer SEO integration optimizes articles for search rankings.",
+      "providerUrl": "https://writesonic.com"
     },
     {
       "id": "quillbot",
@@ -262,7 +276,8 @@
         "citations"
       ],
       "status": "available",
-      "highlight": "Multiple paraphrase modes give fine-grained control over tone and formality."
+      "highlight": "Multiple paraphrase modes give fine-grained control over tone and formality.",
+      "providerUrl": "https://quillbot.com"
     },
     {
       "id": "wordtune",
@@ -282,7 +297,8 @@
         "Spices"
       ],
       "status": "available",
-      "highlight": "Spices feature adds factual enhancements and analogies to enrich any draft."
+      "highlight": "Spices feature adds factual enhancements and analogies to enrich any draft.",
+      "providerUrl": "https://wordtune.com"
     },
     {
       "id": "cursor",
@@ -302,7 +318,8 @@
         "Composer"
       ],
       "status": "available",
-      "highlight": "Composer enables AI-driven multi-file edits across an entire codebase at once."
+      "highlight": "Composer enables AI-driven multi-file edits across an entire codebase at once.",
+      "providerUrl": "https://cursor.com"
     },
     {
       "id": "github-copilot",
@@ -322,7 +339,8 @@
         "Workspace"
       ],
       "status": "available",
-      "highlight": "The most widely deployed AI coding assistant with deep IDE-native integration."
+      "highlight": "The most widely deployed AI coding assistant with deep IDE-native integration.",
+      "providerUrl": "https://github.com/features/copilot"
     },
     {
       "id": "windsurf",
@@ -342,7 +360,8 @@
         "terminal"
       ],
       "status": "available",
-      "highlight": "Cascade's agentic loop reads terminal output and iterates until the task is done."
+      "highlight": "Cascade's agentic loop reads terminal output and iterates until the task is done.",
+      "providerUrl": "https://codeium.com/windsurf"
     },
     {
       "id": "replit",
@@ -362,7 +381,8 @@
         "no setup"
       ],
       "status": "available",
-      "highlight": "Build and deploy full-stack apps from a plain-English prompt, entirely in the browser."
+      "highlight": "Build and deploy full-stack apps from a plain-English prompt, entirely in the browser.",
+      "providerUrl": "https://replit.com"
     },
     {
       "id": "tabnine",
@@ -382,7 +402,8 @@
         "80+ languages"
       ],
       "status": "available",
-      "highlight": "On-device model option keeps your code entirely private without cloud exposure."
+      "highlight": "On-device model option keeps your code entirely private without cloud exposure.",
+      "providerUrl": "https://tabnine.com"
     },
     {
       "id": "codeium",
@@ -402,7 +423,8 @@
         "enterprise"
       ],
       "status": "available",
-      "highlight": "Fully featured free plan for individuals with 70+ language support."
+      "highlight": "Fully featured free plan for individuals with 70+ language support.",
+      "providerUrl": "https://codeium.com"
     },
     {
       "id": "midjourney",
@@ -422,7 +444,8 @@
         "v6"
       ],
       "status": "available",
-      "highlight": "Sets the benchmark for artistic quality in AI image generation."
+      "highlight": "Sets the benchmark for artistic quality in AI image generation.",
+      "providerUrl": "https://midjourney.com"
     },
     {
       "id": "dall-e-3",
@@ -442,7 +465,8 @@
         "coherent scenes"
       ],
       "status": "available",
-      "highlight": "Best prompt adherence of any major image model, including accurate in-image text."
+      "highlight": "Best prompt adherence of any major image model, including accurate in-image text.",
+      "providerUrl": "https://openai.com/dall-e-3"
     },
     {
       "id": "stable-diffusion",
@@ -462,7 +486,8 @@
         "ComfyUI"
       ],
       "status": "available",
-      "highlight": "Open weights power a massive ecosystem of custom fine-tuned community models."
+      "highlight": "Open weights power a massive ecosystem of custom fine-tuned community models.",
+      "providerUrl": "https://stability.ai/stable-image"
     },
     {
       "id": "adobe-firefly",
@@ -482,7 +507,8 @@
         "licensed training"
       ],
       "status": "available",
-      "highlight": "Trained exclusively on licensed content — outputs are commercially safe to use."
+      "highlight": "Trained exclusively on licensed content — outputs are commercially safe to use.",
+      "providerUrl": "https://firefly.adobe.com"
     },
     {
       "id": "ideogram",
@@ -502,7 +528,8 @@
         "Canvas"
       ],
       "status": "available",
-      "highlight": "Industry-leading accuracy for rendering legible text inside generated images."
+      "highlight": "Industry-leading accuracy for rendering legible text inside generated images.",
+      "providerUrl": "https://ideogram.ai"
     },
     {
       "id": "flux",
@@ -522,7 +549,8 @@
         "FLUX.1"
       ],
       "status": "available",
-      "highlight": "Outperforms earlier diffusion models on human anatomy realism and prompt adherence."
+      "highlight": "Outperforms earlier diffusion models on human anatomy realism and prompt adherence.",
+      "providerUrl": "https://blackforestlabs.ai"
     },
     {
       "id": "canva-ai",
@@ -542,7 +570,8 @@
         "non-designers"
       ],
       "status": "available",
-      "highlight": "AI generation embedded in a familiar design tool used by 170M+ people."
+      "highlight": "AI generation embedded in a familiar design tool used by 170M+ people.",
+      "providerUrl": "https://canva.com/ai-image-generator"
     },
     {
       "id": "runway",
@@ -562,7 +591,8 @@
         "professional"
       ],
       "status": "available",
-      "highlight": "Gen-3 Alpha is trusted by film studios for professional-grade AI video generation."
+      "highlight": "Gen-3 Alpha is trusted by film studios for professional-grade AI video generation.",
+      "providerUrl": "https://runwayml.com"
     },
     {
       "id": "sora",
@@ -582,7 +612,8 @@
         "camera motion"
       ],
       "status": "available",
-      "highlight": "Generates coherent 60-second clips with realistic physics and camera movement."
+      "highlight": "Generates coherent 60-second clips with realistic physics and camera movement.",
+      "providerUrl": "https://sora.com"
     },
     {
       "id": "kling",
@@ -602,7 +633,8 @@
         "realism"
       ],
       "status": "available",
-      "highlight": "Generates up to 2-minute video clips with camera controls and lip-sync support."
+      "highlight": "Generates up to 2-minute video clips with camera controls and lip-sync support.",
+      "providerUrl": "https://klingai.com"
     },
     {
       "id": "pika",
@@ -622,7 +654,8 @@
         "image-to-video"
       ],
       "status": "available",
-      "highlight": "Pikadditions lets you place any object into an existing video scene seamlessly."
+      "highlight": "Pikadditions lets you place any object into an existing video scene seamlessly.",
+      "providerUrl": "https://pika.art"
     },
     {
       "id": "heygen",
@@ -642,7 +675,8 @@
         "40+ languages"
       ],
       "status": "available",
-      "highlight": "Translate videos into 40+ languages with AI lip-sync matched to the new audio."
+      "highlight": "Translate videos into 40+ languages with AI lip-sync matched to the new audio.",
+      "providerUrl": "https://heygen.com"
     },
     {
       "id": "luma-dream-machine",
@@ -662,7 +696,8 @@
         "smooth motion"
       ],
       "status": "available",
-      "highlight": "Fast video generation with smooth, physically realistic camera movement."
+      "highlight": "Fast video generation with smooth, physically realistic camera movement.",
+      "providerUrl": "https://lumalabs.ai/dream-machine"
     },
     {
       "id": "elevenlabs",
@@ -682,7 +717,8 @@
         "API"
       ],
       "status": "available",
-      "highlight": "Clone any voice from a 1-minute audio sample with natural 29-language support."
+      "highlight": "Clone any voice from a 1-minute audio sample with natural 29-language support.",
+      "providerUrl": "https://elevenlabs.io"
     },
     {
       "id": "suno",
@@ -702,7 +738,8 @@
         "genre control"
       ],
       "status": "available",
-      "highlight": "Generates complete songs with vocals, instruments, and lyrics from a single prompt."
+      "highlight": "Generates complete songs with vocals, instruments, and lyrics from a single prompt.",
+      "providerUrl": "https://suno.com"
     },
     {
       "id": "udio",
@@ -722,7 +759,8 @@
         "production quality"
       ],
       "status": "available",
-      "highlight": "Fine-grained BPM, key, and style controls for precise AI music composition."
+      "highlight": "Fine-grained BPM, key, and style controls for precise AI music composition.",
+      "providerUrl": "https://udio.com"
     },
     {
       "id": "whisper",
@@ -742,7 +780,8 @@
         "translation"
       ],
       "status": "available",
-      "highlight": "Open-source ASR with near-human accuracy across 99 languages — free to self-host."
+      "highlight": "Open-source ASR with near-human accuracy across 99 languages — free to self-host.",
+      "providerUrl": "https://openai.com/research/whisper"
     },
     {
       "id": "murf",
@@ -762,7 +801,8 @@
         "20+ languages"
       ],
       "status": "available",
-      "highlight": "200+ studio-quality voices with video timeline sync for professional voiceovers."
+      "highlight": "200+ studio-quality voices with video timeline sync for professional voiceovers.",
+      "providerUrl": "https://murf.ai"
     },
     {
       "id": "descript",
@@ -782,7 +822,8 @@
         "Overdub"
       ],
       "status": "available",
-      "highlight": "Edit audio and video by editing the text transcript — a uniquely intuitive workflow."
+      "highlight": "Edit audio and video by editing the text transcript — a uniquely intuitive workflow.",
+      "providerUrl": "https://descript.com"
     },
     {
       "id": "adobe-podcast",
@@ -802,7 +843,8 @@
         "studio quality"
       ],
       "status": "available",
-      "highlight": "One-click AI removes noise and reverb, making any mic sound studio-quality."
+      "highlight": "One-click AI removes noise and reverb, making any mic sound studio-quality.",
+      "providerUrl": "https://podcast.adobe.com"
     },
     {
       "id": "perplexity",
@@ -822,7 +864,8 @@
         "Deep Research"
       ],
       "status": "available",
-      "highlight": "Answers with real-time web citations, eliminating the need to click through 10 links."
+      "highlight": "Answers with real-time web citations, eliminating the need to click through 10 links.",
+      "providerUrl": "https://perplexity.ai"
     },
     {
       "id": "notebooklm",
@@ -842,7 +885,8 @@
         "no hallucination"
       ],
       "status": "available",
-      "highlight": "Audio Overview transforms your research documents into a listenable podcast."
+      "highlight": "Audio Overview transforms your research documents into a listenable podcast.",
+      "providerUrl": "https://notebooklm.google"
     },
     {
       "id": "consensus",
@@ -862,7 +906,8 @@
         "citations"
       ],
       "status": "available",
-      "highlight": "Consensus Meter shows scientific agreement levels across 200M+ indexed papers."
+      "highlight": "Consensus Meter shows scientific agreement levels across 200M+ indexed papers.",
+      "providerUrl": "https://consensus.app"
     },
     {
       "id": "elicit",
@@ -882,7 +927,8 @@
         "tables"
       ],
       "status": "available",
-      "highlight": "Automates systematic literature review by extracting structured data from thousands of papers."
+      "highlight": "Automates systematic literature review by extracting structured data from thousands of papers.",
+      "providerUrl": "https://elicit.com"
     },
     {
       "id": "semantic-scholar",
@@ -902,7 +948,8 @@
         "recommendations"
       ],
       "status": "available",
-      "highlight": "200M+ papers with AI-extracted key findings and intelligent citation context."
+      "highlight": "200M+ papers with AI-extracted key findings and intelligent citation context.",
+      "providerUrl": "https://semanticscholar.org"
     },
     {
       "id": "you-com",
@@ -922,7 +969,8 @@
         "citations"
       ],
       "status": "available",
-      "highlight": "Multiple search modes from quick answers to deep academic research with citations."
+      "highlight": "Multiple search modes from quick answers to deep academic research with citations.",
+      "providerUrl": "https://you.com"
     },
     {
       "id": "zapier-ai",
@@ -942,7 +990,8 @@
         "integrations"
       ],
       "status": "available",
-      "highlight": "Natural language Zap creation connects AI steps to 7,000+ apps without coding."
+      "highlight": "Natural language Zap creation connects AI steps to 7,000+ apps without coding.",
+      "providerUrl": "https://zapier.com/ai"
     },
     {
       "id": "make",
@@ -962,7 +1011,8 @@
         "canvas"
       ],
       "status": "available",
-      "highlight": "Visual canvas with advanced logic handles complex multi-step automation scenarios."
+      "highlight": "Visual canvas with advanced logic handles complex multi-step automation scenarios.",
+      "providerUrl": "https://make.com"
     },
     {
       "id": "n8n",
@@ -982,7 +1032,8 @@
         "node-based"
       ],
       "status": "available",
-      "highlight": "Self-hostable automation with native AI agent nodes for complete data privacy."
+      "highlight": "Self-hostable automation with native AI agent nodes for complete data privacy.",
+      "providerUrl": "https://n8n.io"
     },
     {
       "id": "otter-ai",
@@ -1002,7 +1053,8 @@
         "action items"
       ],
       "status": "available",
-      "highlight": "Auto-joins meetings and captures speaker-identified transcripts in real time."
+      "highlight": "Auto-joins meetings and captures speaker-identified transcripts in real time.",
+      "providerUrl": "https://otter.ai"
     },
     {
       "id": "gamma",
@@ -1022,7 +1074,8 @@
         "one-prompt"
       ],
       "status": "available",
-      "highlight": "Generate a polished presentation from a single prompt in under a minute."
+      "highlight": "Generate a polished presentation from a single prompt in under a minute.",
+      "providerUrl": "https://gamma.app"
     },
     {
       "id": "lindy",
@@ -1042,7 +1095,8 @@
         "document processing"
       ],
       "status": "available",
-      "highlight": "Autonomous email-triaging and scheduling agents that act on your behalf 24/7."
+      "highlight": "Autonomous email-triaging and scheduling agents that act on your behalf 24/7.",
+      "providerUrl": "https://lindy.ai"
     },
     {
       "id": "claude-code",
@@ -1063,7 +1117,8 @@
         "full-repo"
       ],
       "status": "available",
-      "highlight": "Full filesystem and shell access for autonomous multi-step software engineering."
+      "highlight": "Full filesystem and shell access for autonomous multi-step software engineering.",
+      "providerUrl": "https://claude.ai/code"
     },
     {
       "id": "operator",
@@ -1083,7 +1138,8 @@
         "forms"
       ],
       "status": "available",
-      "highlight": "Autonomously navigates websites and completes multi-step web tasks on your behalf."
+      "highlight": "Autonomously navigates websites and completes multi-step web tasks on your behalf.",
+      "providerUrl": "https://operator.chatgpt.com"
     },
     {
       "id": "mem",
@@ -1103,7 +1159,8 @@
         "search"
       ],
       "status": "available",
-      "highlight": "AI auto-organizes your notes and surfaces the right information at the right time."
+      "highlight": "AI auto-organizes your notes and surfaces the right information at the right time.",
+      "providerUrl": "https://mem.ai"
     },
     {
       "id": "qwen-37-max",
@@ -1123,7 +1180,8 @@
         "API"
       ],
       "status": "available",
-      "highlight": "Autonomously executes complex tasks for up to 35 hours with 1,000+ tool calls."
+      "highlight": "Autonomously executes complex tasks for up to 35 hours with 1,000+ tool calls.",
+      "providerUrl": "https://qwen.ai"
     },
     {
       "id": "l2p",
@@ -1143,7 +1201,8 @@
         "ComfyUI"
       ],
       "status": "available",
-      "highlight": "Pixel-space generation eliminates the VAE color-shift and blurriness of latent models."
+      "highlight": "Pixel-space generation eliminates the VAE color-shift and blurriness of latent models.",
+      "providerUrl": "https://github.com/TencentYoutuResearch/T2I-L2P"
     },
     {
       "id": "lito",
@@ -1163,7 +1222,8 @@
         "ICLR 2026"
       ],
       "status": "available",
-      "highlight": "Extracts a view-dependent 3D model with correct reflections and lighting from one photo."
+      "highlight": "Extracts a view-dependent 3D model with correct reflections and lighting from one photo.",
+      "providerUrl": "https://github.com/apple/ml-lito"
     },
     {
       "id": "panoworld",
@@ -1183,7 +1243,8 @@
         "3DGS"
       ],
       "status": "beta",
-      "highlight": "Converts a floor plan into a navigable multi-room 3D tour with switchable design styles."
+      "highlight": "Converts a floor plan into a navigable multi-room 3D tour with switchable design styles.",
+      "providerUrl": "https://arxiv.org/abs/2605.17916"
     },
     {
       "id": "marlin-2b",
@@ -1203,7 +1264,8 @@
         "2B params"
       ],
       "status": "available",
-      "highlight": "Query any video in plain English and get back precise start/end timestamps."
+      "highlight": "Query any video in plain English and get back precise start/end timestamps.",
+      "providerUrl": "https://huggingface.co/NemoStation/Marlin-2B"
     },
     {
       "id": "mega-asr",
@@ -1223,7 +1285,8 @@
         "real-world"
       ],
       "status": "available",
-      "highlight": "Up to 30% WER reduction vs Whisper on noisy, echoing, or far-field recordings."
+      "highlight": "Up to 30% WER reduction vs Whisper on noisy, echoing, or far-field recordings.",
+      "providerUrl": "https://github.com/xzf-thu/Mega-ASR"
     },
     {
       "id": "stable-audio-3",
@@ -1243,7 +1306,8 @@
         "licensed training"
       ],
       "status": "available",
-      "highlight": "Three open-weight models generate tracks up to 6:20 min — all trained on licensed data."
+      "highlight": "Three open-weight models generate tracks up to 6:20 min — all trained on licensed data.",
+      "providerUrl": "https://stability.ai/stable-audio"
     },
     {
       "id": "lerobot-humanoid",
@@ -1263,7 +1327,8 @@
         "imitation learning"
       ],
       "status": "available",
-      "highlight": "Build a real bipedal humanoid robot for $2,500 with a full open-source AI training stack."
+      "highlight": "Build a real bipedal humanoid robot for $2,500 with a full open-source AI training stack.",
+      "providerUrl": "https://github.com/huggingface/lerobot"
     },
     {
       "id": "lovable",
@@ -1284,7 +1349,8 @@
         "app builder"
       ],
       "status": "available",
-      "highlight": "$400M ARR in Feb 2026 — fastest-growing developer tool. No-code to full-stack in minutes."
+      "highlight": "$400M ARR in Feb 2026 — fastest-growing developer tool. No-code to full-stack in minutes.",
+      "providerUrl": "https://lovable.dev"
     },
     {
       "id": "bolt-new",
@@ -1304,7 +1370,8 @@
         "prototyping"
       ],
       "status": "available",
-      "highlight": "Runs a full Node.js runtime in the browser — build, run, and deploy without leaving your tab."
+      "highlight": "Runs a full Node.js runtime in the browser — build, run, and deploy without leaving your tab.",
+      "providerUrl": "https://bolt.new"
     },
     {
       "id": "v0",
@@ -1325,7 +1392,8 @@
         "Next.js"
       ],
       "status": "available",
-      "highlight": "Generates production-quality shadcn/ui + Tailwind React components from a text description."
+      "highlight": "Generates production-quality shadcn/ui + Tailwind React components from a text description.",
+      "providerUrl": "https://v0.dev"
     },
     {
       "id": "devin",
@@ -1346,7 +1414,8 @@
         "PR automation"
       ],
       "status": "available",
-      "highlight": "First AI software engineer raised at $25B — autonomously opens PRs and fixes bugs end-to-end."
+      "highlight": "First AI software engineer raised at $25B — autonomously opens PRs and fixes bugs end-to-end.",
+      "providerUrl": "https://devin.ai"
     },
     {
       "id": "amazon-q",
@@ -1367,7 +1436,8 @@
         "DevOps"
       ],
       "status": "available",
-      "highlight": "Deep AWS integration — explains your logs, fixes your CDK, and migrates Java codebases autonomously."
+      "highlight": "Deep AWS integration — explains your logs, fixes your CDK, and migrates Java codebases autonomously.",
+      "providerUrl": "https://aws.amazon.com/q/developer/"
     },
     {
       "id": "krea-ai",
@@ -1388,7 +1458,8 @@
         "concept art"
       ],
       "status": "available",
-      "highlight": "Sub-second real-time generation — paint a rough sketch and watch AI refine it live."
+      "highlight": "Sub-second real-time generation — paint a rough sketch and watch AI refine it live.",
+      "providerUrl": "https://www.krea.ai"
     },
     {
       "id": "runway-ml",
@@ -1409,7 +1480,8 @@
         "Gen-4"
       ],
       "status": "available",
-      "highlight": "Reference Mode keeps characters consistent across scenes — used in Hollywood productions."
+      "highlight": "Reference Mode keeps characters consistent across scenes — used in Hollywood productions.",
+      "providerUrl": "https://runwayml.com"
     },
     {
       "id": "pika-labs",
@@ -1429,7 +1501,8 @@
         "short film"
       ],
       "status": "available",
-      "highlight": "Pikaffects (Inflate, Explode, Squish) create surreal, share-worthy effects no other tool offers."
+      "highlight": "Pikaffects (Inflate, Explode, Squish) create surreal, share-worthy effects no other tool offers.",
+      "providerUrl": "https://pika.art"
     },
     {
       "id": "scite",
@@ -1450,7 +1523,8 @@
         "peer review"
       ],
       "status": "available",
-      "highlight": "1.8B citation statements indexed — see if papers support or contradict each other, not just cite counts."
+      "highlight": "1.8B citation statements indexed — see if papers support or contradict each other, not just cite counts.",
+      "providerUrl": "https://scite.ai"
     },
     {
       "id": "synthesia",
@@ -1471,7 +1545,8 @@
         "GDPR"
       ],
       "status": "available",
-      "highlight": "55,000+ enterprise customers — update a script and the avatar video auto-regenerates."
+      "highlight": "55,000+ enterprise customers — update a script and the avatar video auto-regenerates.",
+      "providerUrl": "https://www.synthesia.io"
     },
     {
       "id": "unitree-g1",
@@ -1491,7 +1566,8 @@
         "embodied AI"
       ],
       "status": "available",
-      "highlight": "Open-source VLA model converts spoken commands into real-time robot motor actions."
+      "highlight": "Open-source VLA model converts spoken commands into real-time robot motor actions.",
+      "providerUrl": "https://www.unitree.com/g1/"
     }
   ]
 }
