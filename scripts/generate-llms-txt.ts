@@ -30,11 +30,14 @@ const llmsTxt = `# Sintra AI
 
 > An AI learning reference: live signals, dated news, a ${USE_CASES_COUNT}-prompt library, tool and model comparisons, plain-English concepts, and topic playbooks. Built for people and for agents — every page below either has schema.org structured data or a matching JSON endpoint, and topics with a playbook include design principles, a recommended stack, best use cases, common pitfalls, and tips, not just a definition.
 
-## Start here: current finance and MCP knowledge
+## Start here: workflows, skills and evidence
 - [Agent manifest](${SITE_URL}/api/index.json): endpoint discovery, retrieval instructions and trust policy. Public static HTTPS GET; no API key. This site does not host an MCP server.
 - [Knowledge collection](${SITE_URL}/api/knowledge.json): ${KNOWLEDGE.length} briefs with stable IDs, cited facts, source-check dates, review-due dates, example steps, prompts and validation criteria.
-- [Browse knowledge](${SITE_URL}/knowledge/): Power BI/Fabric IQ, Anthropic finance agents, advisor connectors, customer stories and practical finance workflows.
+- [Browse knowledge](${SITE_URL}/knowledge/): Claude, Microsoft 365, Excel, PowerPoint, Power BI and source-backed customer examples.
 ${KNOWLEDGE.map(k => `- [${k.title}](${SITE_URL}/api/knowledge/${k.id}.json): ${k.kind}; checked ${k.reviewedAt}; ${k.evidenceLevel}.`).join("\n")}
+
+## Replication skills
+- [Skills index](${SITE_URL}/api/skills.json): ${KNOWLEDGE.filter(k => k.replication).length} guides with supported environments, canonical brief URLs and portable SKILL.md links. Each brief includes inputs, launch steps, procedure, practice, acceptance cases and troubleshooting. Suggested cases are not completed product tests. Copilot does not import SKILL.md as a native feature; follow the steps in the named app.
 
 ## Tested public example
 - [Power BI variance evidence](${SITE_URL}/api/workflows/power-bi-variance.json): LAB-FPNA-01 synthetic dataset, calculated totals, DAX, Power Query import and HoldingCo / Finance AI Lab receipt. Follow workflowResource from the existing variance brief. Synthetic calculations are tested; DAX runtime, tenant access and LLM quality remain untested.
@@ -71,6 +74,7 @@ ${GUIDES.map(g => `- [${g.title}](${SITE_URL}/guides/${g.slug}/): ${g.tagline}`)
 - Syndication: [RSS](${SITE_URL}/feed.xml), [JSON Feed](${SITE_URL}/feed.json)
 
 ## Machine-readable data
+- [/api/skills.json](${SITE_URL}/api/skills.json) — replication guide index; follow skillUrl for Markdown and resourceUrl for the full canonical JSON record
 - [/api/index.json](${SITE_URL}/api/index.json) — discovery manifest and retrieval policy
 - [/api/knowledge.json](${SITE_URL}/api/knowledge.json) — full finance and MCP briefs, also available individually under /api/knowledge/{id}.json
 - [/llms-full.txt](${SITE_URL}/llms-full.txt) — full knowledge briefs, concepts, guides, and topic playbooks in one file
@@ -123,9 +127,9 @@ const llmsFullTxt = `# Sintra AI — Full Reference
 
 > Concatenated full text of knowledge briefs, topic playbooks, concepts, and guides on Sintra AI. Generated at build time from the same source data that powers the site — nothing here is summarized or truncated. For news, tools, models, and the prompt library, use the JSON endpoints linked in /llms.txt instead: those change too often to usefully freeze into a text dump.
 
-# Finance and MCP knowledge
+# Workflows, skills and evidence
 
-${KNOWLEDGE.map(k => `## ${k.title}\n\n${k.summary}\n\nEvidence: ${k.evidenceLevel}. Sources checked ${k.reviewedAt}; review due ${k.reviewDueAt}. Execution: ${k.executionStatus}.${k.workflowResource ? ` Evidence: ${SITE_URL}${k.workflowResource}.` : ""}\n\n${k.facts.map(f => `${f.text} [${f.sourceIds.join(", ")}]`).join("\n\n")}\n\nPrerequisites: ${k.prerequisites.join(" ")}\n\nSuggested steps:\n${k.steps.map((step, i) => `${i + 1}. ${step}`).join("\n")}\n\nExpected output: ${k.output}\n\nValidation: ${k.validation.join(" ")}\n\nLimits: ${k.limitations.join(" ")}\n\n${k.prompt ? `Example prompt: ${k.prompt}\n\n` : ""}Sources:\n${k.sources.map(source => `- [${source.id}] ${source.url} (checked ${source.checkedAt})`).join("\n")}\n\nBrief: ${SITE_URL}/knowledge/${k.id}/`).join("\n\n")}
+${KNOWLEDGE.map(k => `## ${k.title}\n\n${k.summary}\n\nEvidence: ${k.evidenceLevel}. Sources checked ${k.reviewedAt}; review due ${k.reviewDueAt}. Execution: ${k.executionStatus}.${k.workflowResource ? ` Evidence: ${SITE_URL}${k.workflowResource}.` : ""}\n\n${k.facts.map(f => `${f.text} [${f.sourceIds.join(", ")}]`).join("\n\n")}\n\n${k.replication ? `Replication guide: ${JSON.stringify(k.replication, null, 2)}\nPortable instructions: ${SITE_URL}/skills/${k.id}/SKILL.md\n\n` : ""}Prerequisites: ${k.prerequisites.join(" ")}\n\nSuggested steps:\n${k.steps.map((step, i) => `${i + 1}. ${step}`).join("\n")}\n\nExpected output: ${k.output}\n\nValidation: ${k.validation.join(" ")}\n\nLimits: ${k.limitations.join(" ")}\n\n${k.prompt ? `Example prompt: ${k.prompt}\n\n` : ""}Sources:\n${k.sources.map(source => `- [${source.id}] ${source.url} (checked ${source.checkedAt})`).join("\n")}\n\nBrief: ${SITE_URL}/knowledge/${k.id}/`).join("\n\n")}
 
 # Topic Playbooks
 

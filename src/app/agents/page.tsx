@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 const ENDPOINTS: { path: string; contains: string }[] = [
   { path: "/api/index.json", contains: "Start here: endpoint discovery, retrieval instructions and trust policy." },
   { path: "/api/knowledge.json", contains: "Cited finance/MCP briefs with full workflows, prompts, evidence levels and review dates. Individual briefs: /api/knowledge/{id}.json." },
+  { path: "/api/skills.json", contains: "Replication guide index: environment, source-check dates, execution status, canonical brief and downloadable SKILL.md. Instructions do not grant tools or certify app execution." },
   { path: "/api/workflows/power-bi-variance.json", contains: "LAB-FPNA-01: synthetic input rows, reconciled results, DAX, import instructions and hashed HoldingCo / Finance AI Lab evidence. Power BI tenant execution remains untested." },
   { path: "/llms.txt", contains: "Curated index — links + one-line description of every concept, guide, and topic." },
   { path: "/llms-full.txt", contains: "Full knowledge briefs, concepts, guides, and topic playbooks, concatenated." },
@@ -56,7 +57,7 @@ export default function AgentsPage() {
 
           <p className="text-[16px] leading-[1.7] text-fg-2 mb-10 max-w-2xl">
             Sintra AI is built to be read by people and queried by agents. Use the manifest to find stable JSON resources, or read the full text index.
-            Finance and MCP briefs share the same source data as the human pages, with cited claims,
+            Office, finance and MCP briefs share the same source data as the human pages, with cited claims,
             dates, suggested procedures and limitations. Nothing here requires an API key or authentication;
             everything is a static file, generated at build time and re-generated on every deploy.
           </p>
@@ -69,9 +70,16 @@ export default function AgentsPage() {
               <li>Fetch the manifest, then <a href={`${BASE_PATH}/api/knowledge.json`} className="text-violet-bright underline">the knowledge collection</a>. Filter records locally by tags, kind or id.</li>
               <li>For a smaller response, follow a record’s resourceUrl. Each response includes the full brief, prompt, checks and source references.</li>
               <li>Use reviewedAt for source checks and reviewDueAt for rechecking. Keep evidenceLevel and executionStatus with the answer.</li>
+              <li>For repeatable Office work, fetch <a href={`${BASE_PATH}/api/skills.json`} className="text-violet-bright underline">the skills index</a>. Follow resourceUrl for inputs, launch steps, procedure, practice and acceptance cases; skillUrl provides the same guidance as portable Markdown.</li>
               <li>For the <a href={`${BASE_PATH}/knowledge/power-bi-variance-review/`} className="text-violet-bright underline">variance example</a>, follow workflowResource to the dataset, query and evidence. Its synthetic calculation test does not validate a live tenant or an LLM’s explanation.</li>
             </ol>
             <p className="text-xs leading-relaxed text-fg-4 mt-5">Transport: ordinary HTTPS GET. No account or API key. These are static reference files, not an MCP endpoint. An LLM with web/file retrieval can read them directly; an existing MCP fetch tool can retrieve the same URLs. Live Power BI access requires a separate authenticated provider connection.</p>
+          </section>
+
+          <section className="mb-12 rounded-2xl border border-hairline p-5 sm:p-7">
+            <h2 className="font-serif text-[26px] text-fg-1 mb-4">Use a replication skill</h2>
+            <p className="text-sm leading-relaxed text-fg-3 mb-4">Choose a guide for the app you already use. Follow its inputs, setup, procedure and prompt, then compare your output with its acceptance checks. A portable instruction file does not add tools, permissions or a native Copilot feature.</p>
+            <p className="text-sm leading-relaxed text-fg-3">For Claude custom skills, review the downloaded SKILL.md, place it in a folder matching the guide’s ID, and package that folder as a ZIP. Where your account permits, use Customize → Skills → Create skill → Upload a skill. Review it before enabling, then try its small practice case. See the <a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" target="_blank" rel="noopener noreferrer" className="text-violet-bright underline underline-offset-4">current Claude setup guide</a> for account-specific availability. These Sintra-authored skills have not been execution-tested in Claude or Office.</p>
           </section>
 
           <section className="mb-12 rounded-2xl border border-hairline p-5 sm:p-7">
