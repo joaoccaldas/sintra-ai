@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const ENDPOINTS: { path: string; contains: string }[] = [
   { path: "/api/index.json", contains: "Start here: endpoint discovery, retrieval instructions and trust policy." },
-  { path: "/api/knowledge.json", contains: "Cited finance/MCP briefs with full workflows, prompts, evidence levels and review dates. Individual briefs: /api/knowledge/{id}.json." },
+  { path: "/api/knowledge.json", contains: "Cited ChatGPT, Claude, 3D, Office and finance/MCP briefs with full workflows, prompts, evidence levels and review dates. Individual briefs: /api/knowledge/{id}.json." },
   { path: "/api/knowledge-index.json", contains: "Compact discovery with audiences, tags, provenance, source URLs and links to one full brief at a time." },
   { path: "/api/skills.json", contains: "Replication guide index: environment, source-check dates, execution status, canonical brief and downloadable SKILL.md. Instructions do not grant tools or certify app execution." },
   { path: "/api/workflows/power-bi-variance.json", contains: "LAB-FPNA-01: synthetic input rows, reconciled results, DAX, import instructions and hashed HoldingCo / Finance AI Lab evidence. Power BI tenant execution remains untested." },
@@ -72,6 +72,7 @@ export default function AgentsPage() {
               <li>For a smaller response, follow a record’s resourceUrl. Each response includes the full brief, prompt, checks and source references.</li>
               <li>Use reviewedAt for source checks and reviewDueAt for rechecking. Keep evidenceLevel and executionStatus with the answer.</li>
               <li>For repeatable work, fetch <a href={`${BASE_PATH}/api/skills.json`} className="text-violet-bright underline">the skills index</a>. Follow resourceUrl for inputs, launch steps, procedure, practice and acceptance cases; skillUrl provides the same guidance as portable Markdown.</li>
+              <li>For 3D, filter the compact index by the 3D tag or spatial.category, then retrieve one brief and its SKILL.md. Diagram URLs are labelled illustrations. No 3D recipe is an execution receipt; private Studio resources are not exposed by this static site.</li>
               <li>For the <a href={`${BASE_PATH}/knowledge/power-bi-variance-review/`} className="text-violet-bright underline">variance example</a>, follow workflowResource to the dataset, query and evidence. Its synthetic calculation test does not validate a live tenant or an LLM’s explanation.</li>
             </ol>
             <p className="text-xs leading-relaxed text-fg-4 mt-5">Transport: ordinary HTTPS GET. No account or API key. These are static reference files, not an MCP endpoint. An LLM with web/file retrieval can read them directly; an existing MCP fetch tool can retrieve the same URLs. Live Power BI access requires a separate authenticated provider connection.</p>

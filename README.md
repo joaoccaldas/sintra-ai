@@ -193,3 +193,11 @@ The canonical knowledge collection now includes ChatGPT, Codex Cloud, Claude Cod
 Use `/api/index.json` → `/api/knowledge-index.json` → one `resourceUrl` to retrieve only the relevant full brief. `/api/skills.json` links the same records to derived `SKILL.md` files. No authentication or MCP server is hosted by this static site. Installation and tool access follow the named host's current documentation.
 
 News with `knowledgeId` derives from dated announcement records; checking a source does not change its publication date. Customer stories and provider demonstrations are attributed, while Sintra procedures and acceptance cases are Sintra-authored suggestions. Provider application execution remains untested unless a specific receipt states otherwise. Builds and scheduled feed refreshes do not certify claims or create provider automations.
+
+### Illustrated 3D workflows
+
+`/knowledge/3d/` groups 100 distinct practice recipes into ten areas, from game assets and reconstruction to scientific visualization and XR. `spatialKnowledge.ts` contributes them and two selection/connection guides to the existing canonical collection. Each recipe has a labelled original procedure diagram, concrete input brief, tool-specific stages, checks, tips, troubleshooting and a derived skill. Existing game and level-design prompts remain linked rather than copied.
+
+The compact index includes `spatial.category`, complexity and a diagram URL; full JSON and Markdown retain the procedure and evidence boundaries. The browser receives discovery fields and a searchable projection instead of full replication objects, initially showing 24 cards. The atlas lists all 100 recipe links in static HTML.
+
+Blender references use the 4.5 manual so operators can check changes against their installed version. Community Blender/Godot/Unity MCP integrations are documented separately from existing private read-only Studio discovery. No private catalog, asset, source path or connection is exported. All 100 recipes remain `not-run-in-sintra`; diagrams are illustrations, not rendered/tested outputs. A scientific visualization is not a validated solver result, and a valid GLB is not production approval.

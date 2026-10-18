@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/automate/`,      changeFrequency: "weekly",  priority: 0.88 },
     { url: `${SITE_URL}/library/`,       changeFrequency: "weekly",  priority: 0.85 },
     { url: `${SITE_URL}/knowledge/`, lastModified: new Date(KNOWLEDGE_REVIEWED_AT), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/knowledge/3d/`, lastModified: new Date(KNOWLEDGE_REVIEWED_AT), changeFrequency: "monthly", priority: 0.85 },
     ...KNOWLEDGE.map(item => ({ url: `${SITE_URL}/knowledge/${item.id}/`, lastModified: new Date(item.reviewedAt), changeFrequency: "monthly" as const, priority: 0.75 })),
     { url: `${SITE_URL}/agents/`,        changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/learn/`,         changeFrequency: "weekly",  priority: 0.8 },

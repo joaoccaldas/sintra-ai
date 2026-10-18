@@ -3,8 +3,8 @@
   "source": "https://github.com/joaoccaldas/sintra-ai",
   "freshness": "generatedAt is file assembly time, not source verification. Inspect per-record review dates; missing dates mean unknown.",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-10-18T04:32:12.342Z",
-  "count": 23,
+  "generatedAt": "2026-10-18T05:01:11.958Z",
+  "count": 123,
   "data": [
     {
       "id": "earnings-review",
@@ -235,6 +235,1006 @@
       "reviewDueAt": "2026-11-17",
       "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/cowork-inbox-triage/SKILL.md",
       "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/cowork-inbox-triage.json"
+    },
+    {
+      "id": "3d-modular-corridor",
+      "title": "Build a snapping corridor kit",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-modular-corridor/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-modular-corridor.json"
+    },
+    {
+      "id": "3d-loot-chest",
+      "title": "Rig a reusable loot chest",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-loot-chest/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-loot-chest.json"
+    },
+    {
+      "id": "3d-breakable-crate",
+      "title": "Create a breakable crate with bounded debris",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-breakable-crate/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-breakable-crate.json"
+    },
+    {
+      "id": "3d-weapon-sockets",
+      "title": "Attach a tool to a character socket",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-weapon-sockets/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-weapon-sockets.json"
+    },
+    {
+      "id": "3d-terrain-collider",
+      "title": "Separate terrain visuals from collision",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-terrain-collider/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-terrain-collider.json"
+    },
+    {
+      "id": "3d-navmesh-room",
+      "title": "Make a room navigable for an NPC",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-navmesh-room/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-navmesh-room.json"
+    },
+    {
+      "id": "3d-pickup-inspection",
+      "title": "Build a rotating collectible with inspection",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-pickup-inspection/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-pickup-inspection.json"
+    },
+    {
+      "id": "3d-prop-lod",
+      "title": "Compare three prop LODs",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-prop-lod/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-prop-lod.json"
+    },
+    {
+      "id": "3d-normal-bake-prop",
+      "title": "Bake a high-detail prop onto a game mesh",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-normal-bake-prop/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-normal-bake-prop.json"
+    },
+    {
+      "id": "3d-interactive-door",
+      "title": "Wire a door without exporting game logic",
+      "environment": "Blender → Godot or Unity with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-interactive-door/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-interactive-door.json"
+    },
+    {
+      "id": "3d-heightmap-terrain",
+      "title": "Turn a heightmap into a bounded landscape",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-heightmap-terrain/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-heightmap-terrain.json"
+    },
+    {
+      "id": "3d-river-spline",
+      "title": "Build a river ribbon along a curve",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-river-spline/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-river-spline.json"
+    },
+    {
+      "id": "3d-forest-scatter",
+      "title": "Scatter a forest without cloning every tree",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-forest-scatter/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-forest-scatter.json"
+    },
+    {
+      "id": "3d-city-block",
+      "title": "Generate a readable city block from parcels",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-city-block/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-city-block.json"
+    },
+    {
+      "id": "3d-cave-blockout",
+      "title": "Block out a traversable cave",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cave-blockout/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cave-blockout.json"
+    },
+    {
+      "id": "3d-floating-island",
+      "title": "Design an illustrative floating island",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-floating-island/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-floating-island.json"
+    },
+    {
+      "id": "3d-road-network",
+      "title": "Sweep roads through an existing terrain",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-road-network/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-road-network.json"
+    },
+    {
+      "id": "3d-cliff-rock-variants",
+      "title": "Make a small coherent rock family",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cliff-rock-variants/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cliff-rock-variants.json"
+    },
+    {
+      "id": "3d-cloud-cards",
+      "title": "Create a lightweight distant cloud layer",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cloud-cards/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cloud-cards.json"
+    },
+    {
+      "id": "3d-season-vegetation",
+      "title": "Reuse one vegetation mesh across seasons",
+      "environment": "Blender Geometry Nodes with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-season-vegetation/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-season-vegetation.json"
+    },
+    {
+      "id": "3d-parametric-chair",
+      "title": "Adapt a parametric chair to a size brief",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-parametric-chair/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-parametric-chair.json"
+    },
+    {
+      "id": "3d-turned-vase",
+      "title": "Model a vase from a measured profile",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-turned-vase/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-turned-vase.json"
+    },
+    {
+      "id": "3d-watch-exploded",
+      "title": "Create a semantic exploded product diagram",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-watch-exploded/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-watch-exploded.json"
+    },
+    {
+      "id": "3d-bike-fit-proxy",
+      "title": "Build an adjustable bicycle fit proxy",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-bike-fit-proxy/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-bike-fit-proxy.json"
+    },
+    {
+      "id": "3d-enclosure-fit",
+      "title": "Check a product enclosure around a component",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-enclosure-fit/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-enclosure-fit.json"
+    },
+    {
+      "id": "3d-retopology-joint",
+      "title": "Retopologize a deforming elbow",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-retopology-joint/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-retopology-joint.json"
+    },
+    {
+      "id": "3d-scan-cleanup",
+      "title": "Clean a scan while preserving measured scale",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-scan-cleanup/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-scan-cleanup.json"
+    },
+    {
+      "id": "3d-print-preflight",
+      "title": "Prepare a mesh for a printability review",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-print-preflight/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-print-preflight.json"
+    },
+    {
+      "id": "3d-photogrammetry-prop",
+      "title": "Reconstruct a prop from overlapping photos",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-photogrammetry-prop/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-photogrammetry-prop.json"
+    },
+    {
+      "id": "3d-splat-collision-proxy",
+      "title": "Pair a radiance-field capture with collision geometry",
+      "environment": "Blender / COLMAP / Nerfstudio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-splat-collision-proxy/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-splat-collision-proxy.json"
+    },
+    {
+      "id": "3d-oak-material",
+      "title": "Build a reusable oak material study",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-oak-material/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-oak-material.json"
+    },
+    {
+      "id": "3d-brushed-metal",
+      "title": "Make anisotropic brushed metal readable",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-brushed-metal/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-brushed-metal.json"
+    },
+    {
+      "id": "3d-glass-display",
+      "title": "Review glass thickness and transmission",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-glass-display/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-glass-display.json"
+    },
+    {
+      "id": "3d-fabric-weave",
+      "title": "Show fabric weave without excessive geometry",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-fabric-weave/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-fabric-weave.json"
+    },
+    {
+      "id": "3d-wet-ground",
+      "title": "Create a controlled wet-ground variant",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-wet-ground/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-wet-ground.json"
+    },
+    {
+      "id": "3d-triplanar-rock",
+      "title": "Evaluate triplanar projection for rock faces",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-triplanar-rock/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-triplanar-rock.json"
+    },
+    {
+      "id": "3d-decal-label",
+      "title": "Apply a legible product label decal",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-decal-label/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-decal-label.json"
+    },
+    {
+      "id": "3d-texture-atlas",
+      "title": "Consolidate prop textures into an atlas",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-texture-atlas/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-texture-atlas.json"
+    },
+    {
+      "id": "3d-static-lightmap",
+      "title": "Bake room lighting for a runtime",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-static-lightmap/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-static-lightmap.json"
+    },
+    {
+      "id": "3d-material-variants",
+      "title": "Ship one mesh with reviewed finish variants",
+      "environment": "Blender shaders / runtime materials with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-material-variants/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-material-variants.json"
+    },
+    {
+      "id": "3d-walk-cycle",
+      "title": "Author a loopable walk cycle",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-walk-cycle/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-walk-cycle.json"
+    },
+    {
+      "id": "3d-facial-shapes",
+      "title": "Build a small facial expression set",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-facial-shapes/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-facial-shapes.json"
+    },
+    {
+      "id": "3d-camera-rail",
+      "title": "Animate a camera along a product rail",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-camera-rail/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-camera-rail.json"
+    },
+    {
+      "id": "3d-mechanical-linkage",
+      "title": "Animate a constrained mechanical linkage",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-mechanical-linkage/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-mechanical-linkage.json"
+    },
+    {
+      "id": "3d-crowd-variation",
+      "title": "Create a bounded background crowd",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-crowd-variation/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-crowd-variation.json"
+    },
+    {
+      "id": "3d-flag-animation",
+      "title": "Create a wind-driven flag loop candidate",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-flag-animation/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-flag-animation.json"
+    },
+    {
+      "id": "3d-hair-cards",
+      "title": "Build a small hair-card style",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-hair-cards/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-hair-cards.json"
+    },
+    {
+      "id": "3d-retarget-motion",
+      "title": "Retarget a licensed motion clip",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-retarget-motion/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-retarget-motion.json"
+    },
+    {
+      "id": "3d-assembly-explainer",
+      "title": "Animate an assembly sequence with callouts",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-assembly-explainer/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-assembly-explainer.json"
+    },
+    {
+      "id": "3d-viseme-timing",
+      "title": "Align authored mouth shapes to a speech track",
+      "environment": "Blender animation / engine clips with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-viseme-timing/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-viseme-timing.json"
+    },
+    {
+      "id": "3d-rigid-stack",
+      "title": "Test a small rigid-body stack",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-rigid-stack/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-rigid-stack.json"
+    },
+    {
+      "id": "3d-domino-chain",
+      "title": "Find a reliable domino spacing",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-domino-chain/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-domino-chain.json"
+    },
+    {
+      "id": "3d-cloth-drape",
+      "title": "Drape fabric over a measured table",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cloth-drape/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cloth-drape.json"
+    },
+    {
+      "id": "3d-liquid-pour",
+      "title": "Prototype a bounded liquid pour",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-liquid-pour/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-liquid-pour.json"
+    },
+    {
+      "id": "3d-smoke-burst",
+      "title": "Make a short gas simulation preview",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-smoke-burst/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-smoke-burst.json"
+    },
+    {
+      "id": "3d-soft-body-drop",
+      "title": "Compare a soft-body drop against a rigid baseline",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-soft-body-drop/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-soft-body-drop.json"
+    },
+    {
+      "id": "3d-flock-path",
+      "title": "Create a constrained flock visual",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-flock-path/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-flock-path.json"
+    },
+    {
+      "id": "3d-pendulum-study",
+      "title": "Compare an animated pendulum with an analytical period",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-pendulum-study/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-pendulum-study.json"
+    },
+    {
+      "id": "3d-robot-reach",
+      "title": "Visualize a robot arm's sampled reach",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-robot-reach/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-robot-reach.json"
+    },
+    {
+      "id": "3d-gripper-contact",
+      "title": "Run a toy gripper contact experiment",
+      "environment": "Blender / MuJoCo with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-gripper-contact/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-gripper-contact.json"
+    },
+    {
+      "id": "3d-floorplan-room",
+      "title": "Build a room from a dimensioned floor plan",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-floorplan-room/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-floorplan-room.json"
+    },
+    {
+      "id": "3d-daylight-comparison",
+      "title": "Compare two daylight design options",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-daylight-comparison/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-daylight-comparison.json"
+    },
+    {
+      "id": "3d-retail-layout",
+      "title": "Compare shelf layouts with product proxies",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-retail-layout/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-retail-layout.json"
+    },
+    {
+      "id": "3d-museum-story-room",
+      "title": "Compose a museum room around a narrative",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-museum-story-room/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-museum-story-room.json"
+    },
+    {
+      "id": "3d-product-configurator",
+      "title": "Build a finish-and-part product configurator",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-product-configurator/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-product-configurator.json"
+    },
+    {
+      "id": "3d-packshot-turntable",
+      "title": "Plan a consistent product turntable",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-packshot-turntable/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-packshot-turntable.json"
+    },
+    {
+      "id": "3d-assembly-clearance",
+      "title": "Show an assembly clearance envelope",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-assembly-clearance/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-assembly-clearance.json"
+    },
+    {
+      "id": "3d-acoustic-zones",
+      "title": "Visualize an acoustic planning hypothesis",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-acoustic-zones/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-acoustic-zones.json"
+    },
+    {
+      "id": "3d-accessibility-route",
+      "title": "Review a route with dimensional proxies",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-accessibility-route/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-accessibility-route.json"
+    },
+    {
+      "id": "3d-camera-match",
+      "title": "Match a camera to a reference photograph",
+      "environment": "Blender / Three.js with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-camera-match/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-camera-match.json"
+    },
+    {
+      "id": "3d-solar-ephemeris",
+      "title": "Visualize Solar System positions from ephemerides",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-solar-ephemeris/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-solar-ephemeris.json"
+    },
+    {
+      "id": "3d-two-body-orbit",
+      "title": "Compare an N-body orbit with a two-body reference",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-two-body-orbit/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-two-body-orbit.json"
+    },
+    {
+      "id": "3d-star-catalog",
+      "title": "Build a star field from a cited catalog sample",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-star-catalog/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-star-catalog.json"
+    },
+    {
+      "id": "3d-galactic-distance",
+      "title": "Explain astronomical distance scales without distortion",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-galactic-distance/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-galactic-distance.json"
+    },
+    {
+      "id": "3d-exoplanet-transit",
+      "title": "Animate a synthetic exoplanet transit",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-exoplanet-transit/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-exoplanet-transit.json"
+    },
+    {
+      "id": "3d-asteroid-trajectory",
+      "title": "Compare an asteroid trajectory with source dates",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-asteroid-trajectory/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-asteroid-trajectory.json"
+    },
+    {
+      "id": "3d-earth-terrain",
+      "title": "Place a terrain tile on a geospatial globe",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-earth-terrain/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-earth-terrain.json"
+    },
+    {
+      "id": "3d-satellite-groundtrack",
+      "title": "Visualize a dated satellite ground track",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-satellite-groundtrack/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-satellite-groundtrack.json"
+    },
+    {
+      "id": "3d-black-hole-illustration",
+      "title": "Create a labelled black-hole concept illustration",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-black-hole-illustration/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-black-hole-illustration.json"
+    },
+    {
+      "id": "3d-cosmic-web",
+      "title": "Visualize a provided cosmological simulation snapshot",
+      "environment": "NASA / Astropy / REBOUND → Blender or web with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-cosmic-web/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-cosmic-web.json"
+    },
+    {
+      "id": "3d-glb-viewer",
+      "title": "Load a reviewed GLB in an existing web viewer",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-glb-viewer/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-glb-viewer.json"
+    },
+    {
+      "id": "3d-instanced-props",
+      "title": "Instance repeated static props efficiently",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-instanced-props/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-instanced-props.json"
+    },
+    {
+      "id": "3d-object-picking",
+      "title": "Add semantic object selection",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-object-picking/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-object-picking.json"
+    },
+    {
+      "id": "3d-ar-placement",
+      "title": "Prototype surface placement in supported AR",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-ar-placement/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-ar-placement.json"
+    },
+    {
+      "id": "3d-vr-room",
+      "title": "Walk through an existing room in VR",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-vr-room/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-vr-room.json"
+    },
+    {
+      "id": "3d-first-person-room",
+      "title": "Add a bounded first-person room tour",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-first-person-room/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-first-person-room.json"
+    },
+    {
+      "id": "3d-point-cloud-view",
+      "title": "Display a bounded measured point cloud",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-point-cloud-view/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-point-cloud-view.json"
+    },
+    {
+      "id": "3d-section-view",
+      "title": "Create a reversible section cut",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-section-view/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-section-view.json"
+    },
+    {
+      "id": "3d-annotation-tour",
+      "title": "Attach durable annotations to model parts",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-annotation-tour/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-annotation-tour.json"
+    },
+    {
+      "id": "3d-panorama-tour",
+      "title": "Connect licensed panoramas into a simple tour",
+      "environment": "Three.js / WebXR with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-panorama-tour/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-panorama-tour.json"
+    },
+    {
+      "id": "3d-mcp-connection-audit",
+      "title": "Inspect an existing Blender MCP connection",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-mcp-connection-audit/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-mcp-connection-audit.json"
+    },
+    {
+      "id": "3d-asset-inventory",
+      "title": "Discover reusable assets through read-only MCP",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-asset-inventory/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-asset-inventory.json"
+    },
+    {
+      "id": "3d-parameter-contract",
+      "title": "Turn an LLM design brief into bounded parameters",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-parameter-contract/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-parameter-contract.json"
+    },
+    {
+      "id": "3d-seeded-variants",
+      "title": "Make procedural variants reproducible",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-seeded-variants/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-seeded-variants.json"
+    },
+    {
+      "id": "3d-export-validator",
+      "title": "Validate an export before engine handoff",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-export-validator/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-export-validator.json"
+    },
+    {
+      "id": "3d-texture-budget",
+      "title": "Compare compressed texture delivery candidates",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-texture-budget/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-texture-budget.json"
+    },
+    {
+      "id": "3d-visual-regression",
+      "title": "Create a source-bound visual comparison",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-visual-regression/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-visual-regression.json"
+    },
+    {
+      "id": "3d-production-receipt",
+      "title": "Record a reusable 3D production receipt",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-production-receipt/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-production-receipt.json"
+    },
+    {
+      "id": "3d-llm-knowledge-retrieval",
+      "title": "Retrieve one 3D procedure without loading the whole catalog",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-llm-knowledge-retrieval/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-llm-knowledge-retrieval.json"
+    },
+    {
+      "id": "3d-asset-rights",
+      "title": "Keep provenance and rights attached to a 3D derivative",
+      "environment": "Claude Code / Codex / existing Studio with an optional authorized LLM client",
+      "executionStatus": "not-run-in-sintra",
+      "reviewedAt": "2026-10-18",
+      "reviewDueAt": "2026-11-17",
+      "skillUrl": "https://joaoccaldas.github.io/sintra-ai/skills/3d-asset-rights/SKILL.md",
+      "resourceUrl": "https://joaoccaldas.github.io/sintra-ai/api/knowledge/3d-asset-rights.json"
     }
   ]
 }

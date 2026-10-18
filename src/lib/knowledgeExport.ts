@@ -1,5 +1,5 @@
 import type { UseCase } from "./constants";
-import { KNOWLEDGE } from "./knowledgeData";
+import { KNOWLEDGE, knowledgeSearchText } from "./knowledgeData";
 
 export const KNOWLEDGE_POLICY = {
   generatedAt: "Time the static file was assembled; not a source verification date.",
@@ -22,6 +22,7 @@ export function buildKnowledgeExport(siteUrl: string, generatedAt: string) {
         skillUrl: `${siteUrl}/skills/${record.id}/SKILL.md`,
         replication: { ...record.replication, practice: { ...record.replication.practice, ...(record.replication.practice.resourceUrl ? { resourceUrl: `${siteUrl}${record.replication.practice.resourceUrl}` } : {}) } },
       } : {}),
+      ...(record.spatial ? { spatial: { ...record.spatial, diagram: { ...record.spatial.diagram, url: `${siteUrl}${record.spatial.diagram.url}` } } } : {}),
       ...(record.workflowResource ? { workflowResource: `${siteUrl}${record.workflowResource}` } : {}),
       url: `${siteUrl}/knowledge/${record.id}/`, resourceUrl: `${siteUrl}/api/knowledge/${record.id}.json`,
     })),
@@ -40,5 +41,17 @@ export function buildKnowledgeIndex(siteUrl: string, generatedAt: string) {
       tags: item.tags, audiences: item.audiences ?? [], evidenceLevel: item.evidenceLevel,
       executionStatus: item.executionStatus, reviewedAt: item.reviewedAt, reviewDueAt: item.reviewDueAt,
       sourceUrls: item.sources.map(source => source.url), url: item.url, resourceUrl: item.resourceUrl,
+      ...(item.spatial ? { spatial: { category: item.spatial.category, categoryLabel: item.spatial.categoryLabel, tools: item.spatial.tools, complexity: item.spatial.complexity, diagramUrl: item.spatial.diagram.url } } : {}),
       ...(item.skillUrl ? { skillUrl: item.skillUrl } : {}), related: item.related })) };
 }
+
+/** Browser discovery omits full procedures, prompts, primary text and replication bodies. */
+export function buildKnowledgeBrowseData() {
+  return KNOWLEDGE.map(item => ({ id: item.id, title: item.title, summary: item.summary,
+    kind: item.kind, tags: item.tags, audiences: item.audiences ?? [], reviewedAt: item.reviewedAt,
+    hasSkill: !!item.replication, hasWorkflowResource: !!item.workflowResource,
+    spatial: item.spatial ? { categoryLabel: item.spatial.categoryLabel, complexity: item.spatial.complexity } : undefined,
+    searchText: knowledgeSearchText(item),
+  }));
+}
+export type KnowledgeBrowseRecord = ReturnType<typeof buildKnowledgeBrowseData>[number];
