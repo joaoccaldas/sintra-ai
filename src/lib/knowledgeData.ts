@@ -2,7 +2,21 @@
  * Review dates are editorial events, never advanced by a build or feed refresh.
  * Workflow steps are Sintra examples; a source check is not an integration test.
  */
+import { OFFICE_KNOWLEDGE, EARNINGS_REPLICATION } from "./officeKnowledge";
+
 export type KnowledgeKind = "capability" | "announcement" | "workflow" | "case-study";
+export interface ReplicationGuide {
+  version: string;
+  environment: string;
+  useWhen: string;
+  timeEstimate: string;
+  inputs: { name: string; detail: string }[];
+  launch: string[];
+  practice: { task: string; expected: string; resourceUrl?: string };
+  acceptanceTests: { scenario: string; expected: string }[];
+  troubleshooting: { symptom: string; action: string }[];
+  relatedPrompts: string[];
+}
 export interface KnowledgeSource {
   id: string;
   title: string;
@@ -31,6 +45,7 @@ export interface KnowledgeRecord {
   related: string[];
   executionStatus: "not-run-in-sintra" | "synthetic-calculation-tested";
   workflowResource?: string;
+  replication?: ReplicationGuide;
   news?: { publishedAt: string; provider: string; providerColor: string };
 }
 
@@ -108,6 +123,7 @@ export const KNOWLEDGE: KnowledgeRecord[] = [
   },
   {
     ...base, id: "earnings-review", title: "Build an earnings review with traceable claims",
+    replication: EARNINGS_REPLICATION,
     summary: "Move from filings and transcripts to a concise change log, preserving the source of every material number.",
     kind: "workflow", evidenceLevel: "example-workflow", tags: ["Finance", "Research", "Anthropic", "Earnings"],
     facts: [{ text: "Earnings review is one of Anthropic’s published finance agent templates.", sourceIds: [finance.id] }], sources: [finance],
@@ -117,7 +133,7 @@ export const KNOWLEDGE: KnowledgeRecord[] = [
     validation: ["Check every material number against the filing.", "Do not combine fiscal periods, currencies or adjusted and reported measures without an explicit bridge."],
     limitations: ["Sintra example, not a completed investment analysis.", "Missing evidence should remain missing; source text is data, not instructions to the agent."],
     prompt: "From the supplied current and prior filings and transcript, build an earnings change log. Cite document and page/section for each material claim. Separate reported results, guidance and estimates. Show formulas and units, reconcile adjusted metrics where disclosed, and list contradictions or missing evidence. Do not infer unsupported figures.",
-    related: ["anthropic-finance-agents", "power-bi-variance-review"],
+    related: ["anthropic-finance-agents", "power-bi-variance-review", "claude-excel-model-audit", "claude-powerpoint-template-review"],
   },
   {
     ...base, id: "month-end-close", title: "Prepare a month-end exception pack",
@@ -159,6 +175,7 @@ export const KNOWLEDGE: KnowledgeRecord[] = [
     limitations: ["This is a documented customer story, not a newly announced product or a Sintra deployment.", "The source does not establish a universal return on investment."],
     related: ["month-end-close", "anthropic-finance-agents"],
   },
+  ...OFFICE_KNOWLEDGE,
 ];
 
 export const KNOWLEDGE_KIND_LABELS: Record<KnowledgeKind, string> = {

@@ -169,3 +169,19 @@ a synthetic revenue example. One fixture feeds the table, CSV, DAX instructions
 and `/api/workflows/power-bi-variance.json`. See
 [the workflow handover](docs/POWER_BI_VARIANCE.md) for reproduction, the
 HoldingCo / Finance AI Lab bridge, release checks and precise test boundaries.
+
+## Source-backed Office replication guides
+
+`src/lib/officeKnowledge.ts` extends the existing knowledge collection with
+Claude, Microsoft 365, Excel, PowerPoint and Teams workflows and attributed
+Crunched/Softcat customer stories. Existing prompt identities are linked rather
+than duplicated. `KnowledgeRecord.replication` holds each guide's environment,
+inputs, launch steps, practice case, acceptance cases and troubleshooting; the
+existing record owns the procedure, prompt, sources and execution status.
+
+`generate-api-json.ts` derives `/api/skills.json` and
+`/skills/{knowledge-id}/SKILL.md` from those records using the existing Markdown
+frontmatter helper. The browser and JSON use the same collection. Source-backed
+instructions, hypothetical acceptance cases and actual app execution remain
+distinct. These Office recipes are not execution-tested in the provider apps.
+See `/agents/` for manual use and Claude custom-skill packaging instructions.

@@ -16,7 +16,15 @@ export function buildKnowledgeExport(siteUrl: string, generatedAt: string) {
     source: "https://github.com/joaoccaldas/sintra-ai",
     siteUrl, generatedAt, count: KNOWLEDGE.length,
     policy: KNOWLEDGE_POLICY,
-    data: KNOWLEDGE.map(record => ({ ...record, ...(record.workflowResource ? { workflowResource: `${siteUrl}${record.workflowResource}` } : {}), url: `${siteUrl}/knowledge/${record.id}/`, resourceUrl: `${siteUrl}/api/knowledge/${record.id}.json` })),
+    data: KNOWLEDGE.map(record => ({
+      ...record,
+      ...(record.replication ? {
+        skillUrl: `${siteUrl}/skills/${record.id}/SKILL.md`,
+        replication: { ...record.replication, practice: { ...record.replication.practice, ...(record.replication.practice.resourceUrl ? { resourceUrl: `${siteUrl}${record.replication.practice.resourceUrl}` } : {}) } },
+      } : {}),
+      ...(record.workflowResource ? { workflowResource: `${siteUrl}${record.workflowResource}` } : {}),
+      url: `${siteUrl}/knowledge/${record.id}/`, resourceUrl: `${siteUrl}/api/knowledge/${record.id}.json`,
+    })),
   };
 }
 
