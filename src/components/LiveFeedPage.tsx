@@ -1,7 +1,11 @@
 "use client";
 
+import { useReducedMotion } from "@/lib/hooks";
+
+import { useFeedClock } from "@/hooks/useFeedClock";
+
 import { useMemo, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowUpRight, Radio } from "lucide-react";
 import {
   LIVE_FEED,
@@ -13,8 +17,8 @@ import {
 } from "@/lib/liveFeedData";
 
 /* Freshness label for the header badge. */
-function freshnessLabel(): string {
-  const h = liveFeedAgeHours();
+function freshnessLabel(now: number): string {
+  const h = liveFeedAgeHours(now);
   if (h <= 0) return "updated just now";
   if (h < 24) return `updated ${h}h ago`;
   return `updated ${Math.floor(h / 24)}d ago`;
@@ -30,7 +34,7 @@ function SourceDot({ color }: { color: string }) {
   );
 }
 
-function FeedRow({ item, index, reduced }: { item: LiveFeedItem; index: number; reduced: boolean }) {
+function FeedRow({ item, index, reduced, now }: { item: LiveFeedItem; index: number; reduced: boolean; now: number }) {
   return (
     <motion.a
       href={item.url}
@@ -40,7 +44,7 @@ function FeedRow({ item, index, reduced }: { item: LiveFeedItem; index: number; 
       whileInView={reduced ? { opacity: 1 } : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.03, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative flex flex-col gap-2 rounded-xl border border-white/[0.06] bg-white/[0.015] px-5 py-4 hover:border-violet/25 hover:bg-white/[0.035] transition-colors"
+      className="surface-panel group relative flex flex-col gap-2 rounded-xl border border-white/[0.06] bg-white/[0.015] px-5 py-4 hover:border-violet/25 hover:bg-white/[0.035] transition-colors"
     >
       {/* meta row */}
       <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4">
@@ -49,7 +53,7 @@ function FeedRow({ item, index, reduced }: { item: LiveFeedItem; index: number; 
         <span aria-hidden="true" className="opacity-40">·</span>
         <span>{item.category}</span>
         <span className="flex-1" />
-        <time dateTime={item.publishedAt ?? undefined}>{liveAge(item.publishedAt)}</time>
+        <time dateTime={item.publishedAt ?? undefined}>{liveAge(item.publishedAt, now)}</time>
       </div>
 
       {/* title */}
@@ -70,6 +74,7 @@ function FeedRow({ item, index, reduced }: { item: LiveFeedItem; index: number; 
 }
 
 export default function LiveFeedPage() {
+  const now = useFeedClock();
   const reduced = useReducedMotion() ?? false;
   const [category, setCategory] = useState<string>("All");
 
@@ -99,7 +104,7 @@ export default function LiveFeedPage() {
           </span>
           <span className="font-mono text-[10px] tracking-[0.18em] uppercase text-violet-bright">Live</span>
           <span className="w-6 h-px bg-hairline" />
-          <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4">{freshnessLabel()}</span>
+          <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-fg-4">{freshnessLabel(now)}</span>
         </div>
 
         {/* title */}
@@ -148,7 +153,7 @@ export default function LiveFeedPage() {
         ) : (
           <div className="flex flex-col gap-3">
             {items.map((item, i) => (
-              <FeedRow key={item.id} item={item} index={i} reduced={reduced} />
+              <FeedRow key={item.id} item={item} index={i} reduced={reduced} now={now} />
             ))}
           </div>
         )}

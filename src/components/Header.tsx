@@ -9,18 +9,20 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 import { useSidebar } from "@/context/SidebarContext";
 import { BASE_PATH } from "@/lib/constants";
+import type { Translations } from "@/lib/i18n";
 
 const CommandPalette = dynamic(() => import("./CommandPalette"), { ssr: false });
 const SavedPanel = dynamic(() => import("./SavedPanel"), { ssr: false });
 
 interface Props { total: number; }
 
-const PATH_LABEL: Record<string, string> = {
-  news: "AI News", live: "Live Feed", automate: "Automation Hub", weekly: "Weekly Digest", topics: "Topic Hubs",
-  "ai-history": "AI History", "ai-labs": "AI Labs", research: "Research",
-  learn: "Learning Paths", guides: "Guides", resources: "Resources", concepts: "Concepts",
-  tools: "AI Tools", models: "Models", claude: "Claude", "google-ai-tools": "Google AI",
-  "token-calculator": "Cost Calc", collections: "Collections", prompts: "Prompt", videos: "Videos",
+const PATH_LABEL_KEY: Record<string, keyof Translations> = {
+  knowledge: "side_knowledge", agents: "side_agents",
+  news: "side_news", live: "side_live", automate: "side_automate", weekly: "side_weekly", topics: "side_topics",
+  "ai-history": "side_history", "ai-labs": "side_labs", research: "side_research",
+  learn: "side_learn", guides: "side_guides", resources: "side_resources", concepts: "side_concepts",
+  tools: "side_tools", models: "side_models", claude: "side_claude", "google-ai-tools": "side_google",
+  "token-calculator": "side_costcalc", collections: "side_collections", prompts: "side_prompt", videos: "side_videos",
 };
 
 function activeSegment(pathname: string): string {
@@ -29,7 +31,7 @@ function activeSegment(pathname: string): string {
 }
 
 export default function Header({ total: _total }: Props) {
-  const { locale, toggle } = useLanguage();
+  const { locale, toggle, t } = useLanguage();
   const { saved } = useSavedPrompts();
   const { setMobileOpen } = useSidebar();
   const pathname = usePathname();
@@ -39,7 +41,8 @@ export default function Header({ total: _total }: Props) {
   const [savedPanelOpen, setSavedPanelOpen] = useState(false);
 
   const segment = activeSegment(pathname);
-  const crumb = PATH_LABEL[segment];
+  const crumbKey = PATH_LABEL_KEY[segment];
+  const crumb = crumbKey ? (t[crumbKey] as string) : undefined;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -65,12 +68,12 @@ export default function Header({ total: _total }: Props) {
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:px-3 focus:py-2 focus:rounded focus:bg-steel focus:text-fg-1 focus:outline focus:outline-violet-bright"
       >
-        Skip to content
+        {t.hdr_skip}
       </a>
 
       <header
         className={[
-          "fixed top-0 right-0 z-30 h-16 flex items-center transition-all duration-200",
+          "sintra-header fixed top-0 right-0 z-30 h-16 flex items-center transition-all duration-200",
           "left-0 lg:left-[var(--sidebar-w)]",
           scrolled
             ? "bg-abyss/80 backdrop-blur-[14px] border-b border-violet/[0.10]"
@@ -83,7 +86,7 @@ export default function Header({ total: _total }: Props) {
             type="button"
             className="lg:hidden flex items-center justify-center w-9 h-9 shrink-0 text-fg-3 hover:text-fg-1 transition-colors"
             onClick={() => setMobileOpen(true)}
-            aria-label="Open navigation"
+            aria-label={t.hdr_open_nav}
           >
             <Menu size={20} />
           </button>
@@ -109,19 +112,19 @@ export default function Header({ total: _total }: Props) {
           <button
             type="button"
             onClick={() => setPaletteOpen(true)}
-            className="hidden sm:flex items-center gap-2 h-9 px-3 rounded-lg border border-hairline text-fg-4 hover:text-fg-2 hover:border-violet/30 transition-colors"
-            aria-label="Open search"
+            className="flex items-center gap-2 h-9 px-3 rounded-lg border border-hairline text-fg-4 hover:text-fg-2 hover:border-violet/30 transition-colors"
+            aria-label={t.hdr_open_search}
           >
             <Search size={14} />
-            <span className="font-mono text-[11px]">Search</span>
-            <kbd className="font-mono text-[9px] text-fg-4 border border-hairline rounded px-1 py-0.5">⌘K</kbd>
+            <span className="hidden sm:inline font-mono text-[11px]">{t.hdr_search}</span>
+            <kbd className="hidden sm:inline font-mono text-[9px] text-fg-4 border border-hairline rounded px-1 py-0.5">⌘K</kbd>
           </button>
 
           <button
             type="button"
             onClick={() => setSavedPanelOpen(true)}
             className="relative flex items-center justify-center w-9 h-9 rounded-lg text-fg-4 hover:text-fg-2 hover:bg-white/[0.05] transition-colors"
-            aria-label="Open saved prompts"
+            aria-label={t.hdr_saved}
           >
             <Bookmark size={16} />
             {saved.size > 0 && (
@@ -135,7 +138,7 @@ export default function Header({ total: _total }: Props) {
             type="button"
             onClick={toggle}
             className="sintra-runtime-language flex items-center gap-1.5 h-9 px-2.5 rounded-lg text-fg-4 hover:text-fg-2 hover:bg-white/[0.05] transition-colors"
-            aria-label={locale === "en" ? "Switch to Portuguese" : "Switch to English"}
+            aria-label={locale === "en" ? t.hdr_switch_to_pt : t.hdr_switch_to_en}
           >
             <Globe size={15} />
             <span className="font-mono text-[11px] uppercase">{locale === "en" ? "PT" : "EN"}</span>

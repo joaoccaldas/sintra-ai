@@ -33,8 +33,11 @@ import {
   X,
 } from "lucide-react";
 import TesseractMark from "./TesseractMark";
+import { useFocusTrap } from "@/lib/hooks";
 import { useSidebar } from "@/context/SidebarContext";
 import { useTheme, type Theme } from "@/context/ThemeContext";
+import { useLanguage } from "@/context/LanguageContext";
+import type { Translations } from "@/lib/i18n";
 import { BASE_PATH } from "@/lib/constants";
 import { AI_NEWS } from "@/lib/newsDataCombined";
 import { AI_TOOLS } from "@/lib/toolsData";
@@ -42,59 +45,65 @@ import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 interface NavItem {
   href: string;
-  label: string;
+  labelKey: keyof Translations;
   Icon: React.ElementType;
   count?: number;
   pathKey: string;
 }
 
 interface NavGroup {
-  label: string;
+  id: string;
+  labelKey: keyof Translations;
   items: NavItem[];
 }
 
 const NAV: NavGroup[] = [
   {
-    label: "Discover",
+    id: "discover",
+    labelKey: "side_group_discover",
     items: [
-      { href: `${BASE_PATH}/live/`, label: "Live Feed", Icon: Radio, pathKey: "live" },
-      { href: `${BASE_PATH}/automate/`, label: "Automation Hub", Icon: Workflow, pathKey: "automate" },
-      { href: `${BASE_PATH}/library/`, label: "Prompt Library", Icon: Sparkles, count: USE_CASES_COUNT, pathKey: "library" },
-      { href: `${BASE_PATH}/news/`, label: "AI News", Icon: Newspaper, count: AI_NEWS.length, pathKey: "news" },
-      { href: `${BASE_PATH}/weekly/`, label: "Weekly Digest", Icon: Calendar, pathKey: "weekly" },
-      { href: `${BASE_PATH}/topics/`, label: "Topic Hubs", Icon: Tag, pathKey: "topics" },
-      { href: `${BASE_PATH}/ai-history/`, label: "AI History", Icon: Clock, pathKey: "ai-history" },
-      { href: `${BASE_PATH}/ai-labs/`, label: "AI Labs", Icon: Brain, pathKey: "ai-labs" },
-      { href: `${BASE_PATH}/research/`, label: "Research", Icon: FlaskConical, pathKey: "research" },
+      { href: `${BASE_PATH}/live/`, labelKey: "side_live", Icon: Radio, pathKey: "live" },
+      { href: `${BASE_PATH}/knowledge/`, labelKey: "side_knowledge", Icon: BookOpen, pathKey: "knowledge" },
+      { href: `${BASE_PATH}/automate/`, labelKey: "side_automate", Icon: Workflow, pathKey: "automate" },
+      { href: `${BASE_PATH}/library/`, labelKey: "side_library", Icon: Sparkles, count: USE_CASES_COUNT, pathKey: "library" },
+      { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, count: AI_NEWS.length, pathKey: "news" },
+      { href: `${BASE_PATH}/weekly/`, labelKey: "side_weekly", Icon: Calendar, pathKey: "weekly" },
+      { href: `${BASE_PATH}/topics/`, labelKey: "side_topics", Icon: Tag, pathKey: "topics" },
+      { href: `${BASE_PATH}/ai-history/`, labelKey: "side_history", Icon: Clock, pathKey: "ai-history" },
+      { href: `${BASE_PATH}/ai-labs/`, labelKey: "side_labs", Icon: Brain, pathKey: "ai-labs" },
+      { href: `${BASE_PATH}/research/`, labelKey: "side_research", Icon: FlaskConical, pathKey: "research" },
     ],
   },
   {
-    label: "Learn",
+    id: "learn",
+    labelKey: "side_group_learn",
     items: [
-      { href: `${BASE_PATH}/learn/`, label: "Learning Paths", Icon: GraduationCap, pathKey: "learn" },
-      { href: `${BASE_PATH}/guides/`, label: "Guides", Icon: FileText, pathKey: "guides" },
-      { href: `${BASE_PATH}/resources/`, label: "Resources", Icon: Archive, pathKey: "resources" },
-      { href: `${BASE_PATH}/concepts/`, label: "Concepts", Icon: Lightbulb, pathKey: "concepts" },
-      { href: `${BASE_PATH}/videos/`, label: "Videos", Icon: Play, pathKey: "videos" },
+      { href: `${BASE_PATH}/learn/`, labelKey: "side_learn", Icon: GraduationCap, pathKey: "learn" },
+      { href: `${BASE_PATH}/guides/`, labelKey: "side_guides", Icon: FileText, pathKey: "guides" },
+      { href: `${BASE_PATH}/resources/`, labelKey: "side_resources", Icon: Archive, pathKey: "resources" },
+      { href: `${BASE_PATH}/concepts/`, labelKey: "side_concepts", Icon: Lightbulb, pathKey: "concepts" },
+      { href: `${BASE_PATH}/videos/`, labelKey: "side_videos", Icon: Play, pathKey: "videos" },
     ],
   },
   {
-    label: "Reference",
+    id: "reference",
+    labelKey: "side_group_reference",
     items: [
-      { href: `${BASE_PATH}/tools/`, label: "AI Tools", Icon: Wrench, count: AI_TOOLS.length, pathKey: "tools" },
-      { href: `${BASE_PATH}/models/`, label: "Models", Icon: Cpu, pathKey: "models" },
-      { href: `${BASE_PATH}/claude/`, label: "Claude", Icon: Brain, pathKey: "claude" },
-      { href: `${BASE_PATH}/google-ai-tools/`, label: "Google AI", Icon: SearchIcon, pathKey: "google-ai-tools" },
-      { href: `${BASE_PATH}/token-calculator/`, label: "Cost Calc", Icon: Calculator, pathKey: "token-calculator" },
+      { href: `${BASE_PATH}/tools/`, labelKey: "side_tools", Icon: Wrench, count: AI_TOOLS.length, pathKey: "tools" },
+      { href: `${BASE_PATH}/models/`, labelKey: "side_models", Icon: Cpu, pathKey: "models" },
+      { href: `${BASE_PATH}/claude/`, labelKey: "side_claude", Icon: Brain, pathKey: "claude" },
+      { href: `${BASE_PATH}/google-ai-tools/`, labelKey: "side_google", Icon: SearchIcon, pathKey: "google-ai-tools" },
+      { href: `${BASE_PATH}/agents/`, labelKey: "side_agents", Icon: FileText, pathKey: "agents" },
+      { href: `${BASE_PATH}/token-calculator/`, labelKey: "side_costcalc", Icon: Calculator, pathKey: "token-calculator" },
     ],
   },
 ];
 
-const THEMES: { id: Theme; label: string; Icon: React.ElementType }[] = [
-  { id: "dark", label: "Dark", Icon: Moon },
-  { id: "light", label: "Light", Icon: Sun },
-  { id: "forest", label: "Forest", Icon: Leaf },
-  { id: "ocean", label: "Ocean", Icon: Waves },
+const THEMES: { id: Theme; labelKey: keyof Translations; Icon: React.ElementType }[] = [
+  { id: "dark", labelKey: "theme_dark", Icon: Moon },
+  { id: "light", labelKey: "theme_light", Icon: Sun },
+  { id: "forest", labelKey: "theme_forest", Icon: Leaf },
+  { id: "ocean", labelKey: "theme_ocean", Icon: Waves },
 ];
 
 function activePathKey(pathname: string): string {
@@ -116,12 +125,13 @@ function Tip({ label, children }: { label: string; children: React.ReactNode }) 
   );
 }
 
-function NavLink({ item, active }: { item: NavItem; active: boolean }) {
+function NavLink({ item, active, label, iconOnly = false }: { item: NavItem; active: boolean; label: string; iconOnly?: boolean }) {
   const { Icon } = item;
   return (
     <a
       href={item.href}
       aria-current={active ? "page" : undefined}
+      aria-label={iconOnly ? label : undefined}
       className={[
         "flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[13px] transition-all duration-150 group relative border",
         active
@@ -130,8 +140,8 @@ function NavLink({ item, active }: { item: NavItem; active: boolean }) {
       ].join(" ")}
     >
       <Icon size={15} className={active ? "text-violet-bright" : "text-fg-4 group-hover:text-fg-2 transition-colors"} />
-      <span className="flex-1 truncate leading-none">{item.label}</span>
-      {item.count !== undefined && <span className="font-mono text-[10px] text-fg-4 shrink-0">{item.count}</span>}
+      {!iconOnly && <span className="flex-1 truncate leading-none">{label}</span>}
+      {!iconOnly && item.count !== undefined && <span className="font-mono text-[10px] text-fg-4 shrink-0">{item.count}</span>}
     </a>
   );
 }
@@ -139,10 +149,11 @@ function NavLink({ item, active }: { item: NavItem; active: boolean }) {
 function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate?: () => void }) {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
+  const { t } = useLanguage();
   const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({
-    Discover: true,
-    Learn: true,
-    Reference: true,
+    discover: true,
+    learn: true,
+    reference: true,
   });
 
   const activeKey = activePathKey(pathname);
@@ -152,6 +163,8 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
       <div className="px-2 pt-3 pb-2">
         <a
           href={BASE_PATH + "/"}
+          aria-label={t.side_home}
+          aria-current={activeKey === "" ? "page" : undefined}
           className={[
             "flex items-center gap-2 rounded-xl px-2 py-2.5 text-fg-2 hover:text-fg-1 hover:bg-white/[0.05] transition-colors",
             activeKey === "" ? "bg-violet/[0.14] text-violet-bright" : "",
@@ -159,25 +172,26 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
           onClick={onNavigate}
         >
           <Home size={16} />
-          {!collapsed && <span className="font-mono text-[12px] tracking-[0.08em] uppercase">Home</span>}
+          {!collapsed && <span className="font-mono text-[12px] tracking-[0.08em] uppercase">{t.side_home}</span>}
         </a>
       </div>
 
       <nav className="px-2 pb-3 space-y-3 overflow-y-auto flex-1">
         {NAV.map(group => (
-          <div key={group.label}>
+          <div key={group.id}>
             {!collapsed && (
               <button
                 type="button"
-                onClick={() => setOpenGroups(prev => ({ ...prev, [group.label]: !prev[group.label] }))}
+                onClick={() => setOpenGroups(prev => ({ ...prev, [group.id]: !prev[group.id] }))}
+                aria-expanded={openGroups[group.id]}
                 className="w-full flex items-center justify-between px-2 py-1.5 font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4 hover:text-fg-2 transition-colors"
               >
-                {group.label}
-                {openGroups[group.label] ? <ChevronLeft size={12} className="-rotate-90" /> : <ChevronRight size={12} />}
+                {t[group.labelKey] as string}
+                {openGroups[group.id] ? <ChevronLeft size={12} className="-rotate-90" /> : <ChevronRight size={12} />}
               </button>
             )}
             <AnimatePresence initial={false}>
-              {(collapsed || openGroups[group.label]) && (
+              {(collapsed || openGroups[group.id]) && (
                 <motion.div
                   initial={collapsed ? false : { height: 0, opacity: 0 }}
                   animate={collapsed ? undefined : { height: "auto", opacity: 1 }}
@@ -185,17 +199,20 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
                   transition={{ duration: 0.18 }}
                   className="space-y-0.5 overflow-hidden"
                 >
-                  {group.items.map(item => (
-                    <div key={item.href} onClick={onNavigate}>
-                      {collapsed ? (
-                        <Tip label={item.label}>
-                          <NavLink item={{ ...item, label: "" }} active={activeKey === item.pathKey} />
-                        </Tip>
-                      ) : (
-                        <NavLink item={item} active={activeKey === item.pathKey} />
-                      )}
-                    </div>
-                  ))}
+                  {group.items.map(item => {
+                    const label = t[item.labelKey] as string;
+                    return (
+                      <div key={item.href} onClick={onNavigate}>
+                        {collapsed ? (
+                          <Tip label={label}>
+                            <NavLink item={item} active={activeKey === item.pathKey} label={label} iconOnly />
+                          </Tip>
+                        ) : (
+                          <NavLink item={item} active={activeKey === item.pathKey} label={label} />
+                        )}
+                      </div>
+                    );
+                  })}
                 </motion.div>
               )}
             </AnimatePresence>
@@ -205,22 +222,26 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
 
       <div className="border-t border-hairline px-2 py-3">
         <div className={collapsed ? "flex flex-col gap-1" : "grid grid-cols-4 gap-1"}>
-          {THEMES.map(({ id, label, Icon }) => (
-            <button
-              key={id}
-              type="button"
-              onClick={() => setTheme(id)}
-              aria-label={`Switch to ${label} theme`}
-              className={[
-                "flex items-center justify-center h-8 rounded-lg border transition-colors",
-                theme === id
-                  ? "border-violet/40 bg-violet/[0.12] text-violet-bright"
-                  : "border-transparent text-fg-4 hover:text-fg-2 hover:bg-white/[0.05]",
-              ].join(" ")}
-            >
-              <Icon size={14} />
-            </button>
-          ))}
+          {THEMES.map(({ id, labelKey, Icon }) => {
+            const label = t[labelKey] as string;
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={() => setTheme(id)}
+                aria-label={t.theme_switch(label)}
+                aria-pressed={theme === id}
+                className={[
+                  "flex items-center justify-center h-8 rounded-lg border transition-colors",
+                  theme === id
+                    ? "border-violet/40 bg-violet/[0.12] text-violet-bright"
+                    : "border-transparent text-fg-4 hover:text-fg-2 hover:bg-white/[0.05]",
+                ].join(" ")}
+              >
+                <Icon size={14} />
+              </button>
+            );
+          })}
         </div>
       </div>
     </>
@@ -229,6 +250,8 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
 
 export default function SidebarNav() {
   const { collapsed, toggleCollapsed, mobileOpen, setMobileOpen } = useSidebar();
+  const { t } = useLanguage();
+  const drawerRef = useFocusTrap<HTMLElement>(mobileOpen);
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -243,25 +266,25 @@ export default function SidebarNav() {
     <>
       <aside
         className={[
-          "hidden lg:flex fixed left-0 top-0 bottom-0 z-40 flex-col border-r border-hairline bg-abyss/92 backdrop-blur-xl transition-[width] duration-200",
+          "sidebar-rail hidden lg:flex fixed left-0 top-0 bottom-0 z-40 flex-col border-r border-hairline bg-abyss/92 backdrop-blur-xl transition-[width] duration-200",
           collapsed ? "w-[var(--sidebar-w-collapsed)]" : "w-[var(--sidebar-w)]",
         ].join(" ")}
         style={{ width: collapsed ? "var(--sidebar-w-collapsed)" : "var(--sidebar-w)" }}
       >
         <div className="h-16 flex items-center gap-2 px-3 border-b border-hairline">
-          <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0">
-            <TesseractMark size={28} />
-            {!collapsed && (
+          {!collapsed && (
+            <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0">
+              <TesseractMark size={28} />
               <span className="font-serif text-[18px] leading-none text-fg-1 truncate">
                 Sintra <em className="italic text-violet-bright">AI</em>
               </span>
-            )}
-          </a>
+            </a>
+          )}
           <button
             type="button"
             onClick={toggleCollapsed}
             className="ml-auto h-8 w-8 flex items-center justify-center rounded-lg text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] transition-colors"
-            aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+            aria-label={collapsed ? t.side_expand : t.side_collapse}
           >
             {collapsed ? <ChevronRight size={15} /> : <ChevronLeft size={15} />}
           </button>
@@ -274,15 +297,19 @@ export default function SidebarNav() {
           <>
             <motion.button
               type="button"
-              aria-label="Close navigation"
+              aria-label={t.side_close_nav}
               className="fixed inset-0 z-50 bg-black/60 lg:hidden"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
               onClick={() => setMobileOpen(false)}
             />
             <motion.aside
+              ref={drawerRef}
+              role="dialog"
+              aria-modal="true"
+              aria-label={t.hdr_open_nav}
               initial={{ x: -320 }} animate={{ x: 0 }} exit={{ x: -320 }}
               transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed left-0 top-0 bottom-0 z-[60] w-[min(86vw,320px)] flex flex-col border-r border-hairline bg-abyss shadow-2xl lg:hidden"
+              className="sidebar-rail fixed left-0 top-0 bottom-0 z-[60] w-[min(86vw,320px)] flex flex-col border-r border-hairline bg-abyss shadow-2xl lg:hidden"
             >
               <div className="h-16 flex items-center gap-2 px-4 border-b border-hairline">
                 <TesseractMark size={28} />
@@ -293,7 +320,7 @@ export default function SidebarNav() {
                   type="button"
                   onClick={() => setMobileOpen(false)}
                   className="ml-auto h-9 w-9 flex items-center justify-center rounded-lg text-fg-4 hover:text-fg-1 hover:bg-white/[0.05] transition-colors"
-                  aria-label="Close navigation"
+                  aria-label={t.side_close_nav}
                 >
                   <X size={18} />
                 </button>

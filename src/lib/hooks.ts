@@ -3,7 +3,8 @@
 import { useState, useEffect, useCallback, useRef, RefObject, useSyncExternalStore } from "react";
 
 export function useReducedMotion(): boolean {
-  const [reduced, setReduced] = useState(false);
+  // Keep static HTML and hydration identical; enable motion after reading the preference.
+  const [reduced, setReduced] = useState(true);
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     setReduced(mq.matches);

@@ -66,14 +66,14 @@ export default function UseCaseCard({ item, onOpen, isFeatured = false, copyCoun
         <button
           onClick={e => { e.stopPropagation(); toggle(item.id); }}
           aria-label={isSaved(item.id) ? "Remove" : "Save"}
-          className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#0D0F1E]/80 border border-violet/25 text-fg-4 hover:text-violet-bright hover:border-violet/55 backdrop-blur-sm transition-colors"
+          className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-abyss/90 border border-violet/25 text-fg-4 hover:text-violet-bright hover:border-violet/55 backdrop-blur-sm transition-colors"
         >
           {isSaved(item.id) ? <BookmarkCheck size={9} className="text-violet-bright" /> : <Bookmark size={9} />}
         </button>
         <button
           onClick={quickCopy}
           aria-label="Copy prompt"
-          className="inline-flex items-center gap-1 px-1.5 h-6 rounded-full bg-[#0D0F1E]/80 border border-violet/25 font-mono text-[9px] text-fg-4 hover:text-violet-bright hover:border-violet/55 backdrop-blur-sm transition-colors"
+          className="inline-flex items-center gap-1 px-1.5 h-6 rounded-full bg-abyss/90 border border-violet/25 font-mono text-[9px] text-fg-4 hover:text-violet-bright hover:border-violet/55 backdrop-blur-sm transition-colors"
         >
           {copied ? <><Check size={9} />Copied</> : <><Copy size={9} />Copy</>}
         </button>

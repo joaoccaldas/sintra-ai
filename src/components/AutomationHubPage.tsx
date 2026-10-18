@@ -1,6 +1,8 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { useReducedMotion } from "@/lib/hooks";
+
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Bot,
@@ -11,7 +13,7 @@ import {
   ShieldCheck,
   Workflow,
 } from "lucide-react";
-import { BASE_PATH } from "@/lib/constants";
+import { BASE_PATH, withBasePath } from "@/lib/constants";
 import {
   AUTOMATION_GUARDRAILS,
   AUTOMATION_PILLARS,
@@ -28,10 +30,7 @@ const fade = {
   }),
 };
 
-function hrefFor(path: string): string {
-  if (path.startsWith("http") || path.startsWith("#")) return path;
-  return `${BASE_PATH}${path}`;
-}
+
 
 function SectionHead({ label, title, copy }: { label: string; title: string; copy: string }) {
   return (
@@ -75,7 +74,7 @@ function PillarGrid() {
 function WorkflowCard({ workflow, index }: { workflow: (typeof AUTOMATION_WORKFLOWS)[number]; index: number }) {
   return (
     <motion.a
-      href={hrefFor(workflow.href)}
+      href={withBasePath(workflow.href)}
       custom={index}
       variants={fade}
       initial="hidden"

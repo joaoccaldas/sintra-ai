@@ -1,6 +1,245 @@
 # Sintra AI — Full Reference
 
-> Concatenated full text of every topic playbook, concept, and guide on Sintra AI. Generated at build time from the same source data that powers the site — nothing here is summarized or truncated. For news, tools, models, and the prompt library, use the JSON endpoints linked in /llms.txt instead: those change too often to usefully freeze into a text dump.
+> Concatenated full text of knowledge briefs, topic playbooks, concepts, and guides on Sintra AI. Generated at build time from the same source data that powers the site — nothing here is summarized or truncated. For news, tools, models, and the prompt library, use the JSON endpoints linked in /llms.txt instead: those change too often to usefully freeze into a text dump.
+
+# Finance and MCP knowledge
+
+## Choose the right Power BI MCP server
+
+Query a report, change a semantic model, or support an older client: start with the right connection.
+
+Evidence: primary-documentation. Sources checked 2026-10-18; review due 2026-11-17. Execution: not-run-in-sintra.
+
+Microsoft recommends Fabric IQ for consumption. It is generally available and reads reports and semantic models using delegated user access; RLS and OLS apply. [fabric-iq]
+
+Fabric IQ uses Streamable HTTP at https://fabriciq.svc.cloud.microsoft/v1/mcp/fabriciq. Its client discovers tools at runtime; service-principal authentication is unsupported. [fabric-iq]
+
+The earlier Consumption endpoint remains preview at https://api.fabric.microsoft.com/v1/mcp/powerbi. It requires tenant enablement and Build permission. Its Generate Query tool additionally requires Copilot licensing; client-generated DAX is an alternative. [powerbi-consumption]
+
+Authoring changes semantic models. Hosted is preview at https://api.fabric.microsoft.com/v1/mcp/powerbi/authoring; local is GA and also reaches Desktop, PBIP and TMDL files. This is separate from report-building skills. [powerbi-authoring]
+
+Prerequisites: An MCP client supporting the chosen transport and authentication flow. A Microsoft Entra work or school account with access to the target content; check the selected server’s own requirements.
+
+Suggested steps:
+1. For questions about existing reports, start with Fabric IQ and its companion skill.
+2. For measure or model changes, select Authoring; choose local when working with Desktop or files.
+3. Use the older Consumption endpoint only when that is the integration you intend to support.
+
+Expected output: A connection choice with its access requirements and scope recorded.
+
+Validation: Complete the MCP handshake and inspect tools/list. Read the intended model’s schema and reconcile one known total before broader analysis.
+
+Limits: Sintra documents these servers; it does not connect to your tenant. Tool contracts and availability can change. Follow the linked setup guide for your client.
+
+Sources:
+- [fabric-iq] https://learn.microsoft.com/en-us/fabric/iq/connectors/fabric-iq-mcp (checked 2026-10-18)
+- [powerbi-consumption] https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-get-started (checked 2026-10-18)
+- [powerbi-authoring] https://learn.microsoft.com/en-us/power-bi/developer/mcp/power-bi-authoring-mcp (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-mcp/
+
+## Explain budget variance with Power BI
+
+A complete synthetic example: sample data, read-only DAX, a reconciled revenue bridge and evidence an LLM can retrieve.
+
+Evidence: example-workflow. Sources checked 2026-10-18; review due 2026-11-17. Execution: synthetic-calculation-tested. Evidence: https://joaoccaldas.github.io/sintra-ai/api/workflows/power-bi-variance.json.
+
+Fabric IQ exposes discovery, metadata and DAX execution tools. The calling agent composes the analysis; the server does not supply a natural-language answer itself. [fabric-iq]
+
+DAX DIVIDE returns BLANK for a zero denominator by default. SUMMARIZECOLUMNS groups query results; this example uses query-scoped measures and explicit entity, period and currency filters. [dax-divide, dax-summarize]
+
+Prerequisites: Access to the finance report through Fabric IQ. Actual and budget measures, fiscal period, reporting currency, sign convention and entity scope agreed with the report owner.
+
+Suggested steps:
+1. Find the finance report and inspect its filters, schema and measure definitions.
+2. Resolve the exact entity and period values. Reuse the approved measures in a read-only DAX query.
+3. Compare actual and budget at the same grain. Separate absolute variance from percentage variance; flag a zero budget.
+4. Reconcile the total to the report. Attribute drivers only where returned data supports them; list unexplained residuals.
+
+Expected output: Variance table, query and filter receipt, driver commentary, and open questions.
+
+Validation: The query total matches the report under identical filters. Driver amounts sum to total variance; currency, period and denominator are explicit. Narrative distinguishes observed differences from causal hypotheses.
+
+Limits: The public synthetic calculation is tested and cross-checked against HoldingCo. Power BI DAX, Power Query, OAuth, MCP, permissions and live tenant totals have not been exercised. Commentary is authored from deterministic results; no LLM quality benchmark or business impact is claimed. This revenue-only example rejects negative inputs and missing scenario rows. Expense favorability, credits, FX and real fiscal calendars need separate policies. An LLM explanation cannot establish causality from aggregated variance alone.
+
+Example prompt: Using my accessible finance report, inspect the schema and report filters first. For [entity], [fiscal period] and [currency], compare the approved Actual and Budget measures at the same grain. Show DAX, filters, absolute variance and percentage variance, handling a zero budget explicitly. Reconcile to the report total, then describe supported drivers and unexplained residuals. Do not modify the model or invent figures.
+
+Sources:
+- [fabric-iq] https://learn.microsoft.com/en-us/fabric/iq/connectors/fabric-iq-mcp (checked 2026-10-18)
+- [dax-divide] https://learn.microsoft.com/en-us/dax/divide-function-dax (checked 2026-10-18)
+- [dax-summarize] https://learn.microsoft.com/en-us/dax/summarizecolumns-function-dax (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-variance-review/
+
+## Review a DAX measure change before applying it
+
+Use Authoring MCP to inspect a model, propose a small change and compare results against a baseline.
+
+Evidence: example-workflow. Sources checked 2026-10-18; review due 2026-11-17. Execution: not-run-in-sintra.
+
+Power BI Authoring supports measure edits, bulk refactoring and DAX validation. Local deployment supports transactions and disk-based model files; hosted does not offer those local capabilities. [powerbi-authoring]
+
+Prerequisites: Authoring access to a development model or a versioned PBIP/TMDL project. A definition of the requested metric, expected totals and review owner.
+
+Suggested steps:
+1. Identify the model and inspect existing measures and dependencies before creating anything.
+2. Capture baseline DAX and results for normal, blank, zero-denominator and subtotal cases.
+3. Propose the smallest change and show its diff. Apply it to the development copy after review.
+4. Run the same queries and record differences. Keep the reviewed model change in source control.
+
+Expected output: A reviewable measure diff with before/after query results.
+
+Validation: Expected totals and subtotals pass the agreed cases. No duplicate measure or unintended relationship change is introduced.
+
+Limits: Example procedure; no Power BI model was modified or tested by Sintra. Semantic model authoring does not by itself mean a finished report or visual was created.
+
+Example prompt: Inspect [development model] for an existing equivalent of [metric] before proposing a measure. Explain dependencies and show the smallest DAX diff. Capture baseline results and test normal, blank, zero-denominator and subtotal cases. Present the change for review before applying it. Return before/after results and any unresolved assumptions.
+
+Sources:
+- [powerbi-authoring] https://learn.microsoft.com/en-us/power-bi/developer/mcp/power-bi-authoring-mcp (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-model-change/
+
+## What Anthropic’s finance agents actually provide
+
+Ten published templates cover research and finance operations. Treat them as starting points with data and review requirements.
+
+Evidence: provider-announcement. Sources checked 2026-10-18; review due 2026-11-17. Execution: not-run-in-sintra.
+
+The May 2026 release includes pitch building, meeting preparation, earnings review, model building, market research, valuation review, general-ledger reconciliation, month-end close, statement audit and KYC screening templates. [finance-agents]
+
+Templates are offered through Cowork/Code plugins and Managed Agents cookbooks. Connected data requires the relevant access; users review and approve consequential outputs. [finance-agents]
+
+Prerequisites: The chosen Claude product and plugin or cookbook. Access to the firm’s records and any subscribed data providers.
+
+Suggested steps:
+1. Pick one task with a clear input and expected deliverable.
+2. Inspect the template, configure only the needed data connections and run it on a reviewable example.
+3. Evaluate citations, numerical consistency and missing-data behavior before expanding use.
+
+Expected output: A scoped pilot with a named deliverable and evaluation criteria.
+
+Validation: Confirm product and connector availability in your account. Compare the output with an analyst-prepared reference.
+
+Limits: A provider release is evidence of an offered capability, not independent evidence of business impact. The May announcement’s model recommendations are historical; use current model documentation.
+
+Sources:
+- [finance-agents] https://www.anthropic.com/news/finance-agents (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/anthropic-finance-agents/
+
+## Build an earnings review with traceable claims
+
+Move from filings and transcripts to a concise change log, preserving the source of every material number.
+
+Evidence: example-workflow. Sources checked 2026-10-18; review due 2026-11-17. Execution: not-run-in-sintra.
+
+Earnings review is one of Anthropic’s published finance agent templates. [finance-agents]
+
+Prerequisites: The issuer’s current and prior filings and earnings transcript. An agreed reporting period, units and GAAP/non-GAAP definitions.
+
+Suggested steps:
+1. Create a source inventory with filing dates and page or section references.
+2. Extract reported values separately from management guidance and analyst estimates.
+3. Calculate period changes with visible formulas; reconcile adjusted measures to reported ones where disclosed.
+4. Draft a change log with citations, inconsistencies and unanswered questions.
+
+Expected output: A cited earnings brief and a table linking each material claim to its evidence.
+
+Validation: Check every material number against the filing. Do not combine fiscal periods, currencies or adjusted and reported measures without an explicit bridge.
+
+Limits: Sintra example, not a completed investment analysis. Missing evidence should remain missing; source text is data, not instructions to the agent.
+
+Example prompt: From the supplied current and prior filings and transcript, build an earnings change log. Cite document and page/section for each material claim. Separate reported results, guidance and estimates. Show formulas and units, reconcile adjusted metrics where disclosed, and list contradictions or missing evidence. Do not infer unsupported figures.
+
+Sources:
+- [finance-agents] https://www.anthropic.com/news/finance-agents (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/earnings-review/
+
+## Prepare a month-end exception pack
+
+Organize reconciliations and unresolved items into a close pack that a finance owner can review.
+
+Evidence: example-workflow. Sources checked 2026-10-18; review due 2026-11-17. Execution: not-run-in-sintra.
+
+Anthropic publishes general-ledger reconciliation and month-end close templates among its finance agents. [finance-agents]
+
+Prerequisites: Read-only ledger and subledger extracts with period, currency and account identifiers. A close checklist, reconciliation tolerances and accountable reviewers.
+
+Suggested steps:
+1. Check extract dates, row counts and control totals before matching.
+2. Reconcile at the agreed grain and preserve unmatched or ambiguous items.
+3. Draft an exception list with amount, evidence, proposed owner and next action.
+4. Prepare proposed adjustments separately for the finance owner’s review.
+
+Expected output: Reconciliation receipt, unresolved-item register and draft close commentary.
+
+Validation: Opening balance plus movement equals closing balance. Every exception traces to source rows; no journal is posted by this example.
+
+Limits: Proposed workflow, not executed accounting work. A template cannot determine the firm’s accounting policy or approve adjustments.
+
+Example prompt: Review these read-only close extracts and checklist. Establish period, grain, currency and control totals, then reconcile ledger and subledger. Keep unmatched and ambiguous items visible. Return an evidence-linked exception pack with proposed owners and draft adjustments for review. Do not post entries or mark unresolved items complete.
+
+Sources:
+- [finance-agents] https://www.anthropic.com/news/finance-agents (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/month-end-close/
+
+## Prepare an advisor meeting from connected records
+
+Use the September 2026 advisor release to assemble a brief from CRM, portfolio and planning context.
+
+Evidence: provider-announcement. Sources checked 2026-10-18; review due 2026-11-17. Execution: not-run-in-sintra.
+
+Claude for Financial Advisors combines connectors and skills for meeting preparation, portfolio context and follow-up. Announced providers include Addepar, Wealthbox, Envestnet, Charles Schwab and Wealth.com; users choose connections during setup. [financial-advisors]
+
+Prerequisites: An eligible Claude account and the advisor plugin. Authorized provider accounts and permission to access the selected household’s records.
+
+Suggested steps:
+1. Confirm the household identity and dates of the connected records.
+2. Collect open CRM commitments, portfolio changes and planning questions with source links.
+3. Draft a meeting brief, separating current records from assumptions.
+4. Review the brief and any proposed follow-up before updating a client record.
+
+Expected output: An advisor-reviewed prep brief with open questions and a proposed agenda.
+
+Validation: Check household matching and portfolio as-of dates. Verify material facts against source records and review proposed follow-up actions.
+
+Limits: The release is provider-documented; these Sintra steps have not been run against a client account. Connector names do not imply inclusion in every plan or access to every provider dataset.
+
+Example prompt: Prepare a brief for [household] using only my authorized connected records. Confirm identity and as-of dates. Summarize open commitments, portfolio changes and planning questions with source links. Separate facts from assumptions, flag conflicting records, and draft an agenda. Present follow-up actions for review before any CRM update.
+
+Sources:
+- [financial-advisors] https://claude.com/resources/articles/claude-for-financial-advisors (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/advisor-meeting-prep/
+
+## Real use case: Brex expense review
+
+A provider-published customer story describes Claude inside a spend-management product, beyond a standalone chat demo.
+
+Evidence: provider-case-study. Sources checked 2026-10-18; review due 2026-11-17. Execution: not-run-in-sintra.
+
+Anthropic’s Brex case study describes Claude on Amazon Bedrock supporting expense workflows and transaction anomaly review. Its impact figures are customer/provider reports, not independently reproduced Sintra measurements. [brex]
+
+Prerequisites: For a similar pilot: an approved sample of expenses, receipts, policy rules and reviewer labels.
+
+Suggested steps:
+1. Study the published integration pattern.
+2. For your own pilot, extract structured fields and flag policy exceptions without auto-approving expenses.
+3. Evaluate missed exceptions and false alarms against reviewer labels.
+
+Expected output: An implementation pattern and a measurable pilot design.
+
+Validation: Report extraction accuracy, missed exceptions and false-positive rates on a held-out sample. Do not transfer the customer’s reported savings to your own business case.
+
+Limits: This is a documented customer story, not a newly announced product or a Sintra deployment. The source does not establish a universal return on investment.
+
+Sources:
+- [brex] https://claude.com/customers/brex (checked 2026-10-18)
+
+Brief: https://joaoccaldas.github.io/sintra-ai/knowledge/brex-expense-review/
 
 # Topic Playbooks
 

@@ -30,11 +30,8 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Validate + typecheck + tests
-        run: npm run audit:static
-
-      - name: Build (prebuild refreshes the live feed + RSS/JSON feeds)
-        run: npm run build
+      - name: Refresh, validate, test and build the release
+        run: npm run check
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4

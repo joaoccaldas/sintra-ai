@@ -1,3 +1,4 @@
+import { BASE_PATH } from "@/lib/constants";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -13,14 +14,17 @@ export const metadata: Metadata = {
 };
 
 const ENDPOINTS: { path: string; contains: string }[] = [
+  { path: "/api/index.json", contains: "Start here: endpoint discovery, retrieval instructions and trust policy." },
+  { path: "/api/knowledge.json", contains: "Cited finance/MCP briefs with full workflows, prompts, evidence levels and review dates. Individual briefs: /api/knowledge/{id}.json." },
+  { path: "/api/workflows/power-bi-variance.json", contains: "LAB-FPNA-01: synthetic input rows, reconciled results, DAX, import instructions and hashed HoldingCo / Finance AI Lab evidence. Power BI tenant execution remains untested." },
   { path: "/llms.txt", contains: "Curated index — links + one-line description of every concept, guide, and topic." },
-  { path: "/llms-full.txt", contains: "Full text of every concept, guide, and topic playbook, concatenated." },
+  { path: "/llms-full.txt", contains: "Full knowledge briefs, concepts, guides, and topic playbooks, concatenated." },
   { path: "/api/topics.json", contains: "Every topic hub, including the full playbook object (design principles, recommended stack, best use cases, pitfalls, tips) where one exists." },
   { path: "/api/concepts.json", contains: "Every concept: term, tagline, full body, analogy, difficulty, related concept IDs." },
   { path: "/api/guides.json", contains: "Every guide: title, tagline, and full section-by-section body." },
   { path: "/api/tools.json", contains: "Every tool: pricing tier, provider, category, and a direct URL." },
   { path: "/api/models.json", contains: "Every tracked model: provider, tier, release date." },
-  { path: "/api/use-cases.json", contains: "All prompt-library items (metadata + outcome, not the full prompt text — see below for that)." },
+  { path: "/api/use-cases.json", contains: "All prompt-library items, including full prompt text, inputs, expected output and sample output. Exporting does not validate an example." },
   { path: "/feed.xml", contains: "News, as RSS 2.0." },
   { path: "/feed.json", contains: "News, as JSON Feed 1.1." },
 ];
@@ -51,11 +55,29 @@ export default function AgentsPage() {
           </h1>
 
           <p className="text-[16px] leading-[1.7] text-fg-2 mb-10 max-w-2xl">
-            Sintra AI is built to be read by people and queried by agents. Every content type below
-            has a stable URL pattern, a JSON mirror, and — where it matters — schema.org structured
-            data embedded directly in the page. Nothing here requires an API key or authentication;
+            Sintra AI is built to be read by people and queried by agents. Use the manifest to find stable JSON resources, or read the full text index.
+            Finance and MCP briefs share the same source data as the human pages, with cited claims,
+            dates, suggested procedures and limitations. Nothing here requires an API key or authentication;
             everything is a static file, generated at build time and re-generated on every deploy.
           </p>
+
+          <section className="mb-12 rounded-2xl border border-hairline bg-steel p-5 sm:p-7">
+            <h2 className="font-serif text-[26px] text-fg-1 mb-4">Give your LLM a starting point</h2>
+            <p className="text-sm leading-relaxed text-fg-2 mb-4 select-all">Read {SITE_URL}/api/index.json. Find the finance and Power BI knowledge resources, select the brief relevant to my question, and preserve its source citations, review dates and limitations. Distinguish documented facts from example workflows. Recheck sources past their review-due date.</p>
+            <a href={`${BASE_PATH}/api/index.json`} className="text-sm text-violet-bright underline underline-offset-4">Open the discovery manifest →</a>
+            <ol className="list-decimal pl-5 space-y-3 text-sm leading-relaxed text-fg-3 mt-6">
+              <li>Fetch the manifest, then <a href={`${BASE_PATH}/api/knowledge.json`} className="text-violet-bright underline">the knowledge collection</a>. Filter records locally by tags, kind or id.</li>
+              <li>For a smaller response, follow a record’s resourceUrl. Each response includes the full brief, prompt, checks and source references.</li>
+              <li>Use reviewedAt for source checks and reviewDueAt for rechecking. Keep evidenceLevel and executionStatus with the answer.</li>
+              <li>For the <a href={`${BASE_PATH}/knowledge/power-bi-variance-review/`} className="text-violet-bright underline">variance example</a>, follow workflowResource to the dataset, query and evidence. Its synthetic calculation test does not validate a live tenant or an LLM’s explanation.</li>
+            </ol>
+            <p className="text-xs leading-relaxed text-fg-4 mt-5">Transport: ordinary HTTPS GET. No account or API key. These are static reference files, not an MCP endpoint. An LLM with web/file retrieval can read them directly; an existing MCP fetch tool can retrieve the same URLs. Live Power BI access requires a separate authenticated provider connection.</p>
+          </section>
+
+          <section className="mb-12 rounded-2xl border border-hairline p-5 sm:p-7">
+            <h2 className="font-serif text-[26px] text-fg-1 mb-4">From news to evidence</h2>
+            <p className="text-sm leading-relaxed text-fg-3">News entries link to knowledgeId; a tested brief links to workflowResource. The variance resource contains the synthetic dataset, deterministic result, source-code and dataset hashes, and Finance AI Lab’s dry-run status. Daily release checks recalculate and reconcile the public example. Changed fixtures cannot publish with an old HoldingCo receipt. New provider claims still require source review; the feed does not automatically approve them.</p>
+          </section>
 
           <section className="mb-12">
             <h2 className="font-serif text-[22px] text-fg-1 mb-4">If you were asked to find &ldquo;generative UI&rdquo;</h2>
@@ -79,7 +101,7 @@ export default function AgentsPage() {
 
           <section className="mb-12">
             <h2 className="font-serif text-[22px] text-fg-1 mb-4">Endpoints</h2>
-            <div className="rounded-xl border border-white/[0.08] overflow-hidden">
+            <div className="rounded-xl border border-hairline overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/[0.08] bg-white/[0.02]">
@@ -91,7 +113,7 @@ export default function AgentsPage() {
                   {ENDPOINTS.map(e => (
                     <tr key={e.path} className="border-b border-white/[0.05] last:border-0">
                       <td className="px-4 py-3 align-top whitespace-nowrap">
-                        <code className="font-mono text-[13px] text-violet-bright">{e.path}</code>
+                        <a href={`${BASE_PATH}${e.path}`} className="font-mono text-[13px] text-violet-bright underline underline-offset-4">{e.path}</a>
                       </td>
                       <td className="px-4 py-3 align-top text-[13px] text-fg-3 leading-[1.5]">{e.contains}</td>
                     </tr>
@@ -122,10 +144,13 @@ export default function AgentsPage() {
             <h2 className="font-serif text-[22px] text-fg-1 mb-4">Freshness &amp; versioning</h2>
             <p className="text-[14.5px] leading-[1.7] text-fg-3 max-w-2xl">
               This is a static export with no backend — every file above is only as fresh as the
-              last deploy, generally within 24 hours. Every JSON endpoint includes a{" "}
+              last successful deploy. Every JSON endpoint includes a{" "}
               <code className="font-mono text-[13px]">generatedAt</code> ISO timestamp; check it
-              before assuming an item is current. News and the live feed change daily; concepts,
-              guides, and topic playbooks change far less often.
+              to learn when the file was assembled. It does not mean the content was reverified.
+              Knowledge briefs carry reviewedAt and reviewDueAt, and their facts cite source IDs.
+              News records distinguish primary checks, editorial history and aggregated headlines.
+              Missing review metadata means unknown freshness; older model and tool records retain
+              their original dates. Never treat a build or feed refresh as a factual audit.
             </p>
           </section>
 

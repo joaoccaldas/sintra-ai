@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Terminal, Zap, GitBranch, Cpu, CheckCircle2 } from "lucide-react";
 import {
   CLAUDE_MODELS,
+  LEGACY_CLAUDE_MODELS,
   CLAUDE_PRODUCTS,
   CLAUDE_CAPABILITIES,
   CLAUDE_LINKS,
@@ -46,7 +47,7 @@ function ModelCard({ model, index }: { model: ClaudeModel; index: number }) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-40px" }}
-      className="relative flex flex-col rounded-2xl border p-6 bg-[#0d0a1c] overflow-hidden"
+      className="relative flex flex-col rounded-2xl border p-6 bg-steel overflow-hidden"
       style={{ borderColor: model.color + "30" }}
     >
       {/* Ambient glow */}
@@ -139,7 +140,7 @@ function CapabilityCard({ cap, index }: { cap: ClaudeCapability; index: number }
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-30px" }}
-      className="group flex flex-col gap-3 rounded-xl border border-violet/[0.12] bg-[#0d0a1c] p-5 transition-all duration-200 hover:border-violet/40 hover:bg-white/[0.025]"
+      className="group flex flex-col gap-3 rounded-xl border border-violet/[0.12] bg-steel p-5 transition-all duration-200 hover:border-violet/40 hover:bg-white/[0.025]"
     >
       <div className="flex items-center gap-3">
         <span className="text-2xl">{cap.icon}</span>
@@ -248,7 +249,7 @@ export default function ClaudePage() {
           <div className="flex flex-wrap items-center gap-8">
             {[
               { label: "4 models",      note: "Haiku · Sonnet · Opus · Fable" },
-              { label: "Up to 1M context", note: "Claude Fable 5 flagship" },
+              { label: "Up to 1M context", note: "Current documented lineup" },
               { label: "Since 2021",    note: "Built by Anthropic" },
             ].map(stat => (
               <div key={stat.label} className="flex flex-col gap-0.5">
@@ -276,9 +277,8 @@ export default function ClaudePage() {
               Four tiers, frontier context
             </h2>
             <p className="font-sans text-[15px] text-fg-3 max-w-lg leading-[1.6]">
-              Haiku, Sonnet, and Opus share a 200K token context window. Claude Fable 5 — Anthropic's
-              new flagship — extends that to 1M tokens. Choose your tier by the cost-performance
-              trade-off your application demands.
+              Current documentation lists Fable 5.1, Opus 5.5, Sonnet 5.5 and Haiku 5.5.
+              Choose by task, latency and cost; evaluate with your own examples.
             </p>
           </motion.div>
 
@@ -289,8 +289,21 @@ export default function ClaudePage() {
           </div>
 
           <p className="font-mono text-[9px] text-fg-4 mt-4">
-            * Prices per 1M tokens, approximate as of 2025. Verify current rates at anthropic.com/pricing.
+            Primary documentation checked 18 October 2026. Standard API USD per 1M tokens. Haiku rates depend on prompt length; see the card notes.
           </p>
+        </section>
+
+        <details className="mb-12 rounded-2xl border border-hairline bg-steel p-5">
+          <summary className="cursor-pointer text-sm text-fg-3">Earlier model notes — historical, not reverified</summary>
+          <p className="text-xs text-fg-4 mt-4 mb-5">These original cards are retained for reference. Their prices, availability and capability claims describe an older snapshot; use the current documentation above for new work.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">{LEGACY_CLAUDE_MODELS.map((model, i) => <ModelCard key={model.id} model={model} index={i} />)}</div>
+        </details>
+
+        <section className="mb-16 rounded-2xl border border-hairline bg-steel p-6 sm:p-8">
+          <p className="eyebrow violet mb-3">Finance in practice</p>
+          <h2 className="font-serif text-3xl text-fg-1 mb-3">From published capabilities to useful work</h2>
+          <p className="text-sm leading-relaxed text-fg-3 max-w-2xl mb-5">Explore the finance agent templates, September’s advisor connectors, a Brex customer story and reviewable workflows for earnings and month-end close. Each brief separates primary-source facts from suggested steps.</p>
+          <div className="flex flex-wrap gap-5 text-sm"><a href={`${BASE_PATH}/knowledge/?tag=Anthropic`} className="text-violet-bright underline underline-offset-4">Explore Claude finance briefs →</a><a href="https://platform.claude.com/docs/en/models/overview" target="_blank" rel="noopener noreferrer" className="text-fg-3 underline underline-offset-4">Current model documentation ↗</a></div>
         </section>
 
         {/* ── Claude Code section ───────────────────────────────────────── */}
@@ -498,7 +511,7 @@ const msg = await client.messages.create({
                 viewport={{ once: true, margin: "-30px" }}
                 whileHover={{ scale: 1.015 }}
                 whileTap={{ scale: 0.99 }}
-                className="group flex flex-col rounded-xl border p-5 transition-all duration-200 bg-[#0d0a1c]"
+                className="group flex flex-col rounded-xl border p-5 transition-all duration-200 bg-steel"
                 style={{ borderColor: product.color + "28" }}
               >
                 {/* Icon */}

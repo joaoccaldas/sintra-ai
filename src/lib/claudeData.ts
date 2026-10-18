@@ -1,3 +1,5 @@
+import { CURRENT_CLAUDE_MODELS } from "./modelsData";
+
 export interface ClaudeModel {
   id: string;
   name: string;
@@ -34,7 +36,7 @@ export interface ClaudeCapability {
 
 // ─── Models ──────────────────────────────────────────────────────────────────
 
-export const CLAUDE_MODELS: ClaudeModel[] = [
+export const LEGACY_CLAUDE_MODELS: ClaudeModel[] = [
   {
     id: "claude-haiku-4-5-20251001",
     name: "Claude Haiku 4.5",
@@ -136,6 +138,19 @@ export const CLAUDE_MODELS: ClaudeModel[] = [
     freeAccess: false,
   },
 ];
+
+// One current model source shared with the radar and agent JSON exports.
+export const CLAUDE_MODELS: ClaudeModel[] = CURRENT_CLAUDE_MODELS.map(model => ({
+  id: model.id, name: model.name, tagline: model.bestFor.join(" · "),
+  tier: model.id.split("-")[1] as ClaudeModel["tier"], color: model.providerColor,
+  contextWindow: `${model.contextWindow / 1000}M`,
+  inputPrice: `${model.id.includes("haiku") ? "From " : ""}$${model.inputPrice} / 1M tokens`,
+  outputPrice: `${model.id.includes("haiku") ? "From " : ""}$${model.outputPrice} / 1M tokens`,
+  speed: model.id.includes("haiku") ? "fastest" : model.speed === "slow" ? "most capable" : "balanced",
+  bestFor: model.bestFor,
+  features: [`Up to ${model.outputLimit}K output tokens`, model.priceNote!, "Capabilities depend on the configured tools and account."],
+  freeAccess: false,
+}));
 
 // ─── Products ─────────────────────────────────────────────────────────────────
 

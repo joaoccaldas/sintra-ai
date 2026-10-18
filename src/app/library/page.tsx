@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: `Search and filter ${USE_CASES_COUNT} copy-ready AI prompts across writing, coding, finance, research, and more. Every prompt includes a sample output and recommended model.`,
   openGraph: {
     title: `Prompt Library — ${USE_CASES_COUNT} AI Use Cases`,
-    description: `${USE_CASES_COUNT} copy-ready, tested AI prompts — filter by category, difficulty, and time.`,
+    description: `${USE_CASES_COUNT} copy-ready AI prompts — filter by category, difficulty, and time.`,
   },
 };
 

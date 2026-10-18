@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
 const STORAGE_KEY = "sintra_saved";
 
@@ -19,13 +19,15 @@ const SavedPromptsContext = createContext<SavedCtx>({
 });
 
 export function SavedPromptsProvider({ children }: { children: ReactNode }) {
-  const [saved, setSaved] = useState<Set<number>>(() => {
-    if (typeof window === "undefined") return new Set();
+  const [saved, setSaved] = useState<Set<number>>(() => new Set());
+
+  // Match static HTML during hydration, then restore the visitor's saved prompts.
+  useEffect(() => {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? new Set(JSON.parse(raw) as number[]) : new Set();
-    } catch { return new Set(); }
-  });
+      const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+      if (Array.isArray(raw)) setSaved(new Set(raw.filter(id => typeof id === "number")));
+    } catch { /* Keep the empty state if browser storage is unavailable. */ }
+  }, []);
 
   const toggle = (id: number) => {
     setSaved(prev => {

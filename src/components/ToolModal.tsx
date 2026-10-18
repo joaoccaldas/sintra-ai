@@ -95,7 +95,7 @@ export default function ToolModal({ tool, onClose }: Props) {
             role="dialog"
             aria-modal="true"
             aria-labelledby="tm-title"
-            className="fixed inset-x-0 bottom-0 z-[100] max-h-[88vh] overflow-y-auto rounded-t-2xl bg-[#0C0A1A] border-t border-violet/20 shadow-2xl"
+            className="fixed inset-x-0 bottom-0 z-[100] max-h-[88vh] overflow-y-auto rounded-t-2xl bg-abyss border-t border-violet/20 shadow-2xl"
             initial={{ y: "100%" }} animate={{ y: 0 }} exit={{ y: "100%" }}
             transition={{ type: "spring", stiffness: 280, damping: 32 }}
           >

@@ -116,3 +116,10 @@ export function matchesUseCase(item: UseCase, query: string): boolean {
 }
 
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+/** Resolve raw editorial paths once, including links already carrying the Pages prefix. */
+export function withBasePath(path: string, basePath = BASE_PATH): string {
+  if (/^(?:https?:)?\/\//.test(path) || path.startsWith("#")) return path;
+  if (basePath && (path === basePath || path.startsWith(`${basePath}/`))) return path;
+  return `${basePath}${path}`;
+}

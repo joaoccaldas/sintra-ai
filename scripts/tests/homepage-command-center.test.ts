@@ -14,11 +14,20 @@ test("homepage composes hero directly into ContentNav, no duplicate IA section",
 });
 
 test("hero positions Sintra as an AI command center", () => {
+  // The hero is bilingual: it renders its copy through i18n keys, and the
+  // English source strings live in the translation table. Assert both halves
+  // so the "command center" positioning stays verified after the PT/EN pass.
   const hero = read("src/components/ImmersiveHero.tsx");
-  assert.match(hero, /AI command center/);
-  assert.match(hero, /The operating map for/);
-  assert.match(hero, /Explore live AI/);
-  assert.match(hero, /Build an automation/);
+  assert.match(hero, /t\.hero_eyebrow_cmd/);
+  assert.match(hero, /t\.hero_h1_pre/);
+  assert.match(hero, /t\.hero_cta_live/);
+  assert.match(hero, /t\.hero_cta_automation/);
+
+  const copy = read("src/lib/i18n.ts");
+  assert.match(copy, /AI command center/);
+  assert.match(copy, /The operating map for/);
+  assert.match(copy, /Explore live AI/);
+  assert.match(copy, /Build an automation/);
 });
 
 test("immersive hero disables the Three.js canvas for prefers-reduced-motion", () => {

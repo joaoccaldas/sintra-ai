@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Newspaper, Lightbulb, BookOpen, FlaskConical, type LucideProps } from "lucide-react";
 import { THIS_WEEK, type FeaturedItem, type FeaturedItemType } from "@/lib/featuredData";
-import { BASE_PATH } from "@/lib/constants";
+import { BASE_PATH, withBasePath } from "@/lib/constants";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 
 type LucideIcon = ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
@@ -32,10 +32,7 @@ function PickCard({ item, index }: { item: FeaturedItem; index: number }) {
   const Icon = TYPE_ICON[item.type];
 
   /* Resolve href — internal anchors get BASE_PATH prepended if needed */
-  const href =
-    item.href.startsWith("http") || item.href.startsWith("#")
-      ? item.href
-      : `${BASE_PATH}${item.href}`;
+  const href = withBasePath(item.href);
 
   const isExternal = item.href.startsWith("http");
 

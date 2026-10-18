@@ -1,0 +1,21 @@
+{
+  "id": "LAB-FPNA-01",
+  "version": "1.0.0",
+  "classification": "P1_PUBLIC_SYNTHETIC",
+  "scope": { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR" },
+  "grain": ["entity", "fiscalPeriod", "currency", "product", "scenario"],
+  "signConvention": "Revenue: actual minus budget; positive is favorable. Amounts are integer cents; percentages use the absolute budget denominator and are null for a zero budget.",
+  "controls": { "budgetCents": 2100000, "actualCents": 1965000, "varianceCents": -135000 },
+  "rows": [
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "Core", "scenario": "Budget", "quantity": 100, "unitPriceCents": 10000, "amountCents": 1000000 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "Core", "scenario": "Actual", "quantity": 110, "unitPriceCents": 10500, "amountCents": 1155000 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "Plus", "scenario": "Budget", "quantity": 50, "unitPriceCents": 20000, "amountCents": 1000000 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "Plus", "scenario": "Actual", "quantity": 40, "unitPriceCents": 19000, "amountCents": 760000 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "Services", "scenario": "Budget", "quantity": 20, "unitPriceCents": 5000, "amountCents": 100000 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "Services", "scenario": "Actual", "quantity": 10, "unitPriceCents": 5000, "amountCents": 50000 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "New offer", "scenario": "Budget", "quantity": 0, "unitPriceCents": 15000, "amountCents": 0 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-09", "currency": "EUR", "product": "New offer", "scenario": "Actual", "quantity": 0, "unitPriceCents": 15000, "amountCents": 0 },
+    { "entity": "Demo Europe", "fiscalPeriod": "2026-08", "currency": "EUR", "product": "Core", "scenario": "Actual", "quantity": 999, "unitPriceCents": 10000, "amountCents": 9990000 },
+    { "entity": "Demo America", "fiscalPeriod": "2026-09", "currency": "USD", "product": "Core", "scenario": "Actual", "quantity": 777, "unitPriceCents": 10000, "amountCents": 7770000 }
+  ]
+}

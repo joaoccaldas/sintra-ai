@@ -143,16 +143,12 @@ Edit `src/lib/learningPathsData.ts`. Import `BASE_PATH`; never hardcode `/sintra
 
 Source changes land on `main`. The production site is built into `dist/` and published from the `gh-pages` branch.
 
-```bash
-npm run check
-npm run build
+The existing **Build & Deploy** workflow runs `npm run check` on pushes to
+`main`, at 06:00 UTC daily, and on manual dispatch. It publishes the validated
+`dist/` to `gh-pages`. Review and merge the existing pull request, then inspect
+the deployment run and verify the public URLs. Do not stage a generated export
+through the source checkout's Git index.
 
-TREE=$(git --work-tree=dist add -f -A && git --work-tree=dist write-tree)
-PARENT=$(git rev-parse refs/remotes/origin/gh-pages)
-COMMIT=$(echo "deploy: $(date -u +%Y-%m-%d)" | git commit-tree "$TREE" -p "$PARENT")
-git push origin "$COMMIT":refs/heads/gh-pages
-git reset HEAD
-```
 
 Never commit `dist/` to `main`.
 
@@ -165,3 +161,11 @@ Discover → Understand → Decide → Practise → Build → Prove → Stay cur
 ```
 
 The implementation record and remaining roadmap live in `docs/AUDIT_IMPLEMENTATION_2026-06-23.md`.
+
+## Power BI variance example
+
+The existing `/knowledge/power-bi-variance-review/` brief contains LAB-FPNA-01,
+a synthetic revenue example. One fixture feeds the table, CSV, DAX instructions
+and `/api/workflows/power-bi-variance.json`. See
+[the workflow handover](docs/POWER_BI_VARIANCE.md) for reproduction, the
+HoldingCo / Finance AI Lab bridge, release checks and precise test boundaries.

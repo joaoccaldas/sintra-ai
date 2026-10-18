@@ -8,8 +8,8 @@
  *   1. Live feed schema — every item has id/title/https-url/ISO-date/source.
  *   2. Live feed freshness — the snapshot isn't empty and isn't stale.
  *   3. Weekly picks freshness — THIS_WEEK.weekOf hasn't fallen behind the news.
- *   4. Link hygiene — internal hrefs use BASE_PATH, never a hardcoded
- *      "/sintra-ai/" prefix (breaks in dev) or a bare "/path" (breaks on Pages).
+ *   4. Editorial links stay raw; all consumers resolve them with withBasePath.
+ *      Hardcoded production prefixes break the raw-path contract.
  *
  * Exit code 1 on any ERROR; WARN is advisory. Tune thresholds via the CONFIG
  * block below.
@@ -23,7 +23,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 
 const CONFIG = {
-  liveFeedMaxAgeHours: 48, // warn if the live feed snapshot is older than this
+  liveFeedMaxAgeHours: 48, // fail if the live feed snapshot is older than this
   weeklyPicksMaxAgeDays: 14, // warn if THIS_WEEK is older than this
   minLiveItems: 12, // error if fewer than this many live items
 };
@@ -62,7 +62,8 @@ try {
 
   const ageH = (Date.now() - Date.parse(feed.generatedAt)) / 3.6e6;
   if (Number.isNaN(ageH)) fail(`live feed generatedAt is not a valid date: ${feed.generatedAt}`);
-  else if (ageH > CONFIG.liveFeedMaxAgeHours) warn(`live feed is ${ageH.toFixed(0)}h old (threshold ${CONFIG.liveFeedMaxAgeHours}h) — rerun aggregate-live-feed`);
+  else if (ageH < -0.1) fail("live feed timestamp is in the future");
+  else if (ageH > CONFIG.liveFeedMaxAgeHours) fail(`live feed is ${ageH.toFixed(0)}h old (threshold ${CONFIG.liveFeedMaxAgeHours}h) — rerun aggregate-live-feed`);
   else pass(`live feed is ${ageH.toFixed(0)}h old — fresh`);
 } catch (e) {
   fail(`live feed missing/invalid — run \`node scripts/aggregate-live-feed.mjs\` (${e.message})`);
@@ -93,9 +94,7 @@ for (const relFile of ["src/lib/featuredData.ts"]) {
     const hrefs = [...src.matchAll(/href:\s*["']([^"']+)["']/g)].map((m) => m[1]);
     for (const h of hrefs) {
       if (h.startsWith("/sintra-ai/")) {
-        fail(`${relFile}: hardcoded base path "${h}" — use \`\${BASE_PATH}${h.replace("/sintra-ai", "")}\` so it works in dev too`);
-      } else if (h.startsWith("/") && !h.startsWith("//")) {
-        warn(`${relFile}: bare internal href "${h}" — prefix with \${BASE_PATH} for GitHub Pages`);
+        fail(`${relFile}: hardcoded base path "${h}" — keep raw editorial paths and resolve with withBasePath`);
       }
     }
     if (!errors.length) pass(`${relFile} link hygiene clean`);

@@ -1,3 +1,4 @@
+import { KNOWLEDGE, KNOWLEDGE_REVIEWED_AT } from "@/lib/knowledgeData";
 import type { MetadataRoute } from "next";
 import { USE_CASES } from "@/lib/data";
 import { AI_TOOLS } from "@/lib/toolsData";
@@ -41,6 +42,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/live/`,          changeFrequency: "hourly",  priority: 0.85 },
     { url: `${SITE_URL}/automate/`,      changeFrequency: "weekly",  priority: 0.88 },
     { url: `${SITE_URL}/library/`,       changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${SITE_URL}/knowledge/`, lastModified: new Date(KNOWLEDGE_REVIEWED_AT), changeFrequency: "monthly", priority: 0.85 },
+    ...KNOWLEDGE.map(item => ({ url: `${SITE_URL}/knowledge/${item.id}/`, lastModified: new Date(item.reviewedAt), changeFrequency: "monthly" as const, priority: 0.75 })),
     { url: `${SITE_URL}/agents/`,        changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/learn/`,         changeFrequency: "weekly",  priority: 0.8 },
     { url: `${SITE_URL}/claude/`,        changeFrequency: "weekly",  priority: 0.8 },

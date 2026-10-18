@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { COLLECTIONS, getCollectionItems, type Collection } from "@/lib/collections";
-import { type UseCase, BASE_PATH } from "@/lib/constants";
+import { type UseCase } from "@/lib/constants";
 import ExpandedCard from "@/components/ExpandedCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -124,7 +124,7 @@ export default function CollectionsClient() {
       <main id="main-content" className="max-w-[1100px] mx-auto px-6 md:px-8 pt-28 pb-24">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4 mb-10">
-          <Link href={`${BASE_PATH}/`} className="hover:text-fg-2 transition-colors">Home</Link>
+          <Link href="/" className="hover:text-fg-2 transition-colors">Home</Link>
           <span>/</span>
           <span className="text-fg-2">Collections</span>
         </div>

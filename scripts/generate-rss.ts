@@ -55,6 +55,7 @@ const jsonItems = [...AI_NEWS]
     url: n.url || `${SITE_URL}/news/`,
     title: n.title,
     content_text: n.summary,
+    _sintra: { origin: n.origin ?? "editorial", checkedAt: n.checkedAt ?? null, knowledgeUrl: n.knowledgeId ? `${SITE_URL}/knowledge/${n.knowledgeId}/` : null, workflowResource: n.origin === "lab-tested" ? `${SITE_URL}/api/workflows/power-bi-variance.json` : null, verification: n.origin === "lab-tested" ? "synthetic-calculation-tested-tenant-untested" : n.checkedAt ? "primary-source-checked" : "not-reverified" },
     date_published: new Date(dateNumToRFC822(n.dateNum, n.dateDay)).toISOString(),
     tags: [n.provider, ...(n.tags ?? [])].filter(Boolean),
   }));

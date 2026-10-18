@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AI_TOOLS } from "@/lib/toolsData";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -226,13 +227,14 @@ export default async function PromptPage({ params }: { params: Promise<{ slug: s
               <h2 className="eyebrow block mb-3">Try with these tools</h2>
               <div className="flex flex-wrap gap-2">
                 {item.related_tools.map(toolId => (
-                  <Link
+                  <span
                     key={toolId}
-                    href={`/tools/${toolId}/`}
-                    className="inline-flex items-center gap-1.5 font-mono text-[11px] px-3 py-1.5 rounded-full border border-violet/30 text-violet-bright bg-violet/[0.06] hover:bg-violet/[0.14] transition-colors capitalize"
+                    className="inline-flex items-center gap-1.5 font-mono text-[11px] px-3 py-1.5 rounded-full border border-violet/30 text-violet-bright bg-violet/[0.06] capitalize"
                   >
-                    {toolId.replace(/-/g, " ")}
-                  </Link>
+                    {AI_TOOLS.some(tool => tool.id === toolId)
+                      ? <Link href={`/tools/${toolId}/`}>{toolId.replace(/-/g, " ")}</Link>
+                      : toolId.replace(/-/g, " ")}
+                  </span>
                 ))}
               </div>
             </div>

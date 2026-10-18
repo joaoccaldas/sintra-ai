@@ -9,23 +9,28 @@
 
   /* ── Layout ────────────────────────────────── */
   --sidebar-w: 224px;
+  --sidebar-w-collapsed: 56px;
+  /* Adapted from KONA brand/tokens.css; Sintra keeps its existing theme API. */
+  --brand-control-radius: 12px;
+  --brand-card-radius: 20px;
+  --brand-touch: 48px;
 
   /* ── Dark theme (default) — RGB channels ─── */
-  --void-rgb:           5 6 11;
-  --abyss-rgb:          9 11 20;
-  --night-rgb:          14 17 32;
-  --steel-rgb:          22 26 44;
-  --steel-2-rgb:        31 36 64;
-  --hairline-rgb:       42 47 74;
-  --violet-rgb:         159 140 255;
-  --violet-bright-rgb:  182 166 255;
-  --violet-deep-rgb:    110 91 217;
-  --cyan-ice-rgb:       143 227 210;
-  --fg-1-rgb:           244 242 234;
-  --fg-2-rgb:           197 195 214;
-  --fg-3-rgb:           150 149 178;
-  --fg-4-rgb:           120 120 150;
-  --fg-on-violet-rgb:   10 11 20;
+  --void-rgb:           8 11 14;
+  --abyss-rgb:          14 18 22;
+  --night-rgb:          20 25 30;
+  --steel-rgb:          32 39 45;
+  --steel-2-rgb:        40 47 54;
+  --hairline-rgb:       61 70 77;
+  --violet-rgb:         255 131 61;
+  --violet-bright-rgb:  255 164 112;
+  --violet-deep-rgb:    230 95 0;
+  --cyan-ice-rgb:       91 202 216;
+  --fg-1-rgb:           244 239 231;
+  --fg-2-rgb:           207 210 208;
+  --fg-3-rgb:           169 177 180;
+  --fg-4-rgb:           150 161 167;
+  --fg-on-violet-rgb:   8 11 14;
 
   /* ── Derived hex aliases (used in inline styles & gradients) */
   --void:           rgb(var(--void-rgb));
@@ -45,9 +50,9 @@
   --fg-on-violet:   rgb(var(--fg-on-violet-rgb));
 
   /* ── Semantic aliases from RGB ─────────────── */
-  --hairline-soft:  rgba(var(--violet-rgb), 0.12);
-  --violet-haze:    rgba(var(--violet-rgb), 0.18);
-  --violet-glow:    0 0 24px rgba(var(--violet-rgb), 0.45);
+  --hairline-soft:  rgb(var(--violet-rgb) / 0.12);
+  --violet-haze:    rgb(var(--violet-rgb) / 0.18);
+  --violet-glow:    0 0 24px rgb(var(--violet-rgb) / 0.45);
 
   /* ── Static semantic colours ──────────────── */
   --amber-warm:     #E8C089;
@@ -59,8 +64,8 @@
   --diff-advanced:     #8FE3D2;
   --diff-expert:       #9F8CFF;
 
-  --font-serif:   var(--font-cormorant), Georgia, serif;
-  --font-sans:    var(--font-geist-sans), "Inter", system-ui, sans-serif;
+  --font-serif:   var(--font-instrument), Georgia, serif;
+  --font-sans:    var(--font-manrope), "Inter", system-ui, sans-serif;
   --font-mono:    var(--font-geist-mono), "JetBrains Mono", ui-monospace, monospace;
 
   --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
@@ -73,20 +78,20 @@
 /* ── Light theme ──────────────────────────────────────────────── */
 [data-theme="light"] {
   color-scheme: light dark;
-  --void-rgb:           238 234 224;
-  --abyss-rgb:          245 243 236;
-  --night-rgb:          237 233 224;
-  --steel-rgb:          226 222 212;
-  --steel-2-rgb:        214 209 198;
-  --hairline-rgb:       200 196 184;
-  --violet-rgb:         107 80 232;
-  --violet-bright-rgb:  85 64 208;
-  --violet-deep-rgb:    64 48 184;
-  --cyan-ice-rgb:       14 138 114;
-  --fg-1-rgb:           26 24 40;
-  --fg-2-rgb:           60 58 86;
-  --fg-3-rgb:           92 90 124;
-  --fg-4-rgb:           118 116 148;
+  --void-rgb:           244 239 231;
+  --abyss-rgb:          251 249 245;
+  --night-rgb:          239 233 224;
+  --steel-rgb:          230 224 215;
+  --steel-2-rgb:        219 212 202;
+  --hairline-rgb:       204 198 188;
+  --violet-rgb:         168 65 0;
+  --violet-bright-rgb:  151 57 0;
+  --violet-deep-rgb:    129 48 0;
+  --cyan-ice-rgb:       0 112 133;
+  --fg-1-rgb:           18 24 29;
+  --fg-2-rgb:           54 65 73;
+  --fg-3-rgb:           80 95 104;
+  --fg-4-rgb:           95 106 114;
   --fg-on-violet-rgb:   255 255 255;
 }
 
@@ -171,7 +176,7 @@ body {
 }
 
 ::selection {
-  background: rgba(159, 140, 255, 0.35);
+  background: rgb(var(--violet-rgb) / 0.35);
   color: var(--fg-1);
 }
 
@@ -222,18 +227,20 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 500;
   border: none;
   padding: 11px 18px;
-  border-radius: 2px;
+  border-radius: var(--brand-control-radius);
+  min-height: var(--brand-touch);
+  justify-content: center;
   letter-spacing: 0.01em;
   transition: all 140ms var(--ease-out);
   background: var(--violet);
-  color: #0A0B14;
+  color: var(--fg-on-violet);
   white-space: nowrap;
-  box-shadow: 0 0 0 1px var(--violet), 0 0 24px rgba(159,140,255,0.45), inset 0 1px 0 rgba(255,255,255,0.18);
+  box-shadow: 0 2px 8px rgb(8 11 14 / 0.12);
   cursor: pointer;
 }
 .btn:hover {
   background: var(--violet-bright);
-  box-shadow: 0 0 0 1px var(--violet-bright), 0 0 36px rgba(182,166,255,0.7), inset 0 1px 0 rgba(255,255,255,0.28);
+  box-shadow: 0 4px 14px rgb(8 11 14 / 0.18);
 }
 .btn:active { transform: scale(0.985); }
 .btn:focus-visible { outline: 2px solid var(--violet-bright); outline-offset: 2px; }
@@ -244,7 +251,8 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: inset 0 0 0 1px var(--hairline);
 }
 .btn-ghost:hover {
-  box-shadow: inset 0 0 0 1px var(--violet), 0 0 24px rgba(159,140,255,0.2);
+  box-shadow: inset 0 0 0 1px var(--violet);
+  color: var(--fg-on-violet);
 }
 
 .chip {
@@ -270,8 +278,8 @@ button { font-family: inherit; cursor: pointer; }
 .chip.active {
   color: var(--fg-1);
   border-color: var(--violet);
-  background: rgba(159, 140, 255, 0.08);
-  box-shadow: 0 0 16px rgba(159, 140, 255, 0.22);
+  background: rgb(var(--violet-rgb) / 0.08);
+  box-shadow: 0 0 16px rgb(var(--violet-rgb) / 0.22);
 }
 
 .tag {
@@ -293,13 +301,13 @@ button { font-family: inherit; cursor: pointer; }
   background: linear-gradient(180deg, rgba(255,255,255,0.045) 0%, rgba(255,255,255,0) 50%) padding-box,
               linear-gradient(180deg, var(--steel), var(--night)) padding-box;
   border: 1px solid var(--hairline);
-  border-radius: 8px;
+  border-radius: var(--brand-card-radius);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.04);
+  box-shadow: 0 8px 24px rgb(8 11 14 / 0.08);
   transition: border-color 200ms var(--ease-out), box-shadow 200ms var(--ease-out);
   text-align: left;
   width: 100%;
@@ -310,14 +318,14 @@ button { font-family: inherit; cursor: pointer; }
 }
 .card:hover {
   border-color: var(--violet);
-  box-shadow: 0 0 0 1px rgba(159,140,255,0.55), 0 0 48px rgba(159,140,255,0.3), 0 16px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 12px 28px rgb(8 11 14 / 0.14);
 }
 
 .card-shimmer {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(circle at var(--sx) var(--sy), rgba(159,140,255,0.13) 0%, transparent 60%);
+  background: radial-gradient(circle at var(--sx) var(--sy), rgb(var(--violet-rgb) / 0.13) 0%, transparent 60%);
   opacity: 0;
   transition: opacity 180ms;
   pointer-events: none;
@@ -347,8 +355,8 @@ button { font-family: inherit; cursor: pointer; }
 .card-visual--featured { height: 80px; }
 .card-visual svg { width: 100%; height: 100%; display: block; }
 .card:hover .card-visual {
-  border-color: rgba(159,140,255,0.25);
-  background: rgba(159,140,255,0.025);
+  border-color: rgb(var(--violet-rgb) / 0.25);
+  background: rgb(var(--violet-rgb) / 0.025);
 }
 
 /* Category accent top-bar on hover */
@@ -384,8 +392,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 .tag-btn:hover {
   color: var(--violet-bright);
-  background: rgba(159,140,255,0.10);
-  border-color: rgba(159,140,255,0.35);
+  background: rgb(var(--violet-rgb) / 0.10);
+  border-color: rgb(var(--violet-rgb) / 0.35);
 }
 .tag-btn:focus-visible {
   outline: 2px solid var(--violet-bright);
@@ -432,7 +440,7 @@ a.tag:focus-visible {
   background: linear-gradient(180deg, var(--steel), var(--night));
   border: 1px solid var(--hairline);
   border-radius: 12px;
-  box-shadow: 0 24px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(159,140,255,0.25), 0 0 80px rgba(159,140,255,0.15);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.7), 0 0 0 1px rgb(var(--violet-rgb) / 0.25), 0 0 80px rgb(var(--violet-rgb) / 0.15);
   padding: 36px;
   animation: modal-in 320ms var(--ease-out);
 }
@@ -452,7 +460,7 @@ a.tag:focus-visible {
 
 /* Rendered AI sample output — looks like a real model reply */
 .sample-output {
-  background: linear-gradient(180deg, rgba(159,140,255,0.04), rgba(159,140,255,0.01));
+  background: linear-gradient(180deg, rgb(var(--violet-rgb) / 0.04), rgb(var(--violet-rgb) / 0.01));
   border: 1px solid var(--hairline);
   border-left: 2px solid var(--violet);
   border-radius: 6px;
@@ -505,10 +513,10 @@ a.tag:focus-visible {
   font-family: var(--font-mono);
   font-size: 12.5px;
   color: var(--cyan-ice);
-  background: rgba(143, 227, 210, 0.08);
+  background: rgb(var(--cyan-ice-rgb) / 0.08);
   padding: 1px 6px;
   border-radius: 3px;
-  border: 1px solid rgba(143, 227, 210, 0.15);
+  border: 1px solid rgb(var(--cyan-ice-rgb) / 0.15);
 }
 .sample-output pre {
   background: var(--void);
@@ -563,7 +571,7 @@ a.tag:focus-visible {
 .sample-output a {
   color: var(--violet-bright);
   text-decoration: underline;
-  text-decoration-color: rgba(182, 166, 255, 0.3);
+  text-decoration-color: rgb(var(--violet-bright-rgb) / 0.3);
 }
 .sample-output hr {
   border: 0;
@@ -584,7 +592,7 @@ a.tag:focus-visible {
   text-decoration: none;
 }
 .disc-card:hover {
-  background: linear-gradient(180deg, rgba(159,140,255,0.06), rgba(159,140,255,0.01));
+  background: linear-gradient(180deg, rgb(var(--violet-rgb) / 0.06), rgb(var(--violet-rgb) / 0.01));
 }
 .disc-card:hover .disc-glyph {
   color: var(--violet-bright);
@@ -636,7 +644,7 @@ a.tag:focus-visible {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(14, 17, 32, 0.7);
+  background: rgb(var(--night-rgb) / 0.7);
   border: 1px solid var(--hairline);
   color: var(--fg-2);
   transition: color 150ms, border-color 150ms, background 150ms;
@@ -648,7 +656,7 @@ a.tag:focus-visible {
 .carousel-arrow:hover {
   color: var(--violet-bright);
   border-color: var(--violet);
-  background: rgba(159,140,255,0.08);
+  background: rgb(var(--violet-rgb) / 0.08);
 }
 
 /* ── Expanded card ─────────────────────────────────────────────────────────── */
@@ -663,7 +671,7 @@ a.tag:focus-visible {
   background: linear-gradient(180deg, var(--night) 0%, var(--abyss) 100%);
   border: 1px solid var(--hairline);
   border-radius: 14px 14px 0 0;
-  box-shadow: 0 -24px 60px rgba(0,0,0,0.65), 0 0 0 1px rgba(159,140,255,0.15), 0 0 80px rgba(159,140,255,0.08);
+  box-shadow: 0 -24px 60px rgba(0,0,0,0.65), 0 0 0 1px rgb(var(--violet-rgb) / 0.15), 0 0 80px rgb(var(--violet-rgb) / 0.08);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -713,14 +721,14 @@ a.tag:focus-visible {
 .expanded-card__close:hover {
   color: var(--fg-1);
   border-color: var(--violet);
-  background: rgba(159,140,255,0.06);
+  background: rgb(var(--violet-rgb) / 0.06);
 }
 .expanded-card__bar {
   display: flex;
   gap: 10px;
   padding: 16px 28px;
   border-top: 1px solid var(--hairline);
-  background: rgba(9,11,20,0.8);
+  background: rgb(var(--abyss-rgb) / 0.8);
   backdrop-filter: blur(8px);
   flex-shrink: 0;
 }
@@ -742,7 +750,7 @@ a.tag:focus-visible {
 
 /* Sticky filter shelf gets a subtle hairline once scrolled */
 .lib-filters-stuck {
-  background: rgba(9, 11, 20, 0.85);
+  background: rgb(var(--abyss-rgb) / 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--hairline-soft);

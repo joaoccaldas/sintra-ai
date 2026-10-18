@@ -38,6 +38,9 @@ const ROWS: CompareRow[] = [
     lowerBetter: true,
   },
 
+  { label: "Pricing conditions", getValue: m => m.priceNote ?? "Check provider rates", format: v => String(v) },
+  { label: "Source checked", getValue: m => m.lastVerified, format: v => String(v) },
+
   // Context
   {
     group: "Context",
@@ -197,9 +200,9 @@ function WinIcon({ winner, side }: { winner: Winner; side: "a" | "b" }) {
 
 // ── Main component ─────────────────────────────────────────────────────────
 
-/** Default pair: Claude Opus 4.8 vs GPT-5.5 (most-searched comparison) */
-const DEFAULT_A = "claude-opus-4-8";
-const DEFAULT_B = "gpt-5-5";
+/** Default to two models from the current primary-source review. */
+const DEFAULT_A = "claude-opus-5-5";
+const DEFAULT_B = "claude-sonnet-5-5";
 
 /**
  * ModelCompare — side-by-side comparison of any two models.

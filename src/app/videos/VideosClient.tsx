@@ -149,7 +149,7 @@ function VideoCard({ video, onPlay }: { video: YouTubeVideo; onPlay: () => void 
       <div className="p-4">
         <p className="font-mono text-[9px] tracking-[0.12em] uppercase text-violet-bright mb-1">{video.channel}</p>
         <h3
-          className="font-serif text-[15px] text-fg-1 leading-[1.3] mb-2 cursor-pointer hover:text-white transition-colors line-clamp-2"
+          className="font-serif text-[15px] text-fg-1 leading-[1.3] mb-2 cursor-pointer hover:text-violet-bright transition-colors line-clamp-2"
           onClick={onPlay}
         >
           {video.title}
@@ -249,7 +249,7 @@ export default function VideosClient() {
               All
             </button>
             {TAG_GROUPS.map(group => (
-              <span key={group.label} className="flex items-center gap-1">
+              <span key={group.label} className="flex flex-wrap items-center gap-1">
                 <span className="font-mono text-[9px] text-fg-4 px-1">{group.label}:</span>
                 {group.tags.filter(t => ALL_TAGS.includes(t)).map(tag => (
                   <button

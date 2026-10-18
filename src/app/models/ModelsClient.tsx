@@ -63,9 +63,9 @@ function QuickPicks({ onSelect }: { onSelect: (model: ModelEntry) => void }) {
   );
 
   const picks = [
-    { label: "Lowest-cost fast model", model: fastValue, detail: fastValue ? `${formatPrice(fastValue.inputPrice)}/1M input` : "", accent: "#5EEAD4" },
-    { label: "Cheapest listed API", model: cheapest, detail: cheapest ? `${formatPrice(cheapest.inputPrice)}/1M input` : "", accent: "#10b981" },
-    { label: "Highest reported coding score", model: reportedCodingLeader, detail: reportedCodingLeader ? `SWE ${reportedCodingLeader.sweBench}%` : "", accent: "#9F8CFF" },
+    { label: "Lowest-cost fast model", model: fastValue, detail: fastValue ? `${fastValue.id === "claude-haiku-5-5" ? "from " : ""}${formatPrice(fastValue.inputPrice)}/1M input` : "", accent: "#5EEAD4" },
+    { label: "Cheapest listed API", model: cheapest, detail: cheapest ? `${cheapest.id === "claude-haiku-5-5" ? "from " : ""}${formatPrice(cheapest.inputPrice)}/1M input` : "", accent: "#10b981" },
+    { label: "Highest historical coding score", model: reportedCodingLeader, detail: reportedCodingLeader ? `SWE ${reportedCodingLeader.sweBench}% · checked ${reportedCodingLeader.lastVerified}` : "", accent: "#9F8CFF" },
   ];
 
   return (
@@ -79,7 +79,7 @@ function QuickPicks({ onSelect }: { onSelect: (model: ModelEntry) => void }) {
         >
           <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-fg-4">{pick.label}</span>
           <span>
-            <span className="block font-serif text-[17px] text-fg-1 leading-snug group-hover:text-white transition-colors">{pick.model.name}</span>
+            <span className="block font-serif text-[17px] text-fg-1 leading-snug group-hover:text-fg-1 transition-colors">{pick.model.name}</span>
             <span className="block font-mono text-[10px] mt-0.5" style={{ color: pick.model.providerColor }}>{pick.model.provider}</span>
           </span>
           <span className="mt-auto font-mono text-[11px]" style={{ color: pick.accent }}>{pick.detail}</span>
@@ -94,22 +94,25 @@ export default function ModelsClient() {
   const [providerFilter, setProviderFilter] = useState("all");
   const [sortKey, setSortKey] = useState<SortKey>("name");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
-  const [selectedId, setSelectedId] = useState<string | null>(() => {
-    if (typeof window === "undefined") return null;
-    return new URLSearchParams(window.location.search).get("model");
-  });
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectionReady, setSelectionReady] = useState(false);
+  useEffect(() => {
+    setSelectedId(new URLSearchParams(window.location.search).get("model"));
+    setSelectionReady(true);
+  }, []);
 
   const selected = useMemo(() => AI_MODELS.find(model => model.id === selectedId) ?? null, [selectedId]);
   const tiers: ModelTier[] = ["flagship", "balanced", "efficient", "reasoning", "open"];
 
   useEffect(() => {
+    if (!selectionReady) return;
     const url = new URL(window.location.href);
     selectedId ? url.searchParams.set("model", selectedId) : url.searchParams.delete("model");
     window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
     if (selectedId) {
       window.setTimeout(() => document.getElementById(`model-${selectedId}`)?.scrollIntoView({ behavior: "smooth", block: "center" }), 80);
     }
-  }, [selectedId]);
+  }, [selectedId, selectionReady]);
 
   function handleSort(key: SortKey) {
     if (sortKey === key) setSortDirection(direction => direction === "asc" ? "desc" : "asc");
@@ -171,7 +174,7 @@ export default function ModelsClient() {
         </p>
         <p className="text-[12px] text-fg-4 flex items-start gap-1.5 max-w-3xl">
           <Info size={12} className="mt-0.5 shrink-0" />
-          Pricing and benchmarks change frequently and may use different evaluation settings. Verify provider documentation before production decisions. Latest item verification: {latestVerificationLabel()}.
+          Pricing and benchmarks change frequently and may use different evaluation settings. Verify provider documentation before production decisions. Latest item verification: {latestVerificationLabel()}. The four current Claude entries were checked in this pass; older entries and benchmark scores retain their original dates.
         </p>
       </header>
 
@@ -219,7 +222,7 @@ export default function ModelsClient() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-white/[0.03] border-b border-white/[0.07]">
-                <th className="px-4 py-3 w-52 sticky left-0 bg-[#0d0a1c]"><SortButton column="name" label="Model" /></th>
+                <th className="px-4 py-3 w-52 sticky left-0 bg-steel"><SortButton column="name" label="Model" /></th>
                 <th className="px-3 py-3 w-28"><span className="font-mono text-[10px] uppercase text-fg-4">Tier</span></th>
                 <th className="px-3 py-3 w-24"><SortButton column="contextWindow" label="Context" /></th>
                 <th className="px-3 py-3 w-28"><SortButton column="inputPrice" label="Price in/out" /></th>
@@ -260,7 +263,7 @@ export default function ModelsClient() {
                     </td>
                     <td className="px-3 py-3"><span className="font-mono text-[10px] px-1.5 py-0.5 rounded border" style={{ color: tier.color, borderColor: `${tier.color}44`, background: `${tier.color}14` }}>{tier.label}</span></td>
                     <td className="px-3 py-3 font-mono text-xs text-fg-2">{formatContext(model.contextWindow)}</td>
-                    <td className="px-3 py-3"><span className="flex flex-col gap-0.5"><span className="font-mono text-[11px] text-fg-1">{formatPrice(model.inputPrice)}</span><span className="font-mono text-[10px] text-fg-4">{formatPrice(model.outputPrice)} out</span></span></td>
+                    <td className="px-3 py-3"><span className="flex flex-col gap-0.5"><span className="font-mono text-[11px] text-fg-1">{model.id === "claude-haiku-5-5" ? "from " : ""}{formatPrice(model.inputPrice)}</span><span className="font-mono text-[10px] text-fg-4">{model.id === "claude-haiku-5-5" ? "from " : ""}{formatPrice(model.outputPrice)} out</span></span></td>
                     <td className="px-3 py-3 text-center"><Score value={model.mmlu} /></td>
                     <td className="px-3 py-3 text-center"><Score value={model.gpqa} /></td>
                     <td className="px-3 py-3 text-center"><Score value={model.sweBench} warningThreshold={40} /></td>
@@ -295,7 +298,7 @@ export default function ModelsClient() {
               </span>
               <span className="grid grid-cols-3 gap-2 text-center">
                 <span><span className="block font-mono text-[9px] text-fg-4 uppercase">Context</span><span className="block font-mono text-xs text-fg-2 mt-0.5">{formatContext(model.contextWindow)}</span></span>
-                <span><span className="block font-mono text-[9px] text-fg-4 uppercase">Price/1M</span><span className="block font-mono text-xs text-fg-2 mt-0.5">{formatPrice(model.inputPrice)}</span></span>
+                <span><span className="block font-mono text-[9px] text-fg-4 uppercase">Price/1M</span><span className="block font-mono text-xs text-fg-2 mt-0.5">{model.id === "claude-haiku-5-5" ? "from " : ""}{formatPrice(model.inputPrice)}</span></span>
                 <span><span className="block font-mono text-[9px] text-fg-4 uppercase">MMLU</span><span className="block mt-0.5"><Score value={model.mmlu} /></span></span>
               </span>
             </button>
@@ -340,8 +343,8 @@ function ModelDetail({ model }: { model: ModelEntry }) {
       <p className="text-sm text-fg-2 mb-5">{model.highlight}</p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
         <Stat label="Context window" value={formatContext(model.contextWindow)} />
-        <Stat label="Input price" value={model.inputPrice !== null ? `${formatPrice(model.inputPrice)}/1M` : "No public API"} note={model.priceNote} />
-        <Stat label="Output price" value={model.outputPrice !== null ? `${formatPrice(model.outputPrice)}/1M` : "—"} />
+        <Stat label="Input price" value={model.inputPrice !== null ? `${model.id === "claude-haiku-5-5" ? "from " : ""}${formatPrice(model.inputPrice)}/1M` : "No public API"} note={model.priceNote} />
+        <Stat label="Output price" value={model.outputPrice !== null ? `${model.id === "claude-haiku-5-5" ? "from " : ""}${formatPrice(model.outputPrice)}/1M` : "—"} />
         <Stat label="Speed category" value={SPEED_META[model.speed].label} color={SPEED_META[model.speed].color} />
       </div>
 

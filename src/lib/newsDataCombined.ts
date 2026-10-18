@@ -1,14 +1,112 @@
+import { KNOWLEDGE } from "./knowledgeData";
+import { CURRENT_CLAUDE_MODELS } from "./modelsData";
 import { AI_NEWS as HISTORICAL_AI_NEWS, type NewsItem } from "./newsData";
 import { LATEST_AI_NEWS } from "./newsLatestData";
+import { LIVE_ITEMS, type LiveFeedItem } from "./liveFeedData";
+import varianceReceipt from "../data/holdingCoVariance.receipt.json";
+import { VARIANCE_COMMENTARY } from "./varianceWorkflow";
 
 /**
  * Canonical news feed consumed by the application.
- * Reviewed current items win when an identifier already exists in the
- * historical append-only corpus.
+ *
+ * Three sources, merged in priority order (first writer wins per id/title):
+ *   1. LATEST_AI_NEWS   — editorial additions with their original publication dates.
+ *   2. HISTORICAL_AI_NEWS — the append-only historical corpus.
+ *   3. Live feed         — the build-time aggregated feed (aggregate-live-feed.mjs),
+ *      converted to news items so the site keeps surfacing fresh headlines
+ *      automatically between manual curation passes. This is what keeps
+ *      /news current without any API key or human in the loop.
  */
+
+const MONTH_ABBR = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+];
+
+/**
+ * Only higher-signal categories are promoted into the editorial /news surface.
+ * Research (arXiv firehose) and Community (Hacker News) stay in the live-signals
+ * ticker but would dilute the news archive, so they're excluded here.
+ */
+const LIVE_NEWS_CATEGORIES = new Set(["Labs", "Press", "Open Source", "Practitioner"]);
+const LIVE_NEWS_MAX = 18; // cap promoted live items so the archive stays curated-feeling
+
+const slugify = (s: string): string =>
+  s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 64);
+
+const normTitle = (s: string): string =>
+  s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+function liveItemToNews(it: LiveFeedItem): NewsItem | null {
+  if (!it.title || !it.url || !it.publishedAt) return null;
+  const d = new Date(it.publishedAt);
+  if (Number.isNaN(d.getTime())) return null;
+  const year = d.getUTCFullYear();
+  const month = d.getUTCMonth() + 1;
+  const day = d.getUTCDate();
+  return {
+    id: `live-${slugify(it.title)}`,
+    date: `${MONTH_ABBR[month - 1]} ${year}`,
+    dateNum: year * 100 + month,
+    dateDay: day,
+    title: it.title,
+    summary: it.summary || `${it.source} — ${it.category}`,
+    tags: Array.from(new Set([it.source, it.category, "Live"])),
+    significance: "notable",
+    provider: it.source,
+    providerColor: it.color || "#6366f1",
+    url: it.url,
+  };
+}
+
+const liveNews: NewsItem[] = LIVE_ITEMS
+  .filter((it) => LIVE_NEWS_CATEGORIES.has(it.category))
+  .map(liveItemToNews)
+  .filter((x): x is NewsItem => x !== null)
+  .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
+  .slice(0, LIVE_NEWS_MAX);
+
+// Source-checked updates are derived from the same records as the briefs/model
+// reference, avoiding a second hand-maintained copy of current capabilities.
+const primaryNews: NewsItem[] = [
+  ...KNOWLEDGE.filter(item => item.news).map(item => ({
+    id: [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS].find(existing => existing.url === item.sources[0].url)?.id ?? `knowledge-${item.id}`,
+    title: [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS].find(existing => existing.url === item.sources[0].url)?.title ?? item.title,
+    summary: item.facts.map(f => f.text).join(" "),
+    publishedAt: item.news!.publishedAt, tags: item.tags, provider: item.news!.provider,
+    providerColor: item.news!.providerColor, url: item.sources[0].url,
+    checkedAt: item.reviewedAt, knowledgeId: item.id,
+  })),
+  ...CURRENT_CLAUDE_MODELS.map(model => ({
+    id: `model-${model.id}`, title: `${model.name}: current API specifications`,
+    summary: `API ID ${model.apiId}; ${model.contextWindow / 1000}M context and up to ${model.outputLimit}K output. ${model.priceNote} Read the provider specifications for account and platform availability.`,
+    publishedAt: model.releaseDateIso!, tags: ["Anthropic", "Claude", "Model Release"],
+    provider: model.provider, providerColor: model.providerColor, url: model.docsUrl, checkedAt: model.lastVerified,
+  })),
+].map(item => {
+  const [year, month, day] = item.publishedAt.split("-").map(Number);
+  return { ...item, date: `${MONTH_ABBR[month - 1]} ${year}`, dateNum: year * 100 + month, dateDay: day,
+    significance: "major" as const, origin: "primary-checked" as const };
+});
+
 const byId = new Map<string, NewsItem>();
-for (const item of [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS]) {
-  if (!byId.has(item.id)) byId.set(item.id, item);
+const seenTitles = new Set<string>();
+// A Sintra lab publication, not a newly dated Microsoft announcement. Identity
+// stays stable across daily rebuilds and links to the existing variance brief.
+const [labYear, labMonth, labDay] = varianceReceipt.labResult.created_at.slice(0, 10).split("-").map(Number);
+const labNews: NewsItem = {
+  id: "lab-fpna-01-variance", title: "Sintra Lab: a reproducible Power BI variance example",
+  date: `${MONTH_ABBR[labMonth - 1]} ${labYear}`, dateNum: labYear * 100 + labMonth, dateDay: labDay,
+  summary: `${VARIANCE_COMMENTARY[0].claim} Download the synthetic data, query and HoldingCo cross-check. Tenant and DAX execution remain untested.`,
+  tags: ["Power BI", "Finance", "Tested example"], provider: "Sintra Lab", providerColor: "#ae5a38",
+  significance: "notable", origin: "lab-tested", knowledgeId: "power-bi-variance-review",
+  url: "https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-variance-review/",
+};
+for (const item of [labNews, ...primaryNews, ...LATEST_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...HISTORICAL_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...liveNews.map(item => ({ ...item, origin: "aggregated" as const }))]) {
+  const t = normTitle(item.title);
+  if (byId.has(item.id) || seenTitles.has(t)) continue;
+  byId.set(item.id, item);
+  seenTitles.add(t);
 }
 
 export const AI_NEWS: NewsItem[] = [...byId.values()];

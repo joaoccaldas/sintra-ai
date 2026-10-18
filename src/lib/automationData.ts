@@ -95,7 +95,7 @@ export const AUTOMATION_WORKFLOWS: AutomationWorkflow[] = [
     outcome: "A faster close cycle and sharper business-review story.",
     steps: ["Load actuals", "Compare forecast", "Detect drivers", "Draft narrative", "Prepare stakeholder questions"],
     tools: ["Excel", "Power BI", "SAP", "Prompt library"],
-    href: "/prompts/",
+    href: "/library/",
     maturity: "Operator",
     color: "#F4D06F",
   },

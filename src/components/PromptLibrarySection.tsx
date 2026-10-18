@@ -40,7 +40,7 @@ function SectionHead({ label, count }: { label: string; count?: number }) {
   return (
     <div className="flex items-center gap-3 mb-5">
       <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet/60" />
-      <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{label}</span>
+      <h1 className="font-mono text-[10px] tracking-[0.14em] uppercase text-fg-4">{label}</h1>
       {count !== undefined && (
         <span className="font-mono text-[10px] text-fg-4 opacity-50">· {count}</span>
       )}
@@ -50,25 +50,23 @@ function SectionHead({ label, count }: { label: string; count?: number }) {
 }
 
 export default function PromptLibrary() {
-  const [selectedCat, setSelectedCat] = useState<string>(() => {
-    if (typeof window === "undefined") return CAROUSEL_ITEMS[0].id;
-    return new URLSearchParams(window.location.search).get("cat") || CAROUSEL_ITEMS[0].id;
-  });
-  const [search, setSearch] = useState(() => {
-    if (typeof window === "undefined") return "";
-    return new URLSearchParams(window.location.search).get("q") || "";
-  });
-  const [difficulty, setDifficulty] = useState<DiffFilter>(() => {
-    if (typeof window === "undefined") return "all";
-    const d = new URLSearchParams(window.location.search).get("diff");
-    return d && (DIFFICULTIES as readonly string[]).includes(d) ? (d as DiffFilter) : "all";
-  });
-  const [sortBy, setSortBy] = useState<SortId>(() => {
-    if (typeof window === "undefined") return "default";
-    const s = new URLSearchParams(window.location.search).get("sort");
-    if (s === "used") return "most-used"; // back-compat with the old ?sort=used param
-    return s && SORTS.some(o => o.id === s) ? (s as SortId) : "default";
-  });
+  const [selectedCat, setSelectedCat] = useState<string>(CAROUSEL_ITEMS[0].id);
+  const [search, setSearch] = useState("");
+  const [difficulty, setDifficulty] = useState<DiffFilter>("all");
+  const [sortBy, setSortBy] = useState<SortId>("default");
+  const [filtersReady, setFiltersReady] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setSelectedCat(params.get("cat") || CAROUSEL_ITEMS[0].id);
+    setSearch(params.get("q") || "");
+    const diff = params.get("diff");
+    if (diff && (DIFFICULTIES as readonly string[]).includes(diff)) setDifficulty(diff as DiffFilter);
+    const sort = params.get("sort");
+    if (sort === "used") setSortBy("most-used");
+    else if (sort && SORTS.some(option => option.id === sort)) setSortBy(sort as SortId);
+    setFiltersReady(true);
+  }, []);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [expanded, setExpanded]         = useState<UseCase | null>(null);
   const [expandedItems, setExpandedItems] = useState<UseCase[]>([]);
@@ -78,6 +76,7 @@ export default function PromptLibrary() {
 
   // Keep cat/search/diff/sort in the URL so filtered views are shareable/bookmarkable.
   useEffect(() => {
+    if (!filtersReady) return;
     const params = new URLSearchParams();
     if (selectedCat !== CAROUSEL_ITEMS[0].id) params.set("cat", selectedCat);
     if (search) params.set("q", search);
@@ -85,7 +84,7 @@ export default function PromptLibrary() {
     if (sortBy !== "default") params.set("sort", sortBy);
     const qs = params.toString();
     window.history.replaceState(null, "", `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`);
-  }, [selectedCat, search, difficulty, sortBy]);
+  }, [selectedCat, search, difficulty, sortBy, filtersReady]);
 
   // Reset pagination when any filter changes.
   useEffect(() => { setVisibleCount(PAGE_SIZE); }, [selectedCat, search, difficulty, sortBy]);
@@ -138,9 +137,9 @@ export default function PromptLibrary() {
               onClick={() => { setSelectedCat(cat.id); setSearch(""); setVisibleCount(PAGE_SIZE); }}
               className="flex flex-col items-center justify-center gap-0.5 text-center font-mono text-[9px] leading-tight tracking-[0.04em] uppercase px-1.5 py-2.5 rounded-xl border transition-all duration-150"
               style={{
-                background:  active ? "rgba(159,140,255,0.12)" : "transparent",
-                borderColor: active ? "rgba(159,140,255,0.50)" : "rgba(255,255,255,0.08)",
-                color:       active ? "#B6A6FF" : "#6b6a8a",
+                background:  active ? "rgb(var(--violet-rgb) / 0.12)" : "transparent",
+                borderColor: active ? "rgb(var(--violet-rgb) / 0.5)" : "var(--hairline)",
+                color:       active ? "var(--violet-bright)" : "var(--fg-3)",
               }}
             >
               <span>{cat.label}</span>
@@ -159,9 +158,9 @@ export default function PromptLibrary() {
                 onClick={() => { setSelectedCat(cat.id); setSearch(""); setVisibleCount(PAGE_SIZE); }}
                 className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.06em] uppercase px-3 py-1.5 rounded-full border transition-all duration-150 whitespace-nowrap"
                 style={{
-                  background:  active ? "rgba(159,140,255,0.12)" : "transparent",
-                  borderColor: active ? "rgba(159,140,255,0.50)" : "rgba(255,255,255,0.08)",
-                  color:       active ? "#B6A6FF" : "#6b6a8a",
+                  background:  active ? "rgb(var(--violet-rgb) / 0.12)" : "transparent",
+                  borderColor: active ? "rgb(var(--violet-rgb) / 0.5)" : "var(--hairline)",
+                  color:       active ? "var(--violet-bright)" : "var(--fg-3)",
                 }}
               >
                 {cat.label}
@@ -202,9 +201,9 @@ export default function PromptLibrary() {
                 aria-pressed={active}
                 className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.04em] capitalize px-3 py-1.5 rounded-full border transition-all duration-150"
                 style={{
-                  background:  active ? "rgba(159,140,255,0.12)" : "transparent",
-                  borderColor: active ? "rgba(159,140,255,0.5)" : "rgba(255,255,255,0.08)",
-                  color:       active ? "#B6A6FF" : "#6b6a8a",
+                  background:  active ? "rgb(var(--violet-rgb) / 0.12)" : "transparent",
+                  borderColor: active ? "rgb(var(--violet-rgb) / 0.5)" : "var(--hairline)",
+                  color:       active ? "var(--violet-bright)" : "var(--fg-3)",
                 }}
               >
                 {d !== "all" && (

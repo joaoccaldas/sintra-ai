@@ -1,10 +1,16 @@
 "use client";
 
+import { useReducedMotion } from "@/lib/hooks";
+
+import { useFeedClock } from "@/hooks/useFeedClock";
+
 import { useEffect, useRef } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import * as THREE from "three";
 import { ArrowRight, Radio, ShieldCheck, Workflow } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
+import { useLanguage } from "@/context/LanguageContext";
+import type { Translations } from "@/lib/i18n";
 import { LIVE_FEED, LIVE_ITEMS } from "@/lib/liveFeedData";
 import { AUTOMATION_WORKFLOWS } from "@/lib/automationData";
 import NewsTicker from "./NewsTicker";
@@ -19,13 +25,13 @@ const line = {
   }),
 };
 
-function feedFreshnessLabel(): string {
+function feedFreshnessLabel(t: Translations, now: number): string {
   const generated = new Date(LIVE_FEED.generatedAt).getTime();
-  if (Number.isNaN(generated)) return "feed timestamp checked";
-  const hours = Math.max(0, Math.floor((Date.now() - generated) / 3.6e6));
-  if (hours < 1) return "feed fresh · just updated";
-  if (hours < 24) return `feed fresh · ${hours}h old`;
-  return `feed snapshot · ${Math.floor(hours / 24)}d old`;
+  if (Number.isNaN(generated)) return t.hero_feed_checked;
+  const hours = Math.max(0, Math.floor((now - generated) / 3.6e6));
+  if (hours < 1) return t.hero_feed_just;
+  if (hours < 24) return t.hero_feed_hours(hours);
+  return t.hero_feed_days(Math.floor(hours / 24));
 }
 
 /**
@@ -47,7 +53,13 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
     const hero = heroRef.current;
     if (!el || !hero) return;
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    } catch {
+      // Decorative scene: keep all navigation and content available without WebGL.
+      return;
+    }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
     renderer.setSize(el.clientWidth, el.clientHeight);
     renderer.setClearColor(0x000000, 0);
@@ -74,13 +86,13 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
     ]);
     const tGeo = new THREE.BufferGeometry();
     tGeo.setAttribute("position", new THREE.BufferAttribute(tesseractPositions, 3));
-    const tMat = new THREE.LineBasicMaterial({ color: 0x9f8cff, transparent: true, opacity: 0.85 });
+    const tMat = new THREE.LineBasicMaterial({ color: 0xff833d, transparent: true, opacity: 0.85 });
     const tesseract = new THREE.LineSegments(tGeo, tMat);
     scene.add(tesseract);
 
     const vertGeo = new THREE.BufferGeometry();
     vertGeo.setAttribute("position", new THREE.BufferAttribute(new Float32Array([...innerV, ...outerV].flat()), 3));
-    const vertMat = new THREE.PointsMaterial({ color: 0xb6a6ff, size: 5, sizeAttenuation: true, transparent: true, opacity: 0.9 });
+    const vertMat = new THREE.PointsMaterial({ color: 0x00a7c7, size: 5, sizeAttenuation: true, transparent: true, opacity: 0.9 });
     const tesseractVerts = new THREE.Points(vertGeo, vertMat);
     scene.add(tesseractVerts);
 
@@ -88,7 +100,7 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
     const count = 2400;
     const pPos = new Float32Array(count * 3);
     const pCol = new Float32Array(count * 3);
-    const palette = [[0.62, 0.55, 1.0], [0.56, 0.89, 0.82], [0.91, 0.75, 0.54]];
+    const palette = [[1.0, 0.51, 0.24], [0.0, 0.65, 0.78], [0.96, 0.94, 0.91]];
     for (let i = 0; i < count; i++) {
       const r = 260 + Math.random() * 1400;
       const theta = Math.random() * Math.PI * 2;
@@ -106,9 +118,21 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
     const particles = new THREE.Points(pGeo, pMat);
     scene.add(particles);
 
+    const syncPalette = () => {
+      const css = getComputedStyle(document.documentElement);
+      const accent = css.getPropertyValue("--violet-rgb").trim().split(/\s+/).map(Number);
+      const discovery = css.getPropertyValue("--cyan-ice-rgb").trim().split(/\s+/).map(Number);
+      tMat.color.setRGB(accent[0] / 255, accent[1] / 255, accent[2] / 255, THREE.SRGBColorSpace);
+      vertMat.color.setRGB(discovery[0] / 255, discovery[1] / 255, discovery[2] / 255, THREE.SRGBColorSpace);
+    };
+    syncPalette();
+    const themeObserver = new MutationObserver(syncPalette);
+    themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
     let raf = 0;
     let mouseX = 0, mouseY = 0, targetRotX = 0, targetRotY = 0;
     let scrollProgress = 0;
+    let heroVisible = true;
 
     const onMouseMove = (e: MouseEvent) => {
       mouseX = (e.clientX / window.innerWidth) * 2 - 1;
@@ -116,6 +140,7 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
     };
     const onScroll = () => {
       const rect = hero.getBoundingClientRect();
+      heroVisible = rect.bottom > 0 && rect.top < window.innerHeight;
       // 0 at the top of the hero, 1 once scrolled a full viewport past it
       scrollProgress = Math.min(1, Math.max(0, -rect.top / window.innerHeight));
     };
@@ -145,7 +170,7 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
       tesseract.scale.setScalar(1 + scrollProgress * 0.6);
       tesseractVerts.scale.copy(tesseract.scale);
 
-      renderer.render(scene, camera);
+      if (!document.hidden && heroVisible) renderer.render(scene, camera);
     };
     animate();
 
@@ -162,6 +187,7 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
+      themeObserver.disconnect();
       renderer.dispose();
       tGeo.dispose(); vertGeo.dispose(); pGeo.dispose();
       tMat.dispose(); vertMat.dispose(); pMat.dispose();
@@ -169,10 +195,12 @@ function TesseractScene({ heroRef }: { heroRef: React.RefObject<HTMLElement | nu
     };
   }, [heroRef]);
 
-  return <div ref={mountRef} className="absolute inset-0 pointer-events-none" aria-hidden="true" />;
+  return <div ref={mountRef} className="sintra-hero-scene absolute inset-0 pointer-events-none" aria-hidden="true" />;
 }
 
 export default function ImmersiveHero({ total }: Props) {
+  const now = useFeedClock();
+  const { t } = useLanguage();
   const prefersReducedMotion = useReducedMotion();
   const heroRef = useRef<HTMLElement>(null);
 
@@ -183,7 +211,7 @@ export default function ImmersiveHero({ total }: Props) {
   return (
     <section
       ref={heroRef}
-      className="relative flex flex-col items-center justify-center text-center px-6 pt-28 pb-32 md:pt-36 md:pb-40 overflow-hidden bg-void min-h-[130vh]"
+      className="sintra-hero relative flex flex-col items-center justify-center text-center px-6 pt-28 pb-32 md:pt-36 md:pb-40 overflow-hidden bg-void"
     >
       {/* Three.js canvas — decorative only; disabled entirely for
           prefers-reduced-motion so nothing forces motion on visitors who've
@@ -194,7 +222,7 @@ export default function ImmersiveHero({ total }: Props) {
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse 80% 58% at 50% -8%, rgba(159,140,255,0.16) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse 80% 58% at 50% -8%, rgb(var(--violet-rgb) / 0.08) 0%, transparent 70%)",
         }}
       />
       <div
@@ -210,39 +238,39 @@ export default function ImmersiveHero({ total }: Props) {
           className="flex items-center justify-center gap-3 mb-7"
         >
           <span className="w-6 h-px bg-gradient-to-r from-transparent to-violet-bright" />
-          <span className="eyebrow violet">AI command center · live intelligence · automation</span>
+          <span className="eyebrow violet">{t.hero_eyebrow_cmd}</span>
           <span className="w-6 h-px bg-gradient-to-l from-transparent to-violet-bright" />
         </motion.div>
 
         <motion.h1
           custom={1} variants={variants} initial="hidden" animate="show"
-          className="font-serif font-light text-[clamp(52px,9vw,112px)] leading-[0.94] tracking-[-0.055em] text-fg-1 mb-6"
+          className="font-serif font-light text-[clamp(56px,7.5vw,96px)] leading-[1.02] tracking-[-0.055em] text-fg-1 mb-6"
         >
-          The operating map for <em className="italic text-violet-bright">AI work</em>.
+          {t.hero_h1_pre}<em className="italic text-violet-bright">{t.hero_h1_em}</em>.
         </motion.h1>
 
         <motion.p
           custom={2} variants={variants} initial="hidden" animate="show"
           className="text-[16px] md:text-[20px] leading-relaxed text-fg-3 mb-7 max-w-2xl mx-auto"
         >
-          Track what is changing, understand what matters, compare tools and models, then turn it into prompts, workflows and automation systems.
+          {t.hero_lead}
         </motion.p>
 
         <motion.div
           custom={3} variants={variants} initial="hidden" animate="show"
-          className="grid grid-cols-1 sm:grid-cols-3 gap-2 max-w-2xl mx-auto mb-8"
+          className="sintra-hero-stats grid grid-cols-3 gap-2 max-w-2xl mx-auto mb-8"
         >
           <div className="rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 backdrop-blur-sm">
             <p className="font-mono text-[15px] text-fg-1 tabular-nums">{LIVE_ITEMS.length}</p>
-            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">live signals</p>
+            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">{t.hero_stat_signals}</p>
           </div>
           <div className="rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 backdrop-blur-sm">
             <p className="font-mono text-[15px] text-fg-1 tabular-nums">{AUTOMATION_WORKFLOWS.length}</p>
-            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">workflow blueprints</p>
+            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">{t.hero_stat_blueprints}</p>
           </div>
           <div className="rounded-xl border border-white/[0.07] bg-white/[0.025] px-4 py-3 backdrop-blur-sm">
             <p className="font-mono text-[15px] text-fg-1 tabular-nums">{total.toLocaleString()}</p>
-            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">AI use cases</p>
+            <p className="font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4">{t.hero_stat_usecases}</p>
           </div>
         </motion.div>
 
@@ -251,20 +279,20 @@ export default function ImmersiveHero({ total }: Props) {
           className="flex flex-wrap items-center justify-center gap-3 mb-8"
         >
           <a href={`${BASE_PATH}/live/`} className="btn inline-flex items-center gap-2">
-            <Radio size={13} /> Explore live AI
+            <Radio size={13} /> {t.hero_cta_live}
           </a>
           <a href={`${BASE_PATH}/automate/`} className="btn btn-ghost inline-flex items-center gap-2">
-            <Workflow size={13} /> Build an automation
+            <Workflow size={13} /> {t.hero_cta_automation}
           </a>
           <a
             href="#explore"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" });
+              document.getElementById("explore")?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth" });
             }}
             className="btn btn-ghost inline-flex items-center gap-2"
           >
-            Browse the map <ArrowRight size={13} />
+            {t.hero_cta_map} <ArrowRight size={13} />
           </a>
         </motion.div>
 
@@ -272,10 +300,10 @@ export default function ImmersiveHero({ total }: Props) {
           custom={5} variants={variants} initial="hidden" animate="show"
           className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono text-[10px] tracking-[0.10em] uppercase text-fg-4"
         >
-          <span className="inline-flex items-center gap-1.5 text-emerald-400"><ShieldCheck size={12} /> {feedFreshnessLabel()}</span>
-          <span>{LIVE_FEED.sourceCount} sources</span>
-          <span>RSS + JSON feed</span>
-          <span>static, auditable, source-backed</span>
+          <span className="inline-flex items-center gap-1.5 text-cyan-ice"><ShieldCheck size={12} /> {feedFreshnessLabel(t, now)}</span>
+          <span>{t.hero_sources(LIVE_FEED.sourceCount)}</span>
+          <span>{t.hero_feeds}</span>
+          <span>{t.hero_trust}</span>
         </motion.div>
       </div>
 

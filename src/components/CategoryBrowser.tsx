@@ -1,7 +1,9 @@
 "use client";
 
+import { useReducedMotion } from "@/lib/hooks";
+
 import { useState, useMemo, useCallback, useEffect } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Search, X } from "lucide-react";
 import { USE_CASES, UseCase, DISC_COUNTS, matchesUseCase } from "@/lib/data";
 import { CAROUSEL_ITEMS } from "@/lib/carouselData";
