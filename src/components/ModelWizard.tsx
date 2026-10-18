@@ -98,9 +98,9 @@ function explainChoice(m: ModelEntry, task: Task, ctx: ContextSize): string {
   if (task === "research" && m.gpqa) reasons.push(`${m.gpqa}% GPQA graduate-science`);
   if (m.contextWindow >= 1000) reasons.push(`${m.contextWindow >= 10000 ? "10M" : "1M"}-token context`);
   if (m.extendedThinking) reasons.push("extended thinking mode");
-  if (m.webSearch) reasons.push("built-in web search");
+  if (m.webSearch) reasons.push("web search with configured tools");
   if (m.openSource) reasons.push("open weights — self-hostable");
-  if (m.inputPrice !== null && m.inputPrice < 0.5) reasons.push(`$${m.inputPrice}/1M tokens`);
+  if (m.inputPrice !== null && m.inputPrice < 0.5) reasons.push(`${m.id === "claude-haiku-5-5" ? "from " : ""}$${m.inputPrice}/1M tokens`);
 
   return reasons.slice(0, 3).join(" · ") || m.highlight;
 }

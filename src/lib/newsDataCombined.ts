@@ -1,3 +1,5 @@
+import { KNOWLEDGE } from "./knowledgeData";
+import { CURRENT_CLAUDE_MODELS } from "./modelsData";
 import { AI_NEWS as HISTORICAL_AI_NEWS, type NewsItem } from "./newsData";
 import { LATEST_AI_NEWS } from "./newsLatestData";
 import { LIVE_ITEMS, type LiveFeedItem } from "./liveFeedData";
@@ -6,7 +8,7 @@ import { LIVE_ITEMS, type LiveFeedItem } from "./liveFeedData";
  * Canonical news feed consumed by the application.
  *
  * Three sources, merged in priority order (first writer wins per id/title):
- *   1. LATEST_AI_NEWS   — hand-reviewed current items (highest quality).
+ *   1. LATEST_AI_NEWS   — editorial additions with their original publication dates.
  *   2. HISTORICAL_AI_NEWS — the append-only historical corpus.
  *   3. Live feed         — the build-time aggregated feed (aggregate-live-feed.mjs),
  *      converted to news items so the site keeps surfacing fresh headlines
@@ -62,9 +64,32 @@ const liveNews: NewsItem[] = LIVE_ITEMS
   .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
   .slice(0, LIVE_NEWS_MAX);
 
+// Source-checked updates are derived from the same records as the briefs/model
+// reference, avoiding a second hand-maintained copy of current capabilities.
+const primaryNews: NewsItem[] = [
+  ...KNOWLEDGE.filter(item => item.news).map(item => ({
+    id: [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS].find(existing => existing.url === item.sources[0].url)?.id ?? `knowledge-${item.id}`,
+    title: [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS].find(existing => existing.url === item.sources[0].url)?.title ?? item.title,
+    summary: item.facts.map(f => f.text).join(" "),
+    publishedAt: item.news!.publishedAt, tags: item.tags, provider: item.news!.provider,
+    providerColor: item.news!.providerColor, url: item.sources[0].url,
+    checkedAt: item.reviewedAt, knowledgeId: item.id,
+  })),
+  ...CURRENT_CLAUDE_MODELS.map(model => ({
+    id: `model-${model.id}`, title: `${model.name}: current API specifications`,
+    summary: `API ID ${model.apiId}; ${model.contextWindow / 1000}M context and up to ${model.outputLimit}K output. ${model.priceNote} Read the provider specifications for account and platform availability.`,
+    publishedAt: model.releaseDateIso!, tags: ["Anthropic", "Claude", "Model Release"],
+    provider: model.provider, providerColor: model.providerColor, url: model.docsUrl, checkedAt: model.lastVerified,
+  })),
+].map(item => {
+  const [year, month, day] = item.publishedAt.split("-").map(Number);
+  return { ...item, date: `${MONTH_ABBR[month - 1]} ${year}`, dateNum: year * 100 + month, dateDay: day,
+    significance: "major" as const, origin: "primary-checked" as const };
+});
+
 const byId = new Map<string, NewsItem>();
 const seenTitles = new Set<string>();
-for (const item of [...LATEST_AI_NEWS, ...HISTORICAL_AI_NEWS, ...liveNews]) {
+for (const item of [...primaryNews, ...LATEST_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...HISTORICAL_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...liveNews.map(item => ({ ...item, origin: "aggregated" as const }))]) {
   const t = normTitle(item.title);
   if (byId.has(item.id) || seenTitles.has(t)) continue;
   byId.set(item.id, item);

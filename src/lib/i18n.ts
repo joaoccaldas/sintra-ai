@@ -89,6 +89,8 @@ export interface Translations {
   side_group_reference: string;
   side_live:      string;
   side_automate:  string;
+  side_knowledge: string;
+  side_agents: string;
   side_library:   string;
   side_news:      string;
   side_weekly:    string;
@@ -312,6 +314,8 @@ const translations: Record<Locale, Translations> = {
     side_group_reference: "Reference",
     side_live:      "Live Feed",
     side_automate:  "Automation Hub",
+    side_knowledge: "Finance & AI",
+    side_agents: "For LLMs",
     side_library:   "Prompt Library",
     side_news:      "AI News",
     side_weekly:    "Weekly Digest",
@@ -533,6 +537,8 @@ const translations: Record<Locale, Translations> = {
     side_group_reference: "Referência",
     side_live:      "Feed ao vivo",
     side_automate:  "Central de automação",
+    side_knowledge: "Finanças e IA",
+    side_agents: "Para LLMs",
     side_library:   "Biblioteca de prompts",
     side_news:      "Notícias de IA",
     side_weekly:    "Resumo semanal",

@@ -26,6 +26,8 @@ const NAV_COLS: NavCol[] = [
   {
     head: "footer_col_reference",
     links: [
+      ["side_knowledge", `${BASE_PATH}/knowledge/`],
+      ["side_agents", `${BASE_PATH}/agents/`],
       ["footer_link_claude", `${BASE_PATH}/claude/`],
       ["footer_link_concepts", `${BASE_PATH}/concepts/`],
       ["footer_link_history", `${BASE_PATH}/ai-history/`],

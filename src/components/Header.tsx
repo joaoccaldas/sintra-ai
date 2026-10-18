@@ -17,6 +17,7 @@ const SavedPanel = dynamic(() => import("./SavedPanel"), { ssr: false });
 interface Props { total: number; }
 
 const PATH_LABEL_KEY: Record<string, keyof Translations> = {
+  knowledge: "side_knowledge", agents: "side_agents",
   news: "side_news", live: "side_live", automate: "side_automate", weekly: "side_weekly", topics: "side_topics",
   "ai-history": "side_history", "ai-labs": "side_labs", research: "side_research",
   learn: "side_learn", guides: "side_guides", resources: "side_resources", concepts: "side_concepts",

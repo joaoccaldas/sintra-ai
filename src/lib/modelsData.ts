@@ -9,6 +9,8 @@ export interface ModelEntry {
   providerColor: string;
   releaseDate: string;
   releaseDateNum: number;
+  releaseDateIso?: string;
+  currentSnapshot?: boolean;
 
   tier: ModelTier;
   contextWindow: number;   // thousands of tokens (128 = 128k)
@@ -54,8 +56,32 @@ export const SPEED_META: Record<ModelSpeed, { label: string; color: string }> = 
   slow:   { label: "Slow",   color: "#ef4444" },
 };
 
+// Primary model specifications checked 2026-10-18. Older records remain below
+// with their original review dates; currentSnapshot does not certify other providers.
+export const CURRENT_CLAUDE_MODELS: ModelEntry[] = [
+  { id: "claude-fable-5-1", name: "Claude Fable 5.1", date: "2026-09-01", tier: "flagship", input: 10, output: 50, speed: "slow", bestFor: ["Long-horizon reasoning", "Complex agent tasks"] },
+  { id: "claude-opus-5-5", name: "Claude Opus 5.5", date: "2026-09-22", tier: "flagship", input: 4, output: 20, speed: "medium", bestFor: ["General knowledge work", "Agentic coding"] },
+  { id: "claude-sonnet-5-5", name: "Claude Sonnet 5.5", date: "2026-09-28", tier: "balanced", input: 2, output: 10, speed: "fast", bestFor: ["Interactive applications", "Balanced latency and capability"] },
+  { id: "claude-haiku-5-5", name: "Claude Haiku 5.5", date: "2026-10-07", tier: "efficient", input: 0.1, output: 0.5, speed: "fast", bestFor: ["Classification", "Extraction", "Routing"] },
+].map(config => ({
+  id: config.id, apiId: config.id, name: config.name, provider: "Anthropic", providerColor: "#c15f3c",
+  releaseDate: config.date, releaseDateIso: config.date, releaseDateNum: Number(config.date.slice(0, 7).replace("-", "")),
+  tier: config.tier as ModelTier, contextWindow: 1000, outputLimit: 128,
+  inputPrice: config.input, outputPrice: config.output,
+  priceNote: config.id === "claude-haiku-5-5"
+    ? "From $0.10/$0.50 per MTok for prompts up to 100K tokens; over 100K: $0.50/$2.50. Standard API rates, excluding caching/batch and tools."
+    : "Standard API USD per MTok; caching, batch, tools and platform-specific rates can differ.",
+  mmlu: null, gpqa: null, sweBench: null, mathAime: null,
+  multimodal: true, extendedThinking: true, webSearch: true, codeExecution: true, openSource: false,
+  speed: config.speed as ModelSpeed, bestFor: config.bestFor,
+  highlight: "Current primary-source snapshot. Tool execution requires the relevant client/API tools and permissions.",
+  docsUrl: `https://platform.claude.com/docs/en/models/${config.id.replace("claude-", "")}/overview`,
+  status: "available" as const, lastVerified: "2026-10-18", currentSnapshot: true,
+}));
+
 // Pricing is approximate and changes frequently — always verify at provider docs
 export const AI_MODELS: ModelEntry[] = [
+  ...CURRENT_CLAUDE_MODELS,
   // ── Anthropic ─────────────────────────────────────────────────────────────
   {
     id: "claude-fable-5",

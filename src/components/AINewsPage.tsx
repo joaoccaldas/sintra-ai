@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
-import { CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL, ARCHIVE_MONTHS, getLatestNewsDate, type NewsItem } from "@/lib/newsDataCombined";
+import { AI_NEWS, CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL, ARCHIVE_MONTHS, getLatestNewsDate, type NewsItem } from "@/lib/newsDataCombined";
 import { BASE_PATH } from "@/lib/constants";
 import { NewsCard } from "@/components/NewsCard";
 import { useLanguage } from "@/context/LanguageContext";
@@ -27,34 +27,26 @@ const SIG_LABEL_KEY: Record<string, keyof Translations> = {
 
 export default function AINewsPage() {
   const { t } = useLanguage();
-  const [activeSig, setActiveSig] = useState<string>(() => {
-    if (typeof window === "undefined") return "all";
-    return new URLSearchParams(window.location.search).get("sig") || "all";
-  });
-  const [activeTag, setActiveTag] = useState<string>(() => {
-    if (typeof window === "undefined") return "all";
-    return new URLSearchParams(window.location.search).get("tag") || "all";
-  });
-  const [activeProvider, setProvider] = useState<string>(() => {
-    if (typeof window === "undefined") return "all";
-    return new URLSearchParams(window.location.search).get("provider") || "all";
-  });
-  const [brazilOnly, setBrazilOnly] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return new URLSearchParams(window.location.search).get("brazil") === "1";
-  });
-  const [swedenOnly, setSwedenOnly] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return new URLSearchParams(window.location.search).get("sweden") === "1";
-  });
-  const [search, setSearch] = useState(() => {
-    if (typeof window === "undefined") return "";
-    return new URLSearchParams(window.location.search).get("q") || "";
-  });
-  const [activePreset, setActivePreset] = useState<PresetId>(() => {
-    if (typeof window === "undefined") return "all";
-    return (new URLSearchParams(window.location.search).get("preset") || "all") as PresetId;
-  });
+  const [activeSig, setActiveSig] = useState("all");
+  const [activeTag, setActiveTag] = useState("all");
+  const [activeProvider, setProvider] = useState("all");
+  const [brazilOnly, setBrazilOnly] = useState(false);
+  const [swedenOnly, setSwedenOnly] = useState(false);
+  const [search, setSearch] = useState("");
+  const [activePreset, setActivePreset] = useState<PresetId>("all");
+  const [filtersReady, setFiltersReady] = useState(false);
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setActiveSig(params.get("sig") || "all");
+    setActiveTag(params.get("tag") || "all");
+    setProvider(params.get("provider") || "all");
+    setBrazilOnly(params.get("brazil") === "1");
+    setSwedenOnly(params.get("sweden") === "1");
+    setSearch(params.get("q") || "");
+    const preset = params.get("preset") as PresetId;
+    if (PRESETS.some(item => item.id === preset)) setActivePreset(preset);
+    setFiltersReady(true);
+  }, []);
 
   // "New since your last visit" — read the previous visit's watermark, then
   // bump it to the current latest item so only items added after this visit
@@ -69,6 +61,7 @@ export default function AINewsPage() {
   }, []);
 
   useEffect(() => {
+    if (!filtersReady) return;
     const params = new URLSearchParams();
     if (activePreset   !== "all") params.set("preset",   activePreset);
     if (activeSig      !== "all") params.set("sig",      activeSig);
@@ -79,17 +72,18 @@ export default function AINewsPage() {
     if (search)                   params.set("q",        search);
     const qs = params.toString();
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search]);
+  }, [activePreset, activeSig, activeTag, activeProvider, brazilOnly, swedenOnly, search, filtersReady]);
 
   const providers = useMemo(() => {
-    const ps = [...new Set(CURRENT_MONTH_NEWS.map((n: NewsItem) => n.provider))].sort();
+    const ps = [...new Set(AI_NEWS.map((n: NewsItem) => n.provider))].sort();
     return ps;
   }, []);
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
     const preset = PRESETS.find(p => p.id === activePreset);
-    return [...CURRENT_MONTH_NEWS]
+    const hasFilter = q || activeSig !== "all" || activeTag !== "all" || activeProvider !== "all" || brazilOnly || swedenOnly || activePreset !== "all";
+    return [...(hasFilter ? AI_NEWS : CURRENT_MONTH_NEWS)]
       .filter((n: NewsItem) => !preset?.filter || preset.filter(n))
       .filter((n: NewsItem) => activeSig === "all" || n.significance === activeSig)
       .filter((n: NewsItem) => activeTag === "all" || n.tags.includes(activeTag))
@@ -166,6 +160,10 @@ export default function AINewsPage() {
           </a>
         </div>
 
+        <aside className="rounded-xl border border-hairline bg-steel p-4 mb-3 text-sm text-fg-3 leading-relaxed">
+          Headlines show publication dates. Source checks are labeled separately; aggregated and older items have not been reverified in this review. Search and filters include the archive.
+          <a href={`${BASE_PATH}/knowledge/`} className="block mt-2 text-violet-bright">Explore source-checked finance &amp; MCP briefs →</a>
+        </aside>
         {/* Hero */}
         <motion.header className="pt-6 pb-12 border-b border-violet/[0.12]"
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
@@ -177,7 +175,7 @@ export default function AINewsPage() {
           <h1 className="font-serif font-light text-[clamp(40px,6vw,80px)] leading-[1.04] tracking-[-0.025em] text-fg-1 mb-5">
             {t.news_h1_pre}
             <em className="italic" style={{
-              backgroundImage: "linear-gradient(180deg, #F4F2EA 0%, #9F8CFF 100%)",
+              backgroundImage: "linear-gradient(180deg, var(--fg-1) 0%, var(--violet-bright) 100%)",
               WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent",
             }}>{t.news_h1_em}</em>
           </h1>

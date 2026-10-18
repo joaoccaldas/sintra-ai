@@ -1,3 +1,4 @@
+import { KNOWLEDGE } from "./knowledgeData";
 import Fuse from "fuse.js";
 import { USE_CASES, BASE_PATH } from "./data";
 import { AI_TOOLS } from "./toolsData";
@@ -11,6 +12,7 @@ import { AI_MODELS } from "./modelsData";
 import { AUTOMATION_WORKFLOWS } from "./automationData";
 
 export type EntityKind =
+  | "knowledge"
   | "use_case"
   | "tool"
   | "concept"
@@ -34,6 +36,7 @@ export interface SearchDocument {
 }
 
 export const KIND_META: Record<EntityKind, { label: string; pluralLabel: string; color: string }> = {
+  knowledge: { label: "Knowledge", pluralLabel: "Knowledge", color: "#c15f3c" },
   use_case: { label: "Use Case", pluralLabel: "Use Cases", color: "#9F8CFF" },
   tool: { label: "Tool", pluralLabel: "Tools", color: "#8FE3D2" },
   concept: { label: "Concept", pluralLabel: "Concepts", color: "#F4D06F" },
@@ -46,7 +49,7 @@ export const KIND_META: Record<EntityKind, { label: string; pluralLabel: string;
   automation: { label: "Automation", pluralLabel: "Automation", color: "#8FE3D2" },
 };
 
-const KIND_ORDER: EntityKind[] = ["use_case", "automation", "model", "tool", "concept", "news", "lab", "path", "resource", "topic"];
+const KIND_ORDER: EntityKind[] = ["knowledge", "use_case", "automation", "model", "tool", "concept", "news", "lab", "path", "resource", "topic"];
 
 // The concept corpus contains a small amount of legacy duplicate-ID debt.
 // Last-write-wins keeps search IDs deterministic until the source migration is complete.
@@ -57,6 +60,12 @@ function internalSearchHref(route: string, query: string): string {
 }
 
 export const SEARCH_INDEX: SearchDocument[] = [
+  ...KNOWLEDGE.map(record => ({
+    id: `knowledge-${record.id}`, kind: "knowledge" as EntityKind,
+    title: record.title, summary: record.summary, tags: record.tags,
+    href: `${BASE_PATH}/knowledge/${record.id}/`,
+    body: [record.title, record.summary, record.kind, ...record.tags, ...record.facts.map(f => f.text), ...record.steps].join(" "),
+  })),
   ...USE_CASES.map(useCase => ({
     id: `use_case-${useCase.id}`,
     kind: "use_case" as EntityKind,

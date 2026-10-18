@@ -1,4 +1,7 @@
 export interface NewsItem {
+  origin?: "editorial" | "aggregated" | "primary-checked";
+  checkedAt?: string;
+  knowledgeId?: string;
   id: string;
   date: string;          // "Jan 2024", "May 2024", etc.
   dateNum: number;       // YYYYMM for sorting, e.g. 202401

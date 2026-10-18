@@ -63,6 +63,7 @@ const NAV: NavGroup[] = [
     labelKey: "side_group_discover",
     items: [
       { href: `${BASE_PATH}/live/`, labelKey: "side_live", Icon: Radio, pathKey: "live" },
+      { href: `${BASE_PATH}/knowledge/`, labelKey: "side_knowledge", Icon: BookOpen, pathKey: "knowledge" },
       { href: `${BASE_PATH}/automate/`, labelKey: "side_automate", Icon: Workflow, pathKey: "automate" },
       { href: `${BASE_PATH}/library/`, labelKey: "side_library", Icon: Sparkles, count: USE_CASES_COUNT, pathKey: "library" },
       { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, count: AI_NEWS.length, pathKey: "news" },
@@ -92,6 +93,7 @@ const NAV: NavGroup[] = [
       { href: `${BASE_PATH}/models/`, labelKey: "side_models", Icon: Cpu, pathKey: "models" },
       { href: `${BASE_PATH}/claude/`, labelKey: "side_claude", Icon: Brain, pathKey: "claude" },
       { href: `${BASE_PATH}/google-ai-tools/`, labelKey: "side_google", Icon: SearchIcon, pathKey: "google-ai-tools" },
+      { href: `${BASE_PATH}/agents/`, labelKey: "side_agents", Icon: FileText, pathKey: "agents" },
       { href: `${BASE_PATH}/token-calculator/`, labelKey: "side_costcalc", Icon: Calculator, pathKey: "token-calculator" },
     ],
   },
