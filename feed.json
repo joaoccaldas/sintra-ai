@@ -7,6 +7,246 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
+      "url": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
+      "title": "Mamdani says feds have abdicated on AI, urges New Yorkers to push back",
+      "content_text": "Mayor Zohran Mamdani said Monday night that New Yorkers must resist the narrative that an AI takeover is inevitable and demand regulations that protect the public and put power back in their hands.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-20T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+      "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+      "title": "My obituary for programming",
+      "content_text": "My obituary for programming Jeremy Scheff poignantly captures the key loss caused by coding agents for career programmers who enjoyed the puzzle of developing code: Programming turned into one of the greatest jobs you could imagine. You got paid to work on tri",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+      "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+      "title": "Nscale and Anthropic are reportedly in talks for yet another $45B compute deal",
+      "content_text": "If the deal goes through, it would be the latest in a long string of giant compute deals Anthropic has struck over the past year.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+      "url": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+      "title": "Embedded AI evaluators won&#8217;t be an easy solution, Hugging Face&#8217;s policy chief says",
+      "content_text": "The idea of embedded evaluators — in which supposedly \"neutral\" third-party observers are placed inside AI organizations — has been popularized over the last several months, as AI labs grapple with a rash of safety incidents that have spurred concerns over the",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+      "title": "Microsoft says AI agents are like insider threats as &#8216;frontier models can&#8217;t be trusted&#8217;",
+      "content_text": "Microsoft wants enterprises to closely watch the agents that employees use with systems not controlled by AI labs like OpenAI and Anthropic.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+      "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+      "content_text": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+      "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+      "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+      "content_text": "OpenCode is an open source AI coding agent that's become a popular alternative to Claude Code and Cursor. But hackers got into part of its online platform and stole some users’ API keys, and the AI tools it turned to for help kept refusing to look at the malic",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
+      "url": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
+      "title": "Making the internet better for AI agents might make it worse for everyone else",
+      "content_text": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Until recently, you could divide internet users into just two categories: bots and people. Websites have long allowed",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "MIT Tech Review",
+        "MIT Tech Review",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+      "url": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+      "title": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
+      "content_text": "“I think I have good news about the nature of neural networks.” With those simple words of optimism, Nick Cammarata, a researcher at the AI startup Goodfire, kicked off a 26,000-word blog post that has knocked the AI world on its head, sparking wild speculatio",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "MIT Tech Review",
+        "MIT Tech Review",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/low-resource-programming-languages",
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "title": "Advancing coding in low‑resource programming languages",
+      "content_text": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+      "url": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+      "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
+      "content_text": "What do AI agents do if you don’t tell them to do anything? The answer looks a lot like play. Researchers repeatedly stranded them alone on a virtual desert island for 30 hours in an experiment reminiscent of the movies Cast Away or Home Alone. The agents—copi",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "MIT Tech Review",
+        "MIT Tech Review",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://huggingface.co/blog/hf-torchneuron",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-19T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
       "id": "https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-variance-review/",
       "url": "https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-variance-review/",
       "title": "Sintra Lab: a reproducible Power BI variance example",
@@ -27,10 +267,10 @@
       ]
     },
     {
-      "id": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "content_text": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "id": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "title": "llm-tools-datasette 0.1.1",
+      "content_text": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. Tags: datasette , llm",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -38,11 +278,31 @@
         "workflowResource": null,
         "verification": "not-reverified"
       },
-      "date_published": "2026-10-17T00:00:00.000Z",
+      "date_published": "2026-10-18T00:00:00.000Z",
       "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+      "title": "llm-echo 0.5",
+      "content_text": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-10-18T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
         "Live"
       ]
     },
@@ -63,46 +323,6 @@
         "Simon Willison",
         "Simon Willison",
         "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-      "content_text": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "content_text": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
         "Live"
       ]
     },
@@ -167,166 +387,6 @@
       ]
     },
     {
-      "id": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-      "url": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-      "content_text": "Listen to the session or watch below Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an ",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "MIT Tech Review",
-        "MIT Tech Review",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "content_text": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-      "content_text": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being&#160;rebu",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
-      "content_text": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being&#160;rebu",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/benefit-street-partners",
-      "url": "https://openai.com/index/benefit-street-partners",
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "content_text": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "content_text": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/reflection-beam",
-      "url": "https://huggingface.co/blog/reflection-beam",
-      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
       "id": "https://claude.com/resources/articles/code-review-is-now-generally-available",
       "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
       "title": "Claude Code Review leaves preview",
@@ -345,66 +405,6 @@
         "Claude Code",
         "Development",
         "News"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-      "title": "Chirp Pong",
-      "content_text": "Tool: Chirp Pong Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone. It seems to work! Build a two player competitiv",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "content_text": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
-        "Live"
       ]
     },
     {
