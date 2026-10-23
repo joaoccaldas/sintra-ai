@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { spawnSync } from "node:child_process";
 // JS source is intentional: the research script uses plain Node without TS loader.
 import { normalizeNewsUrl, validateNewsCandidates } from "../news-candidates.mjs";
 
@@ -74,4 +75,16 @@ test("legacy standalone updater cannot write to source news datasets", () => {
   assert.doesNotMatch(code, /git push|git commit/);
   assert.match(code, /unverified-review-candidates/);
   assert.match(code, /newsLatestData\.ts/);
+});
+
+
+test("research CLI parses, documents draft-only behavior, and needs no provider for help", () => {
+  const file = join(process.cwd(), "scripts/update-news.mjs");
+  const syntax = spawnSync(process.execPath, ["--check", file], { encoding: "utf8" });
+  assert.equal(syntax.status, 0, syntax.stderr);
+  const help = spawnSync(process.execPath, [file, "--help"], {
+    env: { ...process.env, ANTHROPIC_API_KEY: "" }, encoding: "utf8",
+  });
+  assert.equal(help.status, 0, help.stderr);
+  assert.match(help.stdout, /does not edit or publish news/);
 });
