@@ -90,9 +90,9 @@ test("every permanent Sintra touchpoint uses the ond.ai endorsed family instead 
   assert.doesNotMatch(footer, /NEXT_PUBLIC_NEWSLETTER_ENDPOINT|<form|NewsletterCapture/);
   assert.match(footer, /<details/);
   const layout = read("src/app/layout.tsx");
-  assert.match(layout, /sintra-mark\\.svg/);
-  assert.doesNotMatch(layout, /tesseract-mark\\.svg/);
-  assert.match(layout, /Sintra Brasil, by ond\\.ai/);
+  assert.match(layout, /sintra-mark\.svg/);
+  assert.doesNotMatch(layout, /tesseract-mark\.svg/);
+  assert.match(layout, /Sintra Brasil, by ond\.ai/);
   assert.match(layout, /locale: "pt_BR"/);
   const og = read("src/app/opengraph-image.tsx");
   assert.match(og, /Entenda a IA/);
