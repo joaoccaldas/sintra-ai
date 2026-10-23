@@ -10,3 +10,18 @@
 .compact .product { font-size: 17px; }
 .compact .parent { font-size: 9px; }
 @media (max-width: 360px) { .compact { gap: 5px; } .compact .wave { width: 28px; } .compact .product { font-size: 15px; } }
+
+/* The parent open-wave mark must also remain legible when a visitor
+   explicitly selects one of Sintra's older non-light theme variants. */
+:global([data-theme="dark"]) .lockup,
+:global([data-theme="forest"]) .lockup,
+:global([data-theme="ocean"]) .lockup { color: var(--fg-1); }
+:global([data-theme="dark"]) .parent,
+:global([data-theme="forest"]) .parent,
+:global([data-theme="ocean"]) .parent { color: var(--fg-3); }
+:global([data-theme="dark"]) .parent strong,
+:global([data-theme="forest"]) .parent strong,
+:global([data-theme="ocean"]) .parent strong { color: var(--fg-1); }
+:global([data-theme="dark"]) .wave,
+:global([data-theme="forest"]) .wave,
+:global([data-theme="ocean"]) .wave { color: var(--violet-bright); }
