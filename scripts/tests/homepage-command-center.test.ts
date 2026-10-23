@@ -45,8 +45,9 @@ test("visual styles include phone breakpoints, readable cards and reduced motion
   assert.match(css, /max-width:\s*760px/);
   assert.match(css, /max-width:\s*540px/);
   assert.match(css, /prefers-reduced-motion:\s*reduce/);
-  assert.match(css, /\.journey/);
-  assert.match(css, /\.resources/);
+  assert.match(css, /\.primaryCta/);
+  assert.doesNotMatch(css, /\.journey/);
+  assert.doesNotMatch(css, /\.resources/);
 });
 
 test("server sections source world news and prompts from canonical registries, not mock lists", () => {
