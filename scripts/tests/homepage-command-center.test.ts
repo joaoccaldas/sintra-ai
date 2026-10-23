@@ -17,12 +17,15 @@ test("homepage uses a server route and focused practical sections, avoiding gian
   assert.match(page, /<Footer \/>/);
 });
 
-test("new first-screen goals link to real existing routes without invented community destinations", () => {
+test("one first-win CTA and existing mobile dock replace redundant home menus", () => {
   const hero = read("src/components/BrazilFirstHero.tsx");
-  assert.match(hero, /BASE_PATH\}\/learn\//);
-  assert.match(hero, /BASE_PATH\}\/library\//);
-  assert.match(hero, /BASE_PATH\}\/automate\//);
-  assert.match(hero, /BASE_PATH\}\/news\//);
+  assert.match(hero, /href="#pratique"/);
+  assert.match(hero, /<ShareSintraButton \/>/);
+  assert.doesNotMatch(hero, /s\.resources|s\.journeys|s\.directionHeader/);
+  const dock = read("src/components/MobileDock.tsx");
+  for (const route of ["news", "learn", "library"]) {
+    assert.ok(dock.includes("BASE_PATH}/" + route + "/"), "dock missing " + route);
+  }
   assert.doesNotMatch(hero, /href=.*\/community\//);
 });
 
@@ -52,8 +55,11 @@ test("server sections source world news and prompts from canonical registries, n
   assert.match(source, /USE_CASES/);
   assert.match(source, /"meeting-notes-to-action-items"/);
   assert.match(source, /"quick-insights-from-spreadsheets"/);
-  assert.match(source, /execução não verificada/);
-  assert.match(source, /#pratique|id="pratique"/);
+  const localized = read("src/components/HomeEditorialClient.tsx");
+  assert.match(localized, /execução não verificada/);
+  assert.match(localized, /id="pratique"/);
+  assert.match(localized, /useLanguage/);
+  assert.match(localized, /"World news and practical AI"/);
   assert.doesNotMatch(source, /"use client"|from "framer-motion"|from "@\/lib\/newsDataCombined"/);
 });
 
