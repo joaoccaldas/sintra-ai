@@ -79,6 +79,19 @@ test("duplicate source URL collapses; stale/future publication dates fail closed
   assert.equal(selectBrazilNews([], { now: new Date("2026-10-23T11:00:00Z") }).length, 0);
 });
 
+test("Brazilian RSS excerpts render accented Portuguese, numeric and nested entities safely", () => {
+  const xml = `<rss><channel><item>
+    <title>Intelig&amp;ecirc;ncia artificial: revis&amp;atilde;o do usu&amp;aacute;rio</title>
+    <link>https://canaltech.com.br/inteligencia-artificial/exemplo</link>
+    <description>O Google come&amp;ccedil;ou a transi&amp;ccedil;&amp;atilde;o com IA &amp;mdash; pesquisa &amp;#xE9; &amp;#231;.</description>
+    <pubDate>Fri, 23 Oct 2026 10:00:00 GMT</pubDate>
+  </item></channel></rss>`;
+  const [item] = extractRssItems(xml, canaltech);
+  assert.equal(item.title, "Inteligência artificial: revisão do usuário");
+  assert.equal(item.providerExcerpt, "O Google começou a transição com IA — pesquisa é ç.");
+  assert.equal(item.providerExcerpt.includes("&amp;"), false);
+});
+
 test("unbounded RSS input fails rather than exhausting memory during parsing", () => {
   assert.throws(() => extractRssItems("x".repeat(2_000_001), canaltech), /2 MB/);
 });
