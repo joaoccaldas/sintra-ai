@@ -42,9 +42,9 @@ test("Brazil-first hero is text-led with no WebGL or external images", () => {
 
 test("visual styles include phone breakpoints, readable cards and reduced motion", () => {
   const css = read("src/components/BrazilFirstHero.module.css");
-  assert.match(css, /max-width: 760px/);
-  assert.match(css, /max-width: 540px/);
-  assert.match(css, /prefers-reduced-motion: reduce/);
+  assert.match(css, /max-width:\s*760px/);
+  assert.match(css, /max-width:\s*540px/);
+  assert.match(css, /prefers-reduced-motion:\s*reduce/);
   assert.match(css, /\.journey/);
   assert.match(css, /\.resources/);
 });
