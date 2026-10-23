@@ -94,7 +94,7 @@ export default function Header({ total: _total }: Props) {
 
           <a href={BASE_PATH + "/"} className="lg:hidden flex items-center gap-2 min-w-0 shrink-0">
             <TesseractMark size={28} />
-            <span className="font-serif text-[18px] leading-none tracking-[-0.01em] text-fg-1">
+            <span className="hidden min-[380px]:inline font-serif text-[18px] leading-none tracking-[-0.01em] text-fg-1">
               Sintra <em className="italic text-violet-bright">AI</em>
             </span>
           </a>
