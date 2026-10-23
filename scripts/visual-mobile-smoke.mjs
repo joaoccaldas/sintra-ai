@@ -15,7 +15,7 @@ if (!base || !base.startsWith("http://127.0.0.1:4173/sintra-ai/preview/first-win
 const widths = [320, 360, 390, 430, 768, 1440];
 const folder = join(process.cwd(), "artifacts", "sintra-mobile");
 await mkdir(folder, { recursive: true });
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROME_BIN || undefined });
 const failures = [];
 
 try {
