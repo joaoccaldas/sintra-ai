@@ -55,39 +55,35 @@ export const metadata: Metadata = {
   title: "Sintra AI — Notícias, aprendizado e IA na prática para o Brasil",
   description: `IA no Brasil primeiro, notícias do mundo com fontes, trilhas de aprendizado e ${USE_CASES_COUNT} exemplos de aplicação no trabalho e no dia a dia.`,
   keywords: [
-    "AI news",
-    "AI learning paths",
-    "AI tools",
-    "AI model comparison",
-    "AI prompts",
-    "ChatGPT prompts",
-    "Claude prompts",
-    "AI use cases",
-    "prompt engineering",
-    "FP&A AI",
-    "finance AI prompts",
-    "data analytics AI",
+    "inteligência artificial no Brasil",
+    "notícias de IA",
+    "aprender inteligência artificial",
+    "IA na prática",
+    "casos de uso IA",
+    "IA para trabalho",
+    "comunidade de inteligência artificial",
+    "prompts em português",
+    "AI news Brazil",
   ],
   openGraph: {
-    title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
-    description: `Track AI developments, build practical understanding, compare tools and models, and use ${USE_CASES_COUNT} copy-ready workflows.`,
+    title: "Sintra Brasil, by ond.ai | Entenda a IA. Coloque em prática.",
+    description: "Brasil primeiro, depois o mundo. Notícias com fontes e aplicações práticas de inteligência artificial para aprender fazendo.",
     url: SITE_URL,
-    siteName: "Sintra AI",
+    locale: "pt_BR",
+    siteName: "Sintra Brasil",
     type: "website",
-    images: [
-      {
-        url: `${SITE_URL}/tesseract-hero.webp`,
-        width: 1200,
-        height: 630,
-        alt: "Sintra AI — daily intelligence, structured learning and practical use cases",
-      },
-    ],
+    images: [{
+      url: `${SITE_URL}/opengraph-image`,
+      width: 1200,
+      height: 630,
+      alt: "Sintra Brasil, by ond.ai. Entenda a IA. Coloque em prática.",
+    }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
-    description: `Track AI developments, build practical understanding, and use ${USE_CASES_COUNT} copy-ready workflows.`,
-    images: [`${SITE_URL}/tesseract-hero.webp`],
+    title: "Sintra Brasil | Inteligência que vira ação",
+    description: "Notícias de inteligência artificial e casos reais para aprender fazendo.",
+    images: [`${SITE_URL}/opengraph-image`],
   },
   alternates: {
     types: {
@@ -104,7 +100,7 @@ const siteJsonLd = {
       "@id": `${SITE_URL}/#organization`,
       name: "Sintra AI",
       url: SITE_URL,
-      logo: `${SITE_URL}/tesseract-mark.svg`,
+      logo: `${SITE_URL}/sintra-mark.svg`,
     },
     {
       "@type": "WebSite",
@@ -113,7 +109,7 @@ const siteJsonLd = {
       name: "Sintra AI",
       description: "Radar brasileiro de inteligência artificial, notícias globais com fontes e aprendizado prático.",
       publisher: { "@id": `${SITE_URL}/#organization` },
-      inLanguage: ["en", "pt-BR"],
+      inLanguage: ["pt-BR"],
     },
   ],
 };
@@ -146,7 +142,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           src="https://plausible.io/js/script.js"
         />
         <link rel="icon" href={`${BASE_PATH}/favicon.ico`} sizes="any" />
-        <link rel="icon" type="image/svg+xml" href={`${BASE_PATH}/tesseract-mark.svg`} />
+        <link rel="icon" type="image/svg+xml" href={`${BASE_PATH}/sintra-mark.svg`} />
         <link rel="apple-touch-icon" href={`${BASE_PATH}/apple-touch-icon.png`} />
         <script
           type="application/ld+json"
