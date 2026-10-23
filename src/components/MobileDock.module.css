@@ -19,4 +19,13 @@
 .item span { max-width: 100%; white-space: nowrap; }
 .item:hover, .item:focus-visible { color: var(--fg-1); background: rgb(var(--violet-rgb) / .075); }
 .active { color: var(--sintra-coral-ink, #B65344); background: var(--sintra-coral-soft, #FDECE7); }
+:global([data-theme="dark"]) .dock,
+:global([data-theme="forest"]) .dock,
+:global([data-theme="ocean"]) .dock { background: var(--abyss); border-color: var(--hairline); }
+:global([data-theme="dark"]) .item,
+:global([data-theme="forest"]) .item,
+:global([data-theme="ocean"]) .item { color: var(--fg-2); }
+:global([data-theme="dark"]) .active,
+:global([data-theme="forest"]) .active,
+:global([data-theme="ocean"]) .active { color: var(--fg-1); background: rgb(var(--violet-rgb) / .16); }
 @media (min-width: 1024px) { .dock { display: none; } }
