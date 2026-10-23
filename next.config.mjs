@@ -21,6 +21,7 @@ const nextConfig = {
   images: { unoptimized: true },
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_PREVIEW_MODE: previewBasePath ? '1' : '0',
   },
 };
 
