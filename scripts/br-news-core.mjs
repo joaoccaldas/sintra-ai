@@ -19,7 +19,7 @@ const TEXT_ENTITIES = Object.freeze({
 });
 
 function decodeEntities(text) {
-  const decode = (input) => input.replace(/&(#x[\\da-fA-F]+|#\\d+|[a-zA-Z]+);/g, (match, entity) => {
+  const decode = (input) => input.replace(/&(#x[\da-fA-F]+|#\d+|[a-zA-Z]+);/g, (match, entity) => {
     if (entity.startsWith("#")) {
       const hex = /^#x/i.test(entity);
       const code = Number.parseInt(entity.slice(hex ? 2 : 1), hex ? 16 : 10);
@@ -33,9 +33,9 @@ function decodeEntities(text) {
 }
 
 const strip = (value = "") => decodeEntities(String(value)
-  .replace(/<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>/g, "$1")
+  .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
   .replace(/<[^>]*>/g, " "))
-  .replace(/\\s+/g, " ").trim();
+  .replace(/\s+/g, " ").trim();
 
 function tag(block, name) {
   const match = block.match(new RegExp("<" + name + "(?:\\s[^>]*)?>([\\s\\S]*?)<\\/" + name + ">", "i"));
