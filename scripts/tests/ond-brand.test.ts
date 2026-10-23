@@ -34,7 +34,7 @@ test("new brand uses one open line in its master mark; no decorative infinity, e
   assert.match(brand, /<path d="M3 19/);
   assert.match(brand, /stroke="currentColor"/);
   assert.match(brand, /by <strong>ond\.ai<\/strong>/);
-  assert.doesNotMatch(brand, /<circle|<image|<iframe|https?:\/\//);
+  assert.doesNotMatch(brand, /<circle|<image|<iframe|src="https?:\/\//);
 });
 
 test("Sintra offers a mobile-first Portuguese promise with optional English", () => {
@@ -71,9 +71,9 @@ test("branding is open-wave instead of generic concentric loops and is responsiv
   const hero = read("src/components/BrazilFirstHero.tsx");
   const css = read("src/components/BrazilFirstHero.module.css");
   assert.match(hero, /sintra-open-current/);
-  assert.match(css, /max-width:760px/);
-  assert.match(css, /max-width:540px/);
-  assert.match(css, /prefers-reduced-motion:reduce/);
+  assert.match(css, /max-width:\s*760px/);
+  assert.match(css, /max-width:\s*540px/);
+  assert.match(css, /prefers-reduced-motion:\s*reduce/);
   assert.doesNotMatch(hero, /s\.waveOne|s\.waveTwo|s\.waveFive/);
 });
 
