@@ -37,5 +37,9 @@
   .story { padding:20px; gap:11px; }
   .story strong { font-size:18px; }
   .excerpt { -webkit-line-clamp:2; }
+  /* One leading reported story with context, two concise headlines. */
+  .story:not(:first-child) .excerpt { display:none; }
+  .story:not(:first-child) { padding:16px 20px; gap:8px; }
+  .story:not(:first-child) strong { font-size:16px; line-height:1.4; }
 }
 @media (prefers-reduced-motion:reduce) { .story {transition:none;} .story:hover, .story:focus-visible {transform:none;} }
