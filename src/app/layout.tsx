@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { BASE_PATH } from "@/lib/constants";
-import { Instrument_Serif, Manrope, Geist_Mono } from "next/font/google";
+import { EB_Garamond, Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./hardening.css";
 import "./ond-brand.css";
@@ -16,11 +16,14 @@ import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
 
-const editorial = Instrument_Serif({
-  subsets: ["latin"], weight: "400", style: ["normal", "italic"],
+// Guide: Inter for clarity, EB Garamond for restrained editorial contrast.
+// Existing CSS variable aliases are retained for reversible compatibility
+// with legacy routes while the design tokens migrate to semantic names.
+const editorial = EB_Garamond({
+  subsets: ["latin"], weight: ["400", "500", "600"], style: ["normal", "italic"],
   variable: "--font-instrument", display: "swap",
 });
-const manrope = Manrope({
+const manrope = Inter({
   subsets: ["latin"], variable: "--font-manrope", display: "swap",
 });
 
