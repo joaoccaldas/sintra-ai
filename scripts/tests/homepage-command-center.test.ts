@@ -6,51 +6,73 @@ import assert from "node:assert/strict";
 const root = process.cwd();
 const read = (path: string) => readFileSync(join(root, path), "utf8");
 
-test("homepage composes hero directly into ContentNav, no duplicate IA section", () => {
+test("homepage uses a simple first-use hero before the existing editorial sections", () => {
   const page = read("src/app/page.tsx");
-  assert.match(page, /<ImmersiveHero total=\{USE_CASES_COUNT\} \/>/);
-  assert.match(page, /<ContentNav \/>/);
-  assert.doesNotMatch(page, /AIStackJourney/);
+  assert.match(page, /<BrazilFirstHero \/>/);
+  assert.match(page, /<ContentNav showIntents=\{false\} \/>/);
+  assert.doesNotMatch(page, /<ImmersiveHero/);
+  assert.match(page, /<Header total=\{USE_CASES_COUNT\}/);
+  assert.match(page, /<Footer \/>/);
 });
 
-test("hero positions Sintra as an AI command center", () => {
-  // The hero is bilingual: it renders its copy through i18n keys, and the
-  // English source strings live in the translation table. Assert both halves
-  // so the "command center" positioning stays verified after the PT/EN pass.
-  const hero = read("src/components/ImmersiveHero.tsx");
-  assert.match(hero, /t\.hero_eyebrow_cmd/);
-  assert.match(hero, /t\.hero_h1_pre/);
-  assert.match(hero, /t\.hero_cta_live/);
-  assert.match(hero, /t\.hero_cta_automation/);
-
-  const copy = read("src/lib/i18n.ts");
-  assert.match(copy, /AI command center/);
-  assert.match(copy, /The operating map for/);
-  assert.match(copy, /Explore live AI/);
-  assert.match(copy, /Build an automation/);
+test("new first-screen goals link to real existing routes without invented community destinations", () => {
+  const hero = read("src/components/BrazilFirstHero.tsx");
+  assert.match(hero, /BASE_PATH\}\/learn\//);
+  assert.match(hero, /BASE_PATH\}\/library\//);
+  assert.match(hero, /BASE_PATH\}\/automate\//);
+  assert.match(hero, /BASE_PATH\}\/news\//);
+  assert.doesNotMatch(hero, /href=.*\/community\//);
 });
 
-test("immersive hero disables the Three.js canvas for prefers-reduced-motion", () => {
-  const hero = read("src/components/ImmersiveHero.tsx");
-  assert.match(hero, /useReducedMotion/);
-  assert.match(hero, /!prefersReducedMotion && <TesseractScene/);
+test("Brazil-first hero is text-led with no WebGL or external images", () => {
+  const hero = read("src/components/BrazilFirstHero.tsx");
+  assert.match(hero, /aria-labelledby="home-heading"/);
+  assert.match(hero, /<h1 id="home-heading"/);
+  assert.doesNotMatch(hero, /from "three"|from 'three'|<canvas|<iframe|requestAnimationFrame/);
+  const copy = read("src/lib/homeExperienceCopy.ts");
+  assert.match(copy, /IA que sai do/);
+  assert.match(copy, /AI you can put/);
+  assert.match(copy, /Fontes visíveis/);
 });
 
-test("ContentNav keeps one IA recap (IntentNav) and a library teaser linking to /library/", () => {
+test("visual styles include phone breakpoints, readable cards and reduced motion", () => {
+  const css = read("src/components/BrazilFirstHero.module.css");
+  assert.match(css, /max-width: 760px/);
+  assert.match(css, /max-width: 540px/);
+  assert.match(css, /prefers-reduced-motion: reduce/);
+  assert.match(css, /\.journey/);
+  assert.match(css, /\.resources/);
+});
+
+test("ContentNav exposes only one intent-navigation layer on redesigned homepage", () => {
   const source = read("src/components/ContentNav.tsx");
-  assert.match(source, /function IntentNav/);
-  assert.doesNotMatch(source, /function StatsBar/);
-  assert.doesNotMatch(source, /function AutomationPreview/);
-  assert.doesNotMatch(source, /function LearningPathsStrip/);
-  assert.match(source, /import LibraryTeaser from "\.\/LibraryTeaser"/);
+  assert.match(source, /showIntents = true/);
+  assert.match(source, /showIntents && <IntentNav \/>/);
+  assert.match(source, /<ThisWeekHub \/>/);
+  assert.match(source, /<LiveStrip \/>/);
+  assert.match(source, /<LibraryTeaser \/>/);
 });
 
-test("LibraryTeaser does not import the full use-case dataset", () => {
+test("mobile dock has four working routes and a fifth control opening the existing drawer", () => {
+  const dock = read("src/components/MobileDock.tsx");
+  const header = read("src/components/Header.tsx");
+  const css = read("src/components/MobileDock.module.css");
+  assert.match(header, /<MobileDock \/>/);
+  for (const route of ["news", "learn", "library"]) {
+    assert.ok(dock.includes(`BASE_PATH}/${route}/`), `dock missing ${route}`);
+  }
+  assert.match(dock, /setMobileOpen\(true\)/);
+  assert.match(dock, /aria-current/);
+  assert.match(css, /safe-area-inset-bottom/);
+  assert.match(css, /min-height: 52px/);
+});
+
+test("LibraryTeaser still avoids importing the entire prompt dataset", () => {
   const source = read("src/components/LibraryTeaser.tsx");
   assert.doesNotMatch(source, /from "@\/lib\/data"/);
 });
 
-test("dedicated /library/ route hosts the full prompt library", () => {
+test("existing dedicated /library/ route still hosts the full prompt library", () => {
   const source = read("src/app/library/page.tsx");
   assert.match(source, /PromptLibrarySection/);
 });
