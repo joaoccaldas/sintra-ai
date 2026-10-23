@@ -48,8 +48,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://joaoccaldas.github.io"),
   applicationName: "Sintra AI",
   manifest: `${BASE_PATH}/manifest.json`,
-  title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
-  description: `Track what is changing in AI, understand how it works, compare tools and models, and apply ${USE_CASES_COUNT} practical use cases.`,
+  title: "Sintra AI — Notícias, aprendizado e IA na prática para o Brasil",
+  description: `IA no Brasil primeiro, notícias do mundo com fontes, trilhas de aprendizado e ${USE_CASES_COUNT} exemplos de aplicação no trabalho e no dia a dia.`,
   keywords: [
     "AI news",
     "AI learning paths",
@@ -107,7 +107,7 @@ const siteJsonLd = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: "Sintra AI",
-      description: "Daily AI intelligence, structured learning, model and tool comparisons, and practical use cases.",
+      description: "Radar brasileiro de inteligência artificial, notícias globais com fontes e aprendizado prático.",
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: ["en", "pt-BR"],
     },
@@ -129,7 +129,7 @@ const themeBootScript = `
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       suppressHydrationWarning
       className={`${editorial.variable} ${manrope.variable} ${geistMono.variable}`}
     >
