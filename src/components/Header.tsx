@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, Search, Bookmark, Globe } from "lucide-react";
+import { Search, Bookmark, Globe } from "lucide-react";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import TesseractMark from "./TesseractMark";
 import MobileDock from "./MobileDock";
 import { useLanguage } from "@/context/LanguageContext";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
-import { useSidebar } from "@/context/SidebarContext";
 import { BASE_PATH } from "@/lib/constants";
 import type { Translations } from "@/lib/i18n";
 
@@ -34,7 +33,6 @@ function activeSegment(pathname: string): string {
 export default function Header({ total: _total }: Props) {
   const { locale, toggle, t } = useLanguage();
   const { saved } = useSavedPrompts();
-  const { setMobileOpen } = useSidebar();
   const pathname = usePathname();
 
   const [scrolled, setScrolled] = useState(false);
@@ -83,18 +81,9 @@ export default function Header({ total: _total }: Props) {
         style={{ transition: "left 240ms cubic-bezier(0.22,1,0.36,1), background 200ms" }}
       >
         <div className="w-full px-4 md:px-6 flex items-center gap-2 md:gap-3">
-          <button
-            type="button"
-            className="lg:hidden flex items-center justify-center w-9 h-9 shrink-0 text-fg-3 hover:text-fg-1 transition-colors"
-            onClick={() => setMobileOpen(true)}
-            aria-label={t.hdr_open_nav}
-          >
-            <Menu size={20} />
-          </button>
-
           <a href={BASE_PATH + "/"} className="lg:hidden flex items-center gap-2 min-w-0 shrink-0">
             <TesseractMark size={28} />
-            <span className="hidden min-[380px]:inline font-serif text-[18px] leading-none tracking-[-0.01em] text-fg-1">
+            <span className="font-serif text-[16px] min-[380px]:text-[18px] leading-none tracking-[-0.01em] text-fg-1">
               Sintra <em className="italic text-violet-bright">AI</em>
             </span>
           </a>
