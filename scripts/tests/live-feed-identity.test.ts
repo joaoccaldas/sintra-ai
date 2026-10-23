@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { canonicalSignalUrl, dedupeSignalItems, signalId } from "../live-feed-identity.mjs";
 
 const entry = (title: string, url: string) => ({
@@ -53,8 +54,7 @@ test("invalid source links are excluded, with an explicit skipped count", () => 
 });
 
 test("legacy array-position ID algorithm is no longer used", () => {
-  const fs = require("node:fs");
-  const source = fs.readFileSync("scripts/aggregate-live-feed.mjs", "utf8");
+  const source = readFileSync("scripts/aggregate-live-feed.mjs", "utf8");
   assert.doesNotMatch(source, /live-\$\{idx\}/);
   assert.match(source, /dedupeSignalItems/);
 });
