@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import BrazilFirstHero from "@/components/BrazilFirstHero";
+import BrazilRadar from "@/components/BrazilRadar";
 import ContentNav from "@/components/ContentNav";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -14,6 +15,7 @@ export default function Home() {
         <Header total={USE_CASES_COUNT} />
         <main id="main-content">
           <BrazilFirstHero />
+          <BrazilRadar />
           <ContentNav showIntents={false} />
         </main>
         <Footer />

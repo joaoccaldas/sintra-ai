@@ -99,6 +99,14 @@ const NAV: NavGroup[] = [
   },
 ];
 
+// The only visible primary destinations besides Home. Everything else stays
+// available in collapsible category drawers, without duplicating these links.
+const PRIMARY_NAV: NavItem[] = [
+  { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, pathKey: "news" },
+  { href: `${BASE_PATH}/learn/`, labelKey: "side_learn", Icon: GraduationCap, pathKey: "learn" },
+  { href: `${BASE_PATH}/library/`, labelKey: "side_library", Icon: Sparkles, pathKey: "library" },
+];
+
 const THEMES: { id: Theme; labelKey: keyof Translations; Icon: React.ElementType }[] = [
   { id: "dark", labelKey: "theme_dark", Icon: Moon },
   { id: "light", labelKey: "theme_light", Icon: Sun },
@@ -151,9 +159,9 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
   const { theme, setTheme } = useTheme();
   const { t } = useLanguage();
   const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({
-    discover: true,
-    learn: true,
-    reference: true,
+    discover: false,
+    learn: false,
+    reference: false,
   });
 
   const activeKey = activePathKey(pathname);
@@ -177,6 +185,14 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
       </div>
 
       <nav className="px-2 pb-3 space-y-3 overflow-y-auto flex-1">
+        <div className="space-y-1" aria-label={t.side_home}>
+          {PRIMARY_NAV.map(item => (
+            <div key={item.href} onClick={onNavigate}>
+              <NavLink item={item} active={activeKey === item.pathKey} label={t[item.labelKey] as string} iconOnly={collapsed} />
+            </div>
+          ))}
+        </div>
+        <div className="border-t border-hairline-soft pt-3" />
         {NAV.map(group => (
           <div key={group.id}>
             {!collapsed && (
@@ -199,7 +215,7 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
                   transition={{ duration: 0.18 }}
                   className="space-y-0.5 overflow-hidden"
                 >
-                  {group.items.map(item => {
+                  {group.items.filter(item => !PRIMARY_NAV.some(primary => primary.pathKey === item.pathKey)).map(item => {
                     const label = t[item.labelKey] as string;
                     return (
                       <div key={item.href} onClick={onNavigate}>
