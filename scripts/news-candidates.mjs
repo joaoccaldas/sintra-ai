@@ -35,6 +35,8 @@ function nonempty(value) {
  * Validate suggestions against both historical and curated collections.
  * existingUrls/titles/ids must include ALL known editorial records.
  * Rejections intentionally keep reasons for an editor; never mutate inputs.
+ * @param {unknown} candidates
+ * @param {{ ids?: string[], urls?: string[], titles?: string[] }} [existing]
  */
 export function validateNewsCandidates(candidates, { ids = [], urls = [], titles = [] } = {}) {
   if (!Array.isArray(candidates)) {
