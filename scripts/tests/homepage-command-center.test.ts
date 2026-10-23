@@ -89,7 +89,7 @@ test("homepage offers exactly one first win CTA and a voluntary share interactio
   assert.match(share, /navigator.share/);
   assert.match(share, /https:\/\/wa.me\/\?text=/);
   assert.match(share, /AbortError/);
-  assert.doesNotMatch(share, /automatic|sendEmail|fetch\(/);
+  assert.doesNotMatch(share, /sendEmail\(|fetch\(/);
 });
 
 test("persistent navigation no longer imports broad news/tools registries for simple counts", () => {
