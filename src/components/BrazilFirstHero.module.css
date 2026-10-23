@@ -125,3 +125,12 @@
   .journey,.arrow,.resource { transition:none; }
   .resource:hover,.resource:focus-visible { transform:none; }
 }
+
+/* A single next action, plus a user-initiated share. Both fit at 320px. */
+.heroActions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: -7px 0 36px; width: 100%; }
+.primaryCta { min-height: 46px; display: inline-flex; justify-content: center; align-items: center; gap: 10px; padding: 11px 20px; border-radius: 12px; background: var(--ond-violet, #5B48D9); color: white; text-decoration: none; font: 650 14px/1.25 var(--font-sans); }
+.primaryCta:hover, .primaryCta:focus-visible { background: #4533B1; }
+@media (max-width: 540px) {
+  .heroActions { margin: -4px 0 28px; gap: 9px; }
+  .primaryCta { padding-inline: 14px; flex: 1; min-width: 164px; }
+}
