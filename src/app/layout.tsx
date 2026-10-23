@@ -51,7 +51,8 @@ export const metadata: Metadata = {
     : {}),
   metadataBase: new URL("https://joaoccaldas.github.io"),
   applicationName: "Sintra AI",
-  manifest: `${BASE_PATH}/manifest.json`,
+  // Temporary preview paths must not be installable as the live PWA.
+  manifest: process.env.SINTRA_PREVIEW_BASE_PATH ? undefined : `${BASE_PATH}/manifest.json`,
   title: "Sintra AI — Notícias, aprendizado e IA na prática para o Brasil",
   description: `IA no Brasil primeiro, notícias do mundo com fontes, trilhas de aprendizado e ${USE_CASES_COUNT} exemplos de aplicação no trabalho e no dia a dia.`,
   keywords: [
