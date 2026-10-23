@@ -9,19 +9,18 @@ interface ThemeCtx {
   setTheme: (t: Theme) => void;
 }
 
-const Ctx = createContext<ThemeCtx>({ theme: "dark", setTheme: () => {} });
+const Ctx = createContext<ThemeCtx>({ theme: "light", setTheme: () => {} });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>("dark");
+  const [theme, setThemeState] = useState<Theme>("light");
 
-  // Initialise from localStorage, falling back to the OS color-scheme
-  // preference for first-time visitors instead of hard-coding dark.
+  // Parent ond.ai is light-first. Respect an explicitly stored user theme.
   useEffect(() => {
     const stored = localStorage.getItem("sintra-theme") as Theme | null;
     if (stored && ["dark", "light", "forest", "ocean"].includes(stored)) {
       setThemeState(stored);
       document.documentElement.dataset.theme = stored;
-    } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+    } else {
       setThemeState("light");
       document.documentElement.dataset.theme = "light";
     }

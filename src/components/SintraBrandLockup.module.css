@@ -1,0 +1,27 @@
+.lockup { display: inline-flex; align-items: center; gap: 11px; color: var(--ond-ink, #172238); min-width: 0; }
+.wave { width: 45px; height: 30px; flex: none; color: var(--ond-violet, #5B48D9); }
+.names { display: inline-flex; flex-direction: column; gap: 1px; min-width: 0; }
+.product { font-family: var(--font-manrope), Inter, system-ui, sans-serif; font-size: 20px; font-weight: 750; line-height: 1.05; letter-spacing: -.07em; white-space: nowrap; }
+.dot { color: var(--sintra-coral-ink, #B65344); }
+.parent { color: var(--ond-muted, #586376); font: 500 10px/1.3 var(--font-manrope), system-ui, sans-serif; letter-spacing: .02em; white-space: nowrap; }
+.parent strong { font-weight: 750; color: var(--ond-ink, #172238); letter-spacing: -.02em; }
+.compact { gap: 7px; }
+.compact .wave { width: 35px; height: 25px; }
+.compact .product { font-size: 17px; }
+.compact .parent { font-size: 9px; }
+@media (max-width: 360px) { .compact { gap: 5px; } .compact .wave { width: 28px; } .compact .product { font-size: 15px; } }
+
+/* The parent open-wave mark must also remain legible when a visitor
+   explicitly selects one of Sintra's older non-light theme variants. */
+:global([data-theme="dark"]) .lockup,
+:global([data-theme="forest"]) .lockup,
+:global([data-theme="ocean"]) .lockup { color: var(--fg-1); }
+:global([data-theme="dark"]) .parent,
+:global([data-theme="forest"]) .parent,
+:global([data-theme="ocean"]) .parent { color: var(--fg-3); }
+:global([data-theme="dark"]) .parent strong,
+:global([data-theme="forest"]) .parent strong,
+:global([data-theme="ocean"]) .parent strong { color: var(--fg-1); }
+:global([data-theme="dark"]) .wave,
+:global([data-theme="forest"]) .wave,
+:global([data-theme="ocean"]) .wave { color: var(--violet-bright); }

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Search, Bookmark, Globe } from "lucide-react";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-import TesseractMark from "./TesseractMark";
+import SintraBrandLockup from "./SintraBrandLockup";
 import MobileDock from "./MobileDock";
 import { useLanguage } from "@/context/LanguageContext";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
@@ -81,11 +81,8 @@ export default function Header({ total: _total }: Props) {
         style={{ transition: "left 240ms cubic-bezier(0.22,1,0.36,1), background 200ms" }}
       >
         <div className="w-full px-4 md:px-6 flex items-center gap-2 md:gap-3">
-          <a href={BASE_PATH + "/"} className="lg:hidden flex items-center gap-2 min-w-0 shrink-0">
-            <TesseractMark size={28} />
-            <span className="font-serif text-[16px] min-[380px]:text-[18px] leading-none tracking-[-0.01em] text-fg-1">
-              Sintra <em className="italic text-violet-bright">AI</em>
-            </span>
+          <a href={BASE_PATH + "/"} aria-label="Sintra AI, by ond.ai, início" className="lg:hidden flex items-center gap-2 min-w-0 shrink-0">
+            <SintraBrandLockup compact />
           </a>
 
           {crumb && (

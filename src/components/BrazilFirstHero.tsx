@@ -54,13 +54,24 @@ export default function BrazilFirstHero() {
           </div>
 
           <div className={s.art} aria-hidden="true">
-            <div className={s.artHalo} />
-            <div className={s.wave + " " + s.waveOne} />
-            <div className={s.wave + " " + s.waveTwo} />
-            <div className={s.wave + " " + s.waveThree} />
-            <div className={s.wave + " " + s.waveFour} />
-            <div className={s.wave + " " + s.waveFive} />
-            <div className={s.artCenter} />
+            {/* Open asymmetrical current, not a closed infinity loop.
+                Gradient is optional decoration; the nav mark is monochrome. */}
+            <svg className={s.current} viewBox="0 0 620 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="sintra-open-current" x1="20" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stopColor="#F6C88E" />
+                  <stop offset=".34" stopColor="#E9A5C8" />
+                  <stop offset=".7" stopColor="#6D56E9" />
+                  <stop offset="1" stopColor="#0789B0" />
+                </linearGradient>
+              </defs>
+              {[0, 1, 2, 3, 4].map((index) => (
+                <path key={index}
+                  d={`M 23 ${146 + index * 11} C 118 ${155 + index * 11}, 139 ${47 + index * 10}, 234 ${57 + index * 11} C 324 ${67 + index * 10}, 339 ${200 + index * 9}, 440 ${184 + index * 10} C 509 ${174 + index * 10}, 555 ${108 + index * 10}, 599 ${111 + index * 10}`}
+                  stroke="url(#sintra-open-current)" strokeWidth={index === 0 ? 5 : 1.6}
+                  strokeOpacity={index === 0 ? 1 : .28} strokeLinecap="round"/>
+              ))}
+            </svg>
             <div className={s.artFooter}>
               <span>{c.detail}</span>
               <strong>{c.visualTitle}<br/><em>{c.visualAccent}</em></strong>
