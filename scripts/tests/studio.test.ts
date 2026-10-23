@@ -43,3 +43,36 @@ test('empty prose and unsafe export markup cannot be approved',()=>{for(const dr
 test('source provider surfaces redirects, timeouts and rate limits instead of treating them as evidence',async()=>{const {sourcePage}=await import('../../studio/providers');const original=globalThis.fetch;try{globalThis.fetch=async()=>new Response('rate limited',{status:429});await assert.rejects(()=>sourcePage('https://docs.n8n.io/review'),/429/);globalThis.fetch=async()=>{throw new Error('redirect blocked')};await assert.rejects(()=>sourcePage('https://docs.n8n.io/review'),/redirect/);globalThis.fetch=async()=>{throw new Error('timeout')};await assert.rejects(()=>sourcePage('https://docs.n8n.io/review'),/timeout/);}finally{globalThis.fetch=original;}});
 test('heading blocks cannot hide uncited prose',()=>{const r=prepared();r.draft='# Title\nUncited statement.\n\nCited statement [[c1]]';assert.throws(()=>approve(r,'Reviewer'));});
 test('failed local model calls retain duration and unknown usage, not zero cost',async()=>{const {modelJSON}=await import('../../studio/providers');const original=globalThis.fetch;const r=prepared();try{globalThis.fetch=async(input)=>{if(String(input).endsWith('/api/tags'))return Response.json({models:[{name:process.env.STUDIO_MODEL||'qwen2.5:7b',digest:'fixture'}]});if(String(input).endsWith('/api/show'))return Response.json({model_info:{'qwen.context_length':32768}});throw Error('model timeout');};await assert.rejects(()=>modelJSON(r,'draft','Return JSON',{}),/timeout/);assert.equal(r.usage.length,1);assert.equal(r.usage[0].inputTokens,null);assert.equal(r.usage[0].cost,null);assert.ok(r.usage[0].durationMs>=0);}finally{globalThis.fetch=original;}});
+
+test('bounded contention: 25 writes rejected during retrieval, reads survive, then 30 edits persist',async()=>{
+ const root=await mkdtemp(join(tmpdir(),'sintra-contention-'));
+ const port=44320,token='fixture-contention',origin='http://127.0.0.1:3178';
+ let release!:()=>void,entered!:()=>void;
+ const gate=new Promise<void>(resolve=>{release=resolve;});
+ const started=new Promise<void>(resolve=>{entered=resolve;});
+ const server=makeServer({root,port,token,origin,providers:{
+  captions:async()=>{entered();await gate;return {segments:parseTranscript(transcript),title:'Contention fixture',raw:transcript,language:'en'};},
+  sourcePage:async()=>{throw Error('Unexpected source request');},
+  modelJSON:async()=>{throw Error('Unexpected model request');}
+ }});
+ await new Promise<void>(resolve=>server.listen(port,'127.0.0.1',resolve));
+ const call=async(path:string,body?:unknown)=>{const response=await fetch(`http://127.0.0.1:${port}${path}`,{method:body===undefined?'GET':'POST',headers:{Authorization:`Bearer ${token}`,Origin:origin,'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});return {status:response.status,data:await response.json()};};
+ try{
+  let r=(await call('/runs',{url})).data;
+  const pending=call(`/runs/${r.id}/retrieve`,{revision:r.revision});await started;
+  const blocked=await Promise.all(Array.from({length:25},()=>call('/runs',{url})));
+  assert.ok(blocked.every(result=>result.status===409));
+  assert.equal((await call('/health')).status,200);
+  assert.equal((await call(`/runs/${r.id}`)).data.stages.transcript.state,'running');
+  release();const completed=await pending;assert.equal(completed.status,200);r=completed.data;
+  for(let i=0;i<30;i++){
+   const previous=r.revision;
+   const saved=await call(`/runs/${r.id}/draft`,{revision:previous,draft:`Revision ${i}`});
+   assert.equal(saved.status,200);r=saved.data;assert.equal(r.revision,previous+1);assert.equal(r.approval,null);
+   assert.equal((await call(`/runs/${r.id}/draft`,{revision:previous,draft:'stale overwrite'})).status,409);
+  }
+  const restored=await new Store(root).get(r.id);
+  assert.equal(restored.draft,'Revision 29');assert.equal(restored.segments.length,2);
+  assert.equal((await new Store(root).list()).length,1);
+ }finally{release();await new Promise<void>(resolve=>server.close(()=>resolve()));await rm(root,{recursive:true,force:true});}
+});

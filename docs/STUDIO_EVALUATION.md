@@ -74,3 +74,19 @@ Final release gate results are recorded in `STUDIO_VALIDATION.json`, including s
 - The local runtime and data are available for review; index identity/version readback is pending. Source identity is declared in `package.json` and the runbook.
 
 Hub closeout remains pending: the append request rejected cross-project evidence IDs, and a scoped lookup found no newly indexed Sintra evidence. The earlier HoldingCo reuse assessment remains separately recorded. No cross-project citation was relabelled as proof of this implementation.
+
+## Follow-up contention validation — 23 October 2026
+
+Added a reproducible HTTP contention fixture to the existing Studio suite. A controlled caption provider holds one operation open; 25 competing writes all receive HTTP 409 while health and run reads remain available. After release, retrieval completes; 30 sequential edits each increment the revision once, and all 30 stale-revision attempts are rejected. Reopening the store retains the final draft and transcript, with no extra runs created by rejected writes.
+
+Why: normal-path tests cannot establish that overlapping requests preserve state. This validates the intentional single-worker rejection policy; it is not a throughput benchmark, multi-worker safety test, soak test or real-provider load test. No model or YouTube requests are made by this fixture.
+
+Results: 16 Studio tests and 66 total tests passed; TypeScript checking passed. GitHub validation for feature commit `c4f538cc61afb1b65ee3a8ef00ae808404d1249c` completed successfully (run 39919525478). `STUDIO_VALIDATION.json` remains the original feature-build manifest; its test-source hash/counts predate this added fixture. The feature build was not repeated for this test/documentation-only follow-up.
+
+Next quality gates, in order:
+
+1. Establish a held-out set of varied Portuguese/English videos; manually label representative timestamp passages and claim support before comparing model changes. Include unavailable captions, long transcripts and ambiguous/conflicting claims. Start small, then expand to at least ten videos before generalizing quality.
+2. Measure claim precision, missed important claims, source entailment, reviewer correction rate, latency and model tokens per accepted claim. Preserve failed attempts in totals.
+3. Test duration/resource boundaries and cancellation with isolated data, including slow/disconnected clients and metadata disk growth. Current bounded contention checks are not sustained stress evidence.
+4. Improve primary-source discovery and reviewer efficiency only after the above baseline. Keep factual review and exact-content approval mandatory.
+5. Obtain actual user review of the article before export is treated as human-approved; merge and deployment remain separate approval gates.
