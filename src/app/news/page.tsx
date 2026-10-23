@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AINewsPage from "@/components/AINewsPage";
 import { BASE_PATH } from "@/lib/constants";
+import { exactPublicationDate } from "@/lib/publicationDates";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import { AI_NEWS, CURRENT_MONTH_NEWS, CURRENT_MONTH_LABEL } from "@/lib/newsDataCombined";
 
@@ -23,13 +24,6 @@ export const metadata: Metadata = {
 
 const SITE_URL = "https://joaoccaldas.github.io" + BASE_PATH;
 
-function toISODate(dateNum: number, dateDay?: number): string {
-  const year = Math.floor(dateNum / 100);
-  const month = String(dateNum % 100).padStart(2, "0");
-  const day = String(dateDay ?? 1).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-}
-
 function newsJsonLd() {
   const latest = [...AI_NEWS]
     .sort((a, b) => b.dateNum - a.dateNum || (b.dateDay ?? 0) - (a.dateDay ?? 0))
@@ -45,7 +39,10 @@ function newsJsonLd() {
         "@type": "NewsArticle",
         "headline": item.title,
         "description": item.summary,
-        "datePublished": toISODate(item.dateNum, item.dateDay),
+        // Month-only source records must not claim publication on the first.
+        ...(exactPublicationDate(item.dateNum, item.dateDay)
+          ? { "datePublished": exactPublicationDate(item.dateNum, item.dateDay) }
+          : {}),
         "url": item.url ?? `${SITE_URL}/news/`,
         "publisher": { "@type": "Organization", "name": item.provider },
       },
