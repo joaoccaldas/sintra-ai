@@ -1,9 +1,7 @@
-"use client";
-
 import Header from "@/components/Header";
 import BrazilFirstHero from "@/components/BrazilFirstHero";
 import BrazilRadar from "@/components/BrazilRadar";
-import ContentNav from "@/components/ContentNav";
+import HomeEditorialSections from "@/components/HomeEditorialSections";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
@@ -16,7 +14,7 @@ export default function Home() {
         <main id="main-content">
           <BrazilFirstHero />
           <BrazilRadar />
-          <ContentNav showIntents={false} />
+          <HomeEditorialSections />
         </main>
         <Footer />
         <BackToTop />
