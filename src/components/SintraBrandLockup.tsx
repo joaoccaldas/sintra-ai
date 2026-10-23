@@ -1,11 +1,9 @@
-import type { ReactNode } from "react";
 import styles from "./SintraBrandLockup.module.css";
 
 interface Props {
   compact?: boolean;
   showEndorsement?: boolean;
   className?: string;
-  children?: ReactNode;
 }
 
 /**
