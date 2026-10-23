@@ -6,10 +6,12 @@ import assert from "node:assert/strict";
 const root = process.cwd();
 const read = (path: string) => readFileSync(join(root, path), "utf8");
 
-test("homepage uses a simple first-use hero before the existing editorial sections", () => {
+test("homepage uses a server route and focused practical sections, avoiding giant ContentNav imports", () => {
   const page = read("src/app/page.tsx");
   assert.match(page, /<BrazilFirstHero \/>/);
-  assert.match(page, /<ContentNav showIntents=\{false\} \/>/);
+  assert.match(page, /<HomeEditorialSections \/>/);
+  assert.doesNotMatch(page, /ContentNav/);
+  assert.doesNotMatch(page, /^"use client"/);
   assert.doesNotMatch(page, /<ImmersiveHero/);
   assert.match(page, /<Header total=\{USE_CASES_COUNT\}/);
   assert.match(page, /<Footer \/>/);
@@ -44,13 +46,15 @@ test("visual styles include phone breakpoints, readable cards and reduced motion
   assert.match(css, /\.resources/);
 });
 
-test("ContentNav exposes only one intent-navigation layer on redesigned homepage", () => {
-  const source = read("src/components/ContentNav.tsx");
-  assert.match(source, /showIntents = true/);
-  assert.match(source, /showIntents && <IntentNav \/>/);
-  assert.match(source, /<ThisWeekHub \/>/);
-  assert.match(source, /<LiveStrip \/>/);
-  assert.match(source, /<LibraryTeaser \/>/);
+test("server sections source world news and prompts from canonical registries, not mock lists", () => {
+  const source = read("src/components/HomeEditorialSections.tsx");
+  assert.match(source, /LIVE_ITEMS/);
+  assert.match(source, /USE_CASES/);
+  assert.match(source, /"meeting-notes-to-action-items"/);
+  assert.match(source, /"quick-insights-from-spreadsheets"/);
+  assert.match(source, /execução não verificada/);
+  assert.match(source, /#pratique|id="pratique"/);
+  assert.doesNotMatch(source, /"use client"|from "framer-motion"|from "@\/lib\/newsDataCombined"/);
 });
 
 test("mobile dock has four working routes and a fifth control opening the existing drawer", () => {
@@ -75,4 +79,29 @@ test("LibraryTeaser still avoids importing the entire prompt dataset", () => {
 test("existing dedicated /library/ route still hosts the full prompt library", () => {
   const source = read("src/app/library/page.tsx");
   assert.match(source, /PromptLibrarySection/);
+});
+
+test("homepage offers exactly one first win CTA and a voluntary share interaction", () => {
+  const hero = read("src/components/BrazilFirstHero.tsx");
+  assert.match(hero, /href="#pratique"/);
+  assert.match(hero, /<ShareSintraButton \/>/);
+  const share = read("src/components/ShareSintraButton.tsx");
+  assert.match(share, /navigator.share/);
+  assert.match(share, /https:\/\/wa.me\/\?text=/);
+  assert.match(share, /AbortError/);
+  assert.doesNotMatch(share, /automatic|sendEmail|fetch\(/);
+});
+
+test("persistent navigation no longer imports broad news/tools registries for simple counts", () => {
+  const sidebar = read("src/components/SidebarNav.tsx");
+  assert.doesNotMatch(sidebar, /from "@\/lib\/newsDataCombined"/);
+  assert.doesNotMatch(sidebar, /from "@\/lib\/toolsData"/);
+});
+
+test("mobile back-to-top and non-light dock do not visually overlap", () => {
+  assert.match(read("src/components/BackToTop.tsx"), /88px\+env\(safe-area-inset-bottom\)/);
+  const css = read("src/components/MobileDock.module.css");
+  assert.match(css, /data-theme="dark"/);
+  assert.match(css, /data-theme="forest"/);
+  assert.match(css, /data-theme="ocean"/);
 });
