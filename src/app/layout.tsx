@@ -3,6 +3,7 @@ import { BASE_PATH } from "@/lib/constants";
 import { Instrument_Serif, Manrope, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./hardening.css";
+import "./ond-brand.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { SavedPromptsProvider } from "@/context/SavedPromptsContext";
 import { ThemeProvider } from "@/context/ThemeContext";
@@ -121,7 +122,7 @@ const themeBootScript = `
     var saved = localStorage.getItem("sintra-theme");
     var theme = allowed.indexOf(saved) >= 0
       ? saved
-      : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      : "light";
     document.documentElement.dataset.theme = theme;
   } catch (_) {}
 })();`;
