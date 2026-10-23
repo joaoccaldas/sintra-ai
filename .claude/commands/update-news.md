@@ -1,112 +1,23 @@
 ---
-description: Daily AI news update — research, validate against schema, deploy, and report any failure visibly (never fails silently).
+description: Evidence-backed daily AI news research, with a reviewed editorial PR and no direct production publishing.
 ---
 
-You are running the **scheduled daily AI news update** for the Sintra Tesseract
-site (static Next.js, deployed to the `gh-pages` branch). Use the **real current
-date**. Work on `main`.
+# /update-news: ONE curated writer; NEVER autonomous publication
 
-## Goal
-Add a handful (typically 3–8) of **real, verifiable, non-duplicate** AI news
-items to the curated feed, pass the schema + build gate, deploy, and **never
-fail silently**. Quality over quantity — if there is no genuinely new verifiable
-news, add nothing and say so. Never invent or pad.
+This command curates verified items only into `src/lib/newsLatestData.ts`.
+`src/lib/newsData.ts` is the historical archive. `src/data/liveFeed.generated.json` is automatically aggregated signals, not evidence that each headline was independently checked.
 
-## Procedure — follow exactly. If any **GATE** fails, jump to "On failure".
+## Procedure
 
-1. **Sync**: `git checkout main && git pull origin main`. If `node_modules` is
-   missing, run `npm ci`.
+1. **Discover:** Check main and competing PRs changing both news collections or generators. Work on a dedicated feature branch, never production main.
+2. **Deduplicate:** Inspect both historical and latest news IDs, titles and URLs; check related knowledge records. Duplicates must not be appended.
+3. **Research:** Optionally run `node scripts/update-news.mjs` with `ANTHROPIC_API_KEY` to generate draft-only JSON. Its output is unverified and intentionally never edits repo files.
+4. **Verify:** Independently open each publisher source to confirm dates, quantities, entities, and meaningful assertions; inspect contradictions and provenance. If uncertain, reject. Do not paraphrase unverified research as confirmed. Respect publisher rights and quotations.
+5. **Write:** After factual review, edit `src/lib/newsLatestData.ts` only; include unique ID, actual published date and optional known day, title, summary, tags, significance, provider, #RRGGBB, HTTPS source, why_it_matters and what_to_try, plus optional BR/SE country. Never write the historical archive.
+6. **Validate:** Run `npm run check`, inspect news, RSS and JSON output plus duplicate/failure tests. Passing shape checks does not independently verify sources.
+7. **Review:** Open a draft PR showing primary source links, confidence/limitations, expected vs actual tests, CI run and screenshots/raw HTML. Require explicit editor approval. Do not direct-push main, automatically merge, deploy or send external email.
+8. **After authorization:** Verify actual deployed HTML and feed item IDs/source URLs. CI success alone is not a deployment proof.
+9. **Report:** Log accepted/rejected stories, failed sources, duplicate cases, approval and live readback. A quiet day with zero verified items is a valid result.
 
-2. **Collect existing ids** so you don't duplicate: gather every `id` and the
-   recent `title`s from `src/lib/newsLatestData.ts` (the curated feed,
-   `LATEST_AI_NEWS`) **and** `src/lib/newsData.ts` (the historical archive,
-   `AI_NEWS`). Always grep for key terms before adding — many "new" items are
-   already present.
-
-3. **Research**: web-search significant AI events since the newest existing
-   item's date — new models/updates, record benchmarks, major product/agent/API
-   launches, funding, acquisitions, policy. Include Brazil (`country: "BR"`) and
-   Sweden (`country: "SE"`) items when relevant. **Verify each against an
-   official or reputable source URL.** Skip anything speculative or already in
-   the feed/archive.
-
-4. **Append** `NewsItem` objects to the **`LATEST_AI_NEWS`** array in
-   `src/lib/newsLatestData.ts` (NOT `newsData.ts`). All news pages read the
-   combined feed (`src/lib/newsDataCombined.ts` = curated over historical), so
-   items land everywhere automatically — a regression test
-   (`scripts/tests/news-feed-wiring.test.ts`) enforces this wiring. Required
-   schema — every field must be present and non-empty except `country`/`dateDay`:
-   ```ts
-   {
-     id: "kebab-case-unique-id",        // unique across LATEST_AI_NEWS and newsData.ts
-     date: "Jun 2026",                  // "Mon YYYY"
-     dateNum: 202606,                   // YYYYMM
-     dateDay: 29,                       // day of month (1–31)
-     title: "...",
-     summary: "2–3 factual sentences with specific numbers. No hype.",
-     tags: ["Company", "Topic"],        // ≥1
-     significance: "landmark" | "major" | "notable",
-     provider: "Company Name",
-     providerColor: "#hexcolor",        // see CLAUDE.md provider colors
-     url: "https://official-source",    // must be https; not already used in archive
-     why_it_matters: "one practitioner-insight sentence",
-     what_to_try: "one actionable sentence",
-     country: "BR" | "SE",              // optional, regional items only
-   }
-   ```
-
-5. **GATE — schema + build**: run `npm run check`. This runs `validate-data` +
-   `validate-content` + `validate-latest-news` (the news schema gate) +
-   `typecheck` + `build` (which also regenerates `public/feed.xml`). **If it
-   exits non-zero, DO NOT commit or deploy** — go to "On failure" with the log.
-
-6. **Commit news only**: 
-   ```bash
-   git add src/lib/newsLatestData.ts public/feed.xml
-   git commit -m "chore: news update $(date -u +%Y-%m-%d)"
-   git push origin main    # retry up to 4x with backoff (2s,4s,8s,16s) on network error
-   ```
-   Never commit `dist/`.
-
-7. **Deploy**: the push to `main` in step 6 triggers the **Build & Deploy**
-   GitHub Action (`.github/workflows/deploy.yml`), which runs `audit:static`,
-   rebuilds (refreshing the live feed on networked runners), and publishes to
-   `gh-pages`. Confirm the run goes green (GitHub MCP `actions_list` for
-   `deploy.yml`); if it fails or Actions is unavailable, fall back to manual
-   plumbing (never commit dist to a tracked branch):
-   ```bash
-   npm run build
-   git fetch origin gh-pages
-   TREE=$(git --work-tree=dist add -f -A && git --work-tree=dist write-tree)
-   PARENT=$(git rev-parse refs/remotes/origin/gh-pages)
-   COMMIT=$(echo "deploy: $(date -u +%Y-%m-%d) - daily news" | git commit-tree $TREE -p $PARENT)
-   git push origin $COMMIT:refs/heads/gh-pages
-   git reset HEAD
-   ```
-
-8. **Report success (summary notification)**: print a one-line summary — count +
-   titles of items added (or "No new verified items today"). Then post the same
-   summary to the persistent GitHub log so each run is visible without digging
-   through commits:
-   - Find/locate the open issue titled **`📰 Daily news log`** in
-     `joaoccaldas/sintra-ai` (use the GitHub MCP — `search_issues` /
-     `list_issues`). If it doesn't exist, create it once with `issue_write`.
-   - Add a comment (`add_issue_comment`) with the date, item count, titles, and
-     the deploy commit sha. On a "no new items" day, still comment so the absence
-     is logged (proves the task ran).
-   - If a reliable headless email/Slack connector is configured for scheduled
-     runs, also send the summary there; otherwise the GitHub log is the channel.
-
-## On failure (any GATE or step error)
-- **Do NOT deploy.** Leave the feed unshipped rather than ship malformed data.
-- **Open a GitHub issue** so the failure is visible (this is the no-silent-fail
-  signal): use the GitHub MCP `issue_write` (find it via ToolSearch) to create an
-  issue in `joaoccaldas/sintra-ai` titled `Daily news update failed — <date>`,
-  body = the failing step + the `npm run check` error output (trimmed).
-- Stop. Do not retry destructively.
-
-## Guardrails
-- Only `main`. Only real, verifiable items with official source URLs.
-- The `validate-latest-news` gate enforces: unique ids, no collision with the
-  historical archive (id or URL), https URLs, valid `dateNum`/`dateDay`, and all
-  required fields — so a malformed item fails the build before it can ship.
+## Fail closed
+If provider research fails, source evidence is unavailable, the schema/build fails, approval is stale or source attribution is uncertain: do not publish. Treat aggregated feed signals as separate from editorial facts.
