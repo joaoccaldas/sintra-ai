@@ -5,6 +5,7 @@ import { BASE_PATH } from "@/lib/constants";
 import { useLanguage } from "@/context/LanguageContext";
 import { HOME_EXPERIENCE_COPY } from "@/lib/homeExperienceCopy";
 import s from "./BrazilFirstHero.module.css";
+import ShareSintraButton from "./ShareSintraButton";
 
 /**
  * A content-first, mobile-first homepage. No WebGL, third-party images,
@@ -34,6 +35,13 @@ export default function BrazilFirstHero() {
               {c.headline} <em>{c.headlineAccent}</em>
             </h1>
             <p className={s.lead}>{c.intro}</p>
+            <div className={s.heroActions}>
+              <a href="#pratique" className={s.primaryCta}>
+                {locale === "pt" ? "Experimentar agora" : "Try a practical example"}
+                <ArrowRight size={18} aria-hidden="true" />
+              </a>
+              <ShareSintraButton />
+            </div>
             <div className={s.directionHeader}>
               <span>{c.direction}</span>
               <span className={s.directionNote}>{c.directionNote}</span>
