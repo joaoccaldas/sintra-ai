@@ -63,6 +63,7 @@ const NAV: NavGroup[] = [
     labelKey: "side_group_discover",
     items: [
       { href: `${BASE_PATH}/live/`, labelKey: "side_live", Icon: Radio, pathKey: "live" },
+      { href: `${BASE_PATH}/studio/`, labelKey: "side_studio", Icon: FileText, pathKey: "studio" },
       { href: `${BASE_PATH}/knowledge/`, labelKey: "side_knowledge", Icon: BookOpen, pathKey: "knowledge" },
       { href: `${BASE_PATH}/automate/`, labelKey: "side_automate", Icon: Workflow, pathKey: "automate" },
       { href: `${BASE_PATH}/library/`, labelKey: "side_library", Icon: Sparkles, count: USE_CASES_COUNT, pathKey: "library" },

@@ -193,3 +193,14 @@ The canonical knowledge collection now includes ChatGPT, Codex Cloud, Claude Cod
 Use `/api/index.json` → `/api/knowledge-index.json` → one `resourceUrl` to retrieve only the relevant full brief. `/api/skills.json` links the same records to derived `SKILL.md` files. No authentication or MCP server is hosted by this static site. Installation and tool access follow the named host's current documentation.
 
 News with `knowledgeId` derives from dated announcement records; checking a source does not change its publication date. Customer stories and provider demonstrations are attributed, while Sintra procedures and acceptance cases are Sintra-authored suggestions. Provider application execution remains untested unless a specific receipt states otherwise. Builds and scheduled feed refreshes do not certify claims or create provider automations.
+
+## Local editorial Studio (experimental)
+
+`npm run studio:worker` and `npm run studio:ui` start the local YouTube-to-article
+workspace at `http://127.0.0.1:3178/studio/`. It retrieves captions, proposes
+source-linked claims with a local Ollama model, records reviewer-assessed primary
+evidence, drafts in Portuguese, and exports an approved candidate in the existing
+knowledge format. It does not publish. Private run files stay outside the static
+site. See [setup and boundaries](docs/STUDIO.md),
+[evaluation and deviations](docs/STUDIO_EVALUATION.md), and
+[product comparison](docs/STUDIO_COMPARISON.md).
