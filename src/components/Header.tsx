@@ -5,6 +5,7 @@ import { Menu, Search, Bookmark, Globe } from "lucide-react";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import TesseractMark from "./TesseractMark";
+import MobileDock from "./MobileDock";
 import { useLanguage } from "@/context/LanguageContext";
 import { useSavedPrompts } from "@/context/SavedPromptsContext";
 import { useSidebar } from "@/context/SidebarContext";
@@ -93,7 +94,7 @@ export default function Header({ total: _total }: Props) {
 
           <a href={BASE_PATH + "/"} className="lg:hidden flex items-center gap-2 min-w-0 shrink-0">
             <TesseractMark size={28} />
-            <span className="hidden sm:inline font-serif text-[18px] leading-none tracking-[-0.01em] text-fg-1">
+            <span className="font-serif text-[18px] leading-none tracking-[-0.01em] text-fg-1">
               Sintra <em className="italic text-violet-bright">AI</em>
             </span>
           </a>
@@ -148,6 +149,7 @@ export default function Header({ total: _total }: Props) {
 
       <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
       <SavedPanel open={savedPanelOpen} onClose={() => setSavedPanelOpen(false)} />
+      <MobileDock />
     </>
   );
 }
