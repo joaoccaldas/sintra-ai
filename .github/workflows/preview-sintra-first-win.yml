@@ -51,10 +51,20 @@ jobs:
           nohup python3 -m http.server 4173 --directory /tmp/sintra-ui >/tmp/sintra-ui.log 2>&1 &
           echo $! > /tmp/sintra-ui.pid
 
-      - name: Install version-pinned browser smoke tool for CI only
+      - name: Install version-pinned browser test API
+        shell: bash
         run: |
+          set -euo pipefail
           npm install --no-save --no-package-lock --ignore-scripts playwright@1.56.1
-          npx playwright install --with-deps chromium
+          if command -v google-chrome >/dev/null 2>&1; then
+            echo "CHROME_BIN=$(command -v google-chrome)" >> "$GITHUB_ENV"
+            echo "Using preinstalled Google Chrome for viewport QA"
+          elif command -v chromium >/dev/null 2>&1; then
+            echo "CHROME_BIN=$(command -v chromium)" >> "$GITHUB_ENV"
+            echo "Using preinstalled Chromium for viewport QA"
+          else
+            npx playwright install --with-deps chromium
+          fi
 
       - name: Run responsive Chromium browser QA
         env:
