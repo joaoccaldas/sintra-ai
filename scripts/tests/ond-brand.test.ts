@@ -81,3 +81,22 @@ test("brand assets are explicitly a candidate pending clearance and font master"
   const text = read("src/app/ond-brand.css") + read("src/components/SintraBrandLockup.tsx");
   assert.match(text, /pending legal clearance|WORKING DESIGN/);
 });
+
+test("every permanent Sintra touchpoint uses the ond.ai endorsed family instead of the Tesseract", () => {
+  const footer = read("src/components/Footer.tsx");
+  assert.match(footer, /SintraBrandLockup/);
+  assert.doesNotMatch(footer, /TesseractMark|Sintra Tesseract/);
+  assert.match(footer, /NewsletterComingSoon/);
+  assert.doesNotMatch(footer, /NEXT_PUBLIC_NEWSLETTER_ENDPOINT|<form|NewsletterCapture/);
+  assert.match(footer, /<details/);
+  const layout = read("src/app/layout.tsx");
+  assert.match(layout, /sintra-mark\\.svg/);
+  assert.doesNotMatch(layout, /tesseract-mark\\.svg/);
+  assert.match(layout, /Sintra Brasil, by ond\\.ai/);
+  assert.match(layout, /locale: "pt_BR"/);
+  const og = read("src/app/opengraph-image.tsx");
+  assert.match(og, /Entenda a IA/);
+  assert.match(og, /Coloque em prática/);
+  assert.match(og, /#F7F8F5/);
+  assert.doesNotMatch(og, /The AI one-stop shop/);
+});
