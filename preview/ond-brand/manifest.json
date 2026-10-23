@@ -1,0 +1,24 @@
+{
+  "name": "Sintra Tesseract",
+  "short_name": "Sintra AI",
+  "description": "One-stop shop for AI — prompts, tools, news, and learning paths.",
+  "start_url": "/sintra-ai/",
+  "scope": "/sintra-ai/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090B14",
+  "theme_color": "#090B14",
+  "icons": [
+    { "src": "/sintra-ai/tesseract-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/sintra-ai/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/sintra-ai/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ],
+  "categories": ["productivity", "education", "utilities"],
+  "shortcuts": [
+    { "name": "Today's AI News", "short_name": "News", "url": "/sintra-ai/news/" },
+    { "name": "Prompt Library", "short_name": "Library", "url": "/sintra-ai/#library" },
+    { "name": "AI Tools", "short_name": "Tools", "url": "/sintra-ai/tools/" }
+  ],
+  "lang": "en",
+  "dir": "ltr"
+}
