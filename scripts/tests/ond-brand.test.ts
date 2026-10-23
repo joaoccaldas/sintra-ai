@@ -100,3 +100,18 @@ test("every permanent Sintra touchpoint uses the ond.ai endorsed family instead 
   assert.match(og, /#F7F8F5/);
   assert.doesNotMatch(og, /The AI one-stop shop/);
 });
+
+test("PWA metadata is Brazil-first and preview builds cannot register production service workers", () => {
+  const manifest = JSON.parse(read("public/manifest.json"));
+  assert.equal(manifest.lang, "pt-BR");
+  assert.equal(manifest.name, "Sintra Brasil, by ond.ai");
+  assert.equal(manifest.background_color, "#F7F8F5");
+  assert.equal(manifest.icons[0].src, "/sintra-ai/sintra-mark.svg");
+  assert.equal(manifest.shortcuts[2].url, "/sintra-ai/library/");
+  const sw = read("src/components/ServiceWorkerRegister.tsx");
+  const config = read("next.config.mjs");
+  const layout = read("src/app/layout.tsx");
+  assert.match(sw, /NEXT_PUBLIC_PREVIEW_MODE === "1"/);
+  assert.match(config, /NEXT_PUBLIC_PREVIEW_MODE/);
+  assert.match(layout, /manifest: process\.env\.SINTRA_PREVIEW_BASE_PATH \? undefined/);
+});
