@@ -1,0 +1,15 @@
+DEFINE
+  MEASURE FinanceVariance[Demo Actual] = CALCULATE(SUM(FinanceVariance[amountCents]), FinanceVariance[scenario] = "Actual") / 100
+  MEASURE FinanceVariance[Demo Budget] = CALCULATE(SUM(FinanceVariance[amountCents]), FinanceVariance[scenario] = "Budget") / 100
+  MEASURE FinanceVariance[Demo Variance] = [Demo Actual] - [Demo Budget]
+  MEASURE FinanceVariance[Demo Variance Pct] = DIVIDE([Demo Variance], ABS([Demo Budget]))
+EVALUATE
+  SUMMARIZECOLUMNS(
+    ROLLUPADDISSUBTOTAL(FinanceVariance[product], "IsTotal"),
+    TREATAS({"Demo Europe"}, FinanceVariance[entity]),
+    TREATAS({"2026-09"}, FinanceVariance[fiscalPeriod]),
+    TREATAS({"EUR"}, FinanceVariance[currency]),
+    "Actual", [Demo Actual], "Budget", [Demo Budget],
+    "Variance", [Demo Variance], "VariancePct", [Demo Variance Pct]
+  )
+ORDER BY [IsTotal], FinanceVariance[product]
