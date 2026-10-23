@@ -86,7 +86,7 @@ test("unbounded RSS input fails rather than exhausting memory during parsing", (
 test("homepage actually renders Brazil radar before the international feed", () => {
   const page = readFileSync("src/app/page.tsx", "utf8");
   assert.ok(page.indexOf("<BrazilRadar />") > page.indexOf("<BrazilFirstHero />"));
-  assert.ok(page.indexOf("<BrazilRadar />") < page.indexOf("<ContentNav"));
+  assert.ok(page.indexOf("<BrazilRadar />") < page.indexOf("<HomeEditorialSections />"));
   const br = readFileSync("src/components/BrazilRadar.tsx", "utf8");
   assert.match(br, /editorialStatus|NÃO REVISADOS PELA REDAÇÃO|agregado|NÃO REVISADOS/);
 });
