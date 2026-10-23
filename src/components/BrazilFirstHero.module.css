@@ -104,7 +104,7 @@
   .art { display:none; }
   .resources { gap:12px; margin-top:32px; }
 }
-@media (max-width:540px) {
+@media (max-width: 540px) {
   .shell { padding:104px 24px 38px; }
   .eyebrow { font-size:10px; margin-bottom:19px; letter-spacing:.1em; }
   .heading { font-size:clamp(40px,10.5vw,48px); line-height:1.08; }
@@ -121,7 +121,7 @@
   .resource strong { font-size:25px; }
   .trust { align-items:flex-start; text-align:left; justify-content:flex-start; font-size:11px; margin-top:20px; }
 }
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion: reduce) {
   .journey,.arrow,.resource { transition:none; }
   .resource:hover,.resource:focus-visible { transform:none; }
 }
