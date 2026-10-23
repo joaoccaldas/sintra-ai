@@ -32,7 +32,7 @@ import {
   Wrench,
   X,
 } from "lucide-react";
-import TesseractMark from "./TesseractMark";
+import SintraBrandLockup from "./SintraBrandLockup";
 import { useFocusTrap } from "@/lib/hooks";
 import { useSidebar } from "@/context/SidebarContext";
 import { useTheme, type Theme } from "@/context/ThemeContext";
@@ -290,10 +290,7 @@ export default function SidebarNav() {
         <div className="h-16 flex items-center gap-2 px-3 border-b border-hairline">
           {!collapsed && (
             <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0">
-              <TesseractMark size={28} />
-              <span className="font-serif text-[18px] leading-none text-fg-1 truncate">
-                Sintra <em className="italic text-violet-bright">AI</em>
-              </span>
+              <SintraBrandLockup compact />
             </a>
           )}
           <button
@@ -328,10 +325,7 @@ export default function SidebarNav() {
               className="sidebar-rail fixed left-0 top-0 bottom-0 z-[60] w-[min(86vw,320px)] flex flex-col border-r border-hairline bg-abyss shadow-2xl lg:hidden"
             >
               <div className="h-16 flex items-center gap-2 px-4 border-b border-hairline">
-                <TesseractMark size={28} />
-                <span className="font-serif text-[18px] leading-none text-fg-1">
-                  Sintra <em className="italic text-violet-bright">AI</em>
-                </span>
+                <SintraBrandLockup compact />
                 <button
                   type="button"
                   onClick={() => setMobileOpen(false)}
