@@ -102,6 +102,9 @@ test("homepage actually renders Brazil radar before the international feed", () 
   assert.ok(page.indexOf("<BrazilRadar />") < page.indexOf("<HomeEditorialSections />"));
   const br = readFileSync("src/components/BrazilRadar.tsx", "utf8");
   assert.match(br, /editorialStatus|NÃO REVISADOS PELA REDAÇÃO|agregado|NÃO REVISADOS/);
+  assert.match(br, /BRAZIL_NEWS_SIGNALS\.slice\(0, 3\)/);
+  const styles = readFileSync("src/components/BrazilRadar.module.css", "utf8");
+  assert.match(styles, /story:not\(:first-child\) \.excerpt/);
 });
 
 test("Portuguese-first default remains reversible by explicitly switching language", () => {
