@@ -59,7 +59,7 @@ test("mobile dock has four working routes and a fifth control opening the existi
   const css = read("src/components/MobileDock.module.css");
   assert.match(header, /<MobileDock \/>/);
   for (const route of ["news", "learn", "library"]) {
-    assert.ok(dock.includes(`BASE_PATH}/${route}/`), `dock missing ${route}`);
+    assert.ok(dock.includes("BASE_PATH}/" + route + "/"), "dock missing " + route);
   }
   assert.match(dock, /setMobileOpen\(true\)/);
   assert.match(dock, /aria-current/);
