@@ -10,7 +10,7 @@ import styles from "./BrazilRadar.module.css";
 export default function BrazilRadar() {
   const { locale } = useLanguage();
   const pt = locale === "pt";
-  const featured = BRAZIL_NEWS_SIGNALS.slice(0, 5);
+  const featured = BRAZIL_NEWS_SIGNALS.slice(0, 3);
   const actualBrazil = featured.filter(item => item.brazilImpact).length;
   const fresh = brazilSnapshotIsFresh();
 
