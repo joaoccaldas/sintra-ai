@@ -30,9 +30,9 @@ test("Brazil-first hero is text-led with no WebGL or external images", () => {
   assert.match(hero, /<h1 id="home-heading"/);
   assert.doesNotMatch(hero, /from "three"|from 'three'|<canvas|<iframe|requestAnimationFrame/);
   const copy = read("src/lib/homeExperienceCopy.ts");
-  assert.match(copy, /IA que sai do/);
-  assert.match(copy, /AI you can put/);
-  assert.match(copy, /Fontes visíveis/);
+  assert.match(copy, /Entenda a IA/);
+  assert.match(copy, /Understand AI/);
+  assert.match(copy, /Fontes originais/);
 });
 
 test("visual styles include phone breakpoints, readable cards and reduced motion", () => {
