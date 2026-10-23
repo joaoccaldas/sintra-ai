@@ -6,21 +6,26 @@ import assert from "node:assert/strict";
 const root = process.cwd();
 const read = (path: string) => readFileSync(join(root, path), "utf8");
 
-test("homepage uses a simple first-use hero before the existing editorial sections", () => {
+test("homepage uses a server route and focused practical sections, avoiding giant ContentNav imports", () => {
   const page = read("src/app/page.tsx");
   assert.match(page, /<BrazilFirstHero \/>/);
-  assert.match(page, /<ContentNav showIntents=\{false\} \/>/);
+  assert.match(page, /<HomeEditorialSections \/>/);
+  assert.doesNotMatch(page, /ContentNav/);
+  assert.doesNotMatch(page, /^"use client"/);
   assert.doesNotMatch(page, /<ImmersiveHero/);
   assert.match(page, /<Header total=\{USE_CASES_COUNT\}/);
   assert.match(page, /<Footer \/>/);
 });
 
-test("new first-screen goals link to real existing routes without invented community destinations", () => {
+test("one first-win CTA and existing mobile dock replace redundant home menus", () => {
   const hero = read("src/components/BrazilFirstHero.tsx");
-  assert.match(hero, /BASE_PATH\}\/learn\//);
-  assert.match(hero, /BASE_PATH\}\/library\//);
-  assert.match(hero, /BASE_PATH\}\/automate\//);
-  assert.match(hero, /BASE_PATH\}\/news\//);
+  assert.match(hero, /href="#pratique"/);
+  assert.match(hero, /<ShareSintraButton \/>/);
+  assert.doesNotMatch(hero, /s\.resources|s\.journeys|s\.directionHeader/);
+  const dock = read("src/components/MobileDock.tsx");
+  for (const route of ["news", "learn", "library"]) {
+    assert.ok(dock.includes("BASE_PATH}/" + route + "/"), "dock missing " + route);
+  }
   assert.doesNotMatch(hero, /href=.*\/community\//);
 });
 
@@ -37,20 +42,26 @@ test("Brazil-first hero is text-led with no WebGL or external images", () => {
 
 test("visual styles include phone breakpoints, readable cards and reduced motion", () => {
   const css = read("src/components/BrazilFirstHero.module.css");
-  assert.match(css, /max-width: 760px/);
-  assert.match(css, /max-width: 540px/);
-  assert.match(css, /prefers-reduced-motion: reduce/);
-  assert.match(css, /\.journey/);
-  assert.match(css, /\.resources/);
+  assert.match(css, /max-width:\s*760px/);
+  assert.match(css, /max-width:\s*540px/);
+  assert.match(css, /prefers-reduced-motion:\s*reduce/);
+  assert.match(css, /\.primaryCta/);
+  assert.doesNotMatch(css, /\.journey/);
+  assert.doesNotMatch(css, /\.resources/);
 });
 
-test("ContentNav exposes only one intent-navigation layer on redesigned homepage", () => {
-  const source = read("src/components/ContentNav.tsx");
-  assert.match(source, /showIntents = true/);
-  assert.match(source, /showIntents && <IntentNav \/>/);
-  assert.match(source, /<ThisWeekHub \/>/);
-  assert.match(source, /<LiveStrip \/>/);
-  assert.match(source, /<LibraryTeaser \/>/);
+test("server sections source world news and prompts from canonical registries, not mock lists", () => {
+  const source = read("src/components/HomeEditorialSections.tsx");
+  assert.match(source, /LIVE_ITEMS/);
+  assert.match(source, /USE_CASES/);
+  assert.match(source, /"meeting-notes-to-action-items"/);
+  assert.match(source, /"quick-insights-from-spreadsheets"/);
+  const localized = read("src/components/HomeEditorialClient.tsx");
+  assert.match(localized, /execução não verificada/);
+  assert.match(localized, /id="pratique"/);
+  assert.match(localized, /useLanguage/);
+  assert.match(localized, /"World news and practical AI"/);
+  assert.doesNotMatch(source, /"use client"|from "framer-motion"|from "@\/lib\/newsDataCombined"/);
 });
 
 test("mobile dock has four working routes and a fifth control opening the existing drawer", () => {
@@ -75,4 +86,29 @@ test("LibraryTeaser still avoids importing the entire prompt dataset", () => {
 test("existing dedicated /library/ route still hosts the full prompt library", () => {
   const source = read("src/app/library/page.tsx");
   assert.match(source, /PromptLibrarySection/);
+});
+
+test("homepage offers exactly one first win CTA and a voluntary share interaction", () => {
+  const hero = read("src/components/BrazilFirstHero.tsx");
+  assert.match(hero, /href="#pratique"/);
+  assert.match(hero, /<ShareSintraButton \/>/);
+  const share = read("src/components/ShareSintraButton.tsx");
+  assert.match(share, /navigator.share/);
+  assert.match(share, /https:\/\/wa.me\/\?text=/);
+  assert.match(share, /AbortError/);
+  assert.doesNotMatch(share, /sendEmail\(|fetch\(/);
+});
+
+test("persistent navigation no longer imports broad news/tools registries for simple counts", () => {
+  const sidebar = read("src/components/SidebarNav.tsx");
+  assert.doesNotMatch(sidebar, /from "@\/lib\/newsDataCombined"/);
+  assert.doesNotMatch(sidebar, /from "@\/lib\/toolsData"/);
+});
+
+test("mobile back-to-top and non-light dock do not visually overlap", () => {
+  assert.match(read("src/components/BackToTop.tsx"), /88px\+env\(safe-area-inset-bottom\)/);
+  const css = read("src/components/MobileDock.module.css");
+  assert.match(css, /data-theme="dark"/);
+  assert.match(css, /data-theme="forest"/);
+  assert.match(css, /data-theme="ocean"/);
 });

@@ -1,12 +1,40 @@
 import { createHash } from "node:crypto";
 import { titleIsAiNews, titleHasBrazilImpact } from "./br-news-sources.mjs";
 
-const strip = (value = "") => String(value)
+// A small deterministic entity set for Brazilian-language publisher RSS.
+// React escapes the resulting text: source HTML is never rendered as markup.
+// The parser is deliberately NOT a general-purpose HTML document interpreter.
+const TEXT_ENTITIES = Object.freeze({
+  amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ",
+  aacute: "á", Aacute: "Á", agrave: "à", Agrave: "À",
+  acirc: "â", Acirc: "Â", atilde: "ã", Atilde: "Ã",
+  eacute: "é", Eacute: "É", ecirc: "ê", Ecirc: "Ê",
+  iacute: "í", Iacute: "Í", oacute: "ó", Oacute: "Ó",
+  ocirc: "ô", Ocirc: "Ô", otilde: "õ", Otilde: "Õ",
+  uacute: "ú", Uacute: "Ú", ccedil: "ç", Ccedil: "Ç",
+  uml: "¨", ndash: "–", mdash: "—", hellip: "…",
+  lsquo: "‘", rsquo: "’", ldquo: "“", rdquo: "”",
+  bull: "•", middot: "·", trade: "™", reg: "®", copy: "©",
+  euro: "€", pound: "£",
+});
+
+function decodeEntities(text) {
+  const decode = (input) => input.replace(/&(#x[\da-fA-F]+|#\d+|[a-zA-Z]+);/g, (match, entity) => {
+    if (entity.startsWith("#")) {
+      const hex = /^#x/i.test(entity);
+      const code = Number.parseInt(entity.slice(hex ? 2 : 1), hex ? 16 : 10);
+      if (!Number.isFinite(code) || code < 0 || code > 0x10ffff || (code >= 0xd800 && code <= 0xdfff)) return "�";
+      return String.fromCodePoint(code);
+    }
+    return Object.prototype.hasOwnProperty.call(TEXT_ENTITIES, entity) ? TEXT_ENTITIES[entity] : match;
+  });
+  // Handles feeds with common nested escaping such as &amp;ccedil;.
+  return decode(decode(text));
+}
+
+const strip = (value = "") => decodeEntities(String(value)
   .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
-  .replace(/<[^>]*>/g, " ")
-  .replace(/&lt;/g, "<").replace(/&gt;/g, ">")
-  .replace(/&amp;/g, "&").replace(/&quot;/g, '"')
-  .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Math.min(Number(code), 0x10ffff)))
+  .replace(/<[^>]*>/g, " "))
   .replace(/\s+/g, " ").trim();
 
 function tag(block, name) {

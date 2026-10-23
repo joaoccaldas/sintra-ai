@@ -39,8 +39,6 @@ import { useTheme, type Theme } from "@/context/ThemeContext";
 import { useLanguage } from "@/context/LanguageContext";
 import type { Translations } from "@/lib/i18n";
 import { BASE_PATH } from "@/lib/constants";
-import { AI_NEWS } from "@/lib/newsDataCombined";
-import { AI_TOOLS } from "@/lib/toolsData";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 interface NavItem {
@@ -66,7 +64,7 @@ const NAV: NavGroup[] = [
       { href: `${BASE_PATH}/knowledge/`, labelKey: "side_knowledge", Icon: BookOpen, pathKey: "knowledge" },
       { href: `${BASE_PATH}/automate/`, labelKey: "side_automate", Icon: Workflow, pathKey: "automate" },
       { href: `${BASE_PATH}/library/`, labelKey: "side_library", Icon: Sparkles, count: USE_CASES_COUNT, pathKey: "library" },
-      { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, count: AI_NEWS.length, pathKey: "news" },
+      { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, pathKey: "news" },
       { href: `${BASE_PATH}/weekly/`, labelKey: "side_weekly", Icon: Calendar, pathKey: "weekly" },
       { href: `${BASE_PATH}/topics/`, labelKey: "side_topics", Icon: Tag, pathKey: "topics" },
       { href: `${BASE_PATH}/ai-history/`, labelKey: "side_history", Icon: Clock, pathKey: "ai-history" },
@@ -89,7 +87,7 @@ const NAV: NavGroup[] = [
     id: "reference",
     labelKey: "side_group_reference",
     items: [
-      { href: `${BASE_PATH}/tools/`, labelKey: "side_tools", Icon: Wrench, count: AI_TOOLS.length, pathKey: "tools" },
+      { href: `${BASE_PATH}/tools/`, labelKey: "side_tools", Icon: Wrench, pathKey: "tools" },
       { href: `${BASE_PATH}/models/`, labelKey: "side_models", Icon: Cpu, pathKey: "models" },
       { href: `${BASE_PATH}/claude/`, labelKey: "side_claude", Icon: Brain, pathKey: "claude" },
       { href: `${BASE_PATH}/google-ai-tools/`, labelKey: "side_google", Icon: SearchIcon, pathKey: "google-ai-tools" },

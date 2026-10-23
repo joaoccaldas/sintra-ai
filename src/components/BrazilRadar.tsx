@@ -10,7 +10,7 @@ import styles from "./BrazilRadar.module.css";
 export default function BrazilRadar() {
   const { locale } = useLanguage();
   const pt = locale === "pt";
-  const featured = BRAZIL_NEWS_SIGNALS.slice(0, 5);
+  const featured = BRAZIL_NEWS_SIGNALS.slice(0, 3);
   const actualBrazil = featured.filter(item => item.brazilImpact).length;
   const fresh = brazilSnapshotIsFresh();
 
@@ -22,8 +22,8 @@ export default function BrazilRadar() {
             <span className={styles.kicker}><MapPin size={14} aria-hidden="true" />{pt ? "PRIMEIRO: BRASIL" : "BRAZIL FIRST"}</span>
             <h2 id="br-radar-heading">{pt ? "IA no Brasil, sem ruído." : "AI through a Brazilian lens."}</h2>
             <p>{pt
-              ? "O que merece sua atenção na cobertura brasileira. Fontes abertas, contexto local e links originais."
-              : "Worthwhile AI coverage from Brazilian publishers, with original links and transparent sourcing."}</p>
+              ? "Destaques da imprensa brasileira sobre IA, inclusive notícias globais. Fontes originais sempre visíveis."
+              : "AI coverage from Brazilian publishers, including world events. Original sources remain visible."}</p>
           </div>
           <a href={`${BASE_PATH}/news/`} className={styles.global}>
             <Globe2 size={16} aria-hidden="true" />
@@ -39,7 +39,7 @@ export default function BrazilRadar() {
                 <span className={styles.storyTop}>
                   <span className={styles.index}>{String(index + 1).padStart(2, "0")}</span>
                   <span className={styles.source}>{item.source}</span>
-                  {item.brazilImpact && <span className={styles.brazilMark}>{pt ? "Impacto no Brasil" : "Brazil impact"}</span>}
+                  {item.brazilImpact && <span className={styles.brazilMark}>{pt ? "Brasil no título" : "Brazil in headline"}</span>}
                   <ArrowUpRight className={styles.external} size={17} aria-hidden="true" />
                 </span>
                 <strong lang="pt-BR">{item.title}</strong>
@@ -54,7 +54,7 @@ export default function BrazilRadar() {
           <div className={styles.empty}>
             <Newspaper size={20} aria-hidden="true"/>
             <p>{pt
-              ? "O radar brasileiro ainda não encontrou manchetes de IA verificáveis nos feeds disponíveis. Não inventamos notícias para preencher a página."
+              ? "Os feeds brasileiros não trouxeram manchetes elegíveis sobre IA. Não inventamos notícias para preencher a página."
               : "The Brazilian radar has no eligible AI headlines from available feeds. We don't invent stories to fill the screen."}</p>
             <a href={`${BASE_PATH}/news/`}>{pt ? "Explorar o radar mundial" : "Browse world news"} <ArrowUpRight size={15} aria-hidden="true"/></a>
           </div>
@@ -62,7 +62,7 @@ export default function BrazilRadar() {
         <footer className={styles.sourceNote}>
           <span>{pt ? "SINAIS DE FONTES EXTERNAS · NÃO REVISADOS PELA REDAÇÃO" : "PUBLISHER SIGNALS · NOT EDITORIALLY VERIFIED"}</span>
           <span>{pt ? (fresh ? "Atualização recente" : "Fonte desatualizada ou indisponível") : (fresh ? "Recently refreshed" : "Stale or unavailable source")}</span>
-          {actualBrazil > 0 && <span>{pt ? "Cobertura local identificada no título" : "Local impact inferred from headline"}</span>}
+          {actualBrazil > 0 && <span>{pt ? "Brasil mencionado no título" : "Brazil mentioned in headline"}</span>}
         </footer>
       </div>
     </section>
