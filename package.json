@@ -17,7 +17,10 @@
     "validate-content": "tsx scripts/validate-content.ts && tsx scripts/validate-latest-news.ts",
     "test": "tsx --test scripts/tests/*.test.ts",
     "audit:static": "npm run validate-data && npm run validate-content && npm run audit:freshness && npm test && npm run typecheck",
-    "check": "npm run prebuild && npm run audit:static && npm run build --ignore-scripts"
+    "check": "npm run prebuild && npm run audit:static && npm run build --ignore-scripts",
+    "studio:worker": "tsx studio/server.ts",
+    "studio:ui": "next dev --hostname 127.0.0.1 --port 3178",
+    "test:studio": "tsx --test scripts/tests/studio*.test.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -44,5 +47,23 @@
     "tsx": "^4.22.3",
     "typescript": "^5.4.5",
     "zod": "^4.4.3"
+  },
+  "sintraStudio": {
+    "id": "sintra-ai/studio",
+    "version": "0.1.0",
+    "type": "local-editorial-workflow",
+    "owner": "repository-maintainer",
+    "authority": "https://github.com/joaoccaldas/sintra-ai",
+    "entry": "studio/server.ts",
+    "ui": "src/app/studio",
+    "privacy": "private-local-runtime; reviewed-export-only",
+    "lifecycle": "experimental",
+    "validation": "docs/STUDIO_EVALUATION.md",
+    "dependencies": [
+      "yt-dlp",
+      "local Ollama",
+      "existing Sintra KnowledgeRecord"
+    ],
+    "indexReadback": "pending"
   }
 }

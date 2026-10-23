@@ -1,0 +1,54 @@
+{
+  "capability": "sintra-ai/studio",
+  "version": "0.1.0",
+  "date": "2026-10-23",
+  "verification": "agent-observed; not independently verified",
+  "checks": {
+    "studioTests": 15,
+    "allTests": 65,
+    "typecheck": "passed",
+    "releaseCheck": "passed",
+    "exportedHtml": 514,
+    "internalLinks": 20327,
+    "lint": "not configured; no pass claimed",
+    "modelContextLiveSmoke": "passed; 77 input + 6 output tokens; 15.444s"
+  },
+  "sourceSha256": {
+    "studio/contracts.ts": "39ab9487d37d0de7341acc89d90b1696cc94372b0e6488e77eb816e5b84b80b6",
+    "studio/providers.ts": "b9a3298a39d56647303b29b63672d3678f806c5ca032ff951e28c4c23d79a21c",
+    "studio/core.ts": "38ecf8e0f391b2029a1b6501fec1372e31087ede1feefb4c19c06ba20eecaa35",
+    "studio/server.ts": "4882b04c2408dc23796a858a45d9fadc76512e548a6f07ea78889cd8bcb2b9b9",
+    "src/app/studio/studio.css": "374d09f2428585fc49829e9c6f56ed3d9450c8ac3c10e53a2b85a99e6a9e2dc9",
+    "src/app/studio/studio.tsx": "cbf41bbed139a5938ce6a377638a973ed20f83007ad5c24366c7cda8f98964fe",
+    "src/app/studio/page.tsx": "aee1a45fa1ad503f210f30e4ddd84322f16e266953b3e47b4bda859aaf9aad3a",
+    "scripts/tests/studio.test.ts": "3e42ab2a199011d85941487cc55932e5766ebebd66f0c00b99e23afbca4e177a",
+    "package.json": "5b6ffbfeef12afb659fdb6570c5671a93a80dea227879571e0abd398a7283f11",
+    "package-lock.json": "03e3961245ed25a15543f51ab38ea9699a7a31f9338883a2035443e8cd9a81d0",
+    "src/components/Analytics.tsx": "59424b8b44b23cbae0cdf480257c40ca73e18307be2d9699ed6941fce332e094",
+    "src/components/SidebarNav.tsx": "30e1dfcfb78bb78ccaf52723fd083bcde635a619306b5903e79ab8cbb878f965",
+    "src/app/layout.tsx": "4d7a6ecf0409b485146d302c4b19ce71d16cf10dd5911ca6c0a0cfcc23a2d698",
+    "src/lib/i18n.ts": "23d94a6126e4e1e2e89219ef4ca731fd1562e88200e12513a4ccd5b94f71d7e9"
+  },
+  "logSha256": {
+    "studio-tests.log": "2f2f3f6fb0456d846b3af6c82456f92bdcd5ddbfa3e6de17d603894e4dbe50fd",
+    "studio-release-check.log": "76fdb37b60e638719698441534c03e7e00aaa5a8266f46fb31c32c4924614c88",
+    "studio-typecheck.log": "f80d5d9cb9a3c6662f9b2433f9760adfbf0a5fe1c3ca33488357e02428187804",
+    "model-context-smoke.log": "a464e451a621b7c240c8eeefd0a94a2071da27921d5b4f12e007f262a50fc86e"
+  },
+  "live": {
+    "videoId": "Q876SRB_-1M",
+    "segments": 441,
+    "reviewedClaims": 3,
+    "humanApproval": false,
+    "published": false,
+    "modelTokens": 19055,
+    "cost": null
+  },
+  "limitations": [
+    "one video only",
+    "reviewer-assisted verification",
+    "caption audio accuracy not independently measured",
+    "pre-existing dependency findings",
+    "index readback pending"
+  ]
+}

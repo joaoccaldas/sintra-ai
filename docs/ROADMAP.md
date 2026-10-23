@@ -55,3 +55,12 @@ move is adding a **thin edge function** (Cloudflare Worker / Vercel Edge) for th
 interactive bits (BYOK "run with Claude", newsletter send, contact form) while
 keeping the static site for content + SEO. Bets 1–3's richest versions flow from it.
 The "Try free" runner deliberately needs none of this — it ships value today.
+
+## Local editorial Studio — 23 October 2026
+
+- Added experimental local Studio UI, caption adapter, local-model extraction/drafting,
+  reviewer-assisted evidence, private persistence and content-bound approval/export.
+- See `STUDIO.md` and `STUDIO_EVALUATION.md` for observed scope and deviations.
+- Next gates: independent human review, held-out video evaluation, additional caption
+  language/provider recovery, automated source discovery, and index identity readback.
+- Existing static publishing and canonical knowledge remain unchanged; no Studio deployment.

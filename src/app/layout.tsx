@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Analytics from "@/components/Analytics";
 import { BASE_PATH } from "@/lib/constants";
 import { Instrument_Serif, Manrope, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -131,12 +132,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
-        <link rel="preconnect" href="https://plausible.io" />
-        <script
-          defer
-          data-domain="joaoccaldas.github.io"
-          src="https://plausible.io/js/script.js"
-        />
+        <Analytics />
         <link rel="icon" href={`${BASE_PATH}/favicon.ico`} sizes="any" />
         <link rel="icon" type="image/svg+xml" href={`${BASE_PATH}/tesseract-mark.svg`} />
         <link rel="apple-touch-icon" href={`${BASE_PATH}/apple-touch-icon.png`} />
