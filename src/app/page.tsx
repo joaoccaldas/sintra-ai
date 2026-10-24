@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import BrazilFirstHero from "@/components/BrazilFirstHero";
 import BrazilRadar from "@/components/BrazilRadar";
+import PonteGlobalTeaser from "@/components/PonteGlobalTeaser";
 import HomeEditorialSections from "@/components/HomeEditorialSections";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -14,6 +15,7 @@ export default function Home() {
         <main id="main-content">
           <BrazilFirstHero />
           <BrazilRadar />
+          <PonteGlobalTeaser />
           <HomeEditorialSections />
         </main>
         <Footer />
