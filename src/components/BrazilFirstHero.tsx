@@ -3,6 +3,7 @@
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { HOME_EXPERIENCE_COPY } from "@/lib/homeExperienceCopy";
+import { BASE_PATH } from "@/lib/constants";
 import s from "./BrazilFirstHero.module.css";
 import ShareSintraButton from "./ShareSintraButton";
 
@@ -29,7 +30,7 @@ export default function BrazilFirstHero() {
             </h1>
             <p className={s.lead}>{c.intro}</p>
             <div className={s.heroActions}>
-              <a href="#pratique" className={s.primaryCta}>
+              <a href={`${BASE_PATH}/laboratorio/`} className={s.primaryCta}>
                 {locale === "pt" ? "Experimentar agora" : "Try a practical example"}
                 <ArrowRight size={18} aria-hidden="true" />
               </a>
