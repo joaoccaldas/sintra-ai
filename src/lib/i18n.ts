@@ -94,6 +94,7 @@ export interface Translations {
   side_agents: string;
   side_library:   string;
   side_news:      string;
+  side_ponte:     string;
   side_weekly:    string;
   side_topics:    string;
   side_history:   string;
