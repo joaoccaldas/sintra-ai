@@ -65,3 +65,16 @@ test("personalization is local, with explicit user copy and no auto requests or 
   assert.match(ui,/NÃO EXECUTADO|NOT EXECUTED/);
   assert.match(ui,/Aplicações propostas, não resultados comprovados/);
 });
+
+test("global-context section is discoverable without adding a sixth primary navigation slot",()=>{
+  const sidebar=read("src/components/SidebarNav.tsx");
+  const dock=read("src/components/MobileDock.tsx");
+  const i18n=read("src/lib/i18n.ts");
+  assert.match(sidebar,/BASE_PATH\}\/ponte\//);
+  assert.match(sidebar,/side_ponte/);
+  assert.match(dock,/"ponte"\]/);
+  assert.match(i18n,/side_ponte:\s+"Ponte Global"/);
+  assert.match(i18n,/side_ponte:\s+"Global-to-Brazil ideas"/);
+  const dockItems=(dock.match(/\{ id: "(?:home|explore|learn|build)"/g)||[]).length;
+  assert.equal(dockItems,4);
+});
