@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MeetingActionsLab from "@/components/MeetingActionsLab";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
-import { BASE_PATH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Laboratório de IA na prática | Sintra Brasil by ond.ai",
@@ -22,7 +21,7 @@ export default function LaboratorioPage() {
       <Header total={USE_CASES_COUNT} />
       <main id="main-content" className="pt-[105px] md:pt-[125px]">
         <div className="max-w-[1230px] mx-auto px-6 md:px-8 pb-5">
-          <Link href={`${BASE_PATH}/`} className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#586376] hover:text-[#5B48D9] focus-visible:underline">
+          <Link href="/" className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#586376] hover:text-[#5B48D9] focus-visible:underline">
             <ArrowLeft size={16} aria-hidden="true" /> Voltar ao início
           </Link>
           <div className="max-w-[850px] mt-9 mb-7">
