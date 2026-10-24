@@ -1,0 +1,111 @@
+name: Sintra Ponte Global Source-to-Practice Preview
+
+on:
+  push:
+    branches:
+      - feat/sintra-ponte-global-brasil-20261024
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sintra-ponte-global-review
+  cancel-in-progress: true
+
+jobs:
+  build-and-browser:
+    if: github.repository == 'joaoccaldas/sintra-ai'
+    runs-on: ubuntu-latest
+    env:
+      SINTRA_PREVIEW_BASE_PATH: /sintra-ai/preview/ponte-global
+      PREVIEW_SLUG: ponte-global
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - name: Checkout reviewed PR head
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run content, security-oriented tests, typing, and static export
+        run: npm run check
+      - name: Verify isolated URL and search exclusion
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f dist/index.html
+          grep -Fq "/sintra-ai/preview/$PREVIEW_SLUG/_next/" dist/index.html
+          grep -qi 'noindex' dist/index.html
+          grep -q 'Entenda a IA' dist/index.html
+          test -f dist/ponte/index.html
+          grep -q 'O que aprendemos' dist/ponte/index.html
+
+      - name: Start local static preview at exact public path
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "/tmp/sintra-ui/sintra-ai/preview/$PREVIEW_SLUG"
+          cp -a dist/. "/tmp/sintra-ui/sintra-ai/preview/$PREVIEW_SLUG/"
+          nohup python3 -m http.server 4173 --directory /tmp/sintra-ui >/tmp/sintra-ui.log 2>&1 &
+          echo $! > /tmp/sintra-ui.pid
+
+      - name: Install version-pinned browser test API
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --no-save --no-package-lock --ignore-scripts playwright@1.56.1
+          if command -v google-chrome >/dev/null 2>&1; then
+            echo "CHROME_BIN=$(command -v google-chrome)" >> "$GITHUB_ENV"
+            echo "Using preinstalled Google Chrome for viewport QA"
+          elif command -v chromium >/dev/null 2>&1; then
+            echo "CHROME_BIN=$(command -v chromium)" >> "$GITHUB_ENV"
+            echo "Using preinstalled Chromium for viewport QA"
+          else
+            npx playwright install --with-deps chromium
+          fi
+
+      - name: Run responsive Chromium browser QA
+        env:
+          SINTRA_PONTE_URL: http://127.0.0.1:4173/sintra-ai/preview/ponte-global/
+        run: node scripts/visual-ponte-smoke.mjs
+
+      - name: Upload viewport evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sintra-ponte-browser-screenshots
+          path: artifacts/ponte-global/
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Upload reviewed static build
+        uses: actions/upload-artifact@v4
+        with:
+          name: sintra-ponte-preview-dist
+          path: dist/
+          retention-days: 1
+
+  publish-temporary-preview:
+    needs: build-and-browser
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download verified static build
+        uses: actions/download-artifact@v4
+        with:
+          name: sintra-ponte-preview-dist
+          path: ./preview-dist
+      - name: Publish isolated no-index preview only
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./preview-dist
+          destination_dir: preview/ponte-global
+          keep_files: true
+          commit_message: 'preview: Sintra Ponte Global ${{ github.sha }}'
