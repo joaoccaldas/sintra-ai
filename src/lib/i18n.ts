@@ -94,6 +94,7 @@ export interface Translations {
   side_agents: string;
   side_library:   string;
   side_news:      string;
+  side_ponte:     string;
   side_weekly:    string;
   side_topics:    string;
   side_history:   string;
@@ -320,6 +321,7 @@ const translations: Record<Locale, Translations> = {
     side_agents: "For LLMs",
     side_library:   "Prompt Library",
     side_news:      "AI News",
+    side_ponte:     "Global-to-Brazil ideas",
     side_weekly:    "Weekly Digest",
     side_topics:    "Topic Hubs",
     side_history:   "AI History",
@@ -544,6 +546,7 @@ const translations: Record<Locale, Translations> = {
     side_agents: "Para LLMs",
     side_library:   "Biblioteca de prompts",
     side_news:      "Notícias de IA",
+    side_ponte:     "Ponte Global",
     side_weekly:    "Resumo semanal",
     side_topics:    "Centrais de tópicos",
     side_history:   "História da IA",
