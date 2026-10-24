@@ -1,0 +1,55 @@
+{
+  "name": "Sintra Brasil, by ond.ai",
+  "short_name": "Sintra Brasil",
+  "description": "Inteligência que vira ação. Notícias e aprendizado de IA para o Brasil, com fontes e exemplos práticos.",
+  "start_url": "/sintra-ai/",
+  "scope": "/sintra-ai/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F7F8F5",
+  "theme_color": "#F7F8F5",
+  "icons": [
+    {
+      "src": "/sintra-ai/sintra-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/sintra-ai/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/sintra-ai/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "productivity",
+    "education",
+    "utilities"
+  ],
+  "shortcuts": [
+    {
+      "name": "Notícias de IA",
+      "short_name": "Notícias",
+      "url": "/sintra-ai/news/"
+    },
+    {
+      "name": "Aprenda fazendo",
+      "short_name": "Aprender",
+      "url": "/sintra-ai/learn/"
+    },
+    {
+      "name": "Exemplos de IA",
+      "short_name": "Pratique",
+      "url": "/sintra-ai/library/"
+    }
+  ],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}
