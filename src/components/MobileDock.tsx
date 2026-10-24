@@ -22,7 +22,7 @@ export default function MobileDock() {
   const segment = path.split("/").filter(Boolean)[0] ?? "";
   const links = [
     { id: "home", label: pt ? "Início" : "Home", href: `${BASE_PATH}/`, icon: House, active: segment === "" },
-    { id: "explore", label: pt ? "Explorar" : "Explore", href: `${BASE_PATH}/news/`, icon: Compass, active: ["news", "live", "topics", "tools", "models", "research", "weekly"].includes(segment) },
+    { id: "explore", label: pt ? "Explorar" : "Explore", href: `${BASE_PATH}/news/`, icon: Compass, active: ["news", "live", "topics", "tools", "models", "research", "weekly", "ponte"].includes(segment) },
     { id: "learn", label: pt ? "Aprender" : "Learn", href: `${BASE_PATH}/learn/`, icon: BookOpen, active: ["learn", "guides", "concepts", "knowledge", "videos"].includes(segment) },
     { id: "build", label: pt ? "Construir" : "Build", href: `${BASE_PATH}/library/`, icon: Wrench, active: ["library", "prompts", "automate", "ai-labs", "collections"].includes(segment) },
   ];
