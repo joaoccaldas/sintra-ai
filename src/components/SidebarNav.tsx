@@ -60,6 +60,7 @@ const NAV: NavGroup[] = [
     id: "discover",
     labelKey: "side_group_discover",
     items: [
+      { href: `${BASE_PATH}/ponte/`, labelKey: "side_ponte", Icon: Lightbulb, pathKey: "ponte" },
       { href: `${BASE_PATH}/live/`, labelKey: "side_live", Icon: Radio, pathKey: "live" },
       { href: `${BASE_PATH}/knowledge/`, labelKey: "side_knowledge", Icon: BookOpen, pathKey: "knowledge" },
       { href: `${BASE_PATH}/automate/`, labelKey: "side_automate", Icon: Workflow, pathKey: "automate" },
