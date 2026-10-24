@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import VideosClient from "./VideosClient";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 import { YOUTUBE_VIDEOS } from "@/lib/videoData";
+import { validExactIsoDate } from "@/lib/publicationDates";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
 
@@ -34,7 +35,8 @@ const videosJsonLd = {
       thumbnailUrl: `https://img.youtube.com/vi/${v.videoId}/hqdefault.jpg`,
       contentUrl: v.url,
       embedUrl: `https://www.youtube.com/embed/${v.videoId}`,
-      ...(v.year ? { uploadDate: `${v.year}-01-01` } : {}),
+      // No exact date means no uploadDate assertion in the structured output.
+      ...(validExactIsoDate(v.uploadedAt) ? { uploadDate: validExactIsoDate(v.uploadedAt) } : {}),
     },
   })),
 };
