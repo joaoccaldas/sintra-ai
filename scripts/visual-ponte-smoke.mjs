@@ -22,7 +22,7 @@ try{
       if(!await tease.isVisible())throw Error("Global bridge not discoverable from homepage");
       await page.locator("a[href$='/ponte/']").first().click();
       await page.getByRole("heading",{level:1,name:/O que aprendemos lá fora/}).waitFor();
-      const cards=page.locator("button[aria-pressed]");
+      const cards=page.getByRole("group",{name:"Escolha seu caso de uso"}).locator("button[aria-pressed]");
       if(await cards.count()!==3)throw Error("Expected three real cases");
       if(!await page.getByText("OpenAI · Fonte original").isVisible())throw Error("Missing original source provenance");
       const custom=page.getByRole("textbox",{name:"Personalize um cenário"});
