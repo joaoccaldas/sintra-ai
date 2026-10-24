@@ -40,8 +40,8 @@ const ACTION_VERB = /^(?:enviar|revisar|preparar|atualizar|criar|agendar|confirm
 const AVOID_NEGATION = /^(?:não|nao|not|do not|don't|sem necessidade de|não precisamos|nao precisamos|evitar|cancelar a ideia de)\b/iu;
 const PREAMBLE = /^(?:(?:por favor|favor|precisamos(?: de)?|devemos|please|we need to|to do)\s+)+/iu;
 
-const OWNER_META = /(?:^|\s*(?:\||·|;|—)\s*)(?:respons[aá]vel|owner)\s*:\s*([^|;·—]+)(?=$|\s*[|;·—])/iu;
-const DEADLINE_META = /(?:^|\s*(?:\||·|;|—)\s*)(?:prazo|deadline)\s*:\s*([^|;·—]+)(?=$|\s*[|;·—])/iu;
+const OWNER_META = /^(?:respons[aá]vel|owner)\s*:\s*(.+)$/iu;
+const DEADLINE_META = /^(?:prazo|deadline)\s*:\s*(.+)$/iu;
 
 function cleanLine(value: string): string {
   return value
@@ -50,12 +50,28 @@ function cleanLine(value: string): string {
     .trim();
 }
 
-function explicitMetadata(line: string, regex: RegExp): string | null {
-  const match = line.match(regex);
-  if (!match?.[1]) return null;
-  const cleaned = match[1].trim();
-  if (!cleaned || cleaned.length > 80) return null;
-  return cleaned;
+function explicitMetadata(value: string, pattern: RegExp): string | null {
+  const match = value.match(pattern);
+  const result = match?.[1]?.trim();
+  return result && result.length <= 80 ? result : null;
+}
+
+function decomposeLine(source: string): { task: string; owner: string | null; deadline: string | null } {
+  const segments = source.split(/\s*(?:\||;|·|—)\s*/u).map(x => x.trim()).filter(Boolean);
+  let owner: string | null = null;
+  let deadline: string | null = null;
+  let task = "";
+  for (const part of segments) {
+    const candidate = cleanLine(part);
+    if (OWNER_META.test(candidate)) {
+      owner = explicitMetadata(candidate, OWNER_META);
+    } else if (DEADLINE_META.test(candidate)) {
+      deadline = explicitMetadata(candidate, DEADLINE_META);
+    } else if (!task) {
+      task = candidate;
+    }
+  }
+  return { task: task.replace(PREAMBLE, "").trim(), owner, deadline };
 }
 
 function normalizeForIdentity(value: string): string {
@@ -85,13 +101,9 @@ export function extractMeetingActions(input: string): ExtractionResult {
     if (!source) continue;
     considered += 1;
 
-    const owner = explicitMetadata(source, OWNER_META);
-    const deadline = explicitMetadata(source, DEADLINE_META);
-
-    // Metadata may appear at beginning or after a task line. We do not infer
-    // who is responsible from casual mentions of people in meetings.
-    const task = cleanLine(source.replace(OWNER_META, " ").replace(DEADLINE_META, " "))
-      .replace(PREAMBLE, "").trim();
+    // Metadata is accepted ONLY when explicitly labeled in a separate
+    // pipe/semicolon segment. Arbitrary people/dates are never inferred.
+    const { task, owner, deadline } = decomposeLine(source);
     const negative = AVOID_NEGATION.test(task);
     const tooLong = task.length > 280 || task.length < 8;
     const accepted = !negative && !tooLong && ACTION_VERB.test(task);
