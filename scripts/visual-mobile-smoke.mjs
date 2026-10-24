@@ -1,5 +1,5 @@
 /**
- * Headless browser smoke for PR30 static preview only.
+ * Headless browser smoke for the isolated integrated beta preview only.
  * Invoked by the isolated GitHub Actions workflow with pinned playwright.
  * Never called as part of public runtime or publisher ingestion.
  */
@@ -8,7 +8,7 @@ import { mkdir } from "node:fs/promises";
 import { join } from "node:path";
 
 const base = process.env.SINTRA_VISUAL_URL;
-if (!base || !base.startsWith("http://127.0.0.1:4173/sintra-ai/preview/first-win/")) {
+if (!base || !base.startsWith("http://127.0.0.1:4173/sintra-ai/preview/br-beta/")) {
   throw new Error("Expected only isolated local preview URL");
 }
 
@@ -57,6 +57,29 @@ try {
       if (await canonicalExample.count() < 1) throw new Error("No real exercise links");
       if (!(await page.getByRole("button", { name: "Compartilhar Sintra Brasil" }).isVisible())) {
         throw new Error("Voluntary share action not visible");
+      }
+
+      // The primary UI must switch EN/PT as one coherent experience.
+      // Publisher headlines remain in their original language and are labeled.
+      if (width === 390) {
+        const toggle = page.locator("button.sintra-runtime-language");
+        if (!(await toggle.isVisible())) throw new Error("Language control not visible");
+        await toggle.click();
+        await page.getByRole("heading", { level: 1, name: /Understand AI/i }).waitFor({ timeout: 8000 });
+        await page.getByText("What’s happening around the world.").waitFor({ timeout: 8000 });
+        await page.screenshot({ path: join(folder, "home-390-english.png"), fullPage: false });
+        await toggle.click();
+        await page.getByRole("heading", { level: 1, name: /Entenda a IA/i }).waitFor({ timeout: 8000 });
+        const registrations = await page.evaluate(async () => {
+          if (!("serviceWorker" in navigator)) return 0;
+          return (await navigator.serviceWorker.getRegistrations()).length;
+        });
+        if (registrations !== 0) throw new Error("Preview wrongly registered a service worker");
+        for (const route of ["news/", "learn/", "library/", "prompts/meeting-notes-to-action-items/"]) {
+          const target = new URL(route, base).href;
+          const result = await page.request.get(target, { timeout: 10_000 });
+          if (!result.ok()) throw new Error("Broken beta route: " + target + " status=" + result.status());
+        }
       }
 
       await page.screenshot({ path: join(folder, `home-${width}.png`), fullPage: true });
