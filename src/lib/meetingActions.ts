@@ -57,7 +57,9 @@ function explicitMetadata(value: string, pattern: RegExp): string | null {
 }
 
 function decomposeLine(source: string): { task: string; owner: string | null; deadline: string | null } {
-  const segments = source.split(/\s*(?:\||;|·|—)\s*/u).map(x => x.trim()).filter(Boolean);
+  // A bare ';' belongs to common HTML entities (e.g. &lt; and &#233;).
+  // Split only on visible delimiters or whitespace-surrounded semicolons.
+  const segments = source.split(/\s*(?:\||·|—)\s*|\s+;\s+/u).map(x => x.trim()).filter(Boolean);
   let owner: string | null = null;
   let deadline: string | null = null;
   let task = "";
