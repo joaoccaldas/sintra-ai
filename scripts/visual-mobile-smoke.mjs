@@ -51,7 +51,7 @@ try {
         throw new Error("Mobile dock visible on desktop");
       }
 
-      const firstWin = page.locator("a[href='#pratique']");
+      const firstWin = page.locator("a[href$='/laboratorio/']").first();
       if (!(await firstWin.isVisible())) throw new Error("First-win CTA not visible");
       const canonicalExample = page.locator("#pratique a[href*='/prompts/']");
       if (await canonicalExample.count() < 1) throw new Error("No real exercise links");
@@ -75,7 +75,7 @@ try {
           return (await navigator.serviceWorker.getRegistrations()).length;
         });
         if (registrations !== 0) throw new Error("Preview wrongly registered a service worker");
-        for (const route of ["news/", "learn/", "library/", "prompts/meeting-notes-to-action-items/"]) {
+        for (const route of ["news/", "learn/", "library/", "prompts/meeting-notes-to-action-items/", "laboratorio/"]) {
           const target = new URL(route, base).href;
           const result = await page.request.get(target, { timeout: 10_000 });
           if (!result.ok()) throw new Error("Broken beta route: " + target + " status=" + result.status());
@@ -84,6 +84,31 @@ try {
 
       await page.screenshot({ path: join(folder, `home-${width}.png`), fullPage: true });
       console.log(JSON.stringify({ width, status: "pass", ...state, practiceLinks: await canonicalExample.count() }));
+      if (width === 390) {
+        const labUrl = new URL("laboratorio/", base).href;
+        const labResponse = await page.goto(labUrl, { waitUntil: "domcontentloaded" });
+        if (!labResponse?.ok()) throw new Error("Lab route unavailable");
+        await page.getByRole("button", { name: "Usar exemplo fictício" }).click();
+        await page.getByRole("button", { name: "Identificar tarefas" }).click();
+        await page.getByText("3 candidatas").waitFor({ timeout: 10_000 });
+        const cards = page.locator("article");
+        if (await cards.count() !== 3) throw new Error("Unexpected number of extracted actions");
+        if (await page.getByRole("button", { name: /Copiar tarefas revisadas/ }).isEnabled()) {
+          throw new Error("Export enabled before source review");
+        }
+        await page.getByRole("checkbox", { name: "Revisei esta tarefa" }).first().check();
+        if (!(await page.getByRole("button", { name: "Copiar tarefas revisadas (1)" }).isEnabled())) {
+          throw new Error("Reviewed action cannot be copied");
+        }
+        const labSize = await page.evaluate(() => ({
+          doc: document.documentElement.scrollWidth,
+          viewport: document.documentElement.clientWidth,
+        }));
+        if (labSize.doc > width + 2) throw new Error("Laboratory overflows mobile viewport");
+        await page.screenshot({ path: join(folder, "laboratorio-390.png"), fullPage: true });
+        console.log(JSON.stringify({ route: "/laboratorio/", status: "pass", detected: 3, reviewed: 1, ...labSize }));
+      }
+
     } catch (error) {
       failures.push({ width, error: String(error?.message ?? error) });
       console.error(JSON.stringify({ width, status: "fail", error: String(error?.message ?? error) }));
