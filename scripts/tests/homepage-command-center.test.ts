@@ -19,7 +19,7 @@ test("homepage uses a server route and focused practical sections, avoiding gian
 
 test("one first-win CTA and existing mobile dock replace redundant home menus", () => {
   const hero = read("src/components/BrazilFirstHero.tsx");
-  assert.match(hero, /href="#pratique"/);
+  assert.match(hero, /BASE_PATH\}\/laboratorio\//);
   assert.match(hero, /<ShareSintraButton \/>/);
   assert.doesNotMatch(hero, /s\.resources|s\.journeys|s\.directionHeader/);
   const dock = read("src/components/MobileDock.tsx");
@@ -90,7 +90,7 @@ test("existing dedicated /library/ route still hosts the full prompt library", (
 
 test("homepage offers exactly one first win CTA and a voluntary share interaction", () => {
   const hero = read("src/components/BrazilFirstHero.tsx");
-  assert.match(hero, /href="#pratique"/);
+  assert.match(hero, /BASE_PATH\}\/laboratorio\//);
   assert.match(hero, /<ShareSintraButton \/>/);
   const share = read("src/components/ShareSintraButton.tsx");
   assert.match(share, /navigator.share/);
