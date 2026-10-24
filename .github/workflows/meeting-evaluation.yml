@@ -1,0 +1,37 @@
+name: Sintra Meeting Action Evaluation
+
+on:
+  push:
+    branches:
+      - feat/sintra-model-evaluation-20261024
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sintra-model-evaluation
+  cancel-in-progress: true
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run deterministic synthetic baseline
+        run: |
+          npx tsx scripts/bench-meeting-actions.ts > meeting-evaluation.json
+          node -e "const r=require('./meeting-evaluation.json'); if(r.dataset!==14||r.syntheticOnly!==true||r.method!=='local-rules-v1')process.exit(1); console.log('Baseline:',r.counts,r.metrics)"
+      - name: Run source validator tests and all other unit checks
+        run: npm test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sintra-meeting-evaluation-synthetic
+          path: meeting-evaluation.json
+          retention-days: 30
