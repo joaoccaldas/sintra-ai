@@ -4,12 +4,13 @@ on:
   push:
     branches:
       - release/sintra-br-beta-20261024
+      - feat/sintra-first-real-exercise-20261024
 
 permissions:
   contents: read
 
 concurrency:
-  group: sintra-br-br-beta-preview
+  group: sintra-br-review-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -17,7 +18,8 @@ jobs:
     if: github.repository == 'joaoccaldas/sintra-ai'
     runs-on: ubuntu-latest
     env:
-      SINTRA_PREVIEW_BASE_PATH: /sintra-ai/preview/br-beta
+      SINTRA_PREVIEW_BASE_PATH: ${{ github.ref_name == 'feat/sintra-first-real-exercise-20261024' && '/sintra-ai/preview/lab-beta' || '/sintra-ai/preview/br-beta' }}
+      PREVIEW_SLUG: ${{ github.ref_name == 'feat/sintra-first-real-exercise-20261024' && 'lab-beta' || 'br-beta' }}
       NEXT_TELEMETRY_DISABLED: '1'
     steps:
       - name: Checkout reviewed PR head
@@ -37,7 +39,7 @@ jobs:
         run: |
           set -euo pipefail
           test -f dist/index.html
-          grep -q '/sintra-ai/preview/br-beta/_next/' dist/index.html
+          grep -Fq "/sintra-ai/preview/$PREVIEW_SLUG/_next/" dist/index.html
           grep -qi 'noindex' dist/index.html
           grep -q 'Entenda a IA' dist/index.html
           grep -q 'pratique' dist/index.html
@@ -46,8 +48,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p /tmp/sintra-ui/sintra-ai/preview/br-beta
-          cp -a dist/. /tmp/sintra-ui/sintra-ai/preview/br-beta/
+          mkdir -p "/tmp/sintra-ui/sintra-ai/preview/$PREVIEW_SLUG"
+          cp -a dist/. "/tmp/sintra-ui/sintra-ai/preview/$PREVIEW_SLUG/"
           nohup python3 -m http.server 4173 --directory /tmp/sintra-ui >/tmp/sintra-ui.log 2>&1 &
           echo $! > /tmp/sintra-ui.pid
 
@@ -68,7 +70,7 @@ jobs:
 
       - name: Run responsive Chromium browser QA
         env:
-          SINTRA_VISUAL_URL: http://127.0.0.1:4173/sintra-ai/preview/br-beta/
+          SINTRA_VISUAL_URL: http://127.0.0.1:4173/sintra-ai/preview/${{ env.PREVIEW_SLUG }}/
         run: node scripts/visual-mobile-smoke.mjs
 
       - name: Upload viewport evidence
@@ -104,6 +106,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./preview-dist
-          destination_dir: preview/br-beta
+          destination_dir: preview/${{ github.ref_name == 'feat/sintra-first-real-exercise-20261024' && 'lab-beta' || 'br-beta' }}
           keep_files: true
           commit_message: 'preview: Sintra br-beta ${{ github.sha }}'
