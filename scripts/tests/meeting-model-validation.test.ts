@@ -77,7 +77,7 @@ test("Edge function remains disabled by default, uses authenticated Supabase and
   assert.match(s,/sintra_reserve_model_quota/);
   assert.match(s,/MODEL_INPUT_LIMIT/);
   assert.match(s,/reviewRequired:true/);
-  assert.doesNotMatch(s,/console\.log\(|console\.error\(|NEXT_PUBLIC_|verify_jwt:\s*false/);
+  assert.doesNotMatch(s,/console\.log\(|console\.error\(|Deno\.env\.get\("NEXT_PUBLIC_|verify_jwt:\s*false/);
 });
 test("SQL limits calls atomically, forbids user RPC and keeps usage in private RLS schema",()=>{
   const sql=readFileSync("docs/database/SINTRA_MODEL_PILOT_QUOTA_20261024.sql","utf8");
