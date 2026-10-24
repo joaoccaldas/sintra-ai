@@ -1,0 +1,26 @@
+/* Sintra: one thought, one action, one lightweight ond.ai open current. */
+.hero { background:var(--ond-porcelain,#F7F8F5); color:var(--ond-ink,#172238); isolation:isolate; overflow:hidden; border-bottom:1px solid var(--ond-line,#DDE5EE); }
+.shell { width:min(100%,1240px); margin:auto; padding:clamp(108px,11vw,148px) clamp(24px,4vw,56px) 41px; }
+.mainGrid { display:grid; grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr); gap:clamp(28px,4.2vw,64px); align-items:center; }
+.intro { display:flex; flex-direction:column; align-items:flex-start; min-width:0; }
+.eyebrow { display:inline-flex; align-items:center; gap:11px; margin:0 0 27px; font:650 11px/1.45 var(--font-manrope),system-ui,sans-serif; letter-spacing:.14em; color:var(--sintra-coral-ink,#B65344); }
+.eyebrowMark { width:25px; height:2px; background:var(--sintra-coral-ink,#B65344); }
+.heading { margin:0; max-width:740px; font:730 clamp(47px,5.3vw,73px)/1.06 var(--font-manrope),Inter,system-ui,sans-serif; letter-spacing:-.052em; text-wrap:balance; }
+.heading em { display:block; margin-top:.06em; font-weight:400; font-family:var(--font-instrument),Georgia,serif; letter-spacing:-.042em; color:var(--sintra-coral-ink,#B65344); }
+.lead { color:var(--ond-muted,#586376); max-width:575px; font:400 clamp(16px,1.5vw,18px)/1.62 var(--font-manrope),system-ui,sans-serif; margin:24px 0 29px; }
+.heroActions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; width:100%; }
+.primaryCta { min-height:46px; display:inline-flex; justify-content:center; align-items:center; gap:10px; padding:11px 20px; border-radius:12px; background:var(--ond-violet,#5B48D9); color:white; text-decoration:none; font:650 14px/1.25 var(--font-sans); }
+.primaryCta:hover,.primaryCta:focus-visible { background:#4533B1; }
+.art { min-height:580px; position:relative; isolation:isolate; overflow:hidden; border:1px solid var(--ond-line,#DDE5EE); border-radius:22px; background:radial-gradient(circle at 63% 32%,rgb(91 72 217 / .14),transparent 30%),radial-gradient(circle at 19% 17%,rgb(246 200 142 / .22),transparent 39%),linear-gradient(150deg,#fff,#F4F6FE); }
+.art::after { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(180deg,transparent 42%,rgb(255 255 255 / .85) 100%); }
+.current { position:absolute; width:114%; max-width:none; left:-7%; top:10%; height:70%; filter:drop-shadow(0 9px 19px rgb(91 72 217 / .08)); }
+.artFooter { position:absolute; bottom:33px; left:34px; right:34px; z-index:1; display:grid; gap:12px; }
+.artFooter > span { font:620 10px/1.4 var(--font-manrope),system-ui,sans-serif; letter-spacing:.11em; color:var(--ond-muted,#586376); }
+.artFooter strong { font:650 clamp(28px,3vw,42px)/1.13 var(--font-manrope),system-ui,sans-serif; letter-spacing:-.045em; color:var(--ond-ink,#172238); }
+.artFooter em { font:400 italic clamp(30px,3.4vw,45px)/1.1 var(--font-instrument),Georgia,serif; color:var(--ond-violet,#5B48D9); }
+.trust { display:flex; align-items:center; justify-content:center; gap:10px; margin:30px 0 0; color:var(--ond-muted,#586376); font:450 12px/1.6 var(--font-manrope),system-ui,sans-serif; text-align:center; }
+.trust svg { color:var(--ond-violet,#5B48D9); flex:none; }
+@media (max-width:1100px) { .mainGrid {grid-template-columns:minmax(0,1fr) minmax(270px,.78fr);gap:26px;} .heading {font-size:clamp(44px,5.2vw,63px);} .art {min-height:520px;} }
+@media (max-width:760px) { .shell {padding:104px 24px 36px;} .mainGrid {grid-template-columns:minmax(0,1fr);} .heading {max-width:700px;font-size:clamp(42px,8.5vw,61px);} .art {display:none;} .trust {justify-content:flex-start;text-align:left;} }
+@media (max-width:540px) { .shell {padding:98px 24px 28px;} .eyebrow {font-size:10px;margin-bottom:19px;letter-spacing:.1em;} .heading {font-size:clamp(40px,10.5vw,48px);line-height:1.08;} .lead {font-size:16px;margin:21px 0 25px;} .heroActions {gap:9px;} .primaryCta {padding-inline:14px; flex:1; min-width:164px;} .trust {align-items:flex-start;font-size:11px;margin-top:24px;} }
+@media (prefers-reduced-motion:reduce) { .primaryCta {transition:none;} }

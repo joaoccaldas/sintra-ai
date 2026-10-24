@@ -1,0 +1,63 @@
+/*
+ * ond.ai → Sintra endorsed product token mapping.
+ * Source: "the story teller guide", edition 1.0, pp. 13–20, 23–24, 31–35.
+ * Source identity is a WORKING DESIGN; logo, font rights and domains still
+ * require trademark/master-asset and production sign-off.
+ *
+ * Semantic colors are shared; Sintra alone owns warm coral as an accent.
+ * Existing dark/forest/ocean choices remain available as user preferences.
+ */
+:root {
+  --ond-porcelain: #F7F8F5;
+  --ond-ink: #172238;
+  --ond-white: #FFFFFF;
+  --ond-violet: #5B48D9;
+  --ond-ocean: #0789B0;
+  --ond-cobalt: #2855D5;
+  --ond-sand: #F0E9DE;
+  --ond-line: #DDE5EE;
+  --ond-muted: #586376;
+  --sintra-coral: #D96B59;
+  --sintra-coral-ink: #B65344; /* ≥4.5:1 on pure white */
+  --sintra-coral-soft: #FDECE7;
+  --sintra-blueprint: #EDF0FD;
+}
+
+[data-theme="light"] {
+  /* Light by default per parent brand; map onto current semantic system. */
+  color-scheme: light;
+  --void-rgb: 247 248 245;
+  --abyss-rgb: 255 255 255;
+  --night-rgb: 246 247 251;
+  --steel-rgb: 235 239 246;
+  --steel-2-rgb: 228 233 240;
+  --hairline-rgb: 221 229 238;
+  --violet-rgb: 91 72 217;
+  --violet-bright-rgb: 91 72 217;
+  --violet-deep-rgb: 70 50 186;
+  --cyan-ice-rgb: 7 137 176;
+  --fg-1-rgb: 23 34 56;
+  --fg-2-rgb: 48 62 79;
+  --fg-3-rgb: 82 94 111;
+  --fg-4-rgb: 94 106 119;
+  --fg-on-violet-rgb: 255 255 255;
+}
+
+[data-theme="light"] .sintra-header,
+[data-theme="light"] .sidebar-rail {
+  background: rgb(var(--abyss-rgb) / .97);
+  border-color: var(--ond-line);
+}
+[data-theme="light"] .sintra-header {
+  box-shadow: 0 2px 20px rgb(23 34 56 / .025);
+}
+[data-theme="light"] .sidebar-rail nav a {
+  border-radius: 10px;
+}
+[data-theme="light"] .sidebar-rail nav a:hover {
+  background: rgb(91 72 217 / .045);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ond-current-line { animation: none !important; }
+}

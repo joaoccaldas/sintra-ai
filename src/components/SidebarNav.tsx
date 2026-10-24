@@ -32,15 +32,13 @@ import {
   Wrench,
   X,
 } from "lucide-react";
-import TesseractMark from "./TesseractMark";
+import SintraBrandLockup from "./SintraBrandLockup";
 import { useFocusTrap } from "@/lib/hooks";
 import { useSidebar } from "@/context/SidebarContext";
 import { useTheme, type Theme } from "@/context/ThemeContext";
 import { useLanguage } from "@/context/LanguageContext";
 import type { Translations } from "@/lib/i18n";
 import { BASE_PATH } from "@/lib/constants";
-import { AI_NEWS } from "@/lib/newsDataCombined";
-import { AI_TOOLS } from "@/lib/toolsData";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 interface NavItem {
@@ -66,7 +64,7 @@ const NAV: NavGroup[] = [
       { href: `${BASE_PATH}/knowledge/`, labelKey: "side_knowledge", Icon: BookOpen, pathKey: "knowledge" },
       { href: `${BASE_PATH}/automate/`, labelKey: "side_automate", Icon: Workflow, pathKey: "automate" },
       { href: `${BASE_PATH}/library/`, labelKey: "side_library", Icon: Sparkles, count: USE_CASES_COUNT, pathKey: "library" },
-      { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, count: AI_NEWS.length, pathKey: "news" },
+      { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, pathKey: "news" },
       { href: `${BASE_PATH}/weekly/`, labelKey: "side_weekly", Icon: Calendar, pathKey: "weekly" },
       { href: `${BASE_PATH}/topics/`, labelKey: "side_topics", Icon: Tag, pathKey: "topics" },
       { href: `${BASE_PATH}/ai-history/`, labelKey: "side_history", Icon: Clock, pathKey: "ai-history" },
@@ -89,7 +87,7 @@ const NAV: NavGroup[] = [
     id: "reference",
     labelKey: "side_group_reference",
     items: [
-      { href: `${BASE_PATH}/tools/`, labelKey: "side_tools", Icon: Wrench, count: AI_TOOLS.length, pathKey: "tools" },
+      { href: `${BASE_PATH}/tools/`, labelKey: "side_tools", Icon: Wrench, pathKey: "tools" },
       { href: `${BASE_PATH}/models/`, labelKey: "side_models", Icon: Cpu, pathKey: "models" },
       { href: `${BASE_PATH}/claude/`, labelKey: "side_claude", Icon: Brain, pathKey: "claude" },
       { href: `${BASE_PATH}/google-ai-tools/`, labelKey: "side_google", Icon: SearchIcon, pathKey: "google-ai-tools" },
@@ -97,6 +95,14 @@ const NAV: NavGroup[] = [
       { href: `${BASE_PATH}/token-calculator/`, labelKey: "side_costcalc", Icon: Calculator, pathKey: "token-calculator" },
     ],
   },
+];
+
+// The only visible primary destinations besides Home. Everything else stays
+// available in collapsible category drawers, without duplicating these links.
+const PRIMARY_NAV: NavItem[] = [
+  { href: `${BASE_PATH}/news/`, labelKey: "side_news", Icon: Newspaper, pathKey: "news" },
+  { href: `${BASE_PATH}/learn/`, labelKey: "side_learn", Icon: GraduationCap, pathKey: "learn" },
+  { href: `${BASE_PATH}/library/`, labelKey: "side_library", Icon: Sparkles, pathKey: "library" },
 ];
 
 const THEMES: { id: Theme; labelKey: keyof Translations; Icon: React.ElementType }[] = [
@@ -151,9 +157,9 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
   const { theme, setTheme } = useTheme();
   const { t } = useLanguage();
   const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({
-    discover: true,
-    learn: true,
-    reference: true,
+    discover: false,
+    learn: false,
+    reference: false,
   });
 
   const activeKey = activePathKey(pathname);
@@ -177,6 +183,14 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
       </div>
 
       <nav className="px-2 pb-3 space-y-3 overflow-y-auto flex-1">
+        <div className="space-y-1" aria-label={t.side_home}>
+          {PRIMARY_NAV.map(item => (
+            <div key={item.href} onClick={onNavigate}>
+              <NavLink item={item} active={activeKey === item.pathKey} label={t[item.labelKey] as string} iconOnly={collapsed} />
+            </div>
+          ))}
+        </div>
+        <div className="border-t border-hairline-soft pt-3" />
         {NAV.map(group => (
           <div key={group.id}>
             {!collapsed && (
@@ -199,7 +213,7 @@ function SidebarTree({ collapsed, onNavigate }: { collapsed: boolean; onNavigate
                   transition={{ duration: 0.18 }}
                   className="space-y-0.5 overflow-hidden"
                 >
-                  {group.items.map(item => {
+                  {group.items.filter(item => !PRIMARY_NAV.some(primary => primary.pathKey === item.pathKey)).map(item => {
                     const label = t[item.labelKey] as string;
                     return (
                       <div key={item.href} onClick={onNavigate}>
@@ -274,10 +288,7 @@ export default function SidebarNav() {
         <div className="h-16 flex items-center gap-2 px-3 border-b border-hairline">
           {!collapsed && (
             <a href={BASE_PATH + "/"} className="flex items-center gap-2 min-w-0">
-              <TesseractMark size={28} />
-              <span className="font-serif text-[18px] leading-none text-fg-1 truncate">
-                Sintra <em className="italic text-violet-bright">AI</em>
-              </span>
+              <SintraBrandLockup compact />
             </a>
           )}
           <button
@@ -312,10 +323,7 @@ export default function SidebarNav() {
               className="sidebar-rail fixed left-0 top-0 bottom-0 z-[60] w-[min(86vw,320px)] flex flex-col border-r border-hairline bg-abyss shadow-2xl lg:hidden"
             >
               <div className="h-16 flex items-center gap-2 px-4 border-b border-hairline">
-                <TesseractMark size={28} />
-                <span className="font-serif text-[18px] leading-none text-fg-1">
-                  Sintra <em className="italic text-violet-bright">AI</em>
-                </span>
+                <SintraBrandLockup compact />
                 <button
                   type="button"
                   onClick={() => setMobileOpen(false)}

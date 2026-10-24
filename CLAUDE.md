@@ -13,98 +13,39 @@ Check (validate + typecheck + build): `npm run check`.
 
 ---
 
-## Daily news update task
+## News, signal feeds and editorial policy (Oct 2026)
 
-> **Scheduled daily updates run `/update-news`** (`.claude/commands/update-news.md`),
-> which appends new items to **`LATEST_AI_NEWS` in `src/lib/newsLatestData.ts`**
-> (the curated feed that wins over the historical archive via
-> `newsDataCombined.ts`), gates on `npm run check`, deploys, and opens a GitHub
-> issue on any failure. New daily items go in `newsLatestData.ts`, not the
-> historical `newsData.ts`. The manual procedure below documents the schema and
-> still applies for ad-hoc edits to the historical archive.
+> **Use `.claude/commands/update-news.md` as the only editorial update protocol.**
+> It writes reviewed items to `src/lib/newsLatestData.ts` on a feature
+> branch and submits a draft PR for explicit human approval. Never append to
+> historical `src/lib/newsData.ts`, direct-push `main`, or publish a
+> model-generated suggestion without independent source checks.
 >
-> **`/manage-sintra`** (`.claude/commands/manage-sintra.md`) is the broader
-> reference skill — full structure, every schema, how to update each content
-> type. **`/update-sintra`** (`.claude/commands/update-sintra.md`) runs news +
-> use-case updates end to end, deploys, and verifies the live site actually
-> matches what was just shipped — use it instead of the manual procedure below
-> when you want the whole loop automated.
+> The daily **GitHub Pages build** (`.github/workflows/deploy.yml`) refreshes
+> `src/data/liveFeed.generated.json` from RSS/Atom/Hacker News **at build
+> time**. It does NOT automatically run a Claude editorial writer. A build
+> feed item is a provider signal, not Sintra editorial verification.
+>
+> `scripts/update-news.mjs` is now a **candidate generator only**. It returns
+> unverified JSON suggestions without changing files or deploying.
+> The pure `news-candidates.mjs` checks test schema, source URL and obvious
+> duplicates, **not** the truth of factual claims.
+>
+> `.claude/commands/update-sintra.md` adds optional use-case proposals while
+> retaining the same review and authorization gates.
 
-When asked to update the news, follow this procedure exactly:
+### Canonical update procedure
 
-### 1. Check what's already in the database
+1. Compare curated and historic collections for IDs, titles, URLs and event duplicates.
+2. Independently read primary sources, verifying dates, numbers, quotations, and contradictory reports.
+3. Add approved facts only to `src/lib/newsLatestData.ts`, using a real HTTPS source URL, factual date (day only if known), tags, `why_it_matters` and `what_to_try`.
+4. Run `npm run check`, review the generated RSS, JSON, and page and open a **draft PR** with sources, failures and test evidence.
+5. Require explicit editor/owner approval for merge, deployment, and external distribution.
+6. After approved publication, compare real deployed HTML and feeds against exact source URLs. A green build does not prove publishing.
 
-Read `src/lib/newsData.ts` and collect all existing `id` values.
-The most recent `dateNum`/`dateDay` tells you how far the database extends.
-**Always grep for key terms before adding** — many items that look new are already present.
-
-```bash
-grep -i "claude opus 4.8\|your search term" src/lib/newsData.ts
-```
-
-### 2. Search for new AI events
-
-Search the web for significant AI news since the most recent item.
-Focus on:
-- New model releases or major updates (Claude, GPT, Gemini, LLaMA, Mistral, DeepSeek, Grok…)
-- Record benchmark scores (SWE-bench, GPQA, ARC-AGI, MMLU, AIME…)
-- Major product launches: agents, APIs, tools
-- Key industry events: acquisitions, funding rounds, partnerships, policy
-- Brazil-specific AI news (tag `country: "BR"`)
-- Sweden-specific AI news (tag `country: "SE"`)
-
-Only include events that are **real and verifiable** — check an official source.
-Skip anything speculative or already in the database.
-
-### 3. Add new items
-
-Append `NewsItem` objects to `AI_NEWS` in `src/lib/newsData.ts`, before the closing `];`:
-
-```ts
-  {
-    id: "kebab-case-unique-id",      // globally unique across all items
-    date: "May 2026",                // "Mon YYYY"
-    dateNum: 202605,                 // YYYYMM — primary sort key
-    dateDay: 28,                     // optional: day for intra-month ordering
-    title: "Concise factual title",
-    summary:
-      "2–3 sentences. Factual. Include specific numbers/benchmarks. No hype.",
-    tags: ["Company", "ModelName", "Feature"],
-    significance: "landmark" | "major" | "notable",
-    provider: "Company Name",
-    providerColor: "#hexcolor",
-    url: "https://official-announcement-url",
-    country: "BR",                   // optional: "BR" or "SE" for regional items
-    why_it_matters: "...",           // optional practitioner insight
-    what_to_try: "...",              // optional action
-  },
-```
-
-**Provider colors:**
-OpenAI `#10a37f` · Anthropic `#d97706` · Google `#4285f4` · Meta `#0866ff`
-Microsoft `#0078d4` · Apple `#555555` · Mistral AI `#ff7000` · DeepSeek `#1a73e8`
-xAI `#000000` · Nvidia `#76b900`
-
-**Significance guide:**
-- `landmark` — changes the trajectory of the field (≤3 per year)
-- `major` — significant event practitioners should know about
-- `notable` — worth tracking but not world-changing
-
-### 4. Verify the build
-
-```bash
-npm run build   # also regenerates public/feed.xml, public/feed.json, public/llms*.txt, public/api/*.json
-```
-
-### 5. Commit news files only
-
-```bash
-git add src/lib/newsData.ts public/feed.xml public/feed.json
-git commit -m "chore: news update $(date -u +%Y-%m-%d)"
-git push
-```
-
-Do **not** commit `dist/` — deployment is handled separately via git plumbing.
+`src/lib/newsDataCombined.ts` merges editorial, historical, build-time and
+derived items with distinct origin/review status. Source publication time,
+editor check time, and build generation time are separate.
 
 ---
 

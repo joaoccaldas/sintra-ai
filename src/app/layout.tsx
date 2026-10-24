@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { BASE_PATH } from "@/lib/constants";
-import { Instrument_Serif, Manrope, Geist_Mono } from "next/font/google";
+import "./font-fallback.css";
 import "./globals.css";
 import "./hardening.css";
+import "./ond-brand.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { SavedPromptsProvider } from "@/context/SavedPromptsContext";
 import { ThemeProvider } from "@/context/ThemeContext";
@@ -15,20 +16,8 @@ import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
 
-const editorial = Instrument_Serif({
-  subsets: ["latin"], weight: "400", style: ["normal", "italic"],
-  variable: "--font-instrument", display: "swap",
-});
-const manrope = Manrope({
-  subsets: ["latin"], variable: "--font-manrope", display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-geist-mono",
-  display: "swap",
-});
+// Beta: no network font requests during compilation. See font-fallback.css
+// and docs/RELEASE_20261024_INTEGRATION_AND_FONT_ADR.md for exact asset plan.
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -41,45 +30,46 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  // Preview copies must not compete with canonical GitHub Pages content.
+  ...(process.env.SINTRA_PREVIEW_BASE_PATH
+    ? { robots: { index: false, follow: false } }
+    : {}),
   metadataBase: new URL("https://joaoccaldas.github.io"),
   applicationName: "Sintra AI",
-  manifest: `${BASE_PATH}/manifest.json`,
-  title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
-  description: `Track what is changing in AI, understand how it works, compare tools and models, and apply ${USE_CASES_COUNT} practical use cases.`,
+  // Temporary preview paths must not be installable as the live PWA.
+  manifest: process.env.SINTRA_PREVIEW_BASE_PATH ? undefined : `${BASE_PATH}/manifest.json`,
+  title: "Sintra AI — Notícias, aprendizado e IA na prática para o Brasil",
+  description: `IA no Brasil primeiro, notícias do mundo com fontes, trilhas de aprendizado e ${USE_CASES_COUNT} exemplos de aplicação no trabalho e no dia a dia.`,
   keywords: [
-    "AI news",
-    "AI learning paths",
-    "AI tools",
-    "AI model comparison",
-    "AI prompts",
-    "ChatGPT prompts",
-    "Claude prompts",
-    "AI use cases",
-    "prompt engineering",
-    "FP&A AI",
-    "finance AI prompts",
-    "data analytics AI",
+    "inteligência artificial no Brasil",
+    "notícias de IA",
+    "aprender inteligência artificial",
+    "IA na prática",
+    "casos de uso IA",
+    "IA para trabalho",
+    "comunidade de inteligência artificial",
+    "prompts em português",
+    "AI news Brazil",
   ],
   openGraph: {
-    title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
-    description: `Track AI developments, build practical understanding, compare tools and models, and use ${USE_CASES_COUNT} copy-ready workflows.`,
+    title: "Sintra Brasil, by ond.ai | Entenda a IA. Coloque em prática.",
+    description: "Brasil primeiro, depois o mundo. Notícias com fontes e aplicações práticas de inteligência artificial para aprender fazendo.",
     url: SITE_URL,
-    siteName: "Sintra AI",
+    locale: "pt_BR",
+    siteName: "Sintra Brasil",
     type: "website",
-    images: [
-      {
-        url: `${SITE_URL}/tesseract-hero.webp`,
-        width: 1200,
-        height: 630,
-        alt: "Sintra AI — daily intelligence, structured learning and practical use cases",
-      },
-    ],
+    images: [{
+      url: `${SITE_URL}/opengraph-image`,
+      width: 1200,
+      height: 630,
+      alt: "Sintra Brasil, by ond.ai. Entenda a IA. Coloque em prática.",
+    }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sintra AI — Daily AI Intelligence, Learning & Use Cases",
-    description: `Track AI developments, build practical understanding, and use ${USE_CASES_COUNT} copy-ready workflows.`,
-    images: [`${SITE_URL}/tesseract-hero.webp`],
+    title: "Sintra Brasil | Inteligência que vira ação",
+    description: "Notícias de inteligência artificial e casos reais para aprender fazendo.",
+    images: [`${SITE_URL}/opengraph-image`],
   },
   alternates: {
     types: {
@@ -96,16 +86,16 @@ const siteJsonLd = {
       "@id": `${SITE_URL}/#organization`,
       name: "Sintra AI",
       url: SITE_URL,
-      logo: `${SITE_URL}/tesseract-mark.svg`,
+      logo: `${SITE_URL}/sintra-mark.svg`,
     },
     {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: "Sintra AI",
-      description: "Daily AI intelligence, structured learning, model and tool comparisons, and practical use cases.",
+      description: "Radar brasileiro de inteligência artificial, notícias globais com fontes e aprendizado prático.",
       publisher: { "@id": `${SITE_URL}/#organization` },
-      inLanguage: ["en", "pt-BR"],
+      inLanguage: ["pt-BR"],
     },
   ],
 };
@@ -117,7 +107,7 @@ const themeBootScript = `
     var saved = localStorage.getItem("sintra-theme");
     var theme = allowed.indexOf(saved) >= 0
       ? saved
-      : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      : "light";
     document.documentElement.dataset.theme = theme;
   } catch (_) {}
 })();`;
@@ -125,9 +115,9 @@ const themeBootScript = `
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       suppressHydrationWarning
-      className={`${editorial.variable} ${manrope.variable} ${geistMono.variable}`}
+
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
@@ -138,7 +128,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           src="https://plausible.io/js/script.js"
         />
         <link rel="icon" href={`${BASE_PATH}/favicon.ico`} sizes="any" />
-        <link rel="icon" type="image/svg+xml" href={`${BASE_PATH}/tesseract-mark.svg`} />
+        <link rel="icon" type="image/svg+xml" href={`${BASE_PATH}/sintra-mark.svg`} />
         <link rel="apple-touch-icon" href={`${BASE_PATH}/apple-touch-icon.png`} />
         <script
           type="application/ld+json"

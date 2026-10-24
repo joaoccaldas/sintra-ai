@@ -8,6 +8,7 @@ export interface YouTubeVideo {
   tags: string[];
   duration?: string;
   year?: number;
+  uploadedAt?: string; // Exact YYYY-MM-DD, only after checking original publisher metadata.
 }
 
 export const YOUTUBE_VIDEOS: YouTubeVideo[] = [

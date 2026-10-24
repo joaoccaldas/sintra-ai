@@ -12,27 +12,22 @@ interface LanguageCtx {
 }
 
 const Ctx = createContext<LanguageCtx>({
-  locale: "en",
-  t:      translations.en,
+  locale: "pt",
+  t:      translations.pt,
   toggle: () => {},
 });
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  // Render "en" on the server and the first client paint so static prerender and
-  // hydration agree; the stored preference or browser language is applied in the
-  // effect below, right after mount.
-  const [locale, setLocale] = useState<Locale>("en");
+  // Brazil-first static HTML begins in Portuguese; a stored explicit English
+  // preference applies after hydration. True /pt-br/ and /en/ routes are a
+  // subsequent migration and must not be claimed as complete here.
+  const [locale, setLocale] = useState<Locale>("pt");
 
-  // First mount: honour a saved choice, otherwise auto-detect from the browser
-  // language (pt-BR / pt-* → Portuguese). Runs once.
+  // First mount: restore the visitor's explicit choice. Brazil is the
+  // default even when browser/device locale is English.
   useEffect(() => {
     const stored = localStorage.getItem(LOCALE_KEY) as Locale | null;
-    if (stored === "en" || stored === "pt") {
-      setLocale(stored);
-      return;
-    }
-    const nav = (navigator.languages?.[0] || navigator.language || "").toLowerCase();
-    if (nav.startsWith("pt")) setLocale("pt");
+    if (stored === "en" || stored === "pt") setLocale(stored);
   }, []);
 
   // Persist the active choice and keep <html lang> in sync for a11y/SEO.

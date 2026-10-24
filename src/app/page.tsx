@@ -1,8 +1,7 @@
-"use client";
-
 import Header from "@/components/Header";
-import ImmersiveHero from "@/components/ImmersiveHero";
-import ContentNav from "@/components/ContentNav";
+import BrazilFirstHero from "@/components/BrazilFirstHero";
+import BrazilRadar from "@/components/BrazilRadar";
+import HomeEditorialSections from "@/components/HomeEditorialSections";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
@@ -13,8 +12,9 @@ export default function Home() {
       <div className="bg-void min-h-screen">
         <Header total={USE_CASES_COUNT} />
         <main id="main-content">
-          <ImmersiveHero total={USE_CASES_COUNT} />
-          <ContentNav />
+          <BrazilFirstHero />
+          <BrazilRadar />
+          <HomeEditorialSections />
         </main>
         <Footer />
         <BackToTop />

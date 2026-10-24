@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import TesseractMark from "./TesseractMark";
+import SintraBrandLockup from "./SintraBrandLockup";
 import { BASE_PATH } from "@/lib/constants";
 import { useLanguage } from "@/context/LanguageContext";
 import type { Translations } from "@/lib/i18n";
@@ -45,63 +44,28 @@ const NAV_COLS: NavCol[] = [
   },
 ];
 
-function NewsletterCapture() {
-  const { t } = useLanguage();
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
-  const endpoint = process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT;
-
-  const submit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const value = email.trim();
-    if (!value || !endpoint) return;
-    setStatus("sending");
-    try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: value }),
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      setEmail("");
-      setStatus("done");
-    } catch {
-      setStatus("error");
-    }
-  };
-
+function NewsletterComingSoon() {
+  const { locale } = useLanguage();
+  const pt = locale === "pt";
   return (
-    <div className="border-b border-violet/[0.12] py-10 mb-10">
-      <div className="max-w-md">
-        <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-violet-bright mb-2">{t.footer_newsletter_eyebrow}</p>
-        <h3 className="font-serif font-light text-[22px] text-fg-1 mb-1">{t.footer_newsletter_title}</h3>
-        <p className="font-sans text-[13px] text-fg-3 mb-4">{t.footer_newsletter_sub}</p>
-        {!endpoint ? (
-          <p className="font-mono text-[12px] text-fg-4">{t.footer_newsletter_disabled}</p>
-        ) : status === "done" ? (
-          <p className="font-mono text-[13px] text-emerald-400">{t.footer_newsletter_done}</p>
-        ) : (
-          <form onSubmit={submit} className="flex gap-2 max-w-sm">
-            <input
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              placeholder="your@email.com"
-              required
-              autoComplete="email"
-              className="flex-1 bg-white/[0.05] border border-hairline rounded-lg px-3 py-2 font-mono text-[12px] text-fg-1 placeholder:text-fg-4 outline-none focus:border-violet/50 focus:bg-white/[0.07] transition-all"
-            />
-            <button
-              type="submit"
-              disabled={status === "sending"}
-              className="px-4 py-2 rounded-lg bg-violet/20 border border-violet/40 font-mono text-[11px] text-violet-bright hover:bg-violet/30 hover:border-violet/70 transition-all whitespace-nowrap disabled:opacity-50"
-            >
-              {status === "sending" ? t.footer_sending : t.footer_subscribe}
-            </button>
-          </form>
-        )}
-        {status === "error" && <p className="font-mono text-[11px] text-red-300 mt-2">{t.footer_newsletter_error}</p>}
+    <div className="border-b border-hairline py-7 mb-9 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="max-w-xl">
+        <p className="text-[11px] font-bold tracking-[0.11em] text-[#B65344] mb-1">
+          {pt ? "SINTRA / BOLETIM BRASIL" : "SINTRA / BRAZIL DIGEST"}
+        </p>
+        <h3 className="font-sans font-semibold text-xl tracking-[-0.035em] text-fg-1">
+          {pt ? "Uma boa leitura. Em preparação." : "A useful digest. Coming soon."}
+        </h3>
+        <p className="font-sans text-[13px] text-fg-3 leading-relaxed mt-1">
+          {pt
+            ? "Notícias com fontes, contexto brasileiro e aplicações que você pode testar. A inscrição ainda não está aberta."
+            : "Source-linked news, Brazilian context and practical AI examples. Subscriptions aren't open yet."}
+        </p>
       </div>
+      <a href="mailto:konamundo@gmail.com?subject=Sintra%20Brasil%20-%20sugest%C3%A3o%20editorial"
+         className="inline-flex shrink-0 items-center justify-center min-h-[44px] px-4 border border-hairline rounded-xl bg-white text-[#172238] font-sans font-semibold text-[13px] hover:border-[#5B48D9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#5B48D9]">
+        {pt ? "Sugerir uma pauta" : "Suggest a story"} ↗
+      </a>
     </div>
   );
 }
@@ -111,14 +75,11 @@ export default function Footer() {
   return (
     <footer className="border-t border-violet/[0.12] pt-14 pb-8 bg-abyss">
       <div className="max-w-[1200px] mx-auto px-6 md:px-8">
-        <NewsletterCapture />
-        <div className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8 pb-10">
+        <NewsletterComingSoon />
+        <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-5 md:gap-8 pb-8">
           <div className="col-span-2 md:col-span-1 flex flex-col gap-2.5">
-            <a href={`${BASE_PATH}/`} className="flex items-center gap-2.5 text-violet-bright">
-              <TesseractMark size={18} />
-              <span className="font-serif font-normal text-base text-fg-1">
-                Sintra <em className="italic text-violet-bright">Tesseract</em>
-              </span>
+            <a href={`${BASE_PATH}/`} className="flex items-center gap-2.5 text-fg-1">
+              <SintraBrandLockup showEndorsement />
             </a>
             <p className="font-sans text-[13px] leading-[1.55] text-fg-3 max-w-[280px] mt-1">
               {t.footer_tagline}
@@ -127,19 +88,20 @@ export default function Footer() {
           </div>
 
           {NAV_COLS.map(col => (
-            <div key={col.head} className="flex flex-col gap-2.5">
-              <h4 className="font-mono text-[10px] tracking-[0.18em] uppercase text-fg-3 m-0 mb-2">{t[col.head] as string}</h4>
-              {col.links.map(([labelKey, href]) => (
-                <a
-                  key={labelKey}
-                  href={href}
-                  className="font-sans text-[13px] text-fg-2 hover:text-fg-1 transition-colors duration-140"
-                  {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                >
-                  {t[labelKey] as string}
-                </a>
-              ))}
-            </div>
+            <details key={col.head} className="group border-b border-hairline pb-2 md:border-b-0 md:pb-0">
+              <summary className="font-sans font-semibold text-[13px] text-fg-2 py-3 md:py-0 cursor-pointer">
+                {t[col.head] as string}
+              </summary>
+              <div className="flex flex-col gap-2.5 mt-2 md:mt-4 pb-3 md:pb-0">
+                {col.links.map(([labelKey, href]) => (
+                  <a key={labelKey} href={href}
+                    className="font-sans text-[13px] text-fg-3 hover:text-fg-1 focus-visible:underline"
+                    {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+                    {t[labelKey] as string}
+                  </a>
+                ))}
+              </div>
+            </details>
           ))}
         </div>
 

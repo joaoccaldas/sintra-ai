@@ -1,0 +1,31 @@
+.dock {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: stretch;
+  min-height: 70px; padding: 7px 8px calc(7px + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--ond-white, #FFFFFF) 96%, transparent);
+  border-top: 1px solid var(--ond-line, #DDE5EE);
+  box-shadow: 0 -12px 34px rgb(0 0 0 / .16);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+.item {
+  min-width: 0; min-height: 52px; padding: 5px 1px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px; text-decoration: none; border: 0; border-radius: 12px;
+  background: transparent; color: var(--fg-3);
+  font: 600 clamp(9px, 2.45vw, 11px)/1.15 var(--font-sans);
+  cursor: pointer;
+}
+.item span { max-width: 100%; white-space: nowrap; }
+.item:hover, .item:focus-visible { color: var(--fg-1); background: rgb(var(--violet-rgb) / .075); }
+.active { color: var(--sintra-coral-ink, #B65344); background: var(--sintra-coral-soft, #FDECE7); }
+:global([data-theme="dark"]) .dock,
+:global([data-theme="forest"]) .dock,
+:global([data-theme="ocean"]) .dock { background: var(--abyss); border-color: var(--hairline); }
+:global([data-theme="dark"]) .item,
+:global([data-theme="forest"]) .item,
+:global([data-theme="ocean"]) .item { color: var(--fg-2); }
+:global([data-theme="dark"]) .active,
+:global([data-theme="forest"]) .active,
+:global([data-theme="ocean"]) .active { color: var(--fg-1); background: rgb(var(--violet-rgb) / .16); }
+@media (min-width: 1024px) { .dock { display: none; } }

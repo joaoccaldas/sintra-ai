@@ -1,0 +1,16 @@
+/*
+ * Deterministic beta font fallback.
+ *
+ * Never fetch third-party font CSS/binary data during production builds.
+ * Prefer installed Inter and EB Garamond where available, otherwise platform
+ * sans/old-style serif. Exact branded self-hosted OFL font assets require a
+ * separate licensing/asset provenance, checksum and visual-review PR.
+ *
+ * Variables deliberately retain legacy names for 500+ statically exported
+ * pages. Changing those names in a batch would risk breaking older layouts.
+ */
+:root {
+  --font-manrope: "Inter", "Arial", "Helvetica Neue", system-ui, sans-serif;
+  --font-instrument: "EB Garamond", "Iowan Old Style", "Baskerville", Georgia, serif;
+  --font-geist-mono: "Geist Mono", "SFMono-Regular", Consolas, ui-monospace, monospace;
+}
