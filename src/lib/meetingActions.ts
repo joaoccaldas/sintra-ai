@@ -77,8 +77,16 @@ function decomposeLine(source: string): { task: string; owner: string | null; de
 }
 
 function normalizeForIdentity(value: string): string {
-  return value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+  const normalized = value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
     .toLocaleLowerCase("pt-BR").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  const words = normalized.split(" ").filter(Boolean);
+  // Grammar-only normalization after the leading action verb:
+  // "Revisar proposta" and "Revisar a proposta" are the same action here.
+  // Never remove object nouns, negation, quantities or names.
+  if (words.length > 2 && ["a","o","as","os","um","uma","the"].includes(words[1])) {
+    words.splice(1,1);
+  }
+  return words.join(" ");
 }
 
 export function extractMeetingActions(input: string): ExtractionResult {

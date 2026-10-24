@@ -78,6 +78,17 @@ test("deduplicates accents, case, and punctuation while preserving first source"
   assert.equal(out.skippedLines, 2);
 });
 
+test("grammatical articles do not create duplicate tasks, but object nouns remain distinct", () => {
+  const r = extractMeetingActions([
+    "- Atualizar planilha",
+    "- ATUALIZAR a planilha.",
+    "- Atualizar o calendário",
+  ].join("\n"));
+  assert.equal(r.actions.length, 2);
+  assert.equal(r.actions[0].lineNumber, 1);
+  assert.equal(r.actions[1].lineNumber, 3);
+});
+
 test("enforces payload size and action count limits without truncating a user's input silently", () => {
   const tooLong = extractMeetingActions("Enviar a proposta\n".repeat(300));
   assert.ok("Enviar a proposta\n".repeat(300).length > MAX_NOTES_CHARS);

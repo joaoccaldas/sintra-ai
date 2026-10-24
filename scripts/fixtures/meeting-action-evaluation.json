@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0",
+  "dataset": "synthetic-brazilian-meeting-action-benchmark",
+  "kind": "synthetic-only-no-user-data",
+  "description": "Hand-labeled fictional inputs for baseline testing. Ambiguous cases need human adjudication before being treated as ground truth.",
+  "cases": [
+    {
+      "id": "simple-pt",
+      "locale": "pt-BR",
+      "notes": "- Enviar proposta ao cliente\n- Revisar contrato antes da reunião",
+      "expectedLines": [
+        1,
+        2
+      ],
+      "type": "explicit"
+    },
+    {
+      "id": "sample-pt",
+      "locale": "pt-BR",
+      "notes": "Reunião do projeto, exemplo fictício\n- Enviar o resumo para a equipe | Responsável: Ana | Prazo: 30/10/2026\n- Revisar a proposta comercial | Responsável: Pedro\n- Confirmar a reunião com o cliente\n- Não enviar o orçamento antigo",
+      "expectedLines": [
+        2,
+        3,
+        4
+      ],
+      "type": "mixed"
+    },
+    {
+      "id": "narrative-pt",
+      "locale": "pt-BR",
+      "notes": "Joana ficou responsável por mandar a proposta até terça-feira. Marcelo ficou com a revisão do contrato.",
+      "expectedLines": [
+        1
+      ],
+      "type": "narrative"
+    },
+    {
+      "id": "negation-pt",
+      "locale": "pt-BR",
+      "notes": "- Não enviar dados pessoais para fornecedores\n- Validar a versão final",
+      "expectedLines": [
+        2
+      ],
+      "type": "negation"
+    },
+    {
+      "id": "uncertain-pt",
+      "locale": "pt-BR",
+      "notes": "Talvez seja bom criar um calendário se houver orçamento. Precisamos discutir no mês que vem.",
+      "expectedLines": [],
+      "type": "uncertain"
+    },
+    {
+      "id": "english-plain",
+      "locale": "en",
+      "notes": "- Send the notes\n- Review the invoice\n- Do not share the password",
+      "expectedLines": [
+        1,
+        2
+      ],
+      "type": "multilingual"
+    },
+    {
+      "id": "deadline-without-label",
+      "locale": "pt-BR",
+      "notes": "- Enviar orçamento até sexta-feira\n- Revisar o contrato com Ana",
+      "expectedLines": [
+        1,
+        2
+      ],
+      "type": "informal-date"
+    },
+    {
+      "id": "duplicate-pt",
+      "locale": "pt-BR",
+      "notes": "- Atualizar planilha\n- ATUALIZAR a planilha.\n- Confirmar presença",
+      "expectedLines": [
+        1,
+        3
+      ],
+      "type": "duplicates"
+    },
+    {
+      "id": "ambiguous-no-actions",
+      "locale": "pt-BR",
+      "notes": "A reunião foi sobre IA no atendimento. Nenhuma decisão foi tomada.",
+      "expectedLines": [],
+      "type": "abstention"
+    },
+    {
+      "id": "metadata-first",
+      "locale": "pt-BR",
+      "notes": "Responsável: Carla | Ação: Preparar slides | Prazo: sexta-feira",
+      "expectedLines": [
+        1
+      ],
+      "type": "metadata"
+    },
+    {
+      "id": "negation-narrative",
+      "locale": "pt-BR",
+      "notes": "Não devemos enviar a versão antiga. A equipe gostou da apresentação.",
+      "expectedLines": [],
+      "type": "negation"
+    },
+    {
+      "id": "explicit-labeled-en",
+      "locale": "en",
+      "notes": "- Schedule the demo | Owner: Sam | Deadline: Friday",
+      "expectedLines": [
+        1
+      ],
+      "type": "metadata"
+    },
+    {
+      "id": "quantified-pt",
+      "locale": "pt-BR",
+      "notes": "- Organizar 20 entrevistas com pequenas empresas\n- Documentar 3 aprendizados do piloto",
+      "expectedLines": [
+        1,
+        2
+      ],
+      "type": "numbers"
+    },
+    {
+      "id": "privacy-example",
+      "locale": "pt-BR",
+      "notes": "Nunca coloque CPF ou senha em um prompt público.\n- Revisar o plano de privacidade",
+      "expectedLines": [
+        2
+      ],
+      "type": "privacy"
+    }
+  ]
+}
