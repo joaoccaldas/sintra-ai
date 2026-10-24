@@ -1,5 +1,6 @@
 import { withSupabase } from "npm:@supabase/server@1.9.2";
 import { validateModelCandidates, MODEL_INPUT_LIMIT } from "./validation.ts";
+import { readBoundedJson } from "./transport.ts";
 
 const MODEL = "claude-haiku-5-5";
 const EXPECTED_ORIGINS = new Set([
@@ -44,10 +45,12 @@ export default {
     const key = Deno.env.get("SINTRA_ANTHROPIC_API_KEY");
     if (!key) return Response.json({error:"provider-unconfigured"},{status:503});
     const length = Number(req.headers.get("content-length")||0);
-    if (length > 5_200) return Response.json({error:"payload-too-large"},{status:413});
-
-    let body: unknown;
-    try { body = await req.json(); } catch { return Response.json({error:"bad-json"},{status:400}); }
+    if (length > 6_000) return Response.json({error:"payload-too-large"},{status:413});
+    const parsedBody = await readBoundedJson(req,6_000);
+    if (!parsedBody.ok) return Response.json(
+      {error:parsedBody.error},{status:parsedBody.error==="payload-too-large"?413:400}
+    );
+    const body: unknown = parsedBody.value;
     if (!body || typeof body !== "object" || Array.isArray(body)) {
       return Response.json({error:"bad-request"},{status:400});
     }
