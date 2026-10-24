@@ -170,7 +170,11 @@ export default function MeetingActionsLab() {
                   <article key={row.id} className={styles.resultCard}>
                     <div className={styles.resultHead}>
                       <span className={styles.resultNumber}>{String(index + 1).padStart(2, "0")}</span>
-                      <span className={styles.reviewRequired}>{pt ? "REVISÃO NECESSÁRIA" : "REVIEW REQUIRED"}</span>
+                      <span className={reviewed.includes(row.id) ? styles.reviewDone : styles.reviewRequired}>
+                        {reviewed.includes(row.id)
+                          ? (pt ? "REVISADO" : "REVIEWED")
+                          : (pt ? "REVISÃO NECESSÁRIA" : "REVIEW REQUIRED")}
+                      </span>
                     </div>
                     <label className={styles.fieldLabel} htmlFor={`task-${row.id}`}>{pt ? "Tarefa" : "Action"}</label>
                     <input id={`task-${row.id}`} className={styles.taskInput} value={row.draftTitle}
