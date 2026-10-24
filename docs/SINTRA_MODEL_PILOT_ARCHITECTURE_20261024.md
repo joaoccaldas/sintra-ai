@@ -57,3 +57,12 @@ https://platform.claude.com/docs/en/models/haiku-5-5/overview
 - [ ] Synthetic baseline generated with actual numbers
 - [ ] Real authenticated model call and token accounting
 - [ ] End-user opt-in UI and LLM mode comparison
+
+## Verified implementation receipt · 24 October 2026
+
+- **HoldingCo SQL migration `20261024022728_sintra_model_pilot_quota`: APPLIED**. Two new tables under `sintra_internal`, both RLS enabled. Anonymous and authenticated roles have neither quota table SELECT nor quota RPC EXECUTE; `service_role` alone may execute the atomic reservation function. No member account was created.
+- **Edge Function `sintra-meeting-actions`: DEPLOYED version 2**, `verify_jwt=true`, behind `SINTRA_MODEL_ENABLED` feature gate and server-only `SINTRA_ANTHROPIC_API_KEY`. Anonymous GET returned **HTTP 401** after the deployment. No public model mode is activated and no real provider call was tested.
+- **Security correction:** v2 uses a maximum **6 KB streaming request reader** even when the HTTP Content-Length header is omitted/forged. This guards memory before JSON parsing. Added UTF-8/invalid JSON/limit tests.
+- **Synthetic baseline, 14 labeled fictional cases:** initially 17 TP / 1 FP / 1 FN; canonical task article-normalization corrected false duplicate, after 17 TP / **0 FP** / **1 FN**. Current precision 100%, recall 94.4%, F1 approximately 97.1% **on this synthetic dataset only**. Missing narrative `Joana ficou responsável...` remains deliberate baseline limitation.
+- **GitHub CI PASS:** release branch feature PR full validation https://github.com/joaoccaldas/sintra-ai/actions/runs/40054666588: **133 tests**, zero failed; Next static export 514 HTML files, 11,236 links, homepage first-load JS 124 KB. Evaluation https://github.com/joaoccaldas/sintra-ai/actions/runs/40054662231: synthetic baseline JSON artifact and **133 tests** passed.
+- **Remaining open:** no user Auth UI, no approved model secret/flag configuration, no real provider inference or cost/latency/quality comparison, no personal-data processing approval, no public model frontend. Existing local lab remains the only user-facing mode.
