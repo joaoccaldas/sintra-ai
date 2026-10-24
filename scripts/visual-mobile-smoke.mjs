@@ -8,7 +8,7 @@ import { mkdir } from "node:fs/promises";
 import { join } from "node:path";
 
 const base = process.env.SINTRA_VISUAL_URL;
-if (!base || !base.startsWith("http://127.0.0.1:4173/sintra-ai/preview/br-beta/")) {
+if (!base || !/^http:\/\/127\.0\.0\.1:4173\/sintra-ai\/preview\/(?:br-beta|lab-beta)\/$/.test(base)) {
   throw new Error("Expected only isolated local preview URL");
 }
 
