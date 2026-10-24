@@ -75,6 +75,7 @@
 .resultHead { display: flex; justify-content: space-between; align-items: center; gap: 9px; margin-bottom: 13px; }
 .resultNumber { color: #5B48D9; font: 700 12px/1.4 var(--font-geist-mono, monospace); }
 .reviewRequired { color: #A2493E; background: #FDECE7; font: 700 10px/1.4 var(--font-manrope, sans-serif); padding: 5px 7px; border-radius: 5px; letter-spacing: .035em; }
+.reviewDone { color: #1E6554; background: #E9F6EF; font: 700 10px/1.4 var(--font-manrope, sans-serif); padding: 5px 7px; border-radius: 5px; letter-spacing: .035em; }
 .taskInput, .fields input { display: block; min-width: 0; width: 100%; background: white; color: #172238; border: 1px solid #C9D2DD; outline-offset: 3px; border-radius: 9px; padding: 11px 12px; font: 500 13px/1.4 var(--font-manrope, sans-serif); }
 .taskInput { font-size: 15px; font-weight: 620; }
 .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; margin-top: 14px; }
