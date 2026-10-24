@@ -73,7 +73,7 @@ export default function HomeEditorialClient({ world, exercises, refreshedAt }: P
         </div>
         <div className={styles.practiceCards}>
           {exercises.map((exercise, index) => (
-            <a key={exercise.slug} className={styles.practiceCard} href={`${BASE_PATH}/prompts/${exercise.slug}/`}>
+            <a key={exercise.slug} className={styles.practiceCard} href={index === 0 ? `${BASE_PATH}/laboratorio/` : `${BASE_PATH}/prompts/${exercise.slug}/`}>
               <span className={styles.exerciseLabel}>
                 <BookOpen size={15} aria-hidden="true" /> {index === 0
                   ? (pt ? "PARA COMEÇAR" : "FIRST STEP")
