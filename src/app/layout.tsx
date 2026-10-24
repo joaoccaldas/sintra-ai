@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { BASE_PATH } from "@/lib/constants";
-import { EB_Garamond, Inter, Geist_Mono } from "next/font/google";
+import "./font-fallback.css";
 import "./globals.css";
 import "./hardening.css";
 import "./ond-brand.css";
@@ -16,23 +16,8 @@ import { USE_CASES_COUNT } from "@/lib/useCasesCount.generated";
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
 
-// Guide: Inter for clarity, EB Garamond for restrained editorial contrast.
-// Existing CSS variable aliases are retained for reversible compatibility
-// with legacy routes while the design tokens migrate to semantic names.
-const editorial = EB_Garamond({
-  subsets: ["latin"], weight: ["400", "500", "600"], style: ["normal", "italic"],
-  variable: "--font-instrument", display: "swap",
-});
-const manrope = Inter({
-  subsets: ["latin"], variable: "--font-manrope", display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-geist-mono",
-  display: "swap",
-});
+// Beta: no network font requests during compilation. See font-fallback.css
+// and docs/RELEASE_20261024_INTEGRATION_AND_FONT_ADR.md for exact asset plan.
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -132,7 +117,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html
       lang="pt-BR"
       suppressHydrationWarning
-      className={`${editorial.variable} ${manrope.variable} ${geistMono.variable}`}
+
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
