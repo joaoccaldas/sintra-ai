@@ -7,8 +7,53 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 24 Oct 2026 06:18:30 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 06:18:18 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[The AI graveyard: a running list of projects and startups that didn&#8217;t make it]]></title>
+    <description><![CDATA[From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.]]></description>
+    <link>https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Block&#8217;s new voice model sounds eerily human]]></title>
+    <description><![CDATA[Block said that the voice model can run locally on a MacBook M4 Max]]></description>
+    <link>https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.]]></title>
+    <description><![CDATA[A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.]]></description>
+    <link>https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Here are the top AI agents that can live in your text messages]]></title>
+    <description><![CDATA[We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.]]></description>
+    <link>https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[battledrones v14: Compass Rose, a four player map]]></title>
+    <description><![CDATA[Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four ]]></description>
+    <link>https://simonwillison.net/2026/Oct/24/battledrones/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/24/battledrones/</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”]]></title>
@@ -47,15 +92,6 @@
   </item>
 
   <item>
-    <title><![CDATA[From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026]]></title>
-    <description><![CDATA[Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and scaling companies both ins]]></description>
-    <link>https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)]]></title>
     <description><![CDATA[Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.]]></description>
     <link>https://openai.com/index/scaling-storage-one-billion-users-part-two</link>
@@ -80,24 +116,6 @@
     <guid isPermaLink="true">https://openai.com/index/securing-our-frontier-model-training-environment</guid>
     <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia]]></title>
-    <description><![CDATA[The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.]]></description>
-    <link>https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Left alone with nothing to do, AI agents started playing]]></title>
-    <description><![CDATA[MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.]]></description>
-    <link>https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -128,15 +146,6 @@
   </item>
 
   <item>
-    <title><![CDATA[OpenAI working on new $30B raise at $1.25T valuation ahead of IPO]]></title>
-    <description><![CDATA[Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.]]></description>
-    <link>https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/</guid>
-    <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Designing an AI serving harness built to last]]></title>
     <description><![CDATA[The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, b]]></description>
     <link>https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/</link>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/decisions-api</guid>
     <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The Foundations of Scalable AI]]></title>
-    <description><![CDATA[A scalable AI system requires a strong foundation. Data, engineering, platforms, operating models, and governance must converge to work as one. This session from MIT Technology Review&#8217;s EmTech Future conference explores what it takes to build that founda]]></description>
-    <link>https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/</guid>
-    <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
   </item>
 
   <item>
