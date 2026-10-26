@@ -7,8 +7,44 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 25 Oct 2026 06:18:18 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 06:26:24 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Grok releases the first seven minutes of its AI-generated ‘Odyssey’]]></title>
+    <description><![CDATA[The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.]]></description>
+    <link>https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/</guid>
+    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[AI delivers ‘zero financial payoff’ to most companies, Apollo economist says]]></title>
+    <description><![CDATA["Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech."]]></description>
+    <link>https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/</guid>
+    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Seam Cutter]]></title>
+    <description><![CDATA[Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image. I wan]]></description>
+    <link>https://simonwillison.net/2026/Oct/25/seam-cutter/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/25/seam-cutter/</guid>
+    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The hottest AI wearables and gadgets you should know about]]></title>
+    <description><![CDATA[We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.]]></description>
+    <link>https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/</guid>
+    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[The AI graveyard: a running list of projects and startups that didn&#8217;t make it]]></title>
@@ -38,39 +74,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Here are the top AI agents that can live in your text messages]]></title>
-    <description><![CDATA[We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.]]></description>
-    <link>https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/</guid>
-    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[battledrones v14: Compass Rose, a four player map]]></title>
     <description><![CDATA[Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four ]]></description>
     <link>https://simonwillison.net/2026/Oct/24/battledrones/</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Oct/24/battledrones/</guid>
     <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”]]></title>
-    <description><![CDATA[OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.]]></description>
-    <link>https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell]]></title>
-    <description><![CDATA[The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a "nap," and summersaulted on voice command.]]></description>
-    <link>https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Oct/22/de-staat-freedom/</guid>
     <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Build more responsive apps with the Decisions API]]></title>
-    <description><![CDATA[Fast, focused, low-cost decisions for any application.]]></description>
-    <link>https://openai.com/index/decisions-api</link>
-    <guid isPermaLink="true">https://openai.com/index/decisions-api</guid>
-    <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
