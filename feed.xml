@@ -7,8 +7,161 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 26 Oct 2026 06:26:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 06:20:08 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[How OpenAI turned its coding tools into dots, an always-on personal assistant]]></title>
+    <description><![CDATA[Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI agent.]]></description>
+    <link>https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Cohere says Alibaba’s Qwen model tried to send a file to Beijing]]></title>
+    <description><![CDATA[An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while researchers say it’s probably a training quirk and not espionage, the whole thing has people asking how much to trust free Chinese AI.]]></description>
+    <link>https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[GPT-6.1 Terra]]></title>
+    <description><![CDATA[GPT-6.1 Terra It's always interesting to note which aspects of a new model are emphasized in the release announcement. In the case of GPT-6.1 Terra, OpenAI went with visual reasoning and computer use: We’re introducing GPT-6.1 Terra , a fast, efficient model t]]></description>
+    <link>https://simonwillison.net/2026/Oct/26/gpt-61-terra/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/26/gpt-61-terra/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Greptile takes bug detection beyond code review with GPT-6 Astra]]></title>
+    <description><![CDATA[How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.]]></description>
+    <link>https://openai.com/index/greptile-code-review-codex-astra</link>
+    <guid isPermaLink="true">https://openai.com/index/greptile-code-review-codex-astra</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Quoting Jason Koebler]]></title>
+    <description><![CDATA[Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have]]></description>
+    <link>https://simonwillison.net/2026/Oct/26/jason-koebler/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/26/jason-koebler/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Will the real Anthropic please stand up]]></title>
+    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. After weeks of frenzied speculation, Anthropic has filed its IPO prospectus. The 335-page document (100 pages or so are fo]]></description>
+    <link>https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>MIT Tech Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked]]></title>
+    <description><![CDATA[Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier.]]></description>
+    <link>https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[SpaceX locks in $40B GPU financing deal with Apollo]]></title>
+    <description><![CDATA[The financing gives SpaceX another way to fund its rapidly expanding AI ambitions without relying solely on traditional debt markets.]]></description>
+    <link>https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[webframe: evaluated as a scraper and a sandbox]]></title>
+    <description><![CDATA[Research: webframe: evaluated as a scraper and a sandbox webframe is a neat little project from Jeff Lindsay which lets you "run a web page like a program" - you point it at a URL or file and it executes it in a hidden headless web view and outputs console.log]]></description>
+    <link>https://simonwillison.net/2026/Oct/26/webframe-evaluation/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/26/webframe-evaluation/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Our newest AI Quest: Mapping the human brain]]></title>
+    <description><![CDATA[Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”]]></description>
+    <link>https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/</link>
+    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic officially files for its public debut]]></title>
+    <description><![CDATA[Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.]]></description>
+    <link>https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Working with academic communities to build scientific understanding]]></title>
+    <description><![CDATA[OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.]]></description>
+    <link>https://openai.com/index/building-scientific-understanding-with-academic-communities</link>
+    <guid isPermaLink="true">https://openai.com/index/building-scientific-understanding-with-academic-communities</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases]]></title>
+    <description><![CDATA[CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.]]></description>
+    <link>https://openai.com/index/gpt-6-1-sol-coderabbit-code-security</link>
+    <guid isPermaLink="true">https://openai.com/index/gpt-6-1-sol-coderabbit-code-security</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[ChatGPT’s expanding world of work]]></title>
+    <description><![CDATA[Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.]]></description>
+    <link>https://openai.com/index/chatgpt-expanding-world-of-work</link>
+    <guid isPermaLink="true">https://openai.com/index/chatgpt-expanding-world-of-work</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The focus on AI safety disasters ignores everyday harms]]></title>
+    <description><![CDATA[Consider what passes for success in technology policy. An AI company promises that its chatbot will not encourage suicide. A social media platform makes it more difficult for children to buy fentanyl. These are important protections, and they should have exist]]></description>
+    <link>https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>MIT Tech Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How Fanatics and OpenAI streamline the fan experience]]></title>
+    <description><![CDATA[Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.]]></description>
+    <link>https://openai.com/index/fanatics-streamline-fan-experience</link>
+    <guid isPermaLink="true">https://openai.com/index/fanatics-streamline-fan-experience</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How Ultrafast cut incident investigation from hours to minutes at OpenAI]]></title>
+    <description><![CDATA[See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.]]></description>
+    <link>https://openai.com/index/openai-cut-incident-investigation</link>
+    <guid isPermaLink="true">https://openai.com/index/openai-cut-incident-investigation</guid>
+    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[Grok releases the first seven minutes of its AI-generated ‘Odyssey’]]></title>
@@ -17,159 +170,6 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/</guid>
     <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AI delivers ‘zero financial payoff’ to most companies, Apollo economist says]]></title>
-    <description><![CDATA["Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech."]]></description>
-    <link>https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/</guid>
-    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Seam Cutter]]></title>
-    <description><![CDATA[Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image. I wan]]></description>
-    <link>https://simonwillison.net/2026/Oct/25/seam-cutter/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/25/seam-cutter/</guid>
-    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The hottest AI wearables and gadgets you should know about]]></title>
-    <description><![CDATA[We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.]]></description>
-    <link>https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/</guid>
-    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The AI graveyard: a running list of projects and startups that didn&#8217;t make it]]></title>
-    <description><![CDATA[From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.]]></description>
-    <link>https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/</guid>
-    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Block&#8217;s new voice model sounds eerily human]]></title>
-    <description><![CDATA[Block said that the voice model can run locally on a MacBook M4 Max]]></description>
-    <link>https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/</guid>
-    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.]]></title>
-    <description><![CDATA[A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.]]></description>
-    <link>https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/</guid>
-    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[battledrones v14: Compass Rose, a four player map]]></title>
-    <description><![CDATA[Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four ]]></description>
-    <link>https://simonwillison.net/2026/Oct/24/battledrones/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/24/battledrones/</guid>
-    <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quick Study]]></title>
-    <description><![CDATA[Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to]]></description>
-    <link>https://simonwillison.net/2026/Oct/23/quick-study-painter/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/23/quick-study-painter/</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing Kimi K3.1 Pro]]></title>
-    <description><![CDATA[Introducing Kimi K3.1 Pro Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise "Full model weights will be released by Nov 4, 2026". They're also offering a "Highspeed" version that's 2-3x faster, at twice the price (exc]]></description>
-    <link>https://simonwillison.net/2026/Oct/23/kimi-k31-pro/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/23/kimi-k31-pro/</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)]]></title>
-    <description><![CDATA[Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.]]></description>
-    <link>https://openai.com/index/scaling-storage-one-billion-users-part-two</link>
-    <guid isPermaLink="true">https://openai.com/index/scaling-storage-one-billion-users-part-two</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[LitPivot: Developing research ideas through dynamic contextualization within the literature landscape]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/allenai/litpivot</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/allenai/litpivot</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Securing our frontier model training environment]]></title>
-    <description><![CDATA[OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.]]></description>
-    <link>https://openai.com/index/securing-our-frontier-model-training-environment</link>
-    <guid isPermaLink="true">https://openai.com/index/securing-our-frontier-model-training-environment</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI and Poland’s NASK partner to advance AI safety and security]]></title>
-    <description><![CDATA[OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.]]></description>
-    <link>https://openai.com/index/openai-nask-ai-safety-security-partnership</link>
-    <guid isPermaLink="true">https://openai.com/index/openai-nask-ai-safety-security-partnership</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Does Your Model Run on AWS Trainium? Look It Up]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/torch-neuronx-model-support</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/torch-neuronx-model-support</guid>
-    <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/microsoft/thinkingbox-training</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/microsoft/thinkingbox-training</guid>
-    <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Designing an AI serving harness built to last]]></title>
-    <description><![CDATA[The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, b]]></description>
-    <link>https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/</guid>
-    <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[DE STAAT - FREEDOM (Official Music Video)]]></title>
-    <description><![CDATA[DE STAAT - FREEDOM (Official Music Video) OK well this is a first for me... at 00:44 in this new music video by Dutch alternative rock band De Staat : The visual effects are credited to Matties Grooten of Fake it or Leave it . Via flir on Hacker News Tags: mus]]></description>
-    <link>https://simonwillison.net/2026/Oct/22/de-staat-freedom/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/22/de-staat-freedom/</guid>
-    <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
