@@ -7,25 +7,133 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 27 Oct 2026 06:20:08 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 06:15:05 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[How OpenAI turned its coding tools into dots, an always-on personal assistant]]></title>
-    <description><![CDATA[Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI agent.]]></description>
-    <link>https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/</guid>
+    <title><![CDATA[VCs will make billions on Anthropic&#8217;s IPO, but Amazon is set to make much (much) more]]></title>
+    <description><![CDATA[Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.]]></description>
+    <link>https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/</guid>
+    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication]]></title>
+    <description><![CDATA[A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.]]></description>
+    <link>https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/</guid>
     <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
 
   <item>
-    <title><![CDATA[Cohere says Alibaba’s Qwen model tried to send a file to Beijing]]></title>
-    <description><![CDATA[An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while researchers say it’s probably a training quirk and not espionage, the whole thing has people asking how much to trust free Chinese AI.]]></description>
-    <link>https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/</guid>
+    <title><![CDATA[The data center boom has an upside: innovation for the US grid]]></title>
+    <description><![CDATA[As the AI boom stresses the existing power grid, all sorts of new opportunities for grid modernization are also emerging as a result, industry insiders say.]]></description>
+    <link>https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/</guid>
     <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Bank of America kindly asks that you don&#8217;t share your banking password with your AI assistant]]></title>
+    <description><![CDATA[The banking giant reminds customers that "you're responsible for activity" resulting from your AI agents' access.]]></description>
+    <link>https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Who&#8217;s really in charge at Anthropic after the IPO?]]></title>
+    <description><![CDATA[Here's a clear explanation of Anthropic's incredibly complex governance structure.]]></description>
+    <link>https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Game Boy Color on My Conference Badge]]></title>
+    <description><![CDATA[Game Boy Color on My Conference Badge I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking around with it again, and then I ran into with Steve Francia... who worked with Gem]]></description>
+    <link>https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Disruptive raises $10B fund to make big bets on at least 10 companies]]></title>
+    <description><![CDATA[Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.]]></description>
+    <link>https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Build specialized multimodal models with LFM3]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/LiquidAI/lfm3</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/LiquidAI/lfm3</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Can we trust LLMs to judge whether a research idea is novel?]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/allenai/novelty-bench</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/allenai/novelty-bench</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Genie 4: A new generation of world simulation]]></title>
+    <description><![CDATA[Genie 4: our new world model unlocking unprecedented realism in real-time simulation.]]></description>
+    <link>https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Retell uses OpenAI models to help power 100M monthly calls]]></title>
+    <description><![CDATA[GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.]]></description>
+    <link>https://openai.com/index/retell-ai</link>
+    <guid isPermaLink="true">https://openai.com/index/retell-ai</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Industrial Intelligence: The next growth opportunity for manufacturing]]></title>
+    <description><![CDATA[Every manufacturer has its own industrial intelligence. Some is documented, and some resides in the knowledge of experienced workers. Consider an experienced operator preparing to restart a line after a changeover. The machine settings matter, but so does know]]></description>
+    <link>https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>MIT Tech Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI expands partnership with Oracle to bring its apps to ChatGPT]]></title>
+    <description><![CDATA[OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.]]></description>
+    <link>https://openai.com/index/oracle-apps-in-chatgpt</link>
+    <guid isPermaLink="true">https://openai.com/index/oracle-apps-in-chatgpt</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How Check Point accelerates vulnerability research with Daybreak]]></title>
+    <description><![CDATA[With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.]]></description>
+    <link>https://openai.com/index/check-point-daybreak</link>
+    <guid isPermaLink="true">https://openai.com/index/check-point-daybreak</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -57,119 +165,11 @@
 
   <item>
     <title><![CDATA[Will the real Anthropic please stand up]]></title>
-    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. After weeks of frenzied speculation, Anthropic has filed its IPO prospectus. The 335-page document (100 pages or so are fo]]></description>
+    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. After weeks of frenzied speculation, Anthropic has filed its IPO prospectus. The 335-page document (100 pages or so a]]></description>
     <link>https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/</link>
     <guid isPermaLink="true">https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/</guid>
     <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
     <category>MIT Tech Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked]]></title>
-    <description><![CDATA[Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier.]]></description>
-    <link>https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[SpaceX locks in $40B GPU financing deal with Apollo]]></title>
-    <description><![CDATA[The financing gives SpaceX another way to fund its rapidly expanding AI ambitions without relying solely on traditional debt markets.]]></description>
-    <link>https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[webframe: evaluated as a scraper and a sandbox]]></title>
-    <description><![CDATA[Research: webframe: evaluated as a scraper and a sandbox webframe is a neat little project from Jeff Lindsay which lets you "run a web page like a program" - you point it at a URL or file and it executes it in a hidden headless web view and outputs console.log]]></description>
-    <link>https://simonwillison.net/2026/Oct/26/webframe-evaluation/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/26/webframe-evaluation/</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Our newest AI Quest: Mapping the human brain]]></title>
-    <description><![CDATA[Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”]]></description>
-    <link>https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/</link>
-    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic officially files for its public debut]]></title>
-    <description><![CDATA[Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.]]></description>
-    <link>https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Working with academic communities to build scientific understanding]]></title>
-    <description><![CDATA[OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.]]></description>
-    <link>https://openai.com/index/building-scientific-understanding-with-academic-communities</link>
-    <guid isPermaLink="true">https://openai.com/index/building-scientific-understanding-with-academic-communities</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases]]></title>
-    <description><![CDATA[CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.]]></description>
-    <link>https://openai.com/index/gpt-6-1-sol-coderabbit-code-security</link>
-    <guid isPermaLink="true">https://openai.com/index/gpt-6-1-sol-coderabbit-code-security</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[ChatGPT’s expanding world of work]]></title>
-    <description><![CDATA[Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.]]></description>
-    <link>https://openai.com/index/chatgpt-expanding-world-of-work</link>
-    <guid isPermaLink="true">https://openai.com/index/chatgpt-expanding-world-of-work</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The focus on AI safety disasters ignores everyday harms]]></title>
-    <description><![CDATA[Consider what passes for success in technology policy. An AI company promises that its chatbot will not encourage suicide. A social media platform makes it more difficult for children to buy fentanyl. These are important protections, and they should have exist]]></description>
-    <link>https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Fanatics and OpenAI streamline the fan experience]]></title>
-    <description><![CDATA[Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.]]></description>
-    <link>https://openai.com/index/fanatics-streamline-fan-experience</link>
-    <guid isPermaLink="true">https://openai.com/index/fanatics-streamline-fan-experience</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Ultrafast cut incident investigation from hours to minutes at OpenAI]]></title>
-    <description><![CDATA[See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.]]></description>
-    <link>https://openai.com/index/openai-cut-incident-investigation</link>
-    <guid isPermaLink="true">https://openai.com/index/openai-cut-incident-investigation</guid>
-    <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Grok releases the first seven minutes of its AI-generated ‘Odyssey’]]></title>
-    <description><![CDATA[The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.]]></description>
-    <link>https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/</guid>
-    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
