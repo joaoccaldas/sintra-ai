@@ -85,6 +85,8 @@ writeFileSync(join(outDir, "index.json"), JSON.stringify({
     { id: "use-cases", url: `${SITE_URL}/api/use-cases.json`, contains: "Complete prompt library including inputs, prompt text and sample outputs; examples, not execution evidence" },
     { id: "models", url: `${SITE_URL}/api/models.json`, contains: "Model specifications with individual lastVerified dates; currentSnapshot identifies the newly checked Claude lineup" },
     ...["tools", "topics", "concepts", "guides"].map(id => ({ id, url: `${SITE_URL}/api/${id}.json`, contains: "Reference collection; review source dates before relying on volatile claims" })),
+    { id: "etalia-discovery-candidates", url: `${SITE_URL}/api/etalia-discovery-candidates.json`, contains: "Unverified, unlicensed discovery metadata from 16 Sintra collections. No RAG ingestion or factual certification." },
+    { id: "etalia-course-candidates", url: `${SITE_URL}/api/etalia-course-candidates.json`, contains: "Draft course and module outlines for etalia.edu, no course publication, assessments or enrollment." },
     { id: "news", url: `${SITE_URL}/feed.json`, contains: "Recent news with _sintra provenance; feed publication does not imply verification" },
   ],
 }, null, 2));
