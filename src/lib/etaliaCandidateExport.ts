@@ -106,7 +106,7 @@ export function buildSintraDiscovery(seeds: DiscoverySeed[], siteUrl: string, ge
 function learningHref(href: string, siteUrl: string) {
   // NEXT_PUBLIC_BASE_PATH is empty in a local/CI build and /sintra-ai for Pages.
   // Both represent the same upstream resource; no external or protocol-relative hrefs.
-  if (!href.startsWith("/") || href.startsWith("//") || href.includes("\\\\") || href.includes("..")) {
+  if (!href.startsWith("/") || href.startsWith("//") || href.includes(String.fromCharCode(92)) || href.includes("..")) {
     throw new Error("Learning step must use a safe Sintra-local path: " + href);
   }
   const path = href === "/sintra-ai" ? "/" :
