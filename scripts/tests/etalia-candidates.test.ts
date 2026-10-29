@@ -34,8 +34,14 @@ test("candidate records are deterministic metadata, not approved content", () =>
   assert.deepEqual(a.data[0].tags, ["finance", "fp&a"]);
 });
 
-test("duplicates, unsafe IDs and unsafe paths fail closed", () => {
-  assert.throws(() => buildSintraDiscovery([...example, example[0]], site, ""), /Duplicate/);
+test("duplicate IDs quarantine every ambiguous record; unsafe records fail closed", () => {
+  const withCollision = buildSintraDiscovery([...example, example[0]], site, "");
+  assert.equal(withCollision.sourceCount, 3);
+  assert.equal(withCollision.count, 1);
+  assert.equal(withCollision.quarantinedCount, 2);
+  assert.equal(withCollision.quarantined[0].candidateId, "sintra:knowledge:finance-variance");
+  assert.equal(withCollision.quarantined[0].records.length, 2);
+  assert.ok(withCollision.data.every(r => r.candidateId !== "sintra:knowledge:finance-variance"));
   assert.throws(() => buildSintraDiscovery([{...example[0], path:"//evil.example"}], site, ""), /safe site-relative/);
   assert.throws(() => buildSintraDiscovery([{...example[0], id:"unsafe ID"}], site, ""), /Invalid/);
 });
