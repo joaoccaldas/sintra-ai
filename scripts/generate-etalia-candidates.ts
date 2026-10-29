@@ -117,5 +117,9 @@ writeFileSync(join(dir, "etalia-discovery-candidates.json"), JSON.stringify(disc
 writeFileSync(join(dir, "etalia-course-candidates.json"), JSON.stringify(courses, null, 2));
 console.log('✓ Etalia candidate discovery: ' + discovery.count + ' records from ' +
   Object.keys(discovery.countsByCollection).length + ' collections');
+console.log('  Collection census: ' + JSON.stringify(discovery.countsByCollection));
+console.log('  Quarantined records: ' + discovery.quarantinedCount +
+  ' (from ' + discovery.sourceCount + ' raw seeds), collisions: ' +
+  discovery.quarantined.map(item => item.candidateId).join(', '));
 console.log('✓ Etalia course candidates: ' + courses.courseCount +
   ' outlines / ' + courses.moduleCount + ' unreviewed module outlines');
