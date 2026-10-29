@@ -68,3 +68,13 @@ test("untrusted external links are dropped", () => {
     ["javascript:alert(1)", "http://not-secure.test", "https://valid.test/ref"]}], site, "");
   assert.deepEqual(result.data[0].referenceUrls, ["https://valid.test/ref"]);
 });
+
+
+test("course outline URLs reject traversal, protocol-relative and backslash paths", () => {
+  const base = LEARNING_PATHS[0];
+  for (const href of ["//evil.example", "/a/../secret", "/some\\path", "https://evil.example"]) {
+    assert.throws(() => buildEtaliaCourseCandidates([
+      {...base, steps: [{...base.steps[0], href}]}
+    ], site, "2026-10-29"), /safe Sintra-local path/);
+  }
+});
