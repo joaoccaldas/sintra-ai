@@ -20,7 +20,7 @@ Treat other Sintra resources by grain: weekly picks are derived views, not new u
 - Copy only titles, editorial short descriptions, source link metadata, attribution, original review/add dates, status. Never copy third-party bodies, use-case prompts, example outputs or untrusted instructions into the metadata.
 - Build timestamp is file assembly time, not verification. Missing review dates stay null.
 - Every candidate has rights UNKNOWN, verification PENDING_VERIFICATION, admission CANDIDATE_ONLY and education DRAFT_ONLY.
-- Duplicated candidate IDs fail. Shared external URLs are review hints rather than proof two claims are equivalent.
+- Duplicate IDs quarantine ALL colliding source records and exclude them from the approved candidate list; source identity must be resolved manually. Shared external URLs are review hints rather than proof two claims are equivalent.
 - Current use-case IDs are derived from their title slugs: changing a title can change identity. Before production sync, implement reviewed ID aliases, not destructive overwrite.
 
 ## Private Finance RAG intake contract
@@ -51,3 +51,6 @@ Draft rubric (not a validated exam): traceable citations 25%, numeric reconcilia
 Run npm test, npm run typecheck and npm run check on a real checkout. Confirm 16 collection counts reconcile, generated assets have no body/prompt, IDs remain unique, source dates are not renewed, and no write to external systems occurs. PR merge, source rights, etalia.edu repository/LMS, tenant controls, translations, course publication and credential claims need separate owner approval.
 
 **Status:** code proposed in a review branch; tests and CI results must be recorded before any approval.
+
+## Observed source-data quality issue (CI 29 October 2026)
+Sintra's CONCEPTS collection contains at least two entries with the same source ID 'agents' (near lines 234 and 1138 of src/lib/concepts.ts), with distinct descriptions. Initial CI correctly rejected the collision. The new projector quarantines both instead of silently promoting one or renaming either. This is a real upstream editorial ID conflict, not a consumer join issue. Review the source concepts and any deep links before a source-of-truth repair.
