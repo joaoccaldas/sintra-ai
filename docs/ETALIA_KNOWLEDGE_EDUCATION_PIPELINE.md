@@ -30,6 +30,11 @@ Treat other Sintra resources by grain: weekly picks are derived views, not new u
 4. Test retrieval and answer quality on source recall, citation accuracy, contradictions, recency, abstention and injected-text resistance. Compare numerical FP&A claims with synthetic Nordvik reference calculations.
 5. Keep an audit trail of every acceptance/rejection and rollback. A Sintra build cannot autonomously approve knowledge.
 
+## Academy product-boundary alignment
+The four exported Sintra learning paths are generic curriculum input only, **not approved Etalia product SKUs**. Existing Academy commercial positioning, track definitions, prerequisites, delivery methods and authorization remain authoritative outside this public Sintra source repository. This proposal neither creates a new course offer nor requires an LMS.
+
+The example finance curriculum below is an **internal instructional design / module pilot**, not an additional public course, certification, learner enrollment or sales offer. Map it into the approved Academy program and prerequisite sequence only after curriculum-owner approval; use synthetic data for labs and measure pre/post competence before claiming uplift.
+
 ## etalia.edu course factory
 Course → Module → Lesson → Worked example → Lab → Rubric → Quiz → Feedback → Certification criteria. This export provides only Course and Module OUTLINES. Modules require learning objectives, legal/editorial review, lab execution, accessible assets, language adaptation and assessed mastery before learner exposure.
 
