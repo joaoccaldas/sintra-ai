@@ -13,7 +13,7 @@ import { TOPIC_HUBS } from "../src/lib/topicHubs.js";
 import { AI_TOOLS } from "../src/lib/toolsData.js";
 import { AI_MODELS } from "../src/lib/modelsData.js";
 
-import { buildKnowledgeExport, buildKnowledgeIndex, buildUseCaseExport } from "../src/lib/knowledgeExport.js";
+import { buildKnowledgeExport, buildKnowledgeIndex, buildUseCaseExport, buildRagCandidateExport } from "../src/lib/knowledgeExport.js";
 import { buildVarianceExport } from "../src/lib/varianceExport.js";
 import { varianceCsv, VARIANCE_DAX, VARIANCE_IMPORT } from "../src/lib/varianceWorkflow.js";
 import { buildKnowledgeSkill } from "./knowledge-skills.js";
@@ -48,6 +48,8 @@ write("use-cases", buildUseCaseExport(USE_CASES, SITE_URL));
 
 const knowledge = buildKnowledgeExport(SITE_URL, new Date().toISOString());
 writeFileSync(join(outDir, "knowledge-index.json"), JSON.stringify(buildKnowledgeIndex(SITE_URL, knowledge.generatedAt), null, 2));
+// Discovery-only projection. Never consume this file as an ingestion approval.
+writeFileSync(join(outDir, "rag-candidates.json"), JSON.stringify(buildRagCandidateExport(SITE_URL, knowledge.generatedAt), null, 2));
 const skillRecords = KNOWLEDGE.filter(record => record.replication);
 for (const record of skillRecords) {
   const directory = join(__dirname, "../public/skills", record.id);
