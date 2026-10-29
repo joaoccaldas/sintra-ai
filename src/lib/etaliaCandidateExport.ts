@@ -38,15 +38,12 @@ const httpsUrls = (urls: string[] = []) =>
 
 export function buildSintraDiscovery(seeds: DiscoverySeed[], siteUrl: string, generatedAt: string) {
   if (!/^https:\/\/[^/\s?#]+/.test(siteUrl)) throw new Error("HTTPS site URL required");
-  const seen = new Set<string>();
-  const data = seeds.map(seed => {
+  const projected = seeds.map(seed => {
     if (!safeId(seed.collection) || !safeId(seed.id)) throw new Error("Invalid stable candidate ID");
     if (!seed.title?.trim() || !seed.path.startsWith("/") || seed.path.startsWith("//")) {
       throw new Error("Candidate requires title and safe site-relative path");
     }
     const candidateId = 'sintra:' + seed.collection + ':' + seed.id;
-    if (seen.has(candidateId)) throw new Error('Duplicate candidate ID: ' + candidateId);
-    seen.add(candidateId);
     return {
       candidateId, sourceSystem: "sintra-ai",
       sourceCollection: seed.collection, sourceRecordId: seed.id,
@@ -68,6 +65,20 @@ export function buildSintraDiscovery(seeds: DiscoverySeed[], siteUrl: string, ge
       educationalPublicationStatus: "DRAFT_ONLY" as const,
     };
   }).sort((a, b) => a.candidateId.localeCompare(b.candidateId));
+  // Quarantine ALL ambiguous IDs, not only the second occurrence. Neither
+  // version can enter downstream RAG until editorial source identity is fixed.
+  const byId = new Map<string, typeof projected>();
+  for (const candidate of projected) byId.set(candidate.candidateId,
+    [...(byId.get(candidate.candidateId) ?? []), candidate]);
+  const quarantined = [...byId.entries()]
+    .filter(([, items]) => items.length > 1)
+    .map(([candidateId, items]) => ({
+      candidateId, reason: "DUPLICATE_SOURCE_ID", count: items.length,
+      records: items.map(r => ({ title: r.title, summary: r.summary, canonicalUrl: r.canonicalUrl,
+        referenceUrls: r.referenceUrls, tags: r.tags })).sort((a,b)=>
+          (a.title + a.summary).localeCompare(b.title + b.summary)),
+    })).sort((a,b)=>a.candidateId.localeCompare(b.candidateId));
+  const data = projected.filter(candidate => byId.get(candidate.candidateId)!.length === 1);
   const countsByCollection: Record<string, number> = {};
   for (const record of data) countsByCollection[record.sourceCollection] =
     (countsByCollection[record.sourceCollection] ?? 0) + 1;
@@ -80,7 +91,8 @@ export function buildSintraDiscovery(seeds: DiscoverySeed[], siteUrl: string, ge
     .map(([url, candidateIds]) => ({ url, candidateIds })).sort((a,b)=>a.url.localeCompare(b.url));
   return {
     schemaVersion: "1.0", source: "sintra-ai", generatedAt, status: "CANDIDATE_ONLY",
-    promotionAllowed: false, count: data.length, countsByCollection,
+    promotionAllowed: false, sourceCount: seeds.length, count: data.length,
+    quarantinedCount: projected.length - data.length, countsByCollection, quarantined,
     diagnostics: {
       missingExternalReferences: data.filter(r => !r.referenceUrls.length).length,
       sharedExternalReferences,
