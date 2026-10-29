@@ -104,10 +104,14 @@ export function buildSintraDiscovery(seeds: DiscoverySeed[], siteUrl: string, ge
 }
 
 function learningHref(href: string, siteUrl: string) {
-  if (!href.startsWith("/sintra-ai/") && href !== "/sintra-ai") {
-    throw new Error("Learning step must use the canonical Sintra path: " + href);
+  // NEXT_PUBLIC_BASE_PATH is empty in a local/CI build and /sintra-ai for Pages.
+  // Both represent the same upstream resource; no external or protocol-relative hrefs.
+  if (!href.startsWith("/") || href.startsWith("//") || href.includes("\\\\") || href.includes("..")) {
+    throw new Error("Learning step must use a safe Sintra-local path: " + href);
   }
-  return siteUrl.replace(/\/+$/, "") + href.slice("/sintra-ai".length);
+  const path = href === "/sintra-ai" ? "/" :
+    href.startsWith("/sintra-ai/") ? href.slice("/sintra-ai".length) : href;
+  return siteUrl.replace(/\/+$/, "") + path;
 }
 
 export function buildEtaliaCourseCandidates(paths: SintraLearningPathSeed[], siteUrl: string, generatedAt: string) {
