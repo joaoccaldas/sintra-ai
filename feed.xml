@@ -7,8 +7,161 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 29 Oct 2026 06:15:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 06:15:13 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[You don&#8217;t need to believe in a god to get a religious exemption from using AI at work]]></title>
+    <description><![CDATA[David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.]]></description>
+    <link>https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[AWS will be a $1T business, Jassy says. But first, it will spend big.]]></title>
+    <description><![CDATA[Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.]]></description>
+    <link>https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[API credits benefit for eligible ChatGPT subscriptions]]></title>
+    <description><![CDATA[API credits benefit for eligible ChatGPT subscriptions Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the equivalent quantity of (expiring) credits to use]]></description>
+    <link>https://simonwillison.net/2026/Oct/29/api-credits/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/29/api-credits/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[As search traffic dries up, Reddit announces it&#8217;s shifting to a logged-in experience]]></title>
+    <description><![CDATA[As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.]]></description>
+    <link>https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Rivian expands joint venture with VW to include AI assistant]]></title>
+    <description><![CDATA[Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.]]></description>
+    <link>https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI-backed Thrive Holdings acquires ADT]]></title>
+    <description><![CDATA[OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.]]></description>
+    <link>https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Meta quietly launches an AI fashion app called Style Sketch]]></title>
+    <description><![CDATA[The app connects to Instagram to build a virtual closet from photos you’ve already shared, or lets you add items manually by snapping a photo, recording a quick video, or uploading images from your camera roll.]]></description>
+    <link>https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Building a multiplayer game world with autonomous Fable-class models]]></title>
+    <description><![CDATA[How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of what's possible with agentic engineering ag]]></description>
+    <link>https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[An updated Model Spec for more capable and beneficial AI]]></title>
+    <description><![CDATA[OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.]]></description>
+    <link>https://openai.com/index/updated-model-spec</link>
+    <guid isPermaLink="true">https://openai.com/index/updated-model-spec</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Quoting Ben Hylak]]></title>
+    <description><![CDATA[every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our product, customers love the ui and love us very much. we're special that way. &mdash; ]]></description>
+    <link>https://simonwillison.net/2026/Oct/29/ben-hylak/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/29/ben-hylak/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Granite Switch 4.1.1 — Update models like you update software]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[We urgently need to monitor AI agents’ actions in real time]]></title>
+    <description><![CDATA[This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded. Around the same time, another OpenAI ]]></description>
+    <link>https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>MIT Tech Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How we detect frontier model misalignment]]></title>
+    <description><![CDATA[OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.]]></description>
+    <link>https://openai.com/index/how-we-detect-frontier-model-misalignment</link>
+    <guid isPermaLink="true">https://openai.com/index/how-we-detect-frontier-model-misalignment</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How Ropes & Gray is developing AI for transactional diligence]]></title>
+    <description><![CDATA[Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.]]></description>
+    <link>https://openai.com/index/ropes-gray-ai-diligence</link>
+    <guid isPermaLink="true">https://openai.com/index/ropes-gray-ai-diligence</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/announcing-project-protostar</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/announcing-project-protostar</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Welcome Le Chonk: Mistral Large 4 on Hugging Face]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/mistral-large4</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/mistral-large4</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/anydecisionmodel</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/anydecisionmodel</guid>
+    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Quoting Ted Sanders]]></title>
@@ -16,159 +169,6 @@
     <link>https://simonwillison.net/2026/Oct/28/ted-sanders/</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Oct/28/ted-sanders/</guid>
     <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Microsoft just shared Azure&#8217;s actual revenue in dollars: $33.2 billion]]></title>
-    <description><![CDATA[Microsoft has never disclosed Azure's quarterly revenue in dollars. But for the first time, we can see just how close it is getting to besting the biggest competitor in the market, AWS.]]></description>
-    <link>https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google expands AI Search ads globally as core ad growth slows]]></title>
-    <description><![CDATA[The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.]]></description>
-    <link>https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Microsoft recorded $10 billion in revenue from OpenAI]]></title>
-    <description><![CDATA[Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.]]></description>
-    <link>https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Microsoft hits 10 quarters of record-breaking revenue in a row]]></title>
-    <description><![CDATA[Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago quarter.]]></description>
-    <link>https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Creating AI value with enterprise context]]></title>
-    <description><![CDATA[Across a business, any number of AI platforms, systems, and tools may be at work simultaneously—for example, AI-powered customer platforms, conversational assistants, and workflow and process automation tools. Each one is sophisticated, advanced, and quick to ]]></description>
-    <link>https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic just launched tools to show companies what their AI spending is buying]]></title>
-    <description><![CDATA[The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.]]></description>
-    <link>https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Wiz’s CTO on PHP2Shell and the coming &#8216;vulnpocalypse&#8217;]]></title>
-    <description><![CDATA[The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the ]]></description>
-    <link>https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/</link>
-    <guid isPermaLink="true">https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini 4 Carbon: Our next frontier model]]></title>
-    <description><![CDATA[Google DeepMind — Labs]]></description>
-    <link>https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GitHub Octoverse 2026]]></title>
-    <description><![CDATA[GitHub Octoverse 2026 I'm at GitHub Universe today (GitHub gave me a free ticket through their "GitHub Stars" program). EVP Jay Parikh just announced this year's Octoverse report, and highlighted these numbers in particular: This is a pretty stark representati]]></description>
-    <link>https://simonwillison.net/2026/Oct/28/github-octoverse-2026/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/28/github-octoverse-2026/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/nvidia/nemotron-transcribe-granary</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/nemotron-transcribe-granary</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The October inflection point for vibe game development]]></title>
-    <description><![CDATA[I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've r]]></description>
-    <link>https://simonwillison.net/2026/Oct/28/vibe-game-development/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/28/vibe-game-development/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI and ServiceNow expand partnership across enterprise workflows]]></title>
-    <description><![CDATA[OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.]]></description>
-    <link>https://openai.com/index/openai-servicenow-partnership-expansion</link>
-    <guid isPermaLink="true">https://openai.com/index/openai-servicenow-partnership-expansion</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Pairing industrial AI autonomy and human control]]></title>
-    <description><![CDATA[MIT Tech Review — Press]]></description>
-    <link>https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quoting Terk Terkowitz]]></title>
-    <description><![CDATA[If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work to find solutions. An engineer who can explain where AI does not yet help their wor]]></description>
-    <link>https://simonwillison.net/2026/Oct/28/terk-terkowitz/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/28/terk-terkowitz/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The future of the firm]]></title>
-    <description><![CDATA[How AI might enter the org chart—beneath, beside, and between us.]]></description>
-    <link>https://openai.com/index/the-future-of-the-firm</link>
-    <guid isPermaLink="true">https://openai.com/index/the-future-of-the-firm</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Legora is building the agentic operating system for legal work]]></title>
-    <description><![CDATA[See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.]]></description>
-    <link>https://openai.com/index/legora</link>
-    <guid isPermaLink="true">https://openai.com/index/legora</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Game Boy Color on My Conference Badge]]></title>
-    <description><![CDATA[Game Boy Color on My Conference Badge I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking around with it again, and then I ran into with Steve Francia... who worked with Gem]]></description>
-    <link>https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/</guid>
-    <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 
