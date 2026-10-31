@@ -7,25 +7,106 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 30 Oct 2026 06:15:13 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 06:11:38 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[You don&#8217;t need to believe in a god to get a religious exemption from using AI at work]]></title>
-    <description><![CDATA[David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.]]></description>
-    <link>https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/</guid>
+    <title><![CDATA[Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia]]></title>
+    <description><![CDATA[When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.]]></description>
+    <link>https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Ollie, a privacy-focused AI assistant, is shutting down]]></title>
+    <description><![CDATA[As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.]]></description>
+    <link>https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/</guid>
     <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
 
   <item>
-    <title><![CDATA[AWS will be a $1T business, Jassy says. But first, it will spend big.]]></title>
-    <description><![CDATA[Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.]]></description>
-    <link>https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[dbreunig/nesformer]]></title>
+    <description><![CDATA[dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwe]]></description>
+    <link>https://simonwillison.net/2026/Oct/30/nesformer/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/30/nesformer/</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Intel&#8217;s stock crashes, knocking $12B from government&#8217;s stake]]></title>
+    <description><![CDATA[Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.]]></description>
+    <link>https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following IPO, FT report says]]></title>
+    <description><![CDATA[Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.]]></description>
+    <link>https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Last-minute Halloween costumes for tech nerds]]></title>
+    <description><![CDATA[No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.]]></description>
+    <link>https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Cracks are emerging in the AI spending boom]]></title>
+    <description><![CDATA[Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.]]></description>
+    <link>https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[nemotron-halloween]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/nvidia/nemotron-halloween</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/nemotron-halloween</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Making it easier for websites to express AI training preferences]]></title>
+    <description><![CDATA[OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.]]></description>
+    <link>https://openai.com/index/helping-websites-express-ai-training-preferences</link>
+    <guid isPermaLink="true">https://openai.com/index/helping-websites-express-ai-training-preferences</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Community safety report and new protections for teens]]></title>
+    <description><![CDATA[OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.]]></description>
+    <link>https://openai.com/index/community-safety-report-and-new-protections-for-teens</link>
+    <guid isPermaLink="true">https://openai.com/index/community-safety-report-and-new-protections-for-teens</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Fair use benefits everyone]]></title>
+    <description><![CDATA[OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.]]></description>
+    <link>https://openai.com/index/fair-use-benefits-everyone</link>
+    <guid isPermaLink="true">https://openai.com/index/fair-use-benefits-everyone</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -35,42 +116,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Oct/29/api-credits/</guid>
     <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[As search traffic dries up, Reddit announces it&#8217;s shifting to a logged-in experience]]></title>
-    <description><![CDATA[As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.]]></description>
-    <link>https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Rivian expands joint venture with VW to include AI assistant]]></title>
-    <description><![CDATA[Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.]]></description>
-    <link>https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI-backed Thrive Holdings acquires ADT]]></title>
-    <description><![CDATA[OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.]]></description>
-    <link>https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta quietly launches an AI fashion app called Style Sketch]]></title>
-    <description><![CDATA[The app connects to Instagram to build a virtual closet from photos you’ve already shared, or lets you add items manually by snapping a photo, recording a quick video, or uploading images from your camera roll.]]></description>
-    <link>https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -125,51 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/how-we-detect-frontier-model-misalignment</guid>
     <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Ropes & Gray is developing AI for transactional diligence]]></title>
-    <description><![CDATA[Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.]]></description>
-    <link>https://openai.com/index/ropes-gray-ai-diligence</link>
-    <guid isPermaLink="true">https://openai.com/index/ropes-gray-ai-diligence</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/announcing-project-protostar</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/announcing-project-protostar</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Welcome Le Chonk: Mistral Large 4 on Hugging Face]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/mistral-large4</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/mistral-large4</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/anydecisionmodel</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/anydecisionmodel</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quoting Ted Sanders]]></title>
-    <description><![CDATA[In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the variation in performance is explained by just]]></description>
-    <link>https://simonwillison.net/2026/Oct/28/ted-sanders/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/28/ted-sanders/</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
