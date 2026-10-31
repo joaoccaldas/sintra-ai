@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { Calculator, ChevronDown, ChevronUp, ExternalLink, Info } from "lucide-react";
 import ModelWizard from "@/components/ModelWizard";
 import ModelCompare from "@/components/ModelCompare";
+import { withBasePath } from "@/lib/constants";
 import {
   AI_MODELS,
   MODEL_PROVIDERS,
@@ -172,6 +173,7 @@ export default function ModelsClient() {
         <p className="text-fg-2 text-[17px] max-w-2xl mb-6">
           Compare listed API pricing, context windows, capabilities, and reported benchmark scores across {AI_MODELS.length} models.
         </p>
+        <a href={withBasePath("/model-watch/")} className="inline-flex items-center rounded-lg border border-white/15 px-3 py-2 text-sm mb-5 hover:bg-white/10">Model Watch: latest source signals, prices and cost sandbox →</a>
         <p className="text-[12px] text-fg-4 flex items-start gap-1.5 max-w-3xl">
           <Info size={12} className="mt-0.5 shrink-0" />
           Pricing and benchmarks change frequently and may use different evaluation settings. Verify provider documentation before production decisions. Latest item verification: {latestVerificationLabel()}. The four current Claude entries were checked in this pass; older entries and benchmark scores retain their original dates.
