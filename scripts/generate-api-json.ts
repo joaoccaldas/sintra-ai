@@ -3,7 +3,7 @@
 // without parsing rendered HTML. Sintra has no backend (static export), so
 // these are pre-built at compile time rather than served dynamically; that
 // means they're only as fresh as the last deploy, same as every other page.
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { USE_CASES } from "../src/lib/data.js";
@@ -44,6 +44,31 @@ write("guides", GUIDES.map(g => ({ ...g, url: `${SITE_URL}/guides/${g.slug}/` })
 write("topics", TOPIC_HUBS.map(t => ({ ...t, url: `${SITE_URL}/topics/${t.slug}/` })));
 write("tools", AI_TOOLS.map(t => ({ ...t, providerUrl: t.url, url: `${SITE_URL}/tools/${t.id}/` })));
 write("models", AI_MODELS.map(m => ({ ...m, url: `${SITE_URL}/models/` })));
+// Public, source-dated snapshot. "Release signal" is a headline, NOT a verified
+// model specification or price change; manual model entry verification is independent.
+const modelFeed = JSON.parse(readFileSync(join(__dirname, "../src/data/liveFeed.generated.json"), "utf8")) as {
+  generatedAt: string;
+  items: Array<{ id: string; title: string; source: string; category: string; url: string; publishedAt: string | null }>;
+};
+const releaseSignal = /\\b(model|gpt|claude|gemini|mistral|llama|grok|api|release|pricing|price|inference|open.weight|reasoning)\\b/i;
+write("model-watch", {
+  modelCount: AI_MODELS.length,
+  note: "Static build snapshot. Lab headlines are unverified signals, model fields are manually reviewed and may be stale.",
+  feedFetchedAt: modelFeed.generatedAt,
+  models: AI_MODELS.map(m => ({
+    provider: m.provider, id: m.id, apiId: m.apiId ?? null, name: m.name, status: m.status,
+    releaseDate: m.releaseDateIso ?? m.releaseDate, lastVerified: m.lastVerified,
+    contextWindowK: m.contextWindow,
+    priceUsdPerMillionInputTokens: m.inputPrice,
+    priceUsdPerMillionOutputTokens: m.outputPrice,
+    priceNote: m.priceNote ?? null,
+    docsUrl: m.docsUrl,
+    sourceStatus: "manual",
+  })),
+  candidateSignals: modelFeed.items.filter(i => i.category === "Labs" && releaseSignal.test(i.title))
+    .slice(0, 25).map(i => ({ ...i, verification: "headline-signal-only" })),
+});
+
 write("use-cases", buildUseCaseExport(USE_CASES, SITE_URL));
 
 const knowledge = buildKnowledgeExport(SITE_URL, new Date().toISOString());
@@ -82,6 +107,7 @@ writeFileSync(join(outDir, "index.json"), JSON.stringify({
     { id: "knowledge", url: `${SITE_URL}/api/knowledge.json`, contains: "Full cited ChatGPT, Claude Code, Cowork, Office, finance and MCP briefs, example procedures, prompts, checks and limitations", count: knowledge.count },
     { id: "use-cases", url: `${SITE_URL}/api/use-cases.json`, contains: "Complete prompt library including inputs, prompt text and sample outputs; examples, not execution evidence" },
     { id: "models", url: `${SITE_URL}/api/models.json`, contains: "Model specifications with individual lastVerified dates; currentSnapshot identifies the newly checked Claude lineup" },
+    { id: "model-watch", url: `${SITE_URL}/api/model-watch.json`, contains: "Build-time model specification snapshot plus official-feed headline signals; prices are manually reviewed, not auto-verified" },
     ...["tools", "topics", "concepts", "guides"].map(id => ({ id, url: `${SITE_URL}/api/${id}.json`, contains: "Reference collection; review source dates before relying on volatile claims" })),
     { id: "news", url: `${SITE_URL}/feed.json`, contains: "Recent news with _sintra provenance; feed publication does not imply verification" },
   ],
