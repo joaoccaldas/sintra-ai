@@ -50,7 +50,7 @@ const modelFeed = JSON.parse(readFileSync(join(__dirname, "../src/data/liveFeed.
   generatedAt: string;
   items: Array<{ id: string; title: string; source: string; category: string; url: string; publishedAt: string | null }>;
 };
-const releaseSignal = /\\b(model|gpt|claude|gemini|mistral|llama|grok|api|release|pricing|price|inference|open.weight|reasoning)\\b/i;
+const releaseSignal = /\b(model|gpt|claude|gemini|mistral|llama|grok|api|release|pricing|price|inference|open.weight|reasoning)\b/i;
 write("model-watch", {
   modelCount: AI_MODELS.length,
   note: "Static build snapshot. Lab headlines are unverified signals, model fields are manually reviewed and may be stale.",
