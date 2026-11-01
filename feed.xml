@@ -7,8 +7,62 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 31 Oct 2026 06:11:38 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 06:12:21 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[How We Took Over ChatGPT Accounts]]></title>
+    <description><![CDATA[How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this "Canvas" but it looks like the latest revision is called HTML previews ), where interactive cust]]></description>
+    <link>https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-llm 0.1a9]]></title>
+    <description><![CDATA[Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can ]]></description>
+    <link>https://simonwillison.net/2026/Oct/31/datasette-llm/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Oct/31/datasette-llm/</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’]]></title>
+    <description><![CDATA[Apple's new CEO defended the company's current position in the AI landscape.]]></description>
+    <link>https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale]]></title>
+    <description><![CDATA[On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the door]]></description>
+    <link>https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Judge allows NAACP lawsuit over xAI data center pollution to move forward]]></title>
+    <description><![CDATA[An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.]]></description>
+    <link>https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI reportedly lowers funding target for new round]]></title>
+    <description><![CDATA[OpenAI’s latest funding round doesn't seem to be living up to expectations.]]></description>
+    <link>https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia]]></title>
@@ -35,42 +89,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Oct/30/nesformer/</guid>
     <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Intel&#8217;s stock crashes, knocking $12B from government&#8217;s stake]]></title>
-    <description><![CDATA[Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.]]></description>
-    <link>https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following IPO, FT report says]]></title>
-    <description><![CDATA[Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.]]></description>
-    <link>https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Last-minute Halloween costumes for tech nerds]]></title>
-    <description><![CDATA[No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.]]></description>
-    <link>https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Cracks are emerging in the AI spending boom]]></title>
-    <description><![CDATA[Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.]]></description>
-    <link>https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1</guid>
     <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[We urgently need to monitor AI agents’ actions in real time]]></title>
-    <description><![CDATA[This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded. Around the same time, another OpenAI ]]></description>
-    <link>https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How we detect frontier model misalignment]]></title>
-    <description><![CDATA[OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.]]></description>
-    <link>https://openai.com/index/how-we-detect-frontier-model-misalignment</link>
-    <guid isPermaLink="true">https://openai.com/index/how-we-detect-frontier-model-misalignment</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
