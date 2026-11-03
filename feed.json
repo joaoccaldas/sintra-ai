@@ -247,6 +247,26 @@
       ]
     },
     {
+      "id": "https://openai.com/index/cisco-cyber",
+      "url": "https://openai.com/index/cisco-cyber",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "content_text": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-03T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://openai.com/index/heimstaden",
       "url": "https://openai.com/index/heimstaden",
       "title": "Heimstaden is changing residential real estate management with AI",
@@ -327,10 +347,10 @@
       ]
     },
     {
-      "id": "https://huggingface.co/blog/cwe-bench",
-      "url": "https://huggingface.co/blog/cwe-bench",
-      "title": "CWE-bench v2: More coverage, quality, and transparency",
-      "content_text": "Hugging Face — Open Source",
+      "id": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "content_text": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -340,29 +360,9 @@
       },
       "date_published": "2026-11-03T00:00:00.000Z",
       "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/transformers-mic",
-      "url": "https://huggingface.co/blog/transformers-mic",
-      "title": "Transformers Model Integration Contracts",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-03T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
+        "OpenAI",
+        "OpenAI",
+        "Labs",
         "Live"
       ]
     },
