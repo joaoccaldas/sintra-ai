@@ -79,6 +79,11 @@
       "id": "news",
       "url": "https://joaoccaldas.github.io/sintra-ai/feed.json",
       "contains": "Recent news with _sintra provenance; feed publication does not imply verification"
+    },
+    {
+      "id": "markets",
+      "url": "https://joaoccaldas.github.io/sintra-ai/api/markets.json",
+      "contains": "Public ECB currency and World Bank macro histories with observation dates, units, attribution and per-series delivery status"
     }
   ]
 }

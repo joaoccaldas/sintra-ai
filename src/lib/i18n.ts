@@ -88,6 +88,7 @@ export interface Translations {
   side_group_learn:     string;
   side_group_reference: string;
   side_live:      string;
+  side_markets:   string;
   side_automate:  string;
   side_knowledge: string;
   home_sub_knowledge: string;
@@ -314,6 +315,7 @@ const translations: Record<Locale, Translations> = {
     side_group_learn:     "Learn",
     side_group_reference: "Reference",
     side_live:      "Live Feed",
+    side_markets:   "Markets & Economy",
     side_automate:  "Automation Hub",
     side_knowledge: "Workflows & skills",
     home_sub_knowledge: "Cited workflows, skills & real examples",
@@ -538,6 +540,7 @@ const translations: Record<Locale, Translations> = {
     side_group_learn:     "Aprender",
     side_group_reference: "Referência",
     side_live:      "Feed ao vivo",
+    side_markets:   "Mercados e economia",
     side_automate:  "Central de automação",
     side_knowledge: "Fluxos e competências",
     home_sub_knowledge: "Fluxos e exemplos com fontes",
