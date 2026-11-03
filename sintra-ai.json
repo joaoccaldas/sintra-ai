@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T15:24:27.296805+00:00",
+  "generatedAt": "2026-11-03T15:52:48.184636+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "5eba943719a0061f995f10f735cd1586767a9e07ca4740790512882c1d9d2ae2",
+      "title": "Apple restricts dating apps and AI companions to users 18 and up",
+      "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
+      "summary": "Apple's new App Store rules will require 18+ ratings for dating apps and AI companions that offer sexual or romantic content.",
+      "publishedAt": "2026-11-03T15:38:27+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "d683890ef6589f420e1b434619af24207bd7c84a07e4d25a71d561e2ba71511c",
       "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4",
@@ -125,16 +135,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "dfb1d49114f0805e7875e6056003bb855d5ccf8c5d1579a812ff6118ffec2af1",
-      "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "summary": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his",
-      "publishedAt": "2026-11-03T00:35:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "a6f54d325d31634f891659b5f3c8f6d5a46072f111d8835330333b2acd151981",
       "title": "Transformers Model Integration Contracts",
       "url": "https://huggingface.co/blog/transformers-mic",
@@ -168,7 +168,7 @@
       "id": "ea307d35f7398452dad433139263722397b886eb433eb0836f2b753f325b328c",
       "title": "Anthropic reveals $900B AI spending commitments ahead of IPO",
       "url": "https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f",
-      "summary": "73 points · 44 comments on Hacker News",
+      "summary": "74 points · 44 comments on Hacker News",
       "publishedAt": "2026-11-02T19:36:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +188,7 @@
       "id": "fcfbe0256d6ca2b680d1e993af56915dfa8a7f42d7ac74115598a7bf7a7853f8",
       "title": "Egoless Mathematics in the AI Era",
       "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
-      "summary": "178 points · 142 comments on Hacker News",
+      "summary": "179 points · 144 comments on Hacker News",
       "publishedAt": "2026-11-02T18:54:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -228,7 +228,7 @@
       "id": "570f5e1efb5964ca71378f8912fd84517cb3958f6b4f348190c33995b5d684fd",
       "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
       "url": "https://momentic.ai/",
-      "summary": "Comments",
+      "summary": "158 points · 106 comments on Hacker News",
       "publishedAt": "2026-11-02T17:05:25+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
