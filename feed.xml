@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 19:42:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 20:13:24 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[AI inference startup Fal doubles its valuation to $16B as demand surges]]></title>
+    <description><![CDATA[The five-year-old startup raised a $1.3 billion round led by Bessemer.]]></description>
+    <link>https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Netflix’s new AI Discover tab helps you find something to watch based on your mood]]></title>
@@ -92,12 +101,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase]]></title>
-    <description><![CDATA[Secure your TechCrunch Founder Summit pass savings before prices increase tomorrow at 9 a.m. ET. Save up to $100 on your pass, and get a second for free.]]></description>
-    <link>https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/</guid>
+    <title><![CDATA[Accelerating engineering for the physical world]]></title>
+    <description><![CDATA[Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.]]></description>
+    <link>https://openai.com/index/accelerating-engineering-for-the-physical-world</link>
+    <guid isPermaLink="true">https://openai.com/index/accelerating-engineering-for-the-physical-world</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/transformers-mic</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm 0.37]]></title>
-    <description><![CDATA[Release: llm 0.37 There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes. I added gpt-6.1-sol and gpt-6.1-terra , plus a new llm openai endpoint add command to make it ]]></description>
-    <link>https://simonwillison.net/2026/Nov/2/llm/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/2/llm/</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
