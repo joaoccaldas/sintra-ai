@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { ArrowUpRight, Download, Globe2 } from 'lucide-react';
 import { MARKET_DATA, windowHistory, periodChange, type MarketSeries, type Observation } from '@/lib/marketData';
+import { marketHistoryResponse } from '@/lib/ondResponse';
 const num=(n:number|null)=>n===null?'—':n.toLocaleString('en-US',{maximumFractionDigits:3});
 const day=(s:string|null,annual=false)=>s?(annual?s.slice(0,4):new Date(s).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})):'No observation';
 const modes={'ondai-feeds':'Via ond.ai Feeds','public-provider':'Direct provider fallback','last-good':'Last valid data','unavailable':'Unavailable'};
@@ -13,9 +14,10 @@ function Sparkline({points}:{points:Observation[]}) {
 }
 function HistoryChart({row}:{row:MarketSeries}) {
  const annual=row.category==='Macro';const [days,setDays]=useState(0);const [index,setIndex]=useState<number|null>(null);const [table,setTable]=useState(false);
+ const response=marketHistoryResponse(row),chart=response.blocks[0];
  const points=windowHistory(row.history,days),point=points[Math.min(index??points.length-1,points.length-1)];
  const change=periodChange(points,row.unit);
- if(!points.length)return <div className="surface-panel rounded-2xl border border-white/10 p-8"><h2 className="text-xl">{row.name}</h2><p className="text-fg-3 mt-3">No verified observations are available. Other series remain usable; the next build will retry this source.</p></div>;
+ if(!points.length||chart.type!=='chart')return <div className="surface-panel rounded-2xl border border-white/10 p-8"><h2 className="text-xl">{row.name}</h2><p className="text-fg-3 mt-3">No verified observations are available. Other series remain usable; the next build will retry this source.</p></div>;
  const lo=Math.min(...points.map(p=>p.value)),hi=Math.max(...points.map(p=>p.value));const pad=(hi-lo)*.08||Math.max(Math.abs(hi)*.02,.1);const min=lo-pad,max=hi+pad;
  const start=Date.parse(points[0].date),end=Date.parse(points[points.length-1].date),span=end-start||1;
  const x=(p:Observation)=>58+(Date.parse(p.date)-start)/span*704,y=(v:number)=>230-(v-min)/(max-min)*198;
@@ -25,7 +27,7 @@ function HistoryChart({row}:{row:MarketSeries}) {
   <div className="flex flex-wrap justify-between gap-5"><div><p className="font-mono text-xs uppercase tracking-widest text-violet-bright">{row.category} · {row.cadence}</p><h2 className="font-serif text-3xl mt-2 text-fg-1">{row.name}</h2></div><span className="text-xs text-fg-3">{modes[row.delivery]}</span></div>
   <div className="flex flex-wrap items-end justify-between gap-4 mt-6"><div aria-live="polite"><p className="text-4xl tracking-tight tabular-nums text-fg-1">{num(point.value)} <span className="text-sm text-fg-3">{row.unit}</span></p><p className="text-sm text-fg-3 mt-1">{day(point.date,annual)}</p></div><div className="text-right text-sm text-fg-2">{change&&<><span className="tabular-nums">{change.value>=0?'+':''}{num(change.value)} {change.unit}</span><p className="text-xs text-fg-4">Change over displayed period · calculated</p></>}</div></div>
   <div className="flex flex-wrap gap-2 mt-6" aria-label="Chart period">{(annual?[[1826,'5Y'],[3653,'10Y'],[0,'All']]:[[30,'1M'],[90,'3M'],[180,'6M'],[0,'All']]).map(([n,label])=><button key={n} aria-pressed={days===n} onClick={()=>{setDays(Number(n));setIndex(null);}} className={`rounded-full px-4 py-2 text-xs border ${days===n?'border-violet-bright text-violet-bright bg-violet/10':'border-white/10 text-fg-3'}`}>{label}</button>)}</div>
-  <svg viewBox="0 0 800 275" role="img" aria-label={`${row.name} history; use the date slider or data table for exact values`} className="w-full mt-4 touch-pan-y" onPointerMove={e=>{const rect=e.currentTarget.getBoundingClientRect();const target=start+Math.max(0,Math.min(1,((e.clientX-rect.left)/rect.width*800-58)/704))*span;let best=0;points.forEach((p,i)=>{if(Math.abs(Date.parse(p.date)-target)<Math.abs(Date.parse(points[best].date)-target))best=i;});setIndex(best);}}>
+  <svg data-response-schema={response.schema} data-dataset-ref={chart.datasetRef} viewBox="0 0 800 275" role="img" aria-label={`${row.name} history; use the date slider or data table for exact values`} className="w-full mt-4 touch-pan-y" onPointerMove={e=>{const rect=e.currentTarget.getBoundingClientRect();const target=start+Math.max(0,Math.min(1,((e.clientX-rect.left)/rect.width*800-58)/704))*span;let best=0;points.forEach((p,i)=>{if(Math.abs(Date.parse(p.date)-target)<Math.abs(Date.parse(points[best].date)-target))best=i;});setIndex(best);}}>
    {[0,.5,1].map(t=>{const v=min+(max-min)*t;return <g key={t}><line x1="58" x2="762" y1={y(v)} y2={y(v)} stroke="currentColor" className="text-fg-4" opacity=".18"/><text x="50" y={y(v)+4} textAnchor="end" fill="currentColor" className="text-fg-3" fontSize="11">{num(v)}</text></g>;})}
    <path d={path} fill="none" stroke="currentColor" className="text-violet-bright" strokeWidth="2.5" vectorEffect="non-scaling-stroke"/>
    <line x1={x(point)} x2={x(point)} y1="30" y2="230" stroke="currentColor" className="text-violet-bright" opacity=".4" strokeDasharray="4 4"/>
