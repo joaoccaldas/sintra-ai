@@ -7,6 +7,8 @@ on:
     branches: [main]
   schedule:
     - cron: "0 6 * * *" # 06:00 UTC daily — refresh the live feed
+  repository_dispatch:
+    types: [ondai-feed-updated]
   workflow_dispatch: {} # manual "Run workflow" button
 
 permissions:
