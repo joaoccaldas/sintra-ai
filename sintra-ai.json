@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T20:33:03.119781+00:00",
+  "generatedAt": "2026-11-03T20:54:24.774350+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -35,10 +35,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "502310879104d4321d2e0b617aa21d3df317c1b22fc022141dd63145d42690b8",
+      "title": "I use AI (Oct 2026)",
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "summary": "32 points · 42 comments on Hacker News",
+      "publishedAt": "2026-11-03T18:11:11+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "500d482023c5c5a5cf0415b97c360d2a6c2fae97658c359ca2e96d4b21bcf908",
       "title": "Google researchers demand freedom to tell the world what they know about AI",
       "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
-      "summary": "71 points · 77 comments on Hacker News",
+      "summary": "75 points · 86 comments on Hacker News",
       "publishedAt": "2026-11-03T17:55:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +128,7 @@
       "id": "7ed61c4f32788f77e2fb2734f9faa117a64c893284fb68f529ea5513edecb8d5",
       "title": "Quili AI",
       "url": "https://www.quili.ai/",
-      "summary": "91 points · 61 comments on Hacker News",
+      "summary": "93 points · 62 comments on Hacker News",
       "publishedAt": "2026-11-03T15:49:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "12bc869946cd1559b485e02016ac230b808a342c1d02672fbe9f8cd09276821c",
       "title": "AI is destroying my CS degree",
       "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
-      "summary": "108 points · 97 comments on Hacker News",
+      "summary": "111 points · 101 comments on Hacker News",
       "publishedAt": "2026-11-03T15:35:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -150,16 +160,6 @@
       "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
       "summary": "Comments",
       "publishedAt": "2026-11-03T15:25:47+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "954fbd2e34ab1eb99faa760319f1914874c0877467070f2eeb4c382ed9cbf38f",
-      "title": "Octomind – open-source AI harness that saves your tokens, static rust",
-      "url": "https://github.com/Muvon/octomind",
-      "summary": "50 points · 34 comments on Hacker News",
-      "publishedAt": "2026-11-03T15:02:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -192,6 +192,16 @@
       "publishedAt": "2026-11-03T10:43:41+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "34e7d62615202d0de65fe802c6c6ca14703e67df603d58e71ec501e575fe9eda",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "url": "https://openai.com/index/cisco-cyber",
+      "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+      "publishedAt": "2026-11-03T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -232,6 +242,16 @@
       "publishedAt": "2026-11-03T04:18:47+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "019edb616369c3322f4c44a55e04677f77bd523e681eb1a6308bc4ebad0c1377",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+      "publishedAt": "2026-11-03T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -302,26 +322,6 @@
       "publishedAt": "2026-11-02T17:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "277870ffc8d71544c0465c137654062f6f2bf7e7d7a1ec8af9071c966d86edc3",
-      "title": "Scaling Git at OpenAI",
-      "url": "https://openai.com/index/scaling-git-at-openai",
-      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
-      "publishedAt": "2026-11-02T15:30:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5d33ed0c66ace544e65f6063efa96737fd184e0288033033361ae48877b21fc8",
-      "title": "Introducing the Grid Protectors Program",
-      "url": "https://openai.com/index/grid-protectors-program",
-      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-      "publishedAt": "2026-11-02T15:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
