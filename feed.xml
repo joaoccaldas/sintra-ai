@@ -7,12 +7,12 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 12:37:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 13:08:09 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
     <title><![CDATA[How “reverse game theory” could keep AI agents in check]]></title>
-    <description><![CDATA[A new approach known as “reverse game theory” aims to create incentives for powerful AI models that make following the rules the most rational choice. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human d]]></description>
+    <description><![CDATA[A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desir]]></description>
     <link>https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/</link>
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
