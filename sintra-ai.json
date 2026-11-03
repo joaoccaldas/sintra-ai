@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T12:23:44.556621+00:00",
+  "generatedAt": "2026-11-03T12:52:02.349791+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,7 +18,7 @@
       "id": "e6e258092e928f0d256b4e64dbf57ded6531b9872c41f539873c241a99f33956",
       "title": "How “reverse game theory” could keep AI agents in check",
       "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
-      "summary": "A new approach known as “reverse game theory” aims to create incentives for powerful AI models that make following the rules the most rational choice. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human d",
+      "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desir",
       "publishedAt": "2026-11-03T10:43:41+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
@@ -168,7 +168,7 @@
       "id": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
       "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
       "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
-      "summary": "189 points · 168 comments on Hacker News",
+      "summary": "190 points · 168 comments on Hacker News",
       "publishedAt": "2026-11-02T19:27:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -238,7 +238,7 @@
       "id": "0db7b6f459a78855c303e34e1af481b22107e78ea7f68c827d538bd496a59a03",
       "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
       "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-      "summary": "333 points · 254 comments on Hacker News",
+      "summary": "334 points · 255 comments on Hacker News",
       "publishedAt": "2026-11-02T16:40:29+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
