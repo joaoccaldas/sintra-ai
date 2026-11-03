@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:11:13.038677+00:00",
+  "generatedAt": "2026-11-03T07:19:07.361755+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -75,6 +75,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "a6f54d325d31634f891659b5f3c8f6d5a46072f111d8835330333b2acd151981",
+      "title": "Transformers Model Integration Contracts",
+      "url": "https://huggingface.co/blog/transformers-mic",
+      "summary": "",
+      "publishedAt": "2026-11-03T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
       "id": "8fbbc27028afdfad518c41521b04b7d073ea5d4bd00d9bb33a3a07cfca79902c",
       "title": "llm 0.37",
       "url": "https://simonwillison.net/2026/Nov/2/llm/",
@@ -118,7 +128,7 @@
       "id": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
       "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
       "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
-      "summary": "178 points · 158 comments on Hacker News",
+      "summary": "183 points · 163 comments on Hacker News",
       "publishedAt": "2026-11-02T19:27:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +208,7 @@
       "id": "0db7b6f459a78855c303e34e1af481b22107e78ea7f68c827d538bd496a59a03",
       "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
       "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-      "summary": "306 points · 245 comments on Hacker News",
+      "summary": "314 points · 247 comments on Hacker News",
       "publishedAt": "2026-11-02T16:40:29+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +218,7 @@
       "id": "87906e26ddaac56898d9917935ec275ee221930b67de7bf349d783bd1882767c",
       "title": "Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings",
       "url": "https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now",
-      "summary": "92 points · 31 comments on Hacker News",
+      "summary": "95 points · 31 comments on Hacker News",
       "publishedAt": "2026-11-02T16:25:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -452,16 +462,6 @@
       "publishedAt": "2026-10-28T17:00:58+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1c5b51464767c2ad29498f22c3230eb67bc2e05dfccf5184d942345b7a68fe50",
-      "title": "Build specialized multimodal models with LFM3",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "summary": "",
-      "publishedAt": "2026-10-27T17:16:52+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
