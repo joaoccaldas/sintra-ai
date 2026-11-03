@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 07:19:46 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 08:20:35 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Apple Watch’s AI features for rewinding and recapping conversations begin beta testing]]></title>
+    <description><![CDATA[Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.]]></description>
+    <link>https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[I discovered a sound that leaks your exact location (and it's everywhere) - YouTube]]></title>
@@ -96,15 +105,6 @@
     <description><![CDATA[RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.]]></description>
     <link>https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Web host Squarespace lays off 19% of its employees]]></title>
-    <description><![CDATA[The website builder said that the job losses are part of a broader restructuring of its organization.]]></description>
-    <link>https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
