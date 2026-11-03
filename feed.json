@@ -29,7 +29,7 @@
     {
       "id": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
       "url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-      "title": "Apple may try to increase revenue by doing&#8230;something with third-party AI apps",
+      "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
       "content_text": "Apple hinted at ways that it could spur revenue through third-party \"opportunities\" during its Monday night earnings call.",
       "_sintra": {
         "origin": "aggregated",
@@ -49,7 +49,7 @@
     {
       "id": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
       "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "title": "Y Combinator&#8217;s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+      "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
       "content_text": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his",
       "_sintra": {
         "origin": "aggregated",
@@ -109,7 +109,7 @@
     {
       "id": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
       "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-      "title": "Anthropic warns that it&#8217;s very close to RSI capability, aka self-building AI",
+      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
       "content_text": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
       "_sintra": {
         "origin": "aggregated",
@@ -147,10 +147,10 @@
       ]
     },
     {
-      "id": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "title": "Rewarding defenders with bigger bug bounties",
-      "content_text": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "id": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "content_text": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -167,10 +167,10 @@
       ]
     },
     {
-      "id": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "content_text": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "id": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "content_text": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -220,8 +220,8 @@
       },
       "date_published": "2026-11-02T00:00:00.000Z",
       "tags": [
-        "MIT Tech Review",
-        "MIT Tech Review",
+        "MIT Technology Review",
+        "MIT Technology Review",
         "Press",
         "Live"
       ]
@@ -300,8 +300,8 @@
       },
       "date_published": "2026-11-02T00:00:00.000Z",
       "tags": [
-        "MIT Tech Review",
-        "MIT Tech Review",
+        "MIT Technology Review",
+        "MIT Technology Review",
         "Press",
         "Live"
       ]
@@ -320,8 +320,8 @@
       },
       "date_published": "2026-11-02T00:00:00.000Z",
       "tags": [
-        "MIT Tech Review",
-        "MIT Tech Review",
+        "MIT Technology Review",
+        "MIT Technology Review",
         "Press",
         "Live"
       ]

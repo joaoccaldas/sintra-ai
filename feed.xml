@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 04:39:28 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 04:41:24 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -20,7 +20,7 @@
   </item>
 
   <item>
-    <title><![CDATA[Apple may try to increase revenue by doing&#8230;something with third-party AI apps]]></title>
+    <title><![CDATA[Apple may try to increase revenue by doing…something with third-party AI apps]]></title>
     <description><![CDATA[Apple hinted at ways that it could spur revenue through third-party "opportunities" during its Monday night earnings call.]]></description>
     <link>https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/</guid>
@@ -29,7 +29,7 @@
   </item>
 
   <item>
-    <title><![CDATA[Y Combinator&#8217;s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens]]></title>
+    <title><![CDATA[Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens]]></title>
     <description><![CDATA[Y Combinator Garry Tan has jokingly admitted that he's suffered from "cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his]]></description>
     <link>https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/</guid>
@@ -56,7 +56,7 @@
   </item>
 
   <item>
-    <title><![CDATA[Anthropic warns that it&#8217;s very close to RSI capability, aka self-building AI]]></title>
+    <title><![CDATA[Anthropic warns that it’s very close to RSI capability, aka self-building AI]]></title>
     <description><![CDATA[RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.]]></description>
     <link>https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/</guid>
@@ -74,19 +74,19 @@
   </item>
 
   <item>
-    <title><![CDATA[Rewarding defenders with bigger bug bounties]]></title>
-    <description><![CDATA[OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.]]></description>
-    <link>https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties</link>
-    <guid isPermaLink="true">https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties</guid>
+    <title><![CDATA[Preparing our next security sprint to harden OpenAI]]></title>
+    <description><![CDATA[OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.]]></description>
+    <link>https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai</link>
+    <guid isPermaLink="true">https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
 
   <item>
-    <title><![CDATA[Preparing our next security sprint to harden OpenAI]]></title>
-    <description><![CDATA[OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.]]></description>
-    <link>https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai</link>
-    <guid isPermaLink="true">https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai</guid>
+    <title><![CDATA[Rewarding defenders with bigger bug bounties]]></title>
+    <description><![CDATA[OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.]]></description>
+    <link>https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties</link>
+    <guid isPermaLink="true">https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
@@ -106,7 +106,7 @@
     <link>https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/</link>
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
+    <category>MIT Technology Review</category>
   </item>
 
   <item>
@@ -142,7 +142,7 @@
     <link>https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/</link>
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
+    <category>MIT Technology Review</category>
   </item>
 
   <item>
@@ -151,7 +151,7 @@
     <link>https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/</link>
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Tech Review</category>
+    <category>MIT Technology Review</category>
   </item>
 
   <item>
