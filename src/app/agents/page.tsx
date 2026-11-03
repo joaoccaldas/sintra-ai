@@ -27,6 +27,7 @@ const ENDPOINTS: { path: string; contains: string }[] = [
   { path: "/api/tools.json", contains: "Every tool: pricing tier, provider, category, and a direct URL." },
   { path: "/api/models.json", contains: "Every tracked model: provider, tier, release date." },
   { path: "/api/use-cases.json", contains: "All prompt-library items, including full prompt text, inputs, expected output and sample output. Exporting does not validate an example." },
+  { path: "/api/markets.json", contains: "Public ECB currency and World Bank macro histories, units, observation/retrieval dates, attribution and per-series fallback status. Proprietary quotes excluded." },
   { path: "/feed.xml", contains: "News, as RSS 2.0." },
   { path: "/feed.json", contains: "News, as JSON Feed 1.1." },
 ];

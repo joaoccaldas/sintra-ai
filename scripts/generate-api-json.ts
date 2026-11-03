@@ -83,6 +83,7 @@ writeFileSync(join(outDir, "index.json"), JSON.stringify({
     { id: "use-cases", url: `${SITE_URL}/api/use-cases.json`, contains: "Complete prompt library including inputs, prompt text and sample outputs; examples, not execution evidence" },
     { id: "models", url: `${SITE_URL}/api/models.json`, contains: "Model specifications with individual lastVerified dates; currentSnapshot identifies the newly checked Claude lineup" },
     ...["tools", "topics", "concepts", "guides"].map(id => ({ id, url: `${SITE_URL}/api/${id}.json`, contains: "Reference collection; review source dates before relying on volatile claims" })),
+    { id: "markets", url: `${SITE_URL}/api/markets.json`, contains: "Public ECB currency and World Bank macro histories with observation dates, units, attribution and per-series delivery status" },
     { id: "news", url: `${SITE_URL}/feed.json`, contains: "Recent news with _sintra provenance; feed publication does not imply verification" },
   ],
 }, null, 2));

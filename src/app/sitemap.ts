@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const newsDate = latestNewsDate();
 
   const topLevel: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/markets/`, changeFrequency: "daily", priority: 0.7 },
     { url: `${SITE_URL}/`,               lastModified: newsDate, changeFrequency: "daily",   priority: 1.0 },
     { url: `${SITE_URL}/tools/`,         changeFrequency: "weekly",  priority: 0.9 },
     { url: `${SITE_URL}/news/`,          lastModified: newsDate, changeFrequency: "daily",   priority: 0.9 },
