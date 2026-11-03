@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T07:19:07.361755+00:00",
+  "generatedAt": "2026-11-03T08:19:22.390905+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "aafb2d2c8fa2107938d3734be8035099817c423d76b8e218ed27b6074e24d6c9",
+      "title": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
+      "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+      "summary": "Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.",
+      "publishedAt": "2026-11-03T07:20:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "dcf65f4aed7f78c16de0aee493912ccf5f4d99904ed626a7019a66983da9b61e",
       "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
@@ -105,6 +115,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "b80f6e271cfd30ce93a375c9842f9e9fda3296c15ae9dd87545744dd07188306",
+      "title": "V100 SXM2 pinout and NVLink reference",
+      "url": "https://github.com/pigeon-labs-stack/v100-sxm2-reference",
+      "summary": "Comments",
+      "publishedAt": "2026-11-02T22:30:13+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "ca204e1c0052a71213a13f974f994b910fb3501c36c9bd44bc4ff41e672db736",
       "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
       "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
@@ -118,7 +138,7 @@
       "id": "ea307d35f7398452dad433139263722397b886eb433eb0836f2b753f325b328c",
       "title": "Anthropic reveals $900B AI spending commitments ahead of IPO",
       "url": "https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f",
-      "summary": "71 points · 44 comments on Hacker News",
+      "summary": "72 points · 44 comments on Hacker News",
       "publishedAt": "2026-11-02T19:36:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,20 +148,10 @@
       "id": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
       "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
       "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
-      "summary": "183 points · 163 comments on Hacker News",
+      "summary": "185 points · 166 comments on Hacker News",
       "publishedAt": "2026-11-02T19:27:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4ca5045e7ee7fda1529ca710da940bc0598c7058947546ccd28f67579ce28139",
-      "title": "Web host Squarespace lays off 19% of its employees",
-      "url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
-      "summary": "The website builder said that the job losses are part of a broader restructuring of its organization.",
-      "publishedAt": "2026-11-02T19:25:59+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -208,18 +218,8 @@
       "id": "0db7b6f459a78855c303e34e1af481b22107e78ea7f68c827d538bd496a59a03",
       "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
       "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-      "summary": "314 points · 247 comments on Hacker News",
+      "summary": "318 points · 248 comments on Hacker News",
       "publishedAt": "2026-11-02T16:40:29+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "87906e26ddaac56898d9917935ec275ee221930b67de7bf349d783bd1882767c",
-      "title": "Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings",
-      "url": "https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now",
-      "summary": "95 points · 31 comments on Hacker News",
-      "publishedAt": "2026-11-02T16:25:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
