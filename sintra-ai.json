@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T17:24:51.577843+00:00",
+  "generatedAt": "2026-11-03T17:53:18.148927+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "210b26f029f33a3ef7fe3515ece25538b3c2fd8043720d57f14f3a706409d450",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T17:22:37+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8d86676710497099b1091deb38df79f93e8f69b79a1b2cfae325c64584a4dfbe",
+      "title": "StateBench: Testing how language models track state changes over long documents",
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "summary": "",
+      "publishedAt": "2026-11-03T17:15:21+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "89158d68bf9594ef8ca890b645be05660786f7a65c36e8155f8a445ae1dedaa8",
+      "title": "Anthropic is still grappling with the economics of compute",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "summary": "At a moment when Anthropic's compute margins should be getting better, they’re getting worse.",
+      "publishedAt": "2026-11-03T17:07:01+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "da38bc697163569b34347a26c22a149b3e4e25a121038cd810ababffbf5d3427",
       "title": "Agentic cheminformatics with Google Antigravity",
@@ -58,7 +88,7 @@
       "id": "7ed61c4f32788f77e2fb2734f9faa117a64c893284fb68f529ea5513edecb8d5",
       "title": "Quili AI",
       "url": "https://www.quili.ai/",
-      "summary": "Comments",
+      "summary": "83 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-03T15:49:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +108,7 @@
       "id": "12bc869946cd1559b485e02016ac230b808a342c1d02672fbe9f8cd09276821c",
       "title": "AI is destroying my CS degree",
       "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
-      "summary": "86 points · 63 comments on Hacker News",
+      "summary": "93 points · 82 comments on Hacker News",
       "publishedAt": "2026-11-03T15:35:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -86,7 +116,7 @@
     },
     {
       "id": "35eaf0d06c77e9ddf38536cb3ddc9c4d9913c2d4cfe6e4657a225e87e10c28db",
-      "title": "Schools that block Google A.I. will lose student access to its search engine",
+      "title": "Schools that block Google’s A.I. will lose student access to its search engine",
       "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
       "summary": "Comments",
       "publishedAt": "2026-11-03T15:25:47+00:00",
@@ -98,7 +128,7 @@
       "id": "954fbd2e34ab1eb99faa760319f1914874c0877467070f2eeb4c382ed9cbf38f",
       "title": "Octomind – open-source AI harness that saves your tokens, static rust",
       "url": "https://github.com/Muvon/octomind",
-      "summary": "Comments",
+      "summary": "41 points · 32 comments on Hacker News",
       "publishedAt": "2026-11-03T15:02:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +138,7 @@
       "id": "7f4e8c0b18ac2fab072f890b902f1a79c4852f45db30ebf9c7ccfb683788f03d",
       "title": "The AI Bubble Monitor",
       "url": "https://cepr.net/publications/ai-bubble-monitor/",
-      "summary": "46 points · 30 comments on Hacker News",
+      "summary": "51 points · 32 comments on Hacker News",
       "publishedAt": "2026-11-03T14:51:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -122,16 +152,6 @@
       "publishedAt": "2026-11-03T14:30:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "92fd20533f79da7fc7172500017ba4ab4bb4379e19bc9bf1bf1e322125782987",
-      "title": "Just a little AI resistance, as a treat",
-      "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
-      "summary": "151 points · 95 comments on Hacker News",
-      "publishedAt": "2026-11-03T14:14:12+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -205,13 +225,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "23abe1f1b0a2b246b606e768d72b2022a5fb4837808565bc056ab695be599d11",
-      "title": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
-      "url": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
-      "summary": "Google's Dreambeans, its latest AI experiment, now supports 13 Indian languages.",
-      "publishedAt": "2026-11-03T03:30:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "63945bc794809749828fed7a75412a51f17402e819c90a409ec9b785e40cb075",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "summary": "",
+      "publishedAt": "2026-11-03T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -442,26 +462,6 @@
       "publishedAt": "2026-10-29T10:11:12+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "6394645bd5105adc5435eb92d86f0a9234c4d9608ebffb6215783e8187d812db",
-      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-      "url": "https://huggingface.co/blog/anydecisionmodel",
-      "summary": "",
-      "publishedAt": "2026-10-29T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "718617961cab3abcc8e8a05120222629543523589403679efbd4712495667d4b",
-      "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
-      "url": "https://huggingface.co/blog/announcing-project-protostar",
-      "summary": "",
-      "publishedAt": "2026-10-29T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
