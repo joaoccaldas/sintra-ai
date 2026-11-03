@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 04:41:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 05:11:24 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test]]></title>
+    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained just one directive, ordering government ]]></description>
+    <link>https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses]]></title>
@@ -159,15 +168,6 @@
     <description><![CDATA[Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.]]></description>
     <link>https://openai.com/index/lifeval</link>
     <guid isPermaLink="true">https://openai.com/index/lifeval</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Qodo builds context into AI code review with Codex]]></title>
-    <description><![CDATA[Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.]]></description>
-    <link>https://openai.com/index/qodo-codex-plugin</link>
-    <guid isPermaLink="true">https://openai.com/index/qodo-codex-plugin</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
