@@ -41,6 +41,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  // Preview copies must not compete with canonical GitHub Pages content.
+  ...(process.env.SINTRA_PREVIEW_BASE_PATH
+    ? { robots: { index: false, follow: false } }
+    : {}),
   metadataBase: new URL("https://joaoccaldas.github.io"),
   applicationName: "Sintra AI",
   manifest: `${BASE_PATH}/manifest.json`,

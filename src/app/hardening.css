@@ -58,3 +58,8 @@
   .sintra-hero-stats > div { padding: 12px 6px; }
   .sintra-hero-stats p:last-child { font-size: 9px; }
 }
+
+/* Reserve bottom space for the mobile primary dock on every existing page. */
+@media (max-width: 1023px) {
+  body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+}

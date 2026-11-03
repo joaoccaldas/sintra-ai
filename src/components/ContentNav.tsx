@@ -423,12 +423,12 @@ function NewsletterCTA() {
 }
 
 /* ── Main export ──────────────────────────────────────────────────────────── */
-export default function ContentNav() {
+export default function ContentNav({ showIntents = true }: { showIntents?: boolean }) {
   return (
     <section id="explore" className="sintra-content w-full max-w-[1200px] mx-auto px-6 md:px-8 pb-24 pt-10">
       {/* 1 — clear operating modes (the one on-page IA recap; the sidebar is
              the persistent one) */}
-      <IntentNav />
+      {showIntents && <IntentNav />}
 
       {/* 2 — this week: editorial picks + latest news (tabbed) */}
       <ThisWeekHub />
