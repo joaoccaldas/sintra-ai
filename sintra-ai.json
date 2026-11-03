@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T16:24:39.914636+00:00",
+  "generatedAt": "2026-11-03T16:52:57.084320+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,46 @@
   "itemCount": 54,
   "items": [
     {
+      "id": "4d3938441f216409a8f1b94cf7b0fdb4871145e54a0ab57799f0fbd11992bc85",
+      "title": "Palette: teaching a small model to build decks in your design language",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "summary": "",
+      "publishedAt": "2026-11-03T16:35:36+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0a382aa136fca6d9cc4d27f03fcb48a1b0d4013f2da8b2ae72e921bdd7fcb1ab",
+      "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
+      "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+      "summary": "Schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.",
+      "publishedAt": "2026-11-03T16:30:34+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f1a111e72742f0df3d87170744905f30e0f5c3f2747ffe8f1c7993b540d8d137",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret",
+      "publishedAt": "2026-11-03T16:29:48+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7ed61c4f32788f77e2fb2734f9faa117a64c893284fb68f529ea5513edecb8d5",
+      "title": "Quili AI",
+      "url": "https://www.quili.ai/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T15:49:02+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "5eba943719a0061f995f10f735cd1586767a9e07ca4740790512882c1d9d2ae2",
       "title": "Apple restricts dating apps and AI companions to users 18 and up",
       "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
@@ -22,6 +62,46 @@
       "publishedAt": "2026-11-03T15:38:27+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "12bc869946cd1559b485e02016ac230b808a342c1d02672fbe9f8cd09276821c",
+      "title": "AI is destroying my CS degree",
+      "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
+      "summary": "86 points · 63 comments on Hacker News",
+      "publishedAt": "2026-11-03T15:35:06+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "35eaf0d06c77e9ddf38536cb3ddc9c4d9913c2d4cfe6e4657a225e87e10c28db",
+      "title": "Schools that block Google A.I. will lose student access to its search engine",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T15:25:47+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "954fbd2e34ab1eb99faa760319f1914874c0877467070f2eeb4c382ed9cbf38f",
+      "title": "Octomind – open-source AI harness that saves your tokens, static rust",
+      "url": "https://github.com/Muvon/octomind",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T15:02:58+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7f4e8c0b18ac2fab072f890b902f1a79c4852f45db30ebf9c7ccfb683788f03d",
+      "title": "The AI Bubble Monitor",
+      "url": "https://cepr.net/publications/ai-bubble-monitor/",
+      "summary": "46 points · 30 comments on Hacker News",
+      "publishedAt": "2026-11-03T14:51:31+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -38,7 +118,7 @@
       "id": "92fd20533f79da7fc7172500017ba4ab4bb4379e19bc9bf1bf1e322125782987",
       "title": "Just a little AI resistance, as a treat",
       "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
-      "summary": "Comments",
+      "summary": "151 points · 95 comments on Hacker News",
       "publishedAt": "2026-11-03T14:14:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -125,16 +205,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "804d2e2f62a5210f78bc3a255d10cd22134666fb852a1dfe6f0f3382d7f7f952",
-      "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
-      "url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-      "summary": "Apple hinted at ways that it could spur revenue through third-party \"opportunities\" during its Monday night earnings call.",
-      "publishedAt": "2026-11-03T01:49:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "a6f54d325d31634f891659b5f3c8f6d5a46072f111d8835330333b2acd151981",
       "title": "Transformers Model Integration Contracts",
       "url": "https://huggingface.co/blog/transformers-mic",
@@ -152,46 +222,6 @@
       "publishedAt": "2026-11-02T23:49:30+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b80f6e271cfd30ce93a375c9842f9e9fda3296c15ae9dd87545744dd07188306",
-      "title": "V100 SXM2 pinout and NVLink reference",
-      "url": "https://github.com/pigeon-labs-stack/v100-sxm2-reference",
-      "summary": "43 points · 10 comments on Hacker News",
-      "publishedAt": "2026-11-02T22:30:13+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ea307d35f7398452dad433139263722397b886eb433eb0836f2b753f325b328c",
-      "title": "Anthropic reveals $900B AI spending commitments ahead of IPO",
-      "url": "https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f",
-      "summary": "74 points · 44 comments on Hacker News",
-      "publishedAt": "2026-11-02T19:36:37+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
-      "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
-      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
-      "summary": "194 points · 170 comments on Hacker News",
-      "publishedAt": "2026-11-02T19:27:37+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fcfbe0256d6ca2b680d1e993af56915dfa8a7f42d7ac74115598a7bf7a7853f8",
-      "title": "Egoless Mathematics in the AI Era",
-      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
-      "summary": "179 points · 144 comments on Hacker News",
-      "publishedAt": "2026-11-02T18:54:44+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -222,16 +252,6 @@
       "publishedAt": "2026-11-02T17:45:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "570f5e1efb5964ca71378f8912fd84517cb3958f6b4f348190c33995b5d684fd",
-      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
-      "url": "https://momentic.ai/",
-      "summary": "158 points · 106 comments on Hacker News",
-      "publishedAt": "2026-11-02T17:05:25+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -375,16 +395,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "b72dc720cf78e3932741fadec5df3b18b40e95154124f18a2b1439cc5c313268",
-      "title": "Quoting Kyle Kingsbury",
-      "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
-      "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system ar",
-      "publishedAt": "2026-11-01T16:49:04+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "037154e824aaff256e14aef2b586c0e511965e0336f47b9c77c9f940acb09baf",
       "title": "nemotron-halloween",
       "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
@@ -438,16 +448,6 @@
       "id": "718617961cab3abcc8e8a05120222629543523589403679efbd4712495667d4b",
       "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
       "url": "https://huggingface.co/blog/announcing-project-protostar",
-      "summary": "",
-      "publishedAt": "2026-10-29T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b6b30743068c26272d898fb0a6f1ecbc2f9f86806ca564a0085874621ca143e5",
-      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-      "url": "https://huggingface.co/blog/mistral-large4",
       "summary": "",
       "publishedAt": "2026-10-29T00:00:00+00:00",
       "source": "Hugging Face",
