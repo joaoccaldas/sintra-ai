@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T14:24:17.789123+00:00",
+  "generatedAt": "2026-11-03T14:52:38.528123+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "d683890ef6589f420e1b434619af24207bd7c84a07e4d25a71d561e2ba71511c",
+      "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4",
+      "url": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/",
+      "summary": "On Nov. 4, TechCrunch Founder Summit 2026 brings founders and VCs to Boston's SoWa Power Station for practical insights and connections. Register before prices increase at the door.",
+      "publishedAt": "2026-11-03T14:30:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "92fd20533f79da7fc7172500017ba4ab4bb4379e19bc9bf1bf1e322125782987",
+      "title": "Just a little AI resistance, as a treat",
+      "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T14:14:12+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9963b02b6cee4dcd7893ed496d1b7dd4852d0baa2405c8140401edfcf2579edb",
+      "title": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
+      "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
+      "summary": "Secure your TechCrunch Founder Summit pass savings before prices increase tomorrow at 9 a.m. ET. Save up to $100 on your pass, and get a second for free.",
+      "publishedAt": "2026-11-03T14:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "e6e258092e928f0d256b4e64dbf57ded6531b9872c41f539873c241a99f33956",
       "title": "How “reverse game theory” could keep AI agents in check",
@@ -125,16 +155,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "c8564f3a68709075cd7869fa3c94cd484dabcbb9176708701ade8977e409496c",
-      "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
-      "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-      "summary": "The one-year-old startup is now valued at $300 million.",
-      "publishedAt": "2026-11-02T23:13:53+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "b80f6e271cfd30ce93a375c9842f9e9fda3296c15ae9dd87545744dd07188306",
       "title": "V100 SXM2 pinout and NVLink reference",
       "url": "https://github.com/pigeon-labs-stack/v100-sxm2-reference",
@@ -142,16 +162,6 @@
       "publishedAt": "2026-11-02T22:30:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ca204e1c0052a71213a13f974f994b910fb3501c36c9bd44bc4ff41e672db736",
-      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
-      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-      "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
-      "publishedAt": "2026-11-02T22:14:50+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -168,7 +178,7 @@
       "id": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
       "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
       "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
-      "summary": "190 points · 168 comments on Hacker News",
+      "summary": "194 points · 170 comments on Hacker News",
       "publishedAt": "2026-11-02T19:27:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +188,7 @@
       "id": "fcfbe0256d6ca2b680d1e993af56915dfa8a7f42d7ac74115598a7bf7a7853f8",
       "title": "Egoless Mathematics in the AI Era",
       "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
-      "summary": "173 points · 136 comments on Hacker News",
+      "summary": "178 points · 142 comments on Hacker News",
       "publishedAt": "2026-11-02T18:54:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -218,7 +228,7 @@
       "id": "570f5e1efb5964ca71378f8912fd84517cb3958f6b4f348190c33995b5d684fd",
       "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
       "url": "https://momentic.ai/",
-      "summary": "151 points · 101 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-02T17:05:25+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -232,16 +242,6 @@
       "publishedAt": "2026-11-02T17:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0db7b6f459a78855c303e34e1af481b22107e78ea7f68c827d538bd496a59a03",
-      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
-      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-      "summary": "335 points · 257 comments on Hacker News",
-      "publishedAt": "2026-11-02T16:40:29+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
