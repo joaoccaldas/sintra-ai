@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T21:36:25.605426+00:00",
+  "generatedAt": "2026-11-03T21:54:44.936863+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "14409ffa4e7706ac4f457c5b771bd33569ead40023aed99c667b5dced6ed2f97",
+      "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
+      "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+      "summary": "Cybersecurity focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
+      "publishedAt": "2026-11-03T21:43:08+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "81efc47dc4581bdd56ee6db87350ad331e79e9fa035970027221049c1897a70c",
+      "title": "Hiding inside Palantir’s skyrocketing quarter is a foreboding signal",
+      "url": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
+      "summary": "Palantir delivered such a huge third-quarter earnings report on Monday that its press release even bragged that the numbers were “crushing consensus expectations.” Yet, retail investors were lukewarm on the company on Tuesday, with the stock trading slightly d",
+      "publishedAt": "2026-11-03T21:05:55+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "05d1a3678a8eb50272245f0cb1b9c9a5b09e2c0f2d40cf916632cb632143164c",
       "title": "AI inference startup Fal doubles its valuation to $16B as demand surges",
@@ -36,9 +56,9 @@
     },
     {
       "id": "502310879104d4321d2e0b617aa21d3df317c1b22fc022141dd63145d42690b8",
-      "title": "I use AI (Oct 2026)",
+      "title": "How I use AI (Oct 2026)",
       "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
-      "summary": "32 points · 42 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-03T18:11:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +68,7 @@
       "id": "500d482023c5c5a5cf0415b97c360d2a6c2fae97658c359ca2e96d4b21bcf908",
       "title": "Google researchers demand freedom to tell the world what they know about AI",
       "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
-      "summary": "75 points · 86 comments on Hacker News",
+      "summary": "76 points · 97 comments on Hacker News",
       "publishedAt": "2026-11-03T17:55:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,27 +148,17 @@
       "id": "7ed61c4f32788f77e2fb2734f9faa117a64c893284fb68f529ea5513edecb8d5",
       "title": "Quili AI",
       "url": "https://www.quili.ai/",
-      "summary": "93 points · 62 comments on Hacker News",
+      "summary": "94 points · 62 comments on Hacker News",
       "publishedAt": "2026-11-03T15:49:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "5eba943719a0061f995f10f735cd1586767a9e07ca4740790512882c1d9d2ae2",
-      "title": "Apple restricts dating apps and AI companions to users 18 and up",
-      "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
-      "summary": "Apple's new App Store rules will require 18+ ratings for dating apps and AI companions that offer sexual or romantic content.",
-      "publishedAt": "2026-11-03T15:38:27+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "12bc869946cd1559b485e02016ac230b808a342c1d02672fbe9f8cd09276821c",
       "title": "AI is destroying my CS degree",
       "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
-      "summary": "111 points · 101 comments on Hacker News",
+      "summary": "113 points · 104 comments on Hacker News",
       "publishedAt": "2026-11-03T15:35:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,16 +172,6 @@
       "publishedAt": "2026-11-03T15:25:47+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d683890ef6589f420e1b434619af24207bd7c84a07e4d25a71d561e2ba71511c",
-      "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4",
-      "url": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/",
-      "summary": "On Nov. 4, TechCrunch Founder Summit 2026 brings founders and VCs to Boston's SoWa Power Station for practical insights and connections. Register before prices increase at the door.",
-      "publishedAt": "2026-11-03T14:30:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
