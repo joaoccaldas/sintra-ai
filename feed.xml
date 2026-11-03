@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 18:41:57 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 19:12:31 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Netflix’s new AI Discover tab helps you find something to watch based on your mood]]></title>
+    <description><![CDATA[The first experimental feature under the tab will allow users to get recommendations based on what they're currently in the mood for.]]></description>
+    <link>https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Qwen 3.8 27B on my laptop can interpret model weights, too]]></title>
+    <description><![CDATA[Comments]]></description>
+    <link>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[StateBench: Testing how language models track state changes over long documents]]></title>
@@ -56,15 +74,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Qwen 3.8 27B on my laptop can interpret model weights, too]]></title>
-    <description><![CDATA[Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret]]></description>
-    <link>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
     <title><![CDATA[Apple restricts dating apps and AI companions to users 18 and up]]></title>
     <description><![CDATA[Apple's new App Store rules will require 18+ ratings for dating apps and AI companions that offer sexual or romantic content.]]></description>
     <link>https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/</link>
@@ -107,15 +116,6 @@
     <guid isPermaLink="true">https://openai.com/index/heimstaden</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple Watch’s AI features for rewinding and recapping conversations begin beta testing]]></title>
-    <description><![CDATA[Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.]]></description>
-    <link>https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
