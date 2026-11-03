@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 15:40:06 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 16:10:21 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Apple restricts dating apps and AI companions to users 18 and up]]></title>
+    <description><![CDATA[Apple's new App Store rules will require 18+ ratings for dating apps and AI companions that offer sexual or romantic content.]]></description>
+    <link>https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4]]></title>
@@ -96,15 +105,6 @@
     <description><![CDATA[Apple hinted at ways that it could spur revenue through third-party "opportunities" during its Monday night earnings call.]]></description>
     <link>https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens]]></title>
-    <description><![CDATA[Y Combinator Garry Tan has jokingly admitted that he's suffered from "cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his]]></description>
-    <link>https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
