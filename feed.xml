@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 16:40:38 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:10:36 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Palette: teaching a small model to build decks in your design language]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/ibm-research/palette-deck-building</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/ibm-research/palette-deck-building</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google will let schools disable its AI tools, but not without sacrificing Search]]></title>
+    <description><![CDATA[Schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.]]></description>
+    <link>https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Qwen 3.8 27B on my laptop can interpret model weights, too]]></title>
+    <description><![CDATA[Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret]]></description>
+    <link>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Apple restricts dating apps and AI companions to users 18 and up]]></title>
@@ -101,15 +128,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Apple may try to increase revenue by doing…something with third-party AI apps]]></title>
-    <description><![CDATA[Apple hinted at ways that it could spur revenue through third-party "opportunities" during its Monday night earnings call.]]></description>
-    <link>https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Transformers Model Integration Contracts]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/transformers-mic</link>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Raising the quality of insights in agentic analytics]]></title>
-    <description><![CDATA[In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire workflows and taking actions based on agent insi]]></description>
-    <link>https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Scaling Git at OpenAI]]></title>
-    <description><![CDATA[How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.]]></description>
-    <link>https://openai.com/index/scaling-git-at-openai</link>
-    <guid isPermaLink="true">https://openai.com/index/scaling-git-at-openai</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
