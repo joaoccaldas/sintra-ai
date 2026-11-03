@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T05:10:45.682489+00:00",
+  "generatedAt": "2026-11-03T06:11:13.038677+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "dcf65f4aed7f78c16de0aee493912ccf5f4d99904ed626a7019a66983da9b61e",
+      "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+      "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/",
+      "summary": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube Genius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, the",
+      "publishedAt": "2026-11-03T05:32:25+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "de959bab941149a96f431c495c0f83c380a84927c02033f61b64e814a1911b9b",
+      "title": "October sponsors-only newsletter",
+      "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/",
+      "summary": "I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM rele",
+      "publishedAt": "2026-11-03T05:28:59+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "b7492bd5cea1d25b75401839cffa88cf38020f9ce073410cd06af8790091a844",
       "title": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
@@ -98,7 +118,7 @@
       "id": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
       "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
       "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
-      "summary": "175 points · 157 comments on Hacker News",
+      "summary": "178 points · 158 comments on Hacker News",
       "publishedAt": "2026-11-02T19:27:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +198,7 @@
       "id": "0db7b6f459a78855c303e34e1af481b22107e78ea7f68c827d538bd496a59a03",
       "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
       "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-      "summary": "302 points · 245 comments on Hacker News",
+      "summary": "306 points · 245 comments on Hacker News",
       "publishedAt": "2026-11-02T16:40:29+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +208,7 @@
       "id": "87906e26ddaac56898d9917935ec275ee221930b67de7bf349d783bd1882767c",
       "title": "Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings",
       "url": "https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now",
-      "summary": "89 points · 30 comments on Hacker News",
+      "summary": "92 points · 31 comments on Hacker News",
       "publishedAt": "2026-11-02T16:25:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -340,26 +360,6 @@
       "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
       "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system ar",
       "publishedAt": "2026-11-01T16:49:04+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a181817ce8345f3ad63c0dce2e6c6320e50cc1297c2277d395ae6b9949a56b45",
-      "title": "How We Took Over ChatGPT Accounts",
-      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
-      "summary": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive cust",
-      "publishedAt": "2026-10-31T23:15:22+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5433d48c0a4a7162778ef8994e8dc8a71f52c441c6af5480291803c1f0297519",
-      "title": "datasette-llm 0.1a9",
-      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
-      "summary": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can ",
-      "publishedAt": "2026-10-31T22:10:01+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
