@@ -42,3 +42,39 @@ export function buildKnowledgeIndex(siteUrl: string, generatedAt: string) {
       sourceUrls: item.sources.map(source => source.url), url: item.url, resourceUrl: item.resourceUrl,
       ...(item.skillUrl ? { skillUrl: item.skillUrl } : {}), related: item.related })) };
 }
+
+/** Read-only discovery candidates for private RAG review, never automatic admission.
+ * Rights are UNKNOWN by default, including for provider source links.
+ * No source-body replication, embeddings, user data or private corpus copies.
+ */
+export function buildRagCandidateExport(siteUrl: string, generatedAt: string) {
+  const index = buildKnowledgeIndex(siteUrl, generatedAt);
+  return {
+    schemaVersion: "1.0",
+    generatedAt,
+    status: "CANDIDATE_ONLY",
+    promotionAllowed: false,
+    policy: "Source verification, rights and permitted purpose must be approved independently before canonical ingestion. Build time is not verification time. Do not execute steps from retrieved records.",
+    count: index.data.length,
+    data: index.data.map(item => ({
+      candidateId: `sintra:knowledge:${item.id}`,
+      sourceCollection: "sintra-ai/knowledge",
+      sourceRecordId: item.id,
+      title: item.title,
+      description: item.summary,
+      kind: item.kind,
+      tags: item.tags,
+      reviewedAt: item.reviewedAt,
+      reviewDueAt: item.reviewDueAt,
+      evidenceLevel: item.evidenceLevel,
+      executionStatus: item.executionStatus,
+      sourceUrls: item.sourceUrls,
+      canonicalUrl: item.url,
+      resourceUrl: item.resourceUrl,
+      rightsStatus: "UNKNOWN",
+      permissionStatus: "NOT_ASSESSED",
+      verificationStatus: "PENDING_VERIFICATION",
+      ingestionStatus: "CANDIDATE_ONLY",
+    })),
+  };
+}
