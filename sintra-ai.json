@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T21:54:44.936863+00:00",
+  "generatedAt": "2026-11-03T22:37:31.155453+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -28,7 +28,7 @@
       "id": "81efc47dc4581bdd56ee6db87350ad331e79e9fa035970027221049c1897a70c",
       "title": "Hiding inside Palantir’s skyrocketing quarter is a foreboding signal",
       "url": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
-      "summary": "Palantir delivered such a huge third-quarter earnings report on Monday that its press release even bragged that the numbers were “crushing consensus expectations.” Yet, retail investors were lukewarm on the company on Tuesday, with the stock trading slightly d",
+      "summary": "Palantir's U.S. commercial revenue surpassed U.S. government revenue for the first time ever.",
       "publishedAt": "2026-11-03T21:05:55+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
@@ -557,7 +557,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-03T16:32:14.398387+00:00",
+    "generatedAt": "2026-11-03T22:32:41.580159+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1608,7 +1608,7 @@
         ],
         "value": 6.1411,
         "period": "2026-11-03",
-        "retrievedAt": "2026-11-03T16:32:14.398360+00:00",
+        "retrievedAt": "2026-11-03T22:32:41.580148+00:00",
         "stale": false
       },
       {
@@ -2660,7 +2660,7 @@
         ],
         "value": 10.9515,
         "period": "2026-11-03",
-        "retrievedAt": "2026-11-03T16:32:14.398380+00:00",
+        "retrievedAt": "2026-11-03T22:32:41.580156+00:00",
         "stale": false
       },
       {
@@ -3712,7 +3712,7 @@
         ],
         "value": 1.1179,
         "period": "2026-11-03",
-        "retrievedAt": "2026-11-03T16:32:14.398387+00:00",
+        "retrievedAt": "2026-11-03T22:32:41.580159+00:00",
         "stale": false
       },
       {
