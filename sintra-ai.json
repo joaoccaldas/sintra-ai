@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T18:25:14.420193+00:00",
+  "generatedAt": "2026-11-03T18:53:40.877641+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "90ff5ab634ecc941280f64fe019e9f405cc610f4c52bdcab4622b59fdc6eeb2f",
+      "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
+      "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "summary": "The first experimental feature under the tab will allow users to get recommendations based on what they're currently in the mood for.",
+      "publishedAt": "2026-11-03T18:42:16+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "500d482023c5c5a5cf0415b97c360d2a6c2fae97658c359ca2e96d4b21bcf908",
+      "title": "Google researchers demand freedom to tell the world what they know about AI",
+      "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T17:55:26+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f1a111e72742f0df3d87170744905f30e0f5c3f2747ffe8f1c7993b540d8d137",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T17:40:00+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "210b26f029f33a3ef7fe3515ece25538b3c2fd8043720d57f14f3a706409d450",
       "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
@@ -75,20 +105,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "f1a111e72742f0df3d87170744905f30e0f5c3f2747ffe8f1c7993b540d8d137",
-      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-      "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret",
-      "publishedAt": "2026-11-03T16:29:48+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7ed61c4f32788f77e2fb2734f9faa117a64c893284fb68f529ea5513edecb8d5",
       "title": "Quili AI",
       "url": "https://www.quili.ai/",
-      "summary": "83 points · 55 comments on Hacker News",
+      "summary": "86 points · 60 comments on Hacker News",
       "publishedAt": "2026-11-03T15:49:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +128,7 @@
       "id": "12bc869946cd1559b485e02016ac230b808a342c1d02672fbe9f8cd09276821c",
       "title": "AI is destroying my CS degree",
       "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
-      "summary": "93 points · 82 comments on Hacker News",
+      "summary": "104 points · 92 comments on Hacker News",
       "publishedAt": "2026-11-03T15:35:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -116,7 +136,7 @@
     },
     {
       "id": "35eaf0d06c77e9ddf38536cb3ddc9c4d9913c2d4cfe6e4657a225e87e10c28db",
-      "title": "Schools that block Google’s A.I. will lose student access to its search engine",
+      "title": "Google will turn off search for schools that reject AI",
       "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
       "summary": "Comments",
       "publishedAt": "2026-11-03T15:25:47+00:00",
@@ -128,18 +148,8 @@
       "id": "954fbd2e34ab1eb99faa760319f1914874c0877467070f2eeb4c382ed9cbf38f",
       "title": "Octomind – open-source AI harness that saves your tokens, static rust",
       "url": "https://github.com/Muvon/octomind",
-      "summary": "41 points · 32 comments on Hacker News",
+      "summary": "45 points · 33 comments on Hacker News",
       "publishedAt": "2026-11-03T15:02:58+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7f4e8c0b18ac2fab072f890b902f1a79c4852f45db30ebf9c7ccfb683788f03d",
-      "title": "The AI Bubble Monitor",
-      "url": "https://cepr.net/publications/ai-bubble-monitor/",
-      "summary": "51 points · 32 comments on Hacker News",
-      "publishedAt": "2026-11-03T14:51:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -182,16 +192,6 @@
       "publishedAt": "2026-11-03T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "aafb2d2c8fa2107938d3734be8035099817c423d76b8e218ed27b6074e24d6c9",
-      "title": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
-      "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
-      "summary": "Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.",
-      "publishedAt": "2026-11-03T07:20:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
