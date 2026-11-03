@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T22:37:31.155453+00:00",
+  "generatedAt": "2026-11-03T22:54:54.205829+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,26 @@
   "itemCount": 54,
   "items": [
     {
+      "id": "52eb9ce7b224919af0f38d52691925575a7f295d99a8fa21c20a9f505bb60b52",
+      "title": "Anthropic is working on a system to prove AI models’ identity",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "summary": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.",
+      "publishedAt": "2026-11-03T22:41:03+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "014d0f8ff9b1f411e59e97ded2f4fb06bfbba5c679ece2bbc8101c1e93aa9762",
+      "title": "Data centers are turning to old jet engines as the wait for power grows",
+      "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+      "summary": "The years-long wait for access to the grid and new turbines is causing data center builders to turn to an unusual, less efficient and less environmentally friendly solution: once-discarded jet engines.",
+      "publishedAt": "2026-11-03T22:19:53+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "14409ffa4e7706ac4f457c5b771bd33569ead40023aed99c667b5dced6ed2f97",
       "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
       "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
@@ -22,6 +42,36 @@
       "publishedAt": "2026-11-03T21:43:08+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "01b1e45f222dec5edce91e9f286b6ecdf2aeede4326d9eecd2ea68c5139c8784",
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T21:40:53+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "summary": "Comments",
+      "publishedAt": "2026-11-03T21:26:44+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "ff89410516b9f2cd61c76e38e27e2e6aa12513f0177b02597452119405ee982b",
+      "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
+      "url": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
+      "summary": "51 points · 47 comments on Hacker News",
+      "publishedAt": "2026-11-03T21:25:48+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -68,7 +118,7 @@
       "id": "500d482023c5c5a5cf0415b97c360d2a6c2fae97658c359ca2e96d4b21bcf908",
       "title": "Google researchers demand freedom to tell the world what they know about AI",
       "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
-      "summary": "76 points · 97 comments on Hacker News",
+      "summary": "79 points · 98 comments on Hacker News",
       "publishedAt": "2026-11-03T17:55:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -105,16 +155,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "89158d68bf9594ef8ca890b645be05660786f7a65c36e8155f8a445ae1dedaa8",
-      "title": "Anthropic is still grappling with the economics of compute",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
-      "summary": "At a moment when Anthropic's compute margins should be getting better, they’re getting worse.",
-      "publishedAt": "2026-11-03T17:07:01+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "da38bc697163569b34347a26c22a149b3e4e25a121038cd810ababffbf5d3427",
       "title": "Agentic cheminformatics with Google Antigravity",
       "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
@@ -132,46 +172,6 @@
       "publishedAt": "2026-11-03T16:35:36+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0a382aa136fca6d9cc4d27f03fcb48a1b0d4013f2da8b2ae72e921bdd7fcb1ab",
-      "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
-      "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
-      "summary": "Schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.",
-      "publishedAt": "2026-11-03T16:30:34+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7ed61c4f32788f77e2fb2734f9faa117a64c893284fb68f529ea5513edecb8d5",
-      "title": "Quili AI",
-      "url": "https://www.quili.ai/",
-      "summary": "94 points · 62 comments on Hacker News",
-      "publishedAt": "2026-11-03T15:49:02+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "12bc869946cd1559b485e02016ac230b808a342c1d02672fbe9f8cd09276821c",
-      "title": "AI is destroying my CS degree",
-      "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
-      "summary": "113 points · 104 comments on Hacker News",
-      "publishedAt": "2026-11-03T15:35:06+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "35eaf0d06c77e9ddf38536cb3ddc9c4d9913c2d4cfe6e4657a225e87e10c28db",
-      "title": "Google will turn off search for schools that reject AI",
-      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
-      "summary": "Comments",
-      "publishedAt": "2026-11-03T15:25:47+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
