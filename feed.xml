@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 06:13:08 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 06:31:26 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[I discovered a sound that leaks your exact location (and it's everywhere) - YouTube]]></title>
+    <description><![CDATA[I discovered a sound that leaks your exact location (and it's everywhere) - YouTube Genius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, the]]></description>
+    <link>https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[October sponsors-only newsletter]]></title>
+    <description><![CDATA[I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM rele]]></description>
+    <link>https://simonwillison.net/2026/Nov/3/october-newsletter/</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/october-newsletter/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test]]></title>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The agentic web is here]]></title>
-    <description><![CDATA[In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet desi]]></description>
-    <link>https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[LifeVal]]></title>
-    <description><![CDATA[Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.]]></description>
-    <link>https://openai.com/index/lifeval</link>
-    <guid isPermaLink="true">https://openai.com/index/lifeval</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
