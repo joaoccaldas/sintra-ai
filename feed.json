@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "content_text": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-03T00:00:00.000Z",
+      "tags": [
+        "Google DeepMind",
+        "Google DeepMind",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://huggingface.co/blog/ibm-research/palette-deck-building",
       "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
       "title": "Palette: teaching a small model to build decks in your design language",
@@ -342,26 +362,6 @@
       "tags": [
         "OpenAI",
         "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "title": "The latest AI news we announced in October 2026",
-      "content_text": "Here are Google’s latest AI updates from October 2026",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-02T00:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "Google AI",
         "Labs",
         "Live"
       ]

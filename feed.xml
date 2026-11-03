@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 17:10:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:41:03 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Agentic cheminformatics with Google Antigravity]]></title>
+    <description><![CDATA[Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.]]></description>
+    <link>https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
 
   <item>
     <title><![CDATA[Palette: teaching a small model to build decks in your design language]]></title>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The latest AI news we announced in October 2026]]></title>
-    <description><![CDATA[Here are Google’s latest AI updates from October 2026]]></description>
-    <link>https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
   </item>
 
   <item>
