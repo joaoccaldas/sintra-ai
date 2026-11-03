@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "siteUrl": "https://joaoccaldas.github.io/sintra-ai",
-  "generatedAt": "2026-11-03T05:11:25.635Z",
+  "generatedAt": "2026-11-03T06:01:40.273Z",
   "access": {
     "transport": "static HTTPS GET",
     "authentication": "none",
@@ -74,6 +74,11 @@
       "id": "guides",
       "url": "https://joaoccaldas.github.io/sintra-ai/api/guides.json",
       "contains": "Reference collection; review source dates before relying on volatile claims"
+    },
+    {
+      "id": "markets",
+      "url": "https://joaoccaldas.github.io/sintra-ai/api/markets.json",
+      "contains": "Public ECB currency and World Bank macro histories with observation dates, units, attribution and per-series delivery status"
     },
     {
       "id": "news",
