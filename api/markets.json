@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-04T15:38:50.852Z",
+  "resolvedAt": "2026-11-04T16:39:30.970Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -12,6 +12,10 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
+        {
+          "date": "2025-10-29",
+          "value": 1.1636
+        },
         {
           "date": "2025-10-30",
           "value": 1.155
@@ -1051,9 +1055,9 @@
       ],
       "value": 1.1267,
       "period": "2026-11-04",
-      "retrievedAt": "2026-11-04T15:38:50.852Z",
+      "retrievedAt": "2026-11-04T16:35:25.781550+00:00",
       "stale": false,
-      "delivery": "public-provider"
+      "delivery": "ondai-feeds"
     },
     {
       "id": "EUR-SEK",
@@ -1065,6 +1069,10 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
+        {
+          "date": "2025-10-29",
+          "value": 10.896
+        },
         {
           "date": "2025-10-30",
           "value": 10.94
@@ -2104,9 +2112,9 @@
       ],
       "value": 10.9718,
       "period": "2026-11-04",
-      "retrievedAt": "2026-11-04T15:38:50.852Z",
+      "retrievedAt": "2026-11-04T16:35:25.781542+00:00",
       "stale": false,
-      "delivery": "public-provider"
+      "delivery": "ondai-feeds"
     },
     {
       "id": "EUR-BRL",
@@ -2118,6 +2126,10 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
+        {
+          "date": "2025-10-29",
+          "value": 6.222
+        },
         {
           "date": "2025-10-30",
           "value": 6.2288
@@ -3157,9 +3169,9 @@
       ],
       "value": 6.1579,
       "period": "2026-11-04",
-      "retrievedAt": "2026-11-04T15:38:50.852Z",
+      "retrievedAt": "2026-11-04T16:35:25.781519+00:00",
       "stale": false,
-      "delivery": "public-provider"
+      "delivery": "ondai-feeds"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-SWE",
