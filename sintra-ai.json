@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T13:13:57.891934+00:00",
+  "generatedAt": "2026-11-04T14:14:06.859921+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 54,
   "items": [
     {
+      "id": "6c941b016a2f37ccdc4efb7664c6f334594e6fb2d795442db79ed5cd105e9f8c",
+      "title": "Securing the agentic enterprise with data lineage",
+      "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+      "summary": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to d",
+      "publishedAt": "2026-11-04T13:00:00+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "857e942cc1110bf466bd604f7ab53e12e55e499bb6199d142bb42c790f2292e7",
       "title": "AI is forcing us to pay off 40 years of technical debt",
       "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-      "summary": "Comments",
+      "summary": "284 points · 170 comments on Hacker News",
       "publishedAt": "2026-11-04T11:52:17+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +38,7 @@
       "id": "96fe654d833fe36f856a82b247c6402cdd58fb57a1a53c58923e15eb742fd3ac",
       "title": "Geoffrey Hinton: it might turn out we were better off without AI",
       "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
-      "summary": "Comments",
+      "summary": "170 points · 121 comments on Hacker News",
       "publishedAt": "2026-11-04T10:23:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +48,7 @@
       "id": "23d5cc8219ef6b655f2c55e754d28d956425e03fa689d2d3af6814748d53c7dc",
       "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
       "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-      "summary": "Comments",
+      "summary": "251 points · 138 comments on Hacker News",
       "publishedAt": "2026-11-04T08:46:29+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +58,7 @@
       "id": "91c49ae4bb3940a47f398da737757546c258606e71a08fb79759097eb19caf3a",
       "title": "AI stocks slide as Texas governor result raises data center risks",
       "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-      "summary": "45 points · 62 comments on Hacker News",
+      "summary": "48 points · 69 comments on Hacker News",
       "publishedAt": "2026-11-04T07:00:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +98,7 @@
       "id": "01b1e45f222dec5edce91e9f286b6ecdf2aeede4326d9eecd2ea68c5139c8784",
       "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
       "url": "https://arxiv.org/abs/2605.29713",
-      "summary": "359 points · 56 comments on Hacker News",
+      "summary": "362 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-03T21:40:53+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
       "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
       "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "summary": "372 points · 155 comments on Hacker News",
+      "summary": "381 points · 156 comments on Hacker News",
       "publishedAt": "2026-11-03T21:26:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -452,16 +462,6 @@
       "publishedAt": "2026-10-29T13:37:07+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "32d69d7e6fd51a11d82013a026c4a65fbeb79da7148e874c1777b7177024760c",
-      "title": "We urgently need to monitor AI agents’ actions in real time",
-      "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-      "summary": "This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded. Around the same time, another OpenAI ",
-      "publishedAt": "2026-10-29T10:11:12+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
