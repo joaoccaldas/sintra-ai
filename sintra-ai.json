@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T17:15:38.360850+00:00",
+  "generatedAt": "2026-11-04T18:23:55.230896+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "32d4e91d243ef07f0795379b14445becfcb04565dd858a765f3d75a5b4c512ce",
+      "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "summary": "",
+      "publishedAt": "2026-11-04T17:50:10+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
     {
       "id": "ef0e90236814fadb34d74199ef4e34dc07a58fe45bc86cd7bec8b7373229d0f1",
       "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
@@ -35,6 +45,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "2b6dc67e5ac6a764de85ba55e10971101289af0153f8aea0b86a28975a88f127",
+      "title": "Show HN: I built a tool that prices a prebuilt PC part by part",
+      "url": "https://pcdealcheck.com/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-04T15:25:33+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "1be4fdd8e6ca80f0ec0127711bf05d7cfcd7194eac7f7e3b9f6a7d04824358c9",
       "title": "OpenAI to acquire Pierre Computer Company, Inc.",
       "url": "https://openai.com/index/openai-to-acquire-pierre",
@@ -45,10 +65,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "34beab957f96878287bd775f139d0c6284e509d1cf38a828d8b20325e41012df",
+      "title": "Tencent Hy4",
+      "url": "https://hy.tencent.ai/research/hy4",
+      "summary": "Comments",
+      "publishedAt": "2026-11-04T14:11:26+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "13fe6fe70be3a3b23bd97ccc2c18b096776dae5633c5ab59dea201cb1e9578d8",
       "title": "Jaron Lanier on parallels between AI and social media",
       "url": "https://www.youtube.com/watch?v=WxaRn8kX2eI",
-      "summary": "37 points · 6 comments on Hacker News",
+      "summary": "39 points · 7 comments on Hacker News",
       "publishedAt": "2026-11-04T14:10:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +118,7 @@
       "id": "96fe654d833fe36f856a82b247c6402cdd58fb57a1a53c58923e15eb742fd3ac",
       "title": "Geoffrey Hinton: it might turn out we were better off without AI",
       "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
-      "summary": "265 points · 230 comments on Hacker News",
+      "summary": "274 points · 254 comments on Hacker News",
       "publishedAt": "2026-11-04T10:23:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -100,16 +130,6 @@
       "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
       "summary": "Comments",
       "publishedAt": "2026-11-04T08:46:29+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "91c49ae4bb3940a47f398da737757546c258606e71a08fb79759097eb19caf3a",
-      "title": "AI stocks slide as Texas governor result raises data center risks",
-      "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-      "summary": "51 points · 71 comments on Hacker News",
-      "publishedAt": "2026-11-04T07:00:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -152,16 +172,6 @@
       "publishedAt": "2026-11-03T21:43:08+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "01b1e45f222dec5edce91e9f286b6ecdf2aeede4326d9eecd2ea68c5139c8784",
-      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-      "url": "https://arxiv.org/abs/2605.29713",
-      "summary": "370 points · 58 comments on Hacker News",
-      "publishedAt": "2026-11-03T21:40:53+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -452,16 +462,6 @@
       "publishedAt": "2026-10-30T14:18:30+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e508e29ae812fe586e8d04934be66406c6967422e675f969f84a3d3abfd18b22",
-      "title": "Granite Switch 4.1.1 — Update models like you update software",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
-      "summary": "",
-      "publishedAt": "2026-10-29T13:37:07+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
