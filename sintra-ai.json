@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T20:44:17.601865+00:00",
+  "generatedAt": "2026-11-04T21:52:48.452351+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,46 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "bd044bc53c19f14dcbd41f3ba93999dccade4ddff8d1afe30da0d2a797797546",
+      "title": "OpenAI is already trying to shape the 2028 election",
+      "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+      "summary": "OpenAI’s Chris Lehane wants AI to define the 2028 election, proposing a new social contract that could benefit Americans while also advancing the AI giant’s own business interests.",
+      "publishedAt": "2026-11-04T21:25:44+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8d6f6c8bc49c9de3c6add4d3a1c688648607f9368cde926a66546b901ff70817",
+      "title": "Meta acquires AI coding startup Conductor",
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "summary": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
+      "publishedAt": "2026-11-04T21:10:56+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a683442e40008fb4834c83cf7c37bdfc53b1b0c0256697515e8c25e6c6a3fd34",
+      "title": "Everything is an AI scam now",
+      "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-04T21:05:19+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
+      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+      "summary": "Comments",
+      "publishedAt": "2026-11-04T19:55:14+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "5112f3d519822a572a0230ce7a1fdd5ffb10d5fdb4797c91ad2cbeed304d986a",
       "title": "Open source AI is booming. Hugging Face explains who profits.",
@@ -75,20 +115,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "dca8692856b1500998d1c3746bd926d860f83d08ed637a656ca656352efd7f29",
-      "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
-      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
-      "summary": "Politicians on the left, like NYC mayor Zohran Mamdani and former FTC chair Lina Khan, accused Google of acting as an unregulated monopoly.",
-      "publishedAt": "2026-11-04T16:17:22+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "ef47d9cca7a39f2fd90e66e59532c1e9a8eedc32b43496fa54adc743b8382ef0",
       "title": "AI data centers comprehensively defeated at US midterm elections",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-      "summary": "46 points · 28 comments on Hacker News",
+      "summary": "50 points · 35 comments on Hacker News",
       "publishedAt": "2026-11-04T15:35:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +128,7 @@
       "id": "dfb1d49114f0805e7875e6056003bb855d5ccf8c5d1579a812ff6118ffec2af1",
       "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
       "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "summary": "50 points · 68 comments on Hacker News",
+      "summary": "53 points · 70 comments on Hacker News",
       "publishedAt": "2026-11-04T15:28:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -145,16 +175,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "13fe6fe70be3a3b23bd97ccc2c18b096776dae5633c5ab59dea201cb1e9578d8",
-      "title": "Jaron Lanier on parallels between AI and social media",
-      "url": "https://www.youtube.com/watch?v=WxaRn8kX2eI",
-      "summary": "41 points · 9 comments on Hacker News",
-      "publishedAt": "2026-11-04T14:10:14+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6c941b016a2f37ccdc4efb7664c6f334594e6fb2d795442db79ed5cd105e9f8c",
       "title": "Securing the agentic enterprise with data lineage",
       "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
@@ -162,26 +182,6 @@
       "publishedAt": "2026-11-04T13:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "83abbe2c5d4334fb79210bf5c4e9ce1a54168c977e7fb0e8e99e82c8f99e075d",
-      "title": "TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston",
-      "url": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
-      "summary": "Today is the day to join TechCrunch Founder Summit 2026 in Boston's SoWa Power Station. Register now to join this founder-focused conference today.",
-      "publishedAt": "2026-11-04T13:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "857e942cc1110bf466bd604f7ab53e12e55e499bb6199d142bb42c790f2292e7",
-      "title": "AI is forcing us to pay off 40 years of technical debt",
-      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-      "summary": "Comments",
-      "publishedAt": "2026-11-04T11:52:17+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
