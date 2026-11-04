@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T18:23:55.230896+00:00",
+  "generatedAt": "2026-11-04T19:32:27.255468+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,46 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "5112f3d519822a572a0230ce7a1fdd5ffb10d5fdb4797c91ad2cbeed304d986a",
+      "title": "Open source AI is booming. Hugging Face explains who profits.",
+      "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
+      "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture val",
+      "publishedAt": "2026-11-04T19:30:04+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e582a56b9edebbe87a5f72e6d974b7b6fbf0cd13b51f53cab5ec1f543264f559",
+      "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
+      "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+      "summary": "DuckDuckGo is courting schools frustrated by Google's AI restrictions, pointing educators to its search engine and options to disable AI features.",
+      "publishedAt": "2026-11-04T19:29:52+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "988e33cedf7304f8cc6daa3bca7ce4310206732ac6fae95fe6e10cfdcaf7af00",
+      "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "summary": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech’s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position. Democrat James Talarico won the US Senate seat against Ken Paxton. Gin",
+      "publishedAt": "2026-11-04T18:50:55+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "efff75d2c4af86e8eeaeba7a40c26da516351d5f8f9ff7772e616f45ca31cf56",
+      "title": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
+      "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
+      "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture val",
+      "publishedAt": "2026-11-04T18:44:57+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "32d4e91d243ef07f0795379b14445becfcb04565dd858a765f3d75a5b4c512ce",
       "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
@@ -42,6 +82,36 @@
       "publishedAt": "2026-11-04T16:17:22+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "ef47d9cca7a39f2fd90e66e59532c1e9a8eedc32b43496fa54adc743b8382ef0",
+      "title": "AI data centers comprehensively defeated at US midterm elections",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+      "summary": "34 points · 20 comments on Hacker News",
+      "publishedAt": "2026-11-04T15:35:51+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "dfb1d49114f0805e7875e6056003bb855d5ccf8c5d1579a812ff6118ffec2af1",
+      "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+      "summary": "46 points · 65 comments on Hacker News",
+      "publishedAt": "2026-11-04T15:28:31+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6b1c4708310c50a052ce3a27137d5bf91cbfe6a70ec7c4d3a03a1ae2e22bb168",
+      "title": "datasette-llm 0.1a10",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+      "summary": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm",
+      "publishedAt": "2026-11-04T15:26:02+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -78,7 +148,7 @@
       "id": "13fe6fe70be3a3b23bd97ccc2c18b096776dae5633c5ab59dea201cb1e9578d8",
       "title": "Jaron Lanier on parallels between AI and social media",
       "url": "https://www.youtube.com/watch?v=WxaRn8kX2eI",
-      "summary": "39 points · 7 comments on Hacker News",
+      "summary": "39 points · 9 comments on Hacker News",
       "publishedAt": "2026-11-04T14:10:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -115,26 +185,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "96fe654d833fe36f856a82b247c6402cdd58fb57a1a53c58923e15eb742fd3ac",
-      "title": "Geoffrey Hinton: it might turn out we were better off without AI",
-      "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
-      "summary": "274 points · 254 comments on Hacker News",
-      "publishedAt": "2026-11-04T10:23:34+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "23d5cc8219ef6b655f2c55e754d28d956425e03fa689d2d3af6814748d53c7dc",
-      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-      "summary": "Comments",
-      "publishedAt": "2026-11-04T08:46:29+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "a3433e936d2c04bfa7722c64f05b5efdfdc6024634f8a182254f80d5e66c1036",
       "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
       "url": "https://openai.com/index/daybreak-red-aws-govcloud",
@@ -145,41 +195,31 @@
       "color": "#5B48D9"
     },
     {
-      "id": "52eb9ce7b224919af0f38d52691925575a7f295d99a8fa21c20a9f505bb60b52",
-      "title": "Anthropic is working on a system to prove AI models’ identity",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
-      "summary": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.",
-      "publishedAt": "2026-11-03T22:41:03+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "8265b69742e725bac3ffed26d932c4aa15338eb37f3be97e02e34db7a7bf60d3",
+      "title": "datasette-apps 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+      "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration",
+      "publishedAt": "2026-11-04T00:29:36+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
-      "id": "014d0f8ff9b1f411e59e97ded2f4fb06bfbba5c679ece2bbc8101c1e93aa9762",
-      "title": "Data centers are turning to old jet engines as the wait for power grows",
-      "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
-      "summary": "The years-long wait for access to the grid and new turbines is causing data center builders to turn to an unusual, less-efficient and less environmentally friendly solution: once-discarded jet engines.",
-      "publishedAt": "2026-11-03T22:19:53+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "abbb96cf14716a168d8896a47f6e56f40f84940bb7862f38c7f2421c72f9eb4d",
+      "title": "datasette-agent 0.5a0",
+      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
+      "summary": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with da",
+      "publishedAt": "2026-11-03T23:13:45+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
-      "id": "14409ffa4e7706ac4f457c5b771bd33569ead40023aed99c667b5dced6ed2f97",
-      "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
-      "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
-      "summary": "Cybersecurity-focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
-      "publishedAt": "2026-11-03T21:43:08+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f1a111e72742f0df3d87170744905f30e0f5c3f2747ffe8f1c7993b540d8d137",
-      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-      "summary": "Comments",
-      "publishedAt": "2026-11-03T17:40:00+00:00",
+      "id": "aac81467646f1d039bd25b6e95c3bacf1c2e7e857ea227b6e0b04ff7fb5729cc",
+      "title": "llm 0.37.1",
+      "url": "https://simonwillison.net/2026/Nov/3/llm/",
+      "summary": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm",
+      "publishedAt": "2026-11-03T21:41:42+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
@@ -212,6 +252,16 @@
       "publishedAt": "2026-11-03T16:35:36+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f1a111e72742f0df3d87170744905f30e0f5c3f2747ffe8f1c7993b540d8d137",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) fou",
+      "publishedAt": "2026-11-03T16:29:48+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -265,16 +315,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "de959bab941149a96f431c495c0f83c380a84927c02033f61b64e814a1911b9b",
-      "title": "October sponsors-only newsletter",
-      "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/",
-      "summary": "I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM rele",
-      "publishedAt": "2026-11-03T05:28:59+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "b7492bd5cea1d25b75401839cffa88cf38020f9ce073410cd06af8790091a844",
       "title": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
       "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
@@ -315,16 +355,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "8fbbc27028afdfad518c41521b04b7d073ea5d4bd00d9bb33a3a07cfca79902c",
-      "title": "llm 0.37",
-      "url": "https://simonwillison.net/2026/Nov/2/llm/",
-      "summary": "Release: llm 0.37 There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes. I added gpt-6.1-sol and gpt-6.1-terra , plus a new llm openai endpoint add command to make it ",
-      "publishedAt": "2026-11-02T23:49:30+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "c45a0b6d7de18ac55a144d1972110112522405fc8ecb4e8f5a157c6e98e835e5",
       "title": "The latest AI news we announced in October 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
@@ -345,31 +375,11 @@
       "color": "#5B48D9"
     },
     {
-      "id": "93776c9c2a6b392fe84f2651db335868357969d9774f32a640e08a428e2a281d",
-      "title": "The U.S. Census Bureau and “Super Intelligence”",
-      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-      "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. A",
-      "publishedAt": "2026-11-02T13:31:26+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "8d847b3ebc262e19a01af2226735b2710e46f0e744e6710af87340a4da873a6f",
       "title": "Stop counting tokens, start counting what ships",
       "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
       "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt. The more useful ",
       "publishedAt": "2026-11-02T13:10:32+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a09e48d0b66bcc5cf629ac4c717bfeb6b5a90139dc1cb62f1cf1169c6cde2f31",
-      "title": "The agentic web is here",
-      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
-      "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet desi",
-      "publishedAt": "2026-11-02T09:35:19+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
       "color": "#5B48D9"
@@ -432,16 +442,6 @@
       "publishedAt": "2026-11-02T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "215d5e6ee0fa4f77b5ab55fe519c54e23d8ff326193e9709b8c380c95faa0af5",
-      "title": "If in doubt, delete the uv.lock file",
-      "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
-      "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's",
-      "publishedAt": "2026-11-01T23:24:22+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
