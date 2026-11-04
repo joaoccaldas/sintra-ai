@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T12:13:53.820637+00:00",
+  "generatedAt": "2026-11-04T13:13:57.891934+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 54,
   "items": [
     {
+      "id": "857e942cc1110bf466bd604f7ab53e12e55e499bb6199d142bb42c790f2292e7",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "summary": "Comments",
+      "publishedAt": "2026-11-04T11:52:17+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "96fe654d833fe36f856a82b247c6402cdd58fb57a1a53c58923e15eb742fd3ac",
       "title": "Geoffrey Hinton: it might turn out we were better off without AI",
       "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
-      "summary": "69 points · 34 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-04T10:23:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +38,7 @@
       "id": "23d5cc8219ef6b655f2c55e754d28d956425e03fa689d2d3af6814748d53c7dc",
       "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
       "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-      "summary": "152 points · 77 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-04T08:46:29+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +48,7 @@
       "id": "91c49ae4bb3940a47f398da737757546c258606e71a08fb79759097eb19caf3a",
       "title": "AI stocks slide as Texas governor result raises data center risks",
       "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-      "summary": "42 points · 60 comments on Hacker News",
+      "summary": "45 points · 62 comments on Hacker News",
       "publishedAt": "2026-11-04T07:00:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +88,7 @@
       "id": "01b1e45f222dec5edce91e9f286b6ecdf2aeede4326d9eecd2ea68c5139c8784",
       "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
       "url": "https://arxiv.org/abs/2605.29713",
-      "summary": "354 points · 55 comments on Hacker News",
+      "summary": "359 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-03T21:40:53+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,18 +98,8 @@
       "id": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
       "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
       "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "summary": "365 points · 152 comments on Hacker News",
+      "summary": "372 points · 155 comments on Hacker News",
       "publishedAt": "2026-11-03T21:26:44+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ff89410516b9f2cd61c76e38e27e2e6aa12513f0177b02597452119405ee982b",
-      "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
-      "url": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
-      "summary": "73 points · 76 comments on Hacker News",
-      "publishedAt": "2026-11-03T21:25:48+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
