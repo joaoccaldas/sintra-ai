@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 04 Nov 2026 14:38:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 15:38:52 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[OpenAI to acquire Pierre Computer Company, Inc.]]></title>
+    <description><![CDATA[OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.]]></description>
+    <link>https://openai.com/index/openai-to-acquire-pierre</link>
+    <guid isPermaLink="true">https://openai.com/index/openai-to-acquire-pierre</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[Securing the agentic enterprise with data lineage]]></title>
@@ -17,6 +26,24 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston]]></title>
+    <description><![CDATA[Today is the day to join TechCrunch Founder Summit 2026 in Boston's SoWa Power Station. Register now to join this founder-focused conference today.]]></description>
+    <link>https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Daybreak Red is now available in AWS GovCloud (US-East)]]></title>
+    <description><![CDATA[Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.]]></description>
+    <link>https://openai.com/index/daybreak-red-aws-govcloud</link>
+    <guid isPermaLink="true">https://openai.com/index/daybreak-red-aws-govcloud</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -60,15 +87,6 @@
     <description><![CDATA[The five-year-old startup raised a $1.3 billion round led by Bessemer.]]></description>
     <link>https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Netflix’s new AI Discover tab helps you find something to watch based on your mood]]></title>
-    <description><![CDATA[The first experimental feature under the tab will allow users to get recommendations based on what they're currently in the mood for.]]></description>
-    <link>https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[October sponsors-only newsletter]]></title>
-    <description><![CDATA[I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM rele]]></description>
-    <link>https://simonwillison.net/2026/Nov/3/october-newsletter/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/october-newsletter/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test]]></title>
-    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained just one directive, ordering government ]]></description>
-    <link>https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
   </item>
 
   <item>
