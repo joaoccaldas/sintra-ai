@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T03:44:22.797321+00:00",
+  "generatedAt": "2026-11-04T04:09:16.389936+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -58,7 +58,7 @@
       "id": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
       "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
       "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "summary": "Comments",
+      "summary": "304 points · 132 comments on Hacker News",
       "publishedAt": "2026-11-03T21:26:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +68,7 @@
       "id": "ff89410516b9f2cd61c76e38e27e2e6aa12513f0177b02597452119405ee982b",
       "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
       "url": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
-      "summary": "70 points · 68 comments on Hacker News",
+      "summary": "71 points · 72 comments on Hacker News",
       "publishedAt": "2026-11-03T21:25:48+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +128,7 @@
       "id": "500d482023c5c5a5cf0415b97c360d2a6c2fae97658c359ca2e96d4b21bcf908",
       "title": "Google researchers demand freedom to tell the world what they know about AI",
       "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
-      "summary": "84 points · 103 comments on Hacker News",
+      "summary": "86 points · 103 comments on Hacker News",
       "publishedAt": "2026-11-03T17:55:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -557,7 +557,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-03T22:32:41.580159+00:00",
+    "generatedAt": "2026-11-04T04:32:49.100519+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1608,7 +1608,7 @@
         ],
         "value": 6.1411,
         "period": "2026-11-03",
-        "retrievedAt": "2026-11-03T22:32:41.580148+00:00",
+        "retrievedAt": "2026-11-04T04:32:49.100497+00:00",
         "stale": false
       },
       {
@@ -2660,7 +2660,7 @@
         ],
         "value": 10.9515,
         "period": "2026-11-03",
-        "retrievedAt": "2026-11-03T22:32:41.580156+00:00",
+        "retrievedAt": "2026-11-04T04:32:49.100516+00:00",
         "stale": false
       },
       {
@@ -3712,7 +3712,7 @@
         ],
         "value": 1.1179,
         "period": "2026-11-03",
-        "retrievedAt": "2026-11-03T22:32:41.580159+00:00",
+        "retrievedAt": "2026-11-04T04:32:49.100519+00:00",
         "stale": false
       },
       {
@@ -3776,7 +3776,7 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:52.484974+00:00",
+        "retrievedAt": "2026-11-04T04:32:17.905830+00:00",
         "stale": false
       },
       {
@@ -3840,7 +3840,7 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:52.485083+00:00",
+        "retrievedAt": "2026-11-04T04:32:17.905855+00:00",
         "stale": false
       },
       {
@@ -3904,7 +3904,7 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:52.485088+00:00",
+        "retrievedAt": "2026-11-04T04:32:17.905862+00:00",
         "stale": false
       },
       {
@@ -3968,7 +3968,7 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:52.485092+00:00",
+        "retrievedAt": "2026-11-04T04:32:17.905867+00:00",
         "stale": false
       },
       {
@@ -4032,7 +4032,7 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:53.307190+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.008511+00:00",
         "stale": false
       },
       {
@@ -4096,7 +4096,7 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:53.307227+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.008533+00:00",
         "stale": false
       },
       {
@@ -4160,7 +4160,7 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:53.307230+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.008538+00:00",
         "stale": false
       },
       {
@@ -4224,7 +4224,7 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-03T04:31:53.307233+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.008542+00:00",
         "stale": false
       },
       {
@@ -4288,7 +4288,7 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:54.230492+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.056814+00:00",
         "stale": false
       },
       {
@@ -4352,7 +4352,7 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:54.230515+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.056838+00:00",
         "stale": false
       },
       {
@@ -4416,7 +4416,7 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:54.230518+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.056845+00:00",
         "stale": false
       },
       {
@@ -4480,7 +4480,7 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-03T04:31:54.230521+00:00",
+        "retrievedAt": "2026-11-04T04:32:18.056850+00:00",
         "stale": false
       }
     ]
