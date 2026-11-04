@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 04 Nov 2026 17:39:48 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 18:24:26 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Dharma Field Extractor: Any Document In, Structured Fields in JSON Out]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/Dharma-AI/dharma-field-extractor</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/Dharma-AI/dharma-field-extractor</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling]]></title>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/heimstaden</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[I discovered a sound that leaks your exact location (and it's everywhere) - YouTube]]></title>
-    <description><![CDATA[I discovered a sound that leaks your exact location (and it's everywhere) - YouTube Genius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, the]]></description>
-    <link>https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
