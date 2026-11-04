@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T15:14:09.216552+00:00",
+  "generatedAt": "2026-11-04T16:14:14.734763+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,16 @@
       "publishedAt": "2026-11-04T14:30:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "13fe6fe70be3a3b23bd97ccc2c18b096776dae5633c5ab59dea201cb1e9578d8",
+      "title": "Jaron Lanier on parallels between AI and social media",
+      "url": "https://www.youtube.com/watch?v=WxaRn8kX2eI",
+      "summary": "Comments",
+      "publishedAt": "2026-11-04T14:10:14+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -58,7 +68,7 @@
       "id": "96fe654d833fe36f856a82b247c6402cdd58fb57a1a53c58923e15eb742fd3ac",
       "title": "Geoffrey Hinton: it might turn out we were better off without AI",
       "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
-      "summary": "Comments",
+      "summary": "255 points · 212 comments on Hacker News",
       "publishedAt": "2026-11-04T10:23:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,18 +138,8 @@
       "id": "01b1e45f222dec5edce91e9f286b6ecdf2aeede4326d9eecd2ea68c5139c8784",
       "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
       "url": "https://arxiv.org/abs/2605.29713",
-      "summary": "366 points · 56 comments on Hacker News",
+      "summary": "368 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-03T21:40:53+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
-      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
-      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "summary": "387 points · 157 comments on Hacker News",
-      "publishedAt": "2026-11-03T21:26:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -557,7 +557,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-04T04:32:49.100519+00:00",
+    "generatedAt": "2026-11-04T16:35:25.781550+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1604,12 +1604,16 @@
           {
             "date": "2026-11-03",
             "value": 6.1411
+          },
+          {
+            "date": "2026-11-04",
+            "value": 6.1579
           }
         ],
-        "value": 6.1411,
-        "period": "2026-11-03",
-        "retrievedAt": "2026-11-04T04:32:49.100497+00:00",
-        "stale": true
+        "value": 6.1579,
+        "period": "2026-11-04",
+        "retrievedAt": "2026-11-04T16:35:25.781519+00:00",
+        "stale": false
       },
       {
         "id": "EUR-SEK",
@@ -2656,12 +2660,16 @@
           {
             "date": "2026-11-03",
             "value": 10.9515
+          },
+          {
+            "date": "2026-11-04",
+            "value": 10.9718
           }
         ],
-        "value": 10.9515,
-        "period": "2026-11-03",
-        "retrievedAt": "2026-11-04T04:32:49.100516+00:00",
-        "stale": true
+        "value": 10.9718,
+        "period": "2026-11-04",
+        "retrievedAt": "2026-11-04T16:35:25.781542+00:00",
+        "stale": false
       },
       {
         "id": "EUR-USD",
@@ -3708,12 +3716,16 @@
           {
             "date": "2026-11-03",
             "value": 1.1179
+          },
+          {
+            "date": "2026-11-04",
+            "value": 1.1267
           }
         ],
-        "value": 1.1179,
-        "period": "2026-11-03",
-        "retrievedAt": "2026-11-04T04:32:49.100519+00:00",
-        "stale": true
+        "value": 1.1267,
+        "period": "2026-11-04",
+        "retrievedAt": "2026-11-04T16:35:25.781550+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
