@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T21:52:48.452351+00:00",
+  "generatedAt": "2026-11-04T22:54:47.399229+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "7aa63af445bdd3ac983f6235430a0cfe2fb71446b8627a70dd23a832aa4ed640",
+      "title": "AI PACs spent millions trying to shape Congress — here’s how they fared",
+      "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+      "summary": "AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.",
+      "publishedAt": "2026-11-04T22:45:09+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c1e93e47438d89a0794e104ba33c0c4da7c1d41587d887c2a209155b69b0ee54",
+      "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
+      "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+      "summary": "While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.",
+      "publishedAt": "2026-11-04T22:13:16+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b314cbc6665b0c27cf4d1fcf1f0e476da31a81272d041f87f6eec352ddbd95f5",
+      "title": "Almost no one uses AI agents to book their Uber, company says",
+      "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+      "summary": "During its busiest week last quarter, Uber said only four people booked a ride using an AI agent.",
+      "publishedAt": "2026-11-04T21:56:01+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "bd044bc53c19f14dcbd41f3ba93999dccade4ddff8d1afe30da0d2a797797546",
       "title": "OpenAI is already trying to shape the 2028 election",
@@ -38,7 +68,7 @@
       "id": "a683442e40008fb4834c83cf7c37bdfc53b1b0c0256697515e8c25e6c6a3fd34",
       "title": "Everything is an AI scam now",
       "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-      "summary": "Comments",
+      "summary": "101 points · 29 comments on Hacker News",
       "publishedAt": "2026-11-04T21:05:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +78,7 @@
       "id": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
       "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
       "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "summary": "Comments",
+      "summary": "70 points · 34 comments on Hacker News",
       "publishedAt": "2026-11-04T19:55:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -65,32 +95,12 @@
       "color": "#5B48D9"
     },
     {
-      "id": "e582a56b9edebbe87a5f72e6d974b7b6fbf0cd13b51f53cab5ec1f543264f559",
-      "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
-      "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
-      "summary": "DuckDuckGo is courting schools frustrated by Google's AI restrictions, pointing educators to its search engine and options to disable AI features.",
-      "publishedAt": "2026-11-04T19:29:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "988e33cedf7304f8cc6daa3bca7ce4310206732ac6fae95fe6e10cfdcaf7af00",
       "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
       "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
       "summary": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech’s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position. Democrat James Talarico won the US Senate seat against Ken Paxton. Gin",
       "publishedAt": "2026-11-04T18:50:55+00:00",
       "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "efff75d2c4af86e8eeaeba7a40c26da516351d5f8f9ff7772e616f45ca31cf56",
-      "title": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
-      "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
-      "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture val",
-      "publishedAt": "2026-11-04T18:44:57+00:00",
-      "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
     },
@@ -105,20 +115,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "ef0e90236814fadb34d74199ef4e34dc07a58fe45bc86cd7bec8b7373229d0f1",
-      "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
-      "url": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
-      "summary": "Apple's AI-powered Siri Recaps won me over in just one day, despite my privacy reservations. But there's still room for improvement.",
-      "publishedAt": "2026-11-04T16:51:35+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "ef47d9cca7a39f2fd90e66e59532c1e9a8eedc32b43496fa54adc743b8382ef0",
       "title": "AI data centers comprehensively defeated at US midterm elections",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-      "summary": "50 points · 35 comments on Hacker News",
+      "summary": "54 points · 36 comments on Hacker News",
       "publishedAt": "2026-11-04T15:35:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +128,7 @@
       "id": "dfb1d49114f0805e7875e6056003bb855d5ccf8c5d1579a812ff6118ffec2af1",
       "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
       "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "summary": "53 points · 70 comments on Hacker News",
+      "summary": "53 points · 71 comments on Hacker News",
       "publishedAt": "2026-11-04T15:28:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +148,7 @@
       "id": "2b6dc67e5ac6a764de85ba55e10971101289af0153f8aea0b86a28975a88f127",
       "title": "Show HN: I built a tool that prices a prebuilt PC part by part",
       "url": "https://pcdealcheck.com/",
-      "summary": "Comments",
+      "summary": "83 points · 58 comments on Hacker News",
       "publishedAt": "2026-11-04T15:25:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +168,7 @@
       "id": "34beab957f96878287bd775f139d0c6284e509d1cf38a828d8b20325e41012df",
       "title": "Tencent Hy4",
       "url": "https://hy.tencent.ai/research/hy4",
-      "summary": "Comments",
+      "summary": "159 points · 48 comments on Hacker News",
       "publishedAt": "2026-11-04T14:11:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -182,6 +182,16 @@
       "publishedAt": "2026-11-04T13:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "fbaa86a829ad59fd10c58d013d5956116602b056ae7817da772b6c91267e6908",
+      "title": "A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+      "publishedAt": "2026-11-04T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -202,6 +212,16 @@
       "publishedAt": "2026-11-04T00:29:36+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "981785a01550309d0739d8f0393613130409c9a98cd0180f1072e2be43156c86",
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "url": "https://openai.com/index/devrev-enterprise-self-service",
+      "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+      "publishedAt": "2026-11-04T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -295,16 +315,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "fc87a45dcfbf03d417250555e1df3237ca0ef7928116e265a011dfff6b14fbc2",
-      "title": "Heimstaden is changing residential real estate management with AI",
-      "url": "https://openai.com/index/heimstaden",
-      "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
-      "publishedAt": "2026-11-03T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "dcf65f4aed7f78c16de0aee493912ccf5f4d99904ed626a7019a66983da9b61e",
       "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
       "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/",
@@ -322,16 +332,6 @@
       "publishedAt": "2026-11-03T04:18:47+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "019edb616369c3322f4c44a55e04677f77bd523e681eb1a6308bc4ebad0c1377",
-      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-      "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
-      "publishedAt": "2026-11-03T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -557,7 +557,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-04T16:35:25.781550+00:00",
+    "generatedAt": "2026-11-04T22:47:30.438376+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1612,7 +1612,7 @@
         ],
         "value": 6.1579,
         "period": "2026-11-04",
-        "retrievedAt": "2026-11-04T16:35:25.781519+00:00",
+        "retrievedAt": "2026-11-04T22:47:30.438346+00:00",
         "stale": false
       },
       {
@@ -2668,7 +2668,7 @@
         ],
         "value": 10.9718,
         "period": "2026-11-04",
-        "retrievedAt": "2026-11-04T16:35:25.781542+00:00",
+        "retrievedAt": "2026-11-04T22:47:30.438369+00:00",
         "stale": false
       },
       {
@@ -3724,7 +3724,7 @@
         ],
         "value": 1.1267,
         "period": "2026-11-04",
-        "retrievedAt": "2026-11-04T16:35:25.781550+00:00",
+        "retrievedAt": "2026-11-04T22:47:30.438376+00:00",
         "stale": false
       },
       {
