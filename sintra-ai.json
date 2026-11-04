@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T09:11:34.036462+00:00",
+  "generatedAt": "2026-11-04T10:12:09.657986+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "23d5cc8219ef6b655f2c55e754d28d956425e03fa689d2d3af6814748d53c7dc",
+      "title": "Nvidia DGX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "summary": "Comments",
+      "publishedAt": "2026-11-04T08:46:29+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "91c49ae4bb3940a47f398da737757546c258606e71a08fb79759097eb19caf3a",
+      "title": "AI stocks slide as Texas governor result raises data center risks",
+      "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+      "summary": "39 points · 49 comments on Hacker News",
+      "publishedAt": "2026-11-04T07:00:20+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "52eb9ce7b224919af0f38d52691925575a7f295d99a8fa21c20a9f505bb60b52",
       "title": "Anthropic is working on a system to prove AI models’ identity",
@@ -58,7 +78,7 @@
       "id": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
       "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
       "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "summary": "347 points · 144 comments on Hacker News",
+      "summary": "357 points · 145 comments on Hacker News",
       "publishedAt": "2026-11-03T21:26:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -80,16 +100,6 @@
       "url": "https://uncracked.city/",
       "summary": "Comments",
       "publishedAt": "2026-11-03T21:20:03+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f1213d42ab134c325807e7a43b19dd83b204c3bd7164b7f63ecabf23463075d7",
-      "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
-      "url": "https://github.com/finic-ai/kairos",
-      "summary": "Comments",
-      "publishedAt": "2026-11-03T21:16:48+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -122,16 +132,6 @@
       "publishedAt": "2026-11-03T18:42:16+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "502310879104d4321d2e0b617aa21d3df317c1b22fc022141dd63145d42690b8",
-      "title": "How I use AI (Oct 2026)",
-      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
-      "summary": "Comments",
-      "publishedAt": "2026-11-03T18:11:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -1609,7 +1609,7 @@
         "value": 6.1411,
         "period": "2026-11-03",
         "retrievedAt": "2026-11-04T04:32:49.100497+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-SEK",
@@ -2661,7 +2661,7 @@
         "value": 10.9515,
         "period": "2026-11-03",
         "retrievedAt": "2026-11-04T04:32:49.100516+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-USD",
@@ -3713,7 +3713,7 @@
         "value": 1.1179,
         "period": "2026-11-03",
         "retrievedAt": "2026-11-04T04:32:49.100519+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
