@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T10:12:09.657986+00:00",
+  "generatedAt": "2026-11-04T11:13:43.090552+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -16,7 +16,7 @@
   "items": [
     {
       "id": "23d5cc8219ef6b655f2c55e754d28d956425e03fa689d2d3af6814748d53c7dc",
-      "title": "Nvidia DGX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
       "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
       "summary": "Comments",
       "publishedAt": "2026-11-04T08:46:29+00:00",
@@ -28,7 +28,7 @@
       "id": "91c49ae4bb3940a47f398da737757546c258606e71a08fb79759097eb19caf3a",
       "title": "AI stocks slide as Texas governor result raises data center risks",
       "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-      "summary": "39 points · 49 comments on Hacker News",
+      "summary": "40 points · 57 comments on Hacker News",
       "publishedAt": "2026-11-04T07:00:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +78,7 @@
       "id": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
       "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
       "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "summary": "357 points · 145 comments on Hacker News",
+      "summary": "364 points · 145 comments on Hacker News",
       "publishedAt": "2026-11-03T21:26:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
