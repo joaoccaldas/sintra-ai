@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-04T12:37:02.076Z",
+  "resolvedAt": "2026-11-04T13:37:33.245Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -12,10 +12,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 1.1636
-        },
         {
           "date": "2025-10-30",
           "value": 1.155
@@ -1051,9 +1047,9 @@
       ],
       "value": 1.1179,
       "period": "2026-11-03",
-      "retrievedAt": "2026-11-04T04:32:49.100519+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-04T13:37:33.245Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "EUR-SEK",
@@ -1065,10 +1061,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 10.896
-        },
         {
           "date": "2025-10-30",
           "value": 10.94
@@ -2104,9 +2096,9 @@
       ],
       "value": 10.9515,
       "period": "2026-11-03",
-      "retrievedAt": "2026-11-04T04:32:49.100516+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-04T13:37:33.245Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "EUR-BRL",
@@ -2118,10 +2110,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 6.222
-        },
         {
           "date": "2025-10-30",
           "value": 6.2288
@@ -3157,9 +3145,9 @@
       ],
       "value": 6.1411,
       "period": "2026-11-03",
-      "retrievedAt": "2026-11-04T04:32:49.100497+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-04T13:37:33.245Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-SWE",
