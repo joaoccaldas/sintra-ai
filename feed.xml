@@ -7,12 +7,21 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 18:10:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 19:10:43 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
+    <title><![CDATA[OpenAI released a new cybersecurity model. Is that enough?]]></title>
+    <description><![CDATA[OpenAI's newest cybersecurity model comes out as AI labs face scrutiny of their work to protect digital infrastructure.]]></description>
+    <link>https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
     <title><![CDATA[OpenAI president Greg Brockman says company could be IPO ready in 2027]]></title>
-    <description><![CDATA[OpenAI President Greg Brockman says the company could be ready to go public in 2027, pointing to accelerating enterprise revenue and a turnaround in its business.]]></description>
+    <description><![CDATA[OpenAI president Greg Brockman says the company could be ready to go public in 2027, pointing to accelerating enterprise revenue and a turnaround in its business.]]></description>
     <link>https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
@@ -74,12 +83,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Box taps Nvidia’s Nemotron for new agent-first content retrieval system]]></title>
-    <description><![CDATA[The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.]]></description>
-    <link>https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system</guid>
+    <title><![CDATA[GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents]]></title>
+    <description><![CDATA[Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.]]></description>
+    <link>https://openai.com/index/introducing-gpt-6-cyber</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-gpt-6-cyber</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -150,15 +159,6 @@
     <description><![CDATA[OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.]]></description>
     <link>https://openai.com/index/a-thousand-fewer-paths-to-root</link>
     <guid isPermaLink="true">https://openai.com/index/a-thousand-fewer-paths-to-root</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Daybreak Red is now available in AWS GovCloud (US-East)]]></title>
-    <description><![CDATA[Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.]]></description>
-    <link>https://openai.com/index/daybreak-red-aws-govcloud</link>
-    <guid isPermaLink="true">https://openai.com/index/daybreak-red-aws-govcloud</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
