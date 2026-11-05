@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 14:07:58 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 14:38:18 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Box taps Nvidia’s Nemotron for new agent-first content retrieval system]]></title>
+    <description><![CDATA[The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.]]></description>
+    <link>https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[A YC startup is putting $1M behind five unsolved materials science problems for AI]]></title>
@@ -69,15 +78,6 @@
     <description><![CDATA[AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.]]></description>
     <link>https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nothing CEO says company’s mysterious AI-first device is dropping next month]]></title>
-    <description><![CDATA[While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.]]></description>
-    <link>https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
