@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 13:07:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 13:37:28 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[A YC startup is putting $1M behind five unsolved materials science problems for AI]]></title>
+    <description><![CDATA[Discovered Materials, a months-old YC startup that uses AI to find chip materials, is offering $200,000 for each solution to five open materials science problems.]]></description>
+    <link>https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Agility is the first pure humanoid robot company on the stock market. Are you buying?]]></title>
@@ -69,15 +78,6 @@
     <description><![CDATA[While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.]]></description>
     <link>https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Almost no one uses AI agents to book their Uber, company says]]></title>
-    <description><![CDATA[During its busiest week last quarter, Uber said only four people booked a ride using an AI agent.]]></description>
-    <link>https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
