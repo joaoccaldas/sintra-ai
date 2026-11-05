@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T17:06:10.455010+00:00",
+  "generatedAt": "2026-11-05T18:06:28.843603+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,38 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 51,
+  "itemCount": 52,
   "items": [
+    {
+      "id": "20ebb1cb1fa152c7b2a7c606246e1b4afe0363bb9e2ac33fffd4a7d4c028c3ba",
+      "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
+      "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027",
+      "summary": "OpenAI President Greg Brockman says the company could be ready to go public in 2027, pointing to accelerating enterprise revenue and a turnaround in its business.",
+      "publishedAt": "2026-11-05T18:02:27+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b9ca9ce17c9cbad18ab71a4b2ef92874e2366fcc87de44440a2a345f40a2fb23",
+      "title": "Claude can now analyze your spending with its new Personal Finance tool",
+      "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool",
+      "summary": "With Personal Finance in Claude, users can connect their bank and card accounts through Plaid and ask questions about their finances.",
+      "publishedAt": "2026-11-05T18:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f88e63ee2c8108afc7abdb72317f33fbb67f5e8c3c6fd6d65f66038f1dd12164",
+      "title": "Quoting Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/5/paul-ford",
+      "summary": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day . — Paul Ford , The Web Is More Than Enough Tags: browsers , paul-ford , web-development",
+      "publishedAt": "2026-11-05T17:34:03+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "1750855042e8ceec185ecc41375648d063f395028a9c6496aadc44e5c1df3652",
       "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
@@ -22,6 +52,26 @@
       "publishedAt": "2026-11-05T17:05:16+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "publishedAt": "2026-11-05T17:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "64b454fa51b65ab3d9b54b2d6a544280292e418d0f5d506de5a9101df82da17c",
+      "title": "My psychophysics as a bilateral cochlear implant user",
+      "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+      "summary": "Comments",
+      "publishedAt": "2026-11-05T16:21:12+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -60,26 +110,6 @@
       "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system",
       "summary": "The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.",
       "publishedAt": "2026-11-05T14:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b6b371a91cafdd86ad70acdbf22cba64ac024e0361c9a6c5e2e1b44ea48a9a37",
-      "title": "A YC startup is putting $1M behind five unsolved materials science problems for AI",
-      "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai",
-      "summary": "Discovered Materials, a months-old YC startup that uses AI to find chip materials, is offering $200,000 for each solution to five open materials science problems.",
-      "publishedAt": "2026-11-05T13:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e60938282d7c04801b655f19a8f29af202038030e1e1ca0818e0c64c57897e2c",
-      "title": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
-      "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying",
-      "summary": "Agility arrives on the Nasdaq today as the first publicly-traded pure-play humanoid robotics company.",
-      "publishedAt": "2026-11-05T12:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -198,7 +228,7 @@
       "id": "721c0b25a4158ae0d7c10cb5c245603e6228a154c20692ef0e1d5e70ddabc29f",
       "title": "Everything is an AI scam now",
       "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now",
-      "summary": "145 points · 57 comments on Hacker News",
+      "summary": "145 points · 59 comments on Hacker News",
       "publishedAt": "2026-11-04T21:05:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,18 +238,8 @@
       "id": "6669707f3d1e3930ff7a26439781c9c5258033ca07969de7d2499bb3ecaf9eb2",
       "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
       "url": "https://github.com/gauge-sh/gauge-cli",
-      "summary": "39 points · 8 comments on Hacker News",
+      "summary": "40 points · 9 comments on Hacker News",
       "publishedAt": "2026-11-04T20:31:30+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
-      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
-      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "summary": "167 points · 62 comments on Hacker News",
-      "publishedAt": "2026-11-04T19:55:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -392,16 +412,6 @@
       "publishedAt": "2026-11-03T10:43:41+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "46933a36d2603a0bbc02a4ab06aaa85e5d632a59336c93b1a44fcecac92d5946",
-      "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
-      "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location",
-      "summary": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube Genius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, the",
-      "publishedAt": "2026-11-03T05:32:25+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
