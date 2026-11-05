@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T09:35:12.376471+00:00",
+  "generatedAt": "2026-11-05T10:42:49.204481+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -108,7 +108,7 @@
       "id": "fd7ec4fb7829da74b9cace2c51a551425d1baac3ceadf829a23810ae39489e1c",
       "title": "You'll need nerves of steel to work with AI agents",
       "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
-      "summary": "48 points · 67 comments on Hacker News",
+      "summary": "49 points · 68 comments on Hacker News",
       "publishedAt": "2026-11-05T00:01:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,8 +158,18 @@
       "id": "a683442e40008fb4834c83cf7c37bdfc53b1b0c0256697515e8c25e6c6a3fd34",
       "title": "Everything is an AI scam now",
       "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-      "summary": "139 points · 53 comments on Hacker News",
+      "summary": "141 points · 53 comments on Hacker News",
       "publishedAt": "2026-11-04T21:05:19+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6669707f3d1e3930ff7a26439781c9c5258033ca07969de7d2499bb3ecaf9eb2",
+      "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+      "url": "https://github.com/gauge-sh/gauge-cli",
+      "summary": "32 points · 4 comments on Hacker News",
+      "publishedAt": "2026-11-04T20:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -168,7 +178,7 @@
       "id": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
       "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
       "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "summary": "145 points · 57 comments on Hacker News",
+      "summary": "149 points · 58 comments on Hacker News",
       "publishedAt": "2026-11-04T19:55:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,18 +208,8 @@
       "id": "ef47d9cca7a39f2fd90e66e59532c1e9a8eedc32b43496fa54adc743b8382ef0",
       "title": "AI data centers comprehensively defeated at US midterm elections",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-      "summary": "55 points · 2 comments on Hacker News",
+      "summary": "56 points · 2 comments on Hacker News",
       "publishedAt": "2026-11-04T15:35:51+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "dfb1d49114f0805e7875e6056003bb855d5ccf8c5d1579a812ff6118ffec2af1",
-      "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "summary": "84 points · 131 comments on Hacker News",
-      "publishedAt": "2026-11-04T15:28:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -557,7 +557,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-05T04:47:39.088043+00:00",
+    "generatedAt": "2026-11-05T10:47:51.647258+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1612,7 +1612,7 @@
         ],
         "value": 6.1579,
         "period": "2026-11-04",
-        "retrievedAt": "2026-11-05T04:47:39.088020+00:00",
+        "retrievedAt": "2026-11-05T10:47:51.647220+00:00",
         "stale": false
       },
       {
@@ -2668,7 +2668,7 @@
         ],
         "value": 10.9718,
         "period": "2026-11-04",
-        "retrievedAt": "2026-11-05T04:47:39.088040+00:00",
+        "retrievedAt": "2026-11-05T10:47:51.647251+00:00",
         "stale": false
       },
       {
@@ -3724,7 +3724,7 @@
         ],
         "value": 1.1267,
         "period": "2026-11-04",
-        "retrievedAt": "2026-11-05T04:47:39.088043+00:00",
+        "retrievedAt": "2026-11-05T10:47:51.647258+00:00",
         "stale": false
       },
       {
