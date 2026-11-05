@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T15:11:32.558002+00:00",
+  "generatedAt": "2026-11-05T16:05:48.818181+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 51,
   "items": [
+    {
+      "id": "74bb7f13b00f34a52103b65eef11dd4c10c5b14d61f97cf24c3f33b31c421a6d",
+      "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+      "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure",
+      "summary": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
+      "publishedAt": "2026-11-05T15:19:05+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "ec1966491ff28b1901b22e615ed36206cd06b807dccd8189dab50504e8adc588",
       "title": "Aina’s smart ring has a screen, a joystick and a mic so you can talk to AI agents",
@@ -135,20 +145,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "4c2268a3cf02c148209f3cd28d87e8799e2bf9f58998c8e5bf266557ba38d59a",
-      "title": "After the midterms, a bigger clash over data centers could be coming",
-      "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming",
-      "summary": "Data center opposition crossed party lines in Tuesday’s midterms.",
-      "publishedAt": "2026-11-05T01:02:14+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "697ae8d01519acffcb045b891305e81a16306627a11da3bf3dbec107d26727e5",
       "title": "American Voters Overwhelmingly Reject AI Data Centers",
       "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers",
-      "summary": "57 points · 2 comments on Hacker News",
+      "summary": "59 points · 2 comments on Hacker News",
       "publishedAt": "2026-11-05T00:43:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +158,7 @@
       "id": "d893a09dd9702d8164dcc73a621c7c39bdbcf1c1b06bf20f345bbb9293300a9a",
       "title": "You'll need nerves of steel to work with AI agents",
       "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
-      "summary": "53 points · 73 comments on Hacker News",
+      "summary": "56 points · 76 comments on Hacker News",
       "publishedAt": "2026-11-05T00:01:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "aaa1f9b3029d083cc506b7d0da8c59e4bfceec385007ed0dc2563373efad0498",
       "title": "Don't Call It a Decision Model",
       "url": "https://typesafe.ai/blog/dont-call-it-a-decision-model",
-      "summary": "42 points · 8 comments on Hacker News",
+      "summary": "42 points · 10 comments on Hacker News",
       "publishedAt": "2026-11-04T21:35:18+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +198,7 @@
       "id": "6669707f3d1e3930ff7a26439781c9c5258033ca07969de7d2499bb3ecaf9eb2",
       "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
       "url": "https://github.com/gauge-sh/gauge-cli",
-      "summary": "36 points · 4 comments on Hacker News",
+      "summary": "38 points · 6 comments on Hacker News",
       "publishedAt": "2026-11-04T20:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +208,7 @@
       "id": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
       "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
       "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "summary": "167 points · 61 comments on Hacker News",
+      "summary": "167 points · 62 comments on Hacker News",
       "publishedAt": "2026-11-04T19:55:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -527,7 +527,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-05T15:15:56.670325+00:00",
+    "generatedAt": "2026-11-05T16:06:01.423081+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1586,7 +1586,7 @@
         ],
         "value": 6.1355,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T15:15:48.887646+00:00",
+        "retrievedAt": "2026-11-05T16:05:45.470420+00:00",
         "stale": false
       },
       {
@@ -2646,7 +2646,7 @@
         ],
         "value": 10.9845,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T15:15:48.887653+00:00",
+        "retrievedAt": "2026-11-05T16:05:45.470432+00:00",
         "stale": false
       },
       {
@@ -3706,7 +3706,7 @@
         ],
         "value": 1.1224,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T15:15:48.887655+00:00",
+        "retrievedAt": "2026-11-05T16:05:45.470436+00:00",
         "stale": false
       },
       {
@@ -3770,7 +3770,7 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.525777+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.242339+00:00",
         "stale": false
       },
       {
@@ -3834,7 +3834,7 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.525799+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.242367+00:00",
         "stale": false
       },
       {
@@ -3898,7 +3898,7 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.525801+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.242373+00:00",
         "stale": false
       },
       {
@@ -3962,7 +3962,7 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.525803+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.242378+00:00",
         "stale": false
       },
       {
@@ -4026,7 +4026,7 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.602072+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.327696+00:00",
         "stale": false
       },
       {
@@ -4090,7 +4090,7 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.602094+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.327731+00:00",
         "stale": false
       },
       {
@@ -4154,7 +4154,7 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.602096+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.327738+00:00",
         "stale": false
       },
       {
@@ -4218,7 +4218,7 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.602098+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.327743+00:00",
         "stale": false
       },
       {
@@ -4282,7 +4282,7 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.670300+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.423053+00:00",
         "stale": false
       },
       {
@@ -4346,7 +4346,7 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.670320+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.423076+00:00",
         "stale": false
       },
       {
@@ -4410,7 +4410,7 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.670323+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.423079+00:00",
         "stale": false
       },
       {
@@ -4474,7 +4474,7 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T15:15:56.670325+00:00",
+        "retrievedAt": "2026-11-05T16:06:01.423081+00:00",
         "stale": false
       }
     ]
