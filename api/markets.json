@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-05T15:38:46.116Z",
+  "resolvedAt": "2026-11-05T17:09:38.197Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -1059,7 +1059,7 @@
       ],
       "value": 1.1224,
       "period": "2026-11-05",
-      "retrievedAt": "2026-11-05T15:15:48.887655+00:00",
+      "retrievedAt": "2026-11-05T16:05:45.470436+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -2120,7 +2120,7 @@
       ],
       "value": 10.9845,
       "period": "2026-11-05",
-      "retrievedAt": "2026-11-05T15:15:48.887653+00:00",
+      "retrievedAt": "2026-11-05T16:05:45.470432+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3181,7 +3181,7 @@
       ],
       "value": 6.1355,
       "period": "2026-11-05",
-      "retrievedAt": "2026-11-05T15:15:48.887646+00:00",
+      "retrievedAt": "2026-11-05T16:05:45.470420+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3246,7 +3246,7 @@
       ],
       "value": 1.54316373266217,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.525801+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.242373+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3311,7 +3311,7 @@
       ],
       "value": 2.2857464902475,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.525777+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.242339+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3376,7 +3376,7 @@
       ],
       "value": 2.16138195623856,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.525803+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.242378+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3441,7 +3441,7 @@
       ],
       "value": 1.4110724231835,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.525799+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.242367+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3506,7 +3506,7 @@
       ],
       "value": 0.679015259300199,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.602096+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.327738+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3571,7 +3571,7 @@
       ],
       "value": 5.01675279604836,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.602072+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.327696+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3636,7 +3636,7 @@
       ],
       "value": 2.94952520485207,
       "period": "2024-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.602098+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.327743+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3701,7 +3701,7 @@
       ],
       "value": 2.46605755272817,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.602094+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.327731+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3766,7 +3766,7 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.670323+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.423079+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3831,7 +3831,7 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.670300+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.423053+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3896,7 +3896,7 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.670325+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.423081+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3961,7 +3961,7 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-05T15:15:56.670320+00:00",
+      "retrievedAt": "2026-11-05T16:06:01.423076+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     }

@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 15:38:47 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 17:09:39 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips]]></title>
+    <description><![CDATA[Google DeepMind — Labs]]></description>
+    <link>https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Axiom Math wants to keep AI slop out of mathematics]]></title>
+    <description><![CDATA[As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.]]></description>
+    <link>https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure]]></title>
+    <description><![CDATA[The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.]]></description>
+    <link>https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Aina’s smart ring has a screen, a joystick and a mic so you can talk to AI agents]]></title>
@@ -53,24 +80,6 @@
     <guid isPermaLink="true">https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple is reportedly cutting budgets for its internal AI usage]]></title>
-    <description><![CDATA[The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.]]></description>
-    <link>https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[After the midterms, a bigger clash over data centers could be coming]]></title>
-    <description><![CDATA[Data center opposition crossed party lines in Tuesday’s midterms.]]></description>
-    <link>https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -159,15 +168,6 @@
     <description><![CDATA[Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.]]></description>
     <link>https://openai.com/index/introducing-images-2-6</link>
     <guid isPermaLink="true">https://openai.com/index/introducing-images-2-6</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[DevRev delivers autonomous self-service with GPT-6.1 Sol]]></title>
-    <description><![CDATA[DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.]]></description>
-    <link>https://openai.com/index/devrev-enterprise-self-service</link>
-    <guid isPermaLink="true">https://openai.com/index/devrev-enterprise-self-service</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
