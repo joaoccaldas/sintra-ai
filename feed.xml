@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 00:55:46 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 03:32:26 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Apple is reportedly cutting budgets for its internal AI usage]]></title>
+    <description><![CDATA[The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.]]></description>
+    <link>https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[After the midterms, a bigger clash over data centers could be coming]]></title>
+    <description><![CDATA[Data center opposition crossed party lines in Tuesday’s midterms.]]></description>
+    <link>https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[AI PACs spent millions trying to shape Congress — here’s how they fared]]></title>
@@ -42,24 +60,6 @@
     <description><![CDATA[OpenAI’s Chris Lehane wants AI to define the 2028 election, proposing a new social contract that could benefit Americans while also advancing the AI giant’s own business interests.]]></description>
     <link>https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta acquires AI coding startup Conductor]]></title>
-    <description><![CDATA[The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.]]></description>
-    <link>https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Open source AI is booming. Hugging Face explains who profits.]]></title>
-    <description><![CDATA[Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture val]]></description>
-    <link>https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/</link>
-    <guid isPermaLink="true">https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
