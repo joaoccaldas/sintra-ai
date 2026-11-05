@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T05:08:27.007082+00:00",
+  "generatedAt": "2026-11-05T05:59:58.422617+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,66 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "0053d21f221fe31b0b39691d4e8321757dbfabb634077682356beb49d30fd9da",
+      "title": "Corralling AI Risks with Grassroots Contracts",
+      "url": "https://arxiv.org/abs/2611.06374",
+      "summary": "arXiv:2611.06374v1 Announce Type: new Abstract: AI's inflection point is a fountain of alarming risks. Digital platforms in particular are vulnerable to three major AI risks, as those in control of global platforms cede control to AI, of the algorithms, of mem",
+      "publishedAt": "2026-11-05T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "021775454077a469b888f55179cbb597392aeb2aafda0b1dadb52af9f45fb8ec",
+      "title": "STEK: Structural-Terrain-Enhanced Koopman-Inspired Cross-Channel Regularization for Retrospective Battery Multi-Target Estimation",
+      "url": "https://arxiv.org/abs/2611.06299",
+      "summary": "arXiv:2611.06299v1 Announce Type: new Abstract: Retrospective battery characterization across heterogeneous cells is challenging because cycling records vary substantially with chemistry, protocol, cell format, capacity, and operating conditions. An endpoint c",
+      "publishedAt": "2026-11-05T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "050db25f92e6ec8c39768b88d911851cf25f1df2eafc60501f6509b95b360a99",
+      "title": "Whose Transparency is it Anyway? Understanding Generative AI Transparency Needs and Gaps Across Stakeholders",
+      "url": "https://arxiv.org/abs/2611.05549",
+      "summary": "arXiv:2611.05549v1 Announce Type: new Abstract: Transparency has become a central principle in AI governance, yet there is little agreement about what transparency means, for whom, and in what contexts. Drawing on interpretive flexibility within the Social Con",
+      "publishedAt": "2026-11-05T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "057a0fdcd1b5788770bde02d98fb831d401b4dfeb1e5e103a683d5442c207e48",
+      "title": "Hallucination Is Linearly Decodable from Mid-Layer Hidden States in Quantized LLMs",
+      "url": "https://arxiv.org/abs/2606.02628",
+      "summary": "arXiv:2606.02628v1 Announce Type: cross Abstract: We investigate whether open-source LLMs encode a linearly separable truthfulness signal in their hidden states, and at which network depth this signal is strongest. Across three $7$B--$8$B instruction-tuned mod",
+      "publishedAt": "2026-11-05T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0845377fbb6a386455909c48a2dd0b88e3e0eb308356b64719532b247bfbda1f",
+      "title": "ModalSearcher: Weaving Visual Evidence into Autonomous Cross-Modal Deep Search",
+      "url": "https://arxiv.org/abs/2611.06131",
+      "summary": "arXiv:2611.06131v1 Announce Type: new Abstract: Static and incomplete parametric knowledge limits the performance of multimodal large language models on novel-knowledge and knowledge-intensive tasks, especially those requiring multi-hop evidence acquisition. E",
+      "publishedAt": "2026-11-05T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0a4ed9d21f89b78c2aced2de3c1e5db5dc5c34cc9c2e6e3cd1a3a3ae4e87b0f1",
+      "title": "Split-KV: Efficient Context Parallelism for Training Diffusion Drafters",
+      "url": "https://arxiv.org/abs/2611.05926",
+      "summary": "arXiv:2611.05926v1 Announce Type: new Abstract: Diffusion drafters accelerate speculative decoding by denoising multiple draft tokens in parallel. Their training uses anchor sampling to construct compact draft queries and performs cross-attention with a block-",
+      "publishedAt": "2026-11-05T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
     {
       "id": "ad1030df5ce46710e212924e1881d256e4d0201ba8e5545b371146cfeca6d709",
       "title": "Apple is reportedly cutting budgets for its internal AI usage",
@@ -382,66 +442,6 @@
       "publishedAt": "2026-11-02T13:10:32+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "00499e5f49d86d541f8c4def51d51879e1b1173b74bbe0c2ead962b4ffb5f893",
-      "title": "QUAL: Quantile Alignment Improves Zero-Shot Time-Series Foundation Models",
-      "url": "https://arxiv.org/abs/2610.41100",
-      "summary": "arXiv:2610.41100v1 Announce Type: new Abstract: Time-series foundation models (TSFMs) provide zero-shot forecasts for unseen series, but their accuracy varies across datasets. Combining several models can reduce this variability, yet zero-shot deployment provi",
-      "publishedAt": "2026-11-02T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "047639a8e686c01e5011ce42376320bca3e7ec592a24a87ad3d8e5e3bfe080bb",
-      "title": "SAT-ACT: Learning CDCL Branching from Outcome-Derived Action Preferences",
-      "url": "https://arxiv.org/abs/2610.41290",
-      "summary": "arXiv:2610.41290v1 Announce Type: new Abstract: Learning-based approaches have increasingly been explored for SAT solving, with particular attention to improving branching decisions in conflict-driven clause learning (CDCL) solvers. These approaches derive bra",
-      "publishedAt": "2026-11-02T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "086e03e9fa5e593fefcbaa042a4bb4d67cb6e5ec2b79c6825130798989494229",
-      "title": "What Should LLMs Forget: Reinforcement Unlearning of Knowledge Associations",
-      "url": "https://arxiv.org/abs/2610.41616",
-      "summary": "arXiv:2610.41616v1 Announce Type: new Abstract: Large language models (LLMs) acquire extensive factual knowledge during pre-training, which may include sensitive, private, or copyrighted information, motivating the development of unlearning methods that select",
-      "publishedAt": "2026-11-02T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0975653fb64c91a55c2bae972478be190db1928ee3c7ab92756c2d816372df67",
-      "title": "Using Machine Learning to Measure Self-Efficacy Belief Through Learners' Interaction Traces in Technology-Enhanced Learning",
-      "url": "https://arxiv.org/abs/2610.41900",
-      "summary": "arXiv:2610.41900v1 Announce Type: new Abstract: Self-efficacy beliefs play a critical role in learners' performance, academic choices, and, more broadly, in their future career trajectories. As Technology-Enhanced Learning (TEL) environments have demonstrated ",
-      "publishedAt": "2026-11-02T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0a4475c199ceee4e822c9a4ab1caf1f5f1b3d7643de6c8343ba597bc4d798264",
-      "title": "Multimodal In-Context Learning with Explicit Rule Induction",
-      "url": "https://arxiv.org/abs/2610.41754",
-      "summary": "arXiv:2610.41754v1 Announce Type: new Abstract: A central challenge in multimodal in-context learning (MICL) arises from tasks that are ill-defined without context and require uncovering the underlying rules from demonstrations. Existing methods predominantly ",
-      "publishedAt": "2026-11-02T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0d78989c7d21ed7495a80f03a9a80132460159f82cb6ec97e84606eeb65f1274",
-      "title": "Differential rank preservation manifold learning",
-      "url": "https://arxiv.org/abs/2610.41107",
-      "summary": "arXiv:2610.41107v1 Announce Type: new Abstract: Manifold learning methods like t-SNE and UMAP preserve local neighborhoods, but they do not preserve the ranking of the neighbors inside them. Two embeddings can return the same neighbor set while disagreeing on ",
-      "publishedAt": "2026-11-02T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
       "color": "#5B48D9"
     },
     {
