@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T21:07:04.097047+00:00",
+  "generatedAt": "2026-11-05T22:07:34.322049+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 52,
   "items": [
+    {
+      "id": "b537afdfa7640c368142f735df7e168771a27ac020930f1f55143dda16870dbd",
+      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models",
+      "summary": "Comments",
+      "publishedAt": "2026-11-05T20:21:43+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "f66d8f2942889cef95d9d342c30551c335b3da6d83cae98317fe022e0bf37ad2",
       "title": "Meta says US users can now video chat with their Muse AI avatar",
@@ -68,7 +78,7 @@
       "id": "20ebb1cb1fa152c7b2a7c606246e1b4afe0363bb9e2ac33fffd4a7d4c028c3ba",
       "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
       "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027",
-      "summary": "OpenAI president Greg Brockman says the company could be ready to go public in 2027, pointing to accelerating enterprise revenue and a turnaround in its business.",
+      "summary": "Speaking at a Wall Street Journal tech conference on Wednesday, the executive touted how the company had been gaining ground in the enterprise market, where rival Anthropic had already successfully made inroads.",
       "publishedAt": "2026-11-05T18:02:27+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
@@ -78,7 +88,7 @@
       "id": "c806cb54cf0bad11bda1b5cf240724dead63ae51b048cdc6a103bba23b90243e",
       "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
       "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-      "summary": "135 points · 158 comments on Hacker News",
+      "summary": "140 points · 165 comments on Hacker News",
       "publishedAt": "2026-11-05T18:00:01+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -242,16 +252,6 @@
       "publishedAt": "2026-11-05T02:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "697ae8d01519acffcb045b891305e81a16306627a11da3bf3dbec107d26727e5",
-      "title": "American Voters Overwhelmingly Reject AI Data Centers",
-      "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers",
-      "summary": "60 points · 2 comments on Hacker News",
-      "publishedAt": "2026-11-05T00:43:13+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -537,7 +537,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-05T16:06:01.423081+00:00",
+    "generatedAt": "2026-11-05T22:06:14.895330+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1596,7 +1596,7 @@
         ],
         "value": 6.1355,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T16:05:45.470420+00:00",
+        "retrievedAt": "2026-11-05T22:06:14.895297+00:00",
         "stale": false
       },
       {
@@ -2656,7 +2656,7 @@
         ],
         "value": 10.9845,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T16:05:45.470432+00:00",
+        "retrievedAt": "2026-11-05T22:06:14.895322+00:00",
         "stale": false
       },
       {
@@ -3716,7 +3716,7 @@
         ],
         "value": 1.1224,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T16:05:45.470436+00:00",
+        "retrievedAt": "2026-11-05T22:06:14.895330+00:00",
         "stale": false
       },
       {
