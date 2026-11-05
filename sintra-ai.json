@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T19:06:34.742414+00:00",
+  "generatedAt": "2026-11-05T20:06:49.592871+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 52,
   "items": [
+    {
+      "id": "f66d8f2942889cef95d9d342c30551c335b3da6d83cae98317fe022e0bf37ad2",
+      "title": "Meta says US users can now video chat with their Muse AI avatar",
+      "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar",
+      "summary": "Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.",
+      "publishedAt": "2026-11-05T19:48:28+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f25b9201ad6bdcc6fc966e82e19169484871d5662fdac1ebb6313d2e0a7a1d5f",
+      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "summary": "",
+      "publishedAt": "2026-11-05T19:35:16+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "284810c2fd047502da41d3699af958cd9caaff0ecc47a878a857ab6cd202d469",
+      "title": "Meta warns that election backlash against data centers could make AI expansion harder",
+      "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder",
+      "summary": "Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects.",
+      "publishedAt": "2026-11-05T19:12:39+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "5f2083e6ffbe03886ede540af64aedc55fa6fa0143a18c91ac7ae4553b2b0a0c",
       "title": "OpenAI released a new cybersecurity model. Is that enough?",
@@ -38,7 +68,7 @@
       "id": "c806cb54cf0bad11bda1b5cf240724dead63ae51b048cdc6a103bba23b90243e",
       "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
       "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-      "summary": "Comments",
+      "summary": "123 points · 140 comments on Hacker News",
       "publishedAt": "2026-11-05T18:00:01+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -62,6 +92,16 @@
       "publishedAt": "2026-11-05T17:34:03+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "335e94a0914635a16cbbdf38c0fd20694f0daa6e3b11930fd2fde7d5d4da4a42",
+      "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+      "url": "https://github.com/rivet-dev/rivet",
+      "summary": "Comments",
+      "publishedAt": "2026-11-05T17:17:42+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -110,26 +150,6 @@
       "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics",
       "summary": "As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.",
       "publishedAt": "2026-11-05T16:16:45+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "74bb7f13b00f34a52103b65eef11dd4c10c5b14d61f97cf24c3f33b31c421a6d",
-      "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
-      "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure",
-      "summary": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
-      "publishedAt": "2026-11-05T15:19:05+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ec1966491ff28b1901b22e615ed36206cd06b807dccd8189dab50504e8adc588",
-      "title": "Aina’s smart ring has a screen, a joystick, and a mic so you can talk to AI agents",
-      "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents",
-      "summary": "Aina's ring can also take calls and help you dictate notes on your Mac.",
-      "publishedAt": "2026-11-05T14:42:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -228,7 +248,7 @@
       "id": "d893a09dd9702d8164dcc73a621c7c39bdbcf1c1b06bf20f345bbb9293300a9a",
       "title": "You'll need nerves of steel to work with AI agents",
       "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
-      "summary": "56 points · 77 comments on Hacker News",
+      "summary": "56 points · 78 comments on Hacker News",
       "publishedAt": "2026-11-05T00:01:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -242,16 +262,6 @@
       "publishedAt": "2026-11-05T00:00:00+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "aaa1f9b3029d083cc506b7d0da8c59e4bfceec385007ed0dc2563373efad0498",
-      "title": "Don't Call It a Decision Model",
-      "url": "https://typesafe.ai/blog/dont-call-it-a-decision-model",
-      "summary": "42 points · 10 comments on Hacker News",
-      "publishedAt": "2026-11-04T21:35:18+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -428,16 +438,6 @@
       "id": "63945bc794809749828fed7a75412a51f17402e819c90a409ec9b785e40cb075",
       "title": "CWE-bench v2: More coverage, quality, and transparency",
       "url": "https://huggingface.co/blog/cwe-bench",
-      "summary": "",
-      "publishedAt": "2026-11-03T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a6f54d325d31634f891659b5f3c8f6d5a46072f111d8835330333b2acd151981",
-      "title": "Transformers Model Integration Contracts",
-      "url": "https://huggingface.co/blog/transformers-mic",
       "summary": "",
       "publishedAt": "2026-11-03T00:00:00+00:00",
       "source": "Hugging Face",
