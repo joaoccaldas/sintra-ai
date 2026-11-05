@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T00:55:20.104468+00:00",
+  "generatedAt": "2026-11-05T02:57:31.359867+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 54,
   "items": [
+    {
+      "id": "ad1030df5ce46710e212924e1881d256e4d0201ba8e5545b371146cfeca6d709",
+      "title": "Apple is reportedly cutting budgets for its internal AI usage",
+      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "summary": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
+      "publishedAt": "2026-11-05T01:26:22+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0ee5115bb8658d796c95200a9f773c7d7377372cc8247f67ff7a72f62497ec2c",
+      "title": "After the midterms, a bigger clash over data centers could be coming",
+      "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+      "summary": "Data center opposition crossed party lines in Tuesday’s midterms.",
+      "publishedAt": "2026-11-05T01:02:14+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "7aa63af445bdd3ac983f6235430a0cfe2fb71446b8627a70dd23a832aa4ed640",
       "title": "AI PACs spent millions trying to shape Congress — here’s how they fared",
@@ -55,16 +75,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "8d6f6c8bc49c9de3c6add4d3a1c688648607f9368cde926a66546b901ff70817",
-      "title": "Meta acquires AI coding startup Conductor",
-      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-      "summary": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
-      "publishedAt": "2026-11-04T21:10:56+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "a683442e40008fb4834c83cf7c37bdfc53b1b0c0256697515e8c25e6c6a3fd34",
       "title": "Everything is an AI scam now",
       "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
@@ -82,16 +92,6 @@
       "publishedAt": "2026-11-04T19:55:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5112f3d519822a572a0230ce7a1fdd5ffb10d5fdb4797c91ad2cbeed304d986a",
-      "title": "Open source AI is booming. Hugging Face explains who profits.",
-      "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
-      "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture val",
-      "publishedAt": "2026-11-04T19:30:04+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
