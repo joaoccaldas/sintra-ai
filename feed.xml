@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 22:12:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 23:13:22 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Airbnb says it’s launching an AI travel agent in the first half of 2027]]></title>
+    <description><![CDATA[Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.]]></description>
+    <link>https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Meta says US users can now video chat with their Muse AI avatar]]></title>
@@ -80,15 +89,6 @@
     <guid isPermaLink="true">https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Axiom Math wants to keep AI slop out of mathematics]]></title>
-    <description><![CDATA[As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.]]></description>
-    <link>https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
