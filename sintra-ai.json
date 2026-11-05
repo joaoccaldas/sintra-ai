@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T13:37:00.873180+00:00",
+  "generatedAt": "2026-11-05T14:04:30.697470+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,7 +12,7 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 52,
+  "itemCount": 51,
   "items": [
     {
       "id": "b6b371a91cafdd86ad70acdbf22cba64ac024e0361c9a6c5e2e1b44ea48a9a37",
@@ -521,16 +521,6 @@
       "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
       "publishedAt": "2026-10-15T16:08:03+00:00",
       "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ed1be8ea5f53c7373a9c44e9eac0273d1adbb7107c6453b9da7b6d9e6a52dfb0",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
-      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
-      "publishedAt": "2026-10-13T16:00:00+00:00",
-      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     }
