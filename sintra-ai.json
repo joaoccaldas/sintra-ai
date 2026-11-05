@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T14:04:30.697470+00:00",
+  "generatedAt": "2026-11-05T14:37:11.573334+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 51,
   "items": [
+    {
+      "id": "4453f7a18f3457447807eb9d38bbc512bcb9dee48c37e21672bc20f8f9490e4c",
+      "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
+      "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system",
+      "summary": "The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.",
+      "publishedAt": "2026-11-05T14:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "b6b371a91cafdd86ad70acdbf22cba64ac024e0361c9a6c5e2e1b44ea48a9a37",
       "title": "A YC startup is putting $1M behind five unsolved materials science problems for AI",
@@ -128,7 +138,7 @@
       "id": "697ae8d01519acffcb045b891305e81a16306627a11da3bf3dbec107d26727e5",
       "title": "American Voters Overwhelmingly Reject AI Data Centers",
       "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers",
-      "summary": "53 points · 2 comments on Hacker News",
+      "summary": "56 points · 2 comments on Hacker News",
       "publishedAt": "2026-11-05T00:43:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "d893a09dd9702d8164dcc73a621c7c39bdbcf1c1b06bf20f345bbb9293300a9a",
       "title": "You'll need nerves of steel to work with AI agents",
       "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
-      "summary": "51 points · 71 comments on Hacker News",
+      "summary": "52 points · 73 comments on Hacker News",
       "publishedAt": "2026-11-05T00:01:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -165,20 +175,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "95666940021eb80c23c6ce61ef1af1dc5e6e7cba8bb6f085e456d434f2728cc0",
-      "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
-      "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month",
-      "summary": "While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.",
-      "publishedAt": "2026-11-04T22:13:16+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "aaa1f9b3029d083cc506b7d0da8c59e4bfceec385007ed0dc2563373efad0498",
       "title": "Don't Call It a Decision Model",
       "url": "https://typesafe.ai/blog/dont-call-it-a-decision-model",
-      "summary": "40 points · 8 comments on Hacker News",
+      "summary": "41 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-04T21:35:18+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +188,7 @@
       "id": "721c0b25a4158ae0d7c10cb5c245603e6228a154c20692ef0e1d5e70ddabc29f",
       "title": "Everything is an AI scam now",
       "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now",
-      "summary": "143 points · 54 comments on Hacker News",
+      "summary": "144 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-04T21:05:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +208,7 @@
       "id": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
       "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
       "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "summary": "165 points · 60 comments on Hacker News",
+      "summary": "167 points · 61 comments on Hacker News",
       "publishedAt": "2026-11-04T19:55:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
