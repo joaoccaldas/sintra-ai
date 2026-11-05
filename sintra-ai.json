@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T22:54:47.399229+00:00",
+  "generatedAt": "2026-11-05T00:55:20.104468+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -68,7 +68,7 @@
       "id": "a683442e40008fb4834c83cf7c37bdfc53b1b0c0256697515e8c25e6c6a3fd34",
       "title": "Everything is an AI scam now",
       "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-      "summary": "101 points · 29 comments on Hacker News",
+      "summary": "123 points · 41 comments on Hacker News",
       "publishedAt": "2026-11-04T21:05:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +78,7 @@
       "id": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
       "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
       "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "summary": "70 points · 34 comments on Hacker News",
+      "summary": "94 points · 41 comments on Hacker News",
       "publishedAt": "2026-11-04T19:55:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +118,7 @@
       "id": "ef47d9cca7a39f2fd90e66e59532c1e9a8eedc32b43496fa54adc743b8382ef0",
       "title": "AI data centers comprehensively defeated at US midterm elections",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
-      "summary": "54 points · 36 comments on Hacker News",
+      "summary": "55 points · 2 comments on Hacker News",
       "publishedAt": "2026-11-04T15:35:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +128,7 @@
       "id": "dfb1d49114f0805e7875e6056003bb855d5ccf8c5d1579a812ff6118ffec2af1",
       "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
       "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "summary": "53 points · 71 comments on Hacker News",
+      "summary": "59 points · 73 comments on Hacker News",
       "publishedAt": "2026-11-04T15:28:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -146,9 +146,9 @@
     },
     {
       "id": "2b6dc67e5ac6a764de85ba55e10971101289af0153f8aea0b86a28975a88f127",
-      "title": "Show HN: I built a tool that prices a prebuilt PC part by part",
+      "title": "Show HN: I built a tool that prices a pre-built PC part by part",
       "url": "https://pcdealcheck.com/",
-      "summary": "83 points · 58 comments on Hacker News",
+      "summary": "92 points · 63 comments on Hacker News",
       "publishedAt": "2026-11-04T15:25:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +168,7 @@
       "id": "34beab957f96878287bd775f139d0c6284e509d1cf38a828d8b20325e41012df",
       "title": "Tencent Hy4",
       "url": "https://hy.tencent.ai/research/hy4",
-      "summary": "159 points · 48 comments on Hacker News",
+      "summary": "174 points · 61 comments on Hacker News",
       "publishedAt": "2026-11-04T14:11:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -212,6 +212,16 @@
       "publishedAt": "2026-11-04T00:29:36+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "295354ff422b0d4db922748e7c3d1bbebb7a9ab588c6d205b09352b92e57d424",
+      "title": "Introducing Images 2.6",
+      "url": "https://openai.com/index/introducing-images-2-6",
+      "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+      "publishedAt": "2026-11-04T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -302,16 +312,6 @@
       "publishedAt": "2026-11-03T10:43:41+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "34e7d62615202d0de65fe802c6c6ca14703e67df603d58e71ec501e575fe9eda",
-      "title": "How Cisco defends at machine speed with OpenAI",
-      "url": "https://openai.com/index/cisco-cyber",
-      "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
-      "publishedAt": "2026-11-03T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
