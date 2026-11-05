@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 11:35:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 12:06:07 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Setting a new standard for responsible AI infrastructure]]></title>
+    <description><![CDATA[OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.]]></description>
+    <link>https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</link>
+    <guid isPermaLink="true">https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[Apple is reportedly cutting budgets for its internal AI usage]]></title>
@@ -26,6 +35,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/phonon-tts</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/phonon-tts</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
   </item>
 
   <item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/devrev-enterprise-self-service</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-agent 0.5a0]]></title>
-    <description><![CDATA[Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with da]]></description>
-    <link>https://simonwillison.net/2026/Nov/3/datasette-agent/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/datasette-agent/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm 0.37.1]]></title>
-    <description><![CDATA[Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm]]></description>
-    <link>https://simonwillison.net/2026/Nov/3/llm/</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/llm/</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>

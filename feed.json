@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "content_text": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
       "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
       "title": "Apple is reportedly cutting budgets for its internal AI usage",
@@ -43,6 +63,26 @@
         "TechCrunch AI",
         "TechCrunch AI",
         "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://huggingface.co/blog/phonon-tts",
+      "url": "https://huggingface.co/blog/phonon-tts",
+      "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
         "Live"
       ]
     },
@@ -323,46 +363,6 @@
         "OpenAI",
         "OpenAI",
         "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
-      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
-      "title": "datasette-agent 0.5a0",
-      "content_text": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with da",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-03T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/3/llm/",
-      "url": "https://simonwillison.net/2026/Nov/3/llm/",
-      "title": "llm 0.37.1",
-      "content_text": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-03T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
         "Live"
       ]
     },
