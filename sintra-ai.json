@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T16:05:48.818181+00:00",
+  "generatedAt": "2026-11-05T17:06:10.455010+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 51,
   "items": [
+    {
+      "id": "1750855042e8ceec185ecc41375648d063f395028a9c6496aadc44e5c1df3652",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
+      "summary": "",
+      "publishedAt": "2026-11-05T17:05:16+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9a1f2f6f2756d2c6b535bdad7e74b0f5419e58e9839dd329d22075adfaee34d1",
+      "title": "Axiom Math wants to keep AI slop out of mathematics",
+      "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics",
+      "summary": "As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.",
+      "publishedAt": "2026-11-05T16:16:45+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "74bb7f13b00f34a52103b65eef11dd4c10c5b14d61f97cf24c3f33b31c421a6d",
       "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
@@ -135,20 +155,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "6df289088a3e596cd259ec40cb0f00b0eba4bade5aa20e001e7d83278bb2b79c",
-      "title": "Apple is reportedly cutting budgets for its internal AI usage",
-      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage",
-      "summary": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
-      "publishedAt": "2026-11-05T01:26:22+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "697ae8d01519acffcb045b891305e81a16306627a11da3bf3dbec107d26727e5",
       "title": "American Voters Overwhelmingly Reject AI Data Centers",
       "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers",
-      "summary": "59 points · 2 comments on Hacker News",
+      "summary": "60 points · 2 comments on Hacker News",
       "publishedAt": "2026-11-05T00:43:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +168,7 @@
       "id": "d893a09dd9702d8164dcc73a621c7c39bdbcf1c1b06bf20f345bbb9293300a9a",
       "title": "You'll need nerves of steel to work with AI agents",
       "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
-      "summary": "56 points · 76 comments on Hacker News",
+      "summary": "56 points · 77 comments on Hacker News",
       "publishedAt": "2026-11-05T00:01:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +208,7 @@
       "id": "6669707f3d1e3930ff7a26439781c9c5258033ca07969de7d2499bb3ecaf9eb2",
       "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
       "url": "https://github.com/gauge-sh/gauge-cli",
-      "summary": "38 points · 6 comments on Hacker News",
+      "summary": "39 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-04T20:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -511,16 +521,6 @@
       "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
       "publishedAt": "2026-10-21T04:00:00+00:00",
       "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3b88e631408680364ea9a152f6e9efd2ecc78ea8cf4125966179efcad826634d",
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
-      "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-      "publishedAt": "2026-10-15T16:08:03+00:00",
-      "source": "Google DeepMind",
       "category": "Labs",
       "color": "#5B48D9"
     }
