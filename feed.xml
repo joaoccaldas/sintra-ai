@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 04 Nov 2026 23:13:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:55:46 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -137,6 +137,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Introducing Images 2.6]]></title>
+    <description><![CDATA[Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.]]></description>
+    <link>https://openai.com/index/introducing-images-2-6</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-images-2-6</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[DevRev delivers autonomous self-service with GPT-6.1 Sol]]></title>
     <description><![CDATA[DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.]]></description>
     <link>https://openai.com/index/devrev-enterprise-self-service</link>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/3/llm/</guid>
     <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[StateBench: Testing how language models track state changes over long documents]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/allenai/statebench</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/allenai/statebench</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
   </item>
 
   <item>

@@ -287,6 +287,26 @@
       ]
     },
     {
+      "id": "https://openai.com/index/introducing-images-2-6",
+      "url": "https://openai.com/index/introducing-images-2-6",
+      "title": "Introducing Images 2.6",
+      "content_text": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-04T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://openai.com/index/devrev-enterprise-self-service",
       "url": "https://openai.com/index/devrev-enterprise-self-service",
       "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
@@ -343,26 +363,6 @@
         "Simon Willison",
         "Simon Willison",
         "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/allenai/statebench",
-      "url": "https://huggingface.co/blog/allenai/statebench",
-      "title": "StateBench: Testing how language models track state changes over long documents",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-03T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
         "Live"
       ]
     },
