@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T20:06:49.592871+00:00",
+  "generatedAt": "2026-11-05T21:07:04.097047+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -45,6 +45,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "b4b4c4e815a5115ed4fa246ef75eded3a2453de02a5373a55cc81f987aa88676",
+      "title": "The Hackintosh Reborn",
+      "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai",
+      "summary": "Comments",
+      "publishedAt": "2026-11-05T19:08:22+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "5f2083e6ffbe03886ede540af64aedc55fa6fa0143a18c91ac7ae4553b2b0a0c",
       "title": "OpenAI released a new cybersecurity model. Is that enough?",
       "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough",
@@ -68,7 +78,7 @@
       "id": "c806cb54cf0bad11bda1b5cf240724dead63ae51b048cdc6a103bba23b90243e",
       "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
       "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-      "summary": "123 points · 140 comments on Hacker News",
+      "summary": "135 points · 158 comments on Hacker News",
       "publishedAt": "2026-11-05T18:00:01+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -240,16 +250,6 @@
       "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers",
       "summary": "60 points · 2 comments on Hacker News",
       "publishedAt": "2026-11-05T00:43:13+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d893a09dd9702d8164dcc73a621c7c39bdbcf1c1b06bf20f345bbb9293300a9a",
-      "title": "You'll need nerves of steel to work with AI agents",
-      "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
-      "summary": "56 points · 78 comments on Hacker News",
-      "publishedAt": "2026-11-05T00:01:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
