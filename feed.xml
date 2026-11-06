@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 23:13:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:14:03 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -101,10 +101,28 @@
   </item>
 
   <item>
+    <title><![CDATA[Merge builds product and business tools with OpenAI technology]]></title>
+    <description><![CDATA[Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.]]></description>
+    <link>https://openai.com/index/merge-builds-with-openai</link>
+    <guid isPermaLink="true">https://openai.com/index/merge-builds-with-openai</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[Setting a new standard for responsible AI infrastructure]]></title>
     <description><![CDATA[OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.]]></description>
     <link>https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</link>
     <guid isPermaLink="true">https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Flipsnack grows product signups with conversion optimization]]></title>
+    <description><![CDATA[Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.]]></description>
+    <link>https://openai.com/ads/customers/flipsnack</link>
+    <guid isPermaLink="true">https://openai.com/ads/customers/flipsnack</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
@@ -143,24 +161,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/4/datasette-llm</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI to acquire Pierre Computer Company, Inc.]]></title>
-    <description><![CDATA[OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.]]></description>
-    <link>https://openai.com/index/openai-to-acquire-pierre</link>
-    <guid isPermaLink="true">https://openai.com/index/openai-to-acquire-pierre</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Securing the agentic enterprise with data lineage]]></title>
-    <description><![CDATA[A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to d]]></description>
-    <link>https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
   </item>
 
   <item>
