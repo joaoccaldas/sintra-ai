@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T18:13:00.337312+00:00",
+  "generatedAt": "2026-11-06T19:13:30.322817+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "0b47ae94b8dc6c928b086e6fe2b747aed794ff71d974bca08a1746140c0acf54",
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web",
+      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "publishedAt": "2026-11-06T18:44:38+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a8fc5de6487f58f91f0ae051f179faed5006c431b6fb6911daf336eab7c987ba",
+      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent",
+      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "publishedAt": "2026-11-06T18:44:20+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d32234f1074102450948c09031f317451f1159e80abf3165c5fc6755e50210d4",
+      "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
+      "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06",
+      "summary": "Comments",
+      "publishedAt": "2026-11-06T18:04:06+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "94d3f146301ece8ef6091fe3c45e29ce4bdd7150668db774979ca5f0ba9b6d7b",
       "title": "How a Blue Wave midterm might reshape the AI industry",
@@ -45,6 +75,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "0a5391d7db4b8ea1805b6cff36b817f3a80381fa2cdd0427d1fc5e999d267598",
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+      "summary": "Comments",
+      "publishedAt": "2026-11-06T16:54:36+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "97dac9d9308d381a4657e295f5056a4a8878d18e02584b0f6a59ced0b53f5c38",
       "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
       "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo",
@@ -68,7 +108,7 @@
       "id": "84864f21844a6bae49f176a94b8983ce84fb0cf51e0a21ce70e2a3e272ca762b",
       "title": "University libraries are being swarmed by AI bots, putting public access at risk",
       "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
-      "summary": "Comments",
+      "summary": "111 points · 51 comments on Hacker News",
       "publishedAt": "2026-11-06T14:13:09+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -95,26 +135,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "a128386b25427955b1c07e8d5b89d53ed68f88dd2e47ddd2b4ffe5e271a6bd18",
-      "title": "Underdog shows off a 32MB speech model in new demo",
-      "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo",
-      "summary": "Despite its small size, Underdog's new model can generate both speech and music.",
-      "publishedAt": "2026-11-06T13:02:16+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9a6eee5802a8318dc1902f9d508dad9cb515d7ff5a9446484796d42d861d02d8",
-      "title": "Physicl raises $10M to make the digital world real enough for robots",
-      "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots",
-      "summary": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
-      "publishedAt": "2026-11-06T13:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "ecfeadb473d9a2deeee6c368089824d3bf581b607f90fe5059979bbc95d45c51",
       "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
       "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future",
@@ -128,10 +148,20 @@
       "id": "7951c5b8003d194fd80a2c2a77b8fcf6eebf83f35f89cfa2ce91b91fc1e4a37d",
       "title": "AI for scientific discovery: How researchers use Claude",
       "url": "https://www.anthropic.com/research/how-researchers-use-claude",
-      "summary": "Comments",
+      "summary": "74 points · 31 comments on Hacker News",
       "publishedAt": "2026-11-06T09:13:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a0a44ed09dc9a1089b4e099f4e0fbf8e71ea906b8e386a1df3e114e9f9678292",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "publishedAt": "2026-11-06T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -140,26 +170,6 @@
       "url": "https://obelisk.club/research/app-store-2026",
       "summary": "59 points · 51 comments on Hacker News",
       "publishedAt": "2026-11-06T07:59:19+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "48a26be0d0669fa5f2a7c6bad263e78b2b289c4eb3c119cb1733a20f3927ac23",
-      "title": "Global stocks tumble as AI panic grips markets after Democrats' midterm success",
-      "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
-      "summary": "34 points · 17 comments on Hacker News",
-      "publishedAt": "2026-11-06T07:52:53+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7b101183f1178465f2ade4a9e24bf196aab19c3ab51caaf83bf4d1ca4206d477",
-      "title": "I struggle to believe that AI R&D is ingenious",
-      "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
-      "summary": "160 points · 161 comments on Hacker News",
-      "publishedAt": "2026-11-06T05:19:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -232,6 +242,16 @@
       "publishedAt": "2026-11-06T00:00:00+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "publishedAt": "2026-11-06T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -310,26 +330,6 @@
       "url": "https://openai.com/index/merge-builds-with-openai",
       "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
       "publishedAt": "2026-11-05T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "25fa4dd18ec78a48a9233cc009a7e10d7c8c98f49986ed2e5b02c4eebf5890b1",
-      "title": "Setting a new standard for responsible AI infrastructure",
-      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-      "publishedAt": "2026-11-05T02:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "2d1d326185a62641bed05bf7f26ce7de70018d67127b0626b6b2080acbead4c8",
-      "title": "Flipsnack grows product signups with conversion optimization",
-      "url": "https://openai.com/ads/customers/flipsnack",
-      "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-      "publishedAt": "2026-11-05T00:45:15+00:00",
       "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
