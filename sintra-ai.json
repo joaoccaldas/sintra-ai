@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T09:22:56.485243+00:00",
+  "generatedAt": "2026-11-06T12:04:59.184503+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "ecfeadb473d9a2deeee6c368089824d3bf581b607f90fe5059979bbc95d45c51",
+      "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+      "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future",
+      "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, ",
+      "publishedAt": "2026-11-06T10:00:00+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "a83a56374fd6aa91bfb5c5e279fa15b1331653c38bb895589dd8bcff0d7ab1f8",
       "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
@@ -142,6 +152,16 @@
       "publishedAt": "2026-11-06T00:00:24+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "13e4c95dcbaa6d34090ed25c81da95ae0ecffa6f5294ed82e0ecb8b302653aea",
+      "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "summary": "",
+      "publishedAt": "2026-11-06T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -435,16 +455,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "63945bc794809749828fed7a75412a51f17402e819c90a409ec9b785e40cb075",
-      "title": "CWE-bench v2: More coverage, quality, and transparency",
-      "url": "https://huggingface.co/blog/cwe-bench",
-      "summary": "",
-      "publishedAt": "2026-11-03T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
       "id": "996c88dfa31d64c0a9d691ce9aa9d84c870ff31a54172125d0220f44806491fe",
       "title": "The latest AI news we announced in October 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
@@ -460,16 +470,6 @@
       "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics",
       "summary": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire workflows and taking actions based on agent insi",
       "publishedAt": "2026-11-02T17:00:00+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8c62a7af1d6782d65ba85f85dec575c32aaa67add4162e178ac3a73b2e954426",
-      "title": "Stop counting tokens, start counting what ships",
-      "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships",
-      "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt. The more useful ",
-      "publishedAt": "2026-11-02T13:10:32+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
       "color": "#5B48D9"
