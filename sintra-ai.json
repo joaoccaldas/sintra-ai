@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T15:16:54.097115+00:00",
+  "generatedAt": "2026-11-06T16:29:05.077290+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "97dac9d9308d381a4657e295f5056a4a8878d18e02584b0f6a59ced0b53f5c38",
+      "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+      "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo",
+      "summary": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
+      "publishedAt": "2026-11-06T15:54:47+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f6672ea9e28657b3a1f2d0edaa539f207d8a15db8464743206e67409b2fe5ed0",
+      "title": "FAA Begins Retiring Decades Old Floppy Disks from Air Traffic Control",
+      "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air",
+      "summary": "41 points · 26 comments on Hacker News",
+      "publishedAt": "2026-11-06T15:03:24+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "84864f21844a6bae49f176a94b8983ce84fb0cf51e0a21ce70e2a3e272ca762b",
+      "title": "University libraries are being swarmed by AI bots, putting public access at risk",
+      "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
+      "summary": "59 points · 32 comments on Hacker News",
+      "publishedAt": "2026-11-06T14:13:09+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "63e1c5c982d992554201f922b1c9a6268fdddbc81115346d8aeffd17f6016277",
       "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
@@ -38,7 +68,7 @@
       "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
       "title": "Gemini Omni 1.2 Flash",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "summary": "108 points · 70 comments on Hacker News",
+      "summary": "171 points · 141 comments on Hacker News",
       "publishedAt": "2026-11-06T13:35:27+00:00",
       "source": "Google AI",
       "category": "Labs",
@@ -75,6 +105,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "7951c5b8003d194fd80a2c2a77b8fcf6eebf83f35f89cfa2ce91b91fc1e4a37d",
+      "title": "AI for scientific discovery: How researchers use Claude",
+      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+      "summary": "38 points · 4 comments on Hacker News",
+      "publishedAt": "2026-11-06T09:13:30+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "d32853de8a8bf931768a512267cb2beaabaedd2fb300e3231ad75234d1553766",
       "title": "App Store 2026 in numbers: AI, pricing, abandoned apps",
       "url": "https://obelisk.club/research/app-store-2026",
@@ -88,7 +128,7 @@
       "id": "48a26be0d0669fa5f2a7c6bad263e78b2b289c4eb3c119cb1733a20f3927ac23",
       "title": "Global stocks tumble as AI panic grips markets after Democrats' midterm success",
       "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
-      "summary": "34 points · 15 comments on Hacker News",
+      "summary": "34 points · 16 comments on Hacker News",
       "publishedAt": "2026-11-06T07:52:53+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +148,7 @@
       "id": "7b101183f1178465f2ade4a9e24bf196aab19c3ab51caaf83bf4d1ca4206d477",
       "title": "I struggle to believe that AI R&D is ingenious",
       "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
-      "summary": "150 points · 145 comments on Hacker News",
+      "summary": "157 points · 154 comments on Hacker News",
       "publishedAt": "2026-11-06T05:19:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -175,36 +215,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "d1cbc346ad015e9afe4c2e745df7d416560eb822c1f572fb2521b77f7fe9a97b",
-      "title": "How accurately did science fiction stories predict AI?",
-      "url": "https://jamesyu.org/science-fiction-predictions-of-ai",
-      "summary": "34 points · 65 comments on Hacker News",
-      "publishedAt": "2026-11-06T04:36:22+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e2e23a0367960f2af33f005d1ecd65f37c769e485a63eb77622e4cc06945bfeb",
-      "title": "Nvidia Kubernetes Engine (NVKE)",
-      "url": "https://github.com/dsx-ai-factory/nvke",
-      "summary": "109 points · 24 comments on Hacker News",
-      "publishedAt": "2026-11-06T03:16:26+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "216df8b2e07ead6c64dc970c283204bd14b442a957dd3d281412b2baa0ee9cce",
-      "title": "Closed AI models dominate the price-performance frontier",
-      "url": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier",
-      "summary": "76 points · 66 comments on Hacker News",
-      "publishedAt": "2026-11-06T02:49:56+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "13e4c95dcbaa6d34090ed25c81da95ae0ecffa6f5294ed82e0ecb8b302653aea",
       "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
       "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
@@ -232,16 +242,6 @@
       "publishedAt": "2026-11-05T20:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f66d8f2942889cef95d9d342c30551c335b3da6d83cae98317fe022e0bf37ad2",
-      "title": "Meta says US users can now video chat with their Muse AI avatar",
-      "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar",
-      "summary": "Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.",
-      "publishedAt": "2026-11-05T19:48:28+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-06T10:07:23.666342+00:00",
+    "generatedAt": "2026-11-06T16:07:44.810343+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1532,11 +1532,15 @@
           {
             "date": "2026-11-05",
             "value": 6.1355
+          },
+          {
+            "date": "2026-11-06",
+            "value": 6.1449
           }
         ],
-        "value": 6.1355,
-        "period": "2026-11-05",
-        "retrievedAt": "2026-11-06T10:07:23.666007+00:00",
+        "value": 6.1449,
+        "period": "2026-11-06",
+        "retrievedAt": "2026-11-06T16:07:44.810305+00:00",
         "stale": false
       },
       {
@@ -2592,11 +2596,15 @@
           {
             "date": "2026-11-05",
             "value": 10.9845
+          },
+          {
+            "date": "2026-11-06",
+            "value": 11.026
           }
         ],
-        "value": 10.9845,
-        "period": "2026-11-05",
-        "retrievedAt": "2026-11-06T10:07:23.666327+00:00",
+        "value": 11.026,
+        "period": "2026-11-06",
+        "retrievedAt": "2026-11-06T16:07:44.810336+00:00",
         "stale": false
       },
       {
@@ -3652,11 +3660,15 @@
           {
             "date": "2026-11-05",
             "value": 1.1224
+          },
+          {
+            "date": "2026-11-06",
+            "value": 1.1165
           }
         ],
-        "value": 1.1224,
-        "period": "2026-11-05",
-        "retrievedAt": "2026-11-06T10:07:23.666342+00:00",
+        "value": 1.1165,
+        "period": "2026-11-06",
+        "retrievedAt": "2026-11-06T16:07:44.810343+00:00",
         "stale": false
       },
       {
@@ -3720,7 +3732,7 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.242339+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.212317+00:00",
         "stale": false
       },
       {
@@ -3784,7 +3796,7 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.242367+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.212330+00:00",
         "stale": false
       },
       {
@@ -3848,7 +3860,7 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.242373+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.212332+00:00",
         "stale": false
       },
       {
@@ -3912,7 +3924,7 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.242378+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.212334+00:00",
         "stale": false
       },
       {
@@ -3976,7 +3988,7 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.327696+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.224892+00:00",
         "stale": false
       },
       {
@@ -4040,7 +4052,7 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.327731+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.224911+00:00",
         "stale": false
       },
       {
@@ -4104,7 +4116,7 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.327738+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.224918+00:00",
         "stale": false
       },
       {
@@ -4168,7 +4180,7 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.327743+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.224923+00:00",
         "stale": false
       },
       {
@@ -4232,7 +4244,7 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.423053+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.169364+00:00",
         "stale": false
       },
       {
@@ -4296,7 +4308,7 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.423076+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.169386+00:00",
         "stale": false
       },
       {
@@ -4360,7 +4372,7 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.423079+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.169390+00:00",
         "stale": false
       },
       {
@@ -4424,7 +4436,7 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-05T16:06:01.423081+00:00",
+        "retrievedAt": "2026-11-06T16:07:14.169393+00:00",
         "stale": false
       }
     ]
