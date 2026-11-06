@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:13:30.322817+00:00",
+  "generatedAt": "2026-11-06T20:44:36.725168+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "19e5a3d3b856bd20631f2915f952d33dca57ea6d0337ea7ea2ea61d42199dcf5",
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "url": "https://pwn.ai/blog/firecracker-escape",
+      "summary": "Comments",
+      "publishedAt": "2026-11-06T19:33:38+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "0b47ae94b8dc6c928b086e6fe2b747aed794ff71d974bca08a1746140c0acf54",
       "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
@@ -38,7 +48,7 @@
       "id": "d32234f1074102450948c09031f317451f1159e80abf3165c5fc6755e50210d4",
       "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
       "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06",
-      "summary": "Comments",
+      "summary": "61 points · 12 comments on Hacker News",
       "publishedAt": "2026-11-06T18:04:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -52,6 +62,16 @@
       "publishedAt": "2026-11-06T18:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d2cf9ea98eff4e7cb74cf652c3e7db6526d6bf6c430721324722fd4f3d085600",
+      "title": "Perplexity launches AI agents for work",
+      "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "summary": "Comments",
+      "publishedAt": "2026-11-06T17:59:41+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -108,7 +128,7 @@
       "id": "84864f21844a6bae49f176a94b8983ce84fb0cf51e0a21ce70e2a3e272ca762b",
       "title": "University libraries are being swarmed by AI bots, putting public access at risk",
       "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
-      "summary": "111 points · 51 comments on Hacker News",
+      "summary": "116 points · 53 comments on Hacker News",
       "publishedAt": "2026-11-06T14:13:09+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -145,16 +165,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7951c5b8003d194fd80a2c2a77b8fcf6eebf83f35f89cfa2ce91b91fc1e4a37d",
-      "title": "AI for scientific discovery: How researchers use Claude",
-      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
-      "summary": "74 points · 31 comments on Hacker News",
-      "publishedAt": "2026-11-06T09:13:30+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "a0a44ed09dc9a1089b4e099f4e0fbf8e71ea906b8e386a1df3e114e9f9678292",
       "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
       "url": "https://openai.com/index/partnering-with-hacktron",
@@ -162,16 +172,6 @@
       "publishedAt": "2026-11-06T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d32853de8a8bf931768a512267cb2beaabaedd2fb300e3231ad75234d1553766",
-      "title": "App Store 2026 in numbers: AI, pricing, abandoned apps",
-      "url": "https://obelisk.club/research/app-store-2026",
-      "summary": "59 points · 51 comments on Hacker News",
-      "publishedAt": "2026-11-06T07:59:19+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
