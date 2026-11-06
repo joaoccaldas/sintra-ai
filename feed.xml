@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 06 Nov 2026 14:37:15 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 15:07:42 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[After blocking Muse, Amazon now lets users text Alexa to help them shop]]></title>
+    <description><![CDATA[Amazon said that the feature will roll out to millions of users in coming weeks.]]></description>
+    <link>https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[ToyBlocks: A controlled world for robot learning and evaluation]]></title>
@@ -17,15 +26,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/allenai/toyblocks</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini Omni 1.2 Flash]]></title>
-    <description><![CDATA[34 points · 12 comments on Hacker News]]></description>
-    <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
   </item>
 
   <item>
@@ -107,15 +107,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta warns that election backlash against data centers could make AI expansion harder]]></title>
-    <description><![CDATA[Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects.]]></description>
-    <link>https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -458,6 +449,15 @@
     <guid isPermaLink="true">https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607</guid>
     <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
     <category>Meta</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector]]></title>
+    <description><![CDATA[Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.]]></description>
+    <link>https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</link>
+    <guid isPermaLink="true">https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</guid>
+    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Swedish Government</category>
   </item>
   </channel>
 </rss>

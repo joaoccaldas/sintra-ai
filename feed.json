@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop",
+      "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop",
+      "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+      "content_text": "Amazon said that the feature will roll out to millions of users in coming weeks.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
       "id": "https://huggingface.co/blog/allenai/toyblocks",
       "url": "https://huggingface.co/blog/allenai/toyblocks",
       "title": "ToyBlocks: A controlled world for robot learning and evaluation",
@@ -23,26 +43,6 @@
         "Hugging Face",
         "Hugging Face",
         "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "title": "Gemini Omni 1.2 Flash",
-      "content_text": "34 points · 12 comments on Hacker News",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-06T00:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "Google AI",
-        "Labs",
         "Live"
       ]
     },
@@ -223,26 +223,6 @@
         "Hugging Face",
         "Hugging Face",
         "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder",
-      "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder",
-      "title": "Meta warns that election backlash against data centers could make AI expansion harder",
-      "content_text": "Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
         "Live"
       ]
     },
@@ -1042,6 +1022,27 @@
         "AI Infrastructure",
         "Cloud",
         "Llama"
+      ]
+    },
+    {
+      "id": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
+      "url": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
+      "title": "Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector",
+      "content_text": "Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.",
+      "_sintra": {
+        "origin": "editorial",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-07-01T00:00:00.000Z",
+      "tags": [
+        "Swedish Government",
+        "Sweden",
+        "Public Sector",
+        "AI Adoption",
+        "Government"
       ]
     }
   ]
