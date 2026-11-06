@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://huggingface.co/blog/allenai/toyblocks",
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo",
       "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo",
       "title": "Underdog shows off a 32MB speech model in new demo",
@@ -311,26 +331,6 @@
       "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
       "title": "Setting a new standard for responsible AI infrastructure",
       "content_text": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/ads/customers/flipsnack",
-      "url": "https://openai.com/ads/customers/flipsnack",
-      "title": "Flipsnack grows product signups with conversion optimization",
-      "content_text": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,

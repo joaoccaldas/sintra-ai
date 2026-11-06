@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 06 Nov 2026 13:36:30 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 14:07:02 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[ToyBlocks: A controlled world for robot learning and evaluation]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/allenai/toyblocks</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/allenai/toyblocks</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Underdog shows off a 32MB speech model in new demo]]></title>
@@ -150,15 +159,6 @@
     <description><![CDATA[OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.]]></description>
     <link>https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</link>
     <guid isPermaLink="true">https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Flipsnack grows product signups with conversion optimization]]></title>
-    <description><![CDATA[Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.]]></description>
-    <link>https://openai.com/ads/customers/flipsnack</link>
-    <guid isPermaLink="true">https://openai.com/ads/customers/flipsnack</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
