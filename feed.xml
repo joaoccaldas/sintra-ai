@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 06 Nov 2026 18:03:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 19:01:45 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[How a Blue Wave midterm might reshape the AI industry]]></title>
+    <description><![CDATA[Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center de]]></description>
+    <link>https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry</link>
+    <guid isPermaLink="true">https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[After the midterms, is the AI industry in for a rough two years?]]></title>
+    <description><![CDATA[Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center de]]></description>
+    <link>https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years</link>
+    <guid isPermaLink="true">https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Quoting Nilay Patel]]></title>
+    <description><![CDATA[The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just is]]></description>
+    <link>https://simonwillison.net/2026/Nov/6/nilay-patel</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/6/nilay-patel</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Ramp data shows AI spending stalling just as Anthropic nears its IPO]]></title>
@@ -35,15 +62,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/allenai/toyblocks</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini Omni 1.2 Flash]]></title>
-    <description><![CDATA[215 points · 165 comments on Hacker News]]></description>
-    <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
   </item>
 
   <item>
@@ -74,30 +92,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M]]></title>
-    <description><![CDATA[Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.]]></description>
-    <link>https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Egyptian and Nigerian English join the Open ASR Leaderboard]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/open-asr-leaderboard-liva</link>
     <guid isPermaLink="true">https://huggingface.co/blog/open-asr-leaderboard-liva</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Airbnb says it’s launching an AI travel agent in the first half of 2027]]></title>
-    <description><![CDATA[Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.]]></description>
-    <link>https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -159,15 +159,6 @@
     <description><![CDATA[Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.]]></description>
     <link>https://openai.com/index/merge-builds-with-openai</link>
     <guid isPermaLink="true">https://openai.com/index/merge-builds-with-openai</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Setting a new standard for responsible AI infrastructure]]></title>
-    <description><![CDATA[OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.]]></description>
-    <link>https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</link>
-    <guid isPermaLink="true">https://openai.com/index/setting-new-standard-responsible-ai-infrastructure</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
@@ -458,6 +449,15 @@
     <guid isPermaLink="true">https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607</guid>
     <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
     <category>Meta</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector]]></title>
+    <description><![CDATA[Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.]]></description>
+    <link>https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</link>
+    <guid isPermaLink="true">https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</guid>
+    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Swedish Government</category>
   </item>
   </channel>
 </rss>
