@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T18:03:17.929472+00:00",
+  "generatedAt": "2026-11-06T18:13:00.337312+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "94d3f146301ece8ef6091fe3c45e29ce4bdd7150668db774979ca5f0ba9b6d7b",
+      "title": "How a Blue Wave midterm might reshape the AI industry",
+      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry",
+      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center de",
+      "publishedAt": "2026-11-06T18:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "2563b3e6ff404ee380cc3cd4cfe9007cb00d5ba3e6c10bcb063ad585be2b6694",
+      "title": "After the midterms, is the AI industry in for a rough two years?",
+      "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years",
+      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center de",
+      "publishedAt": "2026-11-06T17:23:52+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b7aa5d4fa5c79c451bb76b18d3c56b248d76bc42c813cba5f06d2f47e4fc5485",
+      "title": "Quoting Nilay Patel",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel",
+      "summary": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just is",
+      "publishedAt": "2026-11-06T17:13:12+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "97dac9d9308d381a4657e295f5056a4a8878d18e02584b0f6a59ced0b53f5c38",
       "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
@@ -38,7 +68,7 @@
       "id": "84864f21844a6bae49f176a94b8983ce84fb0cf51e0a21ce70e2a3e272ca762b",
       "title": "University libraries are being swarmed by AI bots, putting public access at risk",
       "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
-      "summary": "96 points · 46 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-06T14:13:09+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -62,16 +92,6 @@
       "publishedAt": "2026-11-06T14:00:48+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
-      "title": "Gemini Omni 1.2 Flash",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "summary": "215 points · 165 comments on Hacker News",
-      "publishedAt": "2026-11-06T13:35:27+00:00",
-      "source": "Google AI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -108,7 +128,7 @@
       "id": "7951c5b8003d194fd80a2c2a77b8fcf6eebf83f35f89cfa2ce91b91fc1e4a37d",
       "title": "AI for scientific discovery: How researchers use Claude",
       "url": "https://www.anthropic.com/research/how-researchers-use-claude",
-      "summary": "65 points · 29 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-06T09:13:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -132,16 +152,6 @@
       "publishedAt": "2026-11-06T07:52:53+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a83a56374fd6aa91bfb5c5e279fa15b1331653c38bb895589dd8bcff0d7ab1f8",
-      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m",
-      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
-      "publishedAt": "2026-11-06T06:28:32+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -225,16 +235,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1121cf54e69f72cb6b4feafaf5da64e11a3b80cbc1c6ea9f2056184535a797c5",
-      "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
-      "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027",
-      "summary": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.",
-      "publishedAt": "2026-11-05T22:40:55+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "bbd492caba72ca544b8bac3280d7afac87555fa4b30c0b12388bcfae24236fa4",
       "title": "Cult.fit builds operational muscle with Codex",
       "url": "https://openai.com/index/cultfit-builds-with-codex",
@@ -271,6 +271,16 @@
       "summary": "",
       "publishedAt": "2026-11-05T17:05:16+00:00",
       "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "publishedAt": "2026-11-05T17:00:00+00:00",
+      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     },
@@ -422,16 +432,6 @@
       "publishedAt": "2026-11-03T17:01:49+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b5cba0d011349b3bc50111809ab484ae3a7ae1efda7d7776ece58fac266468bd",
-      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
-      "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) fou",
-      "publishedAt": "2026-11-03T16:29:48+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
