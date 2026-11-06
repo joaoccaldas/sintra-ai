@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T06:16:59.590036+00:00",
+  "generatedAt": "2026-11-06T07:17:08.273821+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "a83a56374fd6aa91bfb5c5e279fa15b1331653c38bb895589dd8bcff0d7ab1f8",
+      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m",
+      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
+      "publishedAt": "2026-11-06T06:28:32+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "01f260f7c65520661d2ab82d469028a56d6eac76a1dbd04affe5c4fc59284f5f",
       "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
@@ -75,6 +85,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "d1cbc346ad015e9afe4c2e745df7d416560eb822c1f572fb2521b77f7fe9a97b",
+      "title": "How accurately did science fiction stories predict AI?",
+      "url": "https://jamesyu.org/science-fiction-predictions-of-ai",
+      "summary": "31 points · 44 comments on Hacker News",
+      "publishedAt": "2026-11-06T04:36:22+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "e2e23a0367960f2af33f005d1ecd65f37c769e485a63eb77622e4cc06945bfeb",
       "title": "Nvidia Kubernetes Engine (NVKE)",
       "url": "https://github.com/dsx-ai-factory/nvke",
@@ -98,7 +118,7 @@
       "id": "3f1fa67707bbbfd0b325ce5013db836fd5cc0c1743231a0dbb71324fba991b0d",
       "title": "Investors wipe $2.5T off Nasdaq as blue tsunami prompts AI fears",
       "url": "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05",
-      "summary": "39 points · 11 comments on Hacker News",
+      "summary": "40 points · 11 comments on Hacker News",
       "publishedAt": "2026-11-06T01:11:40+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -132,16 +152,6 @@
       "publishedAt": "2026-11-05T22:40:55+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b537afdfa7640c368142f735df7e168771a27ac020930f1f55143dda16870dbd",
-      "title": "Tencent launches Hy4",
-      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models",
-      "summary": "95 points · 4 comments on Hacker News",
-      "publishedAt": "2026-11-05T20:21:43+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -200,16 +210,6 @@
       "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027",
       "summary": "Speaking at a Wall Street Journal tech conference on Wednesday, the executive touted how the company had been gaining ground in the enterprise market, where rival Anthropic had already successfully made inroads.",
       "publishedAt": "2026-11-05T18:02:27+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b9ca9ce17c9cbad18ab71a4b2ef92874e2366fcc87de44440a2a345f40a2fb23",
-      "title": "Claude can now analyze your spending with its new Personal Finance tool",
-      "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool",
-      "summary": "With Personal Finance in Claude, users can connect their bank and card accounts through Plaid and ask questions about their finances.",
-      "publishedAt": "2026-11-05T18:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
