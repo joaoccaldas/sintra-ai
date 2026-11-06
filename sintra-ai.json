@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T23:07:45.873928+00:00",
+  "generatedAt": "2026-11-06T00:07:59.002401+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -98,7 +98,7 @@
       "id": "c806cb54cf0bad11bda1b5cf240724dead63ae51b048cdc6a103bba23b90243e",
       "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
       "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-      "summary": "143 points · 173 comments on Hacker News",
+      "summary": "146 points · 180 comments on Hacker News",
       "publishedAt": "2026-11-05T18:00:01+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -185,6 +185,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "db9792e954d447010915e606e8fdb998d92778fb38af9f5ff78336a8db2d0092",
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "url": "https://openai.com/index/merge-builds-with-openai",
+      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "publishedAt": "2026-11-05T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "021775454077a469b888f55179cbb597392aeb2aafda0b1dadb52af9f45fb8ec",
       "title": "STEK: Structural-Terrain-Enhanced Koopman-Inspired Cross-Channel Regularization for Retrospective Battery Multi-Target Estimation",
       "url": "https://arxiv.org/abs/2611.06299",
@@ -250,6 +260,16 @@
       "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
       "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
       "publishedAt": "2026-11-05T02:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "2d1d326185a62641bed05bf7f26ce7de70018d67127b0626b6b2080acbead4c8",
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "url": "https://openai.com/ads/customers/flipsnack",
+      "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+      "publishedAt": "2026-11-05T00:45:15+00:00",
       "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
@@ -325,16 +345,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "a3433e936d2c04bfa7722c64f05b5efdfdc6024634f8a182254f80d5e66c1036",
-      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
-      "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
-      "publishedAt": "2026-11-04T07:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "b3ab12a34ee36e8ab3ff3e5d1e5797bffaaf413a760e4b957767fb1ce50f6439",
       "title": "datasette-apps 0.3a0",
       "url": "https://simonwillison.net/2026/Nov/4/datasette-apps",
@@ -342,16 +352,6 @@
       "publishedAt": "2026-11-04T00:29:36+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "295354ff422b0d4db922748e7c3d1bbebb7a9ab588c6d205b09352b92e57d424",
-      "title": "Introducing Images 2.6",
-      "url": "https://openai.com/index/introducing-images-2-6",
-      "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
-      "publishedAt": "2026-11-04T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
