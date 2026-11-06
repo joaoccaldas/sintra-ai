@@ -47,6 +47,26 @@
       ]
     },
     {
+      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "title": "Gemini Omni 1.2 Flash",
+      "content_text": "108 points · 70 comments on Hacker News",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "Google AI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo",
       "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo",
       "title": "Underdog shows off a 32MB speech model in new demo",
@@ -1022,27 +1042,6 @@
         "AI Infrastructure",
         "Cloud",
         "Llama"
-      ]
-    },
-    {
-      "id": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
-      "url": "https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor",
-      "title": "Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector",
-      "content_text": "Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.",
-      "_sintra": {
-        "origin": "editorial",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-07-01T00:00:00.000Z",
-      "tags": [
-        "Swedish Government",
-        "Sweden",
-        "Public Sector",
-        "AI Adoption",
-        "Government"
       ]
     }
   ]
