@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 06 Nov 2026 15:50:37 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 16:29:35 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Ramp data shows AI spending stalling just as Anthropic nears its IPO]]></title>
+    <description><![CDATA[AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.]]></description>
+    <link>https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[After blocking Muse, Amazon now lets users text Alexa to help them shop]]></title>
@@ -30,7 +39,7 @@
 
   <item>
     <title><![CDATA[Gemini Omni 1.2 Flash]]></title>
-    <description><![CDATA[108 points · 70 comments on Hacker News]]></description>
+    <description><![CDATA[171 points · 141 comments on Hacker News]]></description>
     <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</link>
     <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
@@ -98,15 +107,6 @@
     <guid isPermaLink="true">https://openai.com/index/cultfit-builds-with-codex</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta says US users can now video chat with their Muse AI avatar]]></title>
-    <description><![CDATA[Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.]]></description>
-    <link>https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
