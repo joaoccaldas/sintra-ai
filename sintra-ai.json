@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T03:14:23.428937+00:00",
+  "generatedAt": "2026-11-06T04:16:21.407747+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,7 +18,7 @@
       "id": "3f1fa67707bbbfd0b325ce5013db836fd5cc0c1743231a0dbb71324fba991b0d",
       "title": "Investors wipe $2.5T off Nasdaq as blue tsunami prompts AI fears",
       "url": "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05",
-      "summary": "32 points · 8 comments on Hacker News",
+      "summary": "37 points · 11 comments on Hacker News",
       "publishedAt": "2026-11-06T01:11:40+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -56,9 +56,9 @@
     },
     {
       "id": "b537afdfa7640c368142f735df7e168771a27ac020930f1f55143dda16870dbd",
-      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+      "title": "Tencent launches Hy4",
       "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models",
-      "summary": "Comments",
+      "summary": "95 points · 3 comments on Hacker News",
       "publishedAt": "2026-11-05T20:21:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +138,7 @@
       "id": "c806cb54cf0bad11bda1b5cf240724dead63ae51b048cdc6a103bba23b90243e",
       "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
       "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-      "summary": "152 points · 186 comments on Hacker News",
+      "summary": "154 points · 187 comments on Hacker News",
       "publishedAt": "2026-11-05T18:00:01+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -537,7 +537,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-05T22:06:14.895330+00:00",
+    "generatedAt": "2026-11-06T04:06:51.751112+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1596,7 +1596,7 @@
         ],
         "value": 6.1355,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T22:06:14.895297+00:00",
+        "retrievedAt": "2026-11-06T04:06:51.751063+00:00",
         "stale": false
       },
       {
@@ -2656,7 +2656,7 @@
         ],
         "value": 10.9845,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T22:06:14.895322+00:00",
+        "retrievedAt": "2026-11-06T04:06:51.751108+00:00",
         "stale": false
       },
       {
@@ -3716,7 +3716,7 @@
         ],
         "value": 1.1224,
         "period": "2026-11-05",
-        "retrievedAt": "2026-11-05T22:06:14.895330+00:00",
+        "retrievedAt": "2026-11-06T04:06:51.751112+00:00",
         "stale": false
       },
       {
