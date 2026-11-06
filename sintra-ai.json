@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T15:05:38.638828+00:00",
+  "generatedAt": "2026-11-06T15:16:54.097115+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -32,6 +32,16 @@
       "publishedAt": "2026-11-06T14:00:48+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
+      "title": "Gemini Omni 1.2 Flash",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "summary": "108 points · 70 comments on Hacker News",
+      "publishedAt": "2026-11-06T13:35:27+00:00",
+      "source": "Google AI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -68,7 +78,7 @@
       "id": "d32853de8a8bf931768a512267cb2beaabaedd2fb300e3231ad75234d1553766",
       "title": "App Store 2026 in numbers: AI, pricing, abandoned apps",
       "url": "https://obelisk.club/research/app-store-2026",
-      "summary": "57 points · 50 comments on Hacker News",
+      "summary": "59 points · 50 comments on Hacker News",
       "publishedAt": "2026-11-06T07:59:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "7b101183f1178465f2ade4a9e24bf196aab19c3ab51caaf83bf4d1ca4206d477",
       "title": "I struggle to believe that AI R&D is ingenious",
       "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
-      "summary": "146 points · 141 comments on Hacker News",
+      "summary": "150 points · 145 comments on Hacker News",
       "publishedAt": "2026-11-06T05:19:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +178,7 @@
       "id": "d1cbc346ad015e9afe4c2e745df7d416560eb822c1f572fb2521b77f7fe9a97b",
       "title": "How accurately did science fiction stories predict AI?",
       "url": "https://jamesyu.org/science-fiction-predictions-of-ai",
-      "summary": "33 points · 64 comments on Hacker News",
+      "summary": "34 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-06T04:36:22+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +188,7 @@
       "id": "e2e23a0367960f2af33f005d1ecd65f37c769e485a63eb77622e4cc06945bfeb",
       "title": "Nvidia Kubernetes Engine (NVKE)",
       "url": "https://github.com/dsx-ai-factory/nvke",
-      "summary": "Comments",
+      "summary": "109 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-06T03:16:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +198,7 @@
       "id": "216df8b2e07ead6c64dc970c283204bd14b442a957dd3d281412b2baa0ee9cce",
       "title": "Closed AI models dominate the price-performance frontier",
       "url": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier",
-      "summary": "76 points · 65 comments on Hacker News",
+      "summary": "76 points · 66 comments on Hacker News",
       "publishedAt": "2026-11-06T02:49:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -261,16 +271,6 @@
       "summary": "",
       "publishedAt": "2026-11-05T17:05:16+00:00",
       "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
-      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     },
