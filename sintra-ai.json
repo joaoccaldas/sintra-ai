@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T04:16:21.407747+00:00",
+  "generatedAt": "2026-11-06T05:16:45.451941+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,13 +12,93 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 52,
+  "itemCount": 46,
   "items": [
+    {
+      "id": "01f260f7c65520661d2ab82d469028a56d6eac76a1dbd04affe5c4fc59284f5f",
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "url": "https://arxiv.org/abs/2611.08452",
+      "summary": "Authors: Yubo Wang, Rui Meng, Jaehyun Nam, Tomas Pfister, Jinsung Yoon · arXiv:2611.08452v1 Announce Type: new Abstract: Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and su",
+      "publishedAt": "2026-11-06T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "01f9dcac41d4bec6c674f0f1363872234ea3dc3db9081fad3bc3b7b9ec06db01",
+      "title": "Create Your Own Work Stack: Deploying Self-hosted AI and Tooling in a Tech Startup",
+      "url": "https://arxiv.org/abs/2611.08116",
+      "summary": "Authors: Saad Ahmed Bazaz, Talha Amjad, Abdurrehman Subhani, Sohaib Ahmed Bazaz, Abdullah Aamir · arXiv:2611.08116v1 Announce Type: new Abstract: Self-hosting AI is often presented as a way to reduce inference costs and increase control, but deployment introdu",
+      "publishedAt": "2026-11-06T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "02cb67bc589015a4fc4d8eae9b75fb5a172e7007dbbda3d252013917a13597de",
+      "title": "When Imperfect Automated Fact-Checking Backfires: Social Learning in the Presence of Misinformation",
+      "url": "https://arxiv.org/abs/2611.08053",
+      "summary": "Authors: Zixuan Liu, Ming Cao · arXiv:2611.08053v1 Announce Type: new Abstract: Automated fact-checking tools, cheap and fast but imperfect, are increasingly available on social platforms. We study when such tools can backfire in a sequential social learning m",
+      "publishedAt": "2026-11-06T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "09428c9ba990d553642e3d7d79eceba6abb475d78c0e1e17bc61f712b6ba78f0",
+      "title": "Secure Formal Raising: Protecting the Development of AI through Executable Properties",
+      "url": "https://arxiv.org/abs/2611.08042",
+      "summary": "Authors: Rolf Drechsler, Christina Plump · arXiv:2611.08042v1 Announce Type: new Abstract: Model raising revisits Turing's developmental view of machine intelligence. Formal Raising (FR) has recently been proposed to complement this view with explicit behavior",
+      "publishedAt": "2026-11-06T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1172b35cd784282a3596e98b56896c33cd3ac35fbad905ba1248a0dceaaac6d3",
+      "title": "Oscillatory Phase Coding Emerges in Adaptive RNNs for Flexible Working Memory",
+      "url": "https://arxiv.org/abs/2611.06932",
+      "summary": "Authors: Kehan Lu, Tianhao Chu, Aiersi Tuerhong, Yiwen Sun, Huan Luo, Fang Fang, Si Wu · arXiv:2611.06932v1 Announce Type: cross Abstract: Oscillatory phase coding (OPC) is widely observed in neural systems and has been implicated in cognitive functions such a",
+      "publishedAt": "2026-11-06T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1576b56d3f7dbe9aad97160994033bb69697b2f0bc90a9021ac5173208bc6f34",
+      "title": "PharmAgents2: Towards Autonomous End-to-End Drug Discovery",
+      "url": "https://arxiv.org/abs/2611.07653",
+      "summary": "Authors: Haichuan Tan, Bowen Gao, Tao Huang, Jiaxin Tan, Xin Hong, Baoguo Yao, Yifei Wang, Zhichao Deng, Hanji Du, Dapeng Jiang, Yiheng Li, Weiwei Ma, Xin Ma, Yuqi Shi, Zixiang Wang, Kelin Wu, Tianxiang Wu, Wenxuan Xie, Jie Zang, Huiyu Zhang, Mojia Zhang, Yuyi",
+      "publishedAt": "2026-11-06T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e2e23a0367960f2af33f005d1ecd65f37c769e485a63eb77622e4cc06945bfeb",
+      "title": "Nvidia Kubernetes Engine (NVKE)",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "summary": "Comments",
+      "publishedAt": "2026-11-06T03:16:26+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "216df8b2e07ead6c64dc970c283204bd14b442a957dd3d281412b2baa0ee9cce",
+      "title": "Closed AI models dominate the price-performance frontier",
+      "url": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier",
+      "summary": "Comments",
+      "publishedAt": "2026-11-06T02:49:56+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "3f1fa67707bbbfd0b325ce5013db836fd5cc0c1743231a0dbb71324fba991b0d",
       "title": "Investors wipe $2.5T off Nasdaq as blue tsunami prompts AI fears",
       "url": "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05",
-      "summary": "37 points · 11 comments on Hacker News",
+      "summary": "39 points · 11 comments on Hacker News",
       "publishedAt": "2026-11-06T01:11:40+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +138,7 @@
       "id": "b537afdfa7640c368142f735df7e168771a27ac020930f1f55143dda16870dbd",
       "title": "Tencent launches Hy4",
       "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models",
-      "summary": "95 points · 3 comments on Hacker News",
+      "summary": "95 points · 4 comments on Hacker News",
       "publishedAt": "2026-11-05T20:21:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -105,16 +185,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "b4b4c4e815a5115ed4fa246ef75eded3a2453de02a5373a55cc81f987aa88676",
-      "title": "The Hackintosh Reborn",
-      "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai",
-      "summary": "Comments",
-      "publishedAt": "2026-11-05T19:08:22+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "5f2083e6ffbe03886ede540af64aedc55fa6fa0143a18c91ac7ae4553b2b0a0c",
       "title": "OpenAI released a new cybersecurity model. Is that enough?",
       "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough",
@@ -132,16 +202,6 @@
       "publishedAt": "2026-11-05T18:02:27+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "c806cb54cf0bad11bda1b5cf240724dead63ae51b048cdc6a103bba23b90243e",
-      "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-      "summary": "154 points · 187 comments on Hacker News",
-      "publishedAt": "2026-11-05T18:00:01+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -212,66 +272,6 @@
       "publishedAt": "2026-11-05T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "021775454077a469b888f55179cbb597392aeb2aafda0b1dadb52af9f45fb8ec",
-      "title": "STEK: Structural-Terrain-Enhanced Koopman-Inspired Cross-Channel Regularization for Retrospective Battery Multi-Target Estimation",
-      "url": "https://arxiv.org/abs/2611.06299",
-      "summary": "arXiv:2611.06299v1 Announce Type: new Abstract: Retrospective battery characterization across heterogeneous cells is challenging because cycling records vary substantially with chemistry, protocol, cell format, capacity, and operating conditions. An endpoint c",
-      "publishedAt": "2026-11-05T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "050db25f92e6ec8c39768b88d911851cf25f1df2eafc60501f6509b95b360a99",
-      "title": "Whose Transparency is it Anyway? Understanding Generative AI Transparency Needs and Gaps Across Stakeholders",
-      "url": "https://arxiv.org/abs/2611.05549",
-      "summary": "arXiv:2611.05549v1 Announce Type: new Abstract: Transparency has become a central principle in AI governance, yet there is little agreement about what transparency means, for whom, and in what contexts. Drawing on interpretive flexibility within the Social Con",
-      "publishedAt": "2026-11-05T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "057a0fdcd1b5788770bde02d98fb831d401b4dfeb1e5e103a683d5442c207e48",
-      "title": "Hallucination Is Linearly Decodable from Mid-Layer Hidden States in Quantized LLMs",
-      "url": "https://arxiv.org/abs/2606.02628",
-      "summary": "arXiv:2606.02628v1 Announce Type: cross Abstract: We investigate whether open-source LLMs encode a linearly separable truthfulness signal in their hidden states, and at which network depth this signal is strongest. Across three $7$B--$8$B instruction-tuned mod",
-      "publishedAt": "2026-11-05T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0845377fbb6a386455909c48a2dd0b88e3e0eb308356b64719532b247bfbda1f",
-      "title": "ModalSearcher: Weaving Visual Evidence into Autonomous Cross-Modal Deep Search",
-      "url": "https://arxiv.org/abs/2611.06131",
-      "summary": "arXiv:2611.06131v1 Announce Type: new Abstract: Static and incomplete parametric knowledge limits the performance of multimodal large language models on novel-knowledge and knowledge-intensive tasks, especially those requiring multi-hop evidence acquisition. E",
-      "publishedAt": "2026-11-05T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0a4ed9d21f89b78c2aced2de3c1e5db5dc5c34cc9c2e6e3cd1a3a3ae4e87b0f1",
-      "title": "Split-KV: Efficient Context Parallelism for Training Diffusion Drafters",
-      "url": "https://arxiv.org/abs/2611.05926",
-      "summary": "arXiv:2611.05926v1 Announce Type: new Abstract: Diffusion drafters accelerate speculative decoding by denoising multiple draft tokens in parallel. Their training uses anchor sampling to construct compact draft queries and performs cross-attention with a block-",
-      "publishedAt": "2026-11-05T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "11c2913633921112536b50d75747f375abd77d086695b5e48a773b5eddcb85b8",
-      "title": "EchoKV: Self-Corrective KV Cache Eviction via Iterative Query Feedback",
-      "url": "https://arxiv.org/abs/2611.05903",
-      "summary": "arXiv:2611.05903v1 Announce Type: new Abstract: KV cache eviction is not merely a token-ranking problem: the workspace retained for generating eviction queries also determines the quality of those queries. Consequently, an early workspace error can distort lat",
-      "publishedAt": "2026-11-05T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
       "color": "#5B48D9"
     },
     {
@@ -472,66 +472,6 @@
       "publishedAt": "2026-11-02T13:10:32+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "59623d61a7aaaf734c519660b1930b60bf17660ca0901f735f89f7265b7be2f9",
-      "title": "Speeding up planning decisions with AI",
-      "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai",
-      "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
-      "publishedAt": "2026-10-30T14:18:30+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3e32bae570ff21ee59e510c657138291c10e18dd5aba048c9dfb1703176c3b65",
-      "title": "Gemini 4 Carbon: Our next frontier model",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
-      "summary": "",
-      "publishedAt": "2026-10-28T17:00:58+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e960e8891f7d7ad86d1b82fb38dd6339695a2e548b1364f330e5b8eceb6d79af",
-      "title": "Genie 4: A new generation of world simulation",
-      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
-      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "publishedAt": "2026-10-27T16:01:38+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9a15b40232fdbf825a34f1cb708e4553949c400aff4f3528a83f8e0a1a014861",
-      "title": "Our newest AI Quest: Mapping the human brain",
-      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks",
-      "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”",
-      "publishedAt": "2026-10-26T16:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8f93170faf71fda6558b8b2fe173c510270a35c328858f29fd60d0b5eecac8cd",
-      "title": "Beyond tree cover: mapping the world’s forest types",
-      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types",
-      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-      "publishedAt": "2026-10-22T14:30:24+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "78cebe09803b57417ff218b15d870961ff466abfed4da57b0fd3b78c08861131",
-      "title": "Southeast Asia’s digital economy to hit $368 billion",
-      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
-      "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
-      "publishedAt": "2026-10-21T04:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
       "color": "#5B48D9"
     }
   ],
