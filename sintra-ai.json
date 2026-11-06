@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T13:16:27.022405+00:00",
+  "generatedAt": "2026-11-06T14:05:23.150631+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "5a90caffb2c87d2e6e8eb5c3f6e99436fe1d4b1da4789f4c2ad70b79f5a9dd5d",
+      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "summary": "",
+      "publishedAt": "2026-11-06T14:00:48+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
     {
       "id": "a128386b25427955b1c07e8d5b89d53ed68f88dd2e47ddd2b4ffe5e271a6bd18",
       "title": "Underdog shows off a 32MB speech model in new demo",
@@ -158,7 +168,7 @@
       "id": "e2e23a0367960f2af33f005d1ecd65f37c769e485a63eb77622e4cc06945bfeb",
       "title": "Nvidia Kubernetes Engine (NVKE)",
       "url": "https://github.com/dsx-ai-factory/nvke",
-      "summary": "98 points · 22 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-06T03:16:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -412,16 +422,6 @@
       "publishedAt": "2026-11-03T17:01:49+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4d3938441f216409a8f1b94cf7b0fdb4871145e54a0ab57799f0fbd11992bc85",
-      "title": "Palette: teaching a small model to build decks in your design language",
-      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "summary": "",
-      "publishedAt": "2026-11-03T16:35:36+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
