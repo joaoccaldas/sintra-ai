@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T20:44:36.725168+00:00",
+  "generatedAt": "2026-11-06T21:54:34.150248+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "e0c8b4541e0b5e8be31a9bff4568011d13ec940dcb82958e18289ef296b725f4",
+      "title": "AI is dramatically accelerating AI research",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "summary": "Comments",
+      "publishedAt": "2026-11-06T20:27:23+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "19e5a3d3b856bd20631f2915f952d33dca57ea6d0337ea7ea2ea61d42199dcf5",
       "title": "Firecracker VM Escape: PwnEscape Part 2",
@@ -48,7 +58,7 @@
       "id": "d32234f1074102450948c09031f317451f1159e80abf3165c5fc6755e50210d4",
       "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
       "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06",
-      "summary": "61 points · 12 comments on Hacker News",
+      "summary": "71 points · 13 comments on Hacker News",
       "publishedAt": "2026-11-06T18:04:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +78,7 @@
       "id": "d2cf9ea98eff4e7cb74cf652c3e7db6526d6bf6c430721324722fd4f3d085600",
       "title": "Perplexity launches AI agents for work",
       "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
-      "summary": "Comments",
+      "summary": "57 points · 48 comments on Hacker News",
       "publishedAt": "2026-11-06T17:59:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -120,16 +130,6 @@
       "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air",
       "summary": "89 points · 1 comments on Hacker News",
       "publishedAt": "2026-11-06T15:03:24+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "84864f21844a6bae49f176a94b8983ce84fb0cf51e0a21ce70e2a3e272ca762b",
-      "title": "University libraries are being swarmed by AI bots, putting public access at risk",
-      "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
-      "summary": "116 points · 53 comments on Hacker News",
-      "publishedAt": "2026-11-06T14:13:09+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
