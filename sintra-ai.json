@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T14:16:39.480011+00:00",
+  "generatedAt": "2026-11-06T15:05:38.638828+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,16 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "63e1c5c982d992554201f922b1c9a6268fdddbc81115346d8aeffd17f6016277",
+      "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+      "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop",
+      "summary": "Amazon said that the feature will roll out to millions of users in coming weeks.",
+      "publishedAt": "2026-11-06T14:10:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "5a90caffb2c87d2e6e8eb5c3f6e99436fe1d4b1da4789f4c2ad70b79f5a9dd5d",
       "title": "ToyBlocks: A controlled world for robot learning and evaluation",
       "url": "https://huggingface.co/blog/allenai/toyblocks",
@@ -22,16 +32,6 @@
       "publishedAt": "2026-11-06T14:00:48+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
-      "title": "Gemini Omni 1.2 Flash",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "summary": "34 points · 12 comments on Hacker News",
-      "publishedAt": "2026-11-06T13:35:27+00:00",
-      "source": "Google AI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -178,7 +178,7 @@
       "id": "e2e23a0367960f2af33f005d1ecd65f37c769e485a63eb77622e4cc06945bfeb",
       "title": "Nvidia Kubernetes Engine (NVKE)",
       "url": "https://github.com/dsx-ai-factory/nvke",
-      "summary": "103 points · 23 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-06T03:16:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -245,16 +245,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "284810c2fd047502da41d3699af958cd9caaff0ecc47a878a857ab6cd202d469",
-      "title": "Meta warns that election backlash against data centers could make AI expansion harder",
-      "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder",
-      "summary": "Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects.",
-      "publishedAt": "2026-11-05T19:12:39+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "f88e63ee2c8108afc7abdb72317f33fbb67f5e8c3c6fd6d65f66038f1dd12164",
       "title": "Quoting Paul Ford",
       "url": "https://simonwillison.net/2026/Nov/5/paul-ford",
@@ -271,6 +261,16 @@
       "summary": "",
       "publishedAt": "2026-11-05T17:05:16+00:00",
       "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "publishedAt": "2026-11-05T17:00:00+00:00",
+      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     },
