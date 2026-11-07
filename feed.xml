@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 07 Nov 2026 20:43:43 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 22:30:21 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo]]></title>
+    <description><![CDATA[A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.]]></description>
+    <link>https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo</guid>
+    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Crusoe sells troubled Wyoming data center project to Google]]></title>
@@ -51,15 +60,6 @@
     <description><![CDATA[Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center de]]></description>
     <link>https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry</link>
     <guid isPermaLink="true">https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[After the midterms, is the AI industry in for a rough two years?]]></title>
-    <description><![CDATA[Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center de]]></description>
-    <link>https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years</link>
-    <guid isPermaLink="true">https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
