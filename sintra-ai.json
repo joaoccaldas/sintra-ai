@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T04:13:07.025768+00:00",
+  "generatedAt": "2026-11-07T05:13:12.762206+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "bd95b63d46d959afe7032989a94561308304128cf12b1cad0119707daae19715",
+      "title": "The AI sell-off compared to well-known stock market crashes",
+      "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
+      "summary": "Comments",
+      "publishedAt": "2026-11-07T02:20:06+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "2af345503cb4dc3ab8a997699fe126ba7919956b66e0db4d1ab4f3e60ce50c68",
       "title": "Crusoe sells troubled Wyoming data center project to Google",
@@ -88,7 +98,7 @@
       "id": "62efb04abee3555038db307b9956ee4b04f112a2afc184035d85c504dc9e4f6c",
       "title": "40C3 halfnarp – Submit talk preferences to aid scheduling",
       "url": "https://halfnarp.events.ccc.de/",
-      "summary": "46 points · 9 comments on Hacker News",
+      "summary": "49 points · 9 comments on Hacker News",
       "publishedAt": "2026-11-06T18:16:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "d32234f1074102450948c09031f317451f1159e80abf3165c5fc6755e50210d4",
       "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
       "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06",
-      "summary": "86 points · 16 comments on Hacker News",
+      "summary": "86 points · 17 comments on Hacker News",
       "publishedAt": "2026-11-06T18:04:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -112,16 +122,6 @@
       "publishedAt": "2026-11-06T18:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d2cf9ea98eff4e7cb74cf652c3e7db6526d6bf6c430721324722fd4f3d085600",
-      "title": "Perplexity launches AI agents for work",
-      "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
-      "summary": "60 points · 52 comments on Hacker News",
-      "publishedAt": "2026-11-06T17:59:41+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
