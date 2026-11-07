@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T15:31:28.718500+00:00",
+  "generatedAt": "2026-11-07T16:31:30.497917+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -28,7 +28,7 @@
       "id": "bd95b63d46d959afe7032989a94561308304128cf12b1cad0119707daae19715",
       "title": "The AI sell-off compared to well-known stock market crashes",
       "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
-      "summary": "77 points · 66 comments on Hacker News",
+      "summary": "78 points · 66 comments on Hacker News",
       "publishedAt": "2026-11-07T02:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +58,7 @@
       "id": "e0c8b4541e0b5e8be31a9bff4568011d13ec940dcb82958e18289ef296b725f4",
       "title": "AI is dramatically accelerating AI research",
       "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-      "summary": "340 points · 317 comments on Hacker News",
+      "summary": "342 points · 322 comments on Hacker News",
       "publishedAt": "2026-11-06T20:27:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +68,7 @@
       "id": "96d96bc83625d43e6426459ef2b90d6ef6291272ed4c4ef5bf48930c7e8d2ff6",
       "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
       "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
-      "summary": "Comments",
+      "summary": "99 points · 73 comments on Hacker News",
       "publishedAt": "2026-11-06T20:09:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-07T10:14:14.162122+00:00",
+    "generatedAt": "2026-11-07T16:14:29.651271+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1540,7 +1540,7 @@
         ],
         "value": 6.1449,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-07T10:14:14.162095+00:00",
+        "retrievedAt": "2026-11-07T16:14:29.651243+00:00",
         "stale": false
       },
       {
@@ -2604,7 +2604,7 @@
         ],
         "value": 11.026,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-07T10:14:14.162116+00:00",
+        "retrievedAt": "2026-11-07T16:14:29.651264+00:00",
         "stale": false
       },
       {
@@ -3668,7 +3668,7 @@
         ],
         "value": 1.1165,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-07T10:14:14.162122+00:00",
+        "retrievedAt": "2026-11-07T16:14:29.651271+00:00",
         "stale": false
       },
       {
@@ -3732,7 +3732,7 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.212317+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.045466+00:00",
         "stale": false
       },
       {
@@ -3796,7 +3796,7 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.212330+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.045494+00:00",
         "stale": false
       },
       {
@@ -3860,7 +3860,7 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.212332+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.045501+00:00",
         "stale": false
       },
       {
@@ -3924,7 +3924,7 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.212334+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.045506+00:00",
         "stale": false
       },
       {
@@ -3988,7 +3988,7 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.224892+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.077553+00:00",
         "stale": false
       },
       {
@@ -4052,7 +4052,7 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.224911+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.077573+00:00",
         "stale": false
       },
       {
@@ -4116,7 +4116,7 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.224918+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.077579+00:00",
         "stale": false
       },
       {
@@ -4180,7 +4180,7 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.224923+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.077584+00:00",
         "stale": false
       },
       {
@@ -4244,7 +4244,7 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.169364+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.084925+00:00",
         "stale": false
       },
       {
@@ -4308,7 +4308,7 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.169386+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.084944+00:00",
         "stale": false
       },
       {
@@ -4372,7 +4372,7 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.169390+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.084950+00:00",
         "stale": false
       },
       {
@@ -4436,7 +4436,7 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-06T16:07:14.169393+00:00",
+        "retrievedAt": "2026-11-07T16:07:26.084956+00:00",
         "stale": false
       }
     ]
