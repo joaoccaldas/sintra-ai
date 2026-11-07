@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T21:44:47.305312+00:00",
+  "generatedAt": "2026-11-07T22:46:37.153133+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "51a247b5b6ae00e91ef525cd7c210cf98986939d31991a92827a0ca942dd4a79",
+      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers",
+      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+      "publishedAt": "2026-11-07T22:07:22+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "3b069222ecbd3b59ba7f8c2ff943b91c72de351b72c023cee112d46552acd58c",
       "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
@@ -68,7 +78,7 @@
       "id": "bd95b63d46d959afe7032989a94561308304128cf12b1cad0119707daae19715",
       "title": "The AI sell-off compared to well-known stock market crashes",
       "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
-      "summary": "81 points · 69 comments on Hacker News",
+      "summary": "84 points · 69 comments on Hacker News",
       "publishedAt": "2026-11-07T02:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "e0c8b4541e0b5e8be31a9bff4568011d13ec940dcb82958e18289ef296b725f4",
       "title": "AI is dramatically accelerating AI research",
       "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-      "summary": "358 points · 333 comments on Hacker News",
+      "summary": "359 points · 335 comments on Hacker News",
       "publishedAt": "2026-11-06T20:27:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -120,16 +130,6 @@
       "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent",
       "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
       "publishedAt": "2026-11-06T18:44:20+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "94d3f146301ece8ef6091fe3c45e29ce4bdd7150668db774979ca5f0ba9b6d7b",
-      "title": "How a Blue Wave midterm might reshape the AI industry",
-      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry",
-      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center de",
-      "publishedAt": "2026-11-06T18:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
