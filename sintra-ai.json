@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T17:31:44.166936+00:00",
+  "generatedAt": "2026-11-07T19:21:01.778161+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,36 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba",
+      "title": "The End of AI Frontiers",
+      "url": "https://hunch.net/?p=13764006",
+      "summary": "Comments",
+      "publishedAt": "2026-11-07T18:04:07+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f3f115801f55cbec81fc987163ce283ce4667b15b0968dc4b4f345ac1063ca04",
+      "title": "Microsoft Researcher John Langford Exits. AI Frontiers Group Declared Finished",
+      "url": "https://businessexaminer.ca/victoria-articles/item/microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared",
+      "summary": "Comments",
+      "publishedAt": "2026-11-07T18:02:17+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5be9cd76a11a8ae6949e3c4d775b9363d67d70e08f533faef269061ab004eb56",
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench",
+      "summary": "Comments",
+      "publishedAt": "2026-11-07T17:19:00+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "ef313c34ae184d15b23a8ec6ebbee6d9e12dae97f562e0a1d653d20460b8291c",
       "title": "Every Mac comes with an (undocumented) family member classifier",
       "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
@@ -28,7 +58,7 @@
       "id": "bd95b63d46d959afe7032989a94561308304128cf12b1cad0119707daae19715",
       "title": "The AI sell-off compared to well-known stock market crashes",
       "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
-      "summary": "78 points · 67 comments on Hacker News",
+      "summary": "79 points · 67 comments on Hacker News",
       "publishedAt": "2026-11-07T02:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,28 +88,8 @@
       "id": "e0c8b4541e0b5e8be31a9bff4568011d13ec940dcb82958e18289ef296b725f4",
       "title": "AI is dramatically accelerating AI research",
       "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-      "summary": "346 points · 323 comments on Hacker News",
+      "summary": "353 points · 329 comments on Hacker News",
       "publishedAt": "2026-11-06T20:27:23+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "96d96bc83625d43e6426459ef2b90d6ef6291272ed4c4ef5bf48930c7e8d2ff6",
-      "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
-      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
-      "summary": "100 points · 78 comments on Hacker News",
-      "publishedAt": "2026-11-06T20:09:14+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "19e5a3d3b856bd20631f2915f952d33dca57ea6d0337ea7ea2ea61d42199dcf5",
-      "title": "Firecracker VM Escape: PwnEscape Part 2",
-      "url": "https://pwn.ai/blog/firecracker-escape",
-      "summary": "Comments",
-      "publishedAt": "2026-11-06T19:33:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -102,16 +112,6 @@
       "publishedAt": "2026-11-06T18:44:20+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "62efb04abee3555038db307b9956ee4b04f112a2afc184035d85c504dc9e4f6c",
-      "title": "40C3 halfnarp – Submit talk preferences to aid scheduling",
-      "url": "https://halfnarp.events.ccc.de/",
-      "summary": "52 points · 12 comments on Hacker News",
-      "publishedAt": "2026-11-06T18:16:43+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
