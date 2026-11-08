@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T09:31:29.304842+00:00",
+  "generatedAt": "2026-11-08T10:32:04.062707+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,7 +18,7 @@
       "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
       "title": "Consumer brain wave headsets threaten privacy",
       "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "42 points · 16 comments on Hacker News",
+      "summary": "52 points · 21 comments on Hacker News",
       "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +68,7 @@
       "id": "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba",
       "title": "The end of Microsoft Research's AI Frontiers group",
       "url": "https://hunch.net/?p=13764006",
-      "summary": "453 points · 271 comments on Hacker News",
+      "summary": "458 points · 277 comments on Hacker News",
       "publishedAt": "2026-11-07T18:02:17+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +88,7 @@
       "id": "5be9cd76a11a8ae6949e3c4d775b9363d67d70e08f533faef269061ab004eb56",
       "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
       "url": "https://maxxbench.unlap.ai/research/why-maxxbench",
-      "summary": "300 points · 81 comments on Hacker News",
+      "summary": "313 points · 83 comments on Hacker News",
       "publishedAt": "2026-11-07T17:19:00+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +98,7 @@
       "id": "ef313c34ae184d15b23a8ec6ebbee6d9e12dae97f562e0a1d653d20460b8291c",
       "title": "Every Mac comes with an (undocumented) family member classifier",
       "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-      "summary": "718 points · 378 comments on Hacker News",
+      "summary": "733 points · 385 comments on Hacker News",
       "publishedAt": "2026-11-07T09:46:03+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-08T04:29:49.747740+00:00",
+    "generatedAt": "2026-11-08T10:30:14.492451+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1540,7 +1540,7 @@
         ],
         "value": 6.1449,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T04:29:49.747716+00:00",
+        "retrievedAt": "2026-11-08T10:30:14.492437+00:00",
         "stale": false
       },
       {
@@ -2604,7 +2604,7 @@
         ],
         "value": 11.026,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T04:29:49.747737+00:00",
+        "retrievedAt": "2026-11-08T10:30:14.492449+00:00",
         "stale": false
       },
       {
@@ -3668,7 +3668,7 @@
         ],
         "value": 1.1165,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T04:29:49.747740+00:00",
+        "retrievedAt": "2026-11-08T10:30:14.492451+00:00",
         "stale": false
       },
       {
