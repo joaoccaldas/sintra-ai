@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T23:49:07.919598+00:00",
+  "generatedAt": "2026-11-08T01:04:22.009988+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "5f8103aa8ad8e667fe99f57680bbcd698e10ae17c93ba178b06c39c55cdb3b54",
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
+      "summary": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. ",
+      "publishedAt": "2026-11-07T23:57:46+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "51a247b5b6ae00e91ef525cd7c210cf98986939d31991a92827a0ca942dd4a79",
       "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
@@ -400,16 +410,6 @@
       "url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
       "summary": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with da",
       "publishedAt": "2026-11-03T23:13:45+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0eec722f11509f676ce1b740345d2cd670d2e74431244b4b112f45f6177b109c",
-      "title": "llm 0.37.1",
-      "url": "https://simonwillison.net/2026/Nov/3/llm",
-      "summary": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm",
-      "publishedAt": "2026-11-03T21:41:42+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
