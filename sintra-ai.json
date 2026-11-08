@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T13:33:01.216173+00:00",
+  "generatedAt": "2026-11-08T17:02:47.137609+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,7 +18,7 @@
       "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
       "title": "Consumer brain wave headsets threaten privacy",
       "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "79 points · 44 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +48,7 @@
       "id": "2d0f77b80e4094290960b65cecc4f4459c5885e93c9f18e8f9f1e3dac542b9c0",
       "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
       "url": "https://eyesrhythm.com/",
-      "summary": "36 points · 20 comments on Hacker News",
+      "summary": "36 points · 21 comments on Hacker News",
       "publishedAt": "2026-11-07T21:47:47+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +68,7 @@
       "id": "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba",
       "title": "The end of Microsoft Research's AI Frontiers group",
       "url": "https://hunch.net/?p=13764006",
-      "summary": "475 points · 286 comments on Hacker News",
+      "summary": "478 points · 291 comments on Hacker News",
       "publishedAt": "2026-11-07T18:02:17+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +88,7 @@
       "id": "5be9cd76a11a8ae6949e3c4d775b9363d67d70e08f533faef269061ab004eb56",
       "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
       "url": "https://maxxbench.unlap.ai/research/why-maxxbench",
-      "summary": "337 points · 91 comments on Hacker News",
+      "summary": "347 points · 98 comments on Hacker News",
       "publishedAt": "2026-11-07T17:19:00+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +98,7 @@
       "id": "ef313c34ae184d15b23a8ec6ebbee6d9e12dae97f562e0a1d653d20460b8291c",
       "title": "Every Mac comes with an (undocumented) family member classifier",
       "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-      "summary": "762 points · 413 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-07T09:46:03+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-08T10:30:14.492451+00:00",
+    "generatedAt": "2026-11-08T17:02:47.706758+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1540,7 +1540,7 @@
         ],
         "value": 6.1449,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T10:30:14.492437+00:00",
+        "retrievedAt": "2026-11-08T17:02:47.706739+00:00",
         "stale": false
       },
       {
@@ -2604,7 +2604,7 @@
         ],
         "value": 11.026,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T10:30:14.492449+00:00",
+        "retrievedAt": "2026-11-08T17:02:47.706755+00:00",
         "stale": false
       },
       {
@@ -3668,7 +3668,7 @@
         ],
         "value": 1.1165,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T10:30:14.492451+00:00",
+        "retrievedAt": "2026-11-08T17:02:47.706758+00:00",
         "stale": false
       },
       {
@@ -3732,7 +3732,7 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.045466+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.035184+00:00",
         "stale": false
       },
       {
@@ -3796,7 +3796,7 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.045494+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.035216+00:00",
         "stale": false
       },
       {
@@ -3860,7 +3860,7 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.045501+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.035223+00:00",
         "stale": false
       },
       {
@@ -3924,7 +3924,7 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.045506+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.035229+00:00",
         "stale": false
       },
       {
@@ -3988,7 +3988,7 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.077553+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.348778+00:00",
         "stale": false
       },
       {
@@ -4052,7 +4052,7 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.077573+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.348808+00:00",
         "stale": false
       },
       {
@@ -4116,7 +4116,7 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.077579+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.348816+00:00",
         "stale": false
       },
       {
@@ -4180,7 +4180,7 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.077584+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.348821+00:00",
         "stale": false
       },
       {
@@ -4244,7 +4244,7 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.084925+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.037857+00:00",
         "stale": false
       },
       {
@@ -4308,7 +4308,7 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.084944+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.037877+00:00",
         "stale": false
       },
       {
@@ -4372,7 +4372,7 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.084950+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.037885+00:00",
         "stale": false
       },
       {
@@ -4436,7 +4436,7 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-07T16:07:26.084956+00:00",
+        "retrievedAt": "2026-11-08T16:11:24.037891+00:00",
         "stale": false
       }
     ]
