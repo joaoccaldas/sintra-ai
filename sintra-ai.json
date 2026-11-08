@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T19:14:23.176700+00:00",
+  "generatedAt": "2026-11-08T19:49:46.731710+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,30 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
+      "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+      "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+      "summary": "38 points · 37 comments on Hacker News",
+      "publishedAt": "2026-11-08T18:43:07+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1f9639d5e128f4b4e119e5ba8704a33854b9a27c5702be2efb51f9fca1035efe",
+      "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
+      "summary": "31 points · 52 comments on Hacker News",
+      "publishedAt": "2026-11-08T15:19:51+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "3dfb269390b374843188b53306df7791e3859791b43bc0254b7875c7b699ad4a",
       "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
       "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test",
-      "summary": "40 points · 33 comments on Hacker News",
+      "summary": "46 points · 34 comments on Hacker News",
       "publishedAt": "2026-11-08T15:00:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +48,7 @@
       "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
       "title": "Consumer brain wave headsets threaten privacy",
       "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "105 points · 83 comments on Hacker News",
+      "summary": "109 points · 85 comments on Hacker News",
       "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +78,7 @@
       "id": "2d0f77b80e4094290960b65cecc4f4459c5885e93c9f18e8f9f1e3dac542b9c0",
       "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
       "url": "https://eyesrhythm.com/",
-      "summary": "37 points · 21 comments on Hacker News",
+      "summary": "37 points · 22 comments on Hacker News",
       "publishedAt": "2026-11-07T21:47:47+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,28 +98,8 @@
       "id": "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba",
       "title": "The end of Microsoft Research's AI Frontiers group",
       "url": "https://hunch.net/?p=13764006",
-      "summary": "482 points · 296 comments on Hacker News",
+      "summary": "483 points · 302 comments on Hacker News",
       "publishedAt": "2026-11-07T18:02:17+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f3f115801f55cbec81fc987163ce283ce4667b15b0968dc4b4f345ac1063ca04",
-      "title": "Microsoft Researcher John Langford Exits. AI Frontiers Group Declared Finished",
-      "url": "https://businessexaminer.ca/victoria-articles/item/microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared",
-      "summary": "Comments",
-      "publishedAt": "2026-11-07T18:02:17+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5be9cd76a11a8ae6949e3c4d775b9363d67d70e08f533faef269061ab004eb56",
-      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
-      "url": "https://maxxbench.unlap.ai/research/why-maxxbench",
-      "summary": "Comments",
-      "publishedAt": "2026-11-07T17:19:00+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
