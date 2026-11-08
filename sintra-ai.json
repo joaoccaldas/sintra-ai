@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T19:49:46.731710+00:00",
+  "generatedAt": "2026-11-08T20:51:05.060095+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "8b18a5361e6d14a958f6230dacc6693daecb7b825dba1d303670f9618e563a8a",
+      "title": "How I Fight AI Brain Fry",
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "summary": "37 points · 28 comments on Hacker News",
+      "publishedAt": "2026-11-08T19:37:42+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
       "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
       "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-      "summary": "38 points · 37 comments on Hacker News",
+      "summary": "59 points · 62 comments on Hacker News",
       "publishedAt": "2026-11-08T18:43:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +38,7 @@
       "id": "1f9639d5e128f4b4e119e5ba8704a33854b9a27c5702be2efb51f9fca1035efe",
       "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
       "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
-      "summary": "31 points · 52 comments on Hacker News",
+      "summary": "32 points · 52 comments on Hacker News",
       "publishedAt": "2026-11-08T15:19:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +48,7 @@
       "id": "3dfb269390b374843188b53306df7791e3859791b43bc0254b7875c7b699ad4a",
       "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
       "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test",
-      "summary": "46 points · 34 comments on Hacker News",
+      "summary": "50 points · 39 comments on Hacker News",
       "publishedAt": "2026-11-08T15:00:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +58,7 @@
       "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
       "title": "Consumer brain wave headsets threaten privacy",
       "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "109 points · 85 comments on Hacker News",
+      "summary": "112 points · 86 comments on Hacker News",
       "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -92,16 +102,6 @@
       "publishedAt": "2026-11-07T21:17:08+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba",
-      "title": "The end of Microsoft Research's AI Frontiers group",
-      "url": "https://hunch.net/?p=13764006",
-      "summary": "483 points · 302 comments on Hacker News",
-      "publishedAt": "2026-11-07T18:02:17+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
