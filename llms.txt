@@ -160,7 +160,7 @@ Step-by-step how-tos, each with `Article` + `FAQPage` JSON-LD.
 - [Model Radar](https://joaoccaldas.github.io/sintra-ai/models/): 24 models compared across capability tier and release date.
 
 ## News & Live Feed
-- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 580 dated items from editorial history and aggregated feeds. Check per-item provenance; publication is not verification.
+- [AI News](https://joaoccaldas.github.io/sintra-ai/news/): 581 dated items from editorial history and aggregated feeds. Check per-item provenance; publication is not verification.
 - [Live Feed](https://joaoccaldas.github.io/sintra-ai/live/): aggregated signals from labs, arXiv and other publishers, refreshed every build.
 - Syndication: [RSS](https://joaoccaldas.github.io/sintra-ai/feed.xml), [JSON Feed](https://joaoccaldas.github.io/sintra-ai/feed.json)
 
