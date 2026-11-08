@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 08 Nov 2026 06:11:49 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 07:07:49 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -93,7 +93,7 @@
 
   <item>
     <title><![CDATA[Gemini Omni 1.2 Flash]]></title>
-    <description><![CDATA[361 points · 251 comments on Hacker News]]></description>
+    <description><![CDATA[361 points · 250 comments on Hacker News]]></description>
     <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</link>
     <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
