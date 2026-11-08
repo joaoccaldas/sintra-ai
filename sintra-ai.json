@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T20:51:05.060095+00:00",
+  "generatedAt": "2026-11-08T23:19:02.459820+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,30 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "71c843041955ebc1fdc113b08d577e957425247fdabb3a77b14664d5269af1d3",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
+      "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into nu",
+      "publishedAt": "2026-11-08T22:26:00+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8a86cf9d70b8065c824171da4a048023731a98ebceab906b951f942e21597504",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy",
+      "summary": "In a memo to the company, Huang admitted that he had an affair.",
+      "publishedAt": "2026-11-08T21:00:11+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "8b18a5361e6d14a958f6230dacc6693daecb7b825dba1d303670f9618e563a8a",
       "title": "How I Fight AI Brain Fry",
       "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-      "summary": "37 points · 28 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-08T19:37:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +48,7 @@
       "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
       "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
       "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-      "summary": "59 points · 62 comments on Hacker News",
+      "summary": "83 points · 99 comments on Hacker News",
       "publishedAt": "2026-11-08T18:43:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +58,7 @@
       "id": "1f9639d5e128f4b4e119e5ba8704a33854b9a27c5702be2efb51f9fca1035efe",
       "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
       "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
-      "summary": "32 points · 52 comments on Hacker News",
+      "summary": "34 points · 57 comments on Hacker News",
       "publishedAt": "2026-11-08T15:19:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +68,7 @@
       "id": "3dfb269390b374843188b53306df7791e3859791b43bc0254b7875c7b699ad4a",
       "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
       "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test",
-      "summary": "50 points · 39 comments on Hacker News",
+      "summary": "54 points · 41 comments on Hacker News",
       "publishedAt": "2026-11-08T15:00:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +78,7 @@
       "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
       "title": "Consumer brain wave headsets threaten privacy",
       "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "112 points · 86 comments on Hacker News",
+      "summary": "115 points · 91 comments on Hacker News",
       "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +108,7 @@
       "id": "2d0f77b80e4094290960b65cecc4f4459c5885e93c9f18e8f9f1e3dac542b9c0",
       "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
       "url": "https://eyesrhythm.com/",
-      "summary": "37 points · 22 comments on Hacker News",
+      "summary": "38 points · 22 comments on Hacker News",
       "publishedAt": "2026-11-07T21:47:47+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -130,16 +150,6 @@
       "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web",
       "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
       "publishedAt": "2026-11-06T18:44:38+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a8fc5de6487f58f91f0ae051f179faed5006c431b6fb6911daf336eab7c987ba",
-      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
-      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent",
-      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
-      "publishedAt": "2026-11-06T18:44:20+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -405,16 +415,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "b0671b3fa0f50f9188d57435675835b63ad78d889fa9b7083b88da89a2a55fe9",
-      "title": "datasette-agent 0.5a0",
-      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
-      "summary": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with da",
-      "publishedAt": "2026-11-03T23:13:45+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "8d86676710497099b1091deb38df79f93e8f69b79a1b2cfae325c64584a4dfbe",
       "title": "StateBench: Testing how language models track state changes over long documents",
       "url": "https://huggingface.co/blog/allenai/statebench",
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-08T17:02:47.706758+00:00",
+    "generatedAt": "2026-11-08T23:03:35.574367+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1540,7 +1540,7 @@
         ],
         "value": 6.1449,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T17:02:47.706739+00:00",
+        "retrievedAt": "2026-11-08T23:03:35.574331+00:00",
         "stale": false
       },
       {
@@ -2604,7 +2604,7 @@
         ],
         "value": 11.026,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T17:02:47.706755+00:00",
+        "retrievedAt": "2026-11-08T23:03:35.574361+00:00",
         "stale": false
       },
       {
@@ -3668,7 +3668,7 @@
         ],
         "value": 1.1165,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T17:02:47.706758+00:00",
+        "retrievedAt": "2026-11-08T23:03:35.574367+00:00",
         "stale": false
       },
       {
