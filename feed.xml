@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 07 Nov 2026 23:49:37 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 01:04:58 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages]]></title>
+    <description><![CDATA[datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. ]]></description>
+    <link>https://simonwillison.net/2026/Nov/7/link-rel-next</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/7/link-rel-next</guid>
+    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[After the midterms, things are looking rocky for Elon Musk and data centers]]></title>
@@ -152,15 +161,6 @@
     <guid isPermaLink="true">https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Australian universities are creating AI-native graduates]]></title>
-    <description><![CDATA[Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.]]></description>
-    <link>https://openai.com/index/australian-universities-ai-native-graduates</link>
-    <guid isPermaLink="true">https://openai.com/index/australian-universities-ai-native-graduates</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
