@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 08 Nov 2026 19:50:31 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 23:20:36 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[parse_number() as a SQLite extension: C vs Rust]]></title>
+    <description><![CDATA[Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into nu]]></description>
+    <link>https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust</guid>
+    <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy]]></title>
+    <description><![CDATA[In a memo to the company, Huang admitted that he had an affair.]]></description>
+    <link>https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy</guid>
+    <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages]]></title>
@@ -60,15 +78,6 @@
     <description><![CDATA[Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.]]></description>
     <link>https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta introduces Spaces, a new way to collaborate with your Muse agent]]></title>
-    <description><![CDATA[Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.]]></description>
-    <link>https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -449,15 +458,6 @@
     <guid isPermaLink="true">https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607</guid>
     <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
     <category>Meta</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector]]></title>
-    <description><![CDATA[Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.]]></description>
-    <link>https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</link>
-    <guid isPermaLink="true">https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
-    <category>Swedish Government</category>
   </item>
   </channel>
 </rss>
