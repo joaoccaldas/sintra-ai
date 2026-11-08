@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T12:32:44.730485+00:00",
+  "generatedAt": "2026-11-08T13:33:01.216173+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,7 +18,7 @@
       "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
       "title": "Consumer brain wave headsets threaten privacy",
       "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "70 points · 36 comments on Hacker News",
+      "summary": "79 points · 44 comments on Hacker News",
       "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +48,7 @@
       "id": "2d0f77b80e4094290960b65cecc4f4459c5885e93c9f18e8f9f1e3dac542b9c0",
       "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
       "url": "https://eyesrhythm.com/",
-      "summary": "32 points · 15 comments on Hacker News",
+      "summary": "36 points · 20 comments on Hacker News",
       "publishedAt": "2026-11-07T21:47:47+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +68,7 @@
       "id": "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba",
       "title": "The end of Microsoft Research's AI Frontiers group",
       "url": "https://hunch.net/?p=13764006",
-      "summary": "468 points · 281 comments on Hacker News",
+      "summary": "475 points · 286 comments on Hacker News",
       "publishedAt": "2026-11-07T18:02:17+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +88,7 @@
       "id": "5be9cd76a11a8ae6949e3c4d775b9363d67d70e08f533faef269061ab004eb56",
       "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
       "url": "https://maxxbench.unlap.ai/research/why-maxxbench",
-      "summary": "333 points · 87 comments on Hacker News",
+      "summary": "337 points · 91 comments on Hacker News",
       "publishedAt": "2026-11-07T17:19:00+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +98,7 @@
       "id": "ef313c34ae184d15b23a8ec6ebbee6d9e12dae97f562e0a1d653d20460b8291c",
       "title": "Every Mac comes with an (undocumented) family member classifier",
       "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-      "summary": "753 points · 405 comments on Hacker News",
+      "summary": "762 points · 413 comments on Hacker News",
       "publishedAt": "2026-11-07T09:46:03+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,16 +162,6 @@
       "publishedAt": "2026-11-06T14:00:48+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
-      "title": "Gemini Omni 1.2 Flash",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "summary": "365 points · 251 comments on Hacker News",
-      "publishedAt": "2026-11-06T13:35:27+00:00",
-      "source": "Google AI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -311,6 +301,16 @@
       "summary": "",
       "publishedAt": "2026-11-05T17:05:16+00:00",
       "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "publishedAt": "2026-11-05T17:00:00+00:00",
+      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     },
