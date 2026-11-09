@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T21:03:16.766274+00:00",
+  "generatedAt": "2026-11-09T22:04:13.326603+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,16 @@
       "publishedAt": "2026-11-09T20:09:06+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "fbdf36c6d0b0b031c7bc7614ffde87312900439bb99e93d85ef2dfed43491371",
+      "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "summary": "Comments",
+      "publishedAt": "2026-11-09T20:04:55+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -135,6 +145,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "dc6bacb2e80f865d4e6e496f34bfcd5b43a1d6848dc527b2bb74e392a37e698f",
+      "title": "Introducing Control Room: Human control over AI workloads",
+      "url": "https://openai.com/index/introducing-control-room",
+      "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "publishedAt": "2026-11-09T13:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "55d059b88c6c576a2f3d9ab40518505078744d93ab6e7c4bc3d7b8ab49056416",
       "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
@@ -165,6 +185,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "02e9abf47eaf3fa01f98fe0d8703230a8e6faa4dd4f2fb401bd0d8381c4ff554",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "publishedAt": "2026-11-09T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "2e34e84f0999c607fcd026638ba274edf1639ff07c6ab06d851f57d1a6442eba",
       "title": "Kuken Industries searches 70 years of drawings in minutes",
       "url": "https://openai.com/index/kuken",
@@ -178,7 +208,7 @@
       "id": "36fca88880e047cff6c375c9459cb9a5b34761dc12c30234ce84943aea3a7140",
       "title": "370 Books in 20 months: South African author defends her use of AI",
       "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
-      "summary": "43 points · 87 comments on Hacker News",
+      "summary": "44 points · 87 comments on Hacker News",
       "publishedAt": "2026-11-09T07:21:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -190,16 +220,6 @@
       "url": "https://swiftrocks.com/being-a-meat-proxy-for-ai-should-be-grounds-for-getting-people-fired",
       "summary": "48 points · 43 comments on Hacker News",
       "publishedAt": "2026-11-09T06:55:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b245671c29a5d9e9cb29a484ca9d89b9af528f9a1f802ef642ee032e16dc8cf1",
-      "title": "Apple capped engineers at a $200 daily AI budget",
-      "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-      "summary": "109 points · 118 comments on Hacker News",
-      "publishedAt": "2026-11-09T05:30:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -375,16 +395,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "bbd492caba72ca544b8bac3280d7afac87555fa4b30c0b12388bcfae24236fa4",
-      "title": "Cult.fit builds operational muscle with Codex",
-      "url": "https://openai.com/index/cultfit-builds-with-codex",
-      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-      "publishedAt": "2026-11-05T20:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "f25b9201ad6bdcc6fc966e82e19169484871d5662fdac1ebb6313d2e0a7a1d5f",
       "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
       "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
@@ -411,16 +421,6 @@
       "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
       "publishedAt": "2026-11-05T17:00:00+00:00",
       "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "616c68177b707eae60eb2b7e618a86105e3926c540e149caa916945e5a2342dd",
-      "title": "Australian universities are creating AI-native graduates",
-      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-      "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
-      "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
     },
