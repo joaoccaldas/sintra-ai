@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T20:02:24.101282+00:00",
+  "generatedAt": "2026-11-09T21:03:16.766274+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "e7b41c563c8e101b7fe3236848945c79c49cb853f184a2d8c359f45b2f139327",
+      "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
+      "url": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy",
+      "summary": "The Nvidia CEO also pulled out of an Anthropic event earlier.",
+      "publishedAt": "2026-11-09T20:09:06+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "0cdd057b459d4c2b5e1cede283f9a98ec8be4b354364b43509f82edbc048e6f5",
       "title": "The backlash about data centers might really just be about electricity",
@@ -68,7 +78,7 @@
       "id": "86708699833d3a97966600b802e469ca582767ce90cf5e85b1122261eddb89ec",
       "title": "Our Smallest, Most Efficient Model: Muse Ember",
       "url": "https://research.meta.ai/blog/muse-ember",
-      "summary": "116 points · 49 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-09T17:58:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -115,16 +125,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "002b5d6d214abd27bf87970f982a629fd914112d112e293308f250da26e97576",
-      "title": "Automattic debuts a platform to deploy vibe-coding apps amid a changing internet",
-      "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet",
-      "summary": "Automattic aims to compete with the likes of Lovable with Spacefast.",
-      "publishedAt": "2026-11-09T14:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "1041d0c56d06b40f4e8296fc1f984e6b7d2014927387e19e9cdb32e58561a48a",
       "title": "Innovating with AI in the special chemicals industry",
       "url": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry",
@@ -148,7 +148,7 @@
       "id": "ab9a571901c9fe81ed20b1e3f7dee7e375ba75a61e9a78c28766064bb0b68867",
       "title": "Fold Epic Paper Airplanes",
       "url": "https://www.foldableflight.com/",
-      "summary": "667 points · 120 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-09T12:19:22+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "36fca88880e047cff6c375c9459cb9a5b34761dc12c30234ce84943aea3a7140",
       "title": "370 Books in 20 months: South African author defends her use of AI",
       "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
-      "summary": "42 points · 86 comments on Hacker News",
+      "summary": "43 points · 87 comments on Hacker News",
       "publishedAt": "2026-11-09T07:21:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +198,7 @@
       "id": "b245671c29a5d9e9cb29a484ca9d89b9af528f9a1f802ef642ee032e16dc8cf1",
       "title": "Apple capped engineers at a $200 daily AI budget",
       "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-      "summary": "109 points · 114 comments on Hacker News",
+      "summary": "109 points · 118 comments on Hacker News",
       "publishedAt": "2026-11-09T05:30:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
