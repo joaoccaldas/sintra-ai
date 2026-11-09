@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T18:55:13.710127+00:00",
+  "generatedAt": "2026-11-09T20:02:24.101282+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "0cdd057b459d4c2b5e1cede283f9a98ec8be4b354364b43509f82edbc048e6f5",
+      "title": "The backlash about data centers might really just be about electricity",
+      "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley",
+      "publishedAt": "2026-11-09T19:35:33+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a3bc8ca770f44f2d283586dea0b9803e953497c6447c206a739ff27b330279a0",
+      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns",
+      "summary": "Anthropic says the new models \"show improvements in areas like coding, reasoning, and vision,\" as well as in communicating more clearly with users.",
+      "publishedAt": "2026-11-09T19:24:51+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "caa9073cefb43725f1a58e80c726b61b1142cf3c90f98b3ffe382a94354b7081",
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+      "publishedAt": "2026-11-09T19:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "38597062943c675332eea3d1db50b70efe48dbb3c255497acdd1df7d71045114",
       "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
@@ -35,6 +65,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "86708699833d3a97966600b802e469ca582767ce90cf5e85b1122261eddb89ec",
+      "title": "Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "summary": "116 points · 49 comments on Hacker News",
+      "publishedAt": "2026-11-09T17:58:46+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "a7e59e4f72113c3a7a23bd7fd718a779f8e68ee8131cc50cf05ba97b889618d0",
       "title": "Nancy Pelosi’s replacement is ready to regulate AI",
       "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai",
@@ -48,7 +88,7 @@
       "id": "48b9783d0be504133140909dcbcaf9fda2c57948c95df79b65ef337ea11ad6da",
       "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
       "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines",
-      "summary": "Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.",
+      "summary": "Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse.",
       "publishedAt": "2026-11-09T16:56:54+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
@@ -108,7 +148,7 @@
       "id": "ab9a571901c9fe81ed20b1e3f7dee7e375ba75a61e9a78c28766064bb0b68867",
       "title": "Fold Epic Paper Airplanes",
       "url": "https://www.foldableflight.com/",
-      "summary": "Comments",
+      "summary": "667 points · 120 comments on Hacker News",
       "publishedAt": "2026-11-09T12:19:22+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -125,10 +165,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "2e34e84f0999c607fcd026638ba274edf1639ff07c6ab06d851f57d1a6442eba",
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "url": "https://openai.com/index/kuken",
+      "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+      "publishedAt": "2026-11-09T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "36fca88880e047cff6c375c9459cb9a5b34761dc12c30234ce84943aea3a7140",
       "title": "370 Books in 20 months: South African author defends her use of AI",
       "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
-      "summary": "41 points · 85 comments on Hacker News",
+      "summary": "42 points · 86 comments on Hacker News",
       "publishedAt": "2026-11-09T07:21:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,20 +198,10 @@
       "id": "b245671c29a5d9e9cb29a484ca9d89b9af528f9a1f802ef642ee032e16dc8cf1",
       "title": "Apple capped engineers at a $200 daily AI budget",
       "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-      "summary": "106 points · 112 comments on Hacker News",
+      "summary": "109 points · 114 comments on Hacker News",
       "publishedAt": "2026-11-09T05:30:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "177dd03271cc9aec73ac94c0e4d26ccf1d8490f7830d8682abb6a52969cfe840",
-      "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s ‘about a 50-50’",
-      "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50",
-      "summary": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
-      "publishedAt": "2026-11-09T05:26:29+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -202,16 +242,6 @@
       "publishedAt": "2026-11-09T04:25:05+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "231b4bdb6dd4b87841e1a39a5d0aa8fdbea7f08db55e1e283061efcd763fde12",
-      "title": "Asahi Linux Drops MIT, Goes Full GPL After AI Used to Steal Unreleased Code",
-      "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl",
-      "summary": "64 points · 29 comments on Hacker News",
-      "publishedAt": "2026-11-09T03:06:55+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -395,26 +425,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "14e90e72d3401ddf817f6448fcef8d95a77a43c8c720ccf3b66937d995ee0634",
-      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-      "url": "https://openai.com/index/introducing-gpt-6-cyber",
-      "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-      "publishedAt": "2026-11-05T09:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "db9792e954d447010915e606e8fdb998d92778fb38af9f5ff78336a8db2d0092",
-      "title": "Merge builds product and business tools with OpenAI technology",
-      "url": "https://openai.com/index/merge-builds-with-openai",
-      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-      "publishedAt": "2026-11-05T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "c65c7708e93995ca45416c5ef4b52b70460b293ce45783d81126b519537db1b3",
       "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
       "url": "https://huggingface.co/blog/phonon-tts",
@@ -452,16 +462,6 @@
       "publishedAt": "2026-11-03T17:01:49+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "453b18c935cee2e4c8b84ea18ef0077b2f161784a7f78c7b2ed1cf38922e04ad",
-      "title": "How “reverse game theory” could keep AI agents in check",
-      "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment",
-      "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desir",
-      "publishedAt": "2026-11-03T10:43:41+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
