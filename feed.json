@@ -227,6 +227,26 @@
       ]
     },
     {
+      "id": "https://openai.com/index/introducing-control-room",
+      "url": "https://openai.com/index/introducing-control-room",
+      "title": "Introducing Control Room: Human control over AI workloads",
+      "content_text": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
       "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
@@ -243,6 +263,26 @@
         "Hugging Face",
         "Hugging Face",
         "Open Source",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/coderabbit-codex-daybreak",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "content_text": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
         "Live"
       ]
     },
@@ -319,46 +359,6 @@
         "verification": "not-reverified"
       },
       "date_published": "2026-11-08T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/7/link-rel-next",
-      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
-      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
-      "content_text": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. ",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-07T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/7/hn-50407316",
-      "url": "https://simonwillison.net/2026/Nov/7/hn-50407316",
-      "title": "Terry Pratchett's Study",
-      "content_text": "My comment on Terry Pratchett's Study — Hacker News. Terry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on th",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-07T00:00:00.000Z",
       "tags": [
         "Simon Willison",
         "Simon Willison",

@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 21:53:11 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 22:38:32 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -110,12 +110,30 @@
   </item>
 
   <item>
+    <title><![CDATA[Introducing Control Room: Human control over AI workloads]]></title>
+    <description><![CDATA[Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.]]></description>
+    <link>https://openai.com/index/introducing-control-room</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-control-room</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[Your Experts Have Partners. There's HOPE for Keeping Them Together]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/amazon/higher-order-pruning-experts</link>
     <guid isPermaLink="true">https://huggingface.co/blog/amazon/higher-order-pruning-experts</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[CodeRabbit scales agentic software development and ships 20x more]]></title>
+    <description><![CDATA[CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.]]></description>
+    <link>https://openai.com/index/coderabbit-codex-daybreak</link>
+    <guid isPermaLink="true">https://openai.com/index/coderabbit-codex-daybreak</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -151,24 +169,6 @@
     <link>https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust</guid>
     <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages]]></title>
-    <description><![CDATA[datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. ]]></description>
-    <link>https://simonwillison.net/2026/Nov/7/link-rel-next</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/7/link-rel-next</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Terry Pratchett's Study]]></title>
-    <description><![CDATA[My comment on Terry Pratchett's Study — Hacker News. Terry Pratchett once wrote about the concept of "horizontal wealth". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on th]]></description>
-    <link>https://simonwillison.net/2026/Nov/7/hn-50407316</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/7/hn-50407316</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 
