@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 18:55:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 20:03:01 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[The backlash about data centers might really just be about electricity]]></title>
+    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley]]></description>
+    <link>https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic releases new Mythos and Fable models amid RSI concerns]]></title>
+    <description><![CDATA[Anthropic says the new models "show improvements in areas like coding, reasoning, and vision," as well as in communicating more clearly with users.]]></description>
+    <link>https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[ChatGPT Enterprise now available in AWS Marketplace]]></title>
+    <description><![CDATA[ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.]]></description>
+    <link>https://openai.com/index/chatgpt-enterprise-aws-marketplace</link>
+    <guid isPermaLink="true">https://openai.com/index/chatgpt-enterprise-aws-marketplace</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny]]></title>
@@ -39,7 +66,7 @@
 
   <item>
     <title><![CDATA[Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines]]></title>
-    <description><![CDATA[Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.]]></description>
+    <description><![CDATA[Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse.]]></description>
     <link>https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
@@ -92,12 +119,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s ‘about a 50-50’]]></title>
-    <description><![CDATA[Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.]]></description>
-    <link>https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50</guid>
+    <title><![CDATA[Kuken Industries searches 70 years of drawings in minutes]]></title>
+    <description><![CDATA[Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.]]></description>
+    <link>https://openai.com/index/kuken</link>
+    <guid isPermaLink="true">https://openai.com/index/kuken</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -143,33 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/7/hn-50407316</guid>
     <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quoting Nilay Patel]]></title>
-    <description><![CDATA[The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just is]]></description>
-    <link>https://simonwillison.net/2026/Nov/6/nilay-patel</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/6/nilay-patel</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[ToyBlocks: A controlled world for robot learning and evaluation]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/allenai/toyblocks</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/allenai/toyblocks</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[I watched a humanoid robot clean my apartment. It felt like a taste of the future.]]></title>
-    <description><![CDATA[I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, ]]></description>
-    <link>https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
   </item>
 
   <item>
