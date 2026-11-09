@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T17:55:06.490074+00:00",
+  "generatedAt": "2026-11-09T18:55:13.710127+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "38597062943c675332eea3d1db50b70efe48dbb3c255497acdd1df7d71045114",
+      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny",
+      "summary": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
+      "publishedAt": "2026-11-09T18:09:52+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e8884a0ba45abd7629fdc7cfc69248bb7092da8b1cf5a102b40c8d4e35041a56",
+      "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
+      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution",
+      "summary": "At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.",
+      "publishedAt": "2026-11-09T18:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a7e59e4f72113c3a7a23bd7fd718a779f8e68ee8131cc50cf05ba97b889618d0",
+      "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+      "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai",
+      "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in settin",
+      "publishedAt": "2026-11-09T17:05:43+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "48b9783d0be504133140909dcbcaf9fda2c57948c95df79b65ef337ea11ad6da",
       "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
@@ -85,10 +115,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "06a85cbf81c2d4fbc0fb3cc274ca4e7d4edb17995a30def513353138a77c535c",
+      "title": "Ginux: A New Kernel Runs Linux Userspace, Made via Human-Directed AI Engineering",
+      "url": "https://zenodo.org/records/23682548",
+      "summary": "31 points · 62 comments on Hacker News",
+      "publishedAt": "2026-11-09T11:30:27+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "36fca88880e047cff6c375c9459cb9a5b34761dc12c30234ce84943aea3a7140",
       "title": "370 Books in 20 months: South African author defends her use of AI",
       "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
-      "summary": "40 points · 85 comments on Hacker News",
+      "summary": "41 points · 85 comments on Hacker News",
       "publishedAt": "2026-11-09T07:21:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +138,7 @@
       "id": "8b3e103bdadb15668c8e27337452bb7fca3669177e0e5a63b13287e1bd8b2b57",
       "title": "Being a meat proxy for AI should be grounds for getting people fired",
       "url": "https://swiftrocks.com/being-a-meat-proxy-for-ai-should-be-grounds-for-getting-people-fired",
-      "summary": "47 points · 42 comments on Hacker News",
+      "summary": "48 points · 43 comments on Hacker News",
       "publishedAt": "2026-11-09T06:55:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +148,7 @@
       "id": "b245671c29a5d9e9cb29a484ca9d89b9af528f9a1f802ef642ee032e16dc8cf1",
       "title": "Apple capped engineers at a $200 daily AI budget",
       "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-      "summary": "105 points · 109 comments on Hacker News",
+      "summary": "106 points · 112 comments on Hacker News",
       "publishedAt": "2026-11-09T05:30:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,18 +208,8 @@
       "id": "231b4bdb6dd4b87841e1a39a5d0aa8fdbea7f08db55e1e283061efcd763fde12",
       "title": "Asahi Linux Drops MIT, Goes Full GPL After AI Used to Steal Unreleased Code",
       "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl",
-      "summary": "63 points · 29 comments on Hacker News",
+      "summary": "64 points · 29 comments on Hacker News",
       "publishedAt": "2026-11-09T03:06:55+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "dab987be36e106a40b422c6665c3235751f60ed770965ef0a0a432d9bf06abb7",
-      "title": "I'm not convinced the AI bubble exists",
-      "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
-      "summary": "Comments",
-      "publishedAt": "2026-11-08T23:44:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -195,16 +225,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "8a86cf9d70b8065c824171da4a048023731a98ebceab906b951f942e21597504",
-      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
-      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy",
-      "summary": "In a memo to the company, Huang admitted that he had an affair.",
-      "publishedAt": "2026-11-08T21:00:11+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "5f8103aa8ad8e667fe99f57680bbcd698e10ae17c93ba178b06c39c55cdb3b54",
       "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
       "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
@@ -212,16 +232,6 @@
       "publishedAt": "2026-11-07T23:57:46+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "51a247b5b6ae00e91ef525cd7c210cf98986939d31991a92827a0ca942dd4a79",
-      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
-      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers",
-      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
-      "publishedAt": "2026-11-07T22:07:22+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -450,16 +460,6 @@
       "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment",
       "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desir",
       "publishedAt": "2026-11-03T10:43:41+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8289a65b86803237107e2d6f8b2003fa320428871699a4ec06c9f5d06073b558",
-      "title": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
-      "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained just one directive, ordering government ",
-      "publishedAt": "2026-11-03T04:18:47+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
       "color": "#5B48D9"
