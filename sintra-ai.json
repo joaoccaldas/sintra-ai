@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T02:50:28.132589+00:00",
+  "generatedAt": "2026-11-09T03:20:56.902056+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "dab987be36e106a40b422c6665c3235751f60ed770965ef0a0a432d9bf06abb7",
+      "title": "I'm Not Convinced the AI Bubble Exists",
+      "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+      "summary": "69 points · 92 comments on Hacker News",
+      "publishedAt": "2026-11-08T23:44:36+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "71c843041955ebc1fdc113b08d577e957425247fdabb3a77b14664d5269af1d3",
       "title": "parse_number() as a SQLite extension: C vs Rust",
@@ -48,7 +58,7 @@
       "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
       "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
       "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-      "summary": "89 points · 108 comments on Hacker News",
+      "summary": "90 points · 111 comments on Hacker News",
       "publishedAt": "2026-11-08T18:43:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +68,7 @@
       "id": "1f9639d5e128f4b4e119e5ba8704a33854b9a27c5702be2efb51f9fca1035efe",
       "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
       "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
-      "summary": "34 points · 58 comments on Hacker News",
+      "summary": "35 points · 60 comments on Hacker News",
       "publishedAt": "2026-11-08T15:19:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +88,7 @@
       "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
       "title": "Consumer brain wave headsets threaten privacy",
       "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "116 points · 91 comments on Hacker News",
+      "summary": "116 points · 92 comments on Hacker News",
       "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -102,16 +112,6 @@
       "publishedAt": "2026-11-07T22:07:22+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "2d0f77b80e4094290960b65cecc4f4459c5885e93c9f18e8f9f1e3dac542b9c0",
-      "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
-      "url": "https://eyesrhythm.com/",
-      "summary": "38 points · 23 comments on Hacker News",
-      "publishedAt": "2026-11-07T21:47:47+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
