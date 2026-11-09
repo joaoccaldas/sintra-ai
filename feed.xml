@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 14:05:30 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 14:35:59 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Automattic debuts a platform to deploy vibe coding apps amid a changing internet]]></title>
+    <description><![CDATA[Automattic aims to compete with likes of Lovable with Spacefast]]></description>
+    <link>https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Innovating with AI in the special chemicals industry]]></title>
+    <description><![CDATA[As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the practical realities of bringing products to ma]]></description>
+    <link>https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[Your Experts Have Partners. There's HOPE for Keeping Them Together]]></title>
@@ -110,15 +128,6 @@
   </item>
 
   <item>
-    <title><![CDATA[OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation]]></title>
-    <description><![CDATA[OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.]]></description>
-    <link>https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Quoting Nilay Patel]]></title>
     <description><![CDATA[The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just is]]></description>
     <link>https://simonwillison.net/2026/Nov/6/nilay-patel</link>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/open-asr-leaderboard-liva</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Measuring how AI agents handle everyday wet-lab science]]></title>
-    <description><![CDATA[OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.]]></description>
-    <link>https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science</link>
-    <guid isPermaLink="true">https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
