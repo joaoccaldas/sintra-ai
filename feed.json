@@ -7,6 +7,46 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal",
+      "url": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal",
+      "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
+      "content_text": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia",
+      "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia",
+      "title": "The race is on to sue Nvidia",
+      "content_text": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensiv",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy",
       "url": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy",
       "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
@@ -147,46 +187,6 @@
       ]
     },
     {
-      "id": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines",
-      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines",
-      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
-      "content_text": "Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process",
-      "url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process",
-      "title": "Medium’s new TK app brings AI assistance directly into the writing process",
-      "content_text": "Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
       "id": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
       "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
       "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
@@ -223,6 +223,26 @@
         "MIT Technology Review",
         "MIT Technology Review",
         "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/control-room",
+      "url": "https://openai.com/index/control-room",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "content_text": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
         "Live"
       ]
     },
@@ -339,26 +359,6 @@
         "verification": "not-reverified"
       },
       "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
-      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
-      "title": "parse_number() as a SQLite extension: C vs Rust",
-      "content_text": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into nu",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-08T00:00:00.000Z",
       "tags": [
         "Simon Willison",
         "Simon Willison",

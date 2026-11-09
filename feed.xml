@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 22:38:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 23:41:04 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal]]></title>
+    <description><![CDATA[Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.]]></description>
+    <link>https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The race is on to sue Nvidia]]></title>
+    <description><![CDATA[Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensiv]]></description>
+    <link>https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy]]></title>
@@ -74,24 +92,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines]]></title>
-    <description><![CDATA[Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse.]]></description>
-    <link>https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Medium’s new TK app brings AI assistance directly into the writing process]]></title>
-    <description><![CDATA[Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.]]></description>
-    <link>https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan</link>
@@ -107,6 +107,15 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Control Room: A central system to track and stop model workloads across our research infrastructure]]></title>
+    <description><![CDATA[Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.]]></description>
+    <link>https://openai.com/index/control-room</link>
+    <guid isPermaLink="true">https://openai.com/index/control-room</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -160,15 +169,6 @@
     <link>https://simonwillison.net/2026/Nov/9/details-summary</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/details-summary</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[parse_number() as a SQLite extension: C vs Rust]]></title>
-    <description><![CDATA[Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into nu]]></description>
-    <link>https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust</guid>
-    <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 
