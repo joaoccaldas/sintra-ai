@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 16:07:11 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 16:37:41 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Medium’s new TK app brings AI assistance directly into the writing process]]></title>
+    <description><![CDATA[Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.]]></description>
+    <link>https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context]]></title>
@@ -125,15 +134,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/7/hn-50407316</guid>
     <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Crusoe sells troubled Wyoming data center project to Google]]></title>
-    <description><![CDATA[The deal highlights the challenges of developing massive AI data centers.]]></description>
-    <link>https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>

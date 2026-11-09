@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-09T16:07:10.138Z",
+  "resolvedAt": "2026-11-09T16:37:39.956Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -3258,7 +3258,7 @@
       ],
       "value": 1.54316373266217,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.035223+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.277110+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3323,7 +3323,7 @@
       ],
       "value": 2.2857464902475,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.035184+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.277082+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3388,7 +3388,7 @@
       ],
       "value": 2.16138195623856,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.035229+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.277113+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3453,7 +3453,7 @@
       ],
       "value": 1.4110724231835,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.035216+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.277105+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3518,7 +3518,7 @@
       ],
       "value": 0.679015259300199,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.348816+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.278700+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3583,7 +3583,7 @@
       ],
       "value": 5.01675279604836,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.348778+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.278681+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3648,7 +3648,7 @@
       ],
       "value": 2.94952520485207,
       "period": "2024-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.348821+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.278702+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3713,7 +3713,7 @@
       ],
       "value": 2.46605755272817,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.348808+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.278696+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3778,7 +3778,7 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.037885+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.293365+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3843,7 +3843,7 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.037857+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.293344+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3908,7 +3908,7 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.037891+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.293368+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3973,7 +3973,7 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-08T16:11:24.037877+00:00",
+      "retrievedAt": "2026-11-09T16:11:51.293361+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     }
