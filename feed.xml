@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 18:18:30 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 18:55:47 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny]]></title>
+    <description><![CDATA[Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.]]></description>
+    <link>https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Meta releases Muse Ember, a new lightweight model for agent execution]]></title>
+    <description><![CDATA[At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.]]></description>
+    <link>https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nancy Pelosi’s replacement is ready to regulate AI]]></title>
+    <description><![CDATA[As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in settin]]></description>
+    <link>https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines]]></title>
@@ -101,30 +128,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy]]></title>
-    <description><![CDATA[In a memo to the company, Huang admitted that he had an affair.]]></description>
-    <link>https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy</guid>
-    <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages]]></title>
     <description><![CDATA[datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. ]]></description>
     <link>https://simonwillison.net/2026/Nov/7/link-rel-next</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/7/link-rel-next</guid>
     <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[After the midterms, things are looking rocky for Elon Musk and data centers]]></title>
-    <description><![CDATA[On Equity, we unpacked what the midterms mean for the tech industry.]]></description>
-    <link>https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Partnering with Hacktron to find vulnerabilities in OpenAI’s systems]]></title>
-    <description><![CDATA[OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.]]></description>
-    <link>https://openai.com/index/partnering-with-hacktron</link>
-    <guid isPermaLink="true">https://openai.com/index/partnering-with-hacktron</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
