@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T05:21:38.510814+00:00",
+  "generatedAt": "2026-11-09T05:51:41.316927+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "a547cb7a0db6854cbc954390cdbe288e0bdf56894ef046d94243764f61d47a1d",
+      "title": "Behavior Graphs: Unsupervised Graph Structures for Interpreting Robot Deployment Data",
+      "url": "https://arxiv.org/abs/2611.00405",
+      "summary": "Authors: Erik Bauer, Jakob Thumm, Christopher Agia, Rohan Sinha, Chen Xu, Haruki Nishimura, Jeannette Bohg, Marco Pavone, Masha Itkina · arXiv:2611.00405v2 Announce Type: replace Abstract: Data flywheels promise continuous improvement via insights from deploym",
+      "publishedAt": "2026-11-09T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "bf13f19a6d465d6944f5cf03133fcdc5f2cb396f6c2f2c553878a2f48ec663a0",
+      "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
+      "url": "https://arxiv.org/abs/2610.42039",
+      "summary": "Authors: Artin Yousefi, Aizierjiang Aiersilan, Lorien C Abroms, David A Broniatowski · arXiv:2610.42039v1 Announce Type: cross Abstract: Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that ",
+      "publishedAt": "2026-11-09T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
     {
       "id": "45e8de741ea9e45e27af9a99efc11bba8c531ae287b8974d4e757b6413a660c0",
       "title": "The Web Is More Than Enough, by Paul Ford",
@@ -259,26 +279,6 @@
       "title": "Secure Formal Raising: Protecting the Development of AI through Executable Properties",
       "url": "https://arxiv.org/abs/2611.08042",
       "summary": "Authors: Rolf Drechsler, Christina Plump · arXiv:2611.08042v1 Announce Type: new Abstract: Model raising revisits Turing's developmental view of machine intelligence. Formal Raising (FR) has recently been proposed to complement this view with explicit behavior",
-      "publishedAt": "2026-11-06T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1172b35cd784282a3596e98b56896c33cd3ac35fbad905ba1248a0dceaaac6d3",
-      "title": "Oscillatory Phase Coding Emerges in Adaptive RNNs for Flexible Working Memory",
-      "url": "https://arxiv.org/abs/2611.06932",
-      "summary": "Authors: Kehan Lu, Tianhao Chu, Aiersi Tuerhong, Yiwen Sun, Huan Luo, Fang Fang, Si Wu · arXiv:2611.06932v1 Announce Type: cross Abstract: Oscillatory phase coding (OPC) is widely observed in neural systems and has been implicated in cognitive functions such a",
-      "publishedAt": "2026-11-06T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1576b56d3f7dbe9aad97160994033bb69697b2f0bc90a9021ac5173208bc6f34",
-      "title": "PharmAgents2: Towards Autonomous End-to-End Drug Discovery",
-      "url": "https://arxiv.org/abs/2611.07653",
-      "summary": "Authors: Haichuan Tan, Bowen Gao, Tao Huang, Jiaxin Tan, Xin Hong, Baoguo Yao, Yifei Wang, Zhichao Deng, Hanji Du, Dapeng Jiang, Yiheng Li, Weiwei Ma, Xin Ma, Yuqi Shi, Zixiang Wang, Kelin Wu, Tianxiang Wu, Wenxuan Xie, Jie Zang, Huiyu Zhang, Mojia Zhang, Yuyi",
       "publishedAt": "2026-11-06T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
