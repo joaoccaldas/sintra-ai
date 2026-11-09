@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T11:53:20.180627+00:00",
+  "generatedAt": "2026-11-09T12:23:59.385204+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "36fca88880e047cff6c375c9459cb9a5b34761dc12c30234ce84943aea3a7140",
+      "title": "370 Books in 20 months: South African author defends her use of AI",
+      "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
+      "summary": "32 points · 40 comments on Hacker News",
+      "publishedAt": "2026-11-09T07:21:33+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "8b3e103bdadb15668c8e27337452bb7fca3669177e0e5a63b13287e1bd8b2b57",
       "title": "Being a meat proxy for AI should be grounds for getting people fired",
       "url": "https://swiftrocks.com/being-a-meat-proxy-for-ai-should-be-grounds-for-getting-people-fired",
-      "summary": "41 points · 33 comments on Hacker News",
+      "summary": "42 points · 33 comments on Hacker News",
       "publishedAt": "2026-11-09T06:55:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +38,7 @@
       "id": "b245671c29a5d9e9cb29a484ca9d89b9af528f9a1f802ef642ee032e16dc8cf1",
       "title": "Apple capped engineers at a $200 daily AI budget",
       "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-      "summary": "91 points · 95 comments on Hacker News",
+      "summary": "93 points · 98 comments on Hacker News",
       "publishedAt": "2026-11-09T05:30:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +98,7 @@
       "id": "231b4bdb6dd4b87841e1a39a5d0aa8fdbea7f08db55e1e283061efcd763fde12",
       "title": "Asahi Linux Drops MIT, Goes Full GPL After AI Used to Steal Unreleased Code",
       "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl",
-      "summary": "46 points · 18 comments on Hacker News",
+      "summary": "49 points · 20 comments on Hacker News",
       "publishedAt": "2026-11-09T03:06:55+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "dab987be36e106a40b422c6665c3235751f60ed770965ef0a0a432d9bf06abb7",
       "title": "I'm not convinced the AI bubble exists",
       "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
-      "summary": "321 points · 546 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-08T23:44:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,18 +138,8 @@
       "id": "8b18a5361e6d14a958f6230dacc6693daecb7b825dba1d303670f9618e563a8a",
       "title": "How I Fight AI Brain Fry",
       "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-      "summary": "265 points · 176 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-08T19:37:42+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
-      "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
-      "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-      "summary": "96 points · 122 comments on Hacker News",
-      "publishedAt": "2026-11-08T18:43:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
