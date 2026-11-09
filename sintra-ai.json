@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T04:51:19.223854+00:00",
+  "generatedAt": "2026-11-09T05:21:38.510814+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,30 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "45e8de741ea9e45e27af9a99efc11bba8c531ae287b8974d4e757b6413a660c0",
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091",
+      "summary": "My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef",
+      "publishedAt": "2026-11-09T04:32:33+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7a56e2062f93f8c0e4390f7ad3b798cb480a24170fa85961cca292378a685c71",
+      "title": "Hide your slop PR descriptions behind",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary",
+      "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then me",
+      "publishedAt": "2026-11-09T04:25:05+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
       "id": "dab987be36e106a40b422c6665c3235751f60ed770965ef0a0a432d9bf06abb7",
       "title": "I'm not convinced the AI bubble exists",
       "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
-      "summary": "78 points · 113 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-08T23:44:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +78,7 @@
       "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
       "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
       "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-      "summary": "92 points · 112 comments on Hacker News",
+      "summary": "94 points · 113 comments on Hacker News",
       "publishedAt": "2026-11-08T18:43:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -122,6 +142,16 @@
       "publishedAt": "2026-11-07T21:17:08+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "dfd5aeba955b06505b60e1a3a252a0bedcd8d1692c4eb49aa5a262dd9c331b76",
+      "title": "Terry Pratchett's Study",
+      "url": "https://simonwillison.net/2026/Nov/7/hn-50407316",
+      "summary": "My comment on Terry Pratchett's Study — Hacker News. Terry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on th",
+      "publishedAt": "2026-11-07T19:34:24+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -295,16 +325,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "f88e63ee2c8108afc7abdb72317f33fbb67f5e8c3c6fd6d65f66038f1dd12164",
-      "title": "Quoting Paul Ford",
-      "url": "https://simonwillison.net/2026/Nov/5/paul-ford",
-      "summary": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day . — Paul Ford , The Web Is More Than Enough Tags: browsers , paul-ford , web-development",
-      "publishedAt": "2026-11-05T17:34:03+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "1750855042e8ceec185ecc41375648d063f395028a9c6496aadc44e5c1df3652",
       "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
       "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
@@ -385,16 +405,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "cd09dc87fba0a54b67f70446fb2831bda94d064f818f3bb5aae6ebab46fec608",
-      "title": "datasette-llm 0.1a10",
-      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm",
-      "summary": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm",
-      "publishedAt": "2026-11-04T15:26:02+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "0bb52c4b905431dfb231b2ba53f64222d85f89b3968fae70af5b04dab09ebc9d",
       "title": "Securing the agentic enterprise with data lineage",
       "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage",
@@ -402,16 +412,6 @@
       "publishedAt": "2026-11-04T13:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b3ab12a34ee36e8ab3ff3e5d1e5797bffaaf413a760e4b957767fb1ce50f6439",
-      "title": "datasette-apps 0.3a0",
-      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps",
-      "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration",
-      "publishedAt": "2026-11-04T00:29:36+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-08T23:03:35.574367+00:00",
+    "generatedAt": "2026-11-09T05:03:54.086187+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1540,7 +1540,7 @@
         ],
         "value": 6.1449,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T23:03:35.574331+00:00",
+        "retrievedAt": "2026-11-09T05:03:54.086137+00:00",
         "stale": false
       },
       {
@@ -2604,7 +2604,7 @@
         ],
         "value": 11.026,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T23:03:35.574361+00:00",
+        "retrievedAt": "2026-11-09T05:03:54.086179+00:00",
         "stale": false
       },
       {
@@ -3668,7 +3668,7 @@
         ],
         "value": 1.1165,
         "period": "2026-11-06",
-        "retrievedAt": "2026-11-08T23:03:35.574367+00:00",
+        "retrievedAt": "2026-11-09T05:03:54.086187+00:00",
         "stale": false
       },
       {
