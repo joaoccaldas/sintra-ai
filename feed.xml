@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 12:35:05 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 13:35:13 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Your Experts Have Partners. There's HOPE for Keeping Them Together]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/amazon/higher-order-pruning-experts</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/amazon/higher-order-pruning-experts</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”]]></title>
@@ -160,15 +169,6 @@
     <link>https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science</link>
     <guid isPermaLink="true">https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Cult.fit builds operational muscle with Codex]]></title>
-    <description><![CDATA[Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.]]></description>
-    <link>https://openai.com/index/cultfit-builds-with-codex</link>
-    <guid isPermaLink="true">https://openai.com/index/cultfit-builds-with-codex</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
 
