@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T16:25:01.964052+00:00",
+  "generatedAt": "2026-11-09T16:54:53.205369+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -36,9 +36,9 @@
     },
     {
       "id": "002b5d6d214abd27bf87970f982a629fd914112d112e293308f250da26e97576",
-      "title": "Automattic debuts a platform to deploy vibe coding apps amid a changing internet",
+      "title": "Automattic debuts a platform to deploy vibe-coding apps amid a changing internet",
       "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet",
-      "summary": "Automattic aims to compete with likes of Lovable with Spacefast",
+      "summary": "Automattic aims to compete with the likes of Lovable with Spacefast.",
       "publishedAt": "2026-11-09T14:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-09T16:11:51.293368+00:00",
+    "generatedAt": "2026-11-09T17:04:04.614577+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1536,11 +1536,15 @@
           {
             "date": "2026-11-06",
             "value": 6.1449
+          },
+          {
+            "date": "2026-11-09",
+            "value": 6.1748
           }
         ],
-        "value": 6.1449,
-        "period": "2026-11-06",
-        "retrievedAt": "2026-11-09T11:03:55.142546+00:00",
+        "value": 6.1748,
+        "period": "2026-11-09",
+        "retrievedAt": "2026-11-09T17:04:04.614548+00:00",
         "stale": false
       },
       {
@@ -2600,11 +2604,15 @@
           {
             "date": "2026-11-06",
             "value": 11.026
+          },
+          {
+            "date": "2026-11-09",
+            "value": 10.996
           }
         ],
-        "value": 11.026,
-        "period": "2026-11-06",
-        "retrievedAt": "2026-11-09T11:03:55.142576+00:00",
+        "value": 10.996,
+        "period": "2026-11-09",
+        "retrievedAt": "2026-11-09T17:04:04.614570+00:00",
         "stale": false
       },
       {
@@ -3664,11 +3672,15 @@
           {
             "date": "2026-11-06",
             "value": 1.1165
+          },
+          {
+            "date": "2026-11-09",
+            "value": 1.1193
           }
         ],
-        "value": 1.1165,
-        "period": "2026-11-06",
-        "retrievedAt": "2026-11-09T11:03:55.142583+00:00",
+        "value": 1.1193,
+        "period": "2026-11-09",
+        "retrievedAt": "2026-11-09T17:04:04.614577+00:00",
         "stale": false
       },
       {
