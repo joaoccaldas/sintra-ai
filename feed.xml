@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 15:06:20 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 15:36:50 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Automattic debuts a platform to deploy vibe coding apps amid a changing internet]]></title>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/partnering-with-hacktron</guid>
     <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Egyptian and Nigerian English join the Open ASR Leaderboard]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/open-asr-leaderboard-liva</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/open-asr-leaderboard-liva</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
   </item>
 
   <item>
