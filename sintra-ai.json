@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T05:51:41.316927+00:00",
+  "generatedAt": "2026-11-09T06:22:07.134438+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "177dd03271cc9aec73ac94c0e4d26ccf1d8490f7830d8682abb6a52969cfe840",
+      "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+      "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50",
+      "summary": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
+      "publishedAt": "2026-11-09T05:26:29+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "a547cb7a0db6854cbc954390cdbe288e0bdf56894ef046d94243764f61d47a1d",
       "title": "Behavior Graphs: Unsupervised Graph Structures for Interpreting Robot Deployment Data",
@@ -58,7 +68,7 @@
       "id": "dab987be36e106a40b422c6665c3235751f60ed770965ef0a0a432d9bf06abb7",
       "title": "I'm not convinced the AI bubble exists",
       "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
-      "summary": "Comments",
+      "summary": "138 points · 197 comments on Hacker News",
       "publishedAt": "2026-11-08T23:44:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +98,7 @@
       "id": "8b18a5361e6d14a958f6230dacc6693daecb7b825dba1d303670f9618e563a8a",
       "title": "How I Fight AI Brain Fry",
       "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-      "summary": "Comments",
+      "summary": "204 points · 158 comments on Hacker News",
       "publishedAt": "2026-11-08T19:37:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
       "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
       "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-      "summary": "94 points · 113 comments on Hacker News",
+      "summary": "94 points · 114 comments on Hacker News",
       "publishedAt": "2026-11-08T18:43:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +118,7 @@
       "id": "1f9639d5e128f4b4e119e5ba8704a33854b9a27c5702be2efb51f9fca1035efe",
       "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
       "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
-      "summary": "35 points · 60 comments on Hacker News",
+      "summary": "35 points · 61 comments on Hacker News",
       "publishedAt": "2026-11-08T15:19:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +128,7 @@
       "id": "3dfb269390b374843188b53306df7791e3859791b43bc0254b7875c7b699ad4a",
       "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
       "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test",
-      "summary": "54 points · 41 comments on Hacker News",
+      "summary": "54 points · 42 comments on Hacker News",
       "publishedAt": "2026-11-08T15:00:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -190,16 +200,6 @@
       "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation",
       "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
       "publishedAt": "2026-11-06T22:53:46+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0b47ae94b8dc6c928b086e6fe2b747aed794ff71d974bca08a1746140c0acf54",
-      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web",
-      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
-      "publishedAt": "2026-11-06T18:44:38+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
