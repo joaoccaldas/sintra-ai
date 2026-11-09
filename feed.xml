@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 04:59:29 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 05:29:55 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[The Web Is More Than Enough, by Paul Ford]]></title>
+    <description><![CDATA[My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/hn-50421091</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/hn-50421091</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Hide your slop PR descriptions behind]]></title>
+    <description><![CDATA[Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then me]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/details-summary</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/details-summary</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[parse_number() as a SQLite extension: C vs Rust]]></title>
@@ -53,6 +71,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo</guid>
     <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Terry Pratchett's Study]]></title>
+    <description><![CDATA[My comment on Terry Pratchett's Study — Hacker News. Terry Pratchett once wrote about the concept of "horizontal wealth". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on th]]></description>
+    <link>https://simonwillison.net/2026/Nov/7/hn-50407316</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/7/hn-50407316</guid>
+    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -143,33 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/cultfit-builds-with-codex</guid>
     <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[New NVIDIA Cosmos 3 Open Models for Interactive World Simulation]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quoting Paul Ford]]></title>
-    <description><![CDATA[The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day . — Paul Ford , The Web Is More Than Enough Tags: browsers , paul-ford , web-development]]></description>
-    <link>https://simonwillison.net/2026/Nov/5/paul-ford</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/5/paul-ford</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips]]></title>
-    <description><![CDATA[Google DeepMind — Labs]]></description>
-    <link>https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
   </item>
 
   <item>

@@ -7,6 +7,46 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://simonwillison.net/2026/Nov/9/hn-50421091",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091",
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "content_text": "My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/9/details-summary",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary",
+      "title": "Hide your slop PR descriptions behind",
+      "content_text": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then me",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
       "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
       "title": "parse_number() as a SQLite extension: C vs Rust",
@@ -103,6 +143,26 @@
         "TechCrunch AI",
         "TechCrunch AI",
         "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/7/hn-50407316",
+      "url": "https://simonwillison.net/2026/Nov/7/hn-50407316",
+      "title": "Terry Pratchett's Study",
+      "content_text": "My comment on Terry Pratchett's Study — Hacker News. Terry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on th",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-07T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
         "Live"
       ]
     },
@@ -302,66 +362,6 @@
       "tags": [
         "OpenAI",
         "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/5/paul-ford",
-      "url": "https://simonwillison.net/2026/Nov/5/paul-ford",
-      "title": "Quoting Paul Ford",
-      "content_text": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day . — Paul Ford , The Web Is More Than Enough Tags: browsers , paul-ford , web-development",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
-      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "content_text": "Google DeepMind — Labs",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "Google DeepMind",
-        "Google DeepMind",
         "Labs",
         "Live"
       ]
