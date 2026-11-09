@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T22:04:13.326603+00:00",
+  "generatedAt": "2026-11-09T23:05:22.580735+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,46 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "e105484703996e34195d7ca95e82b43a2d4c870785e1b8bab6fbcaa3702f44a3",
+      "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
+      "url": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal",
+      "summary": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
+      "publishedAt": "2026-11-09T22:46:09+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "bda3011897fcd94668c2f3a2cee226f21816c8fb4d5ed54e0846843189cbd914",
+      "title": "The race is on to sue Nvidia",
+      "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia",
+      "summary": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensiv",
+      "publishedAt": "2026-11-09T22:23:42+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
+      "title": "A year after the 100% AI mandate nobody understands our code",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
+      "summary": "Comments",
+      "publishedAt": "2026-11-09T22:19:12+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a7b39cb0698327aa7f2535085e5ff22ca7e636782abfa74072f3b8860eed86c0",
+      "title": "TPUs",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx",
+      "summary": "Comments",
+      "publishedAt": "2026-11-09T21:56:57+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "e7b41c563c8e101b7fe3236848945c79c49cb853f184a2d8c359f45b2f139327",
       "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
@@ -75,6 +115,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
+      "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
+      "url": "https://github.com/Dodaios/ste80-humanizer",
+      "summary": "Comments",
+      "publishedAt": "2026-11-09T18:05:44+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "e8884a0ba45abd7629fdc7cfc69248bb7092da8b1cf5a102b40c8d4e35041a56",
       "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
       "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution",
@@ -105,26 +155,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "48b9783d0be504133140909dcbcaf9fda2c57948c95df79b65ef337ea11ad6da",
-      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
-      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines",
-      "summary": "Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse.",
-      "publishedAt": "2026-11-09T16:56:54+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d65b75d7c2a2b265ec1ba058018f1c3e12344b71d2369606bdc39c773cb7586c",
-      "title": "Medium’s new TK app brings AI assistance directly into the writing process",
-      "url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process",
-      "summary": "Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.",
-      "publishedAt": "2026-11-09T16:12:28+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "ac8f18750241a65f1eaff59406bf9b8d8a419cb23f6d29d213a586908db91264",
       "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
       "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
@@ -142,6 +172,16 @@
       "publishedAt": "2026-11-09T13:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "952d2516af2e905436adea3bc1ec3df5f6a7559eef98c6b3c275da646bdd61ac",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "url": "https://openai.com/index/control-room",
+      "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "publishedAt": "2026-11-09T13:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -175,16 +215,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "06a85cbf81c2d4fbc0fb3cc274ca4e7d4edb17995a30def513353138a77c535c",
-      "title": "Ginux: A New Kernel Runs Linux Userspace, Made via Human-Directed AI Engineering",
-      "url": "https://zenodo.org/records/23682548",
-      "summary": "31 points · 62 comments on Hacker News",
-      "publishedAt": "2026-11-09T11:30:27+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "02e9abf47eaf3fa01f98fe0d8703230a8e6faa4dd4f2fb401bd0d8381c4ff554",
       "title": "CodeRabbit scales agentic software development and ships 20x more",
       "url": "https://openai.com/index/coderabbit-codex-daybreak",
@@ -202,26 +232,6 @@
       "publishedAt": "2026-11-09T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "36fca88880e047cff6c375c9459cb9a5b34761dc12c30234ce84943aea3a7140",
-      "title": "370 Books in 20 months: South African author defends her use of AI",
-      "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
-      "summary": "44 points · 87 comments on Hacker News",
-      "publishedAt": "2026-11-09T07:21:33+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8b3e103bdadb15668c8e27337452bb7fca3669177e0e5a63b13287e1bd8b2b57",
-      "title": "Being a meat proxy for AI should be grounds for getting people fired",
-      "url": "https://swiftrocks.com/being-a-meat-proxy-for-ai-should-be-grounds-for-getting-people-fired",
-      "summary": "48 points · 43 comments on Hacker News",
-      "publishedAt": "2026-11-09T06:55:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -385,16 +395,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2",
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-      "publishedAt": "2026-11-06T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "f25b9201ad6bdcc6fc966e82e19169484871d5662fdac1ebb6313d2e0a7a1d5f",
       "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
       "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-09T17:04:04.614577+00:00",
+    "generatedAt": "2026-11-09T23:05:24.364088+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1544,7 +1544,7 @@
         ],
         "value": 6.1748,
         "period": "2026-11-09",
-        "retrievedAt": "2026-11-09T17:04:04.614548+00:00",
+        "retrievedAt": "2026-11-09T23:05:24.364067+00:00",
         "stale": false
       },
       {
@@ -2612,7 +2612,7 @@
         ],
         "value": 10.996,
         "period": "2026-11-09",
-        "retrievedAt": "2026-11-09T17:04:04.614570+00:00",
+        "retrievedAt": "2026-11-09T23:05:24.364083+00:00",
         "stale": false
       },
       {
@@ -3680,7 +3680,7 @@
         ],
         "value": 1.1193,
         "period": "2026-11-09",
-        "retrievedAt": "2026-11-09T17:04:04.614577+00:00",
+        "retrievedAt": "2026-11-09T23:05:24.364088+00:00",
         "stale": false
       },
       {
