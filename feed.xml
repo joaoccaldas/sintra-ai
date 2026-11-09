@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 17:08:07 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 17:38:20 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines]]></title>
+    <description><![CDATA[Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.]]></description>
+    <link>https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Medium’s new TK app brings AI assistance directly into the writing process]]></title>
@@ -114,15 +123,6 @@
     <description><![CDATA[On Equity, we unpacked what the midterms mean for the tech industry.]]></description>
     <link>https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo]]></title>
-    <description><![CDATA[A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.]]></description>
-    <link>https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo</guid>
     <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
