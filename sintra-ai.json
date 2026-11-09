@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T12:53:23.413712+00:00",
+  "generatedAt": "2026-11-09T13:24:00.285418+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,30 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "55d059b88c6c576a2f3d9ab40518505078744d93ab6e7c4bc3d7b8ab49056416",
+      "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "summary": "",
+      "publishedAt": "2026-11-09T12:34:29+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "ab9a571901c9fe81ed20b1e3f7dee7e375ba75a61e9a78c28766064bb0b68867",
+      "title": "Fold Epic Paper Airplanes",
+      "url": "https://www.foldableflight.com/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-09T12:19:22+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "36fca88880e047cff6c375c9459cb9a5b34761dc12c30234ce84943aea3a7140",
       "title": "370 Books in 20 months: South African author defends her use of AI",
       "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
-      "summary": "32 points · 40 comments on Hacker News",
+      "summary": "35 points · 63 comments on Hacker News",
       "publishedAt": "2026-11-09T07:21:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +48,7 @@
       "id": "8b3e103bdadb15668c8e27337452bb7fca3669177e0e5a63b13287e1bd8b2b57",
       "title": "Being a meat proxy for AI should be grounds for getting people fired",
       "url": "https://swiftrocks.com/being-a-meat-proxy-for-ai-should-be-grounds-for-getting-people-fired",
-      "summary": "42 points · 33 comments on Hacker News",
+      "summary": "42 points · 36 comments on Hacker News",
       "publishedAt": "2026-11-09T06:55:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +58,7 @@
       "id": "b245671c29a5d9e9cb29a484ca9d89b9af528f9a1f802ef642ee032e16dc8cf1",
       "title": "Apple capped engineers at a $200 daily AI budget",
       "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
-      "summary": "93 points · 98 comments on Hacker News",
+      "summary": "96 points · 98 comments on Hacker News",
       "publishedAt": "2026-11-09T05:30:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +118,7 @@
       "id": "231b4bdb6dd4b87841e1a39a5d0aa8fdbea7f08db55e1e283061efcd763fde12",
       "title": "Asahi Linux Drops MIT, Goes Full GPL After AI Used to Steal Unreleased Code",
       "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl",
-      "summary": "49 points · 20 comments on Hacker News",
+      "summary": "52 points · 25 comments on Hacker News",
       "publishedAt": "2026-11-09T03:06:55+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -132,16 +152,6 @@
       "publishedAt": "2026-11-08T21:00:11+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8b18a5361e6d14a958f6230dacc6693daecb7b825dba1d303670f9618e563a8a",
-      "title": "How I Fight AI Brain Fry",
-      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-      "summary": "Comments",
-      "publishedAt": "2026-11-08T19:37:42+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -412,16 +422,6 @@
       "publishedAt": "2026-11-04T13:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8d86676710497099b1091deb38df79f93e8f69b79a1b2cfae325c64584a4dfbe",
-      "title": "StateBench: Testing how language models track state changes over long documents",
-      "url": "https://huggingface.co/blog/allenai/statebench",
-      "summary": "",
-      "publishedAt": "2026-11-03T17:15:21+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
