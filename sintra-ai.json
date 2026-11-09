@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:51:57.515828+00:00",
+  "generatedAt": "2026-11-09T07:22:25.036626+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "b245671c29a5d9e9cb29a484ca9d89b9af528f9a1f802ef642ee032e16dc8cf1",
+      "title": "Apple capped engineers at a $200 daily AI budget",
+      "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
+      "summary": "67 points · 70 comments on Hacker News",
+      "publishedAt": "2026-11-09T05:30:11+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "177dd03271cc9aec73ac94c0e4d26ccf1d8490f7830d8682abb6a52969cfe840",
       "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
@@ -68,7 +78,7 @@
       "id": "dab987be36e106a40b422c6665c3235751f60ed770965ef0a0a432d9bf06abb7",
       "title": "I'm not convinced the AI bubble exists",
       "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
-      "summary": "138 points · 197 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-08T23:44:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "8b18a5361e6d14a958f6230dacc6693daecb7b825dba1d303670f9618e563a8a",
       "title": "How I Fight AI Brain Fry",
       "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-      "summary": "204 points · 158 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-08T19:37:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +118,7 @@
       "id": "f400a8a2e0a8ec6a5be10de25e436bb2c1eba2687a447be3f04f3f8ead142347",
       "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
       "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-      "summary": "94 points · 114 comments on Hacker News",
+      "summary": "95 points · 115 comments on Hacker News",
       "publishedAt": "2026-11-08T18:43:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,18 +138,8 @@
       "id": "3dfb269390b374843188b53306df7791e3859791b43bc0254b7875c7b699ad4a",
       "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
       "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test",
-      "summary": "54 points · 42 comments on Hacker News",
+      "summary": "54 points · 43 comments on Hacker News",
       "publishedAt": "2026-11-08T15:00:42+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fd273feaa8fd4ac1ef548add1ebdb061a810412152995c092915e7da6406d0ef",
-      "title": "Consumer brain wave headsets threaten privacy",
-      "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-      "summary": "116 points · 92 comments on Hacker News",
-      "publishedAt": "2026-11-08T02:02:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
