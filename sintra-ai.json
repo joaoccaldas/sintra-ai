@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T15:38:34.763971+00:00",
+  "generatedAt": "2026-11-10T16:38:47.298139+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,38 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 50,
+  "itemCount": 51,
   "items": [
+    {
+      "id": "5b4c18faabadfb3802c404ca785e7fa8dd3df9bdd220424a9411f1e4dac290f2",
+      "title": "Gemini 4 Carbon is now available",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
+      "summary": "Comments",
+      "publishedAt": "2026-11-10T16:07:15+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "55cb0588b3e8436e78b20ba92abf5954e8afdc53ea4465ca363bb0d676246b75",
+      "title": "Gemini 4 Carbon is now available",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available",
+      "summary": "",
+      "publishedAt": "2026-11-10T16:03:47+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a75982b151db7f3d54834d455ca52d59a57f082d703d83752d8979462e35884d",
+      "title": "Google broadens its AI hardware portfolio with two new specialized chips",
+      "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips",
+      "summary": "Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.",
+      "publishedAt": "2026-11-10T15:54:08+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "00824ebcd8896845c55819fd9b98e5718a7ccdbcd47b3328ba6e433a371aff20",
       "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
@@ -75,16 +105,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7fc88fbdaa8e97213d1bb6c9d52037d4d79961628e827e3981b6a9eadb75f295",
-      "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
-      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns",
-      "summary": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open-source communities valuable to developers worldwide.",
-      "publishedAt": "2026-11-10T13:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "c979be8e72cc92b8a0fbd6a0e885370f88efbc63bec0740a46271d303ac6a351",
       "title": "Google Cloud launches Gemini for healthcare.",
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
@@ -118,7 +138,7 @@
       "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "67 points · 55 comments on Hacker News",
+      "summary": "69 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-10T10:40:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,8 +148,18 @@
       "id": "db8fc494992101409f7d5d089792e86aefc39f9265a19a9833f05297bbce1ae2",
       "title": "AI usage generates a fragile codebase",
       "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
-      "summary": "124 points · 158 comments on Hacker News",
+      "summary": "130 points · 161 comments on Hacker News",
       "publishedAt": "2026-11-10T10:25:58+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5bf6a50dd3640e9df597c8c76e81749dc4a226fc5852285f8630711339a7d463",
+      "title": "Research Finds Outright Grants of Cash Are Effective Form of Aid to the Poor",
+      "url": "https://news.columbia.edu/news/research-finds-outright-grants-cash-are-surprisingly-effective-form-aid-poor",
+      "summary": "31 points · 7 comments on Hacker News",
+      "publishedAt": "2026-11-10T10:19:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -158,7 +188,7 @@
       "id": "c7d3010a8bcc401c0c2a91aa3667122b315a5c90eaeee16839139d0cede05fa3",
       "title": "Fireworks AI security breach impacts Notion and their customers",
       "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-      "summary": "116 points · 40 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-10T07:19:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +238,7 @@
       "id": "e7d9d1552b0e69602474771fc2334499b10f4c2f34c6e1ba92ee0f901589a2fd",
       "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
       "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "summary": "183 points · 171 comments on Hacker News",
+      "summary": "185 points · 173 comments on Hacker News",
       "publishedAt": "2026-11-10T03:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -242,26 +272,6 @@
       "publishedAt": "2026-11-09T23:58:46+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
-      "title": "A year after the 100% AI mandate nobody understands our code",
-      "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "140 points · 178 comments on Hacker News",
-      "publishedAt": "2026-11-09T22:19:12+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a7b39cb0698327aa7f2535085e5ff22ca7e636782abfa74072f3b8860eed86c0",
-      "title": "TPU 8tx and TPU 8i Max",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx",
-      "summary": "252 points · 75 comments on Hacker News",
-      "publishedAt": "2026-11-09T21:56:57+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
