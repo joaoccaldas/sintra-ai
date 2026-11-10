@@ -7,6 +7,46 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://simonwillison.net/2026/Nov/10/muse-ember",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "content_text": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages",
+      "url": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages",
+      "title": "Otter AI can now follow conversations across 30+ languages",
+      "content_text": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
       "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
       "title": "Quoting Prompting Claude Fable 5.2",
@@ -207,26 +247,6 @@
       ]
     },
     {
-      "id": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns",
-      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns",
-      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
-      "content_text": "Anthropic says the new models \"show improvements in areas like coding, reasoning, and vision,\" as well as in communicating more clearly with users.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
       "id": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
       "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
       "title": "ChatGPT Enterprise now available in AWS Marketplace",
@@ -343,26 +363,6 @@
         "OpenAI",
         "OpenAI",
         "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
-      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
-      "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
         "Live"
       ]
     },

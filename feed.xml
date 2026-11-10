@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 07:06:06 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:06:30 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Introducing Our Smallest, Most Efficient Model: Muse Ember]]></title>
+    <description><![CDATA[Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the]]></description>
+    <link>https://simonwillison.net/2026/Nov/10/muse-ember</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/10/muse-ember</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Otter AI can now follow conversations across 30+ languages]]></title>
+    <description><![CDATA[Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.]]></description>
+    <link>https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Quoting Prompting Claude Fable 5.2]]></title>
@@ -101,15 +119,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Anthropic releases new Mythos and Fable models amid RSI concerns]]></title>
-    <description><![CDATA[Anthropic says the new models "show improvements in areas like coding, reasoning, and vision," as well as in communicating more clearly with users.]]></description>
-    <link>https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[ChatGPT Enterprise now available in AWS Marketplace]]></title>
     <description><![CDATA[ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.]]></description>
     <link>https://openai.com/index/chatgpt-enterprise-aws-marketplace</link>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/introducing-control-room</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Your Experts Have Partners. There's HOPE for Keeping Them Together]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/amazon/higher-order-pruning-experts</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/amazon/higher-order-pruning-experts</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
   </item>
 
   <item>
