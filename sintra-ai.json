@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T08:36:24.501662+00:00",
+  "generatedAt": "2026-11-10T08:37:01.847660+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44",
+      "title": "Closing the AI guidance gap in education",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "summary": "Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.",
+      "publishedAt": "2026-11-10T09:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "cba41f0395d50b9e1105caa6f1e2b59d2b6903c55cdc81a6ceb02c5ed770ca1c",
       "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
@@ -332,16 +342,6 @@
       "publishedAt": "2026-11-06T10:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a0a44ed09dc9a1089b4e099f4e0fbf8e71ea906b8e386a1df3e114e9f9678292",
-      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-      "url": "https://openai.com/index/partnering-with-hacktron",
-      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-      "publishedAt": "2026-11-06T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
