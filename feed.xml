@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 20:00:41 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 21:01:26 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[All 7 Anthropic founders will each cash out about $250M in IPO]]></title>
+    <description><![CDATA[Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.]]></description>
+    <link>https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Oura to acquire AI-native primary care startup Counsel Health for $625M]]></title>
@@ -71,15 +80,6 @@
     <guid isPermaLink="true">https://deepmind.google/blog/gemini-4-carbon-is-now-available</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google broadens its AI hardware portfolio with two new specialized chips]]></title>
-    <description><![CDATA[Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.]]></description>
-    <link>https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
