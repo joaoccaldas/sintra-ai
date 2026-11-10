@@ -7,12 +7,30 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 11:55:34 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 12:56:17 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
+    <title><![CDATA[Introducing AlphaProof Code: a breakthrough in verifying complex software at depth]]></title>
+    <description><![CDATA[AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.]]></description>
+    <link>https://deepmind.google/blog/introducing-alphaproof-code</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/introducing-alphaproof-code</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Helping caregivers use AI in everyday life]]></title>
+    <description><![CDATA[OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.]]></description>
+    <link>https://openai.com/index/helping-caregivers-use-ai-in-everyday-life</link>
+    <guid isPermaLink="true">https://openai.com/index/helping-caregivers-use-ai-in-everyday-life</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[Closing the AI guidance gap in education]]></title>
-    <description><![CDATA[Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.]]></description>
+    <description><![CDATA[New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.]]></description>
     <link>https://openai.com/index/closing-ai-guidance-gap-education</link>
     <guid isPermaLink="true">https://openai.com/index/closing-ai-guidance-gap-education</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Innovating with AI in the special chemicals industry]]></title>
-    <description><![CDATA[As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the practical realities of bringing products to ma]]></description>
-    <link>https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Control Room: A central system to track and stop model workloads across our research infrastructure]]></title>
-    <description><![CDATA[Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.]]></description>
-    <link>https://openai.com/index/control-room</link>
-    <guid isPermaLink="true">https://openai.com/index/control-room</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
