@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 17:29:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 19:00:14 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks]]></title>
+    <description><![CDATA[As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.]]></description>
+    <link>https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline]]></title>
+    <description><![CDATA[The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.]]></description>
+    <link>https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Gemini 4 Carbon is now available]]></title>
@@ -56,24 +74,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Spotify’s AI DJ gets new voices, personalities, and an option for less chatter]]></title>
-    <description><![CDATA[Spotify Premium users can now customize their AI DJ with new voices with different personalities, or turn off the commentary between songs.]]></description>
-    <link>https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era]]></title>
-    <description><![CDATA[Kora is set to launch as a free-to-use alternative to Windows, targeting users who rely heavily on AI models and agents.]]></description>
-    <link>https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.]]></title>
     <description><![CDATA[Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.]]></description>
     <link>https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration</link>
@@ -105,6 +105,15 @@
     <description><![CDATA[OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.]]></description>
     <link>https://openai.com/index/helping-caregivers-use-ai-in-everyday-life</link>
     <guid isPermaLink="true">https://openai.com/index/helping-caregivers-use-ai-in-everyday-life</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Introducing Businesses in ChatGPT]]></title>
+    <description><![CDATA[Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.]]></description>
+    <link>https://openai.com/index/introducing-businesses-chatgpt</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-businesses-chatgpt</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/mysterious-beeps</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Decision Models in Hugging Face]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/decision</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/decision</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
   </item>
 
   <item>
