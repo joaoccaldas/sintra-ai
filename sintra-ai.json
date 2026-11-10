@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T12:38:05.228201+00:00",
+  "generatedAt": "2026-11-10T13:38:13.151447+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,28 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 47,
+  "itemCount": 48,
   "items": [
+    {
+      "id": "7fc88fbdaa8e97213d1bb6c9d52037d4d79961628e827e3981b6a9eadb75f295",
+      "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
+      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns",
+      "summary": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open-source communities valuable to developers worldwide.",
+      "publishedAt": "2026-11-10T13:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c979be8e72cc92b8a0fbd6a0e885370f88efbc63bec0740a46271d303ac6a351",
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
+      "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "publishedAt": "2026-11-10T13:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "0e9fb0eb84f13acffdc59012e1c88f7c2f202f69132c55eacdf5e3a2b2ad057d",
       "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
@@ -38,7 +58,7 @@
       "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "58 points · 47 comments on Hacker News",
+      "summary": "62 points · 51 comments on Hacker News",
       "publishedAt": "2026-11-10T10:40:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +68,7 @@
       "id": "db8fc494992101409f7d5d089792e86aefc39f9265a19a9833f05297bbce1ae2",
       "title": "AI usage generates a fragile codebase",
       "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
-      "summary": "Comments",
+      "summary": "111 points · 139 comments on Hacker News",
       "publishedAt": "2026-11-10T10:25:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +148,7 @@
       "id": "e7d9d1552b0e69602474771fc2334499b10f4c2f34c6e1ba92ee0f901589a2fd",
       "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
       "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "summary": "175 points · 148 comments on Hacker News",
+      "summary": "175 points · 156 comments on Hacker News",
       "publishedAt": "2026-11-10T03:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +218,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "130 points · 168 comments on Hacker News",
+      "summary": "133 points · 170 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -212,16 +232,6 @@
       "publishedAt": "2026-11-09T21:56:57+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e7b41c563c8e101b7fe3236848945c79c49cb853f184a2d8c359f45b2f139327",
-      "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
-      "url": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy",
-      "summary": "The Nvidia CEO also pulled out of an Anthropic event earlier.",
-      "publishedAt": "2026-11-09T20:09:06+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
