@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T16:38:47.298139+00:00",
+  "generatedAt": "2026-11-10T17:38:59.537674+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 51,
   "items": [
+    {
+      "id": "e12be6c2ba7dcfd83e8507b61c3a32adf780b2aded68a3c27e263f03bcd44b76",
+      "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks",
+      "summary": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
+      "publishedAt": "2026-11-10T17:30:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "4cc686f0d8904bd210ba8527d956c91073e12d14da6cd1e27485a6e54d5e8dbd",
+      "title": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
+      "url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
+      "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "publishedAt": "2026-11-10T17:04:19+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "5b4c18faabadfb3802c404ca785e7fa8dd3df9bdd220424a9411f1e4dac290f2",
       "title": "Gemini 4 Carbon is now available",
@@ -75,26 +95,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "b5b0ef99e191cd08d80e1af739149c18ea9422967cb24e7af520772ac4e42dd4",
-      "title": "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
-      "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter",
-      "summary": "Spotify Premium users can now customize their AI DJ with new voices with different personalities, or turn off the commentary between songs.",
-      "publishedAt": "2026-11-10T14:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e086b6a569cdaf26afeb27812d2d9bd392a1dd5254a67e070646dedf24851831",
-      "title": "After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era",
-      "url": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era",
-      "summary": "Kora is set to launch as a free-to-use alternative to Windows, targeting users who rely heavily on AI models and agents.",
-      "publishedAt": "2026-11-10T14:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "e192e4f92a704298f96f725cc3ae96c30d788d917e1f7b38ef8d7e63567c6b73",
       "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
       "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
@@ -138,7 +138,7 @@
       "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "69 points · 56 comments on Hacker News",
+      "summary": "70 points · 61 comments on Hacker News",
       "publishedAt": "2026-11-10T10:40:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +148,7 @@
       "id": "db8fc494992101409f7d5d089792e86aefc39f9265a19a9833f05297bbce1ae2",
       "title": "AI usage generates a fragile codebase",
       "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
-      "summary": "130 points · 161 comments on Hacker News",
+      "summary": "133 points · 167 comments on Hacker News",
       "publishedAt": "2026-11-10T10:25:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +158,7 @@
       "id": "5bf6a50dd3640e9df597c8c76e81749dc4a226fc5852285f8630711339a7d463",
       "title": "Research Finds Outright Grants of Cash Are Effective Form of Aid to the Poor",
       "url": "https://news.columbia.edu/news/research-finds-outright-grants-cash-are-surprisingly-effective-form-aid-poor",
-      "summary": "31 points · 7 comments on Hacker News",
+      "summary": "32 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-10T10:19:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -238,7 +238,7 @@
       "id": "e7d9d1552b0e69602474771fc2334499b10f4c2f34c6e1ba92ee0f901589a2fd",
       "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
       "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "summary": "185 points · 173 comments on Hacker News",
+      "summary": "188 points · 174 comments on Hacker News",
       "publishedAt": "2026-11-10T03:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -258,6 +258,16 @@
       "id": "5f3963726dbe36e6ccf9753b6647e286ea2d25f750c2d86a74f9ab28836d655f",
       "title": "Decision Models in Hugging Face",
       "url": "https://huggingface.co/blog/decision",
+      "summary": "",
+      "publishedAt": "2026-11-10T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "cb93d68b445c05b0e3dc3bb4de519fde744154508905db1326dcde436121a9ef",
+      "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
       "summary": "",
       "publishedAt": "2026-11-10T00:00:00+00:00",
       "source": "Hugging Face",
@@ -450,16 +460,6 @@
       "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
       "summary": "",
       "publishedAt": "2026-11-06T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f25b9201ad6bdcc6fc966e82e19169484871d5662fdac1ebb6313d2e0a7a1d5f",
-      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "summary": "",
-      "publishedAt": "2026-11-05T19:35:16+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
       "color": "#5B48D9"
