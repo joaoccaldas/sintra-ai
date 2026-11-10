@@ -7,8 +7,53 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 13:56:52 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 14:57:36 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly]]></title>
+    <description><![CDATA[Adobe is taking on Figma with a new prototype builder tool in Firefly.]]></description>
+    <link>https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion]]></title>
+    <description><![CDATA[The company could end up being worth a hefty $1.404 trillion if its shares list at the top of the price range, on a fully diluted basis.]]></description>
+    <link>https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Spotify’s AI DJ gets new voices, personalities, and an option for less chatter]]></title>
+    <description><![CDATA[Spotify Premium users can now customize their AI DJ with new voices with different personalities, or turn off the commentary between songs.]]></description>
+    <link>https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era]]></title>
+    <description><![CDATA[Kora is set to launch as a free-to-use alternative to Windows, targeting users who rely heavily on AI models and agents.]]></description>
+    <link>https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.]]></title>
+    <description><![CDATA[Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.]]></description>
+    <link>https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration</link>
+    <guid isPermaLink="true">https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns]]></title>
@@ -92,15 +137,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Anthropic reportedly plans to move forward with IPO plans]]></title>
-    <description><![CDATA[The AI company is expected to set its valuation range this week, the Wall Street Journal reported.]]></description>
-    <link>https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Locating the source of a mysterious beep]]></title>
     <description><![CDATA[Comments]]></description>
     <link>https://simonwillison.net/2026/Nov/9/mysterious-beeps</link>
@@ -119,33 +155,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Jensen Huang reportedly engaged a PR firm with a history of handling high-profile sex scandals a year ago]]></title>
-    <description><![CDATA[The PR firm was enlisted shortly after an October 2025 New York Times report described Alice Huang's business dealings with Jensen Huang, Wired reported.]]></description>
-    <link>https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal]]></title>
-    <description><![CDATA[Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.]]></description>
-    <link>https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The race is on to sue Nvidia]]></title>
-    <description><![CDATA[Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensiv]]></description>
-    <link>https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[The backlash about data centers might really just be about electricity]]></title>
     <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley]]></description>
     <link>https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity</link>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/chatgpt-enterprise-aws-marketplace</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nancy Pelosi’s replacement is ready to regulate AI]]></title>
-    <description><![CDATA[As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in settin]]></description>
-    <link>https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
   </item>
 
   <item>
