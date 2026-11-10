@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T21:40:29.171830+00:00",
+  "generatedAt": "2026-11-10T22:40:50.655633+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 51,
   "items": [
+    {
+      "id": "9836df3492903c3f1307168d5a8309cb13880a2afe45b84c195608eb1d6423cb",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy",
+      "summary": "Comments",
+      "publishedAt": "2026-11-10T21:25:03+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "3b53bf6090ab9868ec4d537392370a44237352182f157d7fbf6dbb11f5afeda3",
       "title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
@@ -78,7 +88,7 @@
       "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
       "title": "Saltline: First-person shooter built by Fable 5.2",
       "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "48 points · 51 comments on Hacker News",
+      "summary": "50 points · 57 comments on Hacker News",
       "publishedAt": "2026-11-10T19:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "5b4c18faabadfb3802c404ca785e7fa8dd3df9bdd220424a9411f1e4dac290f2",
       "title": "Gemini 4 Carbon is now available",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-      "summary": "260 points · 142 comments on Hacker News",
+      "summary": "266 points · 145 comments on Hacker News",
       "publishedAt": "2026-11-10T16:07:15+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -192,16 +202,6 @@
       "publishedAt": "2026-11-10T12:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
-      "title": "Meet the Sad Wives of AI",
-      "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "74 points · 66 comments on Hacker News",
-      "publishedAt": "2026-11-10T10:40:51+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
