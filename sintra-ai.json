@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T04:35:30.345177+00:00",
+  "generatedAt": "2026-11-10T05:36:11.472242+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "bf13f19a6d465d6944f5cf03133fcdc5f2cb396f6c2f2c553878a2f48ec663a0",
+      "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
+      "url": "https://arxiv.org/abs/2610.42039",
+      "summary": "Authors: Artin Yousefi, Aizierjiang Aiersilan, Lorien C Abroms, David A Broniatowski · arXiv:2610.42039v1 Announce Type: cross Abstract: Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that ",
+      "publishedAt": "2026-11-10T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
     {
       "id": "e7d9d1552b0e69602474771fc2334499b10f4c2f34c6e1ba92ee0f901589a2fd",
       "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
@@ -88,7 +98,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "116 points · 144 comments on Hacker News",
+      "summary": "118 points · 151 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +168,7 @@
       "id": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
       "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
       "url": "https://github.com/Dodaios/ste80-humanizer",
-      "summary": "70 points · 22 comments on Hacker News",
+      "summary": "75 points · 22 comments on Hacker News",
       "publishedAt": "2026-11-09T18:05:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -259,16 +269,6 @@
       "title": "Behavior Graphs: Unsupervised Graph Structures for Interpreting Robot Deployment Data",
       "url": "https://arxiv.org/abs/2611.00405",
       "summary": "Authors: Erik Bauer, Jakob Thumm, Christopher Agia, Rohan Sinha, Chen Xu, Haruki Nishimura, Jeannette Bohg, Marco Pavone, Masha Itkina · arXiv:2611.00405v2 Announce Type: replace Abstract: Data flywheels promise continuous improvement via insights from deploym",
-      "publishedAt": "2026-11-09T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "bf13f19a6d465d6944f5cf03133fcdc5f2cb396f6c2f2c553878a2f48ec663a0",
-      "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
-      "url": "https://arxiv.org/abs/2610.42039",
-      "summary": "Authors: Artin Yousefi, Aizierjiang Aiersilan, Lorien C Abroms, David A Broniatowski · arXiv:2610.42039v1 Announce Type: cross Abstract: Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that ",
       "publishedAt": "2026-11-09T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
