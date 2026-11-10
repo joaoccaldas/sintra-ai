@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T18:39:32.133552+00:00",
+  "generatedAt": "2026-11-10T19:39:52.797270+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,58 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 51,
+  "itemCount": 52,
   "items": [
+    {
+      "id": "1b0c05cd97a311af5c4f8a2b41b220d621e87dbde7c35b23ba7bf6d6a3ba1436",
+      "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+      "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m",
+      "summary": "The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”",
+      "publishedAt": "2026-11-10T19:23:34+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "68219fdebd4ad78ca5bcf3fee6d9cbf4c6707612652fcdee006a02ceeeb986af",
+      "title": "PSI is trying to make a business out of AI-driven scientific discovery",
+      "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery",
+      "summary": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.",
+      "publishedAt": "2026-11-10T19:03:52+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "fafff4292c09fd9370c59269226818b22b187de9757f1096f65549cc01bfa598",
+      "title": "Gemini Intelligence: New features, on more devices",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
+      "summary": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "publishedAt": "2026-11-10T19:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7e74320883f414fbb1a04c0c3716d288a87aa88106c3feccb22ba486611f9446",
+      "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+      "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google",
+      "summary": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.",
+      "publishedAt": "2026-11-10T18:49:52+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a4978faa7e166cdb12b818c5397aad221fe34e5d74e2dc0c479fe886ef474c07",
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "summary": "Comments",
+      "publishedAt": "2026-11-10T18:01:15+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "e12be6c2ba7dcfd83e8507b61c3a32adf780b2aded68a3c27e263f03bcd44b76",
       "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
@@ -38,7 +88,7 @@
       "id": "5b4c18faabadfb3802c404ca785e7fa8dd3df9bdd220424a9411f1e4dac290f2",
       "title": "Gemini 4 Carbon is now available",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-      "summary": "227 points · 122 comments on Hacker News",
+      "summary": "241 points · 135 comments on Hacker News",
       "publishedAt": "2026-11-10T16:07:15+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -60,36 +110,6 @@
       "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips",
       "summary": "Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.",
       "publishedAt": "2026-11-10T15:54:08+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "00824ebcd8896845c55819fd9b98e5718a7ccdbcd47b3328ba6e433a371aff20",
-      "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
-      "url": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os",
-      "summary": "Users can now interact with Meta’s AI assistant through voice calls, text messages, or dictation on their Apple Watch.",
-      "publishedAt": "2026-11-10T15:29:30+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "126b111b5d436487e51fda5640cc23dc9efd7f8eb71d3c126a1dccbd53436749",
-      "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
-      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp",
-      "summary": "Adobe is taking on Figma with a new prototype builder tool in Firefly.",
-      "publishedAt": "2026-11-10T14:05:10+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5553fe020c93d3c2ae42de53f3b1b6800e6676eac18f9ed2933d087b887f14e2",
-      "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
-      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion",
-      "summary": "The company could end up being worth a hefty $1.404 trillion if its shares list at the top of the price range, on a fully diluted basis.",
-      "publishedAt": "2026-11-10T14:01:39+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -138,7 +158,7 @@
       "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "73 points · 64 comments on Hacker News",
+      "summary": "74 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-10T10:40:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +178,7 @@
       "id": "5bf6a50dd3640e9df597c8c76e81749dc4a226fc5852285f8630711339a7d463",
       "title": "Research Finds Outright Grants of Cash Are Effective Form of Aid to the Poor",
       "url": "https://news.columbia.edu/news/research-finds-outright-grants-cash-are-surprisingly-effective-form-aid-poor",
-      "summary": "32 points · 8 comments on Hacker News",
+      "summary": "36 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-10T10:19:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +218,7 @@
       "id": "c7d3010a8bcc401c0c2a91aa3667122b315a5c90eaeee16839139d0cede05fa3",
       "title": "Fireworks AI security breach impacts Notion and their customers",
       "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-      "summary": "147 points · 53 comments on Hacker News",
+      "summary": "148 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-10T07:19:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -242,16 +262,6 @@
       "publishedAt": "2026-11-10T03:53:04+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e7d9d1552b0e69602474771fc2334499b10f4c2f34c6e1ba92ee0f901589a2fd",
-      "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
-      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "summary": "189 points · 179 comments on Hacker News",
-      "publishedAt": "2026-11-10T03:20:06+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
