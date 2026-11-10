@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 14:57:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 15:58:24 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Meta’s AI agent Muse lands on Apple Watch and Android Wear OS]]></title>
+    <description><![CDATA[Users can now interact with Meta’s AI assistant through voice calls, text messages, or dictation on their Apple Watch.]]></description>
+    <link>https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly]]></title>
@@ -110,12 +119,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Otter AI can now follow conversations across 30+ languages]]></title>
-    <description><![CDATA[Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.]]></description>
-    <link>https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages</guid>
+    <title><![CDATA[Work at the Frontier: AI’s effect on freelance work]]></title>
+    <description><![CDATA[New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.]]></description>
+    <link>https://openai.com/index/ai-effect-on-freelance-work</link>
+    <guid isPermaLink="true">https://openai.com/index/ai-effect-on-freelance-work</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -146,30 +155,21 @@
   </item>
 
   <item>
+    <title><![CDATA[Decision Models in Hugging Face]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/decision</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/decision</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
     <title><![CDATA[llm-anthropic 0.31]]></title>
     <description><![CDATA[Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it "solved two open problems in the physics of black holes", so clearly their internal benchmarks have bec]]></description>
     <link>https://simonwillison.net/2026/Nov/9/llm-anthropic</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/llm-anthropic</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The backlash about data centers might really just be about electricity]]></title>
-    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley]]></description>
-    <link>https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[ChatGPT Enterprise now available in AWS Marketplace]]></title>
-    <description><![CDATA[ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.]]></description>
-    <link>https://openai.com/index/chatgpt-enterprise-aws-marketplace</link>
-    <guid isPermaLink="true">https://openai.com/index/chatgpt-enterprise-aws-marketplace</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
