@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T11:37:37.211886+00:00",
+  "generatedAt": "2026-11-10T12:38:05.228201+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,14 +12,44 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 46,
+  "itemCount": 47,
   "items": [
+    {
+      "id": "0e9fb0eb84f13acffdc59012e1c88f7c2f202f69132c55eacdf5e3a2b2ad057d",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code",
+      "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+      "publishedAt": "2026-11-10T12:02:28+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e",
+      "title": "Helping caregivers use AI in everyday life",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+      "publishedAt": "2026-11-10T12:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "47 points · 29 comments on Hacker News",
+      "summary": "58 points · 47 comments on Hacker News",
       "publishedAt": "2026-11-10T10:40:51+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "db8fc494992101409f7d5d089792e86aefc39f9265a19a9833f05297bbce1ae2",
+      "title": "AI usage generates a fragile codebase",
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
+      "summary": "Comments",
+      "publishedAt": "2026-11-10T10:25:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -28,7 +58,7 @@
       "id": "69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44",
       "title": "Closing the AI guidance gap in education",
       "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "summary": "Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.",
+      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
       "publishedAt": "2026-11-10T09:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
@@ -98,7 +128,7 @@
       "id": "e7d9d1552b0e69602474771fc2334499b10f4c2f34c6e1ba92ee0f901589a2fd",
       "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
       "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "summary": "Comments",
+      "summary": "175 points · 148 comments on Hacker News",
       "publishedAt": "2026-11-10T03:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +198,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "128 points · 165 comments on Hacker News",
+      "summary": "130 points · 168 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -192,16 +222,6 @@
       "publishedAt": "2026-11-09T20:09:06+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fbdf36c6d0b0b031c7bc7614ffde87312900439bb99e93d85ef2dfed43491371",
-      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
-      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-      "summary": "351 points · 254 comments on Hacker News",
-      "publishedAt": "2026-11-09T20:04:55+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -289,16 +309,6 @@
       "title": "CodeRabbit scales agentic software development and ships 20x more",
       "url": "https://openai.com/index/coderabbit-codex-daybreak",
       "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
-      "publishedAt": "2026-11-09T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "2e34e84f0999c607fcd026638ba274edf1639ff07c6ab06d851f57d1a6442eba",
-      "title": "Kuken Industries searches 70 years of drawings in minutes",
-      "url": "https://openai.com/index/kuken",
-      "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
       "publishedAt": "2026-11-09T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
