@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T05:36:11.472242+00:00",
+  "generatedAt": "2026-11-10T06:36:18.068842+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,16 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "19c160f4485a55c0c305d959e147dcc0e341c6140ca2c9b801beb577528245b5",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
+      "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the",
+      "publishedAt": "2026-11-10T05:34:14+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
       "id": "bf13f19a6d465d6944f5cf03133fcdc5f2cb396f6c2f2c553878a2f48ec663a0",
       "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
       "url": "https://arxiv.org/abs/2610.42039",
@@ -22,6 +32,16 @@
       "publishedAt": "2026-11-10T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7a8b85431c54289a512e05a538cb160d9b0830d07c73cd211f97698db4c156ef",
+      "title": "Yonkers Rises",
+      "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises",
+      "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed it's location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Ma",
+      "publishedAt": "2026-11-10T03:53:04+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -45,21 +65,21 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1cd01b15863e291ad4ce315f1c236c0c8cc0c0073c23c49c868e8f7873eb2b8e",
-      "title": "Locating the source of a mysterious beep",
-      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
-      "summary": "Comments",
-      "publishedAt": "2026-11-10T00:10:46+00:00",
+      "id": "9a8fde6cfa9ab68cee22829cd56772a764218f6a73c6d51a6582309c1021330c",
+      "title": "llm-anthropic 0.31",
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have bec",
+      "publishedAt": "2026-11-09T23:58:46+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
-      "id": "9a8fde6cfa9ab68cee22829cd56772a764218f6a73c6d51a6582309c1021330c",
-      "title": "llm-anthropic 0.31",
-      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
-      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm ",
-      "publishedAt": "2026-11-09T23:58:46+00:00",
+      "id": "1cd01b15863e291ad4ce315f1c236c0c8cc0c0073c23c49c868e8f7873eb2b8e",
+      "title": "Locating the source of a mysterious beep with Claude",
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
+      "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc",
+      "publishedAt": "2026-11-09T23:57:21+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
@@ -98,7 +118,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "118 points · 151 comments on Hacker News",
+      "summary": "120 points · 152 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +188,7 @@
       "id": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
       "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
       "url": "https://github.com/Dodaios/ste80-humanizer",
-      "summary": "75 points · 22 comments on Hacker News",
+      "summary": "80 points · 23 comments on Hacker News",
       "publishedAt": "2026-11-09T18:05:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -290,26 +310,6 @@
       "url": "https://simonwillison.net/2026/Nov/9/details-summary",
       "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then me",
       "publishedAt": "2026-11-09T04:25:05+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "71c843041955ebc1fdc113b08d577e957425247fdabb3a77b14664d5269af1d3",
-      "title": "parse_number() as a SQLite extension: C vs Rust",
-      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
-      "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into nu",
-      "publishedAt": "2026-11-08T22:26:00+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5f8103aa8ad8e667fe99f57680bbcd698e10ae17c93ba178b06c39c55cdb3b54",
-      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
-      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
-      "summary": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. ",
-      "publishedAt": "2026-11-07T23:57:46+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
