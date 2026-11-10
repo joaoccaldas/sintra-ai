@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 08:06:30 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:36:49 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -56,19 +56,19 @@
   </item>
 
   <item>
-    <title><![CDATA[llm-anthropic 0.31]]></title>
-    <description><![CDATA[Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it "solved two open problems in the physics of black holes", so clearly their internal benchmarks have bec]]></description>
-    <link>https://simonwillison.net/2026/Nov/9/llm-anthropic</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/llm-anthropic</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[Locating the source of a mysterious beep]]></title>
+    <description><![CDATA[Comments]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/mysterious-beeps</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/mysterious-beeps</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 
   <item>
-    <title><![CDATA[Locating the source of a mysterious beep with Claude]]></title>
-    <description><![CDATA[Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc]]></description>
-    <link>https://simonwillison.net/2026/Nov/9/mysterious-beeps</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/mysterious-beeps</guid>
+    <title><![CDATA[llm-anthropic 0.31]]></title>
+    <description><![CDATA[Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it "solved two open problems in the physics of black holes", so clearly their internal benchmarks have bec]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/llm-anthropic</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/llm-anthropic</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>

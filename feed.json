@@ -107,10 +107,10 @@
       ]
     },
     {
-      "id": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
-      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
-      "title": "llm-anthropic 0.31",
-      "content_text": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have bec",
+      "id": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
+      "title": "Locating the source of a mysterious beep",
+      "content_text": "Comments",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -118,7 +118,7 @@
         "workflowResource": null,
         "verification": "not-reverified"
       },
-      "date_published": "2026-11-09T00:00:00.000Z",
+      "date_published": "2026-11-10T00:00:00.000Z",
       "tags": [
         "Simon Willison",
         "Simon Willison",
@@ -127,10 +127,10 @@
       ]
     },
     {
-      "id": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
-      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
-      "title": "Locating the source of a mysterious beep with Claude",
-      "content_text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc",
+      "id": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "title": "llm-anthropic 0.31",
+      "content_text": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have bec",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
