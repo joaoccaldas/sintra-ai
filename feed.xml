@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 06:12:19 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 07:06:06 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Quoting Prompting Claude Fable 5.2]]></title>
+    <description><![CDATA[Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the]]></description>
+    <link>https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Yonkers Rises]]></title>
+    <description><![CDATA[Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed it's location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Ma]]></description>
+    <link>https://simonwillison.net/2026/Nov/10/yonkers-rises</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/10/yonkers-rises</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Anthropic reportedly plans to move forward with IPO plans]]></title>
@@ -20,19 +38,19 @@
   </item>
 
   <item>
-    <title><![CDATA[Locating the source of a mysterious beep]]></title>
-    <description><![CDATA[Comments]]></description>
-    <link>https://simonwillison.net/2026/Nov/9/mysterious-beeps</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/mysterious-beeps</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[llm-anthropic 0.31]]></title>
+    <description><![CDATA[Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it "solved two open problems in the physics of black holes", so clearly their internal benchmarks have bec]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/llm-anthropic</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/llm-anthropic</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 
   <item>
-    <title><![CDATA[llm-anthropic 0.31]]></title>
-    <description><![CDATA[Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm ]]></description>
-    <link>https://simonwillison.net/2026/Nov/9/llm-anthropic</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/llm-anthropic</guid>
+    <title><![CDATA[Locating the source of a mysterious beep with Claude]]></title>
+    <description><![CDATA[Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/mysterious-beeps</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/mysterious-beeps</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/amazon/higher-order-pruning-experts</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[CodeRabbit scales agentic software development and ships 20x more]]></title>
-    <description><![CDATA[CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.]]></description>
-    <link>https://openai.com/index/coderabbit-codex-daybreak</link>
-    <guid isPermaLink="true">https://openai.com/index/coderabbit-codex-daybreak</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Kuken Industries searches 70 years of drawings in minutes]]></title>
-    <description><![CDATA[Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.]]></description>
-    <link>https://openai.com/index/kuken</link>
-    <guid isPermaLink="true">https://openai.com/index/kuken</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
