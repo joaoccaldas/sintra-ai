@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T00:06:26.101232+00:00",
+  "generatedAt": "2026-11-10T02:34:49.351726+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,11 +15,31 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "4f4fd1b1da1f00aa7f0392bf457d5cab8463de8aa6afb24c9df05be6bfb9ff6c",
+      "title": "Anthropic reportedly plans to move forward with IPO plans",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans",
+      "summary": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
+      "publishedAt": "2026-11-10T01:27:12+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "1cd01b15863e291ad4ce315f1c236c0c8cc0c0073c23c49c868e8f7873eb2b8e",
-      "title": "Locating the source of a mysterious beep with Claude",
+      "title": "Locating the source of a mysterious beep",
       "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
-      "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc",
-      "publishedAt": "2026-11-09T23:57:21+00:00",
+      "summary": "Comments",
+      "publishedAt": "2026-11-10T00:10:46+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9a8fde6cfa9ab68cee22829cd56772a764218f6a73c6d51a6582309c1021330c",
+      "title": "llm-anthropic 0.31",
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm ",
+      "publishedAt": "2026-11-09T23:58:46+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
@@ -58,7 +78,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "57 points · 57 comments on Hacker News",
+      "summary": "113 points · 133 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -66,9 +86,9 @@
     },
     {
       "id": "a7b39cb0698327aa7f2535085e5ff22ca7e636782abfa74072f3b8860eed86c0",
-      "title": "TPUs",
+      "title": "TPU 8tx and TPU 8i Max",
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx",
-      "summary": "151 points · 20 comments on Hacker News",
+      "summary": "214 points · 63 comments on Hacker News",
       "publishedAt": "2026-11-09T21:56:57+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -86,9 +106,9 @@
     },
     {
       "id": "fbdf36c6d0b0b031c7bc7614ffde87312900439bb99e93d85ef2dfed43491371",
-      "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
       "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-      "summary": "254 points · 175 comments on Hacker News",
+      "summary": "296 points · 215 comments on Hacker News",
       "publishedAt": "2026-11-09T20:04:55+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -125,20 +145,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "38597062943c675332eea3d1db50b70efe48dbb3c255497acdd1df7d71045114",
-      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
-      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny",
-      "summary": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
-      "publishedAt": "2026-11-09T18:09:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
       "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
       "url": "https://github.com/Dodaios/ste80-humanizer",
-      "summary": "45 points · 12 comments on Hacker News",
+      "summary": "60 points · 17 comments on Hacker News",
       "publishedAt": "2026-11-09T18:05:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -146,9 +156,9 @@
     },
     {
       "id": "86708699833d3a97966600b802e469ca582767ce90cf5e85b1122261eddb89ec",
-      "title": "Our Smallest, Most Efficient Model: Muse Ember",
+      "title": "Muse Ember: Our smallest, most efficient model",
       "url": "https://research.meta.ai/blog/muse-ember",
-      "summary": "225 points · 96 comments on Hacker News",
+      "summary": "255 points · 105 comments on Hacker News",
       "publishedAt": "2026-11-09T17:58:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -216,9 +226,9 @@
     },
     {
       "id": "ab9a571901c9fe81ed20b1e3f7dee7e375ba75a61e9a78c28766064bb0b68867",
-      "title": "Fold Epic Paper Airplanes",
+      "title": "Foldable Flight: The Best Paper Airplanes",
       "url": "https://www.foldableflight.com/",
-      "summary": "813 points · 133 comments on Hacker News",
+      "summary": "860 points · 140 comments on Hacker News",
       "publishedAt": "2026-11-09T12:19:22+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -300,16 +310,6 @@
       "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
       "summary": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. ",
       "publishedAt": "2026-11-07T23:57:46+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "dfd5aeba955b06505b60e1a3a252a0bedcd8d1692c4eb49aa5a262dd9c331b76",
-      "title": "Terry Pratchett's Study",
-      "url": "https://simonwillison.net/2026/Nov/7/hn-50407316",
-      "summary": "My comment on Terry Pratchett's Study — Hacker News. Terry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on th",
-      "publishedAt": "2026-11-07T19:34:24+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
