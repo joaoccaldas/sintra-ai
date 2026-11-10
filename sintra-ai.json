@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T06:36:18.068842+00:00",
+  "generatedAt": "2026-11-10T07:36:47.247452+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "cba41f0395d50b9e1105caa6f1e2b59d2b6903c55cdc81a6ceb02c5ed770ca1c",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
+      "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the",
+      "publishedAt": "2026-11-10T07:28:21+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0f192bba36f64bb6ee3d0329ba71c795e80a590bce284e58dd1b089b1731c81d",
+      "title": "Otter AI can now follow conversations across 30+ languages",
+      "url": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages",
+      "summary": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
+      "publishedAt": "2026-11-10T07:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "19c160f4485a55c0c305d959e147dcc0e341c6140ca2c9b801beb577528245b5",
       "title": "Quoting Prompting Claude Fable 5.2",
@@ -118,7 +138,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "120 points · 152 comments on Hacker News",
+      "summary": "121 points · 157 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -165,16 +185,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "a3bc8ca770f44f2d283586dea0b9803e953497c6447c206a739ff27b330279a0",
-      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
-      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns",
-      "summary": "Anthropic says the new models \"show improvements in areas like coding, reasoning, and vision,\" as well as in communicating more clearly with users.",
-      "publishedAt": "2026-11-09T19:24:51+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "caa9073cefb43725f1a58e80c726b61b1142cf3c90f98b3ffe382a94354b7081",
       "title": "ChatGPT Enterprise now available in AWS Marketplace",
       "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
@@ -188,7 +198,7 @@
       "id": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
       "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
       "url": "https://github.com/Dodaios/ste80-humanizer",
-      "summary": "80 points · 23 comments on Hacker News",
+      "summary": "84 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-09T18:05:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -300,16 +310,6 @@
       "url": "https://simonwillison.net/2026/Nov/9/hn-50421091",
       "summary": "My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef",
       "publishedAt": "2026-11-09T04:32:33+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7a56e2062f93f8c0e4390f7ad3b798cb480a24170fa85961cca292378a685c71",
-      "title": "Hide your slop PR descriptions behind",
-      "url": "https://simonwillison.net/2026/Nov/9/details-summary",
-      "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then me",
-      "publishedAt": "2026-11-09T04:25:05+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
