@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 23:41:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:56:54 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Locating the source of a mysterious beep with Claude]]></title>
+    <description><![CDATA[Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/mysterious-beeps</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/mysterious-beeps</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Jensen Huang reportedly engaged a PR firm with a history of handling high-profile sex scandals a year ago]]></title>
+    <description><![CDATA[The PR firm was enlisted shortly after an October 2025 New York Times report described Alice Huang's business dealings with Jensen Huang, Wired reported.]]></description>
+    <link>https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal]]></title>
@@ -69,15 +87,6 @@
     <description><![CDATA[Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.]]></description>
     <link>https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Meta releases Muse Ember, a new lightweight model for agent execution]]></title>
-    <description><![CDATA[At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.]]></description>
-    <link>https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -159,15 +168,6 @@
     <description><![CDATA[My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef]]></description>
     <link>https://simonwillison.net/2026/Nov/9/hn-50421091</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/hn-50421091</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Hide your slop PR descriptions behind]]></title>
-    <description><![CDATA[Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then me]]></description>
-    <link>https://simonwillison.net/2026/Nov/9/details-summary</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/details-summary</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
