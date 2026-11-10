@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T19:39:52.797270+00:00",
+  "generatedAt": "2026-11-10T20:40:11.778768+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 52,
   "items": [
+    {
+      "id": "6c914047595767790f02b3950ffeea2c56de1b7a41547c116026e5e4d241c26f",
+      "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+      "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo",
+      "summary": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.",
+      "publishedAt": "2026-11-10T19:57:52+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "1b0c05cd97a311af5c4f8a2b41b220d621e87dbde7c35b23ba7bf6d6a3ba1436",
       "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
@@ -88,7 +98,7 @@
       "id": "5b4c18faabadfb3802c404ca785e7fa8dd3df9bdd220424a9411f1e4dac290f2",
       "title": "Gemini 4 Carbon is now available",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-      "summary": "241 points · 135 comments on Hacker News",
+      "summary": "252 points · 140 comments on Hacker News",
       "publishedAt": "2026-11-10T16:07:15+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -102,16 +112,6 @@
       "publishedAt": "2026-11-10T16:03:47+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a75982b151db7f3d54834d455ca52d59a57f082d703d83752d8979462e35884d",
-      "title": "Google broadens its AI hardware portfolio with two new specialized chips",
-      "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips",
-      "summary": "Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.",
-      "publishedAt": "2026-11-10T15:54:08+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -158,7 +158,7 @@
       "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "74 points · 65 comments on Hacker News",
+      "summary": "74 points · 66 comments on Hacker News",
       "publishedAt": "2026-11-10T10:40:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "5bf6a50dd3640e9df597c8c76e81749dc4a226fc5852285f8630711339a7d463",
       "title": "Research Finds Outright Grants of Cash Are Effective Form of Aid to the Poor",
       "url": "https://news.columbia.edu/news/research-finds-outright-grants-cash-are-surprisingly-effective-form-aid-poor",
-      "summary": "36 points · 8 comments on Hacker News",
+      "summary": "37 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-10T10:19:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -218,7 +218,7 @@
       "id": "c7d3010a8bcc401c0c2a91aa3667122b315a5c90eaeee16839139d0cede05fa3",
       "title": "Fireworks AI security breach impacts Notion and their customers",
       "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-      "summary": "148 points · 55 comments on Hacker News",
+      "summary": "153 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-10T07:19:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
