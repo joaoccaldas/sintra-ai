@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:38:13.151447+00:00",
+  "generatedAt": "2026-11-10T14:38:21.108345+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,58 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 48,
+  "itemCount": 49,
   "items": [
+    {
+      "id": "126b111b5d436487e51fda5640cc23dc9efd7f8eb71d3c126a1dccbd53436749",
+      "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp",
+      "summary": "Adobe is taking on Figma with a new prototype builder tool in Firefly.",
+      "publishedAt": "2026-11-10T14:05:10+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5553fe020c93d3c2ae42de53f3b1b6800e6676eac18f9ed2933d087b887f14e2",
+      "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion",
+      "summary": "The company could end up being worth a hefty $1.404 trillion if its shares list at the top of the price range, on a fully diluted basis.",
+      "publishedAt": "2026-11-10T14:01:39+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b5b0ef99e191cd08d80e1af739149c18ea9422967cb24e7af520772ac4e42dd4",
+      "title": "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
+      "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter",
+      "summary": "Spotify Premium users can now customize their AI DJ with new voices with different personalities, or turn off the commentary between songs.",
+      "publishedAt": "2026-11-10T14:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e086b6a569cdaf26afeb27812d2d9bd392a1dd5254a67e070646dedf24851831",
+      "title": "After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era",
+      "url": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era",
+      "summary": "Kora is set to launch as a free-to-use alternative to Windows, targeting users who rely heavily on AI models and agents.",
+      "publishedAt": "2026-11-10T14:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e192e4f92a704298f96f725cc3ae96c30d788d917e1f7b38ef8d7e63567c6b73",
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
+      "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
+      "publishedAt": "2026-11-10T14:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "7fc88fbdaa8e97213d1bb6c9d52037d4d79961628e827e3981b6a9eadb75f295",
       "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
@@ -58,7 +108,7 @@
       "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
       "title": "Meet the Sad Wives of AI",
       "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
-      "summary": "62 points · 51 comments on Hacker News",
+      "summary": "66 points · 52 comments on Hacker News",
       "publishedAt": "2026-11-10T10:40:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +118,7 @@
       "id": "db8fc494992101409f7d5d089792e86aefc39f9265a19a9833f05297bbce1ae2",
       "title": "AI usage generates a fragile codebase",
       "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
-      "summary": "111 points · 139 comments on Hacker News",
+      "summary": "119 points · 153 comments on Hacker News",
       "publishedAt": "2026-11-10T10:25:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,20 +198,10 @@
       "id": "e7d9d1552b0e69602474771fc2334499b10f4c2f34c6e1ba92ee0f901589a2fd",
       "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
       "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "summary": "175 points · 156 comments on Hacker News",
+      "summary": "181 points · 165 comments on Hacker News",
       "publishedAt": "2026-11-10T03:20:06+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4f4fd1b1da1f00aa7f0392bf457d5cab8463de8aa6afb24c9df05be6bfb9ff6c",
-      "title": "Anthropic reportedly plans to move forward with IPO plans",
-      "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans",
-      "summary": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
-      "publishedAt": "2026-11-10T01:27:12+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -185,40 +225,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "28bf67cf1684b7b254ce9aae754bbc3ee5442e19ee7a2939469f4481b1668339",
-      "title": "Jensen Huang reportedly engaged a PR firm with a history of handling high-profile sex scandals a year ago",
-      "url": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago",
-      "summary": "The PR firm was enlisted shortly after an October 2025 New York Times report described Alice Huang's business dealings with Jensen Huang, Wired reported.",
-      "publishedAt": "2026-11-09T23:28:37+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e105484703996e34195d7ca95e82b43a2d4c870785e1b8bab6fbcaa3702f44a3",
-      "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
-      "url": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal",
-      "summary": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
-      "publishedAt": "2026-11-09T22:46:09+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "bda3011897fcd94668c2f3a2cee226f21816c8fb4d5ed54e0846843189cbd914",
-      "title": "The race is on to sue Nvidia",
-      "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia",
-      "summary": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensiv",
-      "publishedAt": "2026-11-09T22:23:42+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "133 points · 170 comments on Hacker News",
+      "summary": "136 points · 171 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -228,7 +238,7 @@
       "id": "a7b39cb0698327aa7f2535085e5ff22ca7e636782abfa74072f3b8860eed86c0",
       "title": "TPU 8tx and TPU 8i Max",
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx",
-      "summary": "250 points · 75 comments on Hacker News",
+      "summary": "251 points · 75 comments on Hacker News",
       "publishedAt": "2026-11-09T21:56:57+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
