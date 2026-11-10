@@ -7,10 +7,50 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans",
+      "title": "Anthropic reportedly plans to move forward with IPO plans",
+      "content_text": "The AI company is expected to set its valuation range this week, the Wall Street Journal reported.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
       "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
-      "title": "Locating the source of a mysterious beep with Claude",
-      "content_text": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc",
+      "title": "Locating the source of a mysterious beep",
+      "content_text": "Comments",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "title": "llm-anthropic 0.31",
+      "content_text": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm ",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -163,26 +203,6 @@
         "OpenAI",
         "OpenAI",
         "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny",
-      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny",
-      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
-      "content_text": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
         "Live"
       ]
     },
@@ -343,26 +363,6 @@
         "OpenAI",
         "OpenAI",
         "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/9/hn-50421091",
-      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091",
-      "title": "The Web Is More Than Enough, by Paul Ford",
-      "content_text": "My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
         "Live"
       ]
     },

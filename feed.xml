@@ -7,14 +7,32 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 00:56:54 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 03:03:33 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[Locating the source of a mysterious beep with Claude]]></title>
-    <description><![CDATA[Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc]]></description>
+    <title><![CDATA[Anthropic reportedly plans to move forward with IPO plans]]></title>
+    <description><![CDATA[The AI company is expected to set its valuation range this week, the Wall Street Journal reported.]]></description>
+    <link>https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Locating the source of a mysterious beep]]></title>
+    <description><![CDATA[Comments]]></description>
     <link>https://simonwillison.net/2026/Nov/9/mysterious-beeps</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/mysterious-beeps</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[llm-anthropic 0.31]]></title>
+    <description><![CDATA[Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm ]]></description>
+    <link>https://simonwillison.net/2026/Nov/9/llm-anthropic</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/llm-anthropic</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
@@ -80,15 +98,6 @@
     <guid isPermaLink="true">https://openai.com/index/chatgpt-enterprise-aws-marketplace</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny]]></title>
-    <description><![CDATA[Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.]]></description>
-    <link>https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/kuken</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The Web Is More Than Enough, by Paul Ford]]></title>
-    <description><![CDATA[My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef]]></description>
-    <link>https://simonwillison.net/2026/Nov/9/hn-50421091</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/hn-50421091</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
