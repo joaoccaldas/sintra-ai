@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T09:37:15.088309+00:00",
+  "generatedAt": "2026-11-10T10:37:33.789193+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -32,6 +32,16 @@
       "publishedAt": "2026-11-10T07:28:21+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c7d3010a8bcc401c0c2a91aa3667122b315a5c90eaeee16839139d0cede05fa3",
+      "title": "Fireworks AI security breach impacts Notion and their customers",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "summary": "Comments",
+      "publishedAt": "2026-11-10T07:19:38+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -148,7 +158,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "125 points · 161 comments on Hacker News",
+      "summary": "128 points · 164 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +188,7 @@
       "id": "fbdf36c6d0b0b031c7bc7614ffde87312900439bb99e93d85ef2dfed43491371",
       "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
       "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-      "summary": "344 points · 245 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-09T20:04:55+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,18 +218,8 @@
       "id": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
       "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
       "url": "https://github.com/Dodaios/ste80-humanizer",
-      "summary": "89 points · 30 comments on Hacker News",
+      "summary": "92 points · 30 comments on Hacker News",
       "publishedAt": "2026-11-09T18:05:44+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "86708699833d3a97966600b802e469ca582767ce90cf5e85b1122261eddb89ec",
-      "title": "Muse Ember: Our smallest, most efficient model",
-      "url": "https://research.meta.ai/blog/muse-ember",
-      "summary": "Comments",
-      "publishedAt": "2026-11-09T17:58:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
