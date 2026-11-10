@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 08:36:49 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 09:07:25 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Closing the AI guidance gap in education]]></title>
+    <description><![CDATA[Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.]]></description>
+    <link>https://openai.com/index/closing-ai-guidance-gap-education</link>
+    <guid isPermaLink="true">https://openai.com/index/closing-ai-guidance-gap-education</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[Introducing Our Smallest, Most Efficient Model: Muse Ember]]></title>
@@ -159,15 +168,6 @@
     <description><![CDATA[Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.]]></description>
     <link>https://openai.com/index/control-room</link>
     <guid isPermaLink="true">https://openai.com/index/control-room</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing Control Room: Human control over AI workloads]]></title>
-    <description><![CDATA[Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.]]></description>
-    <link>https://openai.com/index/introducing-control-room</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-control-room</guid>
     <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>

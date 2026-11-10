@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "title": "Closing the AI guidance gap in education",
+      "content_text": "Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/10/muse-ember",
       "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
       "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
@@ -330,26 +350,6 @@
       "id": "https://openai.com/index/control-room",
       "url": "https://openai.com/index/control-room",
       "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-      "content_text": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-09T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/introducing-control-room",
-      "url": "https://openai.com/index/introducing-control-room",
-      "title": "Introducing Control Room: Human control over AI workloads",
       "content_text": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
       "_sintra": {
         "origin": "aggregated",
