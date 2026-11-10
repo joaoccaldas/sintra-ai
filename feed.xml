@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 16:28:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 16:58:57 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Gemini 4 Carbon is now available]]></title>
+    <description><![CDATA[Google DeepMind — Labs]]></description>
+    <link>https://deepmind.google/blog/gemini-4-carbon-is-now-available</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/gemini-4-carbon-is-now-available</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google broadens its AI hardware portfolio with two new specialized chips]]></title>
+    <description><![CDATA[Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.]]></description>
+    <link>https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Meta’s AI agent Muse lands on Apple Watch and Android Wear OS]]></title>
@@ -62,15 +80,6 @@
     <guid isPermaLink="true">https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns]]></title>
-    <description><![CDATA[Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open-source communities valuable to developers worldwide.]]></description>
-    <link>https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/decision</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm-anthropic 0.31]]></title>
-    <description><![CDATA[Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it "solved two open problems in the physics of black holes", so clearly their internal benchmarks have bec]]></description>
-    <link>https://simonwillison.net/2026/Nov/9/llm-anthropic</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/9/llm-anthropic</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
