@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T10:37:33.789193+00:00",
+  "generatedAt": "2026-11-10T11:37:37.211886+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "873837d446bf7e78a1cf7a5cf38f2e8ded7b5c8f980e9bdbd758c13cf5858393",
+      "title": "Meet the Sad Wives of AI",
+      "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai",
+      "summary": "47 points · 29 comments on Hacker News",
+      "publishedAt": "2026-11-10T10:40:51+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44",
       "title": "Closing the AI guidance gap in education",
@@ -158,7 +168,7 @@
       "id": "0e7f57beb742eb68e99e3eaea690dbd60c28062f29b18bc65351ac572fe3273c",
       "title": "A year after the 100% AI mandate nobody understands our code",
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody",
-      "summary": "128 points · 164 comments on Hacker News",
+      "summary": "128 points · 165 comments on Hacker News",
       "publishedAt": "2026-11-09T22:19:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +178,7 @@
       "id": "a7b39cb0698327aa7f2535085e5ff22ca7e636782abfa74072f3b8860eed86c0",
       "title": "TPU 8tx and TPU 8i Max",
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx",
-      "summary": "249 points · 75 comments on Hacker News",
+      "summary": "250 points · 75 comments on Hacker News",
       "publishedAt": "2026-11-09T21:56:57+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +198,7 @@
       "id": "fbdf36c6d0b0b031c7bc7614ffde87312900439bb99e93d85ef2dfed43491371",
       "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
       "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-      "summary": "Comments",
+      "summary": "351 points · 254 comments on Hacker News",
       "publishedAt": "2026-11-09T20:04:55+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -212,16 +222,6 @@
       "publishedAt": "2026-11-09T19:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
-      "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
-      "url": "https://github.com/Dodaios/ste80-humanizer",
-      "summary": "92 points · 30 comments on Hacker News",
-      "publishedAt": "2026-11-09T18:05:44+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
