@@ -27,6 +27,66 @@
       ]
     },
     {
+      "id": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems",
+      "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems",
+      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
+      "content_text": "“There are a lot of senior people in the industry that know this is happening, and are effectively condoning it,” an investment intel consultant said.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-11T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time",
+      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time",
+      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
+      "content_text": "Sales of $10B represents an almost 50% jump from revenue of $6.7 billion the company recorded in the second quarter.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-11T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "content_text": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-11T00:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "Google AI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow",
       "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow",
       "title": "Anthropic's IPO roadshow video",
@@ -227,26 +287,6 @@
       ]
     },
     {
-      "id": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect",
-      "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect",
-      "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
-      "content_text": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
       "id": "https://simonwillison.net/2026/Nov/10/llm-gemini",
       "url": "https://simonwillison.net/2026/Nov/10/llm-gemini",
       "title": "llm-gemini 0.36",
@@ -263,26 +303,6 @@
         "Simon Willison",
         "Simon Willison",
         "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo",
-      "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo",
-      "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
-      "content_text": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
         "Live"
       ]
     },
@@ -331,26 +351,6 @@
       "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
       "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
       "content_text": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "Google AI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
-      "title": "Google Cloud launches Gemini for healthcare.",
-      "content_text": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
