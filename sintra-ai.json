@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T14:45:24.748590+00:00",
+  "generatedAt": "2026-11-11T15:45:27.216173+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,7 +12,7 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 50,
+  "itemCount": 51,
   "items": [
     {
       "id": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
@@ -22,6 +22,36 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d7414ba9c609253700f33e6d8825c94a7b86186c088976e6352ab2b37938ed42",
+      "title": "Anthropic's IPO roadshow video",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow",
+      "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\" with co-founder Tom Brown is particularly",
+      "publishedAt": "2026-11-11T15:11:59+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "ba0fcf4e325b4115c73c9ef83ebd1ffebf008c30d8d75edc5ffce3b5226c5537",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease",
+      "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+      "publishedAt": "2026-11-11T15:00:15+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "34b5b4703a4ee2901b19773531024b63f11c98502ad7b38f722ef2b919e1483a",
+      "title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
+      "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth",
+      "summary": "At 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.",
+      "publishedAt": "2026-11-11T15:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -58,7 +88,7 @@
       "id": "5e39c0b073520cae0147af56b05c098981382362cec38345832bf477f7e67824",
       "title": "OSS projects banning AI-generated contributions",
       "url": "https://osssaysno.com/",
-      "summary": "55 points · 93 comments on Hacker News",
+      "summary": "57 points · 94 comments on Hacker News",
       "publishedAt": "2026-11-11T08:51:45+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,10 +188,20 @@
       "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
       "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
       "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
-      "summary": "55 points · 65 comments on Hacker News",
+      "summary": "55 points · 67 comments on Hacker News",
       "publishedAt": "2026-11-11T00:15:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "11568aa8dfcf9a3c07504fe25196e1495017d378dc1ddce0dd1b3a34d4b9b5b8",
+      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+      "url": "https://huggingface.co/blog/token-pooling",
+      "summary": "",
+      "publishedAt": "2026-11-11T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -218,27 +258,17 @@
       "id": "f4116becfee3f1d34e1c46b7ab48bc8a1e4ebaadf6f8f59419dc8383322a4827",
       "title": "What objective is reasoning solving?",
       "url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-      "summary": "149 points · 69 comments on Hacker News",
+      "summary": "151 points · 69 comments on Hacker News",
       "publishedAt": "2026-11-10T19:25:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "1b0c05cd97a311af5c4f8a2b41b220d621e87dbde7c35b23ba7bf6d6a3ba1436",
-      "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
-      "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m",
-      "summary": "The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”",
-      "publishedAt": "2026-11-10T19:23:34+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
       "title": "Saltline: First-person shooter built by Fable 5.2",
       "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "68 points · 84 comments on Hacker News",
+      "summary": "69 points · 85 comments on Hacker News",
       "publishedAt": "2026-11-10T19:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -395,16 +425,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1cd01b15863e291ad4ce315f1c236c0c8cc0c0073c23c49c868e8f7873eb2b8e",
-      "title": "Locating the source of a mysterious beep with Claude",
-      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
-      "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the sourc",
-      "publishedAt": "2026-11-09T23:57:21+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6b6709b612e5913e3ffca54a85bc91991cc77a4b3fa814c431fece64c1da4ed4",
       "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
       "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence",
@@ -460,16 +480,6 @@
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
       "summary": "",
       "publishedAt": "2026-11-09T12:34:29+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5a90caffb2c87d2e6e8eb5c3f6e99436fe1d4b1da4789f4c2ad70b79f5a9dd5d",
-      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-      "url": "https://huggingface.co/blog/allenai/toyblocks",
-      "summary": "",
-      "publishedAt": "2026-11-06T14:00:48+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
       "color": "#5B48D9"
