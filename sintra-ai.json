@@ -527,7 +527,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-11T11:06:15.642997+00:00",
+    "generatedAt": "2026-11-11T16:13:15.562552+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -3806,8 +3806,8 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.277082+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.562510+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3870,8 +3870,8 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.277105+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.562538+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -3934,8 +3934,8 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.277110+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.562546+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -3998,8 +3998,8 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.277113+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.562552+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4062,8 +4062,8 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.278681+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.560409+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4126,8 +4126,8 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.278696+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.560427+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4190,8 +4190,8 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.278700+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.560434+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4254,8 +4254,8 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.278702+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.560439+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4318,8 +4318,8 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.293344+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.558192+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4382,8 +4382,8 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.293361+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.558213+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4446,8 +4446,8 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.293365+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.558221+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4510,8 +4510,8 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-09T16:11:51.293368+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-11T16:13:15.558226+00:00",
+        "stale": false
       }
     ]
   }
