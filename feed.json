@@ -27,6 +27,26 @@
       ]
     },
     {
+      "id": "https://simonwillison.net/2026/Nov/11/aws-emulator",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator",
+      "title": "aws-emulator",
+      "content_text": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three week",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-11T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built",
       "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built",
       "title": "Why the data center you dread might never even be built",
@@ -343,26 +363,6 @@
         "Hugging Face",
         "Hugging Face",
         "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/jiostar-vijay-seshadri",
-      "url": "https://openai.com/index/jiostar-vijay-seshadri",
-      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-      "content_text": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-11T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
         "Live"
       ]
     },
