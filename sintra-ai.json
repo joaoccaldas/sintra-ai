@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T06:43:34.281689+00:00",
+  "generatedAt": "2026-11-11T07:43:56.870881+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -32,6 +32,16 @@
       "publishedAt": "2026-11-11T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f4e4ebe108d8e8cbed59c49d1020184d081789ccdc9400473b3e57ad66f3822d",
+      "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+      "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn",
+      "summary": "The governance experts we talked to say nobody has seen anything like what's unfolding right now.",
+      "publishedAt": "2026-11-11T07:30:51+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -168,7 +178,7 @@
       "id": "f4116becfee3f1d34e1c46b7ab48bc8a1e4ebaadf6f8f59419dc8383322a4827",
       "title": "What objective is reasoning solving?",
       "url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-      "summary": "138 points · 64 comments on Hacker News",
+      "summary": "139 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-10T19:25:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +198,7 @@
       "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
       "title": "Saltline: First-person shooter built by Fable 5.2",
       "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "57 points · 68 comments on Hacker News",
+      "summary": "59 points · 70 comments on Hacker News",
       "publishedAt": "2026-11-10T19:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -215,16 +225,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7e74320883f414fbb1a04c0c3716d288a87aa88106c3feccb22ba486611f9446",
-      "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
-      "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google",
-      "summary": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.",
-      "publishedAt": "2026-11-10T18:49:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "a4978faa7e166cdb12b818c5397aad221fe34e5d74e2dc0c479fe886ef474c07",
       "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
       "url": "https://github.com/GoogleChrome/modern-web-guidance",
@@ -238,7 +238,7 @@
       "id": "64c65c510d530b1f1077a1c4904adf7270ca6999d6689c4e14b70246cdee277a",
       "title": "An Open Field Guide to Inference Engineering",
       "url": "https://docs.modelplane.ai/guides/inference-guide",
-      "summary": "82 points · 8 comments on Hacker News",
+      "summary": "85 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-10T17:55:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
