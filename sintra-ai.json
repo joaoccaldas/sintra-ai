@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T21:47:06.686405+00:00",
+  "generatedAt": "2026-11-11T22:47:31.672443+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,26 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8cfe95d5a7efcad0553086b91dc8b748def885df6f32755ce0e3fb7af3f221c2",
+      "title": "Gemini Decisions API",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
+      "summary": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's ter",
+      "publishedAt": "2026-11-11T22:03:25+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1df6a00742e99b5a005c0a78a421a5b6942e095ec0450cf2125be3f75497863a",
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T21:24:35+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -98,7 +118,7 @@
       "id": "3dcdab220cd01e48f494631406527f74a50c1a81ce447a3126bfab968bf4efff",
       "title": "Retirement Savings Are Fueling the AI Bubble",
       "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble",
-      "summary": "Comments",
+      "summary": "122 points · 131 comments on Hacker News",
       "publishedAt": "2026-11-11T19:06:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -112,6 +132,16 @@
       "publishedAt": "2026-11-11T18:42:50+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "78b8986836f7bb24ddaa17fd143a0358f1821b41500b58ce0ae1f9aab05130b2",
+      "title": "AWS emulator",
+      "url": "https://github.com/aws/aws-emulator",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T18:21:38+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -148,7 +178,7 @@
       "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
       "title": "AI, activity, and outcomes in software engineering",
       "url": "https://cabird.com/talks/shipping-faster",
-      "summary": "Comments",
+      "summary": "101 points · 96 comments on Hacker News",
       "publishedAt": "2026-11-11T16:33:28+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +188,7 @@
       "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
-      "summary": "65 points · 28 comments on Hacker News",
+      "summary": "67 points · 28 comments on Hacker News",
       "publishedAt": "2026-11-11T16:00:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -172,16 +202,6 @@
       "publishedAt": "2026-11-11T16:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217",
-      "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
-      "url": "https://github.com/FrigadeHQ/yogurt",
-      "summary": "Comments",
-      "publishedAt": "2026-11-11T15:33:06+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -202,16 +222,6 @@
       "publishedAt": "2026-11-11T15:00:15+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "488eb497c0ab9b42fec24fd8b6840fd435af69f793e71781d1c07f1a1260b22f",
-      "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
-      "url": "https://pietromiotti.com/latest/maya-site?maya=",
-      "summary": "Comments",
-      "publishedAt": "2026-11-11T12:05:22+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -415,16 +425,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "cba41f0395d50b9e1105caa6f1e2b59d2b6903c55cdc81a6ceb02c5ed770ca1c",
-      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
-      "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
-      "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the",
-      "publishedAt": "2026-11-10T07:28:21+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "5f3963726dbe36e6ccf9753b6647e286ea2d25f750c2d86a74f9ab28836d655f",
       "title": "Decision Models in Hugging Face",
       "url": "https://huggingface.co/blog/decision",
@@ -527,7 +527,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-11T17:06:24.986844+00:00",
+    "generatedAt": "2026-11-11T23:06:46.085172+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1602,7 +1602,7 @@
         ],
         "value": 6.1827,
         "period": "2026-11-11",
-        "retrievedAt": "2026-11-11T17:06:24.986814+00:00",
+        "retrievedAt": "2026-11-11T23:06:46.085136+00:00",
         "stale": false
       },
       {
@@ -2678,7 +2678,7 @@
         ],
         "value": 11.051,
         "period": "2026-11-11",
-        "retrievedAt": "2026-11-11T17:06:24.986837+00:00",
+        "retrievedAt": "2026-11-11T23:06:46.085165+00:00",
         "stale": false
       },
       {
@@ -3754,7 +3754,7 @@
         ],
         "value": 1.1127,
         "period": "2026-11-11",
-        "retrievedAt": "2026-11-11T17:06:24.986844+00:00",
+        "retrievedAt": "2026-11-11T23:06:46.085172+00:00",
         "stale": false
       },
       {
