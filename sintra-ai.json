@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T07:43:56.870881+00:00",
+  "generatedAt": "2026-11-11T09:43:41.895798+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,7 +12,7 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 49,
+  "itemCount": 50,
   "items": [
     {
       "id": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
@@ -22,6 +22,26 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e09fad6dcc25f1ba697cd45e185fe8f5ec3b5d7d479a5ffc72c9feac3611ce3e",
+      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
+      "summary": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture.",
+      "publishedAt": "2026-11-11T09:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5e39c0b073520cae0147af56b05c098981382362cec38345832bf477f7e67824",
+      "title": "OSS projects banning AI-generated contributions",
+      "url": "https://osssaysno.com/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T08:51:45+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -118,7 +138,7 @@
       "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
       "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
       "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
-      "summary": "Comments",
+      "summary": "54 points · 57 comments on Hacker News",
       "publishedAt": "2026-11-11T00:15:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +198,7 @@
       "id": "f4116becfee3f1d34e1c46b7ab48bc8a1e4ebaadf6f8f59419dc8383322a4827",
       "title": "What objective is reasoning solving?",
       "url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-      "summary": "139 points · 65 comments on Hacker News",
+      "summary": "146 points · 67 comments on Hacker News",
       "publishedAt": "2026-11-10T19:25:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +218,7 @@
       "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
       "title": "Saltline: First-person shooter built by Fable 5.2",
       "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "59 points · 70 comments on Hacker News",
+      "summary": "63 points · 72 comments on Hacker News",
       "publishedAt": "2026-11-10T19:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -230,16 +250,6 @@
       "url": "https://github.com/GoogleChrome/modern-web-guidance",
       "summary": "Comments",
       "publishedAt": "2026-11-10T18:01:15+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "64c65c510d530b1f1077a1c4904adf7270ca6999d6689c4e14b70246cdee277a",
-      "title": "An Open Field Guide to Inference Engineering",
-      "url": "https://docs.modelplane.ai/guides/inference-guide",
-      "summary": "85 points · 8 comments on Hacker News",
-      "publishedAt": "2026-11-10T17:55:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
