@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T19:46:27.256460+00:00",
+  "generatedAt": "2026-11-11T20:46:46.059460+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,7 +12,7 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 52,
+  "itemCount": 51,
   "items": [
     {
       "id": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
@@ -22,6 +22,46 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "321d8b43ce72dae60562d150f2699be8eb77467f1b94d6251bec46b9a5c793f7",
+      "title": "Why the data center you dread might never even be built",
+      "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built",
+      "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects be",
+      "publishedAt": "2026-11-11T20:15:15+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c3fa6b6a983077561348d3dd6c5ad83f26dbe8cce9ec99204f1c31392a5daa09",
+      "title": "Meta is losing its longtime head of infrastructure",
+      "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure",
+      "summary": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role.",
+      "publishedAt": "2026-11-11T20:12:01+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "27ced9ec34f579c9724a513942e2fc5353e9504a50ac6995f28ca9fb01e915e7",
+      "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
+      "url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave",
+      "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects be",
+      "publishedAt": "2026-11-11T20:02:14+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5413a692ab5366d74989e7dc7d56ebfb4e784aae1c12a1952ee15965c8ff2419",
+      "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
+      "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth",
+      "summary": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
+      "publishedAt": "2026-11-11T19:54:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -42,6 +82,16 @@
       "publishedAt": "2026-11-11T19:22:22+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3dcdab220cd01e48f494631406527f74a50c1a81ce447a3126bfab968bf4efff",
+      "title": "Retirement Savings Are Fueling the AI Bubble",
+      "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T19:06:43+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -75,6 +125,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "6b9d220c749b233b33403021899ee40633ba49056a4512b4dc227c39ce2a1f86",
+      "title": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents",
+      "url": "https://pomerado.ai/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T17:11:56+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
       "title": "AI, activity, and outcomes in software engineering",
       "url": "https://cabird.com/talks/shipping-faster",
@@ -85,30 +145,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "236705559d2866e2db8a36fef5468e43478262743773c278f6611532865d2d15",
-      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
-      "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems",
-      "summary": "“There are a lot of senior people in the industry that know this is happening, and are effectively condoning it,” an investment intel consultant said.",
-      "publishedAt": "2026-11-11T16:16:07+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "bed7979fe4378809a9c497bfa66e41a6bc9b0293803f47391c5e2cea20b0a7c1",
-      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
-      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time",
-      "summary": "Sales of $10 billion represents an almost 50% jump from revenue of $6.7 billion the company recorded in the second quarter.",
-      "publishedAt": "2026-11-11T16:14:44+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
-      "summary": "Comments",
+      "summary": "62 points · 26 comments on Hacker News",
       "publishedAt": "2026-11-11T16:00:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -155,26 +195,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "34b5b4703a4ee2901b19773531024b63f11c98502ad7b38f722ef2b919e1483a",
-      "title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
-      "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth",
-      "summary": "With Databricks at 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.",
-      "publishedAt": "2026-11-11T15:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "87209848417b63cfc5323ac30a2478c54745cf6540e64a0ef28f56dec80499e5",
-      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
-      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads",
-      "summary": "Like the end-to-end models trained to drive cars, AI agents are probabilistic systems operating in unpredictable environments.",
-      "publishedAt": "2026-11-11T14:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "488eb497c0ab9b42fec24fd8b6840fd435af69f793e71781d1c07f1a1260b22f",
       "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
       "url": "https://pietromiotti.com/latest/maya-site?maya=",
@@ -192,16 +212,6 @@
       "publishedAt": "2026-11-11T09:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5e39c0b073520cae0147af56b05c098981382362cec38345832bf477f7e67824",
-      "title": "OSS projects banning AI-generated contributions",
-      "url": "https://osssaysno.com/",
-      "summary": "59 points · 102 comments on Hacker News",
-      "publishedAt": "2026-11-11T08:51:45+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -282,16 +292,6 @@
       "publishedAt": "2026-11-11T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
-      "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
-      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
-      "summary": "56 points · 75 comments on Hacker News",
-      "publishedAt": "2026-11-11T00:15:33+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -522,16 +522,6 @@
       "publishedAt": "2026-11-05T17:05:16+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4c156bd25dffe9102489ac90cd3bceebc32b711d17e15e8343203f4d83fc9dc0",
-      "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
-      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput",
-      "summary": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech’s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position. Democrat James Talarico won the US Senate seat against Ken Paxton. Gin",
-      "publishedAt": "2026-11-04T18:50:55+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
       "color": "#5B48D9"
     }
   ],
