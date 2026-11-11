@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T13:45:00.337304+00:00",
+  "generatedAt": "2026-11-11T14:45:24.748590+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,16 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "87209848417b63cfc5323ac30a2478c54745cf6540e64a0ef28f56dec80499e5",
+      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads",
+      "summary": "Like the end-to-end models trained to drive cars, AI agents are probabilistic systems operating in unpredictable environments.",
+      "publishedAt": "2026-11-11T14:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -48,7 +58,7 @@
       "id": "5e39c0b073520cae0147af56b05c098981382362cec38345832bf477f7e67824",
       "title": "OSS projects banning AI-generated contributions",
       "url": "https://osssaysno.com/",
-      "summary": "54 points · 91 comments on Hacker News",
+      "summary": "55 points · 93 comments on Hacker News",
       "publishedAt": "2026-11-11T08:51:45+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +158,7 @@
       "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
       "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
       "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
-      "summary": "55 points · 64 comments on Hacker News",
+      "summary": "55 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-11T00:15:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +218,7 @@
       "id": "f4116becfee3f1d34e1c46b7ab48bc8a1e4ebaadf6f8f59419dc8383322a4827",
       "title": "What objective is reasoning solving?",
       "url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-      "summary": "149 points · 68 comments on Hacker News",
+      "summary": "149 points · 69 comments on Hacker News",
       "publishedAt": "2026-11-10T19:25:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -228,20 +238,10 @@
       "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
       "title": "Saltline: First-person shooter built by Fable 5.2",
       "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "67 points · 79 comments on Hacker News",
+      "summary": "68 points · 84 comments on Hacker News",
       "publishedAt": "2026-11-10T19:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "68219fdebd4ad78ca5bcf3fee6d9cbf4c6707612652fcdee006a02ceeeb986af",
-      "title": "PSI is trying to make a business out of AI-driven scientific discovery",
-      "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery",
-      "summary": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.",
-      "publishedAt": "2026-11-10T19:03:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
