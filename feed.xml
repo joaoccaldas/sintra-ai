@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 18:36:22 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 19:06:20 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,33 @@
     <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Browse tools.simonwillison.net by tag]]></title>
+    <description><![CDATA[Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the]]></description>
+    <link>https://simonwillison.net/2026/Nov/11/tools-tags</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/tools-tags</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemini Decisions API: Fast, calibrated multimodal decisions]]></title>
+    <description><![CDATA[Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.]]></description>
+    <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api</link>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[llm 0.37.2]]></title>
+    <description><![CDATA[Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with O]]></description>
+    <link>https://simonwillison.net/2026/Nov/11/llm</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/llm</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -66,7 +93,7 @@
 
   <item>
     <title><![CDATA[Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth]]></title>
-    <description><![CDATA[At 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.]]></description>
+    <description><![CDATA[With Databricks at 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.]]></description>
     <link>https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth</guid>
     <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
@@ -128,48 +155,21 @@
   </item>
 
   <item>
+    <title><![CDATA[JioStar’s chief architect on AI discovery at 500M-user scale]]></title>
+    <description><![CDATA[JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.]]></description>
+    <link>https://openai.com/index/jiostar-vijay-seshadri</link>
+    <guid isPermaLink="true">https://openai.com/index/jiostar-vijay-seshadri</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[OpenAI acquires Odessia, travel startup created by Sonder founder]]></title>
     <description><![CDATA[OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.]]></description>
     <link>https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm-gemini 0.36]]></title>
-    <description><![CDATA[Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for "a subset of cyber defenders", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 S]]></description>
-    <link>https://simonwillison.net/2026/Nov/10/llm-gemini</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/10/llm-gemini</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini Intelligence: New features, on more devices]]></title>
-    <description><![CDATA[Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.]]></description>
-    <link>https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices</link>
-    <guid isPermaLink="true">https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini 4 Carbon is now available]]></title>
-    <description><![CDATA[Google DeepMind — Labs]]></description>
-    <link>https://deepmind.google/blog/gemini-4-carbon-is-now-available</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/gemini-4-carbon-is-now-available</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.]]></title>
-    <description><![CDATA[Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.]]></description>
-    <link>https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration</link>
-    <guid isPermaLink="true">https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
   </item>
 
   <item>
