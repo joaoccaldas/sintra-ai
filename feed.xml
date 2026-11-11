@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 07:11:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:11:43 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -26,6 +26,15 @@
     <guid isPermaLink="true">https://openai.com/index/chatgpt-plus-for-veterans</guid>
     <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nvidia’s crisis has corporate governance experts reaching for the popcorn]]></title>
+    <description><![CDATA[The governance experts we talked to say nobody has seen anything like what's unfolding right now.]]></description>
+    <link>https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -98,15 +107,6 @@
     <guid isPermaLink="true">https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google]]></title>
-    <description><![CDATA[OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.]]></description>
-    <link>https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
