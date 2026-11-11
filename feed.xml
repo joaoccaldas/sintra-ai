@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 00:03:50 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 02:08:35 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Gilbert + Tobin rethinks the business of law with AI]]></title>
+    <description><![CDATA[A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.]]></description>
+    <link>https://openai.com/index/gilbert-tobin-sam-nickless</link>
+    <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
 
   <item>
     <title><![CDATA[OpenAI acquires Odessia, travel startup created by Sonder founder]]></title>
@@ -152,15 +161,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/10/muse-ember</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Work at the Frontier: AI’s effect on freelance work]]></title>
-    <description><![CDATA[New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.]]></description>
-    <link>https://openai.com/index/ai-effect-on-freelance-work</link>
-    <guid isPermaLink="true">https://openai.com/index/ai-effect-on-freelance-work</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
