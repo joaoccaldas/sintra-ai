@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T17:45:40.606469+00:00",
+  "generatedAt": "2026-11-11T18:46:06.410692+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -25,6 +25,46 @@
       "color": "#5B48D9"
     },
     {
+      "id": "73a487a9dee9c9049eac50d937d38a177b73a599c3f57c8f0ab1daa22837690b",
+      "title": "Browse tools.simonwillison.net by tag",
+      "url": "https://simonwillison.net/2026/Nov/11/tools-tags",
+      "summary": "Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the",
+      "publishedAt": "2026-11-11T18:42:50+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "publishedAt": "2026-11-11T18:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "88d1ecd11797604c75de7d3d3a0062eec1f80048b291caa8608f41aa0aba8f8d",
+      "title": "llm 0.37.2",
+      "url": "https://simonwillison.net/2026/Nov/11/llm",
+      "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with O",
+      "publishedAt": "2026-11-11T17:19:52+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
+      "title": "AI, activity, and outcomes in software engineering",
+      "url": "https://cabird.com/talks/shipping-faster",
+      "summary": "50 points · 73 comments on Hacker News",
+      "publishedAt": "2026-11-11T16:33:28+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "236705559d2866e2db8a36fef5468e43478262743773c278f6611532865d2d15",
       "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
       "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems",
@@ -45,6 +85,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
+      "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+      "url": "https://github.com/klad-app/klad",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T16:00:50+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "3d65ccc2f5cdce6978b37fa7c64320f9c0126555eece5a35f17a2f7ec9258a94",
       "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
@@ -52,6 +102,16 @@
       "publishedAt": "2026-11-11T16:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217",
+      "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T15:33:06+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -78,7 +138,7 @@
       "id": "34b5b4703a4ee2901b19773531024b63f11c98502ad7b38f722ef2b919e1483a",
       "title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
       "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth",
-      "summary": "At 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.",
+      "summary": "With Databricks at 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.",
       "publishedAt": "2026-11-11T15:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
@@ -118,7 +178,7 @@
       "id": "5e39c0b073520cae0147af56b05c098981382362cec38345832bf477f7e67824",
       "title": "OSS projects banning AI-generated contributions",
       "url": "https://osssaysno.com/",
-      "summary": "58 points · 101 comments on Hacker News",
+      "summary": "59 points · 101 comments on Hacker News",
       "publishedAt": "2026-11-11T08:51:45+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -218,7 +278,7 @@
       "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
       "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
       "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
-      "summary": "55 points · 74 comments on Hacker News",
+      "summary": "55 points · 75 comments on Hacker News",
       "publishedAt": "2026-11-11T00:15:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -235,13 +295,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "9836df3492903c3f1307168d5a8309cb13880a2afe45b84c195608eb1d6423cb",
-      "title": "Apple has new Mac app coming to make running local AI models easy",
-      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy",
-      "summary": "Comments",
-      "publishedAt": "2026-11-10T21:25:03+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
+      "id": "55ff14dc4213127df72a8039620109cd467ed21c91f1958dfd8ce815a783074c",
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+      "publishedAt": "2026-11-11T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -262,26 +322,6 @@
       "publishedAt": "2026-11-10T20:09:44+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f4116becfee3f1d34e1c46b7ab48bc8a1e4ebaadf6f8f59419dc8383322a4827",
-      "title": "What objective is reasoning solving?",
-      "url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-      "summary": "152 points · 70 comments on Hacker News",
-      "publishedAt": "2026-11-10T19:25:14+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
-      "title": "Saltline: First-person shooter built by Fable 5.2",
-      "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "69 points · 86 comments on Hacker News",
-      "publishedAt": "2026-11-10T19:14:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -365,16 +405,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "9092d5eb66f29547408d30e047abeac0f87e4c54c42653bfc957c7ad549984e3",
-      "title": "Singapore Airlines elevates travel & work with OpenAI technology",
-      "url": "https://openai.com/index/singapore-airlines-travel-work",
-      "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
-      "publishedAt": "2026-11-10T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "cba41f0395d50b9e1105caa6f1e2b59d2b6903c55cdc81a6ceb02c5ed770ca1c",
       "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
       "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
@@ -390,16 +420,6 @@
       "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
       "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the",
       "publishedAt": "2026-11-10T05:34:14+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7a8b85431c54289a512e05a538cb160d9b0830d07c73cd211f97698db4c156ef",
-      "title": "Yonkers Rises",
-      "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises",
-      "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Mak",
-      "publishedAt": "2026-11-10T03:53:04+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
@@ -422,16 +442,6 @@
       "publishedAt": "2026-11-10T00:00:00+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9a8fde6cfa9ab68cee22829cd56772a764218f6a73c6d51a6582309c1021330c",
-      "title": "llm-anthropic 0.31",
-      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
-      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have bec",
-      "publishedAt": "2026-11-09T23:58:46+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -511,16 +521,6 @@
       "summary": "",
       "publishedAt": "2026-11-05T17:05:16+00:00",
       "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
-      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     },
