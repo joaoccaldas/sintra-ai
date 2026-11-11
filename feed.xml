@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 22:39:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 23:09:13 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,15 @@
     <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gemini Decisions API]]></title>
+    <description><![CDATA[Gemini Decisions API Google join Jev and OpenAI in the decision model category with "Gemini Decision 1". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's ter]]></description>
+    <link>https://simonwillison.net/2026/Nov/11/gemini-decisions-api</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/gemini-decisions-api</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -159,15 +168,6 @@
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/qvac/botpsy</link>
     <guid isPermaLink="true">https://huggingface.co/blog/qvac/botpsy</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Token Pooling-Aware Training for Multi-Vector Embedding Models]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/token-pooling</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/token-pooling</guid>
     <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
   </item>

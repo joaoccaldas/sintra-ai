@@ -27,6 +27,26 @@
       ]
     },
     {
+      "id": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
+      "title": "Gemini Decisions API",
+      "content_text": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's ter",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-11T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/11/aws-emulator",
       "url": "https://simonwillison.net/2026/Nov/11/aws-emulator",
       "title": "aws-emulator",
@@ -330,26 +350,6 @@
       "id": "https://huggingface.co/blog/qvac/botpsy",
       "url": "https://huggingface.co/blog/qvac/botpsy",
       "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-11T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/token-pooling",
-      "url": "https://huggingface.co/blog/token-pooling",
-      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
       "content_text": "Hugging Face — Open Source",
       "_sintra": {
         "origin": "aggregated",
