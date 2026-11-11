@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T03:42:20.995616+00:00",
+  "generatedAt": "2026-11-11T04:42:44.009925+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -28,7 +28,7 @@
       "id": "9836df3492903c3f1307168d5a8309cb13880a2afe45b84c195608eb1d6423cb",
       "title": "Apple has new Mac app coming to make running local AI models easy",
       "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy",
-      "summary": "115 points · 94 comments on Hacker News",
+      "summary": "120 points · 96 comments on Hacker News",
       "publishedAt": "2026-11-10T21:25:03+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +148,7 @@
       "id": "64c65c510d530b1f1077a1c4904adf7270ca6999d6689c4e14b70246cdee277a",
       "title": "An Open Field Guide to Inference Engineering",
       "url": "https://docs.modelplane.ai/guides/inference-guide",
-      "summary": "74 points · 8 comments on Hacker News",
+      "summary": "79 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-10T17:55:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +158,7 @@
       "id": "5b4c18faabadfb3802c404ca785e7fa8dd3df9bdd220424a9411f1e4dac290f2",
       "title": "Gemini 4 Carbon is now available",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-      "summary": "280 points · 150 comments on Hacker News",
+      "summary": "281 points · 150 comments on Hacker News",
       "publishedAt": "2026-11-10T16:07:15+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -527,7 +527,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-10T23:05:45.327810+00:00",
+    "generatedAt": "2026-11-11T05:06:01.178315+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1598,7 +1598,7 @@
         ],
         "value": 6.2257,
         "period": "2026-11-10",
-        "retrievedAt": "2026-11-10T23:05:45.327784+00:00",
+        "retrievedAt": "2026-11-11T05:06:01.178286+00:00",
         "stale": false
       },
       {
@@ -2670,7 +2670,7 @@
         ],
         "value": 10.991,
         "period": "2026-11-10",
-        "retrievedAt": "2026-11-10T23:05:45.327803+00:00",
+        "retrievedAt": "2026-11-11T05:06:01.178308+00:00",
         "stale": false
       },
       {
@@ -3742,7 +3742,7 @@
         ],
         "value": 1.1214,
         "period": "2026-11-10",
-        "retrievedAt": "2026-11-10T23:05:45.327810+00:00",
+        "retrievedAt": "2026-11-11T05:06:01.178315+00:00",
         "stale": false
       },
       {
