@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 15:04:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 16:34:53 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,33 @@
     <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic's IPO roadshow video]]></title>
+    <description><![CDATA[Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on "Approach to compute" with co-founder Tom Brown is particularly]]></description>
+    <link>https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[AlphaGenome 2: Deciphering how cells read DNA to better understand disease]]></title>
+    <description><![CDATA[Predicting how DNA sequences and their variations impact specific human cell types and disease.]]></description>
+    <link>https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth]]></title>
+    <description><![CDATA[At 12,000 employees, AI Ghodsi is the first to admit that he can't know everyone and that they are unlikely to confess the things that go wrong to him. But he doesn't need them to. He uses Databricks' newly revised Genie agent for that.]]></description>
+    <link>https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -65,6 +92,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Token Pooling-Aware Training for Multi-Vector Embedding Models]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/token-pooling</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/token-pooling</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
     <title><![CDATA[OpenAI acquires Odessia, travel startup created by Sonder founder]]></title>
     <description><![CDATA[OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.]]></description>
     <link>https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder</link>
@@ -96,15 +132,6 @@
     <description><![CDATA[Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.]]></description>
     <link>https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Oura to acquire AI-native primary care startup Counsel Health for $625M]]></title>
-    <description><![CDATA[The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”]]></description>
-    <link>https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -143,33 +170,6 @@
     <guid isPermaLink="true">https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing AlphaProof Code: a breakthrough in verifying complex software at depth]]></title>
-    <description><![CDATA[AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.]]></description>
-    <link>https://deepmind.google/blog/introducing-alphaproof-code</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/introducing-alphaproof-code</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Helping caregivers use AI in everyday life]]></title>
-    <description><![CDATA[OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.]]></description>
-    <link>https://openai.com/index/helping-caregivers-use-ai-in-everyday-life</link>
-    <guid isPermaLink="true">https://openai.com/index/helping-caregivers-use-ai-in-everyday-life</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing Businesses in ChatGPT]]></title>
-    <description><![CDATA[Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.]]></description>
-    <link>https://openai.com/index/introducing-businesses-chatgpt</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-businesses-chatgpt</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
