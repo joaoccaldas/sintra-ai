@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 05:10:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 06:10:38 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,24 @@
     <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[ChatGPT Plus for veterans and servicemembers]]></title>
+    <description><![CDATA[More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.]]></description>
+    <link>https://openai.com/index/chatgpt-plus-for-veterans</link>
+    <guid isPermaLink="true">https://openai.com/index/chatgpt-plus-for-veterans</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/qvac/botpsy</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/qvac/botpsy</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
   </item>
 
   <item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/closing-ai-guidance-gap-education</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing Our Smallest, Most Efficient Model: Muse Ember]]></title>
-    <description><![CDATA[Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the]]></description>
-    <link>https://simonwillison.net/2026/Nov/10/muse-ember</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/10/muse-ember</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quoting Prompting Claude Fable 5.2]]></title>
-    <description><![CDATA[Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the]]></description>
-    <link>https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
