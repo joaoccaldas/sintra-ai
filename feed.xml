@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 14:03:23 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 15:04:07 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,15 @@
     <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads]]></title>
+    <description><![CDATA[Like the end-to-end models trained to drive cars, AI agents are probabilistic systems operating in unpredictable environments.]]></description>
+    <link>https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -96,15 +105,6 @@
     <description><![CDATA[The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”]]></description>
     <link>https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[PSI is trying to make a business out of AI-driven scientific discovery]]></title>
-    <description><![CDATA[PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.]]></description>
-    <link>https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>

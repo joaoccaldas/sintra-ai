@@ -27,6 +27,26 @@
       ]
     },
     {
+      "id": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads",
+      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads",
+      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+      "content_text": "Like the end-to-end models trained to drive cars, AI agents are probabilistic systems operating in unpredictable environments.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-11T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
       "id": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
       "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
       "title": "Experience the art and legacy of Dr. Esther Mahlangu",
@@ -191,26 +211,6 @@
       "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m",
       "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
       "content_text": "The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery",
-      "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery",
-      "title": "PSI is trying to make a business out of AI-driven scientific discovery",
-      "content_text": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
