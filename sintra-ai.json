@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T15:45:27.216173+00:00",
+  "generatedAt": "2026-11-11T16:45:38.884591+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,7 +12,7 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 51,
+  "itemCount": 52,
   "items": [
     {
       "id": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
@@ -21,6 +21,36 @@
       "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "236705559d2866e2db8a36fef5468e43478262743773c278f6611532865d2d15",
+      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
+      "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems",
+      "summary": "“There are a lot of senior people in the industry that know this is happening, and are effectively condoning it,” an investment intel consultant said.",
+      "publishedAt": "2026-11-11T16:16:07+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "bed7979fe4378809a9c497bfa66e41a6bc9b0293803f47391c5e2cea20b0a7c1",
+      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
+      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time",
+      "summary": "Sales of $10B represents an almost 50% jump from revenue of $6.7 billion the company recorded in the second quarter.",
+      "publishedAt": "2026-11-11T16:14:44+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3d65ccc2f5cdce6978b37fa7c64320f9c0126555eece5a35f17a2f7ec9258a94",
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
+      "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
+      "publishedAt": "2026-11-11T16:00:00+00:00",
+      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     },
@@ -88,7 +118,7 @@
       "id": "5e39c0b073520cae0147af56b05c098981382362cec38345832bf477f7e67824",
       "title": "OSS projects banning AI-generated contributions",
       "url": "https://osssaysno.com/",
-      "summary": "57 points · 94 comments on Hacker News",
+      "summary": "58 points · 97 comments on Hacker News",
       "publishedAt": "2026-11-11T08:51:45+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +218,7 @@
       "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
       "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
       "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
-      "summary": "55 points · 67 comments on Hacker News",
+      "summary": "55 points · 74 comments on Hacker News",
       "publishedAt": "2026-11-11T00:15:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -225,16 +255,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "ae543fdc68f7cb2628d45a55c199eeb47a35ef107aee7762fe758549590216b8",
-      "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
-      "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect",
-      "summary": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
-      "publishedAt": "2026-11-10T20:52:13+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "5bf610d1dd7d8e14638288ed689988a4fa4cc5f21e54b75c8eb428655728be69",
       "title": "llm-gemini 0.36",
       "url": "https://simonwillison.net/2026/Nov/10/llm-gemini",
@@ -245,20 +265,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "6c914047595767790f02b3950ffeea2c56de1b7a41547c116026e5e4d241c26f",
-      "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
-      "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo",
-      "summary": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.",
-      "publishedAt": "2026-11-10T19:57:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "f4116becfee3f1d34e1c46b7ab48bc8a1e4ebaadf6f8f59419dc8383322a4827",
       "title": "What objective is reasoning solving?",
       "url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-      "summary": "151 points · 69 comments on Hacker News",
+      "summary": "152 points · 70 comments on Hacker News",
       "publishedAt": "2026-11-10T19:25:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
