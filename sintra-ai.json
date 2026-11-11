@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T20:46:46.059460+00:00",
+  "generatedAt": "2026-11-11T21:47:06.686405+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,16 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "fd0e38b70a90d204adaa251f796f4033dadee0a8ed48afff758cf6c9d125f8dd",
+      "title": "aws-emulator",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator",
+      "summary": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three week",
+      "publishedAt": "2026-11-11T21:18:30+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -148,7 +158,7 @@
       "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
-      "summary": "62 points · 26 comments on Hacker News",
+      "summary": "65 points · 28 comments on Hacker News",
       "publishedAt": "2026-11-11T16:00:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -410,16 +420,6 @@
       "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
       "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the",
       "publishedAt": "2026-11-10T07:28:21+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "19c160f4485a55c0c305d959e147dcc0e341c6140ca2c9b801beb577528245b5",
-      "title": "Quoting Prompting Claude Fable 5.2",
-      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
-      "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the",
-      "publishedAt": "2026-11-10T05:34:14+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
