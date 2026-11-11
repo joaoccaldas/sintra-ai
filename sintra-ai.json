@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T04:42:44.009925+00:00",
+  "generatedAt": "2026-11-11T05:43:18.452770+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,7 +12,7 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 51,
+  "itemCount": 49,
   "items": [
     {
       "id": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
@@ -25,10 +25,100 @@
       "color": "#5B48D9"
     },
     {
+      "id": "ac94b61a25ade5edbf713f0897cc9ad6ba8f24621b9aed0d512136947920d1f0",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+      "publishedAt": "2026-11-11T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "19b4fcb1faac9c9bdbccd358c8d8e12a9188d32981764b2e3beec26a5de09e66",
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "summary": "",
+      "publishedAt": "2026-11-11T05:01:16+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "00a3315c8136332b4e329a9aa92c111069892d0a8550f0422fa41f678c6ba426",
+      "title": "Transformers Provably Learn Graph Search: Training Dynamics and the Exponential Power of Depth",
+      "url": "https://arxiv.org/abs/2611.13594",
+      "summary": "Authors: Xutao Ma, Somayeh Sojoudi · arXiv:2611.13594v1 Announce Type: new Abstract: Large Language Models (LLMs) have achieved remarkable progress on complex reasoning tasks, yet the mechanisms by which they acquire reasoning capabilities and the efficiency o",
+      "publishedAt": "2026-11-11T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "01974dd7b8b55b4ee819d32b4df231cd969867cd5e169c31d0ad6c98dd498fda",
+      "title": "Integrating Action Prefix Prediction and Alignment Across Modalities for Multimodal Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2611.13782",
+      "summary": "Authors: Sijie Xu, Francisco Cruz · arXiv:2611.13782v1 Announce Type: new Abstract: Learning representations from multimodal observations is difficult in reinforcement learning with limited interaction data. Multimodal Joint Predictive Representation combines ",
+      "publishedAt": "2026-11-11T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0a64ed0c7aa35d7ff0fd1f7612551c55e6f1b3ce53844de7280ec3e109e9a185",
+      "title": "Ceci n'est pas une pipe -- Toward a Symbolic Solver for the Abstraction and Reasoning Corpus Using Evolutionary Computation",
+      "url": "https://arxiv.org/abs/2611.13831",
+      "summary": "Authors: Luca Favole, Giorgio Mongardi, Giovanni Squillero, Alberto Tonda · arXiv:2611.13831v1 Announce Type: new Abstract: The Abstraction and Reasoning Corpus (ARC) is a benchmark designed to assess the capability of Artificial Intelligence (AI) systems to g",
+      "publishedAt": "2026-11-11T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0c27c7b3c601916dfb52a8a1be417fcb96a3c5321aaae41972dcb9a42955c2e7",
+      "title": "Precision on Demand: Escalating Weight Bits at Uncertain Decoding Steps in a Small Local Model",
+      "url": "https://arxiv.org/abs/2611.14418",
+      "summary": "Authors: Mohammed Nayeem Khan, Logesh L, Aliyas Ahmad Misri · arXiv:2611.14418v1 Announce Type: new Abstract: Local decoding usually fixes one weight precision for the whole generation. We study a different allocation: store 8-bit weights, decode with their to",
+      "publishedAt": "2026-11-11T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0c5bac16983858d8523042257a06688d3510e9040c9310b92c33505967a10861",
+      "title": "IIT Patna at \"ICPR 2026 TVRID Competition on Privacy-Preserving Person Re-Identification from Top-View RGB-Depth Camera\"",
+      "url": "https://arxiv.org/abs/2611.12960",
+      "summary": "Authors: Abhinav Kumar, Swagatam Pati, Advait Deshmukh, Aditya Mehrotra, Bibek Das, Kumari Priya, Utsav Kumar Nareti, Saba Akram, Chandranath Adak · arXiv:2611.12960v1 Announce Type: new Abstract: Privacy-aware person re-identification (Re-ID) from top-view ca",
+      "publishedAt": "2026-11-11T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0cfdd789bfa4af21d9b033115af2640e8a31b0aba89eb243f755981334b75cb9",
+      "title": "Agreeing on the Answer but Not the Reason: Measurement Limits of LLM Reasoning Failure Taxonomies",
+      "url": "https://arxiv.org/abs/2611.13140",
+      "summary": "Authors: Madhu Sudhan Rao Beesetty · arXiv:2611.13140v1 Announce Type: cross Abstract: Failure taxonomies for LLM reasoning are increasingly reported as measurements: papers state what fraction of a model's errors fall into named categories, then compare those",
+      "publishedAt": "2026-11-11T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
+      "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
+      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T00:15:33+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "9836df3492903c3f1307168d5a8309cb13880a2afe45b84c195608eb1d6423cb",
       "title": "Apple has new Mac app coming to make running local AI models easy",
       "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy",
-      "summary": "120 points · 96 comments on Hacker News",
+      "summary": "125 points · 96 comments on Hacker News",
       "publishedAt": "2026-11-10T21:25:03+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +188,7 @@
       "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
       "title": "Saltline: First-person shooter built by Fable 5.2",
       "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "56 points · 63 comments on Hacker News",
+      "summary": "56 points · 64 comments on Hacker News",
       "publishedAt": "2026-11-10T19:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,18 +238,8 @@
       "id": "64c65c510d530b1f1077a1c4904adf7270ca6999d6689c4e14b70246cdee277a",
       "title": "An Open Field Guide to Inference Engineering",
       "url": "https://docs.modelplane.ai/guides/inference-guide",
-      "summary": "79 points · 8 comments on Hacker News",
+      "summary": "80 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-10T17:55:07+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5b4c18faabadfb3802c404ca785e7fa8dd3df9bdd220424a9411f1e4dac290f2",
-      "title": "Gemini 4 Carbon is now available",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
-      "summary": "281 points · 150 comments on Hacker News",
-      "publishedAt": "2026-11-10T16:07:15+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -255,16 +335,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "bf13f19a6d465d6944f5cf03133fcdc5f2cb396f6c2f2c553878a2f48ec663a0",
-      "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
-      "url": "https://arxiv.org/abs/2610.42039",
-      "summary": "Authors: Artin Yousefi, Aizierjiang Aiersilan, Lorien C Abroms, David A Broniatowski · arXiv:2610.42039v1 Announce Type: cross Abstract: Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that ",
-      "publishedAt": "2026-11-10T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7a8b85431c54289a512e05a538cb160d9b0830d07c73cd211f97698db4c156ef",
       "title": "Yonkers Rises",
       "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises",
@@ -272,6 +342,16 @@
       "publishedAt": "2026-11-10T03:53:04+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "37e4452e64c861cffe83ba46c2eaac34a7fe63e9ccc79076dee9b50af52cb47b",
+      "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+      "url": "https://openai.com/index/cogent-security",
+      "summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
+      "publishedAt": "2026-11-10T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -335,16 +415,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "caa9073cefb43725f1a58e80c726b61b1142cf3c90f98b3ffe382a94354b7081",
-      "title": "ChatGPT Enterprise now available in AWS Marketplace",
-      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
-      "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
-      "publishedAt": "2026-11-09T19:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "a7e59e4f72113c3a7a23bd7fd718a779f8e68ee8131cc50cf05ba97b889618d0",
       "title": "Nancy Pelosi’s replacement is ready to regulate AI",
       "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai",
@@ -375,16 +445,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "952d2516af2e905436adea3bc1ec3df5f6a7559eef98c6b3c275da646bdd61ac",
-      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-      "url": "https://openai.com/index/control-room",
-      "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
-      "publishedAt": "2026-11-09T13:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "55d059b88c6c576a2f3d9ab40518505078744d93ab6e7c4bc3d7b8ab49056416",
       "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
@@ -392,16 +452,6 @@
       "publishedAt": "2026-11-09T12:34:29+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a547cb7a0db6854cbc954390cdbe288e0bdf56894ef046d94243764f61d47a1d",
-      "title": "Behavior Graphs: Unsupervised Graph Structures for Interpreting Robot Deployment Data",
-      "url": "https://arxiv.org/abs/2611.00405",
-      "summary": "Authors: Erik Bauer, Jakob Thumm, Christopher Agia, Rohan Sinha, Chen Xu, Haruki Nishimura, Jeannette Bohg, Marco Pavone, Masha Itkina · arXiv:2611.00405v2 Announce Type: replace Abstract: Data flywheels promise continuous improvement via insights from deploym",
-      "publishedAt": "2026-11-09T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
       "color": "#5B48D9"
     },
     {
@@ -422,56 +472,6 @@
       "publishedAt": "2026-11-06T10:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "01f260f7c65520661d2ab82d469028a56d6eac76a1dbd04affe5c4fc59284f5f",
-      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
-      "url": "https://arxiv.org/abs/2611.08452",
-      "summary": "Authors: Yubo Wang, Rui Meng, Jaehyun Nam, Tomas Pfister, Jinsung Yoon · arXiv:2611.08452v1 Announce Type: new Abstract: Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and su",
-      "publishedAt": "2026-11-06T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "01f9dcac41d4bec6c674f0f1363872234ea3dc3db9081fad3bc3b7b9ec06db01",
-      "title": "Create Your Own Work Stack: Deploying Self-hosted AI and Tooling in a Tech Startup",
-      "url": "https://arxiv.org/abs/2611.08116",
-      "summary": "Authors: Saad Ahmed Bazaz, Talha Amjad, Abdurrehman Subhani, Sohaib Ahmed Bazaz, Abdullah Aamir · arXiv:2611.08116v1 Announce Type: new Abstract: Self-hosting AI is often presented as a way to reduce inference costs and increase control, but deployment introdu",
-      "publishedAt": "2026-11-06T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "02cb67bc589015a4fc4d8eae9b75fb5a172e7007dbbda3d252013917a13597de",
-      "title": "When Imperfect Automated Fact-Checking Backfires: Social Learning in the Presence of Misinformation",
-      "url": "https://arxiv.org/abs/2611.08053",
-      "summary": "Authors: Zixuan Liu, Ming Cao · arXiv:2611.08053v1 Announce Type: new Abstract: Automated fact-checking tools, cheap and fast but imperfect, are increasingly available on social platforms. We study when such tools can backfire in a sequential social learning m",
-      "publishedAt": "2026-11-06T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "09428c9ba990d553642e3d7d79eceba6abb475d78c0e1e17bc61f712b6ba78f0",
-      "title": "Secure Formal Raising: Protecting the Development of AI through Executable Properties",
-      "url": "https://arxiv.org/abs/2611.08042",
-      "summary": "Authors: Rolf Drechsler, Christina Plump · arXiv:2611.08042v1 Announce Type: new Abstract: Model raising revisits Turing's developmental view of machine intelligence. Formal Raising (FR) has recently been proposed to complement this view with explicit behavior",
-      "publishedAt": "2026-11-06T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "13e4c95dcbaa6d34090ed25c81da95ae0ecffa6f5294ed82e0ecb8b302653aea",
-      "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-      "summary": "",
-      "publishedAt": "2026-11-06T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -502,26 +502,6 @@
       "publishedAt": "2026-11-04T18:50:55+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0bb52c4b905431dfb231b2ba53f64222d85f89b3968fae70af5b04dab09ebc9d",
-      "title": "Securing the agentic enterprise with data lineage",
-      "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage",
-      "summary": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to d",
-      "publishedAt": "2026-11-04T13:00:00+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "23c4f130369cb97228de41513e9312b1e0dc594d86d03dc60f268cab647b367c",
-      "title": "Agentic cheminformatics with Google Antigravity",
-      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity",
-      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-      "publishedAt": "2026-11-03T17:01:49+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
       "color": "#5B48D9"
     }
   ],
