@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T12:44:46.540498+00:00",
+  "generatedAt": "2026-11-11T13:45:00.337304+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -25,6 +25,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "488eb497c0ab9b42fec24fd8b6840fd435af69f793e71781d1c07f1a1260b22f",
+      "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
+      "url": "https://pietromiotti.com/latest/maya-site?maya=",
+      "summary": "Comments",
+      "publishedAt": "2026-11-11T12:05:22+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "e09fad6dcc25f1ba697cd45e185fe8f5ec3b5d7d479a5ffc72c9feac3611ce3e",
       "title": "Experience the art and legacy of Dr. Esther Mahlangu",
       "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
@@ -38,7 +48,7 @@
       "id": "5e39c0b073520cae0147af56b05c098981382362cec38345832bf477f7e67824",
       "title": "OSS projects banning AI-generated contributions",
       "url": "https://osssaysno.com/",
-      "summary": "53 points · 85 comments on Hacker News",
+      "summary": "54 points · 91 comments on Hacker News",
       "publishedAt": "2026-11-11T08:51:45+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "b87487ef036547770a9ef4f157a5333ff8a089243cc80e3bf38984d1cca1b05c",
       "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
       "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news",
-      "summary": "55 points · 63 comments on Hacker News",
+      "summary": "55 points · 64 comments on Hacker News",
       "publishedAt": "2026-11-11T00:15:33+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +208,7 @@
       "id": "f4116becfee3f1d34e1c46b7ab48bc8a1e4ebaadf6f8f59419dc8383322a4827",
       "title": "What objective is reasoning solving?",
       "url": "https://alexwang.ai/posts/reasoning-as-pathfinding",
-      "summary": "148 points · 67 comments on Hacker News",
+      "summary": "149 points · 68 comments on Hacker News",
       "publishedAt": "2026-11-10T19:25:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -218,7 +228,7 @@
       "id": "aa9ab5a1e592bc6670e152e8c9faa96e06fad51c822e66896d415817c87d1eef",
       "title": "Saltline: First-person shooter built by Fable 5.2",
       "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
-      "summary": "67 points · 73 comments on Hacker News",
+      "summary": "67 points · 79 comments on Hacker News",
       "publishedAt": "2026-11-10T19:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -242,16 +252,6 @@
       "publishedAt": "2026-11-10T19:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a4978faa7e166cdb12b818c5397aad221fe34e5d74e2dc0c479fe886ef474c07",
-      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance",
-      "summary": "Comments",
-      "publishedAt": "2026-11-10T18:01:15+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
