@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 08:11:43 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 10:00:28 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,15 @@
     <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Experience the art and legacy of Dr. Esther Mahlangu]]></title>
+    <description><![CDATA[A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture.]]></description>
+    <link>https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu</link>
+    <guid isPermaLink="true">https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
   </item>
 
   <item>
@@ -159,15 +168,6 @@
     <description><![CDATA[Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.]]></description>
     <link>https://openai.com/index/introducing-businesses-chatgpt</link>
     <guid isPermaLink="true">https://openai.com/index/introducing-businesses-chatgpt</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Closing the AI guidance gap in education]]></title>
-    <description><![CDATA[New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.]]></description>
-    <link>https://openai.com/index/closing-ai-guidance-gap-education</link>
-    <guid isPermaLink="true">https://openai.com/index/closing-ai-guidance-gap-education</guid>
     <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
