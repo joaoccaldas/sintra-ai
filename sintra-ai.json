@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T22:47:31.672443+00:00",
+  "generatedAt": "2026-11-11T23:47:39.039790+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,26 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "eb294a56c70bf2d1f7b8cbb5fbafbfda730c217f34c384a7eb55559da64535ca",
+      "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+      "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang",
+      "summary": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
+      "publishedAt": "2026-11-11T23:28:45+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d1f3df81d4d143b4729a65212212d6f778f2216f316191385f62aa325ab2619b",
+      "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
+      "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec",
+      "summary": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
+      "publishedAt": "2026-11-11T23:17:05+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -95,30 +115,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "038f46a4355e85690ceec99bf7c051abe7280d78068b79f8dffc91a7239d7319",
-      "title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
-      "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
-      "summary": "Fractile has now become one of the top-funded players in the race for purpose-built AI chips.",
-      "publishedAt": "2026-11-11T19:34:55+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f2c9646eac9d4c1ab5806f2e27915953855824c447787eae9691d0ebbe1b740b",
-      "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
-      "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair",
-      "summary": "Nvidia CEO Jensen Huang has until the end of the day Wednesday to answer a call from House Republicans for a closed-door briefing on his affair with alleged Chinese spy.",
-      "publishedAt": "2026-11-11T19:22:22+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "3dcdab220cd01e48f494631406527f74a50c1a81ce447a3126bfab968bf4efff",
       "title": "Retirement Savings Are Fueling the AI Bubble",
       "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble",
-      "summary": "122 points · 131 comments on Hacker News",
+      "summary": "127 points · 140 comments on Hacker News",
       "publishedAt": "2026-11-11T19:06:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
       "title": "AI, activity, and outcomes in software engineering",
       "url": "https://cabird.com/talks/shipping-faster",
-      "summary": "101 points · 96 comments on Hacker News",
+      "summary": "103 points · 98 comments on Hacker News",
       "publishedAt": "2026-11-11T16:33:28+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +188,7 @@
       "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
-      "summary": "67 points · 28 comments on Hacker News",
+      "summary": "69 points · 28 comments on Hacker News",
       "publishedAt": "2026-11-11T16:00:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
