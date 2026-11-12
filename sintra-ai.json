@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T02:48:26.452629+00:00",
+  "generatedAt": "2026-11-12T03:48:58.574289+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 51,
   "items": [
+    {
+      "id": "d0923a9bc12806766f81948138e973277568f85d2d33efe6c4de1f9ef7acae1b",
+      "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+      "url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors",
+      "summary": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
+      "publishedAt": "2026-11-12T03:13:10+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
       "title": "Gilbert + Tobin rethinks the business of law with AI",
@@ -105,20 +115,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "27ced9ec34f579c9724a513942e2fc5353e9504a50ac6995f28ca9fb01e915e7",
-      "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
-      "url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave",
-      "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects be",
-      "publishedAt": "2026-11-11T20:02:14+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "3dcdab220cd01e48f494631406527f74a50c1a81ce447a3126bfab968bf4efff",
       "title": "Retirement Savings Are Fueling the AI Bubble",
       "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble",
-      "summary": "140 points · 148 comments on Hacker News",
+      "summary": "143 points · 148 comments on Hacker News",
       "publishedAt": "2026-11-11T19:06:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
       "title": "AI, activity, and outcomes in software engineering",
       "url": "https://cabird.com/talks/shipping-faster",
-      "summary": "106 points · 102 comments on Hacker News",
+      "summary": "108 points · 102 comments on Hacker News",
       "publishedAt": "2026-11-11T16:33:28+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +188,7 @@
       "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
-      "summary": "71 points · 29 comments on Hacker News",
+      "summary": "74 points · 30 comments on Hacker News",
       "publishedAt": "2026-11-11T16:00:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
