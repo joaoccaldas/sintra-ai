@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T23:47:39.039790+00:00",
+  "generatedAt": "2026-11-12T00:47:59.920517+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,16 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3927e8656e242ccd50913d090fdbd80790febb228567c7190078ad1fcdbbee77",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
+      "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "publishedAt": "2026-11-11T23:50:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -105,20 +115,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "5413a692ab5366d74989e7dc7d56ebfb4e784aae1c12a1952ee15965c8ff2419",
-      "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
-      "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth",
-      "summary": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
-      "publishedAt": "2026-11-11T19:54:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "3dcdab220cd01e48f494631406527f74a50c1a81ce447a3126bfab968bf4efff",
       "title": "Retirement Savings Are Fueling the AI Bubble",
       "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble",
-      "summary": "127 points · 140 comments on Hacker News",
+      "summary": "133 points · 142 comments on Hacker News",
       "publishedAt": "2026-11-11T19:06:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +138,7 @@
       "id": "78b8986836f7bb24ddaa17fd143a0358f1821b41500b58ce0ae1f9aab05130b2",
       "title": "AWS emulator",
       "url": "https://github.com/aws/aws-emulator",
-      "summary": "Comments",
+      "summary": "632 points · 210 comments on Hacker News",
       "publishedAt": "2026-11-11T18:21:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
       "title": "AI, activity, and outcomes in software engineering",
       "url": "https://cabird.com/talks/shipping-faster",
-      "summary": "103 points · 98 comments on Hacker News",
+      "summary": "103 points · 100 comments on Hacker News",
       "publishedAt": "2026-11-11T16:33:28+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +188,7 @@
       "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
-      "summary": "69 points · 28 comments on Hacker News",
+      "summary": "69 points · 29 comments on Hacker News",
       "publishedAt": "2026-11-11T16:00:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
