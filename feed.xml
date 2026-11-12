@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 12 Nov 2026 03:24:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 03:55:07 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Who could replace Jensen Huang? A highly unscientific list of possible successors]]></title>
+    <description><![CDATA[Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.]]></description>
+    <link>https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Gilbert + Tobin rethinks the business of law with AI]]></title>
@@ -78,15 +87,6 @@
     <description><![CDATA[Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role.]]></description>
     <link>https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How backlash and red tape continue to slow data centers post-Blue Wave]]></title>
-    <description><![CDATA[The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects be]]></description>
-    <link>https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave</link>
-    <guid isPermaLink="true">https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave</guid>
     <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
