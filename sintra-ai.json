@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T03:48:58.574289+00:00",
+  "generatedAt": "2026-11-12T04:51:38.930083+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -118,7 +118,7 @@
       "id": "3dcdab220cd01e48f494631406527f74a50c1a81ce447a3126bfab968bf4efff",
       "title": "Retirement Savings Are Fueling the AI Bubble",
       "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble",
-      "summary": "143 points · 148 comments on Hacker News",
+      "summary": "147 points · 148 comments on Hacker News",
       "publishedAt": "2026-11-11T19:06:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
       "title": "AI, activity, and outcomes in software engineering",
       "url": "https://cabird.com/talks/shipping-faster",
-      "summary": "108 points · 102 comments on Hacker News",
+      "summary": "110 points · 102 comments on Hacker News",
       "publishedAt": "2026-11-11T16:33:28+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +188,7 @@
       "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
-      "summary": "74 points · 30 comments on Hacker News",
+      "summary": "75 points · 30 comments on Hacker News",
       "publishedAt": "2026-11-11T16:00:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -527,7 +527,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-11T23:06:46.085172+00:00",
+    "generatedAt": "2026-11-12T05:13:07.871151+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1602,7 +1602,7 @@
         ],
         "value": 6.1827,
         "period": "2026-11-11",
-        "retrievedAt": "2026-11-11T23:06:46.085136+00:00",
+        "retrievedAt": "2026-11-12T05:13:07.871120+00:00",
         "stale": false
       },
       {
@@ -2678,7 +2678,7 @@
         ],
         "value": 11.051,
         "period": "2026-11-11",
-        "retrievedAt": "2026-11-11T23:06:46.085165+00:00",
+        "retrievedAt": "2026-11-12T05:13:07.871144+00:00",
         "stale": false
       },
       {
@@ -3754,7 +3754,7 @@
         ],
         "value": 1.1127,
         "period": "2026-11-11",
-        "retrievedAt": "2026-11-11T23:06:46.085172+00:00",
+        "retrievedAt": "2026-11-12T05:13:07.871151+00:00",
         "stale": false
       },
       {
