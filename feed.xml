@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 12 Nov 2026 00:09:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 01:10:46 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,15 @@
     <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The unfolding Jensen Huang scandal: a timeline]]></title>
+    <description><![CDATA[The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.]]></description>
+    <link>https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -78,15 +87,6 @@
     <description><![CDATA[The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects be]]></description>
     <link>https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave</link>
     <guid isPermaLink="true">https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[CoreWeave turns to customer prepayments, shorter contracts to fund AI growth]]></title>
-    <description><![CDATA[CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.]]></description>
-    <link>https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth</guid>
     <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
