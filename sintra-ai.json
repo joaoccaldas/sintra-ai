@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T07:55:02.787510+00:00",
+  "generatedAt": "2026-11-13T08:22:56.369154+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,38 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 52,
+  "itemCount": 53,
   "items": [
+    {
+      "id": "27b7b102009ddbefbba108fe097c5b80777bc5b50c0adac8be04df24690d45ca",
+      "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
+      "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
+      "summary": "77 points · 23 comments on Hacker News",
+      "publishedAt": "2026-11-13T00:38:41+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d3a8f79ced3bc4687901d695680021b2868f480ede5bdff44d0be61fed65cbff",
+      "title": "Why You Should Expect an AI Crash",
+      "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
+      "summary": "92 points · 79 comments on Hacker News",
+      "publishedAt": "2026-11-12T23:08:31+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "4e10e32134f86500f7ca5d42b6cf8b3a1735666c38b8695ba9dd546cdf8a9537",
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "summary": "Comments",
+      "publishedAt": "2026-11-12T23:06:17+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "aeee01f562824dca326f8c8d7b2ef7c85b22d93e47995594295d2e054659284e",
       "title": "llm-gemini 0.37",
@@ -45,6 +75,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "076934ef461be2b954dba572893fb5f40ae22001098ff8f6135cabaaf477c54b",
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "summary": "280 points · 82 comments on Hacker News",
+      "publishedAt": "2026-11-12T21:56:11+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "104f40efd6071a516b0a97bd04daf5503b3c4b93f97e69c891c4c431b5a18035",
       "title": "The unfolding Jensen Huang scandal: a timeline",
       "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
@@ -62,6 +102,16 @@
       "publishedAt": "2026-11-12T21:27:10+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b1c7febb39e1226c18254980b3de8e7ed8147fc8094c892677a1935c7e45cc02",
+      "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+      "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+      "summary": "Comments",
+      "publishedAt": "2026-11-12T21:09:49+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -85,6 +135,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "67672a694e389b29af5588bf1be29a978063408e3c6a0262fcadf6da500500d7",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "publishedAt": "2026-11-12T20:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "341363dd4020e2e543dffce3faf601821fe92b245157974062666feb466d250e",
       "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
       "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions",
@@ -102,6 +162,56 @@
       "publishedAt": "2026-11-12T19:07:35+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9f652a2c4d20a371de9dbfcaa747971bb4bb46763c385e01d8ff66240f0a494b",
+      "title": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+      "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+      "summary": "Comments",
+      "publishedAt": "2026-11-12T18:15:48+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5b69826eead48a963c75ef963ac20caffa1fff8564f7b5d1ca73cdf7b0254da4",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen",
+      "summary": "",
+      "publishedAt": "2026-11-12T18:00:50+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d6d23163b98ddfa1ea7abe70bc203135c9b8d10c4c268a6dbaa304f2c460d6b1",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+      "summary": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "publishedAt": "2026-11-12T18:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b9840fd67063a36a400d5e1d91fe182c1b415df6997c889b681a58ba22957843",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+      "publishedAt": "2026-11-12T12:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "4922ca6fb0dd92994c349853518621d0422aac137e6c9a194fc01e08fc5408aa",
+      "title": "Holiday Extras is rethinking what it can build with Codex",
+      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+      "publishedAt": "2026-11-12T09:30:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -125,6 +235,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "d7c1da8cb7dc41da688b7a9908111a63cf9fb297a134e952ad2db42224ad8dc2",
+      "title": "Supporting research on AI and children’s safety",
+      "url": "https://openai.com/index/children-first-declaration",
+      "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+      "publishedAt": "2026-11-12T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "8cfe95d5a7efcad0553086b91dc8b748def885df6f32755ce0e3fb7af3f221c2",
       "title": "Gemini Decisions API",
       "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
@@ -132,16 +252,6 @@
       "publishedAt": "2026-11-11T22:03:25+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1df6a00742e99b5a005c0a78a421a5b6942e095ec0450cf2125be3f75497863a",
-      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
-      "summary": "Comments",
-      "publishedAt": "2026-11-11T21:24:35+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -155,16 +265,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "3dcdab220cd01e48f494631406527f74a50c1a81ce447a3126bfab968bf4efff",
-      "title": "Retirement Savings Are Fueling the AI Bubble",
-      "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble",
-      "summary": "152 points · 150 comments on Hacker News",
-      "publishedAt": "2026-11-11T19:06:43+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "73a487a9dee9c9049eac50d937d38a177b73a599c3f57c8f0ab1daa22837690b",
       "title": "Browse tools.simonwillison.net by tag",
       "url": "https://simonwillison.net/2026/Nov/11/tools-tags",
@@ -172,16 +272,6 @@
       "publishedAt": "2026-11-11T18:42:50+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "78b8986836f7bb24ddaa17fd143a0358f1821b41500b58ce0ae1f9aab05130b2",
-      "title": "AWS emulator",
-      "url": "https://github.com/aws/aws-emulator",
-      "summary": "Comments",
-      "publishedAt": "2026-11-11T18:21:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -202,36 +292,6 @@
       "publishedAt": "2026-11-11T17:19:52+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "6b9d220c749b233b33403021899ee40633ba49056a4512b4dc227c39ce2a1f86",
-      "title": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents",
-      "url": "https://pomerado.ai/",
-      "summary": "Comments",
-      "publishedAt": "2026-11-11T17:11:56+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "275a803dc4dd6146449673cae309391cee00f69063c5b95ec74e3f62b0a7d136",
-      "title": "AI, activity, and outcomes in software engineering",
-      "url": "https://cabird.com/talks/shipping-faster",
-      "summary": "113 points · 103 comments on Hacker News",
-      "publishedAt": "2026-11-11T16:33:28+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "359bb99c45677a9387df08a811a16b7bd9adf935528009316ed405404ca67cab",
-      "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
-      "url": "https://github.com/klad-app/klad",
-      "summary": "78 points · 31 comments on Hacker News",
-      "publishedAt": "2026-11-11T16:00:50+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -365,16 +425,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "55ff14dc4213127df72a8039620109cd467ed21c91f1958dfd8ce815a783074c",
-      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-      "url": "https://openai.com/index/jiostar-vijay-seshadri",
-      "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
-      "publishedAt": "2026-11-11T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "fafff4292c09fd9370c59269226818b22b187de9757f1096f65549cc01bfa598",
       "title": "Gemini Intelligence: New features, on more devices",
       "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
@@ -405,52 +455,12 @@
       "color": "#5B48D9"
     },
     {
-      "id": "c979be8e72cc92b8a0fbd6a0e885370f88efbc63bec0740a46271d303ac6a351",
-      "title": "Google Cloud launches Gemini for healthcare.",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
-      "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
-      "publishedAt": "2026-11-10T13:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "0e9fb0eb84f13acffdc59012e1c88f7c2f202f69132c55eacdf5e3a2b2ad057d",
       "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
       "url": "https://deepmind.google/blog/introducing-alphaproof-code",
       "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
       "publishedAt": "2026-11-10T12:02:28+00:00",
       "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e",
-      "title": "Helping caregivers use AI in everyday life",
-      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
-      "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
-      "publishedAt": "2026-11-10T12:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "991ad48e8559b2fefa9ff7bc2bbc96fe5e673f91d6bb1c78428d1dddc9dc303e",
-      "title": "Introducing Businesses in ChatGPT",
-      "url": "https://openai.com/index/introducing-businesses-chatgpt",
-      "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
-      "publishedAt": "2026-11-10T10:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44",
-      "title": "Closing the AI guidance gap in education",
-      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
-      "publishedAt": "2026-11-10T09:00:00+00:00",
-      "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
     },
