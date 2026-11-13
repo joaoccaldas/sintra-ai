@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 19:47:16 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 20:17:42 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[AI agent startup LangChain hits $3B valuation]]></title>
+    <description><![CDATA[LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.]]></description>
+    <link>https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!]]></title>
@@ -87,15 +96,6 @@
     <description><![CDATA[Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.]]></description>
     <link>https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Jensen Huang didn’t show confidence in his successor, report says]]></title>
-    <description><![CDATA[Huang described Kress as a "deer in the headlights" during a meeting in summer.]]></description>
-    <link>https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
