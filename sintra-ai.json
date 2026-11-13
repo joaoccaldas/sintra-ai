@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T19:26:33.437906+00:00",
+  "generatedAt": "2026-11-13T20:17:11.342089+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "49f0b0840b1ef26af09f29c86adc67fccd4a404dbae10e2dbf51e8f46347b640",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation",
+      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "publishedAt": "2026-11-13T19:37:57+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "a5cbeaaf0b4df56fac42b355269cd9f2ddbe11ceac7d918be68f354b6e800abd",
       "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
@@ -130,16 +140,6 @@
       "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil",
       "summary": "Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.",
       "publishedAt": "2026-11-13T12:52:19+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a17f152d477fce8ebb46c8456a53ac8f1de4def84155cf5cc855056eb7abb1fe",
-      "title": "Jensen Huang didn’t show confidence in his successor, report says",
-      "url": "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says",
-      "summary": "Huang described Kress as a \"deer in the headlights\" during a meeting in summer.",
-      "publishedAt": "2026-11-13T12:28:23+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
