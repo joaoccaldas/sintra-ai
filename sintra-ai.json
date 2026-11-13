@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T14:24:45.416386+00:00",
+  "generatedAt": "2026-11-13T14:57:38.345297+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "4d1482722545d06dd16949fb9f0d6a00279824eb0a4d10d62d4d06ff33dcea1a",
+      "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
+      "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams",
+      "summary": "ElevenAI is a new meeting notetaker and dictation app aimed at teams and enterprises.",
+      "publishedAt": "2026-11-13T14:44:48+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6841e619fcd7e8d9370258a227590a244c9afe604f7f173c18d14806c323db86",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "summary": "",
+      "publishedAt": "2026-11-13T14:05:22+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
     {
       "id": "ad83f8c3766bbc41d223258ee060fcca11ca2affb31d1c6dc1c6ed6c9735549b",
       "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
@@ -130,16 +150,6 @@
       "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
       "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
       "publishedAt": "2026-11-12T21:35:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fb1ddd2a5ff741f61902c4b303837e649cc03832fef1b5ee38a4643a97c20a99",
-      "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-      "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending",
-      "summary": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
-      "publishedAt": "2026-11-12T21:27:10+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -478,16 +488,6 @@
       "id": "5f3963726dbe36e6ccf9753b6647e286ea2d25f750c2d86a74f9ab28836d655f",
       "title": "Decision Models in Hugging Face",
       "url": "https://huggingface.co/blog/decision",
-      "summary": "",
-      "publishedAt": "2026-11-10T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "cb93d68b445c05b0e3dc3bb4de519fde744154508905db1326dcde436121a9ef",
-      "title": "Pay for Hugging Face Hub with your Google Cloud Account",
-      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
       "summary": "",
       "publishedAt": "2026-11-10T00:00:00+00:00",
       "source": "Hugging Face",
