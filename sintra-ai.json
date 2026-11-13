@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T18:16:14.033673+00:00",
+  "generatedAt": "2026-11-13T18:26:05.799932+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,16 @@
       "publishedAt": "2026-11-13T18:00:39+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "12990af15e181ab96cfcd59af6eb8fe359a02784c42db964df77ea8b1b569aeb",
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "summary": "84 points · 6 comments on Hacker News",
+      "publishedAt": "2026-11-13T17:30:10+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -58,7 +68,7 @@
       "id": "0d4c924e64373813139c6f4102115e56791fa42cc7712f94c4fd2cec8448b7d2",
       "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
       "url": "https://text.npr.org/nx-s1-6029408",
-      "summary": "Comments",
+      "summary": "89 points · 85 comments on Hacker News",
       "publishedAt": "2026-11-13T15:29:10+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +78,7 @@
       "id": "b53103b0ebf97fd23bdabe1e1e6db62b747e0c9753382cd34a5936825a08c8c8",
       "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
       "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-      "summary": "Comments",
+      "summary": "126 points · 86 comments on Hacker News",
       "publishedAt": "2026-11-13T15:08:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +138,7 @@
       "id": "3cdc276fd6a522c5520701c3d49dfcb7b4e6a1e976282d8e87808b19115013de",
       "title": "AI Is Destroying the Trust Between Writers and Readers",
       "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391",
-      "summary": "Comments",
+      "summary": "224 points · 119 comments on Hacker News",
       "publishedAt": "2026-11-13T11:13:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "1a09f77a4836fe9e9b63e1846c4241089e4b286c926d0a423e70fba9e18d45ac",
       "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
       "url": "https://status.claude.com/incidents/nn11wk485zfn",
-      "summary": "Comments",
+      "summary": "449 points · 362 comments on Hacker News",
       "publishedAt": "2026-11-13T10:18:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,18 +158,8 @@
       "id": "45361d0c5473ca0e476a76fbe9a0f92f0d51644399258b33c95a23295d6ebd19",
       "title": "Is there a 'right amount' of AI?",
       "url": "https://coyotetracks.org/blog/right-amount-of-ai",
-      "summary": "35 points · 61 comments on Hacker News",
+      "summary": "35 points · 62 comments on Hacker News",
       "publishedAt": "2026-11-13T09:27:05+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "27b7b102009ddbefbba108fe097c5b80777bc5b50c0adac8be04df24690d45ca",
-      "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
-      "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-      "summary": "86 points · 28 comments on Hacker News",
-      "publishedAt": "2026-11-13T00:38:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -547,7 +547,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-13T16:40:59.216078+00:00",
+    "generatedAt": "2026-11-13T18:22:28.891703+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1622,11 +1622,15 @@
           {
             "date": "2026-11-12",
             "value": 6.2241
+          },
+          {
+            "date": "2026-11-13",
+            "value": 6.2595
           }
         ],
-        "value": 6.2241,
-        "period": "2026-11-12",
-        "retrievedAt": "2026-11-13T12:22:24.446113+00:00",
+        "value": 6.2595,
+        "period": "2026-11-13",
+        "retrievedAt": "2026-11-13T18:22:28.891665+00:00",
         "stale": false
       },
       {
@@ -2702,11 +2706,15 @@
           {
             "date": "2026-11-12",
             "value": 11.0628
+          },
+          {
+            "date": "2026-11-13",
+            "value": 11.1075
           }
         ],
-        "value": 11.0628,
-        "period": "2026-11-12",
-        "retrievedAt": "2026-11-13T12:22:24.446143+00:00",
+        "value": 11.1075,
+        "period": "2026-11-13",
+        "retrievedAt": "2026-11-13T18:22:28.891696+00:00",
         "stale": false
       },
       {
@@ -3782,11 +3790,15 @@
           {
             "date": "2026-11-12",
             "value": 1.1081
+          },
+          {
+            "date": "2026-11-13",
+            "value": 1.1052
           }
         ],
-        "value": 1.1081,
-        "period": "2026-11-12",
-        "retrievedAt": "2026-11-13T12:22:24.446149+00:00",
+        "value": 1.1052,
+        "period": "2026-11-13",
+        "retrievedAt": "2026-11-13T18:22:28.891703+00:00",
         "stale": false
       },
       {
