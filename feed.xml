@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 14:30:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 15:01:15 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[ElevenLabs’ new app combines meeting note-taking and dictation for teams]]></title>
+    <description><![CDATA[ElevenAI is a new meeting notetaker and dictation app aimed at teams and enterprises.]]></description>
+    <link>https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/ggml-org/llama-cpp-v1</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/ggml-org/llama-cpp-v1</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Israel’s VCs see opportunity for challengers in Nvidia’s turmoil]]></title>
@@ -60,15 +78,6 @@
     <description><![CDATA[Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.]]></description>
     <link>https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nebius tests the neocloud playbook with $40 billion in planned spending]]></title>
-    <description><![CDATA[Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.]]></description>
-    <link>https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/children-first-declaration</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini Decisions API]]></title>
-    <description><![CDATA[Gemini Decisions API Google join Jev and OpenAI in the decision model category with "Gemini Decision 1". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's ter]]></description>
-    <link>https://simonwillison.net/2026/Nov/11/gemini-decisions-api</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/gemini-decisions-api</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
