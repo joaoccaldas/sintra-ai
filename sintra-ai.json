@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T10:56:08.590145+00:00",
+  "generatedAt": "2026-11-13T11:23:54.017526+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "1a09f77a4836fe9e9b63e1846c4241089e4b286c926d0a423e70fba9e18d45ac",
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T10:18:13+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "27b7b102009ddbefbba108fe097c5b80777bc5b50c0adac8be04df24690d45ca",
       "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
       "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-      "summary": "80 points · 24 comments on Hacker News",
+      "summary": "81 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-13T00:38:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +88,7 @@
       "id": "076934ef461be2b954dba572893fb5f40ae22001098ff8f6135cabaaf477c54b",
       "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
       "url": "https://unemploymentlabs.com/checkpoint-forensics",
-      "summary": "299 points · 108 comments on Hacker News",
+      "summary": "305 points · 111 comments on Hacker News",
       "publishedAt": "2026-11-12T21:56:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +118,7 @@
       "id": "b1c7febb39e1226c18254980b3de8e7ed8147fc8094c892677a1935c7e45cc02",
       "title": "AI is turning Apple's app review process into a nightmare for synth developers",
       "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
-      "summary": "174 points · 192 comments on Hacker News",
+      "summary": "177 points · 201 comments on Hacker News",
       "publishedAt": "2026-11-12T21:09:49+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,16 +172,6 @@
       "publishedAt": "2026-11-12T19:07:35+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9f652a2c4d20a371de9dbfcaa747971bb4bb46763c385e01d8ff66240f0a494b",
-      "title": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
-      "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
-      "summary": "Comments",
-      "publishedAt": "2026-11-12T18:15:48+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
