@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T17:25:40.485070+00:00",
+  "generatedAt": "2026-11-13T18:16:14.033673+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "cdc8eef67bc55a0d0fa5ca86f75a39576cb4cd55b8ad20129c59ea60f80062cd",
+      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "summary": "",
+      "publishedAt": "2026-11-13T18:00:39+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
     {
       "id": "96c7f67bef86f8316048a87fd511efdf23e6f81e02406769c1ce381b73c81b1f",
       "title": "XYBench: Helping with the problem behind the question",
@@ -432,16 +442,6 @@
       "publishedAt": "2026-11-11T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "11568aa8dfcf9a3c07504fe25196e1495017d378dc1ddce0dd1b3a34d4b9b5b8",
-      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-      "url": "https://huggingface.co/blog/token-pooling",
-      "summary": "",
-      "publishedAt": "2026-11-11T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
