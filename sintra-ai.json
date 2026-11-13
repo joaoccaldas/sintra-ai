@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T11:56:23.251612+00:00",
+  "generatedAt": "2026-11-13T12:23:59.801982+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -38,7 +38,7 @@
       "id": "d3a8f79ced3bc4687901d695680021b2868f480ede5bdff44d0be61fed65cbff",
       "title": "Why You Should Expect an AI Crash",
       "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
-      "summary": "95 points · 79 comments on Hacker News",
+      "summary": "96 points · 80 comments on Hacker News",
       "publishedAt": "2026-11-12T23:08:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +88,7 @@
       "id": "076934ef461be2b954dba572893fb5f40ae22001098ff8f6135cabaaf477c54b",
       "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
       "url": "https://unemploymentlabs.com/checkpoint-forensics",
-      "summary": "305 points · 111 comments on Hacker News",
+      "summary": "307 points · 114 comments on Hacker News",
       "publishedAt": "2026-11-12T21:56:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +118,7 @@
       "id": "b1c7febb39e1226c18254980b3de8e7ed8147fc8094c892677a1935c7e45cc02",
       "title": "AI is turning Apple's app review process into a nightmare for synth developers",
       "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
-      "summary": "177 points · 201 comments on Hacker News",
+      "summary": "181 points · 205 comments on Hacker News",
       "publishedAt": "2026-11-12T21:09:49+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -465,6 +465,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "1972a6107d7cc016e042577c535c6d7718b92a32634391969262b9d5dec605c7",
+      "title": "Opening the datasets behind our AI weather models",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models",
+      "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+      "publishedAt": "2026-11-10T11:13:04+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "5f3963726dbe36e6ccf9753b6647e286ea2d25f750c2d86a74f9ab28836d655f",
       "title": "Decision Models in Hugging Face",
       "url": "https://huggingface.co/blog/decision",
@@ -533,21 +543,11 @@
       "source": "MIT Technology Review",
       "category": "Press",
       "color": "#5B48D9"
-    },
-    {
-      "id": "1750855042e8ceec185ecc41375648d063f395028a9c6496aadc44e5c1df3652",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
-      "summary": "",
-      "publishedAt": "2026-11-05T17:05:16+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
     }
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-12T05:13:07.871151+00:00",
+    "generatedAt": "2026-11-13T12:22:24.446149+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1618,12 +1618,16 @@
           {
             "date": "2026-11-11",
             "value": 6.1827
+          },
+          {
+            "date": "2026-11-12",
+            "value": 6.2241
           }
         ],
-        "value": 6.1827,
-        "period": "2026-11-11",
-        "retrievedAt": "2026-11-12T05:13:07.871120+00:00",
-        "stale": true
+        "value": 6.2241,
+        "period": "2026-11-12",
+        "retrievedAt": "2026-11-13T12:22:24.446113+00:00",
+        "stale": false
       },
       {
         "id": "EUR-SEK",
@@ -2694,12 +2698,16 @@
           {
             "date": "2026-11-11",
             "value": 11.051
+          },
+          {
+            "date": "2026-11-12",
+            "value": 11.0628
           }
         ],
-        "value": 11.051,
-        "period": "2026-11-11",
-        "retrievedAt": "2026-11-12T05:13:07.871144+00:00",
-        "stale": true
+        "value": 11.0628,
+        "period": "2026-11-12",
+        "retrievedAt": "2026-11-13T12:22:24.446143+00:00",
+        "stale": false
       },
       {
         "id": "EUR-USD",
@@ -3770,12 +3778,16 @@
           {
             "date": "2026-11-11",
             "value": 1.1127
+          },
+          {
+            "date": "2026-11-12",
+            "value": 1.1081
           }
         ],
-        "value": 1.1127,
-        "period": "2026-11-11",
-        "retrievedAt": "2026-11-12T05:13:07.871151+00:00",
-        "stale": true
+        "value": 1.1081,
+        "period": "2026-11-12",
+        "retrievedAt": "2026-11-13T12:22:24.446149+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
