@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T21:17:43.617965+00:00",
+  "generatedAt": "2026-11-13T21:27:03.531217+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,26 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "cdfd26896257823e516e31a31ded355e64b3ee9baf2a51d7ca408f25f935b929",
+      "title": "All US airports are currently ground stopped",
+      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T21:06:52+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5f85a3f54a95f92ed52611360e4d901e1127ec215b1d7e90edc4c977e2ec600c",
+      "title": "No AI Slop: A Manifesto",
+      "url": "https://www.slopmanifesto.com/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T19:51:56+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "49f0b0840b1ef26af09f29c86adc67fccd4a404dbae10e2dbf51e8f46347b640",
       "title": "AI agent startup LangChain hits $3B valuation",
       "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation",
@@ -22,6 +42,16 @@
       "publishedAt": "2026-11-13T19:37:57+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b6c6cdb45a036bcc244f5430cece78eb71a573e5f03137e29c5a8a214bb0edfc",
+      "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T19:24:47+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -38,8 +68,18 @@
       "id": "579aa129bfed87fd3cd5a70e8bd7a3ec49d850a6e47d92a2028af0191cda8403",
       "title": "The avalanche that hit math is coming for AI development",
       "url": "https://www.dwarkesh.com/p/rsi",
-      "summary": "51 points · 77 comments on Hacker News",
+      "summary": "56 points · 94 comments on Hacker News",
       "publishedAt": "2026-11-13T18:39:42+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "4209f97810dbc460849df3bacfd8adf1bae462fbc77d28e0c883d7210fe079e3",
+      "title": "Are we just going to ignore that books are destroyed for AI?",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why",
+      "summary": "34 points · 35 comments on Hacker News",
+      "publishedAt": "2026-11-13T18:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -95,26 +135,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "0d4c924e64373813139c6f4102115e56791fa42cc7712f94c4fd2cec8448b7d2",
-      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
-      "url": "https://text.npr.org/nx-s1-6029408",
-      "summary": "Comments",
-      "publishedAt": "2026-11-13T15:29:10+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b53103b0ebf97fd23bdabe1e1e6db62b747e0c9753382cd34a5936825a08c8c8",
-      "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
-      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-      "summary": "138 points · 114 comments on Hacker News",
-      "publishedAt": "2026-11-13T15:08:44+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663",
       "title": "Introducing ChatGPT Wallet",
       "url": "https://openai.com/index/introducing-chatgpt-wallet",
@@ -135,16 +155,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "8478cabc703f50290280080c09c987e1c36e27966814cd6dec4819eec1ca1e7c",
-      "title": "Amodei Says AI Will Cure Cancer in a Decade. Doctors Are Skeptical",
-      "url": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
-      "summary": "31 points · 68 comments on Hacker News",
-      "publishedAt": "2026-11-13T14:34:13+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6841e619fcd7e8d9370258a227590a244c9afe604f7f173c18d14806c323db86",
       "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
       "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
@@ -162,16 +172,6 @@
       "publishedAt": "2026-11-13T12:52:19+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3cdc276fd6a522c5520701c3d49dfcb7b4e6a1e976282d8e87808b19115013de",
-      "title": "AI is destroying the trust between writers and readers",
-      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391",
-      "summary": "278 points · 168 comments on Hacker News",
-      "publishedAt": "2026-11-13T11:13:46+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
