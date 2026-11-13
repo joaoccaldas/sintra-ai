@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T13:57:17.917297+00:00",
+  "generatedAt": "2026-11-13T14:24:45.416386+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -35,6 +35,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "3cdc276fd6a522c5520701c3d49dfcb7b4e6a1e976282d8e87808b19115013de",
+      "title": "AI Is Destroying the Trust Between Writers and Readers",
+      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T11:13:46+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "1a09f77a4836fe9e9b63e1846c4241089e4b286c926d0a423e70fba9e18d45ac",
       "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
       "url": "https://status.claude.com/incidents/nn11wk485zfn",
@@ -45,10 +55,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "45361d0c5473ca0e476a76fbe9a0f92f0d51644399258b33c95a23295d6ebd19",
+      "title": "Is there a 'right amount' of AI?",
+      "url": "https://coyotetracks.org/blog/right-amount-of-ai",
+      "summary": "33 points · 46 comments on Hacker News",
+      "publishedAt": "2026-11-13T09:27:05+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "27b7b102009ddbefbba108fe097c5b80777bc5b50c0adac8be04df24690d45ca",
       "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
       "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-      "summary": "81 points · 24 comments on Hacker News",
+      "summary": "83 points · 25 comments on Hacker News",
       "publishedAt": "2026-11-13T00:38:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -105,16 +125,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "076934ef461be2b954dba572893fb5f40ae22001098ff8f6135cabaaf477c54b",
-      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
-      "url": "https://unemploymentlabs.com/checkpoint-forensics",
-      "summary": "315 points · 119 comments on Hacker News",
-      "publishedAt": "2026-11-12T21:56:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "104f40efd6071a516b0a97bd04daf5503b3c4b93f97e69c891c4c431b5a18035",
       "title": "The unfolding Jensen Huang scandal: a timeline",
       "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
@@ -132,16 +142,6 @@
       "publishedAt": "2026-11-12T21:27:10+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b1c7febb39e1226c18254980b3de8e7ed8147fc8094c892677a1935c7e45cc02",
-      "title": "AI is turning Apple's app review process into a nightmare for synth developers",
-      "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
-      "summary": "184 points · 206 comments on Hacker News",
-      "publishedAt": "2026-11-12T21:09:49+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
