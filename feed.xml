@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 12:29:21 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:59:23 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Israel’s VCs see opportunity for challengers in Nvidia’s turmoil]]></title>
+    <description><![CDATA[Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.]]></description>
+    <link>https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Jensen Huang didn’t show confidence in his successor, report says]]></title>
+    <description><![CDATA[Huang described Kress as a "deer in the headlights" during a meeting in summer.]]></description>
+    <link>https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[llm-gemini 0.37]]></title>
@@ -56,15 +74,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Jensen Huang was having a third affair, Reuters reports]]></title>
-    <description><![CDATA[Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia.]]></description>
-    <link>https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility]]></title>
     <description><![CDATA[Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while a]]></description>
     <link>https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking</link>
@@ -80,15 +89,6 @@
     <guid isPermaLink="true">https://openai.com/business/customer-stories/amplitude</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google’s latest Search upgrade promises better answers to your most complicated questions]]></title>
-    <description><![CDATA[Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.]]></description>
-    <link>https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
