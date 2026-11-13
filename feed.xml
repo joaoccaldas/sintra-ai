@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 16:45:33 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 18:16:45 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Build a Robot Pick-and-Place Simulation with SimReady Assets]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[XYBench: Helping with the problem behind the question]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/allenai/xybench</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/allenai/xybench</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[ChatGPT’s new Wallet lets AI agents shop and check out for you]]></title>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://openai.com/business/customer-stories/holidays-extras-codex</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gilbert + Tobin rethinks the business of law with AI]]></title>
-    <description><![CDATA[A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.]]></description>
-    <link>https://openai.com/index/gilbert-tobin-sam-nickless</link>
-    <guid isPermaLink="true">https://openai.com/index/gilbert-tobin-sam-nickless</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The Definitive Fine-Tuning Guide for 3D Generation Models]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/3d-lora-finetuning</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/3d-lora-finetuning</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
   </item>
 
   <item>
