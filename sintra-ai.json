@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T16:25:19.897488+00:00",
+  "generatedAt": "2026-11-13T17:25:40.485070+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "96c7f67bef86f8316048a87fd511efdf23e6f81e02406769c1ce381b73c81b1f",
+      "title": "XYBench: Helping with the problem behind the question",
+      "url": "https://huggingface.co/blog/allenai/xybench",
+      "summary": "",
+      "publishedAt": "2026-11-13T17:02:35+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
     {
       "id": "bbcb79fadd39dd32e9c797027b308d5c2c485c48e2443c45c36a1c1cd441ee24",
       "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
@@ -32,6 +42,16 @@
       "publishedAt": "2026-11-13T15:58:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0d4c924e64373813139c6f4102115e56791fa42cc7712f94c4fd2cec8448b7d2",
+      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+      "url": "https://text.npr.org/nx-s1-6029408",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T15:29:10+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -118,7 +138,7 @@
       "id": "45361d0c5473ca0e476a76fbe9a0f92f0d51644399258b33c95a23295d6ebd19",
       "title": "Is there a 'right amount' of AI?",
       "url": "https://coyotetracks.org/blog/right-amount-of-ai",
-      "summary": "35 points · 60 comments on Hacker News",
+      "summary": "35 points · 61 comments on Hacker News",
       "publishedAt": "2026-11-13T09:27:05+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,18 +148,8 @@
       "id": "27b7b102009ddbefbba108fe097c5b80777bc5b50c0adac8be04df24690d45ca",
       "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
       "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-      "summary": "86 points · 26 comments on Hacker News",
+      "summary": "86 points · 28 comments on Hacker News",
       "publishedAt": "2026-11-13T00:38:41+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d3a8f79ced3bc4687901d695680021b2868f480ede5bdff44d0be61fed65cbff",
-      "title": "Why You Should Expect an AI Crash",
-      "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
-      "summary": "98 points · 83 comments on Hacker News",
-      "publishedAt": "2026-11-12T23:08:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -482,16 +492,6 @@
       "publishedAt": "2026-11-10T11:13:04+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5f3963726dbe36e6ccf9753b6647e286ea2d25f750c2d86a74f9ab28836d655f",
-      "title": "Decision Models in Hugging Face",
-      "url": "https://huggingface.co/blog/decision",
-      "summary": "",
-      "publishedAt": "2026-11-10T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
