@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T15:25:12.343618+00:00",
+  "generatedAt": "2026-11-13T16:25:19.897488+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,46 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "bbcb79fadd39dd32e9c797027b308d5c2c485c48e2443c45c36a1c1cd441ee24",
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you",
+      "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
+      "publishedAt": "2026-11-13T16:00:12+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1dcca899a4f1e51430e5807060013fe00d149f620f5af9113c50be068bc0f500",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
+      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "publishedAt": "2026-11-13T15:58:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b53103b0ebf97fd23bdabe1e1e6db62b747e0c9753382cd34a5936825a08c8c8",
+      "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T15:08:44+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663",
+      "title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "publishedAt": "2026-11-13T15:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "4d1482722545d06dd16949fb9f0d6a00279824eb0a4d10d62d4d06ff33dcea1a",
       "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
@@ -78,7 +118,7 @@
       "id": "45361d0c5473ca0e476a76fbe9a0f92f0d51644399258b33c95a23295d6ebd19",
       "title": "Is there a 'right amount' of AI?",
       "url": "https://coyotetracks.org/blog/right-amount-of-ai",
-      "summary": "35 points · 58 comments on Hacker News",
+      "summary": "35 points · 60 comments on Hacker News",
       "publishedAt": "2026-11-13T09:27:05+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +128,7 @@
       "id": "27b7b102009ddbefbba108fe097c5b80777bc5b50c0adac8be04df24690d45ca",
       "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
       "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-      "summary": "84 points · 26 comments on Hacker News",
+      "summary": "86 points · 26 comments on Hacker News",
       "publishedAt": "2026-11-13T00:38:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -100,16 +140,6 @@
       "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
       "summary": "98 points · 83 comments on Hacker News",
       "publishedAt": "2026-11-12T23:08:31+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4e10e32134f86500f7ca5d42b6cf8b3a1735666c38b8695ba9dd546cdf8a9537",
-      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
-      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-      "summary": "Comments",
-      "publishedAt": "2026-11-12T23:06:17+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -130,26 +160,6 @@
       "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump",
       "summary": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
       "publishedAt": "2026-11-12T22:42:51+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ab23a7fa21e24fb3c24226790bb08f711e3c8669c84a5666d3351f7cbde7aa1f",
-      "title": "Muse can now place calls to US businesses — if you pay",
-      "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay",
-      "summary": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free.",
-      "publishedAt": "2026-11-12T22:22:28+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "104f40efd6071a516b0a97bd04daf5503b3c4b93f97e69c891c4c431b5a18035",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
-      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "publishedAt": "2026-11-12T21:35:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -341,16 +351,6 @@
       "summary": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture.",
       "publishedAt": "2026-11-11T09:00:00+00:00",
       "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ac94b61a25ade5edbf713f0897cc9ad6ba8f24621b9aed0d512136947920d1f0",
-      "title": "ChatGPT Plus for veterans and servicemembers",
-      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
-      "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
-      "publishedAt": "2026-11-11T08:00:00+00:00",
-      "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
     },
@@ -547,7 +547,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-13T12:22:24.446149+00:00",
+    "generatedAt": "2026-11-13T16:40:59.216078+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -3850,8 +3850,8 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.562510+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.917161+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3914,8 +3914,8 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.562538+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.917181+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -3978,8 +3978,8 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.562546+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.917188+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4042,8 +4042,8 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.562552+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.917193+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4106,8 +4106,8 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.560409+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:59.216045+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4170,8 +4170,8 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.560427+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:59.216067+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4234,8 +4234,8 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.560434+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:59.216073+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4298,8 +4298,8 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.560439+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:59.216078+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4362,8 +4362,8 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.558192+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.904397+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4426,8 +4426,8 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.558213+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.904416+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4490,8 +4490,8 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.558221+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.904423+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4554,8 +4554,8 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-11T16:13:15.558226+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-13T16:40:58.904428+00:00",
+        "stale": false
       }
     ]
   }
