@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T20:17:11.342089+00:00",
+  "generatedAt": "2026-11-13T20:26:36.215428+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -32,6 +32,16 @@
       "publishedAt": "2026-11-13T18:40:30+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "579aa129bfed87fd3cd5a70e8bd7a3ec49d850a6e47d92a2028af0191cda8403",
+      "title": "The avalanche that hit math is coming for AI development",
+      "url": "https://www.dwarkesh.com/p/rsi",
+      "summary": "51 points · 77 comments on Hacker News",
+      "publishedAt": "2026-11-13T18:39:42+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -98,7 +108,7 @@
       "id": "b53103b0ebf97fd23bdabe1e1e6db62b747e0c9753382cd34a5936825a08c8c8",
       "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
       "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-      "summary": "134 points · 105 comments on Hacker News",
+      "summary": "138 points · 114 comments on Hacker News",
       "publishedAt": "2026-11-13T15:08:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -125,6 +135,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "8478cabc703f50290280080c09c987e1c36e27966814cd6dec4819eec1ca1e7c",
+      "title": "Amodei Says AI Will Cure Cancer in a Decade. Doctors Are Skeptical",
+      "url": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
+      "summary": "31 points · 68 comments on Hacker News",
+      "publishedAt": "2026-11-13T14:34:13+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "6841e619fcd7e8d9370258a227590a244c9afe604f7f173c18d14806c323db86",
       "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
       "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
@@ -148,28 +168,8 @@
       "id": "3cdc276fd6a522c5520701c3d49dfcb7b4e6a1e976282d8e87808b19115013de",
       "title": "AI is destroying the trust between writers and readers",
       "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391",
-      "summary": "Comments",
+      "summary": "278 points · 168 comments on Hacker News",
       "publishedAt": "2026-11-13T11:13:46+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1a09f77a4836fe9e9b63e1846c4241089e4b286c926d0a423e70fba9e18d45ac",
-      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-      "url": "https://status.claude.com/incidents/nn11wk485zfn",
-      "summary": "Comments",
-      "publishedAt": "2026-11-13T10:18:13+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "45361d0c5473ca0e476a76fbe9a0f92f0d51644399258b33c95a23295d6ebd19",
-      "title": "Is there a 'right amount' of AI?",
-      "url": "https://coyotetracks.org/blog/right-amount-of-ai",
-      "summary": "36 points · 62 comments on Hacker News",
-      "publishedAt": "2026-11-13T09:27:05+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
