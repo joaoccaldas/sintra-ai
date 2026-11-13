@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 07:55:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:26:02 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -74,6 +74,15 @@
   </item>
 
   <item>
+    <title><![CDATA[How Amplitude ships product improvements in 1–2 days with OpenAI]]></title>
+    <description><![CDATA[Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.]]></description>
+    <link>https://openai.com/business/customer-stories/amplitude</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/amplitude</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[Google’s latest Search upgrade promises better answers to your most complicated questions]]></title>
     <description><![CDATA[Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.]]></description>
     <link>https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions</link>
@@ -89,6 +98,42 @@
     <guid isPermaLink="true">https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Introducing Gemini 4 Hydrogen]]></title>
+    <description><![CDATA[Google DeepMind — Labs]]></description>
+    <link>https://deepmind.google/blog/introducing-gemini-4-hydrogen</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/introducing-gemini-4-hydrogen</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google Search gets a major upgrade with Gemini 4 Hydrogen]]></title>
+    <description><![CDATA[We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.]]></description>
+    <link>https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade</link>
+    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Gondola doubles revenue as its team builds more with Codex]]></title>
+    <description><![CDATA[Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.]]></description>
+    <link>https://openai.com/business/customer-stories/gondola</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/gondola</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Holiday Extras is rethinking what it can build with Codex]]></title>
+    <description><![CDATA[With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.]]></description>
+    <link>https://openai.com/business/customer-stories/holidays-extras-codex</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/holidays-extras-codex</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -110,64 +155,19 @@
   </item>
 
   <item>
+    <title><![CDATA[Supporting research on AI and children’s safety]]></title>
+    <description><![CDATA[OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.]]></description>
+    <link>https://openai.com/index/children-first-declaration</link>
+    <guid isPermaLink="true">https://openai.com/index/children-first-declaration</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[Gemini Decisions API]]></title>
     <description><![CDATA[Gemini Decisions API Google join Jev and OpenAI in the decision model category with "Gemini Decision 1". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's ter]]></description>
     <link>https://simonwillison.net/2026/Nov/11/gemini-decisions-api</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/gemini-decisions-api</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[aws-emulator]]></title>
-    <description><![CDATA[aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three week]]></description>
-    <link>https://simonwillison.net/2026/Nov/11/aws-emulator</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/aws-emulator</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Browse tools.simonwillison.net by tag]]></title>
-    <description><![CDATA[Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the]]></description>
-    <link>https://simonwillison.net/2026/Nov/11/tools-tags</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/tools-tags</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gemini Decisions API: Fast, calibrated multimodal decisions]]></title>
-    <description><![CDATA[Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.]]></description>
-    <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm 0.37.2]]></title>
-    <description><![CDATA[Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with O]]></description>
-    <link>https://simonwillison.net/2026/Nov/11/llm</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/llm</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.]]></title>
-    <description><![CDATA[Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.]]></description>
-    <link>https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic's IPO roadshow video]]></title>
-    <description><![CDATA[Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on "Approach to compute" with co-founder Tom Brown is particularly]]></description>
-    <link>https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow</guid>
     <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>

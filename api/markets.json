@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-13T07:55:38.571Z",
+  "resolvedAt": "2026-11-13T08:26:00.763Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -1051,7 +1051,7 @@
       ],
       "value": 1.1081,
       "period": "2026-11-12",
-      "retrievedAt": "2026-11-13T07:55:38.571Z",
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -2104,7 +2104,7 @@
       ],
       "value": 11.0628,
       "period": "2026-11-12",
-      "retrievedAt": "2026-11-13T07:55:38.571Z",
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3157,7 +3157,7 @@
       ],
       "value": 6.2241,
       "period": "2026-11-12",
-      "retrievedAt": "2026-11-13T07:55:38.571Z",
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3222,9 +3222,9 @@
       ],
       "value": 1.54316373266217,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.562546+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-BRA",
@@ -3287,9 +3287,9 @@
       ],
       "value": 2.2857464902475,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.562510+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -3352,9 +3352,9 @@
       ],
       "value": 2.16138195623856,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.562552+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3417,9 +3417,9 @@
       ],
       "value": 1.4110724231835,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.562538+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "FP.CPI.TOTL.ZG-SWE",
@@ -3482,9 +3482,9 @@
       ],
       "value": 0.679015259300199,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.560434+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "FP.CPI.TOTL.ZG-BRA",
@@ -3547,9 +3547,9 @@
       ],
       "value": 5.01675279604836,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.560409+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "FP.CPI.TOTL.ZG-USA",
@@ -3612,9 +3612,9 @@
       ],
       "value": 2.94952520485207,
       "period": "2024-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.560439+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "FP.CPI.TOTL.ZG-EMU",
@@ -3677,9 +3677,9 @@
       ],
       "value": 2.46605755272817,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.560427+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "SL.UEM.TOTL.ZS-SWE",
@@ -3742,9 +3742,9 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.558221+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "SL.UEM.TOTL.ZS-BRA",
@@ -3807,9 +3807,9 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.558192+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "SL.UEM.TOTL.ZS-USA",
@@ -3872,9 +3872,9 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.558226+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "SL.UEM.TOTL.ZS-EMU",
@@ -3937,9 +3937,9 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-11T16:13:15.558213+00:00",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-13T08:26:00.763Z",
+      "stale": false,
+      "delivery": "public-provider"
     }
   ]
 }
