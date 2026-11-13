@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T12:23:59.801982+00:00",
+  "generatedAt": "2026-11-13T12:56:46.868982+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "ad83f8c3766bbc41d223258ee060fcca11ca2affb31d1c6dc1c6ed6c9735549b",
+      "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
+      "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil",
+      "summary": "Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.",
+      "publishedAt": "2026-11-13T12:52:19+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a17f152d477fce8ebb46c8456a53ac8f1de4def84155cf5cc855056eb7abb1fe",
+      "title": "Jensen Huang didn’t show confidence in his successor, report says",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says",
+      "summary": "Huang described Kress as a \"deer in the headlights\" during a meeting in summer.",
+      "publishedAt": "2026-11-13T12:28:23+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "1a09f77a4836fe9e9b63e1846c4241089e4b286c926d0a423e70fba9e18d45ac",
       "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
@@ -125,16 +145,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "e699e9bae2542438eaf0937ed9f9262ef036409fde057bc12668a6d35e36efae",
-      "title": "Jensen Huang was having a third affair, Reuters reports",
-      "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports",
-      "summary": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia.",
-      "publishedAt": "2026-11-12T20:26:47+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "0b5401a8842f0b62f62615adee47a5b1be36295b3cdce9a912ca0de9ecc8fbad",
       "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
       "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking",
@@ -152,16 +162,6 @@
       "publishedAt": "2026-11-12T20:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "341363dd4020e2e543dffce3faf601821fe92b245157974062666feb466d250e",
-      "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
-      "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions",
-      "summary": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
-      "publishedAt": "2026-11-12T19:27:45+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
