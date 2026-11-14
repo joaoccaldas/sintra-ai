@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T02:45:23.404449+00:00",
+  "generatedAt": "2026-11-14T03:45:36.717500+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "8f4b2632f43363d7fda4c9360f691ce085164eac7403aa5325d0bf41766b5c13",
+      "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "summary": "Comments",
+      "publishedAt": "2026-11-14T02:52:59+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "845cc78cbca545d7f72d64584bf33df20e70793922bdea8bb659ee1ffcc0ae27",
       "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
@@ -78,7 +88,7 @@
       "id": "5f85a3f54a95f92ed52611360e4d901e1127ec215b1d7e90edc4c977e2ec600c",
       "title": "No AI Slop: A Manifesto",
       "url": "https://www.slopmanifesto.com/",
-      "summary": "185 points · 106 comments on Hacker News",
+      "summary": "189 points · 108 comments on Hacker News",
       "publishedAt": "2026-11-13T19:51:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -112,16 +122,6 @@
       "publishedAt": "2026-11-13T18:40:30+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "579aa129bfed87fd3cd5a70e8bd7a3ec49d850a6e47d92a2028af0191cda8403",
-      "title": "The avalanche that hit math is coming for AI development",
-      "url": "https://www.dwarkesh.com/p/rsi",
-      "summary": "60 points · 101 comments on Hacker News",
-      "publishedAt": "2026-11-13T18:39:42+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
