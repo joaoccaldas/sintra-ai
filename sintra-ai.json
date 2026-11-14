@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T15:50:47.258813+00:00",
+  "generatedAt": "2026-11-14T18:23:44.683921+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "238432e278b3a0376a6fc6ad25e68199e1e2a7031f5bf528d76de0bcaabf80ec",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "publishedAt": "2026-11-14T17:30:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "299cfd655b5df2e69b8ede045143ce3c41e2a7526bf75d29e28b082199bf46f6",
+      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit",
+      "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+      "publishedAt": "2026-11-14T16:34:15+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "529d65553fb48fbffe328b2665628eafc332e4e64d8680bba07bc71ae5c2c324",
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
@@ -215,16 +235,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1dcca899a4f1e51430e5807060013fe00d149f620f5af9113c50be068bc0f500",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
-      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "publishedAt": "2026-11-13T15:58:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663",
       "title": "Introducing ChatGPT Wallet",
       "url": "https://openai.com/index/introducing-chatgpt-wallet",
@@ -232,16 +242,6 @@
       "publishedAt": "2026-11-13T15:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4d1482722545d06dd16949fb9f0d6a00279824eb0a4d10d62d4d06ff33dcea1a",
-      "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
-      "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams",
-      "summary": "ElevenAI is a new meeting notetaker and dictation app aimed at teams and enterprises.",
-      "publishedAt": "2026-11-13T14:44:48+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -3863,7 +3863,7 @@
         "value": 2.2857464902475,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.917161+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3927,7 +3927,7 @@
         "value": 1.4110724231835,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.917181+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -3991,7 +3991,7 @@
         "value": 1.54316373266217,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.917188+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4055,7 +4055,7 @@
         "value": 2.16138195623856,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.917193+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4119,7 +4119,7 @@
         "value": 5.01675279604836,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:59.216045+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4183,7 +4183,7 @@
         "value": 2.46605755272817,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:59.216067+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4247,7 +4247,7 @@
         "value": 0.679015259300199,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:59.216073+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4311,7 +4311,7 @@
         "value": 2.94952520485207,
         "period": "2024-01-01",
         "retrievedAt": "2026-11-13T16:40:59.216078+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4375,7 +4375,7 @@
         "value": 5.97,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.904397+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4439,7 +4439,7 @@
         "value": 6.28355946264135,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.904416+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4503,7 +4503,7 @@
         "value": 8.694,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.904423+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4567,7 +4567,7 @@
         "value": 4.198,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-13T16:40:58.904428+00:00",
-        "stale": false
+        "stale": true
       }
     ]
   }
