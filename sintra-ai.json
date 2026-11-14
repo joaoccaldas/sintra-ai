@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T22:27:18.918940+00:00",
+  "generatedAt": "2026-11-14T02:45:23.404449+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,56 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "845cc78cbca545d7f72d64584bf33df20e70793922bdea8bb659ee1ffcc0ae27",
+      "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
+      "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
+      "summary": "Comments",
+      "publishedAt": "2026-11-14T00:28:11+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "2053de078f05bd0a49e004a6f8c9f68c0154a94b7ea14d0b9adeb94b91e8f334",
+      "title": "datasette-cluster-map 0.19",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map",
+      "summary": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a ma",
+      "publishedAt": "2026-11-13T23:02:45+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9d694fa95af0cfaecf5267b73e7d6230221ffb467ae88ba047b8eeb9ff850562",
+      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
+      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+      "publishedAt": "2026-11-13T22:43:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a840b1604a3a5e19683a3aaca3bf6ae147c54af5ac713ce71b1c1f85e0148471",
+      "title": "datasette-leaflet 0.3",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet",
+      "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from Ope",
+      "publishedAt": "2026-11-13T22:30:54+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "282df205597a8a736fd0747016d47bdb637c885cfca072ab63a5b7caab6cbccc",
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "url": "https://orcasairband.com/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-13T22:04:24+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "cdfd26896257823e516e31a31ded355e64b3ee9baf2a51d7ca408f25f935b929",
       "title": "All US airports are currently ground stopped",
       "url": "https://twitter.com/flightradar24/status/2121347654714077605",
@@ -28,7 +78,7 @@
       "id": "5f85a3f54a95f92ed52611360e4d901e1127ec215b1d7e90edc4c977e2ec600c",
       "title": "No AI Slop: A Manifesto",
       "url": "https://www.slopmanifesto.com/",
-      "summary": "Comments",
+      "summary": "185 points · 106 comments on Hacker News",
       "publishedAt": "2026-11-13T19:51:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,18 +118,8 @@
       "id": "579aa129bfed87fd3cd5a70e8bd7a3ec49d850a6e47d92a2028af0191cda8403",
       "title": "The avalanche that hit math is coming for AI development",
       "url": "https://www.dwarkesh.com/p/rsi",
-      "summary": "56 points · 94 comments on Hacker News",
+      "summary": "60 points · 101 comments on Hacker News",
       "publishedAt": "2026-11-13T18:39:42+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4209f97810dbc460849df3bacfd8adf1bae462fbc77d28e0c883d7210fe079e3",
-      "title": "Are we just going to ignore that books are destroyed for AI?",
-      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why",
-      "summary": "40 points · 39 comments on Hacker News",
-      "publishedAt": "2026-11-13T18:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -92,16 +132,6 @@
       "publishedAt": "2026-11-13T18:00:39+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "12990af15e181ab96cfcd59af6eb8fe359a02784c42db964df77ea8b1b569aeb",
-      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
-      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-      "summary": "Comments",
-      "publishedAt": "2026-11-13T17:30:10+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -165,13 +195,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "ad83f8c3766bbc41d223258ee060fcca11ca2affb31d1c6dc1c6ed6c9735549b",
-      "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
-      "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil",
-      "summary": "Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.",
-      "publishedAt": "2026-11-13T12:52:19+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "a99dfdd20d85acbbb850aa77912a8df97b492b8fb6a1e7bebe1dab199cebab4f",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+      "publishedAt": "2026-11-13T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -275,16 +305,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "d7c1da8cb7dc41da688b7a9908111a63cf9fb297a134e952ad2db42224ad8dc2",
-      "title": "Supporting research on AI and children’s safety",
-      "url": "https://openai.com/index/children-first-declaration",
-      "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
-      "publishedAt": "2026-11-12T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "8cfe95d5a7efcad0553086b91dc8b748def885df6f32755ce0e3fb7af3f221c2",
       "title": "Gemini Decisions API",
       "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
@@ -325,16 +345,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "88d1ecd11797604c75de7d3d3a0062eec1f80048b291caa8608f41aa0aba8f8d",
-      "title": "llm 0.37.2",
-      "url": "https://simonwillison.net/2026/Nov/11/llm",
-      "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with O",
-      "publishedAt": "2026-11-11T17:19:52+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "3d65ccc2f5cdce6978b37fa7c64320f9c0126555eece5a35f17a2f7ec9258a94",
       "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
@@ -342,16 +352,6 @@
       "publishedAt": "2026-11-11T16:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d7414ba9c609253700f33e6d8825c94a7b86186c088976e6352ab2b37938ed42",
-      "title": "Anthropic's IPO roadshow video",
-      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow",
-      "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\" with co-founder Tom Brown is particularly",
-      "publishedAt": "2026-11-11T15:11:59+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -1631,7 +1631,7 @@
         "value": 6.2595,
         "period": "2026-11-13",
         "retrievedAt": "2026-11-13T18:22:28.891665+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-SEK",
@@ -2715,7 +2715,7 @@
         "value": 11.1075,
         "period": "2026-11-13",
         "retrievedAt": "2026-11-13T18:22:28.891696+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-USD",
@@ -3799,7 +3799,7 @@
         "value": 1.1052,
         "period": "2026-11-13",
         "retrievedAt": "2026-11-13T18:22:28.891703+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
