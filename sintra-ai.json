@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T19:42:45.961183+00:00",
+  "generatedAt": "2026-11-14T20:43:54.089320+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "d040778ff986aa03f6e7572465c335c50fde6a3434e39ecf6921d483d3f77526",
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "summary": "35 points · 54 comments on Hacker News",
+      "publishedAt": "2026-11-14T17:51:13+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "238432e278b3a0376a6fc6ad25e68199e1e2a7031f5bf528d76de0bcaabf80ec",
       "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
@@ -35,6 +45,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "3aff7a3db8a3d91b53982f42cb8a1ebaa48bbc30fbc10ca6d60bbcd240e4769d",
+      "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+      "summary": "33 points · 19 comments on Hacker News",
+      "publishedAt": "2026-11-14T15:58:57+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "529d65553fb48fbffe328b2665628eafc332e4e64d8680bba07bc71ae5c2c324",
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
       "url": "https://gitlab.com/snipedbywifi/terminactory",
@@ -48,7 +68,7 @@
       "id": "6e0cb4a87e740b3ad5e0eb13976228d75adec7b184f6534020bb876d236f5927",
       "title": "Israeli airstrike on Nasser hospital in Gaza killed surgeon and others",
       "url": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
-      "summary": "33 points · 7 comments on Hacker News",
+      "summary": "42 points · 13 comments on Hacker News",
       "publishedAt": "2026-11-14T05:31:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +138,7 @@
       "id": "8f4b2632f43363d7fda4c9360f691ce085164eac7403aa5325d0bf41766b5c13",
       "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
       "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "summary": "Comments",
+      "summary": "1001 points · 600 comments on Hacker News",
       "publishedAt": "2026-11-14T02:52:59+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,28 +148,8 @@
       "id": "60e5719ddad5001df4ba0fd2b2ddd066ffdf97801510114d45404ff22ff03a7c",
       "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
       "url": "https://claude.com/resources/articles/projects-redesigned",
-      "summary": "92 points · 89 comments on Hacker News",
+      "summary": "97 points · 91 comments on Hacker News",
       "publishedAt": "2026-11-14T00:28:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "845cc78cbca545d7f72d64584bf33df20e70793922bdea8bb659ee1ffcc0ae27",
-      "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
-      "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
-      "summary": "Comments",
-      "publishedAt": "2026-11-14T00:28:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8b981141b76904904e870a0e5c44c3a2eae1852e5fdd792b134b61442627312e",
-      "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "summary": "Comments",
-      "publishedAt": "2026-11-14T00:06:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -547,7 +547,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-14T08:41:47.565833+00:00",
+    "generatedAt": "2026-11-14T20:44:08.231164+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1630,8 +1630,8 @@
         ],
         "value": 6.2595,
         "period": "2026-11-13",
-        "retrievedAt": "2026-11-14T08:41:47.565817+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-14T20:44:08.231144+00:00",
+        "stale": false
       },
       {
         "id": "EUR-SEK",
@@ -2714,8 +2714,8 @@
         ],
         "value": 11.1075,
         "period": "2026-11-13",
-        "retrievedAt": "2026-11-14T08:41:47.565830+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-14T20:44:08.231160+00:00",
+        "stale": false
       },
       {
         "id": "EUR-USD",
@@ -3798,8 +3798,8 @@
         ],
         "value": 1.1052,
         "period": "2026-11-13",
-        "retrievedAt": "2026-11-14T08:41:47.565833+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-14T20:44:08.231164+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
