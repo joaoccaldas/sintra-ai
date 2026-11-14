@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T04:45:42.882665+00:00",
+  "generatedAt": "2026-11-14T05:46:02.073312+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,66 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "02bb1a2d1323033fe886a40c8b98acf398a385ff0fa248b3dc7516bd789bd8ed",
+      "title": "Read and Ignore: What Self-Directed LLM Agents Do in Public Service Scenarios",
+      "url": "https://arxiv.org/abs/2611.15460",
+      "summary": "Authors: Diana Kozachek, Kinjalk Srivastava · arXiv:2611.15460v1 Announce Type: new Abstract: Underspecified instructions leave LLM agents to decide what to do. In public services, staff write these instructions, but the agent's decisions affect residents, pat",
+      "publishedAt": "2026-11-14T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0556eb8bafc5c7584e57d9509bc6cf10cb285d93105f9d69e37c0cbdf65e6132",
+      "title": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision",
+      "url": "https://arxiv.org/abs/2611.16694",
+      "summary": "Authors: Yupeng Tang, Mingfeng Lin · arXiv:2611.16694v1 Announce Type: new Abstract: When language models revise a decision after another agent disagrees, neither reversal counts nor final accuracy shows whether they are fixing mistakes or abandoning correct a",
+      "publishedAt": "2026-11-14T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "060e1912f97a0c425d6c7451d07f0b320d2dc9fecf06f9a71359b98d02f7e0f6",
+      "title": "Small Language Models for Inference-Capability Routing: Effects of Model Capacity and Prompt Optimization on Downstream Quality and Efficiency",
+      "url": "https://arxiv.org/abs/2611.16414",
+      "summary": "Authors: Sailendra Kolluru, Maheshkumar Duvvarapu · arXiv:2611.16414v1 Announce Type: new Abstract: Optional reasoning, retrieval, web search, and tool use can improve large language model responses but incur unnecessary computation when activated indiscrimina",
+      "publishedAt": "2026-11-14T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0acaf172c6bbc575cbeedb359bd38a2ca253c319255ae22bc4f68fff23d53334",
+      "title": "Controlling the Probability of Unknown Unknowns in Pre-Deployment Testing of AI Systems",
+      "url": "https://arxiv.org/abs/2611.15835",
+      "summary": "Authors: Rachel Li, Chris Hays, Aaditya Ramdas, Manish Raghavan · arXiv:2611.15835v1 Announce Type: new Abstract: In pre-deployment testing of AI systems such as AI agents, a developer can often deal with known failure modes (e.g., leaking API keys, deleting i",
+      "publishedAt": "2026-11-14T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1134bdbc357ce8aea73caacabe605b68e45c213ead172061d3cab9288acfd573",
+      "title": "WordInferBench: Can Agents Infer How to Edit from Word Document Context?",
+      "url": "https://arxiv.org/abs/2611.15189",
+      "summary": "Authors: Jiayu Ding, Yupan Huang, Jinyoung Park, Yilin Jia, Wenshan Wu, Tengchao Lv, Shaohan Huang, Yuzhong Zhao, Xiangyang Zhou, Tao Ge, Sun Mao, Xun Wang, Huitian Jiao, Si-Qing Chen, Lei Cui, Nanning Zheng, Furu Wei · arXiv:2611.15189v1 Announce Type: new Ab",
+      "publishedAt": "2026-11-14T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "12fb767f3506c1aca10b77213d384e4668b32ef5bf0382a0c0b7c4f27055ad33",
+      "title": "Same Task, Different Statement: When and How Reformulation Helps LLM Problem Solving",
+      "url": "https://arxiv.org/abs/2611.14997",
+      "summary": "Authors: Wentao Zhang, Xiaoyu Zhang, Chengwei Liu, Yutao Hu, Tao Zhang, Junsheng Wu, Hongping Gan, Yang Liu · arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study wh",
+      "publishedAt": "2026-11-14T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
       "id": "8f4b2632f43363d7fda4c9360f691ce085164eac7403aa5325d0bf41766b5c13",
       "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
       "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
@@ -28,7 +88,7 @@
       "id": "60e5719ddad5001df4ba0fd2b2ddd066ffdf97801510114d45404ff22ff03a7c",
       "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
       "url": "https://claude.com/resources/articles/projects-redesigned",
-      "summary": "67 points · 63 comments on Hacker News",
+      "summary": "73 points · 72 comments on Hacker News",
       "publishedAt": "2026-11-14T00:28:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -382,66 +442,6 @@
       "publishedAt": "2026-11-11T05:01:16+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "00a3315c8136332b4e329a9aa92c111069892d0a8550f0422fa41f678c6ba426",
-      "title": "Transformers Provably Learn Graph Search: Training Dynamics and the Exponential Power of Depth",
-      "url": "https://arxiv.org/abs/2611.13594",
-      "summary": "Authors: Xutao Ma, Somayeh Sojoudi · arXiv:2611.13594v1 Announce Type: new Abstract: Large Language Models (LLMs) have achieved remarkable progress on complex reasoning tasks, yet the mechanisms by which they acquire reasoning capabilities and the efficiency o",
-      "publishedAt": "2026-11-11T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "01974dd7b8b55b4ee819d32b4df231cd969867cd5e169c31d0ad6c98dd498fda",
-      "title": "Integrating Action Prefix Prediction and Alignment Across Modalities for Multimodal Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2611.13782",
-      "summary": "Authors: Sijie Xu, Francisco Cruz · arXiv:2611.13782v1 Announce Type: new Abstract: Learning representations from multimodal observations is difficult in reinforcement learning with limited interaction data. Multimodal Joint Predictive Representation combines ",
-      "publishedAt": "2026-11-11T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0a64ed0c7aa35d7ff0fd1f7612551c55e6f1b3ce53844de7280ec3e109e9a185",
-      "title": "Ceci n'est pas une pipe -- Toward a Symbolic Solver for the Abstraction and Reasoning Corpus Using Evolutionary Computation",
-      "url": "https://arxiv.org/abs/2611.13831",
-      "summary": "Authors: Luca Favole, Giorgio Mongardi, Giovanni Squillero, Alberto Tonda · arXiv:2611.13831v1 Announce Type: new Abstract: The Abstraction and Reasoning Corpus (ARC) is a benchmark designed to assess the capability of Artificial Intelligence (AI) systems to g",
-      "publishedAt": "2026-11-11T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0c27c7b3c601916dfb52a8a1be417fcb96a3c5321aaae41972dcb9a42955c2e7",
-      "title": "Precision on Demand: Escalating Weight Bits at Uncertain Decoding Steps in a Small Local Model",
-      "url": "https://arxiv.org/abs/2611.14418",
-      "summary": "Authors: Mohammed Nayeem Khan, Logesh L, Aliyas Ahmad Misri · arXiv:2611.14418v1 Announce Type: new Abstract: Local decoding usually fixes one weight precision for the whole generation. We study a different allocation: store 8-bit weights, decode with their to",
-      "publishedAt": "2026-11-11T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0c5bac16983858d8523042257a06688d3510e9040c9310b92c33505967a10861",
-      "title": "IIT Patna at \"ICPR 2026 TVRID Competition on Privacy-Preserving Person Re-Identification from Top-View RGB-Depth Camera\"",
-      "url": "https://arxiv.org/abs/2611.12960",
-      "summary": "Authors: Abhinav Kumar, Swagatam Pati, Advait Deshmukh, Aditya Mehrotra, Bibek Das, Kumari Priya, Utsav Kumar Nareti, Saba Akram, Chandranath Adak · arXiv:2611.12960v1 Announce Type: new Abstract: Privacy-aware person re-identification (Re-ID) from top-view ca",
-      "publishedAt": "2026-11-11T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0cfdd789bfa4af21d9b033115af2640e8a31b0aba89eb243f755981334b75cb9",
-      "title": "Agreeing on the Answer but Not the Reason: Measurement Limits of LLM Reasoning Failure Taxonomies",
-      "url": "https://arxiv.org/abs/2611.13140",
-      "summary": "Authors: Madhu Sudhan Rao Beesetty · arXiv:2611.13140v1 Announce Type: cross Abstract: Failure taxonomies for LLM reasoning are increasingly reported as measurements: papers state what fraction of a model's errors fall into named categories, then compare those",
-      "publishedAt": "2026-11-11T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
       "color": "#5B48D9"
     },
     {
