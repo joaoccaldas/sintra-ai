@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-14T18:42:12.196Z",
+  "resolvedAt": "2026-11-14T19:43:17.682Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -1055,7 +1055,7 @@
       ],
       "value": 1.1052,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -2112,7 +2112,7 @@
       ],
       "value": 11.1075,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3169,7 +3169,7 @@
       ],
       "value": 6.2595,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3234,7 +3234,7 @@
       ],
       "value": 1.54316373266217,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3299,7 +3299,7 @@
       ],
       "value": 2.2857464902475,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3364,7 +3364,7 @@
       ],
       "value": 2.16138195623856,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3429,7 +3429,7 @@
       ],
       "value": 1.4110724231835,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3494,7 +3494,7 @@
       ],
       "value": 0.679015259300199,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3559,7 +3559,7 @@
       ],
       "value": 5.01675279604836,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3624,7 +3624,7 @@
       ],
       "value": 2.94952520485207,
       "period": "2024-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3689,7 +3689,7 @@
       ],
       "value": 2.46605755272817,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3754,7 +3754,7 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3819,7 +3819,7 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3884,7 +3884,7 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3949,7 +3949,7 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-14T18:42:12.196Z",
+      "retrievedAt": "2026-11-14T19:43:17.682Z",
       "stale": false,
       "delivery": "public-provider"
     }
