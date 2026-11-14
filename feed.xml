@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 14 Nov 2026 15:52:03 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 18:42:14 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[The AI graveyard: a running list of projects and startups that didn’t make it]]></title>
+    <description><![CDATA[From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.]]></description>
+    <link>https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Asian governments react to Nvidia CEO Jensen Huang’s exit]]></title>
+    <description><![CDATA[Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.]]></description>
+    <link>https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[datasette-cluster-map 0.19]]></title>
@@ -83,30 +101,12 @@
   </item>
 
   <item>
-    <title><![CDATA[The unfolding Jensen Huang scandal: a timeline]]></title>
-    <description><![CDATA[Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.]]></description>
-    <link>https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Introducing ChatGPT Wallet]]></title>
     <description><![CDATA[Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.]]></description>
     <link>https://openai.com/index/introducing-chatgpt-wallet</link>
     <guid isPermaLink="true">https://openai.com/index/introducing-chatgpt-wallet</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[ElevenLabs’ new app combines meeting note-taking and dictation for teams]]></title>
-    <description><![CDATA[ElevenAI is a new meeting notetaker and dictation app aimed at teams and enterprises.]]></description>
-    <link>https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
