@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 22:48:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 03:12:35 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[datasette-cluster-map 0.19]]></title>
+    <description><![CDATA[Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a ma]]></description>
+    <link>https://simonwillison.net/2026/Nov/13/datasette-cluster-map</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/13/datasette-cluster-map</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say]]></title>
+    <description><![CDATA[Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.]]></description>
+    <link>https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-leaflet 0.3]]></title>
+    <description><![CDATA[Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from Ope]]></description>
+    <link>https://simonwillison.net/2026/Nov/13/datasette-leaflet</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/13/datasette-leaflet</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[AI agent startup LangChain hits $3B valuation]]></title>
@@ -92,12 +119,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Israel’s VCs see opportunity for challengers in Nvidia’s turmoil]]></title>
-    <description><![CDATA[Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure.]]></description>
-    <link>https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil</guid>
+    <title><![CDATA[Shield helps technicians hand off legacy portal work with OpenAI]]></title>
+    <description><![CDATA[Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.]]></description>
+    <link>https://openai.com/business/customer-stories/shield</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/shield</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -143,33 +170,6 @@
     <guid isPermaLink="true">https://deepmind.google/blog/introducing-gemini-4-hydrogen</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Search gets a major upgrade with Gemini 4 Hydrogen]]></title>
-    <description><![CDATA[We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.]]></description>
-    <link>https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade</link>
-    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Gondola doubles revenue as its team builds more with Codex]]></title>
-    <description><![CDATA[Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.]]></description>
-    <link>https://openai.com/business/customer-stories/gondola</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/gondola</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Holiday Extras is rethinking what it can build with Codex]]></title>
-    <description><![CDATA[With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.]]></description>
-    <link>https://openai.com/business/customer-stories/holidays-extras-codex</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/holidays-extras-codex</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>

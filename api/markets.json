@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-13T22:48:25.840Z",
+  "resolvedAt": "2026-11-14T03:12:32.542Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -12,34 +12,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 1.1636
-        },
-        {
-          "date": "2025-10-30",
-          "value": 1.155
-        },
-        {
-          "date": "2025-10-31",
-          "value": 1.1554
-        },
-        {
-          "date": "2025-11-03",
-          "value": 1.1514
-        },
-        {
-          "date": "2025-11-04",
-          "value": 1.1491
-        },
-        {
-          "date": "2025-11-05",
-          "value": 1.1492
-        },
-        {
-          "date": "2025-11-06",
-          "value": 1.1533
-        },
         {
           "date": "2025-11-07",
           "value": 1.1561
@@ -1083,9 +1055,9 @@
       ],
       "value": 1.1052,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-13T18:22:28.891703+00:00",
+      "retrievedAt": "2026-11-14T03:12:32.542Z",
       "stale": false,
-      "delivery": "ondai-feeds"
+      "delivery": "public-provider"
     },
     {
       "id": "EUR-SEK",
@@ -1097,34 +1069,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 10.896
-        },
-        {
-          "date": "2025-10-30",
-          "value": 10.94
-        },
-        {
-          "date": "2025-10-31",
-          "value": 10.925
-        },
-        {
-          "date": "2025-11-03",
-          "value": 10.935
-        },
-        {
-          "date": "2025-11-04",
-          "value": 10.9865
-        },
-        {
-          "date": "2025-11-05",
-          "value": 11.0175
-        },
-        {
-          "date": "2025-11-06",
-          "value": 10.99
-        },
         {
           "date": "2025-11-07",
           "value": 11.046
@@ -2168,9 +2112,9 @@
       ],
       "value": 11.1075,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-13T18:22:28.891696+00:00",
+      "retrievedAt": "2026-11-14T03:12:32.542Z",
       "stale": false,
-      "delivery": "ondai-feeds"
+      "delivery": "public-provider"
     },
     {
       "id": "EUR-BRL",
@@ -2182,34 +2126,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 6.222
-        },
-        {
-          "date": "2025-10-30",
-          "value": 6.2288
-        },
-        {
-          "date": "2025-10-31",
-          "value": 6.2171
-        },
-        {
-          "date": "2025-11-03",
-          "value": 6.1704
-        },
-        {
-          "date": "2025-11-04",
-          "value": 6.1873
-        },
-        {
-          "date": "2025-11-05",
-          "value": 6.2067
-        },
-        {
-          "date": "2025-11-06",
-          "value": 6.1567
-        },
         {
           "date": "2025-11-07",
           "value": 6.2007
@@ -3253,9 +3169,9 @@
       ],
       "value": 6.2595,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-13T18:22:28.891665+00:00",
+      "retrievedAt": "2026-11-14T03:12:32.542Z",
       "stale": false,
-      "delivery": "ondai-feeds"
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-SWE",
