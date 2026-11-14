@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-14T06:11:35.637Z",
+  "resolvedAt": "2026-11-14T06:14:41.506Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -1055,7 +1055,7 @@
       ],
       "value": 1.1052,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-14T06:11:35.637Z",
+      "retrievedAt": "2026-11-14T06:14:41.506Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -2112,7 +2112,7 @@
       ],
       "value": 11.1075,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-14T06:11:35.637Z",
+      "retrievedAt": "2026-11-14T06:14:41.506Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3169,7 +3169,7 @@
       ],
       "value": 6.2595,
       "period": "2026-11-13",
-      "retrievedAt": "2026-11-14T06:11:35.637Z",
+      "retrievedAt": "2026-11-14T06:14:41.506Z",
       "stale": false,
       "delivery": "public-provider"
     },
