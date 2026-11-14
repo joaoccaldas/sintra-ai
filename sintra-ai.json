@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T03:45:36.717500+00:00",
+  "generatedAt": "2026-11-14T04:45:42.882665+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -25,11 +25,31 @@
       "color": "#5B48D9"
     },
     {
+      "id": "60e5719ddad5001df4ba0fd2b2ddd066ffdf97801510114d45404ff22ff03a7c",
+      "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+      "url": "https://claude.com/resources/articles/projects-redesigned",
+      "summary": "67 points · 63 comments on Hacker News",
+      "publishedAt": "2026-11-14T00:28:11+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "845cc78cbca545d7f72d64584bf33df20e70793922bdea8bb659ee1ffcc0ae27",
       "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
       "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
       "summary": "Comments",
       "publishedAt": "2026-11-14T00:28:11+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8b981141b76904904e870a0e5c44c3a2eae1852e5fdd792b134b61442627312e",
+      "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "summary": "Comments",
+      "publishedAt": "2026-11-14T00:06:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -85,16 +105,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "5f85a3f54a95f92ed52611360e4d901e1127ec215b1d7e90edc4c977e2ec600c",
-      "title": "No AI Slop: A Manifesto",
-      "url": "https://www.slopmanifesto.com/",
-      "summary": "189 points · 108 comments on Hacker News",
-      "publishedAt": "2026-11-13T19:51:56+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "49f0b0840b1ef26af09f29c86adc67fccd4a404dbae10e2dbf51e8f46347b640",
       "title": "AI agent startup LangChain hits $3B valuation",
       "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation",
@@ -102,16 +112,6 @@
       "publishedAt": "2026-11-13T19:37:57+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b6c6cdb45a036bcc244f5430cece78eb71a573e5f03137e29c5a8a214bb0edfc",
-      "title": "Perplexity Decider v1.3: Training, eval, and use cases",
-      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
-      "summary": "Comments",
-      "publishedAt": "2026-11-13T19:24:47+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
