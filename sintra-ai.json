@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T14:49:08.172244+00:00",
+  "generatedAt": "2026-11-14T15:50:47.258813+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "529d65553fb48fbffe328b2665628eafc332e4e64d8680bba07bc71ae5c2c324",
+      "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+      "url": "https://gitlab.com/snipedbywifi/terminactory",
+      "summary": "Comments",
+      "publishedAt": "2026-11-14T14:05:54+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6e0cb4a87e740b3ad5e0eb13976228d75adec7b184f6534020bb876d236f5927",
+      "title": "Israeli airstrike on Nasser hospital in Gaza killed surgeon and others",
+      "url": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+      "summary": "33 points · 7 comments on Hacker News",
+      "publishedAt": "2026-11-14T05:31:44+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "02bb1a2d1323033fe886a40c8b98acf398a385ff0fa248b3dc7516bd789bd8ed",
       "title": "Read and Ignore: What Self-Directed LLM Agents Do in Public Service Scenarios",
@@ -88,7 +108,7 @@
       "id": "60e5719ddad5001df4ba0fd2b2ddd066ffdf97801510114d45404ff22ff03a7c",
       "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
       "url": "https://claude.com/resources/articles/projects-redesigned",
-      "summary": "92 points · 88 comments on Hacker News",
+      "summary": "92 points · 89 comments on Hacker News",
       "publishedAt": "2026-11-14T00:28:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -142,26 +162,6 @@
       "publishedAt": "2026-11-13T22:30:54+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "282df205597a8a736fd0747016d47bdb637c885cfca072ab63a5b7caab6cbccc",
-      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
-      "url": "https://orcasairband.com/",
-      "summary": "Comments",
-      "publishedAt": "2026-11-13T22:04:24+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "cdfd26896257823e516e31a31ded355e64b3ee9baf2a51d7ca408f25f935b929",
-      "title": "All US airports are currently ground stopped",
-      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
-      "summary": "205 points · 41 comments on Hacker News",
-      "publishedAt": "2026-11-13T21:06:52+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
