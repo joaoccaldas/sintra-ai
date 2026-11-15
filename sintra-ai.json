@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T02:34:40.466979+00:00",
+  "generatedAt": "2026-11-15T03:37:37.325230+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -88,7 +88,7 @@
       "id": "3aff7a3db8a3d91b53982f42cb8a1ebaa48bbc30fbc10ca6d60bbcd240e4769d",
       "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-      "summary": "47 points · 33 comments on Hacker News",
+      "summary": "50 points · 33 comments on Hacker News",
       "publishedAt": "2026-11-14T15:58:57+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +98,7 @@
       "id": "529d65553fb48fbffe328b2665628eafc332e4e64d8680bba07bc71ae5c2c324",
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
       "url": "https://gitlab.com/snipedbywifi/terminactory",
-      "summary": "138 points · 28 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-14T14:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "8f4b2632f43363d7fda4c9360f691ce085164eac7403aa5325d0bf41766b5c13",
       "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
       "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "summary": "1036 points · 621 comments on Hacker News",
+      "summary": "1048 points · 623 comments on Hacker News",
       "publishedAt": "2026-11-14T02:52:59+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -1631,7 +1631,7 @@
         "value": 6.2595,
         "period": "2026-11-13",
         "retrievedAt": "2026-11-14T20:44:08.231144+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-SEK",
@@ -2715,7 +2715,7 @@
         "value": 11.1075,
         "period": "2026-11-13",
         "retrievedAt": "2026-11-14T20:44:08.231160+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-USD",
@@ -3799,7 +3799,7 @@
         "value": 1.1052,
         "period": "2026-11-13",
         "retrievedAt": "2026-11-14T20:44:08.231164+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
