@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 15 Nov 2026 20:05:22 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 21:06:19 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[SNL gathers all the tech tycoons for a lesson in dating and spycraft]]></title>
+    <description><![CDATA[While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.]]></description>
+    <link>https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Where was Nvidia’s security team?]]></title>
@@ -89,15 +98,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/13/datasette-leaflet</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AI agent startup LangChain hits $3B valuation]]></title>
-    <description><![CDATA[LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.]]></description>
-    <link>https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
