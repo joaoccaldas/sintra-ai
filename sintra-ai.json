@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T04:52:45.798587+00:00",
+  "generatedAt": "2026-11-15T07:05:17.068729+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "0303ada4a529724d5db5684a1871b62296da20bb460b622161148543b46e57e1",
+      "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+      "summary": "52 points · 34 comments on Hacker News",
+      "publishedAt": "2026-11-15T03:05:54+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "88ae2cfdd6f592722f0248e22175c86694f8e51246497b8c89cd0f3ef3df4a60",
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "summary": "58 points · 8 comments on Hacker News",
+      "publishedAt": "2026-11-15T01:18:36+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "167c81c5d6fc7db57e5d8050dad8aa2d9c145c2e728ec6de40d656937d161a0d",
       "title": "Where was Nvidia’s security team?",
@@ -48,7 +68,7 @@
       "id": "d040778ff986aa03f6e7572465c335c50fde6a3434e39ecf6921d483d3f77526",
       "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
-      "summary": "44 points · 62 comments on Hacker News",
+      "summary": "45 points · 63 comments on Hacker News",
       "publishedAt": "2026-11-14T17:51:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +108,7 @@
       "id": "3aff7a3db8a3d91b53982f42cb8a1ebaa48bbc30fbc10ca6d60bbcd240e4769d",
       "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-      "summary": "50 points · 33 comments on Hacker News",
+      "summary": "53 points · 38 comments on Hacker News",
       "publishedAt": "2026-11-14T15:58:57+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +118,7 @@
       "id": "529d65553fb48fbffe328b2665628eafc332e4e64d8680bba07bc71ae5c2c324",
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
       "url": "https://gitlab.com/snipedbywifi/terminactory",
-      "summary": "Comments",
+      "summary": "153 points · 38 comments on Hacker News",
       "publishedAt": "2026-11-14T14:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +128,7 @@
       "id": "6e0cb4a87e740b3ad5e0eb13976228d75adec7b184f6534020bb876d236f5927",
       "title": "Israeli airstrike on Nasser hospital in Gaza killed surgeon and others",
       "url": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
-      "summary": "48 points · 16 comments on Hacker News",
+      "summary": "49 points · 16 comments on Hacker News",
       "publishedAt": "2026-11-14T05:31:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -172,26 +192,6 @@
       "publishedAt": "2026-11-14T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8f4b2632f43363d7fda4c9360f691ce085164eac7403aa5325d0bf41766b5c13",
-      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "summary": "1048 points · 623 comments on Hacker News",
-      "publishedAt": "2026-11-14T02:52:59+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "60e5719ddad5001df4ba0fd2b2ddd066ffdf97801510114d45404ff22ff03a7c",
-      "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
-      "url": "https://claude.com/resources/articles/projects-redesigned",
-      "summary": "98 points · 91 comments on Hacker News",
-      "publishedAt": "2026-11-14T00:28:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
