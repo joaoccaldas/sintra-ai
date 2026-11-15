@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sat, 14 Nov 2026 21:27:21 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 01:20:31 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Where was Nvidia’s security team?]]></title>
+    <description><![CDATA[Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak ]]></description>
+    <link>https://techcrunch.com/2026/11/14/where-was-nvidias-security-team</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/14/where-was-nvidias-security-team</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang]]></title>
+    <description><![CDATA[The petition had attracted more than 115,000 signatures as of Saturday afternoon.]]></description>
+    <link>https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[The AI graveyard: a running list of projects and startups that didn’t make it]]></title>
@@ -65,15 +83,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!]]></title>
-    <description><![CDATA[New research shows the most advanced AI models from China were trained on banned Nvidia chips.]]></description>
-    <link>https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Build a Robot Pick-and-Place Simulation with SimReady Assets]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place</link>
@@ -89,15 +98,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/allenai/xybench</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[ChatGPT’s new Wallet lets AI agents shop and check out for you]]></title>
-    <description><![CDATA[ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.]]></description>
-    <link>https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
