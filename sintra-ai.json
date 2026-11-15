@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T08:06:41.396359+00:00",
+  "generatedAt": "2026-11-15T10:25:46.640906+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,7 +18,7 @@
       "id": "0303ada4a529724d5db5684a1871b62296da20bb460b622161148543b46e57e1",
       "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
       "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
-      "summary": "55 points · 37 comments on Hacker News",
+      "summary": "57 points · 38 comments on Hacker News",
       "publishedAt": "2026-11-15T03:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +68,7 @@
       "id": "d040778ff986aa03f6e7572465c335c50fde6a3434e39ecf6921d483d3f77526",
       "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
-      "summary": "45 points · 63 comments on Hacker News",
+      "summary": "48 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-14T17:51:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +108,7 @@
       "id": "3aff7a3db8a3d91b53982f42cb8a1ebaa48bbc30fbc10ca6d60bbcd240e4769d",
       "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-      "summary": "54 points · 38 comments on Hacker News",
+      "summary": "57 points · 39 comments on Hacker News",
       "publishedAt": "2026-11-14T15:58:57+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +118,7 @@
       "id": "529d65553fb48fbffe328b2665628eafc332e4e64d8680bba07bc71ae5c2c324",
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
       "url": "https://gitlab.com/snipedbywifi/terminactory",
-      "summary": "155 points · 39 comments on Hacker News",
+      "summary": "156 points · 39 comments on Hacker News",
       "publishedAt": "2026-11-14T14:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -547,7 +547,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-14T20:44:08.231164+00:00",
+    "generatedAt": "2026-11-15T09:23:58.137856+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1630,8 +1630,8 @@
         ],
         "value": 6.2595,
         "period": "2026-11-13",
-        "retrievedAt": "2026-11-14T20:44:08.231144+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-15T09:23:58.137832+00:00",
+        "stale": false
       },
       {
         "id": "EUR-SEK",
@@ -2714,8 +2714,8 @@
         ],
         "value": 11.1075,
         "period": "2026-11-13",
-        "retrievedAt": "2026-11-14T20:44:08.231160+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-15T09:23:58.137850+00:00",
+        "stale": false
       },
       {
         "id": "EUR-USD",
@@ -3798,8 +3798,8 @@
         ],
         "value": 1.1052,
         "period": "2026-11-13",
-        "retrievedAt": "2026-11-14T20:44:08.231164+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-15T09:23:58.137856+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
