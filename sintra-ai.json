@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T19:49:14.955432+00:00",
+  "generatedAt": "2026-11-15T20:49:37.705335+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,26 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "3ea624e61126b81c7ebfb1fd0d1075e8a00c1ecd260bcad4a1e50135123b479b",
+      "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
+      "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft",
+      "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
+      "publishedAt": "2026-11-15T20:20:57+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
+      "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+      "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
+      "summary": "Comments",
+      "publishedAt": "2026-11-15T19:39:46+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
@@ -28,7 +48,7 @@
       "id": "2221164cfde1b4e2b29f6a3da42e0edba9ac4debd3144a903894fa649eecf77c",
       "title": "Jensen Huang allegedly manufactured the GPU shortage",
       "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon",
-      "summary": "52 points · 53 comments on Hacker News",
+      "summary": "54 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-15T10:53:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +58,7 @@
       "id": "0303ada4a529724d5db5684a1871b62296da20bb460b622161148543b46e57e1",
       "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
       "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
-      "summary": "81 points · 49 comments on Hacker News",
+      "summary": "81 points · 52 comments on Hacker News",
       "publishedAt": "2026-11-15T03:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -122,16 +142,6 @@
       "publishedAt": "2026-11-14T16:34:15+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3aff7a3db8a3d91b53982f42cb8a1ebaa48bbc30fbc10ca6d60bbcd240e4769d",
-      "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-      "summary": "61 points · 42 comments on Hacker News",
-      "publishedAt": "2026-11-14T15:58:57+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -222,16 +232,6 @@
       "publishedAt": "2026-11-13T22:30:54+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "49f0b0840b1ef26af09f29c86adc67fccd4a404dbae10e2dbf51e8f46347b640",
-      "title": "AI agent startup LangChain hits $3B valuation",
-      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation",
-      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
-      "publishedAt": "2026-11-13T19:37:57+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
