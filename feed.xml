@@ -7,8 +7,35 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 15 Nov 2026 22:06:49 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 23:07:39 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[A step toward defining the Standard Model on a lattice]]></title>
+    <description><![CDATA[Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.]]></description>
+    <link>https://openai.com/index/step-toward-defining-the-standard-model</link>
+    <guid isPermaLink="true">https://openai.com/index/step-toward-defining-the-standard-model</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Our new blog for science]]></title>
+    <description><![CDATA[The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.]]></description>
+    <link>https://openai.com/index/our-new-blog-for-science</link>
+    <guid isPermaLink="true">https://openai.com/index/our-new-blog-for-science</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Is bad news for Jensen Huang also bad news for the AI industry?]]></title>
+    <description><![CDATA["Jensen is Nvidia, right? And so much of this economy is riding on Nvidia."]]></description>
+    <link>https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[SNL gathers all the tech tycoons for a lesson in dating and spycraft]]></title>
@@ -83,15 +110,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say]]></title>
-    <description><![CDATA[Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.]]></description>
-    <link>https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[datasette-leaflet 0.3]]></title>
     <description><![CDATA[Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from Ope]]></description>
     <link>https://simonwillison.net/2026/Nov/13/datasette-leaflet</link>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/12/llm-gemini</guid>
     <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility]]></title>
-    <description><![CDATA[Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while a]]></description>
-    <link>https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Amplitude ships product improvements in 1–2 days with OpenAI]]></title>
-    <description><![CDATA[Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.]]></description>
-    <link>https://openai.com/business/customer-stories/amplitude</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/amplitude</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
