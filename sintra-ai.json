@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:50:06.030561+00:00",
+  "generatedAt": "2026-11-15T22:50:28.093139+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,36 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "2e8f421d2ee2a3dfd36bfcc5be1c93ba1a42b98e60398a99d5e21362ce523fd9",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "publishedAt": "2026-11-15T22:00:01+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "33b95c2112c46efd095543028e60f6116680e85e464182b74c65e43667746d78",
+      "title": "Our new blog for science",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "publishedAt": "2026-11-15T22:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "24cbece72f55c409692d8ead8823d0712f8d82ba4b1e6b4c586957c29c78cc5c",
+      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+      "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry",
+      "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+      "publishedAt": "2026-11-15T21:56:35+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "3ea624e61126b81c7ebfb1fd0d1075e8a00c1ecd260bcad4a1e50135123b479b",
       "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
       "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft",
@@ -28,7 +58,7 @@
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "52 points · 52 comments on Hacker News",
+      "summary": "56 points · 59 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +78,7 @@
       "id": "2221164cfde1b4e2b29f6a3da42e0edba9ac4debd3144a903894fa649eecf77c",
       "title": "Jensen Huang allegedly manufactured the GPU shortage",
       "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon",
-      "summary": "56 points · 58 comments on Hacker News",
+      "summary": "58 points · 58 comments on Hacker News",
       "publishedAt": "2026-11-15T10:53:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +88,7 @@
       "id": "0303ada4a529724d5db5684a1871b62296da20bb460b622161148543b46e57e1",
       "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
       "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
-      "summary": "82 points · 53 comments on Hacker News",
+      "summary": "83 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-15T03:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +98,7 @@
       "id": "88ae2cfdd6f592722f0248e22175c86694f8e51246497b8c89cd0f3ef3df4a60",
       "title": "Court denies motion to dismiss DRAM price fixing case",
       "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-      "summary": "Comments",
+      "summary": "481 points · 211 comments on Hacker News",
       "publishedAt": "2026-11-15T01:18:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +138,7 @@
       "id": "d040778ff986aa03f6e7572465c335c50fde6a3434e39ecf6921d483d3f77526",
       "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
-      "summary": "49 points · 74 comments on Hacker News",
+      "summary": "50 points · 75 comments on Hacker News",
       "publishedAt": "2026-11-14T17:51:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -212,16 +242,6 @@
       "publishedAt": "2026-11-13T23:02:45+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9d694fa95af0cfaecf5267b73e7d6230221ffb467ae88ba047b8eeb9ff850562",
-      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
-      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-      "publishedAt": "2026-11-13T22:43:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -350,26 +370,6 @@
       "url": "https://openai.com/business/customer-stories/gondola",
       "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
       "publishedAt": "2026-11-12T12:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4922ca6fb0dd92994c349853518621d0422aac137e6c9a194fc01e08fc5408aa",
-      "title": "Holiday Extras is rethinking what it can build with Codex",
-      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
-      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
-      "publishedAt": "2026-11-12T09:30:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
-      "title": "Gilbert + Tobin rethinks the business of law with AI",
-      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
-      "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
-      "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
