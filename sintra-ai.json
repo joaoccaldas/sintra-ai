@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:51:19.746813+00:00",
+  "generatedAt": "2026-11-16T02:51:42.997559+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,16 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
+      "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+      "url": "https://www.hntrends.com/2026/november.html",
+      "summary": "Comments",
+      "publishedAt": "2026-11-16T01:31:30+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "87b76e5b13944ae023be72d1f66062e704cdb18dc04605e0679e07757bd73d9e",
       "title": "Apple launches new app to study how people use AI for health",
       "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health",
@@ -22,6 +32,16 @@
       "publishedAt": "2026-11-16T01:30:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "69159b88e2cd0a1f061b9c4d8137fa80061c3569900d21b0b88e79c6025a60bf",
+      "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
+      "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+      "summary": "Comments",
+      "publishedAt": "2026-11-16T00:21:54+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -118,7 +138,7 @@
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "1089 points · 593 comments on Hacker News",
+      "summary": "1103 points · 597 comments on Hacker News",
       "publishedAt": "2026-11-15T14:46:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +148,7 @@
       "id": "180c301438cacf64af285826b74d0f6b93bc72f72fe1654c970da90c450ed000",
       "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
       "url": "https://github.com/db-branch/db-branch",
-      "summary": "32 points · 9 comments on Hacker News",
+      "summary": "34 points · 10 comments on Hacker News",
       "publishedAt": "2026-11-15T13:50:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,26 +182,6 @@
       "publishedAt": "2026-11-15T03:49:47+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0303ada4a529724d5db5684a1871b62296da20bb460b622161148543b46e57e1",
-      "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
-      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
-      "summary": "85 points · 55 comments on Hacker News",
-      "publishedAt": "2026-11-15T03:05:54+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "88ae2cfdd6f592722f0248e22175c86694f8e51246497b8c89cd0f3ef3df4a60",
-      "title": "Court denies motion to dismiss DRAM price fixing case",
-      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-      "summary": "491 points · 219 comments on Hacker News",
-      "publishedAt": "2026-11-15T01:18:36+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
