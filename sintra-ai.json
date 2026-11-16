@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T02:51:42.997559+00:00",
+  "generatedAt": "2026-11-16T03:52:06.074559+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "756563a4144915c6b62aee93e4f9920bb621c8d38365679a93561a9633b5b097",
+      "title": "Qwen4-Max",
+      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "summary": "Comments",
+      "publishedAt": "2026-11-16T02:14:44+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "Comments",
+      "summary": "75 points · 60 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "1103 points · 597 comments on Hacker News",
+      "summary": "1114 points · 597 comments on Hacker News",
       "publishedAt": "2026-11-15T14:46:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,18 +158,8 @@
       "id": "180c301438cacf64af285826b74d0f6b93bc72f72fe1654c970da90c450ed000",
       "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
       "url": "https://github.com/db-branch/db-branch",
-      "summary": "34 points · 10 comments on Hacker News",
+      "summary": "35 points · 10 comments on Hacker News",
       "publishedAt": "2026-11-15T13:50:51+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "2221164cfde1b4e2b29f6a3da42e0edba9ac4debd3144a903894fa649eecf77c",
-      "title": "Jensen Huang allegedly manufactured the GPU shortage",
-      "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon",
-      "summary": "61 points · 59 comments on Hacker News",
-      "publishedAt": "2026-11-15T10:53:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
