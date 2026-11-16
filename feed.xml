@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 18:02:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 19:45:13 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’]]></title>
+    <description><![CDATA[OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.]]></description>
+    <link>https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’]]></title>
@@ -29,7 +38,7 @@
   </item>
 
   <item>
-    <title><![CDATA[OpenAI will embed Apollo researchers to investigate AI subversion]]></title>
+    <title><![CDATA[OpenAI will embed safety researchers to investigate AI subversion]]></title>
     <description><![CDATA[OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.]]></description>
     <link>https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion</guid>
@@ -78,15 +87,6 @@
     <description><![CDATA[Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.]]></description>
     <link>https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[US tightens AI chip export controls to deter Chinese companies from accessing compute remotely]]></title>
-    <description><![CDATA[Under the interim rule, the U.S. will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.]]></description>
-    <link>https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
