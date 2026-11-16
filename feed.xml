@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 12:03:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 13:04:02 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM]]></title>
+    <description><![CDATA[Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.]]></description>
+    <link>https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[LVMH’s Media Division announces strategic partnership with OpenAI]]></title>
@@ -143,15 +152,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/14/datasette-llm</guid>
     <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang]]></title>
-    <description><![CDATA[The petition had attracted more than 115,000 signatures as of Saturday afternoon.]]></description>
-    <link>https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang</guid>
-    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
