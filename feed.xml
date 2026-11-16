@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 15:48:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 16:18:47 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Audible turns to AI to help users discover audiobooks]]></title>
+    <description><![CDATA[Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.]]></description>
+    <link>https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[US tightens AI chip export controls to deter Chinese companies from accessing compute remotely]]></title>
@@ -152,15 +161,6 @@
     <guid isPermaLink="true">https://openai.com/index/our-new-blog-for-science</guid>
     <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Is bad news for Jensen Huang also bad news for the AI industry?]]></title>
-    <description><![CDATA["Jensen is Nvidia, right? And so much of this economy is riding on Nvidia."]]></description>
-    <link>https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
