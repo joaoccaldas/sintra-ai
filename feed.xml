@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 01:09:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 02:10:00 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Apple launches new app to study how people use AI for health]]></title>
+    <description><![CDATA[Apple's new app for a study will answer everyday medical questions]]></description>
+    <link>https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-maplibre 0.1a0]]></title>
+    <description><![CDATA[Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built]]></description>
+    <link>https://simonwillison.net/2026/Nov/15/datasette-maplibre</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette-maplibre</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market]]></title>
@@ -17,6 +35,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market</guid>
     <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette 1.0a43]]></title>
+    <description><![CDATA[Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mech]]></description>
+    <link>https://simonwillison.net/2026/Nov/15/datasette</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -65,6 +92,24 @@
   </item>
 
   <item>
+    <title><![CDATA[datasette-apps 0.4a0]]></title>
+    <description><![CDATA[Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #]]></description>
+    <link>https://simonwillison.net/2026/Nov/15/datasette-apps</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette-apps</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-agent 0.6a0]]></title>
+    <description><![CDATA[Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions ]]></description>
+    <link>https://simonwillison.net/2026/Nov/15/datasette-agent</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette-agent</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
     <title><![CDATA[Where was Nvidia’s security team?]]></title>
     <description><![CDATA[Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak ]]></description>
     <link>https://techcrunch.com/2026/11/14/where-was-nvidias-security-team</link>
@@ -89,42 +134,6 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang</guid>
     <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The AI graveyard: a running list of projects and startups that didn’t make it]]></title>
-    <description><![CDATA[From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.]]></description>
-    <link>https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it</guid>
-    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-vega 0.7]]></title>
-    <description><![CDATA[Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Dataset]]></description>
-    <link>https://simonwillison.net/2026/Nov/14/datasette-vega</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/14/datasette-vega</guid>
-    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-cluster-map 0.19]]></title>
-    <description><![CDATA[Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a ma]]></description>
-    <link>https://simonwillison.net/2026/Nov/13/datasette-cluster-map</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/13/datasette-cluster-map</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-leaflet 0.3]]></title>
-    <description><![CDATA[Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from Ope]]></description>
-    <link>https://simonwillison.net/2026/Nov/13/datasette-leaflet</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/13/datasette-leaflet</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/ggml-org/llama-cpp-v1</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Shield helps technicians hand off legacy portal work with OpenAI]]></title>
-    <description><![CDATA[Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.]]></description>
-    <link>https://openai.com/business/customer-stories/shield</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/shield</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>

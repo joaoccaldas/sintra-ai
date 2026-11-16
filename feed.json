@@ -7,6 +7,46 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health",
+      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health",
+      "title": "Apple launches new app to study how people use AI for health",
+      "content_text": "Apple's new app for a study will answer everyday medical questions",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-16T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
+      "title": "datasette-maplibre 0.1a0",
+      "content_text": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-15T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
       "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
       "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
@@ -23,6 +63,26 @@
         "TechCrunch AI",
         "TechCrunch AI",
         "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/15/datasette",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette",
+      "title": "datasette 1.0a43",
+      "content_text": "Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mech",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-15T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
         "Live"
       ]
     },
@@ -127,6 +187,46 @@
       ]
     },
     {
+      "id": "https://simonwillison.net/2026/Nov/15/datasette-apps",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-apps",
+      "title": "datasette-apps 0.4a0",
+      "content_text": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-15T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/15/datasette-agent",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-agent",
+      "title": "datasette-agent 0.6a0",
+      "content_text": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions ",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-15T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team",
       "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team",
       "title": "Where was Nvidia’s security team?",
@@ -183,86 +283,6 @@
         "TechCrunch AI",
         "TechCrunch AI",
         "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
-      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "content_text": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-14T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/14/datasette-vega",
-      "url": "https://simonwillison.net/2026/Nov/14/datasette-vega",
-      "title": "datasette-vega 0.7",
-      "content_text": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Dataset",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-14T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map",
-      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map",
-      "title": "datasette-cluster-map 0.19",
-      "content_text": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a ma",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-13T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/13/datasette-leaflet",
-      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet",
-      "title": "datasette-leaflet 0.3",
-      "content_text": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from Ope",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-13T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
         "Live"
       ]
     },
@@ -343,26 +363,6 @@
         "Hugging Face",
         "Hugging Face",
         "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/business/customer-stories/shield",
-      "url": "https://openai.com/business/customer-stories/shield",
-      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "content_text": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-13T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
         "Live"
       ]
     },
