@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 15 Nov 2026 23:07:39 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:08:32 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market]]></title>
+    <description><![CDATA[Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.]]></description>
+    <link>https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[A step toward defining the Standard Model on a lattice]]></title>
@@ -89,15 +98,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/14/datasette-vega</guid>
     <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Asian governments react to Nvidia CEO Jensen Huang’s exit]]></title>
-    <description><![CDATA[Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.]]></description>
-    <link>https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit</guid>
-    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>

@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
+      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "content_text": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-15T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
       "id": "https://openai.com/index/step-toward-defining-the-standard-model",
       "url": "https://openai.com/index/step-toward-defining-the-standard-model",
       "title": "A step toward defining the Standard Model on a lattice",
@@ -183,26 +203,6 @@
         "Simon Willison",
         "Simon Willison",
         "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit",
-      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit",
-      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-      "content_text": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-14T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
         "Live"
       ]
     },
