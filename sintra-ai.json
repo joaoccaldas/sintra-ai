@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T15:17:33.726309+00:00",
+  "generatedAt": "2026-11-16T16:18:02.231670+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "aca925b15bf1ae05b947a05612968e19bf02dd5e131042e83fd20515d3b52969",
+      "title": "Audible turns to AI to help users discover audiobooks",
+      "url": "https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks",
+      "summary": "Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.",
+      "publishedAt": "2026-11-16T15:52:19+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "7e98012e3d4701368eeded9c36488b57fe4ae1280ec0e1b526b50c740a130729",
       "title": "US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
@@ -38,7 +48,7 @@
       "id": "b8363c3127134c83660707c7b294670d66c775c1a62032e73eb396eb60016ed8",
       "title": "Show HN: Coral – Open-source gateway where agents write their own tools",
       "url": "https://github.com/withcoral/coral",
-      "summary": "Comments",
+      "summary": "46 points · 19 comments on Hacker News",
       "publishedAt": "2026-11-16T14:14:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +178,7 @@
       "id": "1fe2672ad8f8845e28f55a7689d7146f60e19c77e10f7615cbb70666397eee3a",
       "title": "Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered",
       "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388",
-      "summary": "31 points · 9 comments on Hacker News",
+      "summary": "34 points · 9 comments on Hacker News",
       "publishedAt": "2026-11-16T04:03:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +198,7 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "89 points · 78 comments on Hacker News",
+      "summary": "90 points · 79 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -285,20 +295,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "24cbece72f55c409692d8ead8823d0712f8d82ba4b1e6b4c586957c29c78cc5c",
-      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
-      "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry",
-      "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
-      "publishedAt": "2026-11-15T21:56:35+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "67 points · 65 comments on Hacker News",
+      "summary": "68 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
