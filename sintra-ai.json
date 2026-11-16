@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T17:58:19.047986+00:00",
+  "generatedAt": "2026-11-16T18:58:39.895303+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,18 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 49,
+  "itemCount": 48,
   "items": [
+    {
+      "id": "a962a9aff8c6e655813a1df0b689b757f9e4fbe25c52e13522272f128bdb551e",
+      "title": "Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’",
+      "url": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine",
+      "summary": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.",
+      "publishedAt": "2026-11-16T18:11:10+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "474a91e84ee7b824ce9f1977bbd672ffc07062002cbf33216e2e15213f2a5735",
       "title": "FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’",
@@ -36,7 +46,7 @@
     },
     {
       "id": "af037def51a6f595e97d9afc993339eb3f3a76c42deac9eadc13e443238d9176",
-      "title": "OpenAI will embed Apollo researchers to investigate AI subversion",
+      "title": "OpenAI will embed safety researchers to investigate AI subversion",
       "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion",
       "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
       "publishedAt": "2026-11-16T17:02:43+00:00",
@@ -85,6 +95,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "57df5ab313dac7ace4bcb01a7924375f2ddaa69dc76cf5787ae94639f96bb748",
+      "title": "Generative AI Usage in the Games Industry",
+      "url": "https://www.gameworkers.co.uk/ai-manifesto",
+      "summary": "35 points · 65 comments on Hacker News",
+      "publishedAt": "2026-11-16T15:59:48+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "aca925b15bf1ae05b947a05612968e19bf02dd5e131042e83fd20515d3b52969",
       "title": "Audible turns to AI to help users discover audiobooks",
       "url": "https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks",
@@ -95,20 +115,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7e98012e3d4701368eeded9c36488b57fe4ae1280ec0e1b526b50c740a130729",
-      "title": "US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
-      "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely",
-      "summary": "Under the interim rule, the U.S. will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.",
-      "publishedAt": "2026-11-16T15:02:34+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "b8363c3127134c83660707c7b294670d66c775c1a62032e73eb396eb60016ed8",
       "title": "Show HN: Coral – Open-source gateway where agents write their own tools",
       "url": "https://github.com/withcoral/coral",
-      "summary": "48 points · 23 comments on Hacker News",
+      "summary": "50 points · 23 comments on Hacker News",
       "publishedAt": "2026-11-16T14:14:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -258,7 +268,7 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "93 points · 79 comments on Hacker News",
+      "summary": "93 points · 80 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -312,16 +322,6 @@
       "publishedAt": "2026-11-15T23:18:17+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
-      "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
-      "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "68 points · 66 comments on Hacker News",
-      "publishedAt": "2026-11-15T19:39:46+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -490,16 +490,6 @@
       "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available",
       "summary": "",
       "publishedAt": "2026-11-10T16:03:47+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0e9fb0eb84f13acffdc59012e1c88f7c2f202f69132c55eacdf5e3a2b2ad057d",
-      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code",
-      "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
-      "publishedAt": "2026-11-10T12:02:28+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
       "color": "#5B48D9"
