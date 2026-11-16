@@ -7,8 +7,71 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 16:18:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 18:02:36 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’]]></title>
+    <description><![CDATA[The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.]]></description>
+    <link>https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’]]></title>
+    <description><![CDATA[Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.]]></description>
+    <link>https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI will embed Apollo researchers to investigate AI subversion]]></title>
+    <description><![CDATA[OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.]]></description>
+    <link>https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Broadening access to AI for scientists]]></title>
+    <description><![CDATA[We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.]]></description>
+    <link>https://openai.com/index/expanding-chatgpt-for-academic-researchers</link>
+    <guid isPermaLink="true">https://openai.com/index/expanding-chatgpt-for-academic-researchers</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM]]></title>
+    <description><![CDATA[ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning]]></description>
+    <link>https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Strengthening the fight against online child sexual abuse with new tools and support]]></title>
+    <description><![CDATA[New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.]]></description>
+    <link>https://openai.com/index/strengthening-online-child-safety</link>
+    <guid isPermaLink="true">https://openai.com/index/strengthening-online-child-safety</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Building trustworthy AI by fencing it in, not predicting it]]></title>
+    <description><![CDATA[In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migra]]></description>
+    <link>https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[Audible turns to AI to help users discover audiobooks]]></title>
@@ -21,18 +84,9 @@
 
   <item>
     <title><![CDATA[US tightens AI chip export controls to deter Chinese companies from accessing compute remotely]]></title>
-    <description><![CDATA[Under the interim rule, US will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.]]></description>
+    <description><![CDATA[Under the interim rule, the U.S. will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.]]></description>
     <link>https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Maps can now build trip itineraries with real-time details about each stop]]></title>
-    <description><![CDATA[You could use Ask Maps to plan a holiday shopping day trip or something more complex, like a three-day road trip featuring coastal hikes and oceanfront dining.]]></description>
-    <link>https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -56,12 +110,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM]]></title>
-    <description><![CDATA[Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.]]></description>
-    <link>https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm</guid>
+    <title><![CDATA[Science at the Frontier: How scientists use ChatGPT]]></title>
+    <description><![CDATA[Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.]]></description>
+    <link>https://openai.com/index/science-at-the-frontier</link>
+    <guid isPermaLink="true">https://openai.com/index/science-at-the-frontier</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -69,6 +123,15 @@
     <description><![CDATA[LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.]]></description>
     <link>https://openai.com/index/lvmh-media-division-partnership</link>
     <guid isPermaLink="true">https://openai.com/index/lvmh-media-division-partnership</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Our first phase of embedded assessments]]></title>
+    <description><![CDATA[OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.]]></description>
+    <link>https://openai.com/index/our-first-phase-of-embedded-assessments</link>
+    <guid isPermaLink="true">https://openai.com/index/our-first-phase-of-embedded-assessments</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
@@ -83,30 +146,12 @@
   </item>
 
   <item>
-    <title><![CDATA[More ways to move care forward with ChatGPT for Healthcare]]></title>
-    <description><![CDATA[Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.]]></description>
-    <link>https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare</link>
-    <guid isPermaLink="true">https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare</guid>
+    <title><![CDATA[Hugging Face and OpenRouter join forces to make open-weight models easy to run]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/openrouter</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/openrouter</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple launches new app to study how people use AI for health]]></title>
-    <description><![CDATA[Apple's new app for a study will answer everyday medical questions]]></description>
-    <link>https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The King’s Trust and OpenAI launch £1m partnership]]></title>
-    <description><![CDATA[The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.]]></description>
-    <link>https://openai.com/index/the-kings-trust-and-openai</link>
-    <guid isPermaLink="true">https://openai.com/index/the-kings-trust-and-openai</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
+    <category>Hugging Face</category>
   </item>
 
   <item>
@@ -119,55 +164,10 @@
   </item>
 
   <item>
-    <title><![CDATA[Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market]]></title>
-    <description><![CDATA[Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.]]></description>
-    <link>https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[datasette 1.0a43]]></title>
     <description><![CDATA[Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mech]]></description>
     <link>https://simonwillison.net/2026/Nov/15/datasette</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette 0.65.6]]></title>
-    <description><![CDATA[Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who w]]></description>
-    <link>https://simonwillison.net/2026/Nov/15/datasette-2</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette-2</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[A step toward defining the Standard Model on a lattice]]></title>
-    <description><![CDATA[Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.]]></description>
-    <link>https://openai.com/index/step-toward-defining-the-standard-model</link>
-    <guid isPermaLink="true">https://openai.com/index/step-toward-defining-the-standard-model</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Our new blog for science]]></title>
-    <description><![CDATA[The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.]]></description>
-    <link>https://openai.com/index/our-new-blog-for-science</link>
-    <guid isPermaLink="true">https://openai.com/index/our-new-blog-for-science</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-apps 0.4a0]]></title>
-    <description><![CDATA[Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #]]></description>
-    <link>https://simonwillison.net/2026/Nov/15/datasette-apps</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette-apps</guid>
     <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
