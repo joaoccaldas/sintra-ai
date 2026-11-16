@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:16:39.735138+00:00",
+  "generatedAt": "2026-11-16T15:17:33.726309+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,38 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 48,
+  "itemCount": 49,
   "items": [
+    {
+      "id": "7e98012e3d4701368eeded9c36488b57fe4ae1280ec0e1b526b50c740a130729",
+      "title": "US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
+      "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely",
+      "summary": "Under the interim rule, US will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.",
+      "publishedAt": "2026-11-16T15:02:34+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "2108ac63e6edcc1dcd7def0931c59ef08e6c505f8c914ab053b8293397593c05",
+      "title": "Google Maps can now build trip itineraries with real-time details about each stop",
+      "url": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop",
+      "summary": "You could use Ask Maps to plan a holiday shopping day trip or something more complex, like a three-day road trip featuring coastal hikes and oceanfront dining.",
+      "publishedAt": "2026-11-16T14:48:13+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b8363c3127134c83660707c7b294670d66c775c1a62032e73eb396eb60016ed8",
+      "title": "Show HN: Coral – Open-source gateway where agents write their own tools",
+      "url": "https://github.com/withcoral/coral",
+      "summary": "Comments",
+      "publishedAt": "2026-11-16T14:14:51+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "11608d311d0047796796c8a9dbfb8536ab8ca24d06e0399d24ff383d018c7550",
       "title": "New Ask Maps features to help with holiday travel and prep",
@@ -22,6 +52,16 @@
       "publishedAt": "2026-11-16T14:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d1436b6477306116b9c13ed55dd2abe15bdb3f6824815062e1d749523e7c7f70",
+      "title": "Building AI that can work across the enterprise",
+      "url": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise",
+      "summary": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI agents and a",
+      "publishedAt": "2026-11-16T13:00:00+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -40,6 +80,26 @@
       "url": "https://openai.com/index/lvmh-media-division-partnership",
       "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
       "publishedAt": "2026-11-16T09:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "21b4758ab52123ac78ffa3dbca8705003ed9e3a44cc34d1840f5a51cf6e091d0",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "summary": "",
+      "publishedAt": "2026-11-16T06:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "21e886491b30cfff0403f0b9b226dc169269e7194d3a973fb9f92f6fcc6f75b9",
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
+      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+      "publishedAt": "2026-11-16T06:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
@@ -105,6 +165,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "1fe2672ad8f8845e28f55a7689d7146f60e19c77e10f7615cbb70666397eee3a",
+      "title": "Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered",
+      "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388",
+      "summary": "31 points · 9 comments on Hacker News",
+      "publishedAt": "2026-11-16T04:03:51+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "756563a4144915c6b62aee93e4f9920bb621c8d38365679a93561a9633b5b097",
       "title": "Qwen4-Max",
       "url": "https://qwen.ai/blog?id=qwen4-max",
@@ -118,7 +188,7 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "89 points · 76 comments on Hacker News",
+      "summary": "89 points · 78 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -225,41 +295,11 @@
       "color": "#5B48D9"
     },
     {
-      "id": "3ea624e61126b81c7ebfb1fd0d1075e8a00c1ecd260bcad4a1e50135123b479b",
-      "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
-      "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft",
-      "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
-      "publishedAt": "2026-11-15T20:20:57+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "66 points · 65 comments on Hacker News",
+      "summary": "67 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
-      "title": "All AI-generated code should be Open Source",
-      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "1195 points · 636 comments on Hacker News",
-      "publishedAt": "2026-11-15T14:46:58+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "180c301438cacf64af285826b74d0f6b93bc72f72fe1654c970da90c450ed000",
-      "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
-      "url": "https://github.com/db-branch/db-branch",
-      "summary": "43 points · 15 comments on Hacker News",
-      "publishedAt": "2026-11-15T13:50:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -282,16 +322,6 @@
       "publishedAt": "2026-11-15T03:49:47+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "167c81c5d6fc7db57e5d8050dad8aa2d9c145c2e728ec6de40d656937d161a0d",
-      "title": "Where was Nvidia’s security team?",
-      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team",
-      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak ",
-      "publishedAt": "2026-11-15T00:08:07+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -325,16 +355,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663",
-      "title": "Introducing ChatGPT Wallet",
-      "url": "https://openai.com/index/introducing-chatgpt-wallet",
-      "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-      "publishedAt": "2026-11-13T15:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6841e619fcd7e8d9370258a227590a244c9afe604f7f173c18d14806c323db86",
       "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
       "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
@@ -342,16 +362,6 @@
       "publishedAt": "2026-11-13T14:05:22+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a99dfdd20d85acbbb850aa77912a8df97b492b8fb6a1e7bebe1dab199cebab4f",
-      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "url": "https://openai.com/business/customer-stories/shield",
-      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-      "publishedAt": "2026-11-13T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
