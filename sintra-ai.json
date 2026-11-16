@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T16:18:02.231670+00:00",
+  "generatedAt": "2026-11-16T17:58:19.047986+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,76 @@
   "itemCount": 49,
   "items": [
     {
+      "id": "474a91e84ee7b824ce9f1977bbd672ffc07062002cbf33216e2e15213f2a5735",
+      "title": "FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’",
+      "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours",
+      "summary": "The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
+      "publishedAt": "2026-11-16T17:36:43+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b5b8d2f9cb551dda74e93b61597d96e9d6730526f713aaee9d72650f1e397531",
+      "title": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’",
+      "url": "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street",
+      "summary": "Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.",
+      "publishedAt": "2026-11-16T17:10:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "af037def51a6f595e97d9afc993339eb3f3a76c42deac9eadc13e443238d9176",
+      "title": "OpenAI will embed Apollo researchers to investigate AI subversion",
+      "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion",
+      "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
+      "publishedAt": "2026-11-16T17:02:43+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "2d7a5d6b20fff3cd431e56c6c45800450e6e12e3351b563ba22db14d6cc86266",
+      "title": "Broadening access to AI for scientists",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "publishedAt": "2026-11-16T17:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "37e7777f21965965b8e85d2df797878bc085e78095eba220a68cbf793b8a4891",
+      "title": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM",
+      "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam",
+      "summary": "ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning",
+      "publishedAt": "2026-11-16T17:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "dd659f011024f04f24b0b918544913431aa1336cb6fdeb78ce4549a3a5fdd29c",
+      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "url": "https://openai.com/index/strengthening-online-child-safety",
+      "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
+      "publishedAt": "2026-11-16T17:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9ed8c032dbcdf137f78a60215dd1553f581f4c15866f1c4b02848b638d0d09b5",
+      "title": "Building trustworthy AI by fencing it in, not predicting it",
+      "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it",
+      "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migra",
+      "publishedAt": "2026-11-16T16:04:28+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "aca925b15bf1ae05b947a05612968e19bf02dd5e131042e83fd20515d3b52969",
       "title": "Audible turns to AI to help users discover audiobooks",
       "url": "https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks",
@@ -28,18 +98,8 @@
       "id": "7e98012e3d4701368eeded9c36488b57fe4ae1280ec0e1b526b50c740a130729",
       "title": "US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
       "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely",
-      "summary": "Under the interim rule, US will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.",
+      "summary": "Under the interim rule, the U.S. will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.",
       "publishedAt": "2026-11-16T15:02:34+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "2108ac63e6edcc1dcd7def0931c59ef08e6c505f8c914ab053b8293397593c05",
-      "title": "Google Maps can now build trip itineraries with real-time details about each stop",
-      "url": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop",
-      "summary": "You could use Ask Maps to plan a holiday shopping day trip or something more complex, like a three-day road trip featuring coastal hikes and oceanfront dining.",
-      "publishedAt": "2026-11-16T14:48:13+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -48,7 +108,7 @@
       "id": "b8363c3127134c83660707c7b294670d66c775c1a62032e73eb396eb60016ed8",
       "title": "Show HN: Coral – Open-source gateway where agents write their own tools",
       "url": "https://github.com/withcoral/coral",
-      "summary": "46 points · 19 comments on Hacker News",
+      "summary": "48 points · 23 comments on Hacker News",
       "publishedAt": "2026-11-16T14:14:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -75,13 +135,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "806db9cd3ae0f854444ad50fd81af0b202eab5c5e629553b3d82dd705f6ffa01",
-      "title": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
-      "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm",
-      "summary": "Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.",
-      "publishedAt": "2026-11-16T12:30:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "d91fd06de7b8771ee8ad78bbe6c6a0f8795962915436321f9652c6b42b553b9c",
+      "title": "Science at the Frontier: How scientists use ChatGPT",
+      "url": "https://openai.com/index/science-at-the-frontier",
+      "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+      "publishedAt": "2026-11-16T12:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -95,20 +155,20 @@
       "color": "#5B48D9"
     },
     {
-      "id": "21b4758ab52123ac78ffa3dbca8705003ed9e3a44cc34d1840f5a51cf6e091d0",
-      "title": "Advancing computer-use agents for healthcare teams",
-      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
-      "summary": "",
-      "publishedAt": "2026-11-16T06:00:00+00:00",
+      "id": "9fe6d2ae73e55f52b8078f1806f466588569fb6faa3605540c1891f86e100648",
+      "title": "Our first phase of embedded assessments",
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+      "publishedAt": "2026-11-16T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
     },
     {
-      "id": "21e886491b30cfff0403f0b9b226dc169269e7194d3a973fb9f92f6fcc6f75b9",
-      "title": "More ways to move care forward with ChatGPT for Healthcare",
-      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-      "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+      "id": "21b4758ab52123ac78ffa3dbca8705003ed9e3a44cc34d1840f5a51cf6e091d0",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "summary": "",
       "publishedAt": "2026-11-16T06:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
@@ -198,20 +258,10 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "90 points · 79 comments on Hacker News",
+      "summary": "93 points · 79 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "87b76e5b13944ae023be72d1f66062e704cdb18dc04605e0679e07757bd73d9e",
-      "title": "Apple launches new app to study how people use AI for health",
-      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health",
-      "summary": "Apple's new app for a study will answer everyday medical questions",
-      "publishedAt": "2026-11-16T01:30:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -225,13 +275,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "60f3c7381bc61eae5e3d002a0ecfce30c3913c926a7778f89e799b4b1d0cc1eb",
-      "title": "The King’s Trust and OpenAI launch £1m partnership",
-      "url": "https://openai.com/index/the-kings-trust-and-openai",
-      "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+      "id": "8ec21efa2c62273428cb36f48412c205c966c9e1c9840d1b4a0d5276d99867ca",
+      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+      "url": "https://huggingface.co/blog/openrouter",
+      "summary": "",
       "publishedAt": "2026-11-16T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
+      "source": "Hugging Face",
+      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -242,16 +292,6 @@
       "publishedAt": "2026-11-15T23:58:36+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "61200927e23c6bf1a95c42204ffc533099f8744490a1672af0d24ccab23c324a",
-      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
-      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
-      "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
-      "publishedAt": "2026-11-15T23:30:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -275,30 +315,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "2e8f421d2ee2a3dfd36bfcc5be1c93ba1a42b98e60398a99d5e21362ce523fd9",
-      "title": "A step toward defining the Standard Model on a lattice",
-      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
-      "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
-      "publishedAt": "2026-11-15T22:00:01+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "33b95c2112c46efd095543028e60f6116680e85e464182b74c65e43667746d78",
-      "title": "Our new blog for science",
-      "url": "https://openai.com/index/our-new-blog-for-science",
-      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
-      "publishedAt": "2026-11-15T22:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "68 points · 65 comments on Hacker News",
+      "summary": "68 points · 66 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -455,16 +475,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "19b4fcb1faac9c9bdbccd358c8d8e12a9188d32981764b2e3beec26a5de09e66",
-      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "url": "https://huggingface.co/blog/qvac/botpsy",
-      "summary": "",
-      "publishedAt": "2026-11-11T05:01:16+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
       "id": "fafff4292c09fd9370c59269226818b22b187de9757f1096f65549cc01bfa598",
       "title": "Gemini Intelligence: New features, on more devices",
       "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
@@ -490,16 +500,6 @@
       "url": "https://deepmind.google/blog/introducing-alphaproof-code",
       "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
       "publishedAt": "2026-11-10T12:02:28+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1972a6107d7cc016e042577c535c6d7718b92a32634391969262b9d5dec605c7",
-      "title": "Opening the datasets behind our AI weather models",
-      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models",
-      "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
-      "publishedAt": "2026-11-10T11:13:04+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
       "color": "#5B48D9"
@@ -3823,7 +3823,7 @@
         "value": 2.2857464902475,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.190407+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3887,7 +3887,7 @@
         "value": 1.4110724231835,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.190445+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -3951,7 +3951,7 @@
         "value": 1.54316373266217,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.190448+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4015,7 +4015,7 @@
         "value": 2.16138195623856,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.190451+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4079,7 +4079,7 @@
         "value": 5.01675279604836,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.470401+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4143,7 +4143,7 @@
         "value": 2.46605755272817,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.470490+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4207,7 +4207,7 @@
         "value": 0.679015259300199,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.470495+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4271,7 +4271,7 @@
         "value": 2.94952520485207,
         "period": "2024-01-01",
         "retrievedAt": "2026-11-15T17:29:44.470498+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4335,7 +4335,7 @@
         "value": 5.97,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.242604+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4399,7 +4399,7 @@
         "value": 6.28355946264135,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.242625+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4463,7 +4463,7 @@
         "value": 8.694,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.242628+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4527,7 +4527,7 @@
         "value": 4.198,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-15T17:29:44.242631+00:00",
-        "stale": false
+        "stale": true
       }
     ]
   }
