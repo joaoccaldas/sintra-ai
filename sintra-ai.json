@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T23:50:48.483090+00:00",
+  "generatedAt": "2026-11-16T00:50:59.313242+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,16 @@
       "publishedAt": "2026-11-15T23:30:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "ad61f4db9d2a336e03ab2c519973bef7d6e42d4bf19664d5d546db2f77af08eb",
+      "title": "datasette 0.65.6",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-2",
+      "summary": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who w",
+      "publishedAt": "2026-11-15T23:18:17+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -85,10 +95,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "180c301438cacf64af285826b74d0f6b93bc72f72fe1654c970da90c450ed000",
+      "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
+      "url": "https://github.com/db-branch/db-branch",
+      "summary": "31 points · 9 comments on Hacker News",
+      "publishedAt": "2026-11-15T13:50:51+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "2221164cfde1b4e2b29f6a3da42e0edba9ac4debd3144a903894fa649eecf77c",
       "title": "Jensen Huang allegedly manufactured the GPU shortage",
       "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon",
-      "summary": "60 points · 58 comments on Hacker News",
+      "summary": "60 points · 59 comments on Hacker News",
       "publishedAt": "2026-11-15T10:53:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +118,7 @@
       "id": "0303ada4a529724d5db5684a1871b62296da20bb460b622161148543b46e57e1",
       "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
       "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
-      "summary": "84 points · 55 comments on Hacker News",
+      "summary": "85 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-15T03:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +128,7 @@
       "id": "88ae2cfdd6f592722f0248e22175c86694f8e51246497b8c89cd0f3ef3df4a60",
       "title": "Court denies motion to dismiss DRAM price fixing case",
       "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-      "summary": "483 points · 215 comments on Hacker News",
+      "summary": "488 points · 216 comments on Hacker News",
       "publishedAt": "2026-11-15T01:18:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -142,16 +162,6 @@
       "publishedAt": "2026-11-14T21:41:22+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d040778ff986aa03f6e7572465c335c50fde6a3434e39ecf6921d483d3f77526",
-      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
-      "summary": "50 points · 75 comments on Hacker News",
-      "publishedAt": "2026-11-14T17:51:13+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -382,16 +392,6 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8cfe95d5a7efcad0553086b91dc8b748def885df6f32755ce0e3fb7af3f221c2",
-      "title": "Gemini Decisions API",
-      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
-      "summary": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's ter",
-      "publishedAt": "2026-11-11T22:03:25+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
