@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T09:01:52.932098+00:00",
+  "generatedAt": "2026-11-16T10:02:06.263208+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "ff7833693fa2a06713dc923ab6354b82d0a99faf362cef1531beb712e1bb1855",
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+      "publishedAt": "2026-11-16T09:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "038f18aa5efcb07f7a3c2bf8cdcbd0f70b2405f779ce9c807d0681f0c43e9c0f",
       "title": "Two-Clustering Regime of Token Dynamics in Causal Attention",
@@ -78,7 +88,7 @@
       "id": "756563a4144915c6b62aee93e4f9920bb621c8d38365679a93561a9633b5b097",
       "title": "Qwen4-Max",
       "url": "https://qwen.ai/blog?id=qwen4-max",
-      "summary": "466 points · 184 comments on Hacker News",
+      "summary": "483 points · 197 comments on Hacker News",
       "publishedAt": "2026-11-16T02:14:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +98,7 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "82 points · 69 comments on Hacker News",
+      "summary": "83 points · 69 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +118,7 @@
       "id": "69159b88e2cd0a1f061b9c4d8137fa80061c3569900d21b0b88e79c6025a60bf",
       "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
       "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
-      "summary": "138 points · 42 comments on Hacker News",
+      "summary": "145 points · 44 comments on Hacker News",
       "publishedAt": "2026-11-16T00:21:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +208,7 @@
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "64 points · 64 comments on Hacker News",
+      "summary": "65 points · 64 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +218,7 @@
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "1163 points · 614 comments on Hacker News",
+      "summary": "1166 points · 616 comments on Hacker News",
       "publishedAt": "2026-11-15T14:46:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -371,16 +381,6 @@
       "summary": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
       "publishedAt": "2026-11-12T18:00:00+00:00",
       "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b9840fd67063a36a400d5e1d91fe182c1b415df6997c889b681a58ba22957843",
-      "title": "Gondola doubles revenue as its team builds more with Codex",
-      "url": "https://openai.com/business/customer-stories/gondola",
-      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
-      "publishedAt": "2026-11-12T12:00:00+00:00",
-      "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
     },
