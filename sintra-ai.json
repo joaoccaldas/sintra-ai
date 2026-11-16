@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T10:02:06.263208+00:00",
+  "generatedAt": "2026-11-16T11:02:25.990325+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -88,7 +88,7 @@
       "id": "756563a4144915c6b62aee93e4f9920bb621c8d38365679a93561a9633b5b097",
       "title": "Qwen4-Max",
       "url": "https://qwen.ai/blog?id=qwen4-max",
-      "summary": "483 points · 197 comments on Hacker News",
+      "summary": "488 points · 199 comments on Hacker News",
       "publishedAt": "2026-11-16T02:14:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +118,7 @@
       "id": "69159b88e2cd0a1f061b9c4d8137fa80061c3569900d21b0b88e79c6025a60bf",
       "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
       "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
-      "summary": "145 points · 44 comments on Hacker News",
+      "summary": "145 points · 43 comments on Hacker News",
       "publishedAt": "2026-11-16T00:21:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
