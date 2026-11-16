@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:02:55.383250+00:00",
+  "generatedAt": "2026-11-16T14:16:39.735138+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "11608d311d0047796796c8a9dbfb8536ab8ca24d06e0399d24ff383d018c7550",
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026",
+      "summary": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.",
+      "publishedAt": "2026-11-16T14:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
     {
       "id": "806db9cd3ae0f854444ad50fd81af0b202eab5c5e629553b3d82dd705f6ffa01",
       "title": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
@@ -108,7 +118,7 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "88 points · 72 comments on Hacker News",
+      "summary": "89 points · 76 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -238,7 +248,7 @@
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "1180 points · 625 comments on Hacker News",
+      "summary": "1195 points · 636 comments on Hacker News",
       "publishedAt": "2026-11-15T14:46:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -248,7 +258,7 @@
       "id": "180c301438cacf64af285826b74d0f6b93bc72f72fe1654c970da90c450ed000",
       "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
       "url": "https://github.com/db-branch/db-branch",
-      "summary": "42 points · 14 comments on Hacker News",
+      "summary": "43 points · 15 comments on Hacker News",
       "publishedAt": "2026-11-15T13:50:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -461,16 +471,6 @@
       "summary": "",
       "publishedAt": "2026-11-10T16:03:47+00:00",
       "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e192e4f92a704298f96f725cc3ae96c30d788d917e1f7b38ef8d7e63567c6b73",
-      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
-      "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
-      "publishedAt": "2026-11-10T14:00:00+00:00",
-      "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
     },
