@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T00:50:59.313242+00:00",
+  "generatedAt": "2026-11-16T01:51:19.746813+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,26 @@
   "itemCount": 53,
   "items": [
     {
+      "id": "87b76e5b13944ae023be72d1f66062e704cdb18dc04605e0679e07757bd73d9e",
+      "title": "Apple launches new app to study how people use AI for health",
+      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health",
+      "summary": "Apple's new app for a study will answer everyday medical questions",
+      "publishedAt": "2026-11-16T01:30:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c6febd82e4661f8df7bb563485f82955af6c6ec0f37074e6a4ca6a14d0ee58a6",
+      "title": "datasette-maplibre 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
+      "summary": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built",
+      "publishedAt": "2026-11-15T23:58:36+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
       "id": "61200927e23c6bf1a95c42204ffc533099f8744490a1672af0d24ccab23c324a",
       "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
       "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
@@ -22,6 +42,16 @@
       "publishedAt": "2026-11-15T23:30:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "601a53017054bbcae56a1142bb3bcfd8c33b9c053f667e9661e1418bdf76f357",
+      "title": "datasette 1.0a43",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette",
+      "summary": "Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mech",
+      "publishedAt": "2026-11-15T23:20:27+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -78,7 +108,7 @@
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "59 points · 60 comments on Hacker News",
+      "summary": "63 points · 61 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +118,7 @@
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "Comments",
+      "summary": "1089 points · 593 comments on Hacker News",
       "publishedAt": "2026-11-15T14:46:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +128,7 @@
       "id": "180c301438cacf64af285826b74d0f6b93bc72f72fe1654c970da90c450ed000",
       "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
       "url": "https://github.com/db-branch/db-branch",
-      "summary": "31 points · 9 comments on Hacker News",
+      "summary": "32 points · 9 comments on Hacker News",
       "publishedAt": "2026-11-15T13:50:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,10 +138,30 @@
       "id": "2221164cfde1b4e2b29f6a3da42e0edba9ac4debd3144a903894fa649eecf77c",
       "title": "Jensen Huang allegedly manufactured the GPU shortage",
       "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon",
-      "summary": "60 points · 59 comments on Hacker News",
+      "summary": "61 points · 59 comments on Hacker News",
       "publishedAt": "2026-11-15T10:53:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "756ac6b73c7a66954f4dfc5e422413d99e848900434767b48f91e3a6f6b21360",
+      "title": "datasette-apps 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-apps",
+      "summary": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #",
+      "publishedAt": "2026-11-15T04:02:45+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a434c2daa44c258bf43ed7b3dce6a18e246a3b1efaf2fe9858282b778aeda043",
+      "title": "datasette-agent 0.6a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-agent",
+      "summary": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions ",
+      "publishedAt": "2026-11-15T03:49:47+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -128,7 +178,7 @@
       "id": "88ae2cfdd6f592722f0248e22175c86694f8e51246497b8c89cd0f3ef3df4a60",
       "title": "Court denies motion to dismiss DRAM price fixing case",
       "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-      "summary": "488 points · 216 comments on Hacker News",
+      "summary": "491 points · 219 comments on Hacker News",
       "publishedAt": "2026-11-15T01:18:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,26 +212,6 @@
       "publishedAt": "2026-11-14T21:41:22+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "238432e278b3a0376a6fc6ad25e68199e1e2a7031f5bf528d76de0bcaabf80ec",
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
-      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "publishedAt": "2026-11-14T17:30:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "c7271b7ac99ecdcd291f7997f30411cf66e3852ee453480b5b6bc2dd9d441786",
-      "title": "datasette-vega 0.7",
-      "url": "https://simonwillison.net/2026/Nov/14/datasette-vega",
-      "summary": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Dataset",
-      "publishedAt": "2026-11-14T17:09:09+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -245,26 +275,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "2053de078f05bd0a49e004a6f8c9f68c0154a94b7ea14d0b9adeb94b91e8f334",
-      "title": "datasette-cluster-map 0.19",
-      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map",
-      "summary": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a ma",
-      "publishedAt": "2026-11-13T23:02:45+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a840b1604a3a5e19683a3aaca3bf6ae147c54af5ac713ce71b1c1f85e0148471",
-      "title": "datasette-leaflet 0.3",
-      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet",
-      "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from Ope",
-      "publishedAt": "2026-11-13T22:30:54+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "cdc8eef67bc55a0d0fa5ca86f75a39576cb4cd55b8ad20129c59ea60f80062cd",
       "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
       "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
@@ -312,16 +322,6 @@
       "publishedAt": "2026-11-13T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "aeee01f562824dca326f8c8d7b2ef7c85b22d93e47995594295d2e054659284e",
-      "title": "llm-gemini 0.37",
-      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini",
-      "summary": "Release: llm-gemini 0.37 Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family. It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing really confusing. Here's the",
-      "publishedAt": "2026-11-12T22:55:19+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
