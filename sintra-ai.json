@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T11:02:25.990325+00:00",
+  "generatedAt": "2026-11-16T12:02:38.211792+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -88,7 +88,7 @@
       "id": "756563a4144915c6b62aee93e4f9920bb621c8d38365679a93561a9633b5b097",
       "title": "Qwen4-Max",
       "url": "https://qwen.ai/blog?id=qwen4-max",
-      "summary": "488 points · 199 comments on Hacker News",
+      "summary": "595 points · 250 comments on Hacker News",
       "publishedAt": "2026-11-16T02:14:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +98,7 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "83 points · 69 comments on Hacker News",
+      "summary": "87 points · 70 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,10 +118,20 @@
       "id": "69159b88e2cd0a1f061b9c4d8137fa80061c3569900d21b0b88e79c6025a60bf",
       "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
       "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
-      "summary": "145 points · 43 comments on Hacker News",
+      "summary": "169 points · 49 comments on Hacker News",
       "publishedAt": "2026-11-16T00:21:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "60f3c7381bc61eae5e3d002a0ecfce30c3913c926a7778f89e799b4b1d0cc1eb",
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "url": "https://openai.com/index/the-kings-trust-and-openai",
+      "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+      "publishedAt": "2026-11-16T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -208,7 +218,7 @@
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "65 points · 64 comments on Hacker News",
+      "summary": "66 points · 65 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -218,7 +228,7 @@
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "1166 points · 616 comments on Hacker News",
+      "summary": "1174 points · 621 comments on Hacker News",
       "publishedAt": "2026-11-15T14:46:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -228,7 +238,7 @@
       "id": "180c301438cacf64af285826b74d0f6b93bc72f72fe1654c970da90c450ed000",
       "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
       "url": "https://github.com/db-branch/db-branch",
-      "summary": "42 points · 11 comments on Hacker News",
+      "summary": "42 points · 14 comments on Hacker News",
       "publishedAt": "2026-11-15T13:50:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -342,16 +352,6 @@
       "publishedAt": "2026-11-12T20:16:24+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "67672a694e389b29af5588bf1be29a978063408e3c6a0262fcadf6da500500d7",
-      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "url": "https://openai.com/business/customer-stories/amplitude",
-      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-      "publishedAt": "2026-11-12T20:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
