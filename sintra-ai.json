@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:50:28.093139+00:00",
+  "generatedAt": "2026-11-15T23:50:48.483090+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 53,
   "items": [
+    {
+      "id": "61200927e23c6bf1a95c42204ffc533099f8744490a1672af0d24ccab23c324a",
+      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
+      "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+      "publishedAt": "2026-11-15T23:30:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "2e8f421d2ee2a3dfd36bfcc5be1c93ba1a42b98e60398a99d5e21362ce523fd9",
       "title": "A step toward defining the Standard Model on a lattice",
@@ -58,7 +68,7 @@
       "id": "bbfcf564f0bfd130939c5b4dd6a228ddf9dea96d40a2d577c09d271f9db4ba39",
       "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
       "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals",
-      "summary": "56 points · 59 comments on Hacker News",
+      "summary": "59 points · 60 comments on Hacker News",
       "publishedAt": "2026-11-15T19:39:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +88,7 @@
       "id": "2221164cfde1b4e2b29f6a3da42e0edba9ac4debd3144a903894fa649eecf77c",
       "title": "Jensen Huang allegedly manufactured the GPU shortage",
       "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon",
-      "summary": "58 points · 58 comments on Hacker News",
+      "summary": "60 points · 58 comments on Hacker News",
       "publishedAt": "2026-11-15T10:53:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +98,7 @@
       "id": "0303ada4a529724d5db5684a1871b62296da20bb460b622161148543b46e57e1",
       "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
       "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
-      "summary": "83 points · 55 comments on Hacker News",
+      "summary": "84 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-15T03:05:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "88ae2cfdd6f592722f0248e22175c86694f8e51246497b8c89cd0f3ef3df4a60",
       "title": "Court denies motion to dismiss DRAM price fixing case",
       "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-      "summary": "481 points · 211 comments on Hacker News",
+      "summary": "483 points · 215 comments on Hacker News",
       "publishedAt": "2026-11-15T01:18:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,16 +172,6 @@
       "publishedAt": "2026-11-14T17:09:09+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "299cfd655b5df2e69b8ede045143ce3c41e2a7526bf75d29e28b082199bf46f6",
-      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit",
-      "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-      "publishedAt": "2026-11-14T16:34:15+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
