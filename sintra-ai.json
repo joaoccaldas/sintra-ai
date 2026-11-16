@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:02:38.211792+00:00",
+  "generatedAt": "2026-11-16T13:02:55.383250+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "806db9cd3ae0f854444ad50fd81af0b202eab5c5e629553b3d82dd705f6ffa01",
+      "title": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
+      "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm",
+      "summary": "Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.",
+      "publishedAt": "2026-11-16T12:30:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "ff7833693fa2a06713dc923ab6354b82d0a99faf362cef1531beb712e1bb1855",
       "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
@@ -88,7 +98,7 @@
       "id": "756563a4144915c6b62aee93e4f9920bb621c8d38365679a93561a9633b5b097",
       "title": "Qwen4-Max",
       "url": "https://qwen.ai/blog?id=qwen4-max",
-      "summary": "595 points · 250 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-16T02:14:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "ab4fc5bd1909d3d7162735f0302f89edd8509d293b7f1d37a8fea1987cca36e2",
       "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
       "url": "https://www.hntrends.com/2026/november.html",
-      "summary": "87 points · 70 comments on Hacker News",
+      "summary": "88 points · 72 comments on Hacker News",
       "publishedAt": "2026-11-16T01:31:30+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +128,7 @@
       "id": "69159b88e2cd0a1f061b9c4d8137fa80061c3569900d21b0b88e79c6025a60bf",
       "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
       "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
-      "summary": "169 points · 49 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-16T00:21:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -228,7 +238,7 @@
       "id": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
-      "summary": "1174 points · 621 comments on Hacker News",
+      "summary": "1180 points · 625 comments on Hacker News",
       "publishedAt": "2026-11-15T14:46:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -282,16 +292,6 @@
       "publishedAt": "2026-11-14T23:59:28+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fc1d70bba296bc73c15323b60b097a96b51a887bae46038613c72fbc763045d0",
-      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
-      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang",
-      "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-      "publishedAt": "2026-11-14T21:41:22+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
