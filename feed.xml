@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 13:04:02 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 14:17:22 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[New Ask Maps features to help with holiday travel and prep]]></title>
+    <description><![CDATA[Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.]]></description>
+    <link>https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026</link>
+    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM]]></title>
@@ -159,15 +168,6 @@
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place</link>
     <guid isPermaLink="true">https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[XYBench: Helping with the problem behind the question]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/allenai/xybench</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/allenai/xybench</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
   </item>
