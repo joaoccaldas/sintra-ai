@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 11:02:53 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 12:03:50 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -26,6 +26,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The King’s Trust and OpenAI launch £1m partnership]]></title>
+    <description><![CDATA[The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.]]></description>
+    <link>https://openai.com/index/the-kings-trust-and-openai</link>
+    <guid isPermaLink="true">https://openai.com/index/the-kings-trust-and-openai</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/allenai/xybench</guid>
     <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing ChatGPT Wallet]]></title>
-    <description><![CDATA[Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.]]></description>
-    <link>https://openai.com/index/introducing-chatgpt-wallet</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-chatgpt-wallet</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>

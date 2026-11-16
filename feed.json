@@ -47,6 +47,26 @@
       ]
     },
     {
+      "id": "https://openai.com/index/the-kings-trust-and-openai",
+      "url": "https://openai.com/index/the-kings-trust-and-openai",
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "content_text": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-16T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
       "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
       "title": "datasette-maplibre 0.1a0",
@@ -343,26 +363,6 @@
         "Hugging Face",
         "Hugging Face",
         "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/introducing-chatgpt-wallet",
-      "url": "https://openai.com/index/introducing-chatgpt-wallet",
-      "title": "Introducing ChatGPT Wallet",
-      "content_text": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-13T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
         "Live"
       ]
     },
