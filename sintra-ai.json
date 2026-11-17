@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T16:07:41.791576+00:00",
+  "generatedAt": "2026-11-17T19:30:58.232256+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,26 +12,106 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 48,
+  "itemCount": 49,
   "items": [
     {
-      "id": "e04686f80cf8e47e92b311dc787d489cb1bac20ebe7a572532b1dc86d21d7454",
-      "title": "Voyage Labs raises $12 million for a specialized AI travel assistant",
-      "url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant",
-      "summary": "Voyage Labs’ flagship product is called Atlas, meant to work as a personal assistant for your trip-planning, available today in private beta.",
-      "publishedAt": "2026-11-17T15:00:00+00:00",
+      "id": "af36944b8f532014f97718646c6ebc56b664df93f93cf0e957061e2c9a6fa76b",
+      "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
+      "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases",
+      "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
+      "publishedAt": "2026-11-17T19:02:20+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
     },
     {
-      "id": "4794d4873562de7620c3c3b62f8fa494e642d0e1951cc00b33117d6db4d63716",
-      "title": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
-      "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials",
-      "summary": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 Billion in a Series C funding round.",
-      "publishedAt": "2026-11-17T14:50:58+00:00",
+      "id": "92ead912d06bbf7e268a060685708e5543092b6e70751eb5a12bdf29ae5fa7fe",
+      "title": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
+      "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off",
+      "summary": "Google's Gemini update extending chat retention will roll out globally over the coming weeks.",
+      "publishedAt": "2026-11-17T18:48:23+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c74e8eacd8b57733cc238f3e68fd114fdb94ae6399707937eeb271c2d04e4048",
+      "title": "MAI Code 2 and Code 2 Flash",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
+      "summary": "76 points · 18 comments on Hacker News",
+      "publishedAt": "2026-11-17T18:25:13+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6420ccdcb0b076c31c03f50b3bb88b217582d95bd08230cd2a50e7d033c4140a",
+      "title": "As decision model use skyrockets, is customization the next frontier?",
+      "url": "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier",
+      "summary": "Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities.",
+      "publishedAt": "2026-11-17T18:10:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5a600a844d9b7ef8d45fba3cfcef5d866fe68e883f2d682ec24c7f5df855d7a6",
+      "title": "Pedestal AI raises $4.7 million to agentify the supply chain",
+      "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain",
+      "summary": "The company uses agentic AI to make supply chains faster and more reliable.",
+      "publishedAt": "2026-11-17T18:04:16+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8f6af8c44a4a1bfb5de31585ff7d049da9f0b0c7303ae5eb79fd652e216c50e9",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "publishedAt": "2026-11-17T17:45:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3818d6ccd2a7f7a119bfa5f81e8105f73ada25694f6123f3fe5acee64e1cb5d2",
+      "title": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
+      "url": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop",
+      "summary": "Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.",
+      "publishedAt": "2026-11-17T17:32:25+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0fd37b922e47061f484b0839cd621475baccb3a45f9f9aac2717c56b0d147650",
+      "title": "AI models can be tricked into identifying civilians as military targets by telling them it’s a game",
+      "url": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game",
+      "summary": "Vals, a San Francisco-based AI evaluation startup, tested whether leading AI models could be manipulated into participating in autonomous warfare. They usually compiled.",
+      "publishedAt": "2026-11-17T17:20:41+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "830da74434e8505c737e91eb0dcd32bca128e663d8b67dd821f376fcc24bd3aa",
+      "title": "Put Gemini to work for you",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features",
+      "summary": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
+      "publishedAt": "2026-11-17T17:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6f0fb0223e38d4b7eb88a0e7c5e7053f5bb8f0f1fefa0aa473dc9ea1840c0b87",
+      "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+      "url": "https://simonwillison.net/2026/Nov/17/datasette-lite",
+      "summary": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-si",
+      "publishedAt": "2026-11-17T16:48:33+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -45,53 +125,23 @@
       "color": "#5B48D9"
     },
     {
-      "id": "e1d42d0d1265ac5343c73ab2ab0c1fcf4ef451b6f7ebaaac9f5217abbf40e346",
-      "title": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
-      "url": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding",
-      "summary": "Science Corp raised a $400 million Series D to scale up its anti-blindness business.",
-      "publishedAt": "2026-11-17T14:26:46+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6ca6a1ab86c20b30438819689672bb0930600ee0b724f0cab596c264d27e6cd0",
       "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
       "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-      "summary": "Comments",
+      "summary": "174 points · 214 comments on Hacker News",
       "publishedAt": "2026-11-17T14:19:59+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "1c3d3bc22915fae93a33b51eb0546ad737edc6080d99b2d1b6ecd6cd0adb3bda",
-      "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
-      "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security",
-      "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
-      "publishedAt": "2026-11-17T14:05:30+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "744081a6555f56a5430a3fcfeed7fb3ccdf918ec30f7c4ed501628fb08c456ee",
       "title": "S. Korea to send nationwide emergency alerts over college entrance exam cheating",
       "url": "https://apnews.com/article/south-korea-exam-cheating-ai-college-e25b5612dbf4bd09fdf9197254c4547e",
-      "summary": "Comments",
+      "summary": "60 points · 81 comments on Hacker News",
       "publishedAt": "2026-11-17T14:00:47+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "dc9b00f988f99db7330689f39a0969f1b30b0ef51b161801ff8f75c5cbc6d58f",
-      "title": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
-      "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists",
-      "summary": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
-      "publishedAt": "2026-11-17T14:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -108,7 +158,7 @@
       "id": "cd3f9f2cc97c05f9f5b96d3595e40296f0428d0281788edc0ac2ff149d2ae91c",
       "title": "Mem Is Shutting Down",
       "url": "https://get.mem.ai/blog/mem-is-shutting-down",
-      "summary": "74 points · 116 comments on Hacker News",
+      "summary": "77 points · 118 comments on Hacker News",
       "publishedAt": "2026-11-17T02:13:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -135,6 +185,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "b43ef08ac3ed4f7af6f4fa4f8f60d0d2c49772fc6e540a21a0c9e441265578ef",
+      "title": "Astra for Law leads in legal intelligence",
+      "url": "https://openai.com/index/astra-law-6-2",
+      "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+      "publishedAt": "2026-11-17T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "eb3125817116c9db86be78f5cf58626dea501d1244ce9564f49f86d1cf3bc818",
       "title": "llm 0.37.3",
       "url": "https://simonwillison.net/2026/Nov/16/llm",
@@ -145,20 +205,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "fe023ceca2fe56df02c67b1fbe2795abc02d967c7409bf8ac189b1174c3061f2",
-      "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
-      "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months",
-      "summary": "Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.",
-      "publishedAt": "2026-11-16T23:32:32+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "5d2fcb98492ed136d3fe5d0b84306e12533d1581cc7099da787909c3716198ba",
       "title": "United Airlines has a widespread system outage",
       "url": "https://apnews.com/article/united-airlines-outage-5a5e5f75bb07f11ffb8750901f0076ff",
-      "summary": "48 points · 12 comments on Hacker News",
+      "summary": "48 points · 13 comments on Hacker News",
       "publishedAt": "2026-11-16T22:22:18+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,18 +218,8 @@
       "id": "4353c1c4ce1b00e72f42acec9652a41b76210bbdce3c2fe750a8b2b63d0b5370",
       "title": "United Airlines experiencing a widespread system outage, airline says",
       "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
-      "summary": "245 points · 126 comments on Hacker News",
+      "summary": "251 points · 131 comments on Hacker News",
       "publishedAt": "2026-11-16T22:14:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8331a3aa13cbf4dc7e51e2434a4ae7680cb2bd83ad86a0e565eea0aec7de59bb",
-      "title": "OpenCode Browse",
-      "url": "https://opencode.ai/product/browse",
-      "summary": "311 points · 201 comments on Hacker News",
-      "publishedAt": "2026-11-16T21:20:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -242,26 +282,6 @@
       "publishedAt": "2026-11-16T13:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d91fd06de7b8771ee8ad78bbe6c6a0f8795962915436321f9652c6b42b553b9c",
-      "title": "Science at the Frontier: How scientists use ChatGPT",
-      "url": "https://openai.com/index/science-at-the-frontier",
-      "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
-      "publishedAt": "2026-11-16T12:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b82b64ef90f76e66fb0003e74649f67052cf66f11ce4f6f63d50fd3308925680",
-      "title": "How Revolut raises ambition without lowering the bar",
-      "url": "https://openai.com/business/customer-stories/revolut",
-      "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
-      "publishedAt": "2026-11-16T09:30:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -360,16 +380,6 @@
       "url": "https://simonwillison.net/2026/Nov/15/datasette-2",
       "summary": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who w",
       "publishedAt": "2026-11-15T23:18:17+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "756ac6b73c7a66954f4dfc5e422413d99e848900434767b48f91e3a6f6b21360",
-      "title": "datasette-apps 0.4a0",
-      "url": "https://simonwillison.net/2026/Nov/15/datasette-apps",
-      "summary": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #",
-      "publishedAt": "2026-11-15T04:02:45+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
@@ -497,7 +507,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-17T13:59:44.734057+00:00",
+    "generatedAt": "2026-11-17T18:14:04.224443+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -3824,8 +3834,8 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.190407+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-17T18:14:04.224419+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3888,8 +3898,8 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.190445+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-17T18:14:04.224438+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -3952,8 +3962,8 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.190448+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-17T18:14:04.224441+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4016,8 +4026,8 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.190451+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-17T18:14:04.224443+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
