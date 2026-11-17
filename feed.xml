@@ -7,8 +7,44 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 14:05:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 15:06:33 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials]]></title>
+    <description><![CDATA[Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 Billion in a Series C funding round.]]></description>
+    <link>https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Science Corporation’s brain tech is worth $3.5 billion after new funding]]></title>
+    <description><![CDATA[Science Corp raised a $400 million Series D to scale up its anti-blindness business.]]></description>
+    <link>https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nvidia’s first big move after Jensen Huang’s exit targets national security]]></title>
+    <description><![CDATA[The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.]]></description>
+    <link>https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Spotify’s new tool aims to stop deepfakes from being attributed to real artists]]></title>
+    <description><![CDATA[The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.]]></description>
+    <link>https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Quoting Go Proverbs]]></title>
@@ -65,48 +101,12 @@
   </item>
 
   <item>
-    <title><![CDATA[California state AG sues OpenAI over rogue agent incidents]]></title>
-    <description><![CDATA[The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.]]></description>
-    <link>https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security]]></title>
-    <description><![CDATA[Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.]]></description>
-    <link>https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[The open-source movement wants Jensen Huang back]]></title>
     <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it liste]]></description>
     <link>https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back</link>
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’]]></title>
-    <description><![CDATA[OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.]]></description>
-    <link>https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’]]></title>
-    <description><![CDATA[Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.]]></description>
-    <link>https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
