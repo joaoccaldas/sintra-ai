@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 06:13:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 08:30:14 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security]]></title>
+    <description><![CDATA[Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.]]></description>
+    <link>https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The open-source movement wants Jensen Huang back]]></title>
+    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it liste]]></description>
+    <link>https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’]]></title>
@@ -83,15 +101,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Audible turns to AI to help users discover audiobooks]]></title>
-    <description><![CDATA[Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.]]></description>
-    <link>https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[New Ask Maps features to help with holiday travel and prep]]></title>
     <description><![CDATA[Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.]]></description>
     <link>https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026</link>
@@ -159,15 +168,6 @@
     <description><![CDATA[Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built]]></description>
     <link>https://simonwillison.net/2026/Nov/15/datasette-maplibre</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette-maplibre</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette 1.0a43]]></title>
-    <description><![CDATA[Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mech]]></description>
-    <link>https://simonwillison.net/2026/Nov/15/datasette</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette</guid>
     <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>

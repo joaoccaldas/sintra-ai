@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-17T06:12:57.617Z",
+  "resolvedAt": "2026-11-17T08:30:12.258Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -12,46 +12,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 1.1636
-        },
-        {
-          "date": "2025-10-30",
-          "value": 1.155
-        },
-        {
-          "date": "2025-10-31",
-          "value": 1.1554
-        },
-        {
-          "date": "2025-11-03",
-          "value": 1.1514
-        },
-        {
-          "date": "2025-11-04",
-          "value": 1.1491
-        },
-        {
-          "date": "2025-11-05",
-          "value": 1.1492
-        },
-        {
-          "date": "2025-11-06",
-          "value": 1.1533
-        },
-        {
-          "date": "2025-11-07",
-          "value": 1.1561
-        },
-        {
-          "date": "2025-11-10",
-          "value": 1.1571
-        },
-        {
-          "date": "2025-11-11",
-          "value": 1.1575
-        },
         {
           "date": "2025-11-12",
           "value": 1.1576
@@ -1079,13 +1039,17 @@
         {
           "date": "2026-11-13",
           "value": 1.1052
+        },
+        {
+          "date": "2026-11-16",
+          "value": 1.1014
         }
       ],
-      "value": 1.1052,
-      "period": "2026-11-13",
-      "retrievedAt": "2026-11-16T15:24:48.140265+00:00",
+      "value": 1.1014,
+      "period": "2026-11-16",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
-      "delivery": "ondai-feeds"
+      "delivery": "public-provider"
     },
     {
       "id": "EUR-SEK",
@@ -1097,46 +1061,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 10.896
-        },
-        {
-          "date": "2025-10-30",
-          "value": 10.94
-        },
-        {
-          "date": "2025-10-31",
-          "value": 10.925
-        },
-        {
-          "date": "2025-11-03",
-          "value": 10.935
-        },
-        {
-          "date": "2025-11-04",
-          "value": 10.9865
-        },
-        {
-          "date": "2025-11-05",
-          "value": 11.0175
-        },
-        {
-          "date": "2025-11-06",
-          "value": 10.99
-        },
-        {
-          "date": "2025-11-07",
-          "value": 11.046
-        },
-        {
-          "date": "2025-11-10",
-          "value": 10.987
-        },
-        {
-          "date": "2025-11-11",
-          "value": 10.973
-        },
         {
           "date": "2025-11-12",
           "value": 10.9395
@@ -2164,13 +2088,17 @@
         {
           "date": "2026-11-13",
           "value": 11.1075
+        },
+        {
+          "date": "2026-11-16",
+          "value": 11.095
         }
       ],
-      "value": 11.1075,
-      "period": "2026-11-13",
-      "retrievedAt": "2026-11-16T15:24:48.140262+00:00",
+      "value": 11.095,
+      "period": "2026-11-16",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
-      "delivery": "ondai-feeds"
+      "delivery": "public-provider"
     },
     {
       "id": "EUR-BRL",
@@ -2182,46 +2110,6 @@
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
       "licenseUrl": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
       "history": [
-        {
-          "date": "2025-10-29",
-          "value": 6.222
-        },
-        {
-          "date": "2025-10-30",
-          "value": 6.2288
-        },
-        {
-          "date": "2025-10-31",
-          "value": 6.2171
-        },
-        {
-          "date": "2025-11-03",
-          "value": 6.1704
-        },
-        {
-          "date": "2025-11-04",
-          "value": 6.1873
-        },
-        {
-          "date": "2025-11-05",
-          "value": 6.2067
-        },
-        {
-          "date": "2025-11-06",
-          "value": 6.1567
-        },
-        {
-          "date": "2025-11-07",
-          "value": 6.2007
-        },
-        {
-          "date": "2025-11-10",
-          "value": 6.1488
-        },
-        {
-          "date": "2025-11-11",
-          "value": 6.1196
-        },
         {
           "date": "2025-11-12",
           "value": 6.0993
@@ -3249,13 +3137,17 @@
         {
           "date": "2026-11-13",
           "value": 6.2595
+        },
+        {
+          "date": "2026-11-16",
+          "value": 6.2838
         }
       ],
-      "value": 6.2595,
-      "period": "2026-11-13",
-      "retrievedAt": "2026-11-16T15:24:48.140238+00:00",
+      "value": 6.2838,
+      "period": "2026-11-16",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
-      "delivery": "ondai-feeds"
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -3318,9 +3210,9 @@
       ],
       "value": 1.54316373266217,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-16T19:45:11.524Z",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-BRA",
@@ -3383,9 +3275,9 @@
       ],
       "value": 2.2857464902475,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-16T19:45:11.524Z",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -3448,9 +3340,9 @@
       ],
       "value": 2.16138195623856,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-16T19:45:11.524Z",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3513,9 +3405,9 @@
       ],
       "value": 1.4110724231835,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-16T19:45:11.524Z",
-      "stale": true,
-      "delivery": "last-good"
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
+      "stale": false,
+      "delivery": "public-provider"
     },
     {
       "id": "FP.CPI.TOTL.ZG-SWE",
@@ -3578,7 +3470,7 @@
       ],
       "value": 0.679015259300199,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3643,7 +3535,7 @@
       ],
       "value": 5.01675279604836,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3708,7 +3600,7 @@
       ],
       "value": 2.94952520485207,
       "period": "2024-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3773,7 +3665,7 @@
       ],
       "value": 2.46605755272817,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3838,7 +3730,7 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3903,7 +3795,7 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3968,7 +3860,7 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -4033,7 +3925,7 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T06:12:57.617Z",
+      "retrievedAt": "2026-11-17T08:30:12.258Z",
       "stale": false,
       "delivery": "public-provider"
     }
