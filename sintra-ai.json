@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T14:02:07.347487+00:00",
+  "generatedAt": "2026-11-17T15:02:39.628614+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,48 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 48,
+  "itemCount": 47,
   "items": [
+    {
+      "id": "4794d4873562de7620c3c3b62f8fa494e642d0e1951cc00b33117d6db4d63716",
+      "title": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
+      "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials",
+      "summary": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 Billion in a Series C funding round.",
+      "publishedAt": "2026-11-17T14:50:58+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e1d42d0d1265ac5343c73ab2ab0c1fcf4ef451b6f7ebaaac9f5217abbf40e346",
+      "title": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
+      "url": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding",
+      "summary": "Science Corp raised a $400 million Series D to scale up its anti-blindness business.",
+      "publishedAt": "2026-11-17T14:26:46+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1c3d3bc22915fae93a33b51eb0546ad737edc6080d99b2d1b6ecd6cd0adb3bda",
+      "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
+      "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security",
+      "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
+      "publishedAt": "2026-11-17T14:05:30+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "dc9b00f988f99db7330689f39a0969f1b30b0ef51b161801ff8f75c5cbc6d58f",
+      "title": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
+      "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists",
+      "summary": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
+      "publishedAt": "2026-11-17T14:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "c7bc63b5b7f8899723b9367753534a91c7212dec8af6022d18c7cfeb18715916",
       "title": "Quoting Go Proverbs",
@@ -28,7 +68,7 @@
       "id": "cd3f9f2cc97c05f9f5b96d3595e40296f0428d0281788edc0ac2ff149d2ae91c",
       "title": "Mem Is Shutting Down",
       "url": "https://get.mem.ai/blog/mem-is-shutting-down",
-      "summary": "74 points · 110 comments on Hacker News",
+      "summary": "74 points · 112 comments on Hacker News",
       "publishedAt": "2026-11-17T02:13:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +128,7 @@
       "id": "4353c1c4ce1b00e72f42acec9652a41b76210bbdce3c2fe750a8b2b63d0b5370",
       "title": "United Airlines experiencing a widespread system outage, airline says",
       "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
-      "summary": "241 points · 125 comments on Hacker News",
+      "summary": "245 points · 125 comments on Hacker News",
       "publishedAt": "2026-11-16T22:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +148,7 @@
       "id": "8331a3aa13cbf4dc7e51e2434a4ae7680cb2bd83ad86a0e565eea0aec7de59bb",
       "title": "OpenCode Browse",
       "url": "https://opencode.ai/product/browse",
-      "summary": "305 points · 185 comments on Hacker News",
+      "summary": "311 points · 193 comments on Hacker News",
       "publishedAt": "2026-11-16T21:20:37+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -125,42 +165,12 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1738f67eaaddba29e970262b97351b3f92e1c59cb394364d2addea35592d214f",
-      "title": "California state AG sues OpenAI over rogue agent incidents",
-      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents",
-      "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
-      "publishedAt": "2026-11-16T20:07:13+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "21550db8855da89129a808cacd2cdb497ae3e06f2f48db1d1afe57efa49f3683",
-      "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-      "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security",
-      "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
-      "publishedAt": "2026-11-16T19:12:02+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "078c70bccadd2823d01aa4c6e59be7bb30c1da17d23483eacc2a895dd8148e52",
       "title": "The open-source movement wants Jensen Huang back",
       "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back",
       "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it liste",
       "publishedAt": "2026-11-16T18:38:47+00:00",
       "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a962a9aff8c6e655813a1df0b689b757f9e4fbe25c52e13522272f128bdb551e",
-      "title": "Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’",
-      "url": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine",
-      "summary": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.",
-      "publishedAt": "2026-11-16T18:11:10+00:00",
-      "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
     },
@@ -172,16 +182,6 @@
       "publishedAt": "2026-11-16T17:36:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b5b8d2f9cb551dda74e93b61597d96e9d6730526f713aaee9d72650f1e397531",
-      "title": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’",
-      "url": "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street",
-      "summary": "Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.",
-      "publishedAt": "2026-11-16T17:10:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -480,16 +480,6 @@
       "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
       "summary": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture.",
       "publishedAt": "2026-11-11T09:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fafff4292c09fd9370c59269226818b22b187de9757f1096f65549cc01bfa598",
-      "title": "Gemini Intelligence: New features, on more devices",
-      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
-      "summary": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
-      "publishedAt": "2026-11-10T19:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
