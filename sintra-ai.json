@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T19:30:58.232256+00:00",
+  "generatedAt": "2026-11-17T20:34:08.097466+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "2fb55c3571a040c5ae0c51a2e82b18674f509eaf3ab69223eb1dd2b701d35501",
+      "title": "Model ML raises $250M to automate investment banking grunt work",
+      "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work",
+      "summary": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.",
+      "publishedAt": "2026-11-17T19:32:11+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "af36944b8f532014f97718646c6ebc56b664df93f93cf0e957061e2c9a6fa76b",
       "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
@@ -38,7 +48,7 @@
       "id": "c74e8eacd8b57733cc238f3e68fd114fdb94ae6399707937eeb271c2d04e4048",
       "title": "MAI Code 2 and Code 2 Flash",
       "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
-      "summary": "76 points · 18 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-17T18:25:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -85,16 +95,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "0fd37b922e47061f484b0839cd621475baccb3a45f9f9aac2717c56b0d147650",
-      "title": "AI models can be tricked into identifying civilians as military targets by telling them it’s a game",
-      "url": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game",
-      "summary": "Vals, a San Francisco-based AI evaluation startup, tested whether leading AI models could be manipulated into participating in autonomous warfare. They usually compiled.",
-      "publishedAt": "2026-11-17T17:20:41+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "830da74434e8505c737e91eb0dcd32bca128e663d8b67dd821f376fcc24bd3aa",
       "title": "Put Gemini to work for you",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features",
@@ -128,7 +128,7 @@
       "id": "6ca6a1ab86c20b30438819689672bb0930600ee0b724f0cab596c264d27e6cd0",
       "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
       "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-      "summary": "174 points · 214 comments on Hacker News",
+      "summary": "177 points · 224 comments on Hacker News",
       "publishedAt": "2026-11-17T14:19:59+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +138,7 @@
       "id": "744081a6555f56a5430a3fcfeed7fb3ccdf918ec30f7c4ed501628fb08c456ee",
       "title": "S. Korea to send nationwide emergency alerts over college entrance exam cheating",
       "url": "https://apnews.com/article/south-korea-exam-cheating-ai-college-e25b5612dbf4bd09fdf9197254c4547e",
-      "summary": "60 points · 81 comments on Hacker News",
+      "summary": "60 points · 83 comments on Hacker News",
       "publishedAt": "2026-11-17T14:00:47+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -218,7 +218,7 @@
       "id": "4353c1c4ce1b00e72f42acec9652a41b76210bbdce3c2fe750a8b2b63d0b5370",
       "title": "United Airlines experiencing a widespread system outage, airline says",
       "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
-      "summary": "251 points · 131 comments on Hacker News",
+      "summary": "253 points · 131 comments on Hacker News",
       "publishedAt": "2026-11-16T22:14:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -507,7 +507,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-17T18:14:04.224443+00:00",
+    "generatedAt": "2026-11-17T20:34:25.500136+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1590,11 +1590,15 @@
           {
             "date": "2026-11-16",
             "value": 6.2838
+          },
+          {
+            "date": "2026-11-17",
+            "value": 6.3539
           }
         ],
-        "value": 6.2838,
-        "period": "2026-11-16",
-        "retrievedAt": "2026-11-17T13:59:44.734027+00:00",
+        "value": 6.3539,
+        "period": "2026-11-17",
+        "retrievedAt": "2026-11-17T20:34:25.500097+00:00",
         "stale": false
       },
       {
@@ -2678,11 +2682,15 @@
           {
             "date": "2026-11-16",
             "value": 11.095
+          },
+          {
+            "date": "2026-11-17",
+            "value": 11.11
           }
         ],
-        "value": 11.095,
-        "period": "2026-11-16",
-        "retrievedAt": "2026-11-17T13:59:44.734050+00:00",
+        "value": 11.11,
+        "period": "2026-11-17",
+        "retrievedAt": "2026-11-17T20:34:25.500129+00:00",
         "stale": false
       },
       {
@@ -3766,11 +3774,15 @@
           {
             "date": "2026-11-16",
             "value": 1.1014
+          },
+          {
+            "date": "2026-11-17",
+            "value": 1.0989
           }
         ],
-        "value": 1.1014,
-        "period": "2026-11-16",
-        "retrievedAt": "2026-11-17T13:59:44.734057+00:00",
+        "value": 1.0989,
+        "period": "2026-11-17",
+        "retrievedAt": "2026-11-17T20:34:25.500136+00:00",
         "stale": false
       },
       {
