@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 13:04:47 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 14:05:32 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -24,6 +24,15 @@
     <description><![CDATA[How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.]]></description>
     <link>https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</link>
     <guid isPermaLink="true">https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Introducing OpenAI for Chile]]></title>
+    <description><![CDATA[OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.]]></description>
+    <link>https://openai.com/index/introducing-openai-for-chile</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-openai-for-chile</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
@@ -159,15 +168,6 @@
     <description><![CDATA[Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.]]></description>
     <link>https://openai.com/business/customer-stories/revolut</link>
     <guid isPermaLink="true">https://openai.com/business/customer-stories/revolut</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[LVMH’s Media Division announces strategic partnership with OpenAI]]></title>
-    <description><![CDATA[LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.]]></description>
-    <link>https://openai.com/index/lvmh-media-division-partnership</link>
-    <guid isPermaLink="true">https://openai.com/index/lvmh-media-division-partnership</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
