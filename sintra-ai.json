@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T20:34:08.097466+00:00",
+  "generatedAt": "2026-11-17T22:48:36.480714+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,56 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "fc38b51a6db9bccf157aa5daf6a61ad024bc85f5f157fed3e759b2ecf9e4e94a",
+      "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo",
+      "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
+      "publishedAt": "2026-11-17T22:42:27+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "82b169450b02e27d05b949928dfedb9d8fdbdeb171912bc893f9bbe7beab4383",
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+      "summary": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shippe",
+      "publishedAt": "2026-11-17T22:38:52+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "dc52e334dcb4a85254194e1bc6e956548f4ad7d366b482f69a001f142983fdd0",
+      "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo",
+      "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
+      "publishedAt": "2026-11-17T22:29:05+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "04c4dac80f3d2432755a18ace0577b2d71223f474fce1a5c8122a5da40c67ed2",
+      "title": "SEC reportedly investigating Nvidia amid Huang exit",
+      "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit",
+      "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
+      "publishedAt": "2026-11-17T21:48:07+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "10493fa85ddbf2d5567cd4cda921a42757fc5fb7de59969bf9fd5ecfe6902f19",
+      "title": "Google joins the tech outage trend by announcing it’s not having one",
+      "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one",
+      "summary": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
+      "publishedAt": "2026-11-17T21:34:50+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "2fb55c3571a040c5ae0c51a2e82b18674f509eaf3ab69223eb1dd2b701d35501",
       "title": "Model ML raises $250M to automate investment banking grunt work",
@@ -35,16 +85,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "92ead912d06bbf7e268a060685708e5543092b6e70751eb5a12bdf29ae5fa7fe",
-      "title": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
-      "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off",
-      "summary": "Google's Gemini update extending chat retention will roll out globally over the coming weeks.",
-      "publishedAt": "2026-11-17T18:48:23+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "c74e8eacd8b57733cc238f3e68fd114fdb94ae6399707937eeb271c2d04e4048",
       "title": "MAI Code 2 and Code 2 Flash",
       "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
@@ -55,26 +95,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "6420ccdcb0b076c31c03f50b3bb88b217582d95bd08230cd2a50e7d033c4140a",
-      "title": "As decision model use skyrockets, is customization the next frontier?",
-      "url": "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier",
-      "summary": "Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities.",
-      "publishedAt": "2026-11-17T18:10:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5a600a844d9b7ef8d45fba3cfcef5d866fe68e883f2d682ec24c7f5df855d7a6",
-      "title": "Pedestal AI raises $4.7 million to agentify the supply chain",
-      "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain",
-      "summary": "The company uses agentic AI to make supply chains faster and more reliable.",
-      "publishedAt": "2026-11-17T18:04:16+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "8f6af8c44a4a1bfb5de31585ff7d049da9f0b0c7303ae5eb79fd652e216c50e9",
       "title": "Introducing GPT-6.2 Astra and Sol",
       "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
@@ -82,16 +102,6 @@
       "publishedAt": "2026-11-17T17:45:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3818d6ccd2a7f7a119bfa5f81e8105f73ada25694f6123f3fe5acee64e1cb5d2",
-      "title": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
-      "url": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop",
-      "summary": "Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.",
-      "publishedAt": "2026-11-17T17:32:25+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -370,16 +380,6 @@
       "url": "https://simonwillison.net/2026/Nov/15/datasette",
       "summary": "Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mech",
       "publishedAt": "2026-11-15T23:20:27+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ad61f4db9d2a336e03ab2c519973bef7d6e42d4bf19664d5d546db2f77af08eb",
-      "title": "datasette 0.65.6",
-      "url": "https://simonwillison.net/2026/Nov/15/datasette-2",
-      "summary": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who w",
-      "publishedAt": "2026-11-15T23:18:17+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
