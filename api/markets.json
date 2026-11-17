@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-17T16:51:02.120Z",
+  "resolvedAt": "2026-11-17T20:35:16.581Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -1083,11 +1083,15 @@
         {
           "date": "2026-11-16",
           "value": 1.1014
+        },
+        {
+          "date": "2026-11-17",
+          "value": 1.0989
         }
       ],
-      "value": 1.1014,
-      "period": "2026-11-16",
-      "retrievedAt": "2026-11-17T13:59:44.734057+00:00",
+      "value": 1.0989,
+      "period": "2026-11-17",
+      "retrievedAt": "2026-11-17T20:34:25.500136+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -2172,11 +2176,15 @@
         {
           "date": "2026-11-16",
           "value": 11.095
+        },
+        {
+          "date": "2026-11-17",
+          "value": 11.11
         }
       ],
-      "value": 11.095,
-      "period": "2026-11-16",
-      "retrievedAt": "2026-11-17T13:59:44.734050+00:00",
+      "value": 11.11,
+      "period": "2026-11-17",
+      "retrievedAt": "2026-11-17T20:34:25.500129+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3261,11 +3269,15 @@
         {
           "date": "2026-11-16",
           "value": 6.2838
+        },
+        {
+          "date": "2026-11-17",
+          "value": 6.3539
         }
       ],
-      "value": 6.2838,
-      "period": "2026-11-16",
-      "retrievedAt": "2026-11-17T13:59:44.734027+00:00",
+      "value": 6.3539,
+      "period": "2026-11-17",
+      "retrievedAt": "2026-11-17T20:34:25.500097+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3330,9 +3342,9 @@
       ],
       "value": 1.54316373266217,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T18:14:04.224441+00:00",
       "stale": false,
-      "delivery": "public-provider"
+      "delivery": "ondai-feeds"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-BRA",
@@ -3395,9 +3407,9 @@
       ],
       "value": 2.2857464902475,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T18:14:04.224419+00:00",
       "stale": false,
-      "delivery": "public-provider"
+      "delivery": "ondai-feeds"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -3460,9 +3472,9 @@
       ],
       "value": 2.16138195623856,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T18:14:04.224443+00:00",
       "stale": false,
-      "delivery": "public-provider"
+      "delivery": "ondai-feeds"
     },
     {
       "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3525,9 +3537,9 @@
       ],
       "value": 1.4110724231835,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T18:14:04.224438+00:00",
       "stale": false,
-      "delivery": "public-provider"
+      "delivery": "ondai-feeds"
     },
     {
       "id": "FP.CPI.TOTL.ZG-SWE",
@@ -3590,7 +3602,7 @@
       ],
       "value": 0.679015259300199,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3655,7 +3667,7 @@
       ],
       "value": 5.01675279604836,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3720,7 +3732,7 @@
       ],
       "value": 2.94952520485207,
       "period": "2024-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3785,7 +3797,7 @@
       ],
       "value": 2.46605755272817,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3850,7 +3862,7 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3915,7 +3927,7 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3980,7 +3992,7 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -4045,7 +4057,7 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-17T16:51:02.120Z",
+      "retrievedAt": "2026-11-17T20:35:16.581Z",
       "stale": false,
       "delivery": "public-provider"
     }

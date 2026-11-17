@@ -7,25 +7,88 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 16:51:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 20:35:18 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[Voyage Labs raises $12 million for a specialized AI travel assistant]]></title>
-    <description><![CDATA[Voyage Labs’ flagship product is called Atlas, meant to work as a personal assistant for your trip-planning, available today in private beta.]]></description>
-    <link>https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant</guid>
+    <title><![CDATA[Model ML raises $250M to automate investment banking grunt work]]></title>
+    <description><![CDATA[The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.]]></description>
+    <link>https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
 
   <item>
-    <title><![CDATA[Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials]]></title>
-    <description><![CDATA[Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 Billion in a Series C funding round.]]></description>
-    <link>https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials</guid>
+    <title><![CDATA[Google expands access to Gemini Tasks, which can help with calls, purchases]]></title>
+    <description><![CDATA[Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.]]></description>
+    <link>https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Google to keep Gemini chats for 2 months, up from 72 hours, even with history off]]></title>
+    <description><![CDATA[Google's Gemini update extending chat retention will roll out globally over the coming weeks.]]></description>
+    <link>https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[As decision model use skyrockets, is customization the next frontier?]]></title>
+    <description><![CDATA[Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities.]]></description>
+    <link>https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Pedestal AI raises $4.7 million to agentify the supply chain]]></title>
+    <description><![CDATA[The company uses agentic AI to make supply chains faster and more reliable.]]></description>
+    <link>https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Introducing GPT-6.2 Astra and Sol]]></title>
+    <description><![CDATA[Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.]]></description>
+    <link>https://openai.com/index/introducing-gpt-6-2-astra-sol</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-gpt-6-2-astra-sol</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop]]></title>
+    <description><![CDATA[Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.]]></description>
+    <link>https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Put Gemini to work for you]]></title>
+    <description><![CDATA[Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.]]></description>
+    <link>https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features</link>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Running the full server-side Datasette Python app in the browser with service workers and Pyodide]]></title>
+    <description><![CDATA[Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-si]]></description>
+    <link>https://simonwillison.net/2026/Nov/17/datasette-lite</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/17/datasette-lite</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -35,33 +98,6 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/17/1148203/research-reports</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Science Corporation’s brain tech is worth $3.5 billion after new funding]]></title>
-    <description><![CDATA[Science Corp raised a $400 million Series D to scale up its anti-blindness business.]]></description>
-    <link>https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nvidia’s first big move after Jensen Huang’s exit targets national security]]></title>
-    <description><![CDATA[The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.]]></description>
-    <link>https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Spotify’s new tool aims to stop deepfakes from being attributed to real artists]]></title>
-    <description><![CDATA[The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.]]></description>
-    <link>https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -92,21 +128,21 @@
   </item>
 
   <item>
+    <title><![CDATA[Astra for Law leads in legal intelligence]]></title>
+    <description><![CDATA[Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.]]></description>
+    <link>https://openai.com/index/astra-law-6-2</link>
+    <guid isPermaLink="true">https://openai.com/index/astra-law-6-2</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[llm 0.37.3]]></title>
     <description><![CDATA[Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0]]></description>
     <link>https://simonwillison.net/2026/Nov/16/llm</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/16/llm</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Cybersecurity AI startup Corma reaches $1B valuation in about 3 months]]></title>
-    <description><![CDATA[Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.]]></description>
-    <link>https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -132,42 +168,6 @@
     <description><![CDATA[New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.]]></description>
     <link>https://openai.com/index/strengthening-online-child-safety</link>
     <guid isPermaLink="true">https://openai.com/index/strengthening-online-child-safety</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Building trustworthy AI by fencing it in, not predicting it]]></title>
-    <description><![CDATA[In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migra]]></description>
-    <link>https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[New Ask Maps features to help with holiday travel and prep]]></title>
-    <description><![CDATA[Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.]]></description>
-    <link>https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026</link>
-    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Building AI that can work across the enterprise]]></title>
-    <description><![CDATA[For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI agents and a]]></description>
-    <link>https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Science at the Frontier: How scientists use ChatGPT]]></title>
-    <description><![CDATA[Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.]]></description>
-    <link>https://openai.com/index/science-at-the-frontier</link>
-    <guid isPermaLink="true">https://openai.com/index/science-at-the-frontier</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
