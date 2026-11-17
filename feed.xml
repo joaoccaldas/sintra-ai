@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 15:06:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 16:08:20 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Voyage Labs raises $12 million for a specialized AI travel assistant]]></title>
+    <description><![CDATA[Planning a trip is a favorite demo for personal AI assistants: you can try it with Muse, or with Gemini or half a dozen other choices. But while most pitches use travel-planning as part of a general-purpose agent pitch, a new startup from a Google Maps alum is]]></description>
+    <link>https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials]]></title>
@@ -17,6 +26,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Research Reports]]></title>
+    <description><![CDATA[To access a report, click on the corresponding image below.]]></description>
+    <link>https://www.technologyreview.com/2026/11/17/1148203/research-reports</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/17/1148203/research-reports</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
   </item>
 
   <item>
@@ -92,15 +110,6 @@
   </item>
 
   <item>
-    <title><![CDATA[All the questions Nvidia should answer on Tuesday — but probably won’t]]></title>
-    <description><![CDATA[Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.]]></description>
-    <link>https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[The open-source movement wants Jensen Huang back]]></title>
     <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it liste]]></description>
     <link>https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back</link>
@@ -159,15 +168,6 @@
     <description><![CDATA[Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.]]></description>
     <link>https://openai.com/index/science-at-the-frontier</link>
     <guid isPermaLink="true">https://openai.com/index/science-at-the-frontier</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Revolut raises ambition without lowering the bar]]></title>
-    <description><![CDATA[Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.]]></description>
-    <link>https://openai.com/business/customer-stories/revolut</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/revolut</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
