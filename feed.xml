@@ -7,8 +7,62 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 08:30:14 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:01:09 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Quoting Go Proverbs]]></title>
+    <description><![CDATA[A little copying is better than a little dependency. — Go Proverbs , via Tags: go , programming]]></description>
+    <link>https://simonwillison.net/2026/Nov/17/go-proverbs</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/17/go-proverbs</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Strengthening NATO and allied cyber defenses with AI]]></title>
+    <description><![CDATA[How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.]]></description>
+    <link>https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</link>
+    <guid isPermaLink="true">https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[llm 0.37.3]]></title>
+    <description><![CDATA[Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0]]></description>
+    <link>https://simonwillison.net/2026/Nov/16/llm</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/16/llm</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Cybersecurity AI startup Corma reaches $1B valuation in about 3 months]]></title>
+    <description><![CDATA[Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.]]></description>
+    <link>https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[All the questions Nvidia should answer on Tuesday — but probably won’t]]></title>
+    <description><![CDATA[Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.]]></description>
+    <link>https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[California state AG sues OpenAI over rogue agent incidents]]></title>
+    <description><![CDATA[The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.]]></description>
+    <link>https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security]]></title>
@@ -29,19 +83,10 @@
   </item>
 
   <item>
-    <title><![CDATA[Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’]]></title>
+    <title><![CDATA[Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’]]></title>
     <description><![CDATA[OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.]]></description>
     <link>https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’]]></title>
-    <description><![CDATA[The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.]]></description>
-    <link>https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -56,30 +101,12 @@
   </item>
 
   <item>
-    <title><![CDATA[OpenAI will embed safety researchers to investigate AI subversion]]></title>
-    <description><![CDATA[OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.]]></description>
-    <link>https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Broadening access to AI for scientists]]></title>
     <description><![CDATA[We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.]]></description>
     <link>https://openai.com/index/expanding-chatgpt-for-academic-researchers</link>
     <guid isPermaLink="true">https://openai.com/index/expanding-chatgpt-for-academic-researchers</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM]]></title>
-    <description><![CDATA[ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning]]></description>
-    <link>https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -128,48 +155,21 @@
   </item>
 
   <item>
+    <title><![CDATA[How Revolut raises ambition without lowering the bar]]></title>
+    <description><![CDATA[Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.]]></description>
+    <link>https://openai.com/business/customer-stories/revolut</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/revolut</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[LVMH’s Media Division announces strategic partnership with OpenAI]]></title>
     <description><![CDATA[LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.]]></description>
     <link>https://openai.com/index/lvmh-media-division-partnership</link>
     <guid isPermaLink="true">https://openai.com/index/lvmh-media-division-partnership</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Our first phase of embedded assessments]]></title>
-    <description><![CDATA[OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.]]></description>
-    <link>https://openai.com/index/our-first-phase-of-embedded-assessments</link>
-    <guid isPermaLink="true">https://openai.com/index/our-first-phase-of-embedded-assessments</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Advancing computer-use agents for healthcare teams]]></title>
-    <description><![CDATA[OpenAI — Labs]]></description>
-    <link>https://openai.com/index/advancing-computer-use-for-healthcare-teams</link>
-    <guid isPermaLink="true">https://openai.com/index/advancing-computer-use-for-healthcare-teams</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Hugging Face and OpenRouter join forces to make open-weight models easy to run]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/openrouter</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/openrouter</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-maplibre 0.1a0]]></title>
-    <description><![CDATA[Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built]]></description>
-    <link>https://simonwillison.net/2026/Nov/15/datasette-maplibre</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/15/datasette-maplibre</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
