@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T01:01:13.871340+00:00",
+  "generatedAt": "2026-11-18T02:06:53.886590+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "0d4a3780c61dc50a9792e1628507ed5b78e9c29578c078ca35ed3692c28be46a",
+      "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+      "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt",
+      "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+      "publishedAt": "2026-11-18T01:44:21+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "a726a4f040d1324990be17e82228bbfef4349f7eb63bfd2ad8e3e4d3e67ea03b",
       "title": "Nvidia promises that revenue will keep soaring — for now",
@@ -80,16 +90,6 @@
       "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo",
       "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
       "publishedAt": "2026-11-17T22:29:05+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "04c4dac80f3d2432755a18ace0577b2d71223f474fce1a5c8122a5da40c67ed2",
-      "title": "SEC reportedly investigating Nvidia amid Huang exit",
-      "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit",
-      "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
-      "publishedAt": "2026-11-17T21:48:07+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
