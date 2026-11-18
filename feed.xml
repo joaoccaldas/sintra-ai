@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 18 Nov 2026 07:57:09 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 11:11:04 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -26,6 +26,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now</guid>
     <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT]]></title>
+    <description><![CDATA[Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.]]></description>
+    <link>https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership</link>
+    <guid isPermaLink="true">https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/astra-law-6-2</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm 0.37.3]]></title>
-    <description><![CDATA[Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0]]></description>
-    <link>https://simonwillison.net/2026/Nov/16/llm</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/16/llm</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
