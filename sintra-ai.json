@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T04:19:59.895737+00:00",
+  "generatedAt": "2026-11-18T06:53:58.274907+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,13 +12,73 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 49,
+  "itemCount": 45,
   "items": [
+    {
+      "id": "0053d21f221fe31b0b39691d4e8321757dbfabb634077682356beb49d30fd9da",
+      "title": "Corralling AI Risks with Grassroots Contracts",
+      "url": "https://arxiv.org/abs/2611.06374",
+      "summary": "Authors: Ehud Shapiro · arXiv:2611.06374v2 Announce Type: replace-cross Abstract: AI's inflection point is a fountain of risks for digital platforms, as those in control of global platforms cede control of the algorithms, membership and content to AI: (i) AI c",
+      "publishedAt": "2026-11-18T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "03b179946dd0e551984b025c5c0109181a33c8ab2521005dd6c1243f1fb2bdf6",
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "summary": "Authors: Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu · arXiv:2611.21885v1 Announce Type: new Abstract: Language models are trained once, frozen and deployed: improving one again t",
+      "publishedAt": "2026-11-18T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "03fb7e648f048ba810be6069e90c2bb8875b1f8a64607e0e6c4bef566ac80b91",
+      "title": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
+      "url": "https://arxiv.org/abs/2611.22301",
+      "summary": "Authors: Xuan Zhang, Zhijian Zhou, Zicheng Hu, Yan Feng, Hongyan Hao, Yuan Qi, Chao Qu · arXiv:2611.22301v1 Announce Type: new Abstract: Monte Carlo tree search (MCTS) has powered landmark successes in reinforcement learning, yet its gains in LLM reasoning can",
+      "publishedAt": "2026-11-18T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "08936e9fbb83a6b3ad02105491313adf88b55e6bcfb7eec968dc99457e98c5c2",
+      "title": "Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models",
+      "url": "https://arxiv.org/abs/2611.21705",
+      "summary": "Authors: Davide Liga, Liuwen Yu, Matteo Magnini · arXiv:2611.21705v1 Announce Type: cross Abstract: Interpretability methods can locate the attention heads and sparse autoencoder (SAE) features that change the answer a language model gives to a moral prompt, e",
+      "publishedAt": "2026-11-18T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0ab709692aac8d96b8e28bcbac06897fa49ac78ff296c94c266f18152de2e4c9",
+      "title": "Seeing What Still Holds: How Waiting Control Changes Cooperative Recovery",
+      "url": "https://arxiv.org/abs/2611.22368",
+      "summary": "Authors: Kangjie Huang, Yucheng Xin, Xinchun Wang, Dong Liu, Yan Fan, Shuming Liu · arXiv:2611.22368v1 Announce Type: new Abstract: Changing the holding reference during a fixed-duration wait can reverse the ranking of visual recovery methods. We introduce Aud",
+      "publishedAt": "2026-11-18T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0afa44e4eed3c4128b0e10afa19e60467c36b44d5495189de8e43f9b7be0154d",
+      "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
+      "url": "https://arxiv.org/abs/2611.22496",
+      "summary": "Authors: Coen van den Elsen, Laurens Geffert · arXiv:2611.22496v1 Announce Type: new Abstract: We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The ma",
+      "publishedAt": "2026-11-18T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
     {
       "id": "ef1dc1363dc90809e946d7a21fa1d91cf015d9caf4dfb7782668562638d3429b",
       "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
       "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-      "summary": "32 points · 12 comments on Hacker News",
+      "summary": "48 points · 22 comments on Hacker News",
       "publishedAt": "2026-11-18T01:45:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +98,7 @@
       "id": "3c25963477ac1c88f238d8bdcf4ecd1e1678d4137b15bd01a43f9ad606d089bb",
       "title": "Cerebras Disaggregated Inference",
       "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-      "summary": "Comments",
+      "summary": "55 points · 13 comments on Hacker News",
       "publishedAt": "2026-11-18T00:56:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +108,7 @@
       "id": "d00fc92468416949ad6ef918dfdd86ecc43cb8e6450a4ae3ec30c68cd412cfd9",
       "title": "Google's AI answers reducing search traffic by 40%",
       "url": "https://revscope.co/blog/search-seo-geo-2026",
-      "summary": "Comments",
+      "summary": "243 points · 164 comments on Hacker News",
       "publishedAt": "2026-11-18T00:17:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +188,7 @@
       "id": "4d189ef1f84f674b199d96e36dca711f47a88f51b58fe6a91d41b27eee0941ae",
       "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
       "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
-      "summary": "Comments",
+      "summary": "123 points · 174 comments on Hacker News",
       "publishedAt": "2026-11-17T21:16:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +198,7 @@
       "id": "85e628cc5ceac4060ad87cb5b93a62e99e4b4655ad7a28bbf07a397664c5862f",
       "title": "Tencent Hy4 Flash",
       "url": "https://hy.tencent.ai/research/hy4-flash",
-      "summary": "Comments",
+      "summary": "89 points · 12 comments on Hacker News",
       "publishedAt": "2026-11-17T21:06:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +208,7 @@
       "id": "7503a711d91a03523b829b704f50d3e4a2c6ccb32d7bf1309024d4195753d192",
       "title": "Human.md",
       "url": "https://www.human-md.ai/",
-      "summary": "79 points · 54 comments on Hacker News",
+      "summary": "86 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-17T20:47:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -305,66 +365,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "038f18aa5efcb07f7a3c2bf8cdcbd0f70b2405f779ce9c807d0681f0c43e9c0f",
-      "title": "Two-Clustering Regime of Token Dynamics in Causal Attention",
-      "url": "https://arxiv.org/abs/2611.18088",
-      "summary": "Authors: Trinh T. Nguyen, Duy-Tung Pham, Hoang-Son Do, Tan Minh Nguyen, Thieu N. Vo · arXiv:2611.18088v1 Announce Type: new Abstract: We partially resolve Conjecture 1 of [Karagodin et al., Clustering in Causal Attention Masking (NeurIPS 2024)] and extend it t",
-      "publishedAt": "2026-11-16T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "04234be9f8573efb0afce7fbf8bc40f0723ccfff0388360b6937c6ae88ef2e5b",
-      "title": "LLM-Guided Cluster Lifecycle Management: Deciding When and How to Evolve Behavioral Clusters",
-      "url": "https://arxiv.org/abs/2611.17616",
-      "summary": "Authors: Himanshu Kulkarni, Siddharth Krishnamurthy, Jianhong Xin · arXiv:2611.17616v1 Announce Type: new Abstract: Behavioral clusters learned over user or item interactions drift as behavior evolves: some fragment into sub-behaviors, some converge, some disa",
-      "publishedAt": "2026-11-16T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0581304bba9d0ff26015940e57f7966c60ed21eab42cb3438087a08ccf00c21b",
-      "title": "MASTARS: Multi-Agent Sequential Trajectory Augmentation with Return-Conditioned Subgoals",
-      "url": "https://arxiv.org/abs/2611.17793",
-      "summary": "Authors: Jiwon Jeon, Myungsik Cho, Woojun Kim, Seongmin Kim, Woohyeon Byeon, Seungyul Han, Youngchul Sung · arXiv:2611.17793v1 Announce Type: new Abstract: The performance of offline Multi-Agent Reinforcement Learning (MARL) is limited by the quality of the fi",
-      "publishedAt": "2026-11-16T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0df2b0f7e58abf6aa9d838ef1ef2a9f9a09ad56b79644fc16064410b42d90869",
-      "title": "ARCHER: From Rationale Imitation to Executable Reasoning in Small Language Models",
-      "url": "https://arxiv.org/abs/2611.18494",
-      "summary": "Authors: Dhruv Dixit, Khushi Patel, Congcong Xu, Min Song · arXiv:2611.18494v1 Announce Type: new Abstract: Small language models are attractive for local, low-cost, and privacy-sensitive deployment, but they remain unreliable on mathematical reasoning tasks t",
-      "publishedAt": "2026-11-16T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0e4a08dbe6ed3850782ee7daa7340e0388a0c5ba55492060255170c249a530f3",
-      "title": "Safety Side Effects of Preventative Persona Steering: An Empirical Audit",
-      "url": "https://arxiv.org/abs/2611.17620",
-      "summary": "Authors: Sabrina Tang, Nikolai Vo, Carson Murillo, Chira Sukumarnpiti, Sarah Wilson · arXiv:2611.17620v1 Announce Type: new Abstract: High-level behaviors such as sycophancy and hallucination correspond to directions in a model's activation space (Chen et al.,",
-      "publishedAt": "2026-11-16T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "104115c0175e985995dea165eb422fedee0d627443238dac86cad97ed3b00a7b",
-      "title": "Toward Interference-Agnostic RF Source Separation",
-      "url": "https://arxiv.org/abs/2611.17950",
-      "summary": "Authors: Maxence Albert, Rapha\\\"el Duroselle, Thibaud Ehret, Olivier Boeffard, Jean-Fran\\c{c}ois Bonastre · arXiv:2611.17950v1 Announce Type: new Abstract: Separating a radio-frequency signal of interest from a co-channel interference is mostly addressed with ",
-      "publishedAt": "2026-11-16T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
       "id": "8ec21efa2c62273428cb36f48412c205c966c9e1c9840d1b4a0d5276d99867ca",
       "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
       "url": "https://huggingface.co/blog/openrouter",
@@ -462,46 +462,6 @@
       "publishedAt": "2026-11-12T00:00:00+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403",
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
-      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
-      "publishedAt": "2026-11-11T18:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3d65ccc2f5cdce6978b37fa7c64320f9c0126555eece5a35f17a2f7ec9258a94",
-      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
-      "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
-      "publishedAt": "2026-11-11T16:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ba0fcf4e325b4115c73c9ef83ebd1ffebf008c30d8d75edc5ffce3b5226c5537",
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease",
-      "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
-      "publishedAt": "2026-11-11T15:00:15+00:00",
-      "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e09fad6dcc25f1ba697cd45e185fe8f5ec3b5d7d479a5ffc72c9feac3611ce3e",
-      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
-      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
-      "summary": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture.",
-      "publishedAt": "2026-11-11T09:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
       "color": "#5B48D9"
     }
   ],
