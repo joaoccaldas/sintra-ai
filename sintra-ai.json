@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T10:09:39.732648+00:00",
+  "generatedAt": "2026-11-18T12:11:42.087264+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,28 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 45,
+  "itemCount": 46,
   "items": [
+    {
+      "id": "ddb370c34e5553db3786cebf1aa2425795826b5bfc8e588383a8c4f69f2b1f9c",
+      "title": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
+      "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers",
+      "summary": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
+      "publishedAt": "2026-11-18T11:30:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c08d2bf5cfc43826878d77e47278b9e9342da150805b4ede88c33452ae6d0341",
+      "title": "This smell startup says its AI nose is as good as a human’s",
+      "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans",
+      "summary": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich ",
+      "publishedAt": "2026-11-18T10:20:30+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "6663bdbb07465939d1ffa7348d19451798ddcb67a6c7812b72543066b5a62510",
       "title": "AI is killing All About Berlin",
@@ -88,7 +108,7 @@
       "id": "ef1dc1363dc90809e946d7a21fa1d91cf015d9caf4dfb7782668562638d3429b",
       "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
       "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-      "summary": "75 points · 36 comments on Hacker News",
+      "summary": "79 points · 38 comments on Hacker News",
       "publishedAt": "2026-11-18T01:45:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +128,7 @@
       "id": "3c25963477ac1c88f238d8bdcf4ecd1e1678d4137b15bd01a43f9ad606d089bb",
       "title": "Cerebras Disaggregated Inference",
       "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-      "summary": "Comments",
+      "summary": "86 points · 22 comments on Hacker News",
       "publishedAt": "2026-11-18T00:56:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -195,16 +215,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "dc52e334dcb4a85254194e1bc6e956548f4ad7d366b482f69a001f142983fdd0",
-      "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
-      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo",
-      "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
-      "publishedAt": "2026-11-17T22:29:05+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "4d189ef1f84f674b199d96e36dca711f47a88f51b58fe6a91d41b27eee0941ae",
       "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
       "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
@@ -218,7 +228,7 @@
       "id": "85e628cc5ceac4060ad87cb5b93a62e99e4b4655ad7a28bbf07a397664c5862f",
       "title": "Tencent Hy4 Flash",
       "url": "https://hy.tencent.ai/research/hy4-flash",
-      "summary": "Comments",
+      "summary": "133 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-17T21:06:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
