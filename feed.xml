@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 18 Nov 2026 01:01:59 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 04:03:51 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt]]></title>
+    <description><![CDATA[The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.]]></description>
+    <link>https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Nvidia promises that revenue will keep soaring — for now]]></title>
@@ -69,15 +78,6 @@
     <description><![CDATA[Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.]]></description>
     <link>https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[SEC reportedly investigating Nvidia amid Huang exit]]></title>
-    <description><![CDATA[The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.]]></description>
-    <link>https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>

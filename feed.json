@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt",
+      "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt",
+      "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+      "content_text": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-18T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now",
       "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now",
       "title": "Nvidia promises that revenue will keep soaring — for now",
@@ -131,26 +151,6 @@
       "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo",
       "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
       "content_text": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-17T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit",
-      "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit",
-      "title": "SEC reportedly investigating Nvidia amid Huang exit",
-      "content_text": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
