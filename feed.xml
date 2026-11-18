@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 18 Nov 2026 12:12:36 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:14:09 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Nvidia clarifies when it will — and won’t —keep financing neoclouds]]></title>
+    <description><![CDATA[If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.]]></description>
+    <link>https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents]]></title>
+    <description><![CDATA[With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.]]></description>
+    <link>https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need]]></title>
@@ -65,30 +83,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit]]></title>
-    <description><![CDATA[Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.]]></description>
-    <link>https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[External sandboxes for coding agents]]></title>
     <description><![CDATA[External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging a]]></description>
     <link>https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO]]></title>
-    <description><![CDATA[The former CEO offered to return to his top role at the company after his resignation last week.]]></description>
-    <link>https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
