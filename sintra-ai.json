@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T02:06:53.886590+00:00",
+  "generatedAt": "2026-11-18T03:18:38.031718+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -22,6 +22,26 @@
       "publishedAt": "2026-11-18T01:44:21+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3c25963477ac1c88f238d8bdcf4ecd1e1678d4137b15bd01a43f9ad606d089bb",
+      "title": "Cerebras Disaggregated Inference",
+      "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "summary": "Comments",
+      "publishedAt": "2026-11-18T00:56:23+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d00fc92468416949ad6ef918dfdd86ecc43cb8e6450a4ae3ec30c68cd412cfd9",
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026",
+      "summary": "Comments",
+      "publishedAt": "2026-11-18T00:17:58+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -95,10 +115,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "4d189ef1f84f674b199d96e36dca711f47a88f51b58fe6a91d41b27eee0941ae",
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
+      "summary": "Comments",
+      "publishedAt": "2026-11-17T21:16:12+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "85e628cc5ceac4060ad87cb5b93a62e99e4b4655ad7a28bbf07a397664c5862f",
       "title": "Tencent Hy4 Flash",
       "url": "https://hy.tencent.ai/research/hy4-flash",
-      "summary": "40 points · 8 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-17T21:06:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +138,7 @@
       "id": "7503a711d91a03523b829b704f50d3e4a2c6ccb32d7bf1309024d4195753d192",
       "title": "Human.md",
       "url": "https://www.human-md.ai/",
-      "summary": "63 points · 46 comments on Hacker News",
+      "summary": "75 points · 51 comments on Hacker News",
       "publishedAt": "2026-11-17T20:47:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,18 +148,8 @@
       "id": "35ca44d444f163d1774f03920964cb4866be6696ba51842ced7657c998fa7ea1",
       "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
       "url": "https://starsling.dev/",
-      "summary": "51 points · 28 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-17T19:01:43+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "c74e8eacd8b57733cc238f3e68fd114fdb94ae6399707937eeb271c2d04e4048",
-      "title": "MAI Code 2 and Code 2 Flash",
-      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
-      "summary": "277 points · 130 comments on Hacker News",
-      "publishedAt": "2026-11-17T18:25:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -162,26 +182,6 @@
       "publishedAt": "2026-11-17T16:48:33+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b955388224554f43006a1f8ef0eda4dd7efd46de509c62d520a9e7bb5abd06e0",
-      "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
-      "url": "https://github.com/RunanywhereAI/trnrt",
-      "summary": "43 points · 5 comments on Hacker News",
-      "publishedAt": "2026-11-17T16:01:04+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a7b9d8f0e3792aae666104e0a518447fdf7feeaf55eb6919d4347192c543634c",
-      "title": "Java4Shell: pre-auth RCE flaw in Java 17 puts servers at risk (CVE-2026-114938)",
-      "url": "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938",
-      "summary": "149 points · 27 comments on Hacker News",
-      "publishedAt": "2026-11-17T14:48:03+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -507,7 +507,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-17T20:34:25.500136+00:00",
+    "generatedAt": "2026-11-18T03:52:52.812688+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1598,7 +1598,7 @@
         ],
         "value": 6.3539,
         "period": "2026-11-17",
-        "retrievedAt": "2026-11-17T20:34:25.500097+00:00",
+        "retrievedAt": "2026-11-18T03:52:52.812641+00:00",
         "stale": false
       },
       {
@@ -2690,7 +2690,7 @@
         ],
         "value": 11.11,
         "period": "2026-11-17",
-        "retrievedAt": "2026-11-17T20:34:25.500129+00:00",
+        "retrievedAt": "2026-11-18T03:52:52.812680+00:00",
         "stale": false
       },
       {
@@ -3782,7 +3782,7 @@
         ],
         "value": 1.0989,
         "period": "2026-11-17",
-        "retrievedAt": "2026-11-17T20:34:25.500136+00:00",
+        "retrievedAt": "2026-11-18T03:52:52.812688+00:00",
         "stale": false
       },
       {
