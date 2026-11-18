@@ -7,8 +7,53 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 18 Nov 2026 14:46:13 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 16:52:06 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[OpenAI CEO Sam Altman says it’s ‘hard to imagine the AI industry without Jensen’]]></title>
+    <description><![CDATA[Nvidia founder and former CEO Jensen Huang stepped down last week amid several scandals, including an affair with an alleged Chinese spy.]]></description>
+    <link>https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Quoting Daniel Stenberg]]></title>
+    <description><![CDATA[During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes]]></description>
+    <link>https://simonwillison.net/2026/Nov/18/daniel-stenberg</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/daniel-stenberg</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Time-Series Models in the Streamhouse: A New Frontier and Use Cases]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The PSF end-of-year fundraiser]]></title>
+    <description><![CDATA[The PSF end-of-year fundraiser With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your company or your work benefits from Python, ]]></description>
+    <link>https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The AI Hype Index: AI is everywhere]]></title>
+    <description><![CDATA[Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up th]]></description>
+    <link>https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[Nvidia clarifies when it will — and won’t —keep financing neoclouds]]></title>
@@ -83,15 +128,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Nvidia is abandoning China after Jensen Huang’s ouster]]></title>
-    <description><![CDATA[Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?]]></description>
-    <link>https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[External sandboxes for coding agents]]></title>
     <description><![CDATA[External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging a]]></description>
     <link>https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents</link>
@@ -134,42 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/17/datasette-lite</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Research Reports]]></title>
-    <description><![CDATA[To access a report, click on the corresponding image below.]]></description>
-    <link>https://www.technologyreview.com/2026/11/17/1148203/research-reports</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/17/1148203/research-reports</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing ChatGPT for Sales]]></title>
-    <description><![CDATA[Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.]]></description>
-    <link>https://openai.com/index/introducing-chatgpt-for-sales</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-chatgpt-for-sales</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quoting Go Proverbs]]></title>
-    <description><![CDATA[A little copying is better than a little dependency. — Go Proverbs , via Tags: go , programming]]></description>
-    <link>https://simonwillison.net/2026/Nov/17/go-proverbs</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/17/go-proverbs</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Strengthening NATO and allied cyber defenses with AI]]></title>
-    <description><![CDATA[How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.]]></description>
-    <link>https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</link>
-    <guid isPermaLink="true">https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
