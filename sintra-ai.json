@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T13:30:28.533737+00:00",
+  "generatedAt": "2026-11-18T14:45:33.719212+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "629f7eba64de05b8a939bb17fe362f6c5d5270cfe1ad5f672308f30cb68256ef",
+      "title": "Can Peer Review Survive AI-Generated Text? [pdf]",
+      "url": "https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf",
+      "summary": "32 points · 19 comments on Hacker News",
+      "publishedAt": "2026-11-18T13:51:03+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "b9b3936785bef30064f915828934bad5b201c06a144b5edfc385649f96b5ce01",
       "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
@@ -58,7 +68,7 @@
       "id": "6663bdbb07465939d1ffa7348d19451798ddcb67a6c7812b72543066b5a62510",
       "title": "AI is killing All About Berlin",
       "url": "https://nicolasbouliane.com/blog/death-by-ai",
-      "summary": "Comments",
+      "summary": "585 points · 562 comments on Hacker News",
       "publishedAt": "2026-11-18T06:47:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +138,7 @@
       "id": "ef1dc1363dc90809e946d7a21fa1d91cf015d9caf4dfb7782668562638d3429b",
       "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
       "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-      "summary": "85 points · 41 comments on Hacker News",
+      "summary": "88 points · 42 comments on Hacker News",
       "publishedAt": "2026-11-18T01:45:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +158,7 @@
       "id": "3c25963477ac1c88f238d8bdcf4ecd1e1678d4137b15bd01a43f9ad606d089bb",
       "title": "Cerebras Disaggregated Inference",
       "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-      "summary": "92 points · 24 comments on Hacker News",
+      "summary": "94 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-18T00:56:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +168,7 @@
       "id": "d00fc92468416949ad6ef918dfdd86ecc43cb8e6450a4ae3ec30c68cd412cfd9",
       "title": "Google's AI answers reducing search traffic by 40%",
       "url": "https://revscope.co/blog/search-seo-geo-2026",
-      "summary": "Comments",
+      "summary": "573 points · 431 comments on Hacker News",
       "publishedAt": "2026-11-18T00:17:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -172,6 +182,16 @@
       "publishedAt": "2026-11-18T00:16:50+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5b89a2db7f60ae9099b72ca73768977f61c082125cbaf94b72c9c9bced5f17aa",
+      "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+      "url": "https://huggingface.co/blog/rumble-2-flash",
+      "summary": "",
+      "publishedAt": "2026-11-18T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -218,18 +238,8 @@
       "id": "4d189ef1f84f674b199d96e36dca711f47a88f51b58fe6a91d41b27eee0941ae",
       "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
       "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
-      "summary": "Comments",
+      "summary": "253 points · 344 comments on Hacker News",
       "publishedAt": "2026-11-17T21:16:12+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "85e628cc5ceac4060ad87cb5b93a62e99e4b4655ad7a28bbf07a397664c5862f",
-      "title": "Tencent Hy4 Flash",
-      "url": "https://hy.tencent.ai/research/hy4-flash",
-      "summary": "139 points · 24 comments on Hacker News",
-      "publishedAt": "2026-11-17T21:06:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -462,16 +472,6 @@
       "publishedAt": "2026-11-12T18:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "cbda9238a3684b28e47a3f036110852a357804594dae3b990092eac946cda973",
-      "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
-      "url": "https://huggingface.co/blog/3d-lora-finetuning",
-      "summary": "",
-      "publishedAt": "2026-11-12T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     }
   ],
