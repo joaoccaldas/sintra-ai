@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T12:11:42.087264+00:00",
+  "generatedAt": "2026-11-18T13:30:28.533737+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "b9b3936785bef30064f915828934bad5b201c06a144b5edfc385649f96b5ce01",
+      "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds",
+      "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
+      "publishedAt": "2026-11-18T13:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "2c4163c7e21d994db2e8fc2208788541abeddb50e7f9c8b01cb733acdd4cc908",
+      "title": "Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents",
+      "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents",
+      "summary": "With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.",
+      "publishedAt": "2026-11-18T12:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "ddb370c34e5553db3786cebf1aa2425795826b5bfc8e588383a8c4f69f2b1f9c",
       "title": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
@@ -108,7 +128,7 @@
       "id": "ef1dc1363dc90809e946d7a21fa1d91cf015d9caf4dfb7782668562638d3429b",
       "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
       "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-      "summary": "79 points · 38 comments on Hacker News",
+      "summary": "85 points · 41 comments on Hacker News",
       "publishedAt": "2026-11-18T01:45:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +148,7 @@
       "id": "3c25963477ac1c88f238d8bdcf4ecd1e1678d4137b15bd01a43f9ad606d089bb",
       "title": "Cerebras Disaggregated Inference",
       "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-      "summary": "86 points · 22 comments on Hacker News",
+      "summary": "92 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-18T00:56:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -175,16 +195,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7c1076c2aa096bdea8247769916876818674de4badc3819c94966d724554da73",
-      "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit",
-      "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
-      "publishedAt": "2026-11-17T23:04:35+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "e45fd791e1fe03c27509e5cfc6fcacfeb1c5b0665a232d00558d4f3fb339f62b",
       "title": "External sandboxes for coding agents",
       "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
@@ -192,16 +202,6 @@
       "publishedAt": "2026-11-17T22:52:29+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fc38b51a6db9bccf157aa5daf6a61ad024bc85f5f157fed3e759b2ecf9e4e94a",
-      "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo",
-      "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
-      "publishedAt": "2026-11-17T22:42:27+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -228,7 +228,7 @@
       "id": "85e628cc5ceac4060ad87cb5b93a62e99e4b4655ad7a28bbf07a397664c5862f",
       "title": "Tencent Hy4 Flash",
       "url": "https://hy.tencent.ai/research/hy4-flash",
-      "summary": "133 points · 24 comments on Hacker News",
+      "summary": "139 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-17T21:06:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
