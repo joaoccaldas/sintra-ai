@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T14:45:33.719212+00:00",
+  "generatedAt": "2026-11-18T16:33:29.613815+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,60 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "e6de34d7c9a098b0d7ce67d1de1f640a270febf00b99e1054d42fb9d69f76e7a",
+      "title": "OpenAI CEO Sam Altman says it’s ‘hard to imagine the AI industry without Jensen’",
+      "url": "https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen",
+      "summary": "Nvidia founder and former CEO Jensen Huang stepped down last week amid several scandals, including an affair with an alleged Chinese spy.",
+      "publishedAt": "2026-11-18T16:14:09+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1c2cff6fe54921cead049fc67fe49d057f4cef91633596f08fcb182a305de71d",
+      "title": "Quoting Daniel Stenberg",
+      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg",
+      "summary": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes",
+      "publishedAt": "2026-11-18T15:58:27+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "aef632472a5e3af7f91b4cd9c5d8e0ecee47135327c9822e26d24027e878b6a3",
+      "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+      "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+      "summary": "",
+      "publishedAt": "2026-11-18T15:00:23+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "52461be624b7e32fadebdc1891ecceff2b446488ed9b11785c71245ec8ca6623",
+      "title": "The PSF end-of-year fundraiser",
+      "url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser",
+      "summary": "The PSF end-of-year fundraiser With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your company or your work benefits from Python, ",
+      "publishedAt": "2026-11-18T14:44:48+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e7c4908e584f5e820cfe90f53d0c2ed8c269939f5b49583fe36fd804311b9fee",
+      "title": "The AI Hype Index: AI is everywhere",
+      "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere",
+      "summary": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up th",
+      "publishedAt": "2026-11-18T14:42:44+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "629f7eba64de05b8a939bb17fe362f6c5d5270cfe1ad5f672308f30cb68256ef",
       "title": "Can Peer Review Survive AI-Generated Text? [pdf]",
       "url": "https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf",
-      "summary": "32 points · 19 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-18T13:51:03+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,7 +118,7 @@
       "id": "6663bdbb07465939d1ffa7348d19451798ddcb67a6c7812b72543066b5a62510",
       "title": "AI is killing All About Berlin",
       "url": "https://nicolasbouliane.com/blog/death-by-ai",
-      "summary": "585 points · 562 comments on Hacker News",
+      "summary": "666 points · 609 comments on Hacker News",
       "publishedAt": "2026-11-18T06:47:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +188,7 @@
       "id": "ef1dc1363dc90809e946d7a21fa1d91cf015d9caf4dfb7782668562638d3429b",
       "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
       "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-      "summary": "88 points · 42 comments on Hacker News",
+      "summary": "89 points · 44 comments on Hacker News",
       "publishedAt": "2026-11-18T01:45:11+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +208,7 @@
       "id": "3c25963477ac1c88f238d8bdcf4ecd1e1678d4137b15bd01a43f9ad606d089bb",
       "title": "Cerebras Disaggregated Inference",
       "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-      "summary": "94 points · 24 comments on Hacker News",
+      "summary": "96 points · 24 comments on Hacker News",
       "publishedAt": "2026-11-18T00:56:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +218,7 @@
       "id": "d00fc92468416949ad6ef918dfdd86ecc43cb8e6450a4ae3ec30c68cd412cfd9",
       "title": "Google's AI answers reducing search traffic by 40%",
       "url": "https://revscope.co/blog/search-seo-geo-2026",
-      "summary": "573 points · 431 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-18T00:17:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -205,16 +255,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7648720b0216823afd6f4aa19845bf845e1099706e20de3f7fff3ce89351f0be",
-      "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster",
-      "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
-      "publishedAt": "2026-11-17T23:37:48+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "e45fd791e1fe03c27509e5cfc6fcacfeb1c5b0665a232d00558d4f3fb339f62b",
       "title": "External sandboxes for coding agents",
       "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
@@ -238,7 +278,7 @@
       "id": "4d189ef1f84f674b199d96e36dca711f47a88f51b58fe6a91d41b27eee0941ae",
       "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
       "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
-      "summary": "253 points · 344 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-17T21:16:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -335,16 +375,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "eb3125817116c9db86be78f5cf58626dea501d1244ce9564f49f86d1cf3bc818",
-      "title": "llm 0.37.3",
-      "url": "https://simonwillison.net/2026/Nov/16/llm",
-      "summary": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0",
-      "publishedAt": "2026-11-16T23:57:26+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "078c70bccadd2823d01aa4c6e59be7bb30c1da17d23483eacc2a895dd8148e52",
       "title": "The open-source movement wants Jensen Huang back",
       "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back",
@@ -395,16 +425,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "c6febd82e4661f8df7bb563485f82955af6c6ec0f37074e6a4ca6a14d0ee58a6",
-      "title": "datasette-maplibre 0.1a0",
-      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
-      "summary": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built",
-      "publishedAt": "2026-11-15T23:58:36+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "cdc8eef67bc55a0d0fa5ca86f75a39576cb4cd55b8ad20129c59ea60f80062cd",
       "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
       "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
@@ -430,26 +450,6 @@
       "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
       "summary": "",
       "publishedAt": "2026-11-13T14:05:22+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0b5401a8842f0b62f62615adee47a5b1be36295b3cdce9a912ca0de9ecc8fbad",
-      "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
-      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking",
-      "summary": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while a",
-      "publishedAt": "2026-11-12T20:16:24+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "84ec87286cb35a64f463f0646caa372ff180d409581b33a91619e73354134567",
-      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "summary": "",
-      "publishedAt": "2026-11-12T19:07:35+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
       "color": "#5B48D9"
