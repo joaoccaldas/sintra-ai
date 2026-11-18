@@ -7,8 +7,44 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 17 Nov 2026 22:49:17 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 01:01:59 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Nvidia promises that revenue will keep soaring — for now]]></title>
+    <description><![CDATA[Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.]]></description>
+    <link>https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nvidia is abandoning China after Jensen Huang’s ouster]]></title>
+    <description><![CDATA[Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?]]></description>
+    <link>https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit]]></title>
+    <description><![CDATA[Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.]]></description>
+    <link>https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[External sandboxes for coding agents]]></title>
+    <description><![CDATA[External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging a]]></description>
+    <link>https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO]]></title>
@@ -47,33 +83,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Google joins the tech outage trend by announcing it’s not having one]]></title>
-    <description><![CDATA[With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.]]></description>
-    <link>https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Model ML raises $250M to automate investment banking grunt work]]></title>
-    <description><![CDATA[The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.]]></description>
-    <link>https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google expands access to Gemini Tasks, which can help with calls, purchases]]></title>
-    <description><![CDATA[Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.]]></description>
-    <link>https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Introducing GPT-6.2 Astra and Sol]]></title>
     <description><![CDATA[Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.]]></description>
     <link>https://openai.com/index/introducing-gpt-6-2-astra-sol</link>
@@ -107,6 +116,15 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/17/1148203/research-reports</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Introducing ChatGPT for Sales]]></title>
+    <description><![CDATA[Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.]]></description>
+    <link>https://openai.com/index/introducing-chatgpt-for-sales</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-chatgpt-for-sales</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/16/llm</guid>
     <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The open-source movement wants Jensen Huang back]]></title>
-    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it liste]]></description>
-    <link>https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Broadening access to AI for scientists]]></title>
-    <description><![CDATA[We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.]]></description>
-    <link>https://openai.com/index/expanding-chatgpt-for-academic-researchers</link>
-    <guid isPermaLink="true">https://openai.com/index/expanding-chatgpt-for-academic-researchers</guid>
-    <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
