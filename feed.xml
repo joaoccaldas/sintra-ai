@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 18 Nov 2026 14:14:09 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:46:13 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -62,6 +62,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now</guid>
     <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Rumble-2-Flash: an open 0.5B speech model for 40+ languages]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/rumble-2-flash</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/rumble-2-flash</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
   </item>
 
   <item>
@@ -159,15 +168,6 @@
     <description><![CDATA[How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.]]></description>
     <link>https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</link>
     <guid isPermaLink="true">https://openai.com/index/strengthening-nato-allied-cyber-defences-ai</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing OpenAI for Chile]]></title>
-    <description><![CDATA[OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.]]></description>
-    <link>https://openai.com/index/introducing-openai-for-chile</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-openai-for-chile</guid>
     <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>

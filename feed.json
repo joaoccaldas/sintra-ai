@@ -127,6 +127,26 @@
       ]
     },
     {
+      "id": "https://huggingface.co/blog/rumble-2-flash",
+      "url": "https://huggingface.co/blog/rumble-2-flash",
+      "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-18T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
       "id": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
       "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
       "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
@@ -331,26 +351,6 @@
       "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
       "title": "Strengthening NATO and allied cyber defenses with AI",
       "content_text": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-17T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/introducing-openai-for-chile",
-      "url": "https://openai.com/index/introducing-openai-for-chile",
-      "title": "Introducing OpenAI for Chile",
-      "content_text": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
