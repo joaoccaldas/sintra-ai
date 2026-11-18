@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T23:54:41.315273+00:00",
+  "generatedAt": "2026-11-18T01:01:13.871340+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "a726a4f040d1324990be17e82228bbfef4349f7eb63bfd2ad8e3e4d3e67ea03b",
+      "title": "Nvidia promises that revenue will keep soaring — for now",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now",
+      "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+      "publishedAt": "2026-11-18T00:16:50+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "7648720b0216823afd6f4aa19845bf845e1099706e20de3f7fff3ce89351f0be",
       "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
@@ -85,20 +95,20 @@
       "color": "#5B48D9"
     },
     {
-      "id": "10493fa85ddbf2d5567cd4cda921a42757fc5fb7de59969bf9fd5ecfe6902f19",
-      "title": "Google joins the tech outage trend by announcing it’s not having one",
-      "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one",
-      "summary": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
-      "publishedAt": "2026-11-17T21:34:50+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "85e628cc5ceac4060ad87cb5b93a62e99e4b4655ad7a28bbf07a397664c5862f",
+      "title": "Tencent Hy4 Flash",
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "summary": "40 points · 8 comments on Hacker News",
+      "publishedAt": "2026-11-17T21:06:08+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
       "id": "7503a711d91a03523b829b704f50d3e4a2c6ccb32d7bf1309024d4195753d192",
       "title": "Human.md",
       "url": "https://www.human-md.ai/",
-      "summary": "58 points · 44 comments on Hacker News",
+      "summary": "63 points · 46 comments on Hacker News",
       "publishedAt": "2026-11-17T20:47:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +118,7 @@
       "id": "35ca44d444f163d1774f03920964cb4866be6696ba51842ced7657c998fa7ea1",
       "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
       "url": "https://starsling.dev/",
-      "summary": "Comments",
+      "summary": "51 points · 28 comments on Hacker News",
       "publishedAt": "2026-11-17T19:01:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +128,7 @@
       "id": "c74e8eacd8b57733cc238f3e68fd114fdb94ae6399707937eeb271c2d04e4048",
       "title": "MAI Code 2 and Code 2 Flash",
       "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
-      "summary": "Comments",
+      "summary": "277 points · 130 comments on Hacker News",
       "publishedAt": "2026-11-17T18:25:13+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +168,7 @@
       "id": "b955388224554f43006a1f8ef0eda4dd7efd46de509c62d520a9e7bb5abd06e0",
       "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
       "url": "https://github.com/RunanywhereAI/trnrt",
-      "summary": "Comments",
+      "summary": "43 points · 5 comments on Hacker News",
       "publishedAt": "2026-11-17T16:01:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +178,7 @@
       "id": "a7b9d8f0e3792aae666104e0a518447fdf7feeaf55eb6919d4347192c543634c",
       "title": "Java4Shell: pre-auth RCE flaw in Java 17 puts servers at risk (CVE-2026-114938)",
       "url": "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938",
-      "summary": "Comments",
+      "summary": "149 points · 27 comments on Hacker News",
       "publishedAt": "2026-11-17T14:48:03+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -182,16 +192,6 @@
       "publishedAt": "2026-11-17T14:39:46+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "6ca6a1ab86c20b30438819689672bb0930600ee0b724f0cab596c264d27e6cd0",
-      "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
-      "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-      "summary": "184 points · 239 comments on Hacker News",
-      "publishedAt": "2026-11-17T14:19:59+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
