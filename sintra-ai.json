@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T22:48:36.480714+00:00",
+  "generatedAt": "2026-11-17T23:54:41.315273+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,36 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "7648720b0216823afd6f4aa19845bf845e1099706e20de3f7fff3ce89351f0be",
+      "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster",
+      "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
+      "publishedAt": "2026-11-17T23:37:48+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7c1076c2aa096bdea8247769916876818674de4badc3819c94966d724554da73",
+      "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit",
+      "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
+      "publishedAt": "2026-11-17T23:04:35+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e45fd791e1fe03c27509e5cfc6fcacfeb1c5b0665a232d00558d4f3fb339f62b",
+      "title": "External sandboxes for coding agents",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+      "summary": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging a",
+      "publishedAt": "2026-11-17T22:52:29+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "fc38b51a6db9bccf157aa5daf6a61ad024bc85f5f157fed3e759b2ecf9e4e94a",
       "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
@@ -65,23 +95,23 @@
       "color": "#5B48D9"
     },
     {
-      "id": "2fb55c3571a040c5ae0c51a2e82b18674f509eaf3ab69223eb1dd2b701d35501",
-      "title": "Model ML raises $250M to automate investment banking grunt work",
-      "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work",
-      "summary": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.",
-      "publishedAt": "2026-11-17T19:32:11+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "7503a711d91a03523b829b704f50d3e4a2c6ccb32d7bf1309024d4195753d192",
+      "title": "Human.md",
+      "url": "https://www.human-md.ai/",
+      "summary": "58 points · 44 comments on Hacker News",
+      "publishedAt": "2026-11-17T20:47:36+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "af36944b8f532014f97718646c6ebc56b664df93f93cf0e957061e2c9a6fa76b",
-      "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
-      "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases",
-      "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
-      "publishedAt": "2026-11-17T19:02:20+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "35ca44d444f163d1774f03920964cb4866be6696ba51842ced7657c998fa7ea1",
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "url": "https://starsling.dev/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-17T19:01:43+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -125,6 +155,26 @@
       "color": "#5B48D9"
     },
     {
+      "id": "b955388224554f43006a1f8ef0eda4dd7efd46de509c62d520a9e7bb5abd06e0",
+      "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "summary": "Comments",
+      "publishedAt": "2026-11-17T16:01:04+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a7b9d8f0e3792aae666104e0a518447fdf7feeaf55eb6919d4347192c543634c",
+      "title": "Java4Shell: pre-auth RCE flaw in Java 17 puts servers at risk (CVE-2026-114938)",
+      "url": "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938",
+      "summary": "Comments",
+      "publishedAt": "2026-11-17T14:48:03+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "54f7ad0b4a0462af71f5659aff22f95dc261c7200d428718f508e620ce535d31",
       "title": "Research Reports",
       "url": "https://www.technologyreview.com/2026/11/17/1148203/research-reports",
@@ -138,20 +188,20 @@
       "id": "6ca6a1ab86c20b30438819689672bb0930600ee0b724f0cab596c264d27e6cd0",
       "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
       "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-      "summary": "177 points · 224 comments on Hacker News",
+      "summary": "184 points · 239 comments on Hacker News",
       "publishedAt": "2026-11-17T14:19:59+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "744081a6555f56a5430a3fcfeed7fb3ccdf918ec30f7c4ed501628fb08c456ee",
-      "title": "S. Korea to send nationwide emergency alerts over college entrance exam cheating",
-      "url": "https://apnews.com/article/south-korea-exam-cheating-ai-college-e25b5612dbf4bd09fdf9197254c4547e",
-      "summary": "60 points · 83 comments on Hacker News",
-      "publishedAt": "2026-11-17T14:00:47+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
+      "id": "3047d7657748ea760feb4367a861eff886526fc9a8d7d29ee939532b2c42b6aa",
+      "title": "Introducing ChatGPT for Sales",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+      "publishedAt": "2026-11-17T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -162,16 +212,6 @@
       "publishedAt": "2026-11-17T06:16:26+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "cd3f9f2cc97c05f9f5b96d3595e40296f0428d0281788edc0ac2ff149d2ae91c",
-      "title": "Mem Is Shutting Down",
-      "url": "https://get.mem.ai/blog/mem-is-shutting-down",
-      "summary": "77 points · 118 comments on Hacker News",
-      "publishedAt": "2026-11-17T02:13:41+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -215,26 +255,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "5d2fcb98492ed136d3fe5d0b84306e12533d1581cc7099da787909c3716198ba",
-      "title": "United Airlines has a widespread system outage",
-      "url": "https://apnews.com/article/united-airlines-outage-5a5e5f75bb07f11ffb8750901f0076ff",
-      "summary": "48 points · 13 comments on Hacker News",
-      "publishedAt": "2026-11-16T22:22:18+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "4353c1c4ce1b00e72f42acec9652a41b76210bbdce3c2fe750a8b2b63d0b5370",
-      "title": "United Airlines experiencing a widespread system outage, airline says",
-      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
-      "summary": "253 points · 131 comments on Hacker News",
-      "publishedAt": "2026-11-16T22:14:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "078c70bccadd2823d01aa4c6e59be7bb30c1da17d23483eacc2a895dd8148e52",
       "title": "The open-source movement wants Jensen Huang back",
       "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back",
@@ -249,16 +269,6 @@
       "title": "Broadening access to AI for scientists",
       "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
       "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
-      "publishedAt": "2026-11-16T17:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "dd659f011024f04f24b0b918544913431aa1336cb6fdeb78ce4549a3a5fdd29c",
-      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
-      "url": "https://openai.com/index/strengthening-online-child-safety",
-      "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
       "publishedAt": "2026-11-16T17:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
@@ -370,16 +380,6 @@
       "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
       "summary": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built",
       "publishedAt": "2026-11-15T23:58:36+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "601a53017054bbcae56a1142bb3bcfd8c33b9c053f667e9661e1418bdf76f357",
-      "title": "datasette 1.0a43",
-      "url": "https://simonwillison.net/2026/Nov/15/datasette",
-      "summary": "Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mech",
-      "publishedAt": "2026-11-15T23:20:27+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
