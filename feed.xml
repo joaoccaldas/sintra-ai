@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 19 Nov 2026 02:21:24 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 03:57:16 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -56,7 +56,7 @@
   </item>
 
   <item>
-    <title><![CDATA[Anthropic reportedly prices IPO at $83 a share, above projected range]]></title>
+    <title><![CDATA[Anthropic prices IPO at $83 a share, above projected range]]></title>
     <description><![CDATA[The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.]]></description>
     <link>https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range</guid>
@@ -98,6 +98,15 @@
     <guid isPermaLink="true">https://deepmind.google/blog/genie-4-is-now-available</guid>
     <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-arrows 0.1a0]]></title>
+    <description><![CDATA[Release: datasette-arrows 0.1a0 Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines of data from a table without needing to load it all into memo]]></description>
+    <link>https://simonwillison.net/2026/Nov/18/datasette-arrows</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/datasette-arrows</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -159,15 +168,6 @@
     <description><![CDATA[Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.]]></description>
     <link>https://openai.com/index/the-silent-consensus</link>
     <guid isPermaLink="true">https://openai.com/index/the-silent-consensus</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise]]></title>
-    <description><![CDATA[Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.]]></description>
-    <link>https://openai.com/business/customer-stories/sumitomo-life</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/sumitomo-life</guid>
     <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
