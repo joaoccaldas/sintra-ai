@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-19T03:57:13.594Z",
+  "resolvedAt": "2026-11-19T05:37:32.818Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -3874,7 +3874,7 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-19T03:57:13.594Z",
+      "retrievedAt": "2026-11-19T05:37:32.818Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3939,7 +3939,7 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-19T03:57:13.594Z",
+      "retrievedAt": "2026-11-19T05:37:32.818Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -4004,7 +4004,7 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-19T03:57:13.594Z",
+      "retrievedAt": "2026-11-19T05:37:32.818Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -4069,7 +4069,7 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-19T03:57:13.594Z",
+      "retrievedAt": "2026-11-19T05:37:32.818Z",
       "stale": false,
       "delivery": "public-provider"
     }
