@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T20:20:00.983611+00:00",
+  "generatedAt": "2026-11-19T00:19:18.802274+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,26 +12,86 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 46,
+  "itemCount": 47,
   "items": [
     {
-      "id": "95ece5ec5f45c9191f32bce7322a374c8ba708602c2cb97f526e3d28dbdeac75",
-      "title": "Sam Altman says his life is so weird that he’s unphased by Andrew Garfield portraying him in upcoming movie",
-      "url": "https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unphased-by-andrew-garfield-portraying-him-in-upcoming-movie",
-      "summary": "\"It doesn't feel like it's in like the top 10 weirdest things about my life,\" Altman said.",
-      "publishedAt": "2026-11-18T20:07:01+00:00",
+      "id": "28a1e7a21c66bddf9bd12f6e1fbdc31d03308bf19b156091883752d7db3a771e",
+      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
+      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
+      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
+      "publishedAt": "2026-11-18T23:45:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
     },
     {
-      "id": "ac57b5b6ee9ed73e27a8fe10fb0229c3463632f7dbf425b391798806234988b7",
-      "title": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
-      "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor",
-      "summary": "Lens creators can describe the Lens they want in plain language, and their AI assistant handles the process from start to finish, Snapchat says.",
-      "publishedAt": "2026-11-18T19:56:39+00:00",
+      "id": "806578be9a08eded4bcf6c18488f47cfde6df2bc4c3c17a5d7ba94ba25e9792c",
+      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
+      "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team",
+      "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
+      "publishedAt": "2026-11-18T23:25:17+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "fd0f1695410f8d6eef3244481d32f585f52d57b441a3f91a824a084a3d53033f",
+      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit",
+      "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
+      "publishedAt": "2026-11-18T23:17:28+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "591236888382df2bc009a6f5868495252d88b0e5fa9d306bd94076494314d505",
+      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web",
+      "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
+      "publishedAt": "2026-11-18T22:58:11+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9cd84c2455ae281d32d9b6a476bee2ad7b803f734bb08c8f8ee16c27c26d624f",
+      "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
+      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range",
+      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
+      "publishedAt": "2026-11-18T22:11:15+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d8ac169631b01ef659214f66f43a2fae75a81701ca21415e586e3f2a7702fc87",
+      "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report",
+      "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
+      "publishedAt": "2026-11-18T21:57:40+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "fd9bebbff7e692862dad0cea3083003ab322baa30f38c6a3bb8661b8a80eee16",
+      "title": "Introducing Gemini 4 Neon",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
+      "summary": "",
+      "publishedAt": "2026-11-18T21:35:43+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d",
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+      "summary": "350 points · 337 comments on Hacker News",
+      "publishedAt": "2026-11-18T21:34:07+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -58,7 +118,7 @@
       "id": "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38",
       "title": "Genie 4 is now available",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
-      "summary": "Comments",
+      "summary": "174 points · 140 comments on Hacker News",
       "publishedAt": "2026-11-18T18:49:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -75,23 +135,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "36bbeb249216ceb6a04b8ce0e9b2036af7c13889e2ddcea03778038cd547846f",
-      "title": "Google’s AI feature in Search gets its own incognito mode",
-      "url": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode",
-      "summary": "Google's new temporary threads let users have conversations in AI Mode without adding them to their search history or influencing future recommendations.",
-      "publishedAt": "2026-11-18T18:04:05+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "42ab85f3d5b2fc42240cb92992e116ab4b5845dc026638a305fe18e0bf61bd9a",
-      "title": "More banks say customers using AI agents are on their own — even if they get hacked",
-      "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked",
-      "summary": "Citi is the latest major financial institution to put the breaks on personal finance AI agents.",
-      "publishedAt": "2026-11-18T17:32:10+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "7188a95acfc74d0717e686e1cc4318af54c6814ebbdde3746c683bf3abd2a3c4",
+      "title": "Lakegres: Vector search on existing Open/Hudi/Iceberg tables",
+      "url": "https://www.onehouse.ai/blog/lakegres-vector-search-on-open-table-formats",
+      "summary": "37 points · 8 comments on Hacker News",
+      "publishedAt": "2026-11-18T17:41:48+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -105,40 +155,20 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1030bbe139c979c4319e0926d6d49252b008b7f75dc2ada8615f0fcebd91dbda",
-      "title": "Sam Altman warns against a future where AI, not humans, calls the shots",
-      "url": "https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots",
-      "summary": "Sam Altman and Greg Brockman pushed back against Silicon Valley's growing debate over an AI takeover, while acknowledging the challenges of keeping advanced models under human control.",
-      "publishedAt": "2026-11-18T16:59:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6468382737345bd88a85633e1712953c677d6bea524117f1fc927864335cf7ac",
       "title": "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
       "url": "https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO",
-      "summary": "117 points · 67 comments on Hacker News",
+      "summary": "124 points · 76 comments on Hacker News",
       "publishedAt": "2026-11-18T16:41:22+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "e6de34d7c9a098b0d7ce67d1de1f640a270febf00b99e1054d42fb9d69f76e7a",
-      "title": "OpenAI CEO Sam Altman says it’s ‘hard to imagine the AI industry without Jensen’",
-      "url": "https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen",
-      "summary": "Nvidia founder and former CEO Jensen Huang stepped down last week amid several scandals, including an affair with an alleged Chinese spy.",
-      "publishedAt": "2026-11-18T16:14:09+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "f5b869b89561f8d7235c5bb6cb0735f7ca4bf0161441a799a8066c849b41c390",
       "title": "Seven new models at scalable price-performance",
       "url": "https://microsoft.ai/news/microsoft-ignite-2026",
-      "summary": "Comments",
+      "summary": "421 points · 292 comments on Hacker News",
       "publishedAt": "2026-11-18T16:08:24+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,18 +188,8 @@
       "id": "f6f0576c6cc397f30abc09f34fd8389c3f37f9e9abdd4f2f15398332a12dd851",
       "title": "AI agents ask better questions than KPMG accountants in audit trial",
       "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg",
-      "summary": "Comments",
+      "summary": "325 points · 145 comments on Hacker News",
       "publishedAt": "2026-11-18T15:49:34+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "143c16ea97a973857e257eb01362b601159b9cb23f5d334aa88b3b5f651d6f2b",
-      "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
-      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
-      "summary": "Comments",
-      "publishedAt": "2026-11-18T15:35:44+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -205,16 +225,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "629f7eba64de05b8a939bb17fe362f6c5d5270cfe1ad5f672308f30cb68256ef",
-      "title": "Can Peer Review Survive AI-Generated Text? [pdf]",
-      "url": "https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf",
-      "summary": "62 points · 75 comments on Hacker News",
-      "publishedAt": "2026-11-18T13:51:03+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "c08d2bf5cfc43826878d77e47278b9e9342da150805b4ede88c33452ae6d0341",
       "title": "This smell startup says its AI nose is as good as a human’s",
       "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans",
@@ -222,6 +232,36 @@
       "publishedAt": "2026-11-18T10:20:30+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "184d931227f2504de1a33bebb5615518a5072d45e1bfb93a37850e8332740e3a",
+      "title": "The Silent Consensus",
+      "url": "https://openai.com/index/the-silent-consensus",
+      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
+      "publishedAt": "2026-11-18T10:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "53d809d7420a3923e8bad7c3bd224d7d2c9da9cb37fe0d761411713f6da0b90e",
+      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+      "url": "https://openai.com/business/customer-stories/sumitomo-life",
+      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+      "publishedAt": "2026-11-18T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "58da586369f33999eb920dc2411502d48d9dc9ca37a4ab1a788d83ffd176938a",
+      "title": "Research acceleration: The jagged frontier",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+      "publishedAt": "2026-11-18T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -305,16 +345,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "184d931227f2504de1a33bebb5615518a5072d45e1bfb93a37850e8332740e3a",
-      "title": "The Silent Consensus",
-      "url": "https://openai.com/index/the-silent-consensus",
-      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-      "publishedAt": "2026-11-18T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "5b89a2db7f60ae9099b72ca73768977f61c082125cbaf94b72c9c9bced5f17aa",
       "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
       "url": "https://huggingface.co/blog/rumble-2-flash",
@@ -329,16 +359,6 @@
       "title": "Advancing chip design with OpenAI models",
       "url": "https://openai.com/index/advancing-chip-design-with-our-models",
       "summary": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
-      "publishedAt": "2026-11-18T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a1de396d3910fa2e0f79d5fc1596f0a162b45e4ee5be0f06557fa126a8cc5915",
-      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
-      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
-      "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
       "publishedAt": "2026-11-18T00:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
@@ -372,16 +392,6 @@
       "publishedAt": "2026-11-17T22:38:52+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8f6af8c44a4a1bfb5de31585ff7d049da9f0b0c7303ae5eb79fd652e216c50e9",
-      "title": "Introducing GPT-6.2 Astra and Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-      "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
-      "publishedAt": "2026-11-17T17:45:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -477,7 +487,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-18T18:17:20.838523+00:00",
+    "generatedAt": "2026-11-19T00:19:32.857404+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1572,7 +1582,7 @@
         ],
         "value": 6.3818,
         "period": "2026-11-18",
-        "retrievedAt": "2026-11-18T18:05:11.617615+00:00",
+        "retrievedAt": "2026-11-19T00:19:32.857386+00:00",
         "stale": false
       },
       {
@@ -2668,7 +2678,7 @@
         ],
         "value": 11.143,
         "period": "2026-11-18",
-        "retrievedAt": "2026-11-18T18:05:11.617651+00:00",
+        "retrievedAt": "2026-11-19T00:19:32.857402+00:00",
         "stale": false
       },
       {
@@ -3764,7 +3774,7 @@
         ],
         "value": 1.0968,
         "period": "2026-11-18",
-        "retrievedAt": "2026-11-18T18:05:11.617658+00:00",
+        "retrievedAt": "2026-11-19T00:19:32.857404+00:00",
         "stale": false
       },
       {
