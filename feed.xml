@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 19 Nov 2026 06:13:33 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 07:15:43 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit</guid>
     <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[llm-gemini 0.38]]></title>
+    <description><![CDATA[Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon ]]></description>
+    <link>https://simonwillison.net/2026/Nov/18/llm-gemini</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/llm-gemini</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans</guid>
     <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The Silent Consensus]]></title>
-    <description><![CDATA[Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.]]></description>
-    <link>https://openai.com/index/the-silent-consensus</link>
-    <guid isPermaLink="true">https://openai.com/index/the-silent-consensus</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
