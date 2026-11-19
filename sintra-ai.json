@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T05:36:52.843739+00:00",
+  "generatedAt": "2026-11-19T07:14:43.163401+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -78,7 +78,7 @@
       "id": "f24ede8b2ec8caec6b60691b9f329daade5bacfdc7c10d22a0c8d32b3e75c85c",
       "title": "AI will not make you rich (2025)",
       "url": "https://colossus.com/article/ai-will-not-make-you-rich",
-      "summary": "84 points · 49 comments on Hacker News",
+      "summary": "90 points · 53 comments on Hacker News",
       "publishedAt": "2026-11-19T01:51:28+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +88,7 @@
       "id": "e240b1886554663496b5e60ec90811ddae0ccd577bef5cd3270e43fc007c4e44",
       "title": "Black high school students sue after AI mistakes Doritos bag for gun",
       "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm",
-      "summary": "68 points · 35 comments on Hacker News",
+      "summary": "76 points · 37 comments on Hacker News",
       "publishedAt": "2026-11-19T00:57:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -102,6 +102,16 @@
       "publishedAt": "2026-11-19T00:42:56+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8c4432adfe17d06c6aff7a41de686e572f62b119104e0c0a22b9db0d33fe569b",
+      "title": "llm-gemini 0.38",
+      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
+      "summary": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon ",
+      "publishedAt": "2026-11-18T23:59:20+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -148,7 +158,7 @@
       "id": "5b9d482182313e53ef58b0acd9175995bbf13db920e78c9ae66a98a4a42c913d",
       "title": "US charges Irishman with destroying a $60M Air Force C-130",
       "url": "https://taskandpurpose.com/news/c-130-damage-ireland-daithi-ocorrain",
-      "summary": "33 points · 39 comments on Hacker News",
+      "summary": "36 points · 40 comments on Hacker News",
       "publishedAt": "2026-11-18T22:30:26+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +188,7 @@
       "id": "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d",
       "title": "Gemini 4 Neon",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
-      "summary": "Comments",
+      "summary": "695 points · 586 comments on Hacker News",
       "publishedAt": "2026-11-18T21:34:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +218,7 @@
       "id": "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38",
       "title": "Genie 4 is now available",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
-      "summary": "Comments",
+      "summary": "231 points · 156 comments on Hacker News",
       "publishedAt": "2026-11-18T18:49:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -415,16 +425,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "6f0fb0223e38d4b7eb88a0e7c5e7053f5bb8f0f1fefa0aa473dc9ea1840c0b87",
-      "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
-      "url": "https://simonwillison.net/2026/Nov/17/datasette-lite",
-      "summary": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-si",
-      "publishedAt": "2026-11-17T16:48:33+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "54f7ad0b4a0462af71f5659aff22f95dc261c7200d428718f508e620ce535d31",
       "title": "Research Reports",
       "url": "https://www.technologyreview.com/2026/11/17/1148203/research-reports",
@@ -487,7 +487,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-19T00:19:32.857404+00:00",
+    "generatedAt": "2026-11-19T07:14:53.643496+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1582,7 +1582,7 @@
         ],
         "value": 6.3818,
         "period": "2026-11-18",
-        "retrievedAt": "2026-11-19T00:19:32.857386+00:00",
+        "retrievedAt": "2026-11-19T07:14:53.643461+00:00",
         "stale": false
       },
       {
@@ -2678,7 +2678,7 @@
         ],
         "value": 11.143,
         "period": "2026-11-18",
-        "retrievedAt": "2026-11-19T00:19:32.857402+00:00",
+        "retrievedAt": "2026-11-19T07:14:53.643489+00:00",
         "stale": false
       },
       {
@@ -3774,7 +3774,7 @@
         ],
         "value": 1.0968,
         "period": "2026-11-18",
-        "retrievedAt": "2026-11-19T00:19:32.857404+00:00",
+        "retrievedAt": "2026-11-19T07:14:53.643496+00:00",
         "stale": false
       },
       {
