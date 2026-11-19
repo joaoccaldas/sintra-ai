@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T00:19:18.802274+00:00",
+  "generatedAt": "2026-11-19T01:19:54.675620+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 47,
   "items": [
+    {
+      "id": "76052896ed5fc980fe2736431e160ca81d29c1742e523eb89454d8f544e204a3",
+      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit",
+      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might",
+      "publishedAt": "2026-11-19T00:42:56+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "28a1e7a21c66bddf9bd12f6e1fbdc31d03308bf19b156091883752d7db3a771e",
       "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
@@ -55,21 +65,21 @@
       "color": "#5B48D9"
     },
     {
+      "id": "5b9d482182313e53ef58b0acd9175995bbf13db920e78c9ae66a98a4a42c913d",
+      "title": "US charges Irishman with destroying a $60M Air Force C-130",
+      "url": "https://taskandpurpose.com/news/c-130-damage-ireland-daithi-ocorrain",
+      "summary": "32 points · 32 comments on Hacker News",
+      "publishedAt": "2026-11-18T22:30:26+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "9cd84c2455ae281d32d9b6a476bee2ad7b803f734bb08c8f8ee16c27c26d624f",
       "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
       "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range",
       "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
       "publishedAt": "2026-11-18T22:11:15+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d8ac169631b01ef659214f66f43a2fae75a81701ca21415e586e3f2a7702fc87",
-      "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
-      "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report",
-      "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
-      "publishedAt": "2026-11-18T21:57:40+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -88,7 +98,7 @@
       "id": "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d",
       "title": "Gemini 4 Neon",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
-      "summary": "350 points · 337 comments on Hacker News",
+      "summary": "415 points · 391 comments on Hacker News",
       "publishedAt": "2026-11-18T21:34:07+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +128,7 @@
       "id": "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38",
       "title": "Genie 4 is now available",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
-      "summary": "174 points · 140 comments on Hacker News",
+      "summary": "184 points · 143 comments on Hacker News",
       "publishedAt": "2026-11-18T18:49:51+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "7188a95acfc74d0717e686e1cc4318af54c6814ebbdde3746c683bf3abd2a3c4",
       "title": "Lakegres: Vector search on existing Open/Hudi/Iceberg tables",
       "url": "https://www.onehouse.ai/blog/lakegres-vector-search-on-open-table-formats",
-      "summary": "37 points · 8 comments on Hacker News",
+      "summary": "39 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-18T17:41:48+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +178,7 @@
       "id": "f5b869b89561f8d7235c5bb6cb0735f7ca4bf0161441a799a8066c849b41c390",
       "title": "Seven new models at scalable price-performance",
       "url": "https://microsoft.ai/news/microsoft-ignite-2026",
-      "summary": "421 points · 292 comments on Hacker News",
+      "summary": "443 points · 308 comments on Hacker News",
       "publishedAt": "2026-11-18T16:08:24+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -182,16 +192,6 @@
       "publishedAt": "2026-11-18T15:58:27+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f6f0576c6cc397f30abc09f34fd8389c3f37f9e9abdd4f2f15398332a12dd851",
-      "title": "AI agents ask better questions than KPMG accountants in audit trial",
-      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg",
-      "summary": "325 points · 145 comments on Hacker News",
-      "publishedAt": "2026-11-18T15:49:34+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
