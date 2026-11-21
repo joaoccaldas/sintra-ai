@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T12:08:39.750154+00:00",
+  "generatedAt": "2026-11-21T00:01:12.612616+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,96 +12,336 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 47,
+  "itemCount": 49,
   "items": [
     {
-      "id": "03b179946dd0e551984b025c5c0109181a33c8ab2521005dd6c1243f1fb2bdf6",
-      "title": "Language Models Can Rewrite Their Own Weights",
-      "url": "https://arxiv.org/abs/2611.21885",
-      "summary": "Authors: Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu · arXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another ",
-      "publishedAt": "2026-11-19T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "03fb7e648f048ba810be6069e90c2bb8875b1f8a64607e0e6c4bef566ac80b91",
-      "title": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
-      "url": "https://arxiv.org/abs/2611.22301",
-      "summary": "Authors: Xuan Zhang, Zhijian Zhou, Zicheng Hu, Yan Feng, Hongyan Hao, Yuan Qi, Chao Qu · arXiv:2611.22301v1 Announce Type: new Abstract: Monte Carlo tree search (MCTS) has powered landmark successes in reinforcement learning, yet its gains in LLM reasoning can",
-      "publishedAt": "2026-11-19T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "08936e9fbb83a6b3ad02105491313adf88b55e6bcfb7eec968dc99457e98c5c2",
-      "title": "Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models",
-      "url": "https://arxiv.org/abs/2611.21705",
-      "summary": "Authors: Davide Liga, Liuwen Yu, Matteo Magnini · arXiv:2611.21705v1 Announce Type: new Abstract: Interpretability methods can locate the attention heads and sparse autoencoder (SAE) features that change the answer a language model gives to a moral prompt, e.g",
-      "publishedAt": "2026-11-19T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0ab709692aac8d96b8e28bcbac06897fa49ac78ff296c94c266f18152de2e4c9",
-      "title": "Seeing What Still Holds: How Waiting Control Changes Cooperative Recovery",
-      "url": "https://arxiv.org/abs/2611.22368",
-      "summary": "Authors: Kangjie Huang, Yucheng Xin, Xinchun Wang, Dong Liu, Yan Fan, Shuming Liu · arXiv:2611.22368v1 Announce Type: new Abstract: Changing the holding reference during a fixed-duration wait can reverse the ranking of visual recovery methods. We introduce Aud",
-      "publishedAt": "2026-11-19T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0afa44e4eed3c4128b0e10afa19e60467c36b44d5495189de8e43f9b7be0154d",
-      "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
-      "url": "https://arxiv.org/abs/2611.22496",
-      "summary": "Authors: Coen van den Elsen, Laurens Geffert · arXiv:2611.22496v1 Announce Type: new Abstract: We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The ma",
-      "publishedAt": "2026-11-19T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0b00acc2ef479fcb1cbb6aacecddc6c871beb3bc8b8161d43464ecc921394757",
-      "title": "A Visual Information Extraction System Using Multimodal Large Language Models for Scanned Cognitive and Behavioral Assessments",
-      "url": "https://arxiv.org/abs/2611.22252",
-      "summary": "Authors: Enshuo Hsu, Linh Nguyen, Sunyang Fu, Heath Goodrum, Sandra Stansberry, Kirk Roberts, Hongfang Liu, Yen-Chi L. Le · arXiv:2611.22252v1 Announce Type: new Abstract: Objective. Paper-based assessments are common in patient care, but handwriting and scann",
-      "publishedAt": "2026-11-19T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f24ede8b2ec8caec6b60691b9f329daade5bacfdc7c10d22a0c8d32b3e75c85c",
-      "title": "AI will not make you rich (2025)",
-      "url": "https://colossus.com/article/ai-will-not-make-you-rich",
-      "summary": "97 points · 55 comments on Hacker News",
-      "publishedAt": "2026-11-19T01:51:28+00:00",
+      "id": "0d485e0dfc8d69ca83636983a47bd92cb7a424b097b2fd243ee7efc1da523a02",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "summary": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing to buoy it as investors question huge sums being poured into AI buildout Who are Anthropic’s seven co-founders, now worth $180bn? As Anthropic’s stock dropped during its second day of tradin",
+      "publishedAt": "2026-11-20T21:38:17+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "e240b1886554663496b5e60ec90811ddae0ccd577bef5cd3270e43fc007c4e44",
-      "title": "Black high school students sue after AI mistakes Doritos bag for gun",
-      "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm",
-      "summary": "87 points · 48 comments on Hacker News",
-      "publishedAt": "2026-11-19T00:57:20+00:00",
+      "id": "bd3614c30b5d6b837c23fd079674b78298aa688a9dd2bb0c86ebfb91b9b4018b",
+      "title": "Inkling 2 Mini",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini",
+      "summary": "555 points · 93 comments on Hacker News",
+      "publishedAt": "2026-11-20T20:12:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "76052896ed5fc980fe2736431e160ca81d29c1742e523eb89454d8f544e204a3",
-      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit",
-      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might",
-      "publishedAt": "2026-11-19T00:42:56+00:00",
+      "id": "98001fcd04fee0535cde680f4d87d257959295cfaa14d1e29deaf5b59d1f4522",
+      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building",
+      "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+      "publishedAt": "2026-11-20T19:53:41+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "861ca51b04b5cf4869c520baccae417328873374f8e3e22cf1f7ff87fd2948e0",
+      "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
+      "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+      "publishedAt": "2026-11-20T19:32:08+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0d8e213cc0d8372dce87a215fd23412427369685da1892efafdde9948a5803bb",
+      "title": "Quoting Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil",
+      "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hop",
+      "publishedAt": "2026-11-20T19:21:49+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6691469f1dc34a795664478a1f215653c4c0e1c156284ede437016ba3fce96c3",
+      "title": "The most misunderstood graph in AI just got a major update",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update",
+      "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report",
+      "publishedAt": "2026-11-20T18:15:15+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "79b7324f6ff32c68d76fdc1605e0bfb60137e254a8e100a685c72d580f413416",
+      "title": "Chips can survive the space environment — can their financing?",
+      "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing",
+      "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+      "publishedAt": "2026-11-20T17:40:01+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0217300bae3fe7292fb51c472ec136c81ca94b3aa61c44ce5cc885220f3c18d7",
+      "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition",
+      "summary": "246 points · 184 comments on Hacker News",
+      "publishedAt": "2026-11-20T16:59:27+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "eecdc918ec2546301844a0c2fd031c0be8d750385f69d97e208b709dd1fc4f8f",
+      "title": "AI is giving everyone the same advice",
+      "url": "https://a90.com/experiments/same-advice",
+      "summary": "46 points · 17 comments on Hacker News",
+      "publishedAt": "2026-11-20T16:58:05+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7220e54bdf8a93f9a841b3c0788017f9eeb83f5dc45906f47668bc47b8da5d02",
+      "title": "Quoting Levent Alpöge",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge",
+      "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Cla",
+      "publishedAt": "2026-11-20T16:30:48+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "bc6cd0668a9d5bb9fc16c8d9ceef46eb980502b3795faa931234a55de8295540",
+      "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues",
+      "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling i",
+      "publishedAt": "2026-11-20T14:55:44+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1895a884c21c9ded05490b63158611efb54eeef1c630b290ec755b71c495efb0",
+      "title": "Six AI-powered gadgets that could make your home office smarter",
+      "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter",
+      "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
+      "publishedAt": "2026-11-20T14:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "6a27c4ad2fc94f282af89acb1811ae5953f49c373c63dffb3bc0a57e40bc2533",
+      "title": "Epic Games Turns to AI Coding for the Unreal Engine",
+      "url": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
+      "summary": "58 points · 60 comments on Hacker News",
+      "publishedAt": "2026-11-20T12:16:36+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3381c1b46b2b81fa0a771b8a1f3da29d0a409d7a204fa1944649d30c79a386e2",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "summary": "610 points · 319 comments on Hacker News",
+      "publishedAt": "2026-11-20T10:01:41+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7ad44f990f0c53ef2e2a537716dcd0f4d19ea5c4fbcd3c1cf3877b1b8eae8965",
+      "title": "Combatting adversarial distillation",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "publishedAt": "2026-11-20T10:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "01204f67231694777c8d48b12a1ef27165c79cc30469ddac17c069ecdc410c14",
+      "title": "Reducing Inference Cost of Coding Agents with Timeout Cascades",
+      "url": "https://arxiv.org/abs/2611.24324",
+      "summary": "Authors: Boxi Zhou, German Sviridov, Dmitrii Ustiugov, Haris Javaid · arXiv:2611.24324v1 Announce Type: new Abstract: AI coding agents have become one of the most popular applications of large language models. Yet, agentic AI comes at the cost of a tremendous ",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "017489cfad28fbfe61b1e90ecd30e83571d2c2ba1087cc174c6545c8c3c205a0",
+      "title": "Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow",
+      "url": "https://arxiv.org/abs/2611.23751",
+      "summary": "Authors: Rui Li, Liyang He, Zheng Zhang, Zhenya Huang, Qi Liu · arXiv:2611.23751v1 Announce Type: new Abstract: Autonomous LLM agents incur substantial cost and latency by invoking a large model (System-2) at every step, even when many intermediate actions cho",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "01aa7d7aa09cd93d5eb7e8ae6c6ad08c0005119c41196855c8be642d7c6e3511",
+      "title": "Movie2Game-Bench: Holistic Evaluation of Film-to-Game Adaptation Beyond Playability",
+      "url": "https://arxiv.org/abs/2611.24669",
+      "summary": "Authors: Jialing Xie, Yifan Zhou, Yiwen Zhang, Junjun He · arXiv:2611.24669v1 Announce Type: new Abstract: Adapting a film into a game requires selecting source elements and translating them into player actions, rules, and feedback. We introduce Movie2Game-Ben",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0347d9048e9d5e3680cd1bd307716b639ab4549e9ee90a5f21c0c4c201e2a6d1",
+      "title": "BOS Summary: The First Token Matters",
+      "url": "https://arxiv.org/abs/2611.23508",
+      "summary": "Authors: Hui Zhu, Saleh Zare Zade, Rafi Ibn Sultan, Deng Pan, Arun Ross, Dongxiao Zhu · arXiv:2611.23508v1 Announce Type: new Abstract: Large vision-language models (LVLMs) and language models (LLMs) often exhibit attention sinks, whereby particular positions,",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "042c74e7b67151326ea98d5c4df77286b239893a3da4f87d883fc0794e724a5b",
+      "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+      "url": "https://arxiv.org/abs/2611.23824",
+      "summary": "Authors: Wen Wang, Jindong Wang, Jiahua Bao, Tu Yongsiqi, Yihao Liu, Junwei He, Wenkui Fan · arXiv:2611.23824v1 Announce Type: new Abstract: Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning an",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "071e5cd613dc5e941b3eccc9bd59402e38b7e861e60daed7950a18301d454dca",
+      "title": "Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents",
+      "url": "https://arxiv.org/abs/2611.23917",
+      "summary": "Authors: Hanqi Mao, Jiajun Fan, Ruihan Guo, Shuaike Shen, Ziwen Wang, Hui Ren, Xianrui Zhong, Ge Liu · arXiv:2611.23917v1 Announce Type: new Abstract: Vision-language agents that browse websites, operate phones and act in homes reason before every action, so e",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3f7f7cffebe4ba5935ad38b2fb31ccca3134bd5c1847effc540e66dfdf2e4edc",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
+      "summary": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this Y",
+      "publishedAt": "2026-11-20T02:49:57+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "dbe111187a465a8a1fe0f3365f5b273364759e6feb0b71c9639c4f5ca49cfded",
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac",
+      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+      "publishedAt": "2026-11-20T00:56:01+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "701a571706ec6c00de8bbc6af8a9bc31d2eec98a2272e87a59a9e6a4a97a82f1",
+      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "summary": "",
+      "publishedAt": "2026-11-20T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8145fefb47ff1ca9fa5560e62b69bf54a222274ffe6f44de71f6b3dfaaa8f955",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "publishedAt": "2026-11-20T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "824c03b970f1dc58cad676334e63167d2af3b369add30c83b73e4ecb318d913d",
+      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+      "url": "https://huggingface.co/blog/inkling2mini",
+      "summary": "",
+      "publishedAt": "2026-11-20T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c1a2af93db54bfcf7c217cb74db83cfc0f90565b5c1b91d5871ab9ee0c953910",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+      "publishedAt": "2026-11-20T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1df80ba4eb1bc7794fc5f584c8d0b7c9cedb46e59bc8cc3f037066a83af47611",
+      "title": "PostgreSQL 19 Released",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19",
+      "summary": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apoca",
+      "publishedAt": "2026-11-19T20:43:57+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "056cf0b58a3dbace68332c5ef6b35e38e3aab513ff13bc25aa1cb803bce8b627",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
+      "summary": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "publishedAt": "2026-11-19T18:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "63610b904de29506452ac1fba7c8cb0b4b76c98f0fb6fd62dc6626d364874233",
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson",
+      "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
+      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9342dbf934e428aa00c16520441f258a949ccd62bcb28471deb475c04ce3c227",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+      "publishedAt": "2026-11-19T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "17b7a2b39f098895a2208f48f1507c3092e017b4481f6732b70b65df4c04b2b0",
+      "title": "See PR scans in action",
+      "url": "https://openai.com/business/learn/pr-scans-demo",
+      "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+      "publishedAt": "2026-11-19T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "82fe289fe466dcc1d4f71a60b5a7fb88a90a6df5cf719a456eac5a721e5f3552",
+      "title": "Explore the Codex Security Plugin",
+      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+      "publishedAt": "2026-11-19T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -115,66 +355,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "28a1e7a21c66bddf9bd12f6e1fbdc31d03308bf19b156091883752d7db3a771e",
-      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
-      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-      "publishedAt": "2026-11-18T23:45:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "806578be9a08eded4bcf6c18488f47cfde6df2bc4c3c17a5d7ba94ba25e9792c",
-      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
-      "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team",
-      "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
-      "publishedAt": "2026-11-18T23:25:17+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fd0f1695410f8d6eef3244481d32f585f52d57b441a3f91a824a084a3d53033f",
-      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit",
-      "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-      "publishedAt": "2026-11-18T23:17:28+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "591236888382df2bc009a6f5868495252d88b0e5fa9d306bd94076494314d505",
-      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web",
-      "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
-      "publishedAt": "2026-11-18T22:58:11+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5b9d482182313e53ef58b0acd9175995bbf13db920e78c9ae66a98a4a42c913d",
-      "title": "US charges Irishman with destroying a $60M Air Force C-130",
-      "url": "https://taskandpurpose.com/news/c-130-damage-ireland-daithi-ocorrain",
-      "summary": "36 points · 40 comments on Hacker News",
-      "publishedAt": "2026-11-18T22:30:26+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9cd84c2455ae281d32d9b6a476bee2ad7b803f734bb08c8f8ee16c27c26d624f",
-      "title": "Anthropic prices IPO at $83 a share, above projected range",
-      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range",
-      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
-      "publishedAt": "2026-11-18T22:11:15+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "fd9bebbff7e692862dad0cea3083003ab322baa30f38c6a3bb8661b8a80eee16",
       "title": "Introducing Gemini 4 Neon",
       "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
@@ -182,16 +362,6 @@
       "publishedAt": "2026-11-18T21:35:43+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d",
-      "title": "Gemini 4 Neon",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
-      "summary": "Comments",
-      "publishedAt": "2026-11-18T21:34:07+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -215,16 +385,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38",
-      "title": "Genie 4 is now available",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
-      "summary": "Comments",
-      "publishedAt": "2026-11-18T18:49:51+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "ca9ca0837de1673fe7157c5aacee390a01e91aa92b23247bd7648dbf04542dc2",
       "title": "Genie 4 is now available",
       "url": "https://deepmind.google/blog/genie-4-is-now-available",
@@ -232,16 +392,6 @@
       "publishedAt": "2026-11-18T18:13:42+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7188a95acfc74d0717e686e1cc4318af54c6814ebbdde3746c683bf3abd2a3c4",
-      "title": "Lakegres: Vector search on existing Open/Hudi/Iceberg tables",
-      "url": "https://www.onehouse.ai/blog/lakegres-vector-search-on-open-table-formats",
-      "summary": "40 points · 8 comments on Hacker News",
-      "publishedAt": "2026-11-18T17:41:48+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -265,16 +415,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1c2cff6fe54921cead049fc67fe49d057f4cef91633596f08fcb182a305de71d",
-      "title": "Quoting Daniel Stenberg",
-      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg",
-      "summary": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes",
-      "publishedAt": "2026-11-18T15:58:27+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "aef632472a5e3af7f91b4cd9c5d8e0ecee47135327c9822e26d24027e878b6a3",
       "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
       "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
@@ -282,16 +422,6 @@
       "publishedAt": "2026-11-18T15:00:23+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "52461be624b7e32fadebdc1891ecceff2b446488ed9b11785c71245ec8ca6623",
-      "title": "The PSF end-of-year fundraiser",
-      "url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser",
-      "summary": "The PSF end-of-year fundraiser With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your company or your work benefits from Python, ",
-      "publishedAt": "2026-11-18T14:44:48+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -315,56 +445,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "184d931227f2504de1a33bebb5615518a5072d45e1bfb93a37850e8332740e3a",
-      "title": "The Silent Consensus",
-      "url": "https://openai.com/index/the-silent-consensus",
-      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-      "publishedAt": "2026-11-18T10:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "53d809d7420a3923e8bad7c3bd224d7d2c9da9cb37fe0d761411713f6da0b90e",
-      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-      "url": "https://openai.com/business/customer-stories/sumitomo-life",
-      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-      "publishedAt": "2026-11-18T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "58da586369f33999eb920dc2411502d48d9dc9ca37a4ab1a788d83ffd176938a",
-      "title": "Research acceleration: The jagged frontier",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-      "publishedAt": "2026-11-18T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "67952d9a918d2536a7bf3b37b6c05ec5dc7c7c22fdf68db178458bb74b4d4f2d",
-      "title": "Inside the Codex sandbox",
-      "url": "https://openai.com/index/inside-the-codex-sandbox",
-      "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
-      "publishedAt": "2026-11-18T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "99be0c0a7e074380d1a5d6cdb0953a68d68217eb3d8f50443a74e9d288a8cea0",
-      "title": "Managing frontier AI risk: From training to deployment",
-      "url": "https://openai.com/index/managing-frontier-ai-risk",
-      "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
-      "publishedAt": "2026-11-18T06:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "5b89a2db7f60ae9099b72ca73768977f61c082125cbaf94b72c9c9bced5f17aa",
       "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
       "url": "https://huggingface.co/blog/rumble-2-flash",
@@ -372,46 +452,6 @@
       "publishedAt": "2026-11-18T00:00:00+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7",
-      "title": "Advancing chip design with OpenAI models",
-      "url": "https://openai.com/index/advancing-chip-design-with-our-models",
-      "summary": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
-      "publishedAt": "2026-11-18T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ec56b5eff9affb1c339e466ce0f8237f0117032663d5db85034279f9f2a19228",
-      "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-      "url": "https://huggingface.co/blog/moe-expert-streaming",
-      "summary": "",
-      "publishedAt": "2026-11-18T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e45fd791e1fe03c27509e5cfc6fcacfeb1c5b0665a232d00558d4f3fb339f62b",
-      "title": "External sandboxes for coding agents",
-      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
-      "summary": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging a",
-      "publishedAt": "2026-11-17T22:52:29+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "82b169450b02e27d05b949928dfedb9d8fdbdeb171912bc893f9bbe7beab4383",
-      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
-      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
-      "summary": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shippe",
-      "publishedAt": "2026-11-17T22:38:52+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -463,31 +503,11 @@
       "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
-    },
-    {
-      "id": "d1436b6477306116b9c13ed55dd2abe15bdb3f6824815062e1d749523e7c7f70",
-      "title": "Building AI that can work across the enterprise",
-      "url": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise",
-      "summary": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI agents and a",
-      "publishedAt": "2026-11-16T13:00:00+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8ec21efa2c62273428cb36f48412c205c966c9e1c9840d1b4a0d5276d99867ca",
-      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
-      "url": "https://huggingface.co/blog/openrouter",
-      "summary": "",
-      "publishedAt": "2026-11-16T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
     }
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-19T07:14:53.643496+00:00",
+    "generatedAt": "2026-11-21T00:01:52.233231+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1578,11 +1598,19 @@
           {
             "date": "2026-11-18",
             "value": 6.3818
+          },
+          {
+            "date": "2026-11-19",
+            "value": 6.4765
+          },
+          {
+            "date": "2026-11-20",
+            "value": 6.5259
           }
         ],
-        "value": 6.3818,
-        "period": "2026-11-18",
-        "retrievedAt": "2026-11-19T07:14:53.643461+00:00",
+        "value": 6.5259,
+        "period": "2026-11-20",
+        "retrievedAt": "2026-11-21T00:01:18.864955+00:00",
         "stale": false
       },
       {
@@ -2674,11 +2702,19 @@
           {
             "date": "2026-11-18",
             "value": 11.143
+          },
+          {
+            "date": "2026-11-19",
+            "value": 11.147
+          },
+          {
+            "date": "2026-11-20",
+            "value": 11.2125
           }
         ],
-        "value": 11.143,
-        "period": "2026-11-18",
-        "retrievedAt": "2026-11-19T07:14:53.643489+00:00",
+        "value": 11.2125,
+        "period": "2026-11-20",
+        "retrievedAt": "2026-11-21T00:01:18.865007+00:00",
         "stale": false
       },
       {
@@ -3770,11 +3806,19 @@
           {
             "date": "2026-11-18",
             "value": 1.0968
+          },
+          {
+            "date": "2026-11-19",
+            "value": 1.0992
+          },
+          {
+            "date": "2026-11-20",
+            "value": 1.099
           }
         ],
-        "value": 1.0968,
-        "period": "2026-11-18",
-        "retrievedAt": "2026-11-19T07:14:53.643496+00:00",
+        "value": 1.099,
+        "period": "2026-11-20",
+        "retrievedAt": "2026-11-21T00:01:18.865013+00:00",
         "stale": false
       },
       {
@@ -3838,7 +3882,7 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.526546+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.619833+00:00",
         "stale": false
       },
       {
@@ -3902,7 +3946,7 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.526571+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.619947+00:00",
         "stale": false
       },
       {
@@ -3966,7 +4010,7 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.526579+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.619955+00:00",
         "stale": false
       },
       {
@@ -4030,7 +4074,7 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.526584+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.619959+00:00",
         "stale": false
       },
       {
@@ -4094,7 +4138,7 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.838496+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.630066+00:00",
         "stale": false
       },
       {
@@ -4158,7 +4202,7 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.838517+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.630095+00:00",
         "stale": false
       },
       {
@@ -4222,7 +4266,7 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.838520+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.630099+00:00",
         "stale": false
       },
       {
@@ -4286,7 +4330,7 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-18T18:17:20.838523+00:00",
+        "retrievedAt": "2026-11-21T00:01:51.630101+00:00",
         "stale": false
       },
       {
@@ -4350,8 +4394,8 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.242604+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-21T00:01:52.233195+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4414,8 +4458,8 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.242625+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-21T00:01:52.233225+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4478,8 +4522,8 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.242628+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-21T00:01:52.233228+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4542,8 +4586,8 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-15T17:29:44.242631+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-21T00:01:52.233231+00:00",
+        "stale": false
       }
     ]
   }
