@@ -7,169 +7,169 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 20 Nov 2026 06:13:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 00:02:26 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[Microsoft CEO Satya Nadella explains why he asked 60K employees to quit]]></title>
-    <description><![CDATA[Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might]]></description>
-    <link>https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit</guid>
+    <title><![CDATA[Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.]]></title>
+    <description><![CDATA[Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.]]></description>
+    <link>https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too]]></title>
+    <description><![CDATA[Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.]]></description>
+    <link>https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Quoting Ravi Vakil]]></title>
+    <description><![CDATA[Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hop]]></description>
+    <link>https://simonwillison.net/2026/Nov/20/ravi-vakil</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/ravi-vakil</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The most misunderstood graph in AI just got a major update]]></title>
+    <description><![CDATA[A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report]]></description>
+    <link>https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Chips can survive the space environment — can their financing?]]></title>
+    <description><![CDATA[Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?]]></description>
+    <link>https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Quoting Levent Alpöge]]></title>
+    <description><![CDATA[I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Cla]]></description>
+    <link>https://simonwillison.net/2026/Nov/20/levent-alpoge</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/levent-alpoge</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The fallout from Nvidia’s Jensen Huang scandal continues]]></title>
+    <description><![CDATA[In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling i]]></description>
+    <link>https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues</link>
+    <guid isPermaLink="true">https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Six AI-powered gadgets that could make your home office smarter]]></title>
+    <description><![CDATA[From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.]]></description>
+    <link>https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Combatting adversarial distillation]]></title>
+    <description><![CDATA[OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.]]></description>
+    <link>https://openai.com/index/combatting-adversarial-distillation</link>
+    <guid isPermaLink="true">https://openai.com/index/combatting-adversarial-distillation</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Token fraud is here and it’s BAD (YouTube)]]></title>
+    <description><![CDATA[Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers "turn an idea into a spec". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this Y]]></description>
+    <link>https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Apple may be developing its own AI agent that runs your Mac]]></title>
+    <description><![CDATA[The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.]]></description>
+    <link>https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/harness-adapters-at-scale</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/harness-adapters-at-scale</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Hebbia sees improvements in financial research with GPT-6 Astra]]></title>
+    <description><![CDATA[Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.]]></description>
+    <link>https://openai.com/business/customer-stories/hebbia</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/hebbia</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/inkling2mini</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/inkling2mini</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Can AI help scientists identify promising drug candidates?]]></title>
+    <description><![CDATA[MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.]]></description>
+    <link>https://openai.com/index/introducing-medchembench</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-medchembench</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[PostgreSQL 19 Released]]></title>
+    <description><![CDATA[PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apoca]]></description>
+    <link>https://simonwillison.net/2026/Nov/19/postgresql-19</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/19/postgresql-19</guid>
     <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm-gemini 0.38]]></title>
-    <description><![CDATA[Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon ]]></description>
-    <link>https://simonwillison.net/2026/Nov/18/llm-gemini</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/llm-gemini</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 
   <item>
-    <title><![CDATA[Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’]]></title>
-    <description><![CDATA[The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.]]></description>
-    <link>https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’]]></title>
-    <description><![CDATA[“I don’t think [Huang is] disloyal to the United States," Musk said.]]></description>
-    <link>https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit]]></title>
-    <description><![CDATA[Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.]]></description>
-    <link>https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Satya Nadella predicts AI agents will reshuffle the economics of the web]]></title>
-    <description><![CDATA[Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.]]></description>
-    <link>https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Anthropic prices IPO at $83 a share, above projected range]]></title>
-    <description><![CDATA[The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.]]></description>
-    <link>https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing Gemini 4 Neon]]></title>
-    <description><![CDATA[Google DeepMind — Labs]]></description>
-    <link>https://deepmind.google/blog/introducing-gemini-4-neon</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/introducing-gemini-4-neon</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Why your fine-tuning job takes longer than the FLOPs say]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Genie 4 is now available]]></title>
-    <description><![CDATA[Google DeepMind — Labs]]></description>
-    <link>https://deepmind.google/blog/genie-4-is-now-available</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/genie-4-is-now-available</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-arrows 0.1a0]]></title>
-    <description><![CDATA[Release: datasette-arrows 0.1a0 Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines of data from a table without needing to load it all into memo]]></description>
-    <link>https://simonwillison.net/2026/Nov/18/datasette-arrows</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/datasette-arrows</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The Gemini app is now available on lower-memory Android devices.]]></title>
-    <description><![CDATA[The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.]]></description>
-    <link>https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[Introducing Tool Retrieval in the Gemini API]]></title>
+    <description><![CDATA[Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.]]></description>
+    <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval</link>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google AI</category>
   </item>
 
   <item>
-    <title><![CDATA[Quoting Daniel Stenberg]]></title>
-    <description><![CDATA[During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes]]></description>
-    <link>https://simonwillison.net/2026/Nov/18/daniel-stenberg</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/daniel-stenberg</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Time-Series Models in the Streamhouse: A New Frontier and Use Cases]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The PSF end-of-year fundraiser]]></title>
-    <description><![CDATA[The PSF end-of-year fundraiser With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your company or your work benefits from Python, ]]></description>
-    <link>https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The AI Hype Index: AI is everywhere]]></title>
-    <description><![CDATA[Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up th]]></description>
-    <link>https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[This smell startup says its AI nose is as good as a human’s]]></title>
-    <description><![CDATA[In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich ]]></description>
-    <link>https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
+    <title><![CDATA[Walter Isaacson on curiosity and creativity in the AI age.]]></title>
+    <description><![CDATA[Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.]]></description>
+    <link>https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson</link>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
   </item>
 
   <item>

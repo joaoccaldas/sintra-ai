@@ -7,10 +7,310 @@
   "language": "en-us",
   "items": [
     {
-      "id": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit",
-      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-      "content_text": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might",
+      "id": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building",
+      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building",
+      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+      "content_text": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
+      "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+      "content_text": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/20/ravi-vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil",
+      "title": "Quoting Ravi Vakil",
+      "content_text": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hop",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update",
+      "title": "The most misunderstood graph in AI just got a major update",
+      "content_text": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "MIT Technology Review",
+        "MIT Technology Review",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing",
+      "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing",
+      "title": "Chips can survive the space environment — can their financing?",
+      "content_text": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/20/levent-alpoge",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge",
+      "title": "Quoting Levent Alpöge",
+      "content_text": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Cla",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues",
+      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues",
+      "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+      "content_text": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling i",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter",
+      "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter",
+      "title": "Six AI-powered gadgets that could make your home office smarter",
+      "content_text": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/combatting-adversarial-distillation",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "title": "Combatting adversarial distillation",
+      "content_text": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "content_text": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this Y",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac",
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "content_text": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://openai.com/business/customer-stories/hebbia",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "content_text": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://huggingface.co/blog/inkling2mini",
+      "url": "https://huggingface.co/blog/inkling2mini",
+      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-medchembench",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "content_text": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/19/postgresql-19",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19",
+      "title": "PostgreSQL 19 Released",
+      "content_text": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apoca",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -20,26 +320,6 @@
       },
       "date_published": "2026-11-19T00:00:00.000Z",
       "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/18/llm-gemini",
-      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
-      "title": "llm-gemini 0.38",
-      "content_text": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon ",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
         "Simon Willison",
         "Simon Willison",
         "Practitioner",
@@ -47,10 +327,10 @@
       ]
     },
     {
-      "id": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
-      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
-      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-      "content_text": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
+      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "content_text": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -58,207 +338,7 @@
         "workflowResource": null,
         "verification": "not-reverified"
       },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team",
-      "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team",
-      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
-      "content_text": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit",
-      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-      "content_text": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web",
-      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web",
-      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-      "content_text": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range",
-      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range",
-      "title": "Anthropic prices IPO at $83 a share, above projected range",
-      "content_text": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/introducing-gemini-4-neon",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
-      "title": "Introducing Gemini 4 Neon",
-      "content_text": "Google DeepMind — Labs",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "Google DeepMind",
-        "Google DeepMind",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
-      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
-      "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
-      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
-      "title": "Why your fine-tuning job takes longer than the FLOPs say",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/genie-4-is-now-available",
-      "url": "https://deepmind.google/blog/genie-4-is-now-available",
-      "title": "Genie 4 is now available",
-      "content_text": "Google DeepMind — Labs",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "Google DeepMind",
-        "Google DeepMind",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/18/datasette-arrows",
-      "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows",
-      "title": "datasette-arrows 0.1a0",
-      "content_text": "Release: datasette-arrows 0.1a0 Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines of data from a table without needing to load it all into memo",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
-      "title": "The Gemini app is now available on lower-memory Android devices.",
-      "content_text": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
+      "date_published": "2026-11-19T00:00:00.000Z",
       "tags": [
         "Google AI",
         "Google AI",
@@ -267,10 +347,10 @@
       ]
     },
     {
-      "id": "https://simonwillison.net/2026/Nov/18/daniel-stenberg",
-      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg",
-      "title": "Quoting Daniel Stenberg",
-      "content_text": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes",
+      "id": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson",
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "content_text": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -278,91 +358,11 @@
         "workflowResource": null,
         "verification": "not-reverified"
       },
-      "date_published": "2026-11-18T00:00:00.000Z",
+      "date_published": "2026-11-19T00:00:00.000Z",
       "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
-      "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
-      "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser",
-      "url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser",
-      "title": "The PSF end-of-year fundraiser",
-      "content_text": "The PSF end-of-year fundraiser With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your company or your work benefits from Python, ",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere",
-      "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere",
-      "title": "The AI Hype Index: AI is everywhere",
-      "content_text": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up th",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "MIT Technology Review",
-        "MIT Technology Review",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans",
-      "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans",
-      "title": "This smell startup says its AI nose is as good as a human’s",
-      "content_text": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich ",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-18T00:00:00.000Z",
-      "tags": [
-        "MIT Technology Review",
-        "MIT Technology Review",
-        "Press",
+        "Google AI",
+        "Google AI",
+        "Labs",
         "Live"
       ]
     },
