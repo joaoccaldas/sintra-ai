@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T00:01:12.612616+00:00",
+  "generatedAt": "2026-11-21T02:36:00.579177+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,16 @@
   "itemCount": 49,
   "items": [
     {
+      "id": "22abd629566b28f940f5d1aef8cca1e35c0ce72aa76c0fc66666254e1ed3d341",
+      "title": "AI may have solved the most important problem in mathematics",
+      "url": "https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics",
+      "summary": "33 points · 40 comments on Hacker News",
+      "publishedAt": "2026-11-20T22:46:59+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "0d485e0dfc8d69ca83636983a47bd92cb7a424b097b2fd243ee7efc1da523a02",
       "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
@@ -25,10 +35,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "c8578f36663fdd901477045644a065b006be895e10b9c6d7c8eacffb58357213",
+      "title": "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
+      "url": "https://www.wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90",
+      "summary": "43 points · 3 comments on Hacker News",
+      "publishedAt": "2026-11-20T21:18:46+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "bd3614c30b5d6b837c23fd079674b78298aa688a9dd2bb0c86ebfb91b9b4018b",
       "title": "Inkling 2 Mini",
       "url": "https://thinkingmachines.ai/news/inkling-2-mini",
-      "summary": "Comments",
+      "summary": "709 points · 117 comments on Hacker News",
       "publishedAt": "2026-11-20T20:12:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -86,9 +106,9 @@
     },
     {
       "id": "0217300bae3fe7292fb51c472ec136c81ca94b3aa61c44ce5cc885220f3c18d7",
-      "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+      "title": "Google workers tell their employer not to punish schools that don't want AI",
       "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition",
-      "summary": "246 points · 184 comments on Hacker News",
+      "summary": "267 points · 198 comments on Hacker News",
       "publishedAt": "2026-11-20T16:59:27+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +118,7 @@
       "id": "eecdc918ec2546301844a0c2fd031c0be8d750385f69d97e208b709dd1fc4f8f",
       "title": "AI is giving everyone the same advice",
       "url": "https://a90.com/experiments/same-advice",
-      "summary": "46 points · 17 comments on Hacker News",
+      "summary": "59 points · 25 comments on Hacker News",
       "publishedAt": "2026-11-20T16:58:05+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -142,26 +162,6 @@
       "publishedAt": "2026-11-20T14:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "6a27c4ad2fc94f282af89acb1811ae5953f49c373c63dffb3bc0a57e40bc2533",
-      "title": "Epic Games Turns to AI Coding for the Unreal Engine",
-      "url": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
-      "summary": "58 points · 60 comments on Hacker News",
-      "publishedAt": "2026-11-20T12:16:36+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3381c1b46b2b81fa0a771b8a1f3da29d0a409d7a204fa1944649d30c79a386e2",
-      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-      "url": "https://architectlabs.com/blog/frostbite",
-      "summary": "Comments",
-      "publishedAt": "2026-11-20T10:01:41+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
