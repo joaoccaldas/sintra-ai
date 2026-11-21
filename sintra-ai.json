@@ -28,7 +28,7 @@
       "id": "bd3614c30b5d6b837c23fd079674b78298aa688a9dd2bb0c86ebfb91b9b4018b",
       "title": "Inkling 2 Mini",
       "url": "https://thinkingmachines.ai/news/inkling-2-mini",
-      "summary": "555 points · 93 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-20T20:12:19+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -115,6 +115,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "03b179946dd0e551984b025c5c0109181a33c8ab2521005dd6c1243f1fb2bdf6",
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "summary": "Authors: Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu · arXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another ",
+      "publishedAt": "2026-11-20T16:29:06+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
       "id": "bc6cd0668a9d5bb9fc16c8d9ceef46eb980502b3795faa931234a55de8295540",
       "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
       "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues",
@@ -148,7 +158,7 @@
       "id": "3381c1b46b2b81fa0a771b8a1f3da29d0a409d7a204fa1944649d30c79a386e2",
       "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
       "url": "https://architectlabs.com/blog/frostbite",
-      "summary": "610 points · 319 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-20T10:01:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -209,16 +219,6 @@
       "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
       "url": "https://arxiv.org/abs/2611.23824",
       "summary": "Authors: Wen Wang, Jindong Wang, Jiahua Bao, Tu Yongsiqi, Yihao Liu, Junwei He, Wenkui Fan · arXiv:2611.23824v1 Announce Type: new Abstract: Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning an",
-      "publishedAt": "2026-11-20T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "071e5cd613dc5e941b3eccc9bd59402e38b7e861e60daed7950a18301d454dca",
-      "title": "Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents",
-      "url": "https://arxiv.org/abs/2611.23917",
-      "summary": "Authors: Hanqi Mao, Jiajun Fan, Ruihan Guo, Shuaike Shen, Ziwen Wang, Hui Ren, Xianrui Zhong, Ge Liu · arXiv:2611.23917v1 Announce Type: new Abstract: Vision-language agents that browse websites, operate phones and act in homes reason before every action, so e",
       "publishedAt": "2026-11-20T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
