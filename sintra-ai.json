@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:58:02.990469+00:00",
+  "generatedAt": "2026-11-22T15:47:32.650778+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,17 +18,17 @@
       "id": "aaa55aaf598950923826598344d69b7cb6cea73bf924c87d342a64c181b6202f",
       "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
       "url": "https://simonwillison.net/2026/Nov/21/muru",
-      "summary": "Comments",
+      "summary": "32 points · 5 comments on Hacker News",
       "publishedAt": "2026-11-22T09:57:01+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
       "id": "d7e78f94bca2cb94b4919cca35e5f63ee70b473127637ba25b77d00ad8c473a7",
       "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
       "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
-      "summary": "Comments",
+      "summary": "374 points · 470 comments on Hacker News",
       "publishedAt": "2026-11-22T08:57:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +48,7 @@
       "id": "31dbae397b46d6b33d38b91121c10bd6ade5e600bf0b4a5f8b05408f94dd74f2",
       "title": "Together.ai: Prompt Leakage for Requests",
       "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
-      "summary": "35 points · 8 comments on Hacker News",
+      "summary": "40 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-22T03:07:27+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +58,7 @@
       "id": "9a21414861db6424e923bfdd7e2cc5e47e7575b1cc73d412928a3286b2f10e7d",
       "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
       "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
-      "summary": "40 points · 13 comments on Hacker News",
+      "summary": "42 points · 14 comments on Hacker News",
       "publishedAt": "2026-11-22T03:06:35+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -68,18 +68,8 @@
       "id": "26c5ca669b141704712f91738a2905d8b938f4eabe7c4f5d9db9652d537d0444",
       "title": "Data Processing Incidents on Inference Providers",
       "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
-      "summary": "Comments",
+      "summary": "227 points · 80 comments on Hacker News",
       "publishedAt": "2026-11-22T02:14:14+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9b3998d4b9b4980bb89b8d83e68e65389771758683731ded17837bfdb9173010",
-      "title": "The Mythology of Conscious AI",
-      "url": "https://www.noemamag.com/the-mythology-of-conscious-ai",
-      "summary": "Comments",
-      "publishedAt": "2026-11-22T02:10:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -365,6 +355,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "8c4432adfe17d06c6aff7a41de686e572f62b119104e0c0a22b9db0d33fe569b",
+      "title": "llm-gemini 0.38",
+      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
+      "summary": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon ",
+      "publishedAt": "2026-11-18T23:59:20+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
       "id": "fd9bebbff7e692862dad0cea3083003ab322baa30f38c6a3bb8661b8a80eee16",
       "title": "Introducing Gemini 4 Neon",
       "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
@@ -507,7 +507,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-22T08:52:50.525235+00:00",
+    "generatedAt": "2026-11-22T15:47:35.721105+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1610,7 +1610,7 @@
         ],
         "value": 6.5259,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-22T08:52:50.525216+00:00",
+        "retrievedAt": "2026-11-22T15:47:35.721067+00:00",
         "stale": false
       },
       {
@@ -2714,7 +2714,7 @@
         ],
         "value": 11.2125,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-22T08:52:50.525233+00:00",
+        "retrievedAt": "2026-11-22T15:47:35.721098+00:00",
         "stale": false
       },
       {
@@ -3818,7 +3818,7 @@
         ],
         "value": 1.099,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-22T08:52:50.525235+00:00",
+        "retrievedAt": "2026-11-22T15:47:35.721105+00:00",
         "stale": false
       },
       {
