@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T07:55:47.515767+00:00",
+  "generatedAt": "2026-11-22T08:56:18.989739+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,8 +18,18 @@
       "id": "ff772f090165aaaeca613b84b35c8eecfec2825b92d80c8b026ec4f9330c4dbb",
       "title": "AI Supply Chain Security: What Canary Tokens Found",
       "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
-      "summary": "Comments",
+      "summary": "79 points · 17 comments on Hacker News",
       "publishedAt": "2026-11-22T05:11:43+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9a21414861db6424e923bfdd7e2cc5e47e7575b1cc73d412928a3286b2f10e7d",
+      "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
+      "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
+      "summary": "35 points · 10 comments on Hacker News",
+      "publishedAt": "2026-11-22T03:06:35+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -102,16 +112,6 @@
       "publishedAt": "2026-11-21T17:00:00+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "cac4d486e46aeed2b2c3cb6e9d4def0130bd53731219af9d027a99b178867d3b",
-      "title": "International UN talks on controlling use of autonomous weapons collapse",
-      "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
-      "summary": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’ Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control the use of autonomous weapons collapsed just before 5am a",
-      "publishedAt": "2026-11-21T16:36:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -507,7 +507,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-21T00:01:52.233231+00:00",
+    "generatedAt": "2026-11-22T08:52:50.525235+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1610,8 +1610,8 @@
         ],
         "value": 6.5259,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-21T00:01:18.864955+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-22T08:52:50.525216+00:00",
+        "stale": false
       },
       {
         "id": "EUR-SEK",
@@ -2714,8 +2714,8 @@
         ],
         "value": 11.2125,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-21T00:01:18.865007+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-22T08:52:50.525233+00:00",
+        "stale": false
       },
       {
         "id": "EUR-USD",
@@ -3818,8 +3818,8 @@
         ],
         "value": 1.099,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-21T00:01:18.865013+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-22T08:52:50.525235+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
