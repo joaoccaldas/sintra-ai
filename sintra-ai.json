@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T15:47:32.650778+00:00",
+  "generatedAt": "2026-11-22T17:35:24.182914+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 49,
   "items": [
     {
+      "id": "660b0b3743a08e805829e750fc7187b4d6e2ac3b24bfd9350a1db3913efac447",
+      "title": "AI is becoming a disaster for the climate",
+      "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the",
+      "summary": "48 points · 13 comments on Hacker News",
+      "publishedAt": "2026-11-22T12:19:46+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "aaa55aaf598950923826598344d69b7cb6cea73bf924c87d342a64c181b6202f",
       "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
       "url": "https://simonwillison.net/2026/Nov/21/muru",
-      "summary": "32 points · 5 comments on Hacker News",
+      "summary": "47 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-22T09:57:01+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +38,7 @@
       "id": "d7e78f94bca2cb94b4919cca35e5f63ee70b473127637ba25b77d00ad8c473a7",
       "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
       "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
-      "summary": "374 points · 470 comments on Hacker News",
+      "summary": "507 points · 592 comments on Hacker News",
       "publishedAt": "2026-11-22T08:57:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +48,7 @@
       "id": "ff772f090165aaaeca613b84b35c8eecfec2825b92d80c8b026ec4f9330c4dbb",
       "title": "AI Supply Chain Security: What Canary Tokens Found",
       "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
-      "summary": "89 points · 21 comments on Hacker News",
+      "summary": "91 points · 21 comments on Hacker News",
       "publishedAt": "2026-11-22T05:11:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -48,7 +58,7 @@
       "id": "31dbae397b46d6b33d38b91121c10bd6ade5e600bf0b4a5f8b05408f94dd74f2",
       "title": "Together.ai: Prompt Leakage for Requests",
       "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
-      "summary": "40 points · 8 comments on Hacker News",
+      "summary": "41 points · 9 comments on Hacker News",
       "publishedAt": "2026-11-22T03:07:27+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,18 +68,8 @@
       "id": "9a21414861db6424e923bfdd7e2cc5e47e7575b1cc73d412928a3286b2f10e7d",
       "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
       "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
-      "summary": "42 points · 14 comments on Hacker News",
+      "summary": "44 points · 14 comments on Hacker News",
       "publishedAt": "2026-11-22T03:06:35+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "26c5ca669b141704712f91738a2905d8b938f4eabe7c4f5d9db9652d537d0444",
-      "title": "Data Processing Incidents on Inference Providers",
-      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
-      "summary": "227 points · 80 comments on Hacker News",
-      "publishedAt": "2026-11-22T02:14:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
