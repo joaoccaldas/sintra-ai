@@ -7,8 +7,53 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 22 Nov 2026 07:25:54 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 07:56:17 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Muru]]></title>
+    <description><![CDATA[Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and]]></description>
+    <link>https://simonwillison.net/2026/Nov/21/muru</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/21/muru</guid>
+    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance]]></title>
+    <description><![CDATA[Signal is limiting users' ability to take screenshots in both its Android and iOS apps.]]></description>
+    <link>https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance</guid>
+    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[A tale of two Nvidias]]></title>
+    <description><![CDATA[We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.]]></description>
+    <link>https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias</guid>
+    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Here are the top AI agents that can live in your text messages]]></title>
+    <description><![CDATA[We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.]]></description>
+    <link>https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages</guid>
+    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Is selling an AI version of your face to this microdrama startup the future of Hollywood?]]></title>
+    <description><![CDATA[An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.]]></description>
+    <link>https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood</guid>
+    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.]]></title>
@@ -47,39 +92,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Chips can survive the space environment — can their financing?]]></title>
-    <description><![CDATA[Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?]]></description>
-    <link>https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Quoting Levent Alpöge]]></title>
     <description><![CDATA[I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Cla]]></description>
     <link>https://simonwillison.net/2026/Nov/20/levent-alpoge</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/levent-alpoge</guid>
     <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The fallout from Nvidia’s Jensen Huang scandal continues]]></title>
-    <description><![CDATA[In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling i]]></description>
-    <link>https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues</link>
-    <guid isPermaLink="true">https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Six AI-powered gadgets that could make your home office smarter]]></title>
-    <description><![CDATA[From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.]]></description>
-    <link>https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -92,21 +110,21 @@
   </item>
 
   <item>
+    <title><![CDATA[llm-gemini 0.38.1]]></title>
+    <description><![CDATA[Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in th]]></description>
+    <link>https://simonwillison.net/2026/Nov/20/llm-gemini</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/llm-gemini</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
     <title><![CDATA[Token fraud is here and it’s BAD (YouTube)]]></title>
     <description><![CDATA[Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers "turn an idea into a spec". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this Y]]></description>
     <link>https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad</guid>
     <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Apple may be developing its own AI agent that runs your Mac]]></title>
-    <description><![CDATA[The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.]]></description>
-    <link>https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/19/postgresql-19</guid>
     <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing Tool Retrieval in the Gemini API]]></title>
-    <description><![CDATA[Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.]]></description>
-    <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval</guid>
-    <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Walter Isaacson on curiosity and creativity in the AI age.]]></title>
-    <description><![CDATA[Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.]]></description>
-    <link>https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson</link>
-    <guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson</guid>
-    <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
   </item>
 
   <item>
