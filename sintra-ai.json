@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T08:56:18.989739+00:00",
+  "generatedAt": "2026-11-22T09:56:25.876890+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 49,
   "items": [
     {
+      "id": "d7e78f94bca2cb94b4919cca35e5f63ee70b473127637ba25b77d00ad8c473a7",
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
+      "summary": "Comments",
+      "publishedAt": "2026-11-22T08:57:34+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "ff772f090165aaaeca613b84b35c8eecfec2825b92d80c8b026ec4f9330c4dbb",
       "title": "AI Supply Chain Security: What Canary Tokens Found",
       "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
-      "summary": "79 points · 17 comments on Hacker News",
+      "summary": "81 points · 17 comments on Hacker News",
       "publishedAt": "2026-11-22T05:11:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +38,7 @@
       "id": "9a21414861db6424e923bfdd7e2cc5e47e7575b1cc73d412928a3286b2f10e7d",
       "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
       "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
-      "summary": "35 points · 10 comments on Hacker News",
+      "summary": "37 points · 11 comments on Hacker News",
       "publishedAt": "2026-11-22T03:06:35+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -90,16 +100,6 @@
       "url": "https://www.pandex.io/",
       "summary": "Comments",
       "publishedAt": "2026-11-21T20:47:41+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1a6bc61cbec29813b9f10410c19b0c8634b6fcb040d8c4636c93a3d86bb64355",
-      "title": "Upload2Shell (CVE-2026-125396)",
-      "url": "https://pwn.ai/upload2shell",
-      "summary": "Comments",
-      "publishedAt": "2026-11-21T18:29:29+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
