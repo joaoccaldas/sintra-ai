@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:35:24.182914+00:00",
+  "generatedAt": "2026-11-22T23:32:37.978908+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,60 @@
   "itemCount": 49,
   "items": [
     {
+      "id": "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9",
+      "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+      "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+      "summary": "Comments",
+      "publishedAt": "2026-11-22T23:12:10+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "883b69d3f986860bffa5b7f6476b5e6f24020479abf9427d9ce9503ffc1f037d",
+      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development",
+      "summary": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
+      "publishedAt": "2026-11-22T21:14:07+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a9f7ae49b5fbd4f4edc31b0b0e42abd66e29e9dd398ea5acfa2e3ac3b0681ef3",
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "summary": "Comments",
+      "publishedAt": "2026-11-22T21:01:16+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e03d1744715126e88bc6a94b51faec21c9d9d9a7be3fa243a554543fff3379a4",
+      "title": "Why Are We at the Mercy of the World's Weirdest Men?",
+      "url": "https://www.nytimes.com/2026/11/22/opinion/jensen-huang-ai-ethics-cold-war.html",
+      "summary": "34 points · 7 comments on Hacker News",
+      "publishedAt": "2026-11-22T20:04:56+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "47b2738e2872fd88c166151463e7074b4ab4231ec0a98dc66eca7ebcb1440813",
+      "title": "Why data centers are at the center of the Big Tech backlash",
+      "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash",
+      "summary": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
+      "publishedAt": "2026-11-22T18:08:43+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
       "id": "660b0b3743a08e805829e750fc7187b4d6e2ac3b24bfd9350a1db3913efac447",
       "title": "AI is becoming a disaster for the climate",
       "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the",
-      "summary": "48 points · 13 comments on Hacker News",
+      "summary": "96 points · 41 comments on Hacker News",
       "publishedAt": "2026-11-22T12:19:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -28,7 +78,7 @@
       "id": "aaa55aaf598950923826598344d69b7cb6cea73bf924c87d342a64c181b6202f",
       "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
       "url": "https://simonwillison.net/2026/Nov/21/muru",
-      "summary": "47 points · 8 comments on Hacker News",
+      "summary": "70 points · 11 comments on Hacker News",
       "publishedAt": "2026-11-22T09:57:01+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,40 +88,20 @@
       "id": "d7e78f94bca2cb94b4919cca35e5f63ee70b473127637ba25b77d00ad8c473a7",
       "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
       "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
-      "summary": "507 points · 592 comments on Hacker News",
+      "summary": "843 points · 861 comments on Hacker News",
       "publishedAt": "2026-11-22T08:57:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
-      "id": "ff772f090165aaaeca613b84b35c8eecfec2825b92d80c8b026ec4f9330c4dbb",
-      "title": "AI Supply Chain Security: What Canary Tokens Found",
-      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
-      "summary": "91 points · 21 comments on Hacker News",
-      "publishedAt": "2026-11-22T05:11:43+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "31dbae397b46d6b33d38b91121c10bd6ade5e600bf0b4a5f8b05408f94dd74f2",
-      "title": "Together.ai: Prompt Leakage for Requests",
-      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
-      "summary": "41 points · 9 comments on Hacker News",
-      "publishedAt": "2026-11-22T03:07:27+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9a21414861db6424e923bfdd7e2cc5e47e7575b1cc73d412928a3286b2f10e7d",
-      "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
-      "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
-      "summary": "44 points · 14 comments on Hacker News",
-      "publishedAt": "2026-11-22T03:06:35+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
+      "id": "1a10f1676d46fc01a909d8eab6d17033b89331ee5fd1f1e04952fc2f6f54665c",
+      "title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "publishedAt": "2026-11-22T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -110,26 +140,6 @@
       "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood",
       "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
       "publishedAt": "2026-11-21T16:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "98001fcd04fee0535cde680f4d87d257959295cfaa14d1e29deaf5b59d1f4522",
-      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
-      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building",
-      "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
-      "publishedAt": "2026-11-20T19:53:41+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "861ca51b04b5cf4869c520baccae417328873374f8e3e22cf1f7ff87fd2948e0",
-      "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
-      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
-      "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
-      "publishedAt": "2026-11-20T19:32:08+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
       "color": "#5B48D9"
@@ -345,16 +355,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "82fe289fe466dcc1d4f71a60b5a7fb88a90a6df5cf719a456eac5a721e5f3552",
-      "title": "Explore the Codex Security Plugin",
-      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
-      "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
-      "publishedAt": "2026-11-19T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "8c4432adfe17d06c6aff7a41de686e572f62b119104e0c0a22b9db0d33fe569b",
       "title": "llm-gemini 0.38",
       "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
@@ -507,7 +507,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-22T15:47:35.721105+00:00",
+    "generatedAt": "2026-11-22T22:19:38.085847+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1610,7 +1610,7 @@
         ],
         "value": 6.5259,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-22T15:47:35.721067+00:00",
+        "retrievedAt": "2026-11-22T22:19:38.085815+00:00",
         "stale": false
       },
       {
@@ -2714,7 +2714,7 @@
         ],
         "value": 11.2125,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-22T15:47:35.721098+00:00",
+        "retrievedAt": "2026-11-22T22:19:38.085845+00:00",
         "stale": false
       },
       {
@@ -3818,7 +3818,7 @@
         ],
         "value": 1.099,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-22T15:47:35.721105+00:00",
+        "retrievedAt": "2026-11-22T22:19:38.085847+00:00",
         "stale": false
       },
       {
