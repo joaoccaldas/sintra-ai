@@ -7,10 +7,10 @@
   "language": "en-us",
   "items": [
     {
-      "id": "https://simonwillison.net/2026/Nov/21/muru",
-      "url": "https://simonwillison.net/2026/Nov/21/muru",
-      "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
-      "content_text": "Comments",
+      "id": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development",
+      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development",
+      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+      "content_text": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -20,9 +20,49 @@
       },
       "date_published": "2026-11-22T00:00:00.000Z",
       "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash",
+      "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash",
+      "title": "Why data centers are at the center of the Big Tech backlash",
+      "content_text": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-22T00:00:00.000Z",
+      "tags": [
+        "TechCrunch AI",
+        "TechCrunch AI",
+        "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/perplexity-and-intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "title": "Perplexity and Intelligence",
+      "content_text": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-22T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "OpenAI",
+        "Labs",
         "Live"
       ]
     },
@@ -99,46 +139,6 @@
         "verification": "not-reverified"
       },
       "date_published": "2026-11-21T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building",
-      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building",
-      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
-      "content_text": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-20T00:00:00.000Z",
-      "tags": [
-        "TechCrunch AI",
-        "TechCrunch AI",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
-      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
-      "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
-      "content_text": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-20T00:00:00.000Z",
       "tags": [
         "TechCrunch AI",
         "TechCrunch AI",

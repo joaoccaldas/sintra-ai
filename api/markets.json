@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-22T14:00:02.597Z",
+  "resolvedAt": "2026-11-22T23:49:53.228Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -1103,7 +1103,7 @@
       ],
       "value": 1.099,
       "period": "2026-11-20",
-      "retrievedAt": "2026-11-22T08:52:50.525235+00:00",
+      "retrievedAt": "2026-11-22T22:19:38.085847+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -2208,7 +2208,7 @@
       ],
       "value": 11.2125,
       "period": "2026-11-20",
-      "retrievedAt": "2026-11-22T08:52:50.525233+00:00",
+      "retrievedAt": "2026-11-22T22:19:38.085845+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3313,7 +3313,7 @@
       ],
       "value": 6.5259,
       "period": "2026-11-20",
-      "retrievedAt": "2026-11-22T08:52:50.525216+00:00",
+      "retrievedAt": "2026-11-22T22:19:38.085815+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3378,7 +3378,7 @@
       ],
       "value": 1.54316373266217,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3443,7 +3443,7 @@
       ],
       "value": 2.2857464902475,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3508,7 +3508,7 @@
       ],
       "value": 2.16138195623856,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3573,7 +3573,7 @@
       ],
       "value": 1.4110724231835,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3638,7 +3638,7 @@
       ],
       "value": 0.679015259300199,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3703,7 +3703,7 @@
       ],
       "value": 5.01675279604836,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3768,7 +3768,7 @@
       ],
       "value": 2.94952520485207,
       "period": "2024-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3833,7 +3833,7 @@
       ],
       "value": 2.46605755272817,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3898,7 +3898,7 @@
       ],
       "value": 8.694,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -3963,7 +3963,7 @@
       ],
       "value": 5.97,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -4028,7 +4028,7 @@
       ],
       "value": 4.198,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     },
@@ -4093,7 +4093,7 @@
       ],
       "value": 6.28355946264135,
       "period": "2025-01-01",
-      "retrievedAt": "2026-11-22T14:00:02.597Z",
+      "retrievedAt": "2026-11-22T23:49:53.228Z",
       "stale": false,
       "delivery": "public-provider"
     }

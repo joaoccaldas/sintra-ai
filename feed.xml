@@ -7,16 +7,34 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 22 Nov 2026 14:00:04 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 23:49:55 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator]]></title>
-    <description><![CDATA[Comments]]></description>
-    <link>https://simonwillison.net/2026/Nov/21/muru</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/21/muru</guid>
+    <title><![CDATA[OpenAI’s chief scientist has thoughts on how to limit AI development]]></title>
+    <description><![CDATA[To establish a speed limit on AI development, you need to agree on how to measure speed.]]></description>
+    <link>https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development</guid>
     <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Why data centers are at the center of the Big Tech backlash]]></title>
+    <description><![CDATA[Journalist Paris Marx unpacks his new book "Hyperscale."]]></description>
+    <link>https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Perplexity and Intelligence]]></title>
+    <description><![CDATA[How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.]]></description>
+    <link>https://openai.com/index/perplexity-and-intelligence</link>
+    <guid isPermaLink="true">https://openai.com/index/perplexity-and-intelligence</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -52,24 +70,6 @@
     <link>https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood</guid>
     <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.]]></title>
-    <description><![CDATA[Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.]]></description>
-    <link>https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too]]></title>
-    <description><![CDATA[Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.]]></description>
-    <link>https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
 
