@@ -1611,7 +1611,7 @@
         "value": 6.5259,
         "period": "2026-11-20",
         "retrievedAt": "2026-11-21T00:01:18.864955+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-SEK",
@@ -2715,7 +2715,7 @@
         "value": 11.2125,
         "period": "2026-11-20",
         "retrievedAt": "2026-11-21T00:01:18.865007+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-USD",
@@ -3819,7 +3819,7 @@
         "value": 1.099,
         "period": "2026-11-20",
         "retrievedAt": "2026-11-21T00:01:18.865013+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
@@ -3883,7 +3883,7 @@
         "value": 2.2857464902475,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:51.619833+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3947,7 +3947,7 @@
         "value": 1.4110724231835,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:51.619947+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -4011,7 +4011,7 @@
         "value": 1.54316373266217,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:51.619955+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4075,7 +4075,7 @@
         "value": 2.16138195623856,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:51.619959+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4139,7 +4139,7 @@
         "value": 5.01675279604836,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:51.630066+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4203,7 +4203,7 @@
         "value": 2.46605755272817,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:51.630095+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4267,7 +4267,7 @@
         "value": 0.679015259300199,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:51.630099+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4331,7 +4331,7 @@
         "value": 2.94952520485207,
         "period": "2024-01-01",
         "retrievedAt": "2026-11-21T00:01:51.630101+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4395,7 +4395,7 @@
         "value": 5.97,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:52.233195+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4459,7 +4459,7 @@
         "value": 6.28355946264135,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:52.233225+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4523,7 +4523,7 @@
         "value": 8.694,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:52.233228+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4587,7 +4587,7 @@
         "value": 4.198,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-21T00:01:52.233231+00:00",
-        "stale": false
+        "stale": true
       }
     ]
   }
