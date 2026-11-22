@@ -7,15 +7,15 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 22 Nov 2026 12:59:24 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 14:00:04 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[Muru]]></title>
-    <description><![CDATA[Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and]]></description>
+    <title><![CDATA[Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator]]></title>
+    <description><![CDATA[Comments]]></description>
     <link>https://simonwillison.net/2026/Nov/21/muru</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/21/muru</guid>
-    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 

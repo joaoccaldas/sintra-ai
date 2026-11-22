@@ -9,8 +9,8 @@
     {
       "id": "https://simonwillison.net/2026/Nov/21/muru",
       "url": "https://simonwillison.net/2026/Nov/21/muru",
-      "title": "Muru",
-      "content_text": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and",
+      "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
+      "content_text": "Comments",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -18,7 +18,7 @@
         "workflowResource": null,
         "verification": "not-reverified"
       },
-      "date_published": "2026-11-21T00:00:00.000Z",
+      "date_published": "2026-11-22T00:00:00.000Z",
       "tags": [
         "Simon Willison",
         "Simon Willison",
