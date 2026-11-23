@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T03:56:55.823605+00:00",
+  "generatedAt": "2026-11-23T04:57:28.276173+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -25,6 +25,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "d76d1fd47e7f903ad709849633ab74b09aa2e665e195067e554ff2d61f8a9455",
+      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+      "url": "https://0rwx.com/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-22T23:53:00+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9",
       "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
       "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
@@ -38,7 +48,7 @@
       "id": "2b98b898e990dfee2b3d6ae16bd742ca4c63fd27e63bf1076695f3727e60dbbe",
       "title": "Do Not Accept",
       "url": "https://donotaccept.ai/",
-      "summary": "48 points · 55 comments on Hacker News",
+      "summary": "49 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-22T23:02:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,18 +108,8 @@
       "id": "605bc9329fe9f2491a0816698f8b44cc163acac1bb062ae1ab572ace72998f41",
       "title": "Harvard CS 2881R AI Safety",
       "url": "https://boazbk.github.io/mltheoryseminar",
-      "summary": "Comments",
+      "summary": "59 points · 7 comments on Hacker News",
       "publishedAt": "2026-11-22T18:01:54+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "660b0b3743a08e805829e750fc7187b4d6e2ac3b24bfd9350a1db3913efac447",
-      "title": "AI is becoming a disaster for the climate",
-      "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the",
-      "summary": "110 points · 47 comments on Hacker News",
-      "publishedAt": "2026-11-22T12:19:46+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
