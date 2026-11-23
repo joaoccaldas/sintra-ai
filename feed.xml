@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Mon, 23 Nov 2026 12:49:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 14:20:11 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -17,6 +17,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo</guid>
     <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How to build and maintain an agentic evaluation]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/agentic-evals</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/agentic-evals</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/inkling2mini</guid>
     <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Can AI help scientists identify promising drug candidates?]]></title>
-    <description><![CDATA[MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.]]></description>
-    <link>https://openai.com/index/introducing-medchembench</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-medchembench</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
