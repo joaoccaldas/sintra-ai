@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T12:19:19.926201+00:00",
+  "generatedAt": "2026-11-23T14:19:33.565369+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,18 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 45,
+  "itemCount": 44,
   "items": [
+    {
+      "id": "875efdab1707b0f751087254c9919f0a9f687dd32293724e69119ac73d6670b1",
+      "title": "Amodei reportedly suggested games could pacify masses after AI took their jobs",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness",
+      "summary": "46 points · 54 comments on Hacker News",
+      "publishedAt": "2026-11-23T12:41:14+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "f1db7ce98881d89015978e36136156bff2ae870452275174795039e0388b1ed2",
       "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
@@ -95,10 +105,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "00d52199bef25f9eda98fa79c30b3c80d4e34af93f50b3c1b0911b599d05708b",
+      "title": "How to build and maintain an agentic evaluation",
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "summary": "",
+      "publishedAt": "2026-11-23T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
       "id": "d76d1fd47e7f903ad709849633ab74b09aa2e665e195067e554ff2d61f8a9455",
       "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
       "url": "https://0rwx.com/",
-      "summary": "60 points · 16 comments on Hacker News",
+      "summary": "63 points · 17 comments on Hacker News",
       "publishedAt": "2026-11-22T23:53:00+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +128,7 @@
       "id": "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9",
       "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
       "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
-      "summary": "241 points · 177 comments on Hacker News",
+      "summary": "245 points · 185 comments on Hacker News",
       "publishedAt": "2026-11-22T23:12:10+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -140,16 +160,6 @@
       "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
       "summary": "Comments",
       "publishedAt": "2026-11-22T21:01:16+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e03d1744715126e88bc6a94b51faec21c9d9d9a7be3fa243a554543fff3379a4",
-      "title": "Why Are We at the Mercy of the World's Weirdest Men?",
-      "url": "https://www.nytimes.com/2026/11/22/opinion/jensen-huang-ai-ethics-cold-war.html",
-      "summary": "40 points · 7 comments on Hacker News",
-      "publishedAt": "2026-11-22T20:04:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -442,26 +452,6 @@
       "publishedAt": "2026-11-18T10:20:30+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5b89a2db7f60ae9099b72ca73768977f61c082125cbaf94b72c9c9bced5f17aa",
-      "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
-      "url": "https://huggingface.co/blog/rumble-2-flash",
-      "summary": "",
-      "publishedAt": "2026-11-18T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "830da74434e8505c737e91eb0dcd32bca128e663d8b67dd821f376fcc24bd3aa",
-      "title": "Put Gemini to work for you",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features",
-      "summary": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
-      "publishedAt": "2026-11-17T17:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
       "color": "#5B48D9"
     }
   ],
