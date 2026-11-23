@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T05:57:09.520961+00:00",
+  "generatedAt": "2026-11-23T05:57:52.917346+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,68 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 49,
+  "itemCount": 45,
   "items": [
+    {
+      "id": "006e5b4d87f0d23dc4925414eeab9e7e48c277d92082846cc2e8948efc05ef9f",
+      "title": "Functional Depth Is Learned: Isolating the Computation That Layers Produce Only Together",
+      "url": "https://arxiv.org/abs/2611.27911",
+      "summary": "Authors: JaeSeong Kim, KyungTae Lim · arXiv:2611.27911v1 Announce Type: new Abstract: Transformer performance scales with depth, but layer count merely counts the opportunities for sequential computation: layers could still behave as nearly independent refinem",
+      "publishedAt": "2026-11-23T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "03465724b88b0cc08e0a5ae9483bc1e9585ff8591a35ba6673e019752e0e92f1",
+      "title": "Beyond Demographic Discrimination: Benchmarking Normative-Descriptive Calibration in LLMs",
+      "url": "https://arxiv.org/abs/2611.26870",
+      "summary": "Authors: Radhika Bhargava, Shinibali Bhattacharyya, George Mihaila, Jay Prajapati, Anwesan Pal, Yue Zhang · arXiv:2611.26870v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in socially consequential settings, where they mu",
+      "publishedAt": "2026-11-23T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "06cf0b3156b2863bcd4472bef577ee004d1561cce2bbb7490fcb4fc6ef20209a",
+      "title": "Learning Adaptive Defense Strategies: Fine-Tuned LLMs for Network Security Games under Network Mobility",
+      "url": "https://arxiv.org/abs/2611.27180",
+      "summary": "Authors: Md Abu Sayed, Asif Rahman, Ahmed Ryen, Ahmed Hemida, Charles Kamhoua, Christopher Kiekintveld · arXiv:2611.27180v1 Announce Type: new Abstract: Large language models(LLM) show promise for strategic reasoning, yet their ability to compute game-theoreti",
+      "publishedAt": "2026-11-23T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0dc04413cef3cd66f81c78eb2d07404b69da8f055b3a2eb9ae18378754561c66",
+      "title": "MAPES: Multi-Value Alignment Pipeline via Expert Specialization",
+      "url": "https://arxiv.org/abs/2611.27133",
+      "summary": "Authors: SungHo Kim, SangKeun Lee · arXiv:2611.27133v1 Announce Type: new Abstract: Aligning large language models (LLMs) with human preferences requires simultaneously satisfying multiple, often competing values. Existing preference optimization methods colla",
+      "publishedAt": "2026-11-23T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0e28a904d1414b09bb9040f4f58f8bcced5597287058e0ff47c33e1ee51ece33",
+      "title": "A Continuous Relaxation of Quantization-Aware Training",
+      "url": "https://arxiv.org/abs/2611.27056",
+      "summary": "Authors: Kartikeya Bhardwaj, Mohammed Almousa, Chaitanya Mullapudi, Ananth Balasubramanian, Nithin Ramesan, Tuc Nguyen, Harris Teague · arXiv:2611.27056v1 Announce Type: new Abstract: Quantization is a critical piece of the deployment pipeline in the era of la",
+      "publishedAt": "2026-11-23T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0f525672fc51aba072c31b5c4bef3d20195ef4a3d72b0ec8801b5f798d3f3459",
+      "title": "Decision Models Are General-Purpose Process Reward Models",
+      "url": "https://arxiv.org/abs/2611.27068",
+      "summary": "Authors: Jiajun Fan, Qinglong Zheng, Ziwen Wang, Bangji Yang, Neil He, Ruihan Guo, Chaoran Cheng, Ge Liu · arXiv:2611.27068v1 Announce Type: new Abstract: Reinforcement learning (RL) from verifiable outcomes gives a language agent one reward per episode: every",
+      "publishedAt": "2026-11-23T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
     {
       "id": "50eaee9a34139795490080825cd4c7ea2f7eb798eecbe072f6a32e3017fb6b13",
       "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
@@ -185,16 +245,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "03b179946dd0e551984b025c5c0109181a33c8ab2521005dd6c1243f1fb2bdf6",
-      "title": "Language Models Can Rewrite Their Own Weights",
-      "url": "https://arxiv.org/abs/2611.21885",
-      "summary": "Authors: Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu · arXiv:2611.21885v2 Announce Type: new Abstract: A language model is trained once and frozen. Making it better takes another ",
-      "publishedAt": "2026-11-20T16:29:06+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7ad44f990f0c53ef2e2a537716dcd0f4d19ea5c4fbcd3c1cf3877b1b8eae8965",
       "title": "Combatting adversarial distillation",
       "url": "https://openai.com/index/combatting-adversarial-distillation",
@@ -202,56 +252,6 @@
       "publishedAt": "2026-11-20T10:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "01204f67231694777c8d48b12a1ef27165c79cc30469ddac17c069ecdc410c14",
-      "title": "Reducing Inference Cost of Coding Agents with Timeout Cascades",
-      "url": "https://arxiv.org/abs/2611.24324",
-      "summary": "Authors: Boxi Zhou, German Sviridov, Dmitrii Ustiugov, Haris Javaid · arXiv:2611.24324v1 Announce Type: new Abstract: AI coding agents have become one of the most popular applications of large language models. Yet, agentic AI comes at the cost of a tremendous ",
-      "publishedAt": "2026-11-20T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "017489cfad28fbfe61b1e90ecd30e83571d2c2ba1087cc174c6545c8c3c205a0",
-      "title": "Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow",
-      "url": "https://arxiv.org/abs/2611.23751",
-      "summary": "Authors: Rui Li, Liyang He, Zheng Zhang, Zhenya Huang, Qi Liu · arXiv:2611.23751v1 Announce Type: new Abstract: Autonomous LLM agents incur substantial cost and latency by invoking a large model (System-2) at every step, even when many intermediate actions cho",
-      "publishedAt": "2026-11-20T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "01aa7d7aa09cd93d5eb7e8ae6c6ad08c0005119c41196855c8be642d7c6e3511",
-      "title": "Movie2Game-Bench: Holistic Evaluation of Film-to-Game Adaptation Beyond Playability",
-      "url": "https://arxiv.org/abs/2611.24669",
-      "summary": "Authors: Jialing Xie, Yifan Zhou, Yiwen Zhang, Junjun He · arXiv:2611.24669v1 Announce Type: new Abstract: Adapting a film into a game requires selecting source elements and translating them into player actions, rules, and feedback. We introduce Movie2Game-Ben",
-      "publishedAt": "2026-11-20T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0347d9048e9d5e3680cd1bd307716b639ab4549e9ee90a5f21c0c4c201e2a6d1",
-      "title": "BOS Summary: The First Token Matters",
-      "url": "https://arxiv.org/abs/2611.23508",
-      "summary": "Authors: Hui Zhu, Saleh Zare Zade, Rafi Ibn Sultan, Deng Pan, Arun Ross, Dongxiao Zhu · arXiv:2611.23508v1 Announce Type: new Abstract: Large vision-language models (LVLMs) and language models (LLMs) often exhibit attention sinks, whereby particular positions,",
-      "publishedAt": "2026-11-20T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "042c74e7b67151326ea98d5c4df77286b239893a3da4f87d883fc0794e724a5b",
-      "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
-      "url": "https://arxiv.org/abs/2611.23824",
-      "summary": "Authors: Wen Wang, Jindong Wang, Jiahua Bao, Tu Yongsiqi, Yihao Liu, Junwei He, Wenkui Fan · arXiv:2611.23824v1 Announce Type: new Abstract: Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning an",
-      "publishedAt": "2026-11-20T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
       "color": "#5B48D9"
     },
     {
@@ -460,46 +460,6 @@
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features",
       "summary": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
       "publishedAt": "2026-11-17T17:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "54f7ad0b4a0462af71f5659aff22f95dc261c7200d428718f508e620ce535d31",
-      "title": "Research Reports",
-      "url": "https://www.technologyreview.com/2026/11/17/1148203/research-reports",
-      "summary": "To access a report, click on the corresponding image below.",
-      "publishedAt": "2026-11-17T14:39:46+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "078c70bccadd2823d01aa4c6e59be7bb30c1da17d23483eacc2a895dd8148e52",
-      "title": "The open-source movement wants Jensen Huang back",
-      "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it liste",
-      "publishedAt": "2026-11-16T18:38:47+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9ed8c032dbcdf137f78a60215dd1553f581f4c15866f1c4b02848b638d0d09b5",
-      "title": "Building trustworthy AI by fencing it in, not predicting it",
-      "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it",
-      "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migra",
-      "publishedAt": "2026-11-16T16:04:28+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "11608d311d0047796796c8a9dbfb8536ab8ca24d06e0399d24ff383d018c7550",
-      "title": "New Ask Maps features to help with holiday travel and prep",
-      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026",
-      "summary": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.",
-      "publishedAt": "2026-11-16T14:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
       "color": "#5B48D9"
