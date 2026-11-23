@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T23:32:37.978908+00:00",
+  "generatedAt": "2026-11-23T01:23:46.446417+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -20,6 +20,16 @@
       "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
       "summary": "Comments",
       "publishedAt": "2026-11-22T23:12:10+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "2b98b898e990dfee2b3d6ae16bd742ca4c63fd27e63bf1076695f3727e60dbbe",
+      "title": "Do Not Accept",
+      "url": "https://donotaccept.ai/",
+      "summary": "45 points · 50 comments on Hacker News",
+      "publishedAt": "2026-11-22T23:02:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -48,10 +58,20 @@
       "id": "e03d1744715126e88bc6a94b51faec21c9d9d9a7be3fa243a554543fff3379a4",
       "title": "Why Are We at the Mercy of the World's Weirdest Men?",
       "url": "https://www.nytimes.com/2026/11/22/opinion/jensen-huang-ai-ethics-cold-war.html",
-      "summary": "34 points · 7 comments on Hacker News",
+      "summary": "36 points · 7 comments on Hacker News",
       "publishedAt": "2026-11-22T20:04:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "71ff2ee8bf23be9b6db78b94e4eaca1ffa2f48ab2ab7c4aba78c8d72717bfa48",
+      "title": "Select Styling Specimens",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling",
+      "summary": "Tool: Select Styling Specimens I got frustrated at how HTML <select> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Buil",
+      "publishedAt": "2026-11-22T19:45:06+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -65,31 +85,21 @@
       "color": "#5B48D9"
     },
     {
+      "id": "605bc9329fe9f2491a0816698f8b44cc163acac1bb062ae1ab572ace72998f41",
+      "title": "Harvard CS 2881R AI Safety",
+      "url": "https://boazbk.github.io/mltheoryseminar",
+      "summary": "Comments",
+      "publishedAt": "2026-11-22T18:01:54+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "660b0b3743a08e805829e750fc7187b4d6e2ac3b24bfd9350a1db3913efac447",
       "title": "AI is becoming a disaster for the climate",
       "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the",
-      "summary": "96 points · 41 comments on Hacker News",
+      "summary": "102 points · 44 comments on Hacker News",
       "publishedAt": "2026-11-22T12:19:46+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "aaa55aaf598950923826598344d69b7cb6cea73bf924c87d342a64c181b6202f",
-      "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
-      "url": "https://simonwillison.net/2026/Nov/21/muru",
-      "summary": "70 points · 11 comments on Hacker News",
-      "publishedAt": "2026-11-22T09:57:01+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d7e78f94bca2cb94b4919cca35e5f63ee70b473127637ba25b77d00ad8c473a7",
-      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
-      "summary": "843 points · 861 comments on Hacker News",
-      "publishedAt": "2026-11-22T08:57:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -355,16 +365,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "8c4432adfe17d06c6aff7a41de686e572f62b119104e0c0a22b9db0d33fe569b",
-      "title": "llm-gemini 0.38",
-      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
-      "summary": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon ",
-      "publishedAt": "2026-11-18T23:59:20+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "fd9bebbff7e692862dad0cea3083003ab322baa30f38c6a3bb8661b8a80eee16",
       "title": "Introducing Gemini 4 Neon",
       "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
@@ -507,7 +507,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-22T22:19:38.085847+00:00",
+    "generatedAt": "2026-11-23T02:15:11.405001+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -3882,8 +3882,8 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.619833+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.395702+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3946,8 +3946,8 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.619947+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.395727+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -4010,8 +4010,8 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.619955+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.395734+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4074,8 +4074,8 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.619959+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.395741+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4138,8 +4138,8 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.630066+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.403032+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4202,8 +4202,8 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.630095+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.403055+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4266,8 +4266,8 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.630099+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.403069+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4330,8 +4330,8 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-21T00:01:51.630101+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.403075+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4394,8 +4394,8 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:52.233195+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.404971+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4458,8 +4458,8 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:52.233225+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.404988+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4522,8 +4522,8 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:52.233228+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.404995+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4586,8 +4586,8 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-21T00:01:52.233231+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-23T02:15:11.405001+00:00",
+        "stale": false
       }
     ]
   }
