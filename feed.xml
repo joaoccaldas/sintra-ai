@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Sun, 22 Nov 2026 23:49:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 04:26:50 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO]]></title>
+    <description><![CDATA[Three significant backers share what gave them conviction to bet billions on Anthropic.]]></description>
+    <link>https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[OpenAI’s chief scientist has thoughts on how to limit AI development]]></title>
@@ -17,6 +26,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development</guid>
     <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Select Styling Specimens]]></title>
+    <description><![CDATA[Tool: Select Styling Specimens I got frustrated at how HTML <select> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Buil]]></description>
+    <link>https://simonwillison.net/2026/Nov/22/select-styling</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/22/select-styling</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -60,15 +78,6 @@
     <description><![CDATA[We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.]]></description>
     <link>https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages</guid>
-    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Is selling an AI version of your face to this microdrama startup the future of Hollywood?]]></title>
-    <description><![CDATA[An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.]]></description>
-    <link>https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood</guid>
     <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://openai.com/index/introducing-medchembench</guid>
     <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[PostgreSQL 19 Released]]></title>
-    <description><![CDATA[PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apoca]]></description>
-    <link>https://simonwillison.net/2026/Nov/19/postgresql-19</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/19/postgresql-19</guid>
-    <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
