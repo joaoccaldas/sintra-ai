@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T07:58:33.528486+00:00",
+  "generatedAt": "2026-11-23T10:11:54.098559+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -108,7 +108,7 @@
       "id": "2b98b898e990dfee2b3d6ae16bd742ca4c63fd27e63bf1076695f3727e60dbbe",
       "title": "Do Not Accept",
       "url": "https://donotaccept.ai/",
-      "summary": "50 points · 57 comments on Hacker News",
+      "summary": "53 points · 57 comments on Hacker News",
       "publishedAt": "2026-11-22T23:02:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +138,7 @@
       "id": "e03d1744715126e88bc6a94b51faec21c9d9d9a7be3fa243a554543fff3379a4",
       "title": "Why Are We at the Mercy of the World's Weirdest Men?",
       "url": "https://www.nytimes.com/2026/11/22/opinion/jensen-huang-ai-ethics-cold-war.html",
-      "summary": "37 points · 7 comments on Hacker News",
+      "summary": "40 points · 7 comments on Hacker News",
       "publishedAt": "2026-11-22T20:04:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -168,7 +168,7 @@
       "id": "605bc9329fe9f2491a0816698f8b44cc163acac1bb062ae1ab572ace72998f41",
       "title": "Harvard CS 2881R AI Safety",
       "url": "https://boazbk.github.io/mltheoryseminar",
-      "summary": "65 points · 8 comments on Hacker News",
+      "summary": "67 points · 8 comments on Hacker News",
       "publishedAt": "2026-11-22T18:01:54+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -467,7 +467,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-23T04:20:03.667727+00:00",
+    "generatedAt": "2026-11-23T10:20:32.785101+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1570,7 +1570,7 @@
         ],
         "value": 6.5259,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-23T04:20:03.667689+00:00",
+        "retrievedAt": "2026-11-23T10:20:32.785018+00:00",
         "stale": false
       },
       {
@@ -2674,7 +2674,7 @@
         ],
         "value": 11.2125,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-23T04:20:03.667719+00:00",
+        "retrievedAt": "2026-11-23T10:20:32.785058+00:00",
         "stale": false
       },
       {
@@ -3778,7 +3778,7 @@
         ],
         "value": 1.099,
         "period": "2026-11-20",
-        "retrievedAt": "2026-11-23T04:20:03.667727+00:00",
+        "retrievedAt": "2026-11-23T10:20:32.785101+00:00",
         "stale": false
       },
       {
