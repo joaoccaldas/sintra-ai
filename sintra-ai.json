@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T10:11:54.098559+00:00",
+  "generatedAt": "2026-11-23T11:18:53.292275+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 45,
   "items": [
+    {
+      "id": "f1db7ce98881d89015978e36136156bff2ae870452275174795039e0388b1ed2",
+      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "url": "https://z.ai/blog/glm-5.4",
+      "summary": "60 points · 8 comments on Hacker News",
+      "publishedAt": "2026-11-23T10:06:43+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "006e5b4d87f0d23dc4925414eeab9e7e48c277d92082846cc2e8948efc05ef9f",
       "title": "Functional Depth Is Learned: Isolating the Computation That Layers Produce Only Together",
@@ -88,7 +98,7 @@
       "id": "d76d1fd47e7f903ad709849633ab74b09aa2e665e195067e554ff2d61f8a9455",
       "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
       "url": "https://0rwx.com/",
-      "summary": "Comments",
+      "summary": "58 points · 15 comments on Hacker News",
       "publishedAt": "2026-11-22T23:53:00+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9",
       "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
       "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
-      "summary": "Comments",
+      "summary": "239 points · 176 comments on Hacker News",
       "publishedAt": "2026-11-22T23:12:10+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,7 +138,7 @@
       "id": "a9f7ae49b5fbd4f4edc31b0b0e42abd66e29e9dd398ea5acfa2e3ac3b0681ef3",
       "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
       "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-      "summary": "Comments",
+      "summary": "540 points · 227 comments on Hacker News",
       "publishedAt": "2026-11-22T21:01:16+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,16 +172,6 @@
       "publishedAt": "2026-11-22T18:08:43+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "605bc9329fe9f2491a0816698f8b44cc163acac1bb062ae1ab572ace72998f41",
-      "title": "Harvard CS 2881R AI Safety",
-      "url": "https://boazbk.github.io/mltheoryseminar",
-      "summary": "67 points · 8 comments on Hacker News",
-      "publishedAt": "2026-11-22T18:01:54+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
