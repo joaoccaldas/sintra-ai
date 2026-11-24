@@ -7,7 +7,7 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 20:22:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 21:23:14 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
@@ -101,6 +101,15 @@
   </item>
 
   <item>
+    <title><![CDATA[Searching for distant planets with Astra]]></title>
+    <description><![CDATA[See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.]]></description>
+    <link>https://openai.com/index/searching-for-distant-planets-with-astra</link>
+    <guid isPermaLink="true">https://openai.com/index/searching-for-distant-planets-with-astra</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
     <title><![CDATA[datasette-charts 0.2a0]]></title>
     <description><![CDATA[Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion a]]></description>
     <link>https://simonwillison.net/2026/Nov/24/datasette-charts</link>
@@ -116,6 +125,15 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/datasette-agent</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How Intentful uses dots to make more time for growth]]></title>
+    <description><![CDATA[Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.]]></description>
+    <link>https://openai.com/business/customer-stories/intentful-dots</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/intentful-dots</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -143,33 +161,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/23/ladybird</guid>
     <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI and Cisco introduce Shirudo]]></title>
-    <description><![CDATA[OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.]]></description>
-    <link>https://openai.com/index/introducing-shirudo</link>
-    <guid isPermaLink="true">https://openai.com/index/introducing-shirudo</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[A legendary philosopher isn’t buying Anthropic’s consciousness argument]]></title>
-    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for]]></description>
-    <link>https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[RoboTrack: Point tracking for real-world robotic manipulation]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/allenai/robotrack</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/allenai/robotrack</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
   </item>
 
   <item>
@@ -458,6 +449,15 @@
     <guid isPermaLink="true">https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607</guid>
     <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
     <category>Meta</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector]]></title>
+    <description><![CDATA[Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.]]></description>
+    <link>https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</link>
+    <guid isPermaLink="true">https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</guid>
+    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+    <category>Swedish Government</category>
   </item>
   </channel>
 </rss>
