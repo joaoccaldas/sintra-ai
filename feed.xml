@@ -7,8 +7,44 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 16:50:49 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 17:30:18 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Meta brings its Muse AI assistant directly into Instagram DMs]]></title>
+    <description><![CDATA[The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.]]></description>
+    <link>https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[GPT 6.2 Astra Solves a Historical Mystery]]></title>
+    <description><![CDATA[GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an ano]]></description>
+    <link>https://simonwillison.net/2026/Nov/24/astra-historical-mystery</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/astra-historical-mystery</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming]]></title>
+    <description><![CDATA[The company said it will still accept songs that were made with AI assistance, but not fully generated.]]></description>
+    <link>https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Why a Crusoe investor is betting on solar and batteries to power future AI data centers]]></title>
@@ -66,7 +102,7 @@
 
   <item>
     <title><![CDATA[datasette-agent 0.7a1]]></title>
-    <description><![CDATA[Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Dat]]></description>
+    <description><![CDATA[Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Da]]></description>
     <link>https://simonwillison.net/2026/Nov/24/datasette-agent</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/datasette-agent</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
@@ -87,24 +123,6 @@
     <description><![CDATA[As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.]]></description>
     <link>https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Supertake raises $20M to let AI agents turn your market predictions into stock portfolios]]></title>
-    <description><![CDATA[Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.]]></description>
-    <link>https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal]]></title>
-    <description><![CDATA["The mistake has been corrected," Elon Musk chimed in.]]></description>
-    <link>https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal</guid>
     <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps</guid>
     <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Finding faster quantum algorithms with agents and formal verification]]></title>
-    <description><![CDATA[Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.]]></description>
-    <link>https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Connected intelligence for in-house legal]]></title>
-    <description><![CDATA[Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.]]></description>
-    <link>https://openai.com/business/learn/connected-intelligence-for-in-house-legal</link>
-    <guid isPermaLink="true">https://openai.com/business/learn/connected-intelligence-for-in-house-legal</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>
