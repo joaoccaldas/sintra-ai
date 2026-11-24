@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T20:37:43.017543+00:00",
+  "generatedAt": "2026-11-24T22:23:50.304117+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,68 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 49,
+  "itemCount": 48,
   "items": [
+    {
+      "id": "171b94fafc685f0bbe01ce8df65d2d164f349c2f077b20d1c27b8c55b116f2ee",
+      "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
+      "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy",
+      "summary": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
+      "publishedAt": "2026-11-24T21:48:27+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "86266e890e18a6d47c920ed128cf0539ded2b2699749520f974ca9e57e18dde4",
+      "title": "Even the best AI agents struggle with everyday life",
+      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life",
+      "summary": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
+      "publishedAt": "2026-11-24T21:33:29+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5edc970ed59b587c1ee8c05d8489580ad3458325bacb4c7ffdab0abba660d73e",
+      "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
+      "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse",
+      "summary": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
+      "publishedAt": "2026-11-24T21:32:38+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "977f9f016cc6ca5bd41156782b5f3a5c750eae30719d9a3c0d039cbaaa3e8b85",
+      "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
+      "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself",
+      "summary": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
+      "publishedAt": "2026-11-24T21:19:52+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
+      "title": "Working with AI",
+      "url": "https://www.anthropic.com/research/working-with-ai",
+      "summary": "50 points · 42 comments on Hacker News",
+      "publishedAt": "2026-11-24T21:07:38+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "84e1309d18f8c037ad809f49b22339f6e8b613b06bab426be32085aff7daf7e3",
+      "title": "Compiling web applications into verified operations for AI agents",
+      "url": "https://protocolis.co/paper",
+      "summary": "31 points · 10 comments on Hacker News",
+      "publishedAt": "2026-11-24T19:12:02+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "7992bf690613aecdb58171ddb70d55be6faca53ca5fa07bf624469e045d483f7",
       "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
@@ -35,16 +95,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "b0f646dfac9a0a0a6352b62fd6c649822f4b81acb9dd537db8c101a49f4683fc",
-      "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
-      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms",
-      "summary": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
-      "publishedAt": "2026-11-24T17:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7eea171611f31c8f95c6e226f61955635ce9adf9e7d105467cd6d5dca1057023",
       "title": "GPT 6.2 Astra Solves a Historical Mystery",
       "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
@@ -52,16 +102,6 @@
       "publishedAt": "2026-11-24T16:53:59+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "6f0f83d3e1c30af402d3fceb8d25b9efdfa2a98c88a8550bd061c37ae66ba280",
-      "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
-      "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming",
-      "summary": "The company said it will still accept songs that were made with AI assistance, but not fully generated.",
-      "publishedAt": "2026-11-24T16:46:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -78,7 +118,7 @@
       "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
       "title": "Tidal bans AI-generated music",
       "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "302 points · 273 comments on Hacker News",
+      "summary": "309 points · 292 comments on Hacker News",
       "publishedAt": "2026-11-24T16:12:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -86,32 +126,12 @@
     },
     {
       "id": "bea9afe10cbe8efa4dcbbb3f6a11ce25dd1b6e6133891d2ab8bffcc581c95c1e",
-      "title": "Show HN: Mason – a lightweight Postgres read-replica, built on columnar storage",
+      "title": "Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage",
       "url": "https://masondata.ai/",
       "summary": "Comments",
       "publishedAt": "2026-11-24T16:11:52+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0d4dbfed2ba868d7045546a3cc4e8ce09920bb4d51badd39d4172a895bbd8dcc",
-      "title": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
-      "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers",
-      "summary": "Next-generation data centers will need tens of gigawatts of power every year. One of Crusoe's investors thinks solar and energy storage are the obvious choice.",
-      "publishedAt": "2026-11-24T16:10:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a9a1f591c3b5ca408b03294916aed5edfc1ea091cb62e587c364c655b75c29f9",
-      "title": "Pinterest will now let parents limit the AI-generated content their teens see",
-      "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see",
-      "summary": "While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.",
-      "publishedAt": "2026-11-24T16:02:37+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -135,6 +155,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "ac2f786b30f6d45772c42167559dc1dfd027b2c713b30efaaeedeee5585de3fa",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "publishedAt": "2026-11-24T13:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "7758c04a629331bf96383fb7f46e256dce8c50dc19007956b18ca6b429d0aeb8",
       "title": "Searching for distant planets with Astra",
       "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
@@ -148,7 +178,7 @@
       "id": "89859b71aef0c12ca91b3bff7ae1f3f17cd3e3617ad7f8ac54486f2ceeafae35",
       "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
       "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex",
-      "summary": "77 points · 37 comments on Hacker News",
+      "summary": "78 points · 38 comments on Hacker News",
       "publishedAt": "2026-11-24T09:39:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +208,7 @@
       "id": "0f779e7fa16290655eb2155a1cba7b31953913abcbeef91c47a964a99ee66255",
       "title": "Declare is a UI language for you and your AI",
       "url": "https://davidtemkin.github.io/declarelang",
-      "summary": "100 points · 84 comments on Hacker News",
+      "summary": "102 points · 87 comments on Hacker News",
       "publishedAt": "2026-11-24T02:36:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -281,36 +311,6 @@
       "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
       "publishedAt": "2026-11-23T16:59:40+00:00",
       "source": "Google DeepMind",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "b29459411048ef9cce0547e3b8699069a0490bc0451d4fc3f01bdc5410ff11c9",
-      "title": "Buckle Up the AI Bubble Is Popping",
-      "url": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping",
-      "summary": "33 points · 57 comments on Hacker News",
-      "publishedAt": "2026-11-23T16:01:20+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9f183e9f9f75c876517d366d7fb45051ec4e567c991541f72de64b752f6f9794",
-      "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
-      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-      "summary": "190 points · 36 comments on Hacker News",
-      "publishedAt": "2026-11-23T13:42:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "10878202550bbbf922d1872ab8ac87272ec1fb51ba1f61195752ed3c5f3ba59c",
-      "title": "Connected intelligence for in-house legal",
-      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
-      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
-      "publishedAt": "2026-11-23T08:00:00+00:00",
-      "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
     },
@@ -493,21 +493,11 @@
       "source": "MIT Technology Review",
       "category": "Press",
       "color": "#5B48D9"
-    },
-    {
-      "id": "c08d2bf5cfc43826878d77e47278b9e9342da150805b4ede88c33452ae6d0341",
-      "title": "This smell startup says its AI nose is as good as a human’s",
-      "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans",
-      "summary": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich ",
-      "publishedAt": "2026-11-18T10:20:30+00:00",
-      "source": "MIT Technology Review",
-      "category": "Press",
-      "color": "#5B48D9"
     }
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-24T15:32:18.410908+00:00",
+    "generatedAt": "2026-11-24T22:23:51.705029+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1618,7 +1608,7 @@
         ],
         "value": 6.4349,
         "period": "2026-11-24",
-        "retrievedAt": "2026-11-24T15:32:18.410873+00:00",
+        "retrievedAt": "2026-11-24T22:23:51.705017+00:00",
         "stale": false
       },
       {
@@ -2730,7 +2720,7 @@
         ],
         "value": 11.221,
         "period": "2026-11-24",
-        "retrievedAt": "2026-11-24T15:32:18.410902+00:00",
+        "retrievedAt": "2026-11-24T22:23:51.705026+00:00",
         "stale": false
       },
       {
@@ -3842,7 +3832,7 @@
         ],
         "value": 1.0963,
         "period": "2026-11-24",
-        "retrievedAt": "2026-11-24T15:32:18.410908+00:00",
+        "retrievedAt": "2026-11-24T22:23:51.705029+00:00",
         "stale": false
       },
       {
