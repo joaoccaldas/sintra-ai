@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T11:29:56.069068+00:00",
+  "generatedAt": "2026-11-24T13:15:51.653434+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 47,
   "items": [
+    {
+      "id": "89859b71aef0c12ca91b3bff7ae1f3f17cd3e3617ad7f8ac54486f2ceeafae35",
+      "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
+      "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex",
+      "summary": "Comments",
+      "publishedAt": "2026-11-24T09:39:50+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "07fffdf07c77b17b4c63712a7a0738120e30970439cca6234d8b4b909c855881",
       "title": "datasette-charts 0.2a0",
@@ -38,7 +48,7 @@
       "id": "0f779e7fa16290655eb2155a1cba7b31953913abcbeef91c47a964a99ee66255",
       "title": "Declare is a UI language for you and your AI",
       "url": "https://davidtemkin.github.io/declarelang",
-      "summary": "52 points · 43 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-24T02:36:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +198,7 @@
       "id": "9f183e9f9f75c876517d366d7fb45051ec4e567c991541f72de64b752f6f9794",
       "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
       "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-      "summary": "Comments",
+      "summary": "175 points · 35 comments on Hacker News",
       "publishedAt": "2026-11-23T13:42:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,18 +218,8 @@
       "id": "74d816fb25305bd550db800f70854d3014fcd9710bb0a1d35d823164e8ac273a",
       "title": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs",
       "url": "https://hermitcrm.io/",
-      "summary": "47 points · 5 comments on Hacker News",
+      "summary": "47 points · 6 comments on Hacker News",
       "publishedAt": "2026-11-23T10:09:02+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f1db7ce98881d89015978e36136156bff2ae870452275174795039e0388b1ed2",
-      "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
-      "url": "https://z.ai/blog/glm-5.4",
-      "summary": "Comments",
-      "publishedAt": "2026-11-23T10:06:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
