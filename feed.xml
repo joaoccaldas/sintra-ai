@@ -7,169 +7,169 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 06:13:42 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 09:47:23 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO]]></title>
-    <description><![CDATA[Three significant backers share what gave them conviction to bet billions on Anthropic.]]></description>
-    <link>https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How to build and maintain an agentic evaluation]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/agentic-evals</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/agentic-evals</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[OpenAI’s chief scientist has thoughts on how to limit AI development]]></title>
-    <description><![CDATA[To establish a speed limit on AI development, you need to agree on how to measure speed.]]></description>
-    <link>https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development</guid>
-    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Select Styling Specimens]]></title>
-    <description><![CDATA[Tool: Select Styling Specimens I got frustrated at how HTML <select> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Buil]]></description>
-    <link>https://simonwillison.net/2026/Nov/22/select-styling</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/22/select-styling</guid>
-    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[datasette-charts 0.2a0]]></title>
+    <description><![CDATA[Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion a]]></description>
+    <link>https://simonwillison.net/2026/Nov/24/datasette-charts</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/datasette-charts</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
 
   <item>
-    <title><![CDATA[Why data centers are at the center of the Big Tech backlash]]></title>
-    <description><![CDATA[Journalist Paris Marx unpacks his new book "Hyperscale."]]></description>
-    <link>https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash</guid>
-    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[datasette-agent 0.7a1]]></title>
+    <description><![CDATA[Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Dat]]></description>
+    <link>https://simonwillison.net/2026/Nov/24/datasette-agent</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/datasette-agent</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[GLM-5.4: Toward Generalized Coding with Our First Loop Transformer]]></title>
+    <description><![CDATA[GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs onc]]></description>
+    <link>https://simonwillison.net/2026/Nov/23/glm-54</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/23/glm-54</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes]]></title>
+    <description><![CDATA[As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.]]></description>
+    <link>https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
 
   <item>
-    <title><![CDATA[Perplexity and Intelligence]]></title>
-    <description><![CDATA[How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.]]></description>
-    <link>https://openai.com/index/perplexity-and-intelligence</link>
-    <guid isPermaLink="true">https://openai.com/index/perplexity-and-intelligence</guid>
-    <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[Supertake raises $20M to let AI agents turn your market predictions into stock portfolios]]></title>
+    <description><![CDATA[Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.]]></description>
+    <link>https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal]]></title>
+    <description><![CDATA["The mistake has been corrected," Elon Musk chimed in.]]></description>
+    <link>https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Ladybird's first alpha release]]></title>
+    <description><![CDATA[Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz f]]></description>
+    <link>https://simonwillison.net/2026/Nov/23/ladybird</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/23/ladybird</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist]]></title>
+    <description><![CDATA[Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.]]></description>
+    <link>https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[OpenAI and Cisco introduce Shirudo]]></title>
+    <description><![CDATA[OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.]]></description>
+    <link>https://openai.com/index/introducing-shirudo</link>
+    <guid isPermaLink="true">https://openai.com/index/introducing-shirudo</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
 
   <item>
-    <title><![CDATA[Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance]]></title>
-    <description><![CDATA[Signal is limiting users' ability to take screenshots in both its Android and iOS apps.]]></description>
-    <link>https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance</guid>
-    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ]]></title>
+    <description><![CDATA["I'm going to be a better CEO the second time around," Huang told employees.]]></description>
+    <link>https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
 
   <item>
-    <title><![CDATA[A tale of two Nvidias]]></title>
-    <description><![CDATA[We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.]]></description>
-    <link>https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias</guid>
-    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses]]></title>
+    <description><![CDATA[By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem]]></description>
+    <link>https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
 
   <item>
-    <title><![CDATA[Here are the top AI agents that can live in your text messages]]></title>
-    <description><![CDATA[We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.]]></description>
-    <link>https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages</guid>
-    <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Quoting Ravi Vakil]]></title>
-    <description><![CDATA[Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hop]]></description>
-    <link>https://simonwillison.net/2026/Nov/20/ravi-vakil</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/ravi-vakil</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[The most misunderstood graph in AI just got a major update]]></title>
-    <description><![CDATA[A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report]]></description>
-    <link>https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[A legendary philosopher isn’t buying Anthropic’s consciousness argument]]></title>
+    <description><![CDATA[This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for]]></description>
+    <link>https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
   </item>
 
   <item>
-    <title><![CDATA[Quoting Levent Alpöge]]></title>
-    <description><![CDATA[I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Cla]]></description>
-    <link>https://simonwillison.net/2026/Nov/20/levent-alpoge</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/levent-alpoge</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Combatting adversarial distillation]]></title>
-    <description><![CDATA[OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.]]></description>
-    <link>https://openai.com/index/combatting-adversarial-distillation</link>
-    <guid isPermaLink="true">https://openai.com/index/combatting-adversarial-distillation</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[llm-gemini 0.38.1]]></title>
-    <description><![CDATA[Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in th]]></description>
-    <link>https://simonwillison.net/2026/Nov/20/llm-gemini</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/llm-gemini</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Token fraud is here and it’s BAD (YouTube)]]></title>
-    <description><![CDATA[Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers "turn an idea into a spec". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this Y]]></description>
-    <link>https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost]]></title>
+    <title><![CDATA[RoboTrack: Point tracking for real-world robotic manipulation]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/harness-adapters-at-scale</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/harness-adapters-at-scale</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <link>https://huggingface.co/blog/allenai/robotrack</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/allenai/robotrack</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
   </item>
 
   <item>
-    <title><![CDATA[Hebbia sees improvements in financial research with GPT-6 Astra]]></title>
-    <description><![CDATA[Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.]]></description>
-    <link>https://openai.com/business/customer-stories/hebbia</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/hebbia</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+    <title><![CDATA[A more tailored Google Search that’s uniquely yours]]></title>
+    <description><![CDATA[Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.]]></description>
+    <link>https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps</link>
+    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Finding faster quantum algorithms with agents and formal verification]]></title>
+    <description><![CDATA[Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.]]></description>
+    <link>https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Connected intelligence for in-house legal]]></title>
+    <description><![CDATA[Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.]]></description>
+    <link>https://openai.com/business/learn/connected-intelligence-for-in-house-legal</link>
+    <guid isPermaLink="true">https://openai.com/business/learn/connected-intelligence-for-in-house-legal</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
 
   <item>
-    <title><![CDATA[Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/inkling2mini</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/inkling2mini</guid>
-    <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
+    <title><![CDATA[Richpanel helps companies automate 50% of support in 30 days]]></title>
+    <description><![CDATA[Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.]]></description>
+    <link>https://openai.com/business/customer-stories/richpanel-ai-customer-support</link>
+    <guid isPermaLink="true">https://openai.com/business/customer-stories/richpanel-ai-customer-support</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-charts 0.1a0]]></title>
+    <description><![CDATA[Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Dataset]]></description>
+    <link>https://simonwillison.net/2026/Nov/23/datasette-charts</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/23/datasette-charts</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
