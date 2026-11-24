@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T18:19:56.489888+00:00",
+  "generatedAt": "2026-11-24T19:21:09.219109+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "7992bf690613aecdb58171ddb70d55be6faca53ca5fa07bf624469e045d483f7",
+      "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
+      "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups",
+      "summary": "Anthropic’s post-IPO slump could put pressure on AI startup valuations.",
+      "publishedAt": "2026-11-24T18:30:42+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "4113acb1424b41bba6ec9d70b41ebc60788f43de6bb56350db05f9a21365bfba",
       "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
@@ -68,8 +78,18 @@
       "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
       "title": "Tidal bans AI-generated music",
       "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "Comments",
+      "summary": "285 points · 252 comments on Hacker News",
       "publishedAt": "2026-11-24T16:12:38+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "bea9afe10cbe8efa4dcbbb3f6a11ce25dd1b6e6133891d2ab8bffcc581c95c1e",
+      "title": "Show HN: Mason – a lightweight Postgres read-replica, built on columnar storage",
+      "url": "https://masondata.ai/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-24T16:11:52+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -102,16 +122,6 @@
       "publishedAt": "2026-11-24T16:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a4cb5a65f0d9bf1e691a9b4f28df526fb4090e4df640cb1c628993e421496d7c",
-      "title": "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
-      "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race",
-      "summary": "Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.",
-      "publishedAt": "2026-11-24T15:51:07+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -158,10 +168,20 @@
       "id": "0f779e7fa16290655eb2155a1cba7b31953913abcbeef91c47a964a99ee66255",
       "title": "Declare is a UI language for you and your AI",
       "url": "https://davidtemkin.github.io/declarelang",
-      "summary": "95 points · 74 comments on Hacker News",
+      "summary": "97 points · 83 comments on Hacker News",
       "publishedAt": "2026-11-24T02:36:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8655fa232145e9222b30b013c2ca5dd441bfff5fdc7abcfcd599dfb50f86a47a",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "url": "https://openai.com/index/ifood",
+      "summary": "",
+      "publishedAt": "2026-11-24T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -248,18 +268,8 @@
       "id": "9f183e9f9f75c876517d366d7fb45051ec4e567c991541f72de64b752f6f9794",
       "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
       "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-      "summary": "187 points · 36 comments on Hacker News",
+      "summary": "189 points · 36 comments on Hacker News",
       "publishedAt": "2026-11-23T13:42:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "875efdab1707b0f751087254c9919f0a9f687dd32293724e69119ac73d6670b1",
-      "title": "Amodei reportedly suggested games could pacify masses after AI took their jobs (2015)",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness",
-      "summary": "77 points · 82 comments on Hacker News",
-      "publishedAt": "2026-11-23T12:41:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -402,16 +412,6 @@
       "publishedAt": "2026-11-20T00:00:00+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8145fefb47ff1ca9fa5560e62b69bf54a222274ffe6f44de71f6b3dfaaa8f955",
-      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
-      "url": "https://openai.com/business/customer-stories/hebbia",
-      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
-      "publishedAt": "2026-11-20T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
