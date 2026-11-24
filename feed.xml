@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 22:24:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 23:25:15 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Three LLM inflection points in twelve months]]></title>
+    <description><![CDATA[I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In t]]></description>
+    <link>https://simonwillison.net/2026/Nov/24/llm-inflection-points</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/llm-inflection-points</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Jensen Huang still thinks a succession plan creates unnecessary hierarchy]]></title>
+    <description><![CDATA[It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.]]></description>
+    <link>https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy]]></title>
@@ -51,15 +69,6 @@
     <description><![CDATA[Anthropic’s post-IPO slump could put pressure on AI startup valuations.]]></description>
     <link>https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[UK warns AI-driven cyberattacks are exposing years of weak security]]></title>
-    <description><![CDATA[The British cyber agency says that "building strong foundations has never mattered more" as AI hacking tools rely on exploiting simple security flaws.]]></description>
-    <link>https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
@@ -152,15 +161,6 @@
     <guid isPermaLink="true">https://openai.com/index/ifood</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GLM-5.4: Toward Generalized Coding with Our First Loop Transformer]]></title>
-    <description><![CDATA[GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs onc]]></description>
-    <link>https://simonwillison.net/2026/Nov/23/glm-54</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/23/glm-54</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
