@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 18:20:29 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 20:22:20 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Anthropic shares fall below IPO price, a worrying sign for AI startups]]></title>
+    <description><![CDATA[Anthropic’s post-IPO slump could put pressure on AI startup valuations.]]></description>
+    <link>https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[UK warns AI-driven cyberattacks are exposing years of weak security]]></title>
@@ -83,15 +92,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia]]></title>
-    <description><![CDATA[Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.]]></description>
-    <link>https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[Raising the stakes for enterprise networks with AI modernization]]></title>
     <description><![CDATA[Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an es]]></description>
     <link>https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization</link>
@@ -116,6 +116,15 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/datasette-agent</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How iFood scales coding agents across 15,000 repositories]]></title>
+    <description><![CDATA[OpenAI — Labs]]></description>
+    <link>https://openai.com/index/ifood</link>
+    <guid isPermaLink="true">https://openai.com/index/ifood</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>OpenAI</category>
   </item>
 
   <item>
@@ -161,15 +170,6 @@
     <guid isPermaLink="true">https://huggingface.co/blog/allenai/robotrack</guid>
     <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[A more tailored Google Search that’s uniquely yours]]></title>
-    <description><![CDATA[Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.]]></description>
-    <link>https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps</link>
-    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
   </item>
 
   <item>
