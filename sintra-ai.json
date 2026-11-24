@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T14:35:00.830201+00:00",
+  "generatedAt": "2026-11-24T16:30:01.322372+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,13 +12,63 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 47,
+  "itemCount": 49,
   "items": [
+    {
+      "id": "0d4dbfed2ba868d7045546a3cc4e8ce09920bb4d51badd39d4172a895bbd8dcc",
+      "title": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
+      "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers",
+      "summary": "Next-generation data centers will need tens of gigawatts of power every year. One of Crusoe's investors thinks solar and energy storage are the obvious choice.",
+      "publishedAt": "2026-11-24T16:10:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a9a1f591c3b5ca408b03294916aed5edfc1ea091cb62e587c364c655b75c29f9",
+      "title": "Pinterest will now let parents limit the AI-generated content their teens see",
+      "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see",
+      "summary": "While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.",
+      "publishedAt": "2026-11-24T16:02:37+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a7a0adf7d6c734e350c9ea11283c0fe8c513cc2bb1d3bcd56555bd53c3f8d9a6",
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
+      "summary": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "publishedAt": "2026-11-24T16:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "a4cb5a65f0d9bf1e691a9b4f28df526fb4090e4df640cb1c628993e421496d7c",
+      "title": "Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race",
+      "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race",
+      "summary": "Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.",
+      "publishedAt": "2026-11-24T15:51:07+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "4065e26429d167ec816bc3ece69af4ebf0163328b6551fffdc213bc3d78181ee",
+      "title": "Raising the stakes for enterprise networks with AI modernization",
+      "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization",
+      "summary": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an es",
+      "publishedAt": "2026-11-24T15:15:16+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "89859b71aef0c12ca91b3bff7ae1f3f17cd3e3617ad7f8ac54486f2ceeafae35",
       "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
       "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex",
-      "summary": "61 points · 25 comments on Hacker News",
+      "summary": "66 points · 31 comments on Hacker News",
       "publishedAt": "2026-11-24T09:39:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -105,16 +155,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "ea39f8a43a60b7b5db52809f3f79e9dfe28345396880641ba3dfa237f7201b22",
-      "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
-      "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist",
-      "summary": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
-      "publishedAt": "2026-11-23T21:25:42+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "b0689cf87ab570a441c88635b910134907af4a34b0ffafe4d1af03d0273e75fa",
       "title": "OpenAI and Cisco introduce Shirudo",
       "url": "https://openai.com/index/introducing-shirudo",
@@ -122,26 +162,6 @@
       "publishedAt": "2026-11-23T21:20:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d70157d1228f26a021a18b5ba9e2fe9c942ff44d8584326e757fbce928a43f89",
-      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
-      "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq",
-      "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
-      "publishedAt": "2026-11-23T20:38:53+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "25f33d1df44504de388cb9b6adda098e0d413254cb8c2f17018e64d4c26c6f1a",
-      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
-      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses",
-      "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
-      "publishedAt": "2026-11-23T19:14:46+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -188,7 +208,7 @@
       "id": "b29459411048ef9cce0547e3b8699069a0490bc0451d4fc3f01bdc5410ff11c9",
       "title": "Buckle Up the AI Bubble Is Popping",
       "url": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping",
-      "summary": "32 points · 56 comments on Hacker News",
+      "summary": "33 points · 56 comments on Hacker News",
       "publishedAt": "2026-11-23T16:01:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -198,7 +218,7 @@
       "id": "9f183e9f9f75c876517d366d7fb45051ec4e567c991541f72de64b752f6f9794",
       "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
       "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-      "summary": "179 points · 35 comments on Hacker News",
+      "summary": "183 points · 36 comments on Hacker News",
       "publishedAt": "2026-11-23T13:42:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,7 +228,7 @@
       "id": "875efdab1707b0f751087254c9919f0a9f687dd32293724e69119ac73d6670b1",
       "title": "Amodei reportedly suggested games could pacify masses after AI took their jobs (2015)",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness",
-      "summary": "76 points · 82 comments on Hacker News",
+      "summary": "77 points · 82 comments on Hacker News",
       "publishedAt": "2026-11-23T12:41:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
