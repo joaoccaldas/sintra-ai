@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T19:21:09.219109+00:00",
+  "generatedAt": "2026-11-24T20:37:43.017543+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -78,7 +78,7 @@
       "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
       "title": "Tidal bans AI-generated music",
       "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "285 points · 252 comments on Hacker News",
+      "summary": "302 points · 273 comments on Hacker News",
       "publishedAt": "2026-11-24T16:12:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -135,6 +135,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "7758c04a629331bf96383fb7f46e256dce8c50dc19007956b18ca6b429d0aeb8",
+      "title": "Searching for distant planets with Astra",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+      "publishedAt": "2026-11-24T11:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "89859b71aef0c12ca91b3bff7ae1f3f17cd3e3617ad7f8ac54486f2ceeafae35",
       "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
       "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex",
@@ -168,16 +178,36 @@
       "id": "0f779e7fa16290655eb2155a1cba7b31953913abcbeef91c47a964a99ee66255",
       "title": "Declare is a UI language for you and your AI",
       "url": "https://davidtemkin.github.io/declarelang",
-      "summary": "97 points · 83 comments on Hacker News",
+      "summary": "100 points · 84 comments on Hacker News",
       "publishedAt": "2026-11-24T02:36:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
+      "id": "7e14b56be674430859075a7f0bce62ec43b4bbfbd056d91f846c666ac01fbfaf",
+      "title": "How Intentful uses dots to make more time for growth",
+      "url": "https://openai.com/business/customer-stories/intentful-dots",
+      "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+      "publishedAt": "2026-11-24T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
       "id": "8655fa232145e9222b30b013c2ca5dd441bfff5fdc7abcfcd599dfb50f86a47a",
       "title": "How iFood scales coding agents across 15,000 repositories",
       "url": "https://openai.com/index/ifood",
+      "summary": "",
+      "publishedAt": "2026-11-24T00:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "89a905d5eae9fa3ef5a8af6c1b3d6471a3626169568a0058a355675d3a41557f",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "url": "https://openai.com/business/customer-stories/ifood",
       "summary": "",
       "publishedAt": "2026-11-24T00:00:00+00:00",
       "source": "OpenAI",
@@ -268,7 +298,7 @@
       "id": "9f183e9f9f75c876517d366d7fb45051ec4e567c991541f72de64b752f6f9794",
       "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
       "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-      "summary": "189 points · 36 comments on Hacker News",
+      "summary": "190 points · 36 comments on Hacker News",
       "publishedAt": "2026-11-23T13:42:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -279,16 +309,6 @@
       "title": "Connected intelligence for in-house legal",
       "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
       "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
-      "publishedAt": "2026-11-23T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1259b534687dd8b3171199ff6c1e4d274ef5d072ac6513620703d8171072ee72",
-      "title": "Richpanel helps companies automate 50% of support in 30 days",
-      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
-      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
       "publishedAt": "2026-11-23T08:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
@@ -375,16 +395,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "1a10f1676d46fc01a909d8eab6d17033b89331ee5fd1f1e04952fc2f6f54665c",
-      "title": "Perplexity and Intelligence",
-      "url": "https://openai.com/index/perplexity-and-intelligence",
-      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
-      "publishedAt": "2026-11-22T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6691469f1dc34a795664478a1f215653c4c0e1c156284ede437016ba3fce96c3",
       "title": "The most misunderstood graph in AI just got a major update",
       "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update",
@@ -392,16 +402,6 @@
       "publishedAt": "2026-11-20T18:15:15+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7ad44f990f0c53ef2e2a537716dcd0f4d19ea5c4fbcd3c1cf3877b1b8eae8965",
-      "title": "Combatting adversarial distillation",
-      "url": "https://openai.com/index/combatting-adversarial-distillation",
-      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
-      "publishedAt": "2026-11-20T10:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
       "color": "#5B48D9"
     },
     {
