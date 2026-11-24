@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T17:19:24.472121+00:00",
+  "generatedAt": "2026-11-24T18:19:56.489888+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 49,
   "items": [
+    {
+      "id": "4113acb1424b41bba6ec9d70b41ebc60788f43de6bb56350db05f9a21365bfba",
+      "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
+      "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security",
+      "summary": "The British cyber agency says that \"building strong foundations has never mattered more\" as AI hacking tools rely on exploiting simple security flaws.",
+      "publishedAt": "2026-11-24T18:02:59+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "b0f646dfac9a0a0a6352b62fd6c649822f4b81acb9dd537db8c101a49f4683fc",
       "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
@@ -96,7 +106,7 @@
     },
     {
       "id": "a4cb5a65f0d9bf1e691a9b4f28df526fb4090e4df640cb1c628993e421496d7c",
-      "title": "Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race",
+      "title": "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
       "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race",
       "summary": "Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.",
       "publishedAt": "2026-11-24T15:51:07+00:00",
@@ -118,7 +128,7 @@
       "id": "89859b71aef0c12ca91b3bff7ae1f3f17cd3e3617ad7f8ac54486f2ceeafae35",
       "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
       "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex",
-      "summary": "74 points · 34 comments on Hacker News",
+      "summary": "77 points · 37 comments on Hacker News",
       "publishedAt": "2026-11-24T09:39:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +158,7 @@
       "id": "0f779e7fa16290655eb2155a1cba7b31953913abcbeef91c47a964a99ee66255",
       "title": "Declare is a UI language for you and your AI",
       "url": "https://davidtemkin.github.io/declarelang",
-      "summary": "Comments",
+      "summary": "95 points · 74 comments on Hacker News",
       "publishedAt": "2026-11-24T02:36:56+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -162,16 +172,6 @@
       "publishedAt": "2026-11-23T23:40:49+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5e2478fb7557e8d39a7db8c45d8546b39e77fef5d0d2f1ca6208a4987ef412aa",
-      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
-      "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
-      "publishedAt": "2026-11-23T22:05:50+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -238,7 +238,7 @@
       "id": "b29459411048ef9cce0547e3b8699069a0490bc0451d4fc3f01bdc5410ff11c9",
       "title": "Buckle Up the AI Bubble Is Popping",
       "url": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping",
-      "summary": "33 points · 56 comments on Hacker News",
+      "summary": "33 points · 57 comments on Hacker News",
       "publishedAt": "2026-11-23T16:01:20+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -248,7 +248,7 @@
       "id": "9f183e9f9f75c876517d366d7fb45051ec4e567c991541f72de64b752f6f9794",
       "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
       "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-      "summary": "184 points · 36 comments on Hacker News",
+      "summary": "187 points · 36 comments on Hacker News",
       "publishedAt": "2026-11-23T13:42:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
