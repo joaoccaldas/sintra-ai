@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T14:19:33.565369+00:00",
+  "generatedAt": "2026-11-24T09:24:03.810365+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,26 +12,236 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 44,
+  "itemCount": 47,
   "items": [
     {
+      "id": "07fffdf07c77b17b4c63712a7a0738120e30970439cca6234d8b4b909c855881",
+      "title": "datasette-charts 0.2a0",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts",
+      "summary": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion a",
+      "publishedAt": "2026-11-24T04:24:29+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3d5981388f51900a65b5d6abeab6dcfe63565d12fe183e7c8faab526650596e0",
+      "title": "datasette-agent 0.7a1",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-agent",
+      "summary": "Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Dat",
+      "publishedAt": "2026-11-24T03:45:57+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0f779e7fa16290655eb2155a1cba7b31953913abcbeef91c47a964a99ee66255",
+      "title": "Declare is a UI language for you and your AI",
+      "url": "https://davidtemkin.github.io/declarelang",
+      "summary": "52 points · 40 comments on Hacker News",
+      "publishedAt": "2026-11-24T02:36:56+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "105d2dd6f5d647be40a42af6f7b2258c0b866f02cc018acac8e3318ab419ba75",
+      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "url": "https://simonwillison.net/2026/Nov/23/glm-54",
+      "summary": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs onc",
+      "publishedAt": "2026-11-23T23:40:49+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "5e2478fb7557e8d39a7db8c45d8546b39e77fef5d0d2f1ca6208a4987ef412aa",
+      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
+      "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+      "publishedAt": "2026-11-23T22:05:50+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "876aad68c91f878f76e7cb6ce63b81e00267c40b4d4374ecf7f1698a96c8894a",
+      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios",
+      "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+      "publishedAt": "2026-11-23T22:02:05+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "affb554213303069d7fad9b11a759d17b8d61ade9579a86d7f432c4cd247255c",
+      "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal",
+      "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+      "publishedAt": "2026-11-23T21:47:41+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "981d6178a1cb2235349dabcf2de16fd4055a94c8b4c1e94b4c68471499fcb937",
+      "title": "Ladybird's first alpha release",
+      "url": "https://simonwillison.net/2026/Nov/23/ladybird",
+      "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz f",
+      "publishedAt": "2026-11-23T21:46:35+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "ea39f8a43a60b7b5db52809f3f79e9dfe28345396880641ba3dfa237f7201b22",
+      "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+      "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist",
+      "summary": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
+      "publishedAt": "2026-11-23T21:25:42+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b0689cf87ab570a441c88635b910134907af4a34b0ffafe4d1af03d0273e75fa",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "publishedAt": "2026-11-23T21:20:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d70157d1228f26a021a18b5ba9e2fe9c942ff44d8584326e757fbce928a43f89",
+      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq",
+      "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
+      "publishedAt": "2026-11-23T20:38:53+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "25f33d1df44504de388cb9b6adda098e0d413254cb8c2f17018e64d4c26c6f1a",
+      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses",
+      "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
+      "publishedAt": "2026-11-23T19:14:46+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c708d8c1e7cbbd50a2bd09c623ef823de520aeff4917d67f71ad1cf2e97b2e13",
+      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for",
+      "publishedAt": "2026-11-23T17:36:08+00:00",
+      "source": "MIT Technology Review",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "eb2701ff66febea2729388256362b1e990ea44c9d3e87f78378f64a362cb43e9",
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "url": "https://huggingface.co/blog/allenai/robotrack",
+      "summary": "",
+      "publishedAt": "2026-11-23T17:20:37+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "4f5fe20de68e9dfdec37bc312e73f8b092a226bb2cfacfa2a0e45f240086046a",
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps",
+      "summary": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
+      "publishedAt": "2026-11-23T17:00:00+00:00",
+      "source": "Google AI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "895b540db6a8889e694ca9f9b509808f44f14c578e93735626eea109f5cda62f",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+      "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "publishedAt": "2026-11-23T16:59:40+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "b29459411048ef9cce0547e3b8699069a0490bc0451d4fc3f01bdc5410ff11c9",
+      "title": "Buckle Up the AI Bubble Is Popping",
+      "url": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping",
+      "summary": "32 points · 56 comments on Hacker News",
+      "publishedAt": "2026-11-23T16:01:20+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9f183e9f9f75c876517d366d7fb45051ec4e567c991541f72de64b752f6f9794",
+      "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "summary": "Comments",
+      "publishedAt": "2026-11-23T13:42:38+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "875efdab1707b0f751087254c9919f0a9f687dd32293724e69119ac73d6670b1",
-      "title": "Amodei reportedly suggested games could pacify masses after AI took their jobs",
+      "title": "Amodei reportedly suggested games could pacify masses after AI took their jobs (2015)",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness",
-      "summary": "46 points · 54 comments on Hacker News",
+      "summary": "75 points · 82 comments on Hacker News",
       "publishedAt": "2026-11-23T12:41:14+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
     },
     {
+      "id": "74d816fb25305bd550db800f70854d3014fcd9710bb0a1d35d823164e8ac273a",
+      "title": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs",
+      "url": "https://hermitcrm.io/",
+      "summary": "47 points · 5 comments on Hacker News",
+      "publishedAt": "2026-11-23T10:09:02+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "f1db7ce98881d89015978e36136156bff2ae870452275174795039e0388b1ed2",
-      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
       "url": "https://z.ai/blog/glm-5.4",
       "summary": "Comments",
       "publishedAt": "2026-11-23T10:06:43+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "10878202550bbbf922d1872ab8ac87272ec1fb51ba1f61195752ed3c5f3ba59c",
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+      "publishedAt": "2026-11-23T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1259b534687dd8b3171199ff6c1e4d274ef5d072ac6513620703d8171072ee72",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "publishedAt": "2026-11-23T08:00:00+00:00",
+      "source": "OpenAI",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -95,13 +305,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "50eaee9a34139795490080825cd4c7ea2f7eb798eecbe072f6a32e3017fb6b13",
-      "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
-      "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo",
-      "summary": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
-      "publishedAt": "2026-11-23T01:25:53+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "8a62ea05f675eb6ddfd1b499e750e87c3d7bc1033baee72f0041f99f90da5b91",
+      "title": "datasette-charts 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/23/datasette-charts",
+      "summary": "Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Dataset",
+      "publishedAt": "2026-11-23T00:37:20+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -115,56 +325,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "d76d1fd47e7f903ad709849633ab74b09aa2e665e195067e554ff2d61f8a9455",
-      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
-      "url": "https://0rwx.com/",
-      "summary": "63 points · 17 comments on Hacker News",
-      "publishedAt": "2026-11-22T23:53:00+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9",
-      "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
-      "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
-      "summary": "245 points · 185 comments on Hacker News",
-      "publishedAt": "2026-11-22T23:12:10+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "2b98b898e990dfee2b3d6ae16bd742ca4c63fd27e63bf1076695f3727e60dbbe",
-      "title": "Do Not Accept",
-      "url": "https://donotaccept.ai/",
-      "summary": "53 points · 57 comments on Hacker News",
-      "publishedAt": "2026-11-22T23:02:20+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "883b69d3f986860bffa5b7f6476b5e6f24020479abf9427d9ce9503ffc1f037d",
-      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
-      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development",
-      "summary": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
-      "publishedAt": "2026-11-22T21:14:07+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a9f7ae49b5fbd4f4edc31b0b0e42abd66e29e9dd398ea5acfa2e3ac3b0681ef3",
-      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-      "summary": "Comments",
-      "publishedAt": "2026-11-22T21:01:16+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "71ff2ee8bf23be9b6db78b94e4eaca1ffa2f48ab2ab7c4aba78c8d72717bfa48",
       "title": "Select Styling Specimens",
       "url": "https://simonwillison.net/2026/Nov/22/select-styling",
@@ -172,16 +332,6 @@
       "publishedAt": "2026-11-22T19:45:06+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "47b2738e2872fd88c166151463e7074b4ab4231ec0a98dc66eca7ebcb1440813",
-      "title": "Why data centers are at the center of the Big Tech backlash",
-      "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash",
-      "summary": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
-      "publishedAt": "2026-11-22T18:08:43+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -195,46 +345,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "f6f5282ad9e3c36becf8337f22dfe98b714cceb5714699a8a4ed52de92759a9a",
-      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance",
-      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
-      "publishedAt": "2026-11-21T21:37:10+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "044fb7804e00ac8eecfab38be8fae4272b61749d695322e323f1abdd1c3601dd",
-      "title": "A tale of two Nvidias",
-      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias",
-      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
-      "publishedAt": "2026-11-21T21:07:42+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f52216bdae320c5247f473be5abc7c369f06a052ffd4102b2fa18fd70bdf58af",
-      "title": "Here are the top AI agents that can live in your text messages",
-      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages",
-      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "publishedAt": "2026-11-21T17:00:00+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0d8e213cc0d8372dce87a215fd23412427369685da1892efafdde9948a5803bb",
-      "title": "Quoting Ravi Vakil",
-      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil",
-      "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hop",
-      "publishedAt": "2026-11-20T19:21:49+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "6691469f1dc34a795664478a1f215653c4c0e1c156284ede437016ba3fce96c3",
       "title": "The most misunderstood graph in AI just got a major update",
       "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update",
@@ -245,16 +355,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "7220e54bdf8a93f9a841b3c0788017f9eeb83f5dc45906f47668bc47b8da5d02",
-      "title": "Quoting Levent Alpöge",
-      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge",
-      "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Cla",
-      "publishedAt": "2026-11-20T16:30:48+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7ad44f990f0c53ef2e2a537716dcd0f4d19ea5c4fbcd3c1cf3877b1b8eae8965",
       "title": "Combatting adversarial distillation",
       "url": "https://openai.com/index/combatting-adversarial-distillation",
@@ -262,26 +362,6 @@
       "publishedAt": "2026-11-20T10:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f54713977487b6ec70c41440edeeb5793050bd4211bfe6aa6dc8ae26c0a857c9",
-      "title": "llm-gemini 0.38.1",
-      "url": "https://simonwillison.net/2026/Nov/20/llm-gemini",
-      "summary": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in th",
-      "publishedAt": "2026-11-20T03:01:57+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3f7f7cffebe4ba5935ad38b2fb31ccca3134bd5c1847effc540e66dfdf2e4edc",
-      "title": "Token fraud is here and it’s BAD (YouTube)",
-      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
-      "summary": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this Y",
-      "publishedAt": "2026-11-20T02:49:57+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -315,26 +395,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "c1a2af93db54bfcf7c217cb74db83cfc0f90565b5c1b91d5871ab9ee0c953910",
-      "title": "Can AI help scientists identify promising drug candidates?",
-      "url": "https://openai.com/index/introducing-medchembench",
-      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
-      "publishedAt": "2026-11-20T00:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1df80ba4eb1bc7794fc5f584c8d0b7c9cedb46e59bc8cc3f037066a83af47611",
-      "title": "PostgreSQL 19 Released",
-      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19",
-      "summary": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apoca",
-      "publishedAt": "2026-11-19T20:43:57+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "056cf0b58a3dbace68332c5ef6b35e38e3aab513ff13bc25aa1cb803bce8b627",
       "title": "Introducing Tool Retrieval in the Gemini API",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
@@ -351,26 +411,6 @@
       "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
       "publishedAt": "2026-11-19T17:00:00+00:00",
       "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9342dbf934e428aa00c16520441f258a949ccd62bcb28471deb475c04ce3c227",
-      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
-      "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
-      "publishedAt": "2026-11-19T08:00:00+00:00",
-      "source": "OpenAI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "17b7a2b39f098895a2208f48f1507c3092e017b4481f6732b70b65df4c04b2b0",
-      "title": "See PR scans in action",
-      "url": "https://openai.com/business/learn/pr-scans-demo",
-      "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
-      "publishedAt": "2026-11-19T00:00:00+00:00",
-      "source": "OpenAI",
       "category": "Labs",
       "color": "#5B48D9"
     },
@@ -422,16 +462,6 @@
       "publishedAt": "2026-11-18T17:00:00+00:00",
       "source": "Google AI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "aef632472a5e3af7f91b4cd9c5d8e0ecee47135327c9822e26d24027e878b6a3",
-      "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
-      "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
-      "summary": "",
-      "publishedAt": "2026-11-18T15:00:23+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -1561,7 +1591,7 @@
         "value": 6.5259,
         "period": "2026-11-20",
         "retrievedAt": "2026-11-23T10:20:32.785018+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-SEK",
@@ -2665,7 +2695,7 @@
         "value": 11.2125,
         "period": "2026-11-20",
         "retrievedAt": "2026-11-23T10:20:32.785058+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-USD",
@@ -3769,7 +3799,7 @@
         "value": 1.099,
         "period": "2026-11-20",
         "retrievedAt": "2026-11-23T10:20:32.785101+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
@@ -3833,7 +3863,7 @@
         "value": 2.2857464902475,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.395702+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3897,7 +3927,7 @@
         "value": 1.4110724231835,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.395727+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -3961,7 +3991,7 @@
         "value": 1.54316373266217,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.395734+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4025,7 +4055,7 @@
         "value": 2.16138195623856,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.395741+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4089,7 +4119,7 @@
         "value": 5.01675279604836,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.403032+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4153,7 +4183,7 @@
         "value": 2.46605755272817,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.403055+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4217,7 +4247,7 @@
         "value": 0.679015259300199,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.403069+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4281,7 +4311,7 @@
         "value": 2.94952520485207,
         "period": "2024-01-01",
         "retrievedAt": "2026-11-23T02:15:11.403075+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4345,7 +4375,7 @@
         "value": 5.97,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.404971+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4409,7 +4439,7 @@
         "value": 6.28355946264135,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.404988+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4473,7 +4503,7 @@
         "value": 8.694,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.404995+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4537,7 +4567,7 @@
         "value": 4.198,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-23T02:15:11.405001+00:00",
-        "stale": false
+        "stale": true
       }
     ]
   }
