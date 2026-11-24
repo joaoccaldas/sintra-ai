@@ -7,8 +7,53 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 16:18:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 16:50:49 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Why a Crusoe investor is betting on solar and batteries to power future AI data centers]]></title>
+    <description><![CDATA[Next-generation data centers will need tens of gigawatts of power every year. One of Crusoe's investors thinks solar and energy storage are the obvious choice.]]></description>
+    <link>https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Pinterest will now let parents limit the AI-generated content their teens see]]></title>
+    <description><![CDATA[While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.]]></description>
+    <link>https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[How Gemini is changing the game for Golden State's organization and fans.]]></title>
+    <description><![CDATA[Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.]]></description>
+    <link>https://blog.google/products-and-platforms/products/gemini/gemini-golden-state</link>
+    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/gemini/gemini-golden-state</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race]]></title>
+    <description><![CDATA[Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.]]></description>
+    <link>https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Raising the stakes for enterprise networks with AI modernization]]></title>
+    <description><![CDATA[Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an es]]></description>
+    <link>https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[datasette-charts 0.2a0]]></title>
@@ -74,39 +119,12 @@
   </item>
 
   <item>
-    <title><![CDATA[Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist]]></title>
-    <description><![CDATA[Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.]]></description>
-    <link>https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[OpenAI and Cisco introduce Shirudo]]></title>
     <description><![CDATA[OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.]]></description>
     <link>https://openai.com/index/introducing-shirudo</link>
     <guid isPermaLink="true">https://openai.com/index/introducing-shirudo</guid>
     <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ]]></title>
-    <description><![CDATA["I'm going to be a better CEO the second time around," Huang told employees.]]></description>
-    <link>https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses]]></title>
-    <description><![CDATA[By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem]]></description>
-    <link>https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://openai.com/business/learn/connected-intelligence-for-in-house-legal</guid>
     <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Richpanel helps companies automate 50% of support in 30 days]]></title>
-    <description><![CDATA[Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.]]></description>
-    <link>https://openai.com/business/customer-stories/richpanel-ai-customer-support</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/richpanel-ai-customer-support</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-charts 0.1a0]]></title>
-    <description><![CDATA[Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Dataset]]></description>
-    <link>https://simonwillison.net/2026/Nov/23/datasette-charts</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/23/datasette-charts</guid>
-    <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
