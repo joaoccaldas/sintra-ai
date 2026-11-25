@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 25 Nov 2026 15:30:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 16:12:01 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[AI data centers are becoming harder to build, and neoclouds are feeling it]]></title>
+    <description><![CDATA[⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter mo]]></description>
+    <link>https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it</link>
+    <guid isPermaLink="true">https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[Amazon and Meta reportedly in talks to lift blockade on AI agent Muse]]></title>
@@ -78,15 +87,6 @@
     <description><![CDATA[The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.]]></description>
     <link>https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Even the best AI agents struggle with everyday life]]></title>
-    <description><![CDATA[As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.]]></description>
-    <link>https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
