@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 25 Nov 2026 22:17:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 23:19:07 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[S&P considers Nvidia credit downgrade over governance and ‘key man’ risks]]></title>
+    <description><![CDATA[The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.]]></description>
+    <link>https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work]]></title>
@@ -60,15 +69,6 @@
     <description><![CDATA[The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.]]></description>
     <link>https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats</guid>
-    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AI data centers are becoming harder to build, and neoclouds are feeling it]]></title>
-    <description><![CDATA[⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter m]]></description>
-    <link>https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it</link>
-    <guid isPermaLink="true">https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it</guid>
     <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
