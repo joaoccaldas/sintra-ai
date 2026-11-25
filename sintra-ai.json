@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:10:12.794261+00:00",
+  "generatedAt": "2026-11-25T16:11:25.912144+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "551b41b55629eb2adfe616733283400960b7c4a85a4f2957af89593dc1910521",
+      "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it",
+      "summary": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter mo",
+      "publishedAt": "2026-11-25T15:41:43+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "3057c1692fc87eb12e35921152d2c3d2a01aa637973bb95c5a424c853ceae46f",
       "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
@@ -125,20 +135,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "86266e890e18a6d47c920ed128cf0539ded2b2699749520f974ca9e57e18dde4",
-      "title": "Even the best AI agents struggle with everyday life",
-      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life",
-      "summary": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
-      "publishedAt": "2026-11-24T21:33:29+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
       "title": "Working with AI",
       "url": "https://www.anthropic.com/research/working-with-ai",
-      "summary": "77 points · 69 comments on Hacker News",
+      "summary": "79 points · 72 comments on Hacker News",
       "publishedAt": "2026-11-24T21:07:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
       "title": "Tidal bans AI-generated music",
       "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "333 points · 318 comments on Hacker News",
+      "summary": "333 points · 320 comments on Hacker News",
       "publishedAt": "2026-11-24T16:12:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
