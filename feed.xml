@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 25 Nov 2026 10:36:02 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 11:06:52 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[An Indic Voice Agent with CUGA]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[AI is straining America’s open records systems]]></title>
+    <description><![CDATA[In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a woo]]></description>
+    <link>https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>MIT Technology Review</category>
+  </item>
 
   <item>
     <title><![CDATA[Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion]]></title>
@@ -150,15 +168,6 @@
     <description><![CDATA[Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.]]></description>
     <link>https://openai.com/business/customer-stories/intentful-dots</link>
     <guid isPermaLink="true">https://openai.com/business/customer-stories/intentful-dots</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How iFood scales coding agents across 15,000 repositories]]></title>
-    <description><![CDATA[OpenAI — Labs]]></description>
-    <link>https://openai.com/index/ifood</link>
-    <guid isPermaLink="true">https://openai.com/index/ifood</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>
@@ -449,15 +458,6 @@
     <guid isPermaLink="true">https://news.ainvest.com/deep-topic/topic/meta-to-sell-ai-computing-power-2607</guid>
     <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
     <category>Meta</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Sweden Opens the 'AI-Verkstad' to Drive AI Adoption Across Its Public Sector]]></title>
-    <description><![CDATA[Sweden's AI-verkstad (AI Workshop), run jointly by the Tax Agency and Social Insurance Agency, opened its pilot phase on July 1 with ten pilot organizations and three shared AI services for municipalities, regions, and agencies. The government has budgeted roughly SEK 200 million per year for the effort through 2030 as part of its national AI strategy targeting a top-10 global ranking.]]></description>
-    <link>https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</link>
-    <guid isPermaLink="true">https://www.altinget.se/artikel/maangmiljonsatsning-ska-driva-paa-ai-anvandningen-i-offentlig-sektor</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
-    <category>Swedish Government</category>
   </item>
   </channel>
 </rss>
