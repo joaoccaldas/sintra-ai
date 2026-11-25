@@ -7,12 +7,12 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 25 Nov 2026 16:12:01 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 17:12:56 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
     <title><![CDATA[AI data centers are becoming harder to build, and neoclouds are feeling it]]></title>
-    <description><![CDATA[⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter mo]]></description>
+    <description><![CDATA[⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter m]]></description>
     <link>https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it</link>
     <guid isPermaLink="true">https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it</guid>
     <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
@@ -62,6 +62,15 @@
     <guid isPermaLink="true">https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion</guid>
     <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
   </item>
 
   <item>
@@ -128,6 +137,15 @@
   </item>
 
   <item>
+    <title><![CDATA[From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity]]></title>
+    <description><![CDATA[Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.]]></description>
+    <link>https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity</link>
+    <guid isPermaLink="true">https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Google DeepMind</category>
+  </item>
+
+  <item>
     <title><![CDATA[GPT-6 models demonstrate intrinsic protein-design capabilities]]></title>
     <description><![CDATA[GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.]]></description>
     <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities</link>
@@ -152,24 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/datasette-charts</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[datasette-agent 0.7a1]]></title>
-    <description><![CDATA[Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Da]]></description>
-    <link>https://simonwillison.net/2026/Nov/24/datasette-agent</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/datasette-agent</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Intentful uses dots to make more time for growth]]></title>
-    <description><![CDATA[Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.]]></description>
-    <link>https://openai.com/business/customer-stories/intentful-dots</link>
-    <guid isPermaLink="true">https://openai.com/business/customer-stories/intentful-dots</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>

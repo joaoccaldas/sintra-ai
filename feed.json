@@ -10,7 +10,7 @@
       "id": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it",
       "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it",
       "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
-      "content_text": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter mo",
+      "content_text": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter m",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
@@ -123,6 +123,26 @@
         "TechCrunch AI",
         "TechCrunch AI",
         "Press",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-25T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
         "Live"
       ]
     },
@@ -267,6 +287,26 @@
       ]
     },
     {
+      "id": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
+      "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+      "content_text": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-24T00:00:00.000Z",
+      "tags": [
+        "Google DeepMind",
+        "Google DeepMind",
+        "Labs",
+        "Live"
+      ]
+    },
+    {
       "id": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
@@ -323,46 +363,6 @@
         "Simon Willison",
         "Simon Willison",
         "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://simonwillison.net/2026/Nov/24/datasette-agent",
-      "url": "https://simonwillison.net/2026/Nov/24/datasette-agent",
-      "title": "datasette-agent 0.7a1",
-      "content_text": "Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Da",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "Simon Willison",
-        "Simon Willison",
-        "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/business/customer-stories/intentful-dots",
-      "url": "https://openai.com/business/customer-stories/intentful-dots",
-      "title": "How Intentful uses dots to make more time for growth",
-      "content_text": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
         "Live"
       ]
     },
