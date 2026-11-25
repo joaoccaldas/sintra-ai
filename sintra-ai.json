@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T21:16:31.395583+00:00",
+  "generatedAt": "2026-11-25T23:18:16.934603+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,26 @@
   "itemCount": 47,
   "items": [
     {
+      "id": "77bb663b6361291f59eed3bc9700812376d792b63f1a4b4d72220e13fb2eb4b7",
+      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks",
+      "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+      "publishedAt": "2026-11-25T22:44:32+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "7504558659f2e1ed0320899493c07311502045178c287da7618d20601c6b09a0",
+      "title": "The New York Times tells photographers not to use the latest Photoshop",
+      "url": "https://www.dpreview.com/news/new-york-times-adobe-photoshop-2027-restriction-ai",
+      "summary": "Comments",
+      "publishedAt": "2026-11-25T21:18:02+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "3a73412d0df0bb71aee562a425b08d3f2461f253768d55d33dc63666ac00f07d",
       "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
       "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work",
@@ -22,6 +42,16 @@
       "publishedAt": "2026-11-25T20:03:27+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "8971bf895bd5c2543d932f7d12b9795019c82040424c41900c5eecb98ec473cc",
+      "title": "Spending 35B Opus 5.5 Tokens to Write a Symphony",
+      "url": "https://danprice.ai/blog/opus-symphony",
+      "summary": "50 points · 61 comments on Hacker News",
+      "publishedAt": "2026-11-25T19:57:08+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -75,13 +105,13 @@
       "color": "#5B48D9"
     },
     {
-      "id": "551b41b55629eb2adfe616733283400960b7c4a85a4f2957af89593dc1910521",
-      "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
-      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it",
-      "summary": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter m",
-      "publishedAt": "2026-11-25T15:41:43+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
+      "id": "ec7d726e8b64153783e5477c4aabd5596e696e60167c7f17fec844b37487e6e2",
+      "title": "New York bans AI toys, including those using internet to talk to children",
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
+      "summary": "42 points · 2 comments on Hacker News",
+      "publishedAt": "2026-11-25T17:27:05+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -108,7 +138,7 @@
       "id": "ee73c619e3bf0986096ca78f9f3e11568615c0d04ca07540d589cf54f32fff76",
       "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
       "url": "https://www.marginalia.nu/log/a_141_marginalia_update",
-      "summary": "210 points · 81 comments on Hacker News",
+      "summary": "215 points · 81 comments on Hacker News",
       "publishedAt": "2026-11-25T03:47:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -118,7 +148,7 @@
       "id": "d1fc227c961d22e9212816cbe727b99bfd3dc4b6dbc33a6aeea2546e530075dc",
       "title": "Top open problems in mathematics ranked by LLM-assessed importance",
       "url": "https://www.proofatlas.ai/open-problems",
-      "summary": "99 points · 49 comments on Hacker News",
+      "summary": "99 points · 50 comments on Hacker News",
       "publishedAt": "2026-11-25T03:01:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,28 +178,8 @@
       "id": "8829fadd271a2e7761644be5919004c8939e996ce2aff86d27232cad76ac8c75",
       "title": "New York Ban AI Toys for 5 Years",
       "url": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
-      "summary": "35 points · 3 comments on Hacker News",
+      "summary": "37 points · 3 comments on Hacker News",
       "publishedAt": "2026-11-24T21:49:50+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
-      "title": "Working with AI",
-      "url": "https://www.anthropic.com/research/working-with-ai",
-      "summary": "85 points · 74 comments on Hacker News",
-      "publishedAt": "2026-11-24T21:07:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "84e1309d18f8c037ad809f49b22339f6e8b613b06bab426be32085aff7daf7e3",
-      "title": "Compiling web applications into verified operations for AI agents",
-      "url": "https://protocolis.co/paper",
-      "summary": "34 points · 14 comments on Hacker News",
-      "publishedAt": "2026-11-24T19:12:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -192,16 +202,6 @@
       "publishedAt": "2026-11-24T16:34:13+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
-      "title": "Tidal bans AI-generated music",
-      "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "334 points · 328 comments on Hacker News",
-      "publishedAt": "2026-11-24T16:12:38+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -487,7 +487,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-25T17:12:15.932730+00:00",
+    "generatedAt": "2026-11-25T23:18:18.225237+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1602,7 +1602,7 @@
         ],
         "value": 6.4531,
         "period": "2026-11-25",
-        "retrievedAt": "2026-11-25T17:12:15.932712+00:00",
+        "retrievedAt": "2026-11-25T23:18:18.225209+00:00",
         "stale": false
       },
       {
@@ -2718,7 +2718,7 @@
         ],
         "value": 11.2385,
         "period": "2026-11-25",
-        "retrievedAt": "2026-11-25T17:12:15.932727+00:00",
+        "retrievedAt": "2026-11-25T23:18:18.225229+00:00",
         "stale": false
       },
       {
@@ -3834,7 +3834,7 @@
         ],
         "value": 1.0935,
         "period": "2026-11-25",
-        "retrievedAt": "2026-11-25T17:12:15.932730+00:00",
+        "retrievedAt": "2026-11-25T23:18:18.225237+00:00",
         "stale": false
       },
       {
