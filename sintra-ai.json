@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T13:08:24.912601+00:00",
+  "generatedAt": "2026-11-25T14:09:36.951164+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "ec57c99a6a096767a36e20537bebae03846efdb61fdabfbba8cf3b54f4165330",
+      "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+      "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed",
+      "summary": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
+      "publishedAt": "2026-11-25T13:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "0077e07924e43bf73f6b214e80c2636fd705749c1e6b72af3b822ac4ce5e9fb4",
       "title": "An Indic Voice Agent with CUGA",
@@ -125,20 +135,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "977f9f016cc6ca5bd41156782b5f3a5c750eae30719d9a3c0d039cbaaa3e8b85",
-      "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
-      "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself",
-      "summary": "The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.",
-      "publishedAt": "2026-11-24T21:19:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
       "title": "Working with AI",
       "url": "https://www.anthropic.com/research/working-with-ai",
-      "summary": "76 points · 65 comments on Hacker News",
+      "summary": "76 points · 67 comments on Hacker News",
       "publishedAt": "2026-11-24T21:07:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +148,7 @@
       "id": "84e1309d18f8c037ad809f49b22339f6e8b613b06bab426be32085aff7daf7e3",
       "title": "Compiling web applications into verified operations for AI agents",
       "url": "https://protocolis.co/paper",
-      "summary": "34 points · 12 comments on Hacker News",
+      "summary": "34 points · 13 comments on Hacker News",
       "publishedAt": "2026-11-24T19:12:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +178,7 @@
       "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
       "title": "Tidal bans AI-generated music",
       "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "332 points · 317 comments on Hacker News",
+      "summary": "333 points · 318 comments on Hacker News",
       "publishedAt": "2026-11-24T16:12:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
