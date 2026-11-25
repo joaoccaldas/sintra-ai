@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T23:24:44.461178+00:00",
+  "generatedAt": "2026-11-25T00:25:53.075281+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "cd26d95554d7ee3a899310120eaf03c1ce874d2e36fe102ed90d190bf95836c7",
+      "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to U.S. industrial might — not a champion",
+      "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion",
+      "summary": "Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to \"historic\" personal liability from a growing pile of lawsuits",
+      "publishedAt": "2026-11-25T00:12:02+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "5e8eba5b15ac60442c06ba0c605298c68acc153c2342183b0f55f54aa4e85ddb",
       "title": "Three LLM inflection points in twelve months",
@@ -78,7 +88,7 @@
       "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
       "title": "Working with AI",
       "url": "https://www.anthropic.com/research/working-with-ai",
-      "summary": "61 points · 62 comments on Hacker News",
+      "summary": "62 points · 63 comments on Hacker News",
       "publishedAt": "2026-11-24T21:07:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -92,16 +102,6 @@
       "publishedAt": "2026-11-24T19:12:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7992bf690613aecdb58171ddb70d55be6faca53ca5fa07bf624469e045d483f7",
-      "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
-      "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups",
-      "summary": "Anthropic’s post-IPO slump could put pressure on AI startup valuations.",
-      "publishedAt": "2026-11-24T18:30:42+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
       "color": "#5B48D9"
     },
     {
@@ -128,7 +128,7 @@
       "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
       "title": "Tidal bans AI-generated music",
       "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "313 points · 298 comments on Hacker News",
+      "summary": "315 points · 299 comments on Hacker News",
       "publishedAt": "2026-11-24T16:12:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
