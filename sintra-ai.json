@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T14:09:36.951164+00:00",
+  "generatedAt": "2026-11-25T15:10:12.794261+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "3057c1692fc87eb12e35921152d2c3d2a01aa637973bb95c5a424c853ceae46f",
+      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse",
+      "summary": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
+      "publishedAt": "2026-11-25T14:10:18+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "ec57c99a6a096767a36e20537bebae03846efdb61fdabfbba8cf3b54f4165330",
       "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
@@ -125,20 +135,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "5edc970ed59b587c1ee8c05d8489580ad3458325bacb4c7ffdab0abba660d73e",
-      "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
-      "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse",
-      "summary": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
-      "publishedAt": "2026-11-24T21:32:38+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
       "title": "Working with AI",
       "url": "https://www.anthropic.com/research/working-with-ai",
-      "summary": "76 points · 67 comments on Hacker News",
+      "summary": "77 points · 69 comments on Hacker News",
       "publishedAt": "2026-11-24T21:07:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
