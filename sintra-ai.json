@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T17:12:12.782973+00:00",
+  "generatedAt": "2026-11-25T18:13:27.941327+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,26 @@
   ],
   "itemCount": 48,
   "items": [
+    {
+      "id": "fd3eea6ab732b7250509de6164234fbee94269776e18e7863c60be224f375b62",
+      "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+      "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york",
+      "summary": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
+      "publishedAt": "2026-11-25T18:11:46+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "628d3c512960bc42def6d56ad9842bcf679285e91783b802db4db2bbcd8b78d8",
+      "title": "State AGs fight Character AI’s plan to auction off users’ private chats",
+      "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats",
+      "summary": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
+      "publishedAt": "2026-11-25T17:35:58+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
     {
       "id": "551b41b55629eb2adfe616733283400960b7c4a85a4f2957af89593dc1910521",
       "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
@@ -68,7 +88,7 @@
       "id": "ee73c619e3bf0986096ca78f9f3e11568615c0d04ca07540d589cf54f32fff76",
       "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
       "url": "https://www.marginalia.nu/log/a_141_marginalia_update",
-      "summary": "Comments",
+      "summary": "206 points · 78 comments on Hacker News",
       "publishedAt": "2026-11-25T03:47:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -78,7 +98,7 @@
       "id": "d1fc227c961d22e9212816cbe727b99bfd3dc4b6dbc33a6aeea2546e530075dc",
       "title": "Top open problems in mathematics ranked by LLM-assessed importance",
       "url": "https://www.proofatlas.ai/open-problems",
-      "summary": "92 points · 48 comments on Hacker News",
+      "summary": "97 points · 48 comments on Hacker News",
       "publishedAt": "2026-11-25T03:01:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -115,16 +135,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "97f21b1a1bb0ae2bac51eeb5919c96da84fdbd9c285e99a96f08a898205449ac",
-      "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
-      "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy",
-      "summary": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
-      "publishedAt": "2026-11-24T22:27:52+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "8829fadd271a2e7761644be5919004c8939e996ce2aff86d27232cad76ac8c75",
       "title": "New York Ban AI Toys for 5 Years",
       "url": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
@@ -135,20 +145,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "171b94fafc685f0bbe01ce8df65d2d164f349c2f077b20d1c27b8c55b116f2ee",
-      "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
-      "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy",
-      "summary": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
-      "publishedAt": "2026-11-24T21:48:27+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
       "title": "Working with AI",
       "url": "https://www.anthropic.com/research/working-with-ai",
-      "summary": "79 points · 73 comments on Hacker News",
+      "summary": "81 points · 74 comments on Hacker News",
       "publishedAt": "2026-11-24T21:07:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -158,7 +158,7 @@
       "id": "84e1309d18f8c037ad809f49b22339f6e8b613b06bab426be32085aff7daf7e3",
       "title": "Compiling web applications into verified operations for AI agents",
       "url": "https://protocolis.co/paper",
-      "summary": "34 points · 13 comments on Hacker News",
+      "summary": "34 points · 14 comments on Hacker News",
       "publishedAt": "2026-11-24T19:12:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
