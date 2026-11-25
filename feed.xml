@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 25 Nov 2026 14:45:43 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 15:30:42 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Amazon and Meta reportedly in talks to lift blockade on AI agent Muse]]></title>
+    <description><![CDATA[Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.]]></description>
+    <link>https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
 
   <item>
     <title><![CDATA[The questions Jensen Huang and Nvidia will still have to answer about Megaspeed]]></title>
@@ -78,15 +87,6 @@
     <description><![CDATA[As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.]]></description>
     <link>https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Walmart teams up with Meta to bring Black Friday deals to AI agent Muse]]></title>
-    <description><![CDATA[Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.]]></description>
-    <link>https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>TechCrunch AI</category>
   </item>
