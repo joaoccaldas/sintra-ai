@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T16:11:25.912144+00:00",
+  "generatedAt": "2026-11-25T17:12:12.782973+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -18,7 +18,7 @@
       "id": "551b41b55629eb2adfe616733283400960b7c4a85a4f2957af89593dc1910521",
       "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
       "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it",
-      "summary": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power and a finished building matter mo",
+      "summary": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter m",
       "publishedAt": "2026-11-25T15:41:43+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
@@ -78,7 +78,7 @@
       "id": "d1fc227c961d22e9212816cbe727b99bfd3dc4b6dbc33a6aeea2546e530075dc",
       "title": "Top open problems in mathematics ranked by LLM-assessed importance",
       "url": "https://www.proofatlas.ai/open-problems",
-      "summary": "Comments",
+      "summary": "92 points · 48 comments on Hacker News",
       "publishedAt": "2026-11-25T03:01:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -92,6 +92,16 @@
       "publishedAt": "2026-11-25T00:12:02+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "df3be113c8aed13fbadf7f5fd23bf1c3fea1d6aa84ef1d6c6b80d5e4f468adf1",
+      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "summary": "",
+      "publishedAt": "2026-11-25T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -118,7 +128,7 @@
       "id": "8829fadd271a2e7761644be5919004c8939e996ce2aff86d27232cad76ac8c75",
       "title": "New York Ban AI Toys for 5 Years",
       "url": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
-      "summary": "32 points · 3 comments on Hacker News",
+      "summary": "33 points · 3 comments on Hacker News",
       "publishedAt": "2026-11-24T21:49:50+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "36fb5b1c7a9ff4c850f964edd0162f1408c9ecdd1aa74ccb8f6a1549c82ca1ea",
       "title": "Working with AI",
       "url": "https://www.anthropic.com/research/working-with-ai",
-      "summary": "79 points · 72 comments on Hacker News",
+      "summary": "79 points · 73 comments on Hacker News",
       "publishedAt": "2026-11-24T21:07:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +188,7 @@
       "id": "8914c06692750e0f3f44f7cb9180d1f6e2db8d51ac3321dff648e32dcbbe2380",
       "title": "Tidal bans AI-generated music",
       "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924",
-      "summary": "333 points · 320 comments on Hacker News",
+      "summary": "334 points · 324 comments on Hacker News",
       "publishedAt": "2026-11-24T16:12:38+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -202,6 +212,16 @@
       "publishedAt": "2026-11-24T15:15:16+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "616293296550946fa78f0e19ab2c464c501f2e1f6e0b1ba1716bfe4b1f96cb5a",
+      "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
+      "summary": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
+      "publishedAt": "2026-11-24T13:07:53+00:00",
+      "source": "Google DeepMind",
+      "category": "Labs",
       "color": "#5B48D9"
     },
     {
@@ -435,16 +455,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "824c03b970f1dc58cad676334e63167d2af3b369add30c83b73e4ecb318d913d",
-      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-      "url": "https://huggingface.co/blog/inkling2mini",
-      "summary": "",
-      "publishedAt": "2026-11-20T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
       "id": "056cf0b58a3dbace68332c5ef6b35e38e3aab513ff13bc25aa1cb803bce8b627",
       "title": "Introducing Tool Retrieval in the Gemini API",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
@@ -483,21 +493,11 @@
       "source": "Google DeepMind",
       "category": "Labs",
       "color": "#5B48D9"
-    },
-    {
-      "id": "0191a8cf5007a7e305ee6ecc84767aeda711b30a6ec196d8a24db74bf6e9ec9a",
-      "title": "The Gemini app is now available on lower-memory Android devices.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
-      "summary": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
-      "publishedAt": "2026-11-18T17:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
     }
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-25T10:35:17.284043+00:00",
+    "generatedAt": "2026-11-25T17:12:15.932730+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1604,11 +1604,15 @@
           {
             "date": "2026-11-24",
             "value": 6.4349
+          },
+          {
+            "date": "2026-11-25",
+            "value": 6.4531
           }
         ],
-        "value": 6.4349,
-        "period": "2026-11-24",
-        "retrievedAt": "2026-11-25T10:35:17.284009+00:00",
+        "value": 6.4531,
+        "period": "2026-11-25",
+        "retrievedAt": "2026-11-25T17:12:15.932712+00:00",
         "stale": false
       },
       {
@@ -2716,11 +2720,15 @@
           {
             "date": "2026-11-24",
             "value": 11.221
+          },
+          {
+            "date": "2026-11-25",
+            "value": 11.2385
           }
         ],
-        "value": 11.221,
-        "period": "2026-11-24",
-        "retrievedAt": "2026-11-25T10:35:17.284036+00:00",
+        "value": 11.2385,
+        "period": "2026-11-25",
+        "retrievedAt": "2026-11-25T17:12:15.932727+00:00",
         "stale": false
       },
       {
@@ -3828,11 +3836,15 @@
           {
             "date": "2026-11-24",
             "value": 1.0963
+          },
+          {
+            "date": "2026-11-25",
+            "value": 1.0935
           }
         ],
-        "value": 1.0963,
-        "period": "2026-11-24",
-        "retrievedAt": "2026-11-25T10:35:17.284043+00:00",
+        "value": 1.0935,
+        "period": "2026-11-25",
+        "retrievedAt": "2026-11-25T17:12:15.932730+00:00",
         "stale": false
       },
       {
