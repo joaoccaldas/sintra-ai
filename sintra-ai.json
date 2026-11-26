@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T23:18:16.934603+00:00",
+  "generatedAt": "2026-11-26T00:19:10.284509+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 47,
   "items": [
+    {
+      "id": "3c53fbfc405d080f0b262faedbaede80b9004a3e81fc673b56aadb152d45e2a0",
+      "title": "Quoting Scott Aaronson",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson",
+      "summary": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondw",
+      "publishedAt": "2026-11-25T23:26:32+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "77bb663b6361291f59eed3bc9700812376d792b63f1a4b4d72220e13fb2eb4b7",
       "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
@@ -48,7 +58,7 @@
       "id": "8971bf895bd5c2543d932f7d12b9795019c82040424c41900c5eecb98ec473cc",
       "title": "Spending 35B Opus 5.5 Tokens to Write a Symphony",
       "url": "https://danprice.ai/blog/opus-symphony",
-      "summary": "50 points · 61 comments on Hacker News",
+      "summary": "51 points · 61 comments on Hacker News",
       "publishedAt": "2026-11-25T19:57:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -138,7 +148,7 @@
       "id": "ee73c619e3bf0986096ca78f9f3e11568615c0d04ca07540d589cf54f32fff76",
       "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
       "url": "https://www.marginalia.nu/log/a_141_marginalia_update",
-      "summary": "215 points · 81 comments on Hacker News",
+      "summary": "216 points · 82 comments on Hacker News",
       "publishedAt": "2026-11-25T03:47:42+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -148,7 +158,7 @@
       "id": "d1fc227c961d22e9212816cbe727b99bfd3dc4b6dbc33a6aeea2546e530075dc",
       "title": "Top open problems in mathematics ranked by LLM-assessed importance",
       "url": "https://www.proofatlas.ai/open-problems",
-      "summary": "99 points · 50 comments on Hacker News",
+      "summary": "101 points · 50 comments on Hacker News",
       "publishedAt": "2026-11-25T03:01:36+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -320,16 +330,6 @@
       "url": "https://simonwillison.net/2026/Nov/23/glm-54",
       "summary": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs onc",
       "publishedAt": "2026-11-23T23:40:49+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "981d6178a1cb2235349dabcf2de16fd4055a94c8b4c1e94b4c68471499fcb937",
-      "title": "Ladybird's first alpha release",
-      "url": "https://simonwillison.net/2026/Nov/23/ladybird",
-      "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz f",
-      "publishedAt": "2026-11-23T21:46:35+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
