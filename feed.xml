@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 26 Nov 2026 14:26:33 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:28:25 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue]]></title>
+    <description><![CDATA[On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.]]></description>
+    <link>https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Quoting Jack Despain Zhou]]></title>
+    <description><![CDATA[Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly seriou]]></description>
+    <link>https://simonwillison.net/2026/Nov/26/jack-despain-zhou</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/26/jack-despain-zhou</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon]]></title>
@@ -119,15 +137,6 @@
   </item>
 
   <item>
-    <title><![CDATA[Character.AI’s plan to auction off users’ private chats challenged by state AGs]]></title>
-    <description><![CDATA[The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.]]></description>
-    <link>https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats</guid>
-    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
-  </item>
-
-  <item>
     <title><![CDATA[An Indic Voice Agent with CUGA]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga</link>
@@ -159,15 +168,6 @@
     <description><![CDATA[I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In t]]></description>
     <link>https://simonwillison.net/2026/Nov/24/llm-inflection-points</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/llm-inflection-points</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GPT 6.2 Astra Solves a Historical Mystery]]></title>
-    <description><![CDATA[GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an ano]]></description>
-    <link>https://simonwillison.net/2026/Nov/24/astra-historical-mystery</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/astra-historical-mystery</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
