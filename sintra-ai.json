@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T00:19:10.284509+00:00",
+  "generatedAt": "2026-11-26T14:25:59.321078+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,8 +12,128 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 47,
+  "itemCount": 46,
   "items": [
+    {
+      "id": "a734da9d3a1d876054f86e6e92e632f9c2a091a208fef8a96dd4cc4467d6055b",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "summary": "",
+      "publishedAt": "2026-11-26T11:37:17+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "9a36b64e1e928bff59aaf22fe89d0ecb8463c9f99c958b78a4701e2ab2e56f2e",
+      "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp",
+      "summary": "83 points · 95 comments on Hacker News",
+      "publishedAt": "2026-11-26T09:44:23+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e2ac2e209969c35f750b80f0d81743bcb79e17295a2361da8c9948b57da343d7",
+      "title": "Moat: Your OpenRouter Replacement",
+      "url": "https://commandcode.ai/moat",
+      "summary": "Comments",
+      "publishedAt": "2026-11-26T06:32:48+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "d44a29290b4311e2732a912eea738dddef836a986ffb101b74205cc9cd854b02",
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync",
+      "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood on",
+      "publishedAt": "2026-11-26T06:08:25+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "3d2697b636d74b834fc0e7341d4d275b2177cb68cfa6554cf0431f54189d28f2",
+      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "summary": "",
+      "publishedAt": "2026-11-26T05:05:36+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "01402612ad639a6f568d21d1a81d3146b1b8930e8d8cf511e1e3514b6c9fc64e",
+      "title": "PoseVLN: Learning Geometric State Evolution for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2611.32218",
+      "summary": "Authors: Pengyu Hou, Mingfei Han, Haihong Hao, Xiaolong Wu, Bo Dong, Xiaojun Chang, Salman Khan, Bin Shi · arXiv:2611.32218v1 Announce Type: new Abstract: Vision-Language Navigation (VLN) requires an embodied agent to relate past experience, current spatial st",
+      "publishedAt": "2026-11-26T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "017641e3c5bc186163568c620cc76f86f059cdfe4c1f15cdc0b4471afa0805a1",
+      "title": "EffectWAM: Learning Action-Grounded Effects for Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.32053",
+      "summary": "Authors: Yuan Zhang, Hao Cui, Jingfei Ni, Meiyi Wang, Xin Nie, Chi Liu, Wenjie Xu, Lin Gao, Hao Li, Xianhe Zhang, Jiajia Wu, Diyuan Liu, Jia Pan, Chao Ji · arXiv:2611.32053v2 Announce Type: new Abstract: World-action models connect visual prediction with execu",
+      "publishedAt": "2026-11-26T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0344d1c3570cf87fb898d4d6cef9ff0a068334fd1cf484ac1de0ac3edb5d1915",
+      "title": "XRL4T1D: A Post-hoc Explainability Framework for Reinforcement Learning in Type 1 Diabetes Management",
+      "url": "https://arxiv.org/abs/2611.31498",
+      "summary": "Authors: Malay Phadke, Chirath Hettiarachchi · arXiv:2611.31498v1 Announce Type: new Abstract: Type 1 diabetes (T1D) requires lifelong insulin therapy, and reinforcement learning (RL) has shown promise for automated dosing in the UVA/Padova simulator. However,",
+      "publishedAt": "2026-11-26T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "155cf74d593fc9fcb6d8fccd12ea3f09f8a8ee82a89a850f49f1dd20fef2462b",
+      "title": "Taxi: Analyzing Agents at (Real) Scale",
+      "url": "https://arxiv.org/abs/2611.31457",
+      "summary": "Authors: Guy Dar · arXiv:2611.31457v1 Announce Type: new Abstract: In this technical report, we present Taxi -- a system for debugging, clustering, and monitoring agents at scale. Taxi scales to millions of steps efficiently. This is made possible by a combina",
+      "publishedAt": "2026-11-26T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1904b51002150479a489af023e07dfcc7849d7039bb87a190d1b186c9e7d82dd",
+      "title": "Modeling Event-Conditioned Emotional Expression Response with LLM Agents in a Synthetic Social Simulation",
+      "url": "https://arxiv.org/abs/2611.31851",
+      "summary": "Authors: Rebecca Marigliano, Peter Carragher, Kathleen M. Carley · arXiv:2611.31851v1 Announce Type: new Abstract: Emotions are central drivers of human behavior, yet most behavioral models fail to capture their role in shaping perception, decision-making, and",
+      "publishedAt": "2026-11-26T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "198888ddc32495a196c2b249861d55184b834e5400754133c9b8aa1e9ad029ee",
+      "title": "Wavefront: Low-Rank Drafting with Parallel Causal Refinement for Speculative Decoding",
+      "url": "https://arxiv.org/abs/2611.31638",
+      "summary": "Authors: Huy Huu Nguyen, Xin Huang · arXiv:2611.31638v1 Announce Type: new Abstract: Speculative decoding accelerates LLM inference by letting a cheap drafter propose tokens that the target model verifies in parallel. Parallel block drafters such as DFlash and",
+      "publishedAt": "2026-11-26T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "819f2bb8e324e5e7f3ab174fd75a2e35e495da76ab1ed0dc431b91e93d876cbf",
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "url": "https://huggingface.co/blog/training-swarms",
+      "summary": "",
+      "publishedAt": "2026-11-26T00:00:00+00:00",
+      "source": "Hugging Face",
+      "category": "Open Source",
+      "color": "#5B48D9"
+    },
     {
       "id": "3c53fbfc405d080f0b262faedbaede80b9004a3e81fc673b56aadb152d45e2a0",
       "title": "Quoting Scott Aaronson",
@@ -32,6 +152,16 @@
       "publishedAt": "2026-11-25T22:44:32+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "1bfb90103b3c1d8e3d87c8f4fa689f779fc4191ffc5abac373e7e67f807bf6b2",
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "summary": "Comments",
+      "publishedAt": "2026-11-25T21:18:02+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -58,7 +188,7 @@
       "id": "8971bf895bd5c2543d932f7d12b9795019c82040424c41900c5eecb98ec473cc",
       "title": "Spending 35B Opus 5.5 Tokens to Write a Symphony",
       "url": "https://danprice.ai/blog/opus-symphony",
-      "summary": "51 points · 61 comments on Hacker News",
+      "summary": "56 points · 67 comments on Hacker News",
       "publishedAt": "2026-11-25T19:57:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -95,6 +225,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "9685432920849ecf90c70b30aa0f7de554eaf033009ef2bdbefa8b13adf02776",
+      "title": "datasette-charts 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts",
+      "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in",
+      "publishedAt": "2026-11-25T18:16:50+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
       "id": "fd3eea6ab732b7250509de6164234fbee94269776e18e7863c60be224f375b62",
       "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
       "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york",
@@ -118,7 +258,7 @@
       "id": "ec7d726e8b64153783e5477c4aabd5596e696e60167c7f17fec844b37487e6e2",
       "title": "New York bans AI toys, including those using internet to talk to children",
       "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "summary": "42 points · 2 comments on Hacker News",
+      "summary": "53 points · 13 comments on Hacker News",
       "publishedAt": "2026-11-25T17:27:05+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -145,26 +285,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "ee73c619e3bf0986096ca78f9f3e11568615c0d04ca07540d589cf54f32fff76",
-      "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
-      "url": "https://www.marginalia.nu/log/a_141_marginalia_update",
-      "summary": "216 points · 82 comments on Hacker News",
-      "publishedAt": "2026-11-25T03:47:42+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "d1fc227c961d22e9212816cbe727b99bfd3dc4b6dbc33a6aeea2546e530075dc",
-      "title": "Top open problems in mathematics ranked by LLM-assessed importance",
-      "url": "https://www.proofatlas.ai/open-problems",
-      "summary": "101 points · 50 comments on Hacker News",
-      "publishedAt": "2026-11-25T03:01:36+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "df3be113c8aed13fbadf7f5fd23bf1c3fea1d6aa84ef1d6c6b80d5e4f468adf1",
       "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
       "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
@@ -185,16 +305,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "8829fadd271a2e7761644be5919004c8939e996ce2aff86d27232cad76ac8c75",
-      "title": "New York Ban AI Toys for 5 Years",
-      "url": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
-      "summary": "37 points · 3 comments on Hacker News",
-      "publishedAt": "2026-11-24T21:49:50+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
       "id": "7eea171611f31c8f95c6e226f61955635ce9adf9e7d105467cd6d5dca1057023",
       "title": "GPT 6.2 Astra Solves a Historical Mystery",
       "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
@@ -202,16 +312,6 @@
       "publishedAt": "2026-11-24T16:53:59+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "6a28e842b3bf4bfd8400220ee7c0735b0ecf3e38a0b3cb368303e1e3a450e25f",
-      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
-      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
-      "summary": "",
-      "publishedAt": "2026-11-24T16:34:13+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -265,21 +365,11 @@
       "color": "#5B48D9"
     },
     {
-      "id": "07fffdf07c77b17b4c63712a7a0738120e30970439cca6234d8b4b909c855881",
-      "title": "datasette-charts 0.2a0",
-      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts",
-      "summary": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion a",
-      "publishedAt": "2026-11-24T04:24:29+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "3d5981388f51900a65b5d6abeab6dcfe63565d12fe183e7c8faab526650596e0",
-      "title": "datasette-agent 0.7a1",
-      "url": "https://simonwillison.net/2026/Nov/24/datasette-agent",
-      "summary": "Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Da",
-      "publishedAt": "2026-11-24T03:45:57+00:00",
+      "id": "e22d419cf18743cb4fe31c3f9b50bbd6bc837def7fb76e969ef2ed431298721c",
+      "title": "datasette-charts 0.2a1",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts-2",
+      "summary": "Release: datasette-charts 0.2a1 Minor UI improvements: Collapsing the suggested charts section now leaves the chart visible. Following a link to a chart opens it with the suggestions collapsed for that visit. On table pages the panel now sits below the \"4,235 ",
+      "publishedAt": "2026-11-24T06:07:19+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
@@ -325,16 +415,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "105d2dd6f5d647be40a42af6f7b2258c0b866f02cc018acac8e3318ab419ba75",
-      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-      "url": "https://simonwillison.net/2026/Nov/23/glm-54",
-      "summary": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs onc",
-      "publishedAt": "2026-11-23T23:40:49+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "c708d8c1e7cbbd50a2bd09c623ef823de520aeff4917d67f71ad1cf2e97b2e13",
       "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
       "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument",
@@ -342,16 +422,6 @@
       "publishedAt": "2026-11-23T17:36:08+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "eb2701ff66febea2729388256362b1e990ea44c9d3e87f78378f64a362cb43e9",
-      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
-      "url": "https://huggingface.co/blog/allenai/robotrack",
-      "summary": "",
-      "publishedAt": "2026-11-23T17:20:37+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -372,76 +442,6 @@
       "publishedAt": "2026-11-23T16:59:40+00:00",
       "source": "Google DeepMind",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "006e5b4d87f0d23dc4925414eeab9e7e48c277d92082846cc2e8948efc05ef9f",
-      "title": "Functional Depth Is Learned: Isolating the Computation That Layers Produce Only Together",
-      "url": "https://arxiv.org/abs/2611.27911",
-      "summary": "Authors: JaeSeong Kim, KyungTae Lim · arXiv:2611.27911v1 Announce Type: new Abstract: Transformer performance scales with depth, but layer count merely counts the opportunities for sequential computation: layers could still behave as nearly independent refinem",
-      "publishedAt": "2026-11-23T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "03465724b88b0cc08e0a5ae9483bc1e9585ff8591a35ba6673e019752e0e92f1",
-      "title": "Beyond Demographic Discrimination: Benchmarking Normative-Descriptive Calibration in LLMs",
-      "url": "https://arxiv.org/abs/2611.26870",
-      "summary": "Authors: Radhika Bhargava, Shinibali Bhattacharyya, George Mihaila, Jay Prajapati, Anwesan Pal, Yue Zhang · arXiv:2611.26870v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in socially consequential settings, where they mu",
-      "publishedAt": "2026-11-23T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "06cf0b3156b2863bcd4472bef577ee004d1561cce2bbb7490fcb4fc6ef20209a",
-      "title": "Learning Adaptive Defense Strategies: Fine-Tuned LLMs for Network Security Games under Network Mobility",
-      "url": "https://arxiv.org/abs/2611.27180",
-      "summary": "Authors: Md Abu Sayed, Asif Rahman, Ahmed Ryen, Ahmed Hemida, Charles Kamhoua, Christopher Kiekintveld · arXiv:2611.27180v1 Announce Type: new Abstract: Large language models(LLM) show promise for strategic reasoning, yet their ability to compute game-theoreti",
-      "publishedAt": "2026-11-23T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0dc04413cef3cd66f81c78eb2d07404b69da8f055b3a2eb9ae18378754561c66",
-      "title": "MAPES: Multi-Value Alignment Pipeline via Expert Specialization",
-      "url": "https://arxiv.org/abs/2611.27133",
-      "summary": "Authors: SungHo Kim, SangKeun Lee · arXiv:2611.27133v1 Announce Type: new Abstract: Aligning large language models (LLMs) with human preferences requires simultaneously satisfying multiple, often competing values. Existing preference optimization methods colla",
-      "publishedAt": "2026-11-23T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0e28a904d1414b09bb9040f4f58f8bcced5597287058e0ff47c33e1ee51ece33",
-      "title": "A Continuous Relaxation of Quantization-Aware Training",
-      "url": "https://arxiv.org/abs/2611.27056",
-      "summary": "Authors: Kartikeya Bhardwaj, Mohammed Almousa, Chaitanya Mullapudi, Ananth Balasubramanian, Nithin Ramesan, Tuc Nguyen, Harris Teague · arXiv:2611.27056v1 Announce Type: new Abstract: Quantization is a critical piece of the deployment pipeline in the era of la",
-      "publishedAt": "2026-11-23T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0f525672fc51aba072c31b5c4bef3d20195ef4a3d72b0ec8801b5f798d3f3459",
-      "title": "Decision Models Are General-Purpose Process Reward Models",
-      "url": "https://arxiv.org/abs/2611.27068",
-      "summary": "Authors: Jiajun Fan, Qinglong Zheng, Ziwen Wang, Bangji Yang, Neil He, Ruihan Guo, Chaoran Cheng, Ge Liu · arXiv:2611.27068v1 Announce Type: new Abstract: Reinforcement learning (RL) from verifiable outcomes gives a language agent one reward per episode: every",
-      "publishedAt": "2026-11-23T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "00d52199bef25f9eda98fa79c30b3c80d4e34af93f50b3c1b0911b599d05708b",
-      "title": "How to build and maintain an agentic evaluation",
-      "url": "https://huggingface.co/blog/agentic-evals",
-      "summary": "",
-      "publishedAt": "2026-11-23T00:00:00+00:00",
-      "source": "Hugging Face",
-      "category": "Open Source",
       "color": "#5B48D9"
     },
     {
@@ -471,16 +471,6 @@
       "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
       "publishedAt": "2026-11-19T17:00:00+00:00",
       "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "fd9bebbff7e692862dad0cea3083003ab322baa30f38c6a3bb8661b8a80eee16",
-      "title": "Introducing Gemini 4 Neon",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
-      "summary": "",
-      "publishedAt": "2026-11-18T21:35:43+00:00",
-      "source": "Google DeepMind",
       "category": "Labs",
       "color": "#5B48D9"
     }
@@ -1603,7 +1593,7 @@
         "value": 6.4531,
         "period": "2026-11-25",
         "retrievedAt": "2026-11-26T05:33:30.615515+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-SEK",
@@ -2719,7 +2709,7 @@
         "value": 11.2385,
         "period": "2026-11-25",
         "retrievedAt": "2026-11-26T05:33:30.615540+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "EUR-USD",
@@ -3835,7 +3825,7 @@
         "value": 1.0935,
         "period": "2026-11-25",
         "retrievedAt": "2026-11-26T05:33:30.615548+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
@@ -3899,7 +3889,7 @@
         "value": 2.2857464902475,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:19.977168+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3963,7 +3953,7 @@
         "value": 1.4110724231835,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:19.977189+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -4027,7 +4017,7 @@
         "value": 1.54316373266217,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:19.977196+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4091,7 +4081,7 @@
         "value": 2.16138195623856,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:19.977202+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4155,7 +4145,7 @@
         "value": 5.01675279604836,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:19.970164+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4219,7 +4209,7 @@
         "value": 2.46605755272817,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:19.970185+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4283,7 +4273,7 @@
         "value": 0.679015259300199,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:19.970188+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4347,7 +4337,7 @@
         "value": 2.94952520485207,
         "period": "2024-01-01",
         "retrievedAt": "2026-11-25T09:21:19.970191+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4411,7 +4401,7 @@
         "value": 5.97,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:20.234756+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4475,7 +4465,7 @@
         "value": 6.28355946264135,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:20.234785+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4539,7 +4529,7 @@
         "value": 8.694,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:20.234792+00:00",
-        "stale": false
+        "stale": true
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4603,7 +4593,7 @@
         "value": 4.198,
         "period": "2025-01-01",
         "retrievedAt": "2026-11-25T09:21:20.234798+00:00",
-        "stale": false
+        "stale": true
       }
     ]
   }
