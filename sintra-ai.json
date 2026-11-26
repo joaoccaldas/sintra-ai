@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T17:29:06.515419+00:00",
+  "generatedAt": "2026-11-26T18:30:17.475064+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 46,
   "items": [
+    {
+      "id": "c07b74d3a070b84a2664b85bf103602c13e5c868a8e6bcb83abfb0f932329e71",
+      "title": "Tracking Diseases Cured by AI",
+      "url": "https://diseasescuredbyai.com/",
+      "summary": "128 points · 55 comments on Hacker News",
+      "publishedAt": "2026-11-26T17:16:41+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "7aa896c7cb490e59f4cc2e461b760cbd030f55c38e551c215a58897d824b3bf1",
       "title": "As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue",
@@ -48,7 +58,7 @@
       "id": "9a36b64e1e928bff59aaf22fe89d0ecb8463c9f99c958b78a4701e2ab2e56f2e",
       "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
       "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp",
-      "summary": "93 points · 107 comments on Hacker News",
+      "summary": "95 points · 109 comments on Hacker News",
       "publishedAt": "2026-11-26T09:44:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +68,7 @@
       "id": "e2ac2e209969c35f750b80f0d81743bcb79e17295a2361da8c9948b57da343d7",
       "title": "Moat: Your OpenRouter Replacement",
       "url": "https://commandcode.ai/moat",
-      "summary": "Comments",
+      "summary": "192 points · 117 comments on Hacker News",
       "publishedAt": "2026-11-26T06:32:48+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -178,7 +188,7 @@
       "id": "1bfb90103b3c1d8e3d87c8f4fa689f779fc4191ffc5abac373e7e67f807bf6b2",
       "title": "The New York Times warns photographers not to update Photoshop over AI features",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-      "summary": "Comments",
+      "summary": "575 points · 474 comments on Hacker News",
       "publishedAt": "2026-11-25T21:18:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -262,16 +272,6 @@
       "publishedAt": "2026-11-25T18:11:46+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "ec7d726e8b64153783e5477c4aabd5596e696e60167c7f17fec844b37487e6e2",
-      "title": "New York bans AI toys, including those using internet to talk to children",
-      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "summary": "55 points · 13 comments on Hacker News",
-      "publishedAt": "2026-11-25T17:27:05+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -477,7 +477,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-26T05:33:30.615548+00:00",
+    "generatedAt": "2026-11-26T18:30:18.732276+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1588,12 +1588,16 @@
           {
             "date": "2026-11-25",
             "value": 6.4531
+          },
+          {
+            "date": "2026-11-26",
+            "value": 6.3272
           }
         ],
-        "value": 6.4531,
-        "period": "2026-11-25",
-        "retrievedAt": "2026-11-26T05:33:30.615515+00:00",
-        "stale": true
+        "value": 6.3272,
+        "period": "2026-11-26",
+        "retrievedAt": "2026-11-26T18:30:18.732253+00:00",
+        "stale": false
       },
       {
         "id": "EUR-SEK",
@@ -2704,12 +2708,16 @@
           {
             "date": "2026-11-25",
             "value": 11.2385
+          },
+          {
+            "date": "2026-11-26",
+            "value": 11.2025
           }
         ],
-        "value": 11.2385,
-        "period": "2026-11-25",
-        "retrievedAt": "2026-11-26T05:33:30.615540+00:00",
-        "stale": true
+        "value": 11.2025,
+        "period": "2026-11-26",
+        "retrievedAt": "2026-11-26T18:30:18.732270+00:00",
+        "stale": false
       },
       {
         "id": "EUR-USD",
@@ -3820,12 +3828,16 @@
           {
             "date": "2026-11-25",
             "value": 1.0935
+          },
+          {
+            "date": "2026-11-26",
+            "value": 1.0975
           }
         ],
-        "value": 1.0935,
-        "period": "2026-11-25",
-        "retrievedAt": "2026-11-26T05:33:30.615548+00:00",
-        "stale": true
+        "value": 1.0975,
+        "period": "2026-11-26",
+        "retrievedAt": "2026-11-26T18:30:18.732276+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-BRA",
