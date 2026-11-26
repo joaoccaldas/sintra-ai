@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "resolvedAt": "2026-11-26T00:19:36.371Z",
+  "resolvedAt": "2026-11-26T06:08:58.112Z",
   "rows": [
     {
       "id": "EUR-USD",
@@ -1115,7 +1115,7 @@
       ],
       "value": 1.0935,
       "period": "2026-11-25",
-      "retrievedAt": "2026-11-25T23:18:18.225237+00:00",
+      "retrievedAt": "2026-11-26T05:33:30.615548+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -2232,7 +2232,7 @@
       ],
       "value": 11.2385,
       "period": "2026-11-25",
-      "retrievedAt": "2026-11-25T23:18:18.225229+00:00",
+      "retrievedAt": "2026-11-26T05:33:30.615540+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
@@ -3349,7 +3349,7 @@
       ],
       "value": 6.4531,
       "period": "2026-11-25",
-      "retrievedAt": "2026-11-25T23:18:18.225209+00:00",
+      "retrievedAt": "2026-11-26T05:33:30.615515+00:00",
       "stale": false,
       "delivery": "ondai-feeds"
     },
