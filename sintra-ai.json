@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:25:59.321078+00:00",
+  "generatedAt": "2026-11-26T16:27:58.923771+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,26 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "7aa896c7cb490e59f4cc2e461b760cbd030f55c38e551c215a58897d824b3bf1",
+      "title": "As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue",
+      "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue",
+      "summary": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+      "publishedAt": "2026-11-26T16:00:00+00:00",
+      "source": "TechCrunch AI",
+      "category": "Press",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "dbe542754cd1612143a2eaa3ddd1710f7a623a3911b9014bc21d928db773bab8",
+      "title": "Quoting Jack Despain Zhou",
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou",
+      "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly seriou",
+      "publishedAt": "2026-11-26T15:09:31+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
       "id": "a734da9d3a1d876054f86e6e92e632f9c2a091a208fef8a96dd4cc4467d6055b",
       "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
       "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
@@ -28,7 +48,7 @@
       "id": "9a36b64e1e928bff59aaf22fe89d0ecb8463c9f99c958b78a4701e2ab2e56f2e",
       "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
       "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp",
-      "summary": "83 points · 95 comments on Hacker News",
+      "summary": "92 points · 105 comments on Hacker News",
       "publishedAt": "2026-11-26T09:44:23+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -188,7 +208,7 @@
       "id": "8971bf895bd5c2543d932f7d12b9795019c82040424c41900c5eecb98ec473cc",
       "title": "Spending 35B Opus 5.5 Tokens to Write a Symphony",
       "url": "https://danprice.ai/blog/opus-symphony",
-      "summary": "56 points · 67 comments on Hacker News",
+      "summary": "57 points · 67 comments on Hacker News",
       "publishedAt": "2026-11-25T19:57:08+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -245,20 +265,10 @@
       "color": "#5B48D9"
     },
     {
-      "id": "628d3c512960bc42def6d56ad9842bcf679285e91783b802db4db2bbcd8b78d8",
-      "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
-      "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats",
-      "summary": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
-      "publishedAt": "2026-11-25T17:35:58+00:00",
-      "source": "TechCrunch AI",
-      "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
       "id": "ec7d726e8b64153783e5477c4aabd5596e696e60167c7f17fec844b37487e6e2",
       "title": "New York bans AI toys, including those using internet to talk to children",
       "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-      "summary": "53 points · 13 comments on Hacker News",
+      "summary": "54 points · 13 comments on Hacker News",
       "publishedAt": "2026-11-25T17:27:05+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -362,16 +372,6 @@
       "publishedAt": "2026-11-24T11:00:00+00:00",
       "source": "OpenAI",
       "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e22d419cf18743cb4fe31c3f9b50bbd6bc837def7fb76e969ef2ed431298721c",
-      "title": "datasette-charts 0.2a1",
-      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts-2",
-      "summary": "Release: datasette-charts 0.2a1 Minor UI improvements: Collapsing the suggested charts section now leaves the chart visible. Following a link to a chart opens it with the suggestions collapsed for that visit. On table pages the panel now sits below the \"4,235 ",
-      "publishedAt": "2026-11-24T06:07:19+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
