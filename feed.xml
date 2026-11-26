@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Wed, 25 Nov 2026 23:19:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 00:19:37 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Quoting Scott Aaronson]]></title>
+    <description><![CDATA[It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondw]]></description>
+    <link>https://simonwillison.net/2026/Nov/25/scott-aaronson</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/25/scott-aaronson</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[S&P considers Nvidia credit downgrade over governance and ‘key man’ risks]]></title>
@@ -159,15 +168,6 @@
     <description><![CDATA[GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.]]></description>
     <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities</link>
     <guid isPermaLink="true">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Searching for distant planets with Astra]]></title>
-    <description><![CDATA[See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.]]></description>
-    <link>https://openai.com/index/searching-for-distant-planets-with-astra</link>
-    <guid isPermaLink="true">https://openai.com/index/searching-for-distant-planets-with-astra</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>OpenAI</category>
   </item>

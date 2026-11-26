@@ -7,6 +7,26 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://simonwillison.net/2026/Nov/25/scott-aaronson",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson",
+      "title": "Quoting Scott Aaronson",
+      "content_text": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondw",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-25T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
       "id": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks",
       "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks",
       "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
@@ -331,26 +351,6 @@
       "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
       "content_text": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/searching-for-distant-planets-with-astra",
-      "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
-      "title": "Searching for distant planets with Astra",
-      "content_text": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
       "_sintra": {
         "origin": "aggregated",
         "checkedAt": null,
