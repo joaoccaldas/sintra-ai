@@ -7,11 +7,20 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 26 Nov 2026 17:29:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 20:32:34 GMT</lastBuildDate>
     <ttl>1440</ttl>
 
   <item>
-    <title><![CDATA[As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue]]></title>
+    <title><![CDATA[Nvidia hits pause on chip shipments to Southeast Asia]]></title>
+    <description><![CDATA[Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.]]></description>
+    <link>https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>TechCrunch AI</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Grand Theft Auto VI proves why efficiency isn’t a virtue]]></title>
     <description><![CDATA[On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.]]></description>
     <link>https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue</link>
     <guid isPermaLink="true">https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue</guid>
@@ -125,15 +134,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/25/datasette-charts</guid>
     <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Want to buy your kid an AI toy this Christmas? Not in New York]]></title>
-    <description><![CDATA[New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.]]></description>
-    <link>https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york</guid>
-    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-    <category>TechCrunch AI</category>
   </item>
 
   <item>
