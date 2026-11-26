@@ -7,8 +7,44 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Thu, 26 Nov 2026 06:14:04 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 14:26:33 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/ggml-org/llamacpp-amd-bench</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/ggml-org/llamacpp-amd-bench</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[sqlite3_rsync: Database Remote-Copy Tool For SQLite]]></title>
+    <description><![CDATA[sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as "experimental" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood on]]></description>
+    <link>https://simonwillison.net/2026/Nov/26/sqlite3-rsync</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/26/sqlite3-rsync</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/training-swarms</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/training-swarms</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Quoting Scott Aaronson]]></title>
@@ -62,6 +98,15 @@
     <guid isPermaLink="true">https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents</guid>
     <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-charts 0.3a0]]></title>
+    <description><![CDATA[Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in]]></description>
+    <link>https://simonwillison.net/2026/Nov/25/datasette-charts</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/25/datasette-charts</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
   </item>
 
   <item>
@@ -125,51 +170,6 @@
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/astra-historical-mystery</guid>
     <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[How Gemini is changing the game for Golden State's organization and fans.]]></title>
-    <description><![CDATA[Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.]]></description>
-    <link>https://blog.google/products-and-platforms/products/gemini/gemini-golden-state</link>
-    <guid isPermaLink="true">https://blog.google/products-and-platforms/products/gemini/gemini-golden-state</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google AI</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Raising the stakes for enterprise networks with AI modernization]]></title>
-    <description><![CDATA[Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an es]]></description>
-    <link>https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity]]></title>
-    <description><![CDATA[Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.]]></description>
-    <link>https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity</link>
-    <guid isPermaLink="true">https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Google DeepMind</category>
-  </item>
-
-  <item>
-    <title><![CDATA[GPT-6 models demonstrate intrinsic protein-design capabilities]]></title>
-    <description><![CDATA[GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.]]></description>
-    <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities</link>
-    <guid isPermaLink="true">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>OpenAI</category>
   </item>
 
   <item>

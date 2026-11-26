@@ -7,6 +7,86 @@
   "language": "en-us",
   "items": [
     {
+      "id": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-26T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync",
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "content_text": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood on",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-26T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-26T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://huggingface.co/blog/training-swarms",
+      "url": "https://huggingface.co/blog/training-swarms",
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "content_text": "Hugging Face — Open Source",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-26T00:00:00.000Z",
+      "tags": [
+        "Hugging Face",
+        "Hugging Face",
+        "Open Source",
+        "Live"
+      ]
+    },
+    {
       "id": "https://simonwillison.net/2026/Nov/25/scott-aaronson",
       "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson",
       "title": "Quoting Scott Aaronson",
@@ -123,6 +203,26 @@
         "Hugging Face",
         "Hugging Face",
         "Open Source",
+        "Live"
+      ]
+    },
+    {
+      "id": "https://simonwillison.net/2026/Nov/25/datasette-charts",
+      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts",
+      "title": "datasette-charts 0.3a0",
+      "content_text": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in",
+      "_sintra": {
+        "origin": "aggregated",
+        "checkedAt": null,
+        "knowledgeUrl": null,
+        "workflowResource": null,
+        "verification": "not-reverified"
+      },
+      "date_published": "2026-11-25T00:00:00.000Z",
+      "tags": [
+        "Simon Willison",
+        "Simon Willison",
+        "Practitioner",
         "Live"
       ]
     },
@@ -263,106 +363,6 @@
         "Simon Willison",
         "Simon Willison",
         "Practitioner",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
-      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
-      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
-      "content_text": "Hugging Face — Open Source",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "Hugging Face",
-        "Hugging Face",
-        "Open Source",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
-      "title": "How Gemini is changing the game for Golden State's organization and fans.",
-      "content_text": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "Google AI",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization",
-      "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization",
-      "title": "Raising the stakes for enterprise networks with AI modernization",
-      "content_text": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an es",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "MIT Technology Review",
-        "MIT Technology Review",
-        "Press",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
-      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
-      "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
-      "content_text": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "Google DeepMind",
-        "Google DeepMind",
-        "Labs",
-        "Live"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-      "content_text": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
-      "_sintra": {
-        "origin": "aggregated",
-        "checkedAt": null,
-        "knowledgeUrl": null,
-        "workflowResource": null,
-        "verification": "not-reverified"
-      },
-      "date_published": "2026-11-24T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "OpenAI",
-        "Labs",
         "Live"
       ]
     },
