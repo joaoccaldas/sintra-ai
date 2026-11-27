@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T03:00:15.900531+00:00",
+  "generatedAt": "2026-11-27T03:17:15.824822+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "305e62040e8a734e17a1846ad4df4ef6e70f05bb65b90b916514e647ce502f90",
+      "title": "AI agents now control part of DeepMind's compute for Gemini experiments",
+      "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant",
+      "summary": "36 points · 15 comments on Hacker News",
+      "publishedAt": "2026-11-27T00:03:18+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "aebfbe56731bd98a52c5ac3451e735c2673dc7f68b56294a13dd3318c1042dc1",
       "title": "AI made self-hosting fun again",
       "url": "https://janlukas.blog/posts/ai-self-hosting",
-      "summary": "Comments",
+      "summary": "380 points · 208 comments on Hacker News",
       "publishedAt": "2026-11-26T21:47:45+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,8 +48,28 @@
       "id": "304eb6f376a1bd461d8fc09d6a46001574388db1627a9c9ca85f668d7b43ca3e",
       "title": "The USA as a Civilizations-esque map",
       "url": "https://karpathy.ai/usaciv",
-      "summary": "67 points · 52 comments on Hacker News",
+      "summary": "69 points · 55 comments on Hacker News",
       "publishedAt": "2026-11-26T19:53:58+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "f2e6cfed540ddc9ff77d828ba3bdcc66df572785c9b7636504c752d283a24b1b",
+      "title": "Top-cited AI scientists at four US companies compared",
+      "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies",
+      "summary": "36 points · 22 comments on Hacker News",
+      "publishedAt": "2026-11-26T19:44:31+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "e6bac518307523c0f739206eaeca58abe84de9acf64cb33c907696a6413418e5",
+      "title": "'AI' might be the end of our careers",
+      "url": "https://www.baldurbjarnason.com/2026/08-ai-might-be-the-end-of-our-careers",
+      "summary": "34 points · 39 comments on Hacker News",
+      "publishedAt": "2026-11-26T17:29:28+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
@@ -48,7 +78,7 @@
       "id": "c07b74d3a070b84a2664b85bf103602c13e5c868a8e6bcb83abfb0f932329e71",
       "title": "Tracking Diseases Cured by AI",
       "url": "https://diseasescuredbyai.com/",
-      "summary": "299 points · 177 comments on Hacker News",
+      "summary": "305 points · 182 comments on Hacker News",
       "publishedAt": "2026-11-26T17:16:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -82,26 +112,6 @@
       "publishedAt": "2026-11-26T11:37:17+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "9a36b64e1e928bff59aaf22fe89d0ecb8463c9f99c958b78a4701e2ab2e56f2e",
-      "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp",
-      "summary": "Comments",
-      "publishedAt": "2026-11-26T09:44:23+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "e2ac2e209969c35f750b80f0d81743bcb79e17295a2361da8c9948b57da343d7",
-      "title": "Moat: OpenRouter replacement",
-      "url": "https://commandcode.ai/moat",
-      "summary": "Comments",
-      "publishedAt": "2026-11-26T06:32:48+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
@@ -212,16 +222,6 @@
       "publishedAt": "2026-11-25T22:44:32+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1bfb90103b3c1d8e3d87c8f4fa689f779fc4191ffc5abac373e7e67f807bf6b2",
-      "title": "The New York Times warns photographers not to update Photoshop over AI features",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-      "summary": "648 points · 516 comments on Hacker News",
-      "publishedAt": "2026-11-25T21:18:02+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
