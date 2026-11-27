@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:41:56.714042+00:00",
+  "generatedAt": "2026-11-27T14:09:06.780191+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 44,
   "items": [
     {
+      "id": "aa1371a3feb2092561b1bee6d42eb414c01e56325381d2239ec4ac22eed5acc3",
+      "title": "Kimi for Science: More scientific ideas, made possible",
+      "url": "https://www.kimi.ai/news/kimi-for-science-program",
+      "summary": "Comments",
+      "publishedAt": "2026-11-27T12:03:11+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "c774e08c060ae311c665b6e6d81872a724d2f07648a861013768d0d4a37ca0ef",
       "title": "Fields-winning mathematicians worried about eerie silence over AI and encryption",
       "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
-      "summary": "Comments",
+      "summary": "57 points · 69 comments on Hacker News",
       "publishedAt": "2026-11-27T11:09:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -142,16 +152,6 @@
       "publishedAt": "2026-11-26T20:03:54+00:00",
       "source": "TechCrunch AI",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "304eb6f376a1bd461d8fc09d6a46001574388db1627a9c9ca85f668d7b43ca3e",
-      "title": "The USA as a Civilizations-esque map",
-      "url": "https://karpathy.ai/usaciv",
-      "summary": "72 points · 58 comments on Hacker News",
-      "publishedAt": "2026-11-26T19:53:58+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
