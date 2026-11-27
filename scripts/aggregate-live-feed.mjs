@@ -21,6 +21,7 @@
  */
 
 import { writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -41,9 +42,14 @@ const SOURCES = [
   { name: "Google DeepMind", type: "rss",  category: "Labs",     color: "#4285f4", url: "https://deepmind.google/blog/rss.xml" },
   { name: "Google AI",       type: "rss",  category: "Labs",     color: "#4285f4", url: "https://blog.google/technology/ai/rss/" },
   { name: "OpenAI",          type: "rss",  category: "Labs",     color: "#10a37f", url: "https://openai.com/news/rss.xml" },
+  { name: "Google Research", type: "rss",  category: "Labs",     color: "#4285f4", url: "https://research.google/blog/rss/" },
+  { name: "Mistral AI",      type: "rss",  category: "Labs",     color: "#ff7000", url: "https://mistral.ai/news/rss" },
   { name: "Hugging Face",    type: "rss" , category: "Open Source", color: "#ff9d00", url: "https://huggingface.co/blog/feed.xml" },
   { name: "arXiv cs.AI",     type: "atom", category: "Research", color: "#b31b1b", url: "http://export.arxiv.org/api/query?search_query=cat:cs.AI&sortBy=submittedDate&sortOrder=descending&max_results=12" },
   { name: "BAIR Berkeley",   type: "rss" , category: "Research", color: "#003262", url: "https://bair.berkeley.edu/blog/feed.xml" },
+  { name: "NVIDIA",          type: "rss",  category: "Labs",     color: "#76b900", url: "https://blogs.nvidia.com/feed/" },
+  { name: "AWS ML",          type: "rss",  category: "Labs",     color: "#ff9900", url: "https://aws.amazon.com/blogs/machine-learning/feed/" },
+  { name: "Microsoft Research", type: "rss", category: "Labs", color: "#0078d4", url: "https://www.microsoft.com/en-us/research/blog/feed/" },
   { name: "MIT Tech Review", type: "rss",  category: "Press",    color: "#e2231a", url: "https://www.technologyreview.com/topic/artificial-intelligence/feed" },
   { name: "TechCrunch AI",   type: "rss",  category: "Press",    color: "#0a8f3c", url: "https://techcrunch.com/category/artificial-intelligence/feed/" },
   { name: "VentureBeat AI",  type: "rss",  category: "Press",    color: "#c8102e", url: "https://venturebeat.com/category/ai/feed/" },
@@ -173,7 +179,7 @@ async function main() {
       seen.add(k);
       return true;
     })
-    .map((i, idx) => ({ id: `live-${idx}-${keyFor(i).replace(/[^a-z0-9]+/g, "-").slice(0, 40)}`, ...i }))
+    .map((i) => ({ id: `live-${createHash("sha256").update(keyFor(i)).digest("hex").slice(0, 16)}`, ...i }))
     .sort((a, b) => Date.parse(b.publishedAt ?? 0) - Date.parse(a.publishedAt ?? 0))
     .slice(0, TOTAL_CAP);
 
