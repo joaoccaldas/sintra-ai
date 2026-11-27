@@ -23,6 +23,7 @@
 import { writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { dedupeSignalItems } from "./live-feed-identity.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "../src/data/liveFeed.generated.json");
@@ -149,31 +150,21 @@ async function pull(src) {
   }
 }
 
-/* ── dedupe by normalised url + title ───────────────────────────────────── */
-function keyFor(item) {
-  const u = item.url.replace(/^https?:\/\/(www\.)?/, "").replace(/[/?#].*$/, "").toLowerCase();
-  return `${u}::${item.title.toLowerCase().slice(0, 40)}`;
-}
+/* Source identity is derived from the full publisher URL, not hostname/title. */
 
 async function main() {
   console.log("Aggregating live AI feed…");
   const results = await Promise.all(SOURCES.map(pull));
 
   const cutoff = Date.now() - FRESH_DAYS * 864e5;
-  const seen = new Set();
-  const items = results
+  const eligible = results
     .flatMap((r) => r.items)
     .filter((i) => {
       const t = i.publishedAt ? Date.parse(i.publishedAt) : Date.now();
       return t >= cutoff;
-    })
-    .filter((i) => {
-      const k = keyFor(i);
-      if (seen.has(k)) return false;
-      seen.add(k);
-      return true;
-    })
-    .map((i, idx) => ({ id: `live-${idx}-${keyFor(i).replace(/[^a-z0-9]+/g, "-").slice(0, 40)}`, ...i }))
+    });
+  const unique = dedupeSignalItems(eligible);
+  const items = unique.items
     .sort((a, b) => Date.parse(b.publishedAt ?? 0) - Date.parse(a.publishedAt ?? 0))
     .slice(0, TOTAL_CAP);
 
@@ -203,7 +194,7 @@ async function main() {
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(payload, null, 2) + "\n", "utf8");
   console.log(`\n✓ Live feed written → src/data/liveFeed.generated.json`);
-  console.log(`  ${items.length} items from ${okSources.length}/${SOURCES.length} sources`);
+  console.log(`  ${items.length} items from ${okSources.length}/${SOURCES.length} sources; ${unique.skipped} duplicate/invalid URLs skipped`);
 }
 
 main();
