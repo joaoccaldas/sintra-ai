@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T11:13:27.101790+00:00",
+  "generatedAt": "2026-11-27T12:07:11.013745+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,10 +15,20 @@
   "itemCount": 44,
   "items": [
     {
+      "id": "c774e08c060ae311c665b6e6d81872a724d2f07648a861013768d0d4a37ca0ef",
+      "title": "Fields-winning mathematicians worried about eerie silence over AI and encryption",
+      "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+      "summary": "Comments",
+      "publishedAt": "2026-11-27T11:09:04+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "a8f643349bc099825e7c4281661258a053a50602ae3a07542005ae4e09700b0e",
       "title": "The group chat where your AI talks behind your back",
       "url": "https://construct22.com/",
-      "summary": "251 points · 106 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-27T06:44:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -88,7 +98,7 @@
       "id": "6390f5d828e61c4fd23a1fc3abc4dba4cc96bd05127b7a07fcce3b47f172d521",
       "title": "New AI research suggests AI bubble bursting and to expect major market collapse",
       "url": "https://www.london.edu/think/ai-bubble-about-to-burst",
-      "summary": "32 points · 19 comments on Hacker News",
+      "summary": "34 points · 19 comments on Hacker News",
       "publishedAt": "2026-11-27T02:44:12+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -98,7 +108,7 @@
       "id": "305e62040e8a734e17a1846ad4df4ef6e70f05bb65b90b916514e647ce502f90",
       "title": "AI agents now control part of DeepMind's compute for Gemini experiments",
       "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant",
-      "summary": "54 points · 27 comments on Hacker News",
+      "summary": "55 points · 27 comments on Hacker News",
       "publishedAt": "2026-11-27T00:03:18+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -108,7 +118,7 @@
       "id": "aebfbe56731bd98a52c5ac3451e735c2673dc7f68b56294a13dd3318c1042dc1",
       "title": "AI made self-hosting fun again",
       "url": "https://janlukas.blog/posts/ai-self-hosting",
-      "summary": "709 points · 350 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-26T21:47:45+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -128,18 +138,8 @@
       "id": "304eb6f376a1bd461d8fc09d6a46001574388db1627a9c9ca85f668d7b43ca3e",
       "title": "The USA as a Civilizations-esque map",
       "url": "https://karpathy.ai/usaciv",
-      "summary": "71 points · 58 comments on Hacker News",
+      "summary": "72 points · 58 comments on Hacker News",
       "publishedAt": "2026-11-26T19:53:58+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "f2e6cfed540ddc9ff77d828ba3bdcc66df572785c9b7636504c752d283a24b1b",
-      "title": "Top-cited AI scientists at four US companies compared",
-      "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies",
-      "summary": "41 points · 23 comments on Hacker News",
-      "publishedAt": "2026-11-26T19:44:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
