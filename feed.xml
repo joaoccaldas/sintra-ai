@@ -7,8 +7,17 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 27 Nov 2026 12:07:51 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 13:09:00 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[Taking Trainium3 to the Track: Generating Videos with LTX-2.5]]></title>
+    <description><![CDATA[Hugging Face — Open Source]]></description>
+    <link>https://huggingface.co/blog/video-trainium3</link>
+    <guid isPermaLink="true">https://huggingface.co/blog/video-trainium3</guid>
+    <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Hugging Face</category>
+  </item>
 
   <item>
     <title><![CDATA[Nvidia hits pause on chip shipments to Southeast Asia]]></title>
@@ -152,15 +161,6 @@
     <guid isPermaLink="true">https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems</guid>
     <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
     <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000]]></title>
-    <description><![CDATA[Hugging Face — Open Source]]></description>
-    <link>https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</link>
-    <guid isPermaLink="true">https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</guid>
-    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Hugging Face</category>
   </item>
 
   <item>
