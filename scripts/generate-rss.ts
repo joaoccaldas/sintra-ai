@@ -2,15 +2,15 @@ import { writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { AI_NEWS } from "../src/lib/newsDataCombined.js";
+import { exactPublicationDate } from "../src/lib/publicationDates.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const SITE_URL = "https://joaoccaldas.github.io/sintra-ai";
 
-function dateNumToRFC822(dateNum: number, dateDay = 1): string {
-  const year = Math.floor(dateNum / 100);
-  const month = dateNum % 100;
-  return new Date(Date.UTC(year, month - 1, dateDay)).toUTCString();
+function dateNumToRFC822(dateNum: number, dateDay?: number): string | null {
+  const exact = exactPublicationDate(dateNum, dateDay);
+  return exact ? new Date(exact + "T00:00:00.000Z").toUTCString() : null;
 }
 
 const items = [...AI_NEWS]
@@ -22,7 +22,7 @@ const items = [...AI_NEWS]
     <description><![CDATA[${n.summary}]]></description>
     <link>${n.url || `${SITE_URL}/news/`}</link>
     <guid isPermaLink="${n.url ? "true" : "false"}">${n.url || `${SITE_URL}/news/#${n.id}`}</guid>
-    <pubDate>${dateNumToRFC822(n.dateNum, n.dateDay)}</pubDate>
+    ${dateNumToRFC822(n.dateNum, n.dateDay) ? `<pubDate>${dateNumToRFC822(n.dateNum, n.dateDay)}</pubDate>` : ""}
     <category>${n.provider.replace(/&/g, "&amp;")}</category>
   </item>`)
   .join("\n");
@@ -31,7 +31,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sintra AI — AI News</title>
-    <description>Curated AI news: model releases, benchmarks, research breakthroughs, and industry events.</description>
+    <description>AI news with editorial records and aggregated source signals; review status differs by item.</description>
     <link>${SITE_URL}/news/</link>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
@@ -56,7 +56,9 @@ const jsonItems = [...AI_NEWS]
     title: n.title,
     content_text: n.summary,
     _sintra: { origin: n.origin ?? "editorial", checkedAt: n.checkedAt ?? null, knowledgeUrl: n.knowledgeId ? `${SITE_URL}/knowledge/${n.knowledgeId}/` : null, workflowResource: n.origin === "lab-tested" ? `${SITE_URL}/api/workflows/power-bi-variance.json` : null, verification: n.origin === "lab-tested" ? "synthetic-calculation-tested-tenant-untested" : n.checkedAt ? "primary-source-checked" : "not-reverified" },
-    date_published: new Date(dateNumToRFC822(n.dateNum, n.dateDay)).toISOString(),
+    ...(exactPublicationDate(n.dateNum, n.dateDay)
+      ? { date_published: exactPublicationDate(n.dateNum, n.dateDay) + "T00:00:00.000Z" }
+      : {}),
     tags: [n.provider, ...(n.tags ?? [])].filter(Boolean),
   }));
 

@@ -6,6 +6,7 @@ import { ExternalLink, Share2, Check } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 import { tagToTopicSlug } from "@/lib/topicHubs";
 import { relativeDate } from "@/lib/dateUtils";
+import { exactPublicationDate } from "@/lib/publicationDates";
 import type { NewsItem } from "@/lib/newsData";
 import { newsLogo } from "@/lib/newsImage";
 
@@ -39,14 +40,6 @@ export const SIG_STYLE = {
   notable:  { label: "Notable",   bg: "#ffffff0a", border: "#ffffff22", text: "#8b8aad"  },
 };
 
-/** ISO date for an item, derived from dateNum (YYYYMM) + optional dateDay. */
-function itemIso(item: NewsItem): string {
-  const year = Math.floor(item.dateNum / 100);
-  const month = item.dateNum % 100;
-  const day = item.dateDay ?? 1;
-  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
-}
-
 export function NewsCard({ item, onTagFilter, isNew }: { item: NewsItem; onTagFilter?: (tag: string) => void; isNew?: boolean }) {
   const sig = SIG_STYLE[item.significance];
   const [shared, setShared] = useState(false);
@@ -54,8 +47,11 @@ export function NewsCard({ item, onTagFilter, isNew }: { item: NewsItem; onTagFi
   // (the server has no stable "now"); falls back to the absolute date.
   const [rel, setRel] = useState<string | null>(null);
   useEffect(() => {
-    const days = Math.floor((Date.now() - new Date(itemIso(item)).getTime()) / 86_400_000);
-    if (days >= 0 && days < 30) setRel(relativeDate(itemIso(item)));
+    const exactDate = exactPublicationDate(item.dateNum, item.dateDay);
+    setRel(null);
+    if (!exactDate) return; // Month-only records are never "N days ago".
+    const days = Math.floor((Date.now() - new Date(exactDate).getTime()) / 86_400_000);
+    if (days >= 0 && days < 30) setRel(relativeDate(exactDate));
   }, [item]);
 
   const share = async () => {
