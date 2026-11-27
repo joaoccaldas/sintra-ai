@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T04:51:43.649272+00:00",
+  "generatedAt": "2026-11-27T06:23:48.708794+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -12,13 +12,73 @@
     "TechCrunch AI",
     "arXiv cs.AI"
   ],
-  "itemCount": 46,
+  "itemCount": 44,
   "items": [
+    {
+      "id": "02759bacfd83054aa77ba9b297e338261b82b40d5251f09fe4ef1eb5ea7dcc55",
+      "title": "How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches",
+      "url": "https://arxiv.org/abs/2611.33639",
+      "summary": "Authors: Zax Shen, Hanling Zhang, Zixu Wang · arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers. Reasoning models let such a reviewer trade cost for diligence through an effo",
+      "publishedAt": "2026-11-27T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0971793c315994bfa53571b4a0344e4bbd5c13a2e708e84b5c78cb45cbdfc2de",
+      "title": "FORK: Co-Evolving Safe Disclosure and Decision Skills Against Attackers Who Read Every Refusal",
+      "url": "https://arxiv.org/abs/2611.33879",
+      "summary": "Authors: Hieu Man, Chao Shang, Rui Dong, Devang Kulshreshtha, Yanjun Qi, Sandesh Swamy · arXiv:2611.33879v1 Announce Type: new Abstract: When a guardrail rejects an LLM agent's action, its message reaches any attacker observing the trajectory: a fixed refusal ",
+      "publishedAt": "2026-11-27T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0bff6de8479343f0ea63184551ef016cd721e70fa04a440d1b9236a922a41515",
+      "title": "Extraneous Cognitive Load in Large Language Models",
+      "url": "https://arxiv.org/abs/2611.33197",
+      "summary": "Authors: Arushi Gupta, Sheng Liu, James Zou · arXiv:2611.33197v1 Announce Type: new Abstract: Cognitive Load Theory (CLT) shows that human problem-solving is affected by both intrinsic load, arising from task difficulty, and extraneous load, arising from how t",
+      "publishedAt": "2026-11-27T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0c967c5457f158cd3679ca1c5f42efe9a05e69bf35d06a5bf0f1079ec04092b8",
+      "title": "SOLO: Towards Sample-Faithful and Detectable LLM Watermarking under Repeated Sampling via Content-Anchored Single-Owner Contexts",
+      "url": "https://arxiv.org/abs/2611.34190",
+      "summary": "Authors: Zhongliang Guo, Yan Lin, Yifei Qian, Shuai Zhao, Luwei Xiao, Daizong Liu, Chun Pong Lau · arXiv:2611.34190v1 Announce Type: new Abstract: Providers watermark the outputs of large language models, while applications sample many responses per prompt for",
+      "publishedAt": "2026-11-27T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "0d14209f3e1d8d99672fe34eae9a1e835c2e678bca0fef245fde53eee77ceb5b",
+      "title": "REI: Learning Ideation from Repository Evolution",
+      "url": "https://arxiv.org/abs/2611.33183",
+      "summary": "Authors: Muyu Zou, Xiang Feng, Yufei Xu, Shanshan Ye, Zulong Chen, Lingyu Mu, Jinxin Hu, Jing Zhang · arXiv:2611.33183v1 Announce Type: cross Abstract: As AI systems become increasingly capable of executing and evaluating experiments, ideation is emerging as a",
+      "publishedAt": "2026-11-27T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "10ed00215806bc4a22af9c0f744cc00f74724ca6e42176f550d5e912633320de",
+      "title": "Controllable CAD Generation and Interactive Editing of Fluid Rotors",
+      "url": "https://arxiv.org/abs/2611.33617",
+      "summary": "Authors: Shen Chen, Lei Li, Jiajun Sun, Zitian Wang, Huaping Zhang, Peng Wu · arXiv:2611.33617v1 Announce Type: new Abstract: Computer-aided design (CAD) provides the geometric foundation for rotors in fluid rotating machinery. However, creating models for dif",
+      "publishedAt": "2026-11-27T05:00:00+00:00",
+      "source": "arXiv cs.AI",
+      "category": "Research",
+      "color": "#5B48D9"
+    },
     {
       "id": "305e62040e8a734e17a1846ad4df4ef6e70f05bb65b90b916514e647ce502f90",
       "title": "AI agents now control part of DeepMind's compute for Gemini experiments",
       "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant",
-      "summary": "Comments",
+      "summary": "47 points · 23 comments on Hacker News",
       "publishedAt": "2026-11-27T00:03:18+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -58,7 +118,7 @@
       "id": "f2e6cfed540ddc9ff77d828ba3bdcc66df572785c9b7636504c752d283a24b1b",
       "title": "Top-cited AI scientists at four US companies compared",
       "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies",
-      "summary": "39 points · 22 comments on Hacker News",
+      "summary": "39 points · 23 comments on Hacker News",
       "publishedAt": "2026-11-26T19:44:31+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -132,66 +192,6 @@
       "publishedAt": "2026-11-26T05:05:36+00:00",
       "source": "Hugging Face",
       "category": "Open Source",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "01402612ad639a6f568d21d1a81d3146b1b8930e8d8cf511e1e3514b6c9fc64e",
-      "title": "PoseVLN: Learning Geometric State Evolution for Vision-Language Navigation",
-      "url": "https://arxiv.org/abs/2611.32218",
-      "summary": "Authors: Pengyu Hou, Mingfei Han, Haihong Hao, Xiaolong Wu, Bo Dong, Xiaojun Chang, Salman Khan, Bin Shi · arXiv:2611.32218v1 Announce Type: new Abstract: Vision-Language Navigation (VLN) requires an embodied agent to relate past experience, current spatial st",
-      "publishedAt": "2026-11-26T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "017641e3c5bc186163568c620cc76f86f059cdfe4c1f15cdc0b4471afa0805a1",
-      "title": "EffectWAM: Learning Action-Grounded Effects for Robot Manipulation",
-      "url": "https://arxiv.org/abs/2611.32053",
-      "summary": "Authors: Yuan Zhang, Hao Cui, Jingfei Ni, Meiyi Wang, Xin Nie, Chi Liu, Wenjie Xu, Lin Gao, Hao Li, Xianhe Zhang, Jiajia Wu, Diyuan Liu, Jia Pan, Chao Ji · arXiv:2611.32053v2 Announce Type: new Abstract: World-action models connect visual prediction with execu",
-      "publishedAt": "2026-11-26T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "0344d1c3570cf87fb898d4d6cef9ff0a068334fd1cf484ac1de0ac3edb5d1915",
-      "title": "XRL4T1D: A Post-hoc Explainability Framework for Reinforcement Learning in Type 1 Diabetes Management",
-      "url": "https://arxiv.org/abs/2611.31498",
-      "summary": "Authors: Malay Phadke, Chirath Hettiarachchi · arXiv:2611.31498v1 Announce Type: new Abstract: Type 1 diabetes (T1D) requires lifelong insulin therapy, and reinforcement learning (RL) has shown promise for automated dosing in the UVA/Padova simulator. However,",
-      "publishedAt": "2026-11-26T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "155cf74d593fc9fcb6d8fccd12ea3f09f8a8ee82a89a850f49f1dd20fef2462b",
-      "title": "Taxi: Analyzing Agents at (Real) Scale",
-      "url": "https://arxiv.org/abs/2611.31457",
-      "summary": "Authors: Guy Dar · arXiv:2611.31457v1 Announce Type: new Abstract: In this technical report, we present Taxi -- a system for debugging, clustering, and monitoring agents at scale. Taxi scales to millions of steps efficiently. This is made possible by a combina",
-      "publishedAt": "2026-11-26T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "1904b51002150479a489af023e07dfcc7849d7039bb87a190d1b186c9e7d82dd",
-      "title": "Modeling Event-Conditioned Emotional Expression Response with LLM Agents in a Synthetic Social Simulation",
-      "url": "https://arxiv.org/abs/2611.31851",
-      "summary": "Authors: Rebecca Marigliano, Peter Carragher, Kathleen M. Carley · arXiv:2611.31851v1 Announce Type: new Abstract: Emotions are central drivers of human behavior, yet most behavioral models fail to capture their role in shaping perception, decision-making, and",
-      "publishedAt": "2026-11-26T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "198888ddc32495a196c2b249861d55184b834e5400754133c9b8aa1e9ad029ee",
-      "title": "Wavefront: Low-Rank Drafting with Parallel Causal Refinement for Speculative Decoding",
-      "url": "https://arxiv.org/abs/2611.31638",
-      "summary": "Authors: Huy Huu Nguyen, Xin Huang · arXiv:2611.31638v1 Announce Type: new Abstract: Speculative decoding accelerates LLM inference by letting a cheap drafter propose tokens that the target model verifies in parallel. Parallel block drafters such as DFlash and",
-      "publishedAt": "2026-11-26T05:00:00+00:00",
-      "source": "arXiv cs.AI",
-      "category": "Research",
       "color": "#5B48D9"
     },
     {
@@ -452,26 +452,6 @@
       "publishedAt": "2026-11-20T18:15:15+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "056cf0b58a3dbace68332c5ef6b35e38e3aab513ff13bc25aa1cb803bce8b627",
-      "title": "Introducing Tool Retrieval in the Gemini API",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
-      "summary": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
-      "publishedAt": "2026-11-19T18:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "63610b904de29506452ac1fba7c8cb0b4b76c98f0fb6fd62dc6626d364874233",
-      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson",
-      "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
-      "publishedAt": "2026-11-19T17:00:00+00:00",
-      "source": "Google AI",
-      "category": "Labs",
       "color": "#5B48D9"
     }
   ],
