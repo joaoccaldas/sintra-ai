@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T21:33:09.381788+00:00",
+  "generatedAt": "2026-11-27T00:18:34.737617+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,16 @@
   "itemCount": 46,
   "items": [
     {
+      "id": "aebfbe56731bd98a52c5ac3451e735c2673dc7f68b56294a13dd3318c1042dc1",
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "summary": "Comments",
+      "publishedAt": "2026-11-26T21:47:45+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "33b3d08d99aeb285e8bea951b21c283a79e73fe0c4ddc226362308ff333d8753",
       "title": "Nvidia hits pause on chip shipments to Southeast Asia",
       "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia",
@@ -28,7 +38,7 @@
       "id": "304eb6f376a1bd461d8fc09d6a46001574388db1627a9c9ca85f668d7b43ca3e",
       "title": "The USA as a Civilizations-esque map",
       "url": "https://karpathy.ai/usaciv",
-      "summary": "64 points · 44 comments on Hacker News",
+      "summary": "67 points · 52 comments on Hacker News",
       "publishedAt": "2026-11-26T19:53:58+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -38,7 +48,7 @@
       "id": "c07b74d3a070b84a2664b85bf103602c13e5c868a8e6bcb83abfb0f932329e71",
       "title": "Tracking Diseases Cured by AI",
       "url": "https://diseasescuredbyai.com/",
-      "summary": "284 points · 175 comments on Hacker News",
+      "summary": "299 points · 177 comments on Hacker News",
       "publishedAt": "2026-11-26T17:16:41+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -208,17 +218,7 @@
       "id": "1bfb90103b3c1d8e3d87c8f4fa689f779fc4191ffc5abac373e7e67f807bf6b2",
       "title": "The New York Times warns photographers not to update Photoshop over AI features",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-      "summary": "636 points · 507 comments on Hacker News",
-      "publishedAt": "2026-11-25T21:18:02+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7504558659f2e1ed0320899493c07311502045178c287da7618d20601c6b09a0",
-      "title": "The New York Times tells photographers not to use the latest Photoshop",
-      "url": "https://www.dpreview.com/news/new-york-times-adobe-photoshop-2027-restriction-ai",
-      "summary": "Comments",
+      "summary": "648 points · 516 comments on Hacker News",
       "publishedAt": "2026-11-25T21:18:02+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
