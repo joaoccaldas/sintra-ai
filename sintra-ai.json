@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:42:58.309341+00:00",
+  "generatedAt": "2026-11-27T10:05:08.229360+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -457,7 +457,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-27T00:35:41.747746+00:00",
+    "generatedAt": "2026-11-27T10:05:17.895598+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -3880,8 +3880,8 @@
         ],
         "value": 2.2857464902475,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.977168+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.467783+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-EMU",
@@ -3944,8 +3944,8 @@
         ],
         "value": 1.4110724231835,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.977189+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.467801+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-SWE",
@@ -4008,8 +4008,8 @@
         ],
         "value": 1.54316373266217,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.977196+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.467808+00:00",
+        "stale": false
       },
       {
         "id": "NY.GDP.MKTP.KD.ZG-USA",
@@ -4072,8 +4072,8 @@
         ],
         "value": 2.16138195623856,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.977202+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.467814+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-BRA",
@@ -4136,8 +4136,8 @@
         ],
         "value": 5.01675279604836,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.970164+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.895556+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-EMU",
@@ -4200,8 +4200,8 @@
         ],
         "value": 2.46605755272817,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.970185+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.895585+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-SWE",
@@ -4264,8 +4264,8 @@
         ],
         "value": 0.679015259300199,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.970188+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.895592+00:00",
+        "stale": false
       },
       {
         "id": "FP.CPI.TOTL.ZG-USA",
@@ -4328,8 +4328,8 @@
         ],
         "value": 2.94952520485207,
         "period": "2024-01-01",
-        "retrievedAt": "2026-11-25T09:21:19.970191+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.895598+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-BRA",
@@ -4392,8 +4392,8 @@
         ],
         "value": 5.97,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:20.234756+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.464861+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-EMU",
@@ -4456,8 +4456,8 @@
         ],
         "value": 6.28355946264135,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:20.234785+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.464935+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-SWE",
@@ -4520,8 +4520,8 @@
         ],
         "value": 8.694,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:20.234792+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.464943+00:00",
+        "stale": false
       },
       {
         "id": "SL.UEM.TOTL.ZS-USA",
@@ -4584,8 +4584,8 @@
         ],
         "value": 4.198,
         "period": "2025-01-01",
-        "retrievedAt": "2026-11-25T09:21:20.234798+00:00",
-        "stale": true
+        "retrievedAt": "2026-11-27T10:05:17.464954+00:00",
+        "stale": false
       }
     ]
   }
