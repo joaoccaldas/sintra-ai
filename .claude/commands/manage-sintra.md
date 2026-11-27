@@ -18,6 +18,14 @@ read that too if it's available, and prefer it over this file if the two
 disagree (this file is the portable/downloadable copy; `CLAUDE.md` is the
 one that actually gets updated as the codebase changes).
 
+> **October 2026 editorial safety update:** News research and changes follow
+> `.claude/commands/update-news.md` exclusively. `scripts/update-news.mjs`
+> produces unverified suggestions only; it does **not** write `newsData.ts`
+> or `newsLatestData.ts`. Review primary sources, open a feature-branch PR,
+> and obtain explicit owner/editor approval before merge, direct publication,
+> marketing email or manual deploy. This supersedes old push/deploy examples
+> in this reference guide for news and other unapproved outbound actions.
+
 ## Before you touch anything
 
 ```bash

@@ -1,10 +1,11 @@
 # Sintra Tesseract — Product Roadmap
 
-Thesis: the site already wins on **breadth + freshness** (deep content kept current
-by the scheduled `/update-news` task). The next chapter is **utility + retention** —
+Thesis: the site already wins on **breadth + freshness** (deep content plus a build-time external RSS/Atom/HN feed).
+Curated news is a separate, human-gated workflow; the agent `/update-news`
+command is not a GitHub Actions schedule. The next chapter is **utility + retention** —
 turning an AI encyclopedia into a daily AI *utility* people return to.
 
-The through-line: **scheduled Claude tasks are the content + distribution engine.**
+The through-line: **build-time source aggregation plus reviewed editorial content power discovery; distribution requires explicit consent and approval.**
 
 ---
 

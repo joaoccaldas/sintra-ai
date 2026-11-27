@@ -1,9 +1,10 @@
 import type { NewsItem } from "./newsData";
 
 /**
- * Manually verified news added on 23 June 2026.
- * Kept separate from the historical corpus so the daily append-only updater can
- * continue writing to newsData.ts without rewriting this reviewed batch.
+ * Curated source-reviewed news records. This is the ONLY writable editorial
+ * news collection. The historical newsData.ts corpus is not an update target.
+ * scripts/update-news.mjs generates UNVERIFIED suggestions only; a human editor
+ * independently checks sources and approves additions through a PR.
  */
 export const LATEST_AI_NEWS: NewsItem[] = [
   {
