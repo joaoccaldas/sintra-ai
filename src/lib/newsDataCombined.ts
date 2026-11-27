@@ -5,17 +5,17 @@ import { LATEST_AI_NEWS } from "./newsLatestData";
 import { LIVE_ITEMS, type LiveFeedItem } from "./liveFeedData";
 import varianceReceipt from "../data/holdingCoVariance.receipt.json";
 import { VARIANCE_COMMENTARY } from "./varianceWorkflow";
+import { composeNewsItems } from "./newsIdentity";
 
 /**
- * Canonical news feed consumed by the application.
+ * Unified read model for lab, source-linked knowledge/model announcements,
+ * curated editorial records, historical records, and build-time provider
+ * signals (in that explicit precedence order).
  *
- * Three sources, merged in priority order (first writer wins per id/title):
- *   1. LATEST_AI_NEWS   — editorial additions with their original publication dates.
- *   2. HISTORICAL_AI_NEWS — the append-only historical corpus.
- *   3. Live feed         — the build-time aggregated feed (aggregate-live-feed.mjs),
- *      converted to news items so the site keeps surfacing fresh headlines
- *      automatically between manual curation passes. This is what keeps
- *      /news current without any API key or human in the loop.
+ * Identity is deterministic: same ID or canonical source URL collapses to the
+ * first record; identical headlines at different sources remain visible and
+ * are flagged for editorial review. Aggregated origin never means source-
+ * verified. No source is rewritten or silently promoted through this merge.
  */
 
 const MONTH_ABBR = [
@@ -33,9 +33,6 @@ const LIVE_NEWS_MAX = 18; // cap promoted live items so the archive stays curate
 
 const slugify = (s: string): string =>
   s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 64);
-
-const normTitle = (s: string): string =>
-  s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
 function liveItemToNews(it: LiveFeedItem): NewsItem | null {
   if (!it.title || !it.url || !it.publishedAt) return null;
@@ -89,8 +86,6 @@ const primaryNews: NewsItem[] = [
     significance: "major" as const, origin: "primary-checked" as const };
 });
 
-const byId = new Map<string, NewsItem>();
-const seenTitles = new Set<string>();
 // A Sintra lab publication, not a newly dated Microsoft announcement. Identity
 // stays stable across daily rebuilds and links to the existing variance brief.
 const [labYear, labMonth, labDay] = varianceReceipt.labResult.created_at.slice(0, 10).split("-").map(Number);
@@ -102,14 +97,23 @@ const labNews: NewsItem = {
   significance: "notable", origin: "lab-tested", knowledgeId: "power-bi-variance-review",
   url: "https://joaoccaldas.github.io/sintra-ai/knowledge/power-bi-variance-review/",
 };
-for (const item of [labNews, ...primaryNews, ...LATEST_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...HISTORICAL_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })), ...liveNews.map(item => ({ ...item, origin: "aggregated" as const }))]) {
-  const t = normTitle(item.title);
-  if (byId.has(item.id) || seenTitles.has(t)) continue;
-  byId.set(item.id, item);
-  seenTitles.add(t);
-}
+const newsComposition = composeNewsItems([
+  labNews,
+  ...primaryNews,
+  ...LATEST_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })),
+  ...HISTORICAL_AI_NEWS.map(item => ({ ...item, origin: "editorial" as const })),
+  ...liveNews.map(item => ({ ...item, origin: "aggregated" as const })),
+]);
 
-export const AI_NEWS: NewsItem[] = [...byId.values()];
+export const AI_NEWS: NewsItem[] = newsComposition.items;
+
+/** Diagnostic-only summary: never describe heuristic title matches as duplicates. */
+export const NEWS_IDENTITY_AUDIT = {
+  inputs: newsComposition.inputCount,
+  published: AI_NEWS.length,
+  exactSuppressed: newsComposition.suppressed,
+  possibleRelatedStories: newsComposition.reviewCandidates,
+};
 export type { NewsItem } from "./newsData";
 
 /** Alias kept for component compatibility. */
