@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:10:17.449261+00:00",
+  "generatedAt": "2026-11-27T16:10:39.911477+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 44,
   "items": [
+    {
+      "id": "ff46556d3568b91149add839946c72a5e4cdb6d8111fd10f5366b91eb7a5677a",
+      "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+      "url": "https://bouncemarket.minhanhday.com/",
+      "summary": "Comments",
+      "publishedAt": "2026-11-27T15:01:50+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
     {
       "id": "50a0c4869eb8329a2ba809c287b3e0c6f7a027b874a9b4f6356cddc40768353c",
       "title": "US Air Force's cloud computing platform hacked",
@@ -35,10 +45,20 @@
       "color": "#5B48D9"
     },
     {
+      "id": "2ab21a01d6c52538a1a1296d88d3ccff407186e6dcb1e2ab835e596dd16369df",
+      "title": "Hackers breach US Air Force flagship Cloud One computing platform",
+      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27",
+      "summary": "31 points · 4 comments on Hacker News",
+      "publishedAt": "2026-11-27T11:52:53+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "c774e08c060ae311c665b6e6d81872a724d2f07648a861013768d0d4a37ca0ef",
-      "title": "Fields-winning mathematicians worried about eerie silence over AI and encryption",
+      "title": "AI on brink of making online security useless, mathematicians fear",
       "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
-      "summary": "58 points · 69 comments on Hacker News",
+      "summary": "Comments",
       "publishedAt": "2026-11-27T11:09:04+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
@@ -112,26 +132,6 @@
       "publishedAt": "2026-11-27T05:00:00+00:00",
       "source": "arXiv cs.AI",
       "category": "Research",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "6390f5d828e61c4fd23a1fc3abc4dba4cc96bd05127b7a07fcce3b47f172d521",
-      "title": "New AI research suggests AI bubble bursting and to expect major market collapse",
-      "url": "https://www.london.edu/think/ai-bubble-about-to-burst",
-      "summary": "34 points · 20 comments on Hacker News",
-      "publishedAt": "2026-11-27T02:44:12+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "305e62040e8a734e17a1846ad4df4ef6e70f05bb65b90b916514e647ce502f90",
-      "title": "AI agents now control part of DeepMind's compute for Gemini experiments",
-      "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant",
-      "summary": "55 points · 28 comments on Hacker News",
-      "publishedAt": "2026-11-27T00:03:18+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
       "color": "#5B48D9"
     },
     {
