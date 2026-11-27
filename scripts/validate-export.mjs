@@ -23,9 +23,22 @@ for (const page of pages) {
     if (!path) continue;
     count++;
     let target;
-    if (path.startsWith(`${prefix}/`)) target = join(root, path.slice(prefix.length));
-    else if (path.startsWith("/")) target = null;
-    else target = resolve(dirname(page), path);
+    if (path.startsWith(`${prefix}/`)) {
+      target = join(root, path.slice(prefix.length));
+    } else if (
+      // Existing source-authored guide links intentionally target the canonical
+      // GitHub Pages site. In a deeper *temporary preview only*, resolve them
+      // against equivalent exported files; never loosen production validation.
+      process.env.SINTRA_PREVIEW_BASE_PATH === prefix &&
+      prefix.startsWith("/sintra-ai/preview/") &&
+      path.startsWith("/sintra-ai/")
+    ) {
+      target = join(root, path.slice("/sintra-ai".length));
+    } else if (path.startsWith("/")) {
+      target = null;
+    } else {
+      target = resolve(dirname(page), path);
+    }
     if (target && existsSync(target) && statSync(target).isDirectory()) target = join(target, "index.html");
     if (!target || !existsSync(target)) {
       const sources = failures.get(href) ?? [];
