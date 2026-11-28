@@ -7,8 +7,26 @@
     <atom:link href="https://joaoccaldas.github.io/sintra-ai/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>Open source · sintra-ai</copyright>
-    <lastBuildDate>Fri, 27 Nov 2026 15:10:50 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:14:18 GMT</lastBuildDate>
     <ttl>1440</ttl>
+
+  <item>
+    <title><![CDATA[datasette-charts 0.4a0]]></title>
+    <description><![CDATA[Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook to allow other plugins to define new chart types, but I hadn't actually used it for anything yet. I had Claude Opus 5.5 build an experimental plugins just to try out the ho]]></description>
+    <link>https://simonwillison.net/2026/Nov/27/datasette-charts</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/27/datasette-charts</guid>
+    <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[datasette-mcp 0.4]]></title>
+    <description><![CDATA[Release: datasette-mcp 0.4 Fixed for compatibility with Datasette 1.0a44 . Tags: model-context-protocol , datasette]]></description>
+    <link>https://simonwillison.net/2026/Nov/27/datasette-mcp</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/27/datasette-mcp</guid>
+    <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
 
   <item>
     <title><![CDATA[Taking Trainium3 to the Track: Generating Videos with LTX-2.5]]></title>
@@ -60,6 +78,15 @@
     <description><![CDATA[sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as "experimental" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood on]]></description>
     <link>https://simonwillison.net/2026/Nov/26/sqlite3-rsync</link>
     <guid isPermaLink="true">https://simonwillison.net/2026/Nov/26/sqlite3-rsync</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+    <category>Simon Willison</category>
+  </item>
+
+  <item>
+    <title><![CDATA[The New York Times warns photographers not to update Photoshop over AI features]]></title>
+    <description><![CDATA[My comment on The New York Times warns photographers not to update Photoshop over AI features — Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fi]]></description>
+    <link>https://simonwillison.net/2026/Nov/26/hn-50651685</link>
+    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/26/hn-50651685</guid>
     <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
     <category>Simon Willison</category>
   </item>
@@ -137,39 +164,12 @@
   </item>
 
   <item>
-    <title><![CDATA[datasette-charts 0.3a0]]></title>
-    <description><![CDATA[Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in]]></description>
-    <link>https://simonwillison.net/2026/Nov/25/datasette-charts</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/25/datasette-charts</guid>
-    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
-  </item>
-
-  <item>
     <title><![CDATA[An Indic Voice Agent with CUGA]]></title>
     <description><![CDATA[Hugging Face — Open Source]]></description>
     <link>https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga</link>
     <guid isPermaLink="true">https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga</guid>
     <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
     <category>Hugging Face</category>
-  </item>
-
-  <item>
-    <title><![CDATA[AI is straining America’s open records systems]]></title>
-    <description><![CDATA[In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a woo]]></description>
-    <link>https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems</link>
-    <guid isPermaLink="true">https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems</guid>
-    <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-    <category>MIT Technology Review</category>
-  </item>
-
-  <item>
-    <title><![CDATA[Three LLM inflection points in twelve months]]></title>
-    <description><![CDATA[I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In t]]></description>
-    <link>https://simonwillison.net/2026/Nov/24/llm-inflection-points</link>
-    <guid isPermaLink="true">https://simonwillison.net/2026/Nov/24/llm-inflection-points</guid>
-    <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
-    <category>Simon Willison</category>
   </item>
 
   <item>
