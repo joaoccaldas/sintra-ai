@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T05:13:26.362895+00:00",
+  "generatedAt": "2026-11-28T05:14:35.471686+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -15,6 +15,16 @@
   "itemCount": 44,
   "items": [
     {
+      "id": "37881cc6652cee7391573b356ac3979ddaea9a70de21f21c9df6fa1975ad27a2",
+      "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+      "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+      "summary": "120 points · 94 comments on Hacker News",
+      "publishedAt": "2026-11-28T01:32:56+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "9e4ae7f8dcf438b2715795872bfbbdbe0309da82692efe9bde89646e34de759c",
       "title": "datasette-charts 0.4a0",
       "url": "https://simonwillison.net/2026/Nov/27/datasette-charts",
@@ -25,61 +35,51 @@
       "color": "#5B48D9"
     },
     {
+      "id": "b7f18d41d591cfabe522bc450cd042eaca4000559ee8039f1a95084c88eccd0a",
+      "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+      "url": "https://sessiongraph.ai/",
+      "summary": "39 points · 19 comments on Hacker News",
+      "publishedAt": "2026-11-27T21:07:34+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "351e6279ef6bf02117160cb5d093c8e8614305e6a2ba1da4066479450cad023b",
+      "title": "Banks look to dump AI debt",
+      "url": "https://www.semafor.com/article/11/26/2026/banks-look-to-dump-ai-debt",
+      "summary": "32 points · 5 comments on Hacker News",
+      "publishedAt": "2026-11-27T20:56:17+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "c6ad98147159ef5c5ac85e7b1d7cc9f7bb7fd09d564be3cbfe107d4c7d03606a",
+      "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+      "url": "https://github.com/skeeto/prospero",
+      "summary": "50 points · 10 comments on Hacker News",
+      "publishedAt": "2026-11-27T20:23:14+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "117d78644729ba213d55127efc66d916452e1ae8e5ba7f7a6fbb9e231cf5ed61",
+      "title": "I'm Scared of AI",
+      "url": "https://thesoapbox.email/archive/3",
+      "summary": "207 points · 244 comments on Hacker News",
+      "publishedAt": "2026-11-27T17:45:31+00:00",
+      "source": "Hacker News · AI",
+      "category": "Community",
+      "color": "#5B48D9"
+    },
+    {
       "id": "ff46556d3568b91149add839946c72a5e4cdb6d8111fd10f5366b91eb7a5677a",
       "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
       "url": "https://bouncemarket.minhanhday.com/",
-      "summary": "Comments",
+      "summary": "344 points · 116 comments on Hacker News",
       "publishedAt": "2026-11-27T15:01:50+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "50a0c4869eb8329a2ba809c287b3e0c6f7a027b874a9b4f6356cddc40768353c",
-      "title": "US Air Force's cloud computing platform hacked",
-      "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
-      "summary": "Comments",
-      "publishedAt": "2026-11-27T12:54:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "aa1371a3feb2092561b1bee6d42eb414c01e56325381d2239ec4ac22eed5acc3",
-      "title": "Kimi for Science: More scientific ideas, made possible",
-      "url": "https://www.kimi.ai/news/kimi-for-science-program",
-      "summary": "Comments",
-      "publishedAt": "2026-11-27T12:03:11+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "2ab21a01d6c52538a1a1296d88d3ccff407186e6dcb1e2ab835e596dd16369df",
-      "title": "Hackers breach US Air Force flagship Cloud One computing platform",
-      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27",
-      "summary": "31 points · 4 comments on Hacker News",
-      "publishedAt": "2026-11-27T11:52:53+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "c774e08c060ae311c665b6e6d81872a724d2f07648a861013768d0d4a37ca0ef",
-      "title": "AI on brink of making online security useless, mathematicians fear",
-      "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
-      "summary": "Comments",
-      "publishedAt": "2026-11-27T11:09:04+00:00",
-      "source": "Hacker News · AI",
-      "category": "Community",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "a8f643349bc099825e7c4281661258a053a50602ae3a07542005ae4e09700b0e",
-      "title": "The group chat where your AI talks behind your back",
-      "url": "https://construct22.com/",
-      "summary": "Comments",
-      "publishedAt": "2026-11-27T06:44:34+00:00",
       "source": "Hacker News · AI",
       "category": "Community",
       "color": "#5B48D9"
