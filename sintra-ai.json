@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T16:10:39.911477+00:00",
+  "generatedAt": "2026-11-28T05:13:26.362895+00:00",
   "sourceCount": 9,
   "sources": [
     "Google AI",
@@ -14,6 +14,16 @@
   ],
   "itemCount": 44,
   "items": [
+    {
+      "id": "9e4ae7f8dcf438b2715795872bfbbdbe0309da82692efe9bde89646e34de759c",
+      "title": "datasette-charts 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-charts",
+      "summary": "Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook to allow other plugins to define new chart types, but I hadn't actually used it for anything yet. I had Claude Opus 5.5 build an experimental plugins just to try out the ho",
+      "publishedAt": "2026-11-27T23:57:17+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
     {
       "id": "ff46556d3568b91149add839946c72a5e4cdb6d8111fd10f5366b91eb7a5677a",
       "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
@@ -135,6 +145,16 @@
       "color": "#5B48D9"
     },
     {
+      "id": "4fb8ef7a2b51ab3040758a6816d5b11c93ccfb081a356fea519ee60c20e79e89",
+      "title": "datasette-mcp 0.4",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp",
+      "summary": "Release: datasette-mcp 0.4 Fixed for compatibility with Datasette 1.0a44 . Tags: model-context-protocol , datasette",
+      "publishedAt": "2026-11-27T00:26:17+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
       "id": "c2bd7953104652e48b060cb836c5b0b220f5916987e34c7cb4215ee5c922c5b1",
       "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
       "url": "https://huggingface.co/blog/video-trainium3",
@@ -190,6 +210,16 @@
       "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync",
       "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood on",
       "publishedAt": "2026-11-26T06:08:25+00:00",
+      "source": "Simon Willison",
+      "category": "Practitioner",
+      "color": "#5B48D9"
+    },
+    {
+      "id": "fc654cd8c7a75232f8f6cfa269cc11b2923dd660969085d52e0871a9eb74a09a",
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://simonwillison.net/2026/Nov/26/hn-50651685",
+      "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features — Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fi",
+      "publishedAt": "2026-11-26T05:08:46+00:00",
       "source": "Simon Willison",
       "category": "Practitioner",
       "color": "#5B48D9"
@@ -275,16 +305,6 @@
       "color": "#5B48D9"
     },
     {
-      "id": "9685432920849ecf90c70b30aa0f7de554eaf033009ef2bdbefa8b13adf02776",
-      "title": "datasette-charts 0.3a0",
-      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts",
-      "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in",
-      "publishedAt": "2026-11-25T18:16:50+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
       "id": "0077e07924e43bf73f6b214e80c2636fd705749c1e6b72af3b822ac4ce5e9fb4",
       "title": "An Indic Voice Agent with CUGA",
       "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
@@ -302,26 +322,6 @@
       "publishedAt": "2026-11-25T10:00:00+00:00",
       "source": "MIT Technology Review",
       "category": "Press",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "5e8eba5b15ac60442c06ba0c605298c68acc153c2342183b0f55f54aa4e85ddb",
-      "title": "Three LLM inflection points in twelve months",
-      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points",
-      "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In t",
-      "publishedAt": "2026-11-24T23:02:07+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
-      "color": "#5B48D9"
-    },
-    {
-      "id": "7eea171611f31c8f95c6e226f61955635ce9adf9e7d105467cd6d5dca1057023",
-      "title": "GPT 6.2 Astra Solves a Historical Mystery",
-      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
-      "summary": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an ano",
-      "publishedAt": "2026-11-24T16:53:59+00:00",
-      "source": "Simon Willison",
-      "category": "Practitioner",
       "color": "#5B48D9"
     },
     {
@@ -457,7 +457,7 @@
   ],
   "markets": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-27T13:08:12.839847+00:00",
+    "generatedAt": "2026-11-28T05:13:27.154431+00:00",
     "rows": [
       {
         "id": "EUR-BRL",
@@ -1572,11 +1572,15 @@
           {
             "date": "2026-11-26",
             "value": 6.3272
+          },
+          {
+            "date": "2026-11-27",
+            "value": 6.0246
           }
         ],
-        "value": 6.3272,
-        "period": "2026-11-26",
-        "retrievedAt": "2026-11-27T13:08:12.839815+00:00",
+        "value": 6.0246,
+        "period": "2026-11-27",
+        "retrievedAt": "2026-11-28T05:13:27.154327+00:00",
         "stale": false
       },
       {
@@ -2692,11 +2696,15 @@
           {
             "date": "2026-11-26",
             "value": 11.2025
+          },
+          {
+            "date": "2026-11-27",
+            "value": 11.208
           }
         ],
-        "value": 11.2025,
-        "period": "2026-11-26",
-        "retrievedAt": "2026-11-27T13:08:12.839840+00:00",
+        "value": 11.208,
+        "period": "2026-11-27",
+        "retrievedAt": "2026-11-28T05:13:27.154424+00:00",
         "stale": false
       },
       {
@@ -3812,11 +3820,15 @@
           {
             "date": "2026-11-26",
             "value": 1.0975
+          },
+          {
+            "date": "2026-11-27",
+            "value": 1.0957
           }
         ],
-        "value": 1.0975,
-        "period": "2026-11-26",
-        "retrievedAt": "2026-11-27T13:08:12.839847+00:00",
+        "value": 1.0957,
+        "period": "2026-11-27",
+        "retrievedAt": "2026-11-28T05:13:27.154431+00:00",
         "stale": false
       },
       {
